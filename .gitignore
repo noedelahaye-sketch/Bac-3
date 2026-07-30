@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# Supports de cours (PDF propriétaires Studi, non versionnés)
+cours:/
