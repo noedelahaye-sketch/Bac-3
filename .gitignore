@@ -1,5 +1,9 @@
 # macOS
 .DS_Store
 
-# Supports de cours (PDF propriétaires Studi, non versionnés)
+# Supports de cours et énoncés (PDF propriétaires Studi, non versionnés)
 cours:/
+énoncé:/
+
+# Config locale de l'outil Claude Code
+.claude/
