@@ -331,47 +331,19 @@
   }
 
   function vDossiers(){
-    var h='';
-    var fOpen=S.open.fiche?" open":"";
-    var fFilled=FICHE_B1.filter(function(f){return (S.fiche[f[0]]||"").trim();}).length;
-    h+='<section class="panel accent'+fOpen+'"><button class="phead" data-panel="fiche"><span class="chev">&#9654;</span>';
-    h+='<h2>Fiche de cohérence — Bloc 1<span class="cas">Tes décisions structurantes. À relire au début de chaque session.</span></h2>';
-    h+='<span class="count">'+fFilled+'/'+FICHE_B1.length+'</span></button><div class="pbody fiche">';
-    FICHE_B1.forEach(function(f){
-      h+='<div class="row"><div class="k"><span>'+f[1]+'</span><em>'+f[2]+'</em></div>';
-      h+='<textarea class="f" data-fiche="'+f[0]+'" placeholder="—">'+esc(S.fiche[f[0]])+'</textarea></div>';
-    });
-    h+='<div class="given"><b>Donné par l\'énoncé, non négociable :</b> budget 18 à 21 M€ dont 1 M€ communication et lancement · ouverture printemps N+3 · +15 % de CA global en 3 ans · 100 chambres dont 8 PMR minimum · 70 % de circuits courts.</div></div></section>';
-
-    var jOpen=S.open.journal?" open":"";
-    h+='<section class="panel accent'+jOpen+'"><button class="phead" data-panel="journal"><span class="chev">&#9654;</span>';
-    h+='<h2>Journal d\'arbitrages<span class="cas">Trois lignes après chaque session. C\'est le script de ta vidéo.</span></h2>';
-    h+='<span class="count">'+S.journal.length+'</span></button><div class="pbody"><div class="jform">';
-    h+='<input class="f" id="j-q" placeholder="Question concernée — ex. Bloc 1 · Q5">';
-    h+='<textarea class="f" id="j-in" placeholder="Ce que j\'ai retenu"></textarea>';
-    h+='<textarea class="f" id="j-out" placeholder="Ce que j\'ai écarté"></textarea>';
-    h+='<textarea class="f" id="j-why" placeholder="Pourquoi"></textarea>';
-    h+='<button class="jadd" id="j-add">Ajouter au journal</button></div>';
-    if(!S.journal.length) h+='<div class="empty">Rien pour l\'instant. La première entrée devrait arriver après ta session sur la question 1.</div>';
-    else S.journal.slice().reverse().forEach(function(e){
-      h+='<div class="jentry"><button class="del" data-del="'+e.id+'">&times;</button>';
-      h+='<div class="meta">'+esc(e.date)+(e.q?' · '+esc(e.q):'')+'</div>';
-      if(e.in) h+='<div><b>Retenu :</b> '+esc(e.in)+'</div>';
-      if(e.out)h+='<div><b>Écarté :</b> '+esc(e.out)+'</div>';
-      if(e.why)h+='<div><b>Pourquoi :</b> '+esc(e.why)+'</div>';
-      h+='</div>';
-    });
-    h+='</div></section>';
-
+    var h='<div class="tiles">';
     BLOCS.forEach(function(b){
-      var bd=b.qs.filter(function(q){return isDone(q.id);}).length;
-      var op=S.open[b.id]?" open":"";
-      h+='<section class="panel'+op+'" id="sec-'+b.id+'"><button class="phead" data-panel="'+b.id+'"><span class="chev">&#9654;</span>';
-      h+='<h2>'+b.code+' — '+b.titre+'<span class="cas">'+b.cas+'</span></h2>';
-      h+='<span class="count">'+bd+'/'+b.qs.length+'</span></button><div class="qlist">';
-      b.qs.forEach(function(q){ h+=renderQuestionRow(q); });
-      h+='</div></section>';
+      var done=b.qs.filter(function(q){return isDone(q.id);}).length;
+      var pct=b.qs.length?Math.round(100*done/b.qs.length):0;
+      h+='<button class="tile" data-go-bloc="'+b.id+'">';
+      h+='<span class="tile-code code">'+b.code+'</span>';
+      h+='<span class="tile-title">'+b.titre+'</span>';
+      h+='<span class="tile-cas">'+b.cas+'</span>';
+      h+='<span class="tile-bar-row"><span class="tile-bar"><span class="tile-fill" style="width:'+pct+'%"></span></span><span class="tile-pct code">'+pct+' %</span></span>';
+      h+='<span class="tile-count code">'+done+' / '+b.qs.length+'</span>';
+      h+='</button>';
     });
+    h+='</div>';
     return h;
   }
 
@@ -518,6 +490,7 @@
     var inSession = (v==="apprendre"&&(SES||QZ));
     appEl.classList.toggle("session", !!inSession);
     renderNav();
+    main.classList.toggle("wide", v==="dossiers"||v==="bloc");
     if(v==="question"){
       main.classList.add("with-qbottom");
       main.innerHTML=vQuestion(ROUTE.id);
@@ -533,7 +506,7 @@
         main.innerHTML=h;
       } else {
         var titles={accueil:"Suivi des 4 dossiers",dossiers:"Dossiers",apprendre:"Apprendre",cours:"Cours"};
-        var subs={accueil:"Formation — dépôt début décembre",dossiers:"44 livrables · critères et brouillons",apprendre:"Cartes à répétition espacée et quiz",cours:"Index des supports et fiches de méthode"};
+        var subs={accueil:"Formation — dépôt début décembre",dossiers:"44 livrables · dépôt début décembre",apprendre:"Cartes à répétition espacée et quiz",cours:"Index des supports et fiches de méthode"};
         main.innerHTML='<div class="eyebrow">'+subs[v]+'</div><h1>'+titles[v]+'</h1>'+h;
         if(v==="cours" && ROUTE.support){
           var t=document.getElementById("src-"+ROUTE.support);
@@ -589,6 +562,9 @@
     });
     main.querySelectorAll("[data-goq]").forEach(function(el){
       el.addEventListener("click",function(){ go("question", el.getAttribute("data-goq")); });
+    });
+    main.querySelectorAll("[data-go-bloc]").forEach(function(el){
+      el.addEventListener("click",function(){ go("bloc", el.getAttribute("data-go-bloc")); });
     });
     main.querySelectorAll("[data-crumb]").forEach(function(el){
       el.addEventListener("click",function(){ go(el.getAttribute("data-crumb"), el.getAttribute("data-crumb-param")); });
