@@ -33,7 +33,7 @@
     --radius-card:8px; --radius-control:6px;
     --space-4:4px; --space-8:8px; --space-12:12px; --space-16:16px;
     --space-24:24px; --space-32:32px; --space-48:48px;
-    --content-width:760px;
+    --content-width:1240px;
     --font-display:"Clash Display",-apple-system,sans-serif;
     --font-text:"Instrument Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
     --font-code:"Geist Mono",ui-monospace,Menlo,monospace;
@@ -71,8 +71,11 @@
   .navb.on{background:var(--ink);color:var(--surface);}
   .navb i{font-style:normal;font-family:var(--font-code);font-size:10.5px;font-weight:500;background:var(--signal);color:var(--surface);border-radius:var(--radius-control);padding:1px 6px;}
   .navb.on i{background:var(--surface);color:var(--ink);}
-  main{padding:var(--space-16) 16px var(--space-48);}
-  @media (min-width:521px){ main{padding-left:20px;padding-right:20px;} .navin{padding-left:20px;padding-right:20px;} }
+  main{max-width:68ch;margin:0 auto;padding:var(--space-16) 16px var(--space-48);}
+  main.wide{max-width:var(--content-width);}
+  .measure{max-width:68ch;}
+  @media (min-width:720px){ main{padding-left:20px;padding-right:20px;} .navin{padding-left:20px;padding-right:20px;} }
+  @media (min-width:1080px){ main{padding-left:32px;padding-right:32px;} .navin{padding-left:32px;padding-right:32px;} }
 
   .cadence{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-card);padding:var(--space-16);margin-bottom:var(--space-16);}
   .verdict{font-family:var(--font-display);font-weight:600;font-size:19px;letter-spacing:-0.02em;line-height:1.2;}
@@ -145,8 +148,10 @@
   details.arbitrage{margin-top:var(--space-16);}
 
   .qbottom{position:fixed;left:0;right:0;bottom:0;z-index:15;background:var(--paper);border-top:1px solid var(--line);}
-  .qbottom-inner{max-width:var(--content-width);margin:0 auto;padding:var(--space-8) 16px;}
-  @media (min-width:521px){ .qbottom-inner{padding-left:20px;padding-right:20px;} }
+  .qbottom-inner{max-width:68ch;margin:0 auto;padding:var(--space-8) 16px;}
+  .qbottom-inner.wide{max-width:var(--content-width);}
+  @media (min-width:720px){ .qbottom-inner{padding-left:20px;padding-right:20px;} }
+  @media (min-width:1080px){ .qbottom-inner{padding-left:32px;padding-right:32px;} }
   .qseq{display:flex;justify-content:space-between;margin-top:var(--space-8);}
   .qseq .linkf{min-height:36px;}
   main.with-qbottom{padding-bottom:132px;}
