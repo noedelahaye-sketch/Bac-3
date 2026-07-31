@@ -84,28 +84,71 @@
   function grade(i,ok){ var b=S.box[i]||0, nb=ok?Math.min(5,b+1):1; S.box[i]=nb; S.due[i]=today()+INTERV[nb]*86400000; save(); }
   function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=a[i];a[i]=a[j];a[j]=x;} return a; }
 
-  var VIEWS=[["accueil","Accueil"],["dossiers","Dossiers"],["reviser","Réviser"],["quiz","Quiz"],["memo","Mémo"],["cours","Cours"]];
+  var VIEWS=[["accueil","Accueil"],["dossiers","Dossiers"],["cours","Cours"],["reviser","Réviser"],["quiz","Quiz"]];
+  var KNOWN_VIEWS=["accueil","dossiers","cours","reviser","quiz"];
 
-  function go(v){
-    if(v!==S.view){ SES=null; QZ=null; }
-    S.view=v; save();
-    if(location.hash!=="#"+v) location.hash=v;
+  function slugify(s){
+    return String(s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+      .replace(/[^a-z0-9]+/g,"-").replace(/(^-+|-+$)/g,"");
+  }
+  function parseHash(hash){
+    var h=(hash||"").replace(/^#/,"");
+    if(h.charAt(0)==="/") h=h.slice(1);
+    if(!h) return {view:"accueil"};
+    var parts=h.split("/").filter(Boolean);
+    if(parts[0]==="q" && parts[1]) return {view:"question", id:parts[1]};
+    if(parts[0]==="cours") return {view:"cours", support:parts[1]||null};
+    if(KNOWN_VIEWS.indexOf(parts[0])>=0) return {view:parts[0]};
+    return {view:"accueil"};
+  }
+  function hashFor(view,param){
+    if(view==="question") return "#/q/"+param;
+    if(view==="cours") return param ? "#/cours/"+param : "#/cours";
+    if(view==="accueil") return "#/";
+    return "#/"+view;
+  }
+  var ROUTE={view:"accueil"};
+  function applyRoute(r){
+    if(r.view!==ROUTE.view){ SES=null; QZ=null; }
+    ROUTE=r; S.view=(KNOWN_VIEWS.indexOf(r.view)>=0)?r.view:"accueil"; save();
     render();
     window.scrollTo(0,0);
+  }
+  function go(view,param){
+    var h=hashFor(view,param);
+    if(location.hash===h) applyRoute(parseHash(h));
+    else location.hash=h;
+  }
+  window.addEventListener("hashchange",function(){ applyRoute(parseHash(location.hash)); });
+
+  function tickClass(q,i,exp,left){
+    var st=S.status[q.id];
+    var c = st==="done"?"relu":st==="draft"?"done":st==="wip"?"wip":"";
+    if(i===exp && left>0) c+=" mark";
+    return c;
+  }
+  function renderCadenceCompact(){
+    var cc=document.getElementById("cadenceCompact"); if(!cc) return;
+    var done=doneCount(), left=ALL.length-done, exp=expectedDone();
+    var h="";
+    ALL.forEach(function(q,i){ h+='<div class="seg '+tickClass(q,i,exp,left)+'"></div>'; });
+    cc.innerHTML=h;
   }
 
   function renderNav(){
     var h="";
+    var activeView = ROUTE.view==="question" ? "dossiers" : ROUTE.view;
     VIEWS.forEach(function(v){
       var badge="";
       if(v[0]==="dossiers"){ var r=ALL.length-doneCount(); if(r) badge='<i>'+r+'</i>'; }
       if(v[0]==="reviser"){ var d=dueCount(); if(d) badge='<i>'+d+'</i>'; }
-      h+='<button class="navb'+(S.view===v[0]?" on":"")+'" data-go="'+v[0]+'">'+v[1]+badge+'</button>';
+      h+='<button class="navb'+(activeView===v[0]?" on":"")+'" data-go="'+v[0]+'">'+v[1]+badge+'</button>';
     });
     nav.innerHTML=h;
     nav.querySelectorAll("[data-go]").forEach(function(el){
       el.addEventListener("click",function(){ go(el.getAttribute("data-go")); });
     });
+    renderCadenceCompact();
   }
 
   /* ---------- ACCUEIL ---------- */
@@ -122,11 +165,9 @@
     h+='<div class="sub">Rythme nécessaire pour tenir la date : <strong>'+pace.toFixed(1)+' livrable'+(pace>=2?'s':'')+' par semaine</strong>.</div>';
     h+='<div class="ticks">';
     ALL.forEach(function(q,i){
-      var st=S.status[q.id], c=isDone(q.id)?"done":(st==="wip"?"wip":"");
-      if(i===exp&&left>0) c+=" mark";
-      h+='<div class="tick '+c+'" title="'+q.bloc.code+' '+q.n+'"></div>';
+      h+='<div class="tick '+tickClass(q,i,exp,left)+'" title="'+q.bloc.code+' '+q.n+'"></div>';
     });
-    h+='</div><div class="legend"><span><i class="dot" style="background:var(--signal)"></i>rédigé</span><span><i class="dot" style="background:#9AA8E8"></i>en cours</span><span><i class="dot" style="background:#D5D9D0"></i>à faire</span><span><i class="dot" style="background:var(--alert);width:2px;height:11px"></i>où tu devrais en être</span></div>';
+    h+='</div><div class="legend"><span><i class="dot" style="background:var(--signal)"></i>rédigé</span><span><i class="dot" style="background:#93A0E5"></i>en cours</span><span><i class="dot" style="background:var(--line)"></i>à faire</span><span><i class="dot" style="background:var(--flag);width:2px;height:11px"></i>où tu devrais en être</span></div>';
     h+='<div class="stats"><div class="stat"><div class="num">'+done+'<span class="on">/'+ALL.length+'</span></div><div class="lbl">Terminés</div></div>';
     h+='<div class="stat"><div class="num">'+Math.floor(wl)+'</div><div class="lbl">Semaines restantes</div></div>';
     h+='<div class="stat"><div class="num">'+left+'</div><div class="lbl">Restants</div></div></div></div>';
@@ -135,7 +176,7 @@
     if(nxt){
       h+='<div class="next"><div class="eyebrow">La prochaine chose à faire</div>';
       h+='<div class="t">'+nxt.bloc.code+' · '+nxt.n+' — '+nxt.t+'</div>';
-      h+='<button data-jump="'+nxt.id+'" data-bloc="'+nxt.bloc.id+'">Ouvrir</button></div>';
+      h+='<button data-goq="'+nxt.id+'">Ouvrir</button></div>';
     } else {
       h+='<div class="next"><div class="eyebrow">Terminé</div><div class="t">Les 44 livrables sont rédigés.</div></div>';
     }
@@ -154,6 +195,51 @@
   }
 
   /* ---------- DOSSIERS ---------- */
+  function renderQuestionBody(q){
+    var h='';
+    var inf=INFO[q.id];
+    if(inf){
+      h+='<div class="lab">Ce qui est attendu concrètement</div><ul class="att">';
+      inf[0].forEach(function(a){h+='<li>'+a+'</li>';});
+      h+='</ul><details class="notions"><summary>Notions à mobiliser — '+inf[1].length+'</summary><ul>';
+      inf[1].forEach(function(n){h+='<li>'+n+'</li>';});
+      h+='</ul><p class="rappel">Ces notions sont détaillées dans l\'onglet Cours. Si un point te manque, demande-le-moi.</p></details>';
+    }
+    h+=renderRessource(q.id);
+    if(q.trame) h+='<div class="lab">Trame détaillée</div><div class="trame">'+q.trame+'</div>';
+    h+='<div class="lab">Critères évalués — compétence '+q.c+'</div>';
+    q.k.forEach(function(k,i){
+      var ck=(S.checks[q.id]||{})[i]?" checked":"";
+      h+='<label class="crit"><input type="checkbox" data-check="'+q.id+'" data-i="'+i+'"'+ck+'><span>'+k+'</span></label>';
+    });
+    h+='<div class="lab">Brouillon</div><textarea class="f big" data-note="'+q.id+'" placeholder="Écris ici. Tu récupéreras tout d\'un coup depuis l\'accueil, bouton Exporter.">'+esc(S.notes[q.id])+'</textarea>';
+    h+='<div class="lab">Où j\'en suis</div><div class="states">';
+    var st=S.status[q.id]||"todo";
+    [["todo","À faire"],["wip","En cours"],["draft","Rédigé"],["done","Relu"]].forEach(function(p){
+      h+='<button data-set="'+q.id+'" data-v="'+p[0]+'" aria-pressed="'+(st===p[0])+'">'+p[1]+'</button>';
+    });
+    h+='</div>';
+    return h;
+  }
+
+  /* ---------- QUESTION ---------- */
+  function vQuestion(qid){
+    var q=ALL.filter(function(x){return x.id===qid;})[0];
+    if(!q){
+      return '<button class="linkf" data-go="dossiers">&larr; Dossiers</button><p class="rappel">Question introuvable.</p>';
+    }
+    S.open[q.bloc.id]=true;
+    var st=S.status[q.id]||"todo";
+    var lbl=st==="done"?"relu":st==="draft"?"rédigé":st==="wip"?"en cours":"à faire";
+    var chipc=st==="done"?" done":st==="draft"?" draft":st==="wip"?" wip":"";
+    var h='<div class="qbar"><button class="back" data-go="dossiers">&larr; Dossiers</button>';
+    h+='<span class="code">'+q.bloc.code.replace('Bloc ','B')+' &middot; '+q.n+'</span>';
+    h+='<span class="chip'+chipc+'">'+lbl+'</span></div>';
+    h+='<h1 class="qhead-title">'+q.t+'</h1><div class="qhead-code code">'+q.c+'</div>';
+    h+=renderQuestionBody(q);
+    return h;
+  }
+
   function vDossiers(){
     var h='';
     var fOpen=S.open.fiche?" open":"";
@@ -199,27 +285,8 @@
         var chipc=st==="done"?" done":st==="draft"?" draft":st==="wip"?" wip":"";
         var qo=S.open[q.id]?" open":"";
         h+='<div class="q'+qo+'" id="q-'+q.id+'"><button class="qhead" data-q="'+q.id+'"><span class="qn">'+q.n+'</span><span class="qt">'+q.t+'</span><span class="chip'+chipc+'">'+lbl+'</span></button><div class="qbody">';
-        var inf=INFO[q.id];
-        if(inf){
-          h+='<div class="lab">Ce qui est attendu concrètement</div><ul class="att">';
-          inf[0].forEach(function(a){h+='<li>'+a+'</li>';});
-          h+='</ul><details class="notions"><summary>Notions à mobiliser — '+inf[1].length+'</summary><ul>';
-          inf[1].forEach(function(n){h+='<li>'+n+'</li>';});
-          h+='</ul><p class="rappel">Ces notions sont détaillées dans l\'onglet Mémo. Si un point te manque, demande-le-moi.</p></details>';
-        }
-        h+=renderRessource(q.id);
-        if(q.trame) h+='<div class="lab">Trame détaillée</div><div class="trame">'+q.trame+'</div>';
-        h+='<div class="lab">Critères évalués — compétence '+q.c+'</div>';
-        q.k.forEach(function(k,i){
-          var ck=(S.checks[q.id]||{})[i]?" checked":"";
-          h+='<label class="crit"><input type="checkbox" data-check="'+q.id+'" data-i="'+i+'"'+ck+'><span>'+k+'</span></label>';
-        });
-        h+='<div class="lab">Brouillon</div><textarea class="f big" data-note="'+q.id+'" placeholder="Écris ici. Tu récupéreras tout d\'un coup depuis l\'accueil, bouton Exporter.">'+esc(S.notes[q.id])+'</textarea>';
-        h+='<div class="lab">Où j\'en suis</div><div class="states">';
-        [["todo","À faire"],["wip","En cours"],["draft","Rédigé"],["done","Relu"]].forEach(function(p){
-          h+='<button data-set="'+q.id+'" data-v="'+p[0]+'" aria-pressed="'+(st===p[0])+'">'+p[1]+'</button>';
-        });
-        h+='</div></div></div>';
+        h+=renderQuestionBody(q);
+        h+='</div></div>';
       });
       h+='</div></section>';
     });
@@ -296,8 +363,36 @@
   }
 
   /* ---------- MEMO ---------- */
-  function vMemo(){
-    var h='<p class="intro">Les '+FICHES.length+' notions qui couvrent les 43 questions. Ouvre la fiche dont tu as besoin, applique-la au cas, passe à la suivante.</p>';
+  /* ---------- COURS ---------- */
+  function vCours(supportSlug){
+    var by={};
+    if(typeof RESSOURCES!=="undefined"){
+      Object.keys(RESSOURCES).forEach(function(qid){
+        var r=RESSOURCES[qid], q=ALL.filter(function(x){return x.id===qid;})[0];
+        (r.sources||[]).forEach(function(s){
+          var parts=s.split(" — "), support=parts[0].trim(), note=parts.slice(1).join(" — ").trim();
+          var slug=slugify(support);
+          by[slug]=by[slug]||{name:support, items:[]};
+          by[slug].items.push({qid:qid, note:note, label:q?(q.bloc.code+' · '+q.n+' — '+q.t):qid});
+        });
+      });
+    }
+    var slugs=Object.keys(by).sort(function(a,b){return by[a].name.localeCompare(by[b].name);});
+    var h='<p class="intro">Les supports de cours mobilisés jusqu\'ici, et les questions que chacun alimente.</p>';
+    if(!slugs.length) h+='<p class="rappel">Rien d\'indexé pour l\'instant.</p>';
+    slugs.forEach(function(slug){
+      var entry=by[slug], key="src-"+slug, op=(S.open[key]||supportSlug===slug)?" open":"";
+      h+='<section class="panel'+op+'" id="src-'+slug+'"><button class="phead" data-panel="'+key+'"><span class="chev">&#9654;</span>';
+      h+='<h2>'+entry.name+'</h2><span class="count">'+entry.items.length+'</span></button><div class="pbody">';
+      entry.items.forEach(function(item){
+        h+='<div class="src-item"><button class="linkf" data-goq="'+item.qid+'">'+item.label+'</button>';
+        if(item.note) h+='<div class="rappel">'+item.note+'</div>';
+        h+='</div>';
+      });
+      h+='</div></section>';
+    });
+    h+='<div class="lab">Fiches de méthode — '+FICHES.length+'</div>';
+    h+='<p class="intro">Ouvre la fiche dont tu as besoin, applique-la au cas, passe à la suivante.</p>';
     FICHES.forEach(function(f){
       var op=S.open["f"+f.n]?" open":"";
       h+='<section class="panel'+op+'" id="fiche-'+f.n+'"><button class="phead" data-panel="f'+f.n+'"><span class="chev">&#9654;</span>';
@@ -307,43 +402,21 @@
     return h;
   }
 
-  /* ---------- COURS ---------- */
-  function vCours(){
-    var by={};
-    if(typeof RESSOURCES!=="undefined"){
-      Object.keys(RESSOURCES).forEach(function(qid){
-        var r=RESSOURCES[qid], q=ALL.filter(function(x){return x.id===qid;})[0];
-        (r.sources||[]).forEach(function(s){
-          var parts=s.split(" — "), support=parts[0].trim(), note=parts.slice(1).join(" — ").trim();
-          by[support]=by[support]||[];
-          by[support].push({qid:qid, note:note, label:q?(q.bloc.code+' · '+q.n+' — '+q.t):qid, bloc:q?q.bloc.id:qid.split('-')[0]});
-        });
-      });
-    }
-    var names=Object.keys(by).sort();
-    var h='<p class="intro">Les supports de cours mobilisés jusqu\'ici, et les questions que chacun alimente.</p>';
-    if(!names.length){ h+='<p class="rappel">Rien d\'indexé pour l\'instant.</p>'; return h; }
-    names.forEach(function(name){
-      var key="src-"+name, op=S.open[key]?" open":"";
-      h+='<section class="panel'+op+'"><button class="phead" data-panel="'+key+'"><span class="chev">&#9654;</span>';
-      h+='<h2>'+name+'</h2><span class="count">'+by[name].length+'</span></button><div class="pbody">';
-      by[name].forEach(function(item){
-        h+='<div class="src-item"><button class="linkf" data-jump="'+item.qid+'" data-bloc="'+item.bloc+'">'+item.label+'</button>';
-        if(item.note) h+='<div class="rappel">'+item.note+'</div>';
-        h+='</div>';
-      });
-      h+='</div></section>';
-    });
-    return h;
-  }
-
   function render(){
     renderNav();
-    var v=S.view;
-    var h = v==="dossiers"?vDossiers() : v==="reviser"?vReviser() : v==="quiz"?vQuiz() : v==="memo"?vMemo() : v==="cours"?vCours() : vAccueil();
-    var titles={accueil:"Suivi des 4 dossiers",dossiers:"Dossiers",reviser:"Réviser",quiz:"Quiz",memo:"Mémo méthodo",cours:"Cours"};
-    var subs={accueil:"Formation — dépôt début décembre",dossiers:"44 livrables · critères et brouillons",reviser:"Cartes à répétition espacée",quiz:"Questions à choix multiple",memo:FICHES.length+" fiches de méthode",cours:"Index des supports par question"};
-    main.innerHTML='<div class="eyebrow">'+subs[v]+'</div><h1>'+titles[v]+'</h1>'+h;
+    var v=ROUTE.view;
+    if(v==="question"){
+      main.innerHTML=vQuestion(ROUTE.id);
+    } else {
+      var h = v==="dossiers"?vDossiers() : v==="reviser"?vReviser() : v==="quiz"?vQuiz() : v==="cours"?vCours(ROUTE.support) : vAccueil();
+      var titles={accueil:"Suivi des 4 dossiers",dossiers:"Dossiers",reviser:"Réviser",quiz:"Quiz",cours:"Cours"};
+      var subs={accueil:"Formation — dépôt début décembre",dossiers:"44 livrables · critères et brouillons",reviser:"Cartes à répétition espacée",quiz:"Questions à choix multiple",cours:"Index des supports et fiches de méthode"};
+      main.innerHTML='<div class="eyebrow">'+subs[v]+'</div><h1>'+titles[v]+'</h1>'+h;
+      if(v==="cours" && ROUTE.support){
+        var t=document.getElementById("src-"+ROUTE.support);
+        if(t){ var tt=t; setTimeout(function(){ tt.scrollIntoView({behavior:"smooth",block:"start"}); },60); }
+      }
+    }
     bind();
   }
 
@@ -369,18 +442,15 @@
     main.querySelectorAll("[data-del]").forEach(function(el){
       el.addEventListener("click",function(){ var id=el.getAttribute("data-del"); S.journal=S.journal.filter(function(e){return String(e.id)!==id;}); save(); render(); });
     });
-    main.querySelectorAll("[data-jump]").forEach(function(el){
-      el.addEventListener("click",function(){
-        S.open[el.getAttribute("data-bloc")]=true; S.open[el.getAttribute("data-jump")]=true; save(); go("dossiers");
-        setTimeout(function(){ var t=document.getElementById("q-"+el.getAttribute("data-jump")); if(t) t.scrollIntoView({behavior:"smooth",block:"center"}); },60);
-      });
+    main.querySelectorAll("[data-goq]").forEach(function(el){
+      el.addEventListener("click",function(){ go("question", el.getAttribute("data-goq")); });
     });
     main.querySelectorAll("[data-go]").forEach(function(el){
       el.addEventListener("click",function(){ go(el.getAttribute("data-go")); });
     });
     main.querySelectorAll("[data-fiche-go]").forEach(function(el){
       el.addEventListener("click",function(){
-        var n=el.getAttribute("data-fiche-go"); S.open["f"+n]=true; save(); go("memo");
+        var n=el.getAttribute("data-fiche-go"); S.open["f"+n]=true; save(); go("cours");
         setTimeout(function(){ var t=document.getElementById("fiche-"+n); if(t) t.scrollIntoView({behavior:"smooth",block:"start"}); },60);
       });
     });
@@ -458,11 +528,6 @@
     return out;
   }
 
-  window.addEventListener("hashchange",function(){
-    var v=location.hash.replace("#","");
-    if(v && v!==S.view && VIEWS.some(function(x){return x[0]===v;})){ SES=null; QZ=null; S.view=v; render(); }
-  });
-
   (async function init(){
     try{
       var r=await Store.get(KEY);
@@ -473,8 +538,16 @@
         S.deadline=sv.deadline||DEFAULT_DEADLINE; S.open=sv.open||{b1:true}; S.view=sv.view||"accueil";
       }
     }catch(e){}
-    var hv=location.hash.replace("#","");
-    if(hv && VIEWS.some(function(x){return x[0]===hv;})) S.view=hv;
+    if(location.hash && location.hash!=="#"){
+      ROUTE=parseHash(location.hash);
+    } else if(S.view==="memo"){
+      ROUTE={view:"cours"};
+    } else if(KNOWN_VIEWS.indexOf(S.view)>=0 && S.view!=="accueil"){
+      ROUTE={view:S.view};
+      history.replaceState(null,"",hashFor(S.view));
+    } else {
+      ROUTE={view:"accueil"};
+    }
     render();
   })();
 })();
