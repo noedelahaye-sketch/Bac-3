@@ -28,6 +28,45 @@
     saveTimer = setTimeout(function(){ try{ Store.set(KEY, JSON.stringify(S)); }catch(e){} }, 300);
   }
   function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+  function resolveRessourceItem(it){
+    if(it.contenu) return it;
+    var found=null;
+    Object.keys(RESSOURCES).some(function(qid){
+      var r=RESSOURCES[qid];
+      var hit=(r.notions||[]).concat(r.modeles||[]).filter(function(x){return x.id===it.ref && x.contenu;})[0];
+      if(hit){ found={nom:hit.nom, contenu:hit.contenu, qid:qid}; return true; }
+      return false;
+    });
+    return found;
+  }
+  function renderRessource(qid){
+    var res = (typeof RESSOURCES!=="undefined") ? RESSOURCES[qid] : null;
+    if(!res) return "";
+    var h='<details class="ressource"><summary>Ressource de cours</summary>';
+    h+='<div class="rc-intro">'+res.intro+'</div>';
+    if(res.notions && res.notions.length){
+      h+='<div class="rc-lab">Notions</div>';
+      res.notions.forEach(function(n){
+        var it=resolveRessourceItem(n); if(!it) return;
+        h+='<details class="rc-item"><summary>'+it.nom+(it.qid?' <em>déjà vu en '+it.qid.replace('-',' ').toUpperCase()+'</em>':'')+'</summary><div>'+it.contenu+'</div></details>';
+      });
+    }
+    if(res.modeles && res.modeles.length){
+      h+='<div class="rc-lab">Modèles</div>';
+      res.modeles.forEach(function(m){
+        var it=resolveRessourceItem(m); if(!it) return;
+        h+='<details class="rc-item"><summary>'+it.nom+(it.qid?' <em>déjà vu en '+it.qid.replace('-',' ').toUpperCase()+'</em>':'')+'</summary><div>'+it.contenu+'</div></details>';
+      });
+    }
+    h+='<div class="rc-lab">Application au cas</div><div class="rc-app">'+res.application+'</div>';
+    if(res.sources && res.sources.length){
+      h+='<div class="rc-lab">Sources</div><ul class="rc-src">';
+      res.sources.forEach(function(s){ h+='<li>'+s+'</li>'; });
+      h+='</ul>';
+    }
+    h+='</details>';
+    return h;
+  }
   function weeksLeft(){ return Math.max(0,(new Date(S.deadline+"T00:00:00") - new Date())/(1000*60*60*24*7)); }
   function expectedDone(){
     var d=new Date(S.deadline+"T00:00:00");
@@ -45,7 +84,7 @@
   function grade(i,ok){ var b=S.box[i]||0, nb=ok?Math.min(5,b+1):1; S.box[i]=nb; S.due[i]=today()+INTERV[nb]*86400000; save(); }
   function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=a[i];a[i]=a[j];a[j]=x;} return a; }
 
-  var VIEWS=[["accueil","Accueil"],["dossiers","Dossiers"],["reviser","Réviser"],["quiz","Quiz"],["memo","Mémo"]];
+  var VIEWS=[["accueil","Accueil"],["dossiers","Dossiers"],["reviser","Réviser"],["quiz","Quiz"],["memo","Mémo"],["cours","Cours"]];
 
   function go(v){
     if(v!==S.view){ SES=null; QZ=null; }
@@ -168,6 +207,7 @@
           inf[1].forEach(function(n){h+='<li>'+n+'</li>';});
           h+='</ul><p class="rappel">Ces notions sont détaillées dans l\'onglet Mémo. Si un point te manque, demande-le-moi.</p></details>';
         }
+        h+=renderRessource(q.id);
         if(q.trame) h+='<div class="lab">Trame détaillée</div><div class="trame">'+q.trame+'</div>';
         h+='<div class="lab">Critères évalués — compétence '+q.c+'</div>';
         q.k.forEach(function(k,i){
@@ -267,12 +307,42 @@
     return h;
   }
 
+  /* ---------- COURS ---------- */
+  function vCours(){
+    var by={};
+    if(typeof RESSOURCES!=="undefined"){
+      Object.keys(RESSOURCES).forEach(function(qid){
+        var r=RESSOURCES[qid], q=ALL.filter(function(x){return x.id===qid;})[0];
+        (r.sources||[]).forEach(function(s){
+          var parts=s.split(" — "), support=parts[0].trim(), note=parts.slice(1).join(" — ").trim();
+          by[support]=by[support]||[];
+          by[support].push({qid:qid, note:note, label:q?(q.bloc.code+' · '+q.n+' — '+q.t):qid, bloc:q?q.bloc.id:qid.split('-')[0]});
+        });
+      });
+    }
+    var names=Object.keys(by).sort();
+    var h='<p class="intro">Les supports de cours mobilisés jusqu\'ici, et les questions que chacun alimente.</p>';
+    if(!names.length){ h+='<p class="rappel">Rien d\'indexé pour l\'instant.</p>'; return h; }
+    names.forEach(function(name){
+      var key="src-"+name, op=S.open[key]?" open":"";
+      h+='<section class="panel'+op+'"><button class="phead" data-panel="'+key+'"><span class="chev">&#9654;</span>';
+      h+='<h2>'+name+'</h2><span class="count">'+by[name].length+'</span></button><div class="pbody">';
+      by[name].forEach(function(item){
+        h+='<div class="src-item"><button class="linkf" data-jump="'+item.qid+'" data-bloc="'+item.bloc+'">'+item.label+'</button>';
+        if(item.note) h+='<div class="rappel">'+item.note+'</div>';
+        h+='</div>';
+      });
+      h+='</div></section>';
+    });
+    return h;
+  }
+
   function render(){
     renderNav();
     var v=S.view;
-    var h = v==="dossiers"?vDossiers() : v==="reviser"?vReviser() : v==="quiz"?vQuiz() : v==="memo"?vMemo() : vAccueil();
-    var titles={accueil:"Suivi des 4 dossiers",dossiers:"Dossiers",reviser:"Réviser",quiz:"Quiz",memo:"Mémo méthodo"};
-    var subs={accueil:"Formation — dépôt début décembre",dossiers:"44 livrables · critères et brouillons",reviser:"Cartes à répétition espacée",quiz:"Questions à choix multiple",memo:FICHES.length+" fiches de méthode"};
+    var h = v==="dossiers"?vDossiers() : v==="reviser"?vReviser() : v==="quiz"?vQuiz() : v==="memo"?vMemo() : v==="cours"?vCours() : vAccueil();
+    var titles={accueil:"Suivi des 4 dossiers",dossiers:"Dossiers",reviser:"Réviser",quiz:"Quiz",memo:"Mémo méthodo",cours:"Cours"};
+    var subs={accueil:"Formation — dépôt début décembre",dossiers:"44 livrables · critères et brouillons",reviser:"Cartes à répétition espacée",quiz:"Questions à choix multiple",memo:FICHES.length+" fiches de méthode",cours:"Index des supports par question"};
     main.innerHTML='<div class="eyebrow">'+subs[v]+'</div><h1>'+titles[v]+'</h1>'+h;
     bind();
   }
