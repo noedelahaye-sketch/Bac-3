@@ -125,13 +125,16 @@ répond en une seconde à la seule question qui compte vraiment.
 
 ## 6. Navigation
 
-Barre supérieure fixe, cinq entrées : **Accueil · Dossiers · Cours · Réviser ·
-Quiz**. Le mémo devient une section de Cours, il n'a plus besoin de son onglet.
+Barre supérieure fixe, quatre entrées : **Accueil · Dossiers · Cours ·
+Apprendre**. Le mémo devient une section de Cours, il n'a plus besoin de son
+onglet. Cartes à répétition espacée et quiz sont deux sections d'une même
+page Apprendre plutôt que deux onglets séparés : ce sont les deux façons de
+retenir les notions, pas deux jobs différents.
 
 Sous la barre, la cadence compacte sur 4 px. Elle est présente partout : c'est
 le rappel permanent, sans jamais occuper de place.
 
-Pastilles chiffrées sur Dossiers (livrables restants) et Réviser (cartes du
+Pastilles chiffrées sur Dossiers (livrables restants) et Apprendre (cartes du
 jour). Nulle part ailleurs — une pastille partout ne signale plus rien.
 
 **Adressage.** Chaque écran a son adresse, pour que le bouton retour du
@@ -143,8 +146,7 @@ navigateur fonctionne et qu'une question puisse être mise en favori :
 #/q/b1-Q5              une question
 #/cours                index des supports
 #/cours/b1-cibles      un support
-#/reviser              révision
-#/quiz                 quiz
+#/apprendre            cartes et quiz
 ```
 
 ---
@@ -245,23 +247,24 @@ En tête de page, deux panneaux repliés par défaut : **Fiche de cohérence** e
 *Précédent et suivant en bas.* Traverser un bloc question par question doit
 être fluide. Sans ça, tu remontes à la liste à chaque fois et tu perds le fil.
 
-### Cours — *apprendre*
+### Cours — *les repères*
 
 Index par bloc. Chaque support : titre, nombre de pages, compétences, et les
 questions qu'il alimente sous forme de liens. Le mémo devient une section
 « Fiches de méthode » en bas de page, avec les 30 fiches.
 
-### Réviser — *retenir*
+### Apprendre — *retenir*
 
-Écran d'accueil : trois chiffres (à revoir, vues, maîtrisées), deux boutons de
-session, les thèmes.
-Pendant la session : **la carte occupe tout l'écran**, rien d'autre. Pas de
-navigation, pas de statistiques. Une carte, une question, deux boutons.
+Une page, deux sections : **cartes à répétition espacée** et **quiz**. Les
+deux poursuivent le même but — faire retenir les notions — donc elles
+partagent un seul onglet plutôt que de le disputer.
 
-### Quiz — *se tester*
-
-Même principe : une question par écran, plein cadre. Résultat en fin de série,
-avec ce qui reste à retravailler. Historique en bas de l'écran d'accueil.
+Écran d'accueil de chaque section : pour les cartes, trois chiffres (à
+revoir, vues, maîtrisées), deux boutons de session, les thèmes ; pour le
+quiz, les boutons de lancement, puis stats et historique.
+Pendant une session (carte ou quiz) : **elle occupe tout l'écran**, rien
+d'autre. Pas de navigation, pas de statistiques. Une carte ou une question,
+deux boutons. Résultat en fin de quiz, avec ce qui reste à retravailler.
 
 ---
 

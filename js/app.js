@@ -86,8 +86,8 @@
   function grade(i,ok){ var b=S.box[i]||0, nb=ok?Math.min(5,b+1):1; S.box[i]=nb; S.due[i]=today()+INTERV[nb]*86400000; save(); }
   function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=a[i];a[i]=a[j];a[j]=x;} return a; }
 
-  var VIEWS=[["accueil","Accueil"],["dossiers","Dossiers"],["cours","Cours"],["reviser","Réviser"],["quiz","Quiz"]];
-  var KNOWN_VIEWS=["accueil","dossiers","cours","reviser","quiz"];
+  var VIEWS=[["accueil","Accueil"],["dossiers","Dossiers"],["cours","Cours"],["apprendre","Apprendre"]];
+  var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre"];
 
   function slugify(s){
     return String(s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")
@@ -100,6 +100,7 @@
     var parts=h.split("/").filter(Boolean);
     if(parts[0]==="q" && parts[1]) return {view:"question", id:parts[1]};
     if(parts[0]==="cours") return {view:"cours", support:parts[1]||null};
+    if(parts[0]==="reviser" || parts[0]==="quiz") return {view:"apprendre"};
     if(KNOWN_VIEWS.indexOf(parts[0])>=0) return {view:parts[0]};
     return {view:"accueil"};
   }
@@ -143,7 +144,7 @@
     VIEWS.forEach(function(v){
       var badge="";
       if(v[0]==="dossiers"){ var r=ALL.length-doneCount(); if(r) badge='<i>'+r+'</i>'; }
-      if(v[0]==="reviser"){ var d=dueCount(); if(d) badge='<i>'+d+'</i>'; }
+      if(v[0]==="apprendre"){ var d=dueCount(); if(d) badge='<i>'+d+'</i>'; }
       h+='<button class="navb'+(activeView===v[0]?" on":"")+'" data-go="'+v[0]+'">'+v[1]+badge+'</button>';
     });
     nav.innerHTML=h;
@@ -185,8 +186,8 @@
 
     var d=dueCount(), maitr=CARDS.filter(function(c){return (S.box[c.i]||0)>=4;}).length;
     h+='<div class="grid2">';
-    h+='<div class="mini" data-go="reviser"><div class="eyebrow">Révision</div><div class="bignum">'+d+'</div><div class="lbl">carte'+(d>1?'s':'')+' à revoir</div></div>';
-    h+='<div class="mini" data-go="reviser"><div class="eyebrow">Acquis</div><div class="bignum">'+maitr+'<span class="on">/'+CARDS.length+'</span></div><div class="lbl">notions maîtrisées</div></div>';
+    h+='<div class="mini" data-go="apprendre"><div class="eyebrow">Révision</div><div class="bignum">'+d+'</div><div class="lbl">carte'+(d>1?'s':'')+' à revoir</div></div>';
+    h+='<div class="mini" data-go="apprendre"><div class="eyebrow">Acquis</div><div class="bignum">'+maitr+'<span class="on">/'+CARDS.length+'</span></div><div class="lbl">notions maîtrisées</div></div>';
     h+='</div>';
 
     h+='<div class="foot">Date limite de dépôt : <input type="date" id="dl" value="'+S.deadline+'"><br>';
@@ -337,28 +338,36 @@
     return h;
   }
 
-  /* ---------- REVISER ---------- */
-  function vReviser(){
-    if(SES){
-      var c=SES.list[SES.i];
-      if(!c){
-        return '<div class="done-msg"><b>Session terminée.</b> '+SES.ok+' sue'+(SES.ok>1?'s':'')+' sur '+SES.list.length+'.</div><button class="jadd" data-lrn="stop">Revenir</button>';
-      }
-      var h='<div class="prog">Carte '+(SES.i+1)+' sur '+SES.list.length+' · '+c.t+'</div><div class="card"><div class="cq">'+c.q+'</div>';
-      if(SES.show){
-        h+='<div class="ca">'+c.a+'</div><div class="cbtns"><button class="no" data-lrn="ko">Pas su</button><button class="yes" data-lrn="ok">Je savais</button></div>';
-        h+='<div class="fref"><button class="linkf" data-fiche-go="'+c.f+'">Fiche '+c.f+' du cours &rarr;</button></div>';
-      } else h+='<button class="reveal" data-lrn="show">Voir la réponse</button>';
-      h+='</div><button class="quit" data-lrn="stop">Arrêter la session</button>';
-      return h;
+  /* ---------- APPRENDRE (cartes + quiz) ---------- */
+  function vApprendre(){
+    if(SES) return renderCardsSession();
+    if(QZ) return renderQuizSession();
+    return renderCardsLanding()+renderQuizLanding();
+  }
+
+  function renderCardsSession(){
+    var c=SES.list[SES.i];
+    if(!c){
+      return '<div class="done-msg"><b>Session terminée.</b> '+SES.ok+' sue'+(SES.ok>1?'s':'')+' sur '+SES.list.length+'.</div><button class="jadd" data-lrn="stop">Revenir</button>';
     }
+    var h='<div class="prog">Carte '+(SES.i+1)+' sur '+SES.list.length+' · '+c.t+'</div><div class="card"><div class="cq">'+c.q+'</div>';
+    if(SES.show){
+      h+='<div class="ca">'+c.a+'</div><div class="cbtns"><button class="no" data-lrn="ko">Pas su</button><button class="yes" data-lrn="ok">Je savais</button></div>';
+      h+='<div class="fref"><button class="linkf" data-fiche-go="'+c.f+'">Fiche '+c.f+' du cours &rarr;</button></div>';
+    } else h+='<button class="reveal" data-lrn="show">Voir la réponse</button>';
+    h+='</div><button class="quit" data-lrn="stop">Arrêter la session</button>';
+    return h;
+  }
+
+  function renderCardsLanding(){
     var d=dueCount(), vus=CARDS.filter(function(c){return (S.box[c.i]||0)>0;}).length;
     var maitr=CARDS.filter(function(c){return (S.box[c.i]||0)>=4;}).length;
-    var h='<div class="stats stats-top">';
+    var h='<div class="lab">Cartes à répétition espacée</div>';
+    h+='<div class="stats stats-top">';
     h+='<div class="stat"><div class="num">'+d+'</div><div class="lbl">Cartes à revoir</div></div>';
     h+='<div class="stat"><div class="num">'+vus+'<span class="on">/'+CARDS.length+'</span></div><div class="lbl">Vues</div></div>';
     h+='<div class="stat"><div class="num">'+maitr+'</div><div class="lbl">Maîtrisées</div></div></div>';
-    h+='<div class="lab">Session</div><div class="states">';
+    h+='<div class="states">';
     h+='<button data-lrn="start"'+(d?'':' disabled')+'>'+(d?'Cartes du jour ('+d+')':'Rien à revoir aujourd\'hui')+'</button>';
     h+='<button data-lrn="startall">Tout revoir ('+CARDS.length+')</button></div>';
     if(!d) h+='<p class="rappel">Rien à revoir aujourd\'hui. Reviens demain, ou lance une session libre.</p>';
@@ -372,28 +381,28 @@
     return h;
   }
 
-  /* ---------- QUIZ ---------- */
-  function vQuiz(){
-    if(QZ){
-      if(QZ.i>=QZ.list.length){
-        var pct=Math.round(100*QZ.ok/QZ.list.length);
-        var h='<div class="done-msg"><b>'+QZ.ok+' / '+QZ.list.length+'</b> — '+pct+' % de bonnes réponses.</div>';
-        if(QZ.wrong.length){ h+='<div class="lab">À retravailler</div><ul class="att">'; QZ.wrong.forEach(function(w){h+='<li>'+w+'</li>';}); h+='</ul>'; }
-        h+='<button class="jadd" data-lrn="qstop">Revenir</button>';
-        return h;
-      }
-      var q=QZ.list[QZ.i];
-      var h='<div class="prog">Question '+(QZ.i+1)+' sur '+QZ.list.length+' · score '+QZ.ok+'</div><div class="card"><div class="cq">'+q.q+'</div><div class="opts">';
-      q.o.forEach(function(o,k){
-        var cls=""; if(QZ.answered!==null){ if(k===q.c) cls=" good"; else if(k===QZ.answered) cls=" bad"; }
-        h+='<button class="opt'+cls+'" data-opt="'+k+'"'+(QZ.answered!==null?' disabled':'')+'>'+o+'</button>';
-      });
-      h+='</div>';
-      if(QZ.answered!==null) h+='<div class="expl">'+q.e+'</div><div class="cbtns"><button class="yes" data-lrn="qnext">Suivante</button></div>';
-      h+='</div><button class="quit" data-lrn="qstop">Arrêter le quiz</button>';
+  function renderQuizSession(){
+    if(QZ.i>=QZ.list.length){
+      var pct=Math.round(100*QZ.ok/QZ.list.length);
+      var h='<div class="done-msg"><b>'+QZ.ok+' / '+QZ.list.length+'</b> — '+pct+' % de bonnes réponses.</div>';
+      if(QZ.wrong.length){ h+='<div class="lab">À retravailler</div><ul class="att">'; QZ.wrong.forEach(function(w){h+='<li>'+w+'</li>';}); h+='</ul>'; }
+      h+='<button class="jadd" data-lrn="qstop">Revenir</button>';
       return h;
     }
-    var h='<div class="lab">Lancer un quiz</div><div class="states">';
+    var q=QZ.list[QZ.i];
+    var h='<div class="prog">Question '+(QZ.i+1)+' sur '+QZ.list.length+' · score '+QZ.ok+'</div><div class="card"><div class="cq">'+q.q+'</div><div class="opts">';
+    q.o.forEach(function(o,k){
+      var cls=""; if(QZ.answered!==null){ if(k===q.c) cls=" good"; else if(k===QZ.answered) cls=" bad"; }
+      h+='<button class="opt'+cls+'" data-opt="'+k+'"'+(QZ.answered!==null?' disabled':'')+'>'+o+'</button>';
+    });
+    h+='</div>';
+    if(QZ.answered!==null) h+='<div class="expl">'+q.e+'</div><div class="cbtns"><button class="yes" data-lrn="qnext">Suivante</button></div>';
+    h+='</div><button class="quit" data-lrn="qstop">Arrêter le quiz</button>';
+    return h;
+  }
+
+  function renderQuizLanding(){
+    var h='<div class="lab">Quiz</div><div class="states">';
     h+='<button data-quiz="10">10 questions</button><button data-quiz="'+QCM.length+'">Toutes ('+QCM.length+')</button></div>';
     if(S.quiz.length){
       var best=S.quiz.reduce(function(a,r){var p=r.s/r.n;return p>a?p:a;},0);
@@ -469,7 +478,7 @@
 
   function render(){
     var v=ROUTE.view;
-    var inSession = (v==="reviser"&&SES) || (v==="quiz"&&QZ);
+    var inSession = (v==="apprendre"&&(SES||QZ));
     appEl.classList.toggle("session", !!inSession);
     renderNav();
     if(v==="question"){
@@ -478,12 +487,12 @@
       positionQbar();
     } else {
       main.classList.remove("with-qbottom");
-      var h = v==="dossiers"?vDossiers() : v==="reviser"?vReviser() : v==="quiz"?vQuiz() : v==="cours"?vCours(ROUTE.support) : vAccueil();
+      var h = v==="dossiers"?vDossiers() : v==="apprendre"?vApprendre() : v==="cours"?vCours(ROUTE.support) : vAccueil();
       if(inSession){
         main.innerHTML=h;
       } else {
-        var titles={accueil:"Suivi des 4 dossiers",dossiers:"Dossiers",reviser:"Réviser",quiz:"Quiz",cours:"Cours"};
-        var subs={accueil:"Formation — dépôt début décembre",dossiers:"44 livrables · critères et brouillons",reviser:"Cartes à répétition espacée",quiz:"Questions à choix multiple",cours:"Index des supports et fiches de méthode"};
+        var titles={accueil:"Suivi des 4 dossiers",dossiers:"Dossiers",apprendre:"Apprendre",cours:"Cours"};
+        var subs={accueil:"Formation — dépôt début décembre",dossiers:"44 livrables · critères et brouillons",apprendre:"Cartes à répétition espacée et quiz",cours:"Index des supports et fiches de méthode"};
         main.innerHTML='<div class="eyebrow">'+subs[v]+'</div><h1>'+titles[v]+'</h1>'+h;
         if(v==="cours" && ROUTE.support){
           var t=document.getElementById("src-"+ROUTE.support);
