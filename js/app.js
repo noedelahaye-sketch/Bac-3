@@ -99,6 +99,7 @@
     if(!h) return {view:"accueil"};
     var parts=h.split("/").filter(Boolean);
     if(parts[0]==="q" && parts[1]) return {view:"question", id:parts[1]};
+    if(parts[0]==="bloc" && parts[1]) return {view:"bloc", id:parts[1]};
     if(parts[0]==="cours") return {view:"cours", support:parts[1]||null};
     if(parts[0]==="reviser" || parts[0]==="quiz") return {view:"apprendre"};
     if(KNOWN_VIEWS.indexOf(parts[0])>=0) return {view:parts[0]};
@@ -106,6 +107,7 @@
   }
   function hashFor(view,param){
     if(view==="question") return "#/q/"+param;
+    if(view==="bloc") return "#/bloc/"+param;
     if(view==="cours") return param ? "#/cours/"+param : "#/cours";
     if(view==="accueil") return "#/";
     return "#/"+view;
@@ -140,7 +142,7 @@
 
   function renderNav(){
     var h="";
-    var activeView = ROUTE.view==="question" ? "dossiers" : ROUTE.view;
+    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc") ? "dossiers" : ROUTE.view;
     VIEWS.forEach(function(v){
       var badge="";
       if(v[0]==="dossiers"){ var r=ALL.length-doneCount(); if(r) badge='<i>'+r+'</i>'; }
@@ -240,6 +242,20 @@
       '</div></details>';
   }
 
+  function renderBreadcrumb(trail){
+    var h='<nav class="crumbs">';
+    trail.forEach(function(seg,i){
+      if(i>0) h+='<span class="crumb-sep">&rsaquo;</span>';
+      if(seg.view){
+        h+='<button class="crumb" data-crumb="'+seg.view+'"'+(seg.param?' data-crumb-param="'+seg.param+'"':'')+'>'+seg.label+'</button>';
+      } else {
+        h+='<span class="crumb current">'+seg.label+'</span>';
+      }
+    });
+    h+='</nav>';
+    return h;
+  }
+
   function renderLocalCadence(currentIdx){
     var done=doneCount(), left=ALL.length-done, exp=expectedDone();
     var h='<div class="ticks local">';
@@ -256,15 +272,18 @@
   function vQuestion(qid){
     var q=ALL.filter(function(x){return x.id===qid;})[0];
     if(!q){
-      return '<button class="linkf" data-go="dossiers">&larr; Dossiers</button><p class="rappel">Question introuvable.</p>';
+      return renderBreadcrumb([{label:"Dossiers",view:"dossiers"}])+'<p class="rappel">Question introuvable.</p>';
     }
     S.open[q.bloc.id]=true;
     var idx=ALL.indexOf(q);
     var st=S.status[q.id]||"todo";
     var lbl=st==="done"?"relu":st==="draft"?"rédigé":st==="wip"?"en cours":"à faire";
     var chipc=st==="done"?" done":st==="draft"?" draft":st==="wip"?" wip":"";
-    var h='<div class="qbar"><button class="back" data-go="dossiers">&larr; Dossiers</button>';
-    h+='<span class="code">'+q.bloc.code.replace('Bloc ','B')+' &middot; '+q.n+'</span>';
+    var h='<div class="qbar">'+renderBreadcrumb([
+      {label:"Dossiers",view:"dossiers"},
+      {label:q.bloc.code,view:"bloc",param:q.bloc.id},
+      {label:q.n}
+    ]);
     h+='<span class="chip'+chipc+'">'+lbl+'</span></div>';
     h+=renderLocalCadence(idx);
     h+='<h1 class="qhead-title">'+q.t+'</h1><div class="qhead-code code">'+q.c+'</div>';
@@ -280,6 +299,34 @@
     h+= prev ? '<button class="linkf" data-goq="'+prev.id+'">&larr; '+prev.n+'</button>' : '<span></span>';
     h+= next ? '<button class="linkf" data-goq="'+next.id+'">'+next.n+' &rarr;</button>' : '<span></span>';
     h+='</div></div></div>';
+    return h;
+  }
+
+  function renderQuestionRow(q){
+    var st=S.status[q.id]||"todo";
+    var lbl=st==="done"?"relu":st==="draft"?"rédigé":st==="wip"?"en cours":"à faire";
+    var chipc=st==="done"?" done":st==="draft"?" draft":st==="wip"?" wip":"";
+    var checkedCrit=q.k.filter(function(_,i){return (S.checks[q.id]||{})[i];}).length;
+    var dots=[]; for(var i=0;i<q.k.length;i++){ dots.push(i<checkedCrit?"&#9679;":"&#9675;"); } dots=dots.join("&#8202;");
+    var h='<button class="qrow" id="q-'+q.id+'" data-goq="'+q.id+'">';
+    h+='<span class="qn">'+q.n+'</span><span class="qt">'+q.t+'</span>';
+    h+='<span class="qprog">'+dots+' '+checkedCrit+'/'+q.k.length+'</span>';
+    h+='<span class="chip'+chipc+'">'+lbl+'</span></button>';
+    return h;
+  }
+
+  /* ---------- BLOC ---------- */
+  function vBloc(blocId){
+    var b=BLOCS.filter(function(x){return x.id===blocId;})[0];
+    if(!b){
+      return renderBreadcrumb([{label:"Dossiers",view:"dossiers"}])+'<p class="rappel">Bloc introuvable.</p>';
+    }
+    var done=b.qs.filter(function(q){return isDone(q.id);}).length;
+    var pct=b.qs.length?Math.round(100*done/b.qs.length):0;
+    var h='<div class="qbar">'+renderBreadcrumb([{label:"Dossiers",view:"dossiers"},{label:b.code}])+'</div>';
+    h+='<h1 class="qhead-title">'+b.titre+'</h1><div class="qhead-code code">'+b.cas+'</div>';
+    h+='<div class="lab-row"><span class="lab">Avancement</span><span class="count">'+done+'/'+b.qs.length+' &middot; '+pct+' %</span></div>';
+    b.qs.forEach(function(q){ h+=renderQuestionRow(q); });
     return h;
   }
 
@@ -322,17 +369,7 @@
       h+='<section class="panel'+op+'" id="sec-'+b.id+'"><button class="phead" data-panel="'+b.id+'"><span class="chev">&#9654;</span>';
       h+='<h2>'+b.code+' — '+b.titre+'<span class="cas">'+b.cas+'</span></h2>';
       h+='<span class="count">'+bd+'/'+b.qs.length+'</span></button><div class="qlist">';
-      b.qs.forEach(function(q){
-        var st=S.status[q.id]||"todo";
-        var lbl=st==="done"?"relu":st==="draft"?"rédigé":st==="wip"?"en cours":"à faire";
-        var chipc=st==="done"?" done":st==="draft"?" draft":st==="wip"?" wip":"";
-        var checkedCrit=q.k.filter(function(_,i){return (S.checks[q.id]||{})[i];}).length;
-        var dots=[]; for(var i=0;i<q.k.length;i++){ dots.push(i<checkedCrit?"&#9679;":"&#9675;"); } dots=dots.join("&#8202;");
-        h+='<button class="qrow" id="q-'+q.id+'" data-goq="'+q.id+'">';
-        h+='<span class="qn">'+q.n+'</span><span class="qt">'+q.t+'</span>';
-        h+='<span class="qprog">'+dots+' '+checkedCrit+'/'+q.k.length+'</span>';
-        h+='<span class="chip'+chipc+'">'+lbl+'</span></button>';
-      });
+      b.qs.forEach(function(q){ h+=renderQuestionRow(q); });
       h+='</div></section>';
     });
     return h;
@@ -474,7 +511,7 @@
     var qbar=main.querySelector(".qbar");
     if(qbar) qbar.style.top=nav.offsetHeight+"px";
   }
-  window.addEventListener("resize",function(){ if(ROUTE.view==="question") positionQbar(); });
+  window.addEventListener("resize",function(){ if(ROUTE.view==="question"||ROUTE.view==="bloc") positionQbar(); });
 
   function render(){
     var v=ROUTE.view;
@@ -484,6 +521,10 @@
     if(v==="question"){
       main.classList.add("with-qbottom");
       main.innerHTML=vQuestion(ROUTE.id);
+      positionQbar();
+    } else if(v==="bloc"){
+      main.classList.remove("with-qbottom");
+      main.innerHTML=vBloc(ROUTE.id);
       positionQbar();
     } else {
       main.classList.remove("with-qbottom");
@@ -548,6 +589,9 @@
     });
     main.querySelectorAll("[data-goq]").forEach(function(el){
       el.addEventListener("click",function(){ go("question", el.getAttribute("data-goq")); });
+    });
+    main.querySelectorAll("[data-crumb]").forEach(function(el){
+      el.addEventListener("click",function(){ go(el.getAttribute("data-crumb"), el.getAttribute("data-crumb-param")); });
     });
     main.querySelectorAll("[data-go]").forEach(function(el){
       el.addEventListener("click",function(){ go(el.getAttribute("data-go")); });
