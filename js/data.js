@@ -46,7 +46,28 @@
       {n:"Q9", c:"C1.4", t:"Enjeux, objectifs et axes stratégiques", k:["Enjeux et objectifs globaux identifiés et explicités","Axes alignés sur le marché et les besoins du public cible"]},
       {n:"Q10", c:"C1.4", t:"Mix marketing et service complémentaire", k:["4P cohérents avec la segmentation et le positionnement","Différenciation, innovation et attentes RSE intégrées"]},
       {n:"Vidéo", c:"—", t:"Vidéo de présentation de la stratégie", k:["Présente la démarche de réflexion, pas seulement le résultat","S'appuie sur le journal d'arbitrages tenu au fil de l'eau"]}
-    ]},
+    ],
+    enonce: {
+      contexte: "<p>Bellewaerde est un parc d'attractions et animalier familial situé à Ypres, en Flandre occidentale, membre du groupe Compagnie des Alpes. Il accueille environ 800 000 visiteurs par an, avec une part importante de visiteurs français grâce à sa proximité avec la frontière. Aujourd'hui, la visite dépasse rarement une journée, ce qui limite les dépenses par visiteur. Le projet consiste à ouvrir un hôtel thématique, « Le Royaume de Léo », implanté au cœur du parc.</p>",
+      mission: "<p>En tant que chef de projet chez Bellewaerde, la mission est de positionner le parc non plus seulement comme un parc d'attractions, mais comme une destination de séjour familial et écoresponsable grâce à ce nouvel hôtel — en s'appuyant sur la veille, la connaissance des publics et une stratégie marketing cohérente, du diagnostic jusqu'au mix marketing.</p>",
+      donnees: [
+        "800 000 visiteurs par an, dont environ 40 % de Français",
+        "Rayon cible de 150 km (Lille, Dunkerque, Arras, Courtrai, Bruges)",
+        "Objectif : +15 % de chiffre d'affaires global en 3 ans",
+        "100 chambres (60 standards, 30 familiales, 10 suites), dont 8 PMR minimum",
+        "Budget total 18 à 21 M€, dont 1 M€ pour la communication et le lancement",
+        "Ouverture prévue au printemps de l'année N+3"
+      ],
+      annexes: [
+        {n:1, titre:"Histoire et identité de Bellewaerde"},
+        {n:2, titre:"L'histoire de la mascotte Léo"},
+        {n:3, titre:"Cahier des charges du projet hôtelier"},
+        {n:4, titre:"Maquettes de l'hôtel"},
+        {n:5, titre:"Emplacement de l'hôtel dans le parc"},
+        {n:6, titre:"Étude de marché des parcs d'attraction"}
+      ],
+      pdf: "énoncé:/Examen 1.pdf"
+    }},
     { id:"b2", code:"Bloc 2", titre:"Déploiement des actions", cas:"Bambu Lab — imprimante 3D H2S", qs:[
       {n:"Q1", c:"C2.1", t:"Plan de prospection en tableau", k:["Tableau prospects / lieux / supports","Objectifs opérationnels SMART"]},
       {n:"Q2", c:"C2.1", t:"Personas interlocuteur et utilisateur final", k:["Ciblage précis appuyé sur des critères sourcés"]},

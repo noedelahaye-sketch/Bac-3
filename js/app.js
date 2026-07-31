@@ -326,7 +326,63 @@
     var h='<div class="qbar">'+renderBreadcrumb([{label:"Dossiers",view:"dossiers"},{label:b.code}])+'</div>';
     h+='<h1 class="qhead-title">'+b.titre+'</h1><div class="qhead-code code">'+b.cas+'</div>';
     h+='<div class="lab-row"><span class="lab">Avancement</span><span class="count">'+done+'/'+b.qs.length+' &middot; '+pct+' %</span></div>';
+
+    if(!b.enonce){
+      b.qs.forEach(function(q){ h+=renderQuestionRow(q); });
+      return h;
+    }
+
+    h+='<div class="bloc-cols">';
+    h+='<details class="bloc-enonce"><summary>L\'énoncé</summary><div class="bloc-enonce-body">';
+    h+='<details class="notions" open><summary>Contexte</summary><div class="rc-app">'+b.enonce.contexte+'</div></details>';
+    h+='<details class="notions"><summary>La mission</summary><div class="rc-app">'+b.enonce.mission+'</div></details>';
+    h+='<details class="notions"><summary>Les données à retenir</summary><ul class="att">';
+    b.enonce.donnees.forEach(function(d){ h+='<li>'+d+'</li>'; });
+    h+='</ul></details>';
+    h+='<details class="notions"><summary>Les annexes ('+b.enonce.annexes.length+')</summary><ul class="att">';
+    b.enonce.annexes.forEach(function(a){ h+='<li>Annexe '+a.n+' &middot; '+a.titre+'</li>'; });
+    h+='</ul></details>';
+    h+='<a class="linkf enonce-pdf" href="'+encodeURI(b.enonce.pdf)+'" target="_blank" rel="noopener">Ouvrir le PDF de l\'énoncé</a>';
+    h+='</div></details>';
+
+    h+='<div class="bloc-questions"><div class="lab">Les questions</div>';
     b.qs.forEach(function(q){ h+=renderQuestionRow(q); });
+    h+='</div></div>';
+
+    if(blocId==="b1"){
+      h+='<div class="bloc-bottom">';
+      var fOpen=S.open.fiche?" open":"";
+      var fFilled=FICHE_B1.filter(function(f){return (S.fiche[f[0]]||"").trim();}).length;
+      h+='<section class="panel accent'+fOpen+'"><button class="phead" data-panel="fiche"><span class="chev">&#9654;</span>';
+      h+='<h2>Fiche de cohérence<span class="cas">Tes décisions structurantes. À relire au début de chaque session.</span></h2>';
+      h+='<span class="count">'+fFilled+'/'+FICHE_B1.length+'</span></button><div class="pbody fiche">';
+      FICHE_B1.forEach(function(f){
+        h+='<div class="row"><div class="k"><span>'+f[1]+'</span><em>'+f[2]+'</em></div>';
+        h+='<textarea class="f" data-fiche="'+f[0]+'" placeholder="—">'+esc(S.fiche[f[0]])+'</textarea></div>';
+      });
+      h+='<div class="given"><b>Donné par l\'énoncé, non négociable :</b> budget 18 à 21 M€ dont 1 M€ communication et lancement · ouverture printemps N+3 · +15 % de CA global en 3 ans · 100 chambres dont 8 PMR minimum · 70 % de circuits courts.</div></div></section>';
+
+      var jOpen=S.open.journal?" open":"";
+      h+='<section class="panel accent'+jOpen+'"><button class="phead" data-panel="journal"><span class="chev">&#9654;</span>';
+      h+='<h2>Journal d\'arbitrages<span class="cas">Trois lignes après chaque session. C\'est le script de ta vidéo.</span></h2>';
+      h+='<span class="count">'+S.journal.length+'</span></button><div class="pbody"><div class="jform">';
+      h+='<input class="f" id="j-q" placeholder="Question concernée — ex. Bloc 1 · Q5">';
+      h+='<textarea class="f" id="j-in" placeholder="Ce que j\'ai retenu"></textarea>';
+      h+='<textarea class="f" id="j-out" placeholder="Ce que j\'ai écarté"></textarea>';
+      h+='<textarea class="f" id="j-why" placeholder="Pourquoi"></textarea>';
+      h+='<button class="jadd" id="j-add">Ajouter au journal</button></div>';
+      if(!S.journal.length) h+='<div class="empty">Rien pour l\'instant. La première entrée devrait arriver après ta session sur la question 1.</div>';
+      else S.journal.slice().reverse().forEach(function(e){
+        h+='<div class="jentry"><button class="del" data-del="'+e.id+'">&times;</button>';
+        h+='<div class="meta">'+esc(e.date)+(e.q?' · '+esc(e.q):'')+'</div>';
+        if(e.in) h+='<div><b>Retenu :</b> '+esc(e.in)+'</div>';
+        if(e.out)h+='<div><b>Écarté :</b> '+esc(e.out)+'</div>';
+        if(e.why)h+='<div><b>Pourquoi :</b> '+esc(e.why)+'</div>';
+        h+='</div>';
+      });
+      h+='</div></section>';
+      h+='</div>';
+    }
     return h;
   }
 
@@ -483,7 +539,20 @@
     var qbar=main.querySelector(".qbar");
     if(qbar) qbar.style.top=nav.offsetHeight+"px";
   }
-  window.addEventListener("resize",function(){ if(ROUTE.view==="question"||ROUTE.view==="bloc") positionQbar(); });
+  function positionBlocEnonce(){
+    var qbar=main.querySelector(".qbar"), enonce=main.querySelector(".bloc-enonce");
+    if(!qbar || !enonce) return;
+    if(window.innerWidth>=1080){
+      enonce.setAttribute("open","");
+      enonce.style.top=(nav.offsetHeight+qbar.offsetHeight+16)+"px";
+    } else {
+      enonce.style.top="";
+    }
+  }
+  window.addEventListener("resize",function(){
+    if(ROUTE.view==="question"||ROUTE.view==="bloc") positionQbar();
+    if(ROUTE.view==="bloc") positionBlocEnonce();
+  });
 
   function render(){
     var v=ROUTE.view;
@@ -499,6 +568,7 @@
       main.classList.remove("with-qbottom");
       main.innerHTML=vBloc(ROUTE.id);
       positionQbar();
+      positionBlocEnonce();
     } else {
       main.classList.remove("with-qbottom");
       var h = v==="dossiers"?vDossiers() : v==="apprendre"?vApprendre() : v==="cours"?vCours(ROUTE.support) : vAccueil();
