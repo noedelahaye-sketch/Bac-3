@@ -269,35 +269,91 @@
   }
 
   /* ---------- QUESTION ---------- */
+  function renderAnnexesUtilisables(q){
+    var inf=INFO[q.id];
+    if(!inf || !inf.annexes || !inf.annexes.length) return "";
+    var list=(typeof ANNEXES!=="undefined" && ANNEXES[q.bloc.id]) ? ANNEXES[q.bloc.id] : [];
+    var h='<div class="lab">Annexes utilisables</div>';
+    inf.annexes.forEach(function(n){
+      var a=list.filter(function(x){return x.n===n;})[0];
+      if(!a) return;
+      h+='<div class="annexe-item"><div class="annexe-h">Annexe '+a.n+' &middot; '+a.titre+' <span class="code">p. '+a.pages+'</span></div>';
+      h+='<p>'+a.contenu+'</p><p>'+a.utile+'</p></div>';
+    });
+    return h;
+  }
+
   function vQuestion(qid){
     var q=ALL.filter(function(x){return x.id===qid;})[0];
     if(!q){
-      return renderBreadcrumb([{label:"Dossiers",view:"dossiers"}])+'<p class="rappel">Question introuvable.</p>';
+      return '<div class="qbar">'+renderBreadcrumb([{label:"Dossiers",view:"dossiers"}])+'</div><p class="rappel">Question introuvable.</p>';
     }
     S.open[q.bloc.id]=true;
     var idx=ALL.indexOf(q);
     var st=S.status[q.id]||"todo";
     var lbl=st==="done"?"relu":st==="draft"?"rédigé":st==="wip"?"en cours":"à faire";
     var chipc=st==="done"?" done":st==="draft"?" draft":st==="wip"?" wip":"";
+    var prev=ALL[idx-1], next=ALL[idx+1];
+    var inf=INFO[q.id];
+    var rich=!!(inf && inf.enonce);
+
     var h='<div class="qbar">'+renderBreadcrumb([
       {label:"Dossiers",view:"dossiers"},
       {label:q.bloc.code,view:"bloc",param:q.bloc.id},
       {label:q.n}
     ]);
-    h+='<span class="chip'+chipc+'">'+lbl+'</span></div>';
+    if(rich){
+      h+='<div class="qseq">';
+      h+= prev ? '<button class="linkf" data-goq="'+prev.id+'">&larr; '+prev.n+'</button>' : '<span></span>';
+      h+= next ? '<button class="linkf" data-goq="'+next.id+'">'+next.n+' &rarr;</button>' : '<span></span>';
+      h+='</div>';
+    } else {
+      h+='<span class="chip'+chipc+'">'+lbl+'</span>';
+    }
+    h+='</div>';
     h+=renderLocalCadence(idx);
-    h+='<h1 class="qhead-title">'+q.t+'</h1><div class="qhead-code code">'+q.c+'</div>';
-    h+=renderQuestionBody(q,{hideStatus:true});
-    h+=renderArbitrage(q);
-    var prev=ALL[idx-1], next=ALL[idx+1];
-    h+='<div class="qbottom"><div class="qbottom-inner">';
-    h+='<div class="states">';
+
+    if(!rich){
+      h+='<h1 class="qhead-title">'+q.t+'</h1><div class="qhead-code code">'+q.c+'</div>';
+      h+=renderQuestionBody(q,{hideStatus:true});
+      h+=renderArbitrage(q);
+      h+='<div class="qbottom"><div class="qbottom-inner"><div class="states">';
+      [["todo","À faire"],["wip","En cours"],["draft","Rédigé"],["done","Relu"]].forEach(function(p){
+        h+='<button data-set="'+q.id+'" data-v="'+p[0]+'" aria-pressed="'+(st===p[0])+'">'+p[1]+'</button>';
+      });
+      h+='</div><div class="qseq">';
+      h+= prev ? '<button class="linkf" data-goq="'+prev.id+'">&larr; '+prev.n+'</button>' : '<span></span>';
+      h+= next ? '<button class="linkf" data-goq="'+next.id+'">'+next.n+' &rarr;</button>' : '<span></span>';
+      h+='</div></div></div>';
+      return h;
+    }
+
+    h+='<div class="qtitle-row"><h1 class="qhead-title">'+q.t+'</h1><span class="chip'+chipc+'">'+lbl+'</span></div>';
+    h+='<div class="qhead-code code">'+q.c+'</div>';
+
+    h+='<div class="q-cols"><div class="q-left">';
+    h+='<div class="q-enonce-text"><div class="lab">L\'énoncé</div><p class="enonce-text">'+inf.enonce+'</p></div>';
+    h+='<div class="q-attendus"><div class="lab">Ce qui est attendu</div><ul class="att">';
+    inf[0].forEach(function(a){h+='<li>'+a+'</li>';});
+    h+='</ul></div>';
+    h+='<div class="q-annexes">'+renderAnnexesUtilisables(q)+'</div>';
+    var checkedCrit=q.k.filter(function(_,i){return (S.checks[q.id]||{})[i];}).length;
+    h+='<div class="q-criteres"><div class="lab-row"><span class="lab">Critères évalués</span><span class="count">'+checkedCrit+'/'+q.k.length+'</span></div>';
+    q.k.forEach(function(k,i){
+      var ck=(S.checks[q.id]||{})[i]?" checked":"";
+      h+='<label class="crit"><input type="checkbox" data-check="'+q.id+'" data-i="'+i+'"'+ck+'><span>'+k+'</span></label>';
+    });
+    h+='</div>';
+    h+='<div class="q-brouillon"><div class="lab">Mon brouillon</div><textarea class="f big" data-note="'+q.id+'" placeholder="Écris ici. Tu récupéreras tout d\'un coup depuis l\'accueil, bouton Exporter.">'+esc(S.notes[q.id])+'</textarea><span class="saved-flag" id="saved-'+q.id+'">Enregistré</span></div>';
+    h+='<div class="q-arbitrage">'+renderArbitrage(q)+'</div>';
+    h+='</div>'; // q-left
+    h+='<div class="q-right"><div class="lab">Ce dont tu disposes</div>'+renderRessource(q.id)+'</div>';
+    h+='</div>'; // q-cols
+
+    h+='<div class="qbottom"><div class="qbottom-inner"><div class="states">';
     [["todo","À faire"],["wip","En cours"],["draft","Rédigé"],["done","Relu"]].forEach(function(p){
       h+='<button data-set="'+q.id+'" data-v="'+p[0]+'" aria-pressed="'+(st===p[0])+'">'+p[1]+'</button>';
     });
-    h+='</div><div class="qseq">';
-    h+= prev ? '<button class="linkf" data-goq="'+prev.id+'">&larr; '+prev.n+'</button>' : '<span></span>';
-    h+= next ? '<button class="linkf" data-goq="'+next.id+'">'+next.n+' &rarr;</button>' : '<span></span>';
     h+='</div></div></div>';
     return h;
   }
@@ -549,9 +605,25 @@
       enonce.style.top="";
     }
   }
+  function layoutQuestionCols(){
+    var cols=main.querySelector(".q-cols");
+    if(!cols) return;
+    var left=cols.querySelector(".q-left"), right=cols.querySelector(".q-right"), annexes=cols.querySelector(".q-annexes");
+    if(!left || !right || !annexes) return;
+    if(window.innerWidth>=1080){
+      right.appendChild(annexes);
+      var qbar=main.querySelector(".qbar");
+      right.style.top=(nav.offsetHeight+(qbar?qbar.offsetHeight:0)+16)+"px";
+    } else {
+      var attendus=left.querySelector(".q-attendus");
+      if(attendus && attendus.nextSibling!==annexes) attendus.parentNode.insertBefore(annexes, attendus.nextSibling);
+      right.style.top="";
+    }
+  }
   window.addEventListener("resize",function(){
     if(ROUTE.view==="question"||ROUTE.view==="bloc") positionQbar();
     if(ROUTE.view==="bloc") positionBlocEnonce();
+    if(ROUTE.view==="question") layoutQuestionCols();
   });
 
   function render(){
@@ -559,11 +631,13 @@
     var inSession = (v==="apprendre"&&(SES||QZ));
     appEl.classList.toggle("session", !!inSession);
     renderNav();
-    main.classList.toggle("wide", v==="dossiers"||v==="bloc");
+    var qRich = v==="question" && ALL.some(function(x){return x.id===ROUTE.id;}) && INFO[ROUTE.id] && INFO[ROUTE.id].enonce;
+    main.classList.toggle("wide", v==="dossiers"||v==="bloc"||qRich);
     if(v==="question"){
       main.classList.add("with-qbottom");
       main.innerHTML=vQuestion(ROUTE.id);
       positionQbar();
+      layoutQuestionCols();
     } else if(v==="bloc"){
       main.classList.remove("with-qbottom");
       main.innerHTML=vBloc(ROUTE.id);
