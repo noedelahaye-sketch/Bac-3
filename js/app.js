@@ -178,7 +178,7 @@
     if(nxt){
       h+='<div class="next"><div class="eyebrow">La prochaine chose à faire</div>';
       h+='<div class="t">'+nxt.bloc.code+' · '+nxt.n+' — '+nxt.t+'</div>';
-      h+='<button data-goq="'+nxt.id+'">Ouvrir</button></div>';
+      h+='<button data-goq="'+nxt.id+'">Ouvrir la question</button></div>';
     } else {
       h+='<div class="next"><div class="eyebrow">Terminé</div><div class="t">Les 44 livrables sont rédigés.</div></div>';
     }
@@ -347,20 +347,21 @@
       var h='<div class="prog">Carte '+(SES.i+1)+' sur '+SES.list.length+' · '+c.t+'</div><div class="card"><div class="cq">'+c.q+'</div>';
       if(SES.show){
         h+='<div class="ca">'+c.a+'</div><div class="cbtns"><button class="no" data-lrn="ko">Pas su</button><button class="yes" data-lrn="ok">Je savais</button></div>';
-        h+='<div class="fref"><button class="linkf" data-fiche-go="'+c.f+'">Fiche '+c.f+' du mémo &rarr;</button></div>';
+        h+='<div class="fref"><button class="linkf" data-fiche-go="'+c.f+'">Fiche '+c.f+' du cours &rarr;</button></div>';
       } else h+='<button class="reveal" data-lrn="show">Voir la réponse</button>';
       h+='</div><button class="quit" data-lrn="stop">Arrêter la session</button>';
       return h;
     }
     var d=dueCount(), vus=CARDS.filter(function(c){return (S.box[c.i]||0)>0;}).length;
     var maitr=CARDS.filter(function(c){return (S.box[c.i]||0)>=4;}).length;
-    var h='<div class="stats" style="margin-top:0">';
-    h+='<div class="stat"><div class="num">'+d+'</div><div class="lbl">À revoir</div></div>';
+    var h='<div class="stats stats-top">';
+    h+='<div class="stat"><div class="num">'+d+'</div><div class="lbl">Cartes à revoir</div></div>';
     h+='<div class="stat"><div class="num">'+vus+'<span class="on">/'+CARDS.length+'</span></div><div class="lbl">Vues</div></div>';
     h+='<div class="stat"><div class="num">'+maitr+'</div><div class="lbl">Maîtrisées</div></div></div>';
     h+='<div class="lab">Session</div><div class="states">';
     h+='<button data-lrn="start"'+(d?'':' disabled')+'>'+(d?'Cartes du jour ('+d+')':'Rien à revoir aujourd\'hui')+'</button>';
     h+='<button data-lrn="startall">Tout revoir ('+CARDS.length+')</button></div>';
+    if(!d) h+='<p class="rappel">Rien à revoir aujourd\'hui. Reviens demain, ou lance une session libre.</p>';
     h+='<div class="lab">Par thème</div><div class="states">';
     var t={}; CARDS.forEach(function(c){t[c.t]=(t[c.t]||0)+1;});
     Object.keys(t).sort().forEach(function(k){
