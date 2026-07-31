@@ -52,6 +52,7 @@
 
   /* nav */
   .navbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);}
+  .app.session .navbar{display:none;}
   .cadence-compact{display:flex;gap:1px;height:4px;}
   .cadence-compact .seg{flex:1;background:var(--line);}
   .cadence-compact .seg.wip{background:#93A0E5;}

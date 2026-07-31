@@ -11,6 +11,7 @@
   var SES=null, QZ=null, saveTimer=null;
   var main = document.getElementById("main");
   var nav  = document.getElementById("nav");
+  var appEl = document.querySelector(".app");
 
   var MEM = {};
   var Store = {
@@ -408,32 +409,46 @@
   /* ---------- MEMO ---------- */
   /* ---------- COURS ---------- */
   function vCours(supportSlug){
-    var by={};
+    var linked={};
     if(typeof RESSOURCES!=="undefined"){
       Object.keys(RESSOURCES).forEach(function(qid){
         var r=RESSOURCES[qid], q=ALL.filter(function(x){return x.id===qid;})[0];
         (r.sources||[]).forEach(function(s){
           var parts=s.split(" — "), support=parts[0].trim(), note=parts.slice(1).join(" — ").trim();
           var slug=slugify(support);
-          by[slug]=by[slug]||{name:support, items:[]};
-          by[slug].items.push({qid:qid, note:note, label:q?(q.bloc.code+' · '+q.n+' — '+q.t):qid});
+          linked[slug]=linked[slug]||[];
+          linked[slug].push({qid:qid, note:note, label:q?(q.bloc.code+' · '+q.n+' — '+q.t):qid});
         });
       });
     }
-    var slugs=Object.keys(by).sort(function(a,b){return by[a].name.localeCompare(by[b].name);});
-    var h='<p class="intro">Les supports de cours mobilisés jusqu\'ici, et les questions que chacun alimente.</p>';
-    if(!slugs.length) h+='<p class="rappel">Rien d\'indexé pour l\'instant.</p>';
-    slugs.forEach(function(slug){
-      var entry=by[slug], key="src-"+slug, op=(S.open[key]||supportSlug===slug)?" open":"";
-      h+='<section class="panel'+op+'" id="src-'+slug+'"><button class="phead" data-panel="'+key+'"><span class="chev">&#9654;</span>';
-      h+='<h2>'+entry.name+'</h2><span class="count">'+entry.items.length+'</span></button><div class="pbody">';
-      entry.items.forEach(function(item){
-        h+='<div class="src-item"><button class="linkf" data-goq="'+item.qid+'">'+item.label+'</button>';
-        if(item.note) h+='<div class="rappel">'+item.note+'</div>';
-        h+='</div>';
+    var h='<p class="intro">Les supports de cours, et les questions que chacun alimente.</p>';
+    if(typeof SUPPORTS==="undefined" || !SUPPORTS.length){
+      h+='<p class="rappel">Rien d\'indexé pour l\'instant.</p>';
+    } else {
+      var byBloc={};
+      SUPPORTS.forEach(function(s){ byBloc[s.bloc]=byBloc[s.bloc]||[]; byBloc[s.bloc].push(s); });
+      BLOCS.forEach(function(b){
+        var list=byBloc[b.id]; if(!list || !list.length) return;
+        h+='<div class="lab">'+b.code+' — '+b.titre+'</div>';
+        list.forEach(function(s){
+          var slug=slugify(s.titre), key="src-"+slug, op=(S.open[key]||supportSlug===slug)?" open":"";
+          var items=linked[slug]||[];
+          h+='<section class="panel'+op+'" id="src-'+slug+'"><button class="phead" data-panel="'+key+'"><span class="chev">&#9654;</span>';
+          h+='<h2>'+s.titre+'<span class="cas">'+s.pages+' pages &middot; '+s.competences+'</span></h2>';
+          h+='<span class="count">'+items.length+'</span></button><div class="pbody">';
+          if(items.length){
+            items.forEach(function(item){
+              h+='<div class="src-item"><button class="linkf" data-goq="'+item.qid+'">'+item.label+'</button>';
+              if(item.note) h+='<div class="rappel">'+item.note+'</div>';
+              h+='</div>';
+            });
+          } else {
+            h+='<p class="rappel">Pas encore de question reliée à ce support.</p>';
+          }
+          h+='</div></section>';
+        });
       });
-      h+='</div></section>';
-    });
+    }
     h+='<div class="lab">Fiches de méthode — '+FICHES.length+'</div>';
     h+='<p class="intro">Ouvre la fiche dont tu as besoin, applique-la au cas, passe à la suivante.</p>';
     FICHES.forEach(function(f){
@@ -452,8 +467,10 @@
   window.addEventListener("resize",function(){ if(ROUTE.view==="question") positionQbar(); });
 
   function render(){
-    renderNav();
     var v=ROUTE.view;
+    var inSession = (v==="reviser"&&SES) || (v==="quiz"&&QZ);
+    appEl.classList.toggle("session", !!inSession);
+    renderNav();
     if(v==="question"){
       main.classList.add("with-qbottom");
       main.innerHTML=vQuestion(ROUTE.id);
@@ -461,12 +478,16 @@
     } else {
       main.classList.remove("with-qbottom");
       var h = v==="dossiers"?vDossiers() : v==="reviser"?vReviser() : v==="quiz"?vQuiz() : v==="cours"?vCours(ROUTE.support) : vAccueil();
-      var titles={accueil:"Suivi des 4 dossiers",dossiers:"Dossiers",reviser:"Réviser",quiz:"Quiz",cours:"Cours"};
-      var subs={accueil:"Formation — dépôt début décembre",dossiers:"44 livrables · critères et brouillons",reviser:"Cartes à répétition espacée",quiz:"Questions à choix multiple",cours:"Index des supports et fiches de méthode"};
-      main.innerHTML='<div class="eyebrow">'+subs[v]+'</div><h1>'+titles[v]+'</h1>'+h;
-      if(v==="cours" && ROUTE.support){
-        var t=document.getElementById("src-"+ROUTE.support);
-        if(t){ var tt=t; setTimeout(function(){ tt.scrollIntoView({behavior:"smooth",block:"start"}); },60); }
+      if(inSession){
+        main.innerHTML=h;
+      } else {
+        var titles={accueil:"Suivi des 4 dossiers",dossiers:"Dossiers",reviser:"Réviser",quiz:"Quiz",cours:"Cours"};
+        var subs={accueil:"Formation — dépôt début décembre",dossiers:"44 livrables · critères et brouillons",reviser:"Cartes à répétition espacée",quiz:"Questions à choix multiple",cours:"Index des supports et fiches de méthode"};
+        main.innerHTML='<div class="eyebrow">'+subs[v]+'</div><h1>'+titles[v]+'</h1>'+h;
+        if(v==="cours" && ROUTE.support){
+          var t=document.getElementById("src-"+ROUTE.support);
+          if(t){ var tt=t; setTimeout(function(){ tt.scrollIntoView({behavior:"smooth",block:"start"}); },60); }
+        }
       }
     }
     bind();
