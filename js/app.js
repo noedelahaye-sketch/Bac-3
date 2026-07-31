@@ -324,10 +324,12 @@
         var st=S.status[q.id]||"todo";
         var lbl=st==="done"?"relu":st==="draft"?"rédigé":st==="wip"?"en cours":"à faire";
         var chipc=st==="done"?" done":st==="draft"?" draft":st==="wip"?" wip":"";
-        var qo=S.open[q.id]?" open":"";
-        h+='<div class="q'+qo+'" id="q-'+q.id+'"><button class="qhead" data-q="'+q.id+'"><span class="qn">'+q.n+'</span><span class="qt">'+q.t+'</span><span class="chip'+chipc+'">'+lbl+'</span></button><div class="qbody">';
-        h+=renderQuestionBody(q);
-        h+='</div></div>';
+        var checkedCrit=q.k.filter(function(_,i){return (S.checks[q.id]||{})[i];}).length;
+        var dots=[]; for(var i=0;i<q.k.length;i++){ dots.push(i<checkedCrit?"&#9679;":"&#9675;"); } dots=dots.join("&#8202;");
+        h+='<button class="qrow" id="q-'+q.id+'" data-goq="'+q.id+'">';
+        h+='<span class="qn">'+q.n+'</span><span class="qt">'+q.t+'</span>';
+        h+='<span class="qprog">'+dots+' '+checkedCrit+'/'+q.k.length+'</span>';
+        h+='<span class="chip'+chipc+'">'+lbl+'</span></button>';
       });
       h+='</div></section>';
     });
@@ -473,9 +475,6 @@
   function bind(){
     main.querySelectorAll("[data-panel]").forEach(function(el){
       el.addEventListener("click",function(){ var id=el.getAttribute("data-panel"); S.open[id]=!S.open[id]; save(); render(); });
-    });
-    main.querySelectorAll("[data-q]").forEach(function(el){
-      el.addEventListener("click",function(){ var id=el.getAttribute("data-q"); S.open[id]=!S.open[id]; save(); render(); });
     });
     main.querySelectorAll("[data-set]").forEach(function(el){
       el.addEventListener("click",function(){ S.status[el.getAttribute("data-set")]=el.getAttribute("data-v"); save(); render(); });
