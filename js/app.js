@@ -25,7 +25,7 @@
   };
   function save(){
     clearTimeout(saveTimer);
-    saveTimer = setTimeout(function(){ try{ Store.set(KEY, JSON.stringify(S)); }catch(e){} }, 300);
+    saveTimer = setTimeout(function(){ try{ Store.set(KEY, JSON.stringify(S)); }catch(e){} }, 400);
   }
   function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
   function resolveRessourceItem(it){
@@ -42,7 +42,8 @@
   function renderRessource(qid){
     var res = (typeof RESSOURCES!=="undefined") ? RESSOURCES[qid] : null;
     if(!res) return "";
-    var h='<details class="ressource"><summary>Ressource de cours</summary>';
+    var total=(res.notions?res.notions.length:0)+(res.modeles?res.modeles.length:0);
+    var h='<details class="ressource"><summary>Ressource de cours<span class="count">'+total+' notion'+(total>1?'s':'')+'</span></summary>';
     h+='<div class="rc-intro">'+res.intro+'</div>';
     if(res.notions && res.notions.length){
       h+='<div class="rc-lab">Notions</div>';
@@ -195,7 +196,8 @@
   }
 
   /* ---------- DOSSIERS ---------- */
-  function renderQuestionBody(q){
+  function renderQuestionBody(q, opts){
+    opts = opts || {};
     var h='';
     var inf=INFO[q.id];
     if(inf){
@@ -207,16 +209,42 @@
     }
     h+=renderRessource(q.id);
     if(q.trame) h+='<div class="lab">Trame détaillée</div><div class="trame">'+q.trame+'</div>';
-    h+='<div class="lab">Critères évalués — compétence '+q.c+'</div>';
+    var checkedCrit=q.k.filter(function(_,i){return (S.checks[q.id]||{})[i];}).length;
+    h+='<div class="lab-row"><span class="lab">Critères évalués — compétence '+q.c+'</span><span class="count">'+checkedCrit+'/'+q.k.length+'</span></div>';
     q.k.forEach(function(k,i){
       var ck=(S.checks[q.id]||{})[i]?" checked":"";
       h+='<label class="crit"><input type="checkbox" data-check="'+q.id+'" data-i="'+i+'"'+ck+'><span>'+k+'</span></label>';
     });
-    h+='<div class="lab">Brouillon</div><textarea class="f big" data-note="'+q.id+'" placeholder="Écris ici. Tu récupéreras tout d\'un coup depuis l\'accueil, bouton Exporter.">'+esc(S.notes[q.id])+'</textarea>';
-    h+='<div class="lab">Où j\'en suis</div><div class="states">';
-    var st=S.status[q.id]||"todo";
-    [["todo","À faire"],["wip","En cours"],["draft","Rédigé"],["done","Relu"]].forEach(function(p){
-      h+='<button data-set="'+q.id+'" data-v="'+p[0]+'" aria-pressed="'+(st===p[0])+'">'+p[1]+'</button>';
+    h+='<div class="lab">Mon brouillon</div><textarea class="f big" data-note="'+q.id+'" placeholder="Écris ici. Tu récupéreras tout d\'un coup depuis l\'accueil, bouton Exporter.">'+esc(S.notes[q.id])+'</textarea>';
+    h+='<span class="saved-flag" id="saved-'+q.id+'">Enregistré</span>';
+    if(!opts.hideStatus){
+      h+='<div class="lab">Où j\'en suis</div><div class="states">';
+      var st=S.status[q.id]||"todo";
+      [["todo","À faire"],["wip","En cours"],["draft","Rédigé"],["done","Relu"]].forEach(function(p){
+        h+='<button data-set="'+q.id+'" data-v="'+p[0]+'" aria-pressed="'+(st===p[0])+'">'+p[1]+'</button>';
+      });
+      h+='</div>';
+    }
+    return h;
+  }
+
+  function renderArbitrage(q){
+    return '<details class="notions arbitrage"><summary>Noter un arbitrage</summary>'+
+      '<div class="jform">'+
+      '<textarea class="f" data-arb-in placeholder="Ce que j\'ai retenu"></textarea>'+
+      '<textarea class="f" data-arb-out placeholder="Ce que j\'ai écarté"></textarea>'+
+      '<textarea class="f" data-arb-why placeholder="Pourquoi"></textarea>'+
+      '<button class="jadd" data-arb-add="'+q.id+'">Ajouter au journal</button>'+
+      '</div></details>';
+  }
+
+  function renderLocalCadence(currentIdx){
+    var done=doneCount(), left=ALL.length-done, exp=expectedDone();
+    var h='<div class="ticks local">';
+    ALL.forEach(function(q,i){
+      var c=tickClass(q,i,exp,left).replace(" mark","");
+      if(i===currentIdx) c+=" current";
+      h+='<div class="tick '+c+'" title="'+q.bloc.code+' '+q.n+'"></div>';
     });
     h+='</div>';
     return h;
@@ -229,14 +257,27 @@
       return '<button class="linkf" data-go="dossiers">&larr; Dossiers</button><p class="rappel">Question introuvable.</p>';
     }
     S.open[q.bloc.id]=true;
+    var idx=ALL.indexOf(q);
     var st=S.status[q.id]||"todo";
     var lbl=st==="done"?"relu":st==="draft"?"rédigé":st==="wip"?"en cours":"à faire";
     var chipc=st==="done"?" done":st==="draft"?" draft":st==="wip"?" wip":"";
     var h='<div class="qbar"><button class="back" data-go="dossiers">&larr; Dossiers</button>';
     h+='<span class="code">'+q.bloc.code.replace('Bloc ','B')+' &middot; '+q.n+'</span>';
     h+='<span class="chip'+chipc+'">'+lbl+'</span></div>';
+    h+=renderLocalCadence(idx);
     h+='<h1 class="qhead-title">'+q.t+'</h1><div class="qhead-code code">'+q.c+'</div>';
-    h+=renderQuestionBody(q);
+    h+=renderQuestionBody(q,{hideStatus:true});
+    h+=renderArbitrage(q);
+    var prev=ALL[idx-1], next=ALL[idx+1];
+    h+='<div class="qbottom"><div class="qbottom-inner">';
+    h+='<div class="states">';
+    [["todo","À faire"],["wip","En cours"],["draft","Rédigé"],["done","Relu"]].forEach(function(p){
+      h+='<button data-set="'+q.id+'" data-v="'+p[0]+'" aria-pressed="'+(st===p[0])+'">'+p[1]+'</button>';
+    });
+    h+='</div><div class="qseq">';
+    h+= prev ? '<button class="linkf" data-goq="'+prev.id+'">&larr; '+prev.n+'</button>' : '<span></span>';
+    h+= next ? '<button class="linkf" data-goq="'+next.id+'">'+next.n+' &rarr;</button>' : '<span></span>';
+    h+='</div></div></div>';
     return h;
   }
 
@@ -402,12 +443,21 @@
     return h;
   }
 
+  function positionQbar(){
+    var qbar=main.querySelector(".qbar");
+    if(qbar) qbar.style.top=nav.offsetHeight+"px";
+  }
+  window.addEventListener("resize",function(){ if(ROUTE.view==="question") positionQbar(); });
+
   function render(){
     renderNav();
     var v=ROUTE.view;
     if(v==="question"){
+      main.classList.add("with-qbottom");
       main.innerHTML=vQuestion(ROUTE.id);
+      positionQbar();
     } else {
+      main.classList.remove("with-qbottom");
       var h = v==="dossiers"?vDossiers() : v==="reviser"?vReviser() : v==="quiz"?vQuiz() : v==="cours"?vCours(ROUTE.support) : vAccueil();
       var titles={accueil:"Suivi des 4 dossiers",dossiers:"Dossiers",reviser:"Réviser",quiz:"Quiz",cours:"Cours"};
       var subs={accueil:"Formation — dépôt début décembre",dossiers:"44 livrables · critères et brouillons",reviser:"Cartes à répétition espacée",quiz:"Questions à choix multiple",cours:"Index des supports et fiches de méthode"};
@@ -434,7 +484,31 @@
       el.addEventListener("change",function(){ var id=el.getAttribute("data-check"),i=el.getAttribute("data-i"); S.checks[id]=S.checks[id]||{}; S.checks[id][i]=el.checked; save(); });
     });
     main.querySelectorAll("[data-note]").forEach(function(el){
-      el.addEventListener("input",function(){ S.notes[el.getAttribute("data-note")]=el.value; save(); });
+      el.addEventListener("input",function(){
+        var id=el.getAttribute("data-note");
+        S.notes[id]=el.value; save();
+        clearTimeout(el._flagT);
+        el._flagT=setTimeout(function(){
+          var flag=document.getElementById("saved-"+id);
+          if(!flag) return;
+          flag.classList.add("show");
+          clearTimeout(flag._hideT);
+          flag._hideT=setTimeout(function(){ flag.classList.remove("show"); },2000);
+        },400);
+      });
+    });
+    main.querySelectorAll("[data-arb-add]").forEach(function(el){
+      el.addEventListener("click",function(){
+        var qid=el.getAttribute("data-arb-add");
+        var q=ALL.filter(function(x){return x.id===qid;})[0];
+        var wrap=el.closest(".arbitrage");
+        var i=wrap.querySelector("[data-arb-in]").value.trim();
+        var o=wrap.querySelector("[data-arb-out]").value.trim();
+        var w=wrap.querySelector("[data-arb-why]").value.trim();
+        if(!i&&!o&&!w) return;
+        S.journal.push({id:Date.now(), date:new Date().toLocaleDateString("fr-FR"), q:q?(q.bloc.code+' · '+q.n):qid, in:i, out:o, why:w});
+        save(); render();
+      });
     });
     main.querySelectorAll("[data-fiche]").forEach(function(el){
       el.addEventListener("input",function(){ S.fiche[el.getAttribute("data-fiche")]=el.value; save(); });
