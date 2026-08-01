@@ -22,13 +22,42 @@ Cadence visée : environ 3 livrables par semaine.
 
 # Le projet
 
-suivi-dossiers-studi.html est une application autonome de suivi et
-de révision : 44 livrables avec critères et brouillons, fiche de
-cohérence, journal d'arbitrages, 84 flashcards en répétition
-espacée, 25 questions de quiz, 22 fiches de méthode.
-Stockage via window.storage, doit rester fonctionnel hors ligne.
+L'application (index.html + css/style.css + js/*.js) est un outil
+autonome de suivi et de révision : 44 livrables avec critères et
+brouillons, fiche de cohérence, journal d'arbitrages, 84 flashcards
+en répétition espacée, 25 questions de quiz et 30 fiches de méthode
+(pages "Apprendre" et "Cours"). Stockage via window.storage, doit
+rester fonctionnel hors ligne.
 
-cours/ contient les PDF de la formation, rangés par bloc.
+Fichiers JS : data.js (BLOCS, INFO, CARDS, QCM, FICHES), ressources.js
+(RESSOURCES — contenu de cours détaillé par question), supports.js
+(catalogue des PDF de cours), annexes.js (ANNEXES par bloc), app.js
+(routage et vues).
+
+Le design suit design-spec.md (typographie, palette, vocabulaire) et
+brief-navigation.md (grille, routage à trois niveaux, structure des
+pages — remplace les sections correspondantes de design-spec.md).
+Polices auto-hébergées dans fonts/ (Clash Display, Instrument Sans,
+Geist Mono), aucune dépendance externe.
+
+cours/ contient les PDF de la formation, rangés par bloc. énoncé/
+contient les énoncés d'examen ; celui du Bloc 1 est cartographié
+dans docs/cartographie-b1.md.
+
+# État d'avancement
+
+- Bloc 1 (Bellewaerde) : les 11 questions ont leur INFO enrichi
+  (vocabulaire Studi, source de cours). Ressource de cours détaillée
+  (RESSOURCES) faite pour b1-Q1 et b1-Q7 seulement — les 9 autres
+  questions restent à enrichir, une à la fois.
+- Navigation à trois niveaux (Dossiers → Bloc → Question) posée pour
+  le Bloc 1 uniquement : page Bloc et page Question en deux colonnes,
+  avec énoncé/annexes du bloc. B2, B4, B3 ont leur tuile sur la page
+  Dossiers mais leur page Bloc reste au rendu simple, sans contenu
+  propre pour l'instant.
+- B2, B4, B3 : pas encore cartographiés ni enrichis (cartographie,
+  vocabulaire, ressources, navigation dédiée restent à faire, bloc
+  par bloc, dans cet ordre : B2 puis B4 puis B3).
 
 # Règles de travail
 
