@@ -1,0 +1,359 @@
+{
+  "resume": "b1-f02",
+  "titre": "Diagnostic stratégique : la boîte à outils",
+  "bloc": 1,
+  "cartes": [
+    {
+      "id": "c-f02-001",
+      "section": "1. À quoi sert le diagnostic",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Autour de quels 3 verbes tourne le raisonnement marketing ?",
+      "verso": "Analyser, décider et agir."
+    },
+    {
+      "id": "c-f02-002",
+      "section": "1. À quoi sert le diagnostic",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Quelle différence essentielle entre l'analyse et le diagnostic ?",
+      "verso": "Tous les paramètres relevés dans l'analyse ne sont pas retenus dans le diagnostic. Seuls y ont leur place les points différenciants, par l'opportunité ou la menace qu'ils représentent — ceux qui ont un impact actuel et prévisionnel majeur, et qui sont mesurables."
+    },
+    {
+      "id": "c-f02-003",
+      "section": "1. À quoi sert le diagnostic",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quel est l'enchaînement complet du diagnostic à la stratégie ?",
+      "verso": "Analyse externe (PESTEL, Porter) → opportunités et menaces. Analyse interne (ressources, services, DAS) → forces et faiblesses. Les deux alimentent le SWOT, d'où découlent les objectifs, puis la segmentation, le ciblage et le positionnement, puis le plan marketing."
+    },
+    {
+      "id": "c-f02-004",
+      "section": "2. L'analyse externe",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Macro-environnement et micro-environnement : que recouvrent-ils, et avec quel outil les analyse-t-on ?",
+      "verso": "Macro = la conjoncture générale à l'échelle d'un pays (économique, politique, socioculturel, technologique, écologique, légal) → matrice PESTEL. Micro = l'environnement proche (clientèle, partenaires financiers, partenaires commerciaux, marché et ses acteurs) → 5 forces de Porter."
+    },
+    {
+      "id": "c-f02-005",
+      "section": "2. L'analyse externe",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 5 niveaux de marché ?",
+      "verso": "Marché principal (produits identiques et directement concurrents) · complémentaire · substitut (concurrence indirecte, même fonction par une autre technologie) · support (produits différents mais de nature proche) · générique (regroupe plusieurs marchés principaux)."
+    },
+    {
+      "id": "c-f02-006",
+      "section": "2. L'analyse externe",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Sur quel niveau de marché une entreprise doit-elle être focalisée, et lesquels doit-elle surveiller ?",
+      "verso": "Focalisée sur son marché principal pour réussir. Mais pour se développer ou saisir une opportunité, elle doit surveiller le marché générique ainsi que les marchés complémentaires et substituts."
+    },
+    {
+      "id": "c-f02-007",
+      "section": "2. L'analyse externe",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Comment se calcule une part de marché, et quelle différence entre volume et valeur ?",
+      "verso": "Part de marché = ventes d'un produit / ventes totales du marché sur la même période. En volume = quantités vendues. En valeur = chiffre d'affaires. Une entreprise haut de gamme a une part en volume faible mais en valeur élevée."
+    },
+    {
+      "id": "c-f02-008",
+      "section": "2. L'analyse externe",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Que traduit une part de marché en volume élevée associée à une part en valeur faible ?",
+      "verso": "L'entreprise vend un gros volume pour un CA proportionnellement faible : elle privilégie le volume sur la marge, dans une stratégie de pénétration de marché. Il s'agit probablement d'un produit à bas prix."
+    },
+    {
+      "id": "c-f02-009",
+      "section": "2. L'analyse externe",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 3 niveaux de concurrence ?",
+      "verso": "Concurrence marque (plusieurs marques pour un même produit) · concurrence produit (des produits semblables pour un même besoin) · concurrence générique (autres réponses possibles pour un même type de besoin)."
+    },
+    {
+      "id": "c-f02-010",
+      "section": "2. L'analyse externe",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels critères marketing permettent de comparer la position concurrentielle ?",
+      "verso": "La part de marché, le taux de fidélité, le taux de préférence, le taux de notoriété."
+    },
+    {
+      "id": "c-f02-011",
+      "section": "2. L'analyse externe",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Pourquoi l'analyse concurrentielle doit-elle être continue ?",
+      "verso": "Parce qu'elle poursuit un double objectif : défensif, face aux actions potentielles de la concurrence, et offensif, en identifiant de nouvelles opportunités."
+    },
+    {
+      "id": "c-f02-012",
+      "section": "3. L'analyse interne",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les trois catégories de ressources analysées en interne ?",
+      "verso": "Ressources humaines (effectifs, productivité, compétences, ambiance, fidélité des salariés) · technologiques (capacité à innover, brevets, R&D, outils informatiques) · financières (capacité à investir, à s'autofinancer, à dégager des bénéfices)."
+    },
+    {
+      "id": "c-f02-013",
+      "section": "3. L'analyse interne",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Comment identifie-t-on une ressource porteuse d'avantage compétitif ?",
+      "verso": "En comparant ses ressources à celles des concurrents : celles qui sont exclusives permettent d'en tirer un avantage compétitif. On distingue aussi les ressources internalisées (totalement contrôlées) des ressources sous-traitées (dépendantes d'un partenaire)."
+    },
+    {
+      "id": "c-f02-014",
+      "section": "3. L'analyse interne",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un historique marketing, et à quoi sert-il ?",
+      "verso": "Le récit de la stratégie marketing actuelle et antérieure de l'entreprise : objectifs fixés, pertinence de la segmentation, du ciblage et du positionnement, qualité du mix, évolution de la notoriété et de l'image. Il se compare à l'histoire de l'entreprise pour observer cohérence ou écarts."
+    },
+    {
+      "id": "c-f02-015",
+      "section": "3. L'analyse interne",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les activités principales et les activités de soutien de la chaîne de valeur ?",
+      "verso": "Principales : logistique interne · production · logistique externe · commercialisation et vente · services. Soutien : infrastructure de l'entreprise · gestion des ressources humaines · développement technologique · approvisionnements."
+    },
+    {
+      "id": "c-f02-016",
+      "section": "3. L'analyse interne",
+      "niveau": 1,
+      "type": "application",
+      "recto": "D'où provient l'avantage concurrentiel dans la chaîne de valeur ?",
+      "verso": "Autant des liaisons entre les activités que des activités elles-mêmes."
+    },
+    {
+      "id": "c-f02-017",
+      "section": "4. Les matrices",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Que signifie PESTEL et que contient chaque composante ?",
+      "verso": "Politique (interventionnisme de l'État, accords) · Économique (cycles, politique monétaire, chômage) · Socioculturel (démographie, habitudes de consommation, revenus) · Technologique (découvertes, obsolescence, R&D) · Écologique (recyclage, énergie) · Légal (droit national et communautaire, normes)."
+    },
+    {
+      "id": "c-f02-018",
+      "section": "4. Les matrices",
+      "niveau": 1,
+      "type": "application",
+      "recto": "À quoi sert principalement la matrice PESTEL ?",
+      "verso": "À préparer l'analyse SWOT : une fois les informations recensées, il s'agit de les classer en opportunités ou menaces, en hiérarchisant les facteurs les plus significatifs."
+    },
+    {
+      "id": "c-f02-019",
+      "section": "4. Les matrices",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 5 forces de Porter ?",
+      "verso": "Menace de nouveaux entrants · produits de substitution · pouvoir de négociation des clients · pouvoir de négociation des fournisseurs · intensité concurrentielle."
+    },
+    {
+      "id": "c-f02-020",
+      "section": "4. Les matrices",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Quelle est la 6ᵉ force de Porter, et pourquoi compte-t-elle ?",
+      "verso": "L'influence de l'État. Ses décisions peuvent favoriser ou freiner l'entrée de nouveaux acteurs, influencer les coûts, créer des opportunités ou des contraintes."
+    },
+    {
+      "id": "c-f02-021",
+      "section": "4. Les matrices",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels types de barrières à l'entrée existe-t-il ?",
+      "verso": "Financière, technologique, commerciale, légale. Plus la barrière est faible, plus l'arrivée d'un nouveau concurrent est probable."
+    },
+    {
+      "id": "c-f02-022",
+      "section": "4. Les matrices",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce que l'hexagone sectoriel ?",
+      "verso": "Une visualisation des 5 ou 6 forces de Porter, chacune mesurée sur une échelle de 1 à 10. Plus l'hexagone est étendu, plus le marché est concurrentiel."
+    },
+    {
+      "id": "c-f02-023",
+      "section": "4. Les matrices",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Que signifient SWOT et Moff, et comment se croisent les axes ?",
+      "verso": "SWOT = Strengths, Weaknesses, Opportunities, Threats. Moff = Menaces, Opportunités, Forces, Faiblesses. Interne/positif = forces · interne/négatif = faiblesses · externe/positif = opportunités · externe/négatif = menaces."
+    },
+    {
+      "id": "c-f02-024",
+      "section": "4. Les matrices",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 catégories de la matrice BCG et sur quels axes ?",
+      "verso": "Produits stars, dilemmes, poids morts, vaches à lait. Axes : part de marché de l'activité × croissance du secteur."
+    },
+    {
+      "id": "c-f02-025",
+      "section": "4. Les matrices",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les deux variables croisées par la matrice ADL ?",
+      "verso": "Le degré de maturité de l'activité (démarrage, croissance, maturité, déclin) et la position concurrentielle (marginale, défavorable, favorable, forte, dominante)."
+    },
+    {
+      "id": "c-f02-026",
+      "section": "4. Les matrices",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 lectures stratégiques issues de la matrice ADL ?",
+      "verso": "Développement naturel (leader sur un marché en croissance) · développement sélectif (se focaliser sur ce qui rapporte le plus) · réorientation (position défavorable) · abandon (difficulté sur un marché en perte de croissance)."
+    },
+    {
+      "id": "c-f02-027",
+      "section": "4. Les matrices",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quelle précaution s'impose avec la matrice ADL ?",
+      "verso": "Elle se base sur des données objectives et subjectives : il est essentiel de croiser les résultats avec un autre outil pour consolider les conclusions."
+    },
+    {
+      "id": "c-f02-028",
+      "section": "4. Les matrices",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 cases de la matrice Ansoff ?",
+      "verso": "Produits actuels × marchés actuels = pénétration de marché · produits actuels × marchés nouveaux = extension de marché · produits nouveaux × marchés actuels = développement de produit · produits nouveaux × marchés nouveaux = diversification."
+    },
+    {
+      "id": "c-f02-029",
+      "section": "4. Les matrices",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Mapping concurrentiel et grille d'analyse de la concurrence : quelle différence ?",
+      "verso": "Le mapping est une carte perceptuelle positionnant visuellement les concurrents selon des critères, typiquement qualité et prix. La grille d'analyse est un tableau présentant points forts et points faibles de chaque concurrent — c'est le format d'un tableau comparatif."
+    },
+    {
+      "id": "c-f02-030",
+      "section": "5. Stratégies globales et génériques",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 4 axes de stratégie globale ?",
+      "verso": "Spécialisation (être une référence sur un métier) · diversification (s'ouvrir à d'autres marchés, investir dans un autre DAS) · externalisation (sous-traitance, co-traitance, concession, franchise) · intégration (réaliser soi-même une activité sous-traitée)."
+    },
+    {
+      "id": "c-f02-031",
+      "section": "5. Stratégies globales et génériques",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 3 stratégies génériques de Porter ?",
+      "verso": "Domination par les coûts (le prix comme avantage, cible large) · différenciation (produit qui paraît unique aux yeux des consommateurs) · concentration ou focalisation (avantage sur un segment étroit, une niche)."
+    },
+    {
+      "id": "c-f02-032",
+      "section": "5. Stratégies globales et génériques",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels sont les deux leviers d'une domination par les coûts ?",
+      "verso": "Jouer sur les volumes pour diminuer ses coûts d'achat, ou rationaliser ses process de production sans perdre en qualité."
+    },
+    {
+      "id": "c-f02-033",
+      "section": "5. Stratégies globales et génériques",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Une différenciation peut se faire dans deux directions : lesquelles ?",
+      "verso": "Vers le haut (amélioration de la valeur perçue : qualité, performances, garanties, SAV) ou vers le bas (épurer le produit pour le rendre plus accessible). Dans les deux cas elle doit démontrer un positionnement différenciateur."
+    },
+    {
+      "id": "c-f02-034",
+      "section": "5. Stratégies globales et génériques",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "À quoi sert le balanced scorecard ?",
+      "verso": "À organiser la déclinaison top-down de la stratégie globale (corporate strategy) : chaque responsable de fonction la décline pour son service."
+    },
+    {
+      "id": "c-f02-035",
+      "section": "5. Stratégies globales et génériques",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Que comporte un plan marketing ?",
+      "verso": "Les objectifs, la cible, le budget alloué et les actions concrètes réparties dans un laps de temps choisi — toutes devant concourir à la réalisation de l'objectif global."
+    },
+    {
+      "id": "c-f02-036",
+      "section": "6. Les matrices de veille",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "À quoi sert la matrice des acteurs clés de l'environnement ?",
+      "verso": "À visualiser la complexité des interactions entre les entités de l'écosystème : identification et classification des acteurs (internes/externes), mise en évidence des relations de cause à effet, évaluation de l'impact potentiel de chaque partie prenante sur les objectifs stratégiques."
+    },
+    {
+      "id": "c-f02-037",
+      "section": "6. Les matrices de veille",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'apporte la matrice de veille client ?",
+      "verso": "Elle organise les données client (habitudes d'achat, préférences, exigences) pour identifier les schémas récurrents de comportement, faire ressortir les tendances émergentes et hiérarchiser les domaines prioritaires."
+    },
+    {
+      "id": "c-f02-038",
+      "section": "6. Les matrices de veille",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Que met en évidence un rapport d'étonnement ?",
+      "verso": "Les écarts entre les résultats attendus et les résultats réels. En identifiant les facteurs sous-jacents à ces divergences, l'entreprise ajuste ses stratégies et ses plans d'action."
+    },
+    {
+      "id": "c-f02-039",
+      "section": "7. Le benchmarking",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le benchmarking ?",
+      "verso": "La découverte-action des meilleures pratiques (best practices) : les identifier, les comprendre, les adapter et les intégrer efficacement au sein de sa propre structure."
+    },
+    {
+      "id": "c-f02-040",
+      "section": "7. Le benchmarking",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Que dit W. Edwards Deming du benchlearning ?",
+      "verso": "« Copier est trop risqué parce que vous ne comprenez pas pourquoi vous faites les choses. Adapter et non adopter, c'est la voie ! » Benchmarker, ce n'est pas copier bêtement, c'est imiter intelligemment."
+    },
+    {
+      "id": "c-f02-041",
+      "section": "7. Le benchmarking",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Qu'est-ce qui distingue le benchmarking de la veille concurrentielle ?",
+      "verso": "Le benchmarking va plus loin : il ne se limite ni aux concurrents ni à un secteur d'activité. La veille intervient en amont — elle collecte l'information qui permettra de choisir les bons partenaires de benchmarking."
+    },
+    {
+      "id": "c-f02-042",
+      "section": "7. Le benchmarking",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Benchmarking interne et externe : avantages et risques de chacun ?",
+      "verso": "Interne : mise en place rapide, données accessibles, améliorations immédiates, mais n'apporte pas de révolution (organisation homogène) et le degré d'apprentissage est limité. Externe : ouvre sur des pratiques réellement nouvelles, mais l'accès à l'information est plus difficile."
+    },
+    {
+      "id": "c-f02-043",
+      "section": "7. Le benchmarking",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sont les 5 étapes d'un bench concurrentiel ?",
+      "verso": "1. Étude préliminaire et planification\n2. Choix des partenaires et collecte des données\n3. Analyse des procédures et des benchmarks\n4. Test et implémentation finale\n5. Ajustement, suivi et retour d'expérience, capitalisé en knowledge management"
+    },
+    {
+      "id": "c-f02-044",
+      "section": "7. Le benchmarking",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quelles qualités le benchmarking externe exige-t-il ?",
+      "verso": "Une grande curiosité et une ouverture d'esprit : toutes les sphères de l'entreprise peuvent être comparées aux bonnes pratiques de sociétés d'autres secteurs, reconnues pour leur performance en recrutement, R&D, informatique ou management."
+    }
+  ]
+}

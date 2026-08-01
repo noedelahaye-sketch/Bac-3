@@ -1,0 +1,367 @@
+{
+  "resume": "b1-f03",
+  "titre": "Études et données consommateurs",
+  "bloc": 1,
+  "cartes": [
+    {
+      "id": "c-f03-001",
+      "section": "1. Les études de marché",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "À quoi sert une étude de marché ?",
+      "verso": "À comprendre, décrire, expliquer, vérifier et prévoir. Elle accompagne la prise de décision dans les projets marketing comme de communication."
+    },
+    {
+      "id": "c-f03-002",
+      "section": "1. Les études de marché",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 3 familles d'études selon l'objectif ?",
+      "verso": "Exploratoire (combler un manque d'information, approche flexible, échantillon de 10 à 20 répondants) · descriptive (photographie d'un marché à un instant T) · explicative, prédictive et causale (identifier les relations entre variables)."
+    },
+    {
+      "id": "c-f03-003",
+      "section": "1. Les études de marché",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Variables explicatives et variables expliquées : quelle différence ?",
+      "verso": "Les explicatives servent de référence ; les expliquées sont celles dont l'évolution est causée par les premières. Distinguer leur rôle est indispensable en étude explicative ou causale."
+    },
+    {
+      "id": "c-f03-004",
+      "section": "1. Les études de marché",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Données primaires et données secondaires : quelle différence ?",
+      "verso": "Primaires : recueillies spécifiquement pour répondre à un besoin précis de l'étude. Secondaires : collectées pour un autre objectif et réutilisées pour un nouveau sujet."
+    },
+    {
+      "id": "c-f03-005",
+      "section": "1. Les études de marché",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Étude qualitative et étude quantitative : quelles différences sur les données, la finalité et l'échantillon ?",
+      "verso": "Qualitative : données non mesurables, décrire et comprendre en profondeur, échantillon petit sélectionné pour la diversité des profils. Quantitative : données numériques, mesurer et quantifier par les statistiques, échantillon large sélectionné pour la représentativité."
+    },
+    {
+      "id": "c-f03-006",
+      "section": "1. Les études de marché",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Comment s'articulent qualitatif et quantitatif ?",
+      "verso": "Le qualitatif en amont pour formuler les hypothèses, le quantitatif ensuite pour les tester. Le choix dépend de la problématique, de l'objectif, du terrain et du budget."
+    },
+    {
+      "id": "c-f03-007",
+      "section": "2. Les études qualitatives",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que la saturation en étude qualitative ?",
+      "verso": "Le seuil où les nouveaux entretiens n'apportent plus d'informations inédites. On poursuit jusqu'à ce que les données deviennent redondantes, sans fixer de quota rigide."
+    },
+    {
+      "id": "c-f03-008",
+      "section": "2. Les études qualitatives",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que la triangulation ?",
+      "verso": "L'utilisation de plusieurs méthodes de collecte pour recouper les informations obtenues."
+    },
+    {
+      "id": "c-f03-009",
+      "section": "2. Les études qualitatives",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Sur quel principe repose l'échantillonnage en qualitatif ?",
+      "verso": "L'échantillonnage par diversité : interroger tous les profils types de la cible, y compris les profils marginaux, plutôt que de viser une représentativité statistique."
+    },
+    {
+      "id": "c-f03-010",
+      "section": "2. Les études qualitatives",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 phases d'un guide d'entretien ?",
+      "verso": "Introduction, centrage, approfondissement, conclusion."
+    },
+    {
+      "id": "c-f03-011",
+      "section": "2. Les études qualitatives",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels sont les 4 types d'entretien individuel ?",
+      "verso": "En profondeur (semi-directif, explorant les motivations inconscientes), introspectif, phénoménologique, herméneutique."
+    },
+    {
+      "id": "c-f03-012",
+      "section": "2. Les études qualitatives",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Combien de temps prévoir pour un entretien en profondeur, et pourquoi ?",
+      "verso": "Deux heures, pour laisser le temps d'explorer les motivations inconscientes et les mécanismes de défense du répondant."
+    },
+    {
+      "id": "c-f03-013",
+      "section": "2. Les études qualitatives",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un focus group, et combien de participants ?",
+      "verso": "Un groupe de discussion et de réflexion réunissant sept à dix personnes partageant un intérêt commun pour le sujet. Guide d'animation en quatre temps : introduction, panorama général, centrage, conclusion."
+    },
+    {
+      "id": "c-f03-014",
+      "section": "2. Les études qualitatives",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quel est le rôle de l'animateur d'un focus group ?",
+      "verso": "Cadrer les profils extravertis pour éviter qu'ils monopolisent la parole, sécuriser les introvertis, modérer les blocages et reformuler les points bloquants."
+    },
+    {
+      "id": "c-f03-015",
+      "section": "2. Les études qualitatives",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Observation participante et non participante : que permet chacune ?",
+      "verso": "Non participante : l'enquêteur observe sans intervenir ni interagir — à privilégier pour étudier des comportements spontanés sans biais d'interaction. Participante : il s'immerge et interagit — permet d'accéder à des contextes fermés et de comprendre les usages de l'intérieur."
+    },
+    {
+      "id": "c-f03-016",
+      "section": "2. Les études qualitatives",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sont les 6 étapes de mise en œuvre d'une étude qualitative ?",
+      "verso": "Définition de la problématique → choix de la méthode → définition de l'échantillon → collecte des données → analyse des informations → création d'un rapport d'étude."
+    },
+    {
+      "id": "c-f03-017",
+      "section": "2. Les études qualitatives",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quelle est la principale limite des études qualitatives ?",
+      "verso": "Elles entrent dans le domaine du ressenti, voire de la psychologie des individus, et sont donc difficiles à mettre en place sans compétences particulières — d'où le recours fréquent à des spécialistes. Elles restent la seule étude efficace pour décrire et comprendre un comportement ou une perception."
+    },
+    {
+      "id": "c-f03-018",
+      "section": "3. Les études quantitatives",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Comment définit-on une étude quantitative ?",
+      "verso": "« Une étude des comportements, attentes ou opinions réalisée par questionnaire auprès d'un échantillon de la population étudiée, et dont les résultats chiffrés sont ensuite extrapolés à l'ensemble de la population étudiée. »"
+    },
+    {
+      "id": "c-f03-019",
+      "section": "3. Les études quantitatives",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Que signifie SMART pour les objectifs d'une étude ?",
+      "verso": "Clairs, mesurables, atteignables, réalistes, temporellement définis. Sans objectifs clairs, l'étude risque d'être inexploitable."
+    },
+    {
+      "id": "c-f03-020",
+      "section": "3. Les études quantitatives",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Quels sont les deux grands types de mesures quantitatives ?",
+      "verso": "Les mesures comportementales (ce que fait le consommateur) et les mesures de la perception (ce qu'il pense, ressent, mémorise)."
+    },
+    {
+      "id": "c-f03-021",
+      "section": "3. Les études quantitatives",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels sont les 3 publics interrogés en étude quantitative ?",
+      "verso": "Les consommateurs · les employés, devenus ambassadeurs et reflet de l'image de la marque · les acteurs externes (fournisseurs, prestataires, institutions), pour mesurer la performance des prestataires et comprendre les tendances."
+    },
+    {
+      "id": "c-f03-022",
+      "section": "3. Les études quantitatives",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un baromètre notoriété et image ?",
+      "verso": "Une étude réalisée chaque année pour comparer la présence à l'esprit de la marque et l'impact des actions de communication."
+    },
+    {
+      "id": "c-f03-023",
+      "section": "4. Réaliser une enquête",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 3 règles de rédaction d'un questionnaire ?",
+      "verso": "Questions facilement compréhensibles et courtes, sans double sens ni ambiguïté · questions neutres, qui n'influencent pas la personne interrogée · questionnaire pas trop long, sinon les réponses deviennent inexploitables."
+    },
+    {
+      "id": "c-f03-024",
+      "section": "4. Réaliser une enquête",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 4 types de questions d'un questionnaire ?",
+      "verso": "Fermée à choix unique (rapide, mais ne renseigne pas sur les comportements) · fermée à choix multiples · ouverte (riche, mais nécessite une codification) · à échelle (mesure d'intensité par graduation)."
+    },
+    {
+      "id": "c-f03-025",
+      "section": "4. Réaliser une enquête",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Comment traite-t-on les réponses aux questions ouvertes ?",
+      "verso": "Elles doivent être codifiées : les rassembler en groupes d'idées proches, faire ressortir plusieurs idées principales et y classer les réponses. Les réponses fermées se saisissent directement."
+    },
+    {
+      "id": "c-f03-026",
+      "section": "4. Réaliser une enquête",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 3 formes d'exploitation des résultats d'une enquête ?",
+      "verso": "Les tris à plat (la plus courante), les tris croisés et les moyennes."
+    },
+    {
+      "id": "c-f03-027",
+      "section": "4. Réaliser une enquête",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Quel est l'avantage et l'inconvénient de l'administration en face-à-face ?",
+      "verso": "Elle permet de relever la réaction des sondés, mais nécessite la mobilisation d'une équipe importante."
+    },
+    {
+      "id": "c-f03-028",
+      "section": "4. Réaliser une enquête",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Comment s'organise un rapport d'étude ?",
+      "verso": "Présentation succincte du projet et du marché → synthèse de l'étude permettant de justifier les décisions → résultats détaillés de l'enquête → opportunités et/ou menaces relevées."
+    },
+    {
+      "id": "c-f03-029",
+      "section": "5. L'échantillonnage",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Qu'est-ce qui compte le plus dans un échantillon : sa taille ou autre chose ?",
+      "verso": "Pas sa taille, mais sa représentativité par rapport à la population à étudier."
+    },
+    {
+      "id": "c-f03-030",
+      "section": "5. L'échantillonnage",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Méthode probabiliste et méthode non probabiliste : quelle différence ?",
+      "verso": "Probabiliste (aléatoire) : chaque individu a une probabilité connue d'être sélectionné ; résultats plus fiables, mais exige une base de sondage fiable et complète. Non probabiliste (empirique) : repose sur le jugement ou la commodité, plus rapide à mettre en œuvre."
+    },
+    {
+      "id": "c-f03-031",
+      "section": "5. L'échantillonnage",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "En quoi consiste la méthode des quotas ?",
+      "verso": "Reproduire à l'identique les statistiques définissant la population globale. C'est la méthode non probabiliste la plus couramment utilisée."
+    },
+    {
+      "id": "c-f03-032",
+      "section": "5. L'échantillonnage",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Pourquoi le nombre de questions par personne compte-t-il autant que le nombre de répondants ?",
+      "verso": "Parce qu'il augmente le coût de l'enquête et peut biaiser les réponses : un sondage trop long fait diminuer l'attention et augmenter l'ennui."
+    },
+    {
+      "id": "c-f03-033",
+      "section": "5. L'échantillonnage",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels critères guident le choix d'une méthode d'échantillonnage ?",
+      "verso": "Les objectifs marketing avant tout · la disposition ou non d'une base de sondage · les ressources en budget et en temps. Peu de temps → méthodes empiriques ; temps disponible → méthode probabiliste et échantillon plus qualifié."
+    },
+    {
+      "id": "c-f03-034",
+      "section": "6. Le numérique",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Approche séquentielle et approche panoramique d'un questionnaire en ligne ?",
+      "verso": "Séquentielle : les questions se déroulent une à une, dans un ordre imposé. Panoramique : le répondant a une vue d'ensemble et navigue dans le questionnaire."
+    },
+    {
+      "id": "c-f03-035",
+      "section": "6. Le numérique",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Qu'est-ce que la « libération de l'avis » en qualitatif en ligne ?",
+      "verso": "La médiation par l'écran modifie le discours recueilli : le répondant s'exprime parfois plus librement, mais le registre change."
+    },
+    {
+      "id": "c-f03-036",
+      "section": "7. CRM et données clients",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le taux d'attrition (churn rate) ?",
+      "verso": "« Le pourcentage de clients perdus — qui ne renouvellent pas leurs achats ou quittent l'entreprise — sur une période donnée. »"
+    },
+    {
+      "id": "c-f03-037",
+      "section": "7. CRM et données clients",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 6 étapes du parcours d'achat ?",
+      "verso": "1. Reconnaissance du besoin\n2. Recherche d'informations\n3. Comparaison des offres\n4. Choix et achat\n5. Découverte et utilisation du produit\n6. Degré de satisfaction — source de buzz positif ou négatif"
+    },
+    {
+      "id": "c-f03-038",
+      "section": "7. CRM et données clients",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 3 segmentations CRM ?",
+      "verso": "Par la valeur (contribution économique) · prédictive (anticiper les comportements futurs) · en temps réel (adapter l'offre au comportement observé instantanément)."
+    },
+    {
+      "id": "c-f03-039",
+      "section": "7. CRM et données clients",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quel défaut du reciblage classique le CRM retargeting corrige-t-il ?",
+      "verso": "Il évite d'afficher un produit que le client a déjà acheté, puisqu'il prend en compte l'historique d'achat sur l'ensemble des points de vente physiques et digitaux. Il combine email et display."
+    },
+    {
+      "id": "c-f03-040",
+      "section": "8. RGPD",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Quelles sont les trois exigences du consentement sous RGPD ?",
+      "verso": "Il doit être donné volontairement, explicitement et par écrit avant toute utilisation. Il ne peut être présumé, et la charge de la preuve incombe au responsable du traitement."
+    },
+    {
+      "id": "c-f03-041",
+      "section": "8. RGPD",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Citez les 7 droits des personnes garantis par le RGPD.",
+      "verso": "Accès et transparence · rectification · effacement (droit à l'oubli) · limitation du traitement · portabilité · opposition (notamment au marketing direct) · ne pas être soumis à une décision automatisée, y compris le profilage."
+    },
+    {
+      "id": "c-f03-042",
+      "section": "8. RGPD",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "En quoi consiste le droit à la portabilité ?",
+      "verso": "Recevoir une copie de ses données dans un format structuré, couramment utilisé et lisible par machine, et les transférer à une autre entreprise."
+    },
+    {
+      "id": "c-f03-043",
+      "section": "8. RGPD",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Que suppose la mise en conformité au RGPD ?",
+      "verso": "Se fonder sur une base légale · recueillir un consentement éclairé et informé · sécuriser les données de manière adéquate · sensibiliser ses salariés, acteurs clés de la protection des données."
+    },
+    {
+      "id": "c-f03-044",
+      "section": "8. RGPD",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quels sont les manquements au RGPD les plus fréquemment sanctionnés ?",
+      "verso": "Le traitement de données, y compris sensibles, sans consentement explicite préalable, et les lacunes dans la sécurité des données."
+    },
+    {
+      "id": "c-f03-045",
+      "section": "8. RGPD",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Quel est le rôle de la CNIL ?",
+      "verso": "Elle est l'autorité de contrôle du RGPD en France. Elle propose des ateliers gratuits facilitant la compréhension et la mise en place des directives."
+    }
+  ]
+}

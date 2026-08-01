@@ -1,0 +1,455 @@
+{
+  "resume": "b1-f04",
+  "titre": "Comprendre, segmenter, cibler, positionner ses publics",
+  "bloc": 1,
+  "cartes": [
+    {
+      "id": "c-f04-001",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Motivation et frein : comment les définit-on ?",
+      "verso": "La motivation est une raison qui pousse à un certain comportement pour satisfaire un besoin non satisfait. Les freins sont les raisons qui tendent à bloquer un comportement."
+    },
+    {
+      "id": "c-f04-002",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 4 types de motivations ?",
+      "verso": "Rationnelles (s'adressent à la raison, à l'utilité) · hédonistes (le plaisir, la satisfaction pour soi-même) · oblatives (tournées vers autrui, faire plaisir à l'autre) · éthiques ou d'auto-expression (un sentiment de devoir supérieur à sa propre personne)."
+    },
+    {
+      "id": "c-f04-003",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 2 types de freins, et comment se manifestent-ils ?",
+      "verso": "Freins liés à l'inhibition : la motivation est jugée frivole, inutile voire honteuse, la cible s'autocensure. Freins liés à la peur : manque de confiance en son propre jugement, peur de l'erreur, défiance vis-à-vis de l'objet."
+    },
+    {
+      "id": "c-f04-004",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que l'attitude, et qu'est-ce que la perception ?",
+      "verso": "L'attitude est la tendance à appréhender et évaluer d'une certaine façon un produit, une marque ou une enseigne. La perception est la façon dont le consommateur sélectionne et interprète les informations — l'image de soi, le risque perçu et la sensibilité à la marque y jouent un rôle prépondérant."
+    },
+    {
+      "id": "c-f04-005",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Groupe d'appartenance et groupe de référence : quelle différence ?",
+      "verso": "On est rattaché de fait à un groupe d'appartenance ; on adhère par choix à un groupe de référence, parce qu'on se reconnaît dans ses opinions et ses comportements."
+    },
+    {
+      "id": "c-f04-006",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Que sont les normes sociales et comment évoluent-elles ?",
+      "verso": "Les opinions et comportements qui organisent la vie des groupes. Leur non-respect entraîne réprobation, sanction ou exclusion, même si les comportements déviants peuvent être tolérés s'ils restent discrets. Elles évoluent dans le temps."
+    },
+    {
+      "id": "c-f04-007",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un leader d'opinion ?",
+      "verso": "Celui qui exerce une autorité intellectuelle et/ou affective dans une communauté : personnalités politiques, journalistes, prescripteurs — au-delà des seuls influenceurs. Internet leur a donné de puissantes capacités d'influence."
+    },
+    {
+      "id": "c-f04-008",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce que l'imaginaire collectif en marketing ?",
+      "verso": "L'ensemble des mythes et récits à forte charge symbolique dont toute société est imprégnée : contes pour enfants, récits littéraires, séries télévisées, héros et antihéros. Ils donnent des références communes et présentent des modèles de comportement."
+    },
+    {
+      "id": "c-f04-009",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Selon quels 3 critères s'analysent les styles de vie ?",
+      "verso": "Les activités, les valeurs et les opinions. Ils peuvent être émergents ou établis, et permettent d'identifier des tendances socioculturelles : les sociostyles."
+    },
+    {
+      "id": "c-f04-010",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Que signifie considérer le consommateur comme un « consom'acteur » ?",
+      "verso": "Il dispose de nombreux moyens d'expression et d'influence et devient acteur du processus marketing."
+    },
+    {
+      "id": "c-f04-011",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le Customer Power ?",
+      "verso": "Le consommateur devient l'acteur dominant grâce à l'accès à l'information et aux alternatives : renversement des rapports de force traditionnels, co-création, mais aussi complexité comportementale (fragmentation des parcours, comportements contradictoires)."
+    },
+    {
+      "id": "c-f04-012",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'appelle-t-on l'asymétrie informationnelle réduite ?",
+      "verso": "La réduction de l'écart informationnel entre vendeur et acheteur, qui fait émerger le consommateur expert, à la connaissance approfondie des produits."
+    },
+    {
+      "id": "c-f04-013",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce que la consonance cognitive appliquée à l'engagement RSE ?",
+      "verso": "L'alignement entre valeurs personnelles et actes d'achat, accompagné d'une littératie RSE croissante et de la recherche de preuves tangibles d'engagement."
+    },
+    {
+      "id": "c-f04-014",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Omnicanalité, phygital, social commerce : que recouvre chaque notion ?",
+      "verso": "Omnicanalité : unification des canaux pour une expérience fluide et cohérente. Phygital : fusion des expériences digitales et physiques (bornes interactives, réalité augmentée, Click & Collect). Social commerce : les réseaux sociaux comme canaux de découverte et de vente, appuyés sur la micro-influence et l'UGC."
+    },
+    {
+      "id": "c-f04-015",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Que sont les DNVB et quelles sont leurs trois caractéristiques ?",
+      "verso": "Digital Native Vertical Brands. Intégration verticale (maîtrise de la chaîne de valeur et relation directe avec le consommateur), communauté engagée autour de valeurs partagées, agilité technologique."
+    },
+    {
+      "id": "c-f04-016",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quels sont les défis éthiques de l'hyperpersonnalisation ?",
+      "verso": "La manipulation comportementale et les biais algorithmiques."
+    },
+    {
+      "id": "c-f04-017",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 grandes générations types, et les deux qui s'y ajoutent ?",
+      "verso": "Baby-boomers, générations X, Y et Z. S'y ajoutent la génération alpha (société de la transparence, crise écologique, concurrence humain/machine) et la Silver Génération (temps libre, socialement active, fort pouvoir d'achat)."
+    },
+    {
+      "id": "c-f04-018",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels archétypes Strauss et Howe associent-ils aux générations ?",
+      "verso": "Héros, Artiste, Prophète, Nomade."
+    },
+    {
+      "id": "c-f04-019",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Comment Bertrand Bathelot définit-il une communauté ?",
+      "verso": "« Un groupe de personnes qui interagissent entre elles, partagent et utilisent des informations en relation avec leurs centres d'intérêt, caractéristiques démographiques ou activités professionnelles communes. » Elle se caractérise par un sentiment d'appartenance."
+    },
+    {
+      "id": "c-f04-020",
+      "section": "3. La zone de chalandise",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une zone de chalandise et comment se découpe-t-elle ?",
+      "verso": "La zone d'attractivité commerciale d'un point de vente. Elle se découpe en zone primaire (d'où provient la majorité des clients), zone secondaire et zone tertiaire."
+    },
+    {
+      "id": "c-f04-021",
+      "section": "3. La zone de chalandise",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Courbes isométriques et courbes isochrones : laquelle privilégier ?",
+      "verso": "Les isométriques sont fondées sur la distance, les isochrones sur le temps de trajet. On privilégie les isochrones, car elles reflètent mieux la réalité de l'accès."
+    },
+    {
+      "id": "c-f04-022",
+      "section": "3. La zone de chalandise",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels autres paramètres influencent la délimitation d'une zone de chalandise ?",
+      "verso": "Les barrières naturelles (montagne, fleuve), les frontières, les infrastructures, et surtout les habitudes de déplacement des clients — à pied, à vélo, en transports en commun ou en voiture."
+    },
+    {
+      "id": "c-f04-023",
+      "section": "4. Les cibles",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Cible marketing et cible communication : quelle question pose chacune ?",
+      "verso": "Cible marketing : « À qui voulez-vous vendre ? » — les acheteurs et consommateurs susceptibles d'acheter. Cible communication : « Qui voulez-vous toucher ? » — ceux dont on veut influencer l'opinion, l'attitude ou le comportement."
+    },
+    {
+      "id": "c-f04-024",
+      "section": "4. Les cibles",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une cible en communication ?",
+      "verso": "Un ensemble de personnes visées par une action de communication, constitué de profils homogènes identifiés et regroupés par affinité, qui réagissent de manière analogue à une information donnée."
+    },
+    {
+      "id": "c-f04-025",
+      "section": "4. Les cibles",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quel est le triptyque fondateur de la stratégie de communication ?",
+      "verso": "Positionnement, objectifs et cibles. L'axe créatif en sera l'expression."
+    },
+    {
+      "id": "c-f04-026",
+      "section": "4. Les cibles",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 4 niveaux de hiérarchisation des cibles ?",
+      "verso": "Cible principale (visée en priorité, budget le plus important) · cœur de cible (le noyau, les plus motivés et réceptifs) · cible secondaire (sensible de façon immédiate ou différée, rebond d'information) · cible relai (pouvoir de relayer et d'influencer : prescripteurs, influenceurs, journalistes)."
+    },
+    {
+      "id": "c-f04-027",
+      "section": "4. Les cibles",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Comment lire la hiérarchie des cibles par proximité avec l'objectif stratégique ?",
+      "verso": "Cœur de cible = les décisionnaires · cible principale = ceux qui influencent la décision · cible secondaire = les relais d'information."
+    },
+    {
+      "id": "c-f04-028",
+      "section": "4. Les cibles",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels facteurs structurels délimitent les cibles en BtoB ?",
+      "verso": "Le secteur d'activité, la taille de l'entreprise, la situation géographique et les méthodes d'achat (identifier l'interlocuteur décisionnaire). Corrélés au budget de communication, ils délimitent les organisations ciblées."
+    },
+    {
+      "id": "c-f04-029",
+      "section": "4. Les cibles",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "En BtoB, quels sont les deux cas à distinguer pour les avantages recherchés ?",
+      "verso": "Soit la solution est utilisée par l'annonceur lui-même — les avantages recherchés sont ceux de l'organisation. Soit elle est destinée aux clients de l'annonceur — il recherchera l'avantage pour son client et l'intérêt stratégique perçu par ses propres cibles."
+    },
+    {
+      "id": "c-f04-030",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que la segmentation ?",
+      "verso": "Le découpage d'une cible en sous-ensembles homogènes en fonction de critères spécifiques, afin de personnaliser stratégies marketing, produits et services."
+    },
+    {
+      "id": "c-f04-031",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 grandes familles de critères de segmentation ?",
+      "verso": "Sociodémographique, géographique et économique (âge, sexe, revenu, CSP, taille de la famille) · de personnalité et de style de vie / psychographique (activités, intérêts, opinions, valeurs, sociostyles) · de comportement (habitudes d'achat, fréquence, fidélité, usage) · d'avantages recherchés (bénéfices attendus)."
+    },
+    {
+      "id": "c-f04-032",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 1,
+      "type": "application",
+      "recto": "À quelles trois conditions un segment est-il exploitable ?",
+      "verso": "Il doit être homogène, de taille suffisante et opérationnel — pour que les messages puissent être transmis de façon spécifique et efficace."
+    },
+    {
+      "id": "c-f04-033",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le clustering ?",
+      "verso": "Une technique d'analyse de données visant à regrouper des observations similaires dans des ensembles distincts appelés clusters, afin de découvrir des structures inhérentes aux données, d'identifier des patterns et de regrouper des individus similaires."
+    },
+    {
+      "id": "c-f04-034",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sont les 3 familles de méthodes de clustering ?",
+      "verso": "Hiérarchiques (matrice de distances ; la CAH part de chaque observation et fusionne les plus similaires) · centroïdes (K-Means, qui minimise la variance intra-cluster) · à densité (DBSCAN, OPTICS — clusters de formes complexes)."
+    },
+    {
+      "id": "c-f04-035",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Comment le Mercator définit-il le ciblage ?",
+      "verso": "« Un choix stratégique consistant à déterminer le ou les segments de clients que l'on cherche à influencer, conquérir ou fidéliser par sa politique et ses actions marketing. » Aussi appelé targeting."
+    },
+    {
+      "id": "c-f04-036",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 3 objectifs du ciblage ?",
+      "verso": "Personnaliser le message · augmenter l'efficacité de la campagne · réduire les coûts en évitant les contacts inutiles."
+    },
+    {
+      "id": "c-f04-037",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Technique de ciblage quantitative et qualitative : que vise chacune ?",
+      "verso": "Quantitative : cibler selon des tranches d'âge, de revenus, le genre. Qualitative : cibler selon des préférences comportementales étudiées par questionnaires auprès de panels (plaisir ou ascétisme, aventure ou centrage), pour identifier une audience globale."
+    },
+    {
+      "id": "c-f04-038",
+      "section": "6. Les personas",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un persona ?",
+      "verso": "L'archétype de l'utilisateur ou du client idéal : un personnage fictif dont le profil détaillé — genre, âge, situation familiale, CSP, mode de vie, comportement, besoins, problématiques — correspond à celui des individus types auxquels la marque veut s'adresser en priorité. Il rend visible et concret le travail de segmentation."
+    },
+    {
+      "id": "c-f04-039",
+      "section": "6. Les personas",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qui a initié la méthode des personas, et quand ?",
+      "verso": "Alan Cooper, en 1999, dans The Inmates Are Running the Asylum. Tony Zambito a ensuite développé le buyer persona, et HubSpot l'a popularisé via ses solutions d'inbound marketing."
+    },
+    {
+      "id": "c-f04-040",
+      "section": "6. Les personas",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels sont les trois types de personas ?",
+      "verso": "Le user persona, le buyer persona et le reader persona (stratégie de contenus)."
+    },
+    {
+      "id": "c-f04-041",
+      "section": "6. Les personas",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Pourquoi un persona doit-il être une création collective ?",
+      "verso": "Parce que tout collaborateur en prise avec le client doit exprimer sa vision : commerciaux, service après-vente et community managers interagissent directement, et leur feedback sur les problématiques, attentes, objections et critiques renforce la pertinence de l'archétype."
+    },
+    {
+      "id": "c-f04-042",
+      "section": "6. Les personas",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Qu'est-ce qui change dans la construction d'un persona en BtoB par rapport au BtoC ?",
+      "verso": "En BtoB : décision collégiale, processus rationnel, long et complexe, critères objectifs — deux catégories de personas à créer, celui de l'entreprise et celui de chaque individu ciblé. En BtoC : achat rationnel autant qu'impulsif, décision souvent individuelle, critères plus subjectifs ou émotionnels."
+    },
+    {
+      "id": "c-f04-043",
+      "section": "6. Les personas",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Combien de personas faut-il créer, et pourquoi cette limite ?",
+      "verso": "4 ou 5 au maximum, pour ne pas diluer la précision. Il faut regrouper par catégorie les profils partageant les mêmes caractéristiques, motivations et buts, et les réactualiser régulièrement."
+    },
+    {
+      "id": "c-f04-044",
+      "section": "6. Les personas",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un persona négatif, et pourquoi en créer un ?",
+      "verso": "Un type de client à éviter : coût d'acquisition trop élevé, produit qui ne le concerne pas, budget insuffisant, ou positionnement qui ne correspond pas à ses attentes. Le recenser permet de prioriser les actions sur les personas à meilleur potentiel."
+    },
+    {
+      "id": "c-f04-045",
+      "section": "6. Les personas",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sources mobiliser pour construire un persona ?",
+      "verso": "En interne : base prospects et clients, rapports de visite commerciale. Réseaux sociaux : comptes LinkedIn des cibles BtoB, forums et blogs. Interviews de clients réels et sondages en ligne. Google Analytics : profil sociodémographique, canal d'arrivée, pages consultées, panier moyen, fréquence d'achat."
+    },
+    {
+      "id": "c-f04-046",
+      "section": "6. Les personas",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels outils complètent le persona pour analyser un segment ?",
+      "verso": "La carte d'empathie, le parcours user et le user story mapping."
+    },
+    {
+      "id": "c-f04-047",
+      "section": "7. Le positionnement",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Positionnement perçu et positionnement voulu : quelle différence, et que signifie leur concordance ?",
+      "verso": "Le perçu est la place de l'entreprise dans l'esprit des consommateurs par rapport aux concurrents. Le voulu est la manière dont elle désire être perçue. Lorsque les deux concordent, l'entreprise a réussi sa communication — ce que vérifient les tests de concept."
+    },
+    {
+      "id": "c-f04-048",
+      "section": "7. Le positionnement",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Comment définit-on le positionnement ?",
+      "verso": "Une série d'éléments qui apporte à l'offre une position distinctive, crédible et attrayante sur un marché et dans l'esprit des consommateurs. Il s'appuie sur des critères objectifs (résultats, prix, services) et subjectifs (image, symbolisme, comparaison)."
+    },
+    {
+      "id": "c-f04-049",
+      "section": "7. Le positionnement",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 5 étapes de la démarche de positionnement ?",
+      "verso": "1. Inventaire des attentes des consommateurs\n2. Définition de l'univers de référence voulu\n3. Identification des avantages concurrentiels possibles\n4. Choix de l'avantage concurrentiel\n5. Mise en place de la stratégie, en une seule phrase"
+    },
+    {
+      "id": "c-f04-050",
+      "section": "7. Le positionnement",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quel exemple illustre le choix d'un univers de référence ?",
+      "verso": "Perrier a choisi l'univers des soft-drinks plutôt que celui des eaux minérales."
+    },
+    {
+      "id": "c-f04-051",
+      "section": "7. Le positionnement",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 6 règles d'un bon positionnement ?",
+      "verso": "Clair (une phrase, condition de la mémorisation) · attractif (répond à une réelle problématique) · spécifique (propre à la marque) · crédible (honnêteté, cohérence, réalisme) · rentable (réalité et potentiel économiques) · durable (il met du temps à s'imposer, changer est risqué)."
+    },
+    {
+      "id": "c-f04-052",
+      "section": "7. Le positionnement",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelle est la formule type d'un énoncé de positionnement ?",
+      "verso": "La marque + [verbe accrocheur] à [la cible] une [catégorie de produits] présentant [des caractéristiques] qui offrent [des avantages pertinents en accord avec les besoins des consommateurs]."
+    },
+    {
+      "id": "c-f04-053",
+      "section": "7. Le positionnement",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Pourquoi le positionnement doit-il être maîtrisé par la marque ?",
+      "verso": "Si c'est le consommateur qui décide du positionnement, la marque se retrouve en situation passive et ne peut agir en cas d'image erronée ou nuisible."
+    },
+    {
+      "id": "c-f04-054",
+      "section": "8. Les limites du ciblage",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le nudge marketing ?",
+      "verso": "Une technique d'incitation douce visant à influencer subtilement les décisions des individus sans restreindre leur liberté de choix, en s'appuyant sur une compréhension des biais cognitifs et des motivations sous-jacentes."
+    },
+    {
+      "id": "c-f04-055",
+      "section": "8. Les limites du ciblage",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Sur quoi repose la distinction entre influence et manipulation ?",
+      "verso": "Sur une démarcation claire entre pratiques éthiques et non éthiques. L'intégrité et la transparence sont essentielles pour maintenir la confiance et favoriser des relations à long terme fondées sur le respect mutuel et la satisfaction des besoins réels des consommateurs."
+    },
+    {
+      "id": "c-f04-056",
+      "section": "8. Les limites du ciblage",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sont les 3 exigences de l'adaptation créative responsable ?",
+      "verso": "Des stratégies créatives conformes aux normes déontologiques · des approches de ciblage respectueuses de la vie privée · une publicité responsable et transparente."
+    }
+  ]
+}

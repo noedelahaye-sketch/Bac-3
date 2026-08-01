@@ -94,12 +94,12 @@
   var INTERV=[0,1,2,4,8,16];
   function today(){ var d=new Date(); return new Date(d.getFullYear(),d.getMonth(),d.getDate()).getTime(); }
   function dueNow(i){ var b=S.box[i]||0; return b===0 ? true : (S.due[i]||0)<=today(); }
-  function dueCount(){ return CARDS.filter(function(c){return dueNow(c.i);}).length; }
+  function dueCount(){ return FLASHCARDS.filter(function(c){return dueNow(c.id);}).length; }
   function grade(i,ok){ var b=S.box[i]||0, nb=ok?Math.min(5,b+1):1; S.box[i]=nb; S.due[i]=today()+INTERV[nb]*86400000; save(); }
   function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=a[i];a[i]=a[j];a[j]=x;} return a; }
 
   var VIEWS=[["accueil","Accueil"],["dossiers","Dossiers"],["cours","Cours"],["apprendre","Apprendre"]];
-  var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre"];
+  var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre","flashcards"];
   function parseHash(hash){
     var h=(hash||"").replace(/^#/,"");
     if(h.charAt(0)==="/") h=h.slice(1);
@@ -155,7 +155,7 @@
 
   function renderNav(){
     var h="";
-    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc"||ROUTE.view==="coursQuestion") ? "dossiers" : (ROUTE.view==="coursBloc"||ROUTE.view==="coursResume") ? "cours" : ROUTE.view;
+    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc"||ROUTE.view==="coursQuestion") ? "dossiers" : (ROUTE.view==="coursBloc"||ROUTE.view==="coursResume") ? "cours" : (ROUTE.view==="flashcards") ? "apprendre" : ROUTE.view;
     VIEWS.forEach(function(v){
       var badge="";
       if(v[0]==="dossiers"){ var r=ALL.length-doneCount(); if(r) badge='<i>'+r+'</i>'; }
@@ -199,10 +199,10 @@
       h+='<div class="next"><div class="eyebrow">Terminé</div><div class="t">Les 44 livrables sont rédigés.</div></div>';
     }
 
-    var d=dueCount(), maitr=CARDS.filter(function(c){return (S.box[c.i]||0)>=4;}).length;
+    var d=dueCount(), maitr=FLASHCARDS.filter(function(c){return (S.box[c.id]||0)>=4;}).length;
     h+='<div class="grid2">';
-    h+='<div class="mini" data-go="apprendre"><div class="eyebrow">Révision</div><div class="bignum">'+d+'</div><div class="lbl">carte'+(d>1?'s':'')+' à revoir</div></div>';
-    h+='<div class="mini" data-go="apprendre"><div class="eyebrow">Acquis</div><div class="bignum">'+maitr+'<span class="on">/'+CARDS.length+'</span></div><div class="lbl">notions maîtrisées</div></div>';
+    h+='<div class="mini" data-go="flashcards"><div class="eyebrow">Révision</div><div class="bignum">'+d+'</div><div class="lbl">carte'+(d>1?'s':'')+' à revoir</div></div>';
+    h+='<div class="mini" data-go="flashcards"><div class="eyebrow">Acquis</div><div class="bignum">'+maitr+'<span class="on">/'+FLASHCARDS.length+'</span></div><div class="lbl">notions maîtrisées</div></div>';
     h+='</div>';
 
     h+='<div class="foot">Date limite de dépôt : <input type="date" id="dl" value="'+S.deadline+'"><br>';
@@ -473,10 +473,23 @@
   }
 
   /* ---------- APPRENDRE (cartes + quiz) ---------- */
+  var TYPE_LABELS={definition:"Définition",liste:"Liste",distinction:"Distinction",application:"Application"};
+
   function vApprendre(){
-    if(SES) return renderCardsSession();
     if(QZ) return renderQuizSession();
-    return renderCardsLanding()+renderQuizLanding();
+    var h='<div class="tiles">';
+    h+='<button class="tile" data-go="flashcards">';
+    h+='<span class="tile-code code">Flashcards</span>';
+    h+='<span class="tile-title">Cartes à répétition espacée</span>';
+    h+='<span class="tile-cas">'+FLASHCARDS.length+' cartes &middot; '+dueCount()+' à revoir aujourd\'hui</span>';
+    h+='</button>';
+    h+='</div>';
+    return h+renderQuizLanding();
+  }
+
+  function vFlashcards(){
+    if(SES) return renderCardsSession();
+    return renderFlashcardsHome();
   }
 
   function renderCardsSession(){
@@ -484,33 +497,31 @@
     if(!c){
       return '<div class="done-msg"><b>Session terminée.</b> '+SES.ok+' sue'+(SES.ok>1?'s':'')+' sur '+SES.list.length+'.</div><button class="jadd" data-lrn="stop">Revenir</button>';
     }
-    var h='<div class="prog">Carte '+(SES.i+1)+' sur '+SES.list.length+' · '+c.t+'</div><div class="card"><div class="cq">'+c.q+'</div>';
+    var h='<div class="prog">Carte '+(SES.i+1)+' sur '+SES.list.length+'</div>';
+    h+='<div class="card'+(SES.show?'':' flip')+'"'+(SES.show?'':' data-lrn="show"')+'>';
+    h+='<div class="cmeta"><span class="m-niveau n'+c.niveau+'">Niveau '+c.niveau+'</span><span class="m-section">'+esc(c.section)+'</span><span class="m-type t-'+c.type+'">'+(TYPE_LABELS[c.type]||c.type)+'</span></div>';
+    h+='<div class="cq">'+esc(c.recto)+'</div>';
     if(SES.show){
-      h+='<div class="ca">'+c.a+'</div><div class="cbtns"><button class="no" data-lrn="ko">Pas su</button><button class="yes" data-lrn="ok">Je savais</button></div>';
-    } else h+='<button class="reveal" data-lrn="show">Voir la réponse</button>';
+      h+='<div class="ca">'+esc(c.verso).replace(/\n/g,'<br>')+'</div><div class="cbtns"><button class="no" data-lrn="ko">Pas su</button><button class="yes" data-lrn="ok">Je savais</button></div>';
+    } else h+='<div class="cflip-hint">Touche la carte pour voir la réponse</div>';
     h+='</div><button class="quit" data-lrn="stop">Arrêter la session</button>';
     return h;
   }
 
-  function renderCardsLanding(){
-    var d=dueCount(), vus=CARDS.filter(function(c){return (S.box[c.i]||0)>0;}).length;
-    var maitr=CARDS.filter(function(c){return (S.box[c.i]||0)>=4;}).length;
-    var h='<div class="lab">Cartes à répétition espacée</div>';
+  function renderFlashcardsHome(){
+    var d=dueCount(), vus=FLASHCARDS.filter(function(c){return (S.box[c.id]||0)>0;}).length;
+    var maitr=FLASHCARDS.filter(function(c){return (S.box[c.id]||0)>=4;}).length;
+    var h='<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Flashcards"}])+'</div>';
+    h+='<h1 class="qhead-title">Flashcards</h1><div class="qhead-code code">'+FLASHCARDS.length+' cartes</div>';
     h+='<div class="stats stats-top">';
     h+='<div class="stat"><div class="num">'+d+'</div><div class="lbl">Cartes à revoir</div></div>';
-    h+='<div class="stat"><div class="num">'+vus+'<span class="on">/'+CARDS.length+'</span></div><div class="lbl">Vues</div></div>';
+    h+='<div class="stat"><div class="num">'+vus+'<span class="on">/'+FLASHCARDS.length+'</span></div><div class="lbl">Vues</div></div>';
     h+='<div class="stat"><div class="num">'+maitr+'</div><div class="lbl">Maîtrisées</div></div></div>';
     h+='<div class="states">';
     h+='<button data-lrn="start"'+(d?'':' disabled')+'>'+(d?'Cartes du jour ('+d+')':'Rien à revoir aujourd\'hui')+'</button>';
-    h+='<button data-lrn="startall">Tout revoir ('+CARDS.length+')</button></div>';
+    h+='<button data-lrn="startall">Tout revoir ('+FLASHCARDS.length+')</button></div>';
     if(!d) h+='<p class="rappel">Rien à revoir aujourd\'hui. Reviens demain, ou lance une session libre.</p>';
-    h+='<div class="lab">Par thème</div><div class="states">';
-    var t={}; CARDS.forEach(function(c){t[c.t]=(t[c.t]||0)+1;});
-    Object.keys(t).sort().forEach(function(k){
-      var dd=CARDS.filter(function(c){return c.t===k&&dueNow(c.i);}).length;
-      h+='<button data-theme="'+k+'">'+k+' <em>'+t[k]+(dd?' · '+dd+' à revoir':'')+'</em></button>';
-    });
-    h+='</div><p class="rappel">Les cartes reviennent selon ton niveau : une carte sue réapparaît dans 2, 4, 8 puis 16 jours ; une carte ratée revient dès demain.</p>';
+    h+='<p class="rappel">Les cartes reviennent selon ton niveau : une carte sue réapparaît dans 2, 4, 8 puis 16 jours ; une carte ratée revient dès demain.</p>';
     return h;
   }
 
@@ -685,7 +696,7 @@
 
   function render(){
     var v=ROUTE.view;
-    var inSession = (v==="apprendre"&&(SES||QZ));
+    var inSession = (v==="apprendre"&&QZ);
     appEl.classList.toggle("session", !!inSession);
     renderNav();
     main.classList.add("wide");
@@ -711,6 +722,10 @@
       main.classList.remove("with-qbottom");
       main.innerHTML=vCoursQuestion(ROUTE.id);
       positionQbar();
+    } else if(v==="flashcards"){
+      main.classList.remove("with-qbottom");
+      main.innerHTML=vFlashcards();
+      positionQbar();
     } else {
       main.classList.remove("with-qbottom");
       var h = v==="dossiers"?vDossiers() : v==="apprendre"?vApprendre() : v==="cours"?vCours() : vAccueil();
@@ -718,7 +733,7 @@
         main.innerHTML=h;
       } else {
         var titles={accueil:"Suivi des 4 dossiers",dossiers:"Dossiers",apprendre:"Apprendre",cours:"Cours"};
-        var subs={accueil:"Formation — dépôt début décembre",dossiers:"44 livrables · dépôt début décembre",apprendre:"Cartes à répétition espacée et quiz",cours:"Les résumés de cours, et les questions que chacun alimente."};
+        var subs={accueil:"Formation — dépôt début décembre",dossiers:"44 livrables · dépôt début décembre",apprendre:"Quiz, et tes flashcards à répétition espacée.",cours:"Les résumés de cours, et les questions que chacun alimente."};
         main.innerHTML='<div class="eyebrow">'+subs[v]+'</div><h1>'+titles[v]+'</h1>'+h;
       }
     }
@@ -795,11 +810,6 @@
         go("coursResume", el.getAttribute("data-resume-go"));
       });
     });
-    main.querySelectorAll("[data-theme]").forEach(function(el){
-      el.addEventListener("click",function(){
-        SES={list:shuffle(CARDS.filter(function(c){return c.t===el.getAttribute("data-theme");})),i:0,show:false,ok:0}; render();
-      });
-    });
     main.querySelectorAll("[data-quiz]").forEach(function(el){
       el.addEventListener("click",function(){
         var n=parseInt(el.getAttribute("data-quiz"),10);
@@ -819,11 +829,11 @@
     main.querySelectorAll("[data-lrn]").forEach(function(el){
       el.addEventListener("click",function(){
         var a=el.getAttribute("data-lrn");
-        if(a==="start"){ var l=shuffle(CARDS.filter(function(c){return dueNow(c.i);})); if(!l.length) return; SES={list:l,i:0,show:false,ok:0}; }
-        else if(a==="startall") SES={list:shuffle(CARDS),i:0,show:false,ok:0};
+        if(a==="start"){ var l=shuffle(FLASHCARDS.filter(function(c){return dueNow(c.id);})); if(!l.length) return; SES={list:l,i:0,show:false,ok:0}; }
+        else if(a==="startall") SES={list:shuffle(FLASHCARDS),i:0,show:false,ok:0};
         else if(a==="show") SES.show=true;
-        else if(a==="ok"){ grade(SES.list[SES.i].i,true); SES.ok++; SES.i++; SES.show=false; }
-        else if(a==="ko"){ grade(SES.list[SES.i].i,false); SES.i++; SES.show=false; }
+        else if(a==="ok"){ grade(SES.list[SES.i].id,true); SES.ok++; SES.i++; SES.show=false; }
+        else if(a==="ko"){ grade(SES.list[SES.i].id,false); SES.i++; SES.show=false; }
         else if(a==="stop") SES=null;
         else if(a==="qnext"){ QZ.i++; QZ.answered=null; }
         else if(a==="qstop") QZ=null;

@@ -1,15 +1,16 @@
 #!/usr/bin/env node
 /*
- * Génère js/cours.js et js/questions.js à partir de cours:/blocs.json, des
- * résumés markdown de cours:/bloc<n>:/resume:/*.md et du contenu de cours
- * par question de cours:/bloc<n>:/questions:/*.md.
+ * Génère js/cours.js, js/questions.js et js/flashcards.js à partir de
+ * cours:/blocs.json, des résumés markdown de cours:/bloc<n>:/resume:/*.md,
+ * du contenu de cours par question de cours:/bloc<n>:/questions:/*.md et
+ * des flashcards de cours:/bloc<n>:/flashcards:/*.json.
  *
  * Aucune dépendance externe (frontmatter et markdown parsés à la main) :
  * le résultat est un artefact de build, jamais édité à la main. Les .md
- * restent la seule source de vérité.
+ * et .json sources restent la seule source de vérité.
  *
  * Usage :
- *   node tools/generate-cours.js                  écrit js/cours.js et js/questions.js
+ *   node tools/generate-cours.js                  écrit js/cours.js, js/questions.js et js/flashcards.js
  *   node tools/generate-cours.js --preview=b1-f02  écrit un aperçu HTML autonome, sans rien écrire ailleurs
  */
 "use strict";
@@ -20,6 +21,7 @@ const ROOT = path.join(__dirname, "..");
 const COURS_DIR = path.join(ROOT, "cours:");
 const OUT_FILE = path.join(ROOT, "js", "cours.js");
 const QUESTIONS_OUT_FILE = path.join(ROOT, "js", "questions.js");
+const FLASHCARDS_OUT_FILE = path.join(ROOT, "js", "flashcards.js");
 
 /* ---------- Frontmatter (YAML minimal, propre au schéma des résumés) ---------- */
 
@@ -337,6 +339,41 @@ function buildQuestionCours(p, linkMap) {
   };
 }
 
+/* ---------- Chargement des flashcards ---------- */
+
+function loadBlocFlashcards(blocNum) {
+  const dir = path.join(COURS_DIR, "bloc" + blocNum + ":", "flashcards:");
+  if (!fs.existsSync(dir)) return [];
+  const cards = [];
+  fs.readdirSync(dir)
+    .filter((f) => f.endsWith(".json"))
+    .sort()
+    .forEach((f) => {
+      const data = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"));
+      (data.cartes || []).forEach((c) => {
+        cards.push({
+          id: c.id,
+          resume: data.resume,
+          bloc: data.bloc,
+          section: c.section,
+          niveau: c.niveau,
+          type: c.type,
+          recto: c.recto,
+          verso: c.verso,
+        });
+      });
+    });
+  return cards;
+}
+
+function loadAllFlashcards(blocsJson) {
+  let all = [];
+  blocsJson.blocs.forEach((b) => {
+    all = all.concat(loadBlocFlashcards(b.numero));
+  });
+  return all;
+}
+
 /* ---------- CLI ---------- */
 
 function main() {
@@ -427,6 +464,17 @@ function main() {
     "—",
     Object.keys(qResult).length,
     "question(s)."
+  );
+
+  const flashcards = loadAllFlashcards(blocsJson);
+  const fcJs = "var FLASHCARDS = " + JSON.stringify(flashcards, null, 2) + ";\n";
+  fs.writeFileSync(FLASHCARDS_OUT_FILE, fcJs, "utf8");
+  console.log(
+    "Écrit :",
+    path.relative(ROOT, FLASHCARDS_OUT_FILE),
+    "—",
+    flashcards.length,
+    "carte(s)."
   );
 }
 

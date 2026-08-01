@@ -1,0 +1,287 @@
+{
+  "resume": "b1-f07",
+  "titre": "Présenter, convaincre, interagir",
+  "bloc": 1,
+  "cartes": [
+    {
+      "id": "c-f07-001",
+      "section": "1. Le rôle stratégique",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 3 temps qui structurent le fond d'une présentation de projet ?",
+      "verso": "1. Expliciter le pourquoi — problématique, contexte, diagnostic\n2. Présenter le comment — actions, moyens, calendrier, budget\n3. Annoncer les résultats attendus — objectifs chiffrés et indicateurs de suivi"
+    },
+    {
+      "id": "c-f07-002",
+      "section": "1. Le rôle stratégique",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Sur quoi porte l'adhésion à obtenir de la direction ?",
+      "verso": "Sur la problématique, les actions proposées, le budget prévisionnel et sa répartition. Il faut mettre en avant la cohérence des préconisations, et le budget doit être pensé de manière réaliste et bien réparti."
+    },
+    {
+      "id": "c-f07-003",
+      "section": "2. L'architecture narrative",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Que signifie la méthode SCRAP ?",
+      "verso": "Situation (le contexte de départ) · Complication (le problème qui rend l'action nécessaire) · Résolution (la solution proposée) · Action (ce qui est concrètement demandé) · Preuve (les éléments qui crédibilisent la résolution)."
+    },
+    {
+      "id": "c-f07-004",
+      "section": "2. L'architecture narrative",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "En quoi consiste le storytelling marketing appliqué à une présentation ?",
+      "verso": "Transformer des informations factuelles en récit captivant pour l'audience. La progression dramatique en cinq actes maintient l'attention et convainc."
+    },
+    {
+      "id": "c-f07-005",
+      "section": "2. L'architecture narrative",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Comment s'organise l'équilibre entre vision stratégique et éléments tactiques ?",
+      "verso": "En pyramide inversée : d'abord le niveau stratégique, puis le tactique, puis l'opérationnel."
+    },
+    {
+      "id": "c-f07-006",
+      "section": "2. L'architecture narrative",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce que la modularité d'une présentation ?",
+      "verso": "Préparer la présentation en couches, avec plusieurs versions, pour disposer d'une flexibilité temporelle : pouvoir tenir en 5, 15 ou 45 minutes selon ce que le contexte impose."
+    },
+    {
+      "id": "c-f07-007",
+      "section": "2. L'architecture narrative",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un argumentaire progressif ?",
+      "verso": "Un argumentaire qui intègre proactivement les réponses aux objections prévisibles plutôt que de les attendre, et qui s'appuie sur une cartographie des motivations des interlocuteurs."
+    },
+    {
+      "id": "c-f07-008",
+      "section": "3. Le pitch",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Comment travaille-t-on un elevator pitch ?",
+      "verso": "Le retravailler, puis surtout le répéter — devant son miroir et devant un public — pour l'apprendre et le retenir. Soigner son élocution, son regard et sa posture. Savoir pitcher ne s'improvise pas, mais cela s'apprend."
+    },
+    {
+      "id": "c-f07-009",
+      "section": "4. Les supports visuels",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Quel est l'ordre de travail impératif pour construire une présentation ?",
+      "verso": "Questionner d'abord les objectifs et enjeux, organiser ses idées pour que le fil directeur soit fluide, cohérent et réponde aux attentes de l'auditoire — tout cela avant même de créer le support. Quand le fond est prêt, on passe à la forme."
+    },
+    {
+      "id": "c-f07-010",
+      "section": "4. Les supports visuels",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Que dit la théorie de la Gestalt appliquée aux supports visuels ?",
+      "verso": "L'organisation spontanée des éléments visuels crée du sens global, selon les principes de proximité, similarité, continuité et clôture."
+    },
+    {
+      "id": "c-f07-011",
+      "section": "4. Les supports visuels",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sont les bonnes pratiques de composition graphique ?",
+      "verso": "Harmoniser et unifier le contenu · mettre en avant l'information essentielle · appliquer les techniques de facilitation visuelle · adapter codes couleurs et typographies au secteur."
+    },
+    {
+      "id": "c-f07-012",
+      "section": "4. Les supports visuels",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quelle erreur commet-on le plus souvent avec PowerPoint ?",
+      "verso": "L'utiliser sans s'écarter du schéma classique. Il offre de vraies possibilités d'impact visuel, à condition de supprimer les modèles par défaut."
+    },
+    {
+      "id": "c-f07-013",
+      "section": "5. Les données en arguments",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Données internes et données externes : que couvre chacune ?",
+      "verso": "Internes : informations sous contrôle de l'entreprise, alignées avec l'activité réelle (CRM, ventes, web analytics, service client). Externes : informations sur l'écosystème concurrentiel et sectoriel, moins granulaires (études, panels, benchmarks)."
+    },
+    {
+      "id": "c-f07-014",
+      "section": "5. Les données en arguments",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un KPI, et d'où doit découler sa sélection ?",
+      "verso": "Un indicateur de performance aligné avec les objectifs business. Sa sélection doit découler des objectifs, pas de la disponibilité des données : un indicateur sans décision associée est inutile."
+    },
+    {
+      "id": "c-f07-015",
+      "section": "5. Les données en arguments",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un insight actionnable ?",
+      "verso": "Une observation traduite en opportunité business concrète et chiffrée. C'est le passage obligé : une donnée n'est pas un argument."
+    },
+    {
+      "id": "c-f07-016",
+      "section": "6. Persuader",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Système 1 et Système 2 de pensée : que fait chacun dans une présentation ?",
+      "verso": "Système 1 : pensée automatique, rapide et intuitive — il décide de l'attention et de la première impression. Système 2 : pensée analytique, lente et délibérée — il valide le raisonnement. Une présentation efficace parle aux deux."
+    },
+    {
+      "id": "c-f07-017",
+      "section": "6. Persuader",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Biais de confirmation et effet d'ancrage : que produit chacun ?",
+      "verso": "Le biais de confirmation pousse à privilégier les informations qui confirment les croyances préexistantes. L'effet d'ancrage fait que la première information influence la perception des suivantes — d'où l'importance du premier chiffre annoncé et de la première phrase."
+    },
+    {
+      "id": "c-f07-018",
+      "section": "6. Persuader",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 6 leviers d'influence de Cialdini ?",
+      "verso": "Réciprocité · engagement / cohérence · preuve sociale · autorité · rareté · sympathie."
+    },
+    {
+      "id": "c-f07-019",
+      "section": "6. Persuader",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Dans quel ordre mener un questionnement séquentiel selon Cialdini ?",
+      "verso": "Commencer par la réciprocité (rappeler les contributions passées) → progresser vers l'engagement (solliciter des prises de position) → intégrer la preuve sociale → puis l'autorité → terminer par la rareté. Cette progression génère un engagement authentique plutôt qu'une adhésion de façade."
+    },
+    {
+      "id": "c-f07-020",
+      "section": "6. Persuader",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 3 piliers de la rhétorique aristotélicienne ?",
+      "verso": "Éthos (crédibilité de l'orateur : légitimité, expertise, honnêteté perçue) · pathos (émotion suscitée chez l'auditoire) · logos (rigueur du raisonnement et solidité des preuves)."
+    },
+    {
+      "id": "c-f07-021",
+      "section": "6. Persuader",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quel pilier rhétorique la culture organisationnelle française valorise-t-elle particulièrement ?",
+      "verso": "L'éthos, mais par un chemin précis : l'expertise technique et la légitimité intellectuelle. La crédibilité y passe d'abord par la maîtrise du dossier."
+    },
+    {
+      "id": "c-f07-022",
+      "section": "7. Adapter son discours",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 4 profils du modèle DISC et leurs couleurs ?",
+      "verso": "Rouge = Dominance (direct, déterminé, orienté résultats) · Jaune = Influence (expressif, social, enthousiaste) · Vert = Stabilité (calme, fiable, à l'écoute, attaché à l'harmonie) · Bleu = Conformité (précis, analytique, attaché aux règles et aux données)."
+    },
+    {
+      "id": "c-f07-023",
+      "section": "7. Adapter son discours",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels tests de personnalité sont couramment utilisés pour adapter son discours ?",
+      "verso": "Le Process Communication Model (PCM), le test DISC et le MBTI."
+    },
+    {
+      "id": "c-f07-024",
+      "section": "8. Écouter et questionner",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "En quoi consiste réellement l'écoute active ?",
+      "verso": "Non pas se taire, mais manifester activement sa compréhension : reformulation, relance, validation."
+    },
+    {
+      "id": "c-f07-025",
+      "section": "8. Écouter et questionner",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels sont les obstacles typiques à l'écoute active ?",
+      "verso": "Préparer sa réponse pendant que l'autre parle, filtrer selon ses attentes, interrompre, juger prématurément, se laisser distraire."
+    },
+    {
+      "id": "c-f07-026",
+      "section": "9. Objections et résistances",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Argument, argumentaire et argumentation : quelle différence ?",
+      "verso": "L'argument est un élément qui permet de positionner un raisonnement — un fait, une caractéristique. L'argumentaire est la somme des arguments, destinée à démontrer en quoi l'offre répond spécifiquement aux besoins. L'argumentation est l'action d'utiliser un argumentaire."
+    },
+    {
+      "id": "c-f07-027",
+      "section": "9. Objections et résistances",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Arguments factuels et arguments émotionnels : quel rôle pour chacun ?",
+      "verso": "Les factuels décrivent les caractéristiques et démontrent l'adéquation au besoin : incontournables, mais rarement suffisants seuls. Les émotionnels impliquent l'interlocuteur, le mettent en situation, et servent à différencier l'offre."
+    },
+    {
+      "id": "c-f07-028",
+      "section": "9. Objections et résistances",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une objection commerciale, et pourquoi est-elle une bonne nouvelle ?",
+      "verso": "« Une réaction formulée par un client potentiel dans une situation de vente, exprimant un avis ou un argument pour s'opposer à la proposition. » Les objections font vivre l'entretien : l'interlocuteur s'implique dans le dialogue."
+    },
+    {
+      "id": "c-f07-029",
+      "section": "9. Objections et résistances",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 3 types d'objections en présentation stratégique ?",
+      "verso": "Les objections rationnelles basées sur les données · les résistances émotionnelles et psychologiques · les objections stratégiques et politiques internes — les plus délicates, car elles ne portent pas sur le projet lui-même."
+    },
+    {
+      "id": "c-f07-030",
+      "section": "9. Objections et résistances",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Que signifie SONCASE ?",
+      "verso": "Sécurité, Orgueil, Nouveauté, Confort, Argent, Sympathie, Environnement. La méthode identifie les besoins à la base des différentes réponses à une objection."
+    },
+    {
+      "id": "c-f07-031",
+      "section": "9. Objections et résistances",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Que signifie CAP-B ?",
+      "verso": "Caractéristique → Avantage → Preuve → Bénéfice personnalisé pour l'interlocuteur."
+    },
+    {
+      "id": "c-f07-032",
+      "section": "9. Objections et résistances",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Comment se combinent CAP-B et SONCASE ?",
+      "verso": "CAP-B fournit la structure de l'argument, SONCASE fournit l'angle motivationnel adapté à l'interlocuteur. Combinées, elles produisent une réponse argumentée à chaque type d'objection."
+    },
+    {
+      "id": "c-f07-033",
+      "section": "9. Objections et résistances",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Comment lire les signaux de résistance ?",
+      "verso": "Identifier les marqueurs linguistiques de l'opposition · décoder le langage corporel et les attitudes défensives · distinguer questionnement légitime et opposition systématique — les deux n'appellent pas la même réponse."
+    },
+    {
+      "id": "c-f07-034",
+      "section": "9. Objections et résistances",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Comment maintenir sa crédibilité face à une attaque personnelle ?",
+      "verso": "En dissociant la critique du projet de la critique de la personne, et en mobilisant des techniques de régulation émotionnelle sous pression : respiration, ralentissement du débit, reformulation pour gagner du temps."
+    },
+    {
+      "id": "c-f07-035",
+      "section": "9. Objections et résistances",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Quelle est l'étape la plus souvent négligée dans la gestion des objections ?",
+      "verso": "La préparation. Se projeter, se mettre dans la peau de son interlocuteur, est le meilleur moyen de le comprendre et de se prémunir contre les oublis et les incompréhensions. À chaque interlocuteur son argumentation."
+    }
+  ]
+}

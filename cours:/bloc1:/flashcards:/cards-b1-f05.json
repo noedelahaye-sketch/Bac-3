@@ -1,0 +1,399 @@
+{
+  "resume": "b1-f05",
+  "titre": "Concevoir l'offre : innovation, mix marketing, éthique et RSE",
+  "bloc": 1,
+  "cartes": [
+    {
+      "id": "c-f05-001",
+      "section": "1. L'innovation",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Comment l'OCDE définit-elle l'innovation, et quels 4 types en découlent ?",
+      "verso": "« La mise en œuvre d'un produit (bien ou service) ou d'un procédé nouveau ou sensiblement amélioré, d'une nouvelle méthode de commercialisation ou d'une nouvelle méthode organisationnelle. » D'où 4 types : innovation de produit, de procédé, de commercialisation, d'organisation."
+    },
+    {
+      "id": "c-f05-002",
+      "section": "1. L'innovation",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Quelle différence entre une invention et une innovation ?",
+      "verso": "Une invention qui prend la forme d'un produit commercialisable devient une innovation. C'est l'intérêt économique qui fait la différence."
+    },
+    {
+      "id": "c-f05-003",
+      "section": "1. L'innovation",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 4 types d'innovation par degré ?",
+      "verso": "Incrémentale (perfectionner l'existant) · adjacente (transposer une technologie existante sur un marché différent, nouvel usage) · de rupture ou disruptive (version simplifiée, de moindre qualité, à tarif inférieur, plus accessible) · radicale (produit totalement nouveau créant un marché)."
+    },
+    {
+      "id": "c-f05-004",
+      "section": "1. L'innovation",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Low tech et high tech : que désigne chaque terme ?",
+      "verso": "Le low tech désigne la conception et l'usage d'une technologie à faible impact environnemental, économique et accessible à tous. Le high tech, la conception et l'usage d'une technologie de pointe."
+    },
+    {
+      "id": "c-f05-005",
+      "section": "1. L'innovation",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 3 stratégies d'innovation dominantes selon PwC ?",
+      "verso": "Need Seekers (anticipation du marché, être le premier à répondre aux nouvelles attentes) · Market Readers (attentes des clients existants, personnalisation, innovation incrémentale) · Technology Drivers (expertise technologique et R&D internes)."
+    },
+    {
+      "id": "c-f05-006",
+      "section": "1. L'innovation",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que la co-innovation, et quel est son principal bénéfice ?",
+      "verso": "Une démarche permettant de faire participer les acteurs de son écosystème afin de faire émerger des solutions inédites grâce aux savoir-faire de chacun. Elle permet de réaliser rapidement des expérimentations en testant des cas d'usage concrets en situation réelle."
+    },
+    {
+      "id": "c-f05-007",
+      "section": "1. L'innovation",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels sont les risques de la co-innovation ?",
+      "verso": "Propriété intellectuelle, mauvais ciblage du périmètre commun, absence de méthodologie et d'outils partagés, espionnage industriel."
+    },
+    {
+      "id": "c-f05-008",
+      "section": "1. L'innovation",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Contrat de façonnage et contrat de fabrication : quelle différence ?",
+      "verso": "Façonnage : le façonnier travaille un produit pour lui donner une nouvelle forme, le produit restant la propriété du donneur d'ouvrage ; le partenariat peut être très fort. Fabrication : le fabricant sous-traite via un cahier des charges, le sous-traitant est un exécutant et livre les produits finis."
+    },
+    {
+      "id": "c-f05-009",
+      "section": "1. L'innovation",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un Fab Lab ?",
+      "verso": "Un espace d'incubation de projets structurant la co-innovation en interne, qui suppose un esprit et un management collaboratifs."
+    },
+    {
+      "id": "c-f05-010",
+      "section": "2. Marque, branding et expérience client",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Brand, branding et expérience client : que recouvre chaque dimension ?",
+      "verso": "Brand : l'identité profonde et stable de la marque, son essence immuable (mission, vision, personnalité). Branding : la mise en œuvre opérationnelle — storytelling, alignement omnicanal, cohérence des signes. Expérience client : la perception vécue, influencée par les deux premières."
+    },
+    {
+      "id": "c-f05-011",
+      "section": "2. Marque, branding et expérience client",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le brand equity, et comment se mesure-t-il ?",
+      "verso": "La valeur perçue de la marque au-delà de ses attributs fonctionnels, c'est-à-dire la valeur économique créée par la marque elle-même. Il se mesure par la notoriété, le NPS et la préférence de marque."
+    },
+    {
+      "id": "c-f05-012",
+      "section": "2. Marque, branding et expérience client",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "CX, UX et expérience omnicanale : que recouvre chacune ?",
+      "verso": "CX : l'ensemble des interactions vécues avec la marque sur tout le parcours. UX : l'expérience sur une interface, un produit ou un service donné. L'expérience omnicanale est la synthèse CX/UX sur l'ensemble des points de contact."
+    },
+    {
+      "id": "c-f05-013",
+      "section": "2. Marque, branding et expérience client",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Que sont les moments de vérité, et comment les identifie-t-on ?",
+      "verso": "Les interactions critiques qui déterminent la perception globale. On les identifie en cartographiant le parcours client, puis on mesure émotions et performances à chaque étape pour prioriser les améliorations selon l'impact perçu."
+    },
+    {
+      "id": "c-f05-014",
+      "section": "2. Marque, branding et expérience client",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sont les 3 dimensions de l'expérience client ?",
+      "verso": "Cognitive, affective, comportementale — auxquelles s'ajoute la stimulation multisensorielle, qui renforce l'attachement."
+    },
+    {
+      "id": "c-f05-015",
+      "section": "3. Le mix marketing",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Multicanal, cross-canal, omnicanal : quelle progression ?",
+      "verso": "Multicanal : plusieurs canaux gérés de façon indépendante ou complémentaire. Cross-canal : les canaux se synchronisent (acheter sur le web, retirer en magasin). Omnicanal : une expérience client unique et fluide, créant un attachement particulier à la marque."
+    },
+    {
+      "id": "c-f05-016",
+      "section": "3. Le mix marketing",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 3 paramètres de l'omnicanal ?",
+      "verso": "L'expérience, le parcours client, le relationnel."
+    },
+    {
+      "id": "c-f05-017",
+      "section": "3. Le mix marketing",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Que représente le 5ᵉ P du mix omnicanal ?",
+      "verso": "People : le client et la relation entretenue avec lui. Il s'agit de mettre le client au cœur du processus et de lui permettre de choisir le lieu, l'heure et le support qu'il souhaite — où il veut, quand il veut, comme il veut."
+    },
+    {
+      "id": "c-f05-018",
+      "section": "3. Le mix marketing",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le yield management ?",
+      "verso": "Une technique permettant de trouver un équilibre entre le prix et le taux d'occupation — chambre, place de spectacle, billet de train ou d'avion. Le prix est différencié selon le taux d'occupation et le moment de la réservation. Très utilisé dans l'hôtellerie et les transports."
+    },
+    {
+      "id": "c-f05-019",
+      "section": "3. Le mix marketing",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Pourquoi les marques évitent-elles généralement une politique prix différenciée par canal ?",
+      "verso": "Pour ne pas perturber leur clientèle et permettre de trouver les mêmes offres au même tarif quel que soit le canal. Une stratégie hybride est plus fréquente, avec des exclusivités web qui préservent la compétitivité face aux pure players."
+    },
+    {
+      "id": "c-f05-020",
+      "section": "3. Le mix marketing",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles tarifications flexibles la transparence des comparateurs a-t-elle favorisées ?",
+      "verso": "Tarif en temps réel, forfaits à l'usage, prix groupés, ventes aux enchères."
+    },
+    {
+      "id": "c-f05-021",
+      "section": "3. Le mix marketing",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Que signifient showrooming et ROPO ?",
+      "verso": "Ce sont les phénomènes store to web / web to store : tester en magasin puis acheter sur le web, ou l'inverse."
+    },
+    {
+      "id": "c-f05-022",
+      "section": "3. Le mix marketing",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le geofencing ?",
+      "verso": "Une technique de marketing mobile permettant de cibler des individus en fonction de leur localisation."
+    },
+    {
+      "id": "c-f05-023",
+      "section": "3. Le mix marketing",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Que recouvre le merchandising des magasins connectés ?",
+      "verso": "Commande des articles absents du magasin, force de vente équipée de tablettes, miroirs connectés, partage sur les réseaux sociaux, QR codes enrichissant l'information produit. Sur le web : personnalisation de la navigation et recommandation de produits."
+    },
+    {
+      "id": "c-f05-024",
+      "section": "3. Le mix marketing",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sont les 3 approches du développement à l'international ?",
+      "verso": "Le marketing à l'exportation · le marketing international global (standardisation) · le marketing international glocal, ou standardisation adaptée. Dans la majorité des cas, la standardisation introduit une dose d'adaptation."
+    },
+    {
+      "id": "c-f05-025",
+      "section": "3. Le mix marketing",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quel est souvent le facteur décisif de succès à l'international, au-delà des chiffres ?",
+      "verso": "L'adaptation aux spécificités culturelles — en marketing comme dans les opérations et les partenariats."
+    },
+    {
+      "id": "c-f05-026",
+      "section": "4. L'éthique",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Utilitarisme et déontologie : sur quoi chacun juge-t-il la moralité ?",
+      "verso": "L'utilitarisme (Jeremy Bentham) évalue la moralité selon les conséquences et le bien-être collectif. La déontologie la juge selon l'intention et le respect de principes universels."
+    },
+    {
+      "id": "c-f05-027",
+      "section": "4. L'éthique",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Sur quels 3 piliers repose la confiance ?",
+      "verso": "Crédibilité, bienveillance, intégrité."
+    },
+    {
+      "id": "c-f05-028",
+      "section": "4. L'éthique",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sont les 5 dimensions de l'authenticité de marque selon Beverland ?",
+      "verso": "Héritage, sincérité, expertise, résistance (au commercial), ancrage. Gilmore et Pine distinguent quant à eux quatre formes d'authenticité : naturelle, originale, exceptionnelle, référentielle."
+    },
+    {
+      "id": "c-f05-029",
+      "section": "4. L'éthique",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le Marketing 3.0 selon Kotler ?",
+      "verso": "Un déplacement du centre de gravité du produit vers le consommateur puis vers les valeurs : il intègre les préoccupations sociétales dans la stratégie et crée des communautés d'engagement autour de causes partagées."
+    },
+    {
+      "id": "c-f05-030",
+      "section": "4. L'éthique",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le greenwashing, et quelles en sont les 3 formes ?",
+      "verso": "L'écart entre la communication environnementale et les pratiques réelles. Par omission (taire les impacts défavorables), par commission (affirmer un bénéfice inexistant), par suggestion (laisser croire par l'image ou le vocabulaire)."
+    },
+    {
+      "id": "c-f05-031",
+      "section": "4. L'éthique",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Sur quelles 3 exigences repose la communication responsable ?",
+      "verso": "Transparence, traçabilité, reconnaissance des limites. Concrètement : vérifier la traçabilité des affirmations, communiquer proportionnellement à l'impact réel, éviter les formulations vagues ou non quantifiées."
+    },
+    {
+      "id": "c-f05-032",
+      "section": "4. L'éthique",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quel est le cadre légal anti-greenwashing ?",
+      "verso": "La directive européenne impose des critères de preuve stricts pour toute communication écologique, et l'ARPP exige une précision lexicale accrue."
+    },
+    {
+      "id": "c-f05-033",
+      "section": "4. L'éthique",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quel chiffre de l'ADEME illustre la méfiance des consommateurs ?",
+      "verso": "79 % des consommateurs français sont méfiants vis-à-vis des allégations environnementales non vérifiées."
+    },
+    {
+      "id": "c-f05-034",
+      "section": "5. Marketing responsable",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le marketing responsable ?",
+      "verso": "Une approche éthique où les entreprises concilient leurs objectifs commerciaux avec des considérations morales et sociales : critères éthiques dès la conception, communication transparente, initiatives sociales et environnementales."
+    },
+    {
+      "id": "c-f05-035",
+      "section": "5. Marketing responsable",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 étapes de la démarche de communication responsable ?",
+      "verso": "Analyser ses pratiques → élaborer une stratégie alignée sur ses valeurs → intégrer des principes éthiques → mesurer l'impact."
+    },
+    {
+      "id": "c-f05-036",
+      "section": "6. Évaluer l'impact RSE",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 3 dimensions des indicateurs RSE, avec un exemple chacune ?",
+      "verso": "Sociale (équité, diversité, bien-être) · environnementale (empreinte carbone, analyse du cycle de vie, consommation d'énergie, déchets, émissions de CO₂) · économique (fournisseurs locaux, budget médias responsables)."
+    },
+    {
+      "id": "c-f05-037",
+      "section": "6. Évaluer l'impact RSE",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Impacts directs et indirects dans une cartographie des impacts RSE ?",
+      "verso": "Directs : consommation d'énergie, déchets, émissions liées aux activités marketing. Indirects : influence sur les comportements, stéréotypes véhiculés."
+    },
+    {
+      "id": "c-f05-038",
+      "section": "6. Évaluer l'impact RSE",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "ISO 26000 et GRI : que couvre chacun ?",
+      "verso": "ISO 26000 est le cadre méthodologique de la responsabilité sociétale des organisations. GRI est le standard international de reporting développement durable."
+    },
+    {
+      "id": "c-f05-039",
+      "section": "6. Évaluer l'impact RSE",
+      "niveau": 2,
+      "type": "application",
+      "recto": "À quelle condition un tableau de bord RSE marketing est-il utile ?",
+      "verso": "Il doit être intégré aux processus de prise de décision marketing : sans cette intégration, le reporting reste déclaratif. Il structure les indicateurs en trois niveaux : stratégiques, tactiques, opérationnels."
+    },
+    {
+      "id": "c-f05-040",
+      "section": "7. Éco-conception",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que l'économie circulaire et quels sont ses 3 principes ?",
+      "verso": "Un modèle économique fondé sur la réduction, la réutilisation et le recyclage des ressources, par opposition à l'économie linéaire (extraire – produire – jeter). Ses principes : éliminer les déchets, maintenir les produits en usage, régénérer les systèmes naturels."
+    },
+    {
+      "id": "c-f05-041",
+      "section": "7. Éco-conception",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Comment la norme ISO 14006 définit-elle l'éco-conception ?",
+      "verso": "L'intégration systématique des aspects environnementaux dans la conception et le développement de produits et services. Approche préventive, elle réduit les impacts tout au long du cycle de vie, de l'extraction des matières premières à la fin de vie."
+    },
+    {
+      "id": "c-f05-042",
+      "section": "7. Éco-conception",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 3 caractéristiques essentielles de l'éco-conception ?",
+      "verso": "Systématique (intégrée à l'ensemble des processus, jamais ponctuelle) · préventive (anticipation plutôt que correction a posteriori) · vision cycle de vie (tous les impacts, jusqu'au recyclage ou à l'élimination)."
+    },
+    {
+      "id": "c-f05-043",
+      "section": "7. Éco-conception",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Qu'est-ce qui distingue l'éco-conception du greenwashing ?",
+      "verso": "Sa rigueur méthodologique et sa transparence radicale : elle impose une évaluation exhaustive de tous les impacts, y compris ceux qui révèlent des faiblesses."
+    },
+    {
+      "id": "c-f05-044",
+      "section": "7. Éco-conception",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 étapes de l'Analyse du Cycle de Vie (ACV) ?",
+      "verso": "1. Définition des objectifs et du champ d'étude\n2. Inventaire du cycle de vie (flux entrants et sortants)\n3. Évaluation de l'impact (changement climatique, acidification, toxicité)\n4. Interprétation des résultats et identification des points chauds environnementaux"
+    },
+    {
+      "id": "c-f05-045",
+      "section": "7. Éco-conception",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Sur quels standards l'ACV s'appuie-t-elle, et pourquoi ?",
+      "verso": "ISO 14040 et 14044, qui garantissent la reproductibilité et la comparabilité des analyses — condition pour comparer objectivement des solutions techniques et communiquer de façon crédible."
+    },
+    {
+      "id": "c-f05-046",
+      "section": "7. Éco-conception",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Par quoi commencer pour déployer l'ACV dans une entreprise ?",
+      "verso": "Par une mini-ACV simplifiée sur un produit phare, pour identifier rapidement les zones prioritaires et former les équipes à la logique cycle de vie. Les bases de données comme Ecoinvent fournissent les facteurs de référence."
+    },
+    {
+      "id": "c-f05-047",
+      "section": "7. Éco-conception",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le design universel ?",
+      "verso": "La conception de produits et services accessibles à tous, indépendamment des capacités. C'est le pendant social de l'éco-conception : penser dès l'origine l'accessibilité plutôt que l'adapter ensuite."
+    },
+    {
+      "id": "c-f05-048",
+      "section": "7. Éco-conception",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sont les deux forces de contrainte qui poussent à l'éco-conception ?",
+      "verso": "Les réglementations environnementales, dont la loi AGEC, qui imposent des standards de conception durable ; et les investisseurs ESG, qui conditionnent leurs financements à des critères sociaux et environnementaux."
+    },
+    {
+      "id": "c-f05-049",
+      "section": "7. Éco-conception",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Que combine une démarche de numérique responsable en entreprise ?",
+      "verso": "Une politique d'achat atteignable (durée de vie des équipements, reconditionné, réparabilité) et des pratiques quotidiennes et écogestes faciles à déployer par l'ensemble des collaborateurs."
+    }
+  ]
+}

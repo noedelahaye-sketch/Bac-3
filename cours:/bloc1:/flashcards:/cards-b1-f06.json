@@ -1,0 +1,359 @@
+{
+  "resume": "b1-f06",
+  "titre": "Marque, contenu et leviers digitaux",
+  "bloc": 1,
+  "cartes": [
+    {
+      "id": "c-f06-001",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Content marketing, brand content et UGC : que recouvre chaque notion ?",
+      "verso": "Content marketing : création, publication et diffusion de contenus en ligne pour promouvoir une entreprise, un produit ou un service. Brand content : expression directe de l'identité de la marque par des contenus éditoriaux. UGC : contenu produit par l'audience (avis, photos, vidéos), qui apporte authenticité et spontanéité."
+    },
+    {
+      "id": "c-f06-002",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Qu'est-ce qui distingue le brand content de la publicité traditionnelle ?",
+      "verso": "L'absence d'argumentaire commercial et de slogans. Il s'appuie sur le storytelling et s'inscrit dans une stratégie de moyen et long terme visant l'engagement durable plutôt que la conversion immédiate."
+    },
+    {
+      "id": "c-f06-003",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les avantages du contenu de marque ?",
+      "verso": "Facilement partageable · génère plus d'engagements · aide l'audience à comprendre le positionnement et les valeurs · renforce la confiance · renforce la fidélité. Surtout, il met en valeur produits et services sans générer de frustration auprès d'une audience usée par les publicités directes."
+    },
+    {
+      "id": "c-f06-004",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que l'engagement, et quelle en est la limite ?",
+      "verso": "La mesure des partages, des publications aimées (likées) et des commentaires d'une audience. C'est l'indicateur courant de performance des médias sociaux — mais il ne se traduit pas nécessairement par des ventes."
+    },
+    {
+      "id": "c-f06-005",
+      "section": "1. La stratégie de contenu",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels sont les 3 piliers de la stratégie brand content ?",
+      "verso": "L'identification, la valorisation et l'édition."
+    },
+    {
+      "id": "c-f06-006",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 4 types de médias, et que recouvre chacun ?",
+      "verso": "Owned (site, blog, newsletter, comptes sociaux de la marque) · earned (retombées presse, bouche-à-oreille, mentions spontanées) · shared (reprises et partages par l'audience) · paid (display, SEA, social ads, partenariats sponsorisés)."
+    },
+    {
+      "id": "c-f06-007",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 3 questions à trancher avant toute stratégie de content marketing ?",
+      "verso": "1. Quels objectifs marketing et précis pouvez-vous vous fixer ?\n2. Quelles cibles visez-vous, avec des profils de buyer persona détaillés ?\n3. Quels indicateurs (KPI réalistes et mesurables) allez-vous suivre ?"
+    },
+    {
+      "id": "c-f06-008",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 5 facteurs clés du succès d'une stratégie de contenu ?",
+      "verso": "Les objectifs, les cibles, les indicateurs — associés à la ligne éditoriale et à l'identité visuelle, qui achèvent de définir le positionnement voulu et assumé."
+    },
+    {
+      "id": "c-f06-009",
+      "section": "1. La stratégie de contenu",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "En quoi consiste la méthode « Test & Learn » ?",
+      "verso": "Tester, regarder les résultats, apprendre et s'améliorer. La réussite n'étant pas toujours au rendez-vous du premier coup, la feuille de route permet de l'appliquer."
+    },
+    {
+      "id": "c-f06-010",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelle est la maxime du content marketing ?",
+      "verso": "Délivrer le bon contenu, au bon moment, à la bonne personne cible, sur la bonne plateforme."
+    },
+    {
+      "id": "c-f06-011",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 phases du cycle du contenu, et quel type de contenu pour chacune ?",
+      "verso": "Inconnu → visiteur : contenus pour attirer. Visiteur → prospect : contenus pour convertir. Prospect → client : contenus pour transformer (vendre). Client → ambassadeur : contenus pour combler (fidéliser)."
+    },
+    {
+      "id": "c-f06-012",
+      "section": "2. Élaborer et piloter",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 grandes familles d'objectifs d'une stratégie de contenu ?",
+      "verso": "Visibilité · acquisition de prospects · fidélisation · image de marque."
+    },
+    {
+      "id": "c-f06-013",
+      "section": "2. Élaborer et piloter",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quels sont les deux leviers pour gagner du temps dans la production de contenu ?",
+      "verso": "Mieux collaborer en interne, ou externaliser tout ou partie de la production. La question se pose particulièrement pour le SEO, compte tenu de son degré de complexité et de mise à jour."
+    },
+    {
+      "id": "c-f06-014",
+      "section": "3. SEO et écriture web",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quel est le profil du bon créateur de contenu web ?",
+      "verso": "Être en veille sur les mises à jour des moteurs de recherche · comprendre a minima comment fonctionne le SEO · rédiger en adoptant les techniques « SEO friendly » · rechercher la popularité des mots-clés · créer des contenus uniques et illustrés."
+    },
+    {
+      "id": "c-f06-015",
+      "section": "3. SEO et écriture web",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Que doit-on viser dans la rédaction web ?",
+      "verso": "Créer des contenus uniques, remarquables, partageables et non copiés-collés, appliquer les règles de base de l'écriture, et toujours illustrer par des visuels ou vidéos en pensant au « Wow effect »."
+    },
+    {
+      "id": "c-f06-016",
+      "section": "4. Produire les contenus",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un contenu digital, et quelles en sont les propriétés ?",
+      "verso": "Tout contenu graphique ou sonore destiné à être utilisé dans un environnement virtuel interactif. Numérique donc virtuel : mode de consommation pluriel et démultiplié, propagation libre par l'utilisateur, existence qui perdure dans le temps, interaction possible."
+    },
+    {
+      "id": "c-f06-017",
+      "section": "4. Produire les contenus",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sont les 6 formes de contenu digital ?",
+      "verso": "Textuel (blog, articles, post) · graphique (illustrations) · vidéo (corporate, viral) · animé (motion design) · audio (podcast) · interactif (application UX)."
+    },
+    {
+      "id": "c-f06-018",
+      "section": "4. Produire les contenus",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles questions poser lors du premier contact client pour un projet de contenu ?",
+      "verso": "Quand ? (délais du besoin) · Qui ? (cible) · Comment ? (site, application, vidéo, motion design) · Pourquoi ? (ébauche d'idée). Puis reformuler, proposer, ajuster et faire valider."
+    },
+    {
+      "id": "c-f06-019",
+      "section": "4. Produire les contenus",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels sont les outils de pré-production d'un contenu digital ?",
+      "verso": "Charte visuelle · synopsis et scénario · story-board · bible des personnages · découpage technique ou plan de travail. Les faire valider en amont est l'assurance de mener la production à bien."
+    },
+    {
+      "id": "c-f06-020",
+      "section": "4. Produire les contenus",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Orientation artistique et briefing créatif : quelle différence ?",
+      "verso": "L'orientation artistique est le chemin de fer créatif, la direction proposée par le spécialiste de la communication, tenant compte des tendances du secteur. Le briefing créatif est un audit technique et artistique visant à décortiquer la demande client pour lui proposer une solution adaptée."
+    },
+    {
+      "id": "c-f06-021",
+      "section": "4. Produire les contenus",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 questions du brief créatif ?",
+      "verso": "Qui suis-je ? (identité, valeurs, histoire) · À qui m'adressé-je ? (cible, habitudes, âge, profil) · Pourquoi souhaité-je communiquer ? (comment suis-je perçu, comment souhaiterais-je l'être) · Comment dois-je communiquer ? (objectif, message, contraintes, priorités, budget)."
+    },
+    {
+      "id": "c-f06-022",
+      "section": "4. Produire les contenus",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Mood board et croquis : à quelle phase du processus de création appartiennent-ils ?",
+      "verso": "Le mood board relève de la phase d'inspiration : il illustre des concepts et crée une ligne directrice dans le style et l'ambiance graphique. Les croquis relèvent de la phase de dessins préparatoires : ils mettent les idées en image avant de développer les axes de création."
+    },
+    {
+      "id": "c-f06-023",
+      "section": "4. Produire les contenus",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Que construit le design de marque ?",
+      "verso": "Les éléments visuels de la marque : typographie, couleurs, formes, logo. Certaines marques ont réussi à se passer de leur nom dans leur communication, tant ces éléments suffisent à les faire reconnaître."
+    },
+    {
+      "id": "c-f06-024",
+      "section": "4. Produire les contenus",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Que signifie « se démarquer » dans la création de contenu ?",
+      "verso": "Comprendre les codes actuels de communication et savoir les réutiliser à son avantage : on peut être « dans le courant » ou « à contre-courant » — tout est question de parti pris."
+    },
+    {
+      "id": "c-f06-025",
+      "section": "5. Storytelling et brand content",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Sur quels leviers agissent le storytelling et le brand content, et à quelles échéances ?",
+      "verso": "Sur les émotions, les valeurs et les codes culturels. À court terme, ils agissent sur l'image de marque ; à long terme, sur une lente conversion des audiences en consommateurs."
+    },
+    {
+      "id": "c-f06-026",
+      "section": "5. Storytelling et brand content",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Le brand content et le storytelling sont au service de quoi, respectivement ?",
+      "verso": "Le brand content est au service du capital de marque ; le storytelling au service de l'histoire de la marque."
+    },
+    {
+      "id": "c-f06-027",
+      "section": "5. Storytelling et brand content",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Comment Internet a-t-il changé la nature de la présence des marques ?",
+      "verso": "Internet n'est plus un réseau de sites vitrines mais un ensemble d'interfaces interactionnelles et conversationnelles : on passe de la vitrine aux interactions conversationnelles, et créer de l'engagement devient un enjeu majeur de visibilité et de notoriété."
+    },
+    {
+      "id": "c-f06-028",
+      "section": "6. Inbound et outbound",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Outbound, inbound et content marketing : quelle différence ?",
+      "verso": "Outbound : aller chercher le client par des messages poussés, parfois intrusifs. Inbound : attirer les clients par du contenu pertinent. Content marketing : la production de contenus, qui n'est qu'une facette de l'inbound — une stratégie inbound réussie prend en compte l'ensemble du parcours client."
+    },
+    {
+      "id": "c-f06-029",
+      "section": "6. Inbound et outbound",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels sont les 3 impératifs d'une stratégie inbound ?",
+      "verso": "Être cohérente avec l'audience cible et ses attentes · rester à l'écoute des retours et évaluer les performances · maintenir une veille constante, les tendances évoluant en permanence."
+    },
+    {
+      "id": "c-f06-030",
+      "section": "7. Les leviers relationnels et digitaux",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Comment le Mercator définit-il le marketing viral ?",
+      "verso": "« Exploitation, au profit d'une marque ou d'une organisation, du bouche-à-oreille sur Internet ou les mobiles, visant à créer une réaction en chaîne. » Sa propriété essentielle : c'est le consommateur qui est à l'origine de la diffusion — le destinataire devient acteur."
+    },
+    {
+      "id": "c-f06-031",
+      "section": "7. Les leviers relationnels et digitaux",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sont les conditions de réussite d'une campagne virale ?",
+      "verso": "Originalité et créativité · maîtrise de la cible, des outils de communication et de leurs usages · leviers à privilégier · contenu soigné et réfléchi · suivi après le lancement. Et une dose de chance."
+    },
+    {
+      "id": "c-f06-032",
+      "section": "7. Les leviers relationnels et digitaux",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les indicateurs clés de notoriété sur les réseaux sociaux ?",
+      "verso": "Les impressions, la portée, l'engagement, les mentions."
+    },
+    {
+      "id": "c-f06-033",
+      "section": "7. Les leviers relationnels et digitaux",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les missions du community manager ?",
+      "verso": "Susciter des conversations et animer les échanges · créer des contenus web pour alimenter la relation · impliquer l'internaute dans la communication et l'élaboration des produits. Il est ambassadeur de la marque et expert des réseaux sociaux, et veille à l'e-réputation."
+    },
+    {
+      "id": "c-f06-034",
+      "section": "7. Les leviers relationnels et digitaux",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quel paradoxe pose la géolocalisation ?",
+      "verso": "Elle est aussi efficace qu'intrusive. Le comportement de l'utilisateur est souvent paradoxal : il aime indiquer où il se trouve sur un réseau social mais ne souhaite pas qu'une application le géolocalise. Son accord est indispensable."
+    },
+    {
+      "id": "c-f06-035",
+      "section": "7. Les leviers relationnels et digitaux",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 3 principes du micro-moment marketing ?",
+      "verso": "Be There (soyez présent) · Be Useful (soyez utile) · Be Quick (soyez rapide). Sur ces périodes courtes, les consommateurs attendent une réponse immédiate et priorisent les contenus rapidement compréhensibles."
+    },
+    {
+      "id": "c-f06-036",
+      "section": "7. Les leviers relationnels et digitaux",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Pourquoi une carte de fidélité ne suffit-elle pas à fidéliser ?",
+      "verso": "Proposer une simple carte de fidélité ne permet ni de se différencier ni de créer un sentiment d'attachement. Il faut poser les objectifs, le contexte et les moyens du programme, et mesurer régulièrement les résultats pour ajuster."
+    },
+    {
+      "id": "c-f06-037",
+      "section": "7. Les leviers relationnels et digitaux",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce que la pénétration des ventes ?",
+      "verso": "L'indicateur clé de la fidélisation : le pourcentage des ventes générées par les membres du programme de fidélisation."
+    },
+    {
+      "id": "c-f06-038",
+      "section": "7. Les leviers relationnels et digitaux",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Co-branding et co-marketing : quelle différence ?",
+      "verso": "Les deux reposent sur un partenariat entre marques, mais le co-marketing se focalise sur les efforts marketing sans création d'un nouveau produit, alors que le co-branding repose précisément sur cette création."
+    },
+    {
+      "id": "c-f06-039",
+      "section": "8. Influence et marketing d'influence",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un influenceur, et comment les classe-t-on ?",
+      "verso": "Un créateur de contenu qui monétise sa visibilité auprès de sa communauté en partenariat avec des marques. On les classe selon la taille de leur communauté : nano, micro, macro et méga-influenceurs."
+    },
+    {
+      "id": "c-f06-040",
+      "section": "8. Influence et marketing d'influence",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le taux d'engagement, et pourquoi prime-t-il sur l'audience brute ?",
+      "verso": "Les interactions (likes, commentaires, partages) rapportées au nombre de followers. C'est lui, plus que la taille de l'audience, qui mesure l'influence réelle."
+    },
+    {
+      "id": "c-f06-041",
+      "section": "8. Influence et marketing d'influence",
+      "niveau": 2,
+      "type": "application",
+      "recto": "À quel besoin l'influence sociale répond-elle ?",
+      "verso": "C'est un mécanisme de captation d'audience qui répond à la crise de confiance vis-à-vis des médias traditionnels. Elle doit répondre à trois besoins identifiés : celui de la marque, celui de la cible finale, et la manière dont l'influenceur fait le lien entre les deux."
+    },
+    {
+      "id": "c-f06-042",
+      "section": "8. Influence et marketing d'influence",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles étapes structurent une stratégie d'influence ?",
+      "verso": "Analyser la situation (but, situation, objectif, action, stratégie, résultat) · fixer des objectifs SMART · analyse PESTEL des tendances externes · définir cibles et besoins via les personas · définir son budget · identifier, mesurer l'influence, séduire, négocier et contractualiser · mesurer les retombées et le ROI."
+    },
+    {
+      "id": "c-f06-043",
+      "section": "9. La communication d'activisme",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que la communication activiste, et que ne vise-t-elle pas ?",
+      "verso": "Elle vise à changer une situation donnée pour favoriser l'intérêt général. Elle n'a pas pour but la défense d'intérêts économiques ou individuels."
+    },
+    {
+      "id": "c-f06-044",
+      "section": "9. La communication d'activisme",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les erreurs à ne pas commettre en communication d'activisme ?",
+      "verso": "Prôner des valeurs pour augmenter les ventes d'un produit — le greenwashing ou le purplewashing sont rapidement dénoncés · agir de manière indépendante, sans concertation avec les équipes expertes, les relations publiques et le terrain · sous-estimer la visibilité et les dangers de la récupération."
+    }
+  ]
+}

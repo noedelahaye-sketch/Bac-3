@@ -1,0 +1,455 @@
+{
+  "resume": "b1-f01",
+  "titre": "Veille et intelligence économique",
+  "bloc": 1,
+  "cartes": [
+    {
+      "id": "c-f01-001",
+      "section": "1. L'intelligence économique",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Comment Claude Revel définit-elle l'intelligence économique ?",
+      "verso": "« Un mode de gouvernance fondé sur la maîtrise et l'exploitation de l'information stratégique pour créer de la valeur durable dans une entité. » Officiellement : processus de collecte, analyse, valorisation, diffusion et protection de l'information économique stratégique."
+    },
+    {
+      "id": "c-f01-002",
+      "section": "1. L'intelligence économique",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 3 volets de la démarche d'intelligence économique ?",
+      "verso": "1. La veille et l'anticipation\n2. La maîtrise des risques (sécurité économique)\n3. L'action proactive sur l'environnement (l'influence)"
+    },
+    {
+      "id": "c-f01-003",
+      "section": "1. L'intelligence économique",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Qu'est-ce qui distingue l'intelligence économique de l'espionnage économique ?",
+      "verso": "L'espionnage obtient par des moyens illégaux des informations « noires » — protégées par le secret ou à accès restreint. L'IE exploite exclusivement des sources ouvertes et légalement accessibles."
+    },
+    {
+      "id": "c-f01-004",
+      "section": "1. L'intelligence économique",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une information « noire » ?",
+      "verso": "Une information protégée par le secret ou dont l'accès est restreint. Son obtention non autorisée est une infraction punie par la loi."
+    },
+    {
+      "id": "c-f01-005",
+      "section": "1. L'intelligence économique",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce que la coopétition ?",
+      "verso": "La coopération entre deux acteurs concurrents pour défendre un intérêt commun. Exemple : une alliance ponctuelle sur un appel d'offres international."
+    },
+    {
+      "id": "c-f01-006",
+      "section": "1. L'intelligence économique",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Hard power, soft power, smart power : quelle différence ?",
+      "verso": "Hard power = capacité coercitive (pression militaire ou économique). Soft power = influence par des éléments idéologiques ou culturels. Smart power = combinaison des deux."
+    },
+    {
+      "id": "c-f01-007",
+      "section": "1. L'intelligence économique",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce que le Knowledge Management ?",
+      "verso": "Une démarche structurée de gestion et de capitalisation de la connaissance et des savoir-faire. Il donne à l'information sa dimension de patrimoine immatériel."
+    },
+    {
+      "id": "c-f01-008",
+      "section": "1. L'intelligence économique",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Pourquoi l'intelligence économique s'intéresse-t-elle à la normalisation ?",
+      "verso": "Parce que des stratégies d'influence peuvent orienter le contenu des textes. Influencer en amont le contenu d'une norme ou d'une loi est un atout maître."
+    },
+    {
+      "id": "c-f01-009",
+      "section": "1. L'intelligence économique",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce que le SISSE ?",
+      "verso": "Le Service de l'Information Stratégique et de la Sécurité Économiques, rattaché au ministère de l'Économie. Il identifie les secteurs, technologies et entreprises d'intérêt national et est relayé en régions par les préfets."
+    },
+    {
+      "id": "c-f01-010",
+      "section": "2. La veille : définition et objectifs",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Veille informationnelle et veille stratégique : quel rapport ?",
+      "verso": "La veille stratégique est un sous-domaine de la veille informationnelle, et le premier pilier de l'intelligence économique. Elle surveille l'environnement global pour anticiper opportunités et menaces à moyen et long terme."
+    },
+    {
+      "id": "c-f01-011",
+      "section": "2. La veille : définition et objectifs",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Que couvrent respectivement la veille interne et la veille externe ?",
+      "verso": "Interne : aspects opérationnels, données financières, compétences distinctives. Externe : concurrence, tendances du marché, compréhension des réglementations."
+    },
+    {
+      "id": "c-f01-012",
+      "section": "2. La veille : définition et objectifs",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 5 objectifs de la veille ?",
+      "verso": "1. Prendre des décisions éclairées\n2. Bénéficier d'une vue d'ensemble sur les tendances\n3. Améliorer la compétitivité\n4. Mieux gérer les risques\n5. Identifier de nouvelles opportunités"
+    },
+    {
+      "id": "c-f01-013",
+      "section": "2. La veille : définition et objectifs",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "En quoi consiste la valeur ajoutée de la veille ?",
+      "verso": "Détecter l'information utile → évaluer sa pertinence → mesurer son importance → anticiper ses conséquences → la diffuser aux bons interlocuteurs → déclencher la décision adéquate. L'objectif final est de produire de la connaissance utile."
+    },
+    {
+      "id": "c-f01-014",
+      "section": "2. La veille : définition et objectifs",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un signal faible, selon Igor Ansoff ?",
+      "verso": "« Une information d'alerte précoce, de faible intensité, pouvant être annonciatrice d'une tendance ou d'un événement important. » Information parcellaire et d'apparence anodine : toute la difficulté est de la contextualiser."
+    },
+    {
+      "id": "c-f01-015",
+      "section": "2. La veille : définition et objectifs",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Que montre le cas Blockbuster ?",
+      "verso": "9 000 magasins aux États-Unis en 2004, faillite en 2014 : l'enseigne n'a jamais pris au sérieux l'accélération des vitesses de téléchargement, qui allait favoriser l'explosion du streaming. Un signal faible non contextualisé."
+    },
+    {
+      "id": "c-f01-016",
+      "section": "2. La veille : définition et objectifs",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 5 critères de qualité d'une information ?",
+      "verso": "Pertinente · fiable · récente · exhaustive · disponible (obtenue légalement et éthiquement, dans le respect des droits d'auteur et de la confidentialité)."
+    },
+    {
+      "id": "c-f01-017",
+      "section": "2. La veille : définition et objectifs",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Information primaire et information secondaire : quelle différence, et quel risque ?",
+      "verso": "Primaire = recueillie directement (enquêtes, sondages, études qualitatives), de première main. Secondaire = issue de données transformées (comptes rendus, synthèses, articles). La secondaire donne le contexte mais introduit un biais : elle reflète les intérêts de l'entité qui la produit."
+    },
+    {
+      "id": "c-f01-018",
+      "section": "2. La veille : définition et objectifs",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Sources formalisées et sources informelles : que valent-elles ?",
+      "verso": "Formalisées : accessibles, connues, fiables et qualitatives. Informelles : plus difficiles à identifier, mais souvent confidentielles et stratégiques. La règle est de multiplier et recouper en mixant formelles, informelles, internes et externes."
+    },
+    {
+      "id": "c-f01-019",
+      "section": "3. Les types de veille",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Citez les 6 types de veille les plus courants et leur objet.",
+      "verso": "Technologique (innovations, brevets, R&D) · concurrentielle (stratégies des concurrents) · marketing (tendances, besoins, comportements d'achat) · juridique et réglementaire (lois, normes, conformité) · e-réputation (image sur le web) · écologique/RSE (pratiques durables, réglementations environnementales)."
+    },
+    {
+      "id": "c-f01-020",
+      "section": "3. Les types de veille",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que l'e-réputation, selon Bertrand Bathelot ?",
+      "verso": "L'image véhiculée et/ou subie par une entreprise sur internet et les supports numériques. Elle résulte surtout des contenus diffusés par les internautes, et est davantage influencée par la visibilité des avis que par leur quantité."
+    },
+    {
+      "id": "c-f01-021",
+      "section": "3. Les types de veille",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Quelle citation de Chris Anderson résume l'enjeu de l'e-réputation ?",
+      "verso": "« Votre marque n'est pas ce que vous en dites, mais ce que Google en dit ! »"
+    },
+    {
+      "id": "c-f01-022",
+      "section": "3. Les types de veille",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Autour de quel cadre la veille RSE structure-t-elle son analyse ?",
+      "verso": "L'approche ESG : Environnement, Social, Gouvernance. Cadre réglementaire : loi Pacte, DPEF, CSRD. Référentiels internationaux : GRI, SASB, taxonomie européenne. Outil : la cartographie des parties prenantes."
+    },
+    {
+      "id": "c-f01-023",
+      "section": "3. Les types de veille",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une tendance lourde ?",
+      "verso": "Une tendance détectée lorsqu'elle est importante et constante. La veille environnementale l'identifie en observant les principaux indicateurs sociaux, économiques et démographiques."
+    },
+    {
+      "id": "c-f01-024",
+      "section": "3. Les types de veille",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Qui porte la veille sociale dans l'entreprise ?",
+      "verso": "La direction générale, la DRH et les Instances Représentatives du Personnel (IRP) : le Comité Social et Économique (CSE), qui s'appuie sur la Base de Données Économiques, Sociales et Environnementales (BDESE) obligatoire, et la délégation syndicale."
+    },
+    {
+      "id": "c-f01-025",
+      "section": "3. Les types de veille",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quel critère ne doit pas être prioritaire dans la sélection d'un fournisseur ?",
+      "verso": "Le prix. Sur le long terme, la qualité, la fiabilité et la rapidité priment. Le moyen le plus fiable de trouver un prestataire reste la recommandation."
+    },
+    {
+      "id": "c-f01-026",
+      "section": "3. Les types de veille",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Qu'est-ce que la veille intégrée, et que dépasse-t-elle ?",
+      "verso": "Elle dépasse la veille en silos en croisant les dimensions technologiques, réglementaires et sociétales. Approche systémique révélant les interdépendances : une innovation technologique déclenche une évolution normative, qui rencontre une acceptabilité sociale variable."
+    },
+    {
+      "id": "c-f01-027",
+      "section": "3. Les types de veille",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "En quoi consiste la cartographie des écosystèmes ?",
+      "verso": "Elle transforme la veille en radar stratégique par une approche concentrique par cercles, intégrant tous les acteurs influents — concurrents, substituts, nouveaux entrants, ONG, think tanks, institutions — y compris en veille extra-sectorielle, l'estompage des frontières sectorielles rendant insuffisante la surveillance des seuls concurrents directs."
+    },
+    {
+      "id": "c-f01-028",
+      "section": "4. Le cycle de veille",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 7 étapes du cycle de veille ?",
+      "verso": "1. Définir les objectifs stratégiques\n2. Identifier les axes de veille\n3. Sélectionner et hiérarchiser les sources\n4. Mettre en place des KPI\n5. Collecter l'information (Pull / Push)\n6. Analyser et traiter les données\n7. Diffusion sélective de l'information"
+    },
+    {
+      "id": "c-f01-029",
+      "section": "4. Le cycle de veille",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Que signifie QQOQCCP, et à quoi sert-il dans un plan de veille ?",
+      "verso": "Qui, Quoi, Où, Quand, Comment, Combien, Pourquoi. Il sert à délimiter le périmètre de la veille. Une veille mal préparée devient vite chronophage et peu pertinente."
+    },
+    {
+      "id": "c-f01-030",
+      "section": "4. Le cycle de veille",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Approche Pull et approche Push : quelle différence ?",
+      "verso": "Pull = recherche active et périodique par l'utilisateur. Push = information poussée automatiquement selon des critères prédéfinis (flux RSS). La combinaison des deux constitue une stratégie complète."
+    },
+    {
+      "id": "c-f01-031",
+      "section": "4. Le cycle de veille",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Citez une famille d'outils de veille et deux exemples pour chacune.",
+      "verso": "Alertes par mots-clés : Google Alertes, Talkwalker · Agrégateurs de flux RSS : Netvibes, Feedly · Médias sociaux : Hootsuite, Mention, Brandwatch · Plateformes spécialisées : Similarweb, Semrush · Collaboratifs : Trello, Slack, Power BI, Confluence."
+    },
+    {
+      "id": "c-f01-032",
+      "section": "4. Le cycle de veille",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Quelle est la limite fondamentale de l'automatisation de la veille ?",
+      "verso": "De nombreuses solutions automatisent la collecte, mais aucune n'est optimale pour le traitement de l'information. Les phases de sélection, d'organisation et d'analyse reposent impérativement sur des interventions humaines."
+    },
+    {
+      "id": "c-f01-033",
+      "section": "4. Le cycle de veille",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Citez cinq sources institutionnelles mobilisables en veille.",
+      "verso": "INSEE, Legifrance, INPI, AFNOR, CCI, Business France, CREDOC, DGDDI."
+    },
+    {
+      "id": "c-f01-034",
+      "section": "4. Le cycle de veille",
+      "niveau": 2,
+      "type": "application",
+      "recto": "De quoi dépend la qualité du retour d'une plateforme d'alerte par mots-clés ?",
+      "verso": "De la pertinence des mots-clés retenus. C'est le paramétrage, pas l'outil, qui fait la qualité de la veille."
+    },
+    {
+      "id": "c-f01-035",
+      "section": "5. La veille concurrentielle",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Concurrents directs, indirects et tertiaires : quelle définition pour chacun ?",
+      "verso": "Directs : même clientèle, produit très similaire. Indirects : produit différent, mais qui répond au même besoin. Tertiaires (ou de substitution) : produit différent, mais qui s'adresse à la même cible."
+    },
+    {
+      "id": "c-f01-036",
+      "section": "5. La veille concurrentielle",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Quel exemple illustre la concurrence indirecte ?",
+      "verso": "La SNCF doit surveiller les compagnies aériennes : le produit est différent, mais il répond au même besoin — se déplacer sur de longues distances."
+    },
+    {
+      "id": "c-f01-037",
+      "section": "5. La veille concurrentielle",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Pourquoi faut-il accorder une attention grandissante à la concurrence indirecte ?",
+      "verso": "Parce que le besoin du client est au cœur de la stratégie : aux yeux du client, c'est la satisfaction du besoin qui l'emporte, pas la ressemblance des produits."
+    },
+    {
+      "id": "c-f01-038",
+      "section": "5. La veille concurrentielle",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une information « grise » et d'où vient-elle ?",
+      "verso": "Une information officieuse et stratégique, difficilement accessible. Elle vient des remontées terrain : commerciaux, employés, clients, fournisseurs."
+    },
+    {
+      "id": "c-f01-039",
+      "section": "5. La veille concurrentielle",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Que révèlent les offres d'emploi d'un concurrent ?",
+      "verso": "Sa stratégie à venir : recruter des ingénieurs laisse présager de nouveaux produits, chercher des commerciaux sur un secteur précis indique une attaque de ce marché. Elles renseignent aussi sur la culture d'entreprise, le turn-over et les salaires."
+    },
+    {
+      "id": "c-f01-040",
+      "section": "6. Anticipation et prospective",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que la prospective, et quel est son postulat ?",
+      "verso": "La méthode qui permet d'aborder l'avenir de manière globale en étudiant les futurs possibles. Postulat : l'avenir n'est pas seulement à prédire, il est aussi à construire — il n'y a pas un seul avenir mais plusieurs futurs possibles."
+    },
+    {
+      "id": "c-f01-041",
+      "section": "6. Anticipation et prospective",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Citez quatre méthodes prospectivistes.",
+      "verso": "La méthode des scénarios (outil fondamental) · l'analyse des tendances · les groupes de réflexion (think tanks) · la méthode Delphi · l'étude de cas · la méthode Prodin."
+    },
+    {
+      "id": "c-f01-042",
+      "section": "6. Anticipation et prospective",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "En quoi consiste la méthode Delphi ?",
+      "verso": "Une consultation itérative de panels d'experts, qui affinent leurs prévisions jusqu'à l'obtention d'un consensus."
+    },
+    {
+      "id": "c-f01-043",
+      "section": "6. Anticipation et prospective",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sont les trois limites de la prospective ?",
+      "verso": "L'incertitude et les limites de précision (projections faites à l'instant T) · la subjectivité des scénarios (biais des experts, préférences des parties prenantes) · le coût en temps, en experts et en technologies."
+    },
+    {
+      "id": "c-f01-044",
+      "section": "6. Anticipation et prospective",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "État d'esprit fixe et état d'esprit en développement : qu'est-ce qui les oppose ?",
+      "verso": "Le fixe croit ses compétences immuables : manque d'ouverture, résistance au changement, réticence à sortir de sa zone de confort. Celui en développement encourage l'apprentissage continu et traite les défis comme des opportunités."
+    },
+    {
+      "id": "c-f01-045",
+      "section": "6. Anticipation et prospective",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 dimensions de compétences liées à l'anticipation ?",
+      "verso": "Savoir (connaissances) · savoir-faire (compétences techniques) · savoir-être (créativité, résilience, écoute active, travail en équipe) · faire-savoir (partage des connaissances au sein de l'organisation)."
+    },
+    {
+      "id": "c-f01-046",
+      "section": "6. Anticipation et prospective",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Que sont les 5C de l'intelligence collective ?",
+      "verso": "Créativité · Collaboration · Critique (pensée critique) · Communication · Compassion."
+    },
+    {
+      "id": "c-f01-047",
+      "section": "6. Anticipation et prospective",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Selon Carl Gustav Jung, par quels filtres les individus perçoivent-ils ?",
+      "verso": "La pensée (logique, données quantitatives), le sentiment (valeurs, émotions, empathie), l'intuition (tendances, possibilités futures) et la sensation (informations concrètes, détails tangibles, terrain). L'intelligence collective consiste à intégrer ces typologies."
+    },
+    {
+      "id": "c-f01-048",
+      "section": "7. Restitution",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Que contient un compte rendu de veille ?",
+      "verso": "Résumé exécutif · sources et évaluation de leur fiabilité · analyse de la situation · identification des tendances · forces et faiblesses · opportunités et menaces · recommandations · méthodologie de veille · synthèse visuelle · mise en contexte temporel."
+    },
+    {
+      "id": "c-f01-049",
+      "section": "7. Restitution",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 3 objectifs de la synthétisation des veilles ?",
+      "verso": "Ne pas se noyer dans le flux d'informations · assurer la traçabilité, pour revenir facilement sur ses recherches · partager simplement son cheminement."
+    },
+    {
+      "id": "c-f01-050",
+      "section": "7. Restitution",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Pourquoi ne faut-il jamais s'appuyer sur une source unique ?",
+      "verso": "N'avoir qu'une source décrédibilise la recherche, tandis qu'une information relayée par une multitude de sources y apporte du poids."
+    },
+    {
+      "id": "c-f01-051",
+      "section": "8. Limites et risques",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Fake news et théories complotistes : quelle différence ?",
+      "verso": "Les fake news sont de fausses informations visant à attirer l'audience ou à manipuler. Les théories complotistes partent de faits réels et avérés, attribués à une organisation secrète qui aurait eu intérêt à leur réalisation."
+    },
+    {
+      "id": "c-f01-052",
+      "section": "8. Limites et risques",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Pourquoi est-il difficile de réglementer les fake news, et comment s'en protéger ?",
+      "verso": "Les informations sont trop nombreuses et difficilement vérifiables, et toute censure risque de porter atteinte à la liberté d'expression. La protection passe par la confiance instaurée avec son audience, la transparence et l'exemplarité — et, individuellement, par l'esprit critique."
+    },
+    {
+      "id": "c-f01-053",
+      "section": "9. Veille et innovation",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Comment l'OCDE définit-elle l'innovation ?",
+      "verso": "« La mise en œuvre d'un produit (bien ou service) ou d'un procédé nouveau ou sensiblement amélioré, d'une nouvelle méthode de commercialisation ou d'une nouvelle méthode organisationnelle. »"
+    },
+    {
+      "id": "c-f01-054",
+      "section": "9. Veille et innovation",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 4 types d'innovation, par degré ?",
+      "verso": "Incrémentale (perfectionner l'existant) · adjacente (transposer une technologie existante sur un marché différent) · de rupture ou disruptive (version simplifiée, moins chère, plus accessible) · radicale (produit totalement nouveau créant un marché)."
+    },
+    {
+      "id": "c-f01-055",
+      "section": "9. Veille et innovation",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sont les 3 stratégies d'innovation identifiées par l'étude PwC ?",
+      "verso": "Need Seekers (anticipation du marché, être le premier à répondre aux nouvelles attentes) · Market Readers (attentes des clients existants, personnalisation, innovation incrémentale) · Technology Drivers (expertise technologique et R&D internes)."
+    },
+    {
+      "id": "c-f01-056",
+      "section": "9. Veille et innovation",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Open innovation et design thinking : en quoi diffèrent-ils ?",
+      "verso": "L'open innovation mène des projets collaboratifs avec des partenaires externes (clients, universités, startups, clusters) pour mutualiser les expertises. Le design thinking, développé à Stanford dans les années 80, se pratique en ateliers co-créatifs pluridisciplinaires, centrés sur les attentes utilisateurs et les usages."
+    }
+  ]
+}
