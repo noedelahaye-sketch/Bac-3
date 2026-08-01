@@ -259,6 +259,25 @@
   .memo b{font-weight:600;}
   .memo .piege{background:var(--paper);border-left:2px solid var(--flag);padding:var(--space-8) var(--space-12);border-radius:0 var(--radius-control) var(--radius-control) 0;font-size:13px;}
 
+  .resume{font-size:13.5px;line-height:1.6;}
+  .resume p{margin:0 0 var(--space-12);} .resume p:last-child{margin-bottom:0;}
+  .resume b{font-weight:600;} .resume i{font-style:italic;}
+  .resume h3{font-family:var(--font-display);font-weight:600;font-size:17px;letter-spacing:-0.01em;margin:var(--space-24) 0 var(--space-8);}
+  .resume h3:first-child{margin-top:0;}
+  .resume h4{font-weight:600;font-size:14px;margin:var(--space-16) 0 var(--space-8);}
+  .resume ul,.resume ol{margin:0 0 var(--space-12);padding-left:19px;}
+  .resume li{margin-bottom:var(--space-8);}
+  .resume hr{border:0;border-top:1px solid var(--line);margin:var(--space-24) 0;}
+  .resume blockquote{margin:0 0 var(--space-12);padding:var(--space-8) var(--space-12);border-left:2px solid var(--line);background:var(--paper);border-radius:0 var(--radius-control) var(--radius-control) 0;}
+  .resume blockquote p{margin:0 0 var(--space-8);font-size:13px;} .resume blockquote p:last-child{margin-bottom:0;}
+  .resume pre{background:var(--ink);color:var(--surface);border-radius:var(--radius-control);padding:var(--space-12);overflow-x:auto;font:12px/1.5 var(--font-code);margin:0 0 var(--space-12);}
+  .resume pre code{white-space:pre;}
+  .resume .table-wrap{overflow-x:auto;margin:0 0 var(--space-12);}
+  .resume table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  .resume th,.resume td{border:1px solid var(--line);padding:var(--space-8);text-align:left;vertical-align:top;line-height:1.4;}
+  .resume th{background:var(--paper);font-weight:600;}
+  .resume a{color:var(--signal);}
+
   textarea.f,input.f{width:100%;padding:var(--space-8) var(--space-12);border:1px solid var(--line);border-radius:var(--radius-control);font:400 13px var(--font-text);background:var(--paper);color:var(--ink);}
   textarea.f{resize:vertical;min-height:44px;line-height:1.45;} textarea.big{min-height:150px;}
   textarea.f:focus,input.f:focus{outline:2px solid var(--signal);outline-offset:-1px;}

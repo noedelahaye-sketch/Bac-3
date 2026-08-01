@@ -69,3 +69,19 @@ dans docs/cartographie-b1.md.
 - Design : palette et typographies existantes (Archivo, Instrument
   Sans), pas de dépendance externe ajoutée.
 - Français, ton direct, pas de jargon inutile.
+
+
+## Modèle de contenu — fiches de révision
+
+- Une **fiche** = un `.md` dans `cours/bloc<n>/fiches/`, avec frontmatter YAML.
+- Le frontmatter fait autorité : `titre`, `accroche`, `questions`,
+  `questions_appui`, `competences`, `sources`, `lecture_min`. Aucun de ces
+  éléments n'est écrit en dur dans un composant ou une page.
+- `cours/blocs.json` définit les 4 blocs et l'ordre des fiches. La page Cours
+  se construit entièrement depuis ce fichier + les frontmatters.
+- Un **support** = un PDF de cours Studi d'origine. Il n'est jamais listé seul :
+  il n'apparaît que dans le champ `sources` d'une fiche.
+- Ajouter un bloc = créer `cours/bloc<n>/fiches/`, y déposer des `.md`,
+  renseigner le titre dans `blocs.json`. Aucune modification de code.
+- La vue « par question d'examen » est une projection calculée du champ
+  `questions`. Ne jamais créer de fichier de contenu qui la duplique.

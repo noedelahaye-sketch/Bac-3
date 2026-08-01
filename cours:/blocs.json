@@ -1,0 +1,54 @@
+{
+  "blocs": [
+    {
+      "numero": 1,
+      "titre": "Élaboration d'une stratégie marketing et communication",
+      "court": "Élaboration d'une stratégie",
+      "statut": "complet",
+      "epreuve": "Écrit 6 h (10 questions, 3 dossiers) + vidéo",
+      "competences": [
+        "C1.1",
+        "C1.2",
+        "C1.3",
+        "C1.4",
+        "C1.5"
+      ],
+      "fiches": [
+        "b1-f01",
+        "b1-f02",
+        "b1-f03",
+        "b1-f04",
+        "b1-f05",
+        "b1-f06",
+        "b1-f07"
+      ]
+    },
+    {
+      "numero": 2,
+      "titre": "",
+      "court": "",
+      "statut": "vide",
+      "epreuve": "",
+      "competences": [],
+      "fiches": []
+    },
+    {
+      "numero": 3,
+      "titre": "",
+      "court": "",
+      "statut": "vide",
+      "epreuve": "",
+      "competences": [],
+      "fiches": []
+    },
+    {
+      "numero": 4,
+      "titre": "",
+      "court": "",
+      "statut": "vide",
+      "epreuve": "",
+      "competences": [],
+      "fiches": []
+    }
+  ]
+}
