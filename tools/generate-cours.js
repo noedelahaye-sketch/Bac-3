@@ -1,15 +1,16 @@
 #!/usr/bin/env node
 /*
- * Génère js/cours.js à partir de cours:/blocs.json et des résumés markdown
- * de cours:/bloc<n>:/resume:/*.md.
+ * Génère js/cours.js et js/questions.js à partir de cours:/blocs.json, des
+ * résumés markdown de cours:/bloc<n>:/resume:/*.md et du contenu de cours
+ * par question de cours:/bloc<n>:/questions:/*.md.
  *
  * Aucune dépendance externe (frontmatter et markdown parsés à la main) :
  * le résultat est un artefact de build, jamais édité à la main. Les .md
  * restent la seule source de vérité.
  *
  * Usage :
- *   node tools/generate-cours.js                  écrit js/cours.js pour tous les blocs
- *   node tools/generate-cours.js --preview=b1-f02  écrit un aperçu HTML autonome, sans toucher js/cours.js
+ *   node tools/generate-cours.js                  écrit js/cours.js et js/questions.js
+ *   node tools/generate-cours.js --preview=b1-f02  écrit un aperçu HTML autonome, sans rien écrire ailleurs
  */
 "use strict";
 const fs = require("fs");
@@ -18,6 +19,7 @@ const path = require("path");
 const ROOT = path.join(__dirname, "..");
 const COURS_DIR = path.join(ROOT, "cours:");
 const OUT_FILE = path.join(ROOT, "js", "cours.js");
+const QUESTIONS_OUT_FILE = path.join(ROOT, "js", "questions.js");
 
 /* ---------- Frontmatter (YAML minimal, propre au schéma des résumés) ---------- */
 
@@ -89,7 +91,8 @@ function inline(text, linkMap) {
     if (/^https?:\/\//.test(target)) {
       return '<a href="' + target + '" target="_blank" rel="noopener">' + label + "</a>";
     }
-    const id = linkMap[target.split("#")[0]];
+    const file = target.split("#")[0].split("/").pop();
+    const id = linkMap[file];
     if (id) return '<a href="#" data-resume-go="' + id + '">' + label + "</a>";
     return label; // lien relatif non résolu : on garde le texte, pas le lien mort
   });
@@ -262,6 +265,37 @@ function loadAllResumes(blocsJson) {
   return all;
 }
 
+function loadBlocQuestions(blocNum) {
+  const dir = path.join(COURS_DIR, "bloc" + blocNum + ":", "questions:");
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".md"))
+    .sort()
+    .map((f) => {
+      const raw = fs.readFileSync(path.join(dir, f), "utf8");
+      const { data, body } = parseFrontmatter(raw);
+      return { file: f, dir, data, body };
+    });
+}
+
+function loadAllQuestions(blocsJson) {
+  let all = [];
+  blocsJson.blocs.forEach((b) => {
+    all = all.concat(loadBlocQuestions(b.numero));
+  });
+  return all;
+}
+
+// Frontmatter id ("b1-1", "b1-Vidéo") -> id réel de la question dans l'app
+// ("b1-Q1", "b1-Vidéo"), construit dans js/data.js comme bloc.id+"-"+q.n.
+function toAppQid(ficheId) {
+  const m = String(ficheId).match(/^(b\d+)-(.+)$/);
+  if (!m) return ficheId;
+  const suffix = /^\d+$/.test(m[2]) ? "Q" + m[2] : m[2];
+  return m[1] + "-" + suffix;
+}
+
 function buildLinkMap(all) {
   const map = {};
   all.forEach((p) => {
@@ -285,6 +319,20 @@ function buildResume(p, linkMap) {
     mots: d.mots,
     lecture_min: d.lecture_min,
     sources: d.sources,
+    html: convertBody(p.body, linkMap),
+  };
+}
+
+function buildQuestionCours(p, linkMap) {
+  const d = p.data;
+  return {
+    id: toAppQid(d.id),
+    bloc: d.bloc,
+    dossier: d.dossier,
+    titre: d.titre,
+    competence: d.competence,
+    resumes: d.resumes,
+    resumes_appui: d.resumes_appui,
     html: convertBody(p.body, linkMap),
   };
 }
@@ -363,6 +411,22 @@ function main() {
     "résumé(s),",
     blocs.length,
     "bloc(s)."
+  );
+
+  const questions = loadAllQuestions(blocsJson);
+  const qResult = {};
+  questions.forEach((p) => {
+    const qc = buildQuestionCours(p, linkMap);
+    qResult[qc.id] = qc;
+  });
+  const qJs = "var QUESTIONS_COURS = " + JSON.stringify(qResult, null, 2) + ";\n";
+  fs.writeFileSync(QUESTIONS_OUT_FILE, qJs, "utf8");
+  console.log(
+    "Écrit :",
+    path.relative(ROOT, QUESTIONS_OUT_FILE),
+    "—",
+    Object.keys(qResult).length,
+    "question(s)."
   );
 }
 

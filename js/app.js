@@ -69,6 +69,15 @@
     h+='</details>';
     return h;
   }
+  function renderQuestionCoursTile(qid){
+    var qc=(typeof QUESTIONS_COURS!=="undefined")?QUESTIONS_COURS[qid]:null;
+    if(!qc) return "";
+    return '<button class="tile" data-go-question-cours="'+qid+'">'+
+      '<span class="tile-code code">Cours</span>'+
+      '<span class="tile-title">Contenu de cours pour cette question</span>'+
+      '<span class="tile-cas">Notions, définitions et modèles nécessaires pour répondre.</span>'+
+      '</button>';
+  }
   function weeksLeft(){ return Math.max(0,(new Date(S.deadline+"T00:00:00") - new Date())/(1000*60*60*24*7)); }
   function expectedDone(){
     var d=new Date(S.deadline+"T00:00:00");
@@ -97,6 +106,7 @@
     if(parts[0]==="bloc" && parts[1]) return {view:"bloc", id:parts[1]};
     if(parts[0]==="cours" && parts[1]==="bloc" && parts[2]) return {view:"coursBloc", id:parts[2]};
     if(parts[0]==="cours" && parts[1]==="resume" && parts[2]) return {view:"coursResume", id:parts[2]};
+    if(parts[0]==="cours" && parts[1]==="question" && parts[2]) return {view:"coursQuestion", id:parts[2]};
     if(parts[0]==="cours") return {view:"cours"};
     if(parts[0]==="reviser" || parts[0]==="quiz") return {view:"apprendre"};
     if(KNOWN_VIEWS.indexOf(parts[0])>=0) return {view:parts[0]};
@@ -107,6 +117,7 @@
     if(view==="bloc") return "#/bloc/"+param;
     if(view==="coursBloc") return "#/cours/bloc/"+param;
     if(view==="coursResume") return "#/cours/resume/"+param;
+    if(view==="coursQuestion") return "#/cours/question/"+param;
     if(view==="cours") return "#/cours";
     if(view==="accueil") return "#/";
     return "#/"+view;
@@ -141,7 +152,7 @@
 
   function renderNav(){
     var h="";
-    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc") ? "dossiers" : (ROUTE.view==="coursBloc"||ROUTE.view==="coursResume") ? "cours" : ROUTE.view;
+    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc"||ROUTE.view==="coursQuestion") ? "dossiers" : (ROUTE.view==="coursBloc"||ROUTE.view==="coursResume") ? "cours" : ROUTE.view;
     VIEWS.forEach(function(v){
       var badge="";
       if(v[0]==="dossiers"){ var r=ALL.length-doneCount(); if(r) badge='<i>'+r+'</i>'; }
@@ -346,7 +357,7 @@
     h+='<div class="q-brouillon"><div class="lab">Mon brouillon</div><textarea class="f big" data-note="'+q.id+'" placeholder="Écris ici. Tu récupéreras tout d\'un coup depuis l\'accueil, bouton Exporter.">'+esc(S.notes[q.id])+'</textarea><span class="saved-flag" id="saved-'+q.id+'">Enregistré</span></div>';
     h+='<div class="q-arbitrage">'+renderArbitrage(q)+'</div>';
     h+='</div>'; // q-left
-    h+='<div class="q-right"><div class="lab">Ce dont tu disposes</div>'+renderRessource(q.id)+'</div>';
+    h+='<div class="q-right"><div class="lab">Ce dont tu disposes</div>'+renderQuestionCoursTile(q.id)+'</div>';
     h+='</div>'; // q-cols
 
     h+='<div class="qbottom"><div class="qbottom-inner"><div class="states">';
@@ -617,6 +628,22 @@
     }
     return h;
   }
+  function vCoursQuestion(qid){
+    var qc=(typeof QUESTIONS_COURS!=="undefined")?QUESTIONS_COURS[qid]:null;
+    var q=ALL.filter(function(x){return x.id===qid;})[0];
+    if(!qc || !q){
+      return '<div class="qbar">'+renderBreadcrumb([{label:"Dossiers",view:"dossiers"}])+'</div><p class="rappel">Contenu introuvable.</p>';
+    }
+    var h='<div class="qbar">'+renderBreadcrumb([
+      {label:"Dossiers",view:"dossiers"},
+      {label:q.bloc.code,view:"bloc",param:q.bloc.id},
+      {label:q.n,view:"question",param:q.id},
+      {label:"Cours"}
+    ])+'</div>';
+    h+='<h1 class="qhead-title">'+qc.titre+'</h1><div class="qhead-code code">'+q.bloc.code+' &middot; '+q.n+' &middot; '+qc.competence+'</div>';
+    h+='<div class="resume">'+qc.html+'</div>';
+    return h;
+  }
 
   function positionQbar(){
     var qbar=main.querySelector(".qbar");
@@ -676,6 +703,10 @@
     } else if(v==="coursResume"){
       main.classList.remove("with-qbottom");
       main.innerHTML=vCoursResume(ROUTE.id);
+      positionQbar();
+    } else if(v==="coursQuestion"){
+      main.classList.remove("with-qbottom");
+      main.innerHTML=vCoursQuestion(ROUTE.id);
       positionQbar();
     } else {
       main.classList.remove("with-qbottom");
@@ -745,6 +776,9 @@
     });
     main.querySelectorAll("[data-go-resume]").forEach(function(el){
       el.addEventListener("click",function(){ go("coursResume", el.getAttribute("data-go-resume")); });
+    });
+    main.querySelectorAll("[data-go-question-cours]").forEach(function(el){
+      el.addEventListener("click",function(){ go("coursQuestion", el.getAttribute("data-go-question-cours")); });
     });
     main.querySelectorAll("[data-crumb]").forEach(function(el){
       el.addEventListener("click",function(){ go(el.getAttribute("data-crumb"), el.getAttribute("data-crumb-param")); });
