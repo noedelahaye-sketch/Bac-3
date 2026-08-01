@@ -78,6 +78,9 @@
       '<span class="tile-cas">Notions, définitions et modèles nécessaires pour répondre.</span>'+
       '</button>';
   }
+  function renderCoursSlot(qid){
+    return renderQuestionCoursTile(qid) || renderRessource(qid);
+  }
   function weeksLeft(){ return Math.max(0,(new Date(S.deadline+"T00:00:00") - new Date())/(1000*60*60*24*7)); }
   function expectedDone(){
     var d=new Date(S.deadline+"T00:00:00");
@@ -221,7 +224,7 @@
       inf[1].forEach(function(n){h+='<li>'+n+'</li>';});
       h+='</ul><p class="rappel">Ces notions sont détaillées dans l\'onglet Cours. Si un point te manque, demande-le-moi.</p></details>';
     }
-    h+=renderRessource(q.id);
+    h+=renderCoursSlot(q.id);
     if(q.trame) h+='<div class="lab">Trame détaillée</div><div class="trame">'+q.trame+'</div>';
     var checkedCrit=q.k.filter(function(_,i){return (S.checks[q.id]||{})[i];}).length;
     h+='<div class="lab-row"><span class="lab">Critères évalués — compétence '+q.c+'</span><span class="count">'+checkedCrit+'/'+q.k.length+'</span></div>';
@@ -357,7 +360,7 @@
     h+='<div class="q-brouillon"><div class="lab">Mon brouillon</div><textarea class="f big" data-note="'+q.id+'" placeholder="Écris ici. Tu récupéreras tout d\'un coup depuis l\'accueil, bouton Exporter.">'+esc(S.notes[q.id])+'</textarea><span class="saved-flag" id="saved-'+q.id+'">Enregistré</span></div>';
     h+='<div class="q-arbitrage">'+renderArbitrage(q)+'</div>';
     h+='</div>'; // q-left
-    h+='<div class="q-right"><div class="lab">Ce dont tu disposes</div>'+renderQuestionCoursTile(q.id)+'</div>';
+    h+='<div class="q-right"><div class="lab">Ce dont tu disposes</div>'+renderCoursSlot(q.id)+'</div>';
     h+='</div>'; // q-cols
 
     h+='<div class="qbottom"><div class="qbottom-inner"><div class="states">';
