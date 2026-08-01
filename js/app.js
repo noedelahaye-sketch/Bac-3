@@ -88,19 +88,16 @@
 
   var VIEWS=[["accueil","Accueil"],["dossiers","Dossiers"],["cours","Cours"],["apprendre","Apprendre"]];
   var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre"];
-
-  function slugify(s){
-    return String(s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")
-      .replace(/[^a-z0-9]+/g,"-").replace(/(^-+|-+$)/g,"");
-  }
   function parseHash(hash){
     var h=(hash||"").replace(/^#/,"");
     if(h.charAt(0)==="/") h=h.slice(1);
     if(!h) return {view:"accueil"};
-    var parts=h.split("/").filter(Boolean);
+    var parts=h.split("/").filter(Boolean).map(function(p){ try{ return decodeURIComponent(p); }catch(e){ return p; } });
     if(parts[0]==="q" && parts[1]) return {view:"question", id:parts[1]};
     if(parts[0]==="bloc" && parts[1]) return {view:"bloc", id:parts[1]};
-    if(parts[0]==="cours") return {view:"cours", support:parts[1]||null};
+    if(parts[0]==="cours" && parts[1]==="bloc" && parts[2]) return {view:"coursBloc", id:parts[2]};
+    if(parts[0]==="cours" && parts[1]==="resume" && parts[2]) return {view:"coursResume", id:parts[2]};
+    if(parts[0]==="cours") return {view:"cours"};
     if(parts[0]==="reviser" || parts[0]==="quiz") return {view:"apprendre"};
     if(KNOWN_VIEWS.indexOf(parts[0])>=0) return {view:parts[0]};
     return {view:"accueil"};
@@ -108,7 +105,9 @@
   function hashFor(view,param){
     if(view==="question") return "#/q/"+param;
     if(view==="bloc") return "#/bloc/"+param;
-    if(view==="cours") return param ? "#/cours/"+param : "#/cours";
+    if(view==="coursBloc") return "#/cours/bloc/"+param;
+    if(view==="coursResume") return "#/cours/resume/"+param;
+    if(view==="cours") return "#/cours";
     if(view==="accueil") return "#/";
     return "#/"+view;
   }
@@ -142,7 +141,7 @@
 
   function renderNav(){
     var h="";
-    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc") ? "dossiers" : ROUTE.view;
+    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc") ? "dossiers" : (ROUTE.view==="coursBloc"||ROUTE.view==="coursResume") ? "cours" : ROUTE.view;
     VIEWS.forEach(function(v){
       var badge="";
       if(v[0]==="dossiers"){ var r=ALL.length-doneCount(); if(r) badge='<i>'+r+'</i>'; }
@@ -474,7 +473,6 @@
     var h='<div class="prog">Carte '+(SES.i+1)+' sur '+SES.list.length+' · '+c.t+'</div><div class="card"><div class="cq">'+c.q+'</div>';
     if(SES.show){
       h+='<div class="ca">'+c.a+'</div><div class="cbtns"><button class="no" data-lrn="ko">Pas su</button><button class="yes" data-lrn="ok">Je savais</button></div>';
-      h+='<div class="fref"><button class="linkf" data-fiche-go="'+c.f+'">Fiche '+c.f+' du cours &rarr;</button></div>';
     } else h+='<button class="reveal" data-lrn="show">Voir la réponse</button>';
     h+='</div><button class="quit" data-lrn="stop">Arrêter la session</button>';
     return h;
@@ -539,55 +537,84 @@
 
   /* ---------- MEMO ---------- */
   /* ---------- COURS ---------- */
-  function vCours(supportSlug){
-    var linked={};
-    if(typeof RESSOURCES!=="undefined"){
-      Object.keys(RESSOURCES).forEach(function(qid){
-        var r=RESSOURCES[qid], q=ALL.filter(function(x){return x.id===qid;})[0];
-        (r.sources||[]).forEach(function(s){
-          var parts=s.split(" — "), support=parts[0].trim(), note=parts.slice(1).join(" — ").trim();
-          var slug=slugify(support);
-          linked[slug]=linked[slug]||[];
-          linked[slug].push({qid:qid, note:note, label:q?(q.bloc.code+' · '+q.n+' — '+q.t):qid});
-        });
-      });
-    }
-    var h='<p class="intro">Les supports de cours, et les questions que chacun alimente.</p>';
-    if(typeof SUPPORTS==="undefined" || !SUPPORTS.length){
-      h+='<p class="rappel">Rien d\'indexé pour l\'instant.</p>';
-    } else {
-      var byBloc={};
-      SUPPORTS.forEach(function(s){ byBloc[s.bloc]=byBloc[s.bloc]||[]; byBloc[s.bloc].push(s); });
-      BLOCS.forEach(function(b){
-        var list=byBloc[b.id]; if(!list || !list.length) return;
-        h+='<div class="lab">'+b.code+' — '+b.titre+'</div>';
-        list.forEach(function(s){
-          var slug=slugify(s.titre), key="src-"+slug, op=(S.open[key]||supportSlug===slug)?" open":"";
-          var items=linked[slug]||[];
-          h+='<section class="panel'+op+'" id="src-'+slug+'"><button class="phead" data-panel="'+key+'"><span class="chev">&#9654;</span>';
-          h+='<h2>'+s.titre+'<span class="cas">'+s.pages+' pages &middot; '+s.competences+'</span></h2>';
-          h+='<span class="count">'+items.length+'</span></button><div class="pbody">';
-          if(items.length){
-            items.forEach(function(item){
-              h+='<div class="src-item"><button class="linkf" data-goq="'+item.qid+'">'+item.label+'</button>';
-              if(item.note) h+='<div class="rappel">'+item.note+'</div>';
-              h+='</div>';
-            });
-          } else {
-            h+='<p class="rappel">Pas encore de question reliée à ce support.</p>';
-          }
-          h+='</div></section>';
-        });
-      });
-    }
-    h+='<div class="lab">Fiches de méthode — '+FICHES.length+'</div>';
-    h+='<p class="intro">Ouvre la fiche dont tu as besoin, applique-la au cas, passe à la suivante.</p>';
-    FICHES.forEach(function(f){
-      var op=S.open["f"+f.n]?" open":"";
-      h+='<section class="panel'+op+'" id="fiche-'+f.n+'"><button class="phead" data-panel="f'+f.n+'"><span class="chev">&#9654;</span>';
-      h+='<h2>'+f.n+'. '+f.t+'<span class="cas">'+f.q+'</span></h2></button>';
-      h+='<div class="pbody memo">'+f.c+'</div></section>';
+  function normTok(s){
+    return String(s||"").toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+  }
+  function resolveQid(blocNum, token){
+    var blocId="b"+blocNum, norm=normTok(token);
+    var q=ALL.filter(function(x){ return x.bloc.id===blocId && normTok(x.n)===norm; })[0];
+    return q ? q.id : null;
+  }
+  function renderQuestionLinks(label, tokens, blocNum){
+    if(!tokens || !tokens.length) return "";
+    var h='<div class="rc-lab">'+label+'</div><div class="rc-app">';
+    tokens.forEach(function(t,i){
+      if(i) h+=' &middot; ';
+      var qid=resolveQid(blocNum, t);
+      h+= qid ? '<button class="linkf" data-goq="'+qid+'">'+t+'</button>' : t;
     });
+    h+='</div>';
+    return h;
+  }
+  function vCours(){
+    var blocs=(typeof COURS_BLOCS!=="undefined")?COURS_BLOCS:[];
+    var h='<div class="tiles">';
+    blocs.forEach(function(b){
+      if(b.statut==="complet"){
+        h+='<button class="tile" data-go-cours-bloc="'+b.numero+'">';
+        h+='<span class="tile-code code">Bloc '+b.numero+'</span>';
+        h+='<span class="tile-title">'+b.court+'</span>';
+        h+='<span class="tile-cas">'+b.fiches.length+' résumé'+(b.fiches.length>1?'s':'')+' &middot; '+b.competences.join(", ")+'</span>';
+        h+='</button>';
+      } else {
+        h+='<div class="tile tile-empty">';
+        h+='<span class="tile-code code">Bloc '+b.numero+'</span>';
+        h+='<span class="tile-title">À venir</span>';
+        h+='<span class="tile-cas">Pas encore de résumés</span>';
+        h+='</div>';
+      }
+    });
+    h+='</div>';
+    return h;
+  }
+  function vCoursBloc(numero){
+    var b=(typeof COURS_BLOCS!=="undefined"?COURS_BLOCS:[]).filter(function(x){return String(x.numero)===String(numero);})[0];
+    if(!b || b.statut!=="complet"){
+      return '<div class="qbar">'+renderBreadcrumb([{label:"Cours",view:"cours"}])+'</div><p class="rappel">Bloc introuvable.</p>';
+    }
+    var list=b.fiches.map(function(id){return RESUMES[id];}).filter(Boolean).sort(function(a,c){return a.ordre-c.ordre;});
+    var h='<div class="qbar">'+renderBreadcrumb([{label:"Cours",view:"cours"},{label:b.court}])+'</div>';
+    h+='<h1 class="qhead-title">'+b.titre+'</h1><div class="qhead-code code">'+b.epreuve+'</div>';
+    h+='<div class="lab-row"><span class="lab">Résumés</span><span class="count">'+list.length+'</span></div>';
+    h+='<div class="tiles">';
+    list.forEach(function(r){
+      h+='<button class="tile" data-go-resume="'+r.id+'">';
+      h+='<span class="tile-code code">'+r.ordre+'. '+r.competences.join(", ")+'</span>';
+      h+='<span class="tile-title">'+r.titre+'</span>';
+      h+='<span class="tile-cas">'+r.accroche+'</span>';
+      h+='<span class="tile-count code">'+r.lecture_min+' min &middot; '+r.questions.length+' question'+(r.questions.length>1?'s':'')+'</span>';
+      h+='</button>';
+    });
+    h+='</div>';
+    return h;
+  }
+  function vCoursResume(id){
+    var r=(typeof RESUMES!=="undefined")?RESUMES[id]:null;
+    if(!r){
+      return '<div class="qbar">'+renderBreadcrumb([{label:"Cours",view:"cours"}])+'</div><p class="rappel">Résumé introuvable.</p>';
+    }
+    var b=(typeof COURS_BLOCS!=="undefined"?COURS_BLOCS:[]).filter(function(x){return x.numero===r.bloc;})[0];
+    var h='<div class="qbar">'+renderBreadcrumb([{label:"Cours",view:"cours"},{label:b?b.court:("Bloc "+r.bloc),view:"coursBloc",param:r.bloc},{label:r.titre}])+'</div>';
+    h+='<h1 class="qhead-title">'+r.titre+'</h1><div class="qhead-code code">'+r.lecture_min+' min &middot; '+r.mots+' mots &middot; '+r.competences.join(", ")+'</div>';
+    h+='<p class="intro">'+r.accroche+'</p>';
+    h+=renderQuestionLinks("Indispensable pour", r.questions, r.bloc);
+    h+=renderQuestionLinks("En complément pour", r.questions_appui, r.bloc);
+    h+='<div class="resume">'+r.html+'</div>';
+    if(r.sources && r.sources.length){
+      h+='<div class="rc-lab">Sources</div><ul class="rc-src">';
+      r.sources.forEach(function(s){ h+='<li>'+s.support+' &middot; '+s.lecons+' leçon'+(s.lecons>1?'s':'')+'</li>'; });
+      h+='</ul>';
+    }
     return h;
   }
 
@@ -631,8 +658,7 @@
     var inSession = (v==="apprendre"&&(SES||QZ));
     appEl.classList.toggle("session", !!inSession);
     renderNav();
-    var qRich = v==="question" && ALL.some(function(x){return x.id===ROUTE.id;}) && INFO[ROUTE.id] && INFO[ROUTE.id].enonce;
-    main.classList.toggle("wide", v==="dossiers"||v==="bloc"||qRich);
+    main.classList.add("wide");
     if(v==="question"){
       main.classList.add("with-qbottom");
       main.innerHTML=vQuestion(ROUTE.id);
@@ -643,19 +669,23 @@
       main.innerHTML=vBloc(ROUTE.id);
       positionQbar();
       positionBlocEnonce();
+    } else if(v==="coursBloc"){
+      main.classList.remove("with-qbottom");
+      main.innerHTML=vCoursBloc(ROUTE.id);
+      positionQbar();
+    } else if(v==="coursResume"){
+      main.classList.remove("with-qbottom");
+      main.innerHTML=vCoursResume(ROUTE.id);
+      positionQbar();
     } else {
       main.classList.remove("with-qbottom");
-      var h = v==="dossiers"?vDossiers() : v==="apprendre"?vApprendre() : v==="cours"?vCours(ROUTE.support) : vAccueil();
+      var h = v==="dossiers"?vDossiers() : v==="apprendre"?vApprendre() : v==="cours"?vCours() : vAccueil();
       if(inSession){
         main.innerHTML=h;
       } else {
         var titles={accueil:"Suivi des 4 dossiers",dossiers:"Dossiers",apprendre:"Apprendre",cours:"Cours"};
-        var subs={accueil:"Formation — dépôt début décembre",dossiers:"44 livrables · dépôt début décembre",apprendre:"Cartes à répétition espacée et quiz",cours:"Index des supports et fiches de méthode"};
+        var subs={accueil:"Formation — dépôt début décembre",dossiers:"44 livrables · dépôt début décembre",apprendre:"Cartes à répétition espacée et quiz",cours:"Les résumés de cours, et les questions que chacun alimente."};
         main.innerHTML='<div class="eyebrow">'+subs[v]+'</div><h1>'+titles[v]+'</h1>'+h;
-        if(v==="cours" && ROUTE.support){
-          var t=document.getElementById("src-"+ROUTE.support);
-          if(t){ var tt=t; setTimeout(function(){ tt.scrollIntoView({behavior:"smooth",block:"start"}); },60); }
-        }
       }
     }
     bind();
@@ -710,16 +740,22 @@
     main.querySelectorAll("[data-go-bloc]").forEach(function(el){
       el.addEventListener("click",function(){ go("bloc", el.getAttribute("data-go-bloc")); });
     });
+    main.querySelectorAll("[data-go-cours-bloc]").forEach(function(el){
+      el.addEventListener("click",function(){ go("coursBloc", el.getAttribute("data-go-cours-bloc")); });
+    });
+    main.querySelectorAll("[data-go-resume]").forEach(function(el){
+      el.addEventListener("click",function(){ go("coursResume", el.getAttribute("data-go-resume")); });
+    });
     main.querySelectorAll("[data-crumb]").forEach(function(el){
       el.addEventListener("click",function(){ go(el.getAttribute("data-crumb"), el.getAttribute("data-crumb-param")); });
     });
     main.querySelectorAll("[data-go]").forEach(function(el){
       el.addEventListener("click",function(){ go(el.getAttribute("data-go")); });
     });
-    main.querySelectorAll("[data-fiche-go]").forEach(function(el){
-      el.addEventListener("click",function(){
-        var n=el.getAttribute("data-fiche-go"); S.open["f"+n]=true; save(); go("cours");
-        setTimeout(function(){ var t=document.getElementById("fiche-"+n); if(t) t.scrollIntoView({behavior:"smooth",block:"start"}); },60);
+    main.querySelectorAll("[data-resume-go]").forEach(function(el){
+      el.addEventListener("click",function(e){
+        e.preventDefault();
+        go("coursResume", el.getAttribute("data-resume-go"));
       });
     });
     main.querySelectorAll("[data-theme]").forEach(function(el){

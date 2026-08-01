@@ -122,6 +122,9 @@
   @media (max-width:720px){ .tiles{grid-template-columns:1fr;} }
   .tile{display:flex;flex-direction:column;align-items:flex-start;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-card);padding:var(--space-16);cursor:pointer;font-family:inherit;width:100%;}
   .tile:hover{border-color:var(--signal);}
+  .tile-empty{cursor:default;border-style:dashed;color:var(--muted);}
+  .tile-empty:hover{border-color:var(--line);}
+  .tile-empty .tile-title{color:var(--muted);}
   .tile-title{font-family:var(--font-display);font-weight:600;font-size:19px;line-height:1.2;margin-top:var(--space-8);}
   .tile-cas{color:var(--muted);font-size:13px;margin-top:var(--space-4);}
   .tile-bar-row{display:flex;align-items:center;gap:var(--space-8);width:100%;margin-top:var(--space-16);}
@@ -250,15 +253,6 @@
   .rc-app p{margin:0 0 var(--space-8);} .rc-app p:last-child{margin-bottom:0;}
   .rc-src{margin:var(--space-8) 0 0;padding-left:18px;font-size:11.5px;color:var(--muted);}
   .rc-src li{margin-bottom:var(--space-4);}
-  .src-item{padding:var(--space-8) 0;border-bottom:1px solid var(--line);}
-  .src-item:last-child{border-bottom:0;}
-  .src-item .rappel{margin:var(--space-4) 0 0;}
-
-  .memo{font-size:13.5px;line-height:1.55;}
-  .memo p{margin:0 0 var(--space-12);} .memo p:last-child{margin-bottom:0;}
-  .memo b{font-weight:600;}
-  .memo .piege{background:var(--paper);border-left:2px solid var(--flag);padding:var(--space-8) var(--space-12);border-radius:0 var(--radius-control) var(--radius-control) 0;font-size:13px;}
-
   .resume{font-size:13.5px;line-height:1.6;}
   .resume p{margin:0 0 var(--space-12);} .resume p:last-child{margin-bottom:0;}
   .resume b{font-weight:600;} .resume i{font-style:italic;}
@@ -301,7 +295,6 @@
   .cbtns{display:flex;gap:var(--space-8);margin-top:var(--space-16);}
   .cbtns button{flex:1;border:0;padding:var(--space-12);border-radius:var(--radius-control);font:600 13px var(--font-text);cursor:pointer;min-height:44px;}
   .cbtns .no{background:#E8D5CE;color:#8A2C10;} .cbtns .yes{background:var(--signal);color:var(--surface);}
-  .fref{margin-top:var(--space-12);}
   .linkf{background:none;border:0;color:var(--signal);font:500 12px var(--font-text);cursor:pointer;padding:0;text-decoration:underline;min-height:44px;}
   .quit{margin-top:var(--space-12);background:none;border:0;color:var(--muted);font:500 12px var(--font-text);cursor:pointer;text-decoration:underline;padding:var(--space-4) 0;min-height:44px;}
   .opts{display:grid;gap:var(--space-8);margin-top:var(--space-16);}

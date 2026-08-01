@@ -342,9 +342,28 @@ function main() {
   all.forEach((p) => {
     result[p.data.id] = buildResume(p, linkMap);
   });
-  const js = "var RESUMES = " + JSON.stringify(result, null, 2) + ";\n";
+  const blocs = blocsJson.blocs.map((b) => ({
+    numero: b.numero,
+    titre: b.titre,
+    court: b.court,
+    statut: b.statut,
+    epreuve: b.epreuve,
+    competences: b.competences,
+    fiches: b.fiches,
+  }));
+  const js =
+    "var RESUMES = " + JSON.stringify(result, null, 2) + ";\n" +
+    "var COURS_BLOCS = " + JSON.stringify(blocs, null, 2) + ";\n";
   fs.writeFileSync(OUT_FILE, js, "utf8");
-  console.log("Écrit :", path.relative(ROOT, OUT_FILE), "—", Object.keys(result).length, "résumé(s).");
+  console.log(
+    "Écrit :",
+    path.relative(ROOT, OUT_FILE),
+    "—",
+    Object.keys(result).length,
+    "résumé(s),",
+    blocs.length,
+    "bloc(s)."
+  );
 }
 
 main();
