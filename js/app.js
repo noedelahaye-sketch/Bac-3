@@ -500,7 +500,7 @@
     var h='<div class="prog">Carte '+(SES.i+1)+' sur '+SES.list.length+'</div>';
     h+='<div class="card'+(SES.show?'':' flip')+'"'+(SES.show?'':' data-lrn="show"')+'>';
     h+='<div class="cmeta"><span class="m-niveau n'+c.niveau+'">Niveau '+c.niveau+'</span><span class="m-section">'+esc(c.section)+'</span><span class="m-type t-'+c.type+'">'+(TYPE_LABELS[c.type]||c.type)+'</span></div>';
-    h+='<div class="cq">'+esc(c.recto)+'</div>';
+    h+='<div class="cq'+(SES.show?'':' cq-center')+'">'+esc(c.recto)+'</div>';
     if(SES.show){
       h+='<div class="ca">'+esc(c.verso).replace(/\n/g,'<br>')+'</div><div class="cbtns"><button class="no" data-lrn="ko">Pas su</button><button class="yes" data-lrn="ok">Je savais</button></div>';
     } else h+='<div class="cflip-hint">Touche la carte pour voir la réponse</div>';
