@@ -99,7 +99,7 @@
   function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=a[i];a[i]=a[j];a[j]=x;} return a; }
 
   var VIEWS=[["accueil","Accueil"],["dossiers","Dossiers"],["cours","Cours"],["apprendre","Apprendre"]];
-  var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre","flashcards","quiz"];
+  var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre","flashcards","quiz","quizBloc"];
   function parseHash(hash){
     var h=(hash||"").replace(/^#/,"");
     if(h.charAt(0)==="/") h=h.slice(1);
@@ -111,6 +111,7 @@
     if(parts[0]==="cours" && parts[1]==="resume" && parts[2]) return {view:"coursResume", id:parts[2]};
     if(parts[0]==="cours" && parts[1]==="question" && parts[2]) return {view:"coursQuestion", id:parts[2]};
     if(parts[0]==="cours") return {view:"cours"};
+    if(parts[0]==="quiz" && parts[1]==="bloc" && parts[2]) return {view:"quizBloc", id:parts[2]};
     if(parts[0]==="reviser") return {view:"apprendre"};
     if(KNOWN_VIEWS.indexOf(parts[0])>=0) return {view:parts[0]};
     return {view:"accueil"};
@@ -122,6 +123,7 @@
     if(view==="coursResume") return "#/cours/resume/"+param;
     if(view==="coursQuestion") return "#/cours/question/"+param;
     if(view==="cours") return "#/cours";
+    if(view==="quizBloc") return "#/quiz/bloc/"+param;
     if(view==="accueil") return "#/";
     return "#/"+view;
   }
@@ -155,7 +157,7 @@
 
   function renderNav(){
     var h="";
-    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc"||ROUTE.view==="coursQuestion") ? "dossiers" : (ROUTE.view==="coursBloc"||ROUTE.view==="coursResume") ? "cours" : (ROUTE.view==="flashcards"||ROUTE.view==="quiz") ? "apprendre" : ROUTE.view;
+    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc"||ROUTE.view==="coursQuestion") ? "dossiers" : (ROUTE.view==="coursBloc"||ROUTE.view==="coursResume") ? "cours" : (ROUTE.view==="flashcards"||ROUTE.view==="quiz"||ROUTE.view==="quizBloc") ? "apprendre" : ROUTE.view;
     VIEWS.forEach(function(v){
       var badge="";
       if(v[0]==="dossiers"){ var r=ALL.length-doneCount(); if(r) badge='<i>'+r+'</i>'; }
@@ -534,14 +536,26 @@
 
   function vQuiz(){
     if(QZ) return renderQuizSession();
-    return renderQuizHome();
-  }
-
-  function renderQuizHome(){
     var h='<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Quiz"}])+'</div>';
     h+='<h1 class="qhead-title">Quiz</h1><div class="qhead-code code">'+QUIZ.length+' questions</div>';
-    h+='<div class="states">';
-    h+='<button data-quiz="10">10 questions</button><button data-quiz="'+QUIZ.length+'">Toutes ('+QUIZ.length+')</button></div>';
+    h+='<div class="tiles">';
+    (typeof COURS_BLOCS!=="undefined"?COURS_BLOCS:[]).forEach(function(b){
+      var n=QUIZ.filter(function(q){return q.bloc===b.numero;}).length;
+      if(n){
+        h+='<button class="tile" data-go-quiz-bloc="'+b.numero+'">';
+        h+='<span class="tile-code code">Bloc '+b.numero+'</span>';
+        h+='<span class="tile-title">'+b.court+'</span>';
+        h+='<span class="tile-cas">'+n+' question'+(n>1?'s':'')+'</span>';
+        h+='</button>';
+      } else {
+        h+='<div class="tile tile-empty">';
+        h+='<span class="tile-code code">Bloc '+b.numero+'</span>';
+        h+='<span class="tile-title">À venir</span>';
+        h+='<span class="tile-cas">Pas encore de quiz</span>';
+        h+='</div>';
+      }
+    });
+    h+='</div>';
     if(S.quiz.length){
       var best=S.quiz.reduce(function(a,r){var p=r.s/r.n;return p>a?p:a;},0);
       h+='<div class="stats stats-top"><div class="stat"><div class="num">'+S.quiz.length+'</div><div class="lbl">Quiz passés</div></div>';
@@ -550,7 +564,45 @@
       S.quiz.slice(-8).reverse().forEach(function(r){
         h+='<div class="hrow"><span>'+r.d+'</span><b>'+r.s+' / '+r.n+'</b></div>';
       });
-    } else h+='<p class="rappel">Aucun quiz passé pour l\'instant. Les questions portent sur les pièges classiques, pas seulement sur les définitions.</p>';
+    }
+    return h;
+  }
+
+  function vQuizBloc(numero){
+    if(QZ) return renderQuizSession();
+    var b=(typeof COURS_BLOCS!=="undefined"?COURS_BLOCS:[]).filter(function(x){return String(x.numero)===String(numero);})[0];
+    var list=QUIZ.filter(function(q){return String(q.bloc)===String(numero);});
+    if(!b || !list.length){
+      return '<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Quiz",view:"quiz"}])+'</div><p class="rappel">Pas encore de quiz pour ce bloc.</p>';
+    }
+    var h='<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Quiz",view:"quiz"},{label:b.court}])+'</div>';
+    h+='<h1 class="qhead-title">'+b.titre+'</h1><div class="qhead-code code">'+list.length+' questions</div>';
+    h+='<div class="states">';
+    h+='<button data-quiz-bloc-random="'+numero+':10">10 questions au hasard</button>';
+    h+='<button data-quiz-bloc-random="'+numero+':'+list.length+'">Toutes ('+list.length+')</button></div>';
+
+    h+='<div class="lab">Par notion</div><div class="tiles">';
+    (b.fiches||[]).forEach(function(rid){
+      var r=(typeof RESUMES!=="undefined")?RESUMES[rid]:null;
+      var n=list.filter(function(q){return q.resume===rid;}).length;
+      if(!r || !n) return;
+      h+='<button class="tile" data-quiz-filter="resume:'+rid+'">';
+      h+='<span class="tile-title">'+r.titre+'</span>';
+      h+='<span class="tile-cas">'+n+' question'+(n>1?'s':'')+'</span>';
+      h+='</button>';
+    });
+    h+='</div>';
+
+    h+='<div class="lab">Par format</div><div class="tiles">';
+    Object.keys(FORMAT_LABELS).forEach(function(fmt){
+      var n=list.filter(function(q){return q.format===fmt;}).length;
+      if(!n) return;
+      h+='<button class="tile" data-quiz-filter="format:'+fmt+':'+numero+'">';
+      h+='<span class="tile-title">'+FORMAT_LABELS[fmt]+'</span>';
+      h+='<span class="tile-cas">'+n+' question'+(n>1?'s':'')+'</span>';
+      h+='</button>';
+    });
+    h+='</div>';
     return h;
   }
 
@@ -814,7 +866,7 @@
 
   function render(){
     var v=ROUTE.view;
-    appEl.classList.toggle("session", !!((v==="flashcards"&&SES)||(v==="quiz"&&QZ)));
+    appEl.classList.toggle("session", !!((v==="flashcards"&&SES)||((v==="quiz"||v==="quizBloc")&&QZ)));
     renderNav();
     main.classList.add("wide");
     if(v==="question"){
@@ -846,6 +898,10 @@
     } else if(v==="quiz"){
       main.classList.remove("with-qbottom");
       main.innerHTML=vQuiz();
+      positionQbar();
+    } else if(v==="quizBloc"){
+      main.classList.remove("with-qbottom");
+      main.innerHTML=vQuizBloc(ROUTE.id);
       positionQbar();
     } else {
       main.classList.remove("with-qbottom");
@@ -927,10 +983,24 @@
         go("coursResume", el.getAttribute("data-resume-go"));
       });
     });
-    main.querySelectorAll("[data-quiz]").forEach(function(el){
+    main.querySelectorAll("[data-go-quiz-bloc]").forEach(function(el){
+      el.addEventListener("click",function(){ go("quizBloc", el.getAttribute("data-go-quiz-bloc")); });
+    });
+    main.querySelectorAll("[data-quiz-bloc-random]").forEach(function(el){
       el.addEventListener("click",function(){
-        var n=parseInt(el.getAttribute("data-quiz"),10);
-        var list=shuffle(QUIZ).slice(0,n);
+        var parts=el.getAttribute("data-quiz-bloc-random").split(":"), numero=parts[0], n=parseInt(parts[1],10);
+        var list=shuffle(QUIZ.filter(function(q){return String(q.bloc)===numero;})).slice(0,n);
+        QZ={list:list,i:0,ok:0,wrong:[],checked:false,input:initQuizInput(list[0])};
+        render();
+      });
+    });
+    main.querySelectorAll("[data-quiz-filter]").forEach(function(el){
+      el.addEventListener("click",function(){
+        var parts=el.getAttribute("data-quiz-filter").split(":"), list;
+        if(parts[0]==="resume") list=QUIZ.filter(function(q){return q.resume===parts[1];});
+        else if(parts[0]==="format") list=QUIZ.filter(function(q){return q.format===parts[1] && String(q.bloc)===parts[2];});
+        list=shuffle(list||[]);
+        if(!list.length) return;
         QZ={list:list,i:0,ok:0,wrong:[],checked:false,input:initQuizInput(list[0])};
         render();
       });
