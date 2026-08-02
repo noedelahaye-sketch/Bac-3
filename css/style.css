@@ -70,8 +70,6 @@
   }
   .navb:hover{background:color-mix(in srgb, var(--ink) 8%, transparent);}
   .navb.on{background:var(--ink);color:var(--surface);}
-  .navb i{font-style:normal;font-family:var(--font-code);font-size:10.5px;font-weight:500;background:var(--signal);color:var(--surface);border-radius:var(--radius-control);padding:1px 6px;}
-  .navb.on i{background:var(--surface);color:var(--ink);}
   main{max-width:68ch;margin:0 auto;padding:var(--space-16) 16px var(--space-48);}
   main.wide{max-width:var(--content-width);}
   .measure{max-width:68ch;}
