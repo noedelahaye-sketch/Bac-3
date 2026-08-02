@@ -546,6 +546,7 @@
         h+='<span class="tile-code code">Bloc '+b.numero+'</span>';
         h+='<span class="tile-title">'+b.court+'</span>';
         h+='<span class="tile-cas">'+n+' question'+(n>1?'s':'')+'</span>';
+        h+='<span class="tile-quiz-btn" data-quiz-bloc-random="'+b.numero+':10">Lancer 10 questions</span>';
         h+='</button>';
       } else {
         h+='<div class="tile tile-empty">';
@@ -577,7 +578,24 @@
     }
     var h='<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Quiz",view:"quiz"},{label:b.court}])+'</div>';
     h+='<h1 class="qhead-title">'+b.titre+'</h1><div class="qhead-code code">'+list.length+' questions</div>';
-    h+='<div class="states">';
+
+    var runs=S.quiz.filter(function(r){return String(r.bloc)===String(numero);});
+    h+='<div class="lab">Tableau de bord</div>';
+    if(runs.length){
+      var best=runs.reduce(function(a,r){var p=r.s/r.n;return p>a?p:a;},0);
+      var avg=runs.reduce(function(a,r){return a+r.s/r.n;},0)/runs.length;
+      h+='<div class="stats stats-top">';
+      h+='<div class="stat"><div class="num">'+runs.length+'</div><div class="lbl">Séries réalisées</div></div>';
+      h+='<div class="stat"><div class="num">'+Math.round(best*100)+'<span class="on">%</span></div><div class="lbl">Meilleur score</div></div>';
+      h+='<div class="stat"><div class="num">'+Math.round(avg*100)+'<span class="on">%</span></div><div class="lbl">Score moyen</div></div>';
+      h+='</div>';
+      h+='<div class="lab">Historique</div>';
+      runs.slice(-8).reverse().forEach(function(r){
+        h+='<div class="hrow"><span>'+r.d+'</span><b>'+r.s+' / '+r.n+'</b></div>';
+      });
+    } else h+='<p class="rappel">Aucune série réalisée pour ce bloc pour l\'instant.</p>';
+
+    h+='<div class="lab">Lancer une série</div><div class="states">';
     h+='<button data-quiz-bloc-random="'+numero+':10">10 questions au hasard</button>';
     h+='<button data-quiz-bloc-random="'+numero+':'+list.length+'">Toutes ('+list.length+')</button></div>';
 
@@ -619,7 +637,7 @@
   function finishQuizQuestion(correct){
     QZ.checked=true;
     if(correct) QZ.ok++; else QZ.wrong.push(QZ.list[QZ.i].question);
-    if(QZ.i===QZ.list.length-1){ S.quiz.push({d:new Date().toLocaleDateString("fr-FR"),s:QZ.ok,n:QZ.list.length}); save(); }
+    if(QZ.i===QZ.list.length-1){ S.quiz.push({d:new Date().toLocaleDateString("fr-FR"),s:QZ.ok,n:QZ.list.length,bloc:QZ.list[0].bloc}); save(); }
   }
 
   function renderBlanksText(texte, values, checked, trous){
@@ -987,7 +1005,8 @@
       el.addEventListener("click",function(){ go("quizBloc", el.getAttribute("data-go-quiz-bloc")); });
     });
     main.querySelectorAll("[data-quiz-bloc-random]").forEach(function(el){
-      el.addEventListener("click",function(){
+      el.addEventListener("click",function(e){
+        e.stopPropagation();
         var parts=el.getAttribute("data-quiz-bloc-random").split(":"), numero=parts[0], n=parseInt(parts[1],10);
         var list=shuffle(QUIZ.filter(function(q){return String(q.bloc)===numero;})).slice(0,n);
         QZ={list:list,i:0,ok:0,wrong:[],checked:false,input:initQuizInput(list[0])};

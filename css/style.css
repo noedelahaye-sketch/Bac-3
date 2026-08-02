@@ -133,6 +133,8 @@
   .tile-fill{display:block;height:100%;background:var(--signal);}
   .tile-pct{color:var(--muted);font-size:12px;white-space:nowrap;}
   .tile-count{color:var(--muted);font-size:12px;margin-top:var(--space-8);}
+  .tile-quiz-btn{margin-top:var(--space-12);display:inline-flex;align-items:center;background:var(--signal);color:var(--surface);padding:var(--space-8) var(--space-12);border-radius:var(--radius-control);font:600 12.5px var(--font-text);cursor:pointer;min-height:36px;}
+  .tile-quiz-btn:hover{background:color-mix(in srgb, var(--signal) 82%, black);}
 
   .bloc-cols{display:grid;grid-template-columns:1fr;gap:var(--space-24);margin-top:var(--space-24);}
   .bloc-questions{order:2;}
