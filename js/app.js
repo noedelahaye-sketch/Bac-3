@@ -7,7 +7,7 @@
   BLOCS.forEach(function(b){ b.qs.forEach(function(q){ q.id = b.id+"-"+q.n; q.bloc = b; ALL.push(q); }); });
 
   var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, quiz:[], cardRuns:[],
-            deadline:DEFAULT_DEADLINE, open:{b1:true}, view:"accueil" };
+            deadline:DEFAULT_DEADLINE, open:{b1:true}, view:"accueil", _ts:0 };
   var SES=null, QZ=null, saveTimer=null;
   var main = document.getElementById("main");
   var nav  = document.getElementById("nav");
@@ -16,17 +16,92 @@
   var MEM = {};
   var Store = {
     get: async function(k){
-      try { if(window.storage && window.storage.get) return await window.storage.get(k); } catch(e){}
+      try { var v=localStorage.getItem(k); if(v!=null) return {key:k, value:v}; } catch(e){}
       return MEM[k] ? {key:k, value:MEM[k]} : null;
     },
     set: async function(k,v){
-      try { if(window.storage && window.storage.set) return await window.storage.set(k,v); } catch(e){}
+      try { localStorage.setItem(k,v); return {key:k,value:v}; } catch(e){}
       MEM[k]=v; return {key:k,value:v};
     }
   };
+
+  /* ---------- Synchronisation (Gist GitHub privé) ---------- */
+  var SYNC_TOKEN_KEY="studi-sync-token", SYNC_GIST_KEY="studi-sync-gist-id", GIST_FILENAME="studi-suivi-sync.json";
+  var syncStatus={state:"off", at:null};
+  function getSyncToken(){ try{ return localStorage.getItem(SYNC_TOKEN_KEY)||""; }catch(e){ return ""; } }
+  function getSyncGistId(){ try{ return localStorage.getItem(SYNC_GIST_KEY)||""; }catch(e){ return ""; } }
+  function setSyncToken(t){ try{ localStorage.setItem(SYNC_TOKEN_KEY,t); }catch(e){} }
+  function setSyncGistId(id){ try{ localStorage.setItem(SYNC_GIST_KEY,id); }catch(e){} }
+  function clearSync(){ try{ localStorage.removeItem(SYNC_TOKEN_KEY); localStorage.removeItem(SYNC_GIST_KEY); }catch(e){} syncStatus={state:"off",at:null}; }
+  async function ghFetch(url, opts){
+    opts = opts || {};
+    var headers = Object.assign({"Authorization":"token "+getSyncToken(), "Accept":"application/vnd.github+json"}, opts.headers||{});
+    var res = await fetch(url, Object.assign({}, opts, {headers:headers}));
+    if(!res.ok){ var e=new Error("gh "+res.status); e.status=res.status; throw e; }
+    if(res.status===204) return null;
+    return res.json();
+  }
+  async function findOrCreateGist(){
+    var existing=getSyncGistId();
+    if(existing) return existing;
+    var list=await ghFetch("https://api.github.com/gists?per_page=100");
+    var found=(list||[]).filter(function(g){ return g.files && g.files[GIST_FILENAME]; })[0];
+    if(found){ setSyncGistId(found.id); return found.id; }
+    var body={description:"Suivi Studi — synchronisation", public:false, files:{}};
+    body.files[GIST_FILENAME]={content: JSON.stringify({_ts:0})};
+    var created=await ghFetch("https://api.github.com/gists", {method:"POST", body:JSON.stringify(body)});
+    setSyncGistId(created.id);
+    return created.id;
+  }
+  async function pullFromGist(){
+    var id=await findOrCreateGist();
+    var gist=await ghFetch("https://api.github.com/gists/"+id);
+    var file=gist.files && gist.files[GIST_FILENAME];
+    if(!file) return null;
+    var raw=file.content;
+    if(file.truncated){ var r=await fetch(file.raw_url); raw=await r.text(); }
+    return JSON.parse(raw);
+  }
+  async function pushToGist(state){
+    var id=await findOrCreateGist();
+    var body={files:{}};
+    body.files[GIST_FILENAME]={content: JSON.stringify(state)};
+    await ghFetch("https://api.github.com/gists/"+id, {method:"PATCH", body:JSON.stringify(body)});
+  }
+  function renderSyncStatus(){
+    var el=document.getElementById("syncStatusText");
+    if(!el) return;
+    var t=syncStatus.at ? syncStatus.at.toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"}) : "";
+    if(syncStatus.state==="syncing") el.textContent="Synchronisation…";
+    else if(syncStatus.state==="ok") el.textContent="Synchronisé à "+t;
+    else if(syncStatus.state==="error") el.textContent="Échec de synchronisation"+(t?" (dernière réussite "+t+")":"") ;
+    else el.textContent="Non activée";
+  }
+  var syncPushTimer=null;
+  function scheduleSyncPush(){
+    if(!getSyncToken()) return;
+    clearTimeout(syncPushTimer);
+    syncPushTimer=setTimeout(function(){
+      syncStatus={state:"syncing", at:syncStatus.at};
+      renderSyncStatus();
+      pushToGist(S).then(function(){
+        syncStatus={state:"ok", at:new Date()};
+        renderSyncStatus();
+      }).catch(function(){
+        syncStatus={state:"error", at:syncStatus.at};
+        renderSyncStatus();
+      });
+    }, 1500);
+  }
+  function applyState(sv){
+    S.status=sv.status||{}; S.checks=sv.checks||{}; S.notes=sv.notes||{}; S.fiche=sv.fiche||{};
+    S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.quiz=sv.quiz||[]; S.cardRuns=sv.cardRuns||[];
+    S.deadline=sv.deadline||DEFAULT_DEADLINE; S.open=sv.open||{b1:true}; S._ts=sv._ts||0;
+  }
   function save(){
+    S._ts=Date.now();
     clearTimeout(saveTimer);
-    saveTimer = setTimeout(function(){ try{ Store.set(KEY, JSON.stringify(S)); }catch(e){} }, 400);
+    saveTimer = setTimeout(function(){ try{ Store.set(KEY, JSON.stringify(S)); }catch(e){} scheduleSyncPush(); }, 400);
   }
   function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
   function resolveRessourceItem(it){
@@ -210,9 +285,22 @@
     h+='</div>';
 
     h+='<div class="foot">Date limite de dépôt : <input type="date" id="dl" value="'+S.deadline+'"><br>';
-    h+='Tes données sont enregistrées automatiquement et te suivent d\'un appareil à l\'autre.<br>';
     h+='<button id="exp">Exporter tout en texte</button>';
     h+='<textarea class="f" id="expbox" style="display:none;margin-top:8px;min-height:220px;font-size:12px"></textarea></div>';
+
+    h+='<div class="foot">';
+    h+='<div class="lab">Synchronisation</div>';
+    if(getSyncToken()){
+      h+='<p class="rappel">Tes données sont synchronisées via un Gist GitHub privé et te suivent d\'un appareil à l\'autre.<br>';
+      h+='<span id="syncStatusText">Non activée</span></p>';
+      h+='<button id="syncDeactivate">Désactiver sur cet appareil</button>';
+    } else {
+      h+='<p class="rappel">Sans synchronisation, tes données restent sur cet appareil uniquement. Colle un jeton GitHub (portée <b>gist</b> uniquement) pour les retrouver aussi sur ton téléphone.</p>';
+      h+='<input type="password" class="f" id="syncTokenInput" placeholder="Jeton GitHub (portée gist)" autocomplete="off">';
+      h+='<button id="syncActivate" style="margin-top:8px">Activer la synchronisation</button>';
+      h+='<span id="syncStatusText" class="rappel"></span>';
+    }
+    h+='</div>';
     return h;
   }
 
@@ -1019,6 +1107,7 @@
       var subs={accueil:"Formation — dépôt début décembre",dossiers:"44 livrables · dépôt début décembre",apprendre:"Tes flashcards et ton quiz de révision.",cours:"Les résumés de cours, et les questions que chacun alimente."};
       main.innerHTML='<div class="eyebrow">'+subs[v]+'</div><h1>'+titles[v]+'</h1>'+h;
     }
+    renderSyncStatus();
     bind();
   }
 
@@ -1243,6 +1332,34 @@
     if(exp) exp.addEventListener("click",function(){
       var box=document.getElementById("expbox"); box.value=exportText(); box.style.display="block"; box.focus(); box.select();
     });
+    var syncActivateBtn=document.getElementById("syncActivate");
+    if(syncActivateBtn) syncActivateBtn.addEventListener("click",function(){
+      var input=document.getElementById("syncTokenInput");
+      var token=(input&&input.value||"").trim();
+      if(!token) return;
+      setSyncToken(token);
+      syncStatus={state:"syncing", at:null};
+      renderSyncStatus();
+      (async function(){
+        try{
+          var remote=await pullFromGist();
+          if(remote && (remote._ts||0) > (S._ts||0)){
+            applyState(remote);
+            try{ Store.set(KEY, JSON.stringify(S)); }catch(e){}
+          } else {
+            await pushToGist(S);
+          }
+          syncStatus={state:"ok", at:new Date()};
+        }catch(e){
+          syncStatus={state:"error", at:null};
+        }
+        render();
+      })();
+    });
+    var syncDeactivateBtn=document.getElementById("syncDeactivate");
+    if(syncDeactivateBtn) syncDeactivateBtn.addEventListener("click",function(){
+      clearSync(); render();
+    });
   }
 
   function exportText(){
@@ -1273,9 +1390,8 @@
       var r=await Store.get(KEY);
       if(r&&r.value){
         var sv=JSON.parse(r.value);
-        S.status=sv.status||{}; S.checks=sv.checks||{}; S.notes=sv.notes||{}; S.fiche=sv.fiche||{};
-        S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.quiz=sv.quiz||[]; S.cardRuns=sv.cardRuns||[];
-        S.deadline=sv.deadline||DEFAULT_DEADLINE; S.open=sv.open||{b1:true}; S.view=sv.view||"accueil";
+        applyState(sv);
+        S.view=sv.view||"accueil";
       }
     }catch(e){}
     if(location.hash && location.hash!=="#"){
@@ -1289,5 +1405,24 @@
       ROUTE={view:"accueil"};
     }
     render();
+
+    if(getSyncToken()){
+      syncStatus={state:"syncing", at:null};
+      renderSyncStatus();
+      try{
+        var remote=await pullFromGist();
+        if(remote && (remote._ts||0) > (S._ts||0)){
+          applyState(remote);
+          try{ Store.set(KEY, JSON.stringify(S)); }catch(e){}
+          render();
+        } else if((S._ts||0) > (remote?remote._ts||0:0)){
+          await pushToGist(S);
+        }
+        syncStatus={state:"ok", at:new Date()};
+      }catch(e){
+        syncStatus={state:"error", at:null};
+      }
+      renderSyncStatus();
+    }
   })();
 })();
