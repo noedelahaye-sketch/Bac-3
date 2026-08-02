@@ -1,16 +1,18 @@
 #!/usr/bin/env node
 /*
- * Génère js/cours.js, js/questions.js et js/flashcards.js à partir de
- * cours:/blocs.json, des résumés markdown de cours:/bloc<n>:/resume:/*.md,
- * du contenu de cours par question de cours:/bloc<n>:/questions:/*.md et
- * des flashcards de cours:/bloc<n>:/flashcards:/*.json.
+ * Génère js/cours.js, js/questions.js, js/flashcards.js et js/quiz.js à
+ * partir de cours:/blocs.json, des résumés markdown de
+ * cours:/bloc<n>:/resume:/*.md, du contenu de cours par question de
+ * cours:/bloc<n>:/questions:/*.md, des flashcards de
+ * cours:/bloc<n>:/flashcards:/*.json et du quiz de
+ * cours:/bloc<n>:/quiz:/*.json.
  *
  * Aucune dépendance externe (frontmatter et markdown parsés à la main) :
  * le résultat est un artefact de build, jamais édité à la main. Les .md
  * et .json sources restent la seule source de vérité.
  *
  * Usage :
- *   node tools/generate-cours.js                  écrit js/cours.js, js/questions.js et js/flashcards.js
+ *   node tools/generate-cours.js                  écrit js/cours.js, js/questions.js, js/flashcards.js et js/quiz.js
  *   node tools/generate-cours.js --preview=b1-f02  écrit un aperçu HTML autonome, sans rien écrire ailleurs
  */
 "use strict";
@@ -22,6 +24,7 @@ const COURS_DIR = path.join(ROOT, "cours:");
 const OUT_FILE = path.join(ROOT, "js", "cours.js");
 const QUESTIONS_OUT_FILE = path.join(ROOT, "js", "questions.js");
 const FLASHCARDS_OUT_FILE = path.join(ROOT, "js", "flashcards.js");
+const QUIZ_OUT_FILE = path.join(ROOT, "js", "quiz.js");
 
 /* ---------- Frontmatter (YAML minimal, propre au schéma des résumés) ---------- */
 
@@ -374,6 +377,32 @@ function loadAllFlashcards(blocsJson) {
   return all;
 }
 
+/* ---------- Chargement du quiz ---------- */
+
+function loadBlocQuiz(blocNum) {
+  const dir = path.join(COURS_DIR, "bloc" + blocNum + ":", "quiz:");
+  if (!fs.existsSync(dir)) return [];
+  const items = [];
+  fs.readdirSync(dir)
+    .filter((f) => f.endsWith(".json"))
+    .sort()
+    .forEach((f) => {
+      const data = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"));
+      (data.questions || []).forEach((q) => {
+        items.push(Object.assign({ resume: data.resume, bloc: data.bloc }, q));
+      });
+    });
+  return items;
+}
+
+function loadAllQuiz(blocsJson) {
+  let all = [];
+  blocsJson.blocs.forEach((b) => {
+    all = all.concat(loadBlocQuiz(b.numero));
+  });
+  return all;
+}
+
 /* ---------- CLI ---------- */
 
 function main() {
@@ -475,6 +504,17 @@ function main() {
     "—",
     flashcards.length,
     "carte(s)."
+  );
+
+  const quiz = loadAllQuiz(blocsJson);
+  const qzJs = "var QUIZ = " + JSON.stringify(quiz, null, 2) + ";\n";
+  fs.writeFileSync(QUIZ_OUT_FILE, qzJs, "utf8");
+  console.log(
+    "Écrit :",
+    path.relative(ROOT, QUIZ_OUT_FILE),
+    "—",
+    quiz.length,
+    "question(s) de quiz."
   );
 }
 

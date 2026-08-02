@@ -1,0 +1,482 @@
+{
+  "resume": "b1-f07",
+  "titre": "Présenter, convaincre, interagir",
+  "bloc": 1,
+  "questions": [
+    {
+      "id": "q-f07-001",
+      "section": "1. Le rôle stratégique",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Sur quoi porte l'adhésion à obtenir de la direction lors d'une présentation de projet ?",
+      "options": [
+        "uniquement sur le budget prévisionnel",
+        "sur la problématique, les actions proposées, le budget et sa répartition",
+        "sur les résultats attendus et les indicateurs de suivi",
+        "sur le calendrier de mise en œuvre"
+      ],
+      "reponse": 1,
+      "explication": "Il faut obtenir une adhésion totale. Le budget doit être pensé de manière réaliste et bien réparti, et la cohérence des préconisations mise en avant."
+    },
+    {
+      "id": "q-f07-002",
+      "section": "2. L'architecture narrative",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Dans la méthode SCRAP, que désigne la « Complication » ?",
+      "options": [
+        "les difficultés de mise en œuvre du projet",
+        "le problème ou la tension qui rend l'action nécessaire",
+        "les objections attendues de l'auditoire",
+        "les contraintes budgétaires"
+      ],
+      "reponse": 1,
+      "explication": "Situation, Complication, Résolution, Action, Preuve. La complication est le ressort narratif qui justifie tout le reste."
+    },
+    {
+      "id": "q-f07-003",
+      "section": "2. L'architecture narrative",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Comment organiser l'équilibre entre vision stratégique et éléments tactiques ?",
+      "options": [
+        "en alternant les deux niveaux tout au long de la présentation",
+        "en pyramide inversée : stratégique, puis tactique, puis opérationnel",
+        "en commençant par l'opérationnel pour ancrer le concret",
+        "en séparant strictement les deux dans deux documents distincts"
+      ],
+      "reponse": 1,
+      "explication": "C'est aussi la logique du pitch : condenser d'abord le niveau le plus élevé."
+    },
+    {
+      "id": "q-f07-004",
+      "section": "4. Les supports visuels",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quel est l'ordre de travail impératif pour construire une présentation ?",
+      "options": [
+        "créer le support, puis organiser les idées autour",
+        "questionner les objectifs et enjeux, organiser les idées, puis seulement créer le support",
+        "collecter les données, créer les visuels, puis définir le message",
+        "rédiger le dossier écrit, puis en extraire les slides"
+      ],
+      "reponse": 1,
+      "explication": "Le fil directeur doit être fluide, cohérent et répondre aux attentes de l'auditoire — tout cela avant même de créer le support."
+    },
+    {
+      "id": "q-f07-005",
+      "section": "5. Les données en arguments",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Un insight actionnable est :",
+      "options": [
+        "une donnée interne fiable et à jour",
+        "une observation traduite en opportunité business concrète et chiffrée",
+        "un indicateur de performance aligné sur les objectifs",
+        "une anomalie détectée par l'analyse comparative"
+      ],
+      "reponse": 1,
+      "explication": "C'est le passage obligé : une donnée n'est pas un argument. La réponse 2 définit un KPI."
+    },
+    {
+      "id": "q-f07-006",
+      "section": "5. Les données en arguments",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "D'où doit découler la sélection des KPI d'une présentation ?",
+      "options": [
+        "de la disponibilité des données dans les outils de l'entreprise",
+        "des objectifs business",
+        "des indicateurs suivis par les concurrents",
+        "des attentes exprimées par la direction financière"
+      ],
+      "reponse": 1,
+      "explication": "Un indicateur sans décision associée est un indicateur inutile."
+    },
+    {
+      "id": "q-f07-007",
+      "section": "6. Persuader",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "L'effet d'ancrage désigne :",
+      "options": [
+        "la tendance à privilégier les informations qui confirment ses croyances",
+        "le fait que la première information influence la perception des suivantes",
+        "l'adhésion accrue à une proposition défendue par une figure d'autorité",
+        "la mémorisation privilégiée du dernier argument entendu"
+      ],
+      "reponse": 1,
+      "explication": "D'où l'importance du premier chiffre annoncé, du premier slide, de la première phrase. La réponse 0 décrit le biais de confirmation."
+    },
+    {
+      "id": "q-f07-008",
+      "section": "6. Persuader",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quel levier de Cialdini transforme l'interlocuteur de spectateur en co-créateur ?",
+      "options": ["la réciprocité", "l'engagement et la cohérence", "la preuve sociale", "l'autorité"],
+      "reponse": 1,
+      "explication": "Amener l'interlocuteur à prendre position produit un engagement authentique plutôt qu'une adhésion de façade."
+    },
+    {
+      "id": "q-f07-009",
+      "section": "6. Persuader",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Dans la rhétorique aristotélicienne, l'éthos désigne :",
+      "options": [
+        "l'émotion suscitée chez l'auditoire",
+        "la crédibilité de l'orateur : légitimité, expertise, honnêteté perçue",
+        "la rigueur du raisonnement et la solidité des preuves",
+        "l'adaptation du registre au profil décisionnel"
+      ],
+      "reponse": 1,
+      "explication": "Pathos = émotion, logos = raisonnement. La culture organisationnelle française valorise particulièrement l'expertise technique et la légitimité intellectuelle."
+    },
+    {
+      "id": "q-f07-010",
+      "section": "7. Adapter son discours",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Dans le modèle DISC, un profil bleu est :",
+      "options": [
+        "direct, déterminé, orienté vers les résultats",
+        "expressif, social, enthousiaste",
+        "calme, fiable, attaché à l'harmonie",
+        "précis, analytique, attaché aux règles et aux données"
+      ],
+      "reponse": 3,
+      "explication": "Rouge = Dominance, Jaune = Influence, Vert = Stabilité, Bleu = Conformité."
+    },
+    {
+      "id": "q-f07-011",
+      "section": "9. Objections",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quel type d'objection est le plus délicat en présentation stratégique ?",
+      "options": [
+        "les objections rationnelles basées sur les données",
+        "les résistances émotionnelles et psychologiques",
+        "les objections stratégiques et politiques internes",
+        "les objections portant sur le budget"
+      ],
+      "reponse": 2,
+      "explication": "Elles sont les plus délicates parce qu'elles ne portent pas sur le projet lui-même."
+    },
+    {
+      "id": "q-f07-012",
+      "section": "9. Objections",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Dans la méthode CAP-B, que désigne le B ?",
+      "options": ["Besoin", "Bénéfice personnalisé pour l'interlocuteur", "Budget", "Bilan"],
+      "reponse": 1,
+      "explication": "Caractéristique → Avantage → Preuve → Bénéfice. C'est la personnalisation du bénéfice qui distingue CAP-B d'un argumentaire générique."
+    },
+    {
+      "id": "q-f07-013",
+      "section": "2. L'architecture narrative",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Que recouvre la méthode SCRAP ? (5 réponses)",
+      "options": ["Situation", "Stratégie", "Complication", "Résolution", "Résultat", "Action", "Preuve"],
+      "reponse": [0, 2, 3, 5, 6],
+      "explication": "La progression dramatique en cinq actes maintient l'attention et convainc."
+    },
+    {
+      "id": "q-f07-014",
+      "section": "6. Persuader",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quels sont les 6 leviers d'influence de Cialdini ? (6 réponses)",
+      "options": [
+        "réciprocité",
+        "urgence budgétaire",
+        "engagement et cohérence",
+        "preuve sociale",
+        "autorité",
+        "expertise technique",
+        "rareté",
+        "sympathie"
+      ],
+      "reponse": [0, 2, 3, 4, 6, 7],
+      "explication": "L'expertise technique relève de l'éthos aristotélicien, pas des leviers de Cialdini."
+    },
+    {
+      "id": "q-f07-015",
+      "section": "9. Objections",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Que recouvre la méthode SONCASE ? (7 réponses)",
+      "options": ["Sécurité", "Orgueil", "Originalité", "Nouveauté", "Confort", "Argent", "Sympathie", "Environnement"],
+      "reponse": [0, 1, 3, 4, 5, 6, 7],
+      "explication": "SONCASE identifie les besoins à la base des différentes réponses à une objection. Combinée à CAP-B, elle produit une réponse argumentée à chaque type d'objection."
+    },
+    {
+      "id": "q-f07-016",
+      "section": "8. Écouter et questionner",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels comportements font obstacle à l'écoute active ? (4 réponses)",
+      "options": [
+        "préparer sa réponse pendant que l'autre parle",
+        "reformuler ce qui vient d'être dit",
+        "filtrer selon ses attentes",
+        "interrompre",
+        "respecter les silences",
+        "juger prématurément"
+      ],
+      "reponse": [0, 2, 3, 5],
+      "explication": "L'écoute active ne consiste pas à se taire mais à manifester activement sa compréhension : reformulation, relance, validation."
+    },
+    {
+      "id": "q-f07-017",
+      "section": "2. L'architecture narrative",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la méthode SCRAP.",
+      "texte": "{1} : le contexte de départ, partagé avec l'auditoire. {2} : le problème ou la tension qui rend l'action nécessaire. {3} : la solution proposée. {4} : ce qui est concrètement demandé ou décidé. {5} : les éléments qui crédibilisent la résolution.",
+      "trous": ["Situation", "Complication", "Résolution", "Action", "Preuve"],
+      "explication": "S'y ajoutent la pyramide inversée (stratégique → tactique → opérationnel) et la modularité, qui prépare la présentation en couches."
+    },
+    {
+      "id": "q-f07-018",
+      "section": "6. Persuader",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez les deux systèmes de pensée et les biais associés.",
+      "texte": "Le Système {1} est une pensée automatique, {2} et intuitive. Le Système {3} est une pensée analytique, {4} et délibérée. Le biais de {5} pousse à privilégier les informations qui confirment les croyances préexistantes. L'effet d'{6} fait que la première information influence la perception des suivantes.",
+      "trous": ["1", "rapide", "2", "lente", "confirmation", "ancrage"],
+      "explication": "Une présentation efficace parle aux deux : le Système 1 décide de l'attention, le Système 2 valide le raisonnement."
+    },
+    {
+      "id": "q-f07-019",
+      "section": "6. Persuader",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez les trois piliers de la rhétorique aristotélicienne.",
+      "texte": "L'{1} est la crédibilité de l'orateur : légitimité, expertise, honnêteté perçue. Le {2} est l'émotion suscitée chez l'auditoire. Le {3} est la rigueur du raisonnement et la solidité des preuves. La culture organisationnelle française valorise particulièrement l'{4} technique et la légitimité {5}.",
+      "trous": ["éthos", "pathos", "logos", "expertise", "intellectuelle"],
+      "explication": "Ces trois piliers sont indissociables : mobiliser un seul d'entre eux affaiblit la démonstration."
+    },
+    {
+      "id": "q-f07-020",
+      "section": "9. Objections",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez les notions d'argumentation.",
+      "texte": "Un {1} est un élément qui permet de positionner un raisonnement : un fait, une caractéristique. L'{2} est la somme des arguments, outil destiné à démontrer en quoi l'offre répond {3} aux besoins de l'interlocuteur. L'{4} est l'action d'utiliser un argumentaire. Les arguments {5} décrivent les caractéristiques ; les arguments {6} impliquent l'interlocuteur et servent à différencier l'offre.",
+      "trous": ["argument", "argumentaire", "spécifiquement", "argumentation", "factuels", "émotionnels"],
+      "explication": "Les arguments factuels sont incontournables mais rarement suffisants seuls."
+    },
+    {
+      "id": "q-f07-021",
+      "section": "7. Adapter son discours",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez le modèle DISC.",
+      "texte": "{1} = Dominance : direct, déterminé, orienté vers les {2}. {3} = Influence : expressif, social, enthousiaste. {4} = Stabilité : calme, fiable, à l'écoute, attaché à l'{5}. {6} = Conformité : précis, analytique, attaché aux règles et aux {7}.",
+      "trous": ["Rouge", "résultats", "Jaune", "Vert", "harmonie", "Bleu", "données"],
+      "explication": "Aller à l'essentiel avec un rouge, soigner la relation avec un jaune, rassurer un vert, documenter pour un bleu."
+    },
+    {
+      "id": "q-f07-022",
+      "section": "1. Le rôle stratégique",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "La communication et le marketing doivent s'aligner sur les objectifs de la direction générale.",
+      "reponse": true,
+      "explication": "Vrai. Ils influencent la perception de la marque, renforcent la confiance des parties prenantes et génèrent des avantages financiers — mais doivent fournir à la direction les informations nécessaires à la décision."
+    },
+    {
+      "id": "q-f07-023",
+      "section": "3. Le pitch",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Un bon pitch se construit sur le moment, en s'adaptant à l'interlocuteur.",
+      "reponse": false,
+      "explication": "Faux. Savoir pitcher ne s'improvise pas, mais cela s'apprend : il faut retravailler son pitch, puis le répéter devant son miroir et devant un public, en soignant élocution, regard et posture."
+    },
+    {
+      "id": "q-f07-024",
+      "section": "4. Les supports visuels",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Les modèles PowerPoint par défaut constituent une base saine pour une présentation stratégique.",
+      "reponse": false,
+      "explication": "Faux. PowerPoint offre de vraies possibilités d'impact visuel, mais à condition de s'écarter du schéma classique en supprimant les modèles par défaut."
+    },
+    {
+      "id": "q-f07-025",
+      "section": "5. Les données en arguments",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Les données internes sont plus granulaires et mieux alignées sur l'activité réelle que les données externes.",
+      "reponse": true,
+      "explication": "Vrai. Elles sont sous contrôle de l'entreprise (CRM, ventes, web analytics, service client). Les données externes renseignent en revanche sur l'écosystème concurrentiel et sectoriel."
+    },
+    {
+      "id": "q-f07-026",
+      "section": "8. Écouter et questionner",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "L'écoute active consiste à se taire pour laisser l'interlocuteur s'exprimer.",
+      "reponse": false,
+      "explication": "Faux. Elle consiste à manifester activement sa compréhension : reformulation, relance, validation. L'intelligence émotionnelle et le décodage des signaux permettent de percevoir ce qui n'est pas dit."
+    },
+    {
+      "id": "q-f07-027",
+      "section": "9. Objections",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Une objection est un signe que l'interlocuteur s'implique dans l'échange.",
+      "reponse": true,
+      "explication": "Vrai. Les objections font vivre l'entretien. Celui qui les accueille positivement et s'y est préparé vit l'échange comme un défi motivant."
+    },
+    {
+      "id": "q-f07-028",
+      "section": "9. Objections",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Toute question posée pendant une présentation doit être traitée comme une objection.",
+      "reponse": false,
+      "explication": "Faux. Il faut distinguer questionnement légitime et opposition systématique : les deux n'appellent pas la même réponse. Les marqueurs linguistiques et le langage corporel aident à faire la différence."
+    },
+    {
+      "id": "q-f07-029",
+      "section": "6. Persuader",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque levier de Cialdini à sa formulation en question.",
+      "colonne_a": ["Réciprocité", "Engagement", "Preuve sociale", "Autorité"],
+      "colonne_b": [
+        "« Quels objectifs pourriez-vous vous fixer si nous adoptions cette approche ? »",
+        "Révéler les recommandations d'experts sur le sujet",
+        "« Quels bénéfices avez-vous retirés de notre collaboration précédente ? »",
+        "Explorer les références et benchmarks du secteur"
+      ],
+      "paires": [[0, 2], [1, 0], [2, 3], [3, 1]],
+      "explication": "Le questionnement séquentiel respecte cet ordre, puis se termine par la rareté."
+    },
+    {
+      "id": "q-f07-030",
+      "section": "7. Adapter son discours",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque profil DISC à la posture à adopter face à lui.",
+      "colonne_a": ["Rouge (Dominance)", "Jaune (Influence)", "Vert (Stabilité)", "Bleu (Conformité)"],
+      "colonne_b": [
+        "Rassurer, préserver l'harmonie, avancer sans brusquer",
+        "Aller à l'essentiel, annoncer les résultats attendus",
+        "Documenter, chiffrer, fournir les preuves et les règles",
+        "Soigner la relation, mobiliser l'enthousiasme et le récit"
+      ],
+      "paires": [[0, 1], [1, 3], [2, 0], [3, 2]],
+      "explication": "Le modèle permet d'identifier les traits dominants et d'adapter sa communication pour une meilleure compréhension mutuelle."
+    },
+    {
+      "id": "q-f07-031",
+      "section": "9. Objections",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque méthode à sa fonction dans la réponse à une objection.",
+      "colonne_a": ["SONCASE", "CAP-B", "Écoute active", "Argumentation progressive"],
+      "colonne_b": [
+        "Structurer l'argument : caractéristique, avantage, preuve, bénéfice",
+        "Manifester sa compréhension avant de répondre, par la reformulation",
+        "Identifier le besoin motivationnel à la base de l'objection",
+        "Intégrer proactivement les réponses aux objections prévisibles"
+      ],
+      "paires": [[0, 2], [1, 0], [2, 1], [3, 3]],
+      "explication": "En combinant CAP-B et SONCASE, on obtient une réponse argumentée à chaque type d'objection."
+    },
+    {
+      "id": "q-f07-032",
+      "section": "2. L'architecture narrative",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 5 temps de la méthode SCRAP.",
+      "elements": ["Résolution", "Situation", "Preuve", "Complication", "Action"],
+      "ordre": [1, 3, 0, 4, 2],
+      "explication": "La preuve vient en dernier : elle crédibilise ce qui a été proposé, elle ne l'introduit pas."
+    },
+    {
+      "id": "q-f07-033",
+      "section": "6. Persuader",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre le questionnement séquentiel selon Cialdini.",
+      "elements": [
+        "Questions d'autorité : révéler les recommandations d'experts",
+        "Questions de réciprocité : rappeler les contributions passées",
+        "Questions de rareté : souligner l'urgence ou l'exclusivité",
+        "Questions d'engagement : solliciter des prises de position",
+        "Questions de preuve sociale : explorer les références et benchmarks"
+      ],
+      "ordre": [1, 3, 4, 0, 2],
+      "explication": "Cette progression respecte les mécanismes naturels de la persuasion et génère un engagement authentique plutôt qu'une adhésion de façade."
+    },
+    {
+      "id": "q-f07-034",
+      "section": "1. Le rôle stratégique",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 3 temps du fond d'une présentation de projet.",
+      "elements": [
+        "Annoncer les résultats attendus : objectifs chiffrés et indicateurs de suivi",
+        "Expliciter le pourquoi : problématique, contexte, diagnostic",
+        "Présenter le comment : actions, moyens, calendrier, budget"
+      ],
+      "ordre": [1, 2, 0],
+      "explication": "Cette progression correspond aussi à la pyramide inversée : stratégique, puis tactique, puis opérationnel."
+    },
+    {
+      "id": "q-f07-035",
+      "section": "5. Les données en arguments",
+      "niveau": 1,
+      "format": "ouverte",
+      "question": "Vous disposez de trois mois de données CRM et d'une étude sectorielle. Comment passer de ces données à des arguments pour votre direction ?",
+      "attendus": [
+        "Cartographier l'écosystème : distinguer données internes (CRM, sous contrôle, alignées sur l'activité) et externes (étude sectorielle, moins granulaire mais situant la performance)",
+        "Qualifier la valeur stratégique de chaque source avant de les exploiter",
+        "Sélectionner les KPI à partir des objectifs business, pas de la disponibilité des données",
+        "Mener une analyse descriptive et comparative : comprendre les tendances et anomalies, situer la performance par rapport à une référence",
+        "Traduire chaque observation en insight actionnable : une opportunité business concrète et chiffrée",
+        "Construire une argumentation data-driven où chaque chiffre sert une recommandation explicite"
+      ],
+      "explication": "Une donnée n'est pas un argument : c'est la traduction en recommandation qui fait la différence."
+    },
+    {
+      "id": "q-f07-036",
+      "section": "9. Objections",
+      "niveau": 1,
+      "format": "ouverte",
+      "question": "En pleine présentation, un directeur financier vous objecte que le budget est trop élevé au regard des résultats attendus. Comment structurez-vous votre réponse ?",
+      "attendus": [
+        "Identifier le type d'objection : rationnelle, basée sur les données — la plus facile à traiter",
+        "Écoute active et reformulation avant de répondre, pour vérifier la compréhension et gagner du temps",
+        "Identifier le besoin motivationnel via SONCASE : ici l'Argent, probablement associé à la Sécurité",
+        "Construire la réponse avec CAP-B : caractéristique du dispositif → avantage → preuve chiffrée → bénéfice personnalisé pour son périmètre",
+        "Adapter au profil : un directeur financier est typiquement un profil bleu (précis, analytique, attaché aux données) — documenter et chiffrer",
+        "Mobiliser le logos en priorité, mais adossé à l'éthos : maîtrise du dossier"
+      ],
+      "explication": "L'idéal reste d'avoir anticipé l'objection dans l'argumentaire progressif plutôt que de la subir."
+    },
+    {
+      "id": "q-f07-037",
+      "section": "4. Les supports visuels",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "On vous annonce en arrivant que votre créneau passe de 45 à 10 minutes. Comment auriez-vous dû préparer votre présentation pour absorber ce changement ?",
+      "attendus": [
+        "La modularité : préparer la présentation en couches, avec plusieurs versions, pour tenir en 5, 15 ou 45 minutes",
+        "La pyramide inversée garantit que le niveau stratégique est déjà en tête : c'est lui qu'on garde",
+        "Le pitch condensé doit être prêt et répété",
+        "Mobiliser l'effet d'ancrage : la première information conditionne la perception de tout le reste, donc soigner particulièrement l'ouverture",
+        "Garder le SCRAP mais resserrer : Situation et Complication en une phrase chacune, Résolution et Action au cœur, une seule Preuve forte",
+        "Prévoir les éléments tactiques et opérationnels en annexe, mobilisables en cas de question"
+      ],
+      "explication": "La préparation est une étape fondamentale, trop souvent négligée — et la flexibilité temporelle en fait partie."
+    }
+  ]
+}

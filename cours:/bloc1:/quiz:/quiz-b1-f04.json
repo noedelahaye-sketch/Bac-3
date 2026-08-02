@@ -1,0 +1,488 @@
+{
+  "resume": "b1-f04",
+  "titre": "Comprendre, segmenter, cibler, positionner ses publics",
+  "bloc": 1,
+  "questions": [
+    {
+      "id": "q-f04-001",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "« L'Oréal, parce que je le vaux bien » mobilise quel type de motivation ?",
+      "options": ["rationnelle", "hédoniste", "oblative", "éthique"],
+      "reponse": 1,
+      "explication": "La motivation hédoniste s'adresse au plaisir et à la satisfaction attendue pour soi-même. L'oblative est tournée vers autrui, l'éthique vers un devoir supérieur à sa propre personne."
+    },
+    {
+      "id": "q-f04-002",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "« Est-ce bien raisonnable d'acheter tel produit alors que son prix est excessif ? » illustre :",
+      "options": [
+        "un frein lié à la peur",
+        "un frein lié à l'inhibition",
+        "une motivation rationnelle",
+        "un risque perçu"
+      ],
+      "reponse": 1,
+      "explication": "Le frein d'inhibition traduit une motivation jugée frivole, inutile voire honteuse : la cible développe un sentiment de culpabilité et s'autocensure. Le frein lié à la peur relève du manque de confiance en son jugement."
+    },
+    {
+      "id": "q-f04-003",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Un groupe de référence se distingue d'un groupe d'appartenance parce que :",
+      "options": [
+        "il est plus large et moins structuré",
+        "on y adhère par choix, alors qu'on est rattaché de fait au groupe d'appartenance",
+        "il regroupe uniquement des leaders d'opinion",
+        "il est défini par des critères sociodémographiques objectifs"
+      ],
+      "reponse": 1,
+      "explication": "L'adhésion au groupe de référence tient au fait qu'on se reconnaît dans ses opinions et ses comportements."
+    },
+    {
+      "id": "q-f04-004",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Le Customer Power désigne :",
+      "options": [
+        "la capacité des marques à orienter les décisions d'achat",
+        "le fait que le consommateur devienne l'acteur dominant grâce à l'accès à l'information et aux alternatives",
+        "le pouvoir de négociation des clients dans le modèle de Porter",
+        "l'influence des communautés de marque sur les nouveaux entrants"
+      ],
+      "reponse": 1,
+      "explication": "Il entraîne un renversement des rapports de force traditionnels, la co-création, mais aussi une complexité comportementale : fragmentation des parcours, comportements contradictoires."
+    },
+    {
+      "id": "q-f04-005",
+      "section": "3. La zone de chalandise",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Pour tracer une zone de chalandise, quelles courbes privilégie-t-on et pourquoi ?",
+      "options": [
+        "les isométriques, car la distance est un critère objectif",
+        "les isochrones, car elles reflètent mieux la réalité de l'accès",
+        "les isométriques, car elles intègrent les barrières naturelles",
+        "les deux indifféremment, le résultat étant équivalent"
+      ],
+      "reponse": 1,
+      "explication": "Les isochrones sont fondées sur le temps de trajet. S'y ajoutent les barrières naturelles, les frontières et les infrastructures."
+    },
+    {
+      "id": "q-f04-006",
+      "section": "4. Les cibles",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Au sein de la cible principale, le noyau des individus les plus motivés et les plus réceptifs s'appelle :",
+      "options": ["la cible relai", "la cible secondaire", "le cœur de cible", "la cible d'influence"],
+      "reponse": 2,
+      "explication": "C'est la cible à toucher impérativement : plus fort potentiel d'adhésion."
+    },
+    {
+      "id": "q-f04-007",
+      "section": "4. Les cibles",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle question caractérise la cible communication, par opposition à la cible marketing ?",
+      "options": [
+        "« À qui voulez-vous vendre ? »",
+        "« Qui voulez-vous toucher ? »",
+        "« Quel budget allouez-vous ? »",
+        "« Quel canal privilégiez-vous ? »"
+      ],
+      "reponse": 1,
+      "explication": "La cible marketing répond à « À qui voulez-vous vendre ? ». Les deux stratégies doivent être cohérentes et synchronisées : un message contradictoire pousse les cibles vers la concurrence."
+    },
+    {
+      "id": "q-f04-008",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Les sociostyles relèvent de quelle famille de critères de segmentation ?",
+      "options": [
+        "sociodémographique et géographique",
+        "de personnalité et de style de vie",
+        "de comportement",
+        "d'avantages recherchés"
+      ],
+      "reponse": 1,
+      "explication": "La famille psychographique ou psychosociale regroupe activités, intérêts, opinions, valeurs et sociostyles."
+    },
+    {
+      "id": "q-f04-009",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "La méthode K-Means appartient à quelle famille de méthodes de clustering ?",
+      "options": ["hiérarchiques", "centroïdes", "à densité", "probabilistes"],
+      "reponse": 1,
+      "explication": "K-Means répartit les clients en k segments de manière à minimiser la variance intra-cluster. DBSCAN et OPTICS relèvent des méthodes à densité, la CAH des méthodes hiérarchiques."
+    },
+    {
+      "id": "q-f04-010",
+      "section": "6. Les personas",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qui a initié la méthode des personas, et dans quel ouvrage ?",
+      "options": [
+        "Tony Zambito, dans ses travaux sur le buyer persona",
+        "Alan Cooper, dans The Inmates Are Running the Asylum",
+        "Philip Kotler, dans Marketing Management",
+        "HubSpot, dans sa méthodologie inbound"
+      ],
+      "reponse": 1,
+      "explication": "En 1999. Zambito a ensuite développé le buyer persona, et HubSpot l'a popularisé via ses solutions d'inbound marketing."
+    },
+    {
+      "id": "q-f04-011",
+      "section": "6. Les personas",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Pourquoi créer un persona négatif ?",
+      "options": [
+        "pour anticiper les critiques de la concurrence",
+        "pour identifier les profils dont le coût d'acquisition est trop élevé ou qui ne correspondent pas à l'offre",
+        "pour tester la robustesse du positionnement",
+        "pour segmenter les clients insatisfaits"
+      ],
+      "reponse": 1,
+      "explication": "Recenser ces profils permet de prioriser les actions sur les personas à meilleur potentiel."
+    },
+    {
+      "id": "q-f04-012",
+      "section": "7. Le positionnement",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Perrier a choisi de se rattacher à l'univers des soft-drinks plutôt qu'à celui des eaux minérales. Quelle étape de la démarche de positionnement cela illustre-t-il ?",
+      "options": [
+        "l'inventaire des attentes des consommateurs",
+        "la définition de l'univers de référence voulu",
+        "l'identification des avantages concurrentiels possibles",
+        "le choix de l'avantage concurrentiel"
+      ],
+      "reponse": 1,
+      "explication": "L'univers de référence est la catégorie à laquelle la marque souhaite se rattacher dans l'esprit de la cible."
+    },
+    {
+      "id": "q-f04-013",
+      "section": "8. Les limites du ciblage",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Le nudge marketing se caractérise par :",
+      "options": [
+        "une incitation contraignante appuyée sur des sanctions",
+        "une incitation douce influençant sans restreindre la liberté de choix",
+        "une personnalisation algorithmique des offres en temps réel",
+        "une communication fondée sur la preuve scientifique"
+      ],
+      "reponse": 1,
+      "explication": "Il s'appuie sur les biais cognitifs et les motivations sous-jacentes, par des suggestions contextuelles ou des aménagements environnementaux."
+    },
+    {
+      "id": "q-f04-014",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quels sont les 4 types de motivations ? (4 réponses)",
+      "options": ["rationnelles", "impulsives", "hédonistes", "oblatives", "sociales", "éthiques ou d'auto-expression"],
+      "reponse": [0, 2, 3, 5],
+      "explication": "Les motivations oblatives sont tournées vers autrui : chercher à faire plaisir à l'autre."
+    },
+    {
+      "id": "q-f04-015",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les 4 grandes familles de critères de segmentation ? (4 réponses)",
+      "options": [
+        "sociodémographique, géographique et économique",
+        "de fidélité",
+        "de personnalité et de style de vie",
+        "de comportement",
+        "de rentabilité",
+        "d'avantages recherchés"
+      ],
+      "reponse": [0, 2, 3, 5],
+      "explication": "La fidélité est un critère du comportement d'achat, elle ne constitue pas une famille à part entière."
+    },
+    {
+      "id": "q-f04-016",
+      "section": "4. Les cibles",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quels sont les 4 niveaux de hiérarchisation des cibles ? (4 réponses)",
+      "options": ["cible principale", "cible captive", "cœur de cible", "cible secondaire", "cible latente", "cible relai"],
+      "reponse": [0, 2, 3, 5],
+      "explication": "Dans certaines stratégies, cibles secondaires et relais sont regroupées : on hiérarchise alors trois niveaux."
+    },
+    {
+      "id": "q-f04-017",
+      "section": "6. Les personas",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quelles sources mobiliser pour construire un persona ? (4 réponses parmi les propositions)",
+      "options": [
+        "la base prospects et clients",
+        "les rapports de visite commerciale",
+        "le bilan comptable",
+        "les comptes LinkedIn des cibles BtoB",
+        "l'organigramme de l'entreprise",
+        "Google Analytics"
+      ],
+      "reponse": [0, 1, 3, 5],
+      "explication": "S'y ajoutent les interviews de clients et prospects réels, les sondages en ligne, et la participation aux forums et blogs traitant des problématiques de la cible."
+    },
+    {
+      "id": "q-f04-018",
+      "section": "7. Le positionnement",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les 6 règles d'un bon positionnement ? (6 réponses)",
+      "options": ["clair", "innovant", "attractif", "spécifique", "crédible", "consensuel", "rentable", "durable"],
+      "reponse": [0, 2, 3, 4, 6, 7],
+      "explication": "« Clair » signifie des caractéristiques précises et peu nombreuses, exprimées en une phrase synthétique — condition de la mémorisation."
+    },
+    {
+      "id": "q-f04-019",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez les définitions des motivations et des freins.",
+      "texte": "La {1} est une raison qui pousse à un certain comportement pour satisfaire un {2} non satisfait. Les {3} sont les raisons qui tendent à bloquer un comportement. Ils sont de deux types : ceux liés à l'{4}, où la cible s'autocensure par culpabilité, et ceux liés à la {5}, où elle manque de confiance en son propre jugement.",
+      "trous": ["motivation", "besoin", "freins", "inhibition", "peur"],
+      "explication": "On mobilise aussi la pyramide des besoins pour situer les cibles sur une échelle et adapter le message."
+    },
+    {
+      "id": "q-f04-020",
+      "section": "4. Les cibles",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la hiérarchie des cibles.",
+      "texte": "La cible {1} est le segment homogène visé en priorité, auquel on consacre les actions et le budget les plus importants. Le {2} est le noyau des individus les plus motivés et réceptifs. La cible {3} est moins touchée directement mais peut intervenir en {4} d'information. La cible {5} n'est pas touchée directement, mais elle a le pouvoir de {6} le message et d'influencer les publics.",
+      "trous": ["principale", "cœur de cible", "secondaire", "rebond", "relai", "relayer"],
+      "explication": "La cible relai regroupe prescripteurs, influenceurs, leaders d'opinion, journalistes et personnalités."
+    },
+    {
+      "id": "q-f04-021",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition du ciblage selon le Mercator.",
+      "texte": "Le ciblage, aussi appelé {1}, est « un choix {2} consistant à déterminer le ou les {3} de clients que l'on cherche à {4}, conquérir ou {5} par sa politique et ses actions marketing ».",
+      "trous": ["targeting", "stratégique", "segments", "influencer", "fidéliser"],
+      "explication": "Ses trois objectifs : personnaliser le message, augmenter l'efficacité de la campagne, réduire les coûts en évitant les contacts inutiles."
+    },
+    {
+      "id": "q-f04-022",
+      "section": "6. Les personas",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition du persona.",
+      "texte": "Un persona est l'{1} de l'utilisateur ou du client idéal. C'est un personnage {2} dont le profil détaillé correspond à celui des individus types auxquels la marque veut s'adresser en priorité. Il rend {3} et {4} le travail de segmentation. Il faut se limiter à {5} personas pour ne pas diluer la précision.",
+      "trous": ["archétype", "fictif", "visible", "concret", "4 ou 5"],
+      "explication": "Il faut aussi les réactualiser régulièrement : usages et tendances de consommation changent constamment."
+    },
+    {
+      "id": "q-f04-023",
+      "section": "7. Le positionnement",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez les deux faces du positionnement.",
+      "texte": "Le positionnement {1} est la place de l'entreprise dans l'{2} des consommateurs par rapport aux entreprises concurrentes. Le positionnement {3} est la manière dont elle désire être perçue. Lorsque les deux {4}, l'entreprise a réussi sa communication — ce que vérifient les {5} de concept.",
+      "trous": ["perçu", "esprit", "voulu", "concordent", "tests"],
+      "explication": "Les tests de concept mesurent l'intérêt et la perception par rapport à l'offre concurrente."
+    },
+    {
+      "id": "q-f04-024",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Les mécanismes du comportement du consommateur sont pour partie irrationnels et inconscients.",
+      "reponse": true,
+      "explication": "Vrai. Certains sont rationnels et conscients, d'autres irrationnels et/ou inconscients — d'où l'intérêt des études qualitatives en profondeur pour les explorer."
+    },
+    {
+      "id": "q-f04-025",
+      "section": "4. Les cibles",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Dans une campagne commerciale, cible marketing et cible communication sont toujours distinctes.",
+      "reponse": false,
+      "explication": "Faux. Elles sont souvent identiques, mais les messages agissent sur des leviers différents : le marketing est spécifique à la consommation, la communication a un objectif d'information, d'image ou de comportement."
+    },
+    {
+      "id": "q-f04-026",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Un segment n'est exploitable que s'il est homogène, de taille suffisante et opérationnel.",
+      "reponse": true,
+      "explication": "Vrai. C'est la condition pour que les messages puissent être transmis de façon spécifique et efficace. Les critères sont choisis en fonction des objectifs de communication et des résultats de l'audit préalable."
+    },
+    {
+      "id": "q-f04-027",
+      "section": "6. Les personas",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Pour construire un persona, il faut partir uniquement des clients de sa propre entreprise.",
+      "reponse": false,
+      "explication": "Faux. Il faut s'inspirer des utilisateurs, prospects et clients de l'entreprise comme de ceux des concurrents : comprendre leur mode de pensée, leurs critères de choix, observer leurs habitudes et préférences de navigation."
+    },
+    {
+      "id": "q-f04-028",
+      "section": "7. Le positionnement",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Le positionnement ne s'exprime que dans la communication de la marque.",
+      "reponse": false,
+      "explication": "Faux. Il est indissociable du mix marketing : il s'exprime dans tous les éléments de l'offre perçue — produit, prix, distribution."
+    },
+    {
+      "id": "q-f04-029",
+      "section": "7. Le positionnement",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Modifier fréquemment son positionnement permet de rester en phase avec un marché mouvant.",
+      "reponse": false,
+      "explication": "Faux. Le positionnement engage sur une longue durée : sa modification est difficile et ne doit pas être fréquente, sous peine de perdre les consommateurs. Il doit être durable et installé dès le début."
+    },
+    {
+      "id": "q-f04-030",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le consommateur expert est une conséquence de la réduction de l'asymétrie informationnelle.",
+      "reponse": true,
+      "explication": "Vrai. L'écart informationnel entre vendeur et acheteur se réduit, faisant émerger un consommateur à la connaissance approfondie des produits — ce qui va de pair avec la méfiance consumériste et la vérification permanente."
+    },
+    {
+      "id": "q-f04-031",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque type de motivation à son ressort.",
+      "colonne_a": ["Rationnelle", "Hédoniste", "Oblative", "Éthique"],
+      "colonne_b": [
+        "Un sentiment de devoir supérieur à sa propre personne",
+        "S'adresse à la raison, à l'utilité, à la connaissance",
+        "Tournée vers autrui, chercher à faire plaisir à l'autre",
+        "Le plaisir, la satisfaction attendue pour soi-même"
+      ],
+      "paires": [[0, 1], [1, 3], [2, 2], [3, 0]],
+      "explication": "Situer la motivation dominante d'un segment permet d'adapter l'axe créatif du message."
+    },
+    {
+      "id": "q-f04-032",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque méthode de clustering à son principe.",
+      "colonne_a": ["Classification Ascendante Hiérarchique", "K-Means", "DBSCAN"],
+      "colonne_b": [
+        "Répartir en k segments en minimisant la variance intra-cluster",
+        "Identifier les clusters d'après la densité des points",
+        "Partir de chaque observation comme cluster individuel et fusionner les plus similaires"
+      ],
+      "paires": [[0, 2], [1, 0], [2, 1]],
+      "explication": "Les méthodes à densité sont utiles pour détecter des clusters de formes complexes et de tailles variables."
+    },
+    {
+      "id": "q-f04-033",
+      "section": "7. Le positionnement",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque règle du positionnement à son exigence.",
+      "colonne_a": ["Clair", "Spécifique", "Crédible", "Rentable"],
+      "colonne_b": [
+        "Il traduit une réalité et un potentiel économiques",
+        "Caractéristiques précises et peu nombreuses, en une phrase",
+        "Honnêteté, cohérence et réalisme",
+        "Propre à la marque, il ne doit pas se rapprocher de celui des concurrents"
+      ],
+      "paires": [[0, 1], [1, 3], [2, 2], [3, 0]],
+      "explication": "Les deux règles restantes sont « attractif » (répond à une réelle problématique) et « durable »."
+    },
+    {
+      "id": "q-f04-034",
+      "section": "7. Le positionnement",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 5 étapes de la démarche de positionnement.",
+      "elements": [
+        "Choix de l'avantage concurrentiel",
+        "Inventaire des attentes des consommateurs",
+        "Mise en place de la stratégie, en une phrase",
+        "Identification des avantages concurrentiels possibles",
+        "Définition de l'univers de référence voulu"
+      ],
+      "ordre": [1, 4, 3, 0, 2],
+      "explication": "Le choix se fait en fonction du positionnement des autres acteurs et de la capacité de l'entreprise à le respecter."
+    },
+    {
+      "id": "q-f04-035",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la logique STP appliquée à un lancement.",
+      "elements": [
+        "Positionner l'offre par rapport aux concurrents dans l'esprit de la cible",
+        "Découper la demande en sous-ensembles homogènes selon des critères",
+        "Incarner les segments retenus sous forme de personas",
+        "Choisir les segments prioritaires et les hiérarchiser"
+      ],
+      "ordre": [1, 3, 2, 0],
+      "explication": "Segmentation, ciblage, positionnement — le persona s'insère entre le ciblage et le positionnement, en rendant les segments concrets."
+    },
+    {
+      "id": "q-f04-036",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 1,
+      "format": "ouverte",
+      "question": "Une salle de spectacle municipale veut segmenter son public. Proposez une segmentation mobilisant les 4 familles de critères, avec un exemple pour chacune.",
+      "attendus": [
+        "Sociodémographique, géographique et économique : âge, CSP, composition du foyer, commune de résidence, revenu",
+        "Personnalité et style de vie : pratiques culturelles, ouverture aux formes contemporaines, sociostyles",
+        "Comportement : fréquence de venue, abonnement ou billet à l'unité, réservation anticipée ou dernière minute",
+        "Avantages recherchés : découverte artistique, sortie familiale, sociabilité, tarif accessible",
+        "Vérification que les segments obtenus sont homogènes, de taille suffisante et opérationnels"
+      ],
+      "explication": "Le choix des critères découle des objectifs de communication et des résultats de l'audit préalable, pas de la disponibilité des données."
+    },
+    {
+      "id": "q-f04-037",
+      "section": "6. Les personas",
+      "niveau": 1,
+      "format": "ouverte",
+      "question": "Expliquez ce qu'apporte un persona qu'une segmentation seule n'apporte pas, en vous appuyant sur la notion de « douleur client ».",
+      "attendus": [
+        "La segmentation découpe et décrit ; le persona incarne et rend concret",
+        "Le persona permet d'élaborer la stratégie autour du client et non de l'offre",
+        "Il fait apparaître la « douleur client » — le problème que le persona cherche à résoudre — qui devient le pivot de l'offre",
+        "Exemple attendu du type club de fitness : Laura et Olivier partagent une douleur d'organisation du temps et de garde d'enfants, d'où un espace d'accueil enfants et des abonnements familiaux plutôt qu'individuels",
+        "Il permet aussi d'anticiper les objections et d'améliorer la pertinence de la stratégie de contenus"
+      ],
+      "explication": "C'est en identifiant la douleur partagée par plusieurs profils qu'on justifie une caractéristique de l'offre."
+    },
+    {
+      "id": "q-f04-038",
+      "section": "8. Les limites du ciblage",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Où passe la frontière entre influence et manipulation dans le ciblage marketing ? Justifiez.",
+      "attendus": [
+        "La distinction repose sur une démarcation claire entre pratiques éthiques et non éthiques",
+        "Le nudge influence sans restreindre la liberté de choix, en s'appuyant sur les biais cognitifs",
+        "L'intégrité et la transparence sont les critères déterminants",
+        "L'objectif doit rester la satisfaction des besoins réels des consommateurs, dans une relation de long terme",
+        "Enjeu concret : des pratiques irresponsables entraînent des conséquences financières et des dommages à la réputation",
+        "Trois exigences : stratégies créatives conformes aux normes déontologiques, ciblage respectueux de la vie privée, publicité responsable et transparente"
+      ],
+      "explication": "Le cadre légal (RGPD, encadrement de la publicité) fixe un plancher, pas un plafond : la déontologie va au-delà."
+    }
+  ]
+}

@@ -1,0 +1,688 @@
+{
+  "resume": "b1-f01",
+  "titre": "Veille et intelligence économique",
+  "bloc": 1,
+  "questions": [
+    {
+      "id": "q-f01-001",
+      "section": "1. L'intelligence économique",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Selon Claude Revel, l'intelligence économique est :",
+      "options": [
+        "un ensemble de technologies de traitement automatisé de l'information",
+        "un mode de gouvernance fondé sur la maîtrise et l'exploitation de l'information stratégique pour créer de la valeur durable dans une entité",
+        "une méthode de collecte d'informations confidentielles sur les concurrents",
+        "un service rattaché à la direction financière chargé de l'analyse de marché"
+      ],
+      "reponse": 1,
+      "explication": "L'IE est un mode de gouvernance, pas une technologie ni un service. Officiellement : processus de collecte, analyse, valorisation, diffusion et protection de l'information économique stratégique."
+    },
+    {
+      "id": "q-f01-002",
+      "section": "1. L'intelligence économique",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce qui distingue fondamentalement l'intelligence économique de l'espionnage économique ?",
+      "options": [
+        "l'IE se pratique uniquement dans les grandes entreprises",
+        "l'IE est encadrée par le SISSE, l'espionnage ne l'est pas",
+        "l'IE exploite exclusivement des sources ouvertes et légalement accessibles, l'espionnage vise l'information « noire »",
+        "l'IE porte sur les concurrents, l'espionnage sur les États"
+      ],
+      "reponse": 2,
+      "explication": "L'information « noire » est protégée par le secret ou à accès restreint ; son obtention non autorisée est une infraction punie par la loi."
+    },
+    {
+      "id": "q-f01-003",
+      "section": "2. La veille",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "La veille stratégique est :",
+      "options": [
+        "un synonyme de veille informationnelle",
+        "un sous-domaine de la veille informationnelle et le premier pilier de l'intelligence économique",
+        "l'étape qui suit le benchmarking dans la démarche d'IE",
+        "une veille exclusivement tournée vers l'environnement externe"
+      ],
+      "reponse": 1,
+      "explication": "Elle englobe la veille interne (opérations, finances, compétences distinctives) et la veille externe (concurrence, marché, réglementation)."
+    },
+    {
+      "id": "q-f01-004",
+      "section": "2. La veille",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qui a défini le signal faible comme « une information d'alerte précoce, de faible intensité, pouvant être annonciatrice d'une tendance ou d'un événement important » ?",
+      "options": [
+        "Michael Porter",
+        "Igor Ansoff",
+        "Claude Revel",
+        "Bertrand Bathelot"
+      ],
+      "reponse": 1,
+      "explication": "Ansoff. La difficulté du signal faible est de le contextualiser pour bien l'interpréter."
+    },
+    {
+      "id": "q-f01-005",
+      "section": "2. La veille",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quel est le principal risque associé à l'usage d'une information secondaire ?",
+      "options": [
+        "elle est toujours obsolète",
+        "elle coûte plus cher qu'une information primaire",
+        "elle reflète les points de vue et intérêts de l'entité qui la produit, donc introduit un biais",
+        "elle n'est pas juridiquement exploitable"
+      ],
+      "reponse": 2,
+      "explication": "D'où la nécessité d'une évaluation critique et d'une diversification des sources."
+    },
+    {
+      "id": "q-f01-006",
+      "section": "4. Le cycle de veille",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "L'approche Push consiste à :",
+      "options": [
+        "effectuer périodiquement des recherches ciblées à l'aide de moteurs et de bases de données",
+        "recevoir l'information de façon automatisée selon des critères prédéfinis",
+        "diffuser sélectivement les rapports de veille aux parties prenantes",
+        "solliciter les commerciaux pour faire remonter les informations du terrain"
+      ],
+      "reponse": 1,
+      "explication": "Le Push (flux RSS notamment) s'oppose au Pull, qui est la recherche active. La combinaison des deux constitue une stratégie complète."
+    },
+    {
+      "id": "q-f01-007",
+      "section": "5. La veille concurrentielle",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Un concurrent indirect est un acteur qui :",
+      "options": [
+        "cible la même clientèle avec un produit très similaire",
+        "propose un produit différent, mais qui répond au même besoin",
+        "propose un produit différent, mais qui s'adresse à la même cible",
+        "n'est pas encore entré sur le marché"
+      ],
+      "reponse": 1,
+      "explication": "La réponse 0 décrit le concurrent direct, la réponse 2 le concurrent tertiaire ou de substitution, la réponse 3 le concurrent potentiel."
+    },
+    {
+      "id": "q-f01-008",
+      "section": "5. La veille concurrentielle",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi surveiller les offres d'emploi publiées par un concurrent ?",
+      "options": [
+        "pour évaluer sa santé financière",
+        "parce qu'elles constituent une information « noire » légalement accessible",
+        "parce que le profil des recrutements révèle sa stratégie à venir",
+        "pour mesurer sa part de marché"
+      ],
+      "reponse": 2,
+      "explication": "Recruter des ingénieurs laisse présager de nouveaux produits ; chercher des commerciaux sur un secteur précis indique une attaque de ce marché."
+    },
+    {
+      "id": "q-f01-009",
+      "section": "3. Les types de veille",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une tendance lourde est détectée lorsqu'elle est :",
+      "options": [
+        "relayée par au moins trois sources indépendantes",
+        "importante et constante",
+        "confirmée par un panel d'experts selon la méthode Delphi",
+        "mesurable en part de marché"
+      ],
+      "reponse": 1,
+      "explication": "C'est la veille environnementale qui l'identifie, en observant les principaux indicateurs sociaux, économiques et démographiques."
+    },
+    {
+      "id": "q-f01-010",
+      "section": "3. Les types de veille",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "La veille intégrée se caractérise par :",
+      "options": [
+        "l'internalisation complète de la veille, sans prestataire externe",
+        "le croisement des dimensions technologiques, réglementaires et sociétales",
+        "l'intégration de la veille au système d'information de l'entreprise",
+        "la centralisation de la veille au sein d'un service unique"
+      ],
+      "reponse": 1,
+      "explication": "Elle dépasse la veille en silos par une approche systémique révélant les interdépendances : une innovation technologique déclenche une évolution normative, qui rencontre une acceptabilité sociale variable."
+    },
+    {
+      "id": "q-f01-011",
+      "section": "4. Le cycle de veille",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Que permet réellement l'automatisation de la veille ?",
+      "options": [
+        "la collecte, mais pas le traitement de l'information",
+        "le traitement, mais pas la diffusion",
+        "l'ensemble du cycle, de la collecte à la recommandation",
+        "uniquement la surveillance des réseaux sociaux"
+      ],
+      "reponse": 0,
+      "explication": "De nombreuses solutions automatisent la collecte, mais aucune n'est optimale pour le traitement. Sélection, organisation et analyse reposent impérativement sur l'humain."
+    },
+    {
+      "id": "q-f01-012",
+      "section": "9. Veille et innovation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une innovation qui consiste à proposer un produit existant dans une version simplifiée, de moindre qualité et à tarif inférieur est dite :",
+      "options": [
+        "incrémentale",
+        "adjacente",
+        "de rupture",
+        "radicale"
+      ],
+      "reponse": 2,
+      "explication": "L'innovation de rupture (ou disruptive) rend le produit plus accessible en coût et en fonctionnalités. L'adjacente transpose une technologie existante sur un marché différent ; la radicale crée un marché nouveau."
+    },
+    {
+      "id": "q-f01-013",
+      "section": "1. L'intelligence économique",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quels sont les 3 volets de la démarche d'intelligence économique ? (3 réponses)",
+      "options": [
+        "la veille et l'anticipation",
+        "le benchmarking concurrentiel",
+        "la maîtrise des risques (sécurité économique)",
+        "l'action proactive sur l'environnement (l'influence)",
+        "la protection juridique des brevets",
+        "la gestion de la relation client"
+      ],
+      "reponse": [
+        0,
+        2,
+        3
+      ],
+      "explication": "La veille est le point de départ du dispositif ; la sécurité économique protège le patrimoine matériel et immatériel ; l'influence agit légalement sur les perceptions."
+    },
+    {
+      "id": "q-f01-014",
+      "section": "2. La veille",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Parmi ces propositions, lesquelles font partie des 5 critères de qualité d'une information ? (5 réponses)",
+      "options": [
+        "pertinente",
+        "gratuite",
+        "fiable",
+        "récente",
+        "confidentielle",
+        "exhaustive",
+        "disponible",
+        "quantifiable"
+      ],
+      "reponse": [
+        0,
+        2,
+        3,
+        5,
+        6
+      ],
+      "explication": "« Disponible » signifie obtenue légalement et éthiquement, dans le respect des droits d'auteur et de la confidentialité — ce qui exclut précisément l'information confidentielle non autorisée."
+    },
+    {
+      "id": "q-f01-015",
+      "section": "4. Le cycle de veille",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Lesquels de ces outils sont des agrégateurs de flux RSS ? (3 réponses)",
+      "options": [
+        "Netvibes",
+        "Talkwalker",
+        "Feedly",
+        "Semrush",
+        "Flipboard",
+        "Brandwatch"
+      ],
+      "reponse": [
+        0,
+        2,
+        4
+      ],
+      "explication": "Talkwalker est une plateforme d'alerte et de veille des médias sociaux, Brandwatch une plateforme de surveillance sociale, Semrush un outil de mots-clés et de positions SEO."
+    },
+    {
+      "id": "q-f01-016",
+      "section": "7. Restitution",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quelles rubriques figurent dans un compte rendu de veille ? (4 réponses parmi les propositions)",
+      "options": [
+        "résumé exécutif",
+        "organigramme de l'entreprise",
+        "sources d'information et évaluation de leur fiabilité",
+        "bilan comptable prévisionnel",
+        "opportunités et menaces",
+        "recommandations pratiques et réalisables"
+      ],
+      "reponse": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "explication": "S'y ajoutent l'analyse de la situation, l'identification des tendances, les forces et faiblesses, la méthodologie de veille, la synthèse visuelle et la mise en contexte temporel."
+    },
+    {
+      "id": "q-f01-017",
+      "section": "6. Anticipation et prospective",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Lesquelles sont des méthodes prospectivistes ? (4 réponses)",
+      "options": [
+        "la méthode des scénarios",
+        "la matrice BCG",
+        "la méthode Delphi",
+        "les groupes de réflexion (think tanks)",
+        "l'analyse SWOT",
+        "la méthode Prodin"
+      ],
+      "reponse": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "explication": "BCG et SWOT sont des outils de diagnostic stratégique, pas de prospective. S'ajoutent aux méthodes prospectivistes l'analyse des tendances et l'étude de cas."
+    },
+    {
+      "id": "q-f01-018",
+      "section": "2. La veille",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition de la veille stratégique.",
+      "texte": "La veille stratégique est la {1} permanente de l'environnement global de l'entreprise, pour en anticiper les {2} et les {3} à moyen et long terme. Elle englobe la veille {4}, qui porte sur les aspects opérationnels, les données financières et les compétences distinctives, et la veille {5}, qui porte sur la concurrence, les tendances du marché et les réglementations.",
+      "trous": [
+        "surveillance",
+        "opportunités",
+        "menaces",
+        "interne",
+        "externe"
+      ],
+      "explication": "Elle est le premier pilier de l'intelligence économique."
+    },
+    {
+      "id": "q-f01-019",
+      "section": "2. La veille",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition du signal faible par Igor Ansoff.",
+      "texte": "Un signal faible est « une information d'{1} {2}, de faible {3}, pouvant être annonciatrice d'une {4} ou d'un événement important ». Toute la difficulté consiste à le {5} pour bien l'interpréter.",
+      "trous": [
+        "alerte",
+        "précoce",
+        "intensité",
+        "tendance",
+        "contextualiser"
+      ],
+      "explication": "Le cas Blockbuster illustre l'échec de cette contextualisation : 9 000 magasins en 2004, faillite en 2014 faute d'avoir pris au sérieux l'accélération des vitesses de téléchargement."
+    },
+    {
+      "id": "q-f01-020",
+      "section": "5. La veille concurrentielle",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la typologie des concurrents.",
+      "texte": "Les concurrents {1} ciblent la même clientèle avec un produit très similaire. Les concurrents {2} proposent un produit différent, mais qui répond au même {3}. Les concurrents {4}, ou de {5}, proposent un produit différent, mais qui s'adresse à la même {6}.",
+      "trous": [
+        "directs",
+        "indirects",
+        "besoin",
+        "tertiaires",
+        "substitution",
+        "cible"
+      ],
+      "propositions": [
+        "directs",
+        "indirects",
+        "tertiaires",
+        "potentiels",
+        "besoin",
+        "marché",
+        "substitution",
+        "diversification",
+        "cible",
+        "clientèle"
+      ],
+      "explication": "Aux yeux du client, c'est la satisfaction du besoin qui l'emporte — d'où l'attention grandissante à porter à la concurrence indirecte."
+    },
+    {
+      "id": "q-f01-021",
+      "section": "4. Le cycle de veille",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez le sigle qui sert à délimiter le périmètre d'un plan de veille.",
+      "texte": "Le {1} : {2} allez-vous étudier ? {3} (habitudes d'achat, style de vie) ? {4} (région, France, international) ? {5} (10 ans, 2 ans, 6 mois) ? {6} (prestataire externe, recherche automatisée) ? {7} (quel volume d'informations) ? {8} (quelle décision, quel projet) ?",
+      "trous": [
+        "QQOQCCP",
+        "Qui",
+        "Quoi",
+        "Où",
+        "Quand",
+        "Comment",
+        "Combien",
+        "Pourquoi"
+      ],
+      "explication": "Une veille mal préparée devient vite chronophage et peu pertinente."
+    },
+    {
+      "id": "q-f01-022",
+      "section": "6. Anticipation et prospective",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez les 4 dimensions de compétences liées à l'anticipation.",
+      "texte": "Le {1} désigne les connaissances et informations. Le {2} désigne les compétences pratiques et aptitudes techniques. Le {3} désigne les compétences interpersonnelles : créativité, résilience, écoute active, travail en équipe. Le {4} désigne la capacité à partager ses connaissances au sein de l'organisation.",
+      "trous": [
+        "savoir",
+        "savoir-faire",
+        "savoir-être",
+        "faire-savoir"
+      ],
+      "explication": "Le faire-savoir est la dimension la plus souvent oubliée : c'est elle qui transforme une compétence individuelle en contribution à la décision collective."
+    },
+    {
+      "id": "q-f01-023",
+      "section": "3. Les types de veille",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition de l'e-réputation selon Bertrand Bathelot.",
+      "texte": "L'e-réputation est l'{1} véhiculée et/ou subie par une entreprise sur internet et les supports numériques. Elle résulte surtout des contenus diffusés par les {2}, et elle est davantage influencée par la {3} des avis que par leur {4}.",
+      "trous": [
+        "image",
+        "internautes",
+        "visibilité",
+        "quantité"
+      ],
+      "explication": "D'où la citation de Chris Anderson : « Votre marque n'est pas ce que vous en dites, mais ce que Google en dit ! »"
+    },
+    {
+      "id": "q-f01-024",
+      "section": "1. L'intelligence économique",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "L'intelligence économique consiste notamment à obtenir des informations « noires » sur ses concurrents.",
+      "reponse": false,
+      "explication": "Faux. C'est la définition de l'espionnage économique. L'information « noire » est protégée par le secret ou à accès restreint, et son obtention non autorisée est une infraction. L'IE exploite exclusivement des sources ouvertes et légalement accessibles."
+    },
+    {
+      "id": "q-f01-025",
+      "section": "2. La veille",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "La veille stratégique ne porte que sur l'environnement externe de l'entreprise.",
+      "reponse": false,
+      "explication": "Faux. Elle englobe aussi la veille interne : analyse des aspects opérationnels, des données financières et des compétences distinctives."
+    },
+    {
+      "id": "q-f01-038",
+      "section": "1. L'intelligence économique",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "L'influence, au sens de l'intelligence économique, est une pratique parfaitement légale.",
+      "reponse": true,
+      "explication": "Vrai. C'est le troisième volet de la démarche : agir sur les perceptions de l'opinion publique ou d'interlocuteurs clés pour orienter leurs décisions, en recourant à la persuasion, l'argumentation, la séduction et l'exemplarité. C'est le métier du lobbying, de la politique et de la diplomatie."
+    },
+    {
+      "id": "q-f01-026",
+      "section": "7. Restitution",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Une information officieuse recueillie auprès d'un commercial ou d'un fournisseur — dite information « grise » — peut être exploitée légalement.",
+      "reponse": true,
+      "explication": "Vrai. L'information grise est difficilement accessible et souvent officieuse, mais elle provient de remontées terrain légitimes : commerciaux, employés, clients, fournisseurs. Elle ne doit pas être confondue avec l'information « noire », protégée par le secret, dont l'obtention non autorisée est une infraction."
+    },
+    {
+      "id": "q-f01-027",
+      "section": "8. Limites et risques",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Les fake news et les théories complotistes reposent sur le même mécanisme.",
+      "reponse": false,
+      "explication": "Faux. Les fake news sont de fausses informations visant à attirer l'audience ou à manipuler. Les théories complotistes partent de faits réels et avérés, attribués à une organisation secrète qui aurait eu intérêt à leur réalisation. Les deux naissent en revanche d'un même manque de confiance envers les élites."
+    },
+    {
+      "id": "q-f01-028",
+      "section": "7. Restitution",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La veille stratégique est impulsée par la direction, mais mise en œuvre par chaque département dans son domaine de compétence.",
+      "reponse": true,
+      "explication": "Vrai. Juridique, marketing, commercial, communication, R&D, production, SI, finances, RH, achats : c'est le croisement de ces apports qui produit la vision globale. Vos concurrents consultent probablement les mêmes sources — c'est la capacité à exploiter plus vite qui donne l'avantage."
+    },
+    {
+      "id": "q-f01-029",
+      "section": "3. Les types de veille",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque type de veille à son objet.",
+      "colonne_a": [
+        "Veille technologique",
+        "Veille juridique et réglementaire",
+        "Veille e-réputation",
+        "Veille sociétale et comportementale",
+        "Veille fournisseurs"
+      ],
+      "colonne_b": [
+        "Perception de l'entreprise sur le web et les réseaux sociaux",
+        "Valeurs, modes de vie, sociostyles, comportement du consommateur",
+        "Avancées technologiques, innovations, brevets, R&D",
+        "Critères de sélection, fiabilité, délais, capacité d'approvisionnement",
+        "Évolutions législatives, décisions de justice, normes, conformité"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "explication": "Ces axes servent à formuler les objectifs de veille : chaque objectif se rattache à un axe et délimite ainsi son périmètre."
+    },
+    {
+      "id": "q-f01-030",
+      "section": "6. Anticipation et prospective",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque méthode prospectiviste à son principe.",
+      "colonne_a": [
+        "Méthode des scénarios",
+        "Méthode Delphi",
+        "Analyse des tendances",
+        "Méthode Prodin"
+      ],
+      "colonne_b": [
+        "Consultation itérative de panels d'experts jusqu'à l'obtention d'un consensus",
+        "Développer des récits de situations futures plausibles à partir de données et de facteurs clés",
+        "Démarche collaborative structurée révélant la relation entre les acteurs de changement",
+        "Surveiller comportements des consommateurs, avancées technologiques et évolutions sociétales"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "explication": "La méthode des scénarios est l'outil fondamental de la prospective."
+    },
+    {
+      "id": "q-f01-031",
+      "section": "1. L'intelligence économique",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque notion d'intelligence économique à sa définition.",
+      "colonne_a": [
+        "Coopétition",
+        "Soft power",
+        "Normalisation",
+        "Think tank"
+      ],
+      "colonne_b": [
+        "Cercle de réflexion publiant opinions et expertises en matière de politique publique",
+        "Coopération entre deux acteurs concurrents pour défendre un intérêt commun",
+        "Processus formalisant un référentiel commun ou des standards",
+        "Méthodes d'influence recourant à des éléments idéologiques ou culturels"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "L'IE s'intéresse à la normalisation parce que des stratégies d'influence peuvent orienter le contenu des textes."
+    },
+    {
+      "id": "q-f01-032",
+      "section": "4. Le cycle de veille",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 7 étapes du cycle de veille.",
+      "elements": [
+        "Collecter l'information (Pull et/ou Push)",
+        "Définir les objectifs stratégiques",
+        "Diffusion sélective de l'information",
+        "Identifier les axes de veille",
+        "Analyser et traiter les données",
+        "Mettre en place des indicateurs clés de performance (KPI)",
+        "Sélectionner et hiérarchiser les sources pertinentes"
+      ],
+      "ordre": [
+        1,
+        3,
+        6,
+        5,
+        0,
+        4,
+        2
+      ],
+      "explication": "Les objectifs stratégiques sont la clé de voûte de toute la démarche : ce sont eux qui déterminent les axes, puis les sources, puis les KPI."
+    },
+    {
+      "id": "q-f01-033",
+      "section": "2. La veille",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la chaîne de valeur de la veille.",
+      "elements": [
+        "Anticiper ses conséquences",
+        "Détecter l'information utile",
+        "Déclencher la décision adéquate",
+        "Évaluer sa pertinence et son utilité",
+        "La diffuser aux bons interlocuteurs",
+        "Mesurer son importance et comprendre ce qu'elle implique"
+      ],
+      "ordre": [
+        1,
+        3,
+        5,
+        0,
+        4,
+        2
+      ],
+      "explication": "L'objectif final est de produire de la connaissance utile. Sans plan d'action et sans passage à l'acte, la veille ne remplit pas son objectif."
+    },
+    {
+      "id": "q-f01-034",
+      "section": "4. Le cycle de veille",
+      "niveau": 1,
+      "format": "ouverte",
+      "question": "Une PME agroalimentaire prépare le lancement d'une nouvelle gamme végétale. Formulez trois objectifs de veille, en rattachant chacun à un axe de veille.",
+      "attendus": [
+        "Chaque objectif est rattaché explicitement à un axe (marketing/comportementale, concurrentielle, réglementaire, technologique, RSE, fournisseurs...)",
+        "Chaque objectif est un objectif d'information (« savoir si… », « suivre… »), pas un objectif commercial",
+        "Chaque objectif délimite un périmètre : quoi surveiller, sur quel terrain, sur quel horizon",
+        "Exemple attendu : axe réglementaire → suivre l'évolution de la réglementation sur l'étiquetage et les allégations nutritionnelles, pour sécuriser le packaging avant lancement"
+      ],
+      "explication": "Le critère d'évaluation porte sur la délimitation du périmètre : une liste d'objectifs génériques (« surveiller la concurrence ») ne suffit pas."
+    },
+    {
+      "id": "q-f01-035",
+      "section": "5. La veille concurrentielle",
+      "niveau": 1,
+      "format": "ouverte",
+      "question": "Un cinéma indépendant souhaite cartographier sa concurrence. Donnez un exemple de concurrent direct, indirect et de substitution, en justifiant chaque classement.",
+      "attendus": [
+        "Direct : un autre cinéma de la même zone — même cible, produit très similaire",
+        "Indirect : une plateforme de streaming — produit différent, mais même besoin (voir un film)",
+        "Substitution : un théâtre, un bowling, un concert — produit différent, mais même cible (sortie de loisir en soirée)",
+        "La justification doit mobiliser le critère discriminant : même besoin (indirect) versus même cible (substitution)"
+      ],
+      "explication": "Le tri se fait à partir du besoin du client, pas de la ressemblance apparente des offres."
+    },
+    {
+      "id": "q-f01-036",
+      "section": "7. Restitution",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Expliquez pourquoi la veille stratégique doit être une action collective, en illustrant par un exemple de croisement d'informations entre services.",
+      "attendus": [
+        "La veille est impulsée par la direction mais mise en œuvre par chaque département dans son domaine de compétence",
+        "C'est le croisement des apports qui produit la vision globale, pas leur accumulation",
+        "Exemple attendu : la R&D signale des brevets déposés par un concurrent dans un domaine inédit, les RH ont reçu des candidats issus de ce concurrent, les achats ont entendu parler d'achats de composants particuliers, la finance évoque des prises d'intérêts dans des startups — corrélées, ces informations révèlent une opération majeure en préparation",
+        "Mention utile : vos concurrents consultent probablement les mêmes sources ; c'est la capacité à comprendre et exploiter plus vite qui donne l'avantage"
+      ],
+      "explication": "Chaque information prise isolément est anodine : c'est leur corrélation qui produit le signal."
+    },
+    {
+      "id": "q-f01-037",
+      "section": "8. Limites et risques",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Un manager refuse de partager les informations recueillies par son équipe, estimant qu'elles font sa valeur dans l'entreprise. Quel obstacle classique de la veille cela illustre-t-il, et comment y répondre ?",
+      "attendus": [
+        "Il s'agit de la rétention d'information en interne : « L'information, c'est le pouvoir ! »",
+        "C'est un obstacle documenté, particulièrement en veille sociale",
+        "La réponse consiste à rassurer et à faire participer l'ensemble des acteurs, plutôt qu'à imposer",
+        "Peut être complété par la mise en place d'un outil partagé, de correspondants veille dans chaque service, ou de sessions de partage régulières"
+      ],
+      "explication": "La veille collaborative repose sur la désignation de correspondants veille, des sessions de partage régulières et une plateforme collaborative centralisée."
+    }
+  ]
+}

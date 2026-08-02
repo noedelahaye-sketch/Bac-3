@@ -99,7 +99,7 @@
   function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=a[i];a[i]=a[j];a[j]=x;} return a; }
 
   var VIEWS=[["accueil","Accueil"],["dossiers","Dossiers"],["cours","Cours"],["apprendre","Apprendre"]];
-  var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre","flashcards"];
+  var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre","flashcards","quiz"];
   function parseHash(hash){
     var h=(hash||"").replace(/^#/,"");
     if(h.charAt(0)==="/") h=h.slice(1);
@@ -111,7 +111,7 @@
     if(parts[0]==="cours" && parts[1]==="resume" && parts[2]) return {view:"coursResume", id:parts[2]};
     if(parts[0]==="cours" && parts[1]==="question" && parts[2]) return {view:"coursQuestion", id:parts[2]};
     if(parts[0]==="cours") return {view:"cours"};
-    if(parts[0]==="reviser" || parts[0]==="quiz") return {view:"apprendre"};
+    if(parts[0]==="reviser") return {view:"apprendre"};
     if(KNOWN_VIEWS.indexOf(parts[0])>=0) return {view:parts[0]};
     return {view:"accueil"};
   }
@@ -155,7 +155,7 @@
 
   function renderNav(){
     var h="";
-    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc"||ROUTE.view==="coursQuestion") ? "dossiers" : (ROUTE.view==="coursBloc"||ROUTE.view==="coursResume") ? "cours" : (ROUTE.view==="flashcards") ? "apprendre" : ROUTE.view;
+    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc"||ROUTE.view==="coursQuestion") ? "dossiers" : (ROUTE.view==="coursBloc"||ROUTE.view==="coursResume") ? "cours" : (ROUTE.view==="flashcards"||ROUTE.view==="quiz") ? "apprendre" : ROUTE.view;
     VIEWS.forEach(function(v){
       var badge="";
       if(v[0]==="dossiers"){ var r=ALL.length-doneCount(); if(r) badge='<i>'+r+'</i>'; }
@@ -476,15 +476,19 @@
   var TYPE_LABELS={definition:"Définition",liste:"Liste",distinction:"Distinction",application:"Application"};
 
   function vApprendre(){
-    if(QZ) return renderQuizSession();
     var h='<div class="tiles">';
     h+='<button class="tile" data-go="flashcards">';
     h+='<span class="tile-code code">Flashcards</span>';
     h+='<span class="tile-title">Cartes à répétition espacée</span>';
     h+='<span class="tile-cas">'+FLASHCARDS.length+' cartes &middot; '+dueCount()+' à revoir aujourd\'hui</span>';
     h+='</button>';
+    h+='<button class="tile" data-go="quiz">';
+    h+='<span class="tile-code code">Quiz</span>';
+    h+='<span class="tile-title">Questions et exercices</span>';
+    h+='<span class="tile-cas">'+QUIZ.length+' questions &middot; 7 formats</span>';
+    h+='</button>';
     h+='</div>';
-    return h+renderQuizLanding();
+    return h;
   }
 
   function vFlashcards(){
@@ -526,38 +530,151 @@
     return h;
   }
 
-  function renderQuizSession(){
-    if(QZ.i>=QZ.list.length){
-      var pct=Math.round(100*QZ.ok/QZ.list.length);
-      var h='<div class="done-msg"><b>'+QZ.ok+' / '+QZ.list.length+'</b> — '+pct+' % de bonnes réponses.</div>';
-      if(QZ.wrong.length){ h+='<div class="lab">À retravailler</div><ul class="att">'; QZ.wrong.forEach(function(w){h+='<li>'+w+'</li>';}); h+='</ul>'; }
-      h+='<button class="jadd" data-lrn="qstop">Revenir</button>';
-      return h;
-    }
-    var q=QZ.list[QZ.i];
-    var h='<div class="prog">Question '+(QZ.i+1)+' sur '+QZ.list.length+' · score '+QZ.ok+'</div><div class="card"><div class="cq">'+q.q+'</div><div class="opts">';
-    q.o.forEach(function(o,k){
-      var cls=""; if(QZ.answered!==null){ if(k===q.c) cls=" good"; else if(k===QZ.answered) cls=" bad"; }
-      h+='<button class="opt'+cls+'" data-opt="'+k+'"'+(QZ.answered!==null?' disabled':'')+'>'+o+'</button>';
-    });
-    h+='</div>';
-    if(QZ.answered!==null) h+='<div class="expl">'+q.e+'</div><div class="cbtns"><button class="yes" data-lrn="qnext">Suivante</button></div>';
-    h+='</div><button class="quit" data-lrn="qstop">Arrêter le quiz</button>';
-    return h;
+  var FORMAT_LABELS={qcm:"QCM",qcm_multiple:"QCM multiple",texte_a_trous:"Texte à trous",vrai_faux:"Vrai / Faux",appariement:"Appariement",ordonnancement:"Ordre",ouverte:"Question ouverte"};
+
+  function vQuiz(){
+    if(QZ) return renderQuizSession();
+    return renderQuizHome();
   }
 
-  function renderQuizLanding(){
-    var h='<div class="lab">Quiz</div><div class="states">';
-    h+='<button data-quiz="10">10 questions</button><button data-quiz="'+QCM.length+'">Toutes ('+QCM.length+')</button></div>';
+  function renderQuizHome(){
+    var h='<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Quiz"}])+'</div>';
+    h+='<h1 class="qhead-title">Quiz</h1><div class="qhead-code code">'+QUIZ.length+' questions</div>';
+    h+='<div class="states">';
+    h+='<button data-quiz="10">10 questions</button><button data-quiz="'+QUIZ.length+'">Toutes ('+QUIZ.length+')</button></div>';
     if(S.quiz.length){
       var best=S.quiz.reduce(function(a,r){var p=r.s/r.n;return p>a?p:a;},0);
-      h+='<div class="stats"><div class="stat"><div class="num">'+S.quiz.length+'</div><div class="lbl">Quiz passés</div></div>';
+      h+='<div class="stats stats-top"><div class="stat"><div class="num">'+S.quiz.length+'</div><div class="lbl">Quiz passés</div></div>';
       h+='<div class="stat"><div class="num">'+Math.round(best*100)+'<span class="on">%</span></div><div class="lbl">Meilleur score</div></div></div>';
       h+='<div class="lab">Historique</div>';
       S.quiz.slice(-8).reverse().forEach(function(r){
         h+='<div class="hrow"><span>'+r.d+'</span><b>'+r.s+' / '+r.n+'</b></div>';
       });
     } else h+='<p class="rappel">Aucun quiz passé pour l\'instant. Les questions portent sur les pièges classiques, pas seulement sur les définitions.</p>';
+    return h;
+  }
+
+  function initQuizInput(q){
+    if(!q) return null;
+    if(q.format==="qcm_multiple") return [];
+    if(q.format==="texte_a_trous") return q.trous.map(function(){return "";});
+    if(q.format==="appariement") return q.colonne_a.map(function(){return null;});
+    if(q.format==="ordonnancement") return shuffle(q.elements.map(function(_,i){return i;}));
+    if(q.format==="ouverte") return {show:false,text:""};
+    return null;
+  }
+
+  function finishQuizQuestion(correct){
+    QZ.checked=true;
+    if(correct) QZ.ok++; else QZ.wrong.push(QZ.list[QZ.i].question);
+    if(QZ.i===QZ.list.length-1){ S.quiz.push({d:new Date().toLocaleDateString("fr-FR"),s:QZ.ok,n:QZ.list.length}); save(); }
+  }
+
+  function renderBlanksText(texte, values, checked, trous){
+    return esc(texte).replace(/\{(\d+)\}/g, function(_, n){
+      var idx=parseInt(n,10)-1;
+      if(checked){
+        var val=(values[idx]||"").trim();
+        var ok=val.toLowerCase()===String(trous[idx]||"").trim().toLowerCase();
+        return '<b class="blank-res '+(ok?'good':'bad')+'">'+(val?esc(val):'&mdash;')+(ok?'':' <i>('+esc(trous[idx])+')</i>')+'</b>';
+      }
+      return '<input class="blank-input" data-qz-blank="'+idx+'" value="'+esc(values[idx]||"")+'">';
+    });
+  }
+
+  function renderQuizBody(q){
+    var h="";
+    if(q.format==="qcm"){
+      h+='<div class="opts">';
+      q.options.forEach(function(o,k){
+        var cls=""; if(QZ.checked){ if(k===q.reponse) cls=" good"; else if(k===QZ.input) cls=" bad"; }
+        h+='<button class="opt'+cls+'" data-qz-opt="'+k+'"'+(QZ.checked?' disabled':'')+'>'+esc(o)+'</button>';
+      });
+      h+='</div>';
+    } else if(q.format==="vrai_faux"){
+      h+='<div class="opts">';
+      [true,false].forEach(function(v){
+        var cls=""; if(QZ.checked){ if(v===q.reponse) cls=" good"; else if(v===QZ.input) cls=" bad"; }
+        h+='<button class="opt'+cls+'" data-qz-vf="'+v+'"'+(QZ.checked?' disabled':'')+'>'+(v?"Vrai":"Faux")+'</button>';
+      });
+      h+='</div>';
+    } else if(q.format==="qcm_multiple"){
+      h+='<div class="opts">';
+      q.options.forEach(function(o,k){
+        var sel=QZ.input.indexOf(k)>=0;
+        var cls=""; if(QZ.checked){ if(q.reponse.indexOf(k)>=0) cls=" good"; else if(sel) cls=" bad"; } else if(sel) cls=" sel";
+        h+='<button class="opt'+cls+'" data-qz-multi="'+k+'"'+(QZ.checked?' disabled':'')+'>'+(sel?"&#9745; ":"&#9744; ")+esc(o)+'</button>';
+      });
+      h+='</div>';
+      if(!QZ.checked) h+='<button class="jadd" data-qz-validate>Valider</button>';
+    } else if(q.format==="texte_a_trous"){
+      h+='<div class="blanks">'+renderBlanksText(q.texte, QZ.input, QZ.checked, q.trous)+'</div>';
+      if(q.propositions && q.propositions.length && !QZ.checked){
+        h+='<p class="rappel">Mots proposés : '+q.propositions.map(esc).join(' &middot; ')+'</p>';
+      }
+      if(!QZ.checked) h+='<button class="jadd" data-qz-validate>Valider</button>';
+    } else if(q.format==="appariement"){
+      var correctMap={}; (q.paires||[]).forEach(function(p){correctMap[p[0]]=p[1];});
+      h+='<div class="match-list">';
+      q.colonne_a.forEach(function(a,i){
+        h+='<div class="match-row"><span class="match-a">'+esc(a)+'</span>';
+        h+='<select class="match-select" data-qz-match="'+i+'"'+(QZ.checked?' disabled':'')+'><option value="">—</option>';
+        q.colonne_b.forEach(function(b,j){
+          h+='<option value="'+j+'"'+(QZ.input[i]===j?' selected':'')+'>'+esc(b)+'</option>';
+        });
+        h+='</select>';
+        if(QZ.checked){
+          var ok=QZ.input[i]===correctMap[i];
+          h+='<span class="match-mark '+(ok?'good':'bad')+'">'+(ok?'&#10003;':'&#10007;')+'</span>';
+        }
+        h+='</div>';
+      });
+      h+='</div>';
+      if(QZ.checked){
+        h+='<p class="rappel">Corrigé : '+q.colonne_a.map(function(a,i){return esc(a)+' &rarr; '+esc(q.colonne_b[correctMap[i]]);}).join(' &middot; ')+'</p>';
+      } else h+='<button class="jadd" data-qz-validate>Valider</button>';
+    } else if(q.format==="ordonnancement"){
+      h+='<div class="order-list">';
+      QZ.input.forEach(function(elIdx,pos){
+        var ok = QZ.checked ? (q.ordre[pos]===elIdx) : null;
+        h+='<div class="order-row'+(QZ.checked?(ok?' good':' bad'):'')+'"><span class="order-num code">'+(pos+1)+'</span><span class="order-text">'+esc(q.elements[elIdx])+'</span>';
+        if(!QZ.checked){
+          h+='<span class="order-btns"><button class="order-btn" data-qz-move="'+pos+':up"'+(pos===0?' disabled':'')+'>&uarr;</button>';
+          h+='<button class="order-btn" data-qz-move="'+pos+':down"'+(pos===QZ.input.length-1?' disabled':'')+'>&darr;</button></span>';
+        } else h+='<span class="order-mark">'+(ok?'&#10003;':'&#10007;')+'</span>';
+        h+='</div>';
+      });
+      h+='</div>';
+      if(!QZ.checked) h+='<button class="jadd" data-qz-validate>Valider l\'ordre</button>';
+    } else if(q.format==="ouverte"){
+      if(!QZ.input.show){
+        h+='<textarea class="f big" placeholder="Note ta réponse ici (facultatif)" data-qz-open-text>'+esc(QZ.input.text||"")+'</textarea>';
+        h+='<button class="jadd" data-qz-open-reveal>Voir les attendus</button>';
+      } else {
+        h+='<div class="lab">Attendus</div><ul class="att">';
+        q.attendus.forEach(function(a){h+='<li>'+esc(a)+'</li>';});
+        h+='</ul>';
+        if(!QZ.checked) h+='<div class="cbtns"><button class="no" data-qz-open-grade="ko">À revoir</button><button class="yes" data-qz-open-grade="ok">Je savais</button></div>';
+      }
+    }
+    return h;
+  }
+
+  function renderQuizSession(){
+    if(QZ.i>=QZ.list.length){
+      var pct=Math.round(100*QZ.ok/QZ.list.length);
+      var h='<div class="done-msg"><b>'+QZ.ok+' / '+QZ.list.length+'</b> — '+pct+' % de bonnes réponses.</div>';
+      if(QZ.wrong.length){ h+='<div class="lab">À retravailler</div><ul class="att">'; QZ.wrong.forEach(function(w){h+='<li>'+esc(w)+'</li>';}); h+='</ul>'; }
+      h+='<button class="jadd" data-lrn="qstop">Revenir</button>';
+      return h;
+    }
+    var q=QZ.list[QZ.i];
+    var h='<div class="prog">Question '+(QZ.i+1)+' sur '+QZ.list.length+' &middot; score '+QZ.ok+'</div>';
+    h+='<div class="card qz-card"><div class="cmeta"><span class="m-niveau n'+q.niveau+'">Niveau '+q.niveau+'</span><span class="m-section">'+esc(q.section)+'</span><span class="m-section">'+(FORMAT_LABELS[q.format]||q.format)+'</span></div>';
+    h+='<div class="cq">'+esc(q.question)+'</div>';
+    h+=renderQuizBody(q);
+    if(QZ.checked) h+='<div class="expl">'+esc(q.explication||'')+'</div><div class="cbtns"><button class="yes" data-lrn="qnext">Suivante</button></div>';
+    h+='</div><button class="quit" data-lrn="qstop">Arrêter le quiz</button>';
     return h;
   }
 
@@ -697,8 +814,7 @@
 
   function render(){
     var v=ROUTE.view;
-    var inSession = (v==="apprendre"&&QZ);
-    appEl.classList.toggle("session", !!inSession);
+    appEl.classList.toggle("session", !!((v==="flashcards"&&SES)||(v==="quiz"&&QZ)));
     renderNav();
     main.classList.add("wide");
     if(v==="question"){
@@ -727,16 +843,16 @@
       main.classList.remove("with-qbottom");
       main.innerHTML=vFlashcards();
       positionQbar();
+    } else if(v==="quiz"){
+      main.classList.remove("with-qbottom");
+      main.innerHTML=vQuiz();
+      positionQbar();
     } else {
       main.classList.remove("with-qbottom");
       var h = v==="dossiers"?vDossiers() : v==="apprendre"?vApprendre() : v==="cours"?vCours() : vAccueil();
-      if(inSession){
-        main.innerHTML=h;
-      } else {
-        var titles={accueil:"Suivi des 4 dossiers",dossiers:"Dossiers",apprendre:"Apprendre",cours:"Cours"};
-        var subs={accueil:"Formation — dépôt début décembre",dossiers:"44 livrables · dépôt début décembre",apprendre:"Quiz, et tes flashcards à répétition espacée.",cours:"Les résumés de cours, et les questions que chacun alimente."};
-        main.innerHTML='<div class="eyebrow">'+subs[v]+'</div><h1>'+titles[v]+'</h1>'+h;
-      }
+      var titles={accueil:"Suivi des 4 dossiers",dossiers:"Dossiers",apprendre:"Apprendre",cours:"Cours"};
+      var subs={accueil:"Formation — dépôt début décembre",dossiers:"44 livrables · dépôt début décembre",apprendre:"Tes flashcards et ton quiz de révision.",cours:"Les résumés de cours, et les questions que chacun alimente."};
+      main.innerHTML='<div class="eyebrow">'+subs[v]+'</div><h1>'+titles[v]+'</h1>'+h;
     }
     bind();
   }
@@ -814,17 +930,80 @@
     main.querySelectorAll("[data-quiz]").forEach(function(el){
       el.addEventListener("click",function(){
         var n=parseInt(el.getAttribute("data-quiz"),10);
-        QZ={list:shuffle(QCM).slice(0,n),i:0,ok:0,answered:null,wrong:[]}; render();
+        var list=shuffle(QUIZ).slice(0,n);
+        QZ={list:list,i:0,ok:0,wrong:[],checked:false,input:initQuizInput(list[0])};
+        render();
       });
     });
-    main.querySelectorAll("[data-opt]").forEach(function(el){
+    main.querySelectorAll("[data-qz-opt]").forEach(function(el){
       el.addEventListener("click",function(){
-        if(QZ.answered!==null) return;
-        var k=parseInt(el.getAttribute("data-opt"),10), q=QZ.list[QZ.i];
-        QZ.answered=k;
-        if(k===q.c) QZ.ok++; else QZ.wrong.push(q.q);
-        if(QZ.i===QZ.list.length-1){ S.quiz.push({d:new Date().toLocaleDateString("fr-FR"),s:QZ.ok,n:QZ.list.length}); save(); }
+        if(QZ.checked) return;
+        var k=parseInt(el.getAttribute("data-qz-opt"),10), q=QZ.list[QZ.i];
+        QZ.input=k; finishQuizQuestion(k===q.reponse); render();
+      });
+    });
+    main.querySelectorAll("[data-qz-vf]").forEach(function(el){
+      el.addEventListener("click",function(){
+        if(QZ.checked) return;
+        var v=el.getAttribute("data-qz-vf")==="true", q=QZ.list[QZ.i];
+        QZ.input=v; finishQuizQuestion(v===q.reponse); render();
+      });
+    });
+    main.querySelectorAll("[data-qz-multi]").forEach(function(el){
+      el.addEventListener("click",function(){
+        if(QZ.checked) return;
+        var k=parseInt(el.getAttribute("data-qz-multi"),10);
+        var idx=QZ.input.indexOf(k);
+        if(idx>=0) QZ.input.splice(idx,1); else QZ.input.push(k);
         render();
+      });
+    });
+    main.querySelectorAll("[data-qz-blank]").forEach(function(el){
+      el.addEventListener("input",function(){
+        QZ.input[parseInt(el.getAttribute("data-qz-blank"),10)]=el.value;
+      });
+    });
+    main.querySelectorAll("[data-qz-match]").forEach(function(el){
+      el.addEventListener("change",function(){
+        var idx=parseInt(el.getAttribute("data-qz-match"),10);
+        QZ.input[idx]=el.value===""?null:parseInt(el.value,10);
+      });
+    });
+    main.querySelectorAll("[data-qz-move]").forEach(function(el){
+      el.addEventListener("click",function(){
+        var parts=el.getAttribute("data-qz-move").split(":"), pos=parseInt(parts[0],10), dir=parts[1];
+        var target=dir==="up"?pos-1:pos+1;
+        if(target<0||target>=QZ.input.length) return;
+        var tmp=QZ.input[pos]; QZ.input[pos]=QZ.input[target]; QZ.input[target]=tmp;
+        render();
+      });
+    });
+    main.querySelectorAll("[data-qz-open-text]").forEach(function(el){
+      el.addEventListener("input",function(){ QZ.input.text=el.value; });
+    });
+    main.querySelectorAll("[data-qz-open-reveal]").forEach(function(el){
+      el.addEventListener("click",function(){ QZ.input.show=true; render(); });
+    });
+    main.querySelectorAll("[data-qz-open-grade]").forEach(function(el){
+      el.addEventListener("click",function(){
+        finishQuizQuestion(el.getAttribute("data-qz-open-grade")==="ok"); render();
+      });
+    });
+    main.querySelectorAll("[data-qz-validate]").forEach(function(el){
+      el.addEventListener("click",function(){
+        var q=QZ.list[QZ.i], correct=false;
+        if(q.format==="qcm_multiple"){
+          var a=QZ.input.slice().sort(), b=q.reponse.slice().sort();
+          correct = a.length===b.length && a.every(function(v,i){return v===b[i];});
+        } else if(q.format==="texte_a_trous"){
+          correct = q.trous.every(function(t,i){return (QZ.input[i]||"").trim().toLowerCase()===String(t).trim().toLowerCase();});
+        } else if(q.format==="appariement"){
+          var correctMap={}; (q.paires||[]).forEach(function(p){correctMap[p[0]]=p[1];});
+          correct = q.colonne_a.every(function(_,i){return QZ.input[i]===correctMap[i];});
+        } else if(q.format==="ordonnancement"){
+          correct = QZ.input.every(function(v,i){return v===q.ordre[i];});
+        }
+        finishQuizQuestion(correct); render();
       });
     });
     main.querySelectorAll("[data-lrn]").forEach(function(el){
@@ -836,7 +1015,7 @@
         else if(a==="ok"){ grade(SES.list[SES.i].id,true); SES.ok++; SES.i++; SES.show=false; }
         else if(a==="ko"){ grade(SES.list[SES.i].id,false); SES.i++; SES.show=false; }
         else if(a==="stop") SES=null;
-        else if(a==="qnext"){ QZ.i++; QZ.answered=null; }
+        else if(a==="qnext"){ QZ.i++; QZ.checked=false; if(QZ.i<QZ.list.length) QZ.input=initQuizInput(QZ.list[QZ.i]); }
         else if(a==="qstop") QZ=null;
         render();
       });

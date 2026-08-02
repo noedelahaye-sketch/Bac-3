@@ -1,0 +1,472 @@
+{
+  "resume": "b1-f06",
+  "titre": "Marque, contenu et leviers digitaux",
+  "bloc": 1,
+  "questions": [
+    {
+      "id": "q-f06-001",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce qui distingue le brand content de la publicité traditionnelle ?",
+      "options": [
+        "il est exclusivement diffusé en ligne",
+        "l'absence d'argumentaire commercial et de slogans",
+        "il est produit par l'audience et non par la marque",
+        "il vise la conversion immédiate plutôt que l'engagement"
+      ],
+      "reponse": 1,
+      "explication": "Il s'appuie sur le storytelling et s'inscrit dans une stratégie de moyen et long terme visant l'engagement durable. La réponse 2 décrit l'UGC."
+    },
+    {
+      "id": "q-f06-002",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Les retombées presse et le bouche-à-oreille relèvent de quel type de média ?",
+      "options": ["owned", "earned", "shared", "paid"],
+      "reponse": 1,
+      "explication": "Owned = site, blog, newsletter, comptes sociaux de la marque. Shared = reprises et partages par l'audience. Paid = display, SEA, social ads."
+    },
+    {
+      "id": "q-f06-003",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle est la limite de l'engagement comme indicateur ?",
+      "options": [
+        "il est difficile à mesurer sur les réseaux sociaux",
+        "il ne se traduit pas nécessairement par des ventes",
+        "il n'est disponible que sur les médias payants",
+        "il varie selon les algorithmes et n'est donc pas comparable"
+      ],
+      "reponse": 1,
+      "explication": "L'engagement mesure les partages, publications aimées et commentaires. C'est l'indicateur courant de performance des médias sociaux, mais pas un indicateur de conversion."
+    },
+    {
+      "id": "q-f06-004",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Dans le cycle du contenu, quels contenus mobilise-t-on pour faire passer un visiteur au statut de prospect ?",
+      "options": [
+        "des contenus pour attirer",
+        "des contenus pour convertir",
+        "des contenus pour transformer",
+        "des contenus pour combler"
+      ],
+      "reponse": 1,
+      "explication": "Attirer : inconnu → visiteur. Convertir : visiteur → prospect. Transformer : prospect → client. Combler : client → ambassadeur."
+    },
+    {
+      "id": "q-f06-005",
+      "section": "4. Produire les contenus",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Le mood board intervient à quelle phase du processus de création ?",
+      "options": [
+        "la phase d'inspiration",
+        "la phase de croquis",
+        "la phase de production",
+        "la phase de validation client"
+      ],
+      "reponse": 0,
+      "explication": "Il illustre des concepts et crée une ligne directrice dans le style et l'ambiance graphique. La phase de croquis met ensuite les idées en image."
+    },
+    {
+      "id": "q-f06-006",
+      "section": "4. Produire les contenus",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "L'orientation artistique se définit comme :",
+      "options": [
+        "un audit technique et artistique visant à décortiquer la demande client",
+        "le chemin de fer créatif proposé par le spécialiste de la communication",
+        "l'ensemble des éléments visuels de la marque : typographie, couleurs, logo",
+        "la charte visuelle validée en amont de la production"
+      ],
+      "reponse": 1,
+      "explication": "La réponse 0 décrit le briefing créatif, la réponse 2 le design de marque. L'orientation artistique prend en compte les tendances actuelles du secteur pour les adapter à la demande."
+    },
+    {
+      "id": "q-f06-007",
+      "section": "6. Inbound et outbound",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quel rapport entre inbound marketing et content marketing ?",
+      "options": [
+        "ce sont deux appellations d'une même démarche",
+        "le content marketing est une facette de l'inbound, qui couvre l'ensemble du parcours client",
+        "l'inbound est une facette du content marketing",
+        "l'inbound relève des médias payants, le content marketing des médias possédés"
+      ],
+      "reponse": 1,
+      "explication": "Ne pas confondre les deux : le content marketing ne représente qu'une partie de l'équation."
+    },
+    {
+      "id": "q-f06-008",
+      "section": "7. Les leviers",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle est la propriété essentielle du marketing viral ?",
+      "options": [
+        "il s'appuie sur un budget média important",
+        "c'est le consommateur qui est à l'origine de la diffusion : le destinataire devient acteur",
+        "il cible précisément les micro-influenceurs d'un secteur",
+        "il garantit une réaction en chaîne mesurable"
+      ],
+      "reponse": 1,
+      "explication": "Aussi appelé buzz marketing, il exploite le bouche-à-oreille sur Internet ou les mobiles pour créer une réaction en chaîne."
+    },
+    {
+      "id": "q-f06-009",
+      "section": "7. Les leviers",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Que signifient les 3 principes « Be There, Be Useful, Be Quick » ?",
+      "options": [
+        "les règles du community management",
+        "les principes du micro-moment marketing",
+        "les critères de sélection d'un influenceur",
+        "les fondements de la stratégie virale"
+      ],
+      "reponse": 1,
+      "explication": "Sur ces périodes courtes, les consommateurs attendent une réponse immédiate et priorisent les contenus rapidement compréhensibles."
+    },
+    {
+      "id": "q-f06-010",
+      "section": "7. Les leviers",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce qui distingue le co-branding du co-marketing ?",
+      "options": [
+        "le co-branding implique deux marques, le co-marketing une seule",
+        "le co-branding repose sur la création d'un nouveau produit, le co-marketing non",
+        "le co-branding est réservé au BtoC",
+        "le co-marketing suppose une prise de participation croisée"
+      ],
+      "reponse": 1,
+      "explication": "Les deux reposent sur un partenariat entre marques, mais le co-marketing se focalise sur les efforts marketing sans création de produit."
+    },
+    {
+      "id": "q-f06-011",
+      "section": "8. Influence",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quel indicateur mesure le mieux l'influence réelle d'un créateur de contenu ?",
+      "options": [
+        "le nombre de followers",
+        "le taux d'engagement",
+        "le nombre de publications par mois",
+        "le nombre de partenariats signés"
+      ],
+      "reponse": 1,
+      "explication": "Le taux d'engagement rapporte les interactions — likes, commentaires, partages — au nombre de followers. C'est lui, plus que la taille brute de l'audience, qui mesure l'influence."
+    },
+    {
+      "id": "q-f06-012",
+      "section": "9. Communication d'activisme",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "La communication activiste se définit par :",
+      "options": [
+        "la défense d'intérêts économiques par des moyens militants",
+        "la volonté de changer une situation donnée pour favoriser l'intérêt général",
+        "l'usage exclusif des réseaux sociaux comme canal de mobilisation",
+        "l'association d'une marque à une cause pour augmenter ses ventes"
+      ],
+      "reponse": 1,
+      "explication": "Elle n'a pas pour but la défense d'intérêts économiques ou individuels. La réponse 3 décrit précisément l'erreur à ne pas commettre : le greenwashing ou le purplewashing."
+    },
+    {
+      "id": "q-f06-013",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quels sont les 4 types de médias ? (4 réponses)",
+      "options": ["owned", "earned", "borrowed", "shared", "paid", "rented"],
+      "reponse": [0, 1, 3, 4],
+      "explication": "Ces médias interagissent souvent de façon fluide : le partage d'un contenu positif créé par un tiers relève simultanément de plusieurs catégories."
+    },
+    {
+      "id": "q-f06-014",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quels sont les 5 facteurs clés du succès d'une stratégie de contenu ? (5 réponses)",
+      "options": [
+        "les objectifs",
+        "le budget média",
+        "les cibles (buyer personas)",
+        "les indicateurs (KPI)",
+        "la fréquence de publication",
+        "la ligne éditoriale",
+        "l'identité visuelle"
+      ],
+      "reponse": [0, 2, 3, 5, 6],
+      "explication": "Ligne éditoriale et identité visuelle achèvent de définir le positionnement voulu et assumé."
+    },
+    {
+      "id": "q-f06-015",
+      "section": "4. Produire les contenus",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels sont les outils de pré-production d'un contenu digital ? (5 réponses)",
+      "options": [
+        "charte visuelle",
+        "plan média",
+        "synopsis et scénario",
+        "story-board",
+        "bible des personnages",
+        "calendrier éditorial",
+        "découpage technique"
+      ],
+      "reponse": [0, 2, 3, 4, 6],
+      "explication": "Les faire valider en amont est l'assurance de mener la production à bien."
+    },
+    {
+      "id": "q-f06-016",
+      "section": "7. Les leviers",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quels sont les indicateurs clés de notoriété sur les réseaux sociaux ? (4 réponses)",
+      "options": ["les impressions", "le taux de rebond", "la portée", "l'engagement", "le panier moyen", "les mentions"],
+      "reponse": [0, 2, 3, 5],
+      "explication": "Google Analytics permet par ailleurs de mesurer l'accroissement du trafic issu des réseaux sociaux et de suivre les transactions."
+    },
+    {
+      "id": "q-f06-017",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la maxime et le cycle du content marketing.",
+      "texte": "La maxime du content marketing : délivrer le {1} contenu, au {2} moment, à la {3} personne cible, sur la {4} plateforme. Le parcours suit quatre phases : contenus pour {5} (inconnu → visiteur), pour {6} (visiteur → prospect), pour {7} (prospect → client), pour {8} (client → ambassadeur).",
+      "trous": ["bon", "bon", "bonne", "bonne", "attirer", "convertir", "transformer", "combler"],
+      "explication": "« Transformer » signifie vendre, « combler » signifie fidéliser."
+    },
+    {
+      "id": "q-f06-018",
+      "section": "4. Produire les contenus",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez les 4 questions du brief créatif.",
+      "texte": "{1} suis-je ? Mon identité, mes valeurs, mon histoire. À {2} m'adressé-je ? Qui cibler, quelles habitudes, quel âge, quel profil ? {3} souhaité-je communiquer ? Comment suis-je perçu, comment souhaiterais-je l'être ? {4} dois-je communiquer ? Quel objectif, quel message, quelles contraintes, quel {5} ?",
+      "trous": ["Qui", "qui", "Pourquoi", "Comment", "budget"],
+      "explication": "Le briefing créatif est un audit technique et artistique visant à décortiquer la demande client."
+    },
+    {
+      "id": "q-f06-019",
+      "section": "7. Les leviers",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition du marketing viral selon le Mercator.",
+      "texte": "« Exploitation, au profit d'une marque ou d'une organisation, du {1} sur Internet ou les mobiles, visant à créer une {2} en {3}. » Sa propriété essentielle : c'est le {4} qui est à l'origine de la diffusion — le destinataire devient {5}.",
+      "trous": ["bouche-à-oreille", "réaction", "chaîne", "consommateur", "acteur"],
+      "explication": "Le revers est le bad buzz : un contenu viral échappe par nature à son émetteur."
+    },
+    {
+      "id": "q-f06-020",
+      "section": "8. Influence",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez les notions clés du marketing d'influence.",
+      "texte": "Un {1} est un créateur de contenu qui {2} sa visibilité auprès de sa communauté en partenariat avec des marques. On les classe selon la taille de leur communauté : {3}, micro, macro et {4}-influenceurs. L'indicateur central est le taux d'{5}, qui rapporte les interactions au nombre de followers.",
+      "trous": ["influenceur", "monétise", "nano", "méga", "engagement"],
+      "explication": "Le format type est le placement de produit : mise en scène d'un produit dans un contenu créé par l'influenceur."
+    },
+    {
+      "id": "q-f06-021",
+      "section": "3. SEO et écriture web",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez le profil du bon créateur de contenu.",
+      "texte": "Être en {1} sur les dernières mises à jour des moteurs de recherche · comprendre a minima comment fonctionne le {2} · rédiger en adoptant les techniques « SEO {3} » · rechercher la {4} des mots-clés · créer des contenus {5} et illustrés, en pensant au « {6} effect ».",
+      "trous": ["veille", "SEO", "friendly", "popularité", "uniques", "Wow"],
+      "explication": "Il faut établir un champ sémantique à partir de ses mots-clés stratégiques."
+    },
+    {
+      "id": "q-f06-022",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Un contenu qui génère beaucoup d'engagement génère mécaniquement des ventes.",
+      "reponse": false,
+      "explication": "Faux. L'engagement est l'indicateur courant de performance des médias sociaux, mais il ne se traduit pas nécessairement par des ventes."
+    },
+    {
+      "id": "q-f06-023",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Le brand content peut prendre la forme d'événements, et pas seulement de contenus en ligne.",
+      "reponse": true,
+      "explication": "Vrai. Il regroupe des contenus éditoriaux — vidéos d'expérience, conseils, tutoriels, articles pratiques, forums, reportages — sur Internet, papier, TV ou sous forme d'événements."
+    },
+    {
+      "id": "q-f06-024",
+      "section": "4. Produire les contenus",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Un contenu digital continue d'exister et d'être propagé bien après sa publication.",
+      "reponse": true,
+      "explication": "Vrai. Le contenu digital est numérique donc virtuel : son mode de consommation est pluriel et démultiplié, l'utilisateur peut le propager à loisir, cette existence virtuelle perdure dans le temps et l'utilisateur peut interagir avec lui."
+    },
+    {
+      "id": "q-f06-025",
+      "section": "6. Inbound et outbound",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Produire régulièrement du contenu de qualité suffit à réussir une stratégie inbound.",
+      "reponse": false,
+      "explication": "Faux. Le content marketing ne représente qu'une partie de l'équation : une stratégie inbound réussie prend en compte l'ensemble du parcours client, reste à l'écoute des retours et maintient une veille constante."
+    },
+    {
+      "id": "q-f06-026",
+      "section": "7. Les leviers",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Les réseaux sociaux sont un levier réservé aux stratégies BtoC.",
+      "reponse": false,
+      "explication": "Faux. Ils jouent un rôle essentiel dans les stratégies BtoB. Leviers incontournables du marketing digital, ils offrent une communication mondiale et une visibilité accrue, accompagnées de risques non négligeables auxquels il faut se préparer."
+    },
+    {
+      "id": "q-f06-027",
+      "section": "7. Les leviers",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La géolocalisation nécessite l'accord explicite de l'utilisateur.",
+      "reponse": true,
+      "explication": "Vrai. Elle est aussi efficace qu'intrusive, et le comportement de l'utilisateur est souvent paradoxal : il aime indiquer où il se trouve sur un réseau social mais ne souhaite pas qu'une application le géolocalise."
+    },
+    {
+      "id": "q-f06-028",
+      "section": "8. Influence",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Un nano-influenceur a une communauté réduite, donc une influence faible.",
+      "reponse": false,
+      "explication": "Faux. Sa communauté est réduite mais engagée. C'est le taux d'engagement, et non la taille brute de l'audience, qui mesure l'influence réelle."
+    },
+    {
+      "id": "q-f06-029",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque type de média à son exemple.",
+      "colonne_a": ["Owned", "Earned", "Shared", "Paid"],
+      "colonne_b": [
+        "Reprises et partages d'un contenu par l'audience sur les réseaux sociaux",
+        "Newsletter et blog de la marque",
+        "Campagne SEA et social ads",
+        "Retombées presse et mentions spontanées"
+      ],
+      "paires": [[0, 1], [1, 3], [2, 0], [3, 2]],
+      "explication": "Une stratégie complète les intègre de manière cohérente, l'enjeu étant de choisir judicieusement les canaux au regard des objectifs."
+    },
+    {
+      "id": "q-f06-030",
+      "section": "7. Les leviers",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque levier à sa caractéristique.",
+      "colonne_a": ["Marketing viral", "Micro-moment marketing", "Co-branding", "Fidélisation"],
+      "colonne_b": [
+        "Créer un nouveau produit avec une marque partenaire, dans une relation gagnant-gagnant",
+        "Le destinataire devient acteur en relayant lui-même le message",
+        "Se mesure notamment par la pénétration des ventes",
+        "Be There, Be Useful, Be Quick"
+      ],
+      "paires": [[0, 1], [1, 3], [2, 0], [3, 2]],
+      "explication": "La pénétration des ventes est le pourcentage des ventes générées par les membres du programme de fidélisation."
+    },
+    {
+      "id": "q-f06-031",
+      "section": "4. Produire les contenus",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque forme de contenu digital à son support.",
+      "colonne_a": ["Textuel", "Animé", "Audio", "Interactif"],
+      "colonne_b": ["Podcast", "Blog, articles, post", "Application UX", "Motion design"],
+      "paires": [[0, 1], [1, 3], [2, 0], [3, 2]],
+      "explication": "S'y ajoutent les formes graphique (illustrations) et vidéo (corporate, viral)."
+    },
+    {
+      "id": "q-f06-032",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 4 phases du cycle du contenu.",
+      "elements": [
+        "Contenus pour transformer : prospect → client",
+        "Contenus pour attirer : inconnu → visiteur",
+        "Contenus pour combler : client → ambassadeur",
+        "Contenus pour convertir : visiteur → prospect"
+      ],
+      "ordre": [1, 3, 0, 2],
+      "explication": "Chaque phase appelle un format et un niveau de profondeur différents."
+    },
+    {
+      "id": "q-f06-033",
+      "section": "8. Influence",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les étapes d'une stratégie d'influence.",
+      "elements": [
+        "Identifier et sélectionner les influenceurs, mesurer leur influence",
+        "Analyser la situation et fixer des objectifs SMART",
+        "Mesurer les retombées et le ROI",
+        "Définir ses cibles et leurs besoins via les personas, et son budget",
+        "Négocier et contractualiser le partenariat"
+      ],
+      "ordre": [1, 3, 0, 4, 2],
+      "explication": "Il faut d'abord arrêter les objectifs et facteurs clés de réussite, qui déterminent le type de partenariat et les opérations à mener."
+    },
+    {
+      "id": "q-f06-034",
+      "section": "1. La stratégie de contenu",
+      "niveau": 1,
+      "format": "ouverte",
+      "question": "Une marque de cosmétiques bio veut lancer sa stratégie de contenu. Quelles questions doit-elle trancher avant de produire quoi que ce soit ?",
+      "attendus": [
+        "Les 3 questions préalables : quels objectifs marketing précis ? quelles cibles, avec des buyer personas détaillés ? quels KPI réalistes et mesurables ?",
+        "Les 5 facteurs clés du succès : ces trois éléments, plus la ligne éditoriale et l'identité visuelle, qui définissent le positionnement voulu et assumé",
+        "Familles d'objectifs à situer : visibilité, acquisition de prospects, fidélisation, image de marque",
+        "Choisir les canaux et adapter message et format aux codes de chacun",
+        "Prévoir le calendrier rédactionnel : la prévision est la clé du succès",
+        "Accepter la logique Test & Learn : tester, regarder les résultats, apprendre, s'améliorer"
+      ],
+      "explication": "Produire des contenus sans s'interroger sur leur valeur pour l'audience ne procure aucun retour sur investissement."
+    },
+    {
+      "id": "q-f06-035",
+      "section": "8. Influence",
+      "niveau": 1,
+      "format": "ouverte",
+      "question": "Une marque hésite entre un méga-influenceur et cinq micro-influenceurs pour un même budget. Quels critères doit-elle examiner ?",
+      "attendus": [
+        "Le taux d'engagement plutôt que la taille brute de l'audience : les nano et micro-influenceurs ont des communautés réduites mais engagées",
+        "L'adéquation aux trois besoins : celui de la marque, celui de la cible finale, et la manière dont l'influenceur fait le lien entre les deux",
+        "Comment l'influenceur construit, anime et engage sa communauté, et cartographie de ses zones d'influence",
+        "Le risque réputationnel : l'influenceur porte la parole de la marque",
+        "La mesure prévue : retombées et ROI, avec des objectifs et facteurs clés de réussite définis en amont",
+        "Mention utile : l'influence répond à la crise de confiance vis-à-vis des médias traditionnels — l'authenticité perçue est le levier"
+      ],
+      "explication": "Le choix du type de partenariat découle des objectifs, pas l'inverse."
+    },
+    {
+      "id": "q-f06-036",
+      "section": "9. Communication d'activisme",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Une marque de vêtements veut prendre publiquement position sur une cause sociale. Quelles erreurs doit-elle éviter ?",
+      "attendus": [
+        "Prôner des valeurs pour augmenter les ventes d'un produit : le greenwashing ou le purplewashing sont rapidement dénoncés, et la communication hostile peut être désastreuse",
+        "Agir de manière indépendante, sans concertation permanente avec les équipes expertes, les relations publiques en amont et les équipes de terrain en aval",
+        "Sous-estimer la visibilité et les dangers de la récupération",
+        "Ce qu'il faut faire à la place : partir d'un corpus de valeurs clair, définir revendications, discours et modalités d'action, prévoir différents niveaux de revendication selon les interlocuteurs (experts, médias, web, partenaires, terrain, influenceurs culturels)",
+        "Mention utile : distinguer lobbying et plaidoyer, et articuler activisme et soft power avec patience"
+      ],
+      "explication": "La communication activiste vise l'intérêt général, non la défense d'intérêts économiques : c'est cette cohérence qui sera vérifiée par les publics."
+    }
+  ]
+}

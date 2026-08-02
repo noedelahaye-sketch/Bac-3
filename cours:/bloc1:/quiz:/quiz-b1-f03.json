@@ -1,0 +1,472 @@
+{
+  "resume": "b1-f03",
+  "titre": "Études et données consommateurs",
+  "bloc": 1,
+  "questions": [
+    {
+      "id": "q-f03-001",
+      "section": "1. Les études de marché",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une étude exploratoire se caractérise par :",
+      "options": [
+        "un échantillon large et représentatif",
+        "une approche flexible et un échantillon de faible taille, 10 à 20 répondants",
+        "l'identification de relations de cause à effet entre variables",
+        "la production d'une photographie du marché à un instant T"
+      ],
+      "reponse": 1,
+      "explication": "Au départ, le chargé d'études ne sait pas forcément ce qu'il cherche. Les entretiens étant profonds et chronophages, l'échantillon reste réduit."
+    },
+    {
+      "id": "q-f03-002",
+      "section": "1. Les études de marché",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Des données collectées pour un autre objectif et réutilisées pour un nouveau sujet sont dites :",
+      "options": ["primaires", "secondaires", "qualitatives", "empiriques"],
+      "reponse": 1,
+      "explication": "Les données primaires sont recueillies spécifiquement pour répondre à un besoin précis de l'étude."
+    },
+    {
+      "id": "q-f03-003",
+      "section": "1. Les études de marché",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quel est le rôle du qualitatif par rapport au quantitatif ?",
+      "options": [
+        "le qualitatif valide les hypothèses formulées par le quantitatif",
+        "le qualitatif formule les hypothèses que le quantitatif teste ensuite",
+        "les deux se pratiquent simultanément sur le même échantillon",
+        "le qualitatif remplace le quantitatif quand le budget est limité"
+      ],
+      "reponse": 1,
+      "explication": "Le qualitatif en amont pour formuler les hypothèses, le quantitatif ensuite pour les tester. Le choix dépend de la problématique, de l'objectif, du terrain et du budget."
+    },
+    {
+      "id": "q-f03-004",
+      "section": "2. Les études qualitatives",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "La saturation, en étude qualitative, désigne :",
+      "options": [
+        "le moment où l'échantillon atteint le quota fixé au départ",
+        "le seuil où les nouveaux entretiens n'apportent plus d'informations inédites",
+        "le point où le budget d'étude est entièrement consommé",
+        "la lassitude des répondants face à un guide d'entretien trop long"
+      ],
+      "reponse": 1,
+      "explication": "Il ne faut pas fixer de quota rigide : la saturation dépend de la complexité du sujet et de la diversité de la cible."
+    },
+    {
+      "id": "q-f03-005",
+      "section": "2. Les études qualitatives",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Combien de participants réunit un focus group ?",
+      "options": ["3 à 5", "7 à 10", "12 à 15", "20 à 30"],
+      "reponse": 1,
+      "explication": "Sept à dix personnes partageant un intérêt commun pour le sujet, avec un guide d'animation en quatre temps : introduction, panorama général, centrage, conclusion."
+    },
+    {
+      "id": "q-f03-006",
+      "section": "2. Les études qualitatives",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pour étudier des comportements spontanés sans biais d'interaction, quelle méthode privilégier ?",
+      "options": [
+        "l'observation participante",
+        "l'observation non participante",
+        "l'entretien en profondeur",
+        "le groupe nominal"
+      ],
+      "reponse": 1,
+      "explication": "L'observation participante permet en revanche d'accéder à des contextes fermés et de comprendre les usages de l'intérieur."
+    },
+    {
+      "id": "q-f03-007",
+      "section": "3. Les études quantitatives",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une étude quantitative se caractérise par :",
+      "options": [
+        "un échantillon sélectionné pour la diversité des profils",
+        "l'extrapolation de résultats chiffrés à l'ensemble de la population étudiée",
+        "l'exploration des motivations inconscientes des répondants",
+        "l'absence de questionnaire structuré"
+      ],
+      "reponse": 1,
+      "explication": "Elle est faite par sondage, généralement auprès d'échantillons représentatifs."
+    },
+    {
+      "id": "q-f03-008",
+      "section": "4. Réaliser une enquête",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle est la limite principale d'une question fermée à choix unique ?",
+      "options": [
+        "elle est difficile à traiter statistiquement",
+        "elle ne renseigne pas sur les comportements ou habitudes",
+        "elle nécessite une codification préalable",
+        "elle influence systématiquement la réponse"
+      ],
+      "reponse": 1,
+      "explication": "Elle est rapide, facile à poser et de traitement simple, mais reste pauvre en information comportementale."
+    },
+    {
+      "id": "q-f03-009",
+      "section": "4. Réaliser une enquête",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle est la forme d'exploitation la plus courante des résultats d'une enquête ?",
+      "options": ["les tris croisés", "les tris à plat", "les moyennes", "les régressions"],
+      "reponse": 1,
+      "explication": "Les trois formes disponibles sont les tris à plat, les tris croisés et les moyennes."
+    },
+    {
+      "id": "q-f03-010",
+      "section": "5. L'échantillonnage",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quel est le critère décisif dans la constitution d'un échantillon quantitatif ?",
+      "options": [
+        "sa taille, la plus grande possible",
+        "sa représentativité par rapport à la population à étudier",
+        "la disponibilité des répondants",
+        "la diversité maximale des profils, y compris marginaux"
+      ],
+      "reponse": 1,
+      "explication": "La réponse 3 décrit l'échantillonnage qualitatif, qui vise la représentation de la diversité et non la représentativité statistique."
+    },
+    {
+      "id": "q-f03-011",
+      "section": "5. L'échantillonnage",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "La méthode des quotas est :",
+      "options": [
+        "une méthode probabiliste exigeant une base de sondage complète",
+        "une méthode non probabiliste consistant à reproduire les statistiques de la population globale",
+        "une technique de recrutement des répondants en ligne",
+        "une méthode réservée aux études qualitatives"
+      ],
+      "reponse": 1,
+      "explication": "C'est la méthode empirique la plus couramment utilisée, et la plus rapide à mettre en œuvre."
+    },
+    {
+      "id": "q-f03-012",
+      "section": "8. RGPD",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Sous le RGPD, à qui incombe la charge de la preuve du consentement ?",
+      "options": [
+        "à la personne concernée",
+        "à la CNIL",
+        "au responsable du traitement",
+        "au sous-traitant technique"
+      ],
+      "reponse": 2,
+      "explication": "Le consentement ne peut être présumé : il doit être donné volontairement, explicitement et par écrit avant toute utilisation."
+    },
+    {
+      "id": "q-f03-013",
+      "section": "1. Les études de marché",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quelles caractéristiques décrivent une étude qualitative ? (4 réponses)",
+      "options": [
+        "données non mesurables",
+        "échantillon large et représentatif",
+        "échantillon petit, sélectionné pour la diversité des profils",
+        "registre subjectiviste : perception, ressenti, psychologie",
+        "sert à tester et valider des hypothèses",
+        "sert à formuler des hypothèses"
+      ],
+      "reponse": [0, 2, 3, 5],
+      "explication": "Les réponses 1 et 4 décrivent l'étude quantitative."
+    },
+    {
+      "id": "q-f03-014",
+      "section": "4. Réaliser une enquête",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quels sont les 4 types de questions d'un questionnaire ? (4 réponses)",
+      "options": [
+        "fermée à choix unique",
+        "fermée à choix multiples",
+        "orientée",
+        "ouverte",
+        "à échelle",
+        "projective"
+      ],
+      "reponse": [0, 1, 3, 4],
+      "explication": "Une question orientée est précisément à proscrire : les questions doivent être neutres et ne pas influencer la personne interrogée."
+    },
+    {
+      "id": "q-f03-015",
+      "section": "8. RGPD",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quels droits le RGPD garantit-il aux personnes ? (5 réponses parmi les propositions)",
+      "options": [
+        "accès et transparence",
+        "anonymat commercial",
+        "rectification",
+        "effacement (droit à l'oubli)",
+        "indemnisation automatique",
+        "portabilité",
+        "opposition au marketing direct"
+      ],
+      "reponse": [0, 2, 3, 5, 6],
+      "explication": "S'y ajoutent la limitation du traitement et le droit de ne pas être soumis à une décision fondée uniquement sur un traitement automatisé, y compris le profilage."
+    },
+    {
+      "id": "q-f03-016",
+      "section": "7. CRM",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les 3 segmentations CRM ? (3 réponses)",
+      "options": [
+        "par la valeur",
+        "par les avantages recherchés",
+        "prédictive",
+        "psychographique",
+        "en temps réel"
+      ],
+      "reponse": [0, 2, 4],
+      "explication": "Les segmentations par avantages recherchés et psychographique relèvent des familles de critères de segmentation marketing."
+    },
+    {
+      "id": "q-f03-017",
+      "section": "2. Les études qualitatives",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez les deux principes structurants de l'étude qualitative.",
+      "texte": "La {1} est le seuil où les nouveaux entretiens n'apportent plus d'informations inédites : on poursuit jusqu'à ce que les nouvelles données deviennent {2}. La {3} consiste à utiliser plusieurs méthodes de collecte pour {4} les informations obtenues. S'y ajoute l'échantillonnage par {5}, qui impose d'interroger tous les profils types, y compris les profils {6}.",
+      "trous": ["saturation", "redondantes", "triangulation", "recouper", "diversité", "marginaux"],
+      "explication": "La qualité de l'échantillon conditionne le résultat : si l'échantillon n'est ni valide ni fiable, l'étude qualitative sera un échec."
+    },
+    {
+      "id": "q-f03-018",
+      "section": "3. Les études quantitatives",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition de l'étude quantitative.",
+      "texte": "« Une étude des comportements, attentes ou opinions réalisée par {1} auprès d'un {2} de la population étudiée, et dont les résultats {3} sont ensuite {4} à l'ensemble de la population étudiée. »",
+      "trous": ["questionnaire", "échantillon", "chiffrés", "extrapolés"],
+      "explication": "Les études quantitatives sont donc faites par sondage, et généralement menées auprès d'échantillons représentatifs."
+    },
+    {
+      "id": "q-f03-019",
+      "section": "4. Réaliser une enquête",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez les règles de rédaction d'un questionnaire.",
+      "texte": "Les questions doivent être facilement {1} et {2}, en termes simples, sans double sens ni ambiguïté. Elles doivent être {3} : elles ne doivent pas {4} la personne interrogée. Le questionnaire ne doit pas être trop {5} : sinon l'individu interrompt l'entrevue ou répond rapidement sans réfléchir, et les réponses deviennent {6}.",
+      "trous": ["compréhensibles", "courtes", "neutres", "influencer", "long", "inexploitables"],
+      "explication": "Un test est toujours réalisé avant le lancement de l'enquête."
+    },
+    {
+      "id": "q-f03-020",
+      "section": "5. L'échantillonnage",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la distinction entre les deux familles de méthodes d'échantillonnage.",
+      "texte": "La méthode {1}, ou aléatoire, donne à chaque individu une probabilité connue d'être sélectionné : elle est plus {2}, mais exige une {3} fiable et complète. La méthode {4}, ou empirique, repose sur le jugement ou la commodité — la méthode des {5} en est l'exemple le plus répandu — et se met en œuvre plus {6}.",
+      "trous": ["probabiliste", "fiable", "base de sondage", "non probabiliste", "quotas", "rapidement"],
+      "explication": "Le choix dépend des objectifs marketing, de la disposition ou non d'une base de sondage, et des ressources en budget et en temps."
+    },
+    {
+      "id": "q-f03-021",
+      "section": "7. CRM",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition du taux d'attrition.",
+      "texte": "Le taux d'{1}, ou {2} rate, est « le pourcentage de clients {3} — qui ne renouvellent pas leurs achats ou quittent l'entreprise — sur une {4} donnée ».",
+      "trous": ["attrition", "churn", "perdus", "période"],
+      "explication": "Le CRM capitalise sur les données clients collectées online (site, applications) et offline (points de vente) pour agir sur cet indicateur."
+    },
+    {
+      "id": "q-f03-022",
+      "section": "1. Les études de marché",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Une étude qualitative peut être menée sur une dizaine de répondants seulement.",
+      "reponse": true,
+      "explication": "Vrai. En étude exploratoire, l'échantillon est de faible taille, 10 à 20 répondants, les entretiens étant profonds et chronophages. La logique est la représentation de la diversité, pas la représentativité statistique."
+    },
+    {
+      "id": "q-f03-023",
+      "section": "2. Les études qualitatives",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "En étude qualitative, il faut fixer dès le départ le nombre exact d'entretiens à réaliser.",
+      "reponse": false,
+      "explication": "Faux. Il ne faut pas fixer de quota rigide : on poursuit jusqu'à la saturation, seuil où les nouvelles données deviennent redondantes. Ce seuil dépend de la complexité du sujet et de la diversité de la cible."
+    },
+    {
+      "id": "q-f03-024",
+      "section": "3. Les études quantitatives",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les employés d'une entreprise peuvent constituer le public d'une étude quantitative.",
+      "reponse": true,
+      "explication": "Vrai. Ils sont devenus des ambassadeurs et le reflet de l'image de la marque : comprendre leur comportement et leur opinion renforce l'image. Les acteurs externes — fournisseurs, prestataires, institutions — constituent un troisième public."
+    },
+    {
+      "id": "q-f03-025",
+      "section": "5. L'échantillonnage",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Plus l'échantillon est important, plus les résultats d'une enquête sont fiables.",
+      "reponse": false,
+      "explication": "Faux. L'important n'est pas la taille mais la représentativité par rapport à la population à étudier. Un échantillon trop important gaspille des ressources, un échantillon trop petit donne des résultats non concluants."
+    },
+    {
+      "id": "q-f03-026",
+      "section": "8. RGPD",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Le consentement au traitement des données peut être déduit du comportement de l'utilisateur.",
+      "reponse": false,
+      "explication": "Faux. Le consentement ne peut être présumé : il doit être donné volontairement, explicitement et par écrit avant toute utilisation, et la charge de la preuve incombe au responsable du traitement (articles 13 et 14 du RGPD)."
+    },
+    {
+      "id": "q-f03-027",
+      "section": "8. RGPD",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La CNIL propose des ateliers gratuits pour accompagner la mise en conformité.",
+      "reponse": true,
+      "explication": "Vrai. Autorité de contrôle du RGPD en France, elle facilite la compréhension et la mise en place des directives. La réglementation évolue de façon agile, notamment face aux défis posés par l'intelligence artificielle."
+    },
+    {
+      "id": "q-f03-028",
+      "section": "2. Les études qualitatives",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque méthode qualitative à sa caractéristique.",
+      "colonne_a": ["Entretien en profondeur", "Focus group", "Groupe nominal", "Observation participante"],
+      "colonne_b": [
+        "Alternance structurée de réflexion individuelle et de discussion collective",
+        "Sept à dix personnes réunies autour d'un guide d'animation en quatre temps",
+        "L'enquêteur s'immerge dans le contexte étudié et interagit avec les sujets",
+        "Semi-directif, environ deux heures, explorant les motivations inconscientes"
+      ],
+      "paires": [[0, 3], [1, 1], [2, 0], [3, 2]],
+      "explication": "Le groupe de créativité et d'idéation complète cette liste, en mobilisant pensée individuelle et créativité collective."
+    },
+    {
+      "id": "q-f03-029",
+      "section": "8. RGPD",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque droit RGPD à sa portée.",
+      "colonne_a": ["Portabilité", "Limitation du traitement", "Effacement", "Opposition"],
+      "colonne_b": [
+        "Demander la suppression lorsque les données ne sont plus nécessaires ou que le consentement a été retiré",
+        "Recevoir une copie dans un format structuré et lisible par machine, et la transférer",
+        "Refuser le traitement à des fins de marketing direct ou pour des motifs légitimes",
+        "Demander la suspension temporaire, par exemple en cas de contestation de l'exactitude"
+      ],
+      "paires": [[0, 1], [1, 3], [2, 0], [3, 2]],
+      "explication": "S'y ajoutent l'accès et la transparence, la rectification, et le droit de ne pas être soumis à une décision automatisée."
+    },
+    {
+      "id": "q-f03-030",
+      "section": "7. CRM",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque segmentation CRM à son principe.",
+      "colonne_a": ["Par la valeur", "Prédictive", "En temps réel"],
+      "colonne_b": [
+        "Adapter l'offre au comportement observé instantanément",
+        "Classer les clients selon leur contribution économique",
+        "Anticiper les comportements futurs à partir des données historiques"
+      ],
+      "paires": [[0, 1], [1, 2], [2, 0]],
+      "explication": "Le CRM retargeting exploite ces segmentations en combinant email et display, tout en évitant d'afficher un produit déjà acheté."
+    },
+    {
+      "id": "q-f03-031",
+      "section": "4. Réaliser une enquête",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 6 étapes d'une enquête.",
+      "elements": [
+        "Administration du questionnaire",
+        "Définition de l'objectif",
+        "Analyse",
+        "Échantillonnage",
+        "Dépouillement",
+        "Choix du type de questions"
+      ],
+      "ordre": [1, 3, 5, 0, 4, 2],
+      "explication": "Un test du questionnaire est réalisé avant l'administration proprement dite."
+    },
+    {
+      "id": "q-f03-032",
+      "section": "7. CRM",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 6 étapes du parcours d'achat.",
+      "elements": [
+        "Comparaison des offres",
+        "Reconnaissance du besoin",
+        "Degré de satisfaction",
+        "Recherche d'informations",
+        "Découverte et utilisation du produit",
+        "Choix et achat"
+      ],
+      "ordre": [1, 3, 0, 5, 4, 2],
+      "explication": "La satisfaction post-achat est source de buzz positif ou négatif. Décliner ses actions selon l'étape où se trouve le client est essentiel."
+    },
+    {
+      "id": "q-f03-033",
+      "section": "1. Les études de marché",
+      "niveau": 1,
+      "format": "ouverte",
+      "question": "Une enseigne de prêt-à-porter constate une baisse de fréquentation en magasin sans en connaître la cause. Quel dispositif d'étude recommanderiez-vous, et dans quel ordre ?",
+      "attendus": [
+        "Étude exploratoire d'abord : on ne sait pas ce qu'on cherche, l'approche doit être flexible",
+        "Qualitatif en amont : entretiens en profondeur et/ou focus groups pour formuler les hypothèses (prix, offre, expérience en magasin, concurrence en ligne)",
+        "Observation en point de vente pour capter les comportements spontanés sans biais d'interaction",
+        "Quantitatif ensuite : questionnaire sur échantillon représentatif pour tester et hiérarchiser les hypothèses",
+        "Mention de la saturation et de la triangulation comme garde-fous méthodologiques"
+      ],
+      "explication": "L'erreur classique est de lancer directement un questionnaire : sans hypothèses préalables, on mesure ce qu'on croit déjà savoir."
+    },
+    {
+      "id": "q-f03-034",
+      "section": "5. L'échantillonnage",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Un client vous demande d'interroger « le plus de monde possible » et d'ajouter une quinzaine de questions à son questionnaire. Que lui répondez-vous ?",
+      "attendus": [
+        "L'important n'est pas la taille de l'échantillon mais sa représentativité par rapport à la population étudiée",
+        "Un échantillon trop important gaspille des ressources sans gain de fiabilité",
+        "Le nombre de questions par personne est un second paramètre : il augmente le coût et biaise les réponses",
+        "Un sondage trop long fait diminuer l'attention et augmenter l'ennui : réponses données sans réflexion, donc inexploitables",
+        "Proposer plutôt de resserrer sur les objectifs SMART définis en amont"
+      ],
+      "explication": "Sans objectifs clairement définis et traduits en problématique marketing, l'étude risque d'être inexploitable quelle que soit sa taille."
+    },
+    {
+      "id": "q-f03-035",
+      "section": "8. RGPD",
+      "niveau": 1,
+      "format": "ouverte",
+      "question": "Une entreprise souhaite constituer un fichier prospects à partir des formulaires remplis lors d'un salon professionnel. Quelles obligations RGPD doit-elle respecter ?",
+      "attendus": [
+        "Se fonder sur une base légale et recueillir un consentement volontaire, explicite et écrit, avant toute utilisation",
+        "Informer sur les finalités du traitement (articles 13 et 14)",
+        "Collecter en fonction de la pertinence des données : ne pas demander plus que nécessaire",
+        "Garantir transparence et traçabilité, et pouvoir prouver le consentement",
+        "Sécuriser les données : conservation dans un lieu sûr, maîtrise des risques associés",
+        "Sensibiliser les salariés, acteurs clés de la protection des données",
+        "Permettre l'exercice des droits : accès, rectification, effacement, opposition au marketing direct"
+      ],
+      "explication": "Les manquements les plus sanctionnés sont le traitement sans consentement explicite préalable et les lacunes dans la sécurité. Au-delà de l'obligation légale, la confiance des clients repose sur cette gestion responsable."
+    }
+  ]
+}
