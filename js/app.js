@@ -480,15 +480,15 @@
   var TYPE_LABELS={definition:"Définition",liste:"Liste",distinction:"Distinction",application:"Application"};
 
   function vApprendre(){
-    var h='<div class="tiles">';
-    h+='<button class="tile" data-go="flashcards">';
-    h+='<span class="tile-code code">Flashcards</span>';
-    h+='<span class="tile-title">Cartes à répétition espacée</span>';
+    var h='<div class="tiles-hub">';
+    h+='<button class="tile tile-hub" data-go="flashcards">';
+    h+='<span class="tile-code code">Cartes à répétition espacée</span>';
+    h+='<span class="tile-title">Flashcards</span>';
     h+='<span class="tile-cas">'+FLASHCARDS.length+' cartes &middot; '+dueCount()+' à revoir aujourd\'hui</span>';
     h+='</button>';
-    h+='<button class="tile" data-go="quiz">';
-    h+='<span class="tile-code code">Quiz</span>';
-    h+='<span class="tile-title">Questions et exercices</span>';
+    h+='<button class="tile tile-hub" data-go="quiz">';
+    h+='<span class="tile-code code">Questions et exercices</span>';
+    h+='<span class="tile-title">Quiz</span>';
     h+='<span class="tile-cas">'+QUIZ.length+' questions &middot; 7 formats</span>';
     h+='</button>';
     h+='</div>';
