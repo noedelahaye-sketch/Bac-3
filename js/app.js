@@ -6,7 +6,7 @@
   var ALL = [];
   BLOCS.forEach(function(b){ b.qs.forEach(function(q){ q.id = b.id+"-"+q.n; q.bloc = b; ALL.push(q); }); });
 
-  var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, quiz:[],
+  var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, quiz:[], cardRuns:[],
             deadline:DEFAULT_DEADLINE, open:{b1:true}, view:"accueil" };
   var SES=null, QZ=null, saveTimer=null;
   var main = document.getElementById("main");
@@ -99,7 +99,7 @@
   function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=a[i];a[i]=a[j];a[j]=x;} return a; }
 
   var VIEWS=[["accueil","Accueil"],["dossiers","Dossiers"],["cours","Cours"],["apprendre","Apprendre"]];
-  var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre","flashcards","quiz","quizBloc"];
+  var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre","flashcards","flashcardsBloc","quiz","quizBloc"];
   function parseHash(hash){
     var h=(hash||"").replace(/^#/,"");
     if(h.charAt(0)==="/") h=h.slice(1);
@@ -112,6 +112,7 @@
     if(parts[0]==="cours" && parts[1]==="question" && parts[2]) return {view:"coursQuestion", id:parts[2]};
     if(parts[0]==="cours") return {view:"cours"};
     if(parts[0]==="quiz" && parts[1]==="bloc" && parts[2]) return {view:"quizBloc", id:parts[2]};
+    if(parts[0]==="flashcards" && parts[1]==="bloc" && parts[2]) return {view:"flashcardsBloc", id:parts[2]};
     if(parts[0]==="reviser") return {view:"apprendre"};
     if(KNOWN_VIEWS.indexOf(parts[0])>=0) return {view:parts[0]};
     return {view:"accueil"};
@@ -124,6 +125,7 @@
     if(view==="coursQuestion") return "#/cours/question/"+param;
     if(view==="cours") return "#/cours";
     if(view==="quizBloc") return "#/quiz/bloc/"+param;
+    if(view==="flashcardsBloc") return "#/flashcards/bloc/"+param;
     if(view==="accueil") return "#/";
     return "#/"+view;
   }
@@ -157,7 +159,7 @@
 
   function renderNav(){
     var h="";
-    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc"||ROUTE.view==="coursQuestion") ? "dossiers" : (ROUTE.view==="coursBloc"||ROUTE.view==="coursResume") ? "cours" : (ROUTE.view==="flashcards"||ROUTE.view==="quiz"||ROUTE.view==="quizBloc") ? "apprendre" : ROUTE.view;
+    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc"||ROUTE.view==="coursQuestion") ? "dossiers" : (ROUTE.view==="coursBloc"||ROUTE.view==="coursResume") ? "cours" : (ROUTE.view==="flashcards"||ROUTE.view==="flashcardsBloc"||ROUTE.view==="quiz"||ROUTE.view==="quizBloc") ? "apprendre" : ROUTE.view;
     VIEWS.forEach(function(v){
       var badge="";
       if(v[0]==="dossiers"){ var r=ALL.length-doneCount(); if(r) badge='<i>'+r+'</i>'; }
@@ -495,7 +497,101 @@
 
   function vFlashcards(){
     if(SES) return renderCardsSession();
-    return renderFlashcardsHome();
+    var h='<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Flashcards"}])+'</div>';
+    h+='<h1 class="qhead-title">Flashcards</h1><div class="qhead-code code">'+FLASHCARDS.length+' cartes</div>';
+    h+='<div class="tiles">';
+    (typeof COURS_BLOCS!=="undefined"?COURS_BLOCS:[]).forEach(function(b){
+      var n=FLASHCARDS.filter(function(c){return c.bloc===b.numero;}).length;
+      if(n){
+        h+='<button class="tile" data-go-flashcards-bloc="'+b.numero+'">';
+        h+='<span class="tile-code code">Bloc '+b.numero+'</span>';
+        h+='<span class="tile-title">'+b.court+'</span>';
+        h+='<span class="tile-cas">'+n+' carte'+(n>1?'s':'')+'</span>';
+        h+='<span class="tile-quiz-btn" data-flashcards-bloc-random="'+b.numero+':10">Réviser 10 cartes</span>';
+        h+='</button>';
+      } else {
+        h+='<div class="tile tile-empty">';
+        h+='<span class="tile-code code">Bloc '+b.numero+'</span>';
+        h+='<span class="tile-title">À venir</span>';
+        h+='<span class="tile-cas">Pas encore de cartes</span>';
+        h+='</div>';
+      }
+    });
+    h+='</div>';
+    var runs=S.cardRuns||[];
+    if(runs.length){
+      var best=runs.reduce(function(a,r){var p=r.ok/r.n;return p>a?p:a;},0);
+      h+='<div class="stats stats-top"><div class="stat"><div class="num">'+runs.length+'</div><div class="lbl">Séries réalisées</div></div>';
+      h+='<div class="stat"><div class="num">'+Math.round(best*100)+'<span class="on">%</span></div><div class="lbl">Meilleure série</div></div></div>';
+      h+='<div class="lab">Historique</div>';
+      runs.slice(-8).reverse().forEach(function(r){
+        h+='<div class="hrow"><span>'+r.d+'</span><b>'+r.ok+' / '+r.n+'</b></div>';
+      });
+    }
+    return h;
+  }
+
+  function vFlashcardsBloc(numero){
+    if(SES) return renderCardsSession();
+    var b=(typeof COURS_BLOCS!=="undefined"?COURS_BLOCS:[]).filter(function(x){return String(x.numero)===String(numero);})[0];
+    var list=FLASHCARDS.filter(function(c){return String(c.bloc)===String(numero);});
+    if(!b || !list.length){
+      return '<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Flashcards",view:"flashcards"}])+'</div><p class="rappel">Pas encore de cartes pour ce bloc.</p>';
+    }
+    var h='<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Flashcards",view:"flashcards"},{label:b.court}])+'</div>';
+    h+='<h1 class="qhead-title">'+b.titre+'</h1><div class="qhead-code code">'+list.length+' cartes</div>';
+
+    var d=list.filter(function(c){return dueNow(c.id);}).length;
+    var vus=list.filter(function(c){return (S.box[c.id]||0)>0;}).length;
+    var maitr=list.filter(function(c){return (S.box[c.id]||0)>=4;}).length;
+    h+='<div class="lab">Tableau de bord</div>';
+    h+='<div class="stats stats-top">';
+    h+='<div class="stat"><div class="num">'+d+'</div><div class="lbl">Cartes à revoir</div></div>';
+    h+='<div class="stat"><div class="num">'+vus+'<span class="on">/'+list.length+'</span></div><div class="lbl">Vues</div></div>';
+    h+='<div class="stat"><div class="num">'+maitr+'</div><div class="lbl">Maîtrisées</div></div>';
+    h+='</div>';
+    var runs=(S.cardRuns||[]).filter(function(r){return String(r.bloc)===String(numero);});
+    if(runs.length){
+      var best=runs.reduce(function(a,r){var p=r.ok/r.n;return p>a?p:a;},0);
+      var avg=runs.reduce(function(a,r){return a+r.ok/r.n;},0)/runs.length;
+      h+='<div class="stats stats-top">';
+      h+='<div class="stat"><div class="num">'+runs.length+'</div><div class="lbl">Séries réalisées</div></div>';
+      h+='<div class="stat"><div class="num">'+Math.round(best*100)+'<span class="on">%</span></div><div class="lbl">Meilleure série</div></div>';
+      h+='<div class="stat"><div class="num">'+Math.round(avg*100)+'<span class="on">%</span></div><div class="lbl">Score moyen</div></div>';
+      h+='</div>';
+      h+='<div class="lab">Historique</div>';
+      runs.slice(-8).reverse().forEach(function(r){
+        h+='<div class="hrow"><span>'+r.d+'</span><b>'+r.ok+' / '+r.n+'</b></div>';
+      });
+    } else h+='<p class="rappel">Aucune série réalisée pour ce bloc pour l\'instant.</p>';
+
+    h+='<div class="lab">Réviser</div><div class="states">';
+    h+='<button data-flashcards-bloc-due="'+numero+'"'+(d?'':' disabled')+'>'+(d?'Cartes du jour ('+d+')':'Rien à revoir aujourd\'hui')+'</button>';
+    h+='<button data-flashcards-bloc-random="'+numero+':'+list.length+'">Tout revoir ('+list.length+')</button></div>';
+
+    h+='<div class="lab">Par sujet</div><div class="tiles">';
+    (b.fiches||[]).forEach(function(rid){
+      var r=(typeof RESUMES!=="undefined")?RESUMES[rid]:null;
+      var n=list.filter(function(c){return c.resume===rid;}).length;
+      if(!r || !n) return;
+      h+='<button class="tile" data-flashcards-filter="resume:'+rid+'">';
+      h+='<span class="tile-title">'+r.titre+'</span>';
+      h+='<span class="tile-cas">'+n+' carte'+(n>1?'s':'')+'</span>';
+      h+='</button>';
+    });
+    h+='</div>';
+
+    h+='<div class="lab">Par type</div><div class="tiles">';
+    Object.keys(TYPE_LABELS).forEach(function(t){
+      var n=list.filter(function(c){return c.type===t;}).length;
+      if(!n) return;
+      h+='<button class="tile" data-flashcards-filter="type:'+t+':'+numero+'">';
+      h+='<span class="tile-title">'+TYPE_LABELS[t]+'</span>';
+      h+='<span class="tile-cas">'+n+' carte'+(n>1?'s':'')+'</span>';
+      h+='</button>';
+    });
+    h+='</div>';
+    return h;
   }
 
   function renderCardsSession(){
@@ -512,23 +608,6 @@
       h+='<div class="cq cq-center">'+esc(c.recto)+'</div><div class="cflip-hint">Touche la carte pour voir la réponse</div>';
     }
     h+='</div><button class="quit" data-lrn="stop">Arrêter la session</button>';
-    return h;
-  }
-
-  function renderFlashcardsHome(){
-    var d=dueCount(), vus=FLASHCARDS.filter(function(c){return (S.box[c.id]||0)>0;}).length;
-    var maitr=FLASHCARDS.filter(function(c){return (S.box[c.id]||0)>=4;}).length;
-    var h='<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Flashcards"}])+'</div>';
-    h+='<h1 class="qhead-title">Flashcards</h1><div class="qhead-code code">'+FLASHCARDS.length+' cartes</div>';
-    h+='<div class="stats stats-top">';
-    h+='<div class="stat"><div class="num">'+d+'</div><div class="lbl">Cartes à revoir</div></div>';
-    h+='<div class="stat"><div class="num">'+vus+'<span class="on">/'+FLASHCARDS.length+'</span></div><div class="lbl">Vues</div></div>';
-    h+='<div class="stat"><div class="num">'+maitr+'</div><div class="lbl">Maîtrisées</div></div></div>';
-    h+='<div class="states">';
-    h+='<button data-lrn="start"'+(d?'':' disabled')+'>'+(d?'Cartes du jour ('+d+')':'Rien à revoir aujourd\'hui')+'</button>';
-    h+='<button data-lrn="startall">Tout revoir ('+FLASHCARDS.length+')</button></div>';
-    if(!d) h+='<p class="rappel">Rien à revoir aujourd\'hui. Reviens demain, ou lance une session libre.</p>';
-    h+='<p class="rappel">Les cartes reviennent selon ton niveau : une carte sue réapparaît dans 2, 4, 8 puis 16 jours ; une carte ratée revient dès demain.</p>';
     return h;
   }
 
@@ -632,6 +711,14 @@
     if(q.format==="ordonnancement") return shuffle(q.elements.map(function(_,i){return i;}));
     if(q.format==="ouverte") return {show:false,text:""};
     return null;
+  }
+
+  function finishCardSessionIfDone(){
+    if(SES.i>=SES.list.length){
+      S.cardRuns=S.cardRuns||[];
+      S.cardRuns.push({d:new Date().toLocaleDateString("fr-FR"),ok:SES.ok,n:SES.list.length,bloc:SES.list[0].bloc});
+      save();
+    }
   }
 
   function finishQuizQuestion(correct){
@@ -884,7 +971,7 @@
 
   function render(){
     var v=ROUTE.view;
-    appEl.classList.toggle("session", !!((v==="flashcards"&&SES)||((v==="quiz"||v==="quizBloc")&&QZ)));
+    appEl.classList.toggle("session", !!(((v==="flashcards"||v==="flashcardsBloc")&&SES)||((v==="quiz"||v==="quizBloc")&&QZ)));
     renderNav();
     main.classList.add("wide");
     if(v==="question"){
@@ -912,6 +999,10 @@
     } else if(v==="flashcards"){
       main.classList.remove("with-qbottom");
       main.innerHTML=vFlashcards();
+      positionQbar();
+    } else if(v==="flashcardsBloc"){
+      main.classList.remove("with-qbottom");
+      main.innerHTML=vFlashcardsBloc(ROUTE.id);
       positionQbar();
     } else if(v==="quiz"){
       main.classList.remove("with-qbottom");
@@ -1003,6 +1094,37 @@
     });
     main.querySelectorAll("[data-go-quiz-bloc]").forEach(function(el){
       el.addEventListener("click",function(){ go("quizBloc", el.getAttribute("data-go-quiz-bloc")); });
+    });
+    main.querySelectorAll("[data-go-flashcards-bloc]").forEach(function(el){
+      el.addEventListener("click",function(){ go("flashcardsBloc", el.getAttribute("data-go-flashcards-bloc")); });
+    });
+    main.querySelectorAll("[data-flashcards-bloc-due]").forEach(function(el){
+      el.addEventListener("click",function(e){
+        e.stopPropagation();
+        var numero=el.getAttribute("data-flashcards-bloc-due");
+        var l=shuffle(FLASHCARDS.filter(function(c){return String(c.bloc)===numero && dueNow(c.id);}));
+        if(!l.length) return;
+        SES={list:l,i:0,show:false,ok:0}; render();
+      });
+    });
+    main.querySelectorAll("[data-flashcards-bloc-random]").forEach(function(el){
+      el.addEventListener("click",function(e){
+        e.stopPropagation();
+        var parts=el.getAttribute("data-flashcards-bloc-random").split(":"), numero=parts[0], n=parseInt(parts[1],10);
+        var l=shuffle(FLASHCARDS.filter(function(c){return String(c.bloc)===numero;})).slice(0,n);
+        if(!l.length) return;
+        SES={list:l,i:0,show:false,ok:0}; render();
+      });
+    });
+    main.querySelectorAll("[data-flashcards-filter]").forEach(function(el){
+      el.addEventListener("click",function(){
+        var parts=el.getAttribute("data-flashcards-filter").split(":"), list;
+        if(parts[0]==="resume") list=FLASHCARDS.filter(function(c){return c.resume===parts[1];});
+        else if(parts[0]==="type") list=FLASHCARDS.filter(function(c){return c.type===parts[1] && String(c.bloc)===parts[2];});
+        list=shuffle(list||[]);
+        if(!list.length) return;
+        SES={list:list,i:0,show:false,ok:0}; render();
+      });
     });
     main.querySelectorAll("[data-quiz-bloc-random]").forEach(function(el){
       el.addEventListener("click",function(e){
@@ -1098,11 +1220,9 @@
     main.querySelectorAll("[data-lrn]").forEach(function(el){
       el.addEventListener("click",function(){
         var a=el.getAttribute("data-lrn");
-        if(a==="start"){ var l=shuffle(FLASHCARDS.filter(function(c){return dueNow(c.id);})); if(!l.length) return; SES={list:l,i:0,show:false,ok:0}; }
-        else if(a==="startall") SES={list:shuffle(FLASHCARDS),i:0,show:false,ok:0};
-        else if(a==="show") SES.show=true;
-        else if(a==="ok"){ grade(SES.list[SES.i].id,true); SES.ok++; SES.i++; SES.show=false; }
-        else if(a==="ko"){ grade(SES.list[SES.i].id,false); SES.i++; SES.show=false; }
+        if(a==="show") SES.show=true;
+        else if(a==="ok"){ grade(SES.list[SES.i].id,true); SES.ok++; SES.i++; SES.show=false; finishCardSessionIfDone(); }
+        else if(a==="ko"){ grade(SES.list[SES.i].id,false); SES.i++; SES.show=false; finishCardSessionIfDone(); }
         else if(a==="stop") SES=null;
         else if(a==="qnext"){ QZ.i++; QZ.checked=false; if(QZ.i<QZ.list.length) QZ.input=initQuizInput(QZ.list[QZ.i]); }
         else if(a==="qstop") QZ=null;
@@ -1154,7 +1274,7 @@
       if(r&&r.value){
         var sv=JSON.parse(r.value);
         S.status=sv.status||{}; S.checks=sv.checks||{}; S.notes=sv.notes||{}; S.fiche=sv.fiche||{};
-        S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.quiz=sv.quiz||[];
+        S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.quiz=sv.quiz||[]; S.cardRuns=sv.cardRuns||[];
         S.deadline=sv.deadline||DEFAULT_DEADLINE; S.open=sv.open||{b1:true}; S.view=sv.view||"accueil";
       }
     }catch(e){}
