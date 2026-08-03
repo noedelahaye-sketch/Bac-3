@@ -513,6 +513,20 @@
     return h;
   }
 
+  function renderQuestionTile(q){
+    var st=S.status[q.id]||"todo";
+    var lbl=st==="done"?"relu":st==="draft"?"rédigé":st==="wip"?"en cours":"à faire";
+    var chipc=st==="done"?" done":st==="draft"?" draft":st==="wip"?" wip":"";
+    var checkedCrit=q.k.filter(function(_,i){return (S.checks[q.id]||{})[i];}).length;
+    var h='<button class="tile" id="q-'+q.id+'" data-goq="'+q.id+'">';
+    h+='<span class="tile-code code">'+q.n+'</span>';
+    h+='<span class="tile-title">'+q.t+'</span>';
+    h+='<span class="tile-cas">'+checkedCrit+'/'+q.k.length+' critères</span>';
+    h+='<span class="chip'+chipc+'">'+lbl+'</span>';
+    h+='</button>';
+    return h;
+  }
+
   /* ---------- BLOC ---------- */
   function vBloc(blocId){
     var b=BLOCS.filter(function(x){return x.id===blocId;})[0];
@@ -530,23 +544,23 @@
       return h;
     }
 
-    h+='<div class="bloc-cols">';
-    h+='<details class="bloc-enonce"><summary>L\'énoncé</summary><div class="bloc-enonce-body">';
-    h+='<details class="notions" open><summary>Contexte</summary><div class="rc-app">'+b.enonce.contexte+'</div></details>';
-    h+='<details class="notions"><summary>La mission</summary><div class="rc-app">'+b.enonce.mission+'</div></details>';
-    h+='<details class="notions"><summary>Les données à retenir</summary><ul class="att">';
+    h+='<div class="enonce-top">';
+    h+='<div class="enonce-context"><div class="rc-app plain">'+b.enonce.contexte+'</div></div>';
+    h+='<div class="enonce-mission"><div class="lab">La mission</div><div class="rc-app">'+b.enonce.mission+'</div></div>';
+    h+='<div class="enonce-donnees">';
+    h+='<div class="lab">Les données à retenir</div><div class="rc-app"><ul class="att">';
     b.enonce.donnees.forEach(function(d){ h+='<li>'+d+'</li>'; });
-    h+='</ul></details>';
-    h+='<details class="notions"><summary>Les annexes ('+b.enonce.annexes.length+')</summary><ul class="att">';
-    b.enonce.annexes.forEach(function(a){ h+='<li>Annexe '+a.n+' &middot; '+a.titre+'</li>'; });
-    h+='</ul></details>';
-    h+='<details class="notions"><summary>Aperçu du PDF</summary><iframe class="enonce-frame" src="'+encodeURI(b.enonce.pdf)+'" title="PDF de l\'énoncé"></iframe></details>';
+    h+='</ul></div>';
+    h+='</div>';
+    h+='<div class="enonce-preview">';
+    h+='<iframe class="enonce-frame" src="'+encodeURI(b.enonce.pdf)+'" title="PDF de l\'énoncé"></iframe>';
     h+='<a class="linkf enonce-pdf" href="'+encodeURI(b.enonce.pdf)+'" target="_blank" rel="noopener">Ouvrir le PDF dans un nouvel onglet</a>';
-    h+='</div></details>';
+    h+='</div>';
+    h+='</div>';
 
-    h+='<div class="bloc-questions"><div class="lab">Les questions</div>';
-    b.qs.forEach(function(q){ h+=renderQuestionRow(q); });
-    h+='</div></div>';
+    h+='<div class="lab">Les questions</div><div class="tiles">';
+    b.qs.forEach(function(q){ h+=renderQuestionTile(q); });
+    h+='</div>';
 
     if(blocId==="b1"){
       h+='<div class="bloc-bottom">';
@@ -1122,16 +1136,6 @@
     var qbar=main.querySelector(".qbar");
     if(qbar) qbar.style.top=nav.offsetHeight+"px";
   }
-  function positionBlocEnonce(){
-    var qbar=main.querySelector(".qbar"), enonce=main.querySelector(".bloc-enonce");
-    if(!qbar || !enonce) return;
-    if(window.innerWidth>=1080){
-      enonce.setAttribute("open","");
-      enonce.style.top=(nav.offsetHeight+qbar.offsetHeight+16)+"px";
-    } else {
-      enonce.style.top="";
-    }
-  }
   function layoutQuestionCols(){
     var cols=main.querySelector(".q-cols");
     if(!cols) return;
@@ -1149,7 +1153,6 @@
   }
   window.addEventListener("resize",function(){
     if(ROUTE.view==="question"||ROUTE.view==="bloc") positionQbar();
-    if(ROUTE.view==="bloc") positionBlocEnonce();
     if(ROUTE.view==="question") layoutQuestionCols();
   });
 
@@ -1167,7 +1170,6 @@
       main.classList.remove("with-qbottom");
       main.innerHTML=vBloc(ROUTE.id);
       positionQbar();
-      positionBlocEnonce();
     } else if(v==="coursBloc"){
       main.classList.remove("with-qbottom");
       main.innerHTML=vCoursBloc(ROUTE.id);
