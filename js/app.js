@@ -6,7 +6,7 @@
   var ALL = [];
   BLOCS.forEach(function(b){ b.qs.forEach(function(q){ q.id = b.id+"-"+q.n; q.bloc = b; ALL.push(q); }); });
 
-  var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, quiz:[], cardRuns:[],
+  var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, quiz:[], quizSeen:{}, cardRuns:[],
             newToday:{d:0,n:0}, streak:{current:0,max:0,lastDate:0},
             deadline:DEFAULT_DEADLINE, open:{b1:true}, view:"accueil", _ts:0 };
   var SES=null, QZ=null, saveTimer=null;
@@ -96,7 +96,7 @@
   }
   function applyState(sv){
     S.status=sv.status||{}; S.checks=sv.checks||{}; S.notes=sv.notes||{}; S.fiche=sv.fiche||{};
-    S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.fail=sv.fail||{}; S.quiz=sv.quiz||[]; S.cardRuns=sv.cardRuns||[];
+    S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.fail=sv.fail||{}; S.quiz=sv.quiz||[]; S.quizSeen=sv.quizSeen||{}; S.cardRuns=sv.cardRuns||[];
     S.newToday=sv.newToday||{d:0,n:0};
     S.streak=sv.streak||{current:0,max:0,lastDate:0};
     S.deadline=sv.deadline||DEFAULT_DEADLINE; S.open=sv.open||{b1:true}; S._ts=sv._ts||0;
@@ -318,6 +318,7 @@
     h+='<div class="grid-cta-dash">';
     h+='<button class="tile cta-tile" data-flashcards-due-all>Cartes du jour<span class="cta-sub">'+d+' carte'+(d>1?'s':'')+' restante'+(d>1?'s':'')+'</span></button>';
     h+=renderDashPanel(true);
+    h+=renderQuizDashPanel(S.quiz, true, true);
     h+='</div>';
 
     h+='<div class="foot">Date limite de dépôt : <input type="date" id="dl" value="'+S.deadline+'"><br>';
@@ -539,7 +540,8 @@
     h+='<details class="notions"><summary>Les annexes ('+b.enonce.annexes.length+')</summary><ul class="att">';
     b.enonce.annexes.forEach(function(a){ h+='<li>Annexe '+a.n+' &middot; '+a.titre+'</li>'; });
     h+='</ul></details>';
-    h+='<a class="linkf enonce-pdf" href="'+encodeURI(b.enonce.pdf)+'" target="_blank" rel="noopener">Ouvrir le PDF de l\'énoncé</a>';
+    h+='<details class="notions"><summary>Aperçu du PDF</summary><iframe class="enonce-frame" src="'+encodeURI(b.enonce.pdf)+'" title="PDF de l\'énoncé"></iframe></details>';
+    h+='<a class="linkf enonce-pdf" href="'+encodeURI(b.enonce.pdf)+'" target="_blank" rel="noopener">Ouvrir le PDF dans un nouvel onglet</a>';
     h+='</div></details>';
 
     h+='<div class="bloc-questions"><div class="lab">Les questions</div>';
@@ -610,12 +612,13 @@
     h+='<span class="tile-code code">Cartes à répétition espacée</span>';
     h+='<span class="tile-title">Flashcards</span>';
     h+='<span class="tile-cas">'+FLASHCARDS.length+' cartes &middot; '+dApp+' à revoir aujourd\'hui</span>';
-    h+='<span class="tile-quiz-btn" data-flashcards-due-all>'+(dApp?'Cartes du jour ('+dApp+')':'Rien à revoir aujourd\'hui')+'</span>';
+    h+='<span class="tile-quiz-btn btn-flash" data-flashcards-due-all>'+(dApp?'Cartes du jour ('+dApp+')':'Rien à revoir aujourd\'hui')+'</span>';
     h+='</button>';
     h+='<button class="tile tile-hub" data-go="quiz">';
     h+='<span class="tile-code code">Questions et exercices</span>';
     h+='<span class="tile-title">Quiz</span>';
     h+='<span class="tile-cas">'+QUIZ.length+' questions &middot; 7 formats</span>';
+    h+='<span class="tile-quiz-btn btn-quiz" data-quiz-random-all="10">10 questions au hasard</span>';
     h+='</button>';
     h+='</div>';
     return h;
@@ -630,11 +633,11 @@
     var streakCur=streakDisplay(), streakMax=(S.streak&&S.streak.max)||0;
     var h='<div class="mini dash-panel'+(clickable?' clickable" data-go="flashcards"':'"')+'><div class="lab">Tableau de bord global</div><div class="stats stats-top">';
     h+='<div class="stat"><div class="num">'+vus+'<span class="on">/'+FLASHCARDS.length+'</span></div><div class="lbl">cartes vues</div></div>';
-    h+='<div class="stat"><div class="niveau-badges">';
-    h+='<span class="niveau-badge lvl1">Niveau 1 &middot; '+n1+'</span>';
-    h+='<span class="niveau-badge lvl2">Niveau 2 &middot; '+n2+'</span>';
-    h+='<span class="niveau-badge lvl3">Niveau 3 &middot; '+n3+'</span>';
-    h+='<span class="niveau-badge lvl4">Maîtrisées : '+maitr+'</span>';
+    h+='<div class="stat"><div class="badge-stack">';
+    h+='<span class="stat-badge lvl1">Niveau 1 &middot; '+n1+'</span>';
+    h+='<span class="stat-badge lvl2">Niveau 2 &middot; '+n2+'</span>';
+    h+='<span class="stat-badge lvl3">Niveau 3 &middot; '+n3+'</span>';
+    h+='<span class="stat-badge lvl4">Maîtrisées : '+maitr+'</span>';
     h+='</div></div>';
     h+='<div class="stat"><div class="num">'+streakCur+'</div><div class="lbl">jours d\'affilée</div><div class="dash-sub">Record : '+streakMax+'</div></div>';
     h+='</div></div>';
@@ -760,11 +763,49 @@
 
   var FORMAT_LABELS={qcm:"QCM",qcm_multiple:"QCM multiple",texte_a_trous:"Texte à trous",vrai_faux:"Vrai / Faux",appariement:"Appariement",ordonnancement:"Ordre",ouverte:"Question ouverte"};
 
+  function avgPct(arr){ return arr.length? arr.reduce(function(a,r){return a+r.s/r.n;},0)/arr.length : null; }
+  function quizTrend(runs){
+    var n=runs.length, recentN=Math.min(5,n), recent=runs.slice(n-recentN);
+    var prevN=Math.min(5,n-recentN);
+    if(prevN<1) return null;
+    var prev=runs.slice(n-recentN-prevN, n-recentN);
+    return Math.round((avgPct(recent)-avgPct(prev))*100);
+  }
+  function renderQuizDashPanel(runs, withBlocCoverage, clickable){
+    var scoreMoyen=avgPct(runs);
+    var trend=quizTrend(runs);
+    var last=runs.length?runs[runs.length-1]:null;
+    var h='<div class="mini dash-panel'+(clickable?' clickable" data-go="quiz"':'"')+'><div class="lab">Tableau de bord'+(withBlocCoverage?' global':'')+'</div><div class="stats stats-top">';
+    h+='<div class="stat"><div class="num">'+(scoreMoyen===null?'—':Math.round(scoreMoyen*100)+'<span class="on">%</span>')+'</div><div class="lbl">score moyen</div></div>';
+    var trendCls=trend===null?'':(trend>2?' trend-up':(trend<-2?' trend-down':''));
+    var trendTxt=trend===null?'—':((trend>0?'+':'')+trend+'<span class="on">pts</span>');
+    var trendLbl=trend===null?'tendance':(trend>2?'en progression':(trend<-2?'en baisse':'stable'));
+    h+='<div class="stat"><div class="num'+trendCls+'">'+trendTxt+'</div><div class="lbl">'+trendLbl+'</div></div>';
+    if(withBlocCoverage){
+      h+='<div class="stat"><div class="badge-stack">';
+      (typeof COURS_BLOCS!=="undefined"?COURS_BLOCS:[]).forEach(function(b){
+        var qn=QUIZ.filter(function(q){return q.bloc===b.numero;}).length;
+        var br=S.quiz.filter(function(r){return String(r.bloc)===String(b.numero);});
+        if(!qn) h+='<span class="stat-badge empty">Bloc '+b.numero+' &middot; à venir</span>';
+        else if(!br.length) h+='<span class="stat-badge todo">Bloc '+b.numero+' &middot; pas testé</span>';
+        else h+='<span class="stat-badge done">Bloc '+b.numero+' &middot; '+Math.round(avgPct(br)*100)+'%</span>';
+      });
+      h+='</div></div>';
+    }
+    h+='<div class="stat"><div class="num">'+(last?Math.round(last.s/last.n*100)+'<span class="on">%</span>':'—')+'</div><div class="lbl">dernier test</div>'+(last?'<div class="dash-sub">'+last.d+'</div>':'')+'</div>';
+    h+='</div></div>';
+    return h;
+  }
+
   function vQuiz(){
     if(QZ) return renderQuizSession();
     var h='<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Quiz"}])+'</div>';
     h+='<h1 class="qhead-title">Quiz</h1><div class="qhead-code code">'+QUIZ.length+' questions</div>';
-    h+='<div class="tiles">';
+    h+='<div class="grid-cta-dash">';
+    h+='<button class="tile cta-tile cta-quiz" data-quiz-random-all="10">10 questions au hasard<span class="cta-sub">tous les blocs</span></button>';
+    h+=renderQuizDashPanel(S.quiz, true);
+    h+='</div>';
+    h+='<div class="lab">Par bloc</div><div class="tiles">';
     (typeof COURS_BLOCS!=="undefined"?COURS_BLOCS:[]).forEach(function(b){
       var n=QUIZ.filter(function(q){return q.bloc===b.numero;}).length;
       if(n){
@@ -784,9 +825,6 @@
     });
     h+='</div>';
     if(S.quiz.length){
-      var best=S.quiz.reduce(function(a,r){var p=r.s/r.n;return p>a?p:a;},0);
-      h+='<div class="stats stats-top"><div class="stat"><div class="num">'+S.quiz.length+'</div><div class="lbl">Quiz passés</div></div>';
-      h+='<div class="stat"><div class="num">'+Math.round(best*100)+'<span class="on">%</span></div><div class="lbl">Meilleur score</div></div></div>';
       h+='<div class="lab">Historique</div>';
       S.quiz.slice(-8).reverse().forEach(function(r){
         h+='<div class="hrow"><span>'+r.d+'</span><b>'+r.s+' / '+r.n+'</b></div>';
@@ -806,15 +844,8 @@
     h+='<h1 class="qhead-title">'+b.titre+'</h1><div class="qhead-code code">'+list.length+' questions</div>';
 
     var runs=S.quiz.filter(function(r){return String(r.bloc)===String(numero);});
-    h+='<div class="lab">Tableau de bord</div>';
+    h+='<div class="dash-row">'+renderQuizDashPanel(runs, false)+'</div>';
     if(runs.length){
-      var best=runs.reduce(function(a,r){var p=r.s/r.n;return p>a?p:a;},0);
-      var avg=runs.reduce(function(a,r){return a+r.s/r.n;},0)/runs.length;
-      h+='<div class="stats stats-top">';
-      h+='<div class="stat"><div class="num">'+runs.length+'</div><div class="lbl">Séries réalisées</div></div>';
-      h+='<div class="stat"><div class="num">'+Math.round(best*100)+'<span class="on">%</span></div><div class="lbl">Meilleur score</div></div>';
-      h+='<div class="stat"><div class="num">'+Math.round(avg*100)+'<span class="on">%</span></div><div class="lbl">Score moyen</div></div>';
-      h+='</div>';
       h+='<div class="lab">Historique</div>';
       runs.slice(-8).reverse().forEach(function(r){
         h+='<div class="hrow"><span>'+r.d+'</span><b>'+r.s+' / '+r.n+'</b></div>';
@@ -829,10 +860,11 @@
     (b.fiches||[]).forEach(function(rid){
       var r=(typeof RESUMES!=="undefined")?RESUMES[rid]:null;
       var n=list.filter(function(q){return q.resume===rid;}).length;
+      var vu=list.filter(function(q){return q.resume===rid && S.quizSeen[q.id];}).length;
       if(!r || !n) return;
       h+='<button class="tile" data-quiz-filter="resume:'+rid+'">';
       h+='<span class="tile-title">'+r.titre+'</span>';
-      h+='<span class="tile-cas">'+n+' question'+(n>1?'s':'')+'</span>';
+      h+='<span class="tile-cas">'+vu+'/'+n+' question'+(n>1?'s':'')+' vue'+(n>1?'s':'')+'</span>';
       h+='</button>';
     });
     h+='</div>';
@@ -872,8 +904,11 @@
 
   function finishQuizQuestion(correct){
     QZ.checked=true;
-    if(correct) QZ.ok++; else QZ.wrong.push(QZ.list[QZ.i].question);
-    if(QZ.i===QZ.list.length-1){ S.quiz.push({d:new Date().toLocaleDateString("fr-FR"),s:QZ.ok,n:QZ.list.length,bloc:QZ.list[0].bloc}); save(); }
+    var q=QZ.list[QZ.i];
+    S.quizSeen[q.id]=true;
+    if(correct) QZ.ok++; else QZ.wrong.push(q.question);
+    if(QZ.i===QZ.list.length-1){ S.quiz.push({d:new Date().toLocaleDateString("fr-FR"),s:QZ.ok,n:QZ.list.length,bloc:QZ.list[0].bloc}); }
+    save();
   }
 
   function renderBlanksText(texte, values, checked, trous){
@@ -1286,6 +1321,20 @@
         var parts=el.getAttribute("data-quiz-bloc-random").split(":"), numero=parts[0], n=parseInt(parts[1],10);
         var list=shuffle(QUIZ.filter(function(q){return String(q.bloc)===numero;})).slice(0,n);
         QZ={list:list,i:0,ok:0,wrong:[],checked:false,input:initQuizInput(list[0])};
+        render();
+      });
+    });
+    main.querySelectorAll("[data-quiz-random-all]").forEach(function(el){
+      el.addEventListener("click",function(e){
+        e.stopPropagation();
+        var n=parseInt(el.getAttribute("data-quiz-random-all"),10);
+        var list=shuffle(QUIZ).slice(0,n);
+        if(!list.length) return;
+        QZ={list:list,i:0,ok:0,wrong:[],checked:false,input:initQuizInput(list[0])};
+        if(ROUTE.view!=="quiz" && ROUTE.view!=="quizBloc"){
+          ROUTE={view:"quiz"}; S.view="quiz";
+          history.replaceState(null,"",hashFor("quiz")); save();
+        }
         render();
       });
     });
