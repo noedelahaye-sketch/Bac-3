@@ -6,7 +6,7 @@
   var ALL = [];
   BLOCS.forEach(function(b){ b.qs.forEach(function(q){ q.id = b.id+"-"+q.n; q.bloc = b; ALL.push(q); }); });
 
-  var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, quiz:[], cardRuns:[],
+  var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, quiz:[], cardRuns:[],
             newToday:{d:0,n:0}, streak:{current:0,max:0,lastDate:0},
             deadline:DEFAULT_DEADLINE, open:{b1:true}, view:"accueil", _ts:0 };
   var SES=null, QZ=null, saveTimer=null;
@@ -96,7 +96,7 @@
   }
   function applyState(sv){
     S.status=sv.status||{}; S.checks=sv.checks||{}; S.notes=sv.notes||{}; S.fiche=sv.fiche||{};
-    S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.quiz=sv.quiz||[]; S.cardRuns=sv.cardRuns||[];
+    S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.fail=sv.fail||{}; S.quiz=sv.quiz||[]; S.cardRuns=sv.cardRuns||[];
     S.newToday=sv.newToday||{d:0,n:0};
     S.streak=sv.streak||{current:0,max:0,lastDate:0};
     S.deadline=sv.deadline||DEFAULT_DEADLINE; S.open=sv.open||{b1:true}; S._ts=sv._ts||0;
@@ -201,7 +201,12 @@
     return shuffle(reviews.concat(picked));
   }
   function dueCount(){ return buildDueQueue(FLASHCARDS).length; }
-  function grade(i,ok){ var b=S.box[i]||0, nb=ok?Math.min(4,b+1):1; S.box[i]=nb; S.due[i]=today()+INTERV[nb]*86400000; save(); }
+  function grade(i,ok){
+    var b=S.box[i]||0, nb=ok?Math.min(4,b+1):1;
+    S.box[i]=nb; S.due[i]=today()+INTERV[nb]*86400000;
+    if(ok) delete S.fail[i]; else S.fail[i]=true;
+    save();
+  }
   function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=a[i];a[i]=a[j];a[j]=x;} return a; }
 
   var VIEWS=[["accueil","Accueil"],["dossiers","Dossiers"],["cours","Cours"],["apprendre","Apprendre"]];
@@ -619,7 +624,7 @@
   function renderDashPanel(clickable){
     var vus=FLASHCARDS.filter(function(c){return (S.box[c.id]||0)>0;}).length;
     var maitr=FLASHCARDS.filter(function(c){return (S.box[c.id]||0)>=4;}).length;
-    var n1=FLASHCARDS.filter(function(c){return (S.box[c.id]||0)===1;}).length;
+    var n1=FLASHCARDS.filter(function(c){return (S.box[c.id]||0)===1 && !S.fail[c.id];}).length;
     var n2=FLASHCARDS.filter(function(c){return (S.box[c.id]||0)===2;}).length;
     var n3=FLASHCARDS.filter(function(c){return (S.box[c.id]||0)===3;}).length;
     var streakCur=streakDisplay(), streakMax=(S.streak&&S.streak.max)||0;
