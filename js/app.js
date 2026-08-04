@@ -13,6 +13,7 @@
   var main = document.getElementById("main");
   var nav  = document.getElementById("nav");
   var appEl = document.querySelector(".app");
+  var searchOpen = false;
 
   var MEM = {};
   var Store = {
@@ -242,7 +243,7 @@
   function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=a[i];a[i]=a[j];a[j]=x;} return a; }
 
   var VIEWS=[["accueil","Accueil"],["dossiers","Dossiers"],["cours","Cours"],["apprendre","Apprendre"]];
-  var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre","flashcards","flashcardsBloc","flashcardsSort","quiz","quizBloc"];
+  var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre","flashcards","flashcardsBloc","flashcardsSort","quiz","quizBloc","recherche"];
   function parseHash(hash){
     var h=(hash||"").replace(/^#/,"");
     if(h.charAt(0)==="/") h=h.slice(1);
@@ -256,6 +257,7 @@
     if(parts[0]==="cours") return {view:"cours"};
     if(parts[0]==="quiz" && parts[1]==="bloc" && parts[2]) return {view:"quizBloc", id:parts[2]};
     if(parts[0]==="flashcards" && parts[1]==="bloc" && parts[2]) return {view:"flashcardsBloc", id:parts[2]};
+    if(parts[0]==="recherche") return {view:"recherche", id:parts.slice(1).join("/")||""};
     if(parts[0]==="reviser") return {view:"apprendre"};
     if(KNOWN_VIEWS.indexOf(parts[0])>=0) return {view:parts[0]};
     return {view:"accueil"};
@@ -269,12 +271,14 @@
     if(view==="cours") return "#/cours";
     if(view==="quizBloc") return "#/quiz/bloc/"+param;
     if(view==="flashcardsBloc") return "#/flashcards/bloc/"+param;
+    if(view==="recherche") return "#/recherche/"+encodeURIComponent(param||"");
     if(view==="accueil") return "#/";
     return "#/"+view;
   }
   var ROUTE={view:"accueil"};
   function applyRoute(r){
     if(r.view!==ROUTE.view){ SES=null; QZ=null; }
+    searchOpen = (r.view==="recherche");
     ROUTE=r; S.view=(KNOWN_VIEWS.indexOf(r.view)>=0)?r.view:"accueil"; save();
     render();
     window.scrollTo(0,0);
@@ -285,6 +289,29 @@
     else location.hash=h;
   }
   window.addEventListener("hashchange",function(){ applyRoute(parseHash(location.hash)); });
+
+  function submitSearch(){
+    var input=document.getElementById("navsearch-input");
+    var term=input?input.value.trim():"";
+    if(term) go("recherche", term);
+  }
+  window.addEventListener("keydown",function(e){
+    if((e.metaKey||e.ctrlKey) && (e.key==="k"||e.key==="K")){
+      e.preventDefault();
+      searchOpen=true;
+      var form=document.getElementById("navsearch"), input=document.getElementById("navsearch-input");
+      if(form) form.classList.add("open");
+      if(input){ input.focus(); input.select(); }
+    }
+  });
+  document.addEventListener("click",function(e){
+    if(!searchOpen) return;
+    var form=document.getElementById("navsearch");
+    if(form && !form.contains(e.target)){
+      searchOpen=false;
+      form.classList.remove("open");
+    }
+  });
 
   function tickClass(q,i,exp,left){
     var st=S.status[q.id];
@@ -309,9 +336,26 @@
       if(v[0]==="apprendre"){ var d=dueCount(); if(d) badge='<i>'+d+'</i>'; }
       h+='<button class="navb'+(activeView===v[0]?" on":"")+'" data-go="'+v[0]+'">'+v[1]+badge+'</button>';
     });
+    h+='<form class="navsearch'+(searchOpen?" open":"")+'" id="navsearch">';
+    h+='<button type="button" class="navsearch-icon" id="navSearchToggle" title="Rechercher" aria-label="Rechercher">'+ICON_SEARCH+'</button>';
+    h+='<input id="navsearch-input" type="search" value="'+esc(ROUTE.view==="recherche"?ROUTE.id||"":"")+'" placeholder="Rechercher une notion" aria-label="Rechercher">';
+    h+='</form>';
     nav.innerHTML=h;
     nav.querySelectorAll("[data-go]").forEach(function(el){
       el.addEventListener("click",function(){ go(el.getAttribute("data-go")); });
+    });
+    var searchForm=document.getElementById("navsearch");
+    var searchToggle=document.getElementById("navSearchToggle");
+    var searchInput=document.getElementById("navsearch-input");
+    if(searchToggle) searchToggle.addEventListener("click",function(e){
+      e.stopPropagation();
+      searchOpen=!searchOpen;
+      searchForm.classList.toggle("open", searchOpen);
+      if(searchOpen) searchInput.focus();
+    });
+    if(searchForm) searchForm.addEventListener("submit",function(e){ e.preventDefault(); submitSearch(); });
+    if(searchInput) searchInput.addEventListener("keydown",function(e){
+      if(e.key==="Enter"){ e.preventDefault(); submitSearch(); }
     });
     renderCadenceCompact();
   }
@@ -813,6 +857,7 @@
 
   var ICON_PENCIL='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>';
   var ICON_TRASH='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>';
+  var ICON_SEARCH='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>';
 
   function cardSourceFile(c){
     var m=/^b(\d+)-/.exec(c.resume||"");
@@ -1157,6 +1202,61 @@
   function normTok(s){
     return String(s||"").toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
   }
+
+  /* ---------- RECHERCHE ---------- */
+  function stripHtml(s){
+    return String(s||"").replace(/<[^>]+>/g," ").replace(/&nbsp;/g," ").replace(/\s+/g," ").trim();
+  }
+  var SEARCH_INDEX=null;
+  function buildSearchIndex(){
+    if(SEARCH_INDEX) return SEARCH_INDEX;
+    var idx=[];
+    ALL.forEach(function(q){
+      var inf=INFO[q.id]||{};
+      var text=[q.t, q.c, inf.enonce, (inf[0]||[]).join(" "), (inf[1]||[]).join(" "), (q.k||[]).join(" ")].join(" ");
+      idx.push({type:"question", qid:q.id, q:q, haystack:normTok(stripHtml(text))});
+    });
+    SEARCH_INDEX=idx;
+    return idx;
+  }
+  function searchIndex(term){
+    var norm=normTok(term);
+    if(!norm) return [];
+    return buildSearchIndex().filter(function(e){ return e.haystack.indexOf(norm)>=0; });
+  }
+  function vRecherche(term){
+    term=(term||"").trim();
+    var h='<h1 class="qhead-title">Recherche</h1>';
+    if(!term){
+      h+='<div class="qhead-code code">Tape un terme dans la barre de recherche.</div>';
+      return h;
+    }
+    var results=searchIndex(term).filter(function(e){ return e.type==="question"; });
+    h+='<div class="qhead-code code">&laquo;&nbsp;'+esc(term)+'&nbsp;&raquo; &middot; '+results.length+' r\u00e9sultat'+(results.length>1?'s':'')+'</div>';
+    if(!results.length){
+      h+='<p class="rappel">Aucune correspondance dans les questions d\'examen.</p>';
+      return h;
+    }
+    h+='<div class="lab">O\u00f9 cette notion est \u00e9valu\u00e9e</div>';
+    var byBloc={}, order=[];
+    results.forEach(function(e){
+      var bid=e.q.bloc.id;
+      if(!byBloc[bid]){ byBloc[bid]={bloc:e.q.bloc, items:[]}; order.push(bid); }
+      byBloc[bid].items.push(e.q);
+    });
+    order.sort(function(a,b){
+      return BLOCS.map(function(x){return x.id;}).indexOf(a) - BLOCS.map(function(x){return x.id;}).indexOf(b);
+    });
+    order.forEach(function(bid){
+      var g=byBloc[bid];
+      g.items.sort(function(a,b){ return ALL.indexOf(a)-ALL.indexOf(b); });
+      h+='<div class="lab">'+esc(g.bloc.code)+' &middot; '+esc(g.bloc.titre)+'</div>';
+      g.items.forEach(function(q){
+        h+='<button class="qrow" data-goq="'+q.id+'"><span class="qn">'+esc(q.n)+'</span><span class="qt">'+esc(q.t)+'</span></button>';
+      });
+    });
+    return h;
+  }
   function resolveQid(blocNum, token){
     var blocId="b"+blocNum, norm=normTok(token);
     var q=ALL.filter(function(x){ return x.bloc.id===blocId && normTok(x.n)===norm; })[0];
@@ -1309,6 +1409,10 @@
     } else if(v==="flashcardsSort"){
       main.classList.remove("with-qbottom");
       main.innerHTML=vFlashcardsSort();
+      positionQbar();
+    } else if(v==="recherche"){
+      main.classList.remove("with-qbottom");
+      main.innerHTML=vRecherche(ROUTE.id);
       positionQbar();
     } else if(v==="quiz"){
       main.classList.remove("with-qbottom");
