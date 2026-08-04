@@ -69,19 +69,19 @@
       pdf: "énoncé:/Examen 1.pdf"
     }},
     { id:"b2", code:"Bloc 2", titre:"Déploiement des actions", cas:"Bambu Lab — imprimante 3D H2S", qs:[
-      {n:"Q1", c:"C2.1", t:"Plan de prospection en tableau", k:["Tableau prospects / lieux / supports","Objectifs opérationnels SMART"]},
-      {n:"Q2", c:"C2.1", t:"Personas interlocuteur et utilisateur final", k:["Ciblage précis appuyé sur des critères sourcés"]},
-      {n:"Q3", c:"C2.1", t:"Deux actions marketing ciblées", k:["Actions cohérentes avec le marché, les objectifs et le positionnement"]},
-      {n:"Q4", c:"C2.1", t:"Budget d'une des actions", k:["Budget réaliste tenant dans l'enveloppe pilote de 20 000 €"]},
-      {n:"Q5", c:"C2.1", t:"KPI de mesure d'impact", k:["Indicateurs permettant d'évaluer efficacement les actions"]},
-      {n:"Q6", c:"C2.2", t:"Cahier des charges et appel d'offres", k:["Entreprise, prestation, exigences, contraintes, conditions contractuelles","Conforme au droit des contrats, des affaires et de la concurrence"]},
-      {n:"Q7", c:"C2.2", t:"Grille d'évaluation des prestataires", k:["Critères alignés sur les besoins, les objectifs et les valeurs, RSE incluse"]},
-      {n:"Q8", c:"C2.2", t:"Plan de négociation", k:["Objectifs mesurables, concessions, arguments, réponses aux objections","Conforme à la réglementation applicable"]},
-      {n:"Q9", c:"C2.3", t:"Message publicitaire et action de diffusion", k:["Objectifs SMART","Ton adapté aux codes de l'audience","Messages inclusifs","Canaux et calendrier appropriés"]},
-      {n:"Q10", c:"C2.3", t:"KPI et budget détaillé", k:["KPI pertinents","Ressources humaines, financières et techniques chiffrées"]},
-      {n:"Q11", c:"C2.4", t:"Supports print et digitaux", k:["Maîtrise des principes de communication visuelle","Respect de la charte et de la ligne éditoriale","Contenus inclusifs et accessibles","Droit d'auteur et droit à l'image respectés"]},
-      {n:"Q12", c:"C2.5", t:"Style rédactionnel et animation de communauté", k:["Contenus adaptés à la communauté visée","Outils d'interaction favorisant la participation"]},
-      {n:"Q13", c:"C2.5", t:"Modération et e-réputation", k:["Stratégies de modération maintenant un environnement positif","Indicateurs de suivi appropriés"]}
+      {n:"Q1", c:"C2.1", t:"Plan de prospection en tableau", k:["Tableau <strong>prospects / lieux / supports</strong>","Objectifs opérationnels <strong>SMART</strong>"]},
+      {n:"Q2", c:"C2.1", t:"Personas interlocuteur et utilisateur final", k:["<strong>Ciblage précis</strong> appuyé sur des critères sourcés"]},
+      {n:"Q3", c:"C2.1", t:"Deux actions marketing ciblées", k:["Actions <strong>cohérentes</strong> avec le marché, les objectifs et le positionnement"]},
+      {n:"Q4", c:"C2.1", t:"Budget d'une des actions", k:["Budget <strong>réaliste</strong> tenant dans l'enveloppe pilote de 20 000 €"]},
+      {n:"Q5", c:"C2.1", t:"KPI de mesure d'impact", k:["Indicateurs permettant d'<strong>évaluer efficacement</strong> les actions"]},
+      {n:"Q6", c:"C2.2", t:"Cahier des charges et appel d'offres", k:["Entreprise, prestation, exigences, contraintes, <strong>conditions contractuelles</strong>","Conforme au <strong>droit des contrats, des affaires et de la concurrence</strong>"]},
+      {n:"Q7", c:"C2.2", t:"Grille d'évaluation des prestataires", k:["Critères <strong>alignés</strong> sur les besoins, les objectifs et les valeurs, RSE incluse"]},
+      {n:"Q8", c:"C2.2", t:"Plan de négociation", k:["Objectifs <strong>mesurables</strong>, concessions, arguments, réponses aux objections","Conforme à la <strong>réglementation applicable</strong>"]},
+      {n:"Q9", c:"C2.3", t:"Message publicitaire et action de diffusion", k:["Objectifs <strong>SMART</strong>","Ton adapté aux <strong>codes de l'audience</strong>","Messages <strong>inclusifs</strong>","Canaux et calendrier <strong>appropriés</strong>"]},
+      {n:"Q10", c:"C2.3", t:"KPI et budget détaillé", k:["<strong>KPI pertinents</strong>","Ressources humaines, financières et techniques <strong>chiffrées</strong>"]},
+      {n:"Q11", c:"C2.4", t:"Supports print et digitaux", k:["<strong>Maîtrise</strong> des principes de communication visuelle","Respect de la <strong>charte</strong> et de la <strong>ligne éditoriale</strong>","Contenus <strong>inclusifs et accessibles</strong>","<strong>Droit d'auteur</strong> et <strong>droit à l'image</strong> respectés"]},
+      {n:"Q12", c:"C2.5", t:"Style rédactionnel et animation de communauté", k:["Contenus <strong>adaptés</strong> à la communauté visée","Outils d'interaction favorisant la <strong>participation</strong>"]},
+      {n:"Q13", c:"C2.5", t:"Modération et e-réputation", k:["Stratégies de modération maintenant un <strong>environnement positif</strong>","Indicateurs de suivi <strong>appropriés</strong>"]}
     ],
     enonce: {
       contexte: "<p><strong>Bambu Lab</strong>, fondée en <strong>2020</strong> à <strong>Shenzhen</strong>, est une entreprise spécialisée dans les imprimantes 3D intelligentes, portée par des technologies propriétaires (IA embarquée, capteurs de sécurité, impression multi-matériaux). Son nouveau produit, la <strong>Bambu Lab H2S</strong>, est une imprimante 3D grand format à précision industrielle, dotée de <strong>23 capteurs</strong> et <strong>3 caméras de contrôle</strong>, capable d'imprimer une large gamme de matériaux techniques (PA, PC, composites).</p><p>Bambu Lab souhaite élargir son portefeuille <strong>BtoB</strong> en ciblant le secteur de l'éducation privée en <strong>Île-de-France</strong> — écoles d'ingénieurs (EPITA, ISEN, CESI...) et écoles de design (Strate, ENSAAMA, Penninghen...). Ne disposant pas de force commerciale dédiée à ce secteur, l'entreprise envisage de faire appel à un <strong>prestataire-distributeur</strong> expert en solutions multimédias et pédagogiques, chargé de prospecter, commercialiser, installer et suivre l'imprimante dans les établissements ciblés — Bambu Lab conservant la maîtrise du produit et de la communication institutionnelle. Cette première phase doit permettre de mesurer l'accueil du produit, valider les choix de communication et de distribution, et poser les bases d'une <strong>éventuelle extension nationale</strong>.</p>",
@@ -196,7 +196,57 @@
       '<p>afin d\'élaborer une offre en adéquation avec les attentes et besoins du public cible.</p>',
     "C1.4": '<p>Définir une stratégie marketing et communication pour un produit ou service (ou une famille de produit ou service)&nbsp;:</p>'+
       '<ul><li>en s\'appuyant sur l\'analyse du marché et du public cible pour définir les <strong>axes stratégiques</strong> ainsi que le <strong>mix marketing</strong></li><li>en tenant compte des attentes de l\'organisation et du public cible en termes d\'<strong>engagement éthique et RSE</strong></li></ul>'+
-      '<p>afin de soutenir la stratégie globale de l\'organisation.</p>'
+      '<p>afin de soutenir la stratégie globale de l\'organisation.</p>',
+    "C2.1": '<p>Élaborer un plan d\'actions marketing pour un produit ou service&nbsp;:</p>'+
+      '<ul><li>en définissant les <strong>objectifs, les cibles, les actions</strong> à mettre en place, les moyens à mobiliser et les <strong>indicateurs de performance</strong></li><li>en s\'appuyant sur des <strong>données de marché</strong> ainsi que sur des outils numériques (CRM, logiciel de gestion de campagne, plateforme d\'automatisation, autres outils intégrant l\'IA)</li><li>et en veillant au respect du <strong>budget alloué</strong></li></ul>'+
+      '<p>afin de soutenir la stratégie marketing globale de l\'entreprise.</p>',
+    "C2.2": '<p>Sélectionner les distributeurs et autres partenaires (agences digitales, d\'influence, de marketing évènementiel, de création de contenu, fournisseurs de plateformes d\'automatisation marketing...)&nbsp;:</p>'+
+      '<ul><li>en évaluant leur <strong>potentiel</strong>, leur <strong>adéquation avec les besoins de l\'entreprise</strong>, leurs valeurs éthiques et leurs <strong>pratiques RSE</strong></li><li>en négociant les termes des partenariats conformément à la <strong>réglementation applicable</strong></li></ul>'+
+      '<p>afin de mettre en œuvre les actions marketing et communication et atteindre les objectifs commerciaux.</p>',
+    "C2.3": '<p>Élaborer un plan de communication pour un produit ou service&nbsp;:</p>'+
+      '<ul><li>en définissant les objectifs, les cibles, les <strong>messages clés</strong>, les actions, les <strong>canaux de communication</strong> appropriés, et le calendrier</li><li>en veillant au respect de l\'<strong>enveloppe budgétaire</strong> allouée</li></ul>'+
+      '<p>afin d\'assurer une communication cohérente et efficace avec le public cible.</p>',
+    "C2.4": '<p>Concevoir des contenus et supports de communication&nbsp;:</p>'+
+      '<ul><li>en s\'appuyant sur la <strong>charte graphique</strong> et la <strong>ligne éditoriale</strong> de la marque/ou de l\'organisation</li><li>en utilisant des outils et ressources de création adaptés (logiciel de PAO, intelligence artificielle, banque d\'image...)</li><li>et en veillant au respect de la <strong>réglementation applicable</strong></li></ul>'+
+      '<p>afin de promouvoir efficacement un produit ou service auprès du public cible.</p>',
+    "C2.5": '<p>Animer une communauté en ligne&nbsp;:</p>'+
+      '<ul><li>en rédigeant des <strong>contenus de communication impactants</strong></li><li>en utilisant différents <strong>outils d\'interaction</strong></li><li>et en <strong>modérant</strong> les contenus et comportements des internautes</li></ul>'+
+      '<p>afin de favoriser la visibilité de la marque/ou de l\'entreprise sur les médias sociaux et développer l\'<strong>e-réputation</strong> de l\'entreprise.</p>'
   };
 
+  INFO["b2-Q1"].enonce = "Définissez un <strong>plan de prospection</strong> sous forme de tableau précisant <strong>prospects, lieux, supports utilisés</strong> et <strong>objectifs SMART</strong> associés.";
+  INFO["b2-Q1"].annexes = [4];
+
+  INFO["b2-Q2"].enonce = "Définissez un ou plusieurs <strong>persona types</strong> : l'un représentant l'interlocuteur et l'autre représentant l'utilisateur final. Chaque persona devra être construit à partir de critères fiables : <strong>démographiques, géographiques, psychographiques et comportementaux</strong>.";
+  INFO["b2-Q2"].annexes = [4];
+
+  INFO["b2-Q3"].enonce = "Proposez <strong>deux actions marketing ciblées</strong> pour faire connaître efficacement le produit H2S auprès des écoles privées. Ces actions devront être cohérentes avec le <strong>plan de prospection</strong> établi, les <strong>données du marché</strong> et le <strong>positionnement</strong> de Bambu Lab.";
+  INFO["b2-Q3"].annexes = [1, 3, 4];
+
+  INFO["b2-Q4"].enonce = "Élaborez un <strong>budget réaliste</strong> pour l'une des actions marketing précédemment proposées, en intégrant l'ensemble des <strong>coûts nécessaires</strong>, les <strong>ressources disponibles</strong> et les <strong>contraintes financières</strong> de l'entreprise.";
+  INFO["b2-Q4"].annexes = [6];
+
+  INFO["b2-Q5"].enonce = "Indiquez les <strong>indicateurs de performance (KPI)</strong> permettant de mesurer l'impact des actions mises en œuvre.";
+
+  INFO["b2-Q6"].enonce = "Rédigez un <strong>cahier des charges</strong> et un <strong>appel d'offres</strong> précisant les attentes de Bambu Lab vis-à-vis du futur partenaire en termes de <strong>prospection, distribution, installation et formation</strong>.";
+  INFO["b2-Q6"].annexes = [6];
+
+  INFO["b2-Q7"].enonce = "Proposez une <strong>grille de critères d'évaluation</strong> permettant de comparer objectivement les prestataires candidats et choisissez-en un. Justifiez à la fois les <strong>critères retenus</strong> et le <strong>choix final</strong> du prestataire.";
+
+  INFO["b2-Q8"].enonce = "Mettez-vous dans la peau du prestataire lors d'un rendez-vous avec une école et concevez un <strong>plan de négociation structuré</strong>. Celui-ci devra préciser&nbsp;: les <strong>objectifs poursuivis</strong>, les <strong>arguments clés</strong> à mettre en avant, les <strong>concessions envisageables</strong>, les <strong>réponses aux objections</strong> potentielles. La négociation devra rester réaliste et conforme aux réglementations.";
+  INFO["b2-Q8"].annexes = [6];
+
+  INFO["b2-Q9"].enonce = "Rédigez un <strong>message publicitaire</strong> destiné aux écoles privées d'Île-de-France, proposez une <strong>action de communication</strong> pour le diffuser et définissez les <strong>objectifs SMART</strong> associés, en cohérence avec la stratégie de Bambu Lab.";
+  INFO["b2-Q9"].annexes = [2, 4];
+
+  INFO["b2-Q10"].enonce = "Établissez un listing de <strong>KPI pertinents</strong> pour évaluer la performance de votre action de communication puis présentez un <strong>budget détaillé</strong> pour l'action proposée en précisant les <strong>ressources mobilisées</strong> (humaines, financières, techniques).";
+  INFO["b2-Q10"].annexes = [6];
+
+  INFO["b2-Q11"].enonce = "Concevez plusieurs <strong>supports de communication</strong> (print et digitaux) adaptés à l'action proposée, en respectant la <strong>charte graphique</strong> et la <strong>ligne éditoriale</strong> de Bambu Lab. Les supports devront être <strong>inclusifs et accessibles</strong> tout en respectant les règles de <strong>droit d'auteur</strong> et de <strong>droit à l'image</strong>.";
+  INFO["b2-Q11"].annexes = [1, 2];
+
+  INFO["b2-Q12"].enonce = "Afin de fédérer un maximum d'étudiants autour des pratiques, des usages et du fonctionnement de l'imprimante 3D, Bambu Lab envisage de créer un <strong>groupe Facebook</strong> pour chaque école. Proposez un <strong>style rédactionnel</strong> adapté ainsi que différentes <strong>méthodes pour animer la communauté</strong> (sondages, jeux-concours, sessions de questions/réponses, etc.).";
+  INFO["b2-Q12"].annexes = [1, 4];
+
+  INFO["b2-Q13"].enonce = "Proposez des <strong>bonnes pratiques</strong> pour maintenir une communauté en ligne positive autour de Bambu Lab, expliquez leur <strong>impact sur la communication et l'e-réputation</strong> de la marque, puis indiquez les <strong>indicateurs</strong> permettant d'en mesurer l'efficacité.";
 
