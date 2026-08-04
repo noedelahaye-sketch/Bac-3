@@ -6,7 +6,7 @@
   var ALL = [];
   BLOCS.forEach(function(b){ b.qs.forEach(function(q){ q.id = b.id+"-"+q.n; q.bloc = b; ALL.push(q); }); });
 
-  var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, quiz:[], quizSeen:{}, cardRuns:[],
+  var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, cardState:{}, quiz:[], quizSeen:{}, cardRuns:[],
             newToday:{d:0,n:0}, streak:{current:0,max:0,lastDate:0},
             deadline:DEFAULT_DEADLINE, open:{b1:true}, view:"accueil", _ts:0 };
   var SES=null, QZ=null, saveTimer=null;
@@ -96,7 +96,7 @@
   }
   function applyState(sv){
     S.status=sv.status||{}; S.checks=sv.checks||{}; S.notes=sv.notes||{}; S.fiche=sv.fiche||{};
-    S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.fail=sv.fail||{}; S.quiz=sv.quiz||[]; S.quizSeen=sv.quizSeen||{}; S.cardRuns=sv.cardRuns||[];
+    S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.fail=sv.fail||{}; S.cardState=sv.cardState||{}; S.quiz=sv.quiz||[]; S.quizSeen=sv.quizSeen||{}; S.cardRuns=sv.cardRuns||[];
     S.newToday=sv.newToday||{d:0,n:0};
     S.streak=sv.streak||{current:0,max:0,lastDate:0};
     S.deadline=sv.deadline||DEFAULT_DEADLINE; S.open=sv.open||{b1:true}; S._ts=sv._ts||0;
@@ -203,15 +203,16 @@
     if(S.streak.lastDate===t || S.streak.lastDate===t-oneDay) return S.streak.current;
     return 0;
   }
+  function activeCards(list){ return (list||FLASHCARDS).filter(function(c){ return !S.cardState[c.id]; }); }
   function dueReviews(list){
-    return list.filter(function(c){
+    return activeCards(list).filter(function(c){
       var b=S.box[c.id]||0;
       return b>0 && (S.due[c.id]||0)<=today();
     }).sort(function(a,b){
       return (S.due[a.id]||0)-(S.due[b.id]||0);
     });
   }
-  function newCardsIn(list){ return list.filter(function(c){ return !(S.box[c.id]); }); }
+  function newCardsIn(list){ return activeCards(list).filter(function(c){ return !(S.box[c.id]); }); }
   function dueBreakdown(list){
     var reviews=Math.min(dueReviews(list).length, TOTAL_CAP);
     var news=Math.max(0, Math.min(newBudget(), TOTAL_CAP-reviews));
@@ -235,7 +236,7 @@
   function grade(i,ok){
     var b=S.box[i]||0, nb=ok?Math.min(INTERV.length-1,b+1):1;
     S.box[i]=nb; S.due[i]=today()+INTERV[nb]*86400000;
-    if(ok) delete S.fail[i]; else S.fail[i]=true;
+    if(!ok) S.fail[i]=(S.fail[i]||0)+1;
     save();
   }
   function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=a[i];a[i]=a[j];a[j]=x;} return a; }
@@ -658,7 +659,7 @@
     h+='<button class="tile tile-hub" data-go="flashcards">';
     h+='<span class="tile-code code">Cartes à répétition espacée</span>';
     h+='<span class="tile-title">Flashcards</span>';
-    h+='<span class="tile-cas">'+FLASHCARDS.length+' cartes &middot; '+dueLabel(FLASHCARDS)+'</span>';
+    h+='<span class="tile-cas">'+activeCards().length+' cartes &middot; '+dueLabel(FLASHCARDS)+'</span>';
     h+='<span class="tile-quiz-btn btn-flash" data-flashcards-due-all>'+(dApp?'Cartes du jour ('+dApp+')':'Rien à revoir aujourd\'hui')+'</span>';
     h+='</button>';
     h+='<button class="tile tile-hub" data-go="quiz">';
@@ -672,14 +673,15 @@
   }
 
   function renderDashPanel(clickable){
-    var vus=FLASHCARDS.filter(function(c){return (S.box[c.id]||0)>0;}).length;
-    var maitr=FLASHCARDS.filter(function(c){return (S.box[c.id]||0)>=4;}).length;
-    var n1=FLASHCARDS.filter(function(c){return (S.box[c.id]||0)===1 && !S.fail[c.id];}).length;
-    var n2=FLASHCARDS.filter(function(c){return (S.box[c.id]||0)===2;}).length;
-    var n3=FLASHCARDS.filter(function(c){return (S.box[c.id]||0)===3;}).length;
+    var active=activeCards();
+    var vus=active.filter(function(c){return (S.box[c.id]||0)>0;}).length;
+    var maitr=active.filter(function(c){return (S.box[c.id]||0)>=4;}).length;
+    var n1=active.filter(function(c){return (S.box[c.id]||0)===1 && !S.fail[c.id];}).length;
+    var n2=active.filter(function(c){return (S.box[c.id]||0)===2;}).length;
+    var n3=active.filter(function(c){return (S.box[c.id]||0)===3;}).length;
     var streakCur=streakDisplay(), streakMax=(S.streak&&S.streak.max)||0;
     var h='<div class="mini dash-panel'+(clickable?' clickable" data-go="flashcards"':'"')+'><div class="lab">Tableau de bord global</div><div class="stats stats-top">';
-    h+='<div class="stat"><div class="num">'+vus+'<span class="on">/'+FLASHCARDS.length+'</span></div><div class="lbl">cartes vues</div></div>';
+    h+='<div class="stat"><div class="num">'+vus+'<span class="on">/'+active.length+'</span></div><div class="lbl">cartes vues</div></div>';
     h+='<div class="stat"><div class="badge-stack">';
     h+='<span class="stat-badge lvl1">Niveau 1 &middot; '+n1+'</span>';
     h+='<span class="stat-badge lvl2">Niveau 2 &middot; '+n2+'</span>';
@@ -694,14 +696,14 @@
   function vFlashcards(){
     if(SES) return renderCardsSession();
     var h='<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Flashcards"}])+'</div>';
-    h+='<h1 class="qhead-title">Flashcards</h1><div class="qhead-code code">'+FLASHCARDS.length+' cartes</div>';
+    h+='<h1 class="qhead-title">Flashcards</h1><div class="qhead-code code">'+activeCards().length+' cartes</div>';
     h+='<div class="grid-cta-dash">';
     h+='<button class="tile cta-tile" data-flashcards-due-all>Cartes du jour<span class="cta-sub">'+dueLabel(FLASHCARDS)+'</span></button>';
     h+=renderDashPanel(false);
     h+='</div>';
     h+='<div class="lab">Par bloc</div><div class="tiles">';
     (typeof COURS_BLOCS!=="undefined"?COURS_BLOCS:[]).forEach(function(b){
-      var n=FLASHCARDS.filter(function(c){return c.bloc===b.numero;}).length;
+      var n=activeCards().filter(function(c){return c.bloc===b.numero;}).length;
       if(n){
         h+='<button class="tile" data-go-flashcards-bloc="'+b.numero+'">';
         h+='<span class="tile-code code">Bloc '+b.numero+'</span>';
@@ -728,13 +730,14 @@
         h+='<div class="hrow"><span>'+r.d+'</span><b>'+r.ok+' / '+r.n+'</b></div>';
       });
     }
+    h+=renderCardSortSpace();
     return h;
   }
 
   function vFlashcardsBloc(numero){
     if(SES) return renderCardsSession();
     var b=(typeof COURS_BLOCS!=="undefined"?COURS_BLOCS:[]).filter(function(x){return String(x.numero)===String(numero);})[0];
-    var list=FLASHCARDS.filter(function(c){return String(c.bloc)===String(numero);});
+    var list=activeCards().filter(function(c){return String(c.bloc)===String(numero);});
     if(!b || !list.length){
       return '<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Flashcards",view:"flashcards"}])+'</div><p class="rappel">Pas encore de cartes pour ce bloc.</p>';
     }
@@ -800,10 +803,75 @@
     h+='<div class="cmeta"><span class="m-niveau n'+c.niveau+'">Niveau '+c.niveau+'</span><span class="m-section">'+esc(c.section)+'</span><span class="m-type t-'+c.type+'">'+(TYPE_LABELS[c.type]||c.type)+'</span></div>';
     if(SES.show){
       h+='<div class="ca ca-center">'+esc(c.verso).replace(/\n/g,'<br>')+'</div><div class="cbtns"><button class="no" data-lrn="ko">À revoir</button><button class="yes" data-lrn="ok">Je savais</button></div>';
+      h+='<div class="cbtns-setaside"><button data-lrn="setaside-revoir">À modifier</button><button data-lrn="setaside-supprime">Supprimer</button></div>';
     } else {
       h+='<div class="cq cq-center">'+esc(c.recto)+'</div><div class="cflip-hint">Touche la carte pour voir la réponse</div>';
     }
     h+='</div><button class="quit" data-lrn="stop">Arrêter la session</button>';
+    return h;
+  }
+
+  function cardSourceFile(c){
+    var m=/^b(\d+)-/.exec(c.resume||"");
+    return m ? ("cours:/bloc"+m[1]+":/flashcards:/cards-"+c.resume+".json") : (c.resume||"?");
+  }
+  function groupCardsBySource(cards){
+    var groups=[], byKey={};
+    cards.forEach(function(c){
+      var src=cardSourceFile(c);
+      if(!byKey[src]){ byKey[src]={src:src,cards:[]}; groups.push(byKey[src]); }
+      byKey[src].cards.push(c);
+    });
+    return groups;
+  }
+  function copyListText(cards){
+    return groupCardsBySource(cards).map(function(g){
+      return g.src+"\n"+g.cards.map(function(c){return "  "+c.id;}).join("\n");
+    }).join("\n\n");
+  }
+  function renderCardSortRow(c, actionsHtml, extraMeta){
+    var meta=esc(c.section)+' &middot; <span class="code">'+esc(cardSourceFile(c))+'</span>';
+    if(extraMeta) meta+=' &middot; '+extraMeta;
+    return '<div class="cs-row"><div class="cs-main"><div class="cs-recto">'+esc(c.recto)+'</div>'+
+      '<div class="cs-meta">'+meta+'</div></div><div class="cs-actions">'+actionsHtml+'</div></div>';
+  }
+  function renderCardSortGroup(key, label, cards, copyKey){
+    var h='<div class="cs-group"><div class="cs-group-head"><span class="cs-group-label">'+label+' &middot; '+cards.length+'</span>';
+    if(cards.length) h+='<button class="linkf" data-cs-copy="'+copyKey+'">Copier la liste</button>';
+    h+='</div>';
+    if(!cards.length){
+      h+='<p class="rappel">Rien ici.</p>';
+    } else {
+      cards.forEach(function(c){
+        var actions, extraMeta="";
+        if(key==="suggeree"){
+          var fc=S.fail[c.id]||0;
+          extraMeta=fc+' échec'+(fc>1?'s':'');
+          actions='<button data-cs-set="'+c.id+':revoir">À modifier</button><button data-cs-set="'+c.id+':supprime">Supprimer</button>';
+        } else {
+          var other=key==="revoir"?"supprime":"revoir";
+          var otherLabel=key==="revoir"?"Marquer supprimée":"Marquer à modifier";
+          actions='<button data-cs-reactivate="'+c.id+'">Réactiver</button><button data-cs-set="'+c.id+':'+other+'">'+otherLabel+'</button>';
+        }
+        h+=renderCardSortRow(c, actions, extraMeta);
+      });
+      h+='<textarea class="f cs-copybox" id="cs-copybox-'+copyKey+'" style="display:none" readonly>'+esc(copyListText(cards))+'</textarea>';
+    }
+    h+='</div>';
+    return h;
+  }
+  function renderCardSortSpace(){
+    var revoir=FLASHCARDS.filter(function(c){return S.cardState[c.id]==="revoir";});
+    var supprime=FLASHCARDS.filter(function(c){return S.cardState[c.id]==="supprime";});
+    var suggeree=FLASHCARDS.filter(function(c){return !S.cardState[c.id] && (S.fail[c.id]||0)>=5;});
+    var open=S.open.cardSort?" open":"";
+    var h='<section class="panel'+open+'"><button class="phead" data-panel="cardSort"><span class="chev">&#9654;</span>';
+    h+='<h2>Cartes mises de côté<span class="cas">À modifier, supprimées, ou repérées comme difficiles.</span></h2>';
+    h+='<span class="count">'+(revoir.length+supprime.length)+'</span></button><div class="pbody">';
+    h+=renderCardSortGroup("revoir","À modifier",revoir,"revoir");
+    h+=renderCardSortGroup("supprime","Supprimées",supprime,"supprime");
+    h+=renderCardSortGroup("suggeree","Suggérées au tri",suggeree,"suggeree");
+    h+='</div></section>';
     return h;
   }
 
@@ -1243,6 +1311,21 @@
     main.querySelectorAll("[data-panel]").forEach(function(el){
       el.addEventListener("click",function(){ var id=el.getAttribute("data-panel"); S.open[id]=!S.open[id]; save(); render(); });
     });
+    main.querySelectorAll("[data-cs-set]").forEach(function(el){
+      el.addEventListener("click",function(){
+        var parts=el.getAttribute("data-cs-set").split(":");
+        S.cardState[parts[0]]=parts[1]; save(); render();
+      });
+    });
+    main.querySelectorAll("[data-cs-reactivate]").forEach(function(el){
+      el.addEventListener("click",function(){ delete S.cardState[el.getAttribute("data-cs-reactivate")]; save(); render(); });
+    });
+    main.querySelectorAll("[data-cs-copy]").forEach(function(el){
+      el.addEventListener("click",function(){
+        var box=document.getElementById("cs-copybox-"+el.getAttribute("data-cs-copy"));
+        if(box){ box.style.display="block"; box.focus(); box.select(); }
+      });
+    });
     main.querySelectorAll("[data-set]").forEach(function(el){
       el.addEventListener("click",function(){ S.status[el.getAttribute("data-set")]=el.getAttribute("data-v"); save(); render(); });
     });
@@ -1332,7 +1415,7 @@
       el.addEventListener("click",function(e){
         e.stopPropagation();
         var parts=el.getAttribute("data-flashcards-bloc-random").split(":"), numero=parts[0], n=parseInt(parts[1],10);
-        var l=shuffle(FLASHCARDS.filter(function(c){return String(c.bloc)===numero;})).slice(0,n);
+        var l=shuffle(activeCards().filter(function(c){return String(c.bloc)===numero;})).slice(0,n);
         if(!l.length) return;
         SES={list:l,i:0,show:false,ok:0}; render();
       });
@@ -1340,8 +1423,8 @@
     main.querySelectorAll("[data-flashcards-filter]").forEach(function(el){
       el.addEventListener("click",function(){
         var parts=el.getAttribute("data-flashcards-filter").split(":"), list;
-        if(parts[0]==="resume") list=FLASHCARDS.filter(function(c){return c.resume===parts[1];});
-        else if(parts[0]==="type") list=FLASHCARDS.filter(function(c){return c.type===parts[1] && String(c.bloc)===parts[2];});
+        if(parts[0]==="resume") list=activeCards().filter(function(c){return c.resume===parts[1];});
+        else if(parts[0]==="type") list=activeCards().filter(function(c){return c.type===parts[1] && String(c.bloc)===parts[2];});
         list=shuffle(list||[]);
         if(!list.length) return;
         SES={list:list,i:0,show:false,ok:0}; render();
@@ -1458,6 +1541,8 @@
         if(a==="show") SES.show=true;
         else if(a==="ok"){ var cid=SES.list[SES.i].id, wasNew=!(S.box[cid]); grade(cid,true); if(SES.capped&&wasNew) consumeNewBudget(1); SES.ok++; SES.i++; SES.show=false; finishCardSessionIfDone(); }
         else if(a==="ko"){ var cid=SES.list[SES.i].id, wasNew=!(S.box[cid]); grade(cid,false); if(SES.capped&&wasNew) consumeNewBudget(1); SES.i++; SES.show=false; finishCardSessionIfDone(); }
+        else if(a==="setaside-revoir"){ S.cardState[SES.list[SES.i].id]="revoir"; SES.i++; SES.show=false; finishCardSessionIfDone(); save(); }
+        else if(a==="setaside-supprime"){ S.cardState[SES.list[SES.i].id]="supprime"; SES.i++; SES.show=false; finishCardSessionIfDone(); save(); }
         else if(a==="stop") SES=null;
         else if(a==="qnext"){ QZ.i++; QZ.checked=false; if(QZ.i<QZ.list.length) QZ.input=initQuizInput(QZ.list[QZ.i]); }
         else if(a==="qstop") QZ=null;
