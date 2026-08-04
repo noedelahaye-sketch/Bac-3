@@ -1,0 +1,42 @@
+{
+  "Développer une posture stratégique de veille": {
+    "folder": "Développer une posture stratégique de veille",
+    "lecons": {
+      "L'anticipation, un état d'esprit": "anticipation-etat-esprit_pdf.pdf",
+      "L'intelligence économique": "intelligence-economique_pdf.pdf",
+      "La veille stratégique": "veille-strategique.pdf",
+      "La prospective, étudier les futurs possibles": "prospect-etudie-futurs-possibl_pdf (1).pdf",
+      "La veille en communication": "veille-communication-pdf.pdf",
+      "La veille en marketing et commerciale": "veille-marketing-commerciale_web.pdf",
+      "La veille concurrentielle et sectorielle": "veille-concurrentiel-sectoriel_web.pdf",
+      "La veille produit et marché": "veille-produit-marche_pdf.pdf",
+      "La veille technologique : sources, référents, outils et bonnes pratiques": "veil-technolog-sourc-ref-outil.pdf"
+    }
+  },
+  "Explorer les champs de veille pour éclairer les décisions": {
+    "folder": "Explorer les champs de veille pour éclairer les décisions",
+    "lecons": {
+      "La réalisation d'une veille sociale": "realisation-veille-sociale_pdf.pdf",
+      "La veille sociétale/comportementale": "veille-societal-comportemental_pdf.pdf",
+      "Veille RSE et transitions durables": "veille-rse-transitions-durab_web.pdf",
+      "La veille fournisseurs": "veille-fournisseurs_pdf.pdf",
+      "Les autres types de veille (juridique, logistique, géopolitique, interculturelle)": "autres-types-veille_pdf.pdf",
+      "Le Benchmark": "benchmark_web.pdf",
+      "Le bench concurrentiel": "bench-concurrentiel_web.pdf"
+    }
+  },
+  "Structurer, croiser et activer une veille opérationnelle": {
+    "folder": "Structurer, croiser et activer une veille opérationnelle ",
+    "lecons": {
+      "Les fake news": "fake-news-web.pdf",
+      "Cartographie des écosystèmes et veille stratégique étendue": "cartog-ecosy-veil-strateg-eten.pdf",
+      "Veille intégrée : croiser les dimensions technologiques, réglementaires et sociétales": "veil-inte-crois-dimen-technolo.pdf",
+      "Automatiser sa veille": "automatiser-veille_web.pdf",
+      "La veille et l'innovation": "veille-innovation-web.pdf",
+      "Les limites de la veille": "limites-veille.pdf",
+      "La synthèse des veilles": "synthese-veilles_pdf.pdf",
+      "Application : Réaliser une veille marketing et commerciale": "app-reali-veill-marketi-commer_pdf.pdf",
+      "Les matrices de veille": "matrices-veille_web.pdf"
+    }
+  }
+}

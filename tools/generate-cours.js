@@ -119,10 +119,11 @@ function isTableSep(line) {
   return /^\|[\s:|-]+\|?\s*$/.test(line.trim());
 }
 
-function convertBody(body, linkMap) {
+function convertBody(body, linkMap, sourcesMap) {
   const lines = body.replace(/\r\n/g, "\n").split("\n");
   const out = [];
   let i = 0;
+  let inSources = false;
 
   function isBlockStart(l) {
     return (
@@ -151,6 +152,7 @@ function convertBody(body, linkMap) {
         i++; // le H1 du document fait doublon avec le champ "titre" du frontmatter
         continue;
       }
+      inSources = h[2].trim() === "Sources";
       const tag = "h" + Math.min(level + 1, 6);
       out.push("<" + tag + ">" + inline(h[2], linkMap) + "</" + tag + ">");
       i++;
@@ -240,13 +242,59 @@ function convertBody(body, linkMap) {
       paraLines.push(lines[i]);
       i++;
     }
-    out.push("<p>" + inline(paraLines.join(" "), linkMap) + "</p>");
+    const paraText = paraLines.join(" ");
+
+    // dans "## Sources", un paragraphe tout en gras ("**Support — Bilan.pdf**")
+    // suivi d'une liste à puces = les leçons de ce support : on lie chaque
+    // leçon trouvée dans sources.json vers son PDF sous "par thèmes:/".
+    const supportHeading = paraLines.length === 1 && paraText.trim().match(/^\*\*(.+)\*\*$/);
+    if (inSources && supportHeading && i < lines.length && /^-\s+/.test(lines[i])) {
+      const items = [];
+      while (i < lines.length && /^-\s+/.test(lines[i])) {
+        items.push(lines[i].replace(/^-\s+/, ""));
+        i++;
+      }
+      out.push("<p>" + inline(paraText, linkMap) + "</p>");
+      const supportName = supportHeading[1].replace(/\s*[—-]\s*Bilan\.pdf\s*$/, "").trim();
+      const support = sourcesMap && sourcesMap[supportName];
+      out.push(
+        "<ul>" +
+          items
+            .map(function (it) {
+              const file = support && support.lecons[it.trim()];
+              if (!file) return "<li>" + inline(it, linkMap) + "</li>";
+              // "./" évite que "cours:" (mot ASCII pur suivi de ":") soit lu
+              // comme un schéma d'URL (à la "mailto:") plutôt qu'un chemin relatif.
+              const href = encodeURI("./cours:/bloc" + support.bloc + ":/par thèmes:/" + support.folder + "/" + file);
+              return '<li><a href="' + href + '" target="_blank" rel="noopener">' + inline(it, linkMap) + "</a></li>";
+            })
+            .join("") +
+          "</ul>"
+      );
+      continue;
+    }
+
+    out.push("<p>" + inline(paraText, linkMap) + "</p>");
   }
 
   return out.join("\n");
 }
 
 /* ---------- Chargement des résumés ---------- */
+
+// cours:/bloc<n>:/par thèmes:/sources.json — associe chaque support cité en
+// "## Sources" d'un résumé au PDF par leçon correspondant, sous
+// cours:/bloc<n>:/par thèmes:/<support>/<fichier>. Absent tant qu'un bloc
+// n'a pas encore été traité : les leçons restent alors du texte simple.
+function loadSourcesMap(blocNum) {
+  const file = path.join(COURS_DIR, "bloc" + blocNum + ":", "par thèmes:", "sources.json");
+  if (!fs.existsSync(file)) return null;
+  const map = JSON.parse(fs.readFileSync(file, "utf8"));
+  Object.keys(map).forEach((k) => {
+    map[k].bloc = blocNum;
+  });
+  return map;
+}
 
 function loadBlocResumes(blocNum) {
   const dir = path.join(COURS_DIR, "bloc" + blocNum + ":", "resume:");
@@ -324,7 +372,7 @@ function buildResume(p, linkMap) {
     mots: d.mots,
     lecture_min: d.lecture_min,
     sources: d.sources,
-    html: convertBody(p.body, linkMap),
+    html: convertBody(p.body, linkMap, loadSourcesMap(d.bloc)),
   };
 }
 

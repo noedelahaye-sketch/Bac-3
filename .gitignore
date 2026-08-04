@@ -1,8 +1,11 @@
 # macOS
 .DS_Store
 
-# Supports de cours (PDF propriétaires Studi, non versionnés)
+# Supports de cours (PDF propriétaires Studi, non versionnés) — sauf les
+# PDF par thème, publiés volontairement pour les liens de la section
+# Sources (voir cours:/bloc<n>:/par thèmes:/sources.json)
 cours:/**/*.pdf
+!cours:/**/par thèmes:/**/*.pdf
 
 # Config locale de l'outil Claude Code
 .claude/
