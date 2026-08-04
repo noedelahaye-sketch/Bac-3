@@ -261,7 +261,12 @@ function convertBody(body, linkMap, sourcesMap) {
         "<ul>" +
           items
             .map(function (it) {
-              const file = support && support.lecons[it.trim()];
+              const raw = it.trim();
+              // certains résumés citent la même leçon en ajoutant un détail
+              // entre parenthèses (les notions traitées pour ce résumé-là) :
+              // on retente sans ce suffixe avant d'abandonner le lien.
+              const base = raw.replace(/\s*\([^)]*\)\s*$/, "").trim();
+              const file = support && (support.lecons[raw] || support.lecons[base]);
               if (!file) return "<li>" + inline(it, linkMap) + "</li>";
               // "./" évite que "cours:" (mot ASCII pur suivi de ":") soit lu
               // comme un schéma d'URL (à la "mailto:") plutôt qu'un chemin relatif.

@@ -36,7 +36,150 @@
       "Les limites de la veille": "limites-veille.pdf",
       "La synthèse des veilles": "synthese-veilles_pdf.pdf",
       "Application : Réaliser une veille marketing et commerciale": "app-reali-veill-marketi-commer_pdf.pdf",
-      "Les matrices de veille": "matrices-veille_web.pdf"
+      "Les matrices de veille": "matrices-veille_web.pdf",
+      "De l'étude de marché au positionnement": "etude-marche-positionnement_web.pdf"
+    }
+  },
+  "Poser les bases d'une stratégie marketing orientée innovation": {
+    "folder": "Poser les bases d'une stratégie marketing orientée innovation",
+    "lecons": {
+      "Introduction au marketing stratégique": "Introduction au marketing stratégique.pdf",
+      "Analyse de l'entreprise sur son marché": "analyse-entreprise-marche_web.pdf",
+      "Considérer la diversité dans la création d'un nouveau produit": "consid-divers-dans-creat-nouve_pdf.pdf",
+      "Introduction à l'innovation et aux processus créateurs": "introdu-innov-proces-createurs_pdf.pdf",
+      "L'intrapreunariat": "intrapreunariat_pdf.pdf",
+      "L'économie numérique et collaborative": "L'économie numérique et collaborative.pdf",
+      "La place du numérique et son impact": "place-numerique-impact_pdf.pdf",
+      "Mécanismes sous-jacents à la croissance du numérique": "mecanis-sou-jacen-croiss-numer_web.pdf",
+      "Empreinte écologique": "empreinte-ecologique_web.pdf",
+      "Les enjeux environnementaux dans la création d'un produit ou service": "enjeux-environ-creat-prod-serv.pdf"
+    }
+  },
+  "Construire les bases d'une stratégie marketing globale et digitale": {
+    "folder": "Construire les bases d'une stratégie marketing globable et digitale",
+    "lecons": {
+      "La compréhension des principales stratégies marketing": "compre-princ-strate-marketing.pdf",
+      "Stratégie omnicanale": "Stratégie omnicanale.pdf",
+      "Les stratégies marketing du m-commerce": "Les stratégies marketing du m-commerce.pdf",
+      "Le marketing international": "Le marketing international.pdf",
+      "Le développement à l'international": "developpement-international-web.pdf",
+      "Fondamentaux du marketing digital": "Fondamentaux du marketing digital.pdf",
+      "Inbound marketing": "inbound-marketing_web.pdf",
+      "Le marketing de contenu": "marketing-contenu_pdf.pdf"
+    }
+  },
+  "Créer un contenu de marque différenciant et ciblé": {
+    "folder": "Créer un contenu de marque différenciant et ciblé",
+    "lecons": {
+      "Brand vs Branding vs Expérience clients": "brand-vs-brand-vs-exper-client.pdf",
+      "L'expérience client / utilisateur": "experience-client-utilisateur.pdf",
+      "La création de contenu digital en adéquation avec sa cible": "creat-conte-digit-adequat-cibl_pdf.pdf",
+      "Le brand content": "brand-content-pdf.pdf",
+      "Brand content et storytelling digital": "brand-content-storytelli-digit-pdf.pdf",
+      "Le contenu de marque": "Le contenu de marque.pdf",
+      "L'orientation artistique et le brief créatif": "orientation-artistique-brief-creatif_web.pdf",
+      "Les outils de la créativité": "Les outils de la créativité.pdf"
+    }
+  },
+  "Intégrer les enjeux éthiques et responsables": {
+    "folder": "Intégrer les enjeux éthiques et responsables",
+    "lecons": {
+      "L'éthique dans la stratégie marketing": "ethique-strategie-marketing.pdf",
+      "Marketing et communication responsables": "marketing-communic-responsable_pdf.pdf",
+      "Évaluation de l'impact RSE de sa stratégie marketing": "module_evaluat-impact-rse-strat-marke.pdf",
+      "Empreinte écologique": "empreinte-ecologique_web.pdf"
+    }
+  },
+  "Élaborer une stratégie de contenu": {
+    "folder": "Élaborer une stratégie de contenu cohérente avec l'offre",
+    "lecons": {
+      "Une introduction à la stratégie de contenu": "introduction-strategie-contenu_pdf.pdf",
+      "Le développement d'une stratégie de contenu SEO friendly": "developp-strategie-friendly_pdf.pdf",
+      "Les étapes de la stratégie de création de contenu": "etape-strateg-creation-contenu_web.pdf",
+      "Les KPI dans la stratégie de contenu": "kpi-strategie-contenu-pdf.pdf",
+      "Réussir sa stratégie de contenu": "reussir-strat-contenu_pdf.pdf",
+      "Introduction à la production de contenus digitaux": "intro-production-contenu-digit_web.pdf"
+    }
+  },
+  "Activer les leviers du marketing relationnel et digital": {
+    "folder": "Activer les leviers du marketing relationnel et digital",
+    "lecons": {
+      "Stratégie de marketing viral": "Stratégie de marketing viral.pdf",
+      "Les réseaux sociaux": "reseaux-sociau_pdf.pdf",
+      "Community Management": "community-management_web.pdf",
+      "Les applications de géolocalisation": "Les applications de géolocalisation.pdf",
+      "Le micro moment Marketing": "Le micro moment Marketing.pdf",
+      "La fidélisation": "La fidélisation.pdf",
+      "Le Co branding": "co-branding_pdf.pdf",
+      "Design de marque": "design-marque-pdf.pdf"
+    }
+  },
+  "Segmenter, incarner et engager ses publics": {
+    "folder": "Segmenter, incarner et engager ses publics",
+    "lecons": {
+      "Le RGPD": "rgpd_web.pdf",
+      "La création des personas": "creation-personas-pdf.pdf",
+      "La communication d'activisme": "communication-activisme_web.pdf",
+      "De la marque à la cible : quel est le rôle des influenceurs ?": "marque-cible-role-influenceurs_web.pdf",
+      "Que sont l'influence et le marketing d'influence ?": "influence-marketing-influence_pdf.pdf",
+      "Les influenceurs et micro influenceurs": "influenceur-micro-influenceurs_pdf.pdf",
+      "Comment bâtir une stratégie de communication avec le bon influenceur ?": "comme-bati-strat-commun-influecomme-bati-strat-commun-influe.pdf",
+      "Comment optimiser le travail avec l'influenceur et le retour sur investissement ?": "optimiser-travail-influ-retour_pdf.pdf"
+    }
+  },
+  "Identifier et comprendre ses cibles": {
+    "folder": "Identifier et comprendre ses cibles",
+    "lecons": {
+      "La stratégie de communication : Les cibles": "strategie-communication-cibles_web.pdf",
+      "Les cibles récentes": "cibles-recentes-pdf.pdf",
+      "La stratégie du ciblage": "Stratégie de ciblage.pdf",
+      "Limite du ciblage": "limite-ciblage_pdf.pdf",
+      "L'étude du comportement du consommateur": "etud-comportement-consommateu_web.pdf",
+      "Comprendre et analyser une zone de chalandise": "comprend-analyser-zone-chaland_pdf.pdf",
+      "Le comportement d'achat": "comportement-achat.pdf",
+      "Les nouveaux modes de consommations": "nouveaux-modes-consommations.pdf"
+    }
+  },
+  "Recueillir et analyser les données consommateurs": {
+    "folder": "Recueillir et analyser les données consommateurs",
+    "lecons": {
+      "La complémentarité étude qualitative / étude quantitative": "complement-etud-qualit-quantit_pdf.pdf",
+      "Les études qualitatives": "etudes-qualitatives_pdf.pdf",
+      "La mise en œuvre d'études qualitatives": "mise-oeuvre-etudes-qualitatives-pdf.pdf",
+      "La création d'un échantillon pour étude qualitative": "creation-echantill-etud-qualit_pdf.pdf",
+      "Les types d'études quantitatives": "types-etudes-quantitatives_pdf.pdf",
+      "La réalisation d'une enquête": "realisation-enquete_pdf.pdf",
+      "Les méthodes d'échantillonnage": "methodes-echantillonnage_pdf.pdf",
+      "Les études à l'épreuve du numérique": "etudes-epreuve-numerique_pdf.pdf",
+      "La segmentation multicanale et CRM": "segmentation-multicanale-crm_papier.pdf"
+    }
+  },
+  "Construire une présentation stratégique convaincante": {
+    "folder": "Construire une présentation stratégique convaincante",
+    "lecons": {
+      "La présentation écrite d'un projet": "presentation-ecrite-projet_web.pdf",
+      "Communication, marketing et décideurs": "communicat-marketing-decideurs_web.pdf",
+      "Structurer une présentation stratégique marketing percutante": "struct-pres-strat-mark-perc_web.pdf",
+      "Supports visuels stratégiques : design et impact décisionnel": "supp-visuel-strat-desig-impact.pdf",
+      "Analyse de données marketing : transformer les chiffres en arguments": "anal-donn-marke-tran-chif-argu.pdf"
+    }
+  },
+  "Communiquer avec impact et captiver son auditoire": {
+    "folder": "Communiquer avec impact et captiver son auditoire",
+    "lecons": {
+      "Présenter un projet de communication à sa direction": "Présenter un projet de communication à sa direction.pdf",
+      "Des présentations de résultats impactantes": "presentatio-resultat-impactant_web.pdf",
+      "Comment construire un pitch impactant ?": "comment-construir-pitch-impact_pdf.pdf",
+      "L'anticipation des arguments et objections": "anticipation-argument-objectio_pdf.pdf",
+      "Techniques de persuasion et psychologie des décideurs": "module_techniq-persu-psychol-decideur.pdf"
+    }
+  },
+  "Adapter son discours et gérer les interactions": {
+    "folder": "Adapter son discours et gérer les interactions",
+    "lecons": {
+      "L'importance d'adapter son discours": "importance-adapter-discours_pdf.pdf",
+      "L'écoute active et le questionnement pour maximiser son impact lors d'une présentation stratégique": "module_interag-impact-present-strateg.pdf",
+      "Gérer les objections, résistances et imprévus en présentation stratégique": "ger-object-tens-imprev-present.pdf"
     }
   }
 }
