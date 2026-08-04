@@ -242,7 +242,7 @@
   function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=a[i];a[i]=a[j];a[j]=x;} return a; }
 
   var VIEWS=[["accueil","Accueil"],["dossiers","Dossiers"],["cours","Cours"],["apprendre","Apprendre"]];
-  var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre","flashcards","flashcardsBloc","quiz","quizBloc"];
+  var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre","flashcards","flashcardsBloc","flashcardsSort","quiz","quizBloc"];
   function parseHash(hash){
     var h=(hash||"").replace(/^#/,"");
     if(h.charAt(0)==="/") h=h.slice(1);
@@ -302,7 +302,7 @@
 
   function renderNav(){
     var h="";
-    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc"||ROUTE.view==="coursQuestion") ? "dossiers" : (ROUTE.view==="coursBloc"||ROUTE.view==="coursResume") ? "cours" : (ROUTE.view==="flashcards"||ROUTE.view==="flashcardsBloc"||ROUTE.view==="quiz"||ROUTE.view==="quizBloc") ? "apprendre" : ROUTE.view;
+    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc"||ROUTE.view==="coursQuestion") ? "dossiers" : (ROUTE.view==="coursBloc"||ROUTE.view==="coursResume") ? "cours" : (ROUTE.view==="flashcards"||ROUTE.view==="flashcardsBloc"||ROUTE.view==="flashcardsSort"||ROUTE.view==="quiz"||ROUTE.view==="quizBloc") ? "apprendre" : ROUTE.view;
     VIEWS.forEach(function(v){
       var badge="";
       if(v[0]==="dossiers"){ var r=ALL.length-doneCount(); if(r) badge='<i>'+r+'</i>'; }
@@ -730,7 +730,7 @@
         h+='<div class="hrow"><span>'+r.d+'</span><b>'+r.ok+' / '+r.n+'</b></div>';
       });
     }
-    h+=renderCardSortSpace();
+    h+='<div class="tiles">'+renderCardSortTile()+'</div>';
     return h;
   }
 
@@ -803,13 +803,16 @@
     h+='<div class="cmeta"><span class="m-niveau n'+c.niveau+'">Niveau '+c.niveau+'</span><span class="m-section">'+esc(c.section)+'</span><span class="m-type t-'+c.type+'">'+(TYPE_LABELS[c.type]||c.type)+'</span></div>';
     if(SES.show){
       h+='<div class="ca ca-center">'+esc(c.verso).replace(/\n/g,'<br>')+'</div><div class="cbtns"><button class="no" data-lrn="ko">À revoir</button><button class="yes" data-lrn="ok">Je savais</button></div>';
-      h+='<div class="cbtns-setaside"><button data-lrn="setaside-revoir">À modifier</button><button data-lrn="setaside-supprime">Supprimer</button></div>';
+      h+='<div class="cbtns-setaside"><button data-lrn="setaside-revoir" title="À modifier">'+ICON_PENCIL+'</button><button data-lrn="setaside-supprime" title="Supprimer">'+ICON_TRASH+'</button></div>';
     } else {
       h+='<div class="cq cq-center">'+esc(c.recto)+'</div><div class="cflip-hint">Touche la carte pour voir la réponse</div>';
     }
     h+='</div><button class="quit" data-lrn="stop">Arrêter la session</button>';
     return h;
   }
+
+  var ICON_PENCIL='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>';
+  var ICON_TRASH='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>';
 
   function cardSourceFile(c){
     var m=/^b(\d+)-/.exec(c.resume||"");
@@ -830,10 +833,12 @@
     }).join("\n\n");
   }
   function renderCardSortRow(c, actionsHtml, extraMeta){
-    var meta=esc(c.section)+' &middot; <span class="code">'+esc(cardSourceFile(c))+'</span>';
+    var meta=esc(c.section);
     if(extraMeta) meta+=' &middot; '+extraMeta;
-    return '<div class="cs-row"><div class="cs-main"><div class="cs-recto">'+esc(c.recto)+'</div>'+
-      '<div class="cs-meta">'+meta+'</div></div><div class="cs-actions">'+actionsHtml+'</div></div>';
+    return '<div class="cs-row"><div class="cs-main"><div class="cs-meta">'+meta+'</div>'+
+      '<div class="cs-recto">'+esc(c.recto)+'</div>'+
+      '<div class="cs-verso">'+esc(c.verso).replace(/\n/g,'<br>')+'</div></div>'+
+      '<div class="cs-actions">'+actionsHtml+'</div></div>';
   }
   function renderCardSortGroup(key, label, cards, copyKey){
     var h='<div class="cs-group"><div class="cs-group-head"><span class="cs-group-label">'+label+' &middot; '+cards.length+'</span>';
@@ -847,11 +852,12 @@
         if(key==="suggeree"){
           var fc=S.fail[c.id]||0;
           extraMeta=fc+' échec'+(fc>1?'s':'');
-          actions='<button data-cs-set="'+c.id+':revoir">À modifier</button><button data-cs-set="'+c.id+':supprime">Supprimer</button>';
+          actions='<button class="icon-btn" data-cs-set="'+c.id+':revoir" title="À modifier">'+ICON_PENCIL+'</button><button class="icon-btn" data-cs-set="'+c.id+':supprime" title="Supprimer">'+ICON_TRASH+'</button>';
         } else {
           var other=key==="revoir"?"supprime":"revoir";
-          var otherLabel=key==="revoir"?"Marquer supprimée":"Marquer à modifier";
-          actions='<button data-cs-reactivate="'+c.id+'">Réactiver</button><button data-cs-set="'+c.id+':'+other+'">'+otherLabel+'</button>';
+          var otherIcon=key==="revoir"?ICON_TRASH:ICON_PENCIL;
+          var otherTitle=key==="revoir"?"Supprimer":"À modifier";
+          actions='<button data-cs-reactivate="'+c.id+'">Réactiver</button><button class="icon-btn" data-cs-set="'+c.id+':'+other+'" title="'+otherTitle+'">'+otherIcon+'</button>';
         }
         h+=renderCardSortRow(c, actions, extraMeta);
       });
@@ -860,18 +866,30 @@
     h+='</div>';
     return h;
   }
-  function renderCardSortSpace(){
+  function renderCardSortTile(){
+    var revoir=FLASHCARDS.filter(function(c){return S.cardState[c.id]==="revoir";}).length;
+    var supprime=FLASHCARDS.filter(function(c){return S.cardState[c.id]==="supprime";}).length;
+    var suggeree=FLASHCARDS.filter(function(c){return !S.cardState[c.id] && (S.fail[c.id]||0)>=5;}).length;
+    var parts=[];
+    if(revoir) parts.push(revoir+' à modifier');
+    if(supprime) parts.push(supprime+' supprimée'+(supprime>1?'s':''));
+    if(suggeree) parts.push(suggeree+' suggérée'+(suggeree>1?'s':''));
+    var h='<button class="tile" data-go="flashcardsSort">';
+    h+='<span class="tile-code code">Tri</span>';
+    h+='<span class="tile-title">Cartes mises de côté</span>';
+    h+='<span class="tile-cas">'+(parts.length?parts.join(' &middot; '):'Rien pour l\'instant')+'</span>';
+    h+='</button>';
+    return h;
+  }
+  function vFlashcardsSort(){
     var revoir=FLASHCARDS.filter(function(c){return S.cardState[c.id]==="revoir";});
     var supprime=FLASHCARDS.filter(function(c){return S.cardState[c.id]==="supprime";});
     var suggeree=FLASHCARDS.filter(function(c){return !S.cardState[c.id] && (S.fail[c.id]||0)>=5;});
-    var open=S.open.cardSort?" open":"";
-    var h='<section class="panel'+open+'"><button class="phead" data-panel="cardSort"><span class="chev">&#9654;</span>';
-    h+='<h2>Cartes mises de côté<span class="cas">À modifier, supprimées, ou repérées comme difficiles.</span></h2>';
-    h+='<span class="count">'+(revoir.length+supprime.length)+'</span></button><div class="pbody">';
+    var h='<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Flashcards",view:"flashcards"},{label:"Cartes mises de côté"}])+'</div>';
+    h+='<h1 class="qhead-title">Cartes mises de côté</h1><div class="qhead-code code">À modifier, supprimées, ou repérées comme difficiles</div>';
     h+=renderCardSortGroup("revoir","À modifier",revoir,"revoir");
     h+=renderCardSortGroup("supprime","Supprimées",supprime,"supprime");
     h+=renderCardSortGroup("suggeree","Suggérées au tri",suggeree,"suggeree");
-    h+='</div></section>';
     return h;
   }
 
@@ -1287,6 +1305,10 @@
     } else if(v==="flashcardsBloc"){
       main.classList.remove("with-qbottom");
       main.innerHTML=vFlashcardsBloc(ROUTE.id);
+      positionQbar();
+    } else if(v==="flashcardsSort"){
+      main.classList.remove("with-qbottom");
+      main.innerHTML=vFlashcardsSort();
       positionQbar();
     } else if(v==="quiz"){
       main.classList.remove("with-qbottom");
