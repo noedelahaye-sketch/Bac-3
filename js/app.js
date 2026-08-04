@@ -14,6 +14,7 @@
   var nav  = document.getElementById("nav");
   var appEl = document.querySelector(".app");
   var searchOpen = false;
+  var pendingJumpTerm = null;
 
   var MEM = {};
   var Store = {
@@ -281,7 +282,8 @@
     searchOpen = (r.view==="recherche");
     ROUTE=r; S.view=(KNOWN_VIEWS.indexOf(r.view)>=0)?r.view:"accueil"; save();
     render();
-    window.scrollTo(0,0);
+    var term=pendingJumpTerm; pendingJumpTerm=null;
+    if(!term || !jumpToTerm(term)) window.scrollTo(0,0);
   }
   function go(view,param){
     var h=hashFor(view,param);
@@ -1207,6 +1209,50 @@
   function stripHtml(s){
     return String(s||"").replace(/<[^>]+>/g," ").replace(/&nbsp;/g," ").replace(/\s+/g," ").trim();
   }
+  function normCharMap(s){
+    var norm="", map=[];
+    for(var i=0;i<s.length;i++){
+      var n=s.charAt(i).toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+      for(var j=0;j<n.length;j++){ norm+=n[j]; map.push(i); }
+    }
+    return {norm:norm, map:map};
+  }
+  function jumpToTerm(term){
+    var normTerm=normTok(term);
+    if(!normTerm) return false;
+    var walker=document.createTreeWalker(main, NodeFilter.SHOW_TEXT, {
+      acceptNode:function(node){
+        var p=node.parentNode;
+        if(!p) return NodeFilter.FILTER_REJECT;
+        var tag=p.nodeName;
+        if(tag==="SCRIPT"||tag==="STYLE"||tag==="TEXTAREA") return NodeFilter.FILTER_REJECT;
+        if(!node.nodeValue || !node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while((node=walker.nextNode())){
+      var text=node.nodeValue;
+      var nm=normCharMap(text);
+      var idx=nm.norm.indexOf(normTerm);
+      if(idx<0) continue;
+      var startOrig=nm.map[idx];
+      var endIdx=idx+normTerm.length-1;
+      var endOrig=(endIdx<nm.map.length)? nm.map[endIdx]+1 : text.length;
+      var range=document.createRange();
+      range.setStart(node,startOrig);
+      range.setEnd(node,endOrig);
+      var markEl=document.createElement("mark");
+      markEl.className="jump-highlight";
+      try{ range.surroundContents(markEl); }catch(e){ continue; }
+      var details=markEl.closest("details");
+      if(details) details.open=true;
+      markEl.scrollIntoView({block:"center", behavior:"smooth"});
+      setTimeout(function(){ markEl.classList.add("jump-fade"); },1200);
+      return true;
+    }
+    return false;
+  }
   var SEARCH_INDEX=null;
   function buildSearchIndex(){
     if(SEARCH_INDEX) return SEARCH_INDEX;
@@ -1262,9 +1308,9 @@
     return q ? q.id : null;
   }
   function blocById(id){ return BLOCS.filter(function(b){ return b.id===id; })[0]; }
-  function renderSearchHit(e, normTerm, termLen, goAttr){
+  function renderSearchHit(e, normTerm, termLen, goAttr, term){
     var b=blocById(e.bloc);
-    var h='<button class="search-hit" '+goAttr+'>';
+    var h='<button class="search-hit" '+goAttr+' data-term="'+esc(term)+'">';
     h+='<div class="search-hit-title">'+esc(e.title)+(b?' <span class="code">'+esc(b.code)+'</span>':'')+'</div>';
     h+='<div class="search-hit-excerpt">'+excerptFor(e,normTerm,termLen)+'</div>';
     h+='</button>';
@@ -1292,14 +1338,14 @@
     if(resumes.length){
       h+='<div class="lab">Dans les r\u00e9sum\u00e9s de cours</div>';
       resumes.forEach(function(e){
-        h+=renderSearchHit(e, normTerm, termLen, 'data-go-resume="'+e.id+'"');
+        h+=renderSearchHit(e, normTerm, termLen, 'data-go-resume="'+e.id+'"', term);
       });
     }
 
     if(qCours.length){
       h+='<div class="lab">Dans le contenu par question</div>';
       qCours.forEach(function(e){
-        h+=renderSearchHit(e, normTerm, termLen, 'data-go-question-cours="'+e.qid+'"');
+        h+=renderSearchHit(e, normTerm, termLen, 'data-go-question-cours="'+e.qid+'"', term);
       });
     }
 
@@ -1319,7 +1365,7 @@
         g.items.sort(function(a,b){ return ALL.indexOf(a)-ALL.indexOf(b); });
         h+='<div class="lab">'+esc(g.bloc.code)+' &middot; '+esc(g.bloc.titre)+'</div>';
         g.items.forEach(function(q){
-          h+='<button class="qrow" data-goq="'+q.id+'"><span class="qn">'+esc(q.n)+'</span><span class="qt">'+esc(q.t)+'</span></button>';
+          h+='<button class="qrow" data-goq="'+q.id+'" data-term="'+esc(term)+'"><span class="qn">'+esc(q.n)+'</span><span class="qt">'+esc(q.t)+'</span></button>';
         });
       });
     }
@@ -1329,7 +1375,7 @@
       annexes.forEach(function(e){
         var qid=firstQuestionForAnnexe(e.bloc, e.n);
         var b=blocById(e.bloc);
-        var hh='<button class="search-hit'+(qid?'':' search-hit-inert')+'"'+(qid?' data-goq="'+qid+'"':'')+'>';
+        var hh='<button class="search-hit'+(qid?'':' search-hit-inert')+'"'+(qid?' data-goq="'+qid+'" data-term="'+esc(term)+'"':'')+'>';
         hh+='<div class="search-hit-title">Annexe '+e.n+' &middot; '+esc(e.title)+(b?' <span class="code">'+esc(b.code)+'</span>':'')+'</div>';
         hh+='<div class="search-hit-excerpt">'+excerptFor(e,normTerm,termLen)+'</div>';
         hh+='</button>';
@@ -1574,7 +1620,7 @@
       el.addEventListener("click",function(){ var id=el.getAttribute("data-del"); S.journal=S.journal.filter(function(e){return String(e.id)!==id;}); save(); render(); });
     });
     main.querySelectorAll("[data-goq]").forEach(function(el){
-      el.addEventListener("click",function(){ go("question", el.getAttribute("data-goq")); });
+      el.addEventListener("click",function(){ pendingJumpTerm=el.getAttribute("data-term")||null; go("question", el.getAttribute("data-goq")); });
     });
     main.querySelectorAll("[data-go-bloc]").forEach(function(el){
       el.addEventListener("click",function(){ go("bloc", el.getAttribute("data-go-bloc")); });
@@ -1583,10 +1629,10 @@
       el.addEventListener("click",function(){ go("coursBloc", el.getAttribute("data-go-cours-bloc")); });
     });
     main.querySelectorAll("[data-go-resume]").forEach(function(el){
-      el.addEventListener("click",function(){ go("coursResume", el.getAttribute("data-go-resume")); });
+      el.addEventListener("click",function(){ pendingJumpTerm=el.getAttribute("data-term")||null; go("coursResume", el.getAttribute("data-go-resume")); });
     });
     main.querySelectorAll("[data-go-question-cours]").forEach(function(el){
-      el.addEventListener("click",function(){ go("coursQuestion", el.getAttribute("data-go-question-cours")); });
+      el.addEventListener("click",function(){ pendingJumpTerm=el.getAttribute("data-term")||null; go("coursQuestion", el.getAttribute("data-go-question-cours")); });
     });
     main.querySelectorAll("[data-crumb]").forEach(function(el){
       el.addEventListener("click",function(){ go(el.getAttribute("data-crumb"), el.getAttribute("data-crumb-param")); });
