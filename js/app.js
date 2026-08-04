@@ -171,6 +171,7 @@
 
   var INTERV=[0,1,2,4,8];
   var NEW_CAP=15;
+  var TOTAL_CAP=30;
   function today(){ var d=new Date(); return new Date(d.getFullYear(),d.getMonth(),d.getDate()).getTime(); }
   function newBudget(){
     var t=today();
@@ -196,8 +197,23 @@
   }
   function dueReviews(list){ return list.filter(function(c){ var b=S.box[c.id]||0; return b>0 && (S.due[c.id]||0)<=today(); }); }
   function newCardsIn(list){ return list.filter(function(c){ return !(S.box[c.id]); }); }
+  function dueBreakdown(list){
+    var reviews=Math.min(dueReviews(list).length, TOTAL_CAP);
+    var news=Math.max(0, Math.min(newBudget(), TOTAL_CAP-reviews));
+    return {reviews:reviews, news:news, total:reviews+news};
+  }
+  function dueLabel(list){
+    var b=dueBreakdown(list);
+    if(!b.total) return "Rien à revoir aujourd'hui";
+    var parts=[];
+    if(b.reviews) parts.push(b.reviews+' révision'+(b.reviews>1?'s':''));
+    if(b.news) parts.push(b.news+' nouvelle'+(b.news>1?'s':''));
+    return parts.join(' + ');
+  }
   function buildDueQueue(list){
-    var reviews=dueReviews(list), picked=shuffle(newCardsIn(list)).slice(0,newBudget());
+    var b=dueBreakdown(list);
+    var reviews=shuffle(dueReviews(list)).slice(0,b.reviews);
+    var picked=shuffle(newCardsIn(list)).slice(0,b.news);
     return shuffle(reviews.concat(picked));
   }
   function dueCount(){ return buildDueQueue(FLASHCARDS).length; }
@@ -314,9 +330,8 @@
       h+='<div class="next"><div class="eyebrow">Terminé</div><div class="t">Les 44 livrables sont rédigés.</div></div>';
     }
 
-    var d=dueCount();
     h+='<div class="grid-cta-dash">';
-    h+='<button class="tile cta-tile" data-flashcards-due-all>Cartes du jour<span class="cta-sub">'+d+' carte'+(d>1?'s':'')+' restante'+(d>1?'s':'')+'</span></button>';
+    h+='<button class="tile cta-tile" data-flashcards-due-all>Cartes du jour<span class="cta-sub">'+dueLabel(FLASHCARDS)+'</span></button>';
     h+=renderDashPanel(true);
     h+=renderQuizDashPanel(S.quiz, true, true);
     h+='</div>';
@@ -415,7 +430,7 @@
     var inf=INFO[q.id];
     if(!inf || !inf.annexes || !inf.annexes.length) return "";
     var list=(typeof ANNEXES!=="undefined" && ANNEXES[q.bloc.id]) ? ANNEXES[q.bloc.id] : [];
-    var h='<div class="lab">Annexes utilisables</div>';
+    var h='';
     inf.annexes.forEach(function(n){
       var a=list.filter(function(x){return x.n===n;})[0];
       if(!a) return;
@@ -447,7 +462,7 @@
     if(rich){
       h+='<div class="qseq">';
       h+= prev ? '<button class="linkf" data-goq="'+prev.id+'">&larr; '+prev.n+'</button>' : '<span></span>';
-      h+= next ? '<button class="linkf" data-goq="'+next.id+'">'+next.n+' &rarr;</button>' : '<span></span>';
+      h+= next ? '<button class="tile-thin" data-goq="'+next.id+'">'+next.n+' &rarr;</button>' : '<span></span>';
       h+='</div>';
     } else {
       h+='<span class="chip'+chipc+'">'+lbl+'</span>';
@@ -474,22 +489,25 @@
     h+='<div class="qhead-code code">'+q.c+'</div>';
 
     h+='<div class="q-cols"><div class="q-left">';
-    h+='<div class="q-enonce-text"><div class="lab">L\'énoncé</div><p class="enonce-text">'+inf.enonce+'</p></div>';
-    h+='<div class="q-attendus"><div class="lab">Ce qui est attendu</div><ul class="att">';
-    inf[0].forEach(function(a){h+='<li>'+a+'</li>';});
-    h+='</ul></div>';
-    h+='<div class="q-annexes">'+renderAnnexesUtilisables(q)+'</div>';
+    h+='<div class="q-enonce-text"><div class="lab">L\'énoncé</div><div class="enonce-box"><p class="enonce-text">'+inf.enonce+'</p></div></div>';
+    var compTxt=(typeof COMPETENCES!=="undefined" && COMPETENCES[q.c]) ? COMPETENCES[q.c] : '<p class="rappel">Compétence à renseigner.</p>';
+    h+='<div class="q-comp-crit">';
+    h+='<div class="q-competences"><div class="lab">Compétence évaluée &middot; '+q.c+'</div><div class="comp-box">'+compTxt+'</div></div>';
     var checkedCrit=q.k.filter(function(_,i){return (S.checks[q.id]||{})[i];}).length;
     h+='<div class="q-criteres"><div class="lab-row"><span class="lab">Critères évalués</span><span class="count">'+checkedCrit+'/'+q.k.length+'</span></div>';
     q.k.forEach(function(k,i){
       var ck=(S.checks[q.id]||{})[i]?" checked":"";
       h+='<label class="crit"><input type="checkbox" data-check="'+q.id+'" data-i="'+i+'"'+ck+'><span>'+k+'</span></label>';
     });
+    if(inf.doc){
+      h+='<a class="doc-btn" href="'+inf.doc+'" target="_blank" rel="noopener">Rédiger la réponse sur le document &rarr;</a>';
+    }
     h+='</div>';
+    h+='</div>'; // q-comp-crit
     h+='<div class="q-brouillon"><div class="lab">Mon brouillon</div><textarea class="f big" data-note="'+q.id+'" placeholder="Écris ici. Tu récupéreras tout d\'un coup depuis l\'accueil, bouton Exporter.">'+esc(S.notes[q.id])+'</textarea><span class="saved-flag" id="saved-'+q.id+'">Enregistré</span></div>';
     h+='<div class="q-arbitrage">'+renderArbitrage(q)+'</div>';
     h+='</div>'; // q-left
-    h+='<div class="q-right"><div class="lab">Ce dont tu disposes</div>'+renderCoursSlot(q.id)+'</div>';
+    h+='<div class="q-right"><div class="lab">Ce dont tu disposes</div>'+renderCoursSlot(q.id)+renderAnnexesUtilisables(q)+'</div>';
     h+='</div>'; // q-cols
 
     h+='<div class="qbottom"><div class="qbottom-inner"><div class="states">';
@@ -625,7 +643,7 @@
     h+='<button class="tile tile-hub" data-go="flashcards">';
     h+='<span class="tile-code code">Cartes à répétition espacée</span>';
     h+='<span class="tile-title">Flashcards</span>';
-    h+='<span class="tile-cas">'+FLASHCARDS.length+' cartes &middot; '+dApp+' à revoir aujourd\'hui</span>';
+    h+='<span class="tile-cas">'+FLASHCARDS.length+' cartes &middot; '+dueLabel(FLASHCARDS)+'</span>';
     h+='<span class="tile-quiz-btn btn-flash" data-flashcards-due-all>'+(dApp?'Cartes du jour ('+dApp+')':'Rien à revoir aujourd\'hui')+'</span>';
     h+='</button>';
     h+='<button class="tile tile-hub" data-go="quiz">';
@@ -660,11 +678,10 @@
 
   function vFlashcards(){
     if(SES) return renderCardsSession();
-    var dAll=dueCount();
     var h='<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Flashcards"}])+'</div>';
     h+='<h1 class="qhead-title">Flashcards</h1><div class="qhead-code code">'+FLASHCARDS.length+' cartes</div>';
     h+='<div class="grid-cta-dash">';
-    h+='<button class="tile cta-tile" data-flashcards-due-all>Cartes du jour<span class="cta-sub">'+dAll+' carte'+(dAll>1?'s':'')+' restante'+(dAll>1?'s':'')+'</span></button>';
+    h+='<button class="tile cta-tile" data-flashcards-due-all>Cartes du jour<span class="cta-sub">'+dueLabel(FLASHCARDS)+'</span></button>';
     h+=renderDashPanel(false);
     h+='</div>';
     h+='<div class="lab">Par bloc</div><div class="tiles">';
@@ -1139,15 +1156,12 @@
   function layoutQuestionCols(){
     var cols=main.querySelector(".q-cols");
     if(!cols) return;
-    var left=cols.querySelector(".q-left"), right=cols.querySelector(".q-right"), annexes=cols.querySelector(".q-annexes");
-    if(!left || !right || !annexes) return;
+    var right=cols.querySelector(".q-right");
+    if(!right) return;
     if(window.innerWidth>=1080){
-      right.appendChild(annexes);
       var qbar=main.querySelector(".qbar");
       right.style.top=(nav.offsetHeight+(qbar?qbar.offsetHeight:0)+16)+"px";
     } else {
-      var attendus=left.querySelector(".q-attendus");
-      if(attendus && attendus.nextSibling!==annexes) attendus.parentNode.insertBefore(annexes, attendus.nextSibling);
       right.style.top="";
     }
   }
@@ -1217,7 +1231,7 @@
       el.addEventListener("click",function(){ S.status[el.getAttribute("data-set")]=el.getAttribute("data-v"); save(); render(); });
     });
     main.querySelectorAll("[data-check]").forEach(function(el){
-      el.addEventListener("change",function(){ var id=el.getAttribute("data-check"),i=el.getAttribute("data-i"); S.checks[id]=S.checks[id]||{}; S.checks[id][i]=el.checked; save(); });
+      el.addEventListener("change",function(){ var id=el.getAttribute("data-check"),i=el.getAttribute("data-i"); S.checks[id]=S.checks[id]||{}; S.checks[id][i]=el.checked; save(); render(); });
     });
     main.querySelectorAll("[data-note]").forEach(function(el){
       el.addEventListener("input",function(){
