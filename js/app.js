@@ -157,7 +157,13 @@
       '</button>';
   }
   function renderCoursSlot(qid){
-    return renderQuestionCoursTile(qid) || renderRessource(qid);
+    var t = renderQuestionCoursTile(qid) || renderRessource(qid);
+    if(t) return t;
+    return '<div class="tile tile-empty">'+
+      '<span class="tile-code code">Cours</span>'+
+      '<span class="tile-title">À venir</span>'+
+      '<span class="tile-cas">Pas encore de contenu de cours pour cette question.</span>'+
+      '</div>';
   }
   function weeksLeft(){ return Math.max(0,(new Date(S.deadline+"T00:00:00") - new Date())/(1000*60*60*24*7)); }
   function expectedDone(){
