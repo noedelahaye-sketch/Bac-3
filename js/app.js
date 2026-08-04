@@ -175,7 +175,7 @@
   function isDone(id){ var s=S.status[id]; return s==="draft"||s==="done"; }
   function doneCount(){ return ALL.filter(function(q){return isDone(q.id);}).length; }
 
-  var INTERV=[0,1,2,4,8];
+  var INTERV=[0,1,3,7,16,35,70,140,280,560];
   var NEW_CAP=15;
   var TOTAL_CAP=30;
   function today(){ var d=new Date(); return new Date(d.getFullYear(),d.getMonth(),d.getDate()).getTime(); }
@@ -187,12 +187,14 @@
   function consumeNewBudget(n){
     if(!n) return;
     newBudget(); S.newToday.n+=n;
-    if(S.newToday.n>=NEW_CAP && S.streak.lastDate!==S.newToday.d){
-      var oneDay=86400000;
-      S.streak.current=(S.streak.lastDate===S.newToday.d-oneDay)?S.streak.current+1:1;
-      S.streak.lastDate=S.newToday.d;
-      S.streak.max=Math.max(S.streak.max||0,S.streak.current);
-    }
+    save();
+  }
+  function markStreakDay(){
+    var t=today(), oneDay=86400000;
+    if(S.streak.lastDate===t) return;
+    S.streak.current=(S.streak.lastDate===t-oneDay)?S.streak.current+1:1;
+    S.streak.lastDate=t;
+    S.streak.max=Math.max(S.streak.max||0,S.streak.current);
     save();
   }
   function streakDisplay(){
@@ -201,7 +203,14 @@
     if(S.streak.lastDate===t || S.streak.lastDate===t-oneDay) return S.streak.current;
     return 0;
   }
-  function dueReviews(list){ return list.filter(function(c){ var b=S.box[c.id]||0; return b>0 && (S.due[c.id]||0)<=today(); }); }
+  function dueReviews(list){
+    return list.filter(function(c){
+      var b=S.box[c.id]||0;
+      return b>0 && (S.due[c.id]||0)<=today();
+    }).sort(function(a,b){
+      return (S.due[a.id]||0)-(S.due[b.id]||0);
+    });
+  }
   function newCardsIn(list){ return list.filter(function(c){ return !(S.box[c.id]); }); }
   function dueBreakdown(list){
     var reviews=Math.min(dueReviews(list).length, TOTAL_CAP);
@@ -218,13 +227,13 @@
   }
   function buildDueQueue(list){
     var b=dueBreakdown(list);
-    var reviews=shuffle(dueReviews(list)).slice(0,b.reviews);
-    var picked=shuffle(newCardsIn(list)).slice(0,b.news);
+    var reviews=dueReviews(list).slice(0,b.reviews);
+    var picked=newCardsIn(list).slice(0,b.news);
     return shuffle(reviews.concat(picked));
   }
   function dueCount(){ return buildDueQueue(FLASHCARDS).length; }
   function grade(i,ok){
-    var b=S.box[i]||0, nb=ok?Math.min(4,b+1):1;
+    var b=S.box[i]||0, nb=ok?Math.min(INTERV.length-1,b+1):1;
     S.box[i]=nb; S.due[i]=today()+INTERV[nb]*86400000;
     if(ok) delete S.fail[i]; else S.fail[i]=true;
     save();
@@ -935,6 +944,7 @@
       var blocs={}; SES.list.forEach(function(c){ blocs[c.bloc]=true; });
       var blocKeys=Object.keys(blocs);
       S.cardRuns.push({d:new Date().toLocaleDateString("fr-FR"),ok:SES.ok,n:SES.list.length,bloc:blocKeys.length===1?blocKeys[0]:null});
+      if(SES.capped) markStreakDay();
       save();
     }
   }
