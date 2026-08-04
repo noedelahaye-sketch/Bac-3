@@ -120,15 +120,15 @@
       pdf: "énoncé:/Examen 4.pdf"
     }},
     { id:"b3", code:"Bloc 3", titre:"Pilotage de la performance", cas:"PrepMyMeal — foodtruck éphémère", qs:[
-      {n:"Q1", c:"C3.1", t:"Cartographie du parcours client", k:["Étapes et points de contact reflétés précisément","Frictions, opportunités et moments clés identifiés"]},
-      {n:"Q2", c:"C3.1", t:"Synthèse des données et diagnostic", k:["Collecte et analyse détaillées : CRM, analytics, heatmaps, avis"]},
-      {n:"Q3", c:"C3.1", t:"Conformité légale de la cartographie", k:["Collecte et analyse conformes au RGPD"]},
-      {n:"Q4", c:"C3.2", t:"Questionnaire de satisfaction (10 questions min.)", k:["Objectifs clairs et alignés sur les besoins","Questions sans risque d'interprétation","Formats adaptés au public et au taux de réponse visé"]},
-      {n:"Q5", c:"C3.2", t:"Représentativité du panel", k:["Méthodologie de recrutement adaptée aux objectifs et aux segments"]},
-      {n:"Q6", c:"C3.2", t:"Diffusion, suivi et exploitation de l'enquête", k:["Canal, déclencheurs, périodicité et relances adaptés","Méthodologie d'analyse explicitée"]},
-      {n:"Q7", c:"C3.3", t:"KPI quantitatifs et qualitatifs", k:["KPI alignés sur les objectifs","Processus de collecte explicité et conforme au RGPD"]},
-      {n:"Q8", c:"C3.3", t:"Tableau de bord opérationnel", k:["Visualisations intuitives facilitant le suivi et la décision"]},
-      {n:"Q9", c:"C3.3", t:"Écarts vs objectifs du CEO et actions correctives", k:["Actions correctives adaptées aux écarts constatés","Préconisations avec planning, acteurs, moyens et coûts"]}
+      {n:"Q1", c:"C3.1", t:"Cartographie du parcours client", k:["Étapes et points de contact reflétés <strong>précisément</strong>","<strong>Frictions, opportunités et moments clés</strong> identifiés"]},
+      {n:"Q2", c:"C3.1", t:"Synthèse des données et diagnostic", k:["Collecte et analyse <strong>détaillées</strong> : CRM, analytics, heatmaps, avis"]},
+      {n:"Q3", c:"C3.1", t:"Conformité légale de la cartographie", k:["Collecte et analyse conformes au <strong>RGPD</strong>"]},
+      {n:"Q4", c:"C3.2", t:"Questionnaire de satisfaction (10 questions min.)", k:["Objectifs <strong>clairs</strong> et alignés sur les besoins","Questions <strong>sans risque d'interprétation</strong>","Formats <strong>adaptés</strong> au public et au taux de réponse visé"]},
+      {n:"Q5", c:"C3.2", t:"Représentativité du panel", k:["Méthodologie de recrutement <strong>adaptée</strong> aux objectifs et aux segments"]},
+      {n:"Q6", c:"C3.2", t:"Diffusion, suivi et exploitation de l'enquête", k:["Canal, déclencheurs, périodicité et relances <strong>adaptés</strong>","Méthodologie d'analyse <strong>explicitée</strong>"]},
+      {n:"Q7", c:"C3.3", t:"KPI quantitatifs et qualitatifs", k:["KPI <strong>alignés</strong> sur les objectifs","Processus de collecte <strong>explicité</strong> et conforme au RGPD"]},
+      {n:"Q8", c:"C3.3", t:"Tableau de bord opérationnel", k:["Visualisations <strong>intuitives</strong> facilitant le suivi et la décision"]},
+      {n:"Q9", c:"C3.3", t:"Écarts vs objectifs du CEO et actions correctives", k:["Actions correctives <strong>adaptées</strong> aux écarts constatés","Préconisations avec <strong>planning, acteurs, moyens et coûts</strong>"]}
     ],
     enonce: {
       contexte: "<p><strong>PrepMyMeal</strong> est une jeune entreprise de la <strong>foodtech</strong> en croissance, spécialisée dans la préparation et la livraison de repas équilibrés, avec deux piliers : <strong>manger sain</strong> (ingrédients frais et naturels) et <strong>gagner du temps</strong> (portions individuelles prêtes à réchauffer). L'offre couvre des plats hyperprotéinés, des recettes saines, ainsi que des options végétariennes et vegan, vendus en ligne (site + application) avec livraison à domicile ou en point relais.</p><p>La cible principale regroupe des <strong>jeunes actifs urbains</strong>, des <strong>sportifs</strong> (prise de masse, perte de poids, endurance) et des <strong>consommateurs orientés bien-être</strong>. Pour accélérer sa notoriété et créer un contact direct avec ses clients, la marque déploie un <strong>foodtruck éphémère</strong> dans des zones à forte affluence (quartiers d'affaires, pôles étudiants, événements sportifs/culturels) : faire découvrir et tester les recettes, collecter des retours à chaud, stimuler l'inscription à l'application via QR codes et offres, et mesurer l'impact sur la conversion et la fidélisation.</p>",
@@ -223,7 +223,16 @@
       '<p>afin de garantir l\'alignement des campagnes marketing et communication avec la stratégie de marque et les objectifs fixés.</p>',
     "C4.3": '<p>Participer au <strong>développement des compétences</strong> de l\'équipe marketing et communication (alternants, stagiaires, assistants marketing et communication...)&nbsp;:</p>'+
       '<ul><li>en les formant sur les sujets, outils et processus relevant de son <strong>périmètre d\'expertise</strong></li><li>en déterminant les <strong>modalités de formation</strong> et en élaborant les supports nécessaires</li></ul>'+
-      '<p>afin de renforcer l\'efficacité opérationnelle de l\'équipe.</p>'
+      '<p>afin de renforcer l\'efficacité opérationnelle de l\'équipe.</p>',
+    "C3.1": '<p>Analyser le parcours client pour un produit ou service&nbsp;:</p>'+
+      '<ul><li>en utilisant des <strong>outils d\'analyse et de gestion des données clients</strong></li><li>en exploitant les remontées d\'information des forces de vente</li><li>et en élaborant une <strong>cartographie des parcours client</strong></li></ul>'+
+      '<p>afin de réaliser un diagnostic de l\'expérience client.</p>',
+    "C3.2": '<p>Concevoir et piloter les <strong>enquêtes de satisfaction</strong>&nbsp;:</p>'+
+      '<ul><li>en définissant les <strong>objectifs de l\'enquête</strong></li><li>en élaborant les <strong>questionnaires</strong></li><li>en définissant les <strong>modalités d\'administration et de suivi</strong></li><li>en analysant les résultats</li></ul>'+
+      '<p>afin d\'identifier les axes d\'amélioration de l\'expérience client.</p>',
+    "C3.3": '<p>Évaluer la <strong>performance des actions marketing et communication</strong>&nbsp;:</p>'+
+      '<ul><li>en définissant les <strong>indicateurs de performance</strong> (notamment en termes de visibilité, rentabilité, satisfaction client, expérience client...), les outils et techniques de collecte, de suivi et d\'analyse de données</li><li>et en concevant un <strong>tableau de bord</strong></li></ul>'+
+      '<p>afin d\'identifier les réussites, les axes d\'amélioration et d\'optimiser les stratégies futures.</p>'
   };
 
   INFO["b2-Q1"].enonce = "Définissez un <strong>plan de prospection</strong> sous forme de tableau précisant <strong>prospects, lieux, supports utilisés</strong> et <strong>objectifs SMART</strong> associés.";
@@ -307,4 +316,39 @@
   INFO["b4-Q11"].enonce = "Décrivez comment serait organisée concrètement la session de formation retenue en question 10. Précisez les <strong>supports, outils et logiciels</strong> mobilisés, puis exposez les <strong>bonnes pratiques pédagogiques</strong> que le formateur pourra mettre en œuvre afin d'assurer une transmission des savoir-faire claire, accessible et engageante pour l'ensemble des participants.";
   INFO["b4-Q11"].annexes = [7];
   INFO["b4-Q11"].doc = B4_DOC;
+
+  INFO["b3-Q1"].enonce = "Élaborez une <strong>cartographie complète du parcours client</strong> de PrepMyMeal, de la découverte à la fidélisation. Précisez les étapes, points de contact, outils et supports utilisés, puis analysez les <strong>moments clés</strong>, les <strong>points de friction</strong> et proposez des <strong>pistes d'amélioration</strong>.";
+  INFO["b3-Q1"].annexes = [1, 6];
+  INFO["b3-Q1"].doc = B3_DOC;
+
+  INFO["b3-Q2"].enonce = "À partir des données collectées par PrepMyMeal (<strong>CRM, web analytics, heatmaps, retours clients</strong>...), synthétisez les informations les plus pertinentes. Identifiez les <strong>points forts et les points faibles</strong> de l'expérience client actuelle.";
+  INFO["b3-Q2"].annexes = [1, 2, 3, 4, 5];
+  INFO["b3-Q2"].doc = B3_DOC;
+
+  INFO["b3-Q3"].enonce = "Expliquez en quoi la cartographie du parcours client réalisée respecte la <strong>législation</strong> en matière de <strong>collecte, de traitement et de diffusion des données</strong>.";
+  INFO["b3-Q3"].doc = B3_DOC;
+
+  INFO["b3-Q4"].enonce = "Concevez un <strong>questionnaire de satisfaction</strong> (au moins 10 questions) pour analyser les motivations, freins et attentes des clients à partir de leurs commentaires. Précisez l'objectif et la cible, proposez des questions variées (fermées, ouvertes, échelles) et intégrez une <strong>section sur la nouveauté du foodtruck</strong> éphémère afin d'évaluer son intérêt et l'image innovante de l'entreprise.";
+  INFO["b3-Q4"].annexes = [5, 6];
+  INFO["b3-Q4"].doc = B3_DOC;
+
+  INFO["b3-Q5"].enonce = "Les clients ayant commenté en ligne constituent une première base de sondés. Évaluez si ce panel est <strong>suffisant</strong> et, si besoin, précisez quels autres clients cibler afin de constituer un <strong>échantillon représentatif, fiable et pertinent</strong>.";
+  INFO["b3-Q5"].annexes = [1, 5];
+  INFO["b3-Q5"].doc = B3_DOC;
+
+  INFO["b3-Q6"].enonce = "Choisissez le moyen le plus adapté afin de faire circuler efficacement l'enquête et expliquez comment vous en assureriez le <strong>suivi</strong>, le <strong>contrôle des résultats</strong> et l'<strong>exploitation pour la prise de décision</strong>.";
+  INFO["b3-Q6"].annexes = [1];
+  INFO["b3-Q6"].doc = B3_DOC;
+
+  INFO["b3-Q7"].enonce = "Sélectionnez et justifiez les <strong>KPI quantitatifs et qualitatifs</strong> les plus pertinents pour évaluer la performance du foodtruck éphémère de PrepMyMeal. Montrez en quoi ces indicateurs traduisent les objectifs fixés (visibilité, notoriété, ventes, satisfaction) et précisez les <strong>outils/méthodes de collecte</strong> utilisés, en veillant au respect du <strong>RGPD</strong>.";
+  INFO["b3-Q7"].annexes = [7, 8];
+  INFO["b3-Q7"].doc = B3_DOC;
+
+  INFO["b3-Q8"].enonce = "À partir des résultats fournis, construisez un <strong>tableau de bord opérationnel</strong> intégrant ces KPI. Proposez des <strong>visualisations simples et intuitives</strong> (graphiques, jauges, courbes...) facilitant le suivi et la prise de décision.";
+  INFO["b3-Q8"].annexes = [7];
+  INFO["b3-Q8"].doc = B3_DOC;
+
+  INFO["b3-Q9"].enonce = "Interprétez les résultats du foodtruck en les comparant aux <strong>objectifs fixés dans le brief du CEO</strong>. Proposez des <strong>actions correctives</strong> et des <strong>préconisations opérationnelles</strong>.";
+  INFO["b3-Q9"].annexes = [7, 8];
+  INFO["b3-Q9"].doc = B3_DOC;
 
