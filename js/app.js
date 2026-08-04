@@ -1214,8 +1214,31 @@
     ALL.forEach(function(q){
       var inf=INFO[q.id]||{};
       var text=[q.t, q.c, inf.enonce, (inf[0]||[]).join(" "), (inf[1]||[]).join(" "), (q.k||[]).join(" ")].join(" ");
-      idx.push({type:"question", qid:q.id, q:q, haystack:normTok(stripHtml(text))});
+      var stripped=stripHtml(text);
+      idx.push({type:"question", qid:q.id, q:q, title:q.t, stripped:stripped, haystack:normTok(stripped)});
     });
+    if(typeof RESUMES!=="undefined"){
+      Object.keys(RESUMES).forEach(function(id){
+        var r=RESUMES[id];
+        var stripped=stripHtml([r.titre, r.accroche, r.html].join(" "));
+        idx.push({type:"resume", id:id, bloc:"b"+r.bloc, title:r.titre, stripped:stripped, haystack:normTok(stripped)});
+      });
+    }
+    if(typeof QUESTIONS_COURS!=="undefined"){
+      Object.keys(QUESTIONS_COURS).forEach(function(qid){
+        var qc=QUESTIONS_COURS[qid];
+        var stripped=stripHtml([qc.titre, qc.html].join(" "));
+        idx.push({type:"questionCours", qid:qid, bloc:"b"+qc.bloc, title:qc.titre, stripped:stripped, haystack:normTok(stripped)});
+      });
+    }
+    if(typeof ANNEXES!=="undefined"){
+      Object.keys(ANNEXES).forEach(function(blocId){
+        ANNEXES[blocId].forEach(function(a){
+          var stripped=stripHtml([a.titre, a.contenu, a.utile].join(" "));
+          idx.push({type:"annexe", bloc:blocId, n:a.n, title:a.titre, stripped:stripped, haystack:normTok(stripped)});
+        });
+      });
+    }
     SEARCH_INDEX=idx;
     return idx;
   }
@@ -1224,6 +1247,29 @@
     if(!norm) return [];
     return buildSearchIndex().filter(function(e){ return e.haystack.indexOf(norm)>=0; });
   }
+  function excerptFor(entry, normTerm, termLen){
+    var idx=entry.haystack.indexOf(normTerm);
+    if(idx<0) return esc(entry.stripped.slice(0,120));
+    var start=Math.max(0, idx-60), end=Math.min(entry.stripped.length, idx+termLen+60);
+    var pre=esc(entry.stripped.slice(start, idx));
+    var mid=esc(entry.stripped.slice(idx, idx+termLen));
+    var post=esc(entry.stripped.slice(idx+termLen, end));
+    return (start>0?"\u2026 ":"")+pre+"<mark>"+mid+"</mark>"+post+(end<entry.stripped.length?" \u2026":"");
+  }
+  function firstQuestionForAnnexe(blocId, n){
+    var q=ALL.filter(function(x){ return x.bloc.id===blocId; })
+             .filter(function(x){ var inf=INFO[x.id]; return inf && inf.annexes && inf.annexes.indexOf(n)>=0; })[0];
+    return q ? q.id : null;
+  }
+  function blocById(id){ return BLOCS.filter(function(b){ return b.id===id; })[0]; }
+  function renderSearchHit(e, normTerm, termLen, goAttr){
+    var b=blocById(e.bloc);
+    var h='<button class="search-hit" '+goAttr+'>';
+    h+='<div class="search-hit-title">'+esc(e.title)+(b?' <span class="code">'+esc(b.code)+'</span>':'')+'</div>';
+    h+='<div class="search-hit-excerpt">'+excerptFor(e,normTerm,termLen)+'</div>';
+    h+='</button>';
+    return h;
+  }
   function vRecherche(term){
     term=(term||"").trim();
     var h='<h1 class="qhead-title">Recherche</h1>';
@@ -1231,30 +1277,66 @@
       h+='<div class="qhead-code code">Tape un terme dans la barre de recherche.</div>';
       return h;
     }
-    var results=searchIndex(term).filter(function(e){ return e.type==="question"; });
-    h+='<div class="qhead-code code">&laquo;&nbsp;'+esc(term)+'&nbsp;&raquo; &middot; '+results.length+' r\u00e9sultat'+(results.length>1?'s':'')+'</div>';
-    if(!results.length){
-      h+='<p class="rappel">Aucune correspondance dans les questions d\'examen.</p>';
+    var all=searchIndex(term);
+    var normTerm=normTok(term), termLen=term.length;
+    h+='<div class="qhead-code code">&laquo;&nbsp;'+esc(term)+'&nbsp;&raquo; &middot; '+all.length+' r\u00e9sultat'+(all.length>1?'s':'')+'</div>';
+    if(!all.length){
+      h+='<p class="rappel">Aucune correspondance.</p>';
       return h;
     }
-    h+='<div class="lab">O\u00f9 cette notion est \u00e9valu\u00e9e</div>';
-    var byBloc={}, order=[];
-    results.forEach(function(e){
-      var bid=e.q.bloc.id;
-      if(!byBloc[bid]){ byBloc[bid]={bloc:e.q.bloc, items:[]}; order.push(bid); }
-      byBloc[bid].items.push(e.q);
-    });
-    order.sort(function(a,b){
-      return BLOCS.map(function(x){return x.id;}).indexOf(a) - BLOCS.map(function(x){return x.id;}).indexOf(b);
-    });
-    order.forEach(function(bid){
-      var g=byBloc[bid];
-      g.items.sort(function(a,b){ return ALL.indexOf(a)-ALL.indexOf(b); });
-      h+='<div class="lab">'+esc(g.bloc.code)+' &middot; '+esc(g.bloc.titre)+'</div>';
-      g.items.forEach(function(q){
-        h+='<button class="qrow" data-goq="'+q.id+'"><span class="qn">'+esc(q.n)+'</span><span class="qt">'+esc(q.t)+'</span></button>';
+    var questions=all.filter(function(e){ return e.type==="question"; });
+    var resumes=all.filter(function(e){ return e.type==="resume"; });
+    var qCours=all.filter(function(e){ return e.type==="questionCours"; });
+    var annexes=all.filter(function(e){ return e.type==="annexe"; });
+
+    if(resumes.length){
+      h+='<div class="lab">Dans les r\u00e9sum\u00e9s de cours</div>';
+      resumes.forEach(function(e){
+        h+=renderSearchHit(e, normTerm, termLen, 'data-go-resume="'+e.id+'"');
       });
-    });
+    }
+
+    if(qCours.length){
+      h+='<div class="lab">Dans le contenu par question</div>';
+      qCours.forEach(function(e){
+        h+=renderSearchHit(e, normTerm, termLen, 'data-go-question-cours="'+e.qid+'"');
+      });
+    }
+
+    if(questions.length){
+      h+='<div class="lab">O\u00f9 cette notion est \u00e9valu\u00e9e</div>';
+      var byBloc={}, order=[];
+      questions.forEach(function(e){
+        var bid=e.q.bloc.id;
+        if(!byBloc[bid]){ byBloc[bid]={bloc:e.q.bloc, items:[]}; order.push(bid); }
+        byBloc[bid].items.push(e.q);
+      });
+      order.sort(function(a,b){
+        return BLOCS.map(function(x){return x.id;}).indexOf(a) - BLOCS.map(function(x){return x.id;}).indexOf(b);
+      });
+      order.forEach(function(bid){
+        var g=byBloc[bid];
+        g.items.sort(function(a,b){ return ALL.indexOf(a)-ALL.indexOf(b); });
+        h+='<div class="lab">'+esc(g.bloc.code)+' &middot; '+esc(g.bloc.titre)+'</div>';
+        g.items.forEach(function(q){
+          h+='<button class="qrow" data-goq="'+q.id+'"><span class="qn">'+esc(q.n)+'</span><span class="qt">'+esc(q.t)+'</span></button>';
+        });
+      });
+    }
+
+    if(annexes.length){
+      h+='<div class="lab">Dans les annexes</div>';
+      annexes.forEach(function(e){
+        var qid=firstQuestionForAnnexe(e.bloc, e.n);
+        var b=blocById(e.bloc);
+        var hh='<button class="search-hit'+(qid?'':' search-hit-inert')+'"'+(qid?' data-goq="'+qid+'"':'')+'>';
+        hh+='<div class="search-hit-title">Annexe '+e.n+' &middot; '+esc(e.title)+(b?' <span class="code">'+esc(b.code)+'</span>':'')+'</div>';
+        hh+='<div class="search-hit-excerpt">'+excerptFor(e,normTerm,termLen)+'</div>';
+        hh+='</button>';
+        h+=hh;
+      });
+    }
+
     return h;
   }
   function resolveQid(blocNum, token){
