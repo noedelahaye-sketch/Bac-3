@@ -1776,6 +1776,13 @@
     }
   }
   function inFoldedSources(el){ return !!el.closest(".section-fold"); }
+  function styliseTuile(html){
+    if(!/<b>/i.test(html)){
+      var i=html.indexOf(" (");
+      html = i>0 ? "<b>"+html.slice(0,i)+"</b>"+html.slice(i) : "<b>"+html+"</b>";
+    }
+    return html.replace(/^((?:\s|<[^>]+>)*)(\S)/, function(_,pre,c){ return pre+c.toUpperCase(); });
+  }
   function tileifyEnumerations(container){
     Array.prototype.slice.call(container.querySelectorAll("p")).forEach(function(p){
       if(inFoldedSources(p)) return;
@@ -1786,13 +1793,16 @@
       var parts=rest.split(" · ");
       if(parts.length<3) return;
       if(parts.some(function(s){ return s.replace(/<[^>]+>/g,"").trim().length>140; })) return;
+      var dense=parts.length>6;
       var wrap=document.createElement("div");
       wrap.className="enum-block";
       var lab=document.createElement("div"); lab.className="enum-label"; lab.innerHTML="<b>"+m[1]+"</b>";
-      var row=document.createElement("div"); row.className="enum-tiles";
+      var row=document.createElement("div"); row.className=dense?"enum-chips":"enum-tiles";
       parts.forEach(function(part){
-        var tile=document.createElement("span"); tile.className="enum-tile"; tile.innerHTML=part.trim();
-        row.appendChild(tile);
+        var item=document.createElement("span");
+        item.className=dense?"enum-chip":"enum-tile";
+        item.innerHTML=dense?part.trim():'<span class="et-in">'+styliseTuile(part.trim())+'</span>';
+        row.appendChild(item);
       });
       wrap.appendChild(lab); wrap.appendChild(row);
       p.replaceWith(wrap);

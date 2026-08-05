@@ -436,16 +436,23 @@
   .resume blockquote p{margin:0 0 var(--space-8);font-size:13px;} .resume blockquote p:last-child{margin-bottom:0;}
   .resume pre{background:var(--ink);color:var(--surface);border-radius:var(--radius-control);padding:var(--space-12);overflow-x:auto;font:12px/1.5 var(--font-code);margin:0 0 var(--space-12);}
   .resume pre code{white-space:pre;}
-  .resume .table-wrap{overflow-x:auto;margin:0 0 var(--space-12);}
+  .resume .table-wrap{overflow-x:auto;margin:0 0 var(--space-12);border:1px solid var(--line);border-radius:var(--radius-card);}
   .resume table{width:100%;border-collapse:collapse;font-size:12.5px;}
   .resume th,.resume td{border:1px solid var(--line);padding:var(--space-8);text-align:left;vertical-align:top;line-height:1.4;}
-  .resume th{background:var(--paper);font-weight:600;}
+  .resume tr>th:first-child,.resume tr>td:first-child{border-left:0;}
+  .resume tr>th:last-child,.resume tr>td:last-child{border-right:0;}
+  .resume thead th{border-top:0;}
+  .resume tbody tr:last-child>td{border-bottom:0;}
+  .resume th{background:color-mix(in srgb, var(--signal) 14%, var(--surface));color:var(--signal);font-weight:600;}
   .resume a{color:var(--signal);}
 
   .enum-block{margin:0 0 var(--space-12);}
   .enum-label{margin-bottom:var(--space-8);}
   .enum-tiles{display:flex;flex-wrap:wrap;gap:var(--space-8);}
-  .enum-tile{flex:1 1 150px;background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--signal);border-radius:var(--radius-control);padding:var(--space-8) var(--space-12);font-size:13px;line-height:1.4;}
+  .enum-tile{flex:1 1 150px;display:flex;align-items:center;justify-content:center;text-align:center;background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--signal);border-radius:var(--radius-control);padding:var(--space-12);font-size:13px;line-height:1.45;}
+  .enum-tile .et-in{display:block;}
+  .enum-chips{display:flex;flex-wrap:wrap;gap:var(--space-4) var(--space-8);}
+  .enum-chip{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-pill);padding:3px var(--space-12);font-size:12.5px;line-height:1.5;}
 
   .chain-block{margin:0 0 var(--space-12);}
   .chain-row{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-4);margin-top:var(--space-8);}
