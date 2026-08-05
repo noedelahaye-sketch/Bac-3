@@ -448,6 +448,77 @@
   }
 
   /* ---------- ACCUEIL ---------- */
+  function renderAujourdhui(){
+    var h='<div class="lab">Aujourd\'hui</div><div class="today">';
+
+    var nxt=ALL.filter(function(q){return !isDone(q.id);})[0];
+    if(nxt){
+      var crit=nxt.k.filter(function(_,i){return (S.checks[nxt.id]||{})[i];}).length;
+      h+='<button class="today-card t-redi" data-goq="'+nxt.id+'">';
+      h+='<span class="today-lab">Rédiger</span>';
+      h+='<span class="today-title">'+esc(nxt.t)+'</span>';
+      h+='<span class="today-meta">'+esc(nxt.bloc.code)+' &middot; '+esc(nxt.n)+' &middot; '+crit+'/'+nxt.k.length+' critères</span>';
+      h+='</button>';
+    } else {
+      h+='<div class="today-card t-redi today-done"><span class="today-lab">Rédiger</span>';
+      h+='<span class="today-title">Tout est rédigé</span>';
+      h+='<span class="today-meta">Les 44 livrables sont faits.</span></div>';
+    }
+
+    var res=nextResumeToRead();
+    if(res){
+      var enCours=luEtat(res.id)==="wip";
+      h+='<button class="today-card t-lire" data-go-resume="'+res.id+'">';
+      h+='<span class="today-lab">Lire</span>';
+      h+='<span class="today-title">'+esc(res.titre)+'</span>';
+      h+='<span class="today-meta">'+(enCours?'Repris en cours':'Nouveau')+' &middot; '+res.lecture_min+' min</span>';
+      h+='</button>';
+    } else {
+      h+='<div class="today-card t-lire today-done"><span class="today-lab">Lire</span>';
+      h+='<span class="today-title">Tous les résumés sont lus</span>';
+      h+='<span class="today-meta">Rien de nouveau à lire.</span></div>';
+    }
+
+    var d=dueCount();
+    if(d){
+      h+='<button class="today-card t-revi" data-flashcards-due-all>';
+      h+='<span class="today-lab">Réviser</span>';
+      h+='<span class="today-title">'+d+' carte'+(d>1?'s':'')+' du jour</span>';
+      h+='<span class="today-meta">'+dueLabel(FLASHCARDS)+'</span>';
+      h+='</button>';
+    } else {
+      h+='<div class="today-card t-revi today-done"><span class="today-lab">Réviser</span>';
+      h+='<span class="today-title">Rien à revoir</span>';
+      h+='<span class="today-meta">Reviens demain.</span></div>';
+    }
+
+    h+='</div>';
+    return h;
+  }
+
+  function renderBilan(){
+    var resumes=allResumesOrdered();
+    var lus=luCount(resumes.map(function(r){return r.id;}));
+    var active=activeCards();
+    var vus=active.filter(function(c){return (S.box[c.id]||0)>0;}).length;
+    var score=avgPct(S.quiz);
+    var items=[
+      {n:doneCount(), tot:ALL.length, lbl:"livrables rédigés", go:"dossiers"},
+      {n:lus, tot:resumes.length, lbl:"résumés lus", go:"cours"},
+      {n:vus, tot:active.length, lbl:"cartes vues", go:"flashcards"},
+      {txt:(score===null?'—':Math.round(score*100)+'<span class="on">%</span>'), lbl:"score quiz moyen", go:"quiz"}
+    ];
+    var h='<div class="lab">Où j\'en suis</div><div class="bilan">';
+    items.forEach(function(it){
+      h+='<button class="bilan-card" data-go="'+it.go+'">';
+      h+='<span class="num">'+(it.txt!==undefined?it.txt:it.n+'<span class="on">/'+it.tot+'</span>')+'</span>';
+      h+='<span class="lbl">'+it.lbl+'</span>';
+      h+='</button>';
+    });
+    h+='</div>';
+    return h;
+  }
+
   function vAccueil(){
     var done=doneCount(), left=ALL.length-done, wl=weeksLeft();
     var pace= wl>0.15 ? left/wl : left;
@@ -457,7 +528,8 @@
     else if(delta>=0){verdict="Tu es dans les temps.";cls="ok";}
     else {verdict=Math.abs(delta)+" livrable"+(Math.abs(delta)>1?"s":"")+" de retard.";cls="late";}
 
-    var h='<div class="cadence"><div class="verdict '+cls+'">'+verdict+'</div>';
+    var h=renderAujourdhui();
+    h+='<div class="cadence"><div class="verdict '+cls+'">'+verdict+'</div>';
     h+='<div class="sub">Rythme nécessaire pour tenir la date : <strong>'+pace.toFixed(1)+' livrable'+(pace>=2?'s':'')+' par semaine</strong>.</div>';
     h+='<div class="ticks">';
     ALL.forEach(function(q,i){
@@ -468,20 +540,7 @@
     h+='<div class="stat"><div class="num">'+Math.floor(wl)+'</div><div class="lbl">Semaines restantes</div></div>';
     h+='<div class="stat"><div class="num">'+left+'</div><div class="lbl">Restants</div></div></div></div>';
 
-    var nxt=ALL.filter(function(q){return !isDone(q.id);})[0];
-    if(nxt){
-      h+='<div class="next"><div class="eyebrow">La prochaine chose à faire</div>';
-      h+='<div class="t">'+nxt.bloc.code+' · '+nxt.n+' — '+nxt.t+'</div>';
-      h+='<button data-goq="'+nxt.id+'">Ouvrir la question</button></div>';
-    } else {
-      h+='<div class="next"><div class="eyebrow">Terminé</div><div class="t">Les 44 livrables sont rédigés.</div></div>';
-    }
-
-    h+='<div class="grid-cta-dash">';
-    h+='<button class="tile cta-tile" data-flashcards-due-all>Cartes du jour<span class="cta-sub">'+dueLabel(FLASHCARDS)+'</span></button>';
-    h+=renderDashPanel(true);
-    h+=renderQuizDashPanel(S.quiz, true, true);
-    h+='</div>';
+    h+=renderBilan();
 
     h+='<div class="foot">Date limite de dépôt : <input type="date" id="dl" value="'+S.deadline+'"><br>';
     h+='<button id="exp">Exporter tout en texte</button>';
@@ -1298,6 +1357,23 @@
   }
   function luCount(ids){
     return (ids||[]).filter(function(id){ return luEtat(id)==="lu"; }).length;
+  }
+  function allResumesOrdered(){
+    var out=[];
+    (typeof COURS_BLOCS!=="undefined"?COURS_BLOCS:[]).forEach(function(b){
+      if(b.statut!=="complet") return;
+      b.fiches.map(function(id){ return (typeof RESUMES!=="undefined")?RESUMES[id]:null; })
+        .filter(Boolean)
+        .sort(function(a,c){ return a.ordre-c.ordre; })
+        .forEach(function(r){ out.push(r); });
+    });
+    return out;
+  }
+  function nextResumeToRead(){
+    var all=allResumesOrdered();
+    return all.filter(function(r){ return luEtat(r.id)==="wip"; })[0]
+        || all.filter(function(r){ return luEtat(r.id)==="nonlu"; })[0]
+        || null;
   }
 
   /* ---------- RECHERCHE ---------- */
