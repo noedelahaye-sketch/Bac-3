@@ -482,15 +482,13 @@
   .qbar-section.show{opacity:1;}
   @media (max-width:720px){ .qbar-section{display:none;} }
 
-  /* ESSAI — apartés en colonne de marge */
+  /* Apartés en colonne de marge */
   @media (min-width:1080px){
     .mg-grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:var(--space-32);align-items:start;margin-bottom:var(--space-12);}
     .mg-main{min-width:0;}
     .mg-main>*:last-child{margin-bottom:0;}
     .mg-side{display:flex;flex-direction:column;gap:var(--space-12);min-width:0;}
     .mg-side>*{margin-bottom:0;max-width:none;}
-    .resume h3.sec-essai{position:relative;}
-    .resume h3.sec-essai::after{content:"essai marge";position:absolute;right:0;font:600 10px var(--font-text);letter-spacing:.1em;text-transform:uppercase;color:var(--c-structure);border:1px solid color-mix(in srgb, var(--c-structure) 40%, transparent);border-radius:var(--radius-pill);padding:2px var(--space-8);}
   }
 
   .sommaire li.sec-on>button{color:var(--c-structure);font-weight:600;}

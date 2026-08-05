@@ -1883,15 +1883,15 @@
       else if(/^<b>Définition\b/.test(lead)) bq.classList.add("bq-def");
     });
   }
-  /* ESSAI — apartés en marge, limité à une section pour comparaison */
-  var ESSAI_MARGE={resume:"b1-f04", section:4};
+  /* Apartés (définitions, cas, exemples) renvoyés en colonne de marge */
+  var MARGE_MIN=1080;
   function estAparte(el){
     return el.classList && (el.classList.contains("def-para")||el.classList.contains("bq-def")||el.classList.contains("bq-cas"));
   }
   /* Critère : un bloc "large" ne peut pas cohabiter avec un aparté.
      Tableau de 3 colonnes ou plus, rangée de tuiles, frise, bloc de code, séparateur. */
   function estBlocLarge(el){
-    if(el.tagName==="HR"||el.tagName==="PRE") return true;
+    if(el.tagName==="PRE") return true;
     if(!el.classList) return false;
     if(el.classList.contains("enum-block")||el.classList.contains("chain-block")) return true;
     if(el.classList.contains("table-wrap")){
@@ -1900,25 +1900,15 @@
     }
     return false;
   }
-  function sideNotesInSection(container, resumeId){
-    if(!ESSAI_MARGE || resumeId!==ESSAI_MARGE.resume) return;
-    if(window.innerWidth<1080) return;
-    var kids=Array.prototype.slice.call(container.children);
-    var h3i=[];
-    kids.forEach(function(el,i){ if(el.tagName==="H3") h3i.push(i); });
-    var start=h3i[ESSAI_MARGE.section];
-    if(start===undefined) return;
-    var end=h3i[ESSAI_MARGE.section+1];
-    if(end===undefined) end=kids.length;
-    kids[start].classList.add("sec-essai");
-
-    /* découpe la section en groupes délimités par les sous-titres */
+  function apartesEnMarge(container){
+    if(window.innerWidth<MARGE_MIN) return;
+    /* groupes délimités par les titres et sous-titres, sur tout le résumé */
     var groupes=[], cur={items:[]};
-    for(var i=start+1;i<end;i++){
-      var el=kids[i];
-      if(el.tagName==="H4"){ if(cur.items.length) groupes.push(cur); cur={items:[]}; }
+    Array.prototype.slice.call(container.children).forEach(function(el){
+      if(el.tagName==="H3"||el.tagName==="H4"||el.tagName==="HR"){ if(cur.items.length) groupes.push(cur); cur={items:[]}; }
+      else if(el.classList && el.classList.contains("section-fold")){ if(cur.items.length) groupes.push(cur); cur={items:[]}; }
       else cur.items.push(el);
-    }
+    });
     if(cur.items.length) groupes.push(cur);
 
     groupes.forEach(function(g){
@@ -1934,6 +1924,17 @@
       grid.appendChild(colMain); grid.appendChild(colSide);
     });
   }
+  function defaireMarge(container){
+    Array.prototype.slice.call(container.querySelectorAll(".mg-grid")).forEach(function(grid){
+      var colMain=grid.querySelector(".mg-main"), colSide=grid.querySelector(".mg-side");
+      var remis=[];
+      /* restaure l'ordre source : les apartés se réinsèrent après le texte du groupe */
+      Array.prototype.slice.call(colMain.children).forEach(function(el){ remis.push(el); });
+      Array.prototype.slice.call(colSide.children).forEach(function(el){ remis.push(el); });
+      remis.forEach(function(el){ container.insertBefore(el, grid); });
+      container.removeChild(grid);
+    });
+  }
   function numberHeadings(container){
     Array.prototype.slice.call(container.querySelectorAll("h3")).forEach(function(h){
       if(inFoldedSources(h)) return;
@@ -1947,7 +1948,7 @@
       h.classList.add("h4-rule");
     });
   }
-  function enrichirResume(resumeId){
+  function enrichirResume(){
     var container=main.querySelector(".resume");
     if(!container) return;
     tileifyEnumerations(container);
@@ -1956,7 +1957,7 @@
     markDefinitions(container);
     markCasBlockquotes(container);
     numberHeadings(container);
-    sideNotesInSection(container, resumeId);
+    apartesEnMarge(container);
   }
   function extractSections(html){
     var tmp=document.createElement("div");
@@ -2079,6 +2080,14 @@
   window.addEventListener("resize",function(){
     if(ROUTE.view==="question"||ROUTE.view==="bloc") positionQbar();
     if(ROUTE.view==="question") layoutQuestionCols();
+    if(ROUTE.view==="coursResume"){
+      var container=main.querySelector(".resume");
+      if(!container) return;
+      var large=window.innerWidth>=MARGE_MIN;
+      var enPlace=!!container.querySelector(".mg-grid");
+      if(large && !enPlace) apartesEnMarge(container);
+      else if(!large && enPlace) defaireMarge(container);
+    }
   });
 
   function render(){
@@ -2104,7 +2113,7 @@
       main.innerHTML=vCoursResume(ROUTE.id);
       positionQbar();
       foldSourcesSection();
-      enrichirResume(ROUTE.id);
+      enrichirResume();
       updateSectionActive();
     } else if(v==="coursQuestion"){
       main.classList.remove("with-qbottom");
