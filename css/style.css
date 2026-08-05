@@ -41,6 +41,7 @@
     --font-code:"Geist Mono",ui-monospace,Menlo,monospace;
   }
   *{box-sizing:border-box;}
+  html,body{overscroll-behavior:none;}
   button{font-family:inherit;color:inherit;-webkit-tap-highlight-color:transparent;touch-action:manipulation;transition:transform 100ms ease-out;}
   button:active{transform:scale(.97);}
   button.tile-empty:active,button.search-hit-inert:active{transform:none;}

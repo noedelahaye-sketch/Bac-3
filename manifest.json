@@ -1,0 +1,12 @@
+{
+  "name": "Suivi des 4 dossiers",
+  "short_name": "Suivi Studi",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#17191A",
+  "theme_color": "#17191A",
+  "icons": [
+    { "src": "img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
