@@ -1720,10 +1720,12 @@
     var h='<div class="qbar">'+renderBreadcrumb([{label:"Cours",view:"cours"},{label:b.court}])+'</div>';
     h+='<h1 class="qhead-title">'+b.titre+'</h1><div class="qhead-code code">'+b.epreuve+'</div>';
     var lus=luCount(list.map(function(r){return r.id;}));
-    h+='<div class="lab-row"><span class="lab">Résumés</span><span class="count">'+lus+'/'+list.length+' lus</span></div>';
+    var minRestant=list.filter(function(r){return luEtat(r.id)!=="lu";}).reduce(function(a,r){return a+r.lecture_min;},0);
+    h+='<div class="lab-row"><span class="lab">Résumés</span><span class="count">'+lus+'/'+list.length+' lus'+(minRestant?' &middot; il te reste '+minRestant+' min':'')+'</span></div>';
+    var nextR=list.filter(function(r){return luEtat(r.id)==="wip";})[0] || list.filter(function(r){return luEtat(r.id)==="nonlu";})[0];
     h+='<div class="tiles">';
     list.forEach(function(r){
-      h+='<button class="tile" data-go-resume="'+r.id+'">';
+      h+='<button class="tile'+(r===nextR?' tile-encours':'')+'" data-go-resume="'+r.id+'">';
       h+='<span class="tile-code code">'+r.ordre+'. '+r.competences.join(", ")+'</span>';
       h+='<span class="tile-title">'+r.titre+'</span>';
       h+='<span class="tile-cas">'+r.accroche+'</span>';
