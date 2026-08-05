@@ -256,8 +256,9 @@
   .bloc-bottom{display:grid;grid-template-columns:1fr;gap:var(--space-16);margin-top:var(--space-24);}
   @media (min-width:1080px){
     .enonce-top{
-      grid-template-columns:1fr 1fr;
-      grid-template-areas:"context context" "mission donnees" "preview preview";
+      grid-template-columns:1fr 1fr 320px;
+      grid-template-areas:"context context preview" "mission donnees preview";
+      align-items:start;
     }
     .enonce-context{grid-area:context;}
     .enonce-mission{grid-area:mission;}
