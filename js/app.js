@@ -2415,8 +2415,14 @@
         if(a==="show") SES.show=true;
         else if(a==="ok"){ var cid=SES.list[SES.i].id, wasNew=!(S.box[cid]); grade(cid,true); if(SES.capped&&wasNew) consumeNewBudget(1); SES.ok++; SES.i++; SES.show=false; finishCardSessionIfDone(); }
         else if(a==="ko"){ var cid=SES.list[SES.i].id, wasNew=!(S.box[cid]); grade(cid,false); if(SES.capped&&wasNew) consumeNewBudget(1); SES.i++; SES.show=false; finishCardSessionIfDone(); }
-        else if(a==="setaside-revoir"){ S.cardState[SES.list[SES.i].id]="revoir"; SES.i++; SES.show=false; finishCardSessionIfDone(); save(); }
-        else if(a==="setaside-supprime"){ S.cardState[SES.list[SES.i].id]="supprime"; SES.i++; SES.show=false; finishCardSessionIfDone(); save(); }
+        else if(a==="setaside-revoir"||a==="setaside-supprime"){
+          var cid=SES.list[SES.i].id, wasNew=!(S.box[cid]);
+          S.cardState[cid]=(a==="setaside-revoir")?"revoir":"supprime";
+          /* une carte mise de côté a bien été traitée : elle consomme le quota du jour,
+             sinon la file se recharge aussitôt avec une autre nouvelle carte */
+          if(SES.capped&&wasNew) consumeNewBudget(1);
+          SES.i++; SES.show=false; finishCardSessionIfDone(); save();
+        }
         else if(a==="stop") SES=null;
         else if(a==="qnext"){ QZ.i++; QZ.checked=false; if(QZ.i<QZ.list.length) QZ.input=initQuizInput(QZ.list[QZ.i]); }
         else if(a==="qstop") QZ=null;
