@@ -15,6 +15,8 @@
   var appEl = document.querySelector(".app");
   var searchOpen = false;
   var pendingJumpTerm = null;
+  var scrollMemory = {};
+  if("scrollRestoration" in history) history.scrollRestoration = "manual";
 
   var MEM = {};
   var Store = {
@@ -278,12 +280,18 @@
   }
   var ROUTE={view:"accueil"};
   function applyRoute(r){
+    scrollMemory[hashFor(ROUTE.view, ROUTE.id)]=window.scrollY;
     if(r.view!==ROUTE.view){ SES=null; QZ=null; }
     searchOpen = (r.view==="recherche");
     ROUTE=r; S.view=(KNOWN_VIEWS.indexOf(r.view)>=0)?r.view:"accueil"; save();
     render();
+    main.classList.remove("view-anim");
+    void main.offsetWidth;
+    main.classList.add("view-anim");
     var term=pendingJumpTerm; pendingJumpTerm=null;
-    if(!term || !jumpToTerm(term)) window.scrollTo(0,0);
+    if(term && jumpToTerm(term)) return;
+    var h=hashFor(r.view, r.id);
+    window.scrollTo(0, scrollMemory.hasOwnProperty(h) ? scrollMemory[h] : 0);
   }
   function go(view,param){
     var h=hashFor(view,param);

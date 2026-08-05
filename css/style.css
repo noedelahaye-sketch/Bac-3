@@ -464,4 +464,6 @@
     h1{font-size:24px;} .stat .num,.bignum{font-size:25px;} .stats{gap:var(--space-16);} .ticks{gap:1px;}
     .grid2{grid-template-columns:1fr;}
   }
-  @media (prefers-reduced-motion:reduce){ *{transition:none !important;} }
+  @keyframes viewIn{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:none;}}
+  main.view-anim{animation:viewIn 180ms ease-out;}
+  @media (prefers-reduced-motion:reduce){ *{transition:none !important;animation:none !important;} }
