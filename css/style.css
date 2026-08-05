@@ -358,6 +358,9 @@
   @media (min-width:1080px){ .qbottom-inner{padding-left:32px;padding-right:32px;} }
   .qseq{display:flex;justify-content:space-between;margin-top:var(--space-8);}
   .qseq .linkf{min-height:36px;}
+  .res-nav{margin-top:var(--space-32);padding-top:var(--space-16);border-top:1px solid var(--line);gap:var(--space-12);}
+  .res-nav button{max-width:48%;white-space:normal;text-align:left;line-height:1.3;}
+  @media (max-width:520px){ .res-nav{flex-direction:column;} .res-nav button{max-width:100%;} }
   main.with-qbottom{padding-bottom:132px;}
 
   .lab{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:600;line-height:1.2;margin:var(--space-16) 0 var(--space-8);}

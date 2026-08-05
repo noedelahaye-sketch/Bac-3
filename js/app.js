@@ -1760,6 +1760,14 @@
     });
     h+='</div></div>';
     h+=renderTesteToi(r);
+    var ordre=allResumesOrdered(), ridx=ordre.indexOf(r);
+    var prevR=ridx>0?ordre[ridx-1]:null, nextR=ridx>=0&&ridx<ordre.length-1?ordre[ridx+1]:null;
+    if(prevR||nextR){
+      h+='<div class="qseq res-nav">';
+      h+= prevR ? '<button class="linkf" data-go-resume="'+prevR.id+'">&larr; '+esc(prevR.titre)+'</button>' : '<span></span>';
+      h+= nextR ? '<button class="tile-thin" data-go-resume="'+nextR.id+'">'+esc(nextR.titre)+' &rarr;</button>' : '<span></span>';
+      h+='</div>';
+    }
     return h;
   }
   function vCoursQuestion(qid){
