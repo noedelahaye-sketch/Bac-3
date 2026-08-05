@@ -1464,12 +1464,16 @@
   function normTok(s){
     return String(s||"").toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
   }
-  var LU_ETATS=[["nonlu","Pas encore lu"],["wip","En cours"],["lu","Lu"]];
   function luEtat(id){ return S.coursLu[id]||"nonlu"; }
   function luChip(id){
     var st=luEtat(id);
     if(st==="nonlu") return "";
     return '<span class="chip'+(st==="lu"?" done":" wip")+'">'+(st==="lu"?"lu":"en cours")+'</span>';
+  }
+  function renderLuBadge(id){
+    var st=luEtat(id);
+    var lbl=st==="lu"?"Lu":st==="wip"?"En cours":"Pas encore lu";
+    return '<button class="lu-badge st-'+st+'" data-lu-cycle="'+id+'">'+lbl+'</button>';
   }
   function luCount(ids){
     return (ids||[]).filter(function(id){ return luEtat(id)==="lu"; }).length;
@@ -1699,7 +1703,7 @@
         h+='<button class="tile" data-go-cours-bloc="'+b.numero+'">';
         h+='<span class="tile-code code">Bloc '+b.numero+'</span>';
         h+='<span class="tile-title">'+b.court+'</span>';
-        h+='<span class="tile-cas">'+b.fiches.length+' résumé'+(b.fiches.length>1?'s':'')+' &middot; '+totalMinB+' min &middot; '+promesse+'</span>';
+        h+='<span class="tile-cas">'+b.fiches.length+' résumé'+(b.fiches.length>1?'s':'')+' &middot; '+totalMinB+' min<br>'+promesse+'</span>';
         var lusB=luCount(b.fiches), totB=b.fiches.length;
         h+='<div class="tile-bar-row"><span class="tile-bar"><span class="tile-fill" style="width:'+(totB?Math.round(lusB/totB*100):0)+'%"></span></span><span class="tile-pct">'+lusB+'/'+totB+' lus</span></div>';
         h+='</button>';
@@ -1743,11 +1747,33 @@
     var nCards=activeCards().filter(function(c){return c.resume===r.id;}).length;
     var nQuiz=QUIZ.filter(function(q){return q.resume===r.id;}).length;
     if(!nCards && !nQuiz) return "";
+    var nc=Math.min(10,nCards), nq=Math.min(10,nQuiz);
     var h='<div class="teste-toi"><div class="lab">Teste-toi sur ce résumé</div><div class="tt-btns">';
-    if(nCards) h+='<button class="tile-quiz-btn btn-flash" data-flashcards-resume-start="'+r.id+':'+r.bloc+'">'+nCards+' carte'+(nCards>1?'s':'')+'</button>';
-    if(nQuiz) h+='<button class="tile-quiz-btn btn-quiz" data-quiz-resume-start="'+r.id+':'+r.bloc+'">'+nQuiz+' question'+(nQuiz>1?'s':'')+' de quiz</button>';
+    if(nCards) h+='<button class="tt-btn tt-flash" data-flashcards-resume-start="'+r.id+':'+r.bloc+'">'+nc+' carte'+(nc>1?'s':'')+' au hasard</button>';
+    if(nQuiz) h+='<button class="tt-btn tt-quiz" data-quiz-resume-start="'+r.id+':'+r.bloc+'">'+nq+' question'+(nq>1?'s':'')+' au hasard</button>';
     h+='</div></div>';
     return h;
+  }
+  function foldSourcesSection(){
+    var container=main.querySelector(".resume");
+    if(!container) return;
+    var kids=Array.prototype.slice.call(container.children);
+    for(var i=0;i<kids.length;i++){
+      var el=kids[i];
+      if(el.tagName==="H3" && el.textContent.trim().toLowerCase()==="sources"){
+        var det=document.createElement("details");
+        det.className="notions section-fold";
+        var sum=document.createElement("summary");
+        sum.textContent=el.textContent;
+        det.appendChild(sum);
+        var toMove=[], j=i+1;
+        while(j<kids.length && kids[j].tagName!=="H3"){ toMove.push(kids[j]); j++; }
+        container.insertBefore(det, el);
+        toMove.forEach(function(n){ det.appendChild(n); });
+        container.removeChild(el);
+        return;
+      }
+    }
   }
   function extractSections(html){
     var tmp=document.createElement("div");
@@ -1756,9 +1782,9 @@
   }
   function renderSommaire(sections){
     if(sections.length<2) return "";
-    var h='<nav class="sommaire"><div class="lab">Sommaire</div><ol>';
+    var h='<details class="sommaire" open><summary>Sommaire</summary><ol>';
     sections.forEach(function(s,i){ h+='<li><button data-scroll-sec="'+i+'">'+esc(s)+'</button></li>'; });
-    h+='</ol></nav>';
+    h+='</ol></details>';
     return h;
   }
   function currentSectionIndex(){
@@ -1787,8 +1813,8 @@
       return '<div class="qbar">'+renderBreadcrumb([{label:"Cours",view:"cours"}])+'</div><p class="rappel">Résumé introuvable.</p>';
     }
     var b=(typeof COURS_BLOCS!=="undefined"?COURS_BLOCS:[]).filter(function(x){return x.numero===r.bloc;})[0];
-    var h='<div class="qbar">'+renderBreadcrumb([{label:"Cours",view:"cours"},{label:b?b.court:("Bloc "+r.bloc),view:"coursBloc",param:r.bloc},{label:r.titre}])+'<div class="read-progress"><span class="read-progress-fill" id="readProgressFill"></span></div></div>';
-    h+='<div class="qtitle-row"><h1 class="qhead-title">'+r.titre+'</h1>'+luChip(r.id)+'</div>';
+    var h='<div class="qbar">'+renderBreadcrumb([{label:"Cours",view:"cours"},{label:b?b.court:("Bloc "+r.bloc),view:"coursBloc",param:r.bloc},{label:r.titre}])+renderLuBadge(r.id)+'<div class="read-progress"><span class="read-progress-fill" id="readProgressFill"></span></div></div>';
+    h+='<h1 class="qhead-title">'+r.titre+'</h1>';
     h+='<div class="qhead-code code">'+r.lecture_min+' min &middot; '+r.mots+' mots &middot; '+r.competences.join(", ")+'</div>';
     h+='<p class="intro">'+r.accroche+'</p>';
     var sections=extractSections(r.html);
@@ -1797,16 +1823,10 @@
       h+='<button class="reprendre" data-scroll-sec="'+repriseIdx+'"><span class="rep-lab">Reprendre</span>'+
          '<span class="rep-t">'+esc(sections[repriseIdx])+'</span></button>';
     }
+    h+=renderSommaire(sections);
     h+=renderQuestionLinks("Indispensable pour", r.questions, r.bloc);
     h+=renderQuestionLinks("En complément pour", r.questions_appui, r.bloc);
-    h+=renderSommaire(sections);
     h+='<div class="resume">'+r.html+'</div>';
-    var st=luEtat(r.id);
-    h+='<div class="lu-bar"><span class="lab">Où j\'en suis dans ce résumé</span><div class="states">';
-    LU_ETATS.forEach(function(p){
-      h+='<button data-lu="'+r.id+'" data-luv="'+p[0]+'" aria-pressed="'+(st===p[0])+'">'+p[1]+'</button>';
-    });
-    h+='</div></div>';
     h+=renderTesteToi(r);
     var ordre=allResumesOrdered(), ridx=ordre.indexOf(r);
     var prevR=ridx>0?ordre[ridx-1]:null, nextR=ridx>=0&&ridx<ordre.length-1?ordre[ridx+1]:null;
@@ -1900,6 +1920,7 @@
       main.classList.remove("with-qbottom");
       main.innerHTML=vCoursResume(ROUTE.id);
       positionQbar();
+      foldSourcesSection();
     } else if(v==="coursQuestion"){
       main.classList.remove("with-qbottom");
       main.innerHTML=vCoursQuestion(ROUTE.id);
@@ -1967,11 +1988,13 @@
         save(); render();
       });
     });
-    main.querySelectorAll("[data-lu]").forEach(function(el){
+    main.querySelectorAll("[data-lu-cycle]").forEach(function(el){
       el.addEventListener("click",function(){
-        var id=el.getAttribute("data-lu"), v=el.getAttribute("data-luv");
-        if(v==="nonlu"){ delete S.coursLu[id]; delete S.coursLuAt[id]; }
-        else { S.coursLu[id]=v; S.coursLuAt[id]=Date.now(); }
+        var id=el.getAttribute("data-lu-cycle");
+        var order=["nonlu","wip","lu"];
+        var next=order[(order.indexOf(luEtat(id))+1)%order.length];
+        if(next==="nonlu"){ delete S.coursLu[id]; delete S.coursLuAt[id]; }
+        else { S.coursLu[id]=next; S.coursLuAt[id]=Date.now(); }
         save(); render();
       });
     });
@@ -2068,7 +2091,7 @@
     main.querySelectorAll("[data-flashcards-resume-start]").forEach(function(el){
       el.addEventListener("click",function(){
         var parts=el.getAttribute("data-flashcards-resume-start").split(":"), rid=parts[0], bloc=parts[1];
-        var list=shuffle(activeCards().filter(function(c){return c.resume===rid;}));
+        var list=shuffle(activeCards().filter(function(c){return c.resume===rid;})).slice(0,10);
         if(!list.length) return;
         SES={list:list,i:0,show:false,ok:0};
         ROUTE={view:"flashcardsBloc", id:bloc}; S.view="flashcardsBloc";
@@ -2079,7 +2102,7 @@
     main.querySelectorAll("[data-quiz-resume-start]").forEach(function(el){
       el.addEventListener("click",function(){
         var parts=el.getAttribute("data-quiz-resume-start").split(":"), rid=parts[0], bloc=parts[1];
-        var list=shuffle(QUIZ.filter(function(q){return q.resume===rid;}));
+        var list=shuffle(QUIZ.filter(function(q){return q.resume===rid;})).slice(0,10);
         if(!list.length) return;
         QZ={list:list,i:0,ok:0,wrong:[],checked:false,input:initQuizInput(list[0])};
         ROUTE={view:"quizBloc", id:bloc}; S.view="quizBloc";
