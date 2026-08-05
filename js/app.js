@@ -115,6 +115,21 @@
       });
     }, 1500);
   }
+  function resumeSauvegarde(sv){
+    function n(o){ return o?Object.keys(o).length:0; }
+    var cartesVues=n(sv.box);
+    var series=(sv.cardRuns||[]).length;
+    var derniere=series?(sv.cardRuns[sv.cardRuns.length-1]):null;
+    var l=[];
+    l.push(n(sv.status)+" question(s) avec un statut");
+    l.push(n(sv.checks)+" question(s) avec des critères cochés");
+    l.push(cartesVues+" carte(s) vue(s)");
+    l.push(series+" série(s) de cartes"+(derniere?" — dernière : "+derniere.d+", "+derniere.ok+"/"+derniere.n:""));
+    l.push((sv.quiz||[]).length+" quiz passé(s)");
+    l.push(n(sv.coursLu)+" résumé(s) marqué(s)");
+    if(sv._ts) l.push("enregistrée le "+new Date(sv._ts).toLocaleString("fr-FR"));
+    return l.join("\n");
+  }
   function isStateEmpty(sv){
     if(!sv) return true;
     return !(sv.status && Object.keys(sv.status).length)
@@ -658,6 +673,16 @@
     h+='<div class="foot">Date limite de dépôt : <input type="date" id="dl" value="'+S.deadline+'"><br>';
     h+='<button id="exp">Exporter tout en texte</button>';
     h+='<textarea class="f" id="expbox" style="display:none;margin-top:8px;min-height:220px;font-size:12px"></textarea></div>';
+
+    h+='<div class="foot">';
+    h+='<div class="lab">Sauvegarde des données</div>';
+    h+='<p class="rappel">Copie de secours complète de ta progression. Une restauration écrase les données de cet appareil et devient la référence pour les autres.</p>';
+    h+='<button id="sauvExport">Copier ma sauvegarde</button> ';
+    h+='<button id="sauvImportOuvrir">Restaurer une sauvegarde</button>';
+    h+='<textarea class="f" id="sauvBox" style="display:none;margin-top:8px;min-height:140px;font-size:11px" placeholder="Colle ici une sauvegarde puis appuie sur Restaurer"></textarea>';
+    h+='<button id="sauvImport" style="display:none;margin-top:8px">Restaurer maintenant</button>';
+    h+='<span id="sauvMsg" class="rappel"></span>';
+    h+='</div>';
 
     h+='<div class="foot">';
     h+='<div class="lab">Synchronisation</div>';
@@ -2453,6 +2478,39 @@
     var exp=document.getElementById("exp");
     if(exp) exp.addEventListener("click",function(){
       var box=document.getElementById("expbox"); box.value=exportText(); box.style.display="block"; box.focus(); box.select();
+    });
+    var sauvExport=document.getElementById("sauvExport");
+    if(sauvExport) sauvExport.addEventListener("click",function(){
+      var box=document.getElementById("sauvBox");
+      box.value=JSON.stringify(S);
+      box.style.display="block"; box.focus(); box.select();
+      document.getElementById("sauvMsg").textContent="Sauvegarde du "+new Date().toLocaleString("fr-FR")+" — copie ce texte et garde-le.";
+    });
+    var sauvOuvrir=document.getElementById("sauvImportOuvrir");
+    if(sauvOuvrir) sauvOuvrir.addEventListener("click",function(){
+      var box=document.getElementById("sauvBox");
+      box.value=""; box.style.display="block"; box.focus();
+      document.getElementById("sauvImport").style.display="inline-block";
+      document.getElementById("sauvMsg").textContent="";
+    });
+    var sauvImport=document.getElementById("sauvImport");
+    if(sauvImport) sauvImport.addEventListener("click",function(){
+      var box=document.getElementById("sauvBox"), msg=document.getElementById("sauvMsg");
+      var brut=(box.value||"").trim();
+      if(!brut){ msg.textContent="Colle d'abord une sauvegarde."; return; }
+      var sv;
+      try{ sv=JSON.parse(brut); }catch(e){ msg.textContent="Ce texte n'est pas une sauvegarde valide."; return; }
+      if(!sv || typeof sv!=="object" || (sv.status===undefined && sv.box===undefined)){
+        msg.textContent="Ce texte ne ressemble pas à une sauvegarde de l'application."; return;
+      }
+      var res=resumeSauvegarde(sv);
+      if(!confirm("Restaurer cette sauvegarde ?\n\n"+res+"\n\nLes données actuelles de cet appareil seront remplacées.")) return;
+      applyState(sv);
+      S._ts=Date.now(); /* la restauration est un acte volontaire : elle fait autorité */
+      try{ Store.set(KEY, JSON.stringify(S)); }catch(e){}
+      scheduleSyncPush();
+      render();
+      alert("Sauvegarde restaurée.\n\n"+res);
     });
     var syncActivateBtn=document.getElementById("syncActivate");
     if(syncActivateBtn) syncActivateBtn.addEventListener("click",function(){
