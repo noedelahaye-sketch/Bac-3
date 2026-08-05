@@ -278,6 +278,30 @@
     if(view==="accueil") return "#/";
     return "#/"+view;
   }
+  var BASE_TITLE=document.title;
+  function pageTitle(){
+    var v=ROUTE.view, id=ROUTE.id;
+    var cb=(typeof COURS_BLOCS!=="undefined")?COURS_BLOCS:[];
+    if(v==="dossiers") return "Dossiers";
+    if(v==="cours") return "Cours";
+    if(v==="apprendre") return "Apprendre";
+    if(v==="bloc"){ var b=blocById(id); return b ? b.code+" · "+b.titre : "Bloc"; }
+    if(v==="question"){ var q=ALL.filter(function(x){return x.id===id;})[0]; return q ? q.n+" · "+q.t : "Question"; }
+    if(v==="coursBloc"){ var b2=cb.filter(function(x){return String(x.numero)===String(id);})[0]; return b2 ? "Cours · "+b2.titre : "Cours"; }
+    if(v==="coursResume"){ var r=(typeof RESUMES!=="undefined")?RESUMES[id]:null; return r ? r.titre : "Résumé"; }
+    if(v==="coursQuestion"){ var qc=(typeof QUESTIONS_COURS!=="undefined")?QUESTIONS_COURS[id]:null; return qc ? qc.titre : "Cours"; }
+    if(v==="flashcards") return "Flashcards";
+    if(v==="flashcardsBloc"){ var b3=cb.filter(function(x){return String(x.numero)===String(id);})[0]; return b3 ? "Flashcards · "+b3.titre : "Flashcards"; }
+    if(v==="flashcardsSort") return "Flashcards";
+    if(v==="quiz") return "Quiz";
+    if(v==="quizBloc"){ var b4=cb.filter(function(x){return String(x.numero)===String(id);})[0]; return b4 ? "Quiz · "+b4.titre : "Quiz"; }
+    if(v==="recherche") return id ? "Recherche : "+id : "Recherche";
+    return null;
+  }
+  function updateTitle(){
+    var t=pageTitle();
+    document.title = t ? (t+" — "+BASE_TITLE) : BASE_TITLE;
+  }
   var ROUTE={view:"accueil"};
   function applyRoute(r){
     scrollMemory[hashFor(ROUTE.view, ROUTE.id)]=window.scrollY;
@@ -289,16 +313,41 @@
     void main.offsetWidth;
     main.classList.add("view-anim");
     var term=pendingJumpTerm; pendingJumpTerm=null;
-    if(term && jumpToTerm(term)) return;
-    var h=hashFor(r.view, r.id);
-    window.scrollTo(0, scrollMemory.hasOwnProperty(h) ? scrollMemory[h] : 0);
+    if(!(term && jumpToTerm(term))){
+      var h=hashFor(r.view, r.id);
+      window.scrollTo(0, scrollMemory.hasOwnProperty(h) ? scrollMemory[h] : 0);
+    }
+    updateReadProgress();
   }
+  function updateReadProgress(){
+    if(ROUTE.view!=="coursResume") return;
+    var el=document.getElementById("readProgressFill");
+    if(!el) return;
+    var max=document.documentElement.scrollHeight-window.innerHeight;
+    var pct=max>0 ? Math.min(100,Math.max(0,(window.scrollY/max)*100)) : 0;
+    el.style.width=pct+"%";
+  }
+  var readProgressPending=false;
+  window.addEventListener("scroll",function(){
+    if(ROUTE.view!=="coursResume" || readProgressPending) return;
+    readProgressPending=true;
+    requestAnimationFrame(function(){ readProgressPending=false; updateReadProgress(); });
+  },{passive:true});
   function go(view,param){
     var h=hashFor(view,param);
     if(location.hash===h) applyRoute(parseHash(h));
     else location.hash=h;
   }
-  window.addEventListener("hashchange",function(){ applyRoute(parseHash(location.hash)); });
+  window.addEventListener("hashchange",function(){
+    var r=parseHash(location.hash);
+    if((SES||QZ) && r.view!==ROUTE.view){
+      if(!confirm("Tu es en session. Quitter maintenant efface ta progression sur la carte ou la question en cours. Continuer ?")){
+        history.forward();
+        return;
+      }
+    }
+    applyRoute(r);
+  });
 
   function submitSearch(){
     var input=document.getElementById("navsearch-input");
@@ -1457,7 +1506,7 @@
       return '<div class="qbar">'+renderBreadcrumb([{label:"Cours",view:"cours"}])+'</div><p class="rappel">Résumé introuvable.</p>';
     }
     var b=(typeof COURS_BLOCS!=="undefined"?COURS_BLOCS:[]).filter(function(x){return x.numero===r.bloc;})[0];
-    var h='<div class="qbar">'+renderBreadcrumb([{label:"Cours",view:"cours"},{label:b?b.court:("Bloc "+r.bloc),view:"coursBloc",param:r.bloc},{label:r.titre}])+'</div>';
+    var h='<div class="qbar">'+renderBreadcrumb([{label:"Cours",view:"cours"},{label:b?b.court:("Bloc "+r.bloc),view:"coursBloc",param:r.bloc},{label:r.titre}])+'<div class="read-progress"><span class="read-progress-fill" id="readProgressFill"></span></div></div>';
     h+='<h1 class="qhead-title">'+r.titre+'</h1><div class="qhead-code code">'+r.lecture_min+' min &middot; '+r.mots+' mots &middot; '+r.competences.join(", ")+'</div>';
     h+='<p class="intro">'+r.accroche+'</p>';
     h+=renderQuestionLinks("Indispensable pour", r.questions, r.bloc);
@@ -1566,6 +1615,7 @@
       main.innerHTML='<div class="eyebrow">'+subs[v]+'</div><h1>'+titles[v]+'</h1>'+h;
     }
     renderSyncStatus();
+    updateTitle();
     bind();
   }
 
