@@ -1869,6 +1869,7 @@
   function markDefinitions(container){
     Array.prototype.slice.call(container.querySelectorAll("p")).forEach(function(p){
       if(inFoldedSources(p)) return;
+      if(p.closest("blockquote")) return; /* déjà encadré par le blockquote */
       if(/^<b>Définition\b/.test(p.innerHTML)) p.classList.add("def-para");
     });
   }
@@ -1884,8 +1885,24 @@
   }
   /* ESSAI — apartés en marge, limité à une section pour comparaison */
   var ESSAI_MARGE={resume:"b1-f04", section:4};
+  function estAparte(el){
+    return el.classList && (el.classList.contains("def-para")||el.classList.contains("bq-def")||el.classList.contains("bq-cas"));
+  }
+  /* Critère : un bloc "large" ne peut pas cohabiter avec un aparté.
+     Tableau de 3 colonnes ou plus, rangée de tuiles, frise, bloc de code, séparateur. */
+  function estBlocLarge(el){
+    if(el.tagName==="HR"||el.tagName==="PRE") return true;
+    if(!el.classList) return false;
+    if(el.classList.contains("enum-block")||el.classList.contains("chain-block")) return true;
+    if(el.classList.contains("table-wrap")){
+      var tr=el.querySelector("tr");
+      return tr ? tr.children.length>2 : false;
+    }
+    return false;
+  }
   function sideNotesInSection(container, resumeId){
     if(!ESSAI_MARGE || resumeId!==ESSAI_MARGE.resume) return;
+    if(window.innerWidth<1080) return;
     var kids=Array.prototype.slice.call(container.children);
     var h3i=[];
     kids.forEach(function(el,i){ if(el.tagName==="H3") h3i.push(i); });
@@ -1893,14 +1910,29 @@
     if(start===undefined) return;
     var end=h3i[ESSAI_MARGE.section+1];
     if(end===undefined) end=kids.length;
-    container.classList.add("has-marge");
-    for(var i=start; i<end; i++){
+    kids[start].classList.add("sec-essai");
+
+    /* découpe la section en groupes délimités par les sous-titres */
+    var groupes=[], cur={items:[]};
+    for(var i=start+1;i<end;i++){
       var el=kids[i];
-      if(el.classList && (el.classList.contains("def-para")||el.classList.contains("bq-def")||el.classList.contains("bq-cas"))){
-        el.classList.add("aparte");
-      }
+      if(el.tagName==="H4"){ if(cur.items.length) groupes.push(cur); cur={items:[]}; }
+      else cur.items.push(el);
     }
-    if(kids[start]) kids[start].classList.add("sec-essai");
+    if(cur.items.length) groupes.push(cur);
+
+    groupes.forEach(function(g){
+      var apartes=g.items.filter(estAparte);
+      if(!apartes.length) return;
+      if(g.items.some(estBlocLarge)) return;
+      if(apartes.length===g.items.length) return; /* rien à mettre en face */
+      var grid=document.createElement("div"); grid.className="mg-grid";
+      var colMain=document.createElement("div"); colMain.className="mg-main";
+      var colSide=document.createElement("aside"); colSide.className="mg-side";
+      container.insertBefore(grid, g.items[0]);
+      g.items.forEach(function(el){ (estAparte(el)?colSide:colMain).appendChild(el); });
+      grid.appendChild(colMain); grid.appendChild(colSide);
+    });
   }
   function numberHeadings(container){
     Array.prototype.slice.call(container.querySelectorAll("h3")).forEach(function(h){
