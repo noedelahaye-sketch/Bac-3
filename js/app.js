@@ -362,11 +362,36 @@
     var pct=max>0 ? Math.min(100,Math.max(0,(window.scrollY/max)*100)) : 0;
     el.style.width=pct+"%";
   }
+  function updateSectionActive(){
+    if(ROUTE.view!=="coursResume") return;
+    var heads=main.querySelectorAll(".resume h3");
+    if(!heads.length) return;
+    var idx=currentSectionIndex();
+    var items=main.querySelectorAll(".sommaire li");
+    for(var i=0;i<items.length;i++) items[i].classList.toggle("sec-on", i===idx);
+    var label=document.getElementById("qbarSection");
+    if(label){
+      var scrolled=window.scrollY>heads[0].offsetTop-200;
+      var titre="";
+      if(scrolled){
+        var clone=heads[idx].cloneNode(true);
+        var pill=clone.querySelector(".h3-pill");
+        if(pill) clone.removeChild(pill);
+        titre=clone.textContent.trim();
+      }
+      label.textContent=titre;
+      label.classList.toggle("show", !!scrolled);
+    }
+  }
   var readProgressPending=false;
   window.addEventListener("scroll",function(){
     if(ROUTE.view!=="coursResume" || readProgressPending) return;
     readProgressPending=true;
-    requestAnimationFrame(function(){ readProgressPending=false; updateReadProgress(); });
+    requestAnimationFrame(function(){
+      readProgressPending=false;
+      updateReadProgress();
+      updateSectionActive();
+    });
   },{passive:true});
   function go(view,param){
     var h=hashFor(view,param);
@@ -1844,14 +1869,30 @@
   function markDefinitions(container){
     Array.prototype.slice.call(container.querySelectorAll("p")).forEach(function(p){
       if(inFoldedSources(p)) return;
-      if(/^<b>Définition\.<\/b>/.test(p.innerHTML)) p.classList.add("def-para");
+      if(/^<b>Définition\b/.test(p.innerHTML)) p.classList.add("def-para");
     });
   }
   function markCasBlockquotes(container){
     Array.prototype.slice.call(container.querySelectorAll("blockquote")).forEach(function(bq){
       if(inFoldedSources(bq)) return;
       var firstP=bq.querySelector("p");
-      if(firstP && /^<b>(Cas|Exemple|Illustration)\b/.test(firstP.innerHTML)) bq.classList.add("bq-cas");
+      if(!firstP) return;
+      var lead=firstP.innerHTML;
+      if(/^<b>(Cas|Exemple|Illustration)\b/.test(lead)) bq.classList.add("bq-cas");
+      else if(/^<b>Définition\b/.test(lead)) bq.classList.add("bq-def");
+    });
+  }
+  function numberHeadings(container){
+    Array.prototype.slice.call(container.querySelectorAll("h3")).forEach(function(h){
+      if(inFoldedSources(h)) return;
+      var m=/^(\d+)\.\s+([\s\S]*)$/.exec(h.innerHTML);
+      if(!m) return;
+      h.classList.add("h3-num");
+      h.innerHTML='<span class="h3-pill">'+m[1]+'</span>'+m[2];
+    });
+    Array.prototype.slice.call(container.querySelectorAll("h4")).forEach(function(h){
+      if(inFoldedSources(h)) return;
+      h.classList.add("h4-rule");
     });
   }
   function enrichirResume(){
@@ -1862,6 +1903,7 @@
     markSteps(container);
     markDefinitions(container);
     markCasBlockquotes(container);
+    numberHeadings(container);
   }
   function extractSections(html){
     var tmp=document.createElement("div");
@@ -1901,7 +1943,7 @@
       return '<div class="qbar">'+renderBreadcrumb([{label:"Cours",view:"cours"}])+'</div><p class="rappel">Résumé introuvable.</p>';
     }
     var b=(typeof COURS_BLOCS!=="undefined"?COURS_BLOCS:[]).filter(function(x){return x.numero===r.bloc;})[0];
-    var h='<div class="qbar">'+renderBreadcrumb([{label:"Cours",view:"cours"},{label:b?b.court:("Bloc "+r.bloc),view:"coursBloc",param:r.bloc},{label:r.titre}])+renderLuBadge(r.id)+'<div class="read-progress"><span class="read-progress-fill" id="readProgressFill"></span></div></div>';
+    var h='<div class="qbar">'+renderBreadcrumb([{label:"Cours",view:"cours"},{label:b?b.court:("Bloc "+r.bloc),view:"coursBloc",param:r.bloc},{label:r.titre}])+'<span class="qbar-section" id="qbarSection"></span>'+renderLuBadge(r.id)+'<div class="read-progress"><span class="read-progress-fill" id="readProgressFill"></span></div></div>';
     h+='<h1 class="qhead-title">'+r.titre+'</h1>';
     h+='<div class="qhead-code code">'+r.lecture_min+' min &middot; '+r.mots+' mots &middot; '+r.competences.join(", ")+'</div>';
     h+='<p class="intro">'+r.accroche+'</p>';
@@ -2010,6 +2052,7 @@
       positionQbar();
       foldSourcesSection();
       enrichirResume();
+      updateSectionActive();
     } else if(v==="coursQuestion"){
       main.classList.remove("with-qbottom");
       main.innerHTML=vCoursQuestion(ROUTE.id);
