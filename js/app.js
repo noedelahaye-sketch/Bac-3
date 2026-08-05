@@ -547,9 +547,19 @@
     h+='<div class="sem-streak"><span class="num">'+cur+'</span><span class="lbl">jour'+(cur>1?'s':'')+' d\'affilée</span>';
     h+='<span class="sem-sub">Record : '+max+'</span></div>';
     h+='<div class="sem-body"><div class="lab">Cette semaine</div>';
-    h+= parts.length
-      ? '<div class="sem-list">'+parts.join(' &middot; ')+'</div>'
-      : '<div class="sem-list sem-vide">Rien encore cette semaine. La première action compte.</div>';
+    if(!parts.length){
+      h+='<div class="sem-vide">Rien encore cette semaine. La première action compte.</div>';
+    } else {
+      h+='<div class="sem-stats">';
+      [[a.questions, "question"+(a.questions>1?"s":"")+" avancée"+(a.questions>1?"s":"")],
+       [a.resumes,   "résumé"+(a.resumes>1?"s":"")+" lu"+(a.resumes>1?"s":"")],
+       [a.cartes,    "carte"+(a.cartes>1?"s":"")+" revue"+(a.cartes>1?"s":"")]
+      ].forEach(function(p){
+        h+='<div class="sem-stat"><span class="n'+(p[0]?'':' zero')+'">'+p[0]+'</span>';
+        h+='<span class="l">'+p[1]+'</span></div>';
+      });
+      h+='</div>';
+    }
     h+='</div></div>';
     return h;
   }
@@ -587,6 +597,7 @@
     else {verdict=Math.abs(delta)+" livrable"+(Math.abs(delta)>1?"s":"")+" de retard.";cls="late";}
 
     var h=renderAujourdhui();
+    h+=renderSemaine();
     h+='<div class="cadence"><div class="verdict '+cls+'">'+verdict+'</div>';
     h+='<div class="sub">Rythme nécessaire pour tenir la date : <strong>'+pace.toFixed(1)+' livrable'+(pace>=2?'s':'')+' par semaine</strong>.</div>';
     h+='<div class="ticks">';
@@ -600,7 +611,6 @@
     h+='<div class="stat"><div class="num">'+Math.floor(wl)+'</div><div class="lbl">Semaines restantes</div></div>';
     h+='<div class="stat"><div class="num">'+left+'</div><div class="lbl">Restants</div></div></div></div>';
 
-    h+=renderSemaine();
     h+=renderBilan();
 
     h+='<details class="notions reglages"><summary>Réglages</summary>';
