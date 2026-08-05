@@ -1087,16 +1087,6 @@
       }
     });
     h+='</div>';
-    var runs=S.cardRuns||[];
-    if(runs.length){
-      var best=runs.reduce(function(a,r){var p=r.ok/r.n;return p>a?p:a;},0);
-      h+='<div class="stats stats-top"><div class="stat"><div class="num">'+runs.length+'</div><div class="lbl">Séries réalisées</div></div>';
-      h+='<div class="stat"><div class="num">'+Math.round(best*100)+'<span class="on">%</span></div><div class="lbl">Meilleure série</div></div></div>';
-      h+='<div class="lab">Historique</div>';
-      runs.slice(-8).reverse().forEach(function(r){
-        h+='<div class="hrow"><span>'+r.d+'</span><b>'+r.ok+' / '+r.n+'</b></div>';
-      });
-    }
     h+='<div class="tiles">'+renderCardSortTile()+'</div>';
     return h;
   }
