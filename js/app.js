@@ -1693,10 +1693,13 @@
     var h='<div class="tiles">';
     blocs.forEach(function(b){
       if(b.statut==="complet"){
+        var listB=b.fiches.map(function(id){return RESUMES[id];}).filter(Boolean).sort(function(a,c){return a.ordre-c.ordre;});
+        var totalMinB=listB.reduce(function(a,r){return a+r.lecture_min;},0);
+        var promesse=listB.length>1 ? 'de « '+listB[0].titre+' » à « '+listB[listB.length-1].titre+' »' : (listB[0]?listB[0].titre:'');
         h+='<button class="tile" data-go-cours-bloc="'+b.numero+'">';
         h+='<span class="tile-code code">Bloc '+b.numero+'</span>';
         h+='<span class="tile-title">'+b.court+'</span>';
-        h+='<span class="tile-cas">'+b.fiches.length+' résumé'+(b.fiches.length>1?'s':'')+' &middot; '+b.competences.join(", ")+'</span>';
+        h+='<span class="tile-cas">'+b.fiches.length+' résumé'+(b.fiches.length>1?'s':'')+' &middot; '+totalMinB+' min &middot; '+promesse+'</span>';
         var lusB=luCount(b.fiches), totB=b.fiches.length;
         h+='<div class="tile-bar-row"><span class="tile-bar"><span class="tile-fill" style="width:'+(totB?Math.round(lusB/totB*100):0)+'%"></span></span><span class="tile-pct">'+lusB+'/'+totB+' lus</span></div>';
         h+='</button>';
@@ -1815,6 +1818,17 @@
     }
     return h;
   }
+  function renderResumeLinks(label, ids){
+    if(!ids || !ids.length) return "";
+    var h='<div class="rc-lab">'+label+'</div><div class="rc-app">';
+    ids.forEach(function(rid,i){
+      if(i) h+=' &middot; ';
+      var r=(typeof RESUMES!=="undefined")?RESUMES[rid]:null;
+      h+= r ? '<button class="linkf" data-go-resume="'+rid+'">'+esc(r.titre)+'</button>' : rid;
+    });
+    h+='</div>';
+    return h;
+  }
   function vCoursQuestion(qid){
     var qc=(typeof QUESTIONS_COURS!=="undefined")?QUESTIONS_COURS[qid]:null;
     var q=ALL.filter(function(x){return x.id===qid;})[0];
@@ -1828,7 +1842,18 @@
       {label:"Cours"}
     ])+'</div>';
     h+='<h1 class="qhead-title">'+qc.titre+'</h1><div class="qhead-code code">'+q.bloc.code+' &middot; '+q.n+' &middot; '+qc.competence+'</div>';
+    h+=renderResumeLinks("Approfondir avec le résumé", qc.resumes);
+    h+=renderResumeLinks("Voir aussi", qc.resumes_appui);
     h+='<div class="resume">'+qc.html+'</div>';
+    var order=ALL.filter(function(x){return (typeof QUESTIONS_COURS!=="undefined")&&QUESTIONS_COURS[x.id];});
+    var qidx=order.indexOf(q);
+    var prevQ=qidx>0?order[qidx-1]:null, nextQ=(qidx>=0&&qidx<order.length-1)?order[qidx+1]:null;
+    if(prevQ||nextQ){
+      h+='<div class="qseq res-nav">';
+      h+= prevQ ? '<button class="linkf" data-go-question-cours="'+prevQ.id+'">&larr; '+esc(prevQ.n+' — '+(QUESTIONS_COURS[prevQ.id]||{}).titre)+'</button>' : '<span></span>';
+      h+= nextQ ? '<button class="tile-thin" data-go-question-cours="'+nextQ.id+'">'+esc(nextQ.n+' — '+(QUESTIONS_COURS[nextQ.id]||{}).titre)+' &rarr;</button>' : '<span></span>';
+      h+='</div>';
+    }
     return h;
   }
 
