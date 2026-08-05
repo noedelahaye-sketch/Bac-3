@@ -871,10 +871,10 @@
     h+='</ul></div>';
     h+='</div>';
     h+='<div class="enonce-preview">';
-    h+='<a class="linkf enonce-pdf" href="'+encodeURI(b.enonce.pdf)+'" target="_blank" rel="noopener">Ouvrir le PDF dans un nouvel onglet</a>';
     h+='<details class="notions pdf-inline"><summary>Afficher l\'aperçu ici</summary>';
     h+='<iframe class="enonce-frame" src="'+encodeURI(b.enonce.pdf)+'" title="PDF de l\'énoncé"></iframe>';
     h+='</details>';
+    h+='<a class="linkf enonce-pdf" href="'+encodeURI(b.enonce.pdf)+'" target="_blank" rel="noopener">Ouvrir le PDF dans un nouvel onglet</a>';
     h+='</div>';
     h+='</div>';
     h+='</div></section>';
