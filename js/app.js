@@ -97,8 +97,10 @@
     else el.textContent="Non activée";
   }
   var syncPushTimer=null;
+  var syncPret=false;
   function scheduleSyncPush(){
     if(!getSyncToken()) return;
+    if(!syncPret) return; /* la lecture du distant n'a pas encore eu lieu */
     if(isStateEmpty(S)) return;
     clearTimeout(syncPushTimer);
     syncPushTimer=setTimeout(function(){
@@ -133,10 +135,19 @@
     S.streak=sv.streak||{current:0,max:0,lastDate:0};
     S.deadline=sv.deadline||DEFAULT_DEADLINE; S.open=sv.open||{b1:true}; S._ts=sv._ts||0;
   }
-  function save(){
-    S._ts=Date.now();
+  /* save() = vraie modification de données : avance _ts et déclenche la synchro.
+     save({silent:true}) = simple navigation : enregistre en local sans toucher à
+     _ts ni pousser, pour qu'un appareil resté ouvert sur des données périmées ne
+     se déclare pas « le plus récent » et n'écrase pas le travail fait ailleurs. */
+  var pushEnAttente=false;
+  function save(opts){
+    var silent=!!(opts&&opts.silent);
+    if(!silent){ S._ts=Date.now(); pushEnAttente=true; }
     clearTimeout(saveTimer);
-    saveTimer = setTimeout(function(){ try{ Store.set(KEY, JSON.stringify(S)); }catch(e){} scheduleSyncPush(); }, 400);
+    saveTimer = setTimeout(function(){
+      try{ Store.set(KEY, JSON.stringify(S)); }catch(e){}
+      if(pushEnAttente){ pushEnAttente=false; scheduleSyncPush(); }
+    }, 400);
   }
   function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
   function resolveRessourceItem(it){
@@ -342,7 +353,7 @@
     ROUTE=r; S.view=(KNOWN_VIEWS.indexOf(r.view)>=0)?r.view:"accueil";
     if(r.view==="question" && r.id) S.reprendre={type:"question", id:r.id, t:Date.now()};
     else if(r.view==="coursResume" && r.id) S.reprendre={type:"resume", id:r.id, t:Date.now()};
-    save();
+    save({silent:true});
     render();
     main.classList.remove("view-anim");
     void main.offsetWidth;
@@ -2454,6 +2465,7 @@
       (async function(){
         try{
           await reconcileSync();
+          syncPret=true;
           syncStatus={state:"ok", at:new Date()};
         }catch(e){
           syncStatus={state:"error", at:null};
@@ -2517,11 +2529,16 @@
       try{
         var action=await reconcileSync();
         if(action==="pulled") render();
+        syncPret=true;
         syncStatus={state:"ok", at:new Date()};
       }catch(e){
+        /* pull impossible : on ne pousse rien, sinon on risque d'écraser
+           un état distant qu'on n'a pas pu lire. Réessai au prochain chargement. */
         syncStatus={state:"error", at:null};
       }
       renderSyncStatus();
+    } else {
+      syncPret=true;
     }
   })();
 })();
