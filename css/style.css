@@ -442,6 +442,25 @@
   .resume th{background:var(--paper);font-weight:600;}
   .resume a{color:var(--signal);}
 
+  .enum-block{margin:0 0 var(--space-12);}
+  .enum-label{margin-bottom:var(--space-8);}
+  .enum-tiles{display:flex;flex-wrap:wrap;gap:var(--space-8);}
+  .enum-tile{flex:1 1 150px;background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--signal);border-radius:var(--radius-control);padding:var(--space-8) var(--space-12);font-size:13px;line-height:1.4;}
+
+  .chain-block{margin:0 0 var(--space-12);}
+  .chain-row{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-4);margin-top:var(--space-8);}
+  .chain-step{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-pill);padding:var(--space-4) var(--space-12);font-size:12.5px;line-height:1.4;}
+  .chain-arrow{color:var(--signal);font-weight:700;flex:0 0 auto;}
+
+  .resume p.step-para{position:relative;padding-left:38px;}
+  .resume p.step-para::before{content:attr(data-step-n);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--signal);color:var(--surface);font:700 12px var(--font-code);display:flex;align-items:center;justify-content:center;}
+
+  .resume p.def-para{border-left:3px solid var(--type-distinction);background:color-mix(in srgb, var(--type-distinction) 7%, transparent);border-radius:0 var(--radius-control) var(--radius-control) 0;padding:var(--space-8) var(--space-12);}
+  .resume p.def-para>b:first-child{color:var(--type-distinction);}
+
+  .resume blockquote.bq-cas{border-left-color:var(--flag);background:color-mix(in srgb, var(--flag) 8%, var(--paper));}
+  .resume blockquote.bq-cas b:first-child{color:var(--flag);}
+
   textarea.f,input.f{width:100%;padding:var(--space-8) var(--space-12);border:1px solid var(--line);border-radius:var(--radius-control);font:400 13px var(--font-text);background:var(--paper);color:var(--ink);}
   textarea.f{resize:vertical;min-height:44px;line-height:1.45;} textarea.big{min-height:150px;}
   textarea.f:focus,input.f:focus{outline:2px solid var(--signal);outline-offset:-1px;}

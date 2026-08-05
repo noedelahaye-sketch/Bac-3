@@ -1775,6 +1775,84 @@
       }
     }
   }
+  function inFoldedSources(el){ return !!el.closest(".section-fold"); }
+  function tileifyEnumerations(container){
+    Array.prototype.slice.call(container.querySelectorAll("p")).forEach(function(p){
+      if(inFoldedSources(p)) return;
+      var html=p.innerHTML;
+      var m=/^<b>([^:<]*:)<\/b>\s*/.exec(html);
+      if(!m) return;
+      var rest=html.slice(m[0].length);
+      var parts=rest.split(" · ");
+      if(parts.length<3) return;
+      if(parts.some(function(s){ return s.replace(/<[^>]+>/g,"").trim().length>140; })) return;
+      var wrap=document.createElement("div");
+      wrap.className="enum-block";
+      var lab=document.createElement("div"); lab.className="enum-label"; lab.innerHTML="<b>"+m[1]+"</b>";
+      var row=document.createElement("div"); row.className="enum-tiles";
+      parts.forEach(function(part){
+        var tile=document.createElement("span"); tile.className="enum-tile"; tile.innerHTML=part.trim();
+        row.appendChild(tile);
+      });
+      wrap.appendChild(lab); wrap.appendChild(row);
+      p.replaceWith(wrap);
+    });
+  }
+  function chainifyArrows(container){
+    Array.prototype.slice.call(container.querySelectorAll("p")).forEach(function(p){
+      if(inFoldedSources(p)) return;
+      var html=p.innerHTML;
+      if((html.match(/→/g)||[]).length<2) return;
+      if(/<a /.test(html)) return;
+      var lead="", rest=html;
+      var mlabel=/^<b>([^:<]*:)<\/b>\s*/.exec(html);
+      if(mlabel){ lead=mlabel[1]; rest=html.slice(mlabel[0].length); }
+      var steps=rest.split("→").map(function(s){ return s.trim(); }).filter(Boolean);
+      if(steps.length<3) return;
+      if(steps.some(function(s){ return s.replace(/<[^>]+>/g,"").length>90; })) return;
+      var wrap=document.createElement("div"); wrap.className="chain-block";
+      if(lead){ var lab=document.createElement("div"); lab.className="enum-label"; lab.innerHTML="<b>"+lead+"</b>"; wrap.appendChild(lab); }
+      var row=document.createElement("div"); row.className="chain-row";
+      steps.forEach(function(s,i){
+        if(i){ var arrow=document.createElement("span"); arrow.className="chain-arrow"; arrow.textContent="→"; row.appendChild(arrow); }
+        var node=document.createElement("span"); node.className="chain-step"; node.innerHTML=s;
+        row.appendChild(node);
+      });
+      wrap.appendChild(row);
+      p.replaceWith(wrap);
+    });
+  }
+  function markSteps(container){
+    Array.prototype.slice.call(container.querySelectorAll("p")).forEach(function(p){
+      if(inFoldedSources(p)) return;
+      var m=/^<b>Étape\s+(\d+)\s*[—-]/.exec(p.innerHTML);
+      if(!m) return;
+      p.classList.add("step-para");
+      p.setAttribute("data-step-n", m[1]);
+    });
+  }
+  function markDefinitions(container){
+    Array.prototype.slice.call(container.querySelectorAll("p")).forEach(function(p){
+      if(inFoldedSources(p)) return;
+      if(/^<b>Définition\.<\/b>/.test(p.innerHTML)) p.classList.add("def-para");
+    });
+  }
+  function markCasBlockquotes(container){
+    Array.prototype.slice.call(container.querySelectorAll("blockquote")).forEach(function(bq){
+      if(inFoldedSources(bq)) return;
+      var firstP=bq.querySelector("p");
+      if(firstP && /^<b>(Cas|Exemple|Illustration)\b/.test(firstP.innerHTML)) bq.classList.add("bq-cas");
+    });
+  }
+  function enrichirResume(){
+    var container=main.querySelector(".resume");
+    if(!container) return;
+    tileifyEnumerations(container);
+    chainifyArrows(container);
+    markSteps(container);
+    markDefinitions(container);
+    markCasBlockquotes(container);
+  }
   function extractSections(html){
     var tmp=document.createElement("div");
     tmp.innerHTML=html;
@@ -1921,6 +1999,7 @@
       main.innerHTML=vCoursResume(ROUTE.id);
       positionQbar();
       foldSourcesSection();
+      enrichirResume();
     } else if(v==="coursQuestion"){
       main.classList.remove("with-qbottom");
       main.innerHTML=vCoursQuestion(ROUTE.id);
