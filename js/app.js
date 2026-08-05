@@ -1730,6 +1730,16 @@
     h+='</div>';
     return h;
   }
+  function renderTesteToi(r){
+    var nCards=activeCards().filter(function(c){return c.resume===r.id;}).length;
+    var nQuiz=QUIZ.filter(function(q){return q.resume===r.id;}).length;
+    if(!nCards && !nQuiz) return "";
+    var h='<div class="teste-toi"><div class="lab">Teste-toi sur ce résumé</div><div class="tt-btns">';
+    if(nCards) h+='<button class="tile-quiz-btn btn-flash" data-flashcards-resume-start="'+r.id+':'+r.bloc+'">'+nCards+' carte'+(nCards>1?'s':'')+'</button>';
+    if(nQuiz) h+='<button class="tile-quiz-btn btn-quiz" data-quiz-resume-start="'+r.id+':'+r.bloc+'">'+nQuiz+' question'+(nQuiz>1?'s':'')+' de quiz</button>';
+    h+='</div></div>';
+    return h;
+  }
   function vCoursResume(id){
     var r=(typeof RESUMES!=="undefined")?RESUMES[id]:null;
     if(!r){
@@ -1749,6 +1759,7 @@
       h+='<button data-lu="'+r.id+'" data-luv="'+p[0]+'" aria-pressed="'+(st===p[0])+'">'+p[1]+'</button>';
     });
     h+='</div></div>';
+    h+=renderTesteToi(r);
     return h;
   }
   function vCoursQuestion(qid){
@@ -1971,6 +1982,28 @@
         list=shuffle(list||[]);
         if(!list.length) return;
         SES={list:list,i:0,show:false,ok:0}; render();
+      });
+    });
+    main.querySelectorAll("[data-flashcards-resume-start]").forEach(function(el){
+      el.addEventListener("click",function(){
+        var parts=el.getAttribute("data-flashcards-resume-start").split(":"), rid=parts[0], bloc=parts[1];
+        var list=shuffle(activeCards().filter(function(c){return c.resume===rid;}));
+        if(!list.length) return;
+        SES={list:list,i:0,show:false,ok:0};
+        ROUTE={view:"flashcardsBloc", id:bloc}; S.view="flashcardsBloc";
+        history.replaceState(null,"",hashFor("flashcardsBloc",bloc)); save();
+        render();
+      });
+    });
+    main.querySelectorAll("[data-quiz-resume-start]").forEach(function(el){
+      el.addEventListener("click",function(){
+        var parts=el.getAttribute("data-quiz-resume-start").split(":"), rid=parts[0], bloc=parts[1];
+        var list=shuffle(QUIZ.filter(function(q){return q.resume===rid;}));
+        if(!list.length) return;
+        QZ={list:list,i:0,ok:0,wrong:[],checked:false,input:initQuizInput(list[0])};
+        ROUTE={view:"quizBloc", id:bloc}; S.view="quizBloc";
+        history.replaceState(null,"",hashFor("quizBloc",bloc)); save();
+        render();
       });
     });
     main.querySelectorAll("[data-quiz-bloc-random]").forEach(function(el){
