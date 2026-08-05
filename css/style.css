@@ -308,6 +308,8 @@
   .lab:first-child{margin-top:var(--space-8);}
   .crit{display:flex;gap:var(--space-8);align-items:flex-start;font-size:13px;margin-bottom:var(--space-8);cursor:pointer;line-height:1.35;}
   .crit input{margin:3px 0 0;accent-color:var(--signal);width:16px;height:16px;flex-shrink:0;border-radius:5px;}
+  .lu-bar{margin-top:var(--space-32);padding-top:var(--space-16);border-top:1px solid var(--line);}
+  .lu-bar .lab{display:block;margin-bottom:var(--space-8);}
   .states{display:flex;gap:var(--space-8);flex-wrap:wrap;}
   .states button{font:600 12px var(--font-text);padding:var(--space-8) var(--space-12);border-radius:var(--radius-control);border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;min-height:44px;}
   .states button:hover:not(:disabled){border-color:var(--signal);color:var(--ink);}

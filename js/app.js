@@ -6,7 +6,7 @@
   var ALL = [];
   BLOCS.forEach(function(b){ b.qs.forEach(function(q){ q.id = b.id+"-"+q.n; q.bloc = b; ALL.push(q); }); });
 
-  var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, cardState:{}, quiz:[], quizSeen:{}, cardRuns:[],
+  var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, cardState:{}, quiz:[], quizSeen:{}, cardRuns:[], coursLu:{},
             newToday:{d:0,n:0}, streak:{current:0,max:0,lastDate:0},
             deadline:DEFAULT_DEADLINE, open:{b1:true}, view:"accueil", _ts:0 };
   var SES=null, QZ=null, saveTimer=null;
@@ -123,11 +123,12 @@
         && !(sv.box && Object.keys(sv.box).length)
         && !(sv.quizSeen && Object.keys(sv.quizSeen).length)
         && !(sv.cardRuns && sv.cardRuns.length)
+        && !(sv.coursLu && Object.keys(sv.coursLu).length)
         && !(sv.quiz && sv.quiz.length);
   }
   function applyState(sv){
     S.status=sv.status||{}; S.checks=sv.checks||{}; S.notes=sv.notes||{}; S.fiche=sv.fiche||{};
-    S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.fail=sv.fail||{}; S.cardState=sv.cardState||{}; S.quiz=sv.quiz||[]; S.quizSeen=sv.quizSeen||{}; S.cardRuns=sv.cardRuns||[];
+    S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.fail=sv.fail||{}; S.cardState=sv.cardState||{}; S.quiz=sv.quiz||[]; S.quizSeen=sv.quizSeen||{}; S.cardRuns=sv.cardRuns||[]; S.coursLu=sv.coursLu||{};
     S.newToday=sv.newToday||{d:0,n:0};
     S.streak=sv.streak||{current:0,max:0,lastDate:0};
     S.deadline=sv.deadline||DEFAULT_DEADLINE; S.open=sv.open||{b1:true}; S._ts=sv._ts||0;
@@ -1288,6 +1289,16 @@
   function normTok(s){
     return String(s||"").toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
   }
+  var LU_ETATS=[["nonlu","Pas encore lu"],["wip","En cours"],["lu","Lu"]];
+  function luEtat(id){ return S.coursLu[id]||"nonlu"; }
+  function luChip(id){
+    var st=luEtat(id);
+    if(st==="nonlu") return "";
+    return '<span class="chip'+(st==="lu"?" done":" wip")+'">'+(st==="lu"?"lu":"en cours")+'</span>';
+  }
+  function luCount(ids){
+    return (ids||[]).filter(function(id){ return luEtat(id)==="lu"; }).length;
+  }
 
   /* ---------- RECHERCHE ---------- */
   function stripHtml(s){
@@ -1494,6 +1505,8 @@
         h+='<span class="tile-code code">Bloc '+b.numero+'</span>';
         h+='<span class="tile-title">'+b.court+'</span>';
         h+='<span class="tile-cas">'+b.fiches.length+' résumé'+(b.fiches.length>1?'s':'')+' &middot; '+b.competences.join(", ")+'</span>';
+        var lusB=luCount(b.fiches), totB=b.fiches.length;
+        h+='<div class="tile-bar-row"><span class="tile-bar"><span class="tile-fill" style="width:'+(totB?Math.round(lusB/totB*100):0)+'%"></span></span><span class="tile-pct">'+lusB+'/'+totB+' lus</span></div>';
         h+='</button>';
       } else {
         h+='<div class="tile tile-empty">';
@@ -1514,7 +1527,8 @@
     var list=b.fiches.map(function(id){return RESUMES[id];}).filter(Boolean).sort(function(a,c){return a.ordre-c.ordre;});
     var h='<div class="qbar">'+renderBreadcrumb([{label:"Cours",view:"cours"},{label:b.court}])+'</div>';
     h+='<h1 class="qhead-title">'+b.titre+'</h1><div class="qhead-code code">'+b.epreuve+'</div>';
-    h+='<div class="lab-row"><span class="lab">Résumés</span><span class="count">'+list.length+'</span></div>';
+    var lus=luCount(list.map(function(r){return r.id;}));
+    h+='<div class="lab-row"><span class="lab">Résumés</span><span class="count">'+lus+'/'+list.length+' lus</span></div>';
     h+='<div class="tiles">';
     list.forEach(function(r){
       h+='<button class="tile" data-go-resume="'+r.id+'">';
@@ -1522,6 +1536,7 @@
       h+='<span class="tile-title">'+r.titre+'</span>';
       h+='<span class="tile-cas">'+r.accroche+'</span>';
       h+='<span class="tile-count code">'+r.lecture_min+' min &middot; '+r.questions.length+' question'+(r.questions.length>1?'s':'')+'</span>';
+      h+=luChip(r.id);
       h+='</button>';
     });
     h+='</div>';
@@ -1534,7 +1549,8 @@
     }
     var b=(typeof COURS_BLOCS!=="undefined"?COURS_BLOCS:[]).filter(function(x){return x.numero===r.bloc;})[0];
     var h='<div class="qbar">'+renderBreadcrumb([{label:"Cours",view:"cours"},{label:b?b.court:("Bloc "+r.bloc),view:"coursBloc",param:r.bloc},{label:r.titre}])+'<div class="read-progress"><span class="read-progress-fill" id="readProgressFill"></span></div></div>';
-    h+='<h1 class="qhead-title">'+r.titre+'</h1><div class="qhead-code code">'+r.lecture_min+' min &middot; '+r.mots+' mots &middot; '+r.competences.join(", ")+'</div>';
+    h+='<div class="qtitle-row"><h1 class="qhead-title">'+r.titre+'</h1>'+luChip(r.id)+'</div>';
+    h+='<div class="qhead-code code">'+r.lecture_min+' min &middot; '+r.mots+' mots &middot; '+r.competences.join(", ")+'</div>';
     h+='<p class="intro">'+r.accroche+'</p>';
     h+=renderQuestionLinks("Indispensable pour", r.questions, r.bloc);
     h+=renderQuestionLinks("En complément pour", r.questions_appui, r.bloc);
@@ -1544,6 +1560,12 @@
       r.sources.forEach(function(s){ h+='<li>'+s.support+' &middot; '+s.lecons+' leçon'+(s.lecons>1?'s':'')+'</li>'; });
       h+='</ul>';
     }
+    var st=luEtat(r.id);
+    h+='<div class="lu-bar"><span class="lab">Où j\'en suis dans ce résumé</span><div class="states">';
+    LU_ETATS.forEach(function(p){
+      h+='<button data-lu="'+r.id+'" data-luv="'+p[0]+'" aria-pressed="'+(st===p[0])+'">'+p[1]+'</button>';
+    });
+    h+='</div></div>';
     return h;
   }
   function vCoursQuestion(qid){
@@ -1667,6 +1689,13 @@
     });
     main.querySelectorAll("[data-set]").forEach(function(el){
       el.addEventListener("click",function(){ S.status[el.getAttribute("data-set")]=el.getAttribute("data-v"); save(); render(); });
+    });
+    main.querySelectorAll("[data-lu]").forEach(function(el){
+      el.addEventListener("click",function(){
+        var id=el.getAttribute("data-lu"), v=el.getAttribute("data-luv");
+        if(v==="nonlu") delete S.coursLu[id]; else S.coursLu[id]=v;
+        save(); render();
+      });
     });
     main.querySelectorAll("[data-check]").forEach(function(el){
       el.addEventListener("change",function(){ var id=el.getAttribute("data-check"),i=el.getAttribute("data-i"); S.checks[id]=S.checks[id]||{}; S.checks[id][i]=el.checked; save(); render(); });
