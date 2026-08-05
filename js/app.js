@@ -1740,6 +1740,27 @@
     h+='</div></div>';
     return h;
   }
+  function extractSections(html){
+    var tmp=document.createElement("div");
+    tmp.innerHTML=html;
+    return Array.prototype.map.call(tmp.querySelectorAll("h3"), function(el){ return el.textContent.trim(); });
+  }
+  function renderSommaire(sections){
+    if(sections.length<2) return "";
+    var h='<nav class="sommaire"><div class="lab">Sommaire</div><ol>';
+    sections.forEach(function(s,i){ h+='<li><button data-scroll-sec="'+i+'">'+esc(s)+'</button></li>'; });
+    h+='</ol></nav>';
+    return h;
+  }
+  function scrollToSection(idx){
+    var els=main.querySelectorAll(".resume h3");
+    var el=els[idx];
+    if(!el) return;
+    var qbar=main.querySelector(".qbar");
+    var offset=nav.offsetHeight+(qbar?qbar.offsetHeight:0)+16;
+    var y=el.getBoundingClientRect().top+window.scrollY-offset;
+    window.scrollTo({top:y, behavior:"smooth"});
+  }
   function vCoursResume(id){
     var r=(typeof RESUMES!=="undefined")?RESUMES[id]:null;
     if(!r){
@@ -1752,6 +1773,7 @@
     h+='<p class="intro">'+r.accroche+'</p>';
     h+=renderQuestionLinks("Indispensable pour", r.questions, r.bloc);
     h+=renderQuestionLinks("En complément pour", r.questions_appui, r.bloc);
+    h+=renderSommaire(extractSections(r.html));
     h+='<div class="resume">'+r.html+'</div>';
     var st=luEtat(r.id);
     h+='<div class="lu-bar"><span class="lab">Où j\'en suis dans ce résumé</span><div class="states">';
@@ -1904,6 +1926,9 @@
         else { S.coursLu[id]=v; S.coursLuAt[id]=Date.now(); }
         save(); render();
       });
+    });
+    main.querySelectorAll("[data-scroll-sec]").forEach(function(el){
+      el.addEventListener("click",function(){ scrollToSection(parseInt(el.getAttribute("data-scroll-sec"),10)); });
     });
     main.querySelectorAll("[data-check]").forEach(function(el){
       el.addEventListener("change",function(){ var id=el.getAttribute("data-check"),i=el.getAttribute("data-i"); S.checks[id]=S.checks[id]||{}; S.checks[id][i]=el.checked; save(); render(); });
