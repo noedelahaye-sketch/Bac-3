@@ -482,6 +482,16 @@
   .qbar-section.show{opacity:1;}
   @media (max-width:720px){ .qbar-section{display:none;} }
 
+  /* ESSAI — apartés renvoyés dans la marge droite */
+  @media (min-width:1080px){
+    .resume .aparte{float:right;clear:right;width:340px;margin:0 0 var(--space-12) var(--space-32);max-width:340px;}
+    .resume.has-marge table,.resume.has-marge .table-wrap,
+    .resume.has-marge .enum-block,.resume.has-marge .chain-block,
+    .resume.has-marge h3{clear:both;}
+    .resume h3.sec-essai{position:relative;}
+    .resume h3.sec-essai::after{content:"essai marge";position:absolute;right:0;font:600 10px var(--font-text);letter-spacing:.1em;text-transform:uppercase;color:var(--c-structure);border:1px solid color-mix(in srgb, var(--c-structure) 40%, transparent);border-radius:var(--radius-pill);padding:2px var(--space-8);}
+  }
+
   .sommaire li.sec-on>button{color:var(--c-structure);font-weight:600;}
   .sommaire li.sec-on>button::before{background:color-mix(in srgb, var(--c-structure) 22%, var(--paper));color:var(--c-structure);}
 

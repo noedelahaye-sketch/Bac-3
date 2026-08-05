@@ -1882,6 +1882,26 @@
       else if(/^<b>Définition\b/.test(lead)) bq.classList.add("bq-def");
     });
   }
+  /* ESSAI — apartés en marge, limité à une section pour comparaison */
+  var ESSAI_MARGE={resume:"b1-f04", section:4};
+  function sideNotesInSection(container, resumeId){
+    if(!ESSAI_MARGE || resumeId!==ESSAI_MARGE.resume) return;
+    var kids=Array.prototype.slice.call(container.children);
+    var h3i=[];
+    kids.forEach(function(el,i){ if(el.tagName==="H3") h3i.push(i); });
+    var start=h3i[ESSAI_MARGE.section];
+    if(start===undefined) return;
+    var end=h3i[ESSAI_MARGE.section+1];
+    if(end===undefined) end=kids.length;
+    container.classList.add("has-marge");
+    for(var i=start; i<end; i++){
+      var el=kids[i];
+      if(el.classList && (el.classList.contains("def-para")||el.classList.contains("bq-def")||el.classList.contains("bq-cas"))){
+        el.classList.add("aparte");
+      }
+    }
+    if(kids[start]) kids[start].classList.add("sec-essai");
+  }
   function numberHeadings(container){
     Array.prototype.slice.call(container.querySelectorAll("h3")).forEach(function(h){
       if(inFoldedSources(h)) return;
@@ -1895,7 +1915,7 @@
       h.classList.add("h4-rule");
     });
   }
-  function enrichirResume(){
+  function enrichirResume(resumeId){
     var container=main.querySelector(".resume");
     if(!container) return;
     tileifyEnumerations(container);
@@ -1904,6 +1924,7 @@
     markDefinitions(container);
     markCasBlockquotes(container);
     numberHeadings(container);
+    sideNotesInSection(container, resumeId);
   }
   function extractSections(html){
     var tmp=document.createElement("div");
@@ -2051,7 +2072,7 @@
       main.innerHTML=vCoursResume(ROUTE.id);
       positionQbar();
       foldSourcesSection();
-      enrichirResume();
+      enrichirResume(ROUTE.id);
       updateSectionActive();
     } else if(v==="coursQuestion"){
       main.classList.remove("with-qbottom");
