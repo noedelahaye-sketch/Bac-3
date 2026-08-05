@@ -73,6 +73,20 @@
     body.files[GIST_FILENAME]={content: JSON.stringify(state)};
     await ghFetch("https://api.github.com/gists/"+id, {method:"PATCH", body:JSON.stringify(body)});
   }
+  async function reconcileSync(){
+    var remote=await pullFromGist();
+    var remoteEmpty=isStateEmpty(remote), localEmpty=isStateEmpty(S);
+    if(!remoteEmpty && (localEmpty || (remote._ts||0) > (S._ts||0))){
+      applyState(remote);
+      try{ Store.set(KEY, JSON.stringify(S)); }catch(e){}
+      return "pulled";
+    }
+    if(!localEmpty && (remoteEmpty || (S._ts||0) > (remote?remote._ts||0:0))){
+      await pushToGist(S);
+      return "pushed";
+    }
+    return "none";
+  }
   function renderSyncStatus(){
     var el=document.getElementById("syncStatusText");
     if(!el) return;
@@ -85,6 +99,7 @@
   var syncPushTimer=null;
   function scheduleSyncPush(){
     if(!getSyncToken()) return;
+    if(isStateEmpty(S)) return;
     clearTimeout(syncPushTimer);
     syncPushTimer=setTimeout(function(){
       syncStatus={state:"syncing", at:syncStatus.at};
@@ -97,6 +112,18 @@
         renderSyncStatus();
       });
     }, 1500);
+  }
+  function isStateEmpty(sv){
+    if(!sv) return true;
+    return !(sv.status && Object.keys(sv.status).length)
+        && !(sv.checks && Object.keys(sv.checks).length)
+        && !(sv.notes && Object.keys(sv.notes).length)
+        && !(sv.fiche && Object.keys(sv.fiche).length)
+        && !(sv.journal && sv.journal.length)
+        && !(sv.box && Object.keys(sv.box).length)
+        && !(sv.quizSeen && Object.keys(sv.quizSeen).length)
+        && !(sv.cardRuns && sv.cardRuns.length)
+        && !(sv.quiz && sv.quiz.length);
   }
   function applyState(sv){
     S.status=sv.status||{}; S.checks=sv.checks||{}; S.notes=sv.notes||{}; S.fiche=sv.fiche||{};
@@ -1885,13 +1912,7 @@
       renderSyncStatus();
       (async function(){
         try{
-          var remote=await pullFromGist();
-          if(remote && (remote._ts||0) > (S._ts||0)){
-            applyState(remote);
-            try{ Store.set(KEY, JSON.stringify(S)); }catch(e){}
-          } else {
-            await pushToGist(S);
-          }
+          await reconcileSync();
           syncStatus={state:"ok", at:new Date()};
         }catch(e){
           syncStatus={state:"error", at:null};
@@ -1953,14 +1974,8 @@
       syncStatus={state:"syncing", at:null};
       renderSyncStatus();
       try{
-        var remote=await pullFromGist();
-        if(remote && (remote._ts||0) > (S._ts||0)){
-          applyState(remote);
-          try{ Store.set(KEY, JSON.stringify(S)); }catch(e){}
-          render();
-        } else if((S._ts||0) > (remote?remote._ts||0:0)){
-          await pushToGist(S);
-        }
+        var action=await reconcileSync();
+        if(action==="pulled") render();
         syncStatus={state:"ok", at:new Date()};
       }catch(e){
         syncStatus={state:"error", at:null};
