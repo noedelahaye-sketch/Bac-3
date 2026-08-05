@@ -226,10 +226,14 @@
   .tile-title{font-family:var(--font-display);font-weight:600;font-size:19px;line-height:1.2;margin-top:var(--space-8);}
   .tile-cas{color:var(--muted);font-size:13px;margin-top:var(--space-4);}
   .tile-bar-row{display:flex;align-items:center;gap:var(--space-8);width:100%;margin-top:var(--space-16);}
-  .tile-bar{flex:1;height:3px;background:var(--line);overflow:hidden;}
+  .tile-bar{position:relative;flex:1;height:3px;background:var(--line);overflow:hidden;}
   .tile-fill{display:block;height:100%;background:var(--signal);}
+  .tile-fill-wip{position:absolute;top:0;background:color-mix(in srgb, var(--signal) 40%, var(--line));}
   .tile-pct{color:var(--muted);font-size:12px;white-space:nowrap;}
   .tile-count{color:var(--muted);font-size:12px;margin-top:var(--space-8);}
+  .tile-termine{border-color:var(--signal);}
+  .tile-termine .tile-code{color:var(--signal);}
+  .tile-encours:not(.tile-termine){border-color:color-mix(in srgb, var(--signal) 50%, var(--line));background:color-mix(in srgb, var(--signal) 5%, var(--surface));}
   .tile-quiz-btn{margin-top:var(--space-12);display:inline-flex;align-items:center;background:var(--signal);color:var(--surface);padding:var(--space-8) var(--space-12);border-radius:var(--radius-control);font:600 12.5px var(--font-text);cursor:pointer;min-height:36px;}
   .tile-quiz-btn:hover{background:color-mix(in srgb, var(--signal) 82%, black);}
   .tile-quiz-btn.btn-flash{background:#2563EB;color:var(--ink);}
@@ -319,8 +323,6 @@
   .comp-box p{margin:0 0 var(--space-8);} .comp-box p:last-child{margin-bottom:0;}
   .comp-box ul{margin:0 0 var(--space-8);padding-left:18px;} .comp-box li{margin-bottom:var(--space-4);}
 
-  .q-brouillon{margin-top:var(--space-48);}
-
   .tile-thin{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:var(--radius-pill);background:var(--surface);color:var(--ink);padding:0 var(--space-16);font:600 12px var(--font-text);cursor:pointer;min-height:36px;}
   .tile-thin:hover{border-color:var(--signal);}
 
@@ -345,9 +347,6 @@
 
   .lab-row{display:flex;align-items:center;justify-content:space-between;gap:var(--space-8);margin:var(--space-16) 0 var(--space-8);}
   .lab-row .lab{margin:0;}
-
-  .saved-flag{display:block;opacity:0;font-size:11px;color:var(--muted);margin-top:var(--space-4);transition:opacity 140ms ease-out;}
-  .saved-flag.show{opacity:1;}
 
   details.arbitrage{margin-top:var(--space-16);}
 

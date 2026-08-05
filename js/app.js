@@ -656,8 +656,6 @@
       var ck=(S.checks[q.id]||{})[i]?" checked":"";
       h+='<label class="crit"><input type="checkbox" data-check="'+q.id+'" data-i="'+i+'"'+ck+'><span>'+k+'</span></label>';
     });
-    h+='<div class="lab">Mon brouillon</div><textarea class="f big" data-note="'+q.id+'" placeholder="Écris ici. Tu récupéreras tout d\'un coup depuis l\'accueil, bouton Exporter.">'+esc(S.notes[q.id])+'</textarea>';
-    h+='<span class="saved-flag" id="saved-'+q.id+'">Enregistré</span>';
     if(!opts.hideStatus){
       h+='<div class="lab">Où j\'en suis</div><div class="states">';
       var st=S.status[q.id]||"todo";
@@ -784,7 +782,6 @@
     }
     h+='</div>';
     h+='</div>'; // q-comp-crit
-    h+='<div class="q-brouillon"><div class="lab">Mon brouillon</div><textarea class="f big" data-note="'+q.id+'" placeholder="Écris ici. Tu récupéreras tout d\'un coup depuis l\'accueil, bouton Exporter.">'+esc(S.notes[q.id])+'</textarea><span class="saved-flag" id="saved-'+q.id+'">Enregistré</span></div>';
     h+='<div class="q-arbitrage">'+renderArbitrage(q)+'</div>';
     h+='</div>'; // q-left
     h+='<div class="q-right"><div class="lab">Ce dont tu disposes</div>'+renderCoursSlot(q.id)+renderAnnexesUtilisables(q)+'</div>';
@@ -898,17 +895,45 @@
     return h;
   }
 
+  function blocCritStats(b){
+    var total=0, checked=0;
+    b.qs.forEach(function(q){
+      total+=q.k.length;
+      checked+=q.k.filter(function(_,i){return (S.checks[q.id]||{})[i];}).length;
+    });
+    return {total:total, checked:checked};
+  }
+  function renderDossiersEntry(){
+    var nxt=ALL.filter(function(q){return !isDone(q.id);})[0];
+    if(!nxt){
+      return '<div class="today-card t-redi today-done" style="margin-bottom:var(--space-24)"><span class="today-lab">Rédiger</span>'+
+        '<span class="today-title">Tout est rédigé</span><span class="today-meta">Les 44 livrables sont faits.</span></div>';
+    }
+    var crit=nxt.k.filter(function(_,i){return (S.checks[nxt.id]||{})[i];}).length;
+    return '<button class="today-card t-redi" data-goq="'+nxt.id+'" style="margin-bottom:var(--space-24)">'+
+      '<span class="today-lab">Prochaine question</span>'+
+      '<span class="today-title">'+esc(nxt.t)+'</span>'+
+      '<span class="today-meta">'+esc(nxt.bloc.code)+' &middot; '+esc(nxt.n)+' &middot; '+crit+'/'+nxt.k.length+' critères</span>'+
+      '</button>';
+  }
   function vDossiers(){
-    var h='<div class="tiles">';
-    BLOCS.forEach(function(b){
+    var firstUnfinished=BLOCS.filter(function(b){return b.qs.some(function(q){return !isDone(q.id);});})[0];
+    var h=renderDossiersEntry();
+    h+='<div class="tiles">';
+    BLOCS.forEach(function(b,idx){
       var done=b.qs.filter(function(q){return isDone(q.id);}).length;
+      var wip=b.qs.filter(function(q){return (S.status[q.id]||"todo")==="wip";}).length;
       var pct=b.qs.length?Math.round(100*done/b.qs.length):0;
-      h+='<button class="tile" data-go-bloc="'+b.id+'">';
-      h+='<span class="tile-code code">'+b.code+'</span>';
+      var pctWip=b.qs.length?Math.round(100*wip/b.qs.length):0;
+      var crit=blocCritStats(b);
+      var termine=b.qs.length>0 && done===b.qs.length;
+      var enCours=b===firstUnfinished;
+      h+='<button class="tile'+(termine?' tile-termine':'')+(enCours?' tile-encours':'')+'" data-go-bloc="'+b.id+'">';
+      h+='<span class="tile-code code">Étape '+(idx+1)+' &middot; '+b.code+(termine?' &middot; Terminé':'')+'</span>';
       h+='<span class="tile-title">'+b.titre+'</span>';
       h+='<span class="tile-cas">'+b.cas+'</span>';
-      h+='<span class="tile-bar-row"><span class="tile-bar"><span class="tile-fill" style="width:'+pct+'%"></span></span><span class="tile-pct code">'+pct+' %</span></span>';
-      h+='<span class="tile-count code">'+done+' / '+b.qs.length+'</span>';
+      h+='<span class="tile-bar-row"><span class="tile-bar"><span class="tile-fill" style="width:'+pct+'%"></span><span class="tile-fill tile-fill-wip" style="width:'+pctWip+'%;left:'+pct+'%"></span></span><span class="tile-pct code">'+done+'/'+b.qs.length+'</span></span>';
+      h+='<span class="tile-count code">'+crit.checked+'/'+crit.total+' critères</span>';
       h+='</button>';
     });
     h+='</div>';
@@ -1856,20 +1881,6 @@
     });
     main.querySelectorAll("[data-check]").forEach(function(el){
       el.addEventListener("change",function(){ var id=el.getAttribute("data-check"),i=el.getAttribute("data-i"); S.checks[id]=S.checks[id]||{}; S.checks[id][i]=el.checked; save(); render(); });
-    });
-    main.querySelectorAll("[data-note]").forEach(function(el){
-      el.addEventListener("input",function(){
-        var id=el.getAttribute("data-note");
-        S.notes[id]=el.value; save();
-        clearTimeout(el._flagT);
-        el._flagT=setTimeout(function(){
-          var flag=document.getElementById("saved-"+id);
-          if(!flag) return;
-          flag.classList.add("show");
-          clearTimeout(flag._hideT);
-          flag._hideT=setTimeout(function(){ flag.classList.remove("show"); },2000);
-        },400);
-      });
     });
     main.querySelectorAll("[data-arb-add]").forEach(function(el){
       el.addEventListener("click",function(){

@@ -237,39 +237,52 @@
 
   INFO["b2-Q1"].enonce = "Définissez un <strong>plan de prospection</strong> sous forme de tableau précisant <strong>prospects, lieux, supports utilisés</strong> et <strong>objectifs SMART</strong> associés.";
   INFO["b2-Q1"].annexes = [4];
+  INFO["b2-Q1"].doc = B2_DOC;
 
   INFO["b2-Q2"].enonce = "Définissez un ou plusieurs <strong>persona types</strong> : l'un représentant l'interlocuteur et l'autre représentant l'utilisateur final. Chaque persona devra être construit à partir de critères fiables : <strong>démographiques, géographiques, psychographiques et comportementaux</strong>.";
   INFO["b2-Q2"].annexes = [4];
+  INFO["b2-Q2"].doc = B2_DOC;
 
   INFO["b2-Q3"].enonce = "Proposez <strong>deux actions marketing ciblées</strong> pour faire connaître efficacement le produit H2S auprès des écoles privées. Ces actions devront être cohérentes avec le <strong>plan de prospection</strong> établi, les <strong>données du marché</strong> et le <strong>positionnement</strong> de Bambu Lab.";
   INFO["b2-Q3"].annexes = [1, 3, 4];
+  INFO["b2-Q3"].doc = B2_DOC;
 
   INFO["b2-Q4"].enonce = "Élaborez un <strong>budget réaliste</strong> pour l'une des actions marketing précédemment proposées, en intégrant l'ensemble des <strong>coûts nécessaires</strong>, les <strong>ressources disponibles</strong> et les <strong>contraintes financières</strong> de l'entreprise.";
   INFO["b2-Q4"].annexes = [6];
+  INFO["b2-Q4"].doc = B2_DOC;
 
   INFO["b2-Q5"].enonce = "Indiquez les <strong>indicateurs de performance (KPI)</strong> permettant de mesurer l'impact des actions mises en œuvre.";
+  INFO["b2-Q5"].doc = B2_DOC;
 
   INFO["b2-Q6"].enonce = "Rédigez un <strong>cahier des charges</strong> et un <strong>appel d'offres</strong> précisant les attentes de Bambu Lab vis-à-vis du futur partenaire en termes de <strong>prospection, distribution, installation et formation</strong>.";
   INFO["b2-Q6"].annexes = [6];
+  INFO["b2-Q6"].doc = B2_DOC;
 
   INFO["b2-Q7"].enonce = "Proposez une <strong>grille de critères d'évaluation</strong> permettant de comparer objectivement les prestataires candidats et choisissez-en un. Justifiez à la fois les <strong>critères retenus</strong> et le <strong>choix final</strong> du prestataire.";
+  INFO["b2-Q7"].doc = B2_DOC;
 
   INFO["b2-Q8"].enonce = "Mettez-vous dans la peau du prestataire lors d'un rendez-vous avec une école et concevez un <strong>plan de négociation structuré</strong>. Celui-ci devra préciser&nbsp;: les <strong>objectifs poursuivis</strong>, les <strong>arguments clés</strong> à mettre en avant, les <strong>concessions envisageables</strong>, les <strong>réponses aux objections</strong> potentielles. La négociation devra rester réaliste et conforme aux réglementations.";
   INFO["b2-Q8"].annexes = [6];
+  INFO["b2-Q8"].doc = B2_DOC;
 
   INFO["b2-Q9"].enonce = "Rédigez un <strong>message publicitaire</strong> destiné aux écoles privées d'Île-de-France, proposez une <strong>action de communication</strong> pour le diffuser et définissez les <strong>objectifs SMART</strong> associés, en cohérence avec la stratégie de Bambu Lab.";
   INFO["b2-Q9"].annexes = [2, 4];
+  INFO["b2-Q9"].doc = B2_DOC;
 
   INFO["b2-Q10"].enonce = "Établissez un listing de <strong>KPI pertinents</strong> pour évaluer la performance de votre action de communication puis présentez un <strong>budget détaillé</strong> pour l'action proposée en précisant les <strong>ressources mobilisées</strong> (humaines, financières, techniques).";
   INFO["b2-Q10"].annexes = [6];
+  INFO["b2-Q10"].doc = B2_DOC;
 
   INFO["b2-Q11"].enonce = "Concevez plusieurs <strong>supports de communication</strong> (print et digitaux) adaptés à l'action proposée, en respectant la <strong>charte graphique</strong> et la <strong>ligne éditoriale</strong> de Bambu Lab. Les supports devront être <strong>inclusifs et accessibles</strong> tout en respectant les règles de <strong>droit d'auteur</strong> et de <strong>droit à l'image</strong>.";
   INFO["b2-Q11"].annexes = [1, 2];
+  INFO["b2-Q11"].doc = B2_DOC;
 
   INFO["b2-Q12"].enonce = "Afin de fédérer un maximum d'étudiants autour des pratiques, des usages et du fonctionnement de l'imprimante 3D, Bambu Lab envisage de créer un <strong>groupe Facebook</strong> pour chaque école. Proposez un <strong>style rédactionnel</strong> adapté ainsi que différentes <strong>méthodes pour animer la communauté</strong> (sondages, jeux-concours, sessions de questions/réponses, etc.).";
   INFO["b2-Q12"].annexes = [1, 4];
+  INFO["b2-Q12"].doc = B2_DOC;
 
   INFO["b2-Q13"].enonce = "Proposez des <strong>bonnes pratiques</strong> pour maintenir une communauté en ligne positive autour de Bambu Lab, expliquez leur <strong>impact sur la communication et l'e-réputation</strong> de la marque, puis indiquez les <strong>indicateurs</strong> permettant d'en mesurer l'efficacité.";
+  INFO["b2-Q13"].doc = B2_DOC;
 
   ["Q1","Q2","Q3","Q4","Q5","Q6","Q7","Q8","Q9","Q10","Q11","Q12","Q13"].forEach(function(n){ INFO["b2-"+n].doc = B2_DOC; });
 
