@@ -1743,11 +1743,6 @@
     h+=renderQuestionLinks("Indispensable pour", r.questions, r.bloc);
     h+=renderQuestionLinks("En complément pour", r.questions_appui, r.bloc);
     h+='<div class="resume">'+r.html+'</div>';
-    if(r.sources && r.sources.length){
-      h+='<div class="rc-lab">Sources</div><ul class="rc-src">';
-      r.sources.forEach(function(s){ h+='<li>'+s.support+' &middot; '+s.lecons+' leçon'+(s.lecons>1?'s':'')+'</li>'; });
-      h+='</ul>';
-    }
     var st=luEtat(r.id);
     h+='<div class="lu-bar"><span class="lab">Où j\'en suis dans ce résumé</span><div class="states">';
     LU_ETATS.forEach(function(p){
