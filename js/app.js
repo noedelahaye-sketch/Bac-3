@@ -6,7 +6,7 @@
   var ALL = [];
   BLOCS.forEach(function(b){ b.qs.forEach(function(q){ q.id = b.id+"-"+q.n; q.bloc = b; ALL.push(q); }); });
 
-  var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, cardState:{}, quiz:[], quizSeen:{}, cardRuns:[], coursLu:{},
+  var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, cardState:{}, quiz:[], quizSeen:{}, cardRuns:[], coursLu:{}, statusAt:{}, coursLuAt:{},
             newToday:{d:0,n:0}, streak:{current:0,max:0,lastDate:0},
             deadline:DEFAULT_DEADLINE, open:{b1:true}, view:"accueil", _ts:0 };
   var SES=null, QZ=null, saveTimer=null;
@@ -128,7 +128,7 @@
   }
   function applyState(sv){
     S.status=sv.status||{}; S.checks=sv.checks||{}; S.notes=sv.notes||{}; S.fiche=sv.fiche||{};
-    S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.fail=sv.fail||{}; S.cardState=sv.cardState||{}; S.quiz=sv.quiz||[]; S.quizSeen=sv.quizSeen||{}; S.cardRuns=sv.cardRuns||[]; S.coursLu=sv.coursLu||{};
+    S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.fail=sv.fail||{}; S.cardState=sv.cardState||{}; S.quiz=sv.quiz||[]; S.quizSeen=sv.quizSeen||{}; S.cardRuns=sv.cardRuns||[]; S.coursLu=sv.coursLu||{}; S.statusAt=sv.statusAt||{}; S.coursLuAt=sv.coursLuAt||{}; S.reprendre=sv.reprendre||null;
     S.newToday=sv.newToday||{d:0,n:0};
     S.streak=sv.streak||{current:0,max:0,lastDate:0};
     S.deadline=sv.deadline||DEFAULT_DEADLINE; S.open=sv.open||{b1:true}; S._ts=sv._ts||0;
@@ -335,7 +335,10 @@
     scrollMemory[hashFor(ROUTE.view, ROUTE.id)]=window.scrollY;
     if(r.view!==ROUTE.view){ SES=null; QZ=null; }
     searchOpen = (r.view==="recherche");
-    ROUTE=r; S.view=(KNOWN_VIEWS.indexOf(r.view)>=0)?r.view:"accueil"; save();
+    ROUTE=r; S.view=(KNOWN_VIEWS.indexOf(r.view)>=0)?r.view:"accueil";
+    if(r.view==="question" && r.id) S.reprendre={type:"question", id:r.id, t:Date.now()};
+    else if(r.view==="coursResume" && r.id) S.reprendre={type:"resume", id:r.id, t:Date.now()};
+    save();
     render();
     main.classList.remove("view-anim");
     void main.offsetWidth;
@@ -448,10 +451,31 @@
   }
 
   /* ---------- ACCUEIL ---------- */
-  function renderAujourdhui(){
-    var h='<div class="lab">Aujourd\'hui</div><div class="today">';
+  function renderReprendre(skipQid, skipResId){
+    var rp=S.reprendre;
+    if(!rp || !rp.id) return "";
+    if(rp.type==="question"){
+      if(rp.id===skipQid) return "";
+      var q=ALL.filter(function(x){return x.id===rp.id;})[0];
+      if(!q || isDone(q.id)) return "";
+      return '<button class="reprendre" data-goq="'+q.id+'"><span class="rep-lab">Reprendre</span>'+
+             '<span class="rep-t">'+esc(q.bloc.code)+' &middot; '+esc(q.n)+' — '+esc(q.t)+'</span></button>';
+    }
+    if(rp.type==="resume"){
+      if(rp.id===skipResId) return "";
+      var r=(typeof RESUMES!=="undefined")?RESUMES[rp.id]:null;
+      if(!r || luEtat(r.id)==="lu") return "";
+      return '<button class="reprendre" data-go-resume="'+r.id+'"><span class="rep-lab">Reprendre</span>'+
+             '<span class="rep-t">'+esc(r.titre)+'</span></button>';
+    }
+    return "";
+  }
 
+  function renderAujourdhui(){
     var nxt=ALL.filter(function(q){return !isDone(q.id);})[0];
+    var resPrev=nextResumeToRead();
+    var h=renderReprendre(nxt?nxt.id:null, resPrev?resPrev.id:null);
+    h+='<div class="lab">Aujourd\'hui</div><div class="today">';
     if(nxt){
       var crit=nxt.k.filter(function(_,i){return (S.checks[nxt.id]||{})[i];}).length;
       h+='<button class="today-card t-redi" data-goq="'+nxt.id+'">';
@@ -465,7 +489,7 @@
       h+='<span class="today-meta">Les 44 livrables sont faits.</span></div>';
     }
 
-    var res=nextResumeToRead();
+    var res=resPrev;
     if(res){
       var enCours=luEtat(res.id)==="wip";
       h+='<button class="today-card t-lire" data-go-resume="'+res.id+'">';
@@ -493,6 +517,40 @@
     }
 
     h+='</div>';
+    return h;
+  }
+
+  function runTime(r){
+    if(r && typeof r.t==="number") return r.t;
+    var m=/^(\d{2})\/(\d{2})\/(\d{4})$/.exec((r&&r.d)||"");
+    return m ? new Date(+m[3], +m[2]-1, +m[1]).getTime() : 0;
+  }
+  function weekActivity(){
+    var since=today()-6*86400000;
+    var q=Object.keys(S.statusAt||{}).filter(function(id){
+      return S.statusAt[id]>=since && S.status[id] && S.status[id]!=="todo";
+    }).length;
+    var r=Object.keys(S.coursLuAt||{}).filter(function(id){
+      return S.coursLuAt[id]>=since && luEtat(id)==="lu";
+    }).length;
+    var c=(S.cardRuns||[]).filter(function(x){ return runTime(x)>=since; })
+      .reduce(function(a,x){ return a+(x.n||0); },0);
+    return {questions:q, resumes:r, cartes:c};
+  }
+  function renderSemaine(){
+    var a=weekActivity(), cur=streakDisplay(), max=(S.streak&&S.streak.max)||0;
+    var parts=[];
+    if(a.questions) parts.push(a.questions+' question'+(a.questions>1?'s':'')+' avancée'+(a.questions>1?'s':''));
+    if(a.resumes) parts.push(a.resumes+' résumé'+(a.resumes>1?'s':'')+' lu'+(a.resumes>1?'s':''));
+    if(a.cartes) parts.push(a.cartes+' carte'+(a.cartes>1?'s':'')+' revue'+(a.cartes>1?'s':''));
+    var h='<div class="semaine">';
+    h+='<div class="sem-streak"><span class="num">'+cur+'</span><span class="lbl">jour'+(cur>1?'s':'')+' d\'affilée</span>';
+    h+='<span class="sem-sub">Record : '+max+'</span></div>';
+    h+='<div class="sem-body"><div class="lab">Cette semaine</div>';
+    h+= parts.length
+      ? '<div class="sem-list">'+parts.join(' &middot; ')+'</div>'
+      : '<div class="sem-list sem-vide">Rien encore cette semaine. La première action compte.</div>';
+    h+='</div></div>';
     return h;
   }
 
@@ -533,14 +591,19 @@
     h+='<div class="sub">Rythme nécessaire pour tenir la date : <strong>'+pace.toFixed(1)+' livrable'+(pace>=2?'s':'')+' par semaine</strong>.</div>';
     h+='<div class="ticks">';
     ALL.forEach(function(q,i){
-      h+='<div class="tick '+tickClass(q,i,exp,left)+'" title="'+q.bloc.code+' '+q.n+'"></div>';
+      var qst=S.status[q.id]||"todo";
+      var qlbl=qst==="done"?"relu":qst==="draft"?"rédigé":qst==="wip"?"en cours":"à faire";
+      h+='<div class="tick '+tickClass(q,i,exp,left)+'" title="'+q.bloc.code+' '+q.n+' — '+qlbl+'"></div>';
     });
-    h+='</div><div class="legend"><span><i class="dot" style="background:var(--signal)"></i>rédigé</span><span><i class="dot" style="background:#93A0E5"></i>en cours</span><span><i class="dot" style="background:var(--line)"></i>à faire</span><span><i class="dot" style="background:var(--flag);width:2px;height:11px"></i>où tu devrais en être</span></div>';
+    h+='</div>';
     h+='<div class="stats"><div class="stat"><div class="num">'+done+'<span class="on">/'+ALL.length+'</span></div><div class="lbl">Terminés</div></div>';
     h+='<div class="stat"><div class="num">'+Math.floor(wl)+'</div><div class="lbl">Semaines restantes</div></div>';
     h+='<div class="stat"><div class="num">'+left+'</div><div class="lbl">Restants</div></div></div></div>';
 
+    h+=renderSemaine();
     h+=renderBilan();
+
+    h+='<details class="notions reglages"><summary>Réglages</summary>';
 
     h+='<div class="foot">Date limite de dépôt : <input type="date" id="dl" value="'+S.deadline+'"><br>';
     h+='<button id="exp">Exporter tout en texte</button>';
@@ -559,6 +622,7 @@
       h+='<span id="syncStatusText" class="rappel"></span>';
     }
     h+='</div>';
+    h+='</details>';
     return h;
   }
 
@@ -724,13 +788,14 @@
     return h;
   }
 
+  function isVideo(q){ return q && q.n==="Vidéo"; }
   function renderQuestionRow(q){
     var st=S.status[q.id]||"todo";
     var lbl=st==="done"?"relu":st==="draft"?"rédigé":st==="wip"?"en cours":"à faire";
     var chipc=st==="done"?" done":st==="draft"?" draft":st==="wip"?" wip":"";
     var checkedCrit=q.k.filter(function(_,i){return (S.checks[q.id]||{})[i];}).length;
     var dots=[]; for(var i=0;i<q.k.length;i++){ dots.push(i<checkedCrit?"&#9679;":"&#9675;"); } dots=dots.join("&#8202;");
-    var h='<button class="qrow" id="q-'+q.id+'" data-goq="'+q.id+'">';
+    var h='<button class="qrow'+(isVideo(q)?' qrow-video':'')+'" id="q-'+q.id+'" data-goq="'+q.id+'">';
     h+='<span class="qn">'+q.n+'</span><span class="qt">'+q.t+'</span>';
     h+='<span class="qprog">'+dots+' '+checkedCrit+'/'+q.k.length+'</span>';
     h+='<span class="chip'+chipc+'">'+lbl+'</span></button>';
@@ -742,7 +807,7 @@
     var lbl=st==="done"?"relu":st==="draft"?"rédigé":st==="wip"?"en cours":"à faire";
     var chipc=st==="done"?" done":st==="draft"?" draft":st==="wip"?" wip":"";
     var checkedCrit=q.k.filter(function(_,i){return (S.checks[q.id]||{})[i];}).length;
-    var h='<button class="tile" id="q-'+q.id+'" data-goq="'+q.id+'">';
+    var h='<button class="tile'+(isVideo(q)?' tile-video':'')+'" id="q-'+q.id+'" data-goq="'+q.id+'">';
     h+='<span class="tile-code code">'+q.n+'</span>';
     h+='<span class="tile-title">'+q.t+'</span>';
     h+='<span class="tile-cas">'+checkedCrit+'/'+q.k.length+' critères</span>';
@@ -1220,7 +1285,7 @@
       S.cardRuns=S.cardRuns||[];
       var blocs={}; SES.list.forEach(function(c){ blocs[c.bloc]=true; });
       var blocKeys=Object.keys(blocs);
-      S.cardRuns.push({d:new Date().toLocaleDateString("fr-FR"),ok:SES.ok,n:SES.list.length,bloc:blocKeys.length===1?blocKeys[0]:null});
+      S.cardRuns.push({d:new Date().toLocaleDateString("fr-FR"),t:Date.now(),ok:SES.ok,n:SES.list.length,bloc:blocKeys.length===1?blocKeys[0]:null});
       if(SES.capped) markStreakDay();
       save();
     }
@@ -1231,7 +1296,7 @@
     var q=QZ.list[QZ.i];
     S.quizSeen[q.id]=true;
     if(correct) QZ.ok++; else QZ.wrong.push(q.question);
-    if(QZ.i===QZ.list.length-1){ S.quiz.push({d:new Date().toLocaleDateString("fr-FR"),s:QZ.ok,n:QZ.list.length,bloc:QZ.list[0].bloc}); }
+    if(QZ.i===QZ.list.length-1){ S.quiz.push({d:new Date().toLocaleDateString("fr-FR"),t:Date.now(),s:QZ.ok,n:QZ.list.length,bloc:QZ.list[0].bloc}); }
     save();
   }
 
@@ -1764,12 +1829,18 @@
       });
     });
     main.querySelectorAll("[data-set]").forEach(function(el){
-      el.addEventListener("click",function(){ S.status[el.getAttribute("data-set")]=el.getAttribute("data-v"); save(); render(); });
+      el.addEventListener("click",function(){
+        var qid=el.getAttribute("data-set");
+        S.status[qid]=el.getAttribute("data-v");
+        S.statusAt[qid]=Date.now();
+        save(); render();
+      });
     });
     main.querySelectorAll("[data-lu]").forEach(function(el){
       el.addEventListener("click",function(){
         var id=el.getAttribute("data-lu"), v=el.getAttribute("data-luv");
-        if(v==="nonlu") delete S.coursLu[id]; else S.coursLu[id]=v;
+        if(v==="nonlu"){ delete S.coursLu[id]; delete S.coursLuAt[id]; }
+        else { S.coursLu[id]=v; S.coursLuAt[id]=Date.now(); }
         save(); render();
       });
     });
