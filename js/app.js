@@ -6,7 +6,7 @@
   var ALL = [];
   BLOCS.forEach(function(b){ b.qs.forEach(function(q){ q.id = b.id+"-"+q.n; q.bloc = b; ALL.push(q); }); });
 
-  var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, cardState:{}, quiz:[], quizSeen:{}, cardRuns:[], coursLu:{}, statusAt:{}, coursLuAt:{},
+  var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, cardState:{}, quiz:[], quizSeen:{}, cardRuns:[], coursLu:{}, statusAt:{}, coursLuAt:{}, coursLuSection:{},
             newToday:{d:0,n:0}, streak:{current:0,max:0,lastDate:0},
             deadline:DEFAULT_DEADLINE, open:{b1:true}, view:"accueil", _ts:0 };
   var SES=null, QZ=null, saveTimer=null;
@@ -128,7 +128,7 @@
   }
   function applyState(sv){
     S.status=sv.status||{}; S.checks=sv.checks||{}; S.notes=sv.notes||{}; S.fiche=sv.fiche||{};
-    S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.fail=sv.fail||{}; S.cardState=sv.cardState||{}; S.quiz=sv.quiz||[]; S.quizSeen=sv.quizSeen||{}; S.cardRuns=sv.cardRuns||[]; S.coursLu=sv.coursLu||{}; S.statusAt=sv.statusAt||{}; S.coursLuAt=sv.coursLuAt||{}; S.reprendre=sv.reprendre||null;
+    S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.fail=sv.fail||{}; S.cardState=sv.cardState||{}; S.quiz=sv.quiz||[]; S.quizSeen=sv.quizSeen||{}; S.cardRuns=sv.cardRuns||[]; S.coursLu=sv.coursLu||{}; S.statusAt=sv.statusAt||{}; S.coursLuAt=sv.coursLuAt||{}; S.coursLuSection=sv.coursLuSection||{}; S.reprendre=sv.reprendre||null;
     S.newToday=sv.newToday||{d:0,n:0};
     S.streak=sv.streak||{current:0,max:0,lastDate:0};
     S.deadline=sv.deadline||DEFAULT_DEADLINE; S.open=sv.open||{b1:true}; S._ts=sv._ts||0;
@@ -333,6 +333,10 @@
   var ROUTE={view:"accueil"};
   function applyRoute(r){
     scrollMemory[hashFor(ROUTE.view, ROUTE.id)]=window.scrollY;
+    if(ROUTE.view==="coursResume" && ROUTE.id){
+      var secIdx=currentSectionIndex();
+      if(secIdx>0) S.coursLuSection[ROUTE.id]=secIdx; else delete S.coursLuSection[ROUTE.id];
+    }
     if(r.view!==ROUTE.view){ SES=null; QZ=null; }
     searchOpen = (r.view==="recherche");
     ROUTE=r; S.view=(KNOWN_VIEWS.indexOf(r.view)>=0)?r.view:"accueil";
@@ -1752,6 +1756,17 @@
     h+='</ol></nav>';
     return h;
   }
+  function currentSectionIndex(){
+    var els=main.querySelectorAll(".resume h3");
+    if(!els.length) return 0;
+    var qbar=main.querySelector(".qbar");
+    var offset=nav.offsetHeight+(qbar?qbar.offsetHeight:0)+24;
+    var idx=0;
+    for(var i=0;i<els.length;i++){
+      if(els[i].getBoundingClientRect().top<=offset) idx=i; else break;
+    }
+    return idx;
+  }
   function scrollToSection(idx){
     var els=main.querySelectorAll(".resume h3");
     var el=els[idx];
@@ -1771,9 +1786,15 @@
     h+='<div class="qtitle-row"><h1 class="qhead-title">'+r.titre+'</h1>'+luChip(r.id)+'</div>';
     h+='<div class="qhead-code code">'+r.lecture_min+' min &middot; '+r.mots+' mots &middot; '+r.competences.join(", ")+'</div>';
     h+='<p class="intro">'+r.accroche+'</p>';
+    var sections=extractSections(r.html);
+    var repriseIdx=S.coursLuSection[r.id];
+    if(luEtat(r.id)==="wip" && repriseIdx && sections[repriseIdx]){
+      h+='<button class="reprendre" data-scroll-sec="'+repriseIdx+'"><span class="rep-lab">Reprendre</span>'+
+         '<span class="rep-t">'+esc(sections[repriseIdx])+'</span></button>';
+    }
     h+=renderQuestionLinks("Indispensable pour", r.questions, r.bloc);
     h+=renderQuestionLinks("En complément pour", r.questions_appui, r.bloc);
-    h+=renderSommaire(extractSections(r.html));
+    h+=renderSommaire(sections);
     h+='<div class="resume">'+r.html+'</div>';
     var st=luEtat(r.id);
     h+='<div class="lu-bar"><span class="lab">Où j\'en suis dans ce résumé</span><div class="states">';
