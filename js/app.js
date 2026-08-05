@@ -830,36 +830,20 @@
       return renderBreadcrumb([{label:"Dossiers",view:"dossiers"}])+'<p class="rappel">Bloc introuvable.</p>';
     }
     var done=b.qs.filter(function(q){return isDone(q.id);}).length;
+    var left=b.qs.length-done;
     var pct=b.qs.length?Math.round(100*done/b.qs.length):0;
+    var termine=b.qs.length>0 && done===b.qs.length;
     var h='<div class="qbar">'+renderBreadcrumb([{label:"Dossiers",view:"dossiers"},{label:b.code}])+'</div>';
     h+='<h1 class="qhead-title">'+b.titre+'</h1><div class="qhead-code code">'+b.cas+'</div>';
-    h+='<div class="lab-row"><span class="lab">Avancement</span><span class="count">'+done+'/'+b.qs.length+' &middot; '+pct+' %</span></div>';
+    h+='<div class="lab-row"><span class="lab">Avancement</span><span class="count'+(termine?' count-done':'')+'">'+
+      (termine?'Terminé':'Il te reste '+left+' question'+(left>1?'s':'')+' sur '+b.qs.length)+'</span></div>';
 
     if(!b.enonce){
       b.qs.forEach(function(q){ h+=renderQuestionRow(q); });
       return h;
     }
 
-    h+='<div class="enonce-top">';
-    h+='<div class="enonce-context"><div class="rc-app plain">'+b.enonce.contexte+'</div></div>';
-    h+='<div class="enonce-mission"><div class="lab">La mission</div><div class="rc-app">'+b.enonce.mission+'</div></div>';
-    h+='<div class="enonce-donnees">';
-    h+='<div class="lab">Les données à retenir</div><div class="rc-app"><ul class="att">';
-    b.enonce.donnees.forEach(function(d){ h+='<li>'+d+'</li>'; });
-    h+='</ul></div>';
-    h+='</div>';
-    h+='<div class="enonce-preview">';
-    h+='<iframe class="enonce-frame" src="'+encodeURI(b.enonce.pdf)+'" title="PDF de l\'énoncé"></iframe>';
-    h+='<a class="linkf enonce-pdf" href="'+encodeURI(b.enonce.pdf)+'" target="_blank" rel="noopener">Ouvrir le PDF dans un nouvel onglet</a>';
-    h+='</div>';
-    h+='</div>';
-
-    h+='<div class="lab">Les questions</div><div class="tiles">';
-    b.qs.forEach(function(q){ h+=renderQuestionTile(q); });
-    h+='</div>';
-
     if(blocId==="b1"){
-      h+='<div class="bloc-bottom">';
       var fOpen=S.open.fiche?" open":"";
       var fFilled=FICHE_B1.filter(function(f){return (S.fiche[f[0]]||"").trim();}).length;
       h+='<section class="panel accent'+fOpen+'"><button class="phead" data-panel="fiche"><span class="chev">&#9654;</span>';
@@ -870,7 +854,36 @@
         h+='<textarea class="f" data-fiche="'+f[0]+'" placeholder="—">'+esc(S.fiche[f[0]])+'</textarea></div>';
       });
       h+='<div class="given"><b>Donné par l\'énoncé, non négociable :</b> budget 18 à 21 M€ dont 1 M€ communication et lancement · ouverture printemps N+3 · +15 % de CA global en 3 ans · 100 chambres dont 8 PMR minimum · 70 % de circuits courts.</div></div></section>';
+    }
 
+    var enoncePanelKey="enonce-"+blocId;
+    if(S.open[enoncePanelKey]===undefined) S.open[enoncePanelKey]=true;
+    var eOpen=!!S.open[enoncePanelKey];
+    h+='<section class="panel accent'+(eOpen?" open":"")+'"><button class="phead" data-panel="'+enoncePanelKey+'"><span class="chev">&#9654;</span>';
+    h+='<h2>Énoncé<span class="cas">Contexte, mission et données du cas.</span></h2></button>';
+    h+='<div class="pbody">';
+    h+='<div class="enonce-top">';
+    h+='<div class="enonce-context"><div class="rc-app plain">'+b.enonce.contexte+'</div></div>';
+    h+='<div class="enonce-mission"><div class="lab">La mission</div><div class="rc-app">'+b.enonce.mission+'</div></div>';
+    h+='<div class="enonce-donnees">';
+    h+='<div class="lab">Les données à retenir</div><div class="rc-app"><ul class="att">';
+    b.enonce.donnees.forEach(function(d){ h+='<li>'+d+'</li>'; });
+    h+='</ul></div>';
+    h+='</div>';
+    h+='<div class="enonce-preview">';
+    h+='<a class="linkf enonce-pdf" href="'+encodeURI(b.enonce.pdf)+'" target="_blank" rel="noopener">Ouvrir le PDF dans un nouvel onglet</a>';
+    h+='<details class="notions pdf-inline"><summary>Afficher l\'aperçu ici</summary>';
+    h+='<iframe class="enonce-frame" src="'+encodeURI(b.enonce.pdf)+'" title="PDF de l\'énoncé"></iframe>';
+    h+='</details>';
+    h+='</div>';
+    h+='</div>';
+    h+='</div></section>';
+
+    h+='<div class="lab">Les questions</div><div class="tiles">';
+    b.qs.forEach(function(q){ h+=renderQuestionTile(q); });
+    h+='</div>';
+
+    if(blocId==="b1"){
       var jOpen=S.open.journal?" open":"";
       h+='<section class="panel accent'+jOpen+'"><button class="phead" data-panel="journal"><span class="chev">&#9654;</span>';
       h+='<h2>Journal d\'arbitrages<span class="cas">Trois lignes après chaque session. C\'est le script de ta vidéo.</span></h2>';
@@ -890,7 +903,6 @@
         h+='</div>';
       });
       h+='</div></section>';
-      h+='</div>';
     }
     return h;
   }
