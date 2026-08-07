@@ -6,7 +6,7 @@
   var ALL = [];
   BLOCS.forEach(function(b){ b.qs.forEach(function(q){ q.id = b.id+"-"+q.n; q.bloc = b; ALL.push(q); }); });
 
-  var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, cardState:{}, quiz:[], quizSeen:{}, cardRuns:[], coursLu:{}, statusAt:{}, coursLuAt:{}, coursLuSection:{},
+  var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, cardState:{}, cardEdits:{}, quiz:[], quizSeen:{}, cardRuns:[], coursLu:{}, statusAt:{}, coursLuAt:{}, coursLuSection:{},
             newToday:{d:0,n:0}, streak:{current:0,max:0,lastDate:0},
             deadline:DEFAULT_DEADLINE, open:{b1:true}, view:"accueil", _ts:0 };
   var SES=null, QZ=null, saveTimer=null;
@@ -138,6 +138,7 @@
         && !(sv.fiche && Object.keys(sv.fiche).length)
         && !(sv.journal && sv.journal.length)
         && !(sv.box && Object.keys(sv.box).length)
+        && !(sv.cardEdits && Object.keys(sv.cardEdits).length)
         && !(sv.quizSeen && Object.keys(sv.quizSeen).length)
         && !(sv.cardRuns && sv.cardRuns.length)
         && !(sv.coursLu && Object.keys(sv.coursLu).length)
@@ -145,7 +146,7 @@
   }
   function applyState(sv){
     S.status=sv.status||{}; S.checks=sv.checks||{}; S.notes=sv.notes||{}; S.fiche=sv.fiche||{};
-    S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.fail=sv.fail||{}; S.cardState=sv.cardState||{}; S.quiz=sv.quiz||[]; S.quizSeen=sv.quizSeen||{}; S.cardRuns=sv.cardRuns||[]; S.coursLu=sv.coursLu||{}; S.statusAt=sv.statusAt||{}; S.coursLuAt=sv.coursLuAt||{}; S.coursLuSection=sv.coursLuSection||{}; S.reprendre=sv.reprendre||null;
+    S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.fail=sv.fail||{}; S.cardState=sv.cardState||{}; S.cardEdits=sv.cardEdits||{}; S.quiz=sv.quiz||[]; S.quizSeen=sv.quizSeen||{}; S.cardRuns=sv.cardRuns||[]; S.coursLu=sv.coursLu||{}; S.statusAt=sv.statusAt||{}; S.coursLuAt=sv.coursLuAt||{}; S.coursLuSection=sv.coursLuSection||{}; S.reprendre=sv.reprendre||null;
     S.newToday=sv.newToday||{d:0,n:0};
     S.streak=sv.streak||{current:0,max:0,lastDate:0};
     S.deadline=sv.deadline||DEFAULT_DEADLINE; S.open=sv.open||{b1:true}; S._ts=sv._ts||0;
@@ -262,6 +263,12 @@
     return 0;
   }
   function activeCards(list){ return (list||FLASHCARDS).filter(function(c){ return !S.cardState[c.id]; }); }
+  /* Une carte peut être réécrite depuis le site. La réécriture vit dans S.cardEdits
+     (donc en localStorage + synchro), jamais dans les .json sources : régénérer le
+     contenu ne l'efface pas, mais la source et l'affichage divergent tant que la
+     correction n'a pas été reportée dans cours:/bloc<n>:/flashcards:/. */
+  function cardRecto(c){ var e=S.cardEdits[c.id]; return (e&&e.recto)||c.recto; }
+  function cardVerso(c){ var e=S.cardEdits[c.id]; return (e&&e.verso)||c.verso; }
   function dueReviews(list){
     return activeCards(list).filter(function(c){
       var b=S.box[c.id]||0;
@@ -1159,10 +1166,11 @@
     h+='<div class="card'+(SES.show?'':' flip')+'"'+(SES.show?'':' data-lrn="show"')+'>';
     h+='<div class="cmeta"><span class="m-niveau n'+c.niveau+'">Niveau '+c.niveau+'</span><span class="m-section">'+esc(c.section)+'</span><span class="m-type t-'+c.type+'">'+(TYPE_LABELS[c.type]||c.type)+'</span></div>';
     if(SES.show){
-      h+='<div class="ca ca-center">'+esc(c.verso).replace(/\n/g,'<br>')+'</div><div class="cbtns"><button class="no" data-lrn="ko">À revoir</button><button class="yes" data-lrn="ok">Je savais</button></div>';
+      h+='<div class="cq-rappel">'+esc(cardRecto(c))+'</div>';
+      h+='<div class="ca ca-center">'+esc(cardVerso(c)).replace(/\n/g,'<br>')+'</div><div class="cbtns"><button class="no" data-lrn="ko">À revoir</button><button class="yes" data-lrn="ok">Je savais</button></div>';
       h+='<div class="cbtns-setaside"><button data-lrn="setaside-revoir" title="À modifier">'+ICON_PENCIL+'</button><button data-lrn="setaside-supprime" title="Supprimer">'+ICON_TRASH+'</button></div>';
     } else {
-      h+='<div class="cq cq-center">'+esc(c.recto)+'</div><div class="cflip-hint">Touche la carte pour voir la réponse</div>';
+      h+='<div class="cq cq-center">'+esc(cardRecto(c))+'</div><div class="cflip-hint">Touche la carte pour voir la réponse</div>';
     }
     h+='</div><button class="quit" data-lrn="stop">Arrêter la session</button>';
     return h;
@@ -1187,16 +1195,38 @@
   }
   function copyListText(cards){
     return groupCardsBySource(cards).map(function(g){
-      return g.src+"\n"+g.cards.map(function(c){return "  "+c.id;}).join("\n");
+      return g.src+"\n"+g.cards.map(function(c){
+        if(!S.cardEdits[c.id]) return "  "+c.id;
+        /* carte réécrite sur le site : on donne le nouveau texte pour pouvoir le
+           reporter dans le .json source */
+        return "  "+c.id+"\n    recto: "+cardRecto(c).replace(/\n/g," ")+
+               "\n    verso: "+cardVerso(c).replace(/\n/g,"\\n");
+      }).join("\n");
     }).join("\n\n");
   }
-  function renderCardSortRow(c, actionsHtml, extraMeta){
+  function renderCardSortRow(c, actionsHtml, extraMeta, editable){
     var meta=esc(c.section);
     if(extraMeta) meta+=' &middot; '+extraMeta;
-    return '<div class="cs-row"><div class="cs-main"><div class="cs-meta">'+meta+'</div>'+
-      '<div class="cs-recto">'+esc(c.recto)+'</div>'+
-      '<div class="cs-verso">'+esc(c.verso).replace(/\n/g,'<br>')+'</div></div>'+
+    if(S.cardEdits[c.id]) meta+=' &middot; <span class="cs-tag-edit">modifiée</span>';
+    var h='<div class="cs-item"><div class="cs-row"><div class="cs-main"><div class="cs-meta">'+meta+'</div>'+
+      '<div class="cs-recto">'+esc(cardRecto(c))+'</div>'+
+      '<div class="cs-verso">'+esc(cardVerso(c)).replace(/\n/g,'<br>')+'</div></div>'+
       '<div class="cs-actions">'+actionsHtml+'</div></div>';
+    if(editable) h+=renderCardEditor(c);
+    return h+'</div>';
+  }
+  function renderCardEditor(c){
+    var h='<div class="cs-edit" id="cs-edit-'+c.id+'" hidden>';
+    h+='<label class="cs-edit-lab" for="cs-edit-recto-'+c.id+'">Recto — la question</label>';
+    h+='<textarea class="f" id="cs-edit-recto-'+c.id+'" rows="2">'+esc(cardRecto(c))+'</textarea>';
+    h+='<label class="cs-edit-lab" for="cs-edit-verso-'+c.id+'">Verso — la réponse</label>';
+    h+='<textarea class="f" id="cs-edit-verso-'+c.id+'" rows="4">'+esc(cardVerso(c))+'</textarea>';
+    h+='<div class="cs-edit-btns"><button class="jadd" data-cs-save="'+c.id+'">Enregistrer et réactiver</button>';
+    h+='<button class="linkf" data-cs-save-only="'+c.id+'">Enregistrer sans réactiver</button>';
+    if(S.cardEdits[c.id]) h+='<button class="linkf" data-cs-reset="'+c.id+'">Rétablir l\'original</button>';
+    h+='<button class="linkf" data-cs-cancel="'+c.id+'">Annuler</button></div>';
+    h+='<p class="cs-edit-note">La correction reste sur tes appareils (elle suit la synchro). Le fichier source du bloc n\'est pas touché : « Copier la liste » te redonne le nouveau texte pour le reporter plus tard.</p>';
+    return h+'</div>';
   }
   function renderCardSortGroup(key, label, cards, copyKey){
     var h='<div class="cs-group"><div class="cs-group-head"><span class="cs-group-label">'+label+' &middot; '+cards.length+'</span>';
@@ -1215,9 +1245,10 @@
           var other=key==="revoir"?"supprime":"revoir";
           var otherIcon=key==="revoir"?ICON_TRASH:ICON_PENCIL;
           var otherTitle=key==="revoir"?"Supprimer":"À modifier";
-          actions='<button data-cs-reactivate="'+c.id+'">Réactiver</button><button class="icon-btn" data-cs-set="'+c.id+':'+other+'" title="'+otherTitle+'">'+otherIcon+'</button>';
+          actions=(key==="revoir"?'<button data-cs-edit="'+c.id+'">Modifier</button>':'')+
+            '<button data-cs-reactivate="'+c.id+'">Réactiver</button><button class="icon-btn" data-cs-set="'+c.id+':'+other+'" title="'+otherTitle+'">'+otherIcon+'</button>';
         }
-        h+=renderCardSortRow(c, actions, extraMeta);
+        h+=renderCardSortRow(c, actions, extraMeta, key==="revoir");
       });
       h+='<textarea class="f cs-copybox" id="cs-copybox-'+copyKey+'" style="display:none" readonly>'+esc(copyListText(cards))+'</textarea>';
     }
@@ -2121,6 +2152,8 @@
     appEl.classList.toggle("session", !!(((v==="flashcards"||v==="flashcardsBloc")&&SES)||((v==="quiz"||v==="quizBloc")&&QZ)));
     renderNav();
     main.classList.add("wide");
+    /* série de flashcards : la carte occupe l'écran et se centre, nav masquée */
+    main.classList.toggle("card-session", !!((v==="flashcards"||v==="flashcardsBloc")&&SES));
     if(v==="question"){
       main.classList.add("with-qbottom");
       main.innerHTML=vQuestion(ROUTE.id);
@@ -2193,6 +2226,40 @@
     });
     main.querySelectorAll("[data-cs-reactivate]").forEach(function(el){
       el.addEventListener("click",function(){ delete S.cardState[el.getAttribute("data-cs-reactivate")]; save(); render(); });
+    });
+    main.querySelectorAll("[data-cs-edit]").forEach(function(el){
+      el.addEventListener("click",function(){
+        var box=document.getElementById("cs-edit-"+el.getAttribute("data-cs-edit"));
+        if(!box) return;
+        box.hidden=!box.hidden;
+        if(!box.hidden) box.querySelector("textarea").focus();
+      });
+    });
+    function enregistrerEdition(id, reactiver){
+      var carte=FLASHCARDS.filter(function(c){return c.id===id;})[0];
+      if(!carte) return;
+      var recto=(document.getElementById("cs-edit-recto-"+id).value||"").trim();
+      var verso=(document.getElementById("cs-edit-verso-"+id).value||"").trim();
+      if(!recto||!verso) return;
+      if(recto===carte.recto && verso===carte.verso) delete S.cardEdits[id];
+      else S.cardEdits[id]={recto:recto, verso:verso};
+      if(reactiver) delete S.cardState[id];
+      save(); render();
+    }
+    main.querySelectorAll("[data-cs-save]").forEach(function(el){
+      el.addEventListener("click",function(){ enregistrerEdition(el.getAttribute("data-cs-save"), true); });
+    });
+    main.querySelectorAll("[data-cs-save-only]").forEach(function(el){
+      el.addEventListener("click",function(){ enregistrerEdition(el.getAttribute("data-cs-save-only"), false); });
+    });
+    main.querySelectorAll("[data-cs-reset]").forEach(function(el){
+      el.addEventListener("click",function(){ delete S.cardEdits[el.getAttribute("data-cs-reset")]; save(); render(); });
+    });
+    main.querySelectorAll("[data-cs-cancel]").forEach(function(el){
+      el.addEventListener("click",function(){
+        var box=document.getElementById("cs-edit-"+el.getAttribute("data-cs-cancel"));
+        if(box) box.hidden=true;
+      });
     });
     main.querySelectorAll("[data-cs-copy]").forEach(function(el){
       el.addEventListener("click",function(){
