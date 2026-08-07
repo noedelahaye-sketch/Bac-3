@@ -1,0 +1,276 @@
+{
+  "resume": "b2-r10",
+  "titre": "Réseaux sociaux : community management, contenus, animation et e-réputation",
+  "bloc": 2,
+  "questions": [
+    {
+      "id": "b2-r10-qz-001",
+      "section": "1. Le community manager",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 6 étapes de la stratégie social media.",
+      "elements": [
+        "Création d'un planning éditorial",
+        "État des lieux et définition des objectifs",
+        "Évaluation de la performance",
+        "Choix de la cible (personas)",
+        "Distribution du contenu",
+        "Sélection des plateformes adaptées"
+      ],
+      "ordre": [1, 3, 5, 0, 4, 2],
+      "explication": "État des lieux/objectifs → cible → plateformes (cible × objectifs) → planning éditorial → distribution → évaluation. Être sur les réseaux sans stratégie ne sert à rien."
+    },
+    {
+      "id": "b2-r10-qz-002",
+      "section": "1. Le community manager",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Le temps de réponse aux messages et le sentiment des mentions (positif/négatif) appartiennent à quel groupe de KPI du community manager ?",
+      "options": [
+        "notoriété",
+        "engagement",
+        "conversion",
+        "fidélisation / satisfaction"
+      ],
+      "reponse": 3,
+      "explication": "Les 4 groupes : notoriété (mentions, portée, abonnés), engagement (interactions, commentaires, clics), conversion (trafic, leads, ventes attribuées), fidélisation/satisfaction (temps de réponse, sentiment, avis). C'est la grille attendue en Q13."
+    },
+    {
+      "id": "b2-r10-qz-003",
+      "section": "2. La ligne éditoriale d'un réseau social",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une marque publie des articles de fond pour positionner son expertise. De quel type de publication s'agit-il ?",
+      "options": [
+        "des publications engageantes",
+        "des publications informatives",
+        "des publications promotionnelles",
+        "des publications sponsorisées"
+      ],
+      "reponse": 1,
+      "explication": "Trois types à équilibrer : informatives (positionner l'expertise), engageantes (susciter l'interaction), promotionnelles. La ligne éditoriale fixe aussi le ton (formel/informel), les visuels sous charte et les hashtags."
+    },
+    {
+      "id": "b2-r10-qz-004",
+      "section": "1. Le community manager",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le community manager ne conçoit généralement pas la stratégie social media : il la met en œuvre.",
+      "reponse": true,
+      "explication": "Vrai. La conception de la stratégie relève du directeur marketing ou communication ; le community manager, « chargé de relations publiques 2.0 », est l'ambassadeur de l'entreprise qui exécute et anime : contenus, modération, veille, reporting."
+    },
+    {
+      "id": "b2-r10-qz-005",
+      "section": "2. La ligne éditoriale d'un réseau social",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi sous-titrer les vidéos et stories publiées sur les réseaux sociaux ?",
+      "options": [
+        "pour améliorer le référencement de la vidéo",
+        "pour l'accessibilité : beaucoup d'utilisateurs regardent sans le son",
+        "parce que les CGU des plateformes l'imposent",
+        "pour contourner les limites de durée"
+      ],
+      "reponse": 1,
+      "explication": "Le sous-titrage est une fonctionnalité d'accessibilité à intégrer à la ligne éditoriale — avec les émojis (avec discernement), la géolocalisation, les hashtags et la publication légale des contenus (droits)."
+    },
+    {
+      "id": "b2-r10-qz-006",
+      "section": "3. Écrire et créer du contenu",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez les caractéristiques du format story.",
+      "texte": "Une story est une succession de séquences courtes de {1} secondes maximum, au format vertical {2}, éphémères pendant {3} — sauf les stories à la une ({4}), qui les pérennisent sur le profil.",
+      "trous": [
+        "15",
+        "9:16",
+        "24 h",
+        "highlights"
+      ],
+      "explication": "Atouts des stories : authenticité du quotidien, narration enrichie (texte animé, stickers, musique) et interactive (sondages, questions, quiz). Bonnes pratiques : CTA explicite et rétention dès la première séquence."
+    },
+    {
+      "id": "b2-r10-qz-007",
+      "section": "3. Écrire et créer du contenu",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Pourquoi la vidéo est-elle qualifiée de « format roi » des réseaux sociaux ?",
+      "options": [
+        "elle est moins coûteuse à produire que l'image",
+        "elle génère plus d'engagement, les algorithmes la favorisent et son potentiel de conversion est fort",
+        "elle est le seul format accepté par toutes les plateformes",
+        "elle échappe aux règles du droit d'auteur"
+      ],
+      "reponse": 1,
+      "explication": "Plus de likes, partages et commentaires que tout autre contenu, meilleure visibilité algorithmique, fort ROI. Formats : vidéos de fil, réels verticaux courts, lives (interaction en temps réel), stories."
+    },
+    {
+      "id": "b2-r10-qz-008",
+      "section": "4. Les plateformes",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque plateforme à son usage marketing type.",
+      "colonne_a": [
+        "Facebook",
+        "LinkedIn",
+        "X (Twitter)",
+        "TikTok",
+        "Snapchat"
+      ],
+      "colonne_b": [
+        "Vidéos verticales 15-60 s, tendances : notoriété virale auprès d'un public jeune et créatif",
+        "Messages de 280 caractères max : veille, réactivité, SAV, prises de parole",
+        "Le public le plus jeune : campagnes ludiques, filtres et lenses",
+        "La plus large et généraliste : communautés via les groupes, BtoC, publicité très ciblée",
+        "1ʳᵉ plateforme professionnelle : BtoB, marque employeur, social selling"
+      ],
+      "paires": [
+        [0, 3],
+        [1, 4],
+        [2, 1],
+        [3, 0],
+        [4, 2]
+      ],
+      "explication": "Instagram complète le tableau : visuel, jeunes adultes, image de marque et influence. Le choix de la plateforme découle du croisement cible × objectifs (étape 3 de la stratégie)."
+    },
+    {
+      "id": "b2-r10-qz-009",
+      "section": "4. Les plateformes",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les algorithmes des plateformes favorisent les formats natifs comme les stories, les réels et les lives.",
+      "reponse": true,
+      "explication": "Vrai. Utiliser les formats natifs fait partie des invariants de la création de contenu par plateforme, avec le respect des codes du réseau, l'adaptation de la fréquence, le soin de l'accroche et l'analyse des statistiques."
+    },
+    {
+      "id": "b2-r10-qz-010",
+      "section": "5. Animer la communauté",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la règle d'or de la participation en ligne.",
+      "texte": "Sur Internet, une communauté compte environ {1} % de spectateurs, {2} % d'actifs et {3} % de contributeurs.",
+      "trous": [
+        "90",
+        "9",
+        "1"
+      ],
+      "explication": "La règle 90/9/1 : l'immense majorité consulte sans intervenir. Tout l'enjeu de l'animation est de faire monter les membres dans l'échelle des interactions."
+    },
+    {
+      "id": "b2-r10-qz-011",
+      "section": "5. Animer la communauté",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre l'échelle des interactions, de la plus passive à la plus active.",
+      "elements": [
+        "Avis : commenter, donner un feedback",
+        "Attention : consulter sans intervenir",
+        "Contribution : créer du contenu, co-création",
+        "Micro-interaction : like, vote, notation",
+        "Partage : relayer à son réseau"
+      ],
+      "ordre": [1, 3, 4, 0, 2],
+      "explication": "Attention → micro-interaction → partage (qui démultiplie la portée) → avis → contribution. L'engagement est le processus d'interaction entre une entité et sa communauté."
+    },
+    {
+      "id": "b2-r10-qz-012",
+      "section": "5. Animer la communauté",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quelles techniques relèvent de l'animation légitime d'une communauté ? (4 réponses)",
+      "options": [
+        "les sondages",
+        "l'achat de followers",
+        "les jeux-concours",
+        "les sessions de questions/réponses en live",
+        "l'envoi massif de messages non sollicités",
+        "la « technique de la question » pour déclencher la conversation"
+      ],
+      "reponse": [0, 2, 3, 5],
+      "explication": "S'ajoutent les contenus exclusifs et la mise en avant des membres. L'achat de followers et le spam sont des pratiques abusives contraires à l'éthique numérique (transparence, authenticité, respect de la vie privée)."
+    },
+    {
+      "id": "b2-r10-qz-013",
+      "section": "6. La modération",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un conflit entre deux membres s'envenime dans les commentaires publics du groupe. Selon la charte de modération, quelle réponse est la plus adaptée ?",
+      "options": [
+        "bannir immédiatement les deux utilisateurs",
+        "supprimer l'ensemble du fil de discussion sans explication",
+        "évacuer le conflit en message privé pour le traiter individuellement",
+        "laisser la communauté s'autoréguler"
+      ],
+      "reponse": 2,
+      "explication": "L'échelle graduée des réponses : supprimer le contenu non conforme (avec avertissement), bannir le récidiviste ou gravement fautif, évacuer en MP pour sortir le conflit de l'espace public. La réponse proportionnée préserve la communauté."
+    },
+    {
+      "id": "b2-r10-qz-014",
+      "section": "6. La modération",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un modérateur peut supprimer un contenu non conforme, mais n'a pas le pouvoir de bannir un utilisateur.",
+      "reponse": false,
+      "explication": "Faux. Le bannissement fait partie de l'échelle des réponses de la charte de modération, réservé aux utilisateurs récidivistes ou gravement fautifs. Le modérateur a des responsabilités de surveillance, détection et traitement des signalements — la liberté d'expression n'étant pas absolue (injure, diffamation, incitation à la haine, harcèlement)."
+    },
+    {
+      "id": "b2-r10-qz-015",
+      "section": "7. Le marketing d'influence",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "En France, que risque un influenceur qui ne signale pas l'intention commerciale d'un partenariat ?",
+      "options": [
+        "un simple avertissement de la plateforme",
+        "jusqu'à 2 ans d'emprisonnement et 300 000 € d'amende pour pratique commerciale trompeuse",
+        "la suppression de son compte",
+        "une amende forfaitaire de 1 500 €"
+      ],
+      "reponse": 1,
+      "explication": "La transparence est obligatoire : les partenariats commerciaux doivent être clairement divulgués. S'ajoutent les règles sectorielles (alcool, jeux d'argent, actes médicaux). La marque se protège par une charte interne et des lignes directrices de divulgation."
+    },
+    {
+      "id": "b2-r10-qz-016",
+      "section": "7. Le marketing d'influence",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pour sélectionner un influenceur, quel critère privilégier ?",
+      "options": [
+        "le volume d'abonnés, gage de portée maximale",
+        "le taux d'engagement et l'adéquation audience/valeurs, plutôt que le volume d'abonnés",
+        "le coût le plus bas par publication",
+        "sa présence sur toutes les plateformes"
+      ],
+      "reponse": 1,
+      "explication": "L'adéquation avec l'audience et les valeurs de la marque et l'engagement réel priment sur le volume. La campagne suit 5 étapes : objectifs → identification → négociation/contrat (avec mentions de transparence) → brief → suivi (codes promo, liens trackés)."
+    },
+    {
+      "id": "b2-r10-qz-017",
+      "section": "9. Les social ads",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce qui distingue le reach organique du reach payant ?",
+      "options": [
+        "le reach organique concerne les abonnés, le payant les non-abonnés",
+        "le reach organique est la portée naturelle d'une publication ; le payant est la portée amplifiée par la publicité",
+        "le reach payant est réservé aux grandes marques",
+        "le reach organique se mesure, le payant non"
+      ],
+      "reponse": 1,
+      "explication": "La visibilité naturelle ne suffit plus : les social ads (signalées « sponsorisé ») pallient la baisse de la portée organique, avec un ciblage très fin permis par les données des utilisateurs. Leurs objectifs suivent la grille cognitif/affectif/conatif."
+    },
+    {
+      "id": "b2-r10-qz-018",
+      "section": "Transversal — Q13",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Quelles bonnes pratiques mettre en place pour maintenir une communauté en ligne positive, et avec quels indicateurs mesurer leur efficacité ?",
+      "attendus": [
+        "Une charte de modération : rappels à la loi (liberté d'expression limitée), règles de courtoisie et définition du langage inapproprié, processus de signalement, filtres automatiques, échelle graduée supprimer → bannir → évacuer en MP",
+        "Une animation régulière et éthique : sondages, jeux-concours, lives Q/R, réponse aux commentaires, sans pratiques abusives (achat de followers, spam)",
+        "Une veille d'e-réputation continue (Google Alerts, Mention) et une politique de réponse rapide et transparente aux critiques",
+        "Des indicateurs par groupe de KPI : engagement (interactions, commentaires), fidélisation/satisfaction (temps de réponse, sentiment des mentions), notoriété (portée, mentions) — chacun relié à un objectif"
+      ],
+      "explication": "C'est la structure attendue en Q13 : bonnes pratiques (charte de modération + animation + veille) ET indicateurs de mesure, e-réputation comprise. La rapidité et la transparence font la différence en cas de crise (Nestlé vs Anthropologie)."
+    }
+  ]
+}

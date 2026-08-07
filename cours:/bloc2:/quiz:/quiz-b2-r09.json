@@ -1,0 +1,311 @@
+{
+  "resume": "b2-r09",
+  "titre": "Contenus et supports : chartes, rédaction, réglementation, production",
+  "bloc": 2,
+  "questions": [
+    {
+      "id": "b2-r09-qz-001",
+      "section": "1. Les formes de communication",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque type de communication de la classification de Patrick d'Humières (1993) à son public.",
+      "colonne_a": [
+        "Communication commerciale",
+        "Communication institutionnelle",
+        "Communication sociale (interne)",
+        "Communication financière"
+      ],
+      "colonne_b": [
+        "Les salariés : journaux internes, intranet, réseau social d'entreprise",
+        "Les publics financiers : résultats, actionnaires, analystes",
+        "Les clients (BtoB/BtoC) : vendre, faire connaître, fidéliser",
+        "Les publics dirigeants et citoyens : l'image de l'entreprise"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 3],
+        [2, 0],
+        [3, 1]
+      ],
+      "explication": "Cette classification reste d'actualité. S'y ajoute la communication d'influence (lobbying), qui agit sur l'opinion et les décideurs — avec la vigilance contemporaine sur la suspicion de manipulation."
+    },
+    {
+      "id": "b2-r09-qz-002",
+      "section": "1. Les formes de communication",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Pour maximiser l'impact d'une action de communication, il est recommandé de lui fixer plusieurs objectifs simultanés.",
+      "reponse": false,
+      "explication": "Faux. Il ne faut pas multiplier les objectifs : 1 ou 2 maximum, cadrés SMART, mesurés par des KPI suivis dans un reporting avec bilan final obligatoire."
+    },
+    {
+      "id": "b2-r09-qz-003",
+      "section": "1. Les formes de communication",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Sur Leboncoin, des particuliers vendent à d'autres particuliers, l'entreprise n'étant qu'intermédiaire. De quel type de relation s'agit-il ?",
+      "options": [
+        "BtoB",
+        "BtoC",
+        "CtoC",
+        "BtoG"
+      ],
+      "reponse": 2,
+      "explication": "CtoC : consommateur → consommateur. BtoB = entreprise vers entreprise (vendeur de pneus → garagistes), BtoC = entreprise vers grand public (Intermarché → consommateurs)."
+    },
+    {
+      "id": "b2-r09-qz-004",
+      "section": "2. La galaxie des contenus",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 4 étapes de l'inbound marketing.",
+      "elements": [
+        "Vendre",
+        "Attirer (contenu + SEO)",
+        "Fidéliser (contenu continu, transformer les clients en ambassadeurs)",
+        "Convertir (contenus ciblés à plus-value)"
+      ],
+      "ordre": [1, 3, 0, 2],
+      "explication": "Attirer → Convertir → Vendre → Fidéliser. L'exemple du cours : Yuka, un inbound intégral sans publicité (scan nutritionnel → analyse premium → abonnement/livre → notifications personnalisées)."
+    },
+    {
+      "id": "b2-r09-qz-005",
+      "section": "3. Le cadre graphique",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle est la relation entre UX et UI ?",
+      "options": [
+        "l'UI englobe l'UX",
+        "l'UX (le ressenti de l'utilisateur) englobe l'UI (la conception de l'interface elle-même)",
+        "UX et UI sont synonymes",
+        "l'UX concerne le print, l'UI le digital"
+      ],
+      "reponse": 1,
+      "explication": "L'UX (User eXperience) est le ressenti global de l'utilisateur — navigation fluide, agréable, intuitive. L'UI (User Interface) est la conception des boutons, menus et écrans. L'UX englobe l'UI."
+    },
+    {
+      "id": "b2-r09-qz-006",
+      "section": "3. Le cadre graphique",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle est la différence entre la charte graphique et le design system ?",
+      "options": [
+        "le design system est la version print de la charte graphique",
+        "la charte dit « à quoi ça ressemble » ; le design system fournit « les pièces prêtes à assembler » pour designers et développeurs",
+        "la charte est numérique, le design system est papier",
+        "le design system remplace la charte graphique"
+      ],
+      "reponse": 1,
+      "explication": "Le design system est un outil collaboratif (référence : Figma) qui réunit tous les éléments graphiques dans un système accessible — nécessaire dès qu'on produit sites et applications, pour garantir l'homogénéité sur site, mobile et app."
+    },
+    {
+      "id": "b2-r09-qz-007",
+      "section": "3. Le cadre graphique",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels éléments composent un design system ? (4 réponses)",
+      "options": [
+        "les design patterns (modèles d'interface prêts à l'emploi)",
+        "les personas du public cible",
+        "la planche typographique (police dans toutes ses graisses)",
+        "les gammes de couleurs codées (HEX), déclinées jour/nuit",
+        "le calendrier éditorial des publications",
+        "le grid layout (grilles de mise en page)"
+      ],
+      "reponse": [0, 2, 3, 5],
+      "explication": "S'y ajoutent les icônes (pleine/filaire), les banques d'images organisées, les boutons et composants réutilisables. Les personas et le calendrier éditorial relèvent des chartes et lignes éditoriales."
+    },
+    {
+      "id": "b2-r09-qz-008",
+      "section": "4. Chartes éditoriales",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle est la différence entre charte éditoriale et ligne éditoriale ?",
+      "options": [
+        "la charte concerne le print, la ligne le digital",
+        "la charte est le document stratégique (identité, principes) ; la ligne est son prolongement opérationnel au quotidien",
+        "la ligne éditoriale précède toujours la charte",
+        "la charte fixe les couleurs, la ligne les typographies"
+      ],
+      "reponse": 1,
+      "explication": "Charte éditoriale = identité de marque, cibles/personas, ton et style, valeurs et principes. Ligne éditoriale = application quotidienne : messages clés, formats et supports, fréquence de publication, méthodes d'interaction — adaptée à chaque support."
+    },
+    {
+      "id": "b2-r09-qz-009",
+      "section": "5. La réglementation",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Pour être protégée par le droit d'auteur, une œuvre doit d'abord être déposée auprès d'un organisme officiel.",
+      "reponse": false,
+      "explication": "Faux. La protection du droit d'auteur est automatique, sans formalité, pour toute œuvre originale — originale au sens de la jurisprudence : qui porte « l'empreinte de la personnalité de son auteur » par des choix créatifs personnels."
+    },
+    {
+      "id": "b2-r09-qz-010",
+      "section": "5. La réglementation",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez les règles du droit d'auteur.",
+      "texte": "Les droits patrimoniaux durent {1} ans après la mort de l'auteur. Le droit moral français (paternité, respect de l'œuvre) est {2} et perpétuel : il subsiste même sous {3}.",
+      "trous": [
+        "70",
+        "inaliénable",
+        "licence libre"
+      ],
+      "explication": "Le droit moral ne se cède jamais, contrairement aux droits patrimoniaux. C'est une spécificité française à citer en Q11."
+    },
+    {
+      "id": "b2-r09-qz-011",
+      "section": "5. La réglementation",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Pour utiliser la photo d'une personne sur un support de communication, l'autorisation doit être :",
+      "options": [
+        "orale, si la personne était consciente d'être photographiée",
+        "expresse, spéciale et déterminée : écrite, pour un usage précis, sur une durée et un périmètre définis",
+        "implicite dès lors que la photo a été prise dans un lieu public",
+        "renouvelée chaque année"
+      ],
+      "reponse": 1,
+      "explication": "Le droit à l'image (article 9 du Code civil, respect de la vie privée) protège les personnes. Les trois critères sont cumulatifs. Exception principale : le droit à l'information (actualité, intérêt général), d'interprétation stricte."
+    },
+    {
+      "id": "b2-r09-qz-012",
+      "section": "5. La réglementation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Sur quel fondement repose le droit à l'image en France ?",
+      "options": [
+        "le Code de la propriété intellectuelle",
+        "l'article 9 du Code civil, relatif au respect de la vie privée",
+        "le RGPD",
+        "la loi Sapin II"
+      ],
+      "reponse": 1,
+      "explication": "Le droit à l'image protège les personnes (pas les créations) contre l'utilisation non autorisée de leur représentation — fondement : article 9 du Code civil."
+    },
+    {
+      "id": "b2-r09-qz-013",
+      "section": "5. La réglementation",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Utiliser un contenu sous licence Creative Commons crée des obligations contractuelles automatiques dès l'utilisation.",
+      "reponse": true,
+      "explication": "Vrai. Les licences Creative Commons, validées par la jurisprudence française, imposent le respect des conditions fixées par l'auteur (attribution, usage commercial ou non, modification ou non) dès qu'on utilise le contenu."
+    },
+    {
+      "id": "b2-r09-qz-014",
+      "section": "6. Produire le message",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Dans un plan en pyramide inversée, à quoi répond le premier paragraphe ?",
+      "options": [
+        "à la thèse, avant l'antithèse et la synthèse",
+        "aux 5 questions clés : Qui ? Où ? Quoi ? Quand ? Pourquoi ? (règle des 5W)",
+        "au contexte historique du sujet",
+        "à l'opinion de l'auteur, avant les faits"
+      ],
+      "reponse": 1,
+      "explication": "La pyramide inversée classe les informations par importance décroissante : même si l'internaute ne finit pas l'article, il a reçu l'essentiel. C'est LE plan du web et du journalisme — à l'opposé du plan de dissertation."
+    },
+    {
+      "id": "b2-r09-qz-015",
+      "section": "6. Produire le message",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une banque rédige les titres de ses articles. Quelle famille de titres sa ligne éditoriale privilégiera-t-elle ?",
+      "options": [
+        "des titres incitatifs, pour surprendre et intriguer",
+        "des titres informatifs : factuels, avec mots-clés, favorables au SEO",
+        "des titres « froids » type dissertation",
+        "des titres sans verbe, pour la concision"
+      ],
+      "reponse": 1,
+      "explication": "Le choix informatif/incitatif dépend de la ligne éditoriale : banque = informatif (crédibilité, factuel), prêt-à-porter jeune = incitatif. Un titre incitatif peu informatif doit être complété d'un surtitre ; le titre « froid » est à proscrire."
+    },
+    {
+      "id": "b2-r09-qz-016",
+      "section": "6. Produire le message",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que le chapô d'un article ?",
+      "options": [
+        "les derniers mots du texte, qui renforcent l'angle",
+        "le petit paragraphe introductif après le titre, qui résume l'essentiel — et le premier contenu scanné par les moteurs",
+        "le sous-titre placé au-dessus du titre principal",
+        "l'encadré qui liste les sources"
+      ],
+      "reponse": 1,
+      "explication": "Le chapô résume et met en appétit — y placer les mots-clés. L'attaque = les premiers mots du texte ; la chute = les dernières phrases (ouverture, écho à l'attaque) ; la titraille = l'ensemble titres/surtitres/intertitres/chapô."
+    },
+    {
+      "id": "b2-r09-qz-017",
+      "section": "6. Produire le message",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "« Ce SUV émet 120 g de CO2/km » et « Ce SUV est le meilleur choix pour la planète » : comment qualifier ces deux énoncés ?",
+      "options": [
+        "deux faits",
+        "un fait (vérifiable) puis une opinion (interprétation subjective)",
+        "une opinion puis un fait",
+        "deux opinions"
+      ],
+      "reponse": 1,
+      "explication": "Un fait est objectif et vérifiable (chiffre, étude, texte de loi) ; une opinion est une interprétation. Règle d'argumentation : être factuel, citer ses sources, et à chaque affirmation, une preuve."
+    },
+    {
+      "id": "b2-r09-qz-018",
+      "section": "7. Produire les supports",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez les repères techniques de production.",
+      "texte": "Pour le web, une résolution de {1} ppp suffit ; pour l'impression, il faut {2} dpi. Les couleurs se codent en {3} pour les écrans et en {4} pour l'impression.",
+      "trous": [
+        "72",
+        "300",
+        "RVB",
+        "CMJN"
+      ],
+      "explication": "S'y ajoutent les codes HEX pour le web. Réflexe de départ : anticiper toutes les déclinaisons de formats avant de créer — une photo suffisante pour le web peut être inutilisable en affiche abribus."
+    },
+    {
+      "id": "b2-r09-qz-019",
+      "section": "7. Produire les supports",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque terme technique de l'image à sa définition.",
+      "colonne_a": [
+        "Définition",
+        "Résolution",
+        "Dimension",
+        "Poids"
+      ],
+      "colonne_b": [
+        "La taille physique d'affichage ou d'impression",
+        "La taille du fichier, à optimiser pour le web",
+        "Le nombre total de pixels (largeur × hauteur)",
+        "La densité de pixels (ppp/dpi)"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 3],
+        [2, 0],
+        [3, 1]
+      ],
+      "explication": "Quatre notions à ne pas confondre : définition (pixels totaux), résolution (densité), dimension (taille physique), poids (fichier)."
+    },
+    {
+      "id": "b2-r09-qz-020",
+      "section": "Transversal — Q11",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Vous concevez un dépliant print et sa déclinaison web pour une marque. Listez les points de conformité et de cohérence à vérifier avant diffusion.",
+      "attendus": [
+        "Cohérence graphique : application de la charte graphique (logo et ses règles, typographies, couleurs) et de la ligne éditoriale (ton, messages clés)",
+        "Réglementation : droits d'auteur des visuels (licences des banques d'images, Creative Commons), droit à l'image (autorisation expresse, spéciale et déterminée), droits typographiques",
+        "Structure du message : pyramide inversée, titre adapté à la ligne (informatif/incitatif), promesse claire, faits sourcés",
+        "Technique : 300 dpi et CMJN pour le print, 72 ppp et RVB/HEX pour le web, formats adaptés ; inclusion et accessibilité (lisibilité, contrastes)"
+      ],
+      "explication": "C'est la check-list de la Q11 : la conformité juridique (droit d'auteur, droit à l'image) y est un critère d'évaluation explicite, avec l'inclusivité et l'accessibilité des supports."
+    }
+  ]
+}

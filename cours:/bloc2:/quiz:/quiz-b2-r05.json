@@ -1,0 +1,147 @@
+{
+  "resume": "b2-r05",
+  "titre": "La négociation : préparation, DISC, écoute active et traitement des objections",
+  "bloc": 2,
+  "questions": [
+    {
+      "id": "b2-r05-qz-001",
+      "section": "1. Préparer la négociation",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les 4 dimensions de la cartographie (mapping) des parties prenantes ? (4 réponses)",
+      "options": [
+        "l'identification des acteurs directs et indirects",
+        "le classement des acteurs par ancienneté",
+        "l'évaluation de leur pouvoir d'influence",
+        "la compréhension de leurs intérêts prioritaires et contraintes",
+        "l'estimation de leur budget de communication",
+        "l'analyse de leurs alternatives en cas d'échec de la négociation"
+      ],
+      "reponse": [0, 2, 3, 5],
+      "explication": "Le mapping permet d'identifier les intérêts convergents (base de la collaboration) et les conflits d'intérêts potentiels, à aborder ouvertement. Il faut aussi intégrer les contraintes externes : réglementation, concurrence, cycles budgétaires."
+    },
+    {
+      "id": "b2-r05-qz-002",
+      "section": "1. Préparer la négociation",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "En négociation, qu'est-ce que le « seuil de résistance » ?",
+      "options": [
+        "la première offre formulée pour ancrer la discussion",
+        "la limite en dessous de laquelle on n'accepte pas l'accord",
+        "le montant maximal que l'autre partie peut payer",
+        "le délai au-delà duquel on quitte la table"
+      ],
+      "reponse": 1,
+      "explication": "Avant de négocier, on définit trois repères : l'objectif cible, le seuil de résistance (la limite infranchissable) et les étapes intermédiaires de repli."
+    },
+    {
+      "id": "b2-r05-qz-003",
+      "section": "1. Préparer la négociation",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Accorder une concession unilatérale, sans contrepartie, est un bon moyen de créer la confiance en début de négociation.",
+      "reponse": false,
+      "explication": "Faux. Les concessions ne sont jamais unilatérales : chacune est conditionnée à une contrepartie (« si vous acceptez de réduire les délais, alors nous pourrions revoir le budget »). La réciprocité s'orchestre en explicitant ses attentes."
+    },
+    {
+      "id": "b2-r05-qz-004",
+      "section": "1. Préparer la négociation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi pratiquer des concessions en décroissance progressive (10 %, puis 5 %, puis 2 %) ?",
+      "options": [
+        "pour maximiser la valeur totale concédée",
+        "pour signaler à l'autre partie qu'on approche de sa limite (signaling)",
+        "pour respecter une obligation légale d'échelonnement",
+        "pour compenser l'effet d'ancrage de la première offre"
+      ],
+      "reponse": 1,
+      "explication": "La décroissance progressive envoie un signal : les marges de manœuvre s'épuisent. Combinée à une ouverture ambitieuse mais crédible (ancrage), elle structure la dynamique des échanges."
+    },
+    {
+      "id": "b2-r05-qz-005",
+      "section": "1. Préparer la négociation",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les concessions non financières (exclusivité sectorielle, délais de paiement, témoignages clients) sont souvent les plus puissantes.",
+      "reponse": true,
+      "explication": "Vrai. Leur coût est limité pour celui qui les accorde, mais leur valeur perçue est forte pour celui qui les reçoit — un levier de création de valeur mutuelle, au-delà du marchandage financier."
+    },
+    {
+      "id": "b2-r05-qz-006",
+      "section": "1. Préparer la négociation",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce qui caractérise la communication assertive ?",
+      "options": [
+        "subir la discussion sans exprimer ses besoins",
+        "imposer ses vues sans considération pour l'autre",
+        "exprimer ses positions avec fermeté tout en préservant la relation",
+        "éviter tout sujet de désaccord pour maintenir le climat"
+      ],
+      "reponse": 2,
+      "explication": "L'assertivité défend ses intérêts légitimes en respectant ceux du partenaire — ni passive, ni agressive. Les émotions ne sont pas absentes, mais reconnues et canalisées (intelligence émotionnelle)."
+    },
+    {
+      "id": "b2-r05-qz-007",
+      "section": "1. Préparer la négociation",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les phases d'une négociation structurée.",
+      "elements": [
+        "Argumenter et échanger les concessions",
+        "Créer le climat de confiance",
+        "Finaliser les termes",
+        "Explorer les besoins et intérêts",
+        "Construire l'accord"
+      ],
+      "ordre": [1, 3, 0, 4, 2],
+      "explication": "Confiance → exploration → argumentation/concessions → accord → finalisation. On ne « pose pas la toiture avant les fondations » : pas de discussion contractuelle avant d'avoir compris les intérêts."
+    },
+    {
+      "id": "b2-r05-qz-008",
+      "section": "3. L'écoute active et le questionnement",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez le modèle SPIN de découverte des besoins.",
+      "texte": "Le modèle SPIN structure le questionnement en quatre types de questions : de {1}, de {2}, d'{3} et de {4}.",
+      "trous": [
+        "Situation",
+        "Problème",
+        "Implication",
+        "Need-payoff (bénéfice attendu)"
+      ],
+      "explication": "Bien questionné, l'interlocuteur formule lui-même ses besoins — le levier d'influence le plus puissant. Le SPIN complète les questions ouvertes (explorer), fermées (valider), de clarification et de reformulation."
+    },
+    {
+      "id": "b2-r05-qz-009",
+      "section": "2. Le modèle DISC",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Sous pression, un profil Dominant (Rouge) se montre soudain plus coopératif et patient. Comment le modèle DISC interprète-t-il ce changement ?",
+      "options": [
+        "son profil naturel a changé durablement",
+        "il exprime son profil adapté : une adaptation ponctuelle au contexte, pas un changement de personnalité",
+        "le test DISC initial était erroné",
+        "il est passé du Rouge au Vert"
+      ],
+      "reponse": 1,
+      "explication": "Le profil de base (naturel) décrit les préférences sans stress ; le profil adapté, les ajustements en situation de stress ou de travail. Et attention aux raccourcis : personne ne se résume à sa couleur dominante."
+    },
+    {
+      "id": "b2-r05-qz-010",
+      "section": "Transversal — Q8",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Structurez un plan de négociation complet pour un prestataire qui négocie un partenariat avec un client important. Quels sont les quatre blocs attendus, avec leur contenu ?",
+      "attendus": [
+        "Objectifs poursuivis : objectif cible, seuil de résistance, étapes intermédiaires de repli",
+        "Arguments clés : issus du mapping des intérêts des parties prenantes (intérêts convergents, création de valeur mutuelle)",
+        "Concessions envisageables : conditionnées à des contreparties, décroissantes, en pensant aux concessions non financières",
+        "Réponses aux objections potentielles : selon leur type (rationnelles → données ; émotionnelles → rassurer ; stratégiques → décoder les enjeux), avec le traitement en 3 temps (accusé de réception émotionnel, reformulation factuelle, recherche de solutions)"
+      ],
+      "explication": "C'est la structure exacte attendue en Q8. Le mapping dit quoi négocier et avec qui, le DISC comment parler à chacun, l'écoute active fait découvrir les besoins réels, le traitement des objections protège l'accord."
+    }
+  ]
+}

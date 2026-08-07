@@ -1,0 +1,224 @@
+{
+  "resume": "b2-r06",
+  "titre": "La stratégie de communication : du diagnostic au projet",
+  "bloc": 2,
+  "questions": [
+    {
+      "id": "b2-r06-qz-001",
+      "section": "1. Analyser les besoins",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Sur 200 personnes interrogées, 180 répondent « oui » à la question « Connaissez-vous la marque d'eau Thonon ? ». Que mesure-t-on, et à quel niveau ?",
+      "options": [
+        "la notoriété spontanée, à 90 %",
+        "la notoriété assistée, à 90 %",
+        "le top of mind, à 90 %",
+        "l'image de marque, à 90 %"
+      ],
+      "reponse": 1,
+      "explication": "On montre ou cite la marque : c'est la notoriété assistée (180/200 = 90 %). La notoriété spontanée se mesure sans aide (« Citez des marques de... »), et le top of mind est la première marque citée spontanément."
+    },
+    {
+      "id": "b2-r06-qz-002",
+      "section": "1. Analyser les besoins",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce que le « top of mind » ?",
+      "options": [
+        "la marque la plus connue du marché en notoriété assistée",
+        "la première marque citée spontanément par les personnes interrogées",
+        "la marque préférée des consommateurs",
+        "la part de marché en valeur du leader"
+      ],
+      "reponse": 1,
+      "explication": "Le top of mind est le sommet de la notoriété : la marque qui vient immédiatement à l'esprit, sans aucune aide. C'est le troisième niveau après la notoriété assistée et la notoriété spontanée."
+    },
+    {
+      "id": "b2-r06-qz-003",
+      "section": "2. Auditer et évaluer",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle méthode cyclique permet d'évaluer l'efficacité d'un plan de communication et de l'améliorer en continu ?",
+      "options": [
+        "le diagramme d'Ishikawa",
+        "la roue de Deming (PDCA) : Plan, Do, Check, Act",
+        "la méthode AIDA",
+        "le benchmark concurrentiel"
+      ],
+      "reponse": 1,
+      "explication": "PDCA : Plan (planifier), Do (faire), Check (vérifier), Act (ajuster) — un cycle d'amélioration continue. L'Ishikawa sert, lui, à résoudre un problème en listant ses causes par familles."
+    },
+    {
+      "id": "b2-r06-qz-004",
+      "section": "2. Auditer et évaluer",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les familles de causes des « 5 M » du diagramme d'Ishikawa ? (5 réponses)",
+      "options": [
+        "Méthodes",
+        "Marketing",
+        "Matières",
+        "Milieu",
+        "Main-d'œuvre",
+        "Marché",
+        "Moyens"
+      ],
+      "reponse": [0, 2, 3, 4, 6],
+      "explication": "Les 5 M : Méthodes, Matières, Milieu, Main-d'œuvre, Moyens (parfois complétés d'un 6ᵉ M, Management). Le diagramme « arête de poisson » se remplit en équipe, de façon collégiale."
+    },
+    {
+      "id": "b2-r06-qz-005",
+      "section": "2. Auditer et évaluer",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le reporting intervient avant l'analyse du tableau de bord, pour orienter la collecte des données.",
+      "reponse": false,
+      "explication": "Faux. C'est l'inverse : le tableau de bord est l'outil de pilotage (conception → recueil → analyse), et le reporting rend compte périodiquement à la direction après l'analyse."
+    },
+    {
+      "id": "b2-r06-qz-006",
+      "section": "3. La problématique",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle est la problématique de communication la mieux formulée ?",
+      "options": [
+        "« Développer notre communauté Instagram. »",
+        "« Comment développer une communauté active sur Instagram ? »",
+        "« Comment développer une communauté de 15 000 abonnés actifs sur Instagram en 6 mois avec un budget de 2 000 € ? »",
+        "« Pourquoi notre communauté Instagram stagne-t-elle depuis un an ? »"
+      ],
+      "reponse": 2,
+      "explication": "Une bonne problématique est une question ouverte exprimant trois éléments : le besoin, la cible visée et les contraintes (délais et budget). La première formulation n'est pas une question, les autres restent incomplètes."
+    },
+    {
+      "id": "b2-r06-qz-007",
+      "section": "4. Le positionnement de communication",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez les 4 éléments du positionnement de communication.",
+      "texte": "Le positionnement s'exprime par la {1} (la manière dont la marque voit le monde), les {2} (ce en quoi elle croit), la {3} (le rôle qu'elle joue dans le monde) et les {4} (les signes concrets de cohérence).",
+      "trous": [
+        "vision",
+        "valeurs",
+        "mission",
+        "preuves"
+      ],
+      "explication": "Exemple Axa : vision (être différent pour mériter la confiance), valeurs (intégrité, esprit d'équipe, pragmatisme), mission (aider ses clients à être sereins), preuves (solidité, expertise). Un positionnement doit être crédible, attractif, distinctif et durable."
+    },
+    {
+      "id": "b2-r06-qz-008",
+      "section": "4. Le positionnement de communication",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce que la « baseline » d'une marque ?",
+      "options": [
+        "le budget minimal de communication annuel",
+        "la forme condensée du positionnement, aussi appelée signature de marque",
+        "la première ligne d'un communiqué de presse",
+        "l'axe horizontal d'un mapping concurrentiel"
+      ],
+      "reponse": 1,
+      "explication": "La baseline (signature de marque) condense le positionnement de communication. Le positionnement est une étape préalable à la ligne éditoriale et aux messages."
+    },
+    {
+      "id": "b2-r06-qz-009",
+      "section": "5. Objectifs de communication",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque dimension des objectifs de communication à son exemple.",
+      "colonne_a": [
+        "Cognitif — faire savoir",
+        "Affectif — faire aimer",
+        "Conatif — faire agir"
+      ],
+      "colonne_b": [
+        "« Venez comme vous êtes » (McDonald's) : inciter à l'action",
+        "« Carglass répare, Carglass remplace » : notoriété par la répétition",
+        "Les publicités émotionnelles d'Apple : renforcer l'image et l'appréciation"
+      ],
+      "paires": [
+        [0, 1],
+        [1, 2],
+        [2, 0]
+      ],
+      "explication": "Cognitif = connaissance/notoriété/attention ; affectif = image/émotion ; conatif = changement de comportement. Trois dimensions à connaître par cœur pour formuler des objectifs de communication."
+    },
+    {
+      "id": "b2-r06-qz-010",
+      "section": "5. Objectifs de communication",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les étapes de la méthode AIDA pour structurer un message.",
+      "elements": [
+        "Susciter le désir : bénéfices, promesse",
+        "Capter l'attention : le produit ou la marque en évidence immédiatement",
+        "Déclencher l'action : CTA, offre limitée",
+        "Nourrir l'intérêt : informations qui concernent la cible"
+      ],
+      "ordre": [1, 3, 0, 2],
+      "explication": "Attention → Intérêt → Désir → Action. AIDA structure les messages sur tous supports : posts, newsletters, landing pages, affichage, spots."
+    },
+    {
+      "id": "b2-r06-qz-011",
+      "section": "5. Objectifs de communication",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les objectifs de communication s'expriment en données chiffrées mesurables : CA, ventes, clics, leads.",
+      "reponse": false,
+      "explication": "Faux. Ce sont les objectifs marketing qui s'expriment en données chiffrées (et doivent être SMART). Les objectifs de communication visent à influencer la cible : la toucher (cognitif), l'émouvoir (affectif), la faire agir (conatif)."
+    },
+    {
+      "id": "b2-r06-qz-012",
+      "section": "6. Élaborer le projet",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel outil de cadrage décompose le projet en arborescence de tâches et sous-tâches avec leurs livrables ?",
+      "options": [
+        "le diagramme de Gantt",
+        "l'organigramme des tâches",
+        "le rétroplanning",
+        "le tableau de bord"
+      ],
+      "reponse": 1,
+      "explication": "L'organigramme des tâches donne une vision précise du temps et du budget par travaux. Le Gantt vient ensuite pour planifier (tâches période par période, dépendances) — c'est la forme la plus courante du rétroplanning."
+    },
+    {
+      "id": "b2-r06-qz-013",
+      "section": "2. Auditer et évaluer",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi évaluer la communication ?",
+      "options": [
+        "pour satisfaire une obligation réglementaire de reporting",
+        "pour légitimer les actions entreprises et améliorer les décisions",
+        "uniquement pour justifier une hausse du budget",
+        "pour comparer ses résultats à ceux des concurrents"
+      ],
+      "reponse": 1,
+      "explication": "La communication est un investissement soumis à la rationalisation économique : évaluer légitime les actions (aucun dirigeant n'alloue de budget sans vision des bénéfices) et permet d'identifier les failles pour les corriger."
+    },
+    {
+      "id": "b2-r06-qz-014",
+      "section": "3. La problématique",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La gestion de projet est en soi un projet de communication interne.",
+      "reponse": true,
+      "explication": "Vrai. Faire adhérer l'équipe à un projet ou à une nouvelle méthode est l'une des problématiques internes récurrentes, avec le management du changement (résistances à lever)."
+    },
+    {
+      "id": "b2-r06-qz-015",
+      "section": "Transversal — Q9",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Une PME constate que ses clients ne comprennent pas les avantages de son nouveau produit. Formulez une problématique de communication complète et un objectif de communication associé en précisant sa dimension.",
+      "attendus": [
+        "Identification du besoin : un besoin de compréhension (les clients ne saisissent pas les caractéristiques ou avantages de l'offre)",
+        "Problématique en question ouverte exprimant besoin + cible + contraintes, ex. : « Comment faire comprendre les avantages du produit X aux clients existants en 6 mois avec un budget de N € ? »",
+        "Objectif de communication de dimension cognitive (faire savoir/comprendre), éventuellement complété d'un objectif conatif (faire essayer)",
+        "Cohérence entre le besoin identifié, la problématique et la dimension de l'objectif"
+      ],
+      "explication": "La chaîne attendue : besoin (sensibilisation, compréhension ou perception) → problématique (question ouverte, 3 éléments) → objectifs de communication (cognitif/affectif/conatif) → puis déclinaison en actions."
+    }
+  ]
+}

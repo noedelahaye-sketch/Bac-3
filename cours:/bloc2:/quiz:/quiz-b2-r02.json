@@ -1,0 +1,355 @@
+{
+  "resume": "b2-r02",
+  "titre": "Les leviers digitaux et data du plan marketing",
+  "bloc": 2,
+  "questions": [
+    {
+      "id": "b2-r02-qz-001",
+      "section": "2. Le SEO",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle étape du fonctionnement de Google consiste, pour les bots, à parcourir le web de page en page via les liens hypertextes ?",
+      "options": [
+        "l'indexation",
+        "le crawling",
+        "le ranking",
+        "le flattening"
+      ],
+      "reponse": 1,
+      "explication": "Les 3 étapes : crawling (collecte via les liens — un lien cassé empêche le positionnement), indexation (lecture et classement par thématiques), ranking (classement par les algorithmes selon ~200 critères)."
+    },
+    {
+      "id": "b2-r02-qz-002",
+      "section": "2. Le SEO",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque mise à jour d'algorithme Google à son rôle.",
+      "colonne_a": [
+        "Panda (2011)",
+        "Pingouin (2012)",
+        "Colibri (2013)",
+        "BERT (2019)",
+        "Page Experience (2021)"
+      ],
+      "colonne_b": [
+        "L'expérience utilisateur devient critère de classement (Core Web Vitals)",
+        "Pénalise les contenus dupliqués, plagiés ou de mauvaise qualité",
+        "Traitement du langage naturel par IA (liaisons entre les mots, prépositions)",
+        "Recherche sémantique : comprend les intentions, pas seulement les mots-clés",
+        "Pénalise les liens artificiels ou achetés (spamming)"
+      ],
+      "paires": [
+        [0, 1],
+        [1, 4],
+        [2, 3],
+        [3, 2],
+        [4, 0]
+      ],
+      "explication": "S'ajoutent Pigeon/Opossum (2014-2016, recherche locale) et Compatibilité mobile (2015 : les pages sont évaluées à partir de leur version mobile)."
+    },
+    {
+      "id": "b2-r02-qz-003",
+      "section": "2. Le SEO",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "L'attribut rel=nofollow favorise la transmission du « link juice » vers la page liée.",
+      "reponse": false,
+      "explication": "Faux. C'est l'inverse : rel=nofollow bloque la transmission de juice. Le link juice est la notoriété transmise entre pages par les liens ; attention aussi aux pages 404, qui absorbent du juice et sont mal vues de Google."
+    },
+    {
+      "id": "b2-r02-qz-004",
+      "section": "2. Le SEO",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une petite entreprise sur un marché de niche veut se référencer face à de gros concurrents. Quelle stratégie de mots-clés est la plus adaptée ?",
+      "options": [
+        "viser le mot-clé le plus recherché du secteur",
+        "viser la longue traîne : des requêtes précises et peu concurrentielles",
+        "répéter le mot-clé principal le plus souvent possible (keyword stuffing)",
+        "viser le même mot-clé sur toutes les pages du site"
+      ],
+      "reponse": 1,
+      "explication": "La longue traîne est idéale pour une petite entreprise ou une niche. Le keyword stuffing est mort depuis Colibri (2013), et deux pages ne doivent jamais viser la même Requête Principale."
+    },
+    {
+      "id": "b2-r02-qz-005",
+      "section": "2. Le SEO",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez les règles d'optimisation SEO.",
+      "texte": "Une page vise un seul mot-clé principal, appelé {1}. La densité usuelle est de {2} pour ce mot-clé principal et de {3} en incluant les requêtes secondaires. Côté arborescence, la règle du flattening impose que toute page soit accessible en moins de {4} clics.",
+      "trous": [
+        "RP (Requête Principale)",
+        "1 %",
+        "5 %",
+        "3"
+      ],
+      "explication": "1 % de RP = un mot-clé principal tous les 100 mots. Les Requêtes Secondaires (RS) sont des variantes lexicales placées dans les H2/H3."
+    },
+    {
+      "id": "b2-r02-qz-006",
+      "section": "2. Le SEO",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Parmi les Core Web Vitals, quel signal mesure le temps d'affichage du plus grand élément visible de la page ?",
+      "options": [
+        "le FID, qui doit être inférieur à 100 ms",
+        "le CLS, qui doit être inférieur à 0,1",
+        "le LCP, qui doit être inférieur à 2,5 s",
+        "le TTL, qui doit être inférieur à 1 s"
+      ],
+      "reponse": 2,
+      "explication": "LCP (Largest Contentful Paint) < 2,5 s. Le FID mesure le délai avant la première interaction possible (< 100 ms), le CLS la stabilité visuelle pendant le chargement (< 0,1). Introduits par Page Experience (2021)."
+    },
+    {
+      "id": "b2-r02-qz-007",
+      "section": "2. Le SEO",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Que recouvrent les critères E-E-A-T utilisés par Google pour évaluer la qualité d'un contenu ? (4 réponses)",
+      "options": [
+        "l'expérience (Experience)",
+        "l'engagement (Engagement)",
+        "l'expertise (Expertise)",
+        "l'autorité (Authoritativeness)",
+        "l'exhaustivité (Exhaustiveness)",
+        "la fiabilité (Trustworthiness)"
+      ],
+      "reponse": [0, 2, 3, 5],
+      "explication": "E-E-A-T (mise à jour 2022) : Experience, Expertise, Autorité, fiabilité (Trustworthiness). Ni l'engagement ni l'exhaustivité n'en font partie."
+    },
+    {
+      "id": "b2-r02-qz-008",
+      "section": "3. Le SEA",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le SEA est accessible aux petites entreprises, y compris avec un budget limité.",
+      "reponse": true,
+      "explication": "Vrai. Sur un marché de niche ou une requête longue et spécifique, la concurrence est faible donc le CPC abordable. Le SEA n'est pas réservé aux gros annonceurs — et si personne ne clique, la visibilité est gratuite."
+    },
+    {
+      "id": "b2-r02-qz-009",
+      "section": "3. Le SEA",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Que désigne le SEM (Search Engine Marketing) ?",
+      "options": [
+        "un synonyme du SEA",
+        "la combinaison SEO + SEA, deux leviers complémentaires",
+        "le référencement sur les réseaux sociaux",
+        "une technique de SEO avancée réservée au e-commerce"
+      ],
+      "reponse": 1,
+      "explication": "SEO + SEA = SEM. Les deux sont complémentaires : le SEA n'est jamais un substitut du SEO, car seulement 10 à 20 % des internautes cliquent sur les annonces payantes."
+    },
+    {
+      "id": "b2-r02-qz-010",
+      "section": "3. Le SEA",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 7 étapes d'une campagne SEA.",
+      "elements": [
+        "Rédaction de l'annonce (titre, texte, call-to-action, extensions)",
+        "Définition de l'objectif (SMART)",
+        "Sélection des mots-clés (exacts, connexes, exclusions)",
+        "Optimisation de la landing page",
+        "Suivi des performances (KPI en temps réel)",
+        "Ciblage de l'audience",
+        "Construction du budget (total + quotidien)"
+      ],
+      "ordre": [1, 3, 5, 6, 2, 0, 4],
+      "explication": "Objectif → landing page → ciblage (l'étape clé) → budget → mots-clés → annonce → suivi. La landing page vient tôt car Google évalue sa qualité et sa corrélation avec l'annonce."
+    },
+    {
+      "id": "b2-r02-qz-011",
+      "section": "4. Display et retargeting",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque mode de facturation display à l'objectif qu'il sert.",
+      "colonne_a": [
+        "CPC — Coût Par Clic",
+        "CPM — Coût Par Mille",
+        "CPL — Coût Par Lead",
+        "CPA — Coût Par Action"
+      ],
+      "colonne_b": [
+        "ROI précis : on ne paie qu'à la conversion (vente, devis)",
+        "Trafic qualifié : on paie à chaque clic",
+        "Notoriété, branding : on paie tous les 1 000 affichages",
+        "Acquisition de données : on paie à chaque inscription"
+      ],
+      "paires": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [3, 0]
+      ],
+      "explication": "Le display (messages au format bannière selon le Mercator) sert d'abord la notoriété — ce n'est pas une technique de conversion forte, d'où l'usage fréquent du CPM."
+    },
+    {
+      "id": "b2-r02-qz-012",
+      "section": "4. Display et retargeting",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "En retargeting, exposer un internaute plus de 5 fois au même message devient contre-productif.",
+      "reponse": true,
+      "explication": "Vrai. Au-delà de 5 expositions, la pression commerciale devient contre-productive. Le retargeting cible via cookies (avec consentement) les visiteurs non convertis — utile notamment contre les paniers abandonnés (> 75 % en France)."
+    },
+    {
+      "id": "b2-r02-qz-013",
+      "section": "5. L'e-mailing",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez les repères chiffrés de l'e-mailing.",
+      "texte": "Un bon taux d'ouverture se situe entre {1} et un bon taux de clic entre {2}. Pour préserver la délivrabilité, la fréquence d'envoi ne doit pas dépasser {3} envois par semaine. Le taux NPAI mesure la qualité de la {4}.",
+      "trous": [
+        "10 et 30 %",
+        "3 et 7 %",
+        "4",
+        "base de données"
+      ],
+      "explication": "Les 5 KPI de l'e-mailing : NPAI (délivrés/envoyés), ouverture (10-30 %), clic (3-7 %), spam, désabonnement. Meilleurs créneaux d'envoi : mardi/jeudi, 14 h-17 h."
+    },
+    {
+      "id": "b2-r02-qz-014",
+      "section": "5. L'e-mailing",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce qu'une adresse « opt-in » dans une base e-mailing ?",
+      "options": [
+        "une adresse vérifiée comme active récemment",
+        "une adresse dont le titulaire a donné son consentement explicite",
+        "une adresse professionnelle (par opposition aux adresses personnelles)",
+        "une adresse collectée lors d'un jeu-concours"
+      ],
+      "reponse": 1,
+      "explication": "Opt-in = consentement explicite du destinataire — pas de cases pré-cochées. À vérifier notamment en cas de location de base. Le double opt-in (confirmation par e-mail) renforce encore la conformité."
+    },
+    {
+      "id": "b2-r02-qz-015",
+      "section": "5. L'e-mailing",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Le lien de désinscription dans un e-mail commercial est recommandé, mais reste facultatif.",
+      "reponse": false,
+      "explication": "Faux. Le lien de désinscription est une obligation légale. Trop de plaintes pour spam mènent au blacklistage (Spamcop, Spamhaus)."
+    },
+    {
+      "id": "b2-r02-qz-016",
+      "section": "6. Le social selling",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un acheteur BtoB utilise LinkedIn pour chercher des fournisseurs et recueillir des avis avant de prendre contact. Comment appelle-t-on cette pratique ?",
+      "options": [
+        "le social selling",
+        "le social listening",
+        "le social buying",
+        "le lead nurturing"
+      ],
+      "reponse": 2,
+      "explication": "Social buying : côté acheteur, c'est lui qui initie le contact. Le social selling est côté vendeur (trouver des prospects et vendre), le social listening est la veille du secteur sur les réseaux."
+    },
+    {
+      "id": "b2-r02-qz-017",
+      "section": "6. Le social selling",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Sur Twitter/X, comment organiser ses listes pour le social selling ?",
+      "options": [
+        "toutes les listes publiques, pour montrer son réseau",
+        "clients en liste publique ; prospects et concurrents en listes privées",
+        "toutes les listes privées, par confidentialité",
+        "clients et prospects en public ; concurrents en privé"
+      ],
+      "reponse": 1,
+      "explication": "La liste clients est publique (elle rassure les prospects), les listes prospects et concurrents sont privées (surveiller sans le montrer, faire de la veille sans s'abonner)."
+    },
+    {
+      "id": "b2-r02-qz-018",
+      "section": "7. Le data-driven marketing",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Avec la disparition des cookies third-party, quel type de données devient prioritaire ?",
+      "options": [
+        "les données second-party, issues de partenariats",
+        "les données first-party, collectées directement par l'entreprise",
+        "les données third-party, achetées à des courtiers",
+        "les données publiques en open data"
+      ],
+      "reponse": 1,
+      "explication": "Les données first-party (transactions, navigation, enquêtes, service client) sont le patrimoine le plus fiable et conforme. Les second-party viennent de partenariats, les third-party de courtiers — avec des cookies en voie de disparition."
+    },
+    {
+      "id": "b2-r02-qz-019",
+      "section": "7. Le data-driven marketing",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Que recouvre la règle des 4C sur la qualité des données ? (4 réponses)",
+      "options": [
+        "la complétude",
+        "la centralisation",
+        "la cohérence",
+        "la conformité",
+        "la confidentialité",
+        "la correctitude"
+      ],
+      "reponse": [0, 2, 3, 5],
+      "explication": "Les 4C : Complétude, Cohérence, Conformité, Correctitude. La centralisation relève plutôt de la CDP (Customer Data Platform), la confidentialité du cadre RGPD."
+    },
+    {
+      "id": "b2-r02-qz-020",
+      "section": "8. Le marketing automation",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque type de trigger de marketing automation à son exemple.",
+      "colonne_a": [
+        "Trigger temporel",
+        "Trigger événementiel",
+        "Trigger transactionnel",
+        "Trigger contextuel"
+      ],
+      "colonne_b": [
+        "Un panier abandonné ou une première commande",
+        "La météo, la saisonnalité, l'actualité",
+        "L'anniversaire d'inscription, une relance après X jours d'inactivité",
+        "L'ouverture d'un e-mail, un clic, la visite d'une page"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 3],
+        [2, 0],
+        [3, 1]
+      ],
+      "explication": "Les 4 triggers déclenchent des parcours individualisés (workflows) : temporel (intervalle prédéfini), événementiel (action en temps réel), transactionnel (comportement d'achat), contextuel (données externes)."
+    },
+    {
+      "id": "b2-r02-qz-021",
+      "section": "9. L'IA au service du marketing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Attribuer à chaque prospect un score de propension à acheter ou à résilier relève de :",
+      "options": [
+        "l'IA générative",
+        "l'IA prédictive",
+        "le prompt engineering",
+        "la co-création"
+      ],
+      "reponse": 1,
+      "explication": "L'IA prédictive anticipe les comportements : segmentation prédictive, scoring de propension, personnalisation automatisée, chatbots. L'IA générative crée des contenus (textes, visuels — Jasper, Midjourney), pilotée par le prompt engineering."
+    },
+    {
+      "id": "b2-r02-qz-022",
+      "section": "Transversal — Q3/Q5",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Proposez deux leviers digitaux pour faire connaître un produit BtoB de niche, et associez à chacun un KPI pertinent en justifiant.",
+      "attendus": [
+        "Deux leviers adaptés au BtoB et à la niche : campagne SEA sur des requêtes longue traîne, social selling LinkedIn, e-mailing qualifié, retargeting des visiteurs du site...",
+        "Un KPI cohérent par levier : SEA → CPC/taux de conversion ; e-mailing → taux d'ouverture et de clic ; display → CPM/impressions ; global → CAC, ROI",
+        "La justification relie le levier à la cible et au budget (ex. longue traîne = concurrence faible donc CPC abordable)",
+        "Le KPI est bien relié à l'objectif de l'action, pas choisi au hasard"
+      ],
+      "explication": "C'est le format des Q3 et Q5 : proposer une action, c'est toujours justifier son choix par rapport à la cible et au budget, puis dire comment on la mesure."
+    }
+  ]
+}

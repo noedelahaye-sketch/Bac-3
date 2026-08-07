@@ -1,0 +1,277 @@
+{
+  "resume": "b2-r03",
+  "titre": "La distribution : canaux, acteurs et comportements d'achat",
+  "bloc": 2,
+  "questions": [
+    {
+      "id": "b2-r03-qz-001",
+      "section": "1. Définition, fonctions et flux",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Metro Cash & Carry achète en grande quantité aux fabricants et revend aux professionnels de la restauration. Quelle fonction de la distribution exerce-t-il ?",
+      "options": [
+        "la fonction de détail",
+        "la fonction de gros",
+        "la fonction d'agent commercial",
+        "la fonction de centrale d'achat"
+      ],
+      "reponse": 1,
+      "explication": "La fonction de gros distribue les produits aux détaillants et professionnels (achat en grande quantité, revente aux professionnels). La fonction de détail vend directement aux consommateurs finaux."
+    },
+    {
+      "id": "b2-r03-qz-002",
+      "section": "1. Définition, fonctions et flux",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque flux de la distribution à son contenu.",
+      "colonne_a": [
+        "Flux physiques",
+        "Flux d'informations",
+        "Flux financiers"
+      ],
+      "colonne_b": [
+        "Paiements du consommateur au point de vente, du distributeur au fournisseur, de la centrale au producteur",
+        "Transport en juste-à-temps, stockage en entrepôt, livraison",
+        "Commandes, tickets de caisse alimentant la veille commerciale, merchandising — via l'EDI"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Objectif : le bon produit, au bon endroit, au bon moment, dans la bonne quantité. Les flux d'informations circulent dans tous les sens ; l'outil clé est l'EDI (échange de données informatisé)."
+    },
+    {
+      "id": "b2-r03-qz-003",
+      "section": "1. Définition, fonctions et flux",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre chronologique les trois approches successives de la distribution.",
+      "elements": [
+        "L'approche expérientielle : faire vivre une expérience au client",
+        "L'approche transactionnelle : maximiser la vente unique, à court terme",
+        "L'approche relationnelle : développer des relations à long terme pour fidéliser"
+      ],
+      "ordre": [
+        1,
+        2,
+        0
+      ],
+      "explication": "Transactionnelle → relationnelle → expérientielle. Le stade actuel est l'expérience (click and collect, continuité entre canaux), et le point de vente devient un « concept » créateur d'expérience et de sens (IKEA, Paul)."
+    },
+    {
+      "id": "b2-r03-qz-004",
+      "section": "2. Circuits et canaux",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le circuit long représente plus de 90 % des modes de distribution.",
+      "reponse": true,
+      "explication": "Vrai. Malgré la progression de la tendance direct/court (consommation locale), le circuit long (grossistes, centrales d'achat) reste ultra-dominant : c'est celui de la grande distribution."
+    },
+    {
+      "id": "b2-r03-qz-005",
+      "section": "2. Circuits et canaux",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quel est le principal avantage du canal direct (AMAP, vente à la ferme, e-commerce en propre) pour le producteur ?",
+      "options": [
+        "des volumes de vente importants et réguliers",
+        "une large couverture géographique",
+        "une marge maîtrisée et un contrôle total de la commercialisation",
+        "la prise en charge de la logistique par un partenaire"
+      ],
+      "reponse": 2,
+      "explication": "Canal direct = 0 intermédiaire : marge plus élevée, réactivité, contrôle total (communication, rythme) — mais tout est à la charge du producteur. Les gros volumes et la large zone sont l'avantage du canal long."
+    },
+    {
+      "id": "b2-r03-qz-006",
+      "section": "2. Circuits et canaux",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque stratégie de distribution à son exemple type.",
+      "colonne_a": [
+        "Distribution intensive",
+        "Distribution sélective",
+        "Distribution exclusive",
+        "Distribution intégrée"
+      ],
+      "colonne_b": [
+        "Les Apple Stores, gérés en propre sans intermédiaires",
+        "Un concessionnaire automobile de luxe, seul sur son territoire",
+        "Coca-Cola ou Bic, présents dans un maximum de points de vente",
+        "Les parfums de luxe, réservés à des parfumeries agréées choisies sur critères"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "Intensive = partout (grande consommation, forte rotation) ; sélective = distributeurs choisis (produits nécessitant conseil) ; exclusive = un seul par territoire ; intégrée = l'entreprise distribue elle-même."
+    },
+    {
+      "id": "b2-r03-qz-007",
+      "section": "3. Les entreprises de distribution",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce qui distingue l'agent commercial du revendeur ?",
+      "options": [
+        "l'agent commercial vend uniquement en ligne",
+        "l'agent commercial prospecte et promeut les produits sans acheter la marchandise",
+        "l'agent commercial achète en gros et revend aux détaillants",
+        "l'agent commercial est salarié du fabricant"
+      ],
+      "reponse": 1,
+      "explication": "L'agent commercial prospecte et promeut les produits d'un fabricant auprès des points de vente sans jamais devenir propriétaire de la marchandise. Le revendeur, lui, achète pour revendre avec sa propre sélection."
+    },
+    {
+      "id": "b2-r03-qz-008",
+      "section": "4. La grande distribution",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les MDD (Marques De Distributeurs) restent de simples alternatives bon marché aux marques nationales.",
+      "reponse": false,
+      "explication": "Faux. Les MDD montent en gamme (bio, terroir) et menacent directement les marques des fabricants — dans leurs propres rayons. C'est l'une des armes des distributeurs dans le rapport de force avec les producteurs."
+    },
+    {
+      "id": "b2-r03-qz-009",
+      "section": "4. La grande distribution",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce qui caractérise une enseigne discount comme Lidl ou Aldi ?",
+      "options": [
+        "un assortiment très large à prix moyens",
+        "des produits à bas prix avec un assortiment restreint",
+        "des produits exclusivement MDD",
+        "un positionnement premium sur le frais"
+      ],
+      "reponse": 1,
+      "explication": "Le discount se spécialise dans les bas prix avec un assortiment restreint — ce qui intensifie la guerre des prix du secteur, comprime les marges et pressure les fournisseurs dans les négociations annuelles."
+    },
+    {
+      "id": "b2-r03-qz-010",
+      "section": "3. Les entreprises de distribution",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quels sont les critères de sélection d'un distributeur partenaire ? (4 réponses)",
+      "options": [
+        "la conformité aux valeurs et à l'image de la marque",
+        "le prix le plus bas proposé pour la prestation",
+        "les performances financières et la crédibilité",
+        "la capacité à atteindre le marché cible",
+        "la taille de l'entreprise partenaire",
+        "la qualité de service et la logistique"
+      ],
+      "reponse": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "explication": "Ces 4 critères fondent la grille d'évaluation d'un prestataire-distributeur (Q7). Le prix compte dans la négociation mais n'est pas un critère de sélection du cours ; la taille n'est pas un critère en soi. Le tout est verrouillé par un contrat clair et complet."
+    },
+    {
+      "id": "b2-r03-qz-011",
+      "section": "5. Le marketing de distribution",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un fabricant supprime ses intermédiaires pour vendre directement au consommateur via son site. Quel est le principal défi de cette désintermédiation ?",
+      "options": [
+        "la perte de ses marges",
+        "devoir gérer seul la relation client : service client, support, retours",
+        "la perte des données clients",
+        "l'obligation de passer par une marketplace"
+      ],
+      "reponse": 1,
+      "explication": "La désintermédiation permet de conserver les marges, de maîtriser la relation client et d'obtenir les données en direct — mais il faut tout gérer seul, ce qui exige des compétences et ressources supplémentaires."
+    },
+    {
+      "id": "b2-r03-qz-012",
+      "section": "5. Le marketing de distribution",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez les leviers de rentabilité de la distribution en ligne.",
+      "texte": "Amazon et ses robots de préparation de commandes illustrent la {1} des opérations. Faire monter le client en gamme s'appelle l'{2} ; lui proposer des produits complémentaires s'appelle le {3}.",
+      "trous": [
+        "rationalisation",
+        "upselling",
+        "cross-selling"
+      ],
+      "explication": "Les trois leviers de rentabilité en ligne : rationalisation des opérations, optimisation des coûts, augmentation des marges (tarification ciblée, upselling, cross-selling, gestion de l'assortiment)."
+    },
+    {
+      "id": "b2-r03-qz-013",
+      "section": "6. Les rapports de force",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un producteur de fromages rachète un réseau de crémeries pour vendre directement ses produits. De quoi s'agit-il ?",
+      "options": [
+        "une intégration verticale en amont",
+        "une intégration verticale en aval",
+        "une diversification horizontale",
+        "une désintermédiation numérique"
+      ],
+      "reponse": 1,
+      "explication": "L'intégration verticale en aval consiste à acquérir des activités de distribution/vente ; en amont, ce serait la production ou l'approvisionnement. Avantages : contrôle de la chaîne, marges consolidées ; inconvénients : investissements, rigidité."
+    },
+    {
+      "id": "b2-r03-qz-014",
+      "section": "6. Les rapports de force",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Plus les entreprises sont nombreuses sur un marché, plus le pouvoir de négociation individuel de chacune est faible.",
+      "reponse": true,
+      "explication": "Vrai. Le pouvoir de négociation individuel diminue quand le nombre d'acteurs augmente. C'est pourquoi un marché concentré (peu de centrales d'achat face à de nombreux producteurs) crée un rapport de force déséquilibré — au profit des centrales."
+    },
+    {
+      "id": "b2-r03-qz-015",
+      "section": "7. Comportements d'achat",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Un consommateur fait toutes ses courses chez Leclerc, quelles que soient les marques qu'il achète, grâce à sa carte de fidélité. De quelle fidélité s'agit-il ?",
+      "options": [
+        "une fidélité à la marque",
+        "une fidélité à l'enseigne",
+        "une fidélité au produit",
+        "une fidélité au canal"
+      ],
+      "reponse": 1,
+      "explication": "La fidélité à l'enseigne (fréquenter le même point de vente/distributeur) est l'actif des distributeurs, renforcé par les MDD et les programmes de fidélité. La fidélité à la marque (racheter une marque spécifique) est l'actif des producteurs."
+    },
+    {
+      "id": "b2-r03-qz-016",
+      "section": "Transversal — Dossier 2",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Un fabricant sans force commerciale spécialisée veut confier sa commercialisation à un partenaire. Justifiez le choix d'une distribution externalisée et citez les critères pour sélectionner le partenaire.",
+      "attendus": [
+        "Justification du modèle externalisé : pas de force commerciale en propre, le partenaire apporte expertise sectorielle, accès au marché cible et logistique — l'entreprise se concentre sur son métier",
+        "Mention du revers : moins de contrôle sur la commercialisation et la relation client qu'en distribution intégrée",
+        "Les 4 critères de sélection : conformité aux valeurs et à l'image de marque, performances financières et crédibilité, capacité à atteindre la cible, qualité de service et logistique",
+        "La contractualisation comme verrou : un contrat clair et complet définissant droits, obligations et conditions financières"
+      ],
+      "explication": "C'est le raisonnement attendu au Dossier 2 : justifier le modèle de distribution (3.2), construire la grille de critères (3.3), et sécuriser par le contrat."
+    }
+  ]
+}

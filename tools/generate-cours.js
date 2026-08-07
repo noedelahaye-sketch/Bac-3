@@ -131,7 +131,7 @@ function convertBody(body, linkMap, sourcesMap) {
       l.trim().startsWith("```") ||
       /^>\s?/.test(l) ||
       /^\|.*\|\s*$/.test(l) ||
-      /^-\s+/.test(l) ||
+      /^\s*-\s+/.test(l) ||
       /^\d+\.\s+/.test(l) ||
       /^-{3,}\s*$/.test(l)
     );
@@ -207,14 +207,31 @@ function convertBody(body, linkMap, sourcesMap) {
       continue;
     }
 
-    // liste à puces
-    if (/^-\s+/.test(line)) {
+    // liste à puces, avec un niveau d'imbrication ("  - " sous un "- ").
+    // Le premier item donne le niveau de base : la boucle consomme donc
+    // toujours au moins une ligne, y compris si la liste s'ouvre indentée.
+    if (/^\s*-\s+/.test(line)) {
+      const base = line.match(/^(\s*)/)[1].length;
       const items = [];
-      while (i < lines.length && /^-\s+/.test(lines[i])) {
-        items.push(lines[i].replace(/^-\s+/, ""));
+      while (i < lines.length && /^\s*-\s+/.test(lines[i])) {
+        const m = lines[i].match(/^(\s*)-\s+([\s\S]*)$/);
+        if (m[1].length <= base || !items.length) items.push({ texte: m[2], enfants: [] });
+        else items[items.length - 1].enfants.push(m[2]);
         i++;
       }
-      out.push("<ul>" + items.map((it) => "<li>" + inline(it, linkMap) + "</li>").join("") + "</ul>");
+      out.push(
+        "<ul>" +
+          items
+            .map(function (it) {
+              let li = "<li>" + inline(it.texte, linkMap);
+              if (it.enfants.length) {
+                li += "<ul>" + it.enfants.map((e) => "<li>" + inline(e, linkMap) + "</li>").join("") + "</ul>";
+              }
+              return li + "</li>";
+            })
+            .join("") +
+          "</ul>"
+      );
       continue;
     }
 
@@ -239,6 +256,12 @@ function convertBody(body, linkMap, sourcesMap) {
     // paragraphe (lignes brutes consécutives)
     const paraLines = [];
     while (i < lines.length && lines[i].trim() !== "" && !isBlockStart(lines[i])) {
+      paraLines.push(lines[i]);
+      i++;
+    }
+    // garde-fou : une ligne qu'isBlockStart reconnaît mais qu'aucune branche
+    // n'a consommée bloquerait la boucle. On la sort en paragraphe.
+    if (!paraLines.length) {
       paraLines.push(lines[i]);
       i++;
     }
@@ -536,6 +559,13 @@ function main() {
   const qResult = {};
   questions.forEach((p) => {
     const qc = buildQuestionCours(p, linkMap);
+    // sans "id" dans le frontmatter, toutes les fiches s'écraseraient sur une
+    // seule clé "undefined" : on saute le fichier en le signalant plutôt que
+    // de produire un artefact silencieusement faux.
+    if (!qc.id || qc.id === "undefined") {
+      console.warn("  ignoré (pas d'id dans le frontmatter) :", p.file);
+      return;
+    }
     qResult[qc.id] = qc;
   });
   const qJs = "var QUESTIONS_COURS = " + JSON.stringify(qResult, null, 2) + ";\n";

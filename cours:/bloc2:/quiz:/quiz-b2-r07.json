@@ -1,0 +1,273 @@
+{
+  "resume": "b2-r07",
+  "titre": "Le plan de communication : composantes, médias et media planning",
+  "bloc": 2,
+  "questions": [
+    {
+      "id": "b2-r07-qz-001",
+      "section": "1. Le plan de communication",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Dans la définition du plan de communication, que regroupe le « contenant » ?",
+      "options": [
+        "le message, le concept créatif et la stratégie de moyens",
+        "la cible, les objectifs, le budget et le planning",
+        "les supports et le calendrier de diffusion",
+        "les KPI et le tableau de bord budgétaire"
+      ],
+      "reponse": 1,
+      "explication": "Le contenant = cible, objectifs, budget, planning ; le contenu = message, concept créatif, stratégie de moyens (les canaux sélectionnés). Le plan est la traduction opérationnelle de la stratégie de communication."
+    },
+    {
+      "id": "b2-r07-qz-002",
+      "section": "1. Le plan de communication",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Une entreprise qui n'a pas de plan de communication n'a, de fait, pas de stratégie.",
+      "reponse": false,
+      "explication": "Faux. Ne pas avoir de plan ne veut pas dire ne pas avoir de stratégie. L'incertitude pousse au court terme et une démarche empirique (essai/erreur) est possible — à condition de rester orientée objectifs."
+    },
+    {
+      "id": "b2-r07-qz-003",
+      "section": "1. Le plan de communication",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Comment se construit le tableau de bord des résultats d'un plan de communication ?",
+      "options": [
+        "un KPI global pour l'ensemble du plan",
+        "un KPI par action, consigné et évalué au fur et à mesure",
+        "uniquement des indicateurs financiers (budget prévu vs réel)",
+        "un sondage de notoriété annuel"
+      ],
+      "reponse": 1,
+      "explication": "Un KPI par action : % de nouveaux contacts pour un salon, évolution du taux de notoriété pour une campagne TV... Il complète le tableau de bord budgétaire (prévu vs réel par action). C'est le format attendu en Q10."
+    },
+    {
+      "id": "b2-r07-qz-004",
+      "section": "2. Les stratégies d'ensemble",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce qui distingue la communication marketing intégrée (CMI) de la communication 360° ?",
+      "options": [
+        "la CMI est réservée au digital, le 360° couvre aussi l'off line",
+        "le 360° vise l'exhaustivité des canaux ; la CMI vise leur intégration autour de la connaissance client",
+        "la CMI concerne le BtoB, le 360° le BtoC",
+        "aucune : ce sont deux noms de la même stratégie"
+      ],
+      "reponse": 1,
+      "explication": "Le 360° utilise tous les vecteurs off line et on line (omniprésence, message uniforme) ; la CMI intègre les canaux en s'appuyant sur une étude poussée de la cible (Big Data, segmentation fine). C'est la connaissance client qui fait la différence."
+    },
+    {
+      "id": "b2-r07-qz-005",
+      "section": "2. Les stratégies d'ensemble",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les 4 clés de mise en œuvre d'une communication intégrée selon Georgia Everse (Harvard Business Review, 2012) ? (4 réponses)",
+      "options": [
+        "une stratégie forte et claire soutenue par la direction",
+        "un budget supérieur à celui des concurrents",
+        "les bons outils (planning, règles, modèles)",
+        "un plan d'action éprouvé (objectifs et moyens)",
+        "une présence sur tous les réseaux sociaux",
+        "des équipes compétentes et impliquées"
+      ],
+      "reponse": [0, 2, 3, 5],
+      "explication": "Les 4 clés HBR : stratégie soutenue par la direction, bons outils, plan d'action éprouvé, équipes compétentes et impliquées. Ni le budget ni l'exhaustivité des réseaux n'en font partie."
+    },
+    {
+      "id": "b2-r07-qz-006",
+      "section": "2. Les stratégies d'ensemble",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans la plateforme de marque, comment le Mercator définit-il la « promesse » ?",
+      "options": [
+        "l'engagement contractuel de qualité du produit",
+        "le bénéfice objectif ou subjectif suggéré aux acheteurs — un contrat avec les clients",
+        "la baseline affichée dans les campagnes",
+        "la mission que la marque se donne dans le monde"
+      ],
+      "reponse": 1,
+      "explication": "La promesse est l'une des 10 rubriques de la plateforme de marque (définition, vision, mission, ambition, positionnement, personnalité, promesse, justifications/preuves, ton et style, contraintes). Les preuves crédibilisent la promesse."
+    },
+    {
+      "id": "b2-r07-qz-007",
+      "section": "2. Les stratégies d'ensemble",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La plateforme de marque doit être actualisée à chaque nouveau plan de communication.",
+      "reponse": false,
+      "explication": "Faux. La plateforme de marque est un outil destiné à durer : elle garantit la cohérence de la marque dans le temps. Ce sont les plans et campagnes qui changent, pas la plateforme."
+    },
+    {
+      "id": "b2-r07-qz-008",
+      "section": "3. Le paysage des médias",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quels sont les 6 grands médias publicitaires ? (6 réponses)",
+      "options": [
+        "la télévision",
+        "la presse",
+        "l'événementiel",
+        "l'affichage",
+        "Internet",
+        "le marketing direct",
+        "la radio",
+        "le cinéma"
+      ],
+      "reponse": [0, 1, 3, 4, 6, 7],
+      "explication": "TV, presse, affichage, Internet, radio, cinéma. L'événementiel et le marketing direct relèvent du hors-média. Les réseaux sociaux sont hybrides : média pour la publicité, hors-média pour l'éditorial."
+    },
+    {
+      "id": "b2-r07-qz-009",
+      "section": "3. Le paysage des médias",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "TF1, Le Monde ou NRJ sont des exemples de :",
+      "options": [
+        "médias",
+        "canaux de communication",
+        "supports, au sein d'un média",
+        "régies publicitaires"
+      ],
+      "reponse": 2,
+      "explication": "Le support est le moyen de diffusion concret au sein d'un média (TF1 pour la TV, Le Monde pour la presse, NRJ pour la radio). Le canal est le vecteur par lequel le message arrive à la cible."
+    },
+    {
+      "id": "b2-r07-qz-010",
+      "section": "3. Le paysage des médias",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque média à sa caractéristique principale.",
+      "colonne_a": [
+        "Télévision",
+        "Presse",
+        "Radio",
+        "Affichage",
+        "Cinéma",
+        "Internet"
+      ],
+      "colonne_b": [
+        "Mémorisation forte, cible jeune urbaine",
+        "Ciblage fin, mesure précise, mais saturation publicitaire",
+        "Puissance maximale, média de masse et de répétition, mais coût élevé",
+        "Proximité et tranches horaires stratégiques, mais pas d'image",
+        "Segmentée et crédible, mais déclin du papier",
+        "Visibilité géographique, mais message court obligatoire"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 4],
+        [2, 3],
+        [3, 5],
+        [4, 0],
+        [5, 1]
+      ],
+      "explication": "Chaque média a son couple forces/vigilances : le choix dépend de la cible, du budget, des délais — et des restrictions légales (tabac, alcool, médicaments) qui font le premier tri."
+    },
+    {
+      "id": "b2-r07-qz-011",
+      "section": "3. Le paysage des médias",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une enseigne veut annoncer l'ouverture d'un magasin dans une ville moyenne. Quel support de presse est le plus adapté ?",
+      "options": [
+        "la PQN (presse quotidienne nationale)",
+        "la PQR (presse quotidienne régionale)",
+        "un magazine spécialisé national",
+        "un média natif numérique"
+      ],
+      "reponse": 1,
+      "explication": "La PQR couvre les actualités locales avec un réseau de correspondants : idéale pour une cible locale. La presse est par ailleurs une bonne option en phase de lancement de produit."
+    },
+    {
+      "id": "b2-r07-qz-012",
+      "section": "4. Plan média et média planning",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez les formules des indicateurs du média planning.",
+      "texte": "Le taux de couverture = (audience utile / {1}) × 100. Le taux d'affinité = (audience utile / {2}) × 100. Le CPM = (coût d'achat de l'espace / audience utile) × {3}.",
+      "trous": [
+        "population cible",
+        "audience totale du support",
+        "1 000"
+      ],
+      "explication": "La couverture répond à « quelle part de MA cible ce support touche-t-il ? » ; l'affinité à « dans l'audience de CE support, quelle part est ma cible ? ». L'audience utile = les individus de l'audience qui correspondent à la cible."
+    },
+    {
+      "id": "b2-r07-qz-013",
+      "section": "4. Plan média et média planning",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pour une cible de niche, un magazine spécialisé présente typiquement :",
+      "options": [
+        "une forte couverture et une forte affinité",
+        "une faible couverture mais une forte affinité",
+        "une forte couverture mais une faible affinité",
+        "une faible couverture et une faible affinité"
+      ],
+      "reponse": 1,
+      "explication": "Le magazine spécialisé touche peu de monde (couverture limitée) mais son audience correspond largement à la cible (affinité forte). À l'inverse, TF1 offre une énorme couverture mais une faible affinité pour une niche."
+    },
+    {
+      "id": "b2-r07-qz-014",
+      "section": "4. Plan média et média planning",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un espace publicitaire coûte 5 000 € et touche une audience utile de 200 000 personnes. Quel est le CPM ?",
+      "options": [
+        "2,50 €",
+        "25 €",
+        "40 €",
+        "250 €"
+      ],
+      "reponse": 1,
+      "explication": "CPM = (5 000 / 200 000) × 1 000 = 25 €. Le coût pour mille permet de comparer le coût d'accès à la cible utile entre supports."
+    },
+    {
+      "id": "b2-r07-qz-015",
+      "section": "4. Plan média et média planning",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les étapes de construction du média planning.",
+      "elements": [
+        "Hiérarchiser les supports (audience utile, couverture, affinité, CPM)",
+        "Définir les objectifs (cognitif, affectif, conatif — cadrés SMART)",
+        "Planifier (le planning sert aussi de tableau de bord de suivi)",
+        "Identifier les ressources (création, budget, temps, outils)",
+        "Choisir les médias (restrictions légales, adéquation cible, budget, délais)",
+        "Structurer le dossier stratégique"
+      ],
+      "ordre": [1, 3, 5, 4, 0, 2],
+      "explication": "Objectifs → ressources → dossier stratégique → choix des médias (premier tri par les restrictions légales) → hiérarchisation des supports par les indicateurs → planification. Livrables : dossier stratégique + plan de travail chiffré."
+    },
+    {
+      "id": "b2-r07-qz-016",
+      "section": "5. La communication événementielle",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que désigne le marché « MICE » ?",
+      "options": [
+        "Meetings, Incentives, Conventions, Exhibitions — le marché de l'événementiel d'entreprise",
+        "Marketing, Innovation, Communication, Événementiel",
+        "un label d'écoresponsabilité des événements",
+        "la méthode de brief des agences événementielles"
+      ],
+      "reponse": 0,
+      "explication": "Le MICE (Meetings, Incentives, Conventions, Exhibitions) est le marché événementiel le plus important en France (tourisme, hôtellerie haut de gamme, location de salles). Tendances : webinaires (100 % en ligne) et écoresponsabilité."
+    },
+    {
+      "id": "b2-r07-qz-017",
+      "section": "Transversal — Q10",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Pour un salon professionnel prévu dans le plan de communication, construisez les deux tableaux de bord attendus : KPI et budget.",
+      "attendus": [
+        "Tableau de bord des résultats : un ou plusieurs KPI propres à l'action (ex. % de nouveaux contacts sur le stand, nombre de rendez-vous qualifiés, leads collectés), chacun relié à un objectif",
+        "Tableau de bord budgétaire : budget prévisionnel par poste (location du stand, aménagement, personnel, supports print, transport...) avec comparaison prévu/réel",
+        "Mention des ressources humaines, financières et techniques mobilisées",
+        "Les KPI sont mesurables et rattachés à l'action, pas génériques"
+      ],
+      "explication": "C'est le format exact de la Q10 : KPI puis budget détaillé d'une action de communication, en reproduisant les deux tableaux de bord du pilotage du plan."
+    }
+  ]
+}

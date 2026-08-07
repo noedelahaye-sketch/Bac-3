@@ -34,7 +34,7 @@
     --type-liste:#3FBE72; --type-distinction:#A177E8;
     /* code couleur de lecture des résumés */
     --c-structure:#F0A93B; --c-process:#3FBE72; --c-notion:#A177E8;
-    --c-illustr:#E2733F; --c-data:#5C7CFA;
+    --c-illustr:#E2733F; --c-data:#5C7CFA; --c-examen:#DE5A9D;
     --radius-card:16px; --radius-control:10px; --radius-pill:999px;
     --space-4:4px; --space-8:8px; --space-12:12px; --space-16:16px;
     --space-24:24px; --space-32:32px; --space-48:48px;
@@ -438,6 +438,7 @@
   .resume h4{font-weight:600;font-size:14.5px;margin:var(--space-24) 0 var(--space-8);}
   .resume h4.h4-rule{border-left:3px solid color-mix(in srgb, var(--c-structure) 55%, transparent);padding-left:var(--space-12);}
   .resume ul,.resume ol{margin:0 0 var(--space-12);padding-left:19px;}
+  .resume li>ul,.resume li>ol{margin:var(--space-8) 0 0;}
   .resume li{margin-bottom:var(--space-8);}
   .resume hr{border:0;border-top:1px solid var(--line);margin:var(--space-48) 0;}
   .resume blockquote{margin:0 0 var(--space-12);padding:var(--space-8) var(--space-12);border-left:2px solid var(--line);background:var(--paper);border-radius:0 var(--radius-control) var(--radius-control) 0;}
@@ -474,9 +475,16 @@
 
   .resume p.def-para{border-left:3px solid var(--c-notion);background:color-mix(in srgb, var(--c-notion) 7%, transparent);border-radius:0 var(--radius-control) var(--radius-control) 0;padding:var(--space-8) var(--space-12);}
   .resume p.def-para>b:first-child{color:var(--c-notion);}
+  /* définition en item de liste : teintée sur place, la liste reste une liste */
+  .resume li.def-li{border-left:3px solid var(--c-notion);background:color-mix(in srgb, var(--c-notion) 7%, transparent);border-radius:0 var(--radius-control) var(--radius-control) 0;padding:var(--space-4) var(--space-12);}
+  .resume li.def-li::marker{color:var(--c-notion);}
+  .resume .def-lab{color:var(--c-notion);}
 
   .resume blockquote.bq-cas{border-left-color:var(--c-illustr);background:color-mix(in srgb, var(--c-illustr) 8%, var(--paper));}
   .resume blockquote.bq-cas b:first-child{color:var(--c-illustr);}
+
+  .resume blockquote.bq-exam{border-left-color:var(--c-examen);background:color-mix(in srgb, var(--c-examen) 8%, var(--paper));}
+  .resume blockquote.bq-exam b:first-child{color:var(--c-examen);}
 
   .qbar-section{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:var(--c-structure);opacity:0;transition:opacity 160ms ease;text-align:right;}
   .qbar-section.show{opacity:1;}

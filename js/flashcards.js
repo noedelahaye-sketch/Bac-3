@@ -3288,5 +3288,1765 @@ var FLASHCARDS = [
     "type": "application",
     "recto": "Quelle est l'étape la plus souvent négligée dans la gestion des objections ?",
     "verso": "La préparation. Se projeter, se mettre dans la peau de son interlocuteur, est le meilleur moyen de le comprendre et de se prémunir contre les oublis et les incompréhensions. À chaque interlocuteur son argumentation."
+  },
+  {
+    "id": "b2-r01-fc-001",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "1. L'audit marketing",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Comment le Mercator définit-il l'audit marketing ?",
+    "verso": "« Examen critique systématique de l'ensemble ou d'une partie de la politique marketing, conduisant à un diagnostic interne. » C'est un outil d'aide à la décision, qui soutient la décision sans s'y substituer."
+  },
+  {
+    "id": "b2-r01-fc-002",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "1. L'audit marketing",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quels sont les 4 éléments fondamentaux de l'audit selon Kotler et Manceau ?",
+    "verso": "1. Le champ ouvert (toutes les activités, pas seulement celles en difficulté). 2. La systématicité (diagnostics sur l'entreprise ET son environnement, avec préconisations). 3. L'indépendance (auditeur extérieur, neutre). 4. La périodicité (régulier, sans attendre les difficultés)."
+  },
+  {
+    "id": "b2-r01-fc-003",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "1. L'audit marketing",
+    "niveau": 2,
+    "type": "distinction",
+    "recto": "Audit de marché et audit de gestion : quelle différence ?",
+    "verso": "L'audit de marché porte sur les aspects conjoncturels : l'influence de l'environnement sur l'entreprise (données internes et externes). L'audit de gestion porte sur les aspects structurels : les axes d'amélioration internes (organisation des services) pour accroître les résultats."
+  },
+  {
+    "id": "b2-r01-fc-004",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "1. L'audit marketing",
+    "niveau": 2,
+    "type": "application",
+    "recto": "À quels deux temps forts réalise-t-on un audit marketing ?",
+    "verso": "Au début de la planification des actions marketing (état des lieux, portée stratégique) et en fin de mise en œuvre du plan (contrôle et vérification, dimension opérationnelle). Il peut aussi se faire quand tout va bien, pour optimiser."
+  },
+  {
+    "id": "b2-r01-fc-005",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "2. La stratégie de marque",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce que la stratégie de marque (branding), et où se place-t-elle dans la démarche ?",
+    "verso": "L'ensemble des actions mises en place pour créer une marque forte : identité unique, image mémorisable, valeurs fortes — le lien entre l'ADN d'une marque et ses actions. Elle est préliminaire aux stratégies marketing et communication : elle vient avant et les guide."
+  },
+  {
+    "id": "b2-r01-fc-006",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "2. La stratégie de marque",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quels sont les 6 éléments du prisme identitaire de Kapferer (1992) ?",
+    "verso": "1. Le physique (packaging, aspects physiques). 2. La personnalité. 3. La culture (valeurs, éthique). 4. La relation consommateurs-marque. 5. Le reflet (image dans l'esprit des clients). 6. La mentalisation (comment le client s'identifie à la marque)."
+  },
+  {
+    "id": "b2-r01-fc-007",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "2. La stratégie de marque",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Stratégie de marque produit et stratégie de marque gamme : quelle différence ?",
+    "verso": "Marque produit : un nom de marque différent par produit (Accor : Sofitel, Ibis...) — couvre plusieurs segments, isole les crises, mais coûteux. Marque gamme : tous les produits d'une même gamme sous une marque unique (Findus, Amora) — cohérence et extensions de gamme faciles."
+  },
+  {
+    "id": "b2-r01-fc-008",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "2. La stratégie de marque",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Marque ombrelle et marque caution : comment les distinguer ?",
+    "verso": "Ombrelle : UNE seule marque pour des produits sur des marchés hétérogènes (Yamaha : motos et pianos). Caution : PLUSIEURS marques réunies sous une marque mère, dans un même univers (Nestlé : Guigoz, Contrex, Herta — bien-être/santé), avec effet de synergie."
+  },
+  {
+    "id": "b2-r01-fc-009",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "3. Le mix marketing",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Qui a inventé les 4P ? (attention au piège)",
+    "verso": "Neil H. Borden (Harvard, 1949) a créé le concept de marketing mix avec 12 variables. C'est E. Jerome McCarthy qui l'a simplifié en 4P. Philip Kotler l'a seulement démocratisé — on lui en attribue à tort la paternité."
+  },
+  {
+    "id": "b2-r01-fc-010",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "3. Le mix marketing",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Comment le Mercator définit-il le marketing mix, et quelle est la règle d'or des 4P ?",
+    "verso": "« Ensemble cohérent de décisions relatives aux politiques de produit, de prix, de distribution et de communication d'un produit ou d'une marque. » Règle d'or : les 4 variables interagissent et doivent viser le même objectif. Produit + prix définissent l'offre ; distribution + communication la transfèrent vers le marché cible."
+  },
+  {
+    "id": "b2-r01-fc-011",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "4. La politique produit",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Conditionnement, emballage, étiquette : que recouvre chaque composante du packaging ?",
+    "verso": "Le conditionnement est en contact direct avec le produit. L'emballage est formé des couches de protection supplémentaires. L'étiquette porte les mentions obligatoires (dénomination, composition, origine, DLC, prix, mode d'emploi). Le packaging est le premier média du produit."
+  },
+  {
+    "id": "b2-r01-fc-012",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "4. La politique produit",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quelles sont les 4 caractéristiques d'une gamme ?",
+    "verso": "La largeur (nombre de lignes de produits), la profondeur (nombre de modèles par ligne), la longueur (nombre total de produits = largeur × profondeur), la hauteur (niveau de prix, du premier prix au haut de gamme)."
+  },
+  {
+    "id": "b2-r01-fc-013",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "4. La politique produit",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Citez les rôles que peuvent jouer les produits au sein d'une gamme.",
+    "verso": "Produit d'appel (premier prix qui attire), leader (au centre, assure le CA avec une bonne marge), de prestige (valorise la gamme), tactique (occupe le terrain, gêne la concurrence), d'avenir (remplacera le leader), contributeur (porte l'image, fortes marges), régulateur (absorbe les frais fixes, amortit les variations de CA)."
+  },
+  {
+    "id": "b2-r01-fc-014",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "4. La politique produit",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quelles sont les 4 phases du cycle de vie d'un produit, et leur profil de rentabilité ?",
+    "verso": "1. Lancement : rentabilité faible (coûts R&D et communication). 2. Croissance : ventes exponentielles, économies d'échelle, arrivée de la concurrence. 3. Maturité : rentabilité forte mais stagnante — continuer la promotion, investir dans l'innovation. 4. Déclin : baisse des ventes (certains produits restent matures indéfiniment : Coca-Cola, Nutella)."
+  },
+  {
+    "id": "b2-r01-fc-015",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "4. La politique produit",
+    "niveau": 2,
+    "type": "definition",
+    "recto": "Qu'est-ce que la servuction ?",
+    "verso": "Contraction de « service » et « production » : le fait de produire et consommer le service en même temps, avec les moyens humains et matériels disponibles. Exemple : une nuit en chambre d'hôtes — le client crée son expérience en la vivant."
+  },
+  {
+    "id": "b2-r01-fc-016",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "5. La politique de prix",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Comment se calcule le coût de revient unitaire, et pourquoi faut-il le connaître précisément ?",
+    "verso": "(Coûts d'achat + approvisionnement + production + distribution + administratifs) / nombre de produits. Il faut le connaître car la vente à perte est interdite par la loi française (sauf pendant les soldes)."
+  },
+  {
+    "id": "b2-r01-fc-017",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "5. La politique de prix",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Taux de marge et taux de marque : quelle différence ?",
+    "verso": "Taux de marge = marge brute / coût d'ACHAT × 100 (calculé sur ce que ça m'a coûté). Taux de marque = marge brute / PVHT × 100 (calculé sur le prix de vente). Le coefficient multiplicateur (PVTTC/PAHT) intègre marge et TVA."
+  },
+  {
+    "id": "b2-r01-fc-018",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "5. La politique de prix",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce que le seuil de rentabilité et comment le calcule-t-on ?",
+    "verso": "Le chiffre d'affaires minimum à réaliser pour couvrir toutes les charges et commencer à dégager du bénéfice. Calcul : charges fixes / taux de marge sur coûts variables. On peut le traduire en nombre d'articles à vendre par jour."
+  },
+  {
+    "id": "b2-r01-fc-019",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "5. La politique de prix",
+    "niveau": 2,
+    "type": "definition",
+    "recto": "Que mesure l'élasticité-prix de la demande ?",
+    "verso": "La sensibilité de la demande aux variations de prix (taux de variation de la demande / taux de variation du prix). Élasticité forte = demande très réactive au prix. Les biens de première nécessité sont inélastiques : la demande reste stable même si le prix monte."
+  },
+  {
+    "id": "b2-r01-fc-020",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "5. La politique de prix",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Stratégie d'écrémage et stratégie de pénétration : quelle différence ?",
+    "verso": "Écrémage : prix de lancement élevé pour les clients prêts à payer le prix fort, puis baisse progressive (Apple et l'iPhone). Pénétration : prix bas, inférieur à la concurrence, pour gagner un maximum de parts de marché — volume plutôt que marge, risqué (Free et son forfait à 2 €)."
+  },
+  {
+    "id": "b2-r01-fc-021",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "5. La politique de prix",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Remise, rabais, ristourne, escompte : quelle définition pour chacun ?",
+    "verso": "Remise : réduction commerciale (grosse commande, critères spécifiques). Rabais : réduction exceptionnelle (problème de qualité, retard de livraison). Ristourne : réduction sur le volume d'achat d'une période, souvent versée en fin d'année. Escompte : réduction pour paiement comptant ou rapide."
+  },
+  {
+    "id": "b2-r01-fc-022",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "5. La politique de prix",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Soldes et Black Friday : quelles règles juridiques les distinguent ?",
+    "verso": "Les soldes (2 périodes de 4 semaines par an) sont la seule période où la vente à perte est autorisée. Le Black Friday est un jour de promotion, pas de soldes : réductions libres mais sans vente à perte. Depuis mai 2022, toute annonce de réduction doit indiquer le prix le plus bas pratiqué au cours des 30 jours précédents."
+  },
+  {
+    "id": "b2-r01-fc-023",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "6. La politique de distribution",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Réseau, circuit et canal de distribution : que désigne chaque terme ?",
+    "verso": "Le réseau : la chaîne d'intermédiaires qui achemine les produits (stockage, livraison, vente). Le circuit : le chemin parcouru par un produit jusqu'au consommateur, pouvant combiner plusieurs canaux. Le canal : un chemin donné, caractérisé par son nombre d'intermédiaires (direct = 0, court = 1, long = 2 ou plus)."
+  },
+  {
+    "id": "b2-r01-fc-024",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "6. La politique de distribution",
+    "niveau": 2,
+    "type": "distinction",
+    "recto": "Commission-affiliation et franchise : quelle différence clé ?",
+    "verso": "Le franchisé est propriétaire de son stock (il l'achète) et paie un droit d'entrée (RIF) + des royalties. Le commissionnaire-affilié n'est pas propriétaire de son stock (il l'a en dépôt), les invendus sont repris, et il perçoit des commissions sur les ventes. Répandu dans le prêt-à-porter."
+  },
+  {
+    "id": "b2-r01-fc-025",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "6. La politique de distribution",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quels sont les principaux contrats et stratégies de distribution ?",
+    "verso": "Distribution exclusive (concession) : un distributeur par territoire, clause d'exclusivité territoriale obligatoire. Distribution sélective : quelques distributeurs choisis sur critères (impossible d'interdire la vente en ligne). Franchise : nom + marque + savoir-faire contre RIF et royalties (contrat de 5 à 15 ans). Stratégie intensive : tous les canaux, maximum de points de vente."
+  },
+  {
+    "id": "b2-r01-fc-026",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "7. Le plan marketing",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quelles sont les 4 étapes clés d'un plan marketing et ses 4 critères de rédaction ?",
+    "verso": "Étapes : 1. Analyse et diagnostic. 2. Stratégie et objectifs. 3. Plan d'Action Commercial (PAC) et son budget. 4. Suivi et contrôle. Critères de rédaction : clair, concis, engagé (il prend position), spécifique (adapté à chaque situation)."
+  },
+  {
+    "id": "b2-r01-fc-027",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "7. Le plan marketing",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Quelles sont les 4 parties du contenu d'un plan marketing ?",
+    "verso": "1. Le résumé managérial (objectifs et actions prioritaires, conclusions du diagnostic, budget, dates clés). 2. Les objectifs marketing hiérarchisés + contexte. 3. Le plan d'action commerciale avec calendrier et budget. 4. Le contrôle et l'évaluation (indicateurs de performance)."
+  },
+  {
+    "id": "b2-r01-fc-028",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "8. L'animation du plan",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quels sont les 3 types d'objectifs marketing d'un plan d'action ?",
+    "verso": "Les objectifs d'activité (CA, parts de marché, commandes), les objectifs clients (nombre de clients, taux de fidélisation), les objectifs de communication (visibilité, notoriété, image). Ils se déclinent en cascade et doivent tous être SMART."
+  },
+  {
+    "id": "b2-r01-fc-029",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "9. Le budget marketing",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "En quoi consiste la méthode de l'ingénierie inversée pour élaborer un budget marketing ?",
+    "verso": "Partir de l'objectif et remonter au budget : objectif de CA → nombre de ventes nécessaires (via le panier moyen) → nombre de prospects à toucher (via le taux de transformation) → budget = prospects × coût par contact. Le budget devient un investissement avec un ROI mesurable, pas une dépense."
+  },
+  {
+    "id": "b2-r01-fc-030",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "9. Le budget marketing",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Quel est le schéma courant de ventilation d'un budget marketing, et quel principe le fonde ?",
+    "verso": "50 % pour les objectifs moyen/long terme (image, notoriété, différenciation), 30 % pour le court terme (événementiel, promotions), 20 % pour le suivi des résultats et les actions correctrices. Principe fondamental : sans objectifs marketing parfaitement définis, il ne peut y avoir de budget fiable."
+  },
+  {
+    "id": "b2-r01-fc-031",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "10. SIC et SIM",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "SIC et SIM : quelle différence ?",
+    "verso": "Le SIC (Système d'Information Commerciale) collecte, stocke, traite et diffuse l'information commerciale. Le SIM (Système d'Information Mercatique/Marketing) traite les informations à finalité marketing (clients, prospects, concurrence). Le SIM se situe au niveau stratégique et ENGLOBE le SIC ; il est plus large et plus qualitatif. Ne pas confondre SIC et système informatique (qui n'en est qu'un sous-ensemble)."
+  },
+  {
+    "id": "b2-r01-fc-032",
+    "resume": "b2-r01",
+    "bloc": 2,
+    "section": "10. SIC et SIM",
+    "niveau": 2,
+    "type": "application",
+    "recto": "À quoi sert le SIM avant, pendant et après une action marketing ?",
+    "verso": "Avant : identifier les cibles prioritaires et la concurrence pour concevoir l'offre et le plan d'action. Pendant : mesurer l'impact des actions et les réactions du marché pour adapter. Après : mesurer les résultats et affiner les décisions suivantes."
+  },
+  {
+    "id": "b2-r02-fc-001",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "1. SEO",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce que le SEO et qu'est-ce qu'une SERP ?",
+    "verso": "Le SEO (Search Engine Optimization, référencement naturel) regroupe les techniques d'optimisation sur et hors site visant à améliorer la visibilité d'un site sur les moteurs de recherche. La SERP (Search Engine Result Page) est la page de résultats du moteur."
+  },
+  {
+    "id": "b2-r02-fc-002",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "1. SEO",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quelles sont les 3 étapes du travail des robots Google ?",
+    "verso": "1. Crawling : collecte — les bots parcourent le web via les liens hypertextes. 2. Indexation : lecture, interprétation et classement du contenu par thématiques. 3. Ranking : classement par les algorithmes selon environ 200 critères de pertinence."
+  },
+  {
+    "id": "b2-r02-fc-003",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "1. SEO",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Associez les algorithmes Google à leur rôle : Panda, Pingouin, Colibri, BERT, Page Experience.",
+    "verso": "Panda (2011) : pénalise les contenus dupliqués ou de mauvaise qualité. Pingouin (2012) : pénalise les liens artificiels/achetés. Colibri (2013) : recherche sémantique, comprend les intentions. BERT (2019) : traitement du langage naturel par IA. Page Experience (2021) : l'UX devient critère de classement."
+  },
+  {
+    "id": "b2-r02-fc-004",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "1. SEO",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "En SEO, que sont la RP, les RS et la longue traîne ?",
+    "verso": "La RP (Requête Principale) est le mot-clé unique pour lequel une page est optimisée (1 page = 1 RP). Les RS (Requêtes Secondaires) sont les variantes lexicales qui enrichissent le contenu. La longue traîne : une requête précise et peu concurrentielle, idéale pour les niches. Densité usuelle : 1 % de RP, 5 % de RP+RS."
+  },
+  {
+    "id": "b2-r02-fc-005",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "1. SEO",
+    "niveau": 2,
+    "type": "definition",
+    "recto": "Qu'est-ce que le « link juice » et le maillage interne ?",
+    "verso": "Le link juice est la notoriété transmise entre pages par les liens hypertextes : plus une page reçoit de liens, plus elle a de poids pour se référencer. Le maillage interne organise ces liens ; l'attribut rel=nofollow bloque la transmission ; les pages 404 gaspillent du juice."
+  },
+  {
+    "id": "b2-r02-fc-006",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "1. SEO",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Quels sont les 3 Core Web Vitals de Google Page Experience et leurs seuils « bons » ?",
+    "verso": "LCP (Largest Contentful Paint, temps d'affichage du plus grand élément) : < 2,5 s. FID (First Input Delay, délai avant interaction) : < 100 ms. CLS (Cumulative Layout Shift, stabilité visuelle) : < 0,1. S'y ajoutent responsive design et HTTPS."
+  },
+  {
+    "id": "b2-r02-fc-007",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "1. SEO",
+    "niveau": 2,
+    "type": "definition",
+    "recto": "Que signifient SXO et E-E-A-T ?",
+    "verso": "SXO = SEO + UX : l'expérience utilisateur au service du référencement. E-E-A-T (mise à jour 2022) : les critères de qualité d'un contenu pour Google — Experience, Expertise, Autorité, T fiabilité (Trustworthiness)."
+  },
+  {
+    "id": "b2-r02-fc-008",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "2. SEA",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "SEO, SEA, SEM : quelles définitions et quel lien ?",
+    "verso": "SEO : référencement naturel (gratuit, lent, durable). SEA (Search Engine Advertising) : achat de liens sponsorisés aux enchères sur des mots-clés, paiement au CPC (coût par clic). SEM = SEO + SEA : les deux sont complémentaires, le SEA n'est jamais un substitut (seuls 10 à 20 % des internautes cliquent sur les annonces)."
+  },
+  {
+    "id": "b2-r02-fc-009",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "2. SEA",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quelles sont les 7 étapes d'une campagne SEA ?",
+    "verso": "1. Définition de l'objectif (SMART). 2. Optimisation de la landing page. 3. Ciblage de l'audience (l'étape clé). 4. Construction du budget (total + quotidien). 5. Sélection des mots-clés (exacts + connexes, exclusions possibles). 6. Rédaction de l'annonce (titre, texte, call-to-action). 7. Suivi des performances."
+  },
+  {
+    "id": "b2-r02-fc-010",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "3. Display et retargeting",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce que la publicité display, et qui sont ses deux acteurs ?",
+    "verso": "Selon le Mercator : « le terme display désigne les messages affichés sur des sites Internet au format bannière » — publicités graphiques (bannières, vidéos, pop-ups) sur des sites tiers. Deux acteurs : les annonceurs (marques qui achètent la visibilité) et les éditeurs (sites qui vendent l'espace). Le display sert d'abord la notoriété."
+  },
+  {
+    "id": "b2-r02-fc-011",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "3. Display et retargeting",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "CPC, CPM, CPL, CPA : quels sont les 4 modes de facturation du display ?",
+    "verso": "CPC (Coût Par Clic) : à chaque clic — objectif trafic. CPM (Coût Par Mille) : tous les 1 000 affichages — objectif notoriété. CPL (Coût Par Lead) : à chaque inscription — objectif acquisition de prospects. CPA (Coût Par Action) : à chaque conversion — objectif ROI précis."
+  },
+  {
+    "id": "b2-r02-fc-012",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "3. Display et retargeting",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce que le retargeting (remarketing) et sur quoi repose-t-il ?",
+    "verso": "Le reciblage publicitaire : cibler un internaute en fonction des pages qu'il a consultées, via une publicité display personnalisée. Il repose sur les cookies (avec consentement RGPD). Usages : réduire les paniers abandonnés (taux > 75 % en France), qualifier les prospects, inciter au réachat. Limite : pas plus de 5 expositions au message."
+  },
+  {
+    "id": "b2-r02-fc-013",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "4. E-mailing",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce qu'une adresse opt-in, et qu'est-ce que le spamming ?",
+    "verso": "Opt-in : une adresse dont le destinataire a donné son consentement pour recevoir des e-mails commerciaux. Le spamming (défini par la CNIL) : envoi massif et répété d'e-mails non sollicités à des personnes dont l'adresse a été captée irrégulièrement. Le lien de désinscription est une obligation légale."
+  },
+  {
+    "id": "b2-r02-fc-014",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "4. E-mailing",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quels sont les 5 KPI de l'e-mailing, avec leurs repères ?",
+    "verso": "1. Taux NPAI (délivrés/envoyés) : qualité de la base. 2. Taux d'ouverture (ouverts/délivrés) : 10-30 %. 3. Taux de clic (clics/délivrés) : 3-7 %. 4. Taux de spam (plaintes/délivrés) : risque de blacklistage. 5. Taux de désabonnement (désinscriptions/délivrés)."
+  },
+  {
+    "id": "b2-r02-fc-015",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "4. E-mailing",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Citez les règles de délivrabilité d'un e-mailing.",
+    "verso": "Nettoyer régulièrement la base (supprimer les non-ouvreurs), adresse d'expéditeur identifiable sur son nom de domaine (éviter info@), maximum ~4 envois par semaine, IP dédiée, éviter le vocabulaire « spammy » (gratuit, cash, urgent). Envois conseillés : mardi/jeudi 14 h-17 h."
+  },
+  {
+    "id": "b2-r02-fc-016",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "5. Social selling",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Social selling, social listening, social buying : quelles définitions ?",
+    "verso": "Social selling : utiliser les réseaux sociaux pour trouver des prospects, échanger et vendre (côté vendeur). Social listening : la veille du secteur sur les réseaux pour identifier les leads. Social buying : côté acheteur (surtout BtoB) — chercher fournisseurs, avis et conseils sur les réseaux ; c'est l'acheteur qui initie le contact."
+  },
+  {
+    "id": "b2-r02-fc-017",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "5. Social selling",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Quel réseau social privilégier pour chaque usage de social selling ?",
+    "verso": "Facebook : prospection BtoC via une page (technique de la question pour lancer la conversation). LinkedIn : prospection BtoB (50 % des acheteurs l'utilisent pour décider) — recommandations, groupes, Sales Navigator. Twitter/X : veille via 3 listes — clients (publique), prospects (privée), concurrents (privée)."
+  },
+  {
+    "id": "b2-r02-fc-018",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "6. Data-driven marketing",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce que le data-driven marketing, et en quoi diffère-t-il du simple reporting ?",
+    "verso": "Une approche où chaque décision marketing s'appuie sur l'analyse de données concrètes plutôt que sur l'intuition. Trois piliers : collecte systématique, analyse rigoureuse, décision éclairée. Différence avec le reporting : le reporting constate le passé, le data-driven prédit et influence l'avenir."
+  },
+  {
+    "id": "b2-r02-fc-019",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "6. Data-driven marketing",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Données first-party, second-party, third-party : quelles différences ?",
+    "verso": "First-party : collectées directement par l'entreprise auprès de ses clients (transactions, navigation) — les plus fiables, prioritaires avec la disparition des cookies tiers. Second-party : issues de partenariats entre entreprises. Third-party : achetées à des courtiers en données — vigilance conformité, cookies tiers en voie de disparition."
+  },
+  {
+    "id": "b2-r02-fc-020",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "6. Data-driven marketing",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Quelle est la règle des 4C de la qualité des données ?",
+    "verso": "Complétude (toutes les informations nécessaires sont présentes), Cohérence (données harmonisées entre les systèmes), Conformité (respect des formats et standards), Correctitude (exactitude des informations collectées)."
+  },
+  {
+    "id": "b2-r02-fc-021",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "6. Data-driven marketing",
+    "niveau": 2,
+    "type": "definition",
+    "recto": "Qu'est-ce qu'une CDP, et que sont le CAC et la CLV ?",
+    "verso": "La CDP (Customer Data Platform) centralise toutes les données client pour créer des profils unifiés « 360° » en temps réel. CAC : coût d'acquisition client (dépenses / clients gagnés). CLV : Customer Lifetime Value, la valeur totale qu'un client rapporte sur toute sa relation avec l'entreprise."
+  },
+  {
+    "id": "b2-r02-fc-022",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "7. Marketing automation",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quels sont les 4 types de triggers (déclencheurs) du marketing automation ?",
+    "verso": "Temporels (intervalle prédéfini : anniversaire, relance après X jours d'inactivité), événementiels (action en temps réel : ouverture d'e-mail, clic, visite), transactionnels (comportement d'achat : panier abandonné, première commande), contextuels (données externes : météo, saisonnalité)."
+  },
+  {
+    "id": "b2-r02-fc-023",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "7. Marketing automation",
+    "niveau": 2,
+    "type": "distinction",
+    "recto": "Segmentation statique et segmentation dynamique : quelle différence, et qu'est-ce que le scoring ?",
+    "verso": "La segmentation statique fige les profils selon des critères définis à un moment donné ; la dynamique évolue en temps réel selon les comportements (un prospect devient « client fidèle » automatiquement après achat). Le scoring comportemental attribue une valeur numérique à chaque prospect pour prioriser les efforts."
+  },
+  {
+    "id": "b2-r02-fc-024",
+    "resume": "b2-r02",
+    "bloc": 2,
+    "section": "8. IA marketing",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "IA générative et IA prédictive : quels usages en marketing ?",
+    "verso": "Générative : créer des contenus (textes, visuels, vidéos — outils : Jasper, Copy.ai, Midjourney) en co-création avec l'humain, pilotée par le prompt engineering. Prédictive : anticiper les comportements — segmentation prédictive, scores de propension (à acheter, à churner), chatbots, optimisation continue. Vigilance : RGPD et biais algorithmiques."
+  },
+  {
+    "id": "b2-r03-fc-001",
+    "resume": "b2-r03",
+    "bloc": 2,
+    "section": "1. La fonction distribution",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Fonction de gros et fonction de détail : quelle différence ?",
+    "verso": "La fonction de gros distribue les produits AUX DÉTAILLANTS (achat en grande quantité, revente aux professionnels). La fonction de détail vend directement AUX CONSOMMATEURS finaux."
+  },
+  {
+    "id": "b2-r03-fc-002",
+    "resume": "b2-r03",
+    "bloc": 2,
+    "section": "1. La fonction distribution",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quels sont les 3 flux gérés par la distribution ?",
+    "verso": "Les flux physiques (transport en juste-à-temps, stockage, livraison — attention aux ruptures), les flux d'informations (commandes, tickets de caisse qui alimentent la veille, merchandising — outil : l'EDI, échange de données informatisé), les flux financiers (paiements à chaque maillon)."
+  },
+  {
+    "id": "b2-r03-fc-003",
+    "resume": "b2-r03",
+    "bloc": 2,
+    "section": "1. La fonction distribution",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quelles sont les 3 approches successives de la distribution ?",
+    "verso": "1. Transactionnelle : maximiser la vente unique, court terme (en déclin). 2. Relationnelle : développer des relations à long terme pour fidéliser (programmes de fidélité). 3. Expérientielle : faire vivre une expérience au client — le stade actuel, porté par l'omnicanal."
+  },
+  {
+    "id": "b2-r03-fc-004",
+    "resume": "b2-r03",
+    "bloc": 2,
+    "section": "1. La fonction distribution",
+    "niveau": 2,
+    "type": "definition",
+    "recto": "Qu'est-ce que le « concept » de magasin dans la distribution contemporaine ?",
+    "verso": "Le point de vente est conçu comme un produit doté d'attributs (proximité, choix, praticité) : ensemble d'éléments matériels et immatériels propres à une enseigne — design, ambiance sensorielle, services, technologie, événements. Exemple : le parcours guidé IKEA."
+  },
+  {
+    "id": "b2-r03-fc-005",
+    "resume": "b2-r03",
+    "bloc": 2,
+    "section": "2. Circuits et canaux",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Canal direct, court, long : avantages et inconvénients de chacun ?",
+    "verso": "Direct (0 intermédiaire) : marge maîtrisée, contrôle total, mais tout est à la charge du producteur. Court (1 intermédiaire) : marge préservée, proximité. Long (2 ou plus : grossistes, centrales d'achat) : gros volumes et large zone, mais faible contrôle et client éloigné — plus de 90 % du commerce."
+  },
+  {
+    "id": "b2-r03-fc-006",
+    "resume": "b2-r03",
+    "bloc": 2,
+    "section": "2. Circuits et canaux",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Quelles sont les 4 stratégies de distribution selon la couverture ?",
+    "verso": "Intensive : un maximum de points de vente (produits courants à forte rotation — Coca-Cola). Sélective : distributeurs choisis sur critères (produits haut de gamme nécessitant conseil). Exclusive : un seul distributeur par territoire (luxe, concessions). Intégrée : l'entreprise gère elle-même sa distribution (Apple Stores)."
+  },
+  {
+    "id": "b2-r03-fc-007",
+    "resume": "b2-r03",
+    "bloc": 2,
+    "section": "3. Les entreprises de distribution",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Grossiste, agent commercial, revendeur, détaillant : quel rôle pour chacun ?",
+    "verso": "Le grossiste achète en gros aux fabricants et revend aux détaillants. L'agent commercial prospecte et promeut les produits d'un fabricant sans acheter la marchandise. Le revendeur achète pour revendre aux consommateurs avec une sélection propre. Le détaillant vend directement aux consommateurs finaux."
+  },
+  {
+    "id": "b2-r03-fc-008",
+    "resume": "b2-r03",
+    "bloc": 2,
+    "section": "3. Les entreprises de distribution",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Distribution intégrée et distribution externalisée : quelle différence ?",
+    "verso": "Intégrée : l'entreprise gère elle-même ses canaux, sans intermédiaires externes (Apple). Externalisée : elle confie la commercialisation à des partenaires indépendants — distributeurs, revendeurs, agents, franchisés (Coca-Cola et ses embouteilleurs locaux)."
+  },
+  {
+    "id": "b2-r03-fc-009",
+    "resume": "b2-r03",
+    "bloc": 2,
+    "section": "3. Les entreprises de distribution",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quels critères guident la sélection d'un distributeur partenaire ?",
+    "verso": "La conformité aux valeurs et à l'image de la marque, les performances financières et la crédibilité, la capacité à atteindre le marché cible, la qualité de service et la logistique. Le tout verrouillé par un contrat clair et complet — une insatisfaction liée à la distribution entache durablement la réputation."
+  },
+  {
+    "id": "b2-r03-fc-010",
+    "resume": "b2-r03",
+    "bloc": 2,
+    "section": "4. La grande distribution",
+    "niveau": 2,
+    "type": "definition",
+    "recto": "Que sont les MDD et pourquoi menacent-elles les marques nationales ?",
+    "verso": "Les Marques De Distributeurs : produits vendus sous la marque propre du distributeur, généralement moins chers. Elles ne sont plus de simples alternatives bon marché (montée en gamme : bio, terroir) et concurrencent frontalement les marques nationales dans leurs propres rayons, avec une meilleure place en linéaire."
+  },
+  {
+    "id": "b2-r03-fc-011",
+    "resume": "b2-r03",
+    "bloc": 2,
+    "section": "4. La grande distribution",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Comment les enseignes discount intensifient-elles la guerre des prix ?",
+    "verso": "Leur stratégie : commercialiser des produits à bas prix avec un assortiment restreint (Lidl, Aldi). Conséquences : marges réduites pour toutes les enseignes, pression répercutée sur les fournisseurs lors des négociations annuelles."
+  },
+  {
+    "id": "b2-r03-fc-012",
+    "resume": "b2-r03",
+    "bloc": 2,
+    "section": "5. Marketing de distribution",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Quels sont les 3 leviers de rentabilité de la distribution en ligne ?",
+    "verso": "1. La rationalisation des opérations (simplification logistique, automatisation — les robots d'Amazon). 2. L'optimisation des coûts (négociation fournisseurs, technologies). 3. L'augmentation des marges (tarification ciblée, upselling : monter en gamme, cross-selling : produits complémentaires)."
+  },
+  {
+    "id": "b2-r03-fc-013",
+    "resume": "b2-r03",
+    "bloc": 2,
+    "section": "5. Marketing de distribution",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce que la désintermédiation, et quels sont ses opportunités et défis ?",
+    "verso": "La suppression d'un ou plusieurs intermédiaires de la chaîne de valeur (vente directe au consommateur via le digital). Opportunités : marges conservées, maîtrise de la relation client, données en direct. Défis : gérer seul la relation client (service client, support, retours). Les marketplaces (Amazon, eBay) incarnent l'intermédiation numérique inverse."
+  },
+  {
+    "id": "b2-r03-fc-014",
+    "resume": "b2-r03",
+    "bloc": 2,
+    "section": "6. Comportements d'achat",
+    "niveau": 2,
+    "type": "distinction",
+    "recto": "Comportements Full Store et Full Digital : que désignent-ils ?",
+    "verso": "Full Store : parcours d'achat exclusivement en point de vente physique — enjeu : optimiser le tunnel de conversion en magasin (accueil, signalisation, aménagement). Full Digital : parcours exclusivement en ligne — enjeu : site performant et expérience fluide. Un consommateur n'est pas figé dans un comportement : il varie selon le produit et le contexte."
+  },
+  {
+    "id": "b2-r03-fc-015",
+    "resume": "b2-r03",
+    "bloc": 2,
+    "section": "6. Comportements d'achat",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Fidélité à la marque et fidélité à l'enseigne : quelle différence ?",
+    "verso": "Fidélité à la marque : tendance du consommateur à racheter les produits d'une MARQUE spécifique (l'actif des producteurs). Fidélité à l'enseigne : tendance à fréquenter le même POINT DE VENTE/distributeur, quelle que soit la marque achetée (l'actif des distributeurs, renforcé par les MDD et les programmes de fidélité)."
+  },
+  {
+    "id": "b2-r04-fc-001",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "1. Les acteurs de la communication",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Annonceur, agence, régie publicitaire : quel rôle pour chacun ?",
+    "verso": "L'annonceur : l'organisation qui commande et paie l'opération de communication pour promouvoir ses produits ou sa marque. Les agences : entités indépendantes qui conseillent les annonceurs (stratégie, création, achat média). Les régies publicitaires : organismes chargés de commercialiser les espaces publicitaires d'un support ou groupe média."
+  },
+  {
+    "id": "b2-r04-fc-002",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "1. Les acteurs de la communication",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "ARCOM et ARPP : quelle différence ?",
+    "verso": "L'ARCOM est l'autorité PUBLIQUE de régulation de l'audiovisuel (liberté d'expression, régulation du marché). L'ARPP est l'organisme de régulation PROFESSIONNELLE de la publicité : elle crée et contrôle les règles d'éthique pour une publicité « loyale, véridique, saine et respectueuse », tous supports confondus."
+  },
+  {
+    "id": "b2-r04-fc-003",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "1. Les acteurs de la communication",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Pourquoi les réseaux sociaux sont-ils « à la conjonction du média et du hors-média » ?",
+    "verso": "Média quand on y achète de la publicité (social ads, ciblage fin ou massif) ; hors-média pour la publication éditoriale gratuite (posts organiques des pages d'entreprise)."
+  },
+  {
+    "id": "b2-r04-fc-004",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "2. Typologie des prestataires",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce qu'une agence de communication globale (360°) ?",
+    "verso": "Une structure qui répond à l'ensemble des besoins d'un annonceur, de la stratégie à la production. Déroulé : l'annonceur exprime son besoin (objectifs, contraintes) → l'agence propose un plan de communication (actions, supports, planning, budget). Si elle n'a pas toutes les compétences, elle sous-traite et gère elle-même ses sous-traitants."
+  },
+  {
+    "id": "b2-r04-fc-005",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "2. Typologie des prestataires",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Citez les principales agences spécialisées et leur domaine.",
+    "verso": "Agence média : plan média et mandataire d'achat d'espaces. Agence de relations presse : relations avec les journalistes pour un annonceur. Agence de graphisme : identité visuelle print et webdesign (sans la stratégie). Agence photo/audiovisuelle : prestations techniques. Agence web/digitale : déploiement complet de la stratégie digitale + veille."
+  },
+  {
+    "id": "b2-r04-fc-006",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "2. Typologie des prestataires",
+    "niveau": 2,
+    "type": "definition",
+    "recto": "Qu'est-ce qu'un freelance et sur quels critères le choisit-on ?",
+    "verso": "Un travailleur indépendant, à son compte (plusieurs statuts juridiques possibles), libre de fixer ses prestations et tarifs. On le choisit sur ses compétences professionnelles, ses tarifs et ses qualités relationnelles. Plateformes spécialisées : Malt, Coworkees, Freelancer."
+  },
+  {
+    "id": "b2-r04-fc-007",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "3. Sélection d'un partenaire",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Cahier des charges et appel d'offres : quelle différence ?",
+    "verso": "Le cahier des charges formalise LE BESOIN : présentation de l'entreprise, prestation attendue, exigences, contraintes (échéancier, budget, normes), conditions contractuelles. L'appel d'offres organise LA CONSULTATION : mise en concurrence de plusieurs prestataires, calendrier de réponse, critères de sélection annoncés à l'avance."
+  },
+  {
+    "id": "b2-r04-fc-008",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "3. Sélection d'un partenaire",
+    "niveau": 1,
+    "type": "application",
+    "recto": "Comment construit-on une grille de critères d'évaluation de prestataires ?",
+    "verso": "1. Définir des critères adaptés (compétences, références, finances, couverture du marché, valeurs/image, RSE, prix). 2. Les pondérer selon les priorités stratégiques de l'entreprise. 3. Combiner indicateurs quantitatifs (mesurables) et qualitatifs (appréciation). 4. Noter chaque candidat, calculer les scores pondérés et justifier le choix."
+  },
+  {
+    "id": "b2-r04-fc-009",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "4. Relation producteur-distributeur",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce que le trade marketing et l'ECR ?",
+    "verso": "Le trade marketing : l'ensemble des actions qui optimisent la relation et les négociations producteur-distributeur pour la transformer en partenariat gagnant-gagnant (échange d'informations réciproques). L'ECR (Efficient Consumer Response) : la coopération pour optimiser la chaîne (flux logistiques, réduction des ruptures), appuyée sur l'EDI."
+  },
+  {
+    "id": "b2-r04-fc-010",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "4. Relation producteur-distributeur",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Marge avant et marge arrière : quelle différence ?",
+    "verso": "Marge avant : la différence entre prix d'achat au producteur et prix de revente au consommateur (sur facture). Marge arrière (rétrocommission) : les remises HORS facture versées par le producteur au distributeur, souvent en fin d'année, au titre de la « coopération commerciale » (prospectus, têtes de gondole)."
+  },
+  {
+    "id": "b2-r04-fc-011",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "4. Relation producteur-distributeur",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Quels sont les points de convergence et de divergence entre producteur et distributeur ?",
+    "verso": "Convergences : la satisfaction client, le développement des ventes (intérêt interdépendant), la réputation (chacun exploite l'image de l'autre). Divergences : le partage des marges, le financement de la prospection commerciale et des promotions, la concurrence des MDD. Relation « dichotomique » : à la fois conflictuelle et coopérative."
+  },
+  {
+    "id": "b2-r04-fc-012",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "5. Équilibrage et droit de la concurrence",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Qu'apporte la loi Galland (1996) à la relation producteur-distributeur ?",
+    "verso": "Elle rééquilibre les rapports de force : possibilité du refus de vente pour les producteurs et réglementation de la vente à perte. Les lois suivantes ont réintégré les marges arrière dans le seuil de vente à perte et réduit les délais de paiement."
+  },
+  {
+    "id": "b2-r04-fc-013",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "5. Équilibrage et droit de la concurrence",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Que visent les lois antitrust ?",
+    "verso": "Garantir la libre concurrence en interdisant les pratiques anticoncurrentielles : ententes, abus de position dominante, prix imposés, remises discriminatoires. Effets : protection des consommateurs, maintien du nombre d'acteurs, stabilité des prix et maîtrise de l'inflation."
+  },
+  {
+    "id": "b2-r04-fc-014",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "6. Le contrat",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quelles clauses essentielles doit contenir un contrat de partenariat ?",
+    "verso": "L'objet (produits/services précis), les conditions tarifaires et de paiement, la livraison, les quantités minimales, la durée et la résiliation (préavis, motifs), les obligations de chaque partie, la propriété intellectuelle, la conformité RGPD, et les mécanismes de résolution des conflits (médiation, arbitrage)."
+  },
+  {
+    "id": "b2-r04-fc-015",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "6. Le contrat",
+    "niveau": 2,
+    "type": "definition",
+    "recto": "Qu'est-ce qu'un contrat cadre de distribution ?",
+    "verso": "Un contrat global qui fixe les termes généraux d'une relation commerciale durable ; des contrats d'application précisent ensuite chaque opération. Usage type : l'industrie pharmaceutique avec les réseaux de pharmacies. À connaître aussi : la réforme du droit des contrats de 2016 (bonne foi, lutte contre le déséquilibre significatif)."
+  },
+  {
+    "id": "b2-r04-fc-016",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "7. Éthique et RSE des partenariats",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Loi Sapin II et devoir de vigilance : que impose chacun ?",
+    "verso": "Sapin II (2016) : dispositifs anti-corruption — évaluer l'intégrité de ses partenaires commerciaux et documenter la diligence raisonnable. Devoir de vigilance (2017) : les grandes entreprises françaises doivent identifier et prévenir les risques (droits humains, environnement) dans TOUTE leur chaîne de valeur, partenaires compris."
+  },
+  {
+    "id": "b2-r04-fc-017",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "7. Éthique et RSE des partenariats",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Quelles sont les limites des labels et certifications RSE ?",
+    "verso": "Focalisation documentaire (le papier peut masquer le terrain), audits ponctuels, valeur probante variable selon les certifications. À utiliser avec discernement, en complément d'autres vérifications : audits de conformité planifiés, croisement des sources, charte éthique fournisseur."
+  },
+  {
+    "id": "b2-r04-fc-018",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "7. Éthique et RSE des partenariats",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce qu'une charte éthique fournisseur, et pourquoi le risque réputationnel justifie-t-il l'évaluation RSE des partenaires ?",
+    "verso": "Un outil contractuel ET pédagogique qui formalise les attentes RSE de l'annonceur — il crée des obligations juridiques précises. Le risque : les réseaux sociaux propagent instantanément les scandales d'un partenaire (conditions de travail, greenwashing), et l'annonceur est tenu responsable des pratiques de sa chaîne de valeur."
+  },
+  {
+    "id": "b2-r04-fc-019",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "8. Les entreprises à impact",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce qu'une entreprise à impact ?",
+    "verso": "Une entreprise à statut commercial classique qui place au centre de son modèle économique un impact social et/ou environnemental positif (notion sans définition juridique). Différence avec l'entreprise traditionnelle : celle-ci maximise le profit ; l'entreprise à impact vise à la fois rendement financier et résultats sociaux/environnementaux."
+  },
+  {
+    "id": "b2-r04-fc-020",
+    "resume": "b2-r04",
+    "bloc": 2,
+    "section": "8. Les entreprises à impact",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Quels sont les 3 types d'impact d'une entreprise à impact ?",
+    "verso": "Social (emplois et formation pour les communautés, inclusion et diversité), environnemental (réduction de l'empreinte carbone, matériaux durables, biodiversité), gouvernance responsable (certifications, transparence avec les parties prenantes, politiques éthiques)."
+  },
+  {
+    "id": "b2-r05-fc-001",
+    "resume": "b2-r05",
+    "bloc": 2,
+    "section": "1. Préparer la négociation",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quelles sont les 4 dimensions du mapping des parties prenantes en négociation ?",
+    "verso": "1. L'identification des acteurs directs et indirects impliqués dans la décision. 2. L'évaluation de leur pouvoir d'influence. 3. La compréhension de leurs intérêts prioritaires et contraintes. 4. L'analyse de leurs alternatives en cas d'échec de la négociation. Objectif : identifier les intérêts convergents, base de la création de valeur mutuelle."
+  },
+  {
+    "id": "b2-r05-fc-002",
+    "resume": "b2-r05",
+    "bloc": 2,
+    "section": "1. Préparer la négociation",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Objectif cible et seuil de résistance : que définit-on avant de négocier ?",
+    "verso": "L'objectif cible : ce qu'on vise. Le seuil de résistance : la limite en dessous de laquelle on n'accepte pas l'accord. Entre les deux se trouve la zone d'accord possible, avec des étapes intermédiaires de repli planifiées à l'avance."
+  },
+  {
+    "id": "b2-r05-fc-003",
+    "resume": "b2-r05",
+    "bloc": 2,
+    "section": "2. Concessions",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quelles sont les règles de gestion des concessions en négociation ?",
+    "verso": "1. Jamais unilatérales : chaque concession est conditionnée à une contrepartie (« si... alors... »). 2. En décroissance progressive (10 % puis 5 % puis 2 %) pour signaler l'approche de sa limite (« signaling »). 3. Penser aux concessions non financières (exclusivité, délais de paiement, références) : coût limité pour soi, forte valeur perçue pour l'autre."
+  },
+  {
+    "id": "b2-r05-fc-004",
+    "resume": "b2-r05",
+    "bloc": 2,
+    "section": "2. Concessions",
+    "niveau": 2,
+    "type": "definition",
+    "recto": "Qu'est-ce que la communication assertive ?",
+    "verso": "La troisième voie entre communication passive (subir sans exprimer ses besoins) et agressive (imposer sans considération pour l'autre) : exprimer ses positions avec fermeté tout en préservant la relation. Elle s'accompagne de la gestion des émotions : non pas les supprimer, mais les reconnaître et les canaliser."
+  },
+  {
+    "id": "b2-r05-fc-005",
+    "resume": "b2-r05",
+    "bloc": 2,
+    "section": "3. DISC",
+    "niveau": 2,
+    "type": "distinction",
+    "recto": "Dans le modèle DISC, que distinguent le profil naturel et le profil adapté ?",
+    "verso": "Le profil de base (naturel) décrit les préférences de comportement en situation normale, sans stress — la « personnalité naturelle ». Le profil adapté décrit les ajustements en situation de stress ou au travail (un profil Dominant peut augmenter sa Stabilité si la situation exige de la patience). Ce n'est pas un changement de personnalité, mais une adaptation ponctuelle — et personne ne se résume à sa couleur."
+  },
+  {
+    "id": "b2-r05-fc-006",
+    "resume": "b2-r05",
+    "bloc": 2,
+    "section": "4. Questionnement",
+    "niveau": 2,
+    "type": "definition",
+    "recto": "Qu'est-ce que le modèle SPIN de questionnement stratégique ?",
+    "verso": "Une structure de découverte des besoins en 4 types de questions : Situation (comprendre le contexte), Problème (identifier les difficultés), Implication (faire mesurer les conséquences), Need-payoff (faire formuler le bénéfice attendu). Bien questionné, l'interlocuteur exprime lui-même ses besoins."
+  },
+  {
+    "id": "b2-r05-fc-007",
+    "resume": "b2-r05",
+    "bloc": 2,
+    "section": "5. Traiter les objections",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quelle est la technique en 3 temps pour traiter une objection ?",
+    "verso": "1. L'accusé de réception émotionnel (« Je comprends que cette proposition vous inquiète »). 2. La reformulation factuelle (« Votre préoccupation porte sur le risque de dépassement budgétaire »). 3. La recherche de solutions (« Comment pourrions-nous structurer l'accord pour limiter ce risque ? »). Elle transforme l'objection en dialogue constructif."
+  },
+  {
+    "id": "b2-r05-fc-008",
+    "resume": "b2-r05",
+    "bloc": 2,
+    "section": "5. Traiter les objections",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Qu'est-ce que la « négociation intégrée » face à une objection, et l'argumentation en « cercles concentriques » ?",
+    "verso": "Négociation intégrée : accueillir l'objection comme un élément qui enrichit la réflexion et repositionner l'objecteur en partenaire de co-construction plutôt qu'en opposant. Cercles concentriques : reconnaître d'abord la légitimité de l'objection, puis élargir progressivement la perspective — en respectant le rythme d'acceptation de l'interlocuteur."
+  },
+  {
+    "id": "b2-r06-fc-001",
+    "resume": "b2-r06",
+    "bloc": 2,
+    "section": "1. Analyser les besoins",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Notoriété assistée, spontanée, top of mind : que mesure chacune ?",
+    "verso": "Assistée : « Connaissez-vous la marque X ? » (on cite la marque). Spontanée : « Citez des marques de... » (sans aide). Top of mind : la première marque citée spontanément. Exemple de calcul : 180 « oui » sur 200 interrogés = 90 % de notoriété assistée."
+  },
+  {
+    "id": "b2-r06-fc-002",
+    "resume": "b2-r06",
+    "bloc": 2,
+    "section": "1. Analyser les besoins",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Quels sont les types de besoins en communication d'un annonceur ?",
+    "verso": "Le besoin de sensibilisation (manque de notoriété ou de reconnaissance), de compréhension (les clients ne saisissent pas les caractéristiques de l'offre), de changement de perception (image négative à corriger). Les besoins se traduisent ensuite en objectifs chiffrés."
+  },
+  {
+    "id": "b2-r06-fc-003",
+    "resume": "b2-r06",
+    "bloc": 2,
+    "section": "1. Analyser les besoins",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Que doit couvrir l'audit des outils de communication existants ?",
+    "verso": "L'usage : quels outils, quels réseaux, communication 360° ou 100 % digitale, pertinence par rapport à la stratégie, suivi en place. Les moyens et résultats : coûts actuels, budget annuel, résultats par action, ROI. Sans données chiffrées, il faudra les collecter."
+  },
+  {
+    "id": "b2-r06-fc-004",
+    "resume": "b2-r06",
+    "bloc": 2,
+    "section": "2. Évaluer",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce que la roue de Deming (PDCA) ?",
+    "verso": "Une méthode cyclique d'amélioration continue en 4 temps : Plan (planifier), Do (faire), Check (vérifier), Act (ajuster). Idéale pour évaluer l'efficacité d'un plan de communication et l'améliorer en continu."
+  },
+  {
+    "id": "b2-r06-fc-005",
+    "resume": "b2-r06",
+    "bloc": 2,
+    "section": "2. Évaluer",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce que le diagramme d'Ishikawa et ses 5M ?",
+    "verso": "Le diagramme « causes/effet » ou « en arête de poisson » : résoudre un problème en listant ses causes par familles — Méthodes, Matières, Milieu, Main-d'œuvre, Moyens (parfois + Management). À remplir en équipe, de façon collégiale."
+  },
+  {
+    "id": "b2-r06-fc-006",
+    "resume": "b2-r06",
+    "bloc": 2,
+    "section": "2. Évaluer",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Tableau de bord et reporting : quelle différence et quel ordre ?",
+    "verso": "Le tableau de bord est l'outil de PILOTAGE : conception (catégories issues des cibles, objectifs, KPI, échéances) → recueil des données → analyse des écarts. Le reporting rend compte PÉRIODIQUEMENT de la performance : il intervient APRÈS l'analyse du tableau de bord (ex. reporting à la direction après un événement)."
+  },
+  {
+    "id": "b2-r06-fc-007",
+    "resume": "b2-r06",
+    "bloc": 2,
+    "section": "3. La problématique",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce qu'une problématique de communication, et que doit-elle exprimer ?",
+    "verso": "La traduction d'un besoin ou d'un objectif sous forme de QUESTION OUVERTE, pour concevoir un plan d'actions adapté. Elle doit exprimer trois éléments : le besoin, la cible visée, et les contraintes (délais et budget). Exemple complet : « Comment développer une communauté de 15 000 abonnés actifs sur Instagram en 6 mois avec un budget de 2 000 € ? »"
+  },
+  {
+    "id": "b2-r06-fc-008",
+    "resume": "b2-r06",
+    "bloc": 2,
+    "section": "3. La problématique",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Par quelles portes d'entrée identifie-t-on une problématique de communication ?",
+    "verso": "1. À partir de l'analyse des besoins (le diagnostic révèle les dissonances). 2. À partir des objectifs de l'entreprise sur son marché (leader, fidélisation face à la concurrence). 3. En situation de crise (urgence qui menace l'image — ex. Facebook 2018 et la fuite de données)."
+  },
+  {
+    "id": "b2-r06-fc-009",
+    "resume": "b2-r06",
+    "bloc": 2,
+    "section": "4. Le positionnement de communication",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quels sont les 4 éléments du positionnement d'une marque en communication, et qu'est-ce que la baseline ?",
+    "verso": "La vision (la manière dont la marque voit le monde), les valeurs (ce en quoi elle croit), la mission (son rôle dans le monde), les preuves (les signes concrets de cohérence). La baseline (ou signature de marque) est la forme condensée du positionnement. Exemple Axa : vision « être différent pour mériter la confiance », mission « aider ses clients à être sereins »."
+  },
+  {
+    "id": "b2-r06-fc-010",
+    "resume": "b2-r06",
+    "bloc": 2,
+    "section": "5. Objectifs de communication",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quelles sont les 3 dimensions des objectifs de communication ?",
+    "verso": "Cognitif — faire SAVOIR (connaissance, notoriété : « Carglass répare, Carglass remplace »). Affectif — faire AIMER (image, émotion : les pubs d'Apple). Conatif — faire AGIR (changement de comportement : « Venez comme vous êtes »). Les trois se pensent conjointement."
+  },
+  {
+    "id": "b2-r06-fc-011",
+    "resume": "b2-r06",
+    "bloc": 2,
+    "section": "5. Objectifs de communication",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Que signifie AIDA et à quoi sert cette méthode ?",
+    "verso": "Attention (entrée en matière directe, le produit en évidence), Intérêt (contenu incitatif qui concerne la cible), Désir (susciter l'envie : bénéfices, promesse), Action (déclencher : CTA, offre limitée). Elle structure les messages sur tous les supports : posts, newsletters, landing pages, affichage, spots."
+  },
+  {
+    "id": "b2-r06-fc-012",
+    "resume": "b2-r06",
+    "bloc": 2,
+    "section": "6. Le projet de communication",
+    "niveau": 2,
+    "type": "distinction",
+    "recto": "Études qualitatives et quantitatives pour cibler : que permet chacune ?",
+    "verso": "Qualitatives : peu de personnes, en profondeur (interviews, questions ouvertes) → comprendre les freins et motivations. Quantitatives : grands échantillons, questions fermées → mesurer et chiffrer. La théorie des effets limités rappelle qu'un message émis est modifié par le filtre des leaders d'opinion."
+  },
+  {
+    "id": "b2-r06-fc-013",
+    "resume": "b2-r06",
+    "bloc": 2,
+    "section": "6. Le projet de communication",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quels outils structurent la gestion d'un projet de communication ?",
+    "verso": "L'organigramme des tâches (arborescence tâches → sous-tâches/livrables, pour estimer temps et budget), le rétroplanning avec le diagramme de Gantt (tâches période par période), le suivi (délais, budgets, coordination), puis le bilan du projet et les actions post-campagne (capitalisation)."
+  },
+  {
+    "id": "b2-r07-fc-001",
+    "resume": "b2-r07",
+    "bloc": 2,
+    "section": "1. Le plan de communication",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Comment se définit le plan de communication (contenant et contenu) ?",
+    "verso": "C'est la traduction opérationnelle de la stratégie de communication : un document qui cadre et déploie les actions. Il est un CONTENANT (la cible, les objectifs, le budget, le planning) et un CONTENU (le message, le concept créatif, la stratégie de moyens — les canaux choisis). Il apporte cohérence et anticipation."
+  },
+  {
+    "id": "b2-r07-fc-002",
+    "resume": "b2-r07",
+    "bloc": 2,
+    "section": "1. Le plan de communication",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Quels rôles joue le plan de communication en interne et en externe ?",
+    "verso": "En interne : outil de planification, de coordination et de management des équipes (même niveau d'information pour tous). En externe : cadre pour les prestataires. Il n'est défini qu'après le travail d'analyse (audit, problématique). En théorie il se pense à long terme — mais ne pas avoir de plan ne veut pas dire ne pas avoir de stratégie."
+  },
+  {
+    "id": "b2-r07-fc-003",
+    "resume": "b2-r07",
+    "bloc": 2,
+    "section": "1. Le plan de communication",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Quels sont les deux tableaux de bord du pilotage d'un plan de communication ?",
+    "verso": "Le tableau de bord budgétaire : budget prévu vs budget réel par action (publicité, RP, événementiel, édition...). Le tableau de bord des résultats : un KPI par action, consigné et évalué au fur et à mesure (ex. salon : % de nouveaux contacts ; campagne TV : évolution du taux de notoriété)."
+  },
+  {
+    "id": "b2-r07-fc-004",
+    "resume": "b2-r07",
+    "bloc": 2,
+    "section": "2. Communication intégrée",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Communication marketing intégrée (CMI) et communication 360° : quelle différence ?",
+    "verso": "Le 360° (Mercator) vise l'EXHAUSTIVITÉ des canaux : « stratégies conçues sur l'ensemble du champ des techniques, off line et on line ». La CMI vise leur INTÉGRATION : synergie des canaux et continuité des messages, fondées sur la connaissance client (Big Data). C'est la connaissance client qui distingue la CMI du 360°."
+  },
+  {
+    "id": "b2-r07-fc-005",
+    "resume": "b2-r07",
+    "bloc": 2,
+    "section": "2. Communication intégrée",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Quelles sont les 4 clés de mise en œuvre d'une CMI selon la Harvard Business Review (Everse, 2012) ?",
+    "verso": "1. Une stratégie forte et claire soutenue par la direction. 2. Les bons outils (planning, règles, modèles). 3. Un plan d'action éprouvé (objectifs et moyens). 4. Des équipes compétentes et impliquées."
+  },
+  {
+    "id": "b2-r07-fc-006",
+    "resume": "b2-r07",
+    "bloc": 2,
+    "section": "2. Communication intégrée",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quelles sont les 10 rubriques d'une plateforme de marque (Communicator) ?",
+    "verso": "1. La définition (qui sommes-nous). 2. La vision. 3. La mission. 4. L'ambition. 5. Le positionnement. 6. La personnalité. 7. La promesse (« bénéfice objectif ou subjectif suggéré aux acheteurs » — Mercator). 8. Les justifications/preuves. 9. Le ton et le style. 10. Les contraintes. Un outil destiné à durer, garant de la cohérence de la marque."
+  },
+  {
+    "id": "b2-r07-fc-007",
+    "resume": "b2-r07",
+    "bloc": 2,
+    "section": "3. Le paysage des médias",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Canal, média, support : que désigne chaque terme ?",
+    "verso": "Le canal de communication : le vecteur par lequel le message atteint la cible. Le média : une famille de canaux de masse — les 6 grands médias : télévision, presse, affichage, Internet, radio, cinéma. Le support : le moyen concret AU SEIN d'un média (TF1 pour la TV, Le Monde pour la presse, NRJ pour la radio)."
+  },
+  {
+    "id": "b2-r07-fc-008",
+    "resume": "b2-r07",
+    "bloc": 2,
+    "section": "3. Le paysage des médias",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Quels sont les points forts de chacun des 6 grands médias ?",
+    "verso": "Télévision : puissance maximale, média de masse et de répétition (mais coûteux). Presse : segmentée et crédible. Radio : proximité, tranches horaires. Cinéma : mémorisation forte, cible jeune urbaine. Affichage : visibilité géographique (message court). Internet : ciblage fin, mesure précise, temps réel."
+  },
+  {
+    "id": "b2-r07-fc-009",
+    "resume": "b2-r07",
+    "bloc": 2,
+    "section": "3. Le paysage des médias",
+    "niveau": 2,
+    "type": "distinction",
+    "recto": "PQR et PQN : que désignent ces sigles, et que sont les agences de presse ?",
+    "verso": "PQR : Presse Quotidienne Régionale (actus locales, réseau de correspondants). PQN : Presse Quotidienne Nationale. Les agences de presse (AFP, Reuters, AP) sont les « grossistes de l'information » : environ 80 % des informations étrangères des quotidiens viennent de leurs dépêches. À ne pas confondre avec les agences de relations presse (prestataires des annonceurs)."
+  },
+  {
+    "id": "b2-r07-fc-010",
+    "resume": "b2-r07",
+    "bloc": 2,
+    "section": "4. Plan média et média planning",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce que le média planning et quels sont ses deux livrables ?",
+    "verso": "La méthode qui synthétise le choix des médias et des supports et la programmation des actions. Deux livrables : un dossier stratégique et un plan de travail détaillé, chiffré et organisé dans le temps. Le plan média s'intègre dans le plan de communication."
+  },
+  {
+    "id": "b2-r07-fc-011",
+    "resume": "b2-r07",
+    "bloc": 2,
+    "section": "4. Plan média et média planning",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Quel premier tri opère-t-on dans le choix des médias ?",
+    "verso": "Les restrictions légales (tabac, alcool, médicaments : publicité interdite ou encadrée sur certains médias), l'adéquation à la cible (les réseaux sociaux touchent mal les seniors ; la PQR est idéale en local), le budget et les délais."
+  },
+  {
+    "id": "b2-r07-fc-012",
+    "resume": "b2-r07",
+    "bloc": 2,
+    "section": "4. Plan média et média planning",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Audience, audience utile, taux de couverture, taux d'affinité : quelles définitions ?",
+    "verso": "Audience : ensemble des individus touchés par le support. Audience utile : ceux qui correspondent à la cible. Taux de couverture (pénétration) = audience utile / population cible × 100 (« quelle part de MA cible ce support touche »). Taux d'affinité = audience utile du support / audience totale du support × 100 (« dans l'audience de CE support, quelle part est ma cible »)."
+  },
+  {
+    "id": "b2-r07-fc-013",
+    "resume": "b2-r07",
+    "bloc": 2,
+    "section": "4. Plan média et média planning",
+    "niveau": 2,
+    "type": "definition",
+    "recto": "Que sont la puissance d'un support et le coût pour mille (CPM) ?",
+    "verso": "La puissance : le nombre d'individus de la cible utile dans l'audience totale du support. Le CPM = (coût d'achat de l'espace / audience utile) × 1 000 — ce que coûte le fait de toucher mille personnes utiles. Ces indicateurs servent à hiérarchiser les supports."
+  },
+  {
+    "id": "b2-r07-fc-014",
+    "resume": "b2-r07",
+    "bloc": 2,
+    "section": "5. Communication événementielle",
+    "niveau": 2,
+    "type": "definition",
+    "recto": "Que désigne le marché du MICE ?",
+    "verso": "Meetings, Incentives, Conventions, Exhibitions : le marché de l'événementiel d'affaires (séminaires, salons, conventions), le plus important en France — porté par l'hôtellerie, la restauration et la location de salles. Tendances : digitalisation (le webinaire est un événement 100 % en ligne) et écoresponsabilité."
+  },
+  {
+    "id": "b2-r07-fc-015",
+    "resume": "b2-r07",
+    "bloc": 2,
+    "section": "5. Communication événementielle",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Brief (cahier des charges) et recommandation stratégique : qui produit quoi dans un projet événementiel ?",
+    "verso": "Le brief est écrit par l'ANNONCEUR : le document référent de la relation agence-client — concis, clair, validé en interne (contexte, diagnostic, objectifs, ton, cibles, contraintes, risques). La recommandation stratégique est la réponse de l'AGENCE : ses choix et partis pris. Entre les deux : la consultation sous appel d'offres."
+  },
+  {
+    "id": "b2-r07-fc-016",
+    "resume": "b2-r07",
+    "bloc": 2,
+    "section": "5. Communication événementielle",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Quelles sont les grandes phases d'un projet événementiel ?",
+    "verso": "La stratégie (enjeux, diagnostic SWOT, problématique, cibles, objectifs) → le brief et la recommandation → la production : pré-événement (dérouler le brief), promotion jusqu'au jour J, post-événement (« boucler la boucle » : bilan, remerciements, retombées) — le tout piloté par rétroplanning, budget et check-lists."
+  },
+  {
+    "id": "b2-r08-fc-001",
+    "resume": "b2-r08",
+    "bloc": 2,
+    "section": "1. Le hors-média",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce que la communication hors-média ?",
+    "verso": "Toutes les actions de communication qui ne passent pas par les 6 grands médias : marketing direct, événementiel, promotion des ventes, PLV, street marketing, mécénat, sponsoring, supports print. Approche de proximité, à fort retour sur investissement, idéale quand les budgets sont serrés."
+  },
+  {
+    "id": "b2-r08-fc-002",
+    "resume": "b2-r08",
+    "bloc": 2,
+    "section": "1. Le hors-média",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Quels sont les 7 objectifs de la communication hors-média ?",
+    "verso": "1. Cibler une audience précise. 2. Entretenir des relations privilégiées. 3. Stimuler les ventes par des offres spéciales. 4. Soutenir un message publicitaire par des actions concrètes. 5. Se substituer à une publicité média onéreuse. 6. Communiquer au bon endroit, au bon moment, auprès des bonnes cibles. 7. Contourner les canaux réglementés (alcool, médicaments)."
+  },
+  {
+    "id": "b2-r08-fc-003",
+    "resume": "b2-r08",
+    "bloc": 2,
+    "section": "2. Relations presse",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Que sont les relations presse, et quelle est leur règle d'or ?",
+    "verso": "L'ensemble des actions mises en place par l'entreprise pour capter l'intérêt du journaliste et le convaincre de transmettre son message. Règle d'or : ce n'est PAS de la publicité dissimulée — les journalistes restent libres dans la rédaction de leurs articles. C'est un travail relationnel de long terme."
+  },
+  {
+    "id": "b2-r08-fc-004",
+    "resume": "b2-r08",
+    "bloc": 2,
+    "section": "2. Relations presse",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Communiqué de presse et dossier de presse : quelle différence ?",
+    "verso": "Le communiqué : un document court annonçant UNE information (lancement, nomination) — factuel, structuré, avec contact presse. Le dossier de presse : un document complet et durable qui étoffe et précise l'information — la source de référence du journaliste. La revue de presse compile les retombées (l'indicateur de résultat)."
+  },
+  {
+    "id": "b2-r08-fc-005",
+    "resume": "b2-r08",
+    "bloc": 2,
+    "section": "2. Relations presse",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Comment choisir les rédactions à inviter pour une annonce presse ?",
+    "verso": "Selon la nature de l'information : une annonce sans images n'intéressera pas la télévision ; une info très visuelle passera mal en radio. Cibler les journalistes selon leur secteur, leur ligne éditoriale et leur actualité — et surveiller l'évolution des modes d'information des Français (baromètres annuels). Médiamétrie mesure les audiences."
+  },
+  {
+    "id": "b2-r08-fc-006",
+    "resume": "b2-r08",
+    "bloc": 2,
+    "section": "3. Relations publiques",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quels sont les 3 éléments qui définissent les relations publiques ?",
+    "verso": "1. Prendre en compte l'intérêt général. 2. Apporter à l'actualité une information pertinente. 3. Ne pas être dans une démarche publicitaire. Elles s'intéressent en priorité à l'image de marque « corporate »."
+  },
+  {
+    "id": "b2-r08-fc-007",
+    "resume": "b2-r08",
+    "bloc": 2,
+    "section": "3. Relations publiques",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Relations publiques, publicité, lobbying : comment les distinguer ?",
+    "verso": "La publicité a une finalité commerciale AFFICHÉE. Le lobbying argumente en faveur d'intérêts PROPRES auprès des décideurs publics (encadré depuis 2017 par un répertoire des représentants d'intérêts). Les RP transmettent une information d'intérêt général, positive et généraliste — d'où la méfiance envers la « publicité déguisée »."
+  },
+  {
+    "id": "b2-r08-fc-008",
+    "resume": "b2-r08",
+    "bloc": 2,
+    "section": "3. Relations publiques",
+    "niveau": 2,
+    "type": "definition",
+    "recto": "Qu'est-ce que le Code d'Athènes ?",
+    "verso": "Le code d'éthique international des relations publiques, adopté en 1965 par la CERP et l'IPRA, en référence à la Déclaration des droits de l'Homme. Il interdit notamment de subordonner la vérité à d'autres impératifs et de diffuser des informations non contrôlées. Figure fondatrice européenne : Lucien Matrat."
+  },
+  {
+    "id": "b2-r08-fc-009",
+    "resume": "b2-r08",
+    "bloc": 2,
+    "section": "3. Relations publiques",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Que retenir de la gestion de crise par les relations publiques ?",
+    "verso": "Le pionnier Ivy Ledbetter Lee (1906, accident ferroviaire de la Pennsylvania Railroad) a imposé la transparence plutôt que la dissimulation. La règle : reconnaître, informer, prouver les correctifs (cas Findus 2013, Boeing 737 MAX). Supports des RP : les « publications de prestige » — belles images + données chiffrées fiables."
+  },
+  {
+    "id": "b2-r08-fc-010",
+    "resume": "b2-r08",
+    "bloc": 2,
+    "section": "4. Communication corporate",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quelles sont les 4 missions de la communication corporate selon Éric Giuily ?",
+    "verso": "1. Définir le caractère unique de l'identité de l'entreprise. 2. Développer son image auprès de ses différents publics. 3. Défendre la réputation quand elle est attaquée. 4. Assurer la cohérence des messages. Elle promeut l'ENTREPRISE (identité, valeurs), pas ses produits."
+  },
+  {
+    "id": "b2-r08-fc-011",
+    "resume": "b2-r08",
+    "bloc": 2,
+    "section": "4. Communication corporate",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Parrainage (sponsoring) et mécénat : quelle différence ?",
+    "verso": "Le parrainage est un soutien financier ou matériel AVEC contrepartie de visibilité (Red Bull dans le sport). Le mécénat est un soutien SANS contrepartie directe, apporté à une activité d'intérêt général (culture, sport, environnement, recherche)."
+  },
+  {
+    "id": "b2-r08-fc-012",
+    "resume": "b2-r08",
+    "bloc": 2,
+    "section": "5. Communication symbolique",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Quelles étapes pour choisir et protéger un nom de marque ?",
+    "verso": "Déterminer les émotions à susciter → brainstormer (ou agence de naming : Nomen a créé Vélib et Vinci) → vérifier la disponibilité à l'INPI → tester (éventuellement sur un panel) → protéger par un dépôt de marque à l'INPI (droits exclusifs sur le territoire français et les classes déposées)."
+  },
+  {
+    "id": "b2-r08-fc-013",
+    "resume": "b2-r08",
+    "bloc": 2,
+    "section": "6. Communication interne",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce que la communication interne, et que ne faut-il pas confondre avec elle ?",
+    "verso": "Le partage des informations au sein de l'entreprise : informer, motiver, inspirer par l'information et le dialogue — une communication BIDIRECTIONNELLE (descendante ET ascendante). À ne pas confondre avec l'engagement des employés, qui est le RÉSULTAT de cette communication. Limites : impact difficile à mesurer, réception inégale."
+  },
+  {
+    "id": "b2-r08-fc-014",
+    "resume": "b2-r08",
+    "bloc": 2,
+    "section": "7. Réseaux sociaux d'entreprise",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce qu'un RSE (Réseau Social d'Entreprise) ? (attention au sigle)",
+    "verso": "Un système de communication INTERNE : lieu d'échanges professionnels ouvert aux collaborateurs (parfois aux partenaires), qui facilite la communication transversale et se substitue en partie aux e-mails. À ne pas confondre avec la RSE (Responsabilité Sociétale des Entreprises). Cadre : avis CNIL du 12 juin 2009 (authentification, cryptage). Outils : Workplace, Yammer..."
+  },
+  {
+    "id": "b2-r08-fc-015",
+    "resume": "b2-r08",
+    "bloc": 2,
+    "section": "7. Réseaux sociaux d'entreprise",
+    "niveau": 2,
+    "type": "distinction",
+    "recto": "Coopération, mutualisation, collaboration : quelles différences ?",
+    "verso": "Coopération : œuvre commune entre personnes égales et volontaires, libres de leur parole. Mutualisation : mise en commun de moyens dont chacun récolte les fruits de son côté. Collaboration : travailler ensemble SOUS lien de subordination, avec des intérêts possiblement divergents. En entreprise, la collaboration domine ; le RSE est un outil de collaboration ET de coopération."
+  },
+  {
+    "id": "b2-r09-fc-001",
+    "resume": "b2-r09",
+    "bloc": 2,
+    "section": "1. Formes de communication",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "BtoB, BtoC, CtoC : que désigne chaque sigle ?",
+    "verso": "BtoB (Business to Business) : relations entre entreprises/personnes morales (vendeur de pneus → garagistes). BtoC (Business to Customer) : entreprise → grand public (Intermarché). CtoC (Customer to Customer) : échanges directs entre consommateurs, l'entreprise n'étant qu'intermédiaire (Leboncoin)."
+  },
+  {
+    "id": "b2-r09-fc-002",
+    "resume": "b2-r09",
+    "bloc": 2,
+    "section": "1. Formes de communication",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Quels sont les 4 types de communication de la classification de Patrick d'Humières (1993) ?",
+    "verso": "1. La communication commerciale → les clients (vendre, faire connaître, fidéliser). 2. La communication institutionnelle → publics dirigeants et citoyens (image de l'entreprise). 3. La communication sociale (aujourd'hui interne) → les salariés. 4. La communication financière → publics financiers (résultats, actionnaires). S'y ajoute la communication d'influence (lobbying)."
+  },
+  {
+    "id": "b2-r09-fc-003",
+    "resume": "b2-r09",
+    "bloc": 2,
+    "section": "1. Formes de communication",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce que la promesse d'un message clé ?",
+    "verso": "Le bénéfice objectif ou subjectif suggéré par la marque à sa cible — ce que le client peut attendre (ex. une crème antirides qui « promet » de lisser la peau). Un bon message est simple, clair et vrai ; il s'inscrit dans la ligne éditoriale. Règle : ne pas multiplier les objectifs (1 ou 2 maximum par action)."
+  },
+  {
+    "id": "b2-r09-fc-004",
+    "resume": "b2-r09",
+    "bloc": 2,
+    "section": "2. La galaxie des contenus",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quelles sont les 4 étapes de la démarche inbound, dans l'ordre ?",
+    "verso": "1. ATTIRER (contenu de qualité + SEO pour générer du trafic). 2. CONVERTIR (contenus ciblés à plus-value pour transformer les visiteurs en prospects). 3. VENDRE. 4. FIDÉLISER (contenu continu, programmes de fidélité — transformer les clients en ambassadeurs). Exemple intégral : Yuka."
+  },
+  {
+    "id": "b2-r09-fc-005",
+    "resume": "b2-r09",
+    "bloc": 2,
+    "section": "3. Le cadre graphique",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "UX et UI : quelle différence ?",
+    "verso": "L'UX (User eXperience) est le RESSENTI de l'utilisateur face à un produit digital — l'UX design vise une navigation fluide, agréable, intuitive. L'UI (User Interface) est la conception de l'INTERFACE elle-même (boutons, menus, écrans). L'UX englobe l'UI."
+  },
+  {
+    "id": "b2-r09-fc-006",
+    "resume": "b2-r09",
+    "bloc": 2,
+    "section": "3. Le cadre graphique",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Charte graphique et design system : quelle différence ?",
+    "verso": "La charte graphique fixe les règles visuelles de la marque : logo et ses règles d'usage, couleurs, typographies (« à quoi ça ressemble »). Le design system va plus loin : un outil collaboratif qui réunit tous les éléments dans un système accessible aux designers et développeurs — design patterns, planches typographiques, gammes de couleurs codées, icônes, grid layout (« les pièces prêtes à assembler »). Outil de référence : Figma."
+  },
+  {
+    "id": "b2-r09-fc-007",
+    "resume": "b2-r09",
+    "bloc": 2,
+    "section": "4. Chartes éditoriales",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Charte éditoriale et ligne éditoriale : quelle différence ?",
+    "verso": "La charte éditoriale est le document STRATÉGIQUE : identité de la marque, publics et personas, ton et style, valeurs et principes. La ligne éditoriale est son prolongement OPÉRATIONNEL : comment ces principes s'appliquent au quotidien — messages clés, formats et supports, fréquence de publication, méthodes d'interaction. La ligne se décline ensuite par support (réseaux, blog, newsletter, site)."
+  },
+  {
+    "id": "b2-r09-fc-008",
+    "resume": "b2-r09",
+    "bloc": 2,
+    "section": "5. Réglementation",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Que protège le droit d'auteur, pour combien de temps, et qu'est-ce que le droit moral ?",
+    "verso": "Il protège automatiquement (sans formalité) toute œuvre ORIGINALE — qui porte « l'empreinte de la personnalité de son auteur ». Durée : 70 ans après la mort de l'auteur. Le droit moral français (paternité, respect de l'œuvre) est inaliénable et perpétuel — il subsiste même sous licence libre."
+  },
+  {
+    "id": "b2-r09-fc-009",
+    "resume": "b2-r09",
+    "bloc": 2,
+    "section": "5. Réglementation",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Que protège le droit à l'image, et quelles sont les 3 conditions de l'autorisation ?",
+    "verso": "Il protège les PERSONNES (pas les créations) contre l'utilisation non autorisée de leur représentation — fondement : article 9 du Code civil (vie privée). L'autorisation doit être expresse, spéciale et déterminée : écrite, pour un usage précis, sur une durée/un périmètre définis. Exception principale : le droit à l'information (actualité), d'interprétation stricte."
+  },
+  {
+    "id": "b2-r09-fc-010",
+    "resume": "b2-r09",
+    "bloc": 2,
+    "section": "5. Réglementation",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Que faut-il savoir sur les licences Creative Commons et les banques d'images ?",
+    "verso": "Les Creative Commons permettent d'utiliser des contenus en respectant les conditions fixées par l'auteur (attribution, usage commercial ou non, modification ou non) — elles créent des obligations contractuelles automatiques dès l'utilisation. Les banques d'images (Getty, Adobe Stock) vendent des licences standard ou étendues ; les typographies sont aussi protégées. Sanctions civiles et pénales en cas d'usage non autorisé."
+  },
+  {
+    "id": "b2-r09-fc-011",
+    "resume": "b2-r09",
+    "bloc": 2,
+    "section": "5. Réglementation",
+    "niveau": 2,
+    "type": "application",
+    "recto": "IA générative et contenus : quel enjeu juridique ?",
+    "verso": "Le statut juridique des contenus générés par IA est encore incertain, mais la responsabilité éditoriale de l'entreprise reste pleine et entière. D'où l'intégration de règles d'usage de l'IA dans les chartes éditoriales. Le marketing d'influence, lui, impose la transparence sur le caractère commercial des contenus."
+  },
+  {
+    "id": "b2-r09-fc-012",
+    "resume": "b2-r09",
+    "bloc": 2,
+    "section": "6. Structurer le message",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce que le plan en pyramide inversée et la règle des 5W ?",
+    "verso": "Le plan journalistique par excellence : les informations par ordre d'importance DÉCROISSANTE — l'essentiel d'abord (à l'opposé de la dissertation). Le premier paragraphe répond aux 5 questions clés : Qui ? Où ? Quoi ? Quand ? Pourquoi ? Même si l'internaute ne finit pas l'article, il a reçu le message essentiel."
+  },
+  {
+    "id": "b2-r09-fc-013",
+    "resume": "b2-r09",
+    "bloc": 2,
+    "section": "6. Structurer le message",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Citez les autres plans de rédaction possibles (hors pyramide inversée).",
+    "verso": "Le plan problème/solution (poser le besoin, apporter la réponse), avant/maintenant (le contraste comme démonstration), principe/application, le plan descriptif, le plan dialectique (thèse/antithèse), le plan chronologique et le plan libre. Doser logos (raison), éthos (crédibilité) et pathos (émotion) selon l'objectif."
+  },
+  {
+    "id": "b2-r09-fc-014",
+    "resume": "b2-r09",
+    "bloc": 2,
+    "section": "6. Structurer le message",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Titre informatif et titre incitatif : quelle différence, et de quoi dépend le choix ?",
+    "verso": "L'informatif délivre l'essentiel de façon factuelle avec les mots-clés (« La France remporte la Coupe du Monde ») — bon pour le référencement. L'incitatif surprend ou intrigue (« Le jour de gloire est arrivé ») — accrocheur mais peu informatif, à compléter d'un surtitre. Le choix dépend de la ligne éditoriale (banque = informatif ; marque jeune = incitatif). Jamais de titre « froid » type dissertation."
+  },
+  {
+    "id": "b2-r09-fc-015",
+    "resume": "b2-r09",
+    "bloc": 2,
+    "section": "6. Structurer le message",
+    "niveau": 2,
+    "type": "liste",
+    "recto": "Chapô, attaque, chute : quel rôle pour chacun ?",
+    "verso": "Le chapô : petit paragraphe introductif après le titre — résume l'essentiel, met en appétit, premier contenu scanné par les moteurs. L'attaque : les premiers mots du texte — commencer fort. La chute : les dernières phrases — pas une conclusion, mais un renforcement de l'angle (ouverture, note d'humour, écho à l'attaque). La titraille (ensemble titres/sous-titres/chapô) hiérarchise le tout."
+  },
+  {
+    "id": "b2-r09-fc-016",
+    "resume": "b2-r09",
+    "bloc": 2,
+    "section": "7. Argumenter",
+    "niveau": 1,
+    "type": "application",
+    "recto": "Quelles sont les 3 questions préalables à toute argumentation, et la règle « faits vs opinions » ?",
+    "verso": "Quel lectorat ? Quel message clé ? Quel objectif fondamental ? (L'important n'est pas ce qu'on veut dire mais ce que le lecteur doit retenir.) Être factuel : un fait est objectif et vérifiable, une opinion est une interprétation subjective — s'appuyer sur études, statistiques, sources citées. À chaque affirmation, une preuve (chiffres, témoignages, tests)."
+  },
+  {
+    "id": "b2-r09-fc-017",
+    "resume": "b2-r09",
+    "bloc": 2,
+    "section": "8. Production technique",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Définition, résolution, dimension, poids d'une image : que désigne chaque terme ?",
+    "verso": "Définition : le nombre total de pixels (largeur × hauteur). Résolution : la densité de pixels (ppp/dpi) — 72 ppp suffisent pour le web, 300 dpi pour l'impression. Dimension : la taille physique d'affichage ou d'impression. Poids : la taille du fichier (à optimiser pour le web). Réflexe : anticiper toutes les déclinaisons de formats avant de créer."
+  },
+  {
+    "id": "b2-r09-fc-018",
+    "resume": "b2-r09",
+    "bloc": 2,
+    "section": "8. Production technique",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "RVB et CMJN : quel codage couleur pour quel usage ?",
+    "verso": "RVB (rouge-vert-bleu) : le codage couleur des ÉCRANS — supports numériques, avec les codes HEX pour le web. CMJN (cyan-magenta-jaune-noir) : le codage des IMPRIMEURS — supports print. Anticiper les conversions dès la conception si une création est destinée aux deux."
+  },
+  {
+    "id": "b2-r10-fc-001",
+    "resume": "b2-r10",
+    "bloc": 2,
+    "section": "1. Community management",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quelles sont les 6 étapes de la stratégie social media ?",
+    "verso": "1. État des lieux et définition des objectifs. 2. Choix de la cible (personas). 3. Sélection des plateformes adaptées. 4. Création d'un planning éditorial (calendrier de publication). 5. Distribution du contenu. 6. Évaluation de la performance. Le community manager la met en œuvre (la stratégie est conçue par la direction marketing/communication)."
+  },
+  {
+    "id": "b2-r10-fc-002",
+    "resume": "b2-r10",
+    "bloc": 2,
+    "section": "1. Community management",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quels sont les 4 groupes de KPI du community manager ?",
+    "verso": "Notoriété (mentions de la marque, portée/reach, impressions, croissance des abonnés), engagement (taux d'engagement, commentaires, clics), conversion (trafic vers le site, leads, ventes attribuées), fidélisation/satisfaction (temps de réponse, tonalité des mentions, avis)."
+  },
+  {
+    "id": "b2-r10-fc-003",
+    "resume": "b2-r10",
+    "bloc": 2,
+    "section": "2. Ligne éditoriale d'un réseau",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quels sont les 3 types de publications d'une ligne éditoriale de réseau social ?",
+    "verso": "Les publications informatives (positionner l'expertise, apprendre quelque chose), engageantes (susciter l'interaction et la réaction), promotionnelles (mettre en avant l'offre). L'équilibre entre les trois est la clé — le tout adapté aux codes de l'audience et au ton de la marque (formel ou informel)."
+  },
+  {
+    "id": "b2-r10-fc-004",
+    "resume": "b2-r10",
+    "bloc": 2,
+    "section": "2. Ligne éditoriale d'un réseau",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Pourquoi le sous-titrage des vidéos et stories est-il une bonne pratique ?",
+    "verso": "Pour l'accessibilité : beaucoup d'utilisateurs regardent sans le son, et les personnes malentendantes doivent pouvoir suivre. C'est aussi un critère d'inclusivité attendu dans les contenus (avec les contrastes, la lisibilité et les visuels représentant la diversité)."
+  },
+  {
+    "id": "b2-r10-fc-005",
+    "resume": "b2-r10",
+    "bloc": 2,
+    "section": "3. Contenus",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Comment mesure-t-on l'impact réel des contenus sociaux sur le site de l'entreprise ?",
+    "verso": "Par les statistiques de chaque plateforme, le tracking des URL avec paramètres UTM (attribuer le trafic à chaque post/campagne) et Google Analytics (mesurer visites et conversions générées). La démarche : analyser pour optimiser en continu."
+  },
+  {
+    "id": "b2-r10-fc-006",
+    "resume": "b2-r10",
+    "bloc": 2,
+    "section": "3. Contenus",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce qu'une story, et que sont les « highlights » ?",
+    "verso": "Un format de publication composé d'une ou plusieurs séquences courtes (15 s max), au format vertical 9:16, éphémère (24 h), avec narration enrichie (texte animé, stickers, musique) et interactive (sondages, questions, quiz). Les stories à la une (highlights) les pérennisent sur le profil."
+  },
+  {
+    "id": "b2-r10-fc-007",
+    "resume": "b2-r10",
+    "bloc": 2,
+    "section": "3. Contenus",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Pourquoi la vidéo est-elle le « format roi » des réseaux sociaux ?",
+    "verso": "Elle génère plus de likes, partages et commentaires que tout autre contenu, les algorithmes la favorisent (meilleure visibilité) et son potentiel de conversion et de ROI est fort. Formats : vidéos de fil, réels verticaux courts (TikTok : 15-60 s), lives (interaction en temps réel), stories."
+  },
+  {
+    "id": "b2-r10-fc-008",
+    "resume": "b2-r10",
+    "bloc": 2,
+    "section": "4. Plateformes",
+    "niveau": 2,
+    "type": "application",
+    "recto": "Quelle plateforme sociale privilégier selon la cible et l'objectif ?",
+    "verso": "Facebook : audience la plus large, groupes et communautés (BtoC). Instagram : visuel, image de marque. LinkedIn : première plateforme professionnelle (BtoB, marque employeur). X/Twitter : conversation, réactivité, veille (280 caractères). TikTok : jeune, vidéos virales. Snapchat : public le plus jeune, éphémère. Partout : respecter les codes et formats natifs du réseau."
+  },
+  {
+    "id": "b2-r10-fc-009",
+    "resume": "b2-r10",
+    "bloc": 2,
+    "section": "5. Animer la communauté",
+    "niveau": 1,
+    "type": "definition",
+    "recto": "Qu'est-ce que la règle 90/9/1 des communautés en ligne ?",
+    "verso": "Environ 90 % des membres sont des spectateurs (consultent sans intervenir), 9 % des utilisateurs actifs (interactions ponctuelles), 1 % des contributeurs (créent du contenu). Tout l'enjeu de l'animation est de faire monter les membres dans cette échelle — c'est l'engagement."
+  },
+  {
+    "id": "b2-r10-fc-010",
+    "resume": "b2-r10",
+    "bloc": 2,
+    "section": "5. Animer la communauté",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Quelle est l'échelle des interactions, de la plus passive à la plus active ?",
+    "verso": "1. Attention (consulter sans intervenir). 2. Micro-interaction (like, vote, notation). 3. Partage (relayer à son réseau — démultiplie la portée). 4. Avis (commenter, feedback). 5. Contribution (créer du contenu, co-création). S'y ajoutent les interactions personnalisées : mentions et identifications (tags)."
+  },
+  {
+    "id": "b2-r10-fc-011",
+    "resume": "b2-r10",
+    "bloc": 2,
+    "section": "5. Animer la communauté",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Citez les techniques d'animation d'une communauté en ligne.",
+    "verso": "Les sondages (faire voter), les jeux-concours (participer avec un enjeu), les sessions de questions/réponses en direct (lives), les défis et tutoriels, la mise en avant des créations des membres, les rendez-vous récurrents (rituels) — le tout organisé dans un calendrier de publication."
+  },
+  {
+    "id": "b2-r10-fc-012",
+    "resume": "b2-r10",
+    "bloc": 2,
+    "section": "6. Modération",
+    "niveau": 1,
+    "type": "liste",
+    "recto": "Que contient une charte de modération de réseau social ?",
+    "verso": "Les rappels à la loi (la liberté d'expression a des limites : injure, diffamation, incitation à la haine), les règles de courtoisie et la définition du langage inapproprié, des filtres automatiques de mots-clés, un processus de signalement, et l'échelle des réponses graduées : supprimer un contenu → bannir un membre → évacuer le conflit en message privé (MP)."
+  },
+  {
+    "id": "b2-r10-fc-013",
+    "resume": "b2-r10",
+    "bloc": 2,
+    "section": "7. Marketing d'influence",
+    "niveau": 1,
+    "type": "application",
+    "recto": "Quelle obligation légale encadre le marketing d'influence en France, et quelle sanction ?",
+    "verso": "La transparence : les partenariats commerciaux doivent être clairement divulgués. L'absence d'indication de l'intention commerciale peut constituer une « pratique commerciale trompeuse », sanctionnée de 2 ans d'emprisonnement et 300 000 € d'amende. S'ajoutent les règles sectorielles (alcool, jeux d'argent, actes médicaux)."
+  },
+  {
+    "id": "b2-r10-fc-014",
+    "resume": "b2-r10",
+    "bloc": 2,
+    "section": "8. E-réputation",
+    "niveau": 1,
+    "type": "application",
+    "recto": "Comment gère-t-on l'e-réputation d'une marque au quotidien et en crise ?",
+    "verso": "Au quotidien : gestion CONTINUE — veille des mentions (Google Alerts, Mention), politique de réponse définie, jamais de données sensibles publiées. En crise : rapidité et transparence — répondre vite, reconnaître, expliquer les correctifs (contre-exemple Nestlé/Kit Kat : réaction tardive et suppression des critiques = crise amplifiée)."
+  },
+  {
+    "id": "b2-r10-fc-015",
+    "resume": "b2-r10",
+    "bloc": 2,
+    "section": "9. Social ads",
+    "niveau": 1,
+    "type": "distinction",
+    "recto": "Reach organique et reach payant : quelle différence, et quels sont les 3 ordres d'objectifs des social ads ?",
+    "verso": "Le reach organique est la portée naturelle d'une publication ; le reach payant est la portée amplifiée par la publicité (mention « sponsorisé »), ciblée grâce aux données des utilisateurs. Objectifs : cognitif (faire connaître : impressions, couverture), affectif (faire aimer : interactions), conatif (faire agir : clics, trafic, ventes, installations)."
   }
 ];

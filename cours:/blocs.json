@@ -25,12 +25,29 @@
     },
     {
       "numero": 2,
-      "titre": "",
-      "court": "",
-      "statut": "vide",
-      "epreuve": "",
-      "competences": [],
-      "fiches": []
+      "titre": "Déploiement des actions marketing et communication",
+      "court": "Déploiement des actions",
+      "statut": "complet",
+      "epreuve": "Écrit (13 questions, 3 dossiers)",
+      "competences": [
+        "C2.1",
+        "C2.2",
+        "C2.3",
+        "C2.4",
+        "C2.5"
+      ],
+      "fiches": [
+        "b2-r01",
+        "b2-r02",
+        "b2-r03",
+        "b2-r04",
+        "b2-r05",
+        "b2-r06",
+        "b2-r07",
+        "b2-r08",
+        "b2-r09",
+        "b2-r10"
+      ]
     },
     {
       "numero": 3,

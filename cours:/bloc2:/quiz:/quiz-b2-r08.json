@@ -1,0 +1,235 @@
+{
+  "resume": "b2-r08",
+  "titre": "La communication par publics : hors-média, RP, presse, corporate, interne",
+  "bloc": 2,
+  "questions": [
+    {
+      "id": "b2-r08-qz-001",
+      "section": "1. La communication hors-média",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Parmi ces objectifs, lesquels relèvent de la communication hors-média ? (4 réponses)",
+      "options": [
+        "cibler une audience précise grâce à une segmentation fine",
+        "toucher des audiences de masse par la répétition",
+        "entretenir des relations privilégiées avec les cibles",
+        "contourner les canaux réglementés (alcool, médicaments)",
+        "maximiser la couverture nationale au meilleur CPM",
+        "se substituer à une publicité média onéreuse et peu ciblée"
+      ],
+      "reponse": [0, 2, 3, 5],
+      "explication": "Les 7 objectifs du hors-média incluent aussi : stimuler les ventes par des offres spéciales, soutenir un message publicitaire par des actions concrètes, et communiquer au bon endroit/bon moment. La masse et la couverture sont la logique du média."
+    },
+    {
+      "id": "b2-r08-qz-002",
+      "section": "1. La communication hors-média",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans les dynamiques d'activation du hors-média, que caractérise la dynamique « push » ?",
+      "options": [
+        "attirer la demande vers la marque",
+        "pousser l'offre vers le distributeur puis le client : l'offre est motrice",
+        "faire remonter les avis clients vers l'entreprise",
+        "diffuser le message par les destinataires eux-mêmes"
+      ],
+      "reponse": 1,
+      "explication": "Push : l'offre est motrice, on la pousse vers le distributeur puis le client. Pull : on attire la demande vers la marque. La diffusion par les destinataires relève du marketing viral."
+    },
+    {
+      "id": "b2-r08-qz-003",
+      "section": "2. Les relations presse",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Les relations presse consistent à négocier avec les journalistes le contenu des articles consacrés à l'entreprise.",
+      "reponse": false,
+      "explication": "Faux. Les RP visent à capter l'intérêt du journaliste et à le convaincre de transmettre le message, mais les journalistes restent libres dans la rédaction de leurs articles. Ce n'est pas de la publicité dissimulée."
+    },
+    {
+      "id": "b2-r08-qz-004",
+      "section": "2. Les relations presse",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle est la différence entre communiqué de presse et dossier de presse ?",
+      "options": [
+        "le communiqué est payant, le dossier est gratuit",
+        "le communiqué annonce une information unique et factuelle ; le dossier est le document complet et durable de référence",
+        "le communiqué s'adresse aux journalistes, le dossier au grand public",
+        "le communiqué est réservé aux crises, le dossier aux lancements"
+      ],
+      "reponse": 1,
+      "explication": "Communiqué = court, une seule information (lancement, nomination, résultat), factuel avec contact presse. Dossier = complet et durable, la source de référence du journaliste. S'y ajoutent la conférence de presse et la revue de presse."
+    },
+    {
+      "id": "b2-r08-qz-005",
+      "section": "2. Les relations presse",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel outil sert d'indicateur de résultat des relations presse ?",
+      "options": [
+        "le communiqué de presse",
+        "la revue de presse, compilation des retombées",
+        "le baromètre Médiamétrie",
+        "le taux d'ouverture des e-mails aux journalistes"
+      ],
+      "reponse": 1,
+      "explication": "La revue de presse compile les retombées obtenues : c'est l'indicateur de résultat des RP, un travail de long terme fondé sur le ciblage des journalistes pertinents et l'entretien de la relation."
+    },
+    {
+      "id": "b2-r08-qz-006",
+      "section": "2. Les relations presse",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un influenceur disposant d'une très large audience peut être considéré comme un journaliste.",
+      "reponse": false,
+      "explication": "Faux. Un influenceur n'est pas un journaliste : pas de carte de presse, pas de déontologie journalistique. Le journaliste collecte, vérifie, trie et met en forme l'information en toute indépendance."
+    },
+    {
+      "id": "b2-r08-qz-007",
+      "section": "3. Les relations publiques",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce qui distingue les relations publiques du lobbying ?",
+      "options": [
+        "le lobbying est interdit en France depuis 2017",
+        "les RP transmettent une information d'intérêt général ; le lobbying argumente en faveur d'intérêts propres auprès des décideurs publics",
+        "les RP s'adressent aux décideurs publics, le lobbying aux médias",
+        "aucune : le lobbying est la version anglo-saxonne des RP"
+      ],
+      "reponse": 1,
+      "explication": "Les RP se définissent par l'intérêt général, une information pertinente et l'absence de démarche publicitaire. Le lobbying défend des intérêts propres — encadré depuis 2017 par un répertoire numérique des représentants d'intérêts."
+    },
+    {
+      "id": "b2-r08-qz-008",
+      "section": "3. Les relations publiques",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que le Code d'Athènes (1965) ?",
+      "options": [
+        "le règlement européen de la publicité comparative",
+        "le code d'éthique international des relations publiques, adopté par la CERP et l'IPRA",
+        "la charte de déontologie des journalistes",
+        "le premier code de gestion de crise, rédigé après l'accident de la Pennsylvania Railroad"
+      ],
+      "reponse": 1,
+      "explication": "Le Code d'Athènes, en référence à la Déclaration des droits de l'Homme, interdit notamment de subordonner la vérité à d'autres impératifs ou de diffuser des informations non contrôlées. Figure fondatrice européenne : Lucien Matrat, président fondateur de la CERP."
+    },
+    {
+      "id": "b2-r08-qz-009",
+      "section": "4. La communication corporate",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Selon Éric Giuily, quelles sont les quatre missions de la communication institutionnelle ? (4 réponses)",
+      "options": [
+        "définir le caractère unique de l'identité de l'entreprise",
+        "augmenter les ventes des produits phares",
+        "développer l'image auprès des différents publics",
+        "défendre la réputation de l'organisation lorsqu'elle est attaquée",
+        "recruter les meilleurs talents du marché",
+        "assurer la cohérence des messages"
+      ],
+      "reponse": [0, 2, 3, 5],
+      "explication": "La communication corporate promeut l'entreprise (identité, valeurs, engagements), pas ses produits — Decathlon fête ses 40 ans sans donner l'impression de vendre : c'est la signature du corporate."
+    },
+    {
+      "id": "b2-r08-qz-010",
+      "section": "4. La communication corporate",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Red Bull soutient financièrement des événements sportifs en échange d'une visibilité de sa marque. De quoi s'agit-il ?",
+      "options": [
+        "de mécénat",
+        "de parrainage (sponsoring), avec contrepartie de visibilité",
+        "d'un partenariat d'organismes",
+        "d'engagement sociétal"
+      ],
+      "reponse": 1,
+      "explication": "Le parrainage (sponsoring) est un soutien financier ou matériel AVEC contrepartie de visibilité. Le mécénat est un soutien SANS contrepartie directe. Distinction classique à restituer."
+    },
+    {
+      "id": "b2-r08-qz-011",
+      "section": "5. La communication symbolique",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la démarche de création d'un nom de marque.",
+      "elements": [
+        "Tester le nom, éventuellement sur un panel",
+        "Déterminer les émotions à susciter",
+        "Protéger le nom par un dépôt de marque à l'INPI",
+        "Brainstormer, ou passer par une agence de naming",
+        "Vérifier la disponibilité du nom à l'INPI"
+      ],
+      "ordre": [1, 3, 4, 0, 2],
+      "explication": "Émotions → brainstorming (ou agence de naming type Nomen, créateur de Vélib) → vérification de disponibilité à l'INPI → test → dépôt de marque. Le nom doit être compréhensible et facilement mémorisable."
+    },
+    {
+      "id": "b2-r08-qz-012",
+      "section": "5. La communication symbolique",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le dépôt de marque à l'INPI protège le nom uniquement sur le territoire français et pour les classes d'activités déposées.",
+      "reponse": true,
+      "explication": "Vrai. Les droits exclusifs conférés par le dépôt INPI sont limités au territoire français et aux classes déposées — une protection internationale suppose d'autres démarches."
+    },
+    {
+      "id": "b2-r08-qz-013",
+      "section": "6. La communication interne",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle relation le cours établit-il entre communication interne et engagement des employés ?",
+      "options": [
+        "ce sont deux synonymes",
+        "l'engagement des employés est le résultat de la communication interne",
+        "l'engagement précède la communication interne",
+        "l'engagement se mesure par le taux d'utilisation de l'intranet"
+      ],
+      "reponse": 1,
+      "explication": "La communication interne (informer, motiver, inspirer, de façon bidirectionnelle — descendante ET ascendante) produit l'engagement, qui en est le résultat. Ses limites : impact difficile à mesurer, réception inégale."
+    },
+    {
+      "id": "b2-r08-qz-014",
+      "section": "6. La communication interne",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque notion à sa définition (cours sur les réseaux sociaux d'entreprise).",
+      "colonne_a": [
+        "Coopération",
+        "Mutualisation",
+        "Collaboration"
+      ],
+      "colonne_b": [
+        "Travailler ensemble sous lien de subordination, avec des intérêts possiblement divergents",
+        "Œuvre commune entre personnes égales et volontaires, libres de leur parole",
+        "Mise en commun de moyens dont chacun récolte les fruits de son côté"
+      ],
+      "paires": [
+        [0, 1],
+        [1, 2],
+        [2, 0]
+      ],
+      "explication": "En entreprise, c'est la collaboration qui domine ; le RSE (Réseau Social d'Entreprise — à ne pas confondre avec la Responsabilité Sociétale) est un outil de collaboration ET de coopération. Cadre : avis CNIL du 12 juin 2009."
+    },
+    {
+      "id": "b2-r08-qz-015",
+      "section": "6. La communication interne",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Déployer un réseau social d'entreprise suffit à créer une culture collaborative.",
+      "reponse": false,
+      "explication": "Faux. L'outil ne crée pas la culture collaborative, il la prolonge — les taux d'utilisation réels restent faibles (≈ 25 % des managers). D'où l'importance d'une « raison d'être » opérationnelle chiffrée (ex. réduire de 25 % le volume d'e-mails) et d'indicateurs d'usage ET business."
+    },
+    {
+      "id": "b2-r08-qz-016",
+      "section": "Transversal — Q9",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Proposez une action hors-média pour faire connaître un produit BtoB auprès d'une cible professionnelle précise, en la justifiant par les objectifs du hors-média.",
+      "attendus": [
+        "Une action hors-média adaptée au BtoB : relations presse spécialisée (communiqué + dossier de presse), salon professionnel, publi-rédactionnel dans la presse spécialisée, événement de démonstration...",
+        "Justification par les objectifs du hors-média : ciblage d'une audience précise, relations privilégiées, substitution à une publicité média onéreuse et peu ciblée",
+        "Cohérence entre l'action, la cible professionnelle et le message à diffuser",
+        "Idéalement, un indicateur de résultat associé (ex. revue de presse pour des RP, contacts qualifiés pour un salon)"
+      ],
+      "explication": "Le format Q9 : proposer une action argumentée. Le hors-média est particulièrement défendable en BtoB, où les audiences de masse des grands médias sont chères et peu ciblées."
+    }
+  ]
+}

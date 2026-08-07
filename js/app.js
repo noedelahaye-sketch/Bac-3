@@ -1923,11 +1923,29 @@
       p.setAttribute("data-step-n", m[1]);
     });
   }
+  /* Bloc 1 : "**Définition.**" en tête. Bloc 2 : l'émoji 📖. */
+  var DEF_EMOJI=/^\s*\u{1F4D6}/u;
+  /* Le Bloc 2 marque la définition par l'émoji seul : on ajoute le libellé
+     "Définition." derrière, pour que les deux blocs se lisent pareil. */
+  function labelDefinition(el){
+    if(!el || el.querySelector(".def-lab")) return;
+    el.innerHTML=el.innerHTML.replace(DEF_EMOJI, function(m){
+      return m+' <b class="def-lab">Définition.</b>';
+    });
+  }
   function markDefinitions(container){
     Array.prototype.slice.call(container.querySelectorAll("p")).forEach(function(p){
       if(inFoldedSources(p)) return;
       if(p.closest("blockquote")) return; /* déjà encadré par le blockquote */
-      if(/^<b>Définition\b/.test(p.innerHTML)) p.classList.add("def-para");
+      if(/^<b>Définition\b/.test(p.innerHTML)){ p.classList.add("def-para"); return; }
+      if(DEF_EMOJI.test(p.innerHTML)){ p.classList.add("def-para"); labelDefinition(p); }
+    });
+    /* Au Bloc 2 la majorité des définitions sont des items de liste : plusieurs
+       termes définis à la suite. On teinte l'item sur place — le sortir de son
+       <ul> casserait la liste, et une liste entière n'est pas un aparté. */
+    Array.prototype.slice.call(container.querySelectorAll("li")).forEach(function(li){
+      if(inFoldedSources(li)) return;
+      if(DEF_EMOJI.test(li.innerHTML)){ li.classList.add("def-li"); labelDefinition(li); }
     });
   }
   function markCasBlockquotes(container){
@@ -1936,14 +1954,20 @@
       var firstP=bq.querySelector("p");
       if(!firstP) return;
       var lead=firstP.innerHTML;
+      /* Bloc 1 : l'aparté s'annonce par son mot d'ouverture en gras. */
       if(/^<b>(Cas|Exemple|Illustration)\b/.test(lead)) bq.classList.add("bq-cas");
       else if(/^<b>Définition\b/.test(lead)) bq.classList.add("bq-def");
+      /* Bloc 2 : il s'annonce par un émoji — 💡 aide à la compréhension
+         (exemple, astuce, cas concret), 🎯 repère examen, 📖 définition. */
+      else if(/^\s*\u{1F4A1}/u.test(lead)) bq.classList.add("bq-cas");
+      else if(/^\s*\u{1F3AF}/u.test(lead)) bq.classList.add("bq-exam");
+      else if(/^\s*\u{1F4D6}/u.test(lead)){ bq.classList.add("bq-def"); labelDefinition(firstP); }
     });
   }
   /* Apartés (définitions, cas, exemples) renvoyés en colonne de marge */
   var MARGE_MIN=1080;
   function estAparte(el){
-    return el.classList && (el.classList.contains("def-para")||el.classList.contains("bq-def")||el.classList.contains("bq-cas"));
+    return el.classList && (el.classList.contains("def-para")||el.classList.contains("bq-def")||el.classList.contains("bq-cas")||el.classList.contains("bq-exam"));
   }
   /* Critère : un bloc "large" ne peut pas cohabiter avec un aparté.
      Tableau de 3 colonnes ou plus, rangée de tuiles, frise, bloc de code, séparateur. */

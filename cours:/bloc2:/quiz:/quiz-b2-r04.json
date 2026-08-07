@@ -1,0 +1,303 @@
+{
+  "resume": "b2-r04",
+  "titre": "Partenaires et prestataires : cartographie, sélection, contrats, droit et RSE",
+  "bloc": 2,
+  "questions": [
+    {
+      "id": "b2-r04-qz-001",
+      "section": "1. Les acteurs du marché de la communication",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quel acteur est chargé de la commercialisation des espaces publicitaires d'un support ou d'un groupe média ?",
+      "options": [
+        "l'agence média",
+        "la régie publicitaire",
+        "la centrale d'achat d'espaces",
+        "l'annonceur"
+      ],
+      "reponse": 1,
+      "explication": "La régie publicitaire vend les espaces d'un support (TF1/Bouygues, Radio France...). La centrale d'achat, elle, achète en gros pour revendre aux annonceurs, et l'agence média conseille l'annonceur en tant que mandataire."
+    },
+    {
+      "id": "b2-r04-qz-002",
+      "section": "1. Les acteurs du marché de la communication",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quel organisme crée et contrôle les règles d'éthique pour une publicité « loyale, véridique, saine et respectueuse » ?",
+      "options": [
+        "l'ARCOM, autorité publique de régulation",
+        "l'ARPP, organisme de régulation professionnelle de la publicité",
+        "la CNIL",
+        "la DGCCRF"
+      ],
+      "reponse": 1,
+      "explication": "L'ARPP est l'organisme de régulation professionnelle de la publicité, tous supports confondus. L'ARCOM est l'autorité publique de régulation de l'audiovisuel (liberté d'expression, protection des droits, régulation économique)."
+    },
+    {
+      "id": "b2-r04-qz-003",
+      "section": "1. Les acteurs du marché de la communication",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les réseaux sociaux relèvent à la fois de la communication média et de la communication hors-média.",
+      "reponse": true,
+      "explication": "Vrai. Ils sont à la conjonction des deux : média quand on y achète de la publicité (social ads), hors-média pour la publication éditoriale gratuite."
+    },
+    {
+      "id": "b2-r04-qz-004",
+      "section": "2. La typologie des prestataires",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Une agence de relations presse et une agence de presse comme l'AFP exercent le même métier.",
+      "reponse": false,
+      "explication": "Faux. L'agence de relations presse est prestataire d'un annonceur pour ses relations avec les journalistes ; l'agence de presse (AFP, Reuters) couvre l'actualité et vend ses informations aux médias. Confusion classique à éviter."
+    },
+    {
+      "id": "b2-r04-qz-005",
+      "section": "2. La typologie des prestataires",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans les achats d'espaces publicitaires, l'agence média joue le rôle de :",
+      "options": [
+        "régie, en vendant les espaces du support",
+        "mandataire, en tant qu'intermédiaire pour le compte de l'annonceur",
+        "éditeur, en diffusant les annonces sur ses propres supports",
+        "arbitre, en contrôlant les prix du marché"
+      ],
+      "reponse": 1,
+      "explication": "L'agence média conseille, rédige le plan média et agit comme mandataire (intermédiaire) dans les achats d'espaces. C'est l'une des agences spécialisées, avec les agences RP, graphisme, photo/audiovisuelle et web."
+    },
+    {
+      "id": "b2-r04-qz-006",
+      "section": "2. La typologie des prestataires",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Sur quels critères choisit-on un freelance ?",
+      "options": [
+        "ses compétences, ses tarifs et ses qualités relationnelles",
+        "uniquement son statut juridique",
+        "sa taille et son ancienneté",
+        "sa certification par une agence 360°"
+      ],
+      "reponse": 0,
+      "explication": "Le freelance est un indépendant qui fixe librement prestations, conditions et tarifs. On le trouve sur des plateformes spécialisées (Malt, Coworkees, Freelancer). Rappel de fond : l'annonceur met son image de marque entre les mains de son prestataire."
+    },
+    {
+      "id": "b2-r04-qz-007",
+      "section": "3. Sélectionner un partenaire",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la démarche de sélection d'un partenaire.",
+      "elements": [
+        "Noter chaque candidat, calculer les scores pondérés et justifier le choix final",
+        "Formaliser le besoin dans un cahier des charges",
+        "Définir et pondérer les critères d'évaluation (quantitatifs et qualitatifs)",
+        "Lancer l'appel d'offres : diffuser le cahier des charges à plusieurs prestataires"
+      ],
+      "ordre": [1, 3, 2, 0],
+      "explication": "Cahier des charges (formaliser le besoin) → appel d'offres (mise en concurrence, objectivité) → grille de critères pondérée → notation et choix justifié. C'est la structure exacte des Q6 et Q7."
+    },
+    {
+      "id": "b2-r04-qz-008",
+      "section": "3. Sélectionner un partenaire",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La pondération d'une grille de critères d'évaluation peut être standardisée et réutilisée d'une entreprise à l'autre.",
+      "reponse": false,
+      "explication": "Faux. La pondération reflète les priorités stratégiques, le positionnement et les engagements propres à chaque annonceur — elle ne peut pas être standardisée. Et l'équilibre quantitatif/qualitatif évite une objectivité de façade."
+    },
+    {
+      "id": "b2-r04-qz-009",
+      "section": "4. La relation producteur-distributeur",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce que la « marge arrière » dans la relation producteur-distributeur ?",
+      "options": [
+        "la différence entre prix d'achat au producteur et prix de revente au consommateur",
+        "des remises hors facture versées par le producteur au distributeur au titre de la coopération commerciale",
+        "la marge réalisée sur les produits en fin de vie",
+        "la commission versée par le distributeur au producteur"
+      ],
+      "reponse": 1,
+      "explication": "La marge arrière (rétrocommission) rémunère la « coopération commerciale » (prospectus, têtes de gondole), souvent en fin d'année. La marge avant est la différence entre prix d'achat et prix de revente, sur facture."
+    },
+    {
+      "id": "b2-r04-qz-010",
+      "section": "4. La relation producteur-distributeur",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que l'ECR (Efficient Consumer Response) ?",
+      "options": [
+        "un outil de mesure de la satisfaction client en magasin",
+        "une coopération producteur-distributeur pour optimiser la chaîne (flux logistiques, réduction des ruptures)",
+        "un indicateur de rentabilité des linéaires",
+        "une clause contractuelle de réactivité"
+      ],
+      "reponse": 1,
+      "explication": "L'ECR incarne la convergence d'intérêts autour de la satisfaction client : coopérer pour optimiser la chaîne, en s'appuyant sur l'EDI (échange de données informatisé)."
+    },
+    {
+      "id": "b2-r04-qz-011",
+      "section": "4. La relation producteur-distributeur",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Le trade marketing désigne :",
+      "options": [
+        "les techniques de vente des commerciaux en grande distribution",
+        "les actions qui optimisent la relation et les négociations producteur-distributeur vers un partenariat gagnant-gagnant",
+        "le marketing des marques de distributeurs",
+        "l'achat d'espaces publicitaires en point de vente"
+      ],
+      "reponse": 1,
+      "explication": "Le trade marketing transforme une relation dichotomique (conflictuelle et coopérative) en partenariat gagnant-gagnant, notamment par l'échange d'informations réciproques."
+    },
+    {
+      "id": "b2-r04-qz-012",
+      "section": "4. La relation producteur-distributeur",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez le cadre légal du rééquilibrage producteur-distributeur.",
+      "texte": "La loi Galland (1996) donne aux producteurs la possibilité du {1} et réglemente la {2}. Les lois suivantes (type LME) ont réintégré les {3} dans le seuil de vente à perte et réduit les {4}.",
+      "trous": [
+        "refus de vente",
+        "vente à perte",
+        "marges arrière",
+        "délais de paiement"
+      ],
+      "explication": "Ces réglementations visent une concurrence saine, verticale (producteur-distributeur) comme horizontale (entre distributeurs), face au rapport de force créé par la concentration des centrales d'achat."
+    },
+    {
+      "id": "b2-r04-qz-013",
+      "section": "5. Le droit de la concurrence",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quelles pratiques sont interdites par les lois antitrust ? (4 réponses)",
+      "options": [
+        "les ententes entre concurrents",
+        "les remises accordées sur volume",
+        "l'abus de position dominante",
+        "les prix imposés",
+        "la publicité comparative",
+        "les remises discriminatoires"
+      ],
+      "reponse": [0, 2, 3, 5],
+      "explication": "Les lois antitrust garantissent la libre concurrence en interdisant ententes, abus de position dominante, prix imposés et remises discriminatoires. Effets : protection des consommateurs, stabilité des prix, maîtrise de l'inflation."
+    },
+    {
+      "id": "b2-r04-qz-014",
+      "section": "6. Sécuriser le partenariat : le contrat",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "L'industrie pharmaceutique fixe les termes généraux d'une relation durable avec les réseaux de pharmacies, puis précise chaque opération dans des contrats séparés. De quel type de contrat s'agit-il ?",
+      "options": [
+        "un contrat de distribution exclusive",
+        "un contrat cadre avec contrats d'application",
+        "un contrat de franchise",
+        "un contrat de commission-affiliation"
+      ],
+      "reponse": 1,
+      "explication": "Le contrat cadre fixe les termes généraux d'une relation durable ; les contrats d'application précisent chaque opération. À distinguer de la distribution sélective (distributeurs choisis) et exclusive (zone ou secteur réservé)."
+    },
+    {
+      "id": "b2-r04-qz-015",
+      "section": "6. Sécuriser le partenariat : le contrat",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque clause du contrat de partenariat à son contenu.",
+      "colonne_a": [
+        "Objet",
+        "Durée et résiliation",
+        "Propriété intellectuelle",
+        "Résolution des conflits"
+      ],
+      "colonne_b": [
+        "Négociation amiable, médiation, arbitrage, juridiction compétente",
+        "Titularité des créations, marques et droits d'auteur",
+        "Définition précise des produits/services, caractéristiques, quantités, qualité",
+        "Durée du contrat, motifs légitimes de rupture, préavis, conséquences"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 3],
+        [2, 1],
+        [3, 0]
+      ],
+      "explication": "S'ajoutent les conditions tarifaires, les conditions de livraison, les quantités minimales, les obligations de chaque partie et la conformité RGPD. Un contrat clair et complet prévient les litiges."
+    },
+    {
+      "id": "b2-r04-qz-016",
+      "section": "7. Éthique et RSE",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque texte à son obligation.",
+      "colonne_a": [
+        "Loi Sapin II (2016)",
+        "Loi sur le devoir de vigilance (2017)",
+        "Taxonomie européenne"
+      ],
+      "colonne_b": [
+        "Identifier et prévenir les risques (droits humains, environnement) dans toute la chaîne de valeur",
+        "Classification harmonisée des activités durables, vers la neutralité carbone 2050",
+        "Dispositifs anti-corruption : évaluer l'intégrité des partenaires, documenter la diligence raisonnable"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 0],
+        [2, 1]
+      ],
+      "explication": "Trois textes majeurs de l'éthique des partenariats : Sapin II (anti-corruption), devoir de vigilance (grandes entreprises françaises, y compris chez leurs partenaires), taxonomie européenne (grilles d'évaluation environnementale)."
+    },
+    {
+      "id": "b2-r04-qz-017",
+      "section": "6. Sécuriser le partenariat : le contrat",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Prévoir des clauses de sortie dès la signature du contrat fragilise la relation de partenariat.",
+      "reponse": false,
+      "explication": "Faux. C'est paradoxalement l'inverse : prévoir les clauses de sortie dès le départ sécurise la relation. Le partenariat vit un cycle de vie (lancement, croissance, maturité, renouvellement ou sortie) qu'il faut anticiper."
+    },
+    {
+      "id": "b2-r04-qz-018",
+      "section": "7. Éthique et RSE",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce qu'une charte éthique fournisseur ?",
+      "options": [
+        "un document interne de sensibilisation des salariés",
+        "un outil à la fois contractuel et pédagogique qui formalise les attentes RSE de l'annonceur",
+        "un label décerné par un organisme certificateur",
+        "une déclaration facultative sans portée juridique"
+      ],
+      "reponse": 1,
+      "explication": "La charte éthique fournisseur crée des obligations juridiques précises ET fonde la relation sur des valeurs partagées. Elle complète la grille RSE pondérée et les labels — dont il faut connaître les limites (focalisation documentaire, audits ponctuels)."
+    },
+    {
+      "id": "b2-r04-qz-019",
+      "section": "7. Éthique et RSE",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce qui distingue une « entreprise à impact » d'une entreprise traditionnelle ?",
+      "options": [
+        "elle a un statut juridique spécifique d'économie sociale et solidaire",
+        "elle vise à la fois le rendement financier et des résultats sociaux/environnementaux, au centre de son modèle",
+        "elle renonce au profit au bénéfice de sa mission",
+        "elle est obligatoirement certifiée B Corp"
+      ],
+      "reponse": 1,
+      "explication": "La notion n'a pas de définition juridique : c'est une entreprise à statut commercial classique qui place un impact social et/ou environnemental positif au centre de son modèle. Trois types d'impact : social, environnemental, gouvernance responsable."
+    },
+    {
+      "id": "b2-r04-qz-020",
+      "section": "7. Éthique et RSE",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Avant de signer avec un fournisseur étranger, quelles vérifications RSE mener, et pourquoi les labels ne suffisent-ils pas ?",
+      "attendus": [
+        "Grille d'évaluation RSE adaptée au secteur, pondérée selon les enjeux stratégiques, mixant indicateurs quantitatifs et qualitatifs",
+        "Vérification des labels et certifications, mais en connaissant leurs limites : focalisation documentaire (le papier peut masquer le terrain), audits ponctuels, risque de confiance aveugle",
+        "Compléments indispensables : audits de conformité planifiés, croisement des sources, cartographie des risques par partenaire, veille",
+        "Justification par le risque réputationnel : les réseaux sociaux propagent instantanément les scandales et l'annonceur est tenu responsable des pratiques de sa chaîne de valeur"
+      ],
+      "explication": "Le coût d'une évaluation RSE en amont est dérisoire comparé à celui d'une crise réputationnelle. Privilégier l'accompagnement des partenaires (amélioration continue) plutôt que la rupture sèche."
+    }
+  ]
+}

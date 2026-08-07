@@ -1,0 +1,398 @@
+{
+  "resume": "b2-r01",
+  "titre": "Le plan d'action marketing : de l'audit au pilotage",
+  "bloc": 2,
+  "questions": [
+    {
+      "id": "b2-r01-qz-001",
+      "section": "2. L'audit marketing",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une entreprise veut identifier les axes d'amélioration internes de l'organisation de ses services pour accroître ses résultats. Quelle forme d'audit doit-elle mener ?",
+      "options": [
+        "un audit de marché, qui porte sur les aspects conjoncturels",
+        "un audit de gestion, qui porte sur les aspects structurels",
+        "un audit financier, qui porte sur la rentabilité",
+        "un audit de conformité, qui porte sur la réglementation"
+      ],
+      "reponse": 1,
+      "explication": "L'audit de gestion identifie les axes d'amélioration internes (organisation des services, structuration) : aspects structurels. L'audit de marché analyse l'influence de l'environnement sur l'entreprise : aspects conjoncturels."
+    },
+    {
+      "id": "b2-r01-qz-002",
+      "section": "2. L'audit marketing",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque élément fondamental de l'audit selon Kotler et Manceau à sa signification.",
+      "colonne_a": [
+        "Le champ ouvert",
+        "La systématicité",
+        "L'indépendance",
+        "La périodicité"
+      ],
+      "colonne_b": [
+        "Réalisé par une personne extérieure au service marketing, idéalement à l'entreprise",
+        "À réaliser régulièrement, sans attendre d'être en difficulté",
+        "L'audit concerne toutes les activités, pas seulement celles en difficulté",
+        "Diagnostics systématiques sur l'entreprise ET son environnement, avec des préconisations"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 3],
+        [2, 0],
+        [3, 1]
+      ],
+      "explication": "Ces 4 éléments viennent de Kotler et Manceau (Marketing management). L'indépendance explique le recours fréquent à des consultants externes, qui apportent un « œil neuf » et neutre."
+    },
+    {
+      "id": "b2-r01-qz-003",
+      "section": "2. L'audit marketing",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Il est pertinent de réaliser un audit marketing même quand tout va bien dans l'entreprise.",
+      "reponse": true,
+      "explication": "Vrai. L'audit ne s'utilise pas qu'en cas de problème : quand tout va bien, il sert à comprendre la situation et à optimiser les résultats. C'est le principe de périodicité de Kotler et Manceau."
+    },
+    {
+      "id": "b2-r01-qz-004",
+      "section": "3. La stratégie de marque",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque stratégie de marque à son exemple type.",
+      "colonne_a": [
+        "Marque produit",
+        "Marque gamme",
+        "Marque ombrelle",
+        "Marque caution"
+      ],
+      "colonne_b": [
+        "Yamaha (motos et pianos)",
+        "Nestlé chapeautant Guigoz, Contrex et Herta",
+        "Accor : Sofitel, Novotel, Ibis...",
+        "Findus (surgelés), Amora (condiments)"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 3],
+        [2, 0],
+        [3, 1]
+      ],
+      "explication": "Ombrelle = une seule marque sur des marchés hétérogènes (Yamaha) ; caution = plusieurs marques d'un même univers réunies sous une marque mère (Nestlé) ; produit = un nom par produit (Accor) ; gamme = une marque par gamme homogène (Findus)."
+    },
+    {
+      "id": "b2-r01-qz-005",
+      "section": "3. La stratégie de marque",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans le prisme identitaire de Kapferer, « le reflet » désigne :",
+      "options": [
+        "la manière dont le client s'identifie à la marque",
+        "l'image de la marque dans l'esprit des clients",
+        "les valeurs et l'éthique de la marque",
+        "les aspects physiques et le packaging"
+      ],
+      "reponse": 1,
+      "explication": "Le reflet est l'image de la marque dans l'esprit des clients. Le piège : la mentalisation, c'est la manière dont le client s'identifie à la marque. La culture recouvre valeurs et éthique, le physique les aspects matériels."
+    },
+    {
+      "id": "b2-r01-qz-006",
+      "section": "3. La stratégie de marque",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "La stratégie de marque est une étape préliminaire qui vient avant la stratégie marketing et la stratégie de communication.",
+      "reponse": true,
+      "explication": "Vrai. C'est un point d'ordre important : la stratégie de marque (branding) précède et guide les stratégies marketing et communication — elle définit l'ADN qui orientera leurs choix."
+    },
+    {
+      "id": "b2-r01-qz-007",
+      "section": "4. Le mix marketing",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Le concept des 4P a été inventé par Philip Kotler.",
+      "reponse": false,
+      "explication": "Faux. C'est un piège classique : le concept naît avec Neil H. Borden (12 variables, 1949), est simplifié en 4P par E. Jerome McCarthy, puis seulement démocratisé par Kotler — à qui on attribue à tort la paternité."
+    },
+    {
+      "id": "b2-r01-qz-008",
+      "section": "4. Le mix marketing",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Dans le mix marketing, quelles politiques définissent l'offre ?",
+      "options": [
+        "produit et prix",
+        "distribution et communication",
+        "produit et communication",
+        "prix et distribution"
+      ],
+      "reponse": 0,
+      "explication": "Produit et prix définissent l'offre ; distribution et communication transfèrent cette offre vers le marché cible. Les 4 variables interagissent : la cohérence est le maître mot du mix."
+    },
+    {
+      "id": "b2-r01-qz-009",
+      "section": "4. Le mix marketing — produit",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque rôle de produit au sein d'une gamme à sa définition.",
+      "colonne_a": [
+        "Produit d'appel",
+        "Produit leader",
+        "Produit de prestige",
+        "Produit tactique",
+        "Produit régulateur"
+      ],
+      "colonne_b": [
+        "Occupe le terrain, gêne la concurrence",
+        "Absorbe les frais fixes, amortit les variations de CA",
+        "Premier prix qui attire, en espérant vendre des produits plus margés",
+        "Au centre de la gamme, assure le chiffre d'affaires avec une bonne marge",
+        "Valorise la gamme, image de haute qualité"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 3],
+        [2, 4],
+        [3, 0],
+        [4, 1]
+      ],
+      "explication": "S'ajoutent le produit d'avenir (appelé à remplacer le leader) et le produit contributeur (porte l'image de marque, dégage de fortes marges)."
+    },
+    {
+      "id": "b2-r01-qz-010",
+      "section": "4. Le mix marketing — prix",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez les formules de la politique de prix.",
+      "texte": "Le taux de marge se calcule en divisant la marge brute par le {1} ; le taux de marque en la divisant par le {2}. Le coefficient multiplicateur est le rapport {3} / PAHT. Le seuil de rentabilité est égal aux charges fixes divisées par le {4}.",
+      "trous": [
+        "coût d'achat",
+        "PVHT",
+        "PVTTC",
+        "taux de marge sur coûts variables"
+      ],
+      "explication": "Astuce : le taux de marge se calcule sur ce que ça m'a coûté (achat), le taux de marque sur ce que je le vends (PVHT). Le coefficient multiplicateur intègre marge + TVA."
+    },
+    {
+      "id": "b2-r01-qz-011",
+      "section": "4. Le mix marketing — prix",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un distributeur achète un produit 40 € HT et le revend 60 € HT. Quel est son taux de marque ?",
+      "options": [
+        "50 %",
+        "33,3 %",
+        "25 %",
+        "66,6 %"
+      ],
+      "reponse": 1,
+      "explication": "Marge commerciale = 60 − 40 = 20 €. Taux de marque = marge / PVHT = 20 / 60 = 33,3 %. Le piège : 50 % est le taux de marge (20 / 40, calculé sur le coût d'achat)."
+    },
+    {
+      "id": "b2-r01-qz-012",
+      "section": "4. Le mix marketing — prix",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Une boutique prévoit 200 000 € de CA, avec 120 000 € de charges variables et 60 000 € de charges fixes. Calculez son seuil de rentabilité en justifiant chaque étape.",
+      "attendus": [
+        "Marge sur coûts variables = CA prévisionnel − charges variables = 200 000 − 120 000 = 80 000 €",
+        "Taux de marge sur coûts variables = 80 000 / 200 000 × 100 = 40 %",
+        "Seuil de rentabilité = charges fixes / taux = 60 000 / 0,40 = 150 000 €",
+        "Interprétation : en dessous de 150 000 € de CA, l'activité est déficitaire ; on peut traduire ce seuil en nombre d'articles à vendre par jour"
+      ],
+      "explication": "Le critère d'évaluation est la justification étape par étape, comme attendu à l'examen : séparer charges fixes/variables, calculer la marge sur coûts variables puis son taux, et conclure."
+    },
+    {
+      "id": "b2-r01-qz-013",
+      "section": "4. Le mix marketing — produit",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quelles caractéristiques correspondent à la phase de croissance du cycle de vie d'un produit ? (3 réponses)",
+      "options": [
+        "des ventes exponentielles",
+        "une rentabilité forte mais qui stagne",
+        "des économies d'échelle et l'amortissement des coûts",
+        "l'arrivée de la concurrence",
+        "des coûts de R&D et de communication qui pèsent sur la rentabilité",
+        "une perte d'intérêt du marché"
+      ],
+      "reponse": [0, 2, 3],
+      "explication": "La croissance combine ventes exponentielles, amortissement des coûts et économies d'échelle... et l'arrivée de la concurrence. La rentabilité qui stagne caractérise la maturité, les coûts de lancement pèsent en phase 1, la perte d'intérêt marque le déclin."
+    },
+    {
+      "id": "b2-r01-qz-014",
+      "section": "4. Le mix marketing — prix",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Le Black Friday étant une période de promotion exceptionnelle, la vente à perte y est autorisée comme pendant les soldes.",
+      "reponse": false,
+      "explication": "Faux. Les soldes (2 périodes de 4 semaines par an) sont la seule période où la vente à perte est autorisée. Le Black Friday est un jour de promotion, pas de soldes : réductions libres mais sans vente à perte."
+    },
+    {
+      "id": "b2-r01-qz-015",
+      "section": "4. Le mix marketing — prix",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Depuis mai 2022, toute annonce de réduction de prix doit indiquer :",
+      "options": [
+        "le prix conseillé par le fabricant",
+        "le prix le plus bas pratiqué au cours des 30 jours précédents",
+        "le prix moyen constaté sur le marché",
+        "le pourcentage maximal de réduction autorisé"
+      ],
+      "reponse": 1,
+      "explication": "La règle des 30 jours lutte contre les fausses promotions : impossible de gonfler artificiellement le prix de référence juste avant une réduction."
+    },
+    {
+      "id": "b2-r01-qz-016",
+      "section": "4. Le mix marketing — distribution",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Un producteur vend à une centrale d'achat, qui livre des supermarchés, où achète le consommateur final. De quel canal s'agit-il ?",
+      "options": [
+        "un canal direct",
+        "un canal court",
+        "un canal long",
+        "un circuit intégré"
+      ],
+      "reponse": 2,
+      "explication": "Deux intermédiaires ou plus (centrale d'achat + supermarché) = canal long. C'est le circuit de la grande distribution : gros volumes mais marge unitaire dégradée, et le producteur perd l'accès au client final."
+    },
+    {
+      "id": "b2-r01-qz-017",
+      "section": "4. Le mix marketing — distribution",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Dans un réseau de distribution sélective, la tête de réseau peut interdire à ses distributeurs agréés de vendre en ligne.",
+      "reponse": false,
+      "explication": "Faux. La distribution sélective permet de choisir ses distributeurs sur critères (savoir-faire, accueil, capitaux) pour préserver l'image, mais il est impossible de leur interdire la vente en ligne."
+    },
+    {
+      "id": "b2-r01-qz-018",
+      "section": "4. Le mix marketing — distribution",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Dans un contrat de franchise, que verse le franchisé au franchiseur ?",
+      "options": [
+        "uniquement un pourcentage du chiffre d'affaires",
+        "un droit d'entrée (RIF) puis des royalties calculées en % du CA",
+        "une commission sur les produits vendus, le stock restant propriété du franchiseur",
+        "un loyer commercial fixe indexé sur la surface de vente"
+      ],
+      "reponse": 1,
+      "explication": "La franchise concède nom, marque et savoir-faire contre un droit d'entrée (RIF) + des royalties (% du CA), sur un contrat de 5 à 15 ans. Le piège : le stock en dépôt avec commission décrit la commission-affiliation, pas la franchise."
+    },
+    {
+      "id": "b2-r01-qz-019",
+      "section": "4. Le mix marketing — communication",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Tupperware et sa vente à domicile, un stand de dégustation en grande surface, un prospectus distribué en boîte aux lettres : ces actions relèvent de quelle stratégie ?",
+      "options": [
+        "une stratégie Pull : attirer le client vers la marque",
+        "une stratégie Push : pousser le produit vers un consommateur qui ne le recherche pas activement",
+        "une stratégie d'inbound marketing",
+        "une communication institutionnelle"
+      ],
+      "reponse": 1,
+      "explication": "Force de vente terrain, promotion des ventes et marketing direct sont des actions Push. Le Pull attire le client (contenus, avis, storytelling) et trouve sa forme aboutie dans l'inbound marketing."
+    },
+    {
+      "id": "b2-r01-qz-020",
+      "section": "5. Le plan marketing",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 4 étapes clés du plan marketing.",
+      "elements": [
+        "Le suivi et le contrôle",
+        "L'analyse et le diagnostic",
+        "Le Plan d'Action Commercial (PAC) et son budget",
+        "La stratégie et les objectifs"
+      ],
+      "ordre": [1, 3, 2, 0],
+      "explication": "Analyse → stratégie/objectifs → PAC et budget → suivi/contrôle : on retrouve les trois temps de la démarche (analyse, recommandation, action) complétés par le contrôle."
+    },
+    {
+      "id": "b2-r01-qz-021",
+      "section": "5. Le plan marketing",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels sont les 4 critères de rédaction d'un plan marketing ? (4 réponses)",
+      "options": [
+        "clair",
+        "exhaustif",
+        "concis",
+        "engagé",
+        "consensuel",
+        "spécifique"
+      ],
+      "reponse": [0, 2, 3, 5],
+      "explication": "Clair (compréhensible par tous), concis (une synthèse, pas un roman), engagé (il prend position et convainc), spécifique (adapté à chaque situation). Ni exhaustif ni consensuel : le plan tranche."
+    },
+    {
+      "id": "b2-r01-qz-022",
+      "section": "5. Le plan marketing",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Une modification de la stratégie en cours de plan est le signe d'un problème dans l'analyse initiale.",
+      "reponse": true,
+      "explication": "Vrai. Il faut distinguer le petit changement (réaction légitime à un élément extérieur : concurrent, législation) de la modification de stratégie, qui révèle un défaut de l'analyse de départ."
+    },
+    {
+      "id": "b2-r01-qz-023",
+      "section": "6. L'animation du plan",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Une PME se fixe comme objectif d'activité « +10 % de CA en 12 mois ». Déclinez la cascade en un objectif clients et un objectif de communication cohérents.",
+      "attendus": [
+        "Objectif clients découlant de l'objectif d'activité : par exemple augmenter le taux de fidélisation ou le nombre de clients (« porter le taux de fidélisation de 30 à 40 % en 12 mois »)",
+        "Objectif de communication soutenant l'objectif clients : visibilité, notoriété ou image (« augmenter de 50 % le trafic du site en 6 mois »)",
+        "La logique de cascade est explicite : activité → clients → communication",
+        "Les objectifs formulés sont mesurables et temporellement définis"
+      ],
+      "explication": "Les 3 types d'objectifs (activité, clients, communication) se déclinent en cascade : chaque niveau rend possible le précédent. Une liste d'objectifs sans lien entre eux ne suffit pas."
+    },
+    {
+      "id": "b2-r01-qz-024",
+      "section": "7. Le budget marketing",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez ce budget construit par ingénierie inversée.",
+      "texte": "Objectif de CA : 2 400 000 € sur 12 mois. Avec un panier moyen de 2 400 €, il faut réaliser {1} ventes. Avec un taux de transformation de 20 %, il faut toucher {2} prospects. À 50 € le coût par contact, le budget marketing s'élève à {3}.",
+      "trous": [
+        "1 000",
+        "5 000",
+        "250 000 €"
+      ],
+      "explication": "2 400 000 / 2 400 = 1 000 ventes ; 1 000 / 0,20 = 5 000 prospects ; 5 000 × 50 = 250 000 € (≈ 10 % du CA). L'ingénierie inversée part de l'objectif et remonte au budget : c'est le format exact de la Q4."
+    },
+    {
+      "id": "b2-r01-qz-025",
+      "section": "7. Le budget marketing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans la ventilation courante d'un budget marketing, à quoi sont consacrés les 30 % ?",
+      "options": [
+        "aux objectifs moyen/long terme : image de marque, notoriété",
+        "aux objectifs court terme : événementiel, promotions, actions éphémères",
+        "au suivi des résultats et aux actions correctrices",
+        "à la constitution d'une réserve pour imprévus"
+      ],
+      "reponse": 1,
+      "explication": "Schéma 50/30/20 : 50 % pour le moyen/long terme (image, notoriété, différenciation), 30 % pour le court terme (événementiel, promotions), 20 % pour le suivi des résultats et les actions correctrices."
+    },
+    {
+      "id": "b2-r01-qz-026",
+      "section": "8. SIC et SIM",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle est la relation entre SIC, SIM et système informatique ?",
+      "options": [
+        "le SIC englobe le SIM, qui englobe le système informatique",
+        "le SIM, de niveau stratégique, englobe le SIC ; le système informatique n'est qu'un sous-ensemble du SIC",
+        "SIC et SIM désignent le même système, vu sous deux angles",
+        "le système informatique englobe le SIC et le SIM"
+      ],
+      "reponse": 1,
+      "explication": "Le SIM (Système d'Information Mercatique) se situe au niveau stratégique et englobe le SIC (commercial). Le système informatique (ordinateurs, logiciels, réseaux) n'est qu'un sous-ensemble du SIC — toutes les entreprises ont un SIC, même sans informatique."
+    }
+  ]
+}
