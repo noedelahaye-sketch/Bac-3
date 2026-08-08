@@ -32,7 +32,12 @@ http
         return;
       }
       const ext = path.extname(filePath);
-      res.writeHead(200, { "Content-Type": TYPES[ext] || "application/octet-stream" });
+      /* aucune mise en cache : sans en-tête, le navigateur garde les js/css
+         d'une session à l'autre et l'aperçu montre un état périmé */
+      res.writeHead(200, {
+        "Content-Type": TYPES[ext] || "application/octet-stream",
+        "Cache-Control": "no-store",
+      });
       res.end(data);
     });
   })

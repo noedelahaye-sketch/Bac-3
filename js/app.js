@@ -316,7 +316,8 @@
     if(parts[0]==="q" && parts[1]) return {view:"question", id:parts[1]};
     if(parts[0]==="bloc" && parts[1]) return {view:"bloc", id:parts[1]};
     if(parts[0]==="cours" && parts[1]==="bloc" && parts[2]) return {view:"coursBloc", id:parts[2]};
-    if(parts[0]==="cours" && parts[1]==="resume" && parts[2]) return {view:"coursResume", id:parts[2]};
+    /* 4e segment optionnel : l'ancre d'une section du résumé (liens des flashcards) */
+    if(parts[0]==="cours" && parts[1]==="resume" && parts[2]) return {view:"coursResume", id:parts[2], ancre:parts[3]||null};
     if(parts[0]==="cours" && parts[1]==="question" && parts[2]) return {view:"coursQuestion", id:parts[2]};
     if(parts[0]==="cours") return {view:"cours"};
     if(parts[0]==="quiz" && parts[1]==="bloc" && parts[2]) return {view:"quizBloc", id:parts[2]};
@@ -326,11 +327,11 @@
     if(KNOWN_VIEWS.indexOf(parts[0])>=0) return {view:parts[0]};
     return {view:"accueil"};
   }
-  function hashFor(view,param){
+  function hashFor(view,param,ancre){
     if(view==="question") return "#/q/"+param;
     if(view==="bloc") return "#/bloc/"+param;
     if(view==="coursBloc") return "#/cours/bloc/"+param;
-    if(view==="coursResume") return "#/cours/resume/"+param;
+    if(view==="coursResume") return "#/cours/resume/"+param+(ancre?"/"+ancre:"");
     if(view==="coursQuestion") return "#/cours/question/"+param;
     if(view==="cours") return "#/cours";
     if(view==="quizBloc") return "#/quiz/bloc/"+param;
@@ -381,11 +382,30 @@
     void main.offsetWidth;
     main.classList.add("view-anim");
     var term=pendingJumpTerm; pendingJumpTerm=null;
-    if(!(term && jumpToTerm(term))){
+    if(!(term && jumpToTerm(term)) && !jumpToAncre(r)){
       var h=hashFor(r.view, r.id);
       window.scrollTo(0, scrollMemory.hasOwnProperty(h) ? scrollMemory[h] : 0);
     }
     updateReadProgress();
+  }
+  /* Arrivée sur un résumé par une ancre de section (lien d'une flashcard) :
+     on se pose sur le titre visé et on le signale une seconde. */
+  function jumpToAncre(r){
+    if(r.view!=="coursResume" || !r.ancre) return false;
+    var el=main.querySelector(".resume #"+cssId(r.ancre));
+    if(!el) return false;
+    scrollToEl(el);
+    el.classList.add("sec-cible");
+    setTimeout(function(){ el.classList.remove("sec-cible"); },1600);
+    return true;
+  }
+  function cssId(id){
+    return (window.CSS && CSS.escape) ? CSS.escape(id) : String(id).replace(/[^\w-]/g,"");
+  }
+  function scrollToEl(el){
+    var qbar=main.querySelector(".qbar");
+    var offset=nav.offsetHeight+(qbar?qbar.offsetHeight:0)+16;
+    window.scrollTo(0, Math.max(0, el.getBoundingClientRect().top+window.scrollY-offset));
   }
   function updateReadProgress(){
     if(ROUTE.view!=="coursResume") return;
@@ -426,8 +446,8 @@
       updateSectionActive();
     });
   },{passive:true});
-  function go(view,param){
-    var h=hashFor(view,param);
+  function go(view,param,ancre){
+    var h=hashFor(view,param,ancre);
     if(location.hash===h) applyRoute(parseHash(h));
     else location.hash=h;
   }
@@ -1167,7 +1187,9 @@
     h+='<div class="cmeta"><span class="m-niveau n'+c.niveau+'">Niveau '+c.niveau+'</span><span class="m-section">'+esc(c.section)+'</span><span class="m-type t-'+c.type+'">'+(TYPE_LABELS[c.type]||c.type)+'</span></div>';
     if(SES.show){
       h+='<div class="cq-rappel">'+esc(cardRecto(c))+'</div>';
-      h+='<div class="ca ca-center">'+esc(cardVerso(c)).replace(/\n/g,'<br>')+'</div><div class="cbtns"><button class="no" data-lrn="ko">À revoir</button><button class="yes" data-lrn="ok">Je savais</button></div>';
+      h+='<div class="ca ca-center">'+esc(cardVerso(c)).replace(/\n/g,'<br>')+'</div>';
+      h+=renderCoursLink(c);
+      h+='<div class="cbtns"><button class="no" data-lrn="ko">À revoir</button><button class="yes" data-lrn="ok">Je savais</button></div>';
       h+='<div class="cbtns-setaside"><button data-lrn="setaside-revoir" title="À modifier">'+ICON_PENCIL+'</button><button data-lrn="setaside-supprime" title="Supprimer">'+ICON_TRASH+'</button></div>';
     } else {
       h+='<div class="cq cq-center">'+esc(cardRecto(c))+'</div><div class="cflip-hint">Touche la carte pour voir la réponse</div>';
@@ -1176,6 +1198,21 @@
     return h;
   }
 
+  /* Lien vers le passage du résumé d'où vient la carte. Navigation sur place,
+     jamais un nouvel onglet : l'application installée doit rester dans sa
+     fenêtre. Quitter la série est assumé — le clic coupe la session. */
+  function renderCoursLink(c){
+    if(!c || !c.ancre) return "";
+    var r=(typeof RESUMES!=="undefined")?RESUMES[c.resume]:null;
+    if(!r) return "";
+    var href=hashFor("coursResume", c.resume, c.ancre);
+    return '<a class="ca-cours" href="'+href+'" data-cours-lien="'+c.resume+'" data-cours-ancre="'+c.ancre+'">'+ICON_BOOK+
+      '<span class="ca-cours-txt"><span class="ca-cours-lab">Voir dans le cours</span>'+
+      '<span class="ca-cours-sec">'+esc(r.titre)+' &middot; '+esc(c.secTitre||c.section||"")+'</span>'+
+      '<span class="ca-cours-quit">Quitte la série en cours</span></span></a>';
+  }
+
+  var ICON_BOOK='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>';
   var ICON_PENCIL='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>';
   var ICON_TRASH='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>';
   var ICON_SEARCH='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>';
@@ -2546,6 +2583,16 @@
         render();
       });
     });
+    main.querySelectorAll("[data-cours-lien]").forEach(function(el){
+      el.addEventListener("click",function(e){
+        e.preventDefault();
+        /* départ assumé vers le cours : on coupe la session avant de changer
+           d'URL, sinon hashchange réclame une confirmation dont on n'a que
+           faire ici — le clic sur le lien est déjà la réponse. */
+        SES=null; QZ=null;
+        go("coursResume", el.getAttribute("data-cours-lien"), el.getAttribute("data-cours-ancre"));
+      });
+    });
     var add=document.getElementById("j-add");
     if(add) add.addEventListener("click",function(){
       var q=document.getElementById("j-q").value.trim(), i=document.getElementById("j-in").value.trim();
@@ -2661,6 +2708,9 @@
       ROUTE={view:"accueil"};
     }
     render();
+    /* ouverture directe sur une ancre (lien d'une flashcard dans un nouvel
+       onglet) : la mise en page doit être posée avant de calculer la position */
+    if(ROUTE.view==="coursResume" && ROUTE.ancre) requestAnimationFrame(function(){ jumpToAncre(ROUTE); });
 
     if(getSyncToken()){
       syncStatus={state:"syncing", at:null};

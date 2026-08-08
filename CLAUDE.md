@@ -38,10 +38,9 @@ fonctionnel hors ligne : le premier rendu utilise toujours l'état local, la
 synchronisation distante arrive ensuite en arrière-plan.
 
 Déployé sur GitHub Pages : dépôt public github.com/noedelahaye-sketch/Bac-3,
-site en ligne à https://noedelahaye-sketch.github.io/Bac-3/. `git push`
-demande une authentification que Claude ne peut pas fournir depuis son bash
-sandboxé (pas d'accès au trousseau) — c'est toujours Noé qui pousse, depuis
-son propre Terminal.
+site en ligne à https://noedelahaye-sketch.github.io/Bac-3/. Claude commite et
+pousse quand Noé le demande ; la mise en ligne suit d'elle-même, une minute ou
+deux après le push.
 
 Fichiers JS générés, jamais édités à la main : `js/cours.js`,
 `js/questions.js`, `js/flashcards.js`, `js/quiz.js`, produits par
@@ -121,6 +120,13 @@ fichiers sources, jamais référencées en dur dans le code — le générateur
 - **Flashcards** — `flashcards:/*.json`, un fichier par résumé, cartes
   avec `section`, `niveau` (1-2), `type` (definition/liste/distinction/
   application), `recto`, `verso`. → `js/flashcards.js` (FLASHCARDS).
+  Le générateur rapproche le libellé `section` d'un titre du résumé (par
+  les mots, le numéro ne servant qu'à départager) et ajoute `ancre` +
+  `secTitre` : c'est le lien « Voir dans le cours » affiché au dos de la
+  carte. Sans correspondance sûre, pas d'ancre — et un avertissement à la
+  génération. Les titres de section et de sous-section du HTML généré
+  portent donc un `id` (`s-4-2-les-5-forces-de-porter`), cible de l'URL
+  `#/cours/resume/<résumé>/<ancre>`.
 - **Quiz** — `quiz:/*.json`, un fichier par résumé, questions avec
   `section`, `niveau`, `format` (qcm / qcm_multiple / vrai_faux /
   texte_a_trous / appariement / ordonnancement / ouverte) et les champs

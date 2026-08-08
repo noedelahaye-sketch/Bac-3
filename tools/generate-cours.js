@@ -119,9 +119,30 @@ function isTableSep(line) {
   return /^\|[\s:|-]+\|?\s*$/.test(line.trim());
 }
 
+/* Ancre d'un titre : « 4.2 Les 5 forces de Porter » → « s-4-2-les-5-forces-de-porter ».
+   Le préfixe évite toute collision avec les id de l'application. */
+function ancreDeTitre(texte, deja) {
+  const base =
+    "s-" +
+    texte
+      .replace(/<[^>]+>/g, "")
+      .normalize("NFD")
+      .replace(/[̀-ͯ]/g, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "")
+      .slice(0, 60);
+  let id = base;
+  let n = 2;
+  while (deja[id]) id = base + "-" + n++;
+  deja[id] = true;
+  return id;
+}
+
 function convertBody(body, linkMap, sourcesMap) {
   const lines = body.replace(/\r\n/g, "\n").split("\n");
   const out = [];
+  const ancres = {};
   let i = 0;
   let inSources = false;
 
@@ -154,7 +175,10 @@ function convertBody(body, linkMap, sourcesMap) {
       }
       inSources = h[2].trim() === "Sources";
       const tag = "h" + Math.min(level + 1, 6);
-      out.push("<" + tag + ">" + inline(h[2], linkMap) + "</" + tag + ">");
+      /* id sur les titres de section et sous-section : c'est la cible des
+         liens « Voir dans le cours » des flashcards. */
+      const attr = level <= 3 ? ' id="' + ancreDeTitre(h[2], ancres) + '"' : "";
+      out.push("<" + tag + attr + ">" + inline(h[2], linkMap) + "</" + tag + ">");
       i++;
       continue;
     }
@@ -420,7 +444,85 @@ function buildQuestionCours(p, linkMap) {
 
 /* ---------- Chargement des flashcards ---------- */
 
-function loadBlocFlashcards(blocNum) {
+/* Titres ancrables d'un résumé : les <h3> (sections) et <h4> (sous-sections)
+   du HTML généré, avec leur id. C'est la cible des liens des flashcards. */
+function sectionsDuResume(html) {
+  const secs = [];
+  const re = /<(h3|h4) id="([^"]+)">([\s\S]*?)<\/\1>/g;
+  let m;
+  while ((m = re.exec(html))) {
+    const titre = m[3].replace(/<[^>]+>/g, "").trim();
+    const num = titre.match(/^(\d+)[.\s]/);
+    secs.push({
+      ancre: m[2],
+      titre: titre,
+      niveau: m[1] === "h3" ? 1 : 2,
+      num: num ? num[1] : null,
+      mots: motsCles(titre),
+    });
+  }
+  return secs;
+}
+
+function sectionsParResume(resumes) {
+  const map = {};
+  Object.keys(resumes).forEach((id) => {
+    map[id] = sectionsDuResume(resumes[id].html);
+  });
+  return map;
+}
+
+const MOTS_VIDES = new Set([
+  "le", "la", "les", "un", "une", "des", "du", "de", "au", "aux", "et", "ou",
+  "en", "par", "sur", "que", "qui", "quoi", "dans", "pour", "avec", "ce", "se",
+  "sa", "son", "ses", "leur", "leurs", "cette", "entre", "selon", "sans",
+  "plus", "tout", "tous", "toute", "toutes", "autre", "autres", "comme",
+  "mais", "donc", "est", "sont", "etre", "avoir", "faire", "vue", "ensemble",
+]);
+
+/* Mots-clés d'un titre, réduits à un radical grossier (8 lettres, pluriel
+   coupé) : « argumentation » et « argumenter » se rejoignent sur « argument ».
+   Huit et pas sept, sinon « objectifs » et « objections » se confondent. */
+function motsCles(s) {
+  return String(s)
+    .replace(/^\s*\d+(\.\d+)*\.?\s*/, "")
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .split(/[^a-z0-9]+/)
+    .filter((w) => w.length >= 2 && !MOTS_VIDES.has(w))
+    .map((w) => w.slice(0, 8).replace(/s$/, ""));
+}
+
+/* Le champ "section" d'une carte est un libellé court, rédigé à la main : il
+   ne reprend ni le titre exact du cours ("2. La veille : définition et
+   objectifs" pour "2. La veille : définition, objectifs, critères de
+   qualité"), ni toujours sa numérotation (le Bloc 2 a un décalage d'un cran
+   depuis l'ajout d'une section « Vue d'ensemble »). On rapproche donc les
+   deux par les mots du titre — le numéro ne sert qu'à départager, puis de
+   repli. Un lien faux serait pire que pas de lien : en dessous du seuil, la
+   carte n'en reçoit pas. */
+function ancreDeCarte(section, secs) {
+  if (!section || !secs || !secs.length) return null;
+  const mots = motsCles(section);
+  const numM = String(section).match(/^\s*(\d+)\./);
+  const num = numM ? numM[1] : null;
+  let best = null;
+  if (mots.length) {
+    secs.forEach((s) => {
+      if (!s.mots.length) return;
+      const partages = mots.filter((w) => s.mots.indexOf(w) >= 0).length;
+      const score = partages / mots.length;
+      if (!score) return;
+      const total = score + (num && s.num === num ? 0.15 : 0);
+      if (!best || total > best.total) best = { sec: s, score: score, total: total };
+    });
+  }
+  if (best && best.score >= 0.5) return best.sec;
+  return (num && secs.filter((s) => s.niveau === 1 && s.num === num)[0]) || null;
+}
+
+function loadBlocFlashcards(blocNum, secsParResume) {
   const dir = path.join(COURS_DIR, "bloc" + blocNum + ":", "flashcards:");
   if (!fs.existsSync(dir)) return [];
   const cards = [];
@@ -429,8 +531,9 @@ function loadBlocFlashcards(blocNum) {
     .sort()
     .forEach((f) => {
       const data = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"));
+      const secs = (secsParResume || {})[data.resume];
       (data.cartes || []).forEach((c) => {
-        cards.push({
+        const card = {
           id: c.id,
           resume: data.resume,
           bloc: data.bloc,
@@ -439,16 +542,24 @@ function loadBlocFlashcards(blocNum) {
           type: c.type,
           recto: c.recto,
           verso: c.verso,
-        });
+        };
+        const ancre = ancreDeCarte(c.section, secs);
+        if (ancre) {
+          card.ancre = ancre.ancre;
+          card.secTitre = ancre.titre;
+        } else if (secs) {
+          console.warn("  section sans ancre dans le résumé :", c.id, "—", c.section);
+        }
+        cards.push(card);
       });
     });
   return cards;
 }
 
-function loadAllFlashcards(blocsJson) {
+function loadAllFlashcards(blocsJson, secsParResume) {
   let all = [];
   blocsJson.blocs.forEach((b) => {
-    all = all.concat(loadBlocFlashcards(b.numero));
+    all = all.concat(loadBlocFlashcards(b.numero, secsParResume));
   });
   return all;
 }
@@ -578,7 +689,7 @@ function main() {
     "question(s)."
   );
 
-  const flashcards = loadAllFlashcards(blocsJson);
+  const flashcards = loadAllFlashcards(blocsJson, sectionsParResume(result));
   const fcJs = "var FLASHCARDS = " + JSON.stringify(flashcards, null, 2) + ";\n";
   fs.writeFileSync(FLASHCARDS_OUT_FILE, fcJs, "utf8");
   console.log(
