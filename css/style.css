@@ -253,6 +253,8 @@
   .tile-quiz-btn.btn-flash:hover{background:color-mix(in srgb, #2563EB 82%, black);}
   .tile-quiz-btn.btn-quiz{background:#F59E0B;color:var(--paper);}
   .tile-quiz-btn.btn-quiz:hover{background:color-mix(in srgb, #F59E0B 82%, black);}
+  .tile-quiz-btn.btn-mm{background:#A177E8;color:var(--paper);}
+  .tile-quiz-btn.btn-mm:hover{background:color-mix(in srgb, #A177E8 82%, black);}
 
   .tiles-hub{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--space-24);}
   .tile-hub{width:220px;max-width:100%;aspect-ratio:3/4;align-items:center;justify-content:center;text-align:center;}
@@ -639,6 +641,125 @@
   .done-msg b{font-family:var(--font-display);font-weight:700;}
   .hrow{display:flex;justify-content:space-between;padding:var(--space-8) 0;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted);font-family:var(--font-code);}
   .hrow b{color:var(--ink);font-weight:500;}
+
+  /* ---------- Cartes mentales ----------
+     Deux colonnes sur grand écran, une seule sur téléphone : la bascule
+     Plan / Carte ne sert que là où les deux ne tiennent pas ensemble. */
+  /* les deux portes de la racine : écrire, ou relire */
+  .mm-portes{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-12);margin-bottom:var(--space-24);}
+  @media (max-width:720px){ .mm-portes{grid-template-columns:1fr;} }
+  .mm-portes .cta-tile{min-height:158px;}
+  .tile.cta-tile.cta-mm{--cta:#A177E8;color:var(--paper);}
+  .cta-mm .cta-sub{color:color-mix(in srgb, var(--paper) 55%, var(--cta));}
+  .tile.cta-tile.cta-mm-liste{--cta:var(--surface);border-color:var(--line);color:var(--ink);}
+  .tile.cta-tile.cta-mm-liste:hover{background:var(--surface);border-color:var(--signal);}
+  .cta-mm-liste .cta-sub{color:var(--muted);}
+  .mm-intro{color:var(--muted);font-size:13.5px;line-height:1.6;margin-bottom:var(--space-12);max-width:60ch;}
+  .mm-vide{margin-top:var(--space-16);}
+  .mm-head{display:flex;align-items:center;gap:var(--space-8);margin:var(--space-16) 0 var(--space-12);flex-wrap:wrap;}
+  .mm-titre{flex:1 1 220px;min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-control);
+    color:var(--ink);font:600 17px var(--font-display);letter-spacing:-0.01em;padding:var(--space-8) var(--space-12);min-height:44px;}
+  .mm-titre:focus{outline:none;border-color:var(--signal);}
+  .mm-bloc{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-control);color:var(--muted);
+    font:500 12.5px var(--font-text);padding:var(--space-8);min-height:44px;}
+  .mm-sup{flex:none;width:44px;min-height:44px;display:flex;align-items:center;justify-content:center;background:none;
+    border:1px solid var(--line);border-radius:var(--radius-control);color:var(--muted);cursor:pointer;padding:0;}
+  .mm-sup:hover{border-color:var(--flag);color:var(--flag);}
+  .mm-onglets{display:flex;gap:var(--space-4);background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius-control);padding:3px;margin-bottom:var(--space-12);width:max-content;}
+  .mm-onglet{background:none;border:0;border-radius:7px;color:var(--muted);font:600 12.5px var(--font-text);
+    padding:var(--space-8) var(--space-16);cursor:pointer;min-height:38px;}
+  .mm-onglet.on{background:var(--paper);color:var(--ink);}
+  .mm-grid{display:grid;grid-template-columns:1fr;gap:var(--space-12);}
+  .mm-grid .mm-col-carte{display:none;}
+  .mm-grid.montre-carte .mm-col-plan{display:none;}
+  .mm-grid.montre-carte .mm-col-carte{display:block;}
+  .mm-txt-in{width:100%;min-height:46vh;resize:vertical;background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius-card);color:var(--ink);font:500 13.5px/1.7 var(--font-code);padding:var(--space-16);tab-size:2;}
+  .mm-txt-in:focus{outline:none;border-color:var(--signal);}
+  .mm-outils{display:flex;gap:var(--space-8);margin-top:var(--space-8);}
+  .mm-out{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-control);color:var(--ink);
+    font:600 15px var(--font-text);min-width:52px;min-height:44px;cursor:pointer;}
+  .mm-out:hover{border-color:var(--signal);}
+  .mm-out-ex{font:500 12.5px var(--font-text);color:var(--muted);padding:0 var(--space-12);min-width:0;}
+  .mm-fini{margin-left:auto;min-height:44px;}
+  .mm-lien-cours{display:flex;align-items:center;gap:var(--space-8);margin-bottom:var(--space-12);flex-wrap:wrap;}
+  .mm-lien-cours .mm-bloc{flex:1 1 240px;min-width:0;}
+  .mm-lab{font:600 11px var(--font-text);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);}
+  .mm-lien-vide{font-size:12.5px;color:var(--muted);}
+  .mmv-cours{color:var(--signal);}
+  .mmv-cours:hover{border-color:var(--signal);color:var(--signal);}
+  .mmv-del{padding:0 var(--space-8);}
+  .mmv-del:hover{border-color:var(--flag);color:var(--flag);}
+  .mm-tuile{min-height:96px;justify-content:center;}
+  /* page de visualisation : une barre fine, puis la carte et rien d'autre */
+  .mmv-bar{display:flex;align-items:center;gap:var(--space-8);margin-bottom:var(--space-12);flex-wrap:wrap;}
+  .mmv-retour{flex:none;width:40px;height:40px;display:flex;align-items:center;justify-content:center;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-control);color:var(--muted);cursor:pointer;padding:0;}
+  .mmv-retour:hover{border-color:var(--signal);color:var(--ink);}
+  .mmv-titre{flex:1 1 auto;min-width:0;font-family:var(--font-display);font-weight:600;font-size:19px;
+    letter-spacing:-0.01em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .mmv-zoom{margin-bottom:0;}
+  .mmv-edit{flex:none;display:flex;align-items:center;gap:var(--space-8);background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius-control);color:var(--muted);
+    font:600 12.5px var(--font-text);padding:0 var(--space-12);min-height:40px;cursor:pointer;}
+  .mmv-edit:hover{border-color:var(--signal);color:var(--ink);}
+  /* hauteur définie : sans elle, le max-height:100% du dessin ne s'applique
+     pas et une grande carte se fait rogner au lieu de se réduire */
+  .mm-canvas.mmv-canvas{height:calc(100dvh - 190px);min-height:280px;
+    display:flex;padding:var(--space-16);}
+  /* centré par margin:auto, pas par align-items : sinon le haut d'une carte
+     plus grande que le cadre devient inatteignable au défilement */
+  .mmv-canvas .mm-svg{margin:auto;}
+  /* les deux contraintes ensemble : le dessin se réduit en gardant ses
+     proportions, sans jamais être rogné */
+  .mm-canvas.mmv-canvas.mm-ajuste .mm-svg{max-height:100%;width:auto;height:auto;}
+  @media (max-width:640px){
+    .mmv-titre{order:-1;flex-basis:100%;font-size:17px;}
+    .mmv-retour{order:1;}
+    .mmv-zoom{order:2;}
+    .mmv-edit{order:3;margin-left:auto;}
+    .mm-canvas.mmv-canvas{height:calc(100dvh - 240px);}
+  }
+  .mm-zoom{display:flex;gap:var(--space-4);background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius-control);padding:3px;margin-bottom:var(--space-8);width:max-content;}
+  .mm-zoom .mm-onglet{padding:var(--space-4) var(--space-12);min-height:32px;font-size:11.5px;}
+  .mm-canvas{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-card);
+    padding:var(--space-8);overflow:auto;max-height:72vh;}
+  /* ajusté : le dessin se met à la largeur disponible, jamais au-delà de sa
+     taille naturelle — sinon une petite carte serait grossie pour rien */
+  .mm-canvas.mm-ajuste .mm-svg{max-width:100%;height:auto;}
+  .mm-canvas-vide{color:var(--muted);font-size:13px;padding:var(--space-24);text-align:center;}
+  .mm-aide{color:var(--muted);font-size:11.5px;margin-top:var(--space-8);}
+  @media (min-width:1080px){
+    .mm-onglets{display:none;}
+    .mm-grid{grid-template-columns:340px 1fr;align-items:start;}
+    .mm-grid .mm-col-carte,.mm-grid.montre-carte .mm-col-plan{display:block;}
+    .mm-txt-in{min-height:62vh;}
+  }
+  /* le dessin : la couleur suit la branche de premier niveau */
+  .mm-svg{display:block;}
+  .mm-lien{fill:none;stroke:var(--line);stroke-width:1.6;}
+  .mm-noeud{cursor:pointer;}
+  .mm-boite{fill:var(--paper);stroke:var(--line);stroke-width:1;}
+  .mm-txt{fill:var(--ink);font-family:var(--font-text);font-weight:500;dominant-baseline:auto;}
+  .mm-noeud:hover .mm-boite{stroke:var(--ink);}
+  .mm-racine .mm-boite{fill:var(--ink);stroke:var(--ink);}
+  .mm-racine .mm-txt{fill:var(--paper);font-family:var(--font-display);font-weight:600;}
+  .mm-pastille{fill:var(--muted);}
+  .mm-pastille-txt{fill:var(--paper);font-family:var(--font-code);font-size:10px;text-anchor:middle;}
+  .mm-noeud.b0 .mm-boite{fill:color-mix(in srgb, var(--c-structure) 15%, var(--paper));stroke:color-mix(in srgb, var(--c-structure) 55%, var(--line));}
+  .mm-noeud.b1 .mm-boite{fill:color-mix(in srgb, var(--c-process) 15%, var(--paper));stroke:color-mix(in srgb, var(--c-process) 55%, var(--line));}
+  .mm-noeud.b2 .mm-boite{fill:color-mix(in srgb, var(--c-notion) 15%, var(--paper));stroke:color-mix(in srgb, var(--c-notion) 55%, var(--line));}
+  .mm-noeud.b3 .mm-boite{fill:color-mix(in srgb, var(--c-illustr) 15%, var(--paper));stroke:color-mix(in srgb, var(--c-illustr) 55%, var(--line));}
+  .mm-noeud.b4 .mm-boite{fill:color-mix(in srgb, var(--c-data) 15%, var(--paper));stroke:color-mix(in srgb, var(--c-data) 55%, var(--line));}
+  .mm-noeud.b5 .mm-boite{fill:color-mix(in srgb, var(--c-examen) 15%, var(--paper));stroke:color-mix(in srgb, var(--c-examen) 55%, var(--line));}
+  .mm-lien.b0{stroke:color-mix(in srgb, var(--c-structure) 45%, var(--line));}
+  .mm-lien.b1{stroke:color-mix(in srgb, var(--c-process) 45%, var(--line));}
+  .mm-lien.b2{stroke:color-mix(in srgb, var(--c-notion) 45%, var(--line));}
+  .mm-lien.b3{stroke:color-mix(in srgb, var(--c-illustr) 45%, var(--line));}
+  .mm-lien.b4{stroke:color-mix(in srgb, var(--c-data) 45%, var(--line));}
+  .mm-lien.b5{stroke:color-mix(in srgb, var(--c-examen) 45%, var(--line));}
 
   .foot{font-size:12px;color:var(--muted);margin-top:var(--space-24);line-height:1.6;}
   .foot input{font:400 12px var(--font-code);border:1px solid var(--line);border-radius:var(--radius-control);padding:var(--space-4) var(--space-8);background:var(--surface);color:var(--ink);min-height:44px;}

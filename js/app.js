@@ -7,7 +7,7 @@
   BLOCS.forEach(function(b){ b.qs.forEach(function(q){ q.id = b.id+"-"+q.n; q.bloc = b; ALL.push(q); }); });
 
   var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, cardState:{}, cardEdits:{}, quiz:[], quizSeen:{}, cardRuns:[], coursLu:{}, statusAt:{}, coursLuAt:{}, coursLuSection:{},
-            newToday:{d:0,n:0}, doneToday:{d:0,n:0}, streak:{current:0,max:0,lastDate:0},
+            newToday:{d:0,n:0}, doneToday:{d:0,n:0}, streak:{current:0,max:0,lastDate:0}, cartes:{},
             deadline:DEFAULT_DEADLINE, open:{b1:true}, view:"accueil", _ts:0 };
   var SES=null, QZ=null, saveTimer=null;
   var main = document.getElementById("main");
@@ -127,6 +127,7 @@
     l.push(series+" série(s) de cartes"+(derniere?" — dernière : "+derniere.d+", "+derniere.ok+"/"+derniere.n:""));
     l.push((sv.quiz||[]).length+" quiz passé(s)");
     l.push(n(sv.coursLu)+" résumé(s) marqué(s)");
+    l.push(n(sv.cartes)+" carte(s) mentale(s)");
     if(sv._ts) l.push("enregistrée le "+new Date(sv._ts).toLocaleString("fr-FR"));
     return l.join("\n");
   }
@@ -142,6 +143,7 @@
         && !(sv.quizSeen && Object.keys(sv.quizSeen).length)
         && !(sv.cardRuns && sv.cardRuns.length)
         && !(sv.coursLu && Object.keys(sv.coursLu).length)
+        && !(sv.cartes && Object.keys(sv.cartes).length)
         && !(sv.quiz && sv.quiz.length);
   }
   function applyState(sv){
@@ -149,6 +151,7 @@
     S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.fail=sv.fail||{}; S.cardState=sv.cardState||{}; S.cardEdits=sv.cardEdits||{}; S.quiz=sv.quiz||[]; S.quizSeen=sv.quizSeen||{}; S.cardRuns=sv.cardRuns||[]; S.coursLu=sv.coursLu||{}; S.statusAt=sv.statusAt||{}; S.coursLuAt=sv.coursLuAt||{}; S.coursLuSection=sv.coursLuSection||{}; S.reprendre=sv.reprendre||null;
     S.newToday=sv.newToday||{d:0,n:0};
     S.doneToday=sv.doneToday||{d:0,n:0};
+    S.cartes=sv.cartes||{};
     S.streak=sv.streak||{current:0,max:0,lastDate:0};
     S.deadline=sv.deadline||DEFAULT_DEADLINE; S.open=sv.open||{b1:true}; S._ts=sv._ts||0;
   }
@@ -367,7 +370,7 @@
   function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=a[i];a[i]=a[j];a[j]=x;} return a; }
 
   var VIEWS=[["accueil","Accueil"],["dossiers","Dossiers"],["cours","Cours"],["apprendre","Apprendre"]];
-  var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre","flashcards","flashcardsBloc","flashcardsSort","quiz","quizBloc","recherche"];
+  var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre","flashcards","flashcardsBloc","flashcardsSort","quiz","quizBloc","cartes","cartesListe","cartesBloc","carte","carteEdit","recherche"];
   function parseHash(hash){
     var h=(hash||"").replace(/^#/,"");
     if(h.charAt(0)==="/") h=h.slice(1);
@@ -382,6 +385,10 @@
     if(parts[0]==="cours") return {view:"cours"};
     if(parts[0]==="quiz" && parts[1]==="bloc" && parts[2]) return {view:"quizBloc", id:parts[2]};
     if(parts[0]==="flashcards" && parts[1]==="bloc" && parts[2]) return {view:"flashcardsBloc", id:parts[2]};
+    if(parts[0]==="cartes" && parts[1]==="blocs") return {view:"cartesListe"};
+    if(parts[0]==="cartes" && parts[1]==="bloc" && parts[2]) return {view:"cartesBloc", id:parts[2]};
+    if(parts[0]==="carte" && parts[1] && parts[2]==="plan") return {view:"carteEdit", id:parts[1]};
+    if(parts[0]==="carte" && parts[1]) return {view:"carte", id:parts[1]};
     if(parts[0]==="recherche") return {view:"recherche", id:parts.slice(1).join("/")||""};
     if(parts[0]==="reviser") return {view:"apprendre"};
     if(KNOWN_VIEWS.indexOf(parts[0])>=0) return {view:parts[0]};
@@ -396,6 +403,10 @@
     if(view==="cours") return "#/cours";
     if(view==="quizBloc") return "#/quiz/bloc/"+param;
     if(view==="flashcardsBloc") return "#/flashcards/bloc/"+param;
+    if(view==="cartesListe") return "#/cartes/blocs";
+    if(view==="cartesBloc") return "#/cartes/bloc/"+param;
+    if(view==="carte") return "#/carte/"+param;
+    if(view==="carteEdit") return "#/carte/"+param+"/plan";
     if(view==="recherche") return "#/recherche/"+encodeURIComponent(param||"");
     if(view==="accueil") return "#/";
     return "#/"+view;
@@ -415,6 +426,10 @@
     if(v==="flashcards") return "Flashcards";
     if(v==="flashcardsBloc"){ var b3=cb.filter(function(x){return String(x.numero)===String(id);})[0]; return b3 ? "Flashcards · "+b3.titre : "Flashcards"; }
     if(v==="flashcardsSort") return "Flashcards";
+    if(v==="cartes") return "Cartes mentales";
+    if(v==="cartesListe") return "Mes cartes";
+    if(v==="cartesBloc"){ var bm=cb.filter(function(x){return String(x.numero)===String(id);})[0]; return bm ? "Cartes · "+bm.court : "Cartes sans bloc"; }
+    if(v==="carte"||v==="carteEdit"){ var mm=S.cartes&&S.cartes[id]; return mm ? mm.t : "Carte mentale"; }
     if(v==="quiz") return "Quiz";
     if(v==="quizBloc"){ var b4=cb.filter(function(x){return String(x.numero)===String(id);})[0]; return b4 ? "Quiz · "+b4.titre : "Quiz"; }
     if(v==="recherche") return id ? "Recherche : "+id : "Recherche";
@@ -561,7 +576,7 @@
 
   function renderNav(){
     var h="";
-    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc"||ROUTE.view==="coursQuestion") ? "dossiers" : (ROUTE.view==="coursBloc"||ROUTE.view==="coursResume") ? "cours" : (ROUTE.view==="flashcards"||ROUTE.view==="flashcardsBloc"||ROUTE.view==="flashcardsSort"||ROUTE.view==="quiz"||ROUTE.view==="quizBloc") ? "apprendre" : ROUTE.view;
+    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc"||ROUTE.view==="coursQuestion") ? "dossiers" : (ROUTE.view==="coursBloc"||ROUTE.view==="coursResume") ? "cours" : (ROUTE.view==="flashcards"||ROUTE.view==="flashcardsBloc"||ROUTE.view==="flashcardsSort"||ROUTE.view==="quiz"||ROUTE.view==="quizBloc"||ROUTE.view==="cartes"||ROUTE.view==="cartesListe"||ROUTE.view==="cartesBloc"||ROUTE.view==="carte"||ROUTE.view==="carteEdit") ? "apprendre" : ROUTE.view;
     VIEWS.forEach(function(v){
       var badge="";
       if(v[0]==="dossiers"){ var r=ALL.length-doneCount(); if(r) badge='<i>'+r+'</i>'; }
@@ -1114,6 +1129,13 @@
     h+='<span class="tile-cas">'+QUIZ.length+' questions &middot; 7 formats</span>';
     h+='<span class="tile-quiz-btn btn-quiz" data-quiz-random-all="10">10 questions au hasard</span>';
     h+='</button>';
+    var nbC=Object.keys(S.cartes||{}).length;
+    h+='<button class="tile tile-hub" data-go="cartes">';
+    h+='<span class="tile-code code">Structurer une notion</span>';
+    h+='<span class="tile-title">Cartes mentales</span>';
+    h+='<span class="tile-cas">'+(nbC?nbC+' carte'+(nbC>1?'s':''):'Aucune carte')+' &middot; tu écris, ça se dessine</span>';
+    h+='<span class="tile-quiz-btn btn-mm" data-mm-new="0">Nouvelle carte</span>';
+    h+='</button>';
     h+='</div>';
     return h;
   }
@@ -1286,6 +1308,7 @@
       '<span class="ca-cours-lab">Cours</span></a>';
   }
 
+  var ICON_RETOUR='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>';
   var ICON_BOOK='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>';
   var ICON_PENCIL='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>';
   var ICON_TRASH='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>';
@@ -1649,6 +1672,332 @@
     if(QZ.checked) h+='<div class="expl">'+esc(q.explication||'')+'</div><div class="cbtns"><button class="yes" data-lrn="qnext">Suivante</button></div>';
     h+='</div><button class="quit" data-lrn="qstop">Arrêter le quiz</button>';
     return h;
+  }
+
+  /* ---------- CARTES MENTALES ----------
+     Une carte = un titre, un bloc et un plan indenté. Le dessin est toujours
+     recalculé depuis le plan : rien n'est positionné à la main, donc rien ne se
+     désaligne. S.cartes[id] = {t, bloc, txt, plie:{path:true}, at}. */
+  var CARTE_EX="Diagnostic\n  Externe\n    PESTEL\n    5 forces de Porter\n  Interne\n    Ressources\n    Compétences clés\nCibles\n  Personas\n  Segments prioritaires\nPositionnement\n  Promesse\n  Preuves";
+
+  function cartesTriees(){
+    return Object.keys(S.cartes||{}).map(function(id){
+      var c=S.cartes[id]; return {id:id, t:c.t, bloc:c.bloc, txt:c.txt, at:c.at||0};
+    }).sort(function(a,b){ return (b.at||0)-(a.at||0); });
+  }
+  function nouvelleCarte(bloc){
+    var id="mm"+Date.now().toString(36);
+    S.cartes[id]={t:"Nouvelle carte", bloc:bloc||null, txt:"", plie:{}, at:Date.now()};
+    save();
+    return id;
+  }
+  function nbIdees(txt){
+    return String(txt||"").split(/\r?\n/).filter(function(l){ return l.trim(); }).length;
+  }
+  /* Les blocs viennent des dossiers, pas du contenu de cours : on peut faire une
+     carte sur le Bloc 3 avant d'en avoir écrit le moindre résumé. L'ordre est
+     celui de travail (1, 2, 4, 3), comme partout ailleurs. */
+  function blocsCartes(){
+    return BLOCS.map(function(b){
+      return {numero:parseInt(String(b.id).replace(/\D/g,""),10), code:b.code, titre:b.titre};
+    });
+  }
+  /* Les résumés d'un bloc, dans l'ordre du cours. Un bloc sans contenu (B3, B4
+     aujourd'hui) renvoie une liste vide : le choix de résumé disparaît alors. */
+  function resumesDuBloc(numero){
+    var cb=(typeof COURS_BLOCS!=="undefined"?COURS_BLOCS:[]).filter(function(x){ return String(x.numero)===String(numero); })[0];
+    if(!cb || typeof RESUMES==="undefined") return [];
+    return (cb.fiches||[]).map(function(id){ return RESUMES[id]; }).filter(Boolean);
+  }
+  function resumeDeLaCarte(c){
+    if(!c || !c.resume || typeof RESUMES==="undefined") return null;
+    return RESUMES[c.resume]||null;
+  }
+
+  /* Racine : deux portes, écrire ou relire. Rien d'autre à décider ici. */
+  function vCartes(){
+    var liste=cartesTriees();
+    var h='<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Cartes mentales"}])+'</div>';
+    h+='<h1 class="qhead-title">Cartes mentales</h1><div class="qhead-code code">'+liste.length+' carte'+(liste.length>1?'s':'')+'</div>';
+    h+='<div class="mm-portes">';
+    h+='<button class="tile cta-tile cta-mm" data-mm-new="0">Nouvelle carte'+
+       '<span class="cta-sub">Tu écris un plan, la carte se dessine</span></button>';
+    h+='<button class="tile cta-tile cta-mm-liste" data-go="cartesListe">Mes cartes'+
+       '<span class="cta-sub">'+(liste.length?'Rangées par bloc':'Rien à relire pour l\'instant')+'</span></button>';
+    h+='</div>';
+    return h;
+  }
+
+  /* Les blocs, comme partout ailleurs sur le site : une tuile par bloc, et le
+     fourre-tout « Sans bloc » seulement s'il contient quelque chose. */
+  function vCartesListe(){
+    var liste=cartesTriees();
+    var blocs=blocsCartes();
+    var h='<div class="qbar">'+renderBreadcrumb([{label:"Cartes mentales",view:"cartes"},{label:"Mes cartes"}])+'</div>';
+    h+='<h1 class="qhead-title">Mes cartes</h1><div class="qhead-code code">'+liste.length+' carte'+(liste.length>1?'s':'')+'</div>';
+    h+='<div class="tiles">';
+    blocs.forEach(function(b){
+      var n=liste.filter(function(c){ return String(c.bloc)===String(b.numero); }).length;
+      h+='<button class="tile" data-go-cartes-bloc="'+b.numero+'">';
+      h+='<span class="tile-code code">'+esc(b.code)+'</span>';
+      h+='<span class="tile-title">'+esc(b.titre)+'</span>';
+      h+='<span class="tile-cas">'+(n?n+' carte'+(n>1?'s':''):'Aucune carte')+'</span>';
+      h+='</button>';
+    });
+    var sans=liste.filter(function(c){
+      return !blocs.some(function(b){ return String(c.bloc)===String(b.numero); });
+    }).length;
+    if(sans){
+      h+='<button class="tile" data-go-cartes-bloc="sans">';
+      h+='<span class="tile-code code">Hors bloc</span>';
+      h+='<span class="tile-title">Sans bloc</span>';
+      h+='<span class="tile-cas">'+sans+' carte'+(sans>1?'s':'')+'</span>';
+      h+='</button>';
+    }
+    h+='</div>';
+    return h;
+  }
+
+  function vCartesBloc(numero){
+    var blocs=blocsCartes();
+    var b=blocs.filter(function(x){ return String(x.numero)===String(numero); })[0];
+    var liste=cartesTriees().filter(function(c){
+      return b ? String(c.bloc)===String(b.numero)
+               : !blocs.some(function(x){ return String(c.bloc)===String(x.numero); });
+    });
+    var titre=b?b.titre:"Sans bloc";
+    var h='<div class="qbar">'+renderBreadcrumb([{label:"Cartes mentales",view:"cartes"},{label:"Mes cartes",view:"cartesListe"},{label:esc(titre)}])+'</div>';
+    h+='<h1 class="qhead-title">'+esc(titre)+'</h1><div class="qhead-code code">'+(b?esc(b.code)+' &middot; ':'')+liste.length+' carte'+(liste.length>1?'s':'')+'</div>';
+    if(b) h+='<button class="jadd" data-mm-new="'+b.numero+'">Nouvelle carte dans ce bloc</button>';
+    if(!liste.length){
+      h+='<div class="tile tile-empty mm-vide"><span class="tile-title">Aucune carte ici</span>'+
+         '<span class="tile-cas">'+(b?'La prochaine sera rattachée à ce bloc.':'Les cartes sans bloc apparaîtront ici.')+'</span></div>';
+      return h;
+    }
+    h+='<div class="tiles">';
+    liste.forEach(function(c){
+      var n=nbIdees(c.txt);
+      h+='<button class="tile mm-tuile" data-go-carte="'+c.id+'">';
+      h+='<span class="tile-title">'+esc(c.t)+'</span>';
+      h+='<span class="tile-cas">'+(n?n+' idée'+(n>1?'s':''):'Plan vide')+'</span>';
+      h+='</button>';
+    });
+    h+='</div>';
+    return h;
+  }
+
+  /* La carte seule : rien d'autre à l'écran que le dessin, un retour et un
+     bouton Modifier. C'est l'écran de révision, pas l'établi. */
+  function vCarte(id){
+    var c=S.cartes[id];
+    if(!c) return '<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Cartes mentales",view:"cartes"}])+'</div><div class="mm-intro">Cette carte n\'existe plus.</div>';
+    var h='<div class="mmv-bar">';
+    h+='<button class="mmv-retour" data-crumb="cartes" title="Toutes les cartes">'+ICON_RETOUR+'</button>';
+    h+='<span class="mmv-titre">'+esc(c.t)+'</span>';
+    h+='<div class="mm-zoom mmv-zoom"><button class="mm-onglet on" data-mm-zoom="ajuste">Ajuster</button>'+
+       '<button class="mm-onglet" data-mm-zoom="plein">100 %</button></div>';
+    var r=resumeDeLaCarte(c);
+    if(r) h+='<button class="mmv-edit mmv-cours" data-go-resume="'+r.id+'" title="'+esc(r.titre)+'">'+ICON_BOOK+'<span>Cours</span></button>';
+    h+='<button class="mmv-edit" data-mm-edit="'+id+'">'+ICON_PENCIL+'<span>Modifier</span></button>';
+    h+='<button class="mmv-edit mmv-del" data-mm-del="'+id+'" title="Supprimer la carte">'+ICON_TRASH+'</button>';
+    h+='</div>';
+    h+='<div class="mm-canvas mmv-canvas mm-ajuste" id="mmCanvas"></div>';
+    return h;
+  }
+
+  /* L'établi : le plan, ses outils, et l'aperçu qui suit la frappe. */
+  function vCarteEdit(id){
+    var c=S.cartes[id];
+    if(!c) return '<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Cartes mentales",view:"cartes"}])+'</div><div class="mm-intro">Cette carte n\'existe plus.</div>';
+    var h='<div class="qbar">'+renderBreadcrumb([{label:"Cartes mentales",view:"cartes"},{label:esc(c.t),view:"carte",param:id},{label:"Modifier"}])+'</div>';
+    h+='<div class="mm-head">';
+    h+='<input class="mm-titre" id="mmTitre" value="'+esc(c.t)+'" aria-label="Titre de la carte">';
+    h+='<select class="mm-bloc" id="mmBloc" aria-label="Bloc de rattachement"><option value="">Sans bloc</option>';
+    blocsCartes().forEach(function(b){
+      h+='<option value="'+b.numero+'"'+(String(c.bloc)===String(b.numero)?' selected':'')+'>'+esc(b.code)+' — '+esc(b.titre)+'</option>';
+    });
+    h+='</select>';
+    h+='<button class="mm-sup" data-mm-del="'+id+'" title="Supprimer la carte">'+ICON_TRASH+'</button>';
+    h+='<button class="jadd mm-fini" data-mm-voir="'+id+'">Voir la carte</button>';
+    h+='</div>';
+    /* Rattacher un résumé donne à la carte un aller direct vers le cours dont
+       elle sort. Le choix n'apparaît qu'une fois le bloc connu. */
+    var res=resumesDuBloc(c.bloc);
+    if(res.length){
+      h+='<div class="mm-lien-cours"><label class="mm-lab" for="mmResume">Résumé lié</label>';
+      h+='<select class="mm-bloc" id="mmResume"><option value="">Aucun</option>';
+      res.forEach(function(r){
+        h+='<option value="'+r.id+'"'+(c.resume===r.id?' selected':'')+'>'+esc(r.titre)+'</option>';
+      });
+      h+='</select></div>';
+    } else if(c.bloc){
+      h+='<div class="mm-lien-cours mm-lien-vide">Pas encore de résumé de cours sur ce bloc.</div>';
+    }
+    /* Bascule plan / aperçu : sur téléphone une seule des deux colonnes tient à
+       l'écran, sur grand écran les deux cohabitent et la bascule disparaît. */
+    h+='<div class="mm-onglets"><button class="mm-onglet on" data-mm-vue="plan">Plan</button><button class="mm-onglet" data-mm-vue="carte">Aperçu</button></div>';
+    h+='<div class="mm-grid" id="mmGrid">';
+    h+='<div class="mm-col mm-col-plan">';
+    h+='<textarea class="mm-txt-in" id="mmTxt" spellcheck="false" placeholder="Une idée par ligne. Deux espaces pour la rattacher à celle du dessus.">'+esc(c.txt||"")+'</textarea>';
+    h+='<div class="mm-outils"><button class="mm-out" data-mm-indent="1" title="Décaler à droite">&rarr;</button>'+
+       '<button class="mm-out" data-mm-indent="-1" title="Décaler à gauche">&larr;</button>'+
+       (c.txt?'':'<button class="mm-out mm-out-ex" data-mm-exemple="1">Partir d\'un exemple</button>')+
+       '</div>';
+    h+='</div>';
+    h+='<div class="mm-col mm-col-carte">';
+    h+='<div class="mm-zoom"><button class="mm-onglet on" data-mm-zoom="ajuste">Ajuster</button>'+
+       '<button class="mm-onglet" data-mm-zoom="plein">100 %</button></div>';
+    h+='<div class="mm-canvas mm-ajuste" id="mmCanvas"></div>'+
+       '<div class="mm-aide">Touche une idée pour replier ou déplier sa branche.</div></div>';
+    h+='</div>';
+    return h;
+  }
+
+  /* Le dessin ne passe pas par render() : re-rendre la page à chaque frappe
+     ferait perdre le curseur dans le textarea. On remplace le seul SVG. */
+  function dessineCarte(id){
+    var c=S.cartes[id];
+    var box=document.getElementById("mmCanvas");
+    if(!c || !box || typeof CARTES==="undefined") return;
+    var arbre=CARTES.parse(c.txt, c.t);
+    if(!arbre.k.length){
+      box.innerHTML='<div class="mm-canvas-vide">La carte apparaît ici dès la première ligne du plan.</div>';
+      return;
+    }
+    box.innerHTML=CARTES.svg(arbre, c.plie||{});
+    box.querySelectorAll("[data-mm-path]").forEach(function(g){
+      g.addEventListener("click",function(){
+        var p=g.getAttribute("data-mm-path");
+        if(!c.plie) c.plie={};
+        if(c.plie[p]) delete c.plie[p]; else c.plie[p]=true;
+        save();
+        dessineCarte(id);
+      });
+    });
+  }
+
+  /* Décale les lignes couvertes par la sélection : c'est l'opération de base
+     d'un plan, elle doit marcher à la tabulation comme au bouton du pouce. */
+  function decale(ta, sens){
+    var v=ta.value, s=ta.selectionStart, e=ta.selectionEnd;
+    var deb=v.lastIndexOf("\n", s-1)+1;
+    var fin=v.indexOf("\n", e); if(fin<0) fin=v.length;
+    var avant=v.slice(deb,fin), lignes=avant.split("\n"), delta0=0, total=0;
+    var apres=lignes.map(function(l,i){
+      var n;
+      if(sens>0){ n="  "+l; }
+      else { n=l.replace(/^ {1,2}/,""); }
+      var d=n.length-l.length;
+      if(i===0) delta0=d;
+      total+=d;
+      return n;
+    }).join("\n");
+    ta.value=v.slice(0,deb)+apres+v.slice(fin);
+    ta.selectionStart=Math.max(deb, s+delta0);
+    ta.selectionEnd=Math.max(ta.selectionStart, e+total);
+  }
+
+  function bindCartes(){
+    /* Une carte neuve n'a rien à montrer : on ouvre directement l'établi.
+       Créée depuis un bloc, elle en hérite — un réglage de moins à faire. */
+    main.querySelectorAll("[data-mm-new]").forEach(function(el){
+      el.addEventListener("click",function(e){
+        e.stopPropagation();
+        var b=parseInt(el.getAttribute("data-mm-new"),10);
+        go("carteEdit", nouvelleCarte(b>0?b:null));
+      });
+    });
+    main.querySelectorAll("[data-go-cartes-bloc]").forEach(function(el){
+      el.addEventListener("click",function(){ go("cartesBloc", el.getAttribute("data-go-cartes-bloc")); });
+    });
+    main.querySelectorAll("[data-go-carte]").forEach(function(el){
+      el.addEventListener("click",function(){ go("carte", el.getAttribute("data-go-carte")); });
+    });
+    main.querySelectorAll("[data-mm-edit]").forEach(function(el){
+      el.addEventListener("click",function(){ go("carteEdit", el.getAttribute("data-mm-edit")); });
+    });
+    main.querySelectorAll("[data-mm-voir]").forEach(function(el){
+      el.addEventListener("click",function(){ go("carte", el.getAttribute("data-mm-voir")); });
+    });
+    main.querySelectorAll("[data-mm-del]").forEach(function(el){
+      el.addEventListener("click",function(){
+        var id=el.getAttribute("data-mm-del");
+        var c=S.cartes[id];
+        if(!confirm("Supprimer « "+((c&&c.t)||"cette carte")+" » ? C'est définitif.")) return;
+        delete S.cartes[id]; save(); go("cartes");
+      });
+    });
+    if(ROUTE.view!=="carte" && ROUTE.view!=="carteEdit") return;
+    var id=ROUTE.id, c=S.cartes[id];
+    if(!c) return;
+    main.querySelectorAll("[data-mm-zoom]").forEach(function(el){
+      el.addEventListener("click",function(){
+        var box=document.getElementById("mmCanvas");
+        if(box) box.classList.toggle("mm-ajuste", el.getAttribute("data-mm-zoom")==="ajuste");
+        main.querySelectorAll("[data-mm-zoom]").forEach(function(b){ b.classList.toggle("on", b===el); });
+      });
+    });
+    if(ROUTE.view!=="carteEdit") return;
+    var titre=document.getElementById("mmTitre");
+    if(titre) titre.addEventListener("input",function(){
+      c.t=titre.value.trim()||"Sans titre"; c.at=Date.now(); save(); dessineCarte(id); updateTitle();
+    });
+    var bloc=document.getElementById("mmBloc");
+    if(bloc) bloc.addEventListener("change",function(){
+      c.bloc=bloc.value?parseInt(bloc.value,10):null;
+      /* un résumé d'un autre bloc n'aurait plus de sens : on le détache */
+      if(c.resume && !resumesDuBloc(c.bloc).some(function(r){ return r.id===c.resume; })) delete c.resume;
+      c.at=Date.now(); save();
+      render();
+    });
+    var res=document.getElementById("mmResume");
+    if(res) res.addEventListener("change",function(){
+      if(res.value) c.resume=res.value; else delete c.resume;
+      c.at=Date.now(); save();
+    });
+    var ta=document.getElementById("mmTxt");
+    if(ta){
+      ta.addEventListener("input",function(){ c.txt=ta.value; c.at=Date.now(); save(); dessineCarte(id); });
+      ta.addEventListener("keydown",function(e){
+        if(e.key==="Tab"){
+          e.preventDefault();
+          decale(ta, e.shiftKey?-1:1);
+          c.txt=ta.value; save(); dessineCarte(id);
+        } else if(e.key==="Enter"){
+          /* la nouvelle ligne reprend l'indentation : sans ça, chaque idée
+             sœur demande de retaper les espaces */
+          var v=ta.value, s=ta.selectionStart;
+          var deb=v.lastIndexOf("\n", s-1)+1;
+          var creux=(v.slice(deb,s).match(/^ */)||[""])[0];
+          if(!creux) return;
+          e.preventDefault();
+          ta.value=v.slice(0,s)+"\n"+creux+v.slice(ta.selectionEnd);
+          ta.selectionStart=ta.selectionEnd=s+1+creux.length;
+          c.txt=ta.value; save(); dessineCarte(id);
+        }
+      });
+    }
+    main.querySelectorAll("[data-mm-indent]").forEach(function(el){
+      el.addEventListener("click",function(){
+        if(!ta) return;
+        ta.focus();
+        decale(ta, parseInt(el.getAttribute("data-mm-indent"),10));
+        c.txt=ta.value; save(); dessineCarte(id);
+      });
+    });
+    main.querySelectorAll("[data-mm-exemple]").forEach(function(el){
+      el.addEventListener("click",function(){
+        c.txt=CARTE_EX; c.at=Date.now(); save(); render();
+      });
+    });
+    main.querySelectorAll("[data-mm-vue]").forEach(function(el){
+      el.addEventListener("click",function(){
+        var vue=el.getAttribute("data-mm-vue");
+        var grid=document.getElementById("mmGrid");
+        if(grid) grid.classList.toggle("montre-carte", vue==="carte");
+        main.querySelectorAll("[data-mm-vue]").forEach(function(b){ b.classList.toggle("on", b===el); });
+      });
+    });
   }
 
   /* ---------- MEMO ---------- */
@@ -2324,6 +2673,27 @@
       main.classList.remove("with-qbottom");
       main.innerHTML=vFlashcardsSort();
       positionQbar();
+    } else if(v==="cartes"){
+      main.classList.remove("with-qbottom");
+      main.innerHTML=vCartes();
+      positionQbar();
+    } else if(v==="cartesListe"){
+      main.classList.remove("with-qbottom");
+      main.innerHTML=vCartesListe();
+      positionQbar();
+    } else if(v==="cartesBloc"){
+      main.classList.remove("with-qbottom");
+      main.innerHTML=vCartesBloc(ROUTE.id);
+      positionQbar();
+    } else if(v==="carte"){
+      main.classList.remove("with-qbottom");
+      main.innerHTML=vCarte(ROUTE.id);
+      dessineCarte(ROUTE.id);
+    } else if(v==="carteEdit"){
+      main.classList.remove("with-qbottom");
+      main.innerHTML=vCarteEdit(ROUTE.id);
+      positionQbar();
+      dessineCarte(ROUTE.id);
     } else if(v==="recherche"){
       main.classList.remove("with-qbottom");
       main.innerHTML=vRecherche(ROUTE.id);
@@ -2490,6 +2860,7 @@
         render();
       });
     });
+    bindCartes();
     main.querySelectorAll("[data-flashcards-bonus]").forEach(function(el){
       el.addEventListener("click",function(e){
         e.stopPropagation();
