@@ -35,6 +35,8 @@
     /* code couleur de lecture des résumés */
     --c-structure:#F0A93B; --c-process:#3FBE72; --c-notion:#A177E8;
     --c-illustr:#E2733F; --c-data:#5C7CFA; --c-examen:#DE5A9D;
+    /* ce qui vient de Noé et non du cours : notes personnelles */
+    --c-perso:#3FBEB4;
     --radius-card:16px; --radius-control:10px; --radius-pill:999px;
     --space-4:4px; --space-8:8px; --space-12:12px; --space-16:16px;
     --space-24:24px; --space-32:32px; --space-48:48px;
@@ -512,6 +514,24 @@
     .mg-side{display:flex;flex-direction:column;gap:var(--space-12);min-width:0;}
     .mg-side>*{margin-bottom:0;max-width:none;}
   }
+
+  /* Notes personnelles en marge du cours */
+  .note-bar{display:flex;align-items:center;gap:var(--space-12);margin:var(--space-16) 0 var(--space-8);}
+  .note-mode-btn{background:none;border:1px solid var(--line);border-radius:var(--radius-control);
+    color:var(--muted);font:600 12px var(--font-text);padding:var(--space-8) var(--space-12);cursor:pointer;min-height:36px;}
+  .note-mode-btn:hover{border-color:var(--signal);color:var(--signal);}
+  main.note-mode .note-mode-btn{border-color:var(--signal);color:var(--signal);}
+  .note-count{font-family:var(--font-code);font-size:11px;color:var(--muted);}
+  .note-perso{border-left:3px solid var(--c-perso);background:color-mix(in srgb, var(--c-perso) 8%, var(--paper));
+    border-radius:0 var(--radius-card) var(--radius-card) 0;padding:var(--space-12);margin:var(--space-12) 0;font-size:13px;line-height:1.55;}
+  .note-lab{font-family:var(--font-code);font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--c-perso);margin-bottom:var(--space-4);}
+  .note-txt{white-space:normal;}
+  .note-actions{display:flex;gap:var(--space-12);margin-top:var(--space-8);}
+  .note-actions .linkf{min-height:32px;}
+  .note-perso.note-vide{background:none;border-left-style:dashed;padding:var(--space-4) var(--space-12);}
+  .note-add{background:none;border:0;color:var(--c-perso);font:500 12px var(--font-text);cursor:pointer;padding:var(--space-8) 0;min-height:36px;text-align:left;}
+  .note-add:hover{text-decoration:underline;}
+  .note-perso .jadd{min-height:36px;}
 
   .sommaire li.sec-on>button{color:var(--c-structure);font-weight:600;}
   .sommaire li.sec-on>button::before{background:color-mix(in srgb, var(--c-structure) 22%, var(--paper));color:var(--c-structure);}

@@ -6,7 +6,7 @@
   var ALL = [];
   BLOCS.forEach(function(b){ b.qs.forEach(function(q){ q.id = b.id+"-"+q.n; q.bloc = b; ALL.push(q); }); });
 
-  var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, cardState:{}, cardEdits:{}, quiz:[], quizSeen:{}, cardRuns:[], coursLu:{}, statusAt:{}, coursLuAt:{}, coursLuSection:{},
+  var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, cardState:{}, cardEdits:{}, quiz:[], quizSeen:{}, cardRuns:[], coursLu:{}, statusAt:{}, coursLuAt:{}, coursLuSection:{}, coursNotes:{},
             newToday:{d:0,n:0}, doneToday:{d:0,n:0}, streak:{current:0,max:0,lastDate:0}, cartes:{},
             deadline:DEFAULT_DEADLINE, open:{b1:true}, view:"accueil", _ts:0 };
   var SES=null, QZ=null, saveTimer=null;
@@ -127,6 +127,7 @@
     l.push(series+" série(s) de cartes"+(derniere?" — dernière : "+derniere.d+", "+derniere.ok+"/"+derniere.n:""));
     l.push((sv.quiz||[]).length+" quiz passé(s)");
     l.push(n(sv.coursLu)+" résumé(s) marqué(s)");
+    l.push(Object.keys(sv.coursNotes||{}).reduce(function(t,r){ return t+Object.keys(sv.coursNotes[r]).length; },0)+" note(s) en marge du cours");
     l.push(n(sv.cartes)+" carte(s) mentale(s)");
     if(sv._ts) l.push("enregistrée le "+new Date(sv._ts).toLocaleString("fr-FR"));
     return l.join("\n");
@@ -143,12 +144,13 @@
         && !(sv.quizSeen && Object.keys(sv.quizSeen).length)
         && !(sv.cardRuns && sv.cardRuns.length)
         && !(sv.coursLu && Object.keys(sv.coursLu).length)
+        && !(sv.coursNotes && Object.keys(sv.coursNotes).length)
         && !(sv.cartes && Object.keys(sv.cartes).length)
         && !(sv.quiz && sv.quiz.length);
   }
   function applyState(sv){
     S.status=sv.status||{}; S.checks=sv.checks||{}; S.notes=sv.notes||{}; S.fiche=sv.fiche||{};
-    S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.fail=sv.fail||{}; S.cardState=sv.cardState||{}; S.cardEdits=sv.cardEdits||{}; S.quiz=sv.quiz||[]; S.quizSeen=sv.quizSeen||{}; S.cardRuns=sv.cardRuns||[]; S.coursLu=sv.coursLu||{}; S.statusAt=sv.statusAt||{}; S.coursLuAt=sv.coursLuAt||{}; S.coursLuSection=sv.coursLuSection||{}; S.reprendre=sv.reprendre||null;
+    S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.fail=sv.fail||{}; S.cardState=sv.cardState||{}; S.cardEdits=sv.cardEdits||{}; S.quiz=sv.quiz||[]; S.quizSeen=sv.quizSeen||{}; S.cardRuns=sv.cardRuns||[]; S.coursLu=sv.coursLu||{}; S.statusAt=sv.statusAt||{}; S.coursLuAt=sv.coursLuAt||{}; S.coursLuSection=sv.coursLuSection||{}; S.coursNotes=sv.coursNotes||{}; S.reprendre=sv.reprendre||null;
     S.newToday=sv.newToday||{d:0,n:0};
     S.doneToday=sv.doneToday||{d:0,n:0};
     S.cartes=sv.cartes||{};
@@ -2426,7 +2428,7 @@
   /* Apartés (définitions, cas, exemples) renvoyés en colonne de marge */
   var MARGE_MIN=1080;
   function estAparte(el){
-    return el.classList && (el.classList.contains("def-para")||el.classList.contains("bq-def")||el.classList.contains("bq-cas")||el.classList.contains("bq-exam"));
+    return el.classList && (el.classList.contains("def-para")||el.classList.contains("bq-def")||el.classList.contains("bq-cas")||el.classList.contains("bq-exam")||el.classList.contains("note-perso"));
   }
   /* Critère : un bloc "large" ne peut pas cohabiter avec un aparté.
      Tableau de 3 colonnes ou plus, rangée de tuiles, frise, bloc de code, séparateur. */
@@ -2488,6 +2490,103 @@
       h.classList.add("h4-rule");
     });
   }
+  /* ---------- Notes personnelles en marge du cours ----------
+     Une note s'accroche à l'id d'un titre du résumé — le même point d'ancrage
+     que les liens de flashcards, et le seul qui survive à une régénération du
+     cours. Elle vit dans S.coursNotes[résumé][ancre] : sur l'appareil et dans
+     la synchro, jamais dans le .md source. Comme elle porte la classe
+     note-perso, estAparte() la reconnaît et la colonne de marge existante
+     l'accueille sans code de mise en page supplémentaire. */
+  var noteMode=false;
+  function notesDuResume(rid){ return (S.coursNotes && S.coursNotes[rid]) || {}; }
+  function nbNotes(rid){ return Object.keys(notesDuResume(rid)).length; }
+  function elementNote(rid, ancre){
+    var texte=notesDuResume(rid)[ancre];
+    var el=document.createElement("aside");
+    el.className="note-perso"+(texte===undefined?" note-vide":"");
+    el.setAttribute("data-note-ancre", ancre);
+    if(texte===undefined){
+      el.innerHTML='<button class="note-add" data-note-edit="'+ancre+'">+ Écrire une note ici</button>';
+      return el;
+    }
+    el.innerHTML='<div class="note-lab">Ma note</div><div class="note-txt">'+esc(texte).replace(/\n/g,'<br>')+'</div>'+
+      (noteMode?'<div class="note-actions"><button class="linkf" data-note-edit="'+ancre+'">Modifier</button>'+
+                '<button class="linkf" data-note-del="'+ancre+'">Supprimer</button></div>':'');
+    return el;
+  }
+  function poserNotes(container, rid){
+    Array.prototype.slice.call(container.querySelectorAll(".note-perso")).forEach(function(n){ n.parentNode.removeChild(n); });
+    Array.prototype.slice.call(container.querySelectorAll("h3[id],h4[id]")).forEach(function(h){
+      if(inFoldedSources(h)) return;
+      var aUneNote=notesDuResume(rid)[h.id]!==undefined;
+      if(!aUneNote && !noteMode) return;
+      h.parentNode.insertBefore(elementNote(rid, h.id), h.nextSibling);
+    });
+  }
+  /* Repose les notes sans re-rendre la page : un render() complet ferait
+     sauter la position de lecture au milieu d'une prise de note. La colonne
+     de marge se défait puis se refait, comme au redimensionnement. */
+  function rafraichirNotes(rid){
+    var container=main.querySelector(".resume");
+    if(!container) return;
+    if(container.querySelector(".mg-grid")) defaireMarge(container);
+    poserNotes(container, rid);
+    if(window.innerWidth>=MARGE_MIN) apartesEnMarge(container);
+  }
+  function editeurNote(rid, ancre){
+    var el=main.querySelector('.note-perso[data-note-ancre="'+ancre+'"]');
+    if(!el) return;
+    el.className="note-perso note-editing";
+    el.innerHTML='<div class="note-lab">Ma note</div>'+
+      '<textarea class="f" id="note-ta" rows="4"></textarea>'+
+      '<div class="note-actions"><button class="jadd" data-note-save="'+ancre+'">Enregistrer</button>'+
+      '<button class="linkf" data-note-cancel="1">Annuler</button></div>';
+    var ta=el.querySelector("#note-ta");
+    ta.value=notesDuResume(rid)[ancre]||"";
+    ta.focus();
+  }
+  /* Un seul écouteur délégué, posé une fois : les notes naissent après le
+     rendu, elles rateraient le câblage habituel. */
+  main.addEventListener("click", function(e){
+    var t=e.target.closest && e.target.closest("[data-note-mode],[data-note-edit],[data-note-save],[data-note-del],[data-note-cancel]");
+    if(!t) return;
+    var rid=ROUTE.id;
+    if(t.hasAttribute("data-note-mode")){
+      noteMode=!noteMode;
+      t.textContent=noteMode?"Terminer l'annotation":"Annoter le cours";
+      main.classList.toggle("note-mode", noteMode);
+      rafraichirNotes(rid);
+      return;
+    }
+    if(t.hasAttribute("data-note-edit")){ editeurNote(rid, t.getAttribute("data-note-edit")); return; }
+    if(t.hasAttribute("data-note-cancel")){ rafraichirNotes(rid); return; }
+    if(t.hasAttribute("data-note-del")){
+      if(!confirm("Supprimer cette note ?")) return;
+      var a=t.getAttribute("data-note-del");
+      if(S.coursNotes[rid]) delete S.coursNotes[rid][a];
+      if(S.coursNotes[rid] && !Object.keys(S.coursNotes[rid]).length) delete S.coursNotes[rid];
+      save(); majCompteurNotes(rid); rafraichirNotes(rid);
+      return;
+    }
+    if(t.hasAttribute("data-note-save")){
+      var an=t.getAttribute("data-note-save");
+      var ta=document.getElementById("note-ta");
+      var v=ta?ta.value.trim():"";
+      if(!S.coursNotes[rid]) S.coursNotes[rid]={};
+      if(v) S.coursNotes[rid][an]=v;
+      else {
+        delete S.coursNotes[rid][an];
+        if(!Object.keys(S.coursNotes[rid]).length) delete S.coursNotes[rid];
+      }
+      save(); majCompteurNotes(rid); rafraichirNotes(rid);
+    }
+  });
+  function majCompteurNotes(rid){
+    var el=document.getElementById("noteCount");
+    if(!el) return;
+    var n=nbNotes(rid);
+    el.textContent=n?(n+" note"+(n>1?"s":"")):"";
+  }
   function enrichirResume(){
     var container=main.querySelector(".resume");
     if(!container) return;
@@ -2497,6 +2596,7 @@
     markDefinitions(container);
     markCasBlockquotes(container);
     numberHeadings(container);
+    if(ROUTE.view==="coursResume") poserNotes(container, ROUTE.id);
     apartesEnMarge(container);
   }
   function extractSections(html){
@@ -2548,6 +2648,9 @@
          '<span class="rep-t">'+esc(sections[repriseIdx])+'</span></button>';
     }
     h+=renderSommaire(sections);
+    var nN=nbNotes(r.id);
+    h+='<div class="note-bar"><button class="note-mode-btn" data-note-mode="1">'+(noteMode?"Terminer l'annotation":"Annoter le cours")+'</button>'+
+       '<span class="note-count" id="noteCount">'+(nN?(nN+" note"+(nN>1?"s":"")):"")+'</span></div>';
     h+=renderQuestionLinks("Indispensable pour", r.questions, r.bloc);
     h+=renderQuestionLinks("En complément pour", r.questions_appui, r.bloc);
     h+='<div class="resume">'+r.html+'</div>';
