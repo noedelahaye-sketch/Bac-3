@@ -7,7 +7,7 @@
   BLOCS.forEach(function(b){ b.qs.forEach(function(q){ q.id = b.id+"-"+q.n; q.bloc = b; ALL.push(q); }); });
 
   var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, cardState:{}, cardEdits:{}, quiz:[], quizSeen:{}, cardRuns:[], coursLu:{}, statusAt:{}, coursLuAt:{}, coursLuSection:{},
-            newToday:{d:0,n:0}, streak:{current:0,max:0,lastDate:0},
+            newToday:{d:0,n:0}, doneToday:{d:0,n:0}, streak:{current:0,max:0,lastDate:0},
             deadline:DEFAULT_DEADLINE, open:{b1:true}, view:"accueil", _ts:0 };
   var SES=null, QZ=null, saveTimer=null;
   var main = document.getElementById("main");
@@ -148,6 +148,7 @@
     S.status=sv.status||{}; S.checks=sv.checks||{}; S.notes=sv.notes||{}; S.fiche=sv.fiche||{};
     S.journal=sv.journal||[]; S.box=sv.box||{}; S.due=sv.due||{}; S.fail=sv.fail||{}; S.cardState=sv.cardState||{}; S.cardEdits=sv.cardEdits||{}; S.quiz=sv.quiz||[]; S.quizSeen=sv.quizSeen||{}; S.cardRuns=sv.cardRuns||[]; S.coursLu=sv.coursLu||{}; S.statusAt=sv.statusAt||{}; S.coursLuAt=sv.coursLuAt||{}; S.coursLuSection=sv.coursLuSection||{}; S.reprendre=sv.reprendre||null;
     S.newToday=sv.newToday||{d:0,n:0};
+    S.doneToday=sv.doneToday||{d:0,n:0};
     S.streak=sv.streak||{current:0,max:0,lastDate:0};
     S.deadline=sv.deadline||DEFAULT_DEADLINE; S.open=sv.open||{b1:true}; S._ts=sv._ts||0;
   }
@@ -237,6 +238,7 @@
   var INTERV=[0,1,3,7,16,35,70,140,280,560];
   var NEW_CAP=15;
   var TOTAL_CAP=30;
+  var NEW_RESERVE=10;
   function today(){ var d=new Date(); return new Date(d.getFullYear(),d.getMonth(),d.getDate()).getTime(); }
   function newBudget(){
     var t=today();
@@ -246,6 +248,21 @@
   function consumeNewBudget(n){
     if(!n) return;
     newBudget(); S.newToday.n+=n;
+    save();
+  }
+  /* Le quota du jour est un compteur qui se vide, pas un calcul refait sur le
+     vivier : sans lui, 60 révisions en retard affichent « 30 » indéfiniment,
+     quel que soit le travail déjà fourni. Toute carte notée le décrémente,
+     d'où qu'elle vienne — série du jour, bonus ou série libre par bloc. */
+  function dayDone(){
+    var t=today();
+    if(!S.doneToday || S.doneToday.d!==t) S.doneToday={d:t,n:0};
+    return S.doneToday.n;
+  }
+  function dayBudget(){ return Math.max(0, TOTAL_CAP-dayDone()); }
+  function consumeDay(n){
+    if(!n) return;
+    dayDone(); S.doneToday.n+=n;
     save();
   }
   function markStreakDay(){
@@ -278,9 +295,25 @@
     });
   }
   function newCardsIn(list){ return activeCards(list).filter(function(c){ return !(S.box[c.id]); }); }
+  /* Ce qui reste du quota, réparti entre révisions et nouvelles. Une part du
+     quota est réservée aux nouvelles (proportionnelle à ce qu'il reste à faire)
+     pour que l'avancée dans le cours ne s'arrête pas dès qu'il y a du retard. */
   function dueBreakdown(list){
-    var reviews=Math.min(dueReviews(list).length, TOTAL_CAP);
-    var news=Math.max(0, Math.min(newBudget(), TOTAL_CAP-reviews));
+    var reste=dayBudget();
+    if(!reste) return {reviews:0, news:0, total:0};
+    var revDispo=dueReviews(list).length;
+    var newDispo=Math.min(newBudget(), newCardsIn(list).length);
+    var reserve=Math.min(NEW_RESERVE, Math.ceil(reste*NEW_RESERVE/TOTAL_CAP), newDispo);
+    var reviews=Math.min(revDispo, reste-reserve);
+    var news=Math.min(newDispo, reste-reviews);
+    return {reviews:reviews, news:news, total:reviews+news};
+  }
+  /* Le reste de ce qui serait dû aujourd'hui, une fois le quota épuisé :
+     facultatif, jamais compté dans l'objectif ni dans la série. */
+  function bonusBreakdown(list){
+    var b=dueBreakdown(list);
+    var reviews=Math.max(0, dueReviews(list).length-b.reviews);
+    var news=Math.max(0, Math.min(newBudget(), newCardsIn(list).length)-b.news);
     return {reviews:reviews, news:news, total:reviews+news};
   }
   function dueLabel(list){
@@ -291,13 +324,40 @@
     if(b.news) parts.push(b.news+' nouvelle'+(b.news>1?'s':''));
     return parts.join(' + ');
   }
+  /* Composition de ce qui reste en plus du quota : le même vocabulaire que la
+     file du jour, pour qu'on lise les deux lignes d'un coup. */
+  function bonusLabel(list){
+    var b=bonusBreakdown(list);
+    if(!b.total) return "";
+    var parts=[];
+    if(b.reviews) parts.push(b.reviews+' révision'+(b.reviews>1?'s':''));
+    if(b.news) parts.push(b.news+' nouvelle'+(b.news>1?'s':''));
+    return parts.join(' et ');
+  }
   function buildDueQueue(list){
     var b=dueBreakdown(list);
     var reviews=dueReviews(list).slice(0,b.reviews);
     var picked=newCardsIn(list).slice(0,b.news);
     return shuffle(reviews.concat(picked));
   }
-  function dueCount(){ return buildDueQueue(FLASHCARDS).length; }
+  function buildBonusQueue(list){
+    var b=dueBreakdown(list), bo=bonusBreakdown(list);
+    var reviews=dueReviews(list).slice(b.reviews, b.reviews+bo.reviews);
+    var picked=newCardsIn(list).slice(b.news, b.news+bo.news);
+    return shuffle(reviews.concat(picked));
+  }
+  function dueCount(){ return dueBreakdown(FLASHCARDS).total; }
+  function bonusCount(){ return bonusBreakdown(FLASHCARDS).total; }
+  /* À appeler avant grade() : c'est S.box qui dit si la carte était neuve. */
+  function countCardDone(id){
+    if(!S.box[id]) consumeNewBudget(1);
+    consumeDay(1);
+  }
+  /* La série se valide sur l'objectif du jour, jamais sur le bonus : le bonus
+     doit rester facultatif, pas une condition pour ne pas casser la série. */
+  function majSerie(){
+    if(!dueBreakdown(FLASHCARDS).total) markStreakDay();
+  }
   function grade(i,ok){
     var b=S.box[i]||0, nb=ok?Math.min(INTERV.length-1,b+1):1;
     S.box[i]=nb; S.due[i]=today()+INTERV[nb]*86400000;
@@ -585,18 +645,8 @@
       h+='<span class="today-meta">Rien de nouveau à lire.</span></div>';
     }
 
-    var d=dueCount();
-    if(d){
-      h+='<button class="today-card t-revi" data-flashcards-due-all>';
-      h+='<span class="today-lab">Réviser</span>';
-      h+='<span class="today-title">'+d+' carte'+(d>1?'s':'')+' du jour</span>';
-      h+='<span class="today-meta">'+dueLabel(FLASHCARDS)+'</span>';
-      h+='</button>';
-    } else {
-      h+='<div class="today-card t-revi today-done"><span class="today-lab">Réviser</span>';
-      h+='<span class="today-title">Rien à revoir</span>';
-      h+='<span class="today-meta">Reviens demain.</span></div>';
-    }
+    /* même tuile que la page Flashcards, à la taille de la grille d'accueil */
+    h+=renderCtaJour("today-cta");
 
     h+='</div>';
     return h;
@@ -1048,13 +1098,15 @@
   var TYPE_LABELS={definition:"Définition",liste:"Liste",distinction:"Distinction",application:"Application"};
 
   function vApprendre(){
-    var dApp=dueCount();
+    var dApp=dueCount(), boApp=bonusCount();
     var h='<div class="tiles-hub">';
     h+='<button class="tile tile-hub" data-go="flashcards">';
     h+='<span class="tile-code code">Cartes à répétition espacée</span>';
     h+='<span class="tile-title">Flashcards</span>';
-    h+='<span class="tile-cas">'+activeCards().length+' cartes &middot; '+dueLabel(FLASHCARDS)+'</span>';
-    h+='<span class="tile-quiz-btn btn-flash" data-flashcards-due-all>'+(dApp?'Cartes du jour ('+dApp+')':'Rien à revoir aujourd\'hui')+'</span>';
+    h+='<span class="tile-cas">'+activeCards().length+' cartes &middot; '+(dApp?dueLabel(FLASHCARDS):(boApp?bonusLabel(FLASHCARDS)+' en bonus':'révisions à jour'))+'</span>';
+    if(dApp) h+='<span class="tile-quiz-btn btn-flash" data-flashcards-due-all>Cartes du jour ('+dApp+')</span>';
+    else if(boApp) h+='<span class="tile-quiz-btn btn-flash" data-flashcards-bonus>Bonus ('+boApp+')</span>';
+    else h+='<span class="tile-quiz-btn btn-flash" data-flashcards-due-all>Rien à revoir aujourd\'hui</span>';
     h+='</button>';
     h+='<button class="tile tile-hub" data-go="quiz">';
     h+='<span class="tile-code code">Questions et exercices</span>';
@@ -1064,6 +1116,27 @@
     h+='</button>';
     h+='</div>';
     return h;
+  }
+
+  /* Trois états : il reste du quota, le quota est fait mais il reste du dû
+     (bonus), plus rien à faire. Le sous-titre dit toujours les deux chiffres :
+     l'objectif du jour, qui descend, et ce qui reste en bonus.
+     `extra` sert à l'accueil, qui reprend la même tuile à la taille de sa grille. */
+  function renderCtaJour(extra){
+    var d=dueCount(), bo=bonusCount(), cls='tile cta-tile'+(extra?' '+extra:'');
+    if(d){
+      return '<button class="'+cls+'" data-flashcards-due-all>Cartes du jour ('+d+')'+
+        '<span class="cta-sub">'+dueLabel(FLASHCARDS)+'</span>'+
+        (bo?'<span class="cta-sub cta-retard">+ '+bonusLabel(FLASHCARDS)+' en bonus</span>':'')+
+        '</button>';
+    }
+    if(bo){
+      return '<button class="'+cls+' cta-bonus" data-flashcards-bonus>Continuer en bonus ('+bo+')'+
+        '<span class="cta-sub">'+bonusLabel(FLASHCARDS)+'</span>'+
+        '<span class="cta-sub cta-retard">Facultatif</span></button>';
+    }
+    return '<div class="'+cls+' cta-vide">Cartes du jour'+
+      '<span class="cta-sub">Rien à revoir aujourd\'hui</span></div>';
   }
 
   function renderDashPanel(clickable){
@@ -1092,7 +1165,7 @@
     var h='<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Flashcards"}])+'</div>';
     h+='<h1 class="qhead-title">Flashcards</h1><div class="qhead-code code">'+activeCards().length+' cartes</div>';
     h+='<div class="grid-cta-dash">';
-    h+='<button class="tile cta-tile" data-flashcards-due-all>Cartes du jour<span class="cta-sub">'+dueLabel(FLASHCARDS)+'</span></button>';
+    h+=renderCtaJour();
     h+=renderDashPanel(false);
     h+='</div>';
     h+='<div class="lab">Par bloc</div><div class="tiles">';
@@ -1457,7 +1530,6 @@
       var blocs={}; SES.list.forEach(function(c){ blocs[c.bloc]=true; });
       var blocKeys=Object.keys(blocs);
       S.cardRuns.push({d:new Date().toLocaleDateString("fr-FR"),t:Date.now(),ok:SES.ok,n:SES.list.length,bloc:blocKeys.length===1?blocKeys[0]:null});
-      if(SES.capped) markStreakDay();
       save();
     }
   }
@@ -2418,6 +2490,19 @@
         render();
       });
     });
+    main.querySelectorAll("[data-flashcards-bonus]").forEach(function(el){
+      el.addEventListener("click",function(e){
+        e.stopPropagation();
+        var bq=buildBonusQueue(FLASHCARDS);
+        if(!bq.length){ go("flashcards"); return; }
+        SES={list:bq,i:0,show:false,ok:0,bonus:true};
+        if(ROUTE.view!=="flashcards" && ROUTE.view!=="flashcardsBloc"){
+          ROUTE={view:"flashcards"}; S.view="flashcards";
+          history.replaceState(null,"",hashFor("flashcards")); save();
+        }
+        render();
+      });
+    });
     main.querySelectorAll("[data-flashcards-bloc-random]").forEach(function(el){
       el.addEventListener("click",function(e){
         e.stopPropagation();
@@ -2568,19 +2653,20 @@
       el.addEventListener("click",function(){
         var a=el.getAttribute("data-lrn");
         if(a==="show") SES.show=true;
-        else if(a==="ok"){ var cid=SES.list[SES.i].id, wasNew=!(S.box[cid]); grade(cid,true); if(SES.capped&&wasNew) consumeNewBudget(1); SES.ok++; SES.i++; SES.show=false; finishCardSessionIfDone(); }
-        else if(a==="ko"){ var cid=SES.list[SES.i].id, wasNew=!(S.box[cid]); grade(cid,false); if(SES.capped&&wasNew) consumeNewBudget(1); SES.i++; SES.show=false; finishCardSessionIfDone(); }
+        else if(a==="ok"){ var cid=SES.list[SES.i].id; countCardDone(cid); grade(cid,true); SES.ok++; SES.i++; SES.show=false; finishCardSessionIfDone(); }
+        else if(a==="ko"){ var cid=SES.list[SES.i].id; countCardDone(cid); grade(cid,false); SES.i++; SES.show=false; finishCardSessionIfDone(); }
         else if(a==="setaside-revoir"||a==="setaside-supprime"){
-          var cid=SES.list[SES.i].id, wasNew=!(S.box[cid]);
-          S.cardState[cid]=(a==="setaside-revoir")?"revoir":"supprime";
+          var cid=SES.list[SES.i].id;
           /* une carte mise de côté a bien été traitée : elle consomme le quota du jour,
              sinon la file se recharge aussitôt avec une autre nouvelle carte */
-          if(SES.capped&&wasNew) consumeNewBudget(1);
+          countCardDone(cid);
+          S.cardState[cid]=(a==="setaside-revoir")?"revoir":"supprime";
           SES.i++; SES.show=false; finishCardSessionIfDone(); save();
         }
         else if(a==="stop") SES=null;
         else if(a==="qnext"){ QZ.i++; QZ.checked=false; if(QZ.i<QZ.list.length) QZ.input=initQuizInput(QZ.list[QZ.i]); }
         else if(a==="qstop") QZ=null;
+        if(a==="ok"||a==="ko"||a==="setaside-revoir"||a==="setaside-supprime") majSerie();
         render();
       });
     });
