@@ -1188,9 +1188,10 @@
     if(SES.show){
       h+='<div class="cq-rappel">'+esc(cardRecto(c))+'</div>';
       h+='<div class="ca ca-center">'+esc(cardVerso(c)).replace(/\n/g,'<br>')+'</div>';
-      h+=renderCoursLink(c);
+      h+='<div class="ca-tools">'+renderCoursLink(c)+
+        '<button class="ca-tool" data-lrn="setaside-revoir" title="À modifier" aria-label="À modifier">'+ICON_PENCIL+'</button>'+
+        '<button class="ca-tool" data-lrn="setaside-supprime" title="Supprimer" aria-label="Supprimer">'+ICON_TRASH+'</button></div>';
       h+='<div class="cbtns"><button class="no" data-lrn="ko">À revoir</button><button class="yes" data-lrn="ok">Je savais</button></div>';
-      h+='<div class="cbtns-setaside"><button data-lrn="setaside-revoir" title="À modifier">'+ICON_PENCIL+'</button><button data-lrn="setaside-supprime" title="Supprimer">'+ICON_TRASH+'</button></div>';
     } else {
       h+='<div class="cq cq-center">'+esc(cardRecto(c))+'</div><div class="cflip-hint">Touche la carte pour voir la réponse</div>';
     }
@@ -1206,10 +1207,10 @@
     var r=(typeof RESUMES!=="undefined")?RESUMES[c.resume]:null;
     if(!r) return "";
     var href=hashFor("coursResume", c.resume, c.ancre);
-    return '<a class="ca-cours" href="'+href+'" data-cours-lien="'+c.resume+'" data-cours-ancre="'+c.ancre+'">'+ICON_BOOK+
-      '<span class="ca-cours-txt"><span class="ca-cours-lab">Voir dans le cours</span>'+
-      '<span class="ca-cours-sec">'+esc(r.titre)+' &middot; '+esc(c.secTitre||c.section||"")+'</span>'+
-      '<span class="ca-cours-quit">Quitte la série en cours</span></span></a>';
+    var titre=r.titre+" · "+(c.secTitre||c.section||"");
+    return '<a class="ca-cours" href="'+href+'" data-cours-lien="'+c.resume+'" data-cours-ancre="'+c.ancre+
+      '" title="'+esc(titre)+' — quitte la série en cours">'+ICON_BOOK+
+      '<span class="ca-cours-lab">Cours</span></a>';
   }
 
   var ICON_BOOK='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>';
