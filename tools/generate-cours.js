@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 /*
- * Génère js/cours.js, js/questions.js, js/flashcards.js et js/quiz.js à
- * partir de cours:/blocs.json, des résumés markdown de
+ * Génère js/cours.js, js/questions.js, js/flashcards.js, js/quiz.js et
+ * js/cartesModeles.js à partir de cours:/blocs.json, des résumés markdown de
  * cours:/bloc<n>:/resume:/*.md, du contenu de cours par question de
  * cours:/bloc<n>:/questions:/*.md, des flashcards de
- * cours:/bloc<n>:/flashcards:/*.json et du quiz de
- * cours:/bloc<n>:/quiz:/*.json.
+ * cours:/bloc<n>:/flashcards:/*.json, du quiz de
+ * cours:/bloc<n>:/quiz:/*.json et des modèles de cartes mentales de
+ * cours:/bloc<n>:/cartes:/*.md.
  *
  * Aucune dépendance externe (frontmatter et markdown parsés à la main) :
  * le résultat est un artefact de build, jamais édité à la main. Les .md
@@ -25,6 +26,7 @@ const OUT_FILE = path.join(ROOT, "js", "cours.js");
 const QUESTIONS_OUT_FILE = path.join(ROOT, "js", "questions.js");
 const FLASHCARDS_OUT_FILE = path.join(ROOT, "js", "flashcards.js");
 const QUIZ_OUT_FILE = path.join(ROOT, "js", "quiz.js");
+const CARTES_OUT_FILE = path.join(ROOT, "js", "cartesModeles.js");
 
 /* ---------- Frontmatter (YAML minimal, propre au schéma des résumés) ---------- */
 
@@ -392,6 +394,61 @@ function loadAllQuestions(blocsJson) {
   return all;
 }
 
+/* ---------- Modèles de cartes mentales ----------
+   Un fichier par carte : frontmatter `resume` (id du résumé) pour une carte
+   de résumé, ou `titre` seul pour une carte de bloc (bilan transversal, sans
+   bouton Cours). Corps = le plan indenté tel que l'éditeur de cartes
+   l'attend (2 espaces par niveau). Le titre d'une carte de résumé est celui
+   du résumé, sauf `titre` dans le frontmatter. */
+function loadBlocCartes(blocNum) {
+  const dir = path.join(COURS_DIR, "bloc" + blocNum + ":", "cartes:");
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".md"))
+    .sort()
+    .map((f) => {
+      const raw = fs.readFileSync(path.join(dir, f), "utf8");
+      const { data, body } = parseFrontmatter(raw);
+      return { file: f, bloc: blocNum, data, body };
+    });
+}
+
+function buildCartesModeles(blocsJson, resumes) {
+  const out = [];
+  blocsJson.blocs.forEach((b) => {
+    loadBlocCartes(b.numero).forEach((p) => {
+      const rid = p.data.resume;
+      const r = rid ? resumes[rid] : null;
+      // une carte de résumé sans résumé valide n'aurait ni titre ni bouton
+      // Cours ; une carte de bloc doit apporter son propre titre — dans les
+      // deux cas on saute en signalant plutôt que de publier un orphelin
+      if (rid && !r) {
+        console.warn("  modèle ignoré (resume introuvable) :", p.file, "->", rid);
+        return;
+      }
+      if (!rid && !p.data.titre) {
+        console.warn("  modèle ignoré (ni resume ni titre) :", p.file);
+        return;
+      }
+      const plan = p.body.replace(/^\n+/, "").replace(/\s+$/, "");
+      if (!plan) {
+        console.warn("  modèle ignoré (plan vide) :", p.file);
+        return;
+      }
+      const entry = {
+        id: rid ? "cm-" + rid : "cm-b" + b.numero + "-" + p.file.replace(/\.md$/, ""),
+        bloc: b.numero,
+        titre: p.data.titre || r.titre,
+        plan: plan,
+      };
+      if (rid) entry.resume = rid;
+      out.push(entry);
+    });
+  });
+  return out;
+}
+
 // Frontmatter id ("b1-1", "b1-Vidéo") -> id réel de la question dans l'app
 // ("b1-Q1", "b1-Vidéo"), construit dans js/data.js comme bloc.id+"-"+q.n.
 function toAppQid(ficheId) {
@@ -709,6 +766,17 @@ function main() {
     "—",
     quiz.length,
     "question(s) de quiz."
+  );
+
+  const modeles = buildCartesModeles(blocsJson, result);
+  const cmJs = "var CARTES_MODELES = " + JSON.stringify(modeles, null, 2) + ";\n";
+  fs.writeFileSync(CARTES_OUT_FILE, cmJs, "utf8");
+  console.log(
+    "Écrit :",
+    path.relative(ROOT, CARTES_OUT_FILE),
+    "—",
+    modeles.length,
+    "modèle(s) de carte."
   );
 }
 

@@ -372,7 +372,7 @@
   function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=a[i];a[i]=a[j];a[j]=x;} return a; }
 
   var VIEWS=[["accueil","Accueil"],["dossiers","Dossiers"],["cours","Cours"],["apprendre","Apprendre"]];
-  var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre","flashcards","flashcardsBloc","flashcardsSort","quiz","quizBloc","cartes","cartesListe","cartesBloc","carte","carteEdit","recherche"];
+  var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre","flashcards","flashcardsBloc","flashcardsSort","quiz","quizBloc","cartes","cartesListe","cartesBloc","cartesModeles","carteModele","carte","carteEdit","recherche"];
   function parseHash(hash){
     var h=(hash||"").replace(/^#/,"");
     if(h.charAt(0)==="/") h=h.slice(1);
@@ -388,6 +388,8 @@
     if(parts[0]==="quiz" && parts[1]==="bloc" && parts[2]) return {view:"quizBloc", id:parts[2]};
     if(parts[0]==="flashcards" && parts[1]==="bloc" && parts[2]) return {view:"flashcardsBloc", id:parts[2]};
     if(parts[0]==="cartes" && parts[1]==="blocs") return {view:"cartesListe"};
+    if(parts[0]==="cartes" && parts[1]==="modeles") return {view:"cartesModeles"};
+    if(parts[0]==="cartes" && parts[1]==="modele" && parts[2]) return {view:"carteModele", id:parts[2]};
     if(parts[0]==="cartes" && parts[1]==="bloc" && parts[2]) return {view:"cartesBloc", id:parts[2]};
     if(parts[0]==="carte" && parts[1] && parts[2]==="plan") return {view:"carteEdit", id:parts[1]};
     if(parts[0]==="carte" && parts[1]) return {view:"carte", id:parts[1]};
@@ -406,6 +408,8 @@
     if(view==="quizBloc") return "#/quiz/bloc/"+param;
     if(view==="flashcardsBloc") return "#/flashcards/bloc/"+param;
     if(view==="cartesListe") return "#/cartes/blocs";
+    if(view==="cartesModeles") return "#/cartes/modeles";
+    if(view==="carteModele") return "#/cartes/modele/"+param;
     if(view==="cartesBloc") return "#/cartes/bloc/"+param;
     if(view==="carte") return "#/carte/"+param;
     if(view==="carteEdit") return "#/carte/"+param+"/plan";
@@ -430,6 +434,8 @@
     if(v==="flashcardsSort") return "Flashcards";
     if(v==="cartes") return "Cartes mentales";
     if(v==="cartesListe") return "Mes cartes";
+    if(v==="cartesModeles") return "Modèles de cartes";
+    if(v==="carteModele"){ var mo=(typeof CARTES_MODELES!=="undefined"?CARTES_MODELES:[]).filter(function(x){return x.id===id;})[0]; return mo ? "Modèle · "+mo.titre : "Modèle de carte"; }
     if(v==="cartesBloc"){ var bm=cb.filter(function(x){return String(x.numero)===String(id);})[0]; return bm ? "Cartes · "+bm.court : "Cartes sans bloc"; }
     if(v==="carte"||v==="carteEdit"){ var mm=S.cartes&&S.cartes[id]; return mm ? mm.t : "Carte mentale"; }
     if(v==="quiz") return "Quiz";
@@ -578,7 +584,7 @@
 
   function renderNav(){
     var h="";
-    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc"||ROUTE.view==="coursQuestion") ? "dossiers" : (ROUTE.view==="coursBloc"||ROUTE.view==="coursResume") ? "cours" : (ROUTE.view==="flashcards"||ROUTE.view==="flashcardsBloc"||ROUTE.view==="flashcardsSort"||ROUTE.view==="quiz"||ROUTE.view==="quizBloc"||ROUTE.view==="cartes"||ROUTE.view==="cartesListe"||ROUTE.view==="cartesBloc"||ROUTE.view==="carte"||ROUTE.view==="carteEdit") ? "apprendre" : ROUTE.view;
+    var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc"||ROUTE.view==="coursQuestion") ? "dossiers" : (ROUTE.view==="coursBloc"||ROUTE.view==="coursResume") ? "cours" : (ROUTE.view==="flashcards"||ROUTE.view==="flashcardsBloc"||ROUTE.view==="flashcardsSort"||ROUTE.view==="quiz"||ROUTE.view==="quizBloc"||ROUTE.view==="cartes"||ROUTE.view==="cartesListe"||ROUTE.view==="cartesBloc"||ROUTE.view==="cartesModeles"||ROUTE.view==="carteModele"||ROUTE.view==="carte"||ROUTE.view==="carteEdit") ? "apprendre" : ROUTE.view;
     VIEWS.forEach(function(v){
       var badge="";
       if(v[0]==="dossiers"){ var r=ALL.length-doneCount(); if(r) badge='<i>'+r+'</i>'; }
@@ -1716,9 +1722,22 @@
     return RESUMES[c.resume]||null;
   }
 
-  /* Racine : deux portes, écrire ou relire. Rien d'autre à décider ici. */
+  /* Un modèle est « ajouté » si une de tes cartes en garde la provenance.
+     Supprimer ta copie rend le modèle à nouveau proposable. */
+  function carteDuModele(mid){
+    var ids=Object.keys(S.cartes||{});
+    for(var i=0;i<ids.length;i++){ if(S.cartes[ids[i]].modele===mid) return ids[i]; }
+    return null;
+  }
+
+  function tousLesModeles(){
+    return (typeof CARTES_MODELES!=="undefined")?CARTES_MODELES:[];
+  }
+
+  /* Racine : trois portes, écrire, relire, ou partir d'un modèle du cours. */
   function vCartes(){
-    var liste=cartesTriees();
+    var liste=cartesTriees(), modeles=tousLesModeles();
+    var aAjouter=modeles.filter(function(m){ return !carteDuModele(m.id); }).length;
     var h='<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Cartes mentales"}])+'</div>';
     h+='<h1 class="qhead-title">Cartes mentales</h1><div class="qhead-code code">'+liste.length+' carte'+(liste.length>1?'s':'')+'</div>';
     h+='<div class="mm-portes">';
@@ -1726,7 +1745,45 @@
        '<span class="cta-sub">Tu écris un plan, la carte se dessine</span></button>';
     h+='<button class="tile cta-tile cta-mm-liste" data-go="cartesListe">Mes cartes'+
        '<span class="cta-sub">'+(liste.length?'Rangées par bloc':'Rien à relire pour l\'instant')+'</span></button>';
+    if(modeles.length){
+      h+='<button class="tile cta-tile cta-mm-liste" data-go="cartesModeles">Modèles'+
+         '<span class="cta-sub">'+(aAjouter?aAjouter+' carte'+(aAjouter>1?'s':'')+' du cours à ajouter':'Toutes déjà dans tes cartes')+'</span></button>';
+    }
     h+='</div>';
+    return h;
+  }
+
+  /* Les modèles viennent du cours (js/cartesModeles.js, généré) : les ajouter
+     en fait des cartes à toi, modifiables et synchronisées comme les autres.
+     Rangés par bloc, dans l'ordre des résumés. */
+  function vCartesModeles(){
+    var modeles=tousLesModeles();
+    var h='<div class="qbar">'+renderBreadcrumb([{label:"Cartes mentales",view:"cartes"},{label:"Modèles"}])+'</div>';
+    h+='<h1 class="qhead-title">Modèles</h1><div class="qhead-code code">'+modeles.length+' carte'+(modeles.length>1?'s':'')+' du cours</div>';
+    h+='<div class="mm-intro">Une carte déjà construite par résumé. L\'ajouter en fait une copie à toi : tu peux la modifier sans toucher au modèle.</div>';
+    if(!modeles.length){
+      h+='<div class="tile tile-empty mm-vide"><span class="tile-title">Aucun modèle pour l\'instant</span>'+
+         '<span class="tile-cas">Ils arriveront avec les résumés de cours.</span></div>';
+      return h;
+    }
+    blocsCartes().forEach(function(b){
+      var l=modeles.filter(function(m){ return String(m.bloc)===String(b.numero); });
+      if(!l.length) return;
+      h+='<div class="lab">'+esc(b.code)+' — '+esc(b.titre)+'</div><div class="tiles">';
+      /* La tuile ouvre l'aperçu, le bouton engage l'ajout : on regarde d'abord,
+         on décide ensuite — un clic de passage ne crée jamais de carte. */
+      l.forEach(function(m){
+        var deja=carteDuModele(m.id);
+        h+='<button class="tile mm-tuile mm-modele'+(deja?' mm-tuile-ajoutee':'')+'" data-go-modele="'+m.id+'">';
+        h+='<span class="tile-title">'+esc(m.titre)+'</span>';
+        h+='<span class="tile-cas">'+nbIdees(m.plan)+' idées &middot; voir la carte</span>';
+        h+=deja
+          ? '<span class="tile-quiz-btn btn-mm-voir" data-go-carte="'+deja+'">Voir ma carte</span>'
+          : '<span class="tile-quiz-btn btn-mm" data-mm-modele="'+m.id+'">Ajouter à mes cartes</span>';
+        h+='</button>';
+      });
+      h+='</div>';
+    });
     return h;
   }
 
@@ -1786,6 +1843,44 @@
     });
     h+='</div>';
     return h;
+  }
+
+  /* Aperçu d'un modèle : la même page que la carte, mais rien n'est à toi.
+     On la parcourt, on la replie, puis on décide de l'ajouter ou non. Le
+     pliage n'est gardé que le temps de la visite — rien n'est enregistré. */
+  var apercuPlie={};
+  function vCarteModele(mid){
+    var m=tousLesModeles().filter(function(x){ return x.id===mid; })[0];
+    if(!m) return '<div class="qbar">'+renderBreadcrumb([{label:"Cartes mentales",view:"cartes"},{label:"Modèles",view:"cartesModeles"}])+'</div><div class="mm-intro">Ce modèle n\'existe plus.</div>';
+    var deja=carteDuModele(m.id);
+    var r=(typeof RESUMES!=="undefined")?RESUMES[m.resume]:null;
+    var h='<div class="mmv-bar">';
+    h+='<button class="mmv-retour" data-crumb="cartesModeles" title="Tous les modèles">'+ICON_RETOUR+'</button>';
+    h+='<span class="mmv-titre">'+esc(m.titre)+'<span class="mmv-etiq">modèle</span></span>';
+    h+='<div class="mm-zoom mmv-zoom"><button class="mm-onglet on" data-mm-zoom="ajuste">Ajuster</button>'+
+       '<button class="mm-onglet" data-mm-zoom="plein">100 %</button></div>';
+    if(r) h+='<button class="mmv-edit mmv-cours" data-go-resume="'+m.resume+'" title="'+esc(r.titre)+'">'+ICON_BOOK+'<span>Cours</span></button>';
+    h+=deja
+      ? '<button class="mmv-edit" data-go-carte="'+deja+'">'+ICON_BOOK+'<span>Voir ma carte</span></button>'
+      : '<button class="jadd mmv-ajout" data-mm-modele="'+m.id+'">Ajouter à mes cartes</button>';
+    h+='</div>';
+    h+='<div class="mm-canvas mmv-canvas mm-ajuste" id="mmCanvas"></div>';
+    return h;
+  }
+
+  function dessineModele(mid){
+    var m=tousLesModeles().filter(function(x){ return x.id===mid; })[0];
+    var box=document.getElementById("mmCanvas");
+    if(!m || !box || typeof CARTES==="undefined") return;
+    if(!apercuPlie[mid]) apercuPlie[mid]={};
+    box.innerHTML=CARTES.svg(CARTES.parse(m.plan, m.titre), apercuPlie[mid]);
+    box.querySelectorAll("[data-mm-path]").forEach(function(g){
+      g.addEventListener("click",function(){
+        var p=g.getAttribute("data-mm-path");
+        if(apercuPlie[mid][p]) delete apercuPlie[mid][p]; else apercuPlie[mid][p]=true;
+        dessineModele(mid);
+      });
+    });
   }
 
   /* La carte seule : rien d'autre à l'écran que le dessin, un retour et un
@@ -1912,8 +2007,29 @@
     main.querySelectorAll("[data-go-cartes-bloc]").forEach(function(el){
       el.addEventListener("click",function(){ go("cartesBloc", el.getAttribute("data-go-cartes-bloc")); });
     });
+    main.querySelectorAll("[data-go-modele]").forEach(function(el){
+      el.addEventListener("click",function(){ go("carteModele", el.getAttribute("data-go-modele")); });
+    });
+    /* Ajouter un modèle = créer TA carte (copie du plan, lien vers le résumé,
+       provenance gardée). Déjà ajouté : on rouvre ta carte, jamais de doublon. */
+    main.querySelectorAll("[data-mm-modele]").forEach(function(el){
+      el.addEventListener("click",function(e){
+        e.stopPropagation();
+        var mid=el.getAttribute("data-mm-modele");
+        var deja=carteDuModele(mid);
+        if(deja){ go("carte", deja); return; }
+        var m=tousLesModeles().filter(function(x){ return x.id===mid; })[0];
+        if(!m) return;
+        var id="mm"+Date.now().toString(36);
+        S.cartes[id]={t:m.titre, bloc:m.bloc, resume:m.resume, txt:m.plan, plie:{}, at:Date.now(), modele:m.id};
+        save();
+        go("carte", id);
+      });
+    });
     main.querySelectorAll("[data-go-carte]").forEach(function(el){
-      el.addEventListener("click",function(){ go("carte", el.getAttribute("data-go-carte")); });
+      /* posé aussi dans la tuile d'un modèle, qui ouvre l'aperçu : le bouton
+         doit l'emporter sur la tuile qui le contient */
+      el.addEventListener("click",function(e){ e.stopPropagation(); go("carte", el.getAttribute("data-go-carte")); });
     });
     main.querySelectorAll("[data-mm-edit]").forEach(function(el){
       el.addEventListener("click",function(){ go("carteEdit", el.getAttribute("data-mm-edit")); });
@@ -2788,6 +2904,14 @@
       main.classList.remove("with-qbottom");
       main.innerHTML=vCartesBloc(ROUTE.id);
       positionQbar();
+    } else if(v==="cartesModeles"){
+      main.classList.remove("with-qbottom");
+      main.innerHTML=vCartesModeles();
+      positionQbar();
+    } else if(v==="carteModele"){
+      main.classList.remove("with-qbottom");
+      main.innerHTML=vCarteModele(ROUTE.id);
+      dessineModele(ROUTE.id);
     } else if(v==="carte"){
       main.classList.remove("with-qbottom");
       main.innerHTML=vCarte(ROUTE.id);

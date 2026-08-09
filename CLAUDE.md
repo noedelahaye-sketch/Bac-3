@@ -104,7 +104,7 @@ toujours citer le nom exact avec son deux-points final.
 
 ## Modèle de contenu
 
-Tout le contenu vit sous `cours:/bloc<n>:/`, en quatre familles de
+Tout le contenu vit sous `cours:/bloc<n>:/`, en cinq familles de
 fichiers sources, jamais référencées en dur dans le code — le générateur
 (`tools/generate-cours.js`) les lit et produit les `js/*.js` correspondants.
 
@@ -131,6 +131,12 @@ fichiers sources, jamais référencées en dur dans le code — le générateur
   `section`, `niveau`, `format` (qcm / qcm_multiple / vrai_faux /
   texte_a_trous / appariement / ordonnancement / ouverte) et les champs
   propres à chaque format. → `js/quiz.js` (QUIZ).
+- **Modèles de cartes mentales** — `cartes:/*.md`, un fichier par résumé,
+  frontmatter `resume` (id du résumé, obligatoire — le titre du modèle en
+  vient), corps = plan indenté (2 espaces par niveau) tel que l'éditeur de
+  cartes l'attend. → `js/cartesModeles.js` (CARTES_MODELES), affichés dans
+  Apprendre → Cartes mentales → Modèles ; « Ajouter à mes cartes » en copie
+  le plan dans S.cartes (données personnelles, synchronisées).
 
 Un **support** = un PDF de cours Studi d'origine (dans `cours:/bloc<n>:/`,
 hors sous-dossiers, gitignored). Il n'est jamais listé seul : il n'apparaît

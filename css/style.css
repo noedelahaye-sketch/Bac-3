@@ -666,7 +666,7 @@
      Deux colonnes sur grand écran, une seule sur téléphone : la bascule
      Plan / Carte ne sert que là où les deux ne tiennent pas ensemble. */
   /* les deux portes de la racine : écrire, ou relire */
-  .mm-portes{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-12);margin-bottom:var(--space-24);}
+  .mm-portes{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:var(--space-12);margin-bottom:var(--space-24);}
   @media (max-width:720px){ .mm-portes{grid-template-columns:1fr;} }
   .mm-portes .cta-tile{min-height:158px;}
   .tile.cta-tile.cta-mm{--cta:#A177E8;color:var(--paper);}
@@ -712,6 +712,19 @@
   .mmv-del{padding:0 var(--space-8);}
   .mmv-del:hover{border-color:var(--flag);color:var(--flag);}
   .mm-tuile{min-height:96px;justify-content:center;}
+  /* la tuile ouvre l'aperçu, le bouton du bas ajoute */
+  .tile.mm-modele{justify-content:flex-start;min-height:158px;}
+  .tile.mm-modele .tile-title{margin-top:0;line-height:1.35;}
+  .tile.mm-modele .tile-cas{margin-top:var(--space-8);}
+  .tile.mm-modele .tile-quiz-btn{margin-top:auto;padding-top:var(--space-8);padding-bottom:var(--space-8);}
+  .mmv-etiq{margin-left:var(--space-8);font:600 10px var(--font-code);letter-spacing:.1em;text-transform:uppercase;
+    color:var(--muted);border:1px solid var(--line);border-radius:var(--radius-pill);padding:2px var(--space-8);vertical-align:middle;}
+  .mmv-ajout{flex:none;min-height:40px;padding:0 var(--space-16);}
+  /* modèle déjà repris : présent mais en retrait, il n'appelle plus l'action */
+  .mm-tuile-ajoutee{border-style:dashed;}
+  .mm-tuile-ajoutee .tile-title{color:var(--muted);}
+  .tile-quiz-btn.btn-mm-voir{background:none;border:1px solid var(--line);color:var(--muted);}
+  .tile-quiz-btn.btn-mm-voir:hover{background:none;border-color:var(--signal);color:var(--ink);}
   /* page de visualisation : une barre fine, puis la carte et rien d'autre */
   .mmv-bar{display:flex;align-items:center;gap:var(--space-8);margin-bottom:var(--space-12);flex-wrap:wrap;}
   .mmv-retour{flex:none;width:40px;height:40px;display:flex;align-items:center;justify-content:center;
