@@ -67,11 +67,15 @@
     if(file.truncated){ var r=await fetch(file.raw_url); raw=await r.text(); }
     return JSON.parse(raw);
   }
-  async function pushToGist(state){
+  async function pushToGist(state, opts){
     var id=await findOrCreateGist();
     var body={files:{}};
     body.files[GIST_FILENAME]={content: JSON.stringify(state)};
-    await ghFetch("https://api.github.com/gists/"+id, {method:"PATCH", body:JSON.stringify(body)});
+    /* keepalive : la requête survit au déchargement de la page (limite 64 Ko),
+       seul moyen de sauver la dernière frappe quand l'app passe en arrière-plan */
+    var o={method:"PATCH", body:JSON.stringify(body)};
+    if(opts&&opts.keepalive && o.body.length<60000) o.keepalive=true;
+    await ghFetch("https://api.github.com/gists/"+id, o);
   }
   async function reconcileSync(){
     var remote=await pullFromGist();
@@ -92,28 +96,71 @@
     if(!el) return;
     var t=syncStatus.at ? syncStatus.at.toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"}) : "";
     if(syncStatus.state==="syncing") el.textContent="Synchronisation…";
+    else if(pushEnAttente && getSyncToken()) el.textContent="Modifications non synchronisées"+(t?" (dernier envoi "+t+")":"");
     else if(syncStatus.state==="ok") el.textContent="Synchronisé à "+t;
     else if(syncStatus.state==="error") el.textContent="Échec de synchronisation"+(t?" (dernière réussite "+t+")":"") ;
     else el.textContent="Non activée";
   }
   var syncPushTimer=null;
   var syncPret=false;
-  function scheduleSyncPush(){
-    if(!getSyncToken()) return;
-    if(!syncPret) return; /* la lecture du distant n'a pas encore eu lieu */
-    if(isStateEmpty(S)) return;
+  function syncPossible(){
+    return !!getSyncToken() && syncPret && !isStateEmpty(S);
+  }
+  /* Le drapeau ne retombe qu'une fois le distant à jour : un push raté laisse
+     la modification en attente et se retente, au lieu d'être perdu en silence. */
+  function pousserMaintenant(opts){
+    if(!syncPossible()) return Promise.resolve();
     clearTimeout(syncPushTimer);
-    syncPushTimer=setTimeout(function(){
-      syncStatus={state:"syncing", at:syncStatus.at};
+    syncStatus={state:"syncing", at:syncStatus.at};
+    renderSyncStatus();
+    return pushToGist(S, opts).then(function(){
+      pushEnAttente=false;
+      syncStatus={state:"ok", at:new Date()};
       renderSyncStatus();
-      pushToGist(S).then(function(){
-        syncStatus={state:"ok", at:new Date()};
-        renderSyncStatus();
-      }).catch(function(){
-        syncStatus={state:"error", at:syncStatus.at};
-        renderSyncStatus();
-      });
-    }, 1500);
+    }).catch(function(){
+      syncStatus={state:"error", at:syncStatus.at};
+      renderSyncStatus();
+      /* on garde la main : nouvelle tentative dans 15 s tant que ça coince */
+      clearTimeout(syncPushTimer);
+      syncPushTimer=setTimeout(function(){ pousserMaintenant(); }, 15000);
+    });
+  }
+  function scheduleSyncPush(){
+    if(!syncPossible()) return;
+    clearTimeout(syncPushTimer);
+    syncPushTimer=setTimeout(function(){ pousserMaintenant(); }, 1500);
+  }
+  /* Tant que la lecture du distant n'a pas abouti, la session ne pousse rien
+     (on n'écrase pas un état qu'on n'a pas pu lire) — mais sans nouvelle
+     tentative, une coupure réseau au lancement rendait la session muette
+     jusqu'au prochain rechargement. On retente donc, et au retour au premier
+     plan. */
+  var reconcileTimer=null;
+  async function tenterReconcile(){
+    if(!getSyncToken() || syncPret) return;
+    clearTimeout(reconcileTimer);
+    syncStatus={state:"syncing", at:syncStatus.at};
+    renderSyncStatus();
+    try{
+      var action=await reconcileSync();
+      if(action==="pulled") render();
+      syncPret=true;
+      syncStatus={state:"ok", at:new Date()};
+      if(pushEnAttente) scheduleSyncPush();
+    }catch(e){
+      syncStatus={state:"error", at:syncStatus.at};
+      reconcileTimer=setTimeout(tenterReconcile, 30000);
+    }
+    renderSyncStatus();
+  }
+
+  /* Écrit et pousse sans attendre les temporisations : appelé quand la page
+     part en arrière-plan, sinon la dernière tranche d'édition ne quitte jamais
+     l'appareil — les minuteurs meurent avec la page. */
+  function flushSync(opts){
+    clearTimeout(saveTimer);
+    try{ Store.set(KEY, JSON.stringify(S)); }catch(e){}
+    if(pushEnAttente) pousserMaintenant(opts);
   }
   function resumeSauvegarde(sv){
     function n(o){ return o?Object.keys(o).length:0; }
@@ -168,7 +215,7 @@
     clearTimeout(saveTimer);
     saveTimer = setTimeout(function(){
       try{ Store.set(KEY, JSON.stringify(S)); }catch(e){}
-      if(pushEnAttente){ pushEnAttente=false; scheduleSyncPush(); }
+      if(pushEnAttente) scheduleSyncPush();
     }, 400);
   }
   function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
@@ -534,6 +581,14 @@
     if(location.hash===h) applyRoute(parseHash(h));
     else location.hash=h;
   }
+  /* Sur téléphone, quitter l'application ne déclenche pas toujours pagehide,
+     mais toujours visibilitychange : c'est le point de sauvegarde fiable. */
+  document.addEventListener("visibilitychange",function(){
+    if(document.visibilityState==="hidden") flushSync({keepalive:true});
+    else { tenterReconcile(); if(pushEnAttente) scheduleSyncPush(); }
+  });
+  window.addEventListener("pagehide",function(){ flushSync({keepalive:true}); });
+
   window.addEventListener("hashchange",function(){
     var r=parseHash(location.hash);
     if((SES||QZ) && r.view!==ROUTE.view){
@@ -1316,6 +1371,7 @@
       '<span class="ca-cours-lab">Cours</span></a>';
   }
 
+  var ICON_NUAGE='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16a4 4 0 0 0-.9-7.9 5.5 5.5 0 0 0-10.6 1.6A3.5 3.5 0 0 0 5 16"/><path d="M12 12v9"/><path d="m8.5 15.5 3.5-3.5 3.5 3.5"/></svg>';
   var ICON_RETOUR='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>';
   var ICON_BOOK='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>';
   var ICON_PENCIL='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>';
@@ -1915,6 +1971,9 @@
     });
     h+='</select>';
     h+='<button class="mm-sup" data-mm-del="'+id+'" title="Supprimer la carte">'+ICON_TRASH+'</button>';
+    /* la sauvegarde est automatique ; ce bouton force l'envoi tout de suite,
+       pour qui veut la certitude avant de changer d'appareil */
+    h+='<button class="mm-sup mm-envoi" data-mm-flush="1" title="Envoyer les modifications maintenant">'+ICON_NUAGE+'</button>';
     h+='<button class="jadd mm-fini" data-mm-voir="'+id+'">Voir la carte</button>';
     h+='</div>';
     /* Rattacher un résumé donne à la carte un aller direct vers le cours dont
@@ -2036,6 +2095,16 @@
     });
     main.querySelectorAll("[data-mm-voir]").forEach(function(el){
       el.addEventListener("click",function(){ go("carte", el.getAttribute("data-mm-voir")); });
+    });
+    main.querySelectorAll("[data-mm-flush]").forEach(function(el){
+      el.addEventListener("click",function(){
+        if(!getSyncToken()){ alert("La synchronisation n'est pas activée sur cet appareil.\n\nTes modifications sont enregistrées ici, mais elles ne partiront pas vers tes autres appareils."); return; }
+        el.classList.add("mm-envoi-on");
+        pousserMaintenant().then(function(){
+          el.classList.remove("mm-envoi-on");
+          alert(pushEnAttente?"L'envoi a échoué. Nouvelle tentative automatique dans quelques secondes.":"Modifications envoyées.");
+        });
+      });
     });
     main.querySelectorAll("[data-mm-del]").forEach(function(el){
       el.addEventListener("click",function(){
@@ -3398,19 +3467,7 @@
     if(ROUTE.view==="coursResume" && ROUTE.ancre) requestAnimationFrame(function(){ jumpToAncre(ROUTE); });
 
     if(getSyncToken()){
-      syncStatus={state:"syncing", at:null};
-      renderSyncStatus();
-      try{
-        var action=await reconcileSync();
-        if(action==="pulled") render();
-        syncPret=true;
-        syncStatus={state:"ok", at:new Date()};
-      }catch(e){
-        /* pull impossible : on ne pousse rien, sinon on risque d'écraser
-           un état distant qu'on n'a pas pu lire. Réessai au prochain chargement. */
-        syncStatus={state:"error", at:null};
-      }
-      renderSyncStatus();
+      await tenterReconcile();
     } else {
       syncPret=true;
     }

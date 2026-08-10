@@ -702,6 +702,7 @@
     font:600 15px var(--font-text);min-width:52px;min-height:44px;cursor:pointer;}
   .mm-out:hover{border-color:var(--signal);}
   .mm-out-ex{font:500 12.5px var(--font-text);color:var(--muted);padding:0 var(--space-12);min-width:0;}
+  .mm-envoi-on{opacity:.5;}
   .mm-fini{margin-left:auto;min-height:44px;}
   .mm-lien-cours{display:flex;align-items:center;gap:var(--space-8);margin-bottom:var(--space-12);flex-wrap:wrap;}
   .mm-lien-cours .mm-bloc{flex:1 1 240px;min-width:0;}
