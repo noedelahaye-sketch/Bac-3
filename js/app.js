@@ -82,6 +82,9 @@
     var remoteEmpty=isStateEmpty(remote), localEmpty=isStateEmpty(S);
     if(!remoteEmpty && (localEmpty || (remote._ts||0) > (S._ts||0))){
       applyState(remote);
+      /* on vient d'adopter l'état distant : il n'y a plus rien de local à
+         renvoyer, et renvoyer relancerait l'autre appareil en écho */
+      pushEnAttente=false;
       try{ Store.set(KEY, JSON.stringify(S)); }catch(e){}
       return "pulled";
     }
@@ -143,6 +146,7 @@
     return pushToGist(S, opts).then(function(){
       pushEnAttente=false;
       syncEssais=0;
+      dernierEchange=Date.now();
       syncStatus={state:"ok", at:new Date()};
       renderSyncStatus();
     }).catch(function(e){
@@ -176,6 +180,7 @@
       if(action==="pulled") render();
       syncPret=true;
       syncEssais=0;
+      dernierEchange=Date.now();
       syncStatus={state:"ok", at:new Date()};
       if(pushEnAttente) scheduleSyncPush();
     }catch(e){
@@ -186,6 +191,34 @@
       } else {
         syncBloque=true;
       }
+    }
+    renderSyncStatus();
+  }
+
+  /* La lecture du distant n'avait lieu qu'au démarrage : une fois syncPret
+     posé, l'appareil ne faisait plus qu'envoyer. Un appareil resté ouvert ne
+     voyait donc jamais les modifications de l'autre — et, pire, la première
+     chose qu'il enregistrait repartait avec un horodatage plus récent et
+     écrasait ce que l'autre avait fait. D'où « ça marche une fois, puis plus ».
+     On relit donc à chaque retour au premier plan. */
+  var dernierEchange=0;
+  async function rafraichirDepuisDistant(){
+    if(!getSyncToken() || syncBloque) return;
+    if(!syncPret){ await tenterReconcile(); return; }
+    /* nos propres modifications d'abord : sinon la relecture les écraserait */
+    if(pushEnAttente){ await pousserMaintenant(); return; }
+    if(Date.now()-dernierEchange < 20000) return;
+    dernierEchange=Date.now();
+    syncStatus={state:"syncing", at:syncStatus.at};
+    renderSyncStatus();
+    try{
+      var action=await reconcileSync();
+      if(action==="pulled") render();
+      syncEssais=0;
+      syncStatus={state:"ok", at:new Date()};
+    }catch(e){
+      syncStatus={state:"error", at:syncStatus.at, cause:causeSync(e)};
+      if(!faultRecuperable(e)) syncBloque=true;
     }
     renderSyncStatus();
   }
@@ -621,7 +654,7 @@
      mais toujours visibilitychange : c'est le point de sauvegarde fiable. */
   document.addEventListener("visibilitychange",function(){
     if(document.visibilityState==="hidden") flushSync({keepalive:true});
-    else { tenterReconcile(); if(pushEnAttente) scheduleSyncPush(); }
+    else rafraichirDepuisDistant();
   });
   window.addEventListener("pagehide",function(){ flushSync({keepalive:true}); });
 
