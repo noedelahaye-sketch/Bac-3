@@ -1,14 +1,12 @@
 ---
+id: b2-7
+type: question
 bloc: 2
-type: angle-a
-question: b2-7
 dossier: 2
 titre: "Q7 — La grille de critères de sélection"
-competences:
-  - C2.2
-resumes_lies:
-  - r04-partenaires-prestataires.md
-  - r03-distribution.md
+competence: C2.2
+resumes: [b2-r03, b2-r04]
+resumes_appui: [b2-r05]
 ---
 
 # Q7 — La grille de critères de sélection

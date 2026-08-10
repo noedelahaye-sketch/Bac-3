@@ -1,14 +1,12 @@
 ---
+id: b2-8
+type: question
 bloc: 2
-type: angle-a
-question: b2-8
 dossier: 2
 titre: "Q8 — Le plan de négociation"
-competences:
-  - C2.2
-resumes_lies:
-  - r05-negociation.md
-  - r04-partenaires-prestataires.md
+competence: C2.2
+resumes: [b2-r05]
+resumes_appui: [b2-r03, b2-r04]
 ---
 
 # Q8 — Le plan de négociation

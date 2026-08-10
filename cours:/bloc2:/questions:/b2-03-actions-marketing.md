@@ -1,14 +1,12 @@
 ---
+id: b2-3
+type: question
 bloc: 2
-type: angle-a
-question: b2-3
 dossier: 1
 titre: "Q3 — Les actions marketing"
-competences:
-  - C2.1
-resumes_lies:
-  - r01-plan-action-marketing.md
-  - r02-leviers-digitaux-data.md
+competence: C2.1
+resumes: [b2-r01, b2-r02]
+resumes_appui: []
 ---
 
 # Q3 — Les actions marketing

@@ -1,14 +1,12 @@
 ---
+id: b2-1
+type: question
 bloc: 2
-type: angle-a
-question: b2-1
 dossier: 1
 titre: "Q1 — Le plan de prospection"
-competences:
-  - C2.1
-resumes_lies:
-  - r01-plan-action-marketing.md
-  - r02-leviers-digitaux-data.md
+competence: C2.1
+resumes: [b2-r01]
+resumes_appui: [b2-r02]
 ---
 
 # Q1 — Le plan de prospection

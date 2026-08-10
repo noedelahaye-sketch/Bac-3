@@ -1,13 +1,12 @@
 ---
+id: b2-4
+type: question
 bloc: 2
-type: angle-a
-question: b2-4
 dossier: 1
 titre: "Q4 — Le budget d'une action marketing"
-competences:
-  - C2.1
-resumes_lies:
-  - r01-plan-action-marketing.md
+competence: C2.1
+resumes: [b2-r01]
+resumes_appui: []
 ---
 
 # Q4 — Le budget d'une action marketing

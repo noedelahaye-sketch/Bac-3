@@ -1,14 +1,12 @@
 ---
+id: b2-10
+type: question
 bloc: 2
-type: angle-a
-question: b2-10
 dossier: 3
 titre: "Q10 — KPI et budget de l'action de communication"
-competences:
-  - C2.4
-resumes_lies:
-  - r07-plan-communication.md
-  - r06-strategie-communication.md
+competence: C2.4
+resumes: [b2-r07]
+resumes_appui: [b2-r02, b2-r06]
 ---
 
 # Q10 — KPI et budget de l'action de communication

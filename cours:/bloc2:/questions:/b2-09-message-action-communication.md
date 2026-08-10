@@ -1,15 +1,12 @@
 ---
+id: b2-9
+type: question
 bloc: 2
-type: angle-a
-question: b2-9
 dossier: 3
 titre: "Q9 — Message publicitaire et action de communication"
-competences:
-  - C2.3
-resumes_lies:
-  - r06-strategie-communication.md
-  - r07-plan-communication.md
-  - r08-communication-publics.md
+competence: C2.3
+resumes: [b2-r06, b2-r07, b2-r08]
+resumes_appui: [b2-r09]
 ---
 
 # Q9 — Message publicitaire et action de communication

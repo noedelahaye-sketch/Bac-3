@@ -1,14 +1,12 @@
 ---
+id: b2-2
+type: question
 bloc: 2
-type: angle-a
-question: b2-2
 dossier: 1
 titre: "Q2 — Les personas"
-competences:
-  - C2.1
-resumes_lies:
-  - r06-strategie-communication.md
-  - r01-plan-action-marketing.md
+competence: C2.1
+resumes: [b2-r01]
+resumes_appui: [b2-r06]
 ---
 
 # Q2 — Les personas

@@ -1,13 +1,12 @@
 ---
+id: b2-13
+type: question
 bloc: 2
-type: angle-a
-question: b2-13
 dossier: 3
 titre: "Q13 — Modération et e-réputation"
-competences:
-  - C2.5
-resumes_lies:
-  - r10-reseaux-sociaux.md
+competence: C2.5
+resumes: [b2-r10]
+resumes_appui: []
 ---
 
 # Q13 — Modération et e-réputation

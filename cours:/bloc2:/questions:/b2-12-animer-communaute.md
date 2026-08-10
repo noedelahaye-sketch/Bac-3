@@ -1,13 +1,12 @@
 ---
+id: b2-12
+type: question
 bloc: 2
-type: angle-a
-question: b2-12
 dossier: 3
 titre: "Q12 — Animer une communauté en ligne"
-competences:
-  - C2.5
-resumes_lies:
-  - r10-reseaux-sociaux.md
+competence: C2.5
+resumes: [b2-r10]
+resumes_appui: [b2-r09]
 ---
 
 # Q12 — Animer une communauté en ligne

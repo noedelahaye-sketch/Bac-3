@@ -141,12 +141,43 @@ function ancreDeTitre(texte, deja) {
   return id;
 }
 
-function convertBody(body, linkMap, sourcesMap) {
+/* Les noms cités dans les résumés et les noms sur disque divergent sur deux
+   points sans importance pour un lecteur, mais fatals pour fs : l'apostrophe
+   (droite ' dans le markdown, typographique ’ dans le Finder) et la forme
+   Unicode des accents (macOS stocke en NFD). On compare donc à plat. */
+const aPlat = (s) => s.replace(/[’‘‛´]/g, "'").normalize("NFC");
+const _entrees = {};
+function listeDe(dir) {
+  if (!(dir in _entrees)) _entrees[dir] = fs.existsSync(dir) ? fs.readdirSync(dir) : [];
+  return _entrees[dir];
+}
+function trouve(dir, nom) {
+  const cible = aPlat(nom);
+  return listeDe(dir).find((e) => aPlat(e) === cible) || null;
+}
+/* Résout dossier + fichier vers le chemin réel, ou null si le PDF manque —
+   on préfère un texte simple à un lien mort.
+   "./" évite que "cours:" (mot ASCII pur suivi de ":") soit lu comme un
+   schéma d'URL (à la "mailto:") plutôt qu'un chemin relatif. */
+function resoudrePdf(blocNum, dossier, fichier) {
+  const racine = path.join(COURS_DIR, "bloc" + blocNum + ":", "par thèmes:");
+  const dossierReel = trouve(racine, dossier);
+  if (!dossierReel) return null;
+  const fichierReel = trouve(path.join(racine, dossierReel), fichier);
+  if (!fichierReel) return null;
+  return encodeURI("./cours:/bloc" + blocNum + ":/par thèmes:/" + dossierReel + "/" + fichierReel);
+}
+
+function convertBody(body, linkMap, sourcesMap, blocNum) {
   const lines = body.replace(/\r\n/g, "\n").split("\n");
   const out = [];
   const ancres = {};
   let i = 0;
   let inSources = false;
+  /* Bloc 2 : la section Sources groupe les PDF par dossier, avec une ligne
+     « Dossier `par thèmes:/<nom>/` : » suivie de la liste des fichiers. On
+     retient le dossier courant pour lier chaque fichier de la liste. */
+  let dossierCourant = null;
 
   function isBlockStart(l) {
     return (
@@ -175,7 +206,9 @@ function convertBody(body, linkMap, sourcesMap) {
         i++; // le H1 du document fait doublon avec le champ "titre" du frontmatter
         continue;
       }
-      inSources = h[2].trim() === "Sources";
+      /* « Sources » au Bloc 1, « Sources (PDF d'origine) » au Bloc 2 */
+      inSources = /^Sources\b/.test(h[2].trim());
+      if (!inSources) dossierCourant = null;
       const tag = "h" + Math.min(level + 1, 6);
       /* id sur les titres de section et sous-section : c'est la cible des
          liens « Voir dans le cours » des flashcards. */
@@ -249,6 +282,19 @@ function convertBody(body, linkMap, sourcesMap) {
         "<ul>" +
           items
             .map(function (it) {
+              /* Bloc 2, section Sources : « `fichier.pdf` — Titre du support »
+                 sous un dossier annoncé juste avant → on lie le titre au PDF. */
+              const src = inSources && dossierCourant && it.texte.match(/^`([^`]+\.pdf)`\s*[—–-]\s*(.+)$/i);
+              if (src) {
+                const fichier = src[1], libelle = src[2].trim();
+                const href = resoudrePdf(blocNum, dossierCourant, fichier);
+                if (!href) {
+                  console.warn("  PDF introuvable :", dossierCourant + "/" + fichier);
+                  return "<li>" + inline(libelle, linkMap) + "</li>";
+                }
+                return '<li><a href="' + href + '" target="_blank" rel="noopener">' +
+                  inline(libelle, linkMap) + "</a></li>";
+              }
               let li = "<li>" + inline(it.texte, linkMap);
               if (it.enfants.length) {
                 li += "<ul>" + it.enfants.map((e) => "<li>" + inline(e, linkMap) + "</li>").join("") + "</ul>";
@@ -292,6 +338,17 @@ function convertBody(body, linkMap, sourcesMap) {
       i++;
     }
     const paraText = paraLines.join(" ");
+
+    // dans "## Sources", « Dossier `par thèmes:/<nom>/` : » ouvre le groupe de
+    // fichiers qui suit (Bloc 2). On mémorise le dossier et on rend la ligne
+    // sans ses accents graves, que le rendu markdown ne traite pas.
+    const groupe = inSources && paraText.trim().match(/^Dossier\s+`par thèmes:\/(.+?)\/`\s*(.*)$/);
+    if (groupe) {
+      dossierCourant = groupe[1];
+      const suite = groupe[2].replace(/^:\s*/, "").replace(/\s*:\s*$/, "").trim();
+      out.push("<p>" + inline(dossierCourant + (suite ? " — " + suite : ""), linkMap) + "</p>");
+      continue;
+    }
 
     // dans "## Sources", un paragraphe tout en gras ("**Support — Bilan.pdf**")
     // suivi d'une liste à puces = les leçons de ce support : on lie chaque
@@ -481,7 +538,7 @@ function buildResume(p, linkMap) {
     mots: d.mots,
     lecture_min: d.lecture_min,
     sources: d.sources,
-    html: convertBody(p.body, linkMap, loadSourcesMap(d.bloc)),
+    html: convertBody(p.body, linkMap, loadSourcesMap(d.bloc), d.bloc),
   };
 }
 

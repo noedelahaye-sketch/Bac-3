@@ -1,13 +1,12 @@
 ---
+id: b2-11
+type: question
 bloc: 2
-type: angle-a
-question: b2-11
 dossier: 3
 titre: "Q11 — Les supports de communication print et digitaux"
-competences:
-  - C2.4
-resumes_lies:
-  - r09-contenus-supports.md
+competence: C2.4
+resumes: [b2-r09]
+resumes_appui: [b2-r08, b2-r10]
 ---
 
 # Q11 — Les supports de communication print et digitaux
