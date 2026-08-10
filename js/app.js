@@ -115,7 +115,23 @@
   var syncPushTimer=null;
   var syncPret=false;
   function syncPossible(){
-    return !!getSyncToken() && syncPret && !isStateEmpty(S);
+    return !!getSyncToken() && syncPret && !isStateEmpty(S) && !syncBloque;
+  }
+  /* Un jeton refusé ou une limite d'appels atteinte ne se règlent pas tout
+     seuls : réessayer en boucle ne répare rien et fait pilonner GitHub, qui
+     finit par bloquer l'adresse IP — et emporte avec elle les autres appareils
+     de la maison. Sur ces causes, on s'arrête et on le dit ; on ne retente
+     que ce qui peut passer plus tard (réseau, panne côté GitHub). */
+  var syncBloque=false;
+  var syncEssais=0;
+  function faultRecuperable(e){
+    var s=e&&e.status;
+    if(s===401 || s===403 || s===404) return false;
+    return true;
+  }
+  function delaiReessai(){
+    /* 30 s, 1 min, 2, 4, 8, puis plafond à 15 min */
+    return Math.min(30000*Math.pow(2, Math.max(0,syncEssais-1)), 900000);
   }
   /* Le drapeau ne retombe qu'une fois le distant à jour : un push raté laisse
      la modification en attente et se retente, au lieu d'être perdu en silence. */
@@ -126,14 +142,17 @@
     renderSyncStatus();
     return pushToGist(S, opts).then(function(){
       pushEnAttente=false;
+      syncEssais=0;
       syncStatus={state:"ok", at:new Date()};
       renderSyncStatus();
     }).catch(function(e){
       syncStatus={state:"error", at:syncStatus.at, cause:causeSync(e)};
       renderSyncStatus();
-      /* on garde la main : nouvelle tentative dans 15 s tant que ça coince */
+      if(!faultRecuperable(e)){ syncBloque=true; return; }
+      /* la modification reste en attente : nouvelle tentative espacée */
+      syncEssais++;
       clearTimeout(syncPushTimer);
-      syncPushTimer=setTimeout(function(){ pousserMaintenant(); }, 15000);
+      syncPushTimer=setTimeout(function(){ pousserMaintenant(); }, delaiReessai());
     });
   }
   function scheduleSyncPush(){
@@ -148,7 +167,7 @@
      plan. */
   var reconcileTimer=null;
   async function tenterReconcile(){
-    if(!getSyncToken() || syncPret) return;
+    if(!getSyncToken() || syncPret || syncBloque) return;
     clearTimeout(reconcileTimer);
     syncStatus={state:"syncing", at:syncStatus.at};
     renderSyncStatus();
@@ -156,11 +175,17 @@
       var action=await reconcileSync();
       if(action==="pulled") render();
       syncPret=true;
+      syncEssais=0;
       syncStatus={state:"ok", at:new Date()};
       if(pushEnAttente) scheduleSyncPush();
     }catch(e){
       syncStatus={state:"error", at:syncStatus.at, cause:causeSync(e)};
-      reconcileTimer=setTimeout(tenterReconcile, 30000);
+      if(faultRecuperable(e)){
+        syncEssais++;
+        reconcileTimer=setTimeout(tenterReconcile, delaiReessai());
+      } else {
+        syncBloque=true;
+      }
     }
     renderSyncStatus();
   }
@@ -2111,6 +2136,9 @@
       el.addEventListener("click",function(){
         if(!getSyncToken()){ alert("La synchronisation n'est pas activée sur cet appareil.\n\nTes modifications sont enregistrées ici, mais elles ne partiront pas vers tes autres appareils."); return; }
         el.classList.add("mm-envoi-on");
+        /* geste explicite : on lève le blocage le temps d'une tentative, sinon
+           le bouton ne servirait plus à rien une fois la synchro coupée */
+        syncBloque=false; syncEssais=0;
         /* si la lecture du distant n'a jamais abouti, rien ne peut partir :
            on la retente d'abord, sinon le bouton échouerait sans rien tenter */
         Promise.resolve(syncPret?null:tenterReconcile()).then(function(){
@@ -3416,6 +3444,8 @@
       var token=(input&&input.value||"").trim();
       if(!token) return;
       setSyncToken(token);
+      /* nouveau jeton : la cause du blocage a peut-être disparu */
+      syncBloque=false; syncEssais=0; syncPret=false;
       syncStatus={state:"syncing", at:null};
       renderSyncStatus();
       (async function(){
