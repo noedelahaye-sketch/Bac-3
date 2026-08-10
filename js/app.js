@@ -91,14 +91,25 @@
     }
     return "none";
   }
+  /* Un échec sans cause affichée est un échec qu'on ne peut pas réparer :
+     on traduit le code HTTP de GitHub en une phrase actionnable. */
+  function causeSync(e){
+    var s=e&&e.status;
+    if(s===401) return "jeton refusé — il a expiré ou a été révoqué, il faut en recréer un";
+    if(s===403) return "accès refusé — le jeton n'a pas la portée « gist », ou la limite d'appels est atteinte";
+    if(s===404) return "sauvegarde introuvable sur GitHub";
+    if(s===422) return "requête rejetée par GitHub";
+    if(s) return "erreur GitHub "+s;
+    return "pas de réseau, ou GitHub injoignable";
+  }
   function renderSyncStatus(){
     var el=document.getElementById("syncStatusText");
     if(!el) return;
     var t=syncStatus.at ? syncStatus.at.toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"}) : "";
     if(syncStatus.state==="syncing") el.textContent="Synchronisation…";
+    else if(syncStatus.state==="error") el.textContent="Échec de synchronisation : "+(syncStatus.cause||"cause inconnue")+(t?" (dernière réussite "+t+")":"");
     else if(pushEnAttente && getSyncToken()) el.textContent="Modifications non synchronisées"+(t?" (dernier envoi "+t+")":"");
     else if(syncStatus.state==="ok") el.textContent="Synchronisé à "+t;
-    else if(syncStatus.state==="error") el.textContent="Échec de synchronisation"+(t?" (dernière réussite "+t+")":"") ;
     else el.textContent="Non activée";
   }
   var syncPushTimer=null;
@@ -117,8 +128,8 @@
       pushEnAttente=false;
       syncStatus={state:"ok", at:new Date()};
       renderSyncStatus();
-    }).catch(function(){
-      syncStatus={state:"error", at:syncStatus.at};
+    }).catch(function(e){
+      syncStatus={state:"error", at:syncStatus.at, cause:causeSync(e)};
       renderSyncStatus();
       /* on garde la main : nouvelle tentative dans 15 s tant que ça coince */
       clearTimeout(syncPushTimer);
@@ -148,7 +159,7 @@
       syncStatus={state:"ok", at:new Date()};
       if(pushEnAttente) scheduleSyncPush();
     }catch(e){
-      syncStatus={state:"error", at:syncStatus.at};
+      syncStatus={state:"error", at:syncStatus.at, cause:causeSync(e)};
       reconcileTimer=setTimeout(tenterReconcile, 30000);
     }
     renderSyncStatus();
@@ -2100,9 +2111,14 @@
       el.addEventListener("click",function(){
         if(!getSyncToken()){ alert("La synchronisation n'est pas activée sur cet appareil.\n\nTes modifications sont enregistrées ici, mais elles ne partiront pas vers tes autres appareils."); return; }
         el.classList.add("mm-envoi-on");
-        pousserMaintenant().then(function(){
+        /* si la lecture du distant n'a jamais abouti, rien ne peut partir :
+           on la retente d'abord, sinon le bouton échouerait sans rien tenter */
+        Promise.resolve(syncPret?null:tenterReconcile()).then(function(){
+          return pousserMaintenant();
+        }).then(function(){
           el.classList.remove("mm-envoi-on");
-          alert(pushEnAttente?"L'envoi a échoué. Nouvelle tentative automatique dans quelques secondes.":"Modifications envoyées.");
+          if(!pushEnAttente){ alert("Modifications envoyées."); return; }
+          alert("L'envoi n'a pas abouti : "+(syncStatus.cause||"cause inconnue")+".\n\nTes modifications restent enregistrées sur cet appareil et repartiront automatiquement dès que la synchronisation refonctionnera.");
         });
       });
     });
@@ -3408,7 +3424,7 @@
           syncPret=true;
           syncStatus={state:"ok", at:new Date()};
         }catch(e){
-          syncStatus={state:"error", at:null};
+          syncStatus={state:"error", at:null, cause:causeSync(e)};
         }
         render();
       })();
