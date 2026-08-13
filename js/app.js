@@ -479,6 +479,30 @@
   function majSerie(){
     if(!dueBreakdown(FLASHCARDS).total) markStreakDay();
   }
+  /* Une série de test sert d'abord à découvrir : elle se remplit de cartes jamais
+     vues. Le déjà-vu ne vient qu'en complément — pour atteindre le plafond quand
+     le neuf ne suffit pas, ou, sans plafond, quand il n'y a plus rien de neuf.
+     Ces cartes de complément sont marquées « libres » : voir carteLibre(). */
+  function serieTest(pool, max){
+    var neuves=shuffle(newCardsIn(pool));
+    var vues=shuffle(activeCards(pool).filter(function(c){ return !!S.box[c.id]; }));
+    var list, complement;
+    if(max){ list=neuves.slice(0,max); complement=vues.slice(0, Math.max(0, max-list.length)); }
+    else if(neuves.length){ list=neuves; complement=[]; }
+    else { list=[]; complement=vues; }
+    var libre={};
+    complement.forEach(function(c){ libre[c.id]=true; });
+    return {list:shuffle(list.concat(complement)), libre:libre};
+  }
+  /* Ce que la tuile lance vraiment. Les séries par sujet et par type n'ont pas de
+     plafond : tant qu'il reste du neuf, elles ne tirent que dedans, et le total
+     des cartes ne dit donc plus la longueur de la série. */
+  function libelleSerie(pool){
+    var neuves=newCardsIn(pool).length, tot=pool.length;
+    if(!neuves) return tot+' carte'+(tot>1?'s':'')+' &middot; révision libre';
+    if(neuves===tot) return tot+' carte'+(tot>1?'s':'');
+    return neuves+' nouvelle'+(neuves>1?'s':'')+' sur '+tot;
+  }
   /* Carte repassée en révision libre : « Je savais » / « À revoir » ne comptent
      pas. Ni la boîte, ni l'échéance, ni le quota du jour ne bougent — sinon une
      série de test relancée sur un résumé déjà su ferait basculer la répétition
@@ -1387,22 +1411,22 @@
     h+='<div class="lab">Par sujet</div><div class="tiles">';
     (b.fiches||[]).forEach(function(rid){
       var r=(typeof RESUMES!=="undefined")?RESUMES[rid]:null;
-      var n=list.filter(function(c){return c.resume===rid;}).length;
-      if(!r || !n) return;
+      var pool=list.filter(function(c){return c.resume===rid;});
+      if(!r || !pool.length) return;
       h+='<button class="tile" data-flashcards-filter="resume:'+rid+'">';
       h+='<span class="tile-title">'+r.titre+'</span>';
-      h+='<span class="tile-cas">'+n+' carte'+(n>1?'s':'')+'</span>';
+      h+='<span class="tile-cas">'+libelleSerie(pool)+'</span>';
       h+='</button>';
     });
     h+='</div>';
 
     h+='<div class="lab">Par type</div><div class="tiles">';
     Object.keys(TYPE_LABELS).forEach(function(t){
-      var n=list.filter(function(c){return c.type===t;}).length;
-      if(!n) return;
+      var pool=list.filter(function(c){return c.type===t;});
+      if(!pool.length) return;
       h+='<button class="tile" data-flashcards-filter="type:'+t+':'+numero+'">';
       h+='<span class="tile-title">'+TYPE_LABELS[t]+'</span>';
-      h+='<span class="tile-cas">'+n+' carte'+(n>1?'s':'')+'</span>';
+      h+='<span class="tile-cas">'+libelleSerie(pool)+'</span>';
       h+='</button>';
     });
     h+='</div>';
@@ -3257,38 +3281,27 @@
       el.addEventListener("click",function(e){
         e.stopPropagation();
         var parts=el.getAttribute("data-flashcards-bloc-random").split(":"), numero=parts[0], n=parseInt(parts[1],10);
-        var l=shuffle(activeCards().filter(function(c){return String(c.bloc)===numero;})).slice(0,n);
-        if(!l.length) return;
-        SES={list:l,i:0,show:false,ok:0}; render();
+        var s=serieTest(activeCards().filter(function(c){return String(c.bloc)===numero;}), n);
+        if(!s.list.length) return;
+        SES={list:s.list,i:0,show:false,ok:0,libre:s.libre}; render();
       });
     });
     main.querySelectorAll("[data-flashcards-filter]").forEach(function(el){
       el.addEventListener("click",function(){
-        var parts=el.getAttribute("data-flashcards-filter").split(":"), list;
-        if(parts[0]==="resume") list=activeCards().filter(function(c){return c.resume===parts[1];});
-        else if(parts[0]==="type") list=activeCards().filter(function(c){return c.type===parts[1] && String(c.bloc)===parts[2];});
-        list=shuffle(list||[]);
-        if(!list.length) return;
-        SES={list:list,i:0,show:false,ok:0}; render();
+        var parts=el.getAttribute("data-flashcards-filter").split(":"), pool;
+        if(parts[0]==="resume") pool=activeCards().filter(function(c){return c.resume===parts[1];});
+        else if(parts[0]==="type") pool=activeCards().filter(function(c){return c.type===parts[1] && String(c.bloc)===parts[2];});
+        var s=serieTest(pool||[], 0);
+        if(!s.list.length) return;
+        SES={list:s.list,i:0,show:false,ok:0,libre:s.libre}; render();
       });
     });
     main.querySelectorAll("[data-flashcards-resume-start]").forEach(function(el){
       el.addEventListener("click",function(){
         var parts=el.getAttribute("data-flashcards-resume-start").split(":"), rid=parts[0], bloc=parts[1];
-        var pool=activeCards().filter(function(c){return c.resume===rid;});
-        /* Une série de test sert d'abord à découvrir : tant qu'il reste des cartes
-           jamais vues sur ce résumé, elles seules remplissent la série. On complète
-           avec du déjà-vu seulement quand le neuf est épuisé — et ces cartes-là sont
-           marquées « libre » : elles ne touchent pas la répétition espacée. */
-        var list=shuffle(pool.filter(function(c){ return !S.box[c.id]; })).slice(0,10);
-        var libre={};
-        if(list.length<10){
-          var vues=shuffle(pool.filter(function(c){ return !!S.box[c.id]; })).slice(0,10-list.length);
-          vues.forEach(function(c){ libre[c.id]=true; });
-          list=shuffle(list.concat(vues));
-        }
-        if(!list.length) return;
-        SES={list:list,i:0,show:false,ok:0,libre:libre};
+        var s=serieTest(activeCards().filter(function(c){return c.resume===rid;}), 10);
+        if(!s.list.length) return;
+        SES={list:s.list,i:0,show:false,ok:0,libre:s.libre};
         ROUTE={view:"flashcardsBloc", id:bloc}; S.view="flashcardsBloc";
         history.replaceState(null,"",hashFor("flashcardsBloc",bloc)); save();
         render();
