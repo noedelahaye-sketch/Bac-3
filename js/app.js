@@ -479,6 +479,11 @@
   function majSerie(){
     if(!dueBreakdown(FLASHCARDS).total) markStreakDay();
   }
+  /* Carte repassée en révision libre : « Je savais » / « À revoir » ne comptent
+     pas. Ni la boîte, ni l'échéance, ni le quota du jour ne bougent — sinon une
+     série de test relancée sur un résumé déjà su ferait basculer la répétition
+     espacée sur un simple coup d'œil. */
+  function carteLibre(id){ return !!(SES && SES.libre && SES.libre[id]); }
   function grade(i,ok){
     var b=S.box[i]||0, nb=ok?Math.min(INTERV.length-1,b+1):1;
     S.box[i]=nb; S.due[i]=today()+INTERV[nb]*86400000;
@@ -1411,7 +1416,8 @@
     }
     var h='<div class="prog">Carte '+(SES.i+1)+' sur '+SES.list.length+'</div>';
     h+='<div class="card'+(SES.show?'':' flip')+'"'+(SES.show?'':' data-lrn="show"')+'>';
-    h+='<div class="cmeta"><span class="m-niveau n'+c.niveau+'">Niveau '+c.niveau+'</span><span class="m-section">'+esc(c.section)+'</span><span class="m-type t-'+c.type+'">'+(TYPE_LABELS[c.type]||c.type)+'</span></div>';
+    h+='<div class="cmeta"><span class="m-niveau n'+c.niveau+'">Niveau '+c.niveau+'</span><span class="m-section">'+esc(c.section)+'</span><span class="m-type t-'+c.type+'">'+(TYPE_LABELS[c.type]||c.type)+'</span>'+
+      (carteLibre(c.id)?'<span class="m-libre" title="Déjà vue : ta réponse ne change pas sa révision">Révision libre</span>':'')+'</div>';
     if(SES.show){
       h+='<div class="cq-rappel">'+esc(cardRecto(c))+'</div>';
       h+='<div class="ca ca-center">'+esc(cardVerso(c)).replace(/\n/g,'<br>')+'</div>';
@@ -3269,9 +3275,20 @@
     main.querySelectorAll("[data-flashcards-resume-start]").forEach(function(el){
       el.addEventListener("click",function(){
         var parts=el.getAttribute("data-flashcards-resume-start").split(":"), rid=parts[0], bloc=parts[1];
-        var list=shuffle(activeCards().filter(function(c){return c.resume===rid;})).slice(0,10);
+        var pool=activeCards().filter(function(c){return c.resume===rid;});
+        /* Une série de test sert d'abord à découvrir : tant qu'il reste des cartes
+           jamais vues sur ce résumé, elles seules remplissent la série. On complète
+           avec du déjà-vu seulement quand le neuf est épuisé — et ces cartes-là sont
+           marquées « libre » : elles ne touchent pas la répétition espacée. */
+        var list=shuffle(pool.filter(function(c){ return !S.box[c.id]; })).slice(0,10);
+        var libre={};
+        if(list.length<10){
+          var vues=shuffle(pool.filter(function(c){ return !!S.box[c.id]; })).slice(0,10-list.length);
+          vues.forEach(function(c){ libre[c.id]=true; });
+          list=shuffle(list.concat(vues));
+        }
         if(!list.length) return;
-        SES={list:list,i:0,show:false,ok:0};
+        SES={list:list,i:0,show:false,ok:0,libre:libre};
         ROUTE={view:"flashcardsBloc", id:bloc}; S.view="flashcardsBloc";
         history.replaceState(null,"",hashFor("flashcardsBloc",bloc)); save();
         render();
@@ -3397,13 +3414,13 @@
       el.addEventListener("click",function(){
         var a=el.getAttribute("data-lrn");
         if(a==="show") SES.show=true;
-        else if(a==="ok"){ var cid=SES.list[SES.i].id; countCardDone(cid); grade(cid,true); SES.ok++; SES.i++; SES.show=false; finishCardSessionIfDone(); }
-        else if(a==="ko"){ var cid=SES.list[SES.i].id; countCardDone(cid); grade(cid,false); SES.i++; SES.show=false; finishCardSessionIfDone(); }
+        else if(a==="ok"){ var cid=SES.list[SES.i].id; if(!carteLibre(cid)){ countCardDone(cid); grade(cid,true); } SES.ok++; SES.i++; SES.show=false; finishCardSessionIfDone(); }
+        else if(a==="ko"){ var cid=SES.list[SES.i].id; if(!carteLibre(cid)){ countCardDone(cid); grade(cid,false); } SES.i++; SES.show=false; finishCardSessionIfDone(); }
         else if(a==="setaside-revoir"||a==="setaside-supprime"){
           var cid=SES.list[SES.i].id;
           /* une carte mise de côté a bien été traitée : elle consomme le quota du jour,
              sinon la file se recharge aussitôt avec une autre nouvelle carte */
-          countCardDone(cid);
+          if(!carteLibre(cid)) countCardDone(cid);
           S.cardState[cid]=(a==="setaside-revoir")?"revoir":"supprime";
           SES.i++; SES.show=false; finishCardSessionIfDone(); save();
         }

@@ -560,6 +560,7 @@
   .cmeta{display:flex;flex-wrap:wrap;gap:var(--space-8);margin-bottom:var(--space-12);}
   .cmeta span{font-family:var(--font-code);font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;border-radius:var(--radius-control);padding:2px 7px;}
   .m-section{background:var(--paper);color:var(--muted);}
+  .m-libre{background:transparent;color:var(--muted);border:1px solid var(--line);}
   .m-niveau{color:var(--surface);}
   .m-niveau.n1{background:var(--signal);}
   .m-niveau.n2{background:var(--flag);}
