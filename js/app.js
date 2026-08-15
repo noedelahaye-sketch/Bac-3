@@ -467,6 +467,18 @@
     var picked=newCardsIn(list).slice(b.news, b.news+bo.news);
     return shuffle(reviews.concat(picked));
   }
+  /* Entretenir sans découvrir : que du déjà-vu arrivé à échéance, aucune carte
+     neuve. Sert quand on est loin des cours et qu'une notion jamais lue serait
+     traitée à l'aveugle. Même quota que le jour, et le reste passe en bonus. */
+  function revisionsBreakdown(list){
+    var dispo=dueReviews(list).length;
+    var quota=Math.min(dispo, dayBudget());
+    return {quota:quota, bonus:dispo-quota, total:dispo};
+  }
+  function buildRevisionsQueue(list, bonus){
+    var b=revisionsBreakdown(list), rev=dueReviews(list);
+    return shuffle(bonus ? rev.slice(b.quota, b.quota+b.bonus) : rev.slice(0, b.quota));
+  }
   function dueCount(){ return dueBreakdown(FLASHCARDS).total; }
   function bonusCount(){ return bonusBreakdown(FLASHCARDS).total; }
   /* À appeler avant grade() : c'est S.box qui dit si la carte était neuve. */
@@ -1322,6 +1334,24 @@
       '<span class="cta-sub">Rien à revoir aujourd\'hui</span></div>';
   }
 
+  /* La porte de sortie à côté des cartes du jour : les mêmes révisions, sans les
+     neuves. Elle ne s'affiche que si elle change quelque chose — s'il n'y a de
+     toute façon aucune carte neuve en jeu aujourd'hui, elle ferait doublon. */
+  function renderCtaRevisions(){
+    var b=revisionsBreakdown(FLASHCARDS);
+    var neuves=dueBreakdown(FLASHCARDS).news+bonusBreakdown(FLASHCARDS).news;
+    if(!b.total || !neuves) return '';
+    if(b.quota){
+      return '<button class="tile cta-tile cta-rev" data-flashcards-revisions="jour">Révisions seules ('+b.quota+')'+
+        '<span class="cta-sub">Aucune carte neuve</span>'+
+        (b.bonus?'<span class="cta-sub cta-retard">+ '+b.bonus+' en bonus</span>':'')+
+        '</button>';
+    }
+    return '<button class="tile cta-tile cta-rev" data-flashcards-revisions="bonus">Révisions seules ('+b.bonus+')'+
+      '<span class="cta-sub">Aucune carte neuve</span>'+
+      '<span class="cta-sub cta-retard">Facultatif</span></button>';
+  }
+
   function renderDashPanel(clickable){
     var active=activeCards();
     var vus=active.filter(function(c){return (S.box[c.id]||0)>0;}).length;
@@ -1349,6 +1379,7 @@
     h+='<h1 class="qhead-title">Flashcards</h1><div class="qhead-code code">'+activeCards().length+' cartes</div>';
     h+='<div class="grid-cta-dash">';
     h+=renderCtaJour();
+    h+=renderCtaRevisions();
     h+=renderDashPanel(false);
     h+='</div>';
     h+='<div class="lab">Par bloc</div><div class="tiles">';
@@ -3256,6 +3287,20 @@
         var dq=buildDueQueue(FLASHCARDS);
         if(!dq.length){ go("flashcards"); return; }
         SES={list:dq,i:0,show:false,ok:0,capped:true};
+        if(ROUTE.view!=="flashcards" && ROUTE.view!=="flashcardsBloc"){
+          ROUTE={view:"flashcards"}; S.view="flashcards";
+          history.replaceState(null,"",hashFor("flashcards")); save();
+        }
+        render();
+      });
+    });
+    main.querySelectorAll("[data-flashcards-revisions]").forEach(function(el){
+      el.addEventListener("click",function(e){
+        e.stopPropagation();
+        var bonus=el.getAttribute("data-flashcards-revisions")==="bonus";
+        var rq=buildRevisionsQueue(FLASHCARDS, bonus);
+        if(!rq.length){ go("flashcards"); return; }
+        SES={list:rq,i:0,show:false,ok:0,capped:!bonus,bonus:bonus};
         if(ROUTE.view!=="flashcards" && ROUTE.view!=="flashcardsBloc"){
           ROUTE={view:"flashcards"}; S.view="flashcards";
           history.replaceState(null,"",hashFor("flashcards")); save();
