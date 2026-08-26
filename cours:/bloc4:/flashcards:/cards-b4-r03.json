@@ -1,0 +1,151 @@
+{
+  "resume": "b4-r03",
+  "titre": "Piloter l'humain : répartir les tâches, évaluer, communiquer",
+  "bloc": 4,
+  "cartes": [
+    {
+      "id": "b4-r03-fc-001",
+      "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Sur quels 3 fondements repose une attribution pertinente des responsabilités ?",
+      "verso": "1. Une connaissance en temps réel des compétences de ses équipes. 2. L'identification des compétences requises par les projets en cours et à venir. 3. La capacité à faire concorder l'offre et la demande (flexibilité, suivi continu, formation). Enjeu : satisfaction et performance côté équipe ; efficacité opérationnelle, ressources optimisées et gestion proactive des risques côté entreprise. En amont, le manager saisit la vision du projet (traduire les attentes des parties prenantes en objectifs clairs — la vision est la « boussole » des décisions), puis cadre les besoins de la mission par un SWOT appliqué tâche par tâche : forces = compétences disponibles, faiblesses = manques, opportunités = collaborations externes, menaces = contraintes budgétaires."
+    },
+    {
+      "id": "b4-r03-fc-002",
+      "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Que privilégient les méthodes agiles, et quelles sont les plus connues ?",
+      "verso": "Les méthodes agiles privilégient flexibilité, collaboration et adaptabilité : cycles itératifs courts, livraisons fréquentes de versions partielles, équipes auto-organisées. Les plus connues : Scrum, Kanban, Extreme Programming (XP) et Lean."
+    },
+    {
+      "id": "b4-r03-fc-003",
+      "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "L'alignement compétences-tâches se joue à deux niveaux : lesquels ?",
+      "verso": "Niveau individuel : faire correspondre les compétences de chacun (hard skills techniques ET soft skills : communication, résolution de conflits, prise de décision, leadership) aux exigences de chaque tâche, via cartographie et matrices de compétences. Niveau collectif : l'équipe ne se limite pas à la somme des compétences individuelles — leur complémentarité crée la synergie (brainstormings, réunions interdisciplinaires, formations croisées, mentorat). C'est la même distinction qui structure l'analyse des compétences : l'analyse individuelle évalue connaissances, compétences techniques, aptitudes, attitudes et expériences de chacun (forces/faiblesses, alignement au poste, besoins de formation) ; l'analyse collective, la façon dont elles se combinent et interagissent en équipe."
+    },
+    {
+      "id": "b4-r03-fc-004",
+      "section": "2. Distribuer équitablement et efficacement",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Équité et égalité dans la répartition des tâches : quelle différence ?",
+      "verso": "L'égalité est une répartition uniforme des charges, sans tenir compte des besoins individuels. L'équité est une attribution réfléchie selon les compétences, les aspirations et les contributions passées de chacun. L'égalité absolue ne conduit pas toujours à des résultats équitables."
+    },
+    {
+      "id": "b4-r03-fc-005",
+      "section": "2. Distribuer équitablement et efficacement",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sont les dimensions d'une distribution équitable des tâches ?",
+      "verso": "1. L'équilibre de la charge de travail : évaluer compétences, disponibilités et capacités ; personne ne doit être submergé ; ajustement régulier via un suivi. 2. L'équité des opportunités : accès de chacun à des projets stimulants et responsabilités stratégiques, opportunités communiquées de manière transparente, critères équitables. 3. La gestion des préférences et aspirations : discussions ouvertes régulières, tâches alignées sur les intérêts, Plan de Développement Individuel (PDI) dynamique et co-construit. Levier associé : le leadership participatif — impliquer les membres dans le choix de leurs missions apporte appropriation, motivation et culture de l'initiative ; priorités et délais restent interconnectés (les priorités donnent l'ordre, les délais la visibilité)."
+    },
+    {
+      "id": "b4-r03-fc-006",
+      "section": "3. Suivre, réaffecter, améliorer en continu",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Comment se déclenche et s'anticipe la réaffectation des tâches ?",
+      "verso": "Elle s'anticipe par la veille stratégique (marché, technologies, réglementation) et se déclenche sur signaux des indicateurs (baisse de satisfaction client, retards). Elle croise les compétences nouvellement requises et la connaissance en temps réel des compétences effectives. La révision de la distribution est un processus continu, jamais ponctuel : redistribution, rotation, délégation de nouvelles responsabilités. Trois leviers : redistribution, rotation des responsabilités (déplacement périodique entre fonctions — nouvelles compétences, compréhension des processus, perspective élargie) et délégation de nouvelles responsabilités. Limite à connaître : trop de polyvalence surcharge et fait obstacle aux spécialisations, qui ont beaucoup de valeur."
+    },
+    {
+      "id": "b4-r03-fc-007",
+      "section": "3. Suivre, réaffecter, améliorer en continu",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Outre la roue de Deming (PDCA), quelles sont les 3 méthodologies d'amélioration continue à connaître, et leurs étapes ?",
+      "verso": "1. Kaizen : petites améliorations continues, culture d'évolution constante, chacun contribue (standardisation, mesure des performances, participation des employés). 2. Lean Six Sigma (Lean Management + Six Sigma) : réduire les variations et éliminer les gaspillages, via la démarche DMAIC — Définir → Mesurer → Analyser → Améliorer → Contrôler. 3. Design Thinking : méthode axée sur les besoins humains, la créativité et l'innovation, en 5 phases — Empathie → Définition → Idéation → Prototype → Test."
+    },
+    {
+      "id": "b4-r03-fc-008",
+      "section": "4. Évaluer les compétences individuelles et collectives",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 5 étapes du processus d'analyse des compétences ?",
+      "verso": "1. Identification : collecte d'informations (entretiens, évaluations, auto-évaluations, retours d'expérience) et exploration des compétences tacites (expérience, intelligence émotionnelle). 2. Cartographie : profils détaillés par individu, forces dominantes et lacunes. 3. Alignement stratégique : comparaison avec les objectifs organisationnels, réajustements. 4. Plan de développement : plans individuels + développement collectif. 5. Évaluation continue : révision régulière, feedback et réajustement."
+    },
+    {
+      "id": "b4-r03-fc-009",
+      "section": "4. Évaluer les compétences individuelles et collectives",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles méthodes pour évaluer compétences techniques, connaissances spécifiques et compétences comportementales ?",
+      "verso": "Techniques : tests pratiques (mises en situation réelles), évaluation par des pairs ou experts, examens écrits. Connaissances spécifiques : QCM, études de cas, entretiens structurés. Comportementales : études de cas comportementales (communication, résolution de problèmes, gestion du temps), évaluation par des tiers, auto-évaluation (prise de conscience, responsabilisation), questionnaires de personnalité, entretiens menés par des psychologues, évaluations en situation."
+    },
+    {
+      "id": "b4-r03-fc-010",
+      "section": "4. Évaluer les compétences individuelles et collectives",
+      "niveau": 3,
+      "type": "chiffre",
+      "recto": "NEO-PI-R et MBTI : que mesure chacun de ces questionnaires de personnalité ?",
+      "verso": "Le NEO-PI-R mesure les cinq grands facteurs : extraversion, ouverture d'esprit, stabilité émotionnelle, conscience, agrément. Le MBTI (Myers-Briggs) repose sur 4 dimensions : extraversion/introversion, sensation/intuition, pensée/sentiment, jugement/perception."
+    },
+    {
+      "id": "b4-r03-fc-011",
+      "section": "4. Évaluer les compétences individuelles et collectives",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que la rétroaction à 360° ?",
+      "verso": "Chaque collaborateur reçoit des commentaires sur sa performance de son superviseur et de quatre à huit pairs, subordonnés, collègues, voire parties prenantes externes (clients, partenaires), complétés par une auto-évaluation. Les évaluateurs sont choisis conjointement par l'organisation et l'employé. Le destinataire reçoit des données récapitulatives anonymisées, sans savoir qui a dit quoi. Risque majeur : les biais (confirmation, halo, récence). Garde-fous : former les évaluateurs aux biais, grilles standardisées à critères objectifs, minimum 5-6 évaluateurs diversifiés, validation RH avant transmission, réunions de calibration et agrégation anonymisée."
+    },
+    {
+      "id": "b4-r03-fc-012",
+      "section": "4. Évaluer les compétences individuelles et collectives",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Que se passe-t-il après une évaluation 360° ? Décrivez la séquence complète.",
+      "verso": "Analyser les commentaires → débriefer → élaborer un PDP → suivre. Débriefing en 3 temps (cadre sécurisant, 1 h minimum) : écoute du ressenti, clarification de chaque commentaire avec exemples concrets, reformulation positive des critiques en opportunités — posture de coach, pas de juge, technique du sandwich (force → axe d'amélioration → force). PDP co-construit : 2-3 objectifs prioritaires maximum en SMART, jalons à 1, 3 et 6 mois. Suivi : points mensuels de 30 minutes en one-to-one, tableau de bord partagé, évaluation à 6 mois."
+    },
+    {
+      "id": "b4-r03-fc-013",
+      "section": "5. La communication managériale",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Selon Paul Watzlawick, à quels deux niveaux se déroule la communication ?",
+      "verso": "Au niveau du contenu (le fond : mots, phrases, images) et au niveau de la relation (la forme avec laquelle le message est délivré : gestes, voix, posture, attitude). La forme en dit plus que le fond, et la forme conditionne l'acceptation du fond — d'où l'exigence de congruence entre le « comment » non verbal et le « quoi » verbal (le paralangage étant la forme gestuelle et audiovisuelle de la communication)."
+    },
+    {
+      "id": "b4-r03-fc-014",
+      "section": "5. La communication managériale",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sont les 3 fonctions de la communication, et quelle est la mission première du manager ?",
+      "verso": "1. L'expression (communiquer une intention, une émotion). 2. La représentation (transmettre des informations, un savoir). 3. L'action sur autrui (convaincre, séduire, influencer, transmettre des ordres). La mission première du manager : « fabriquer du sens » — donner une perspective, proposer un projet. Communiquer signifie « mettre en commun », avec un langage et un code communs."
+    },
+    {
+      "id": "b4-r03-fc-015",
+      "section": "5. La communication managériale",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Pourquoi la communication passe-t-elle mal, même entre gens de bonne volonté ?",
+      "verso": "Aucun passage d'information ne se fait sans déformation : personne n'a le même vécu ni le même vocabulaire. Chacun a son cadre de référence (valeurs, logique de raisonnement, vision du monde, codes propres) et ses filtres ; les a priori, préjugés et idées préconçues brouillent l'échange. Parade : être le plus précis possible dans son langage. Autre écueil : l'information utile reste au niveau du manager ou est communiquée sommairement, sans sens ni explications."
+    },
+    {
+      "id": "b4-r03-fc-016",
+      "section": "5. La communication managériale",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que l'écoute active, et quels sont ses 3 niveaux ?",
+      "verso": "Entendre est naturel, écouter relève d'une volonté (on bloque souvent l'écoute parce qu'on pense plus vite qu'on ne parle). Elle sollicite l'intellect (questions, reformulation) et l'émotionnel (encourager l'expression). 3 niveaux : les mots (contenu), le non-verbal (signes parallèles), le changement de rythme (plus lent = doute, inquiétude ; plus rapide = impatience → question de contrôle). Avec l'empathie, elle installe la sécurité psychologique : LE critère de performance d'une équipe qui prime (droit à l'erreur, oser parler des problèmes)."
+    },
+    {
+      "id": "b4-r03-fc-017",
+      "section": "5. La communication managériale",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le micromanagement et quelles sont ses 3 conséquences ?",
+      "verso": "Surveiller de très près l'activité de ses collaborateurs et contrôler minutieusement leurs tâches — le manager se noie dans les détails et inhibe les initiatives. 3 conséquences : absence d'autonomie (frustration, démotivation, productivité moindre), absence de créativité (plus de nouvelles idées), excès de stress (pression forte, manque de confiance). Le manque de délégation en est le comportement sous-jacent (peur de perdre le pouvoir, manque de confiance ou de méthode)."
+    },
+    {
+      "id": "b4-r03-fc-018",
+      "section": "5. La communication managériale",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Aux registres passif, agressif et assertif, quel 4e registre le management ajoute-t-il — et quelles conséquences pour l'équipe ?",
+      "verso": "La manipulation : une attitude détournée, jamais frontale, qui obtient sans demander — à proscrire, car elle installe durablement la méfiance. Conséquences managériales des trois autres : l'agressivité est une directivité proche de la domination (confrontation, jugement pour imposer) → climat hostile et résistances ; la passivité est une soumission par évitement (peur du rejet, difficulté à dire non) ; l'assertivité, la posture à viser, permet d'exprimer un désaccord ou de dire « non » en acceptant la contradiction et le compromis, sans rompre la relation."
+    }
+  ]
+}

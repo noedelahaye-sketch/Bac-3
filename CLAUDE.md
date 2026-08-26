@@ -74,18 +74,22 @@ toujours citer le nom exact avec son deux-points final.
   Question n'est branchée que sur b1-Q1 pour l'instant — généralisable aux
   10 autres sur le même modèle que Q1), Flashcards (329 cartes) et Quiz
   (256 questions, 7 formats).
-- B2, B4, B3 : dossiers sources vides (`cours:/bloc2:/` etc.), tuiles
-  "À venir" partout (Cours, Flashcards, Quiz). Pas encore cartographiés ni
-  enrichis — bloc par bloc, dans cet ordre : B2 puis B4 puis B3, en
-  reproduisant le pipeline déjà rodé sur B1 (résumés → contenu par
-  question → flashcards → quiz → régénération).
-- Point de vigilance avant de générer B2 : les id de flashcards/quiz ne
-  sont pas préfixés par le bloc (ex. `c-f01-001`, `q-f01-001`). Si B2
-  réutilise la même convention de numérotation que B1, ses cartes/questions
-  pourraient entrer en collision avec celles de B1 dans le suivi de
-  progression (S.box/S.due, historique quiz). À vérifier — ou à corriger
-  dans `tools/generate-cours.js` en préfixant les id par bloc — avant de
-  livrer B2.
+- Bloc 2 (Bambu Lab) construit : 10 résumés, contenu de cours sur les 13
+  questions, 176 cartes, 180 questions de quiz (7 formats), 10 modèles de
+  cartes mentales, liens Sources → PDF par thème.
+- Bloc 4 (Drumeo × Your Story Agency) construit : 8 résumés, contenu de
+  cours sur les 11 questions, 175 cartes, 144 questions de quiz (QCM,
+  vrai/faux, appariement — les 4 autres formats ne sont pas utilisés),
+  9 modèles de cartes mentales, 45 liens Sources → PDF par thème.
+- Bloc 3 (PrepMyMeal) : `cours:/bloc3:/` vide, tuiles « À venir » partout
+  (Cours, Flashcards, Quiz). Reste à cartographier et enrichir, en
+  reproduisant le pipeline rodé sur B1, B2 et B4 (résumés → contenu par
+  question → flashcards → quiz → cartes → régénération).
+- Collisions d'id : les cartes/questions du Bloc 1 ne sont pas préfixées
+  (`c-f01-001`, `q-f01-001`), celles des Blocs 2 et 4 le sont
+  (`b2-r04-fc-001`, `b4-r01-qz-001`). Aucun doublon aujourd'hui — garder la
+  convention préfixée pour le Bloc 3, sinon le suivi de progression
+  (S.box/S.due, historique quiz) mélangerait deux blocs.
 
 # Règles de travail
 

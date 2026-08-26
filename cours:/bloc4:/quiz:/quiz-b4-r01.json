@@ -1,0 +1,265 @@
+{
+  "resume": "b4-r01",
+  "titre": "Le manager : rôle, leadership et enjeux stratégiques",
+  "bloc": 4,
+  "questions": [
+    {
+      "id": "b4-r01-qz-001",
+      "section": "1. L'évolution du management",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une entreprise fonctionne avec un pouvoir de décision diffus, réparti et décentralisé, très spécialisé, dans un modèle horizontal et fluide. À quel modèle de management correspond-elle ?",
+      "options": [
+        "au management mécaniste de l'entreprise classique",
+        "au management organique, qui voit l'entreprise comme un organisme vivant",
+        "au management vertical fondé sur l'autorité hiérarchique",
+        "au management par la prévision et la planification"
+      ],
+      "reponse": 1,
+      "explication": "C'est le management organique : pouvoir diffus, réparti, décentralisé et spécialisé, modèle horizontal qui libère les énergies et l'innovation. À l'inverse, l'entreprise classique (mécaniste) concentre et centralise un pouvoir très généraliste dans un modèle vertical et rigide."
+    },
+    {
+      "id": "b4-r01-qz-002",
+      "section": "1. L'évolution du management",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelles sont les 3 grandes missions recentrées du manager d'aujourd'hui ?",
+      "options": [
+        "prévoir, contrôler, sanctionner",
+        "donner du sens, accompagner et soutenir, développer l'autonomie",
+        "recruter, former, évaluer",
+        "planifier, budgéter, reporter à la direction"
+      ],
+      "reponse": 1,
+      "explication": "De « contrôleur », le manager est devenu « stratège, développeur, animateur et soutien », recentré sur 3 missions : donner du sens (des repères dans un environnement mouvant), accompagner et soutenir, développer l'autonomie (prise de risque, initiative individuelle)."
+    },
+    {
+      "id": "b4-r01-qz-003",
+      "section": "2. Missions, rôles et postures du manager",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Dans le triptyque autonomie–confiance–responsabilité, la confiance accordée aux collaborateurs entraîne la disparition de toute forme de contrôle.",
+      "reponse": false,
+      "explication": "Faux. La confiance permet l'autonomie, la prise de risque et les coopérations, mais elle n'entraîne pas la disparition de toute forme de contrôle — un contrôle d'ailleurs facilité par la digitalisation des processus."
+    },
+    {
+      "id": "b4-r01-qz-004",
+      "section": "2. Missions, rôles et postures du manager",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque type d'information que le manager fait circuler à son rôle pour le collaborateur.",
+      "colonne_a": [
+        "Information opérationnelle",
+        "Information organisationnelle",
+        "Information relationnelle",
+        "Information connexe",
+        "Information générale"
+      ],
+      "colonne_b": [
+        "Comprendre pourquoi le faire",
+        "Connaître la stratégie de l'entreprise",
+        "Définir la nature du travail à effectuer",
+        "Savoir comment faire",
+        "Se situer au sein du service"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 3],
+        [2, 0],
+        [3, 4],
+        [4, 1]
+      ],
+      "explication": "Les 5 types d'informations répondent à : quoi (opérationnelle), comment (organisationnelle), pourquoi (relationnelle), où se situer (connexe), dans quelle stratégie (générale). Le but de la communication du manager : informer pour donner du sens à l'action."
+    },
+    {
+      "id": "b4-r01-qz-005",
+      "section": "2. Missions, rôles et postures du manager",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Un collaborateur vient voir son manager avec un problème. En posture de coach, que fait le manager ?",
+      "options": [
+        "il donne immédiatement la solution, car son expertise légitime ses décisions",
+        "il questionne plutôt que répondre, soutient plutôt que juger, facilite plutôt que diriger",
+        "il tranche seul puis contrôle l'exécution de sa décision",
+        "il renvoie le problème vers la direction, dont il est la passerelle"
+      ],
+      "reponse": 1,
+      "explication": "La posture de coach (accompagnateur et pédagogue) : questionner plutôt que répondre, soutenir plutôt que juger, faciliter plutôt que diriger. L'objectif est de faire émerger les meilleures idées et de faire « grandir » les collaborateurs, l'écoute étant le préalable à la confiance."
+    },
+    {
+      "id": "b4-r01-qz-006",
+      "section": "3. Compétences et leadership",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "La bienveillance, l'assertivité et l'empathie d'un manager relèvent de quelle famille de soft skills ?",
+      "options": [
+        "les soft skills personnelles",
+        "les soft skills interpersonnelles",
+        "les soft skills professionnelles",
+        "les hard skills relationnelles"
+      ],
+      "reponse": 1,
+      "explication": "Les soft skills se répartissent en 3 familles : personnelles (confiance, créativité, curiosité, adaptation), interpersonnelles (bienveillance, communication, assertivité, empathie) et professionnelles (autonomie, esprit critique, éthique du travail, gestion du stress)."
+    },
+    {
+      "id": "b4-r01-qz-007",
+      "section": "3. Compétences et leadership",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Un chef d'équipe nommé par la direction peine à entraîner son groupe, tandis qu'un de ses collaborateurs exerce un fort ascendant sur les autres. Comment analyser la situation avec les notions du cours ?",
+      "options": [
+        "le chef est un leader sans autorité, le collaborateur un manager naturel",
+        "le chef a l'autorité formelle du manager, le collaborateur l'autorité naturelle du leader : un chef statutaire peut ne pas être un leader",
+        "le chef manque de hard skills, le collaborateur en a davantage",
+        "la situation est impossible : le statut de manager confère le leadership"
+      ],
+      "reponse": 1,
+      "explication": "Le manager est investi d'une autorité formelle qui lui donne un statut (et l'accès à une information privilégiée) ; le leader a une autorité naturelle, un ascendant qui donne envie de le suivre. Un chef statutaire peut ou non être un leader : les deux notions sont complémentaires."
+    },
+    {
+      "id": "b4-r01-qz-008",
+      "section": "3. Compétences et leadership",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Selon David McClelland, les leaders dotés de 6 ou plus des compétences émotionnelles sont beaucoup plus efficaces que leurs collègues qui en sont dépourvus.",
+      "reponse": true,
+      "explication": "Vrai. C'est la découverte du psychologue David McClelland (Harvard). L'intelligence émotionnelle — reconnaître, comprendre et gérer ses émotions et composer avec celles des autres — est un savoir-être clé du manager."
+    },
+    {
+      "id": "b4-r01-qz-009",
+      "section": "4. Anticiper : vision stratégique et changement",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "D'après le cours, dans quel cas une entreprise a-t-elle réellement besoin d'une stratégie ?",
+      "options": [
+        "dès qu'elle dépasse une certaine taille",
+        "quand il existe un impératif de choix entre des intérêts légitimes en opposition — « on fait de la stratégie parce qu'on est coincé »",
+        "uniquement en période de crise ou de transformation",
+        "quand ses ressources sont illimitées et qu'elle veut les allouer"
+      ],
+      "reponse": 1,
+      "explication": "Une stratégie — processus d'allocation de ressources qui engage durablement l'entreprise, rythmé par le double mouvement analyse/engagement — n'existe que s'il y a un impératif de choix. Sans limite de ressources ni concurrence, pas besoin de stratégie."
+    },
+    {
+      "id": "b4-r01-qz-010",
+      "section": "4. Anticiper : vision stratégique et changement",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque champ de l'élaboration stratégique à la question qu'il pose.",
+      "colonne_a": [
+        "Écologie",
+        "Marché",
+        "Ressources",
+        "Prospective"
+      ],
+      "colonne_b": [
+        "Ai-je les ressources pour jouer ?",
+        "Et demain ?",
+        "Dans quel monde j'évolue ? Quelles tendances lourdes ?",
+        "Qu'est-ce que je comprends des signaux ? Quel service vendre, à qui ?"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 3],
+        [2, 0],
+        [3, 1]
+      ],
+      "explication": "L'élaboration stratégique interroge 4 champs : écologie (le monde, le marché, les tendances lourdes), marché (les signaux, le service à vendre et à qui), ressources (peut-on jouer ?) et prospective (demain). Le marketing stratégique est la clé d'entrée pour comprendre le marché."
+    },
+    {
+      "id": "b4-r01-qz-011",
+      "section": "4. Anticiper : vision stratégique et changement",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Face à un projet de réorganisation, un collaborateur multiplie les manœuvres d'alliances en coulisses pour freiner le changement. À quelle forme de résistance cela correspond-il ?",
+      "options": [
+        "la passivité",
+        "les objections",
+        "les jeux politiques",
+        "les conflits ouverts"
+      ],
+      "reponse": 2,
+      "explication": "Les résistances au changement — normales, attendues et même utiles (« impossible de sculpter une statue sans la résistance de la pierre ») — prennent 4 formes : passivité, objections, jeux politiques et conflits ouverts. Les manœuvres d'alliances relèvent des jeux politiques."
+    },
+    {
+      "id": "b4-r01-qz-012",
+      "section": "4. Anticiper : vision stratégique et changement",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans un monde turbulent, le cours recommande de passer de la planification à la synchronisation. Qu'est-ce que cela signifie ?",
+      "options": [
+        "fixer des objectifs quantitatifs plus précis et les contrôler plus souvent",
+        "des ajustements mutuels et permanents qui font converger des actions parallèles vers une intention commune",
+        "aligner tous les plannings des équipes sur un calendrier unique",
+        "renoncer à toute forme d'anticipation stratégique"
+      ],
+      "reponse": 1,
+      "explication": "La synchronisation fait converger des actions parallèles vers une intention commune, non vers des objectifs quantitatifs prédéfinis : on passe de la dialectique objectifs/résultats à la dialectique intention/situation, en construisant l'action dans le présent. La solution : adaptabilité et agilité."
+    },
+    {
+      "id": "b4-r01-qz-013",
+      "section": "5. Défis et opportunités du manager d'aujourd'hui",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelles sont les opportunités que l'IA offre au manager d'aujourd'hui ?",
+      "options": [
+        "remplacer la relation managériale par des processus automatisés",
+        "l'analyse et la prise de décision, la gestion des talents, la veille, la gestion des risques et la personnalisation des services",
+        "supprimer le besoin de contrôle grâce à la digitalisation",
+        "réduire les effectifs des équipes créatives"
+      ],
+      "reponse": 1,
+      "explication": "L'IA aide à l'analyse et à la prise de décision, à la gestion des talents (recrutement, évaluation, développement des compétences), à la veille, à la gestion des risques et à la personnalisation des services. L'automatisation des tâches répétitives libère du temps pour les activités à haute valeur ajoutée."
+    },
+    {
+      "id": "b4-r01-qz-014",
+      "section": "5. Défis et opportunités du manager d'aujourd'hui",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "L'inclusivité consiste à favoriser la différence et à inciter chacun à être unique.",
+      "reponse": false,
+      "explication": "Faux, c'est la définition de la diversité. L'inclusivité consiste à assembler tous les salariés dans une mutualité et à traiter tout le monde à égalité. Les deux notions sont complémentaires — et payantes : selon Deloitte, une politique inclusive générerait jusqu'à 30 % de chiffre d'affaires en plus par salarié."
+    },
+    {
+      "id": "b4-r01-qz-015",
+      "section": "6. Les enjeux stratégiques du management",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pour suivre ses enjeux stratégiques, combien de KPI une entreprise doit-elle retenir selon le cours ?",
+      "options": [
+        "le plus possible, pour ne rien laisser passer",
+        "un seul indicateur synthétique",
+        "entre 5 et 8, limités aux plus significatifs, avec tableaux de bord et réunions de pilotage",
+        "entre 15 et 20, répartis par service"
+      ],
+      "reponse": 2,
+      "explication": "Les KPI doivent être limités aux plus significatifs (5 à 8), suivis via tableaux de bord et réunions de pilotage. Autres outils des 7 enjeux universels : SWOT et scénarios prospectifs, veille stratégique, cartographie des parties prenantes, projets pilotes avant déploiement massif."
+    },
+    {
+      "id": "b4-r01-qz-016",
+      "section": "6. Les enjeux stratégiques du management",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque profil d'entreprise à son enjeu managérial majeur.",
+      "colonne_a": [
+        "Leader du marché (ex. Coca-Cola)",
+        "Challenger (ex. Pepsi Cola)",
+        "Suiveur",
+        "Entreprise en consolidation"
+      ],
+      "colonne_b": [
+        "Stabiliser l'organisation sans laisser s'installer la routine",
+        "L'innovation continue, « le carburant du leader »",
+        "Se différencier : offres, prix, proposition de valeur",
+        "S'adapter rapidement, imiter à moindre coût, maîtriser les coûts"
+      ],
+      "paires": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [3, 0]
+      ],
+      "explication": "Le leader mise sur l'innovation continue ; le challenger, plus petit mais inventif, cherche à se différencier ; le suiveur imite le leader à prix plus bas, sans prise de risque. En consolidation (maturité), il faut stabiliser, optimiser et préserver les marges — tout en provoquant le changement pour remettre les équipes en tension."
+    }
+  ]
+}

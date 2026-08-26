@@ -1,0 +1,289 @@
+{
+  "resume": "b4-r06",
+  "titre": "GEPP et compétences : diagnostiquer, cartographier, évaluer",
+  "bloc": 4,
+  "questions": [
+    {
+      "id": "b4-r06-qz-001",
+      "section": "1. La GEPP (ex-GPEC)",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une entreprise veut adapter, à court et moyen termes, ses emplois, ses effectifs et ses compétences à sa stratégie et aux évolutions de son environnement. Quelle démarche engage-t-elle ?",
+      "options": [
+        "un audit social, qui dresse un état des lieux ponctuel des RH",
+        "une GEPP, démarche prospective des ressources humaines qui accompagne le changement",
+        "un plan de sauvegarde de l'emploi, qui organise les départs",
+        "un bilan de compétences, qui évalue chaque salarié individuellement"
+      ],
+      "reponse": 1,
+      "explication": "C'est la définition de la GEPP (ex-GPEC) donnée par le Ministère du Travail : une démarche prospective qui adapte emplois, effectifs et compétences à la stratégie, avec trois finalités — besoin en nombre, adéquation des compétences, motivation et fidélisation."
+    },
+    {
+      "id": "b4-r06-qz-002",
+      "section": "1. La GEPP (ex-GPEC)",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans quelles entreprises la négociation sur la GEPP est-elle obligatoire ?",
+      "options": [
+        "dans toutes les entreprises, quelle que soit leur taille",
+        "dans les entreprises de plus de 50 salariés",
+        "dans les entreprises de plus de 300 salariés",
+        "uniquement dans les entreprises publiques"
+      ],
+      "reponse": 2,
+      "explication": "La négociation sur la GEPP n'est obligatoire que dans les entreprises de plus de 300 salariés. Mais toute entreprise, même petite, doit anticiper l'évolution de ses emplois et compétences."
+    },
+    {
+      "id": "b4-r06-qz-003",
+      "section": "2. Le diagnostic RH",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Un DRH veut objectiver un turn-over élevé et une pyramide des âges déséquilibrée annonçant des départs massifs. Sur quoi appuie-t-il son analyse ?",
+      "options": [
+        "l'analyse qualitative : entretiens et observation en situation de travail",
+        "l'analyse quantitative : les indicateurs de la BDESE et du SIRH",
+        "la veille métiers menée auprès des OPMQC",
+        "les référentiels d'emplois, d'activités et de compétences"
+      ],
+      "reponse": 1,
+      "explication": "Turn-over, effectifs (ETP), contrats, pyramides des âges et d'ancienneté, absentéisme relèvent de l'analyse quantitative, appuyée sur la BDESE et le SIRH. L'analyse qualitative couvre ce qui ne se chiffre pas : satisfaction, engagement, climat social, référentiels."
+    },
+    {
+      "id": "b4-r06-qz-004",
+      "section": "2. Le diagnostic RH",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque outil ou source du diagnostic RH à sa fonction.",
+      "colonne_a": [
+        "BDESE",
+        "SIRH",
+        "OPMQC",
+        "HR Analytics"
+      ],
+      "colonne_b": [
+        "Dégager des tendances des données RH, jusqu'à prédire les risques de départ",
+        "Base de données économiques, sociales et environnementales, socle de l'analyse quantitative",
+        "Système d'information RH fournissant effectifs, contrats et mobilités",
+        "Observatoires prospectifs des métiers, des qualifications et des compétences, pour la veille métiers"
+      ],
+      "paires": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [3, 0]
+      ],
+      "explication": "BDESE et SIRH alimentent l'analyse quantitative interne ; les OPMQC nourrissent la veille métiers sectorielle ; les HR Analytics sont une aide à la décision à combiner avec l'expertise humaine, sous contrainte RGPD (2018) et recommandations CNIL."
+    },
+    {
+      "id": "b4-r06-qz-005",
+      "section": "3. Des écarts au plan d'action",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "L'évaluation annuelle révèle que les compétences constatées chez les collaborateurs sont en deçà des compétences attendues dans le référentiel. De quel horizon d'écart s'agit-il, et quelle action engager ?",
+      "options": [
+        "un écart de moyen/long terme : anticiper les emplois émergents",
+        "un écart de court terme : reclasser les métiers sensibles et planifier les retraites",
+        "un écart immédiat : développer et valoriser les compétences stratégiques",
+        "un écart conjoncturel : attendre la prochaine campagne d'évaluation"
+      ],
+      "reponse": 2,
+      "explication": "L'écart entre compétences attendues (référentiel) et constatées (évaluation) est l'écart immédiat, traité par le développement des compétences. Le court terme oppose besoins planifiés et compétences amenées à disparaître ; le moyen/long terme, orientations stratégiques et emplois actuels."
+    },
+    {
+      "id": "b4-r06-qz-006",
+      "section": "3. Des écarts au plan d'action",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Lequel de ces plans ne fait PAS partie des cinq plans d'ajustement types de la GEPP ?",
+      "options": [
+        "le plan de développement des compétences",
+        "le plan de communication externe",
+        "le plan de rémunération",
+        "le plan de reconversion professionnelle"
+      ],
+      "reponse": 1,
+      "explication": "Les cinq plans d'ajustement types sont : développement des compétences, mobilité interne, rémunération, recrutement et reconversion professionnelle (la VAE pouvant être un plan à part entière). La formation n'est d'ailleurs qu'un levier parmi d'autres : recrutement, organisation du travail, délégation, externalisation."
+    },
+    {
+      "id": "b4-r06-qz-007",
+      "section": "4. La compétence",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Un salarié met en avant son diplôme reconnu par la branche pour prouver qu'il est compétent sur un poste. Que peut-on lui répondre au sens de Le Boterf ?",
+      "options": [
+        "il a raison : le diplôme atteste la compétence",
+        "le diplôme relève de la qualification, valeur d'échange reconnue par un titre — la compétence, elle, ne s'observe que par ses résultats en situation",
+        "le diplôme mesure la performance, pas la compétence",
+        "le diplôme est un potentiel, c'est-à-dire une compétence déjà démontrée"
+      ],
+      "reponse": 1,
+      "explication": "La compétence n'est ni la qualification (titre), ni la performance (elle est le processus qui la produit), ni la connaissance, ni le potentiel (compétence virtuelle), ni l'expérience (mode d'acquisition). C'est une combinatoire de ressources mobilisée en situation, observable seulement par ses résultats."
+    },
+    {
+      "id": "b4-r06-qz-008",
+      "section": "4. La compétence",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque notion liée à la compétence à sa caractérisation.",
+      "colonne_a": [
+        "Savoirs",
+        "Savoir-faire",
+        "Savoir-être",
+        "Compétence transverse",
+        "Compétence distinctive"
+      ],
+      "colonne_b": [
+        "Qualités comportementales (soft skills), développables par la formation",
+        "Rare (ex. brevets), source d'avantage concurrentiel",
+        "Connaissances, procédures, normes — souvent formalisés",
+        "Utilisable d'un métier à l'autre, clé de la mobilité",
+        "Issus de l'expérience : habiletés, automatismes, intuition"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 4],
+        [2, 0],
+        [3, 3],
+        [4, 1]
+      ],
+      "explication": "Savoirs (« Que faut-il connaître ? »), savoir-faire (« Comment procéder ? ») et savoir-être (« Comment me comporter ? ») composent la compétence. S'y ajoutent les distinctions individuelle/collective, transverse (mobilité) et distinctive (avantage concurrentiel)."
+    },
+    {
+      "id": "b4-r06-qz-009",
+      "section": "4. La compétence",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "La compétence d'un collaborateur peut s'observer directement, indépendamment de son activité.",
+      "reponse": false,
+      "explication": "Faux. Pour Le Boterf, la compétence est une combinatoire mobilisée en situation : elle ne se voit pas, seul son résultat dans l'activité est observable. D'où le rôle du tiers qui évalue et reconnaît (certification, manager, RH)."
+    },
+    {
+      "id": "b4-r06-qz-010",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Lors de l'élaboration d'un référentiel de compétences, pourquoi observer l'activité sur le terrain plutôt que se contenter des fiches de poste ?",
+      "options": [
+        "parce que les fiches de poste sont des documents confidentiels",
+        "parce que le travail réel révèle des compétences insoupçonnées que le travail prescrit ne décrit pas",
+        "parce que l'observation permet d'évaluer la performance individuelle des salariés",
+        "parce que la loi impose une observation en situation avant toute cartographie"
+      ],
+      "reponse": 1,
+      "explication": "La phase de préparation distingue travail prescrit et travail réel : c'est le réel, saisi par observation et entretiens, qui révèle des compétences insoupçonnées. Suivent la réalisation (dédoublonnage, regroupement, validation, communication) puis le suivi (mise à jour tous les 2-3 ans)."
+    },
+    {
+      "id": "b4-r06-qz-011",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une RH veut regrouper trois postes en un même emploi-type. Quelle condition doit-elle vérifier ?",
+      "options": [
+        "que les postes ont au moins 50 % de missions communes",
+        "que les postes relèvent du même niveau hiérarchique",
+        "que les postes ont 80 % de missions et activités communes, des compétences de même nature et niveau, et qu'un titulaire peut tenir l'ensemble en moins de 3 mois",
+        "que les titulaires des postes sont volontaires pour le regroupement"
+      ],
+      "reponse": 2,
+      "explication": "Les trois vérifications avant regroupement : 80 % des missions et activités communes, compétences de même nature et de même niveau, un titulaire capable de tenir l'ensemble des postes en moins de 3 mois. L'emploi-type ignore la catégorisation hiérarchique."
+    },
+    {
+      "id": "b4-r06-qz-012",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "L'emploi-type est une fiche de poste détaillée, listant les tâches du titulaire et sa position hiérarchique.",
+      "reponse": false,
+      "explication": "Faux. L'emploi-type (né au CEREQ, méthode ETED de Nicole Mandon, 1990) est une description générique regroupant des situations de travail homogènes — il a inspiré le ROME. Ce n'est pas une fiche de poste : ni tâches, ni catégorisation hiérarchique."
+    },
+    {
+      "id": "b4-r06-qz-013",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Dans une agence audiovisuelle, un seul monteur maîtrise la captation en direct : son absence mettrait la prestation en péril. Quel outil permet de repérer ce risque et d'en faire une priorité de formation ?",
+      "options": [
+        "la pyramide des âges",
+        "la matrice de polyvalence, qui croise activités et personnes avec leur niveau de compétence",
+        "l'organigramme du service",
+        "l'aire de mobilité du poste de monteur"
+      ],
+      "reponse": 1,
+      "explication": "La matrice de polyvalence croise, pour un service, activités et personnes avec le niveau de compétence de chacun. Elle révèle les zones à risque — compétences détenues par un nombre réduit de collaborateurs — et donc les priorités de formation, individuelles et collectives."
+    },
+    {
+      "id": "b4-r06-qz-014",
+      "section": "6. Diagnostiquer les besoins",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une entreprise qui peine à recruter veut anticiper les évolutions d'un métier à 3/5 ans pour former ou faire valider les acquis en interne. Quelle approche du diagnostic des besoins adopte-t-elle ?",
+      "options": [
+        "l'approche par le projet d'entreprise",
+        "l'approche par le projet de service",
+        "l'approche métier",
+        "l'approche individuelle"
+      ],
+      "reponse": 2,
+      "explication": "L'approche métier anticipe les évolutions d'un métier à 3/5 ans ; elle est utile quand le recrutement est difficile (formation, VAE) mais exige des fiches métiers/poste. Les quatre approches (projet d'entreprise, projet de service, métier, individuelle) se combinent."
+    },
+    {
+      "id": "b4-r06-qz-015",
+      "section": "6. Diagnostiquer les besoins",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque type de besoin de formation à sa définition.",
+      "colonne_a": [
+        "Besoin collectif",
+        "Besoin individuel",
+        "Besoin générique",
+        "Besoin qualifié"
+      ],
+      "colonne_b": [
+        "L'action de formation et l'organisme sont déjà identifiés",
+        "Lié aux projets de changement ou à des dysfonctionnements profonds",
+        "Lié à la tenue ou à la prise de poste, à une mutation",
+        "Les modalités de la formation restent à définir"
+      ],
+      "paires": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [3, 0]
+      ],
+      "explication": "Collectif : projets de changement, dysfonctionnements profonds ; individuel : tenue ou prise de poste, mutation. Générique : modalités à définir ; qualifié : action et organisme déjà identifiés. Et rappel : toute compétence manquante n'est pas un besoin de formation."
+    },
+    {
+      "id": "b4-r06-qz-016",
+      "section": "7. Évaluer et recueillir les besoins",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Depuis la loi du 24 octobre 2025, à quel rythme l'entretien de parcours professionnel (EPP) doit-il être organisé ?",
+      "options": [
+        "tous les 2 ans, avec un bilan récapitulatif tous les 6 ans",
+        "tous les ans, pour tous les salariés",
+        "tous les 4 ans, avec un état des lieux récapitulatif tous les 8 ans, plus un EPP de mi-carrière et de fin de carrière",
+        "tous les 5 ans, uniquement pour les salariés de plus de 45 ans"
+      ],
+      "reponse": 2,
+      "explication": "La loi du 24 octobre 2025 (art. L. 6315-1) fait de l'entretien professionnel l'EPP : premier EPP dans l'année suivant l'embauche, puis tous les 4 ans (contre 2 auparavant), état des lieux tous les 8 ans (contre 6), plus un EPP de mi-carrière et un EPP de fin de carrière. Le rythme 2 ans / 6 ans est l'ancien régime (loi du 5 mars 2014)."
+    },
+    {
+      "id": "b4-r06-qz-017",
+      "section": "7. Évaluer et recueillir les besoins",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Pour gagner du temps, un manager peut recueillir les besoins de formation de ses collaborateurs pendant l'entretien annuel d'évaluation.",
+      "reponse": false,
+      "explication": "Faux. Le recueil peut accompagner l'entretien professionnel, mais jamais l'entretien d'évaluation : la formation est une obligation de l'employeur, jamais une récompense ou une sanction liée aux résultats. Idéalement, le recueil a lieu en septembre/octobre pour une consultation du CSE en novembre."
+    },
+    {
+      "id": "b4-r06-qz-018",
+      "section": "8. Maintenir et transférer les compétences",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Pour sécuriser le transfert des compétences avant un départ en retraite, l'employeur peut imposer le mentorat au détenteur des savoirs concernés.",
+      "reponse": false,
+      "explication": "Faux. Le mentorat repose sur le volontariat — du mentor comme du mentoré. Le transfert des compétences (knowledge management) exige aussi une méthodologie précise, une planification et un suivi, la formation des détenteurs à la transmission et l'adaptation du temps de travail. Le tutorat en est le versant opérationnel."
+    }
+  ]
+}

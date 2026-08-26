@@ -1,0 +1,368 @@
+{
+  "resume": "b4-r08",
+  "titre": "Superviser la qualité des livrables",
+  "bloc": 4,
+  "questions": [
+    {
+      "id": "b4-r08-qz-001",
+      "section": "1. Définir la qualité d'un livrable créatif",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une agence livre une affiche parfaitement exécutée (résolution, typographie, couleurs impeccables), mais son message met en avant le prix alors que la marque cliente est positionnée premium. Quelle dimension de la qualité est en défaut ?",
+      "options": [
+        "la dimension technique, évaluable par checklist",
+        "la dimension créative, liée à l'originalité du concept",
+        "la dimension stratégique, cohérence des choix créatifs avec le business",
+        "aucune : le livrable est conforme puisque techniquement irréprochable"
+      ],
+      "reponse": 2,
+      "explication": "Une production peut être techniquement irréprochable mais stratégiquement hors sujet. La dimension stratégique (attributs de marque, objectifs, cibles, positionnement) s'intègre dès la conception, pas en vérification a posteriori."
+    },
+    {
+      "id": "b4-r08-qz-002",
+      "section": "1. Définir la qualité d'un livrable créatif",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque pilier de l'identité visuelle à l'erreur typique qui le rompt.",
+      "colonne_a": [
+        "Cohérence chromatique",
+        "Uniformité typographique",
+        "Cohérence des éléments graphiques",
+        "Cohérence de l'imagerie",
+        "Harmonie compositionnelle"
+      ],
+      "colonne_b": [
+        "Photo publicitaire saturée pour une marque fondée sur l'authenticité",
+        "Logo collé à d'autres éléments sans respect de la zone de protection",
+        "Empilement de textes sans hiérarchie ni respiration",
+        "Couleur non référencée dans la charte (bleu turquoise, fond jaune vif)",
+        "Police officielle remplacée par une sans-serif générique"
+      ],
+      "paires": [
+        [0, 3],
+        [1, 4],
+        [2, 1],
+        [3, 0],
+        [4, 2]
+      ],
+      "explication": "Les 5 piliers : chromatique (couleurs de la charte), typographique (polices et hiérarchie), éléments graphiques (dont la zone de protection du logo, les marges de la charte), imagerie (style fidèle aux valeurs), composition (règle des tiers, équilibre des masses)."
+    },
+    {
+      "id": "b4-r08-qz-003",
+      "section": "1. Définir la qualité d'un livrable créatif",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un chef de projet doit rendre contrôlable la valeur « authenticité » de la marque de son client. Quelle formulation de critère est la bonne, selon la méthode du cours ?",
+      "options": [
+        "« Les visuels doivent valoriser l'authenticité de la marque »",
+        "« Décors extérieurs réels, matières naturelles, lumière dorée, tonalité chaleureuse — vérifiés par questions oui/non »",
+        "« Les créatifs doivent s'imprégner de l'esprit de la marque avant de produire »",
+        "« L'authenticité sera appréciée par le directeur artistique au cas par cas »"
+      ],
+      "reponse": 1,
+      "explication": "Superviser, c'est traduire chaque valeur abstraite en éléments observables et mesurables, puis en questions de contrôle binaires (oui/non). C'est l'exemple Le Petit Marseillais : « art de vivre méditerranéen » devient lumière dorée, matières naturelles, décors authentiques, palette provençale."
+    },
+    {
+      "id": "b4-r08-qz-004",
+      "section": "1. Définir la qualité d'un livrable créatif",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Dans un référentiel qualité pyramidal, où classer le critère « le logo et les codes de reconnaissance de la marque sont respectés sur tous les supports et tous les marchés » ?",
+      "options": [
+        "dans les critères adaptatifs, car il varie selon le canal",
+        "dans les critères d'excellence, réservés aux campagnes stratégiques",
+        "dans les critères universels, non négociables quels que soient support et marché",
+        "dans les critères contextuels, liés à la réglementation locale"
+      ],
+      "reponse": 2,
+      "explication": "L'architecture pyramidale compte 3 niveaux : critères universels (reconnaissance de marque, non négociables), critères adaptatifs (contextualisation locale ou par canal), critères d'excellence (productions premium)."
+    },
+    {
+      "id": "b4-r08-qz-005",
+      "section": "1. Définir la qualité d'un livrable créatif",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Plutôt que d'imposer une zone de protection du logo fixe, une agence la définit « entre 15 et 25 mm selon le format ». Quel mécanisme du référentiel applique-t-elle ?",
+      "options": [
+        "un critère bloquant lié à la promesse de marque",
+        "une fourchette de tolérance, qui équilibre précision et flexibilité",
+        "un scoring pondéré avec seuils vert/orange/rouge",
+        "une grille stratégique minimum de 5 à 7 critères"
+      ],
+      "reponse": 1,
+      "explication": "Les fourchettes de tolérance remplacent les valeurs rigides par des plages (zone de protection entre 15 et 25 mm, ±5 % sur les couleurs à l'impression). Avec les critères conditionnels « si… alors… », le scoring et la hiérarchie bloquants/importants/de préférence, elles conditionnent l'adoption du référentiel."
+    },
+    {
+      "id": "b4-r08-qz-006",
+      "section": "1. Définir la qualité d'un livrable créatif",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un livrable qui respecte toutes les valeurs de la marque mais reprend les codes visuels d'un concurrent direct ne constitue pas un écart qualité.",
+      "reponse": false,
+      "explication": "Faux. La cartographie concurrentielle créative fait de la différenciation un critère de qualité à part entière : reproduire les codes d'un concurrent est un écart même si les valeurs sont respectées. Un livrable « conforme mais banalisé » est un échec stratégique silencieux."
+    },
+    {
+      "id": "b4-r08-qz-007",
+      "section": "1. Définir la qualité d'un livrable créatif",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Pour une marque dont l'univers repose sur la nature, un prestataire livre un visuel tourné en décor urbain. Le caractère distinctif est dilué mais pas contredit. Comment qualifier cet écart ?",
+      "options": [
+        "écart mineur : détail d'exécution sans impact perçu",
+        "écart modéré : déviation notable qui dilue le caractère distinctif",
+        "écart critique : contradiction directe avec la promesse, retrait immédiat",
+        "écart positif : une innovation à valoriser"
+      ],
+      "reponse": 1,
+      "explication": "C'est l'exemple type de l'écart modéré (décor urbain au lieu du naturel) : il dilue sans contredire, et son accumulation affaiblit la différenciation. Le mineur est un détail (nuance de bleu hors charte), le critique contredit valeurs ou promesse et exige un recadrage immédiat."
+    },
+    {
+      "id": "b4-r08-qz-008",
+      "section": "2. Organiser la supervision",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Votre agence confie un motion design à un free-lance qui n'a jamais travaillé pour le client. Quelle est la bonne pratique de démarrage ?",
+      "options": [
+        "le laisser proposer librement pour préserver sa créativité, puis corriger à la livraison",
+        "lui transmettre un kit de démarrage : brief détaillé, charte graphique, exemples de livrables conformes",
+        "lui demander de signer la charte qualité de l'agence avant tout échange",
+        "programmer uniquement un feed-back de fin de mission pour ne pas le surcharger"
+      ],
+      "reponse": 1,
+      "explication": "Les free-lances, étrangers à la culture de l'agence, se trouvent dans les zones de dilution du contrôle qualité. Le kit de démarrage (brief, charte, exemples conformes) se complète d'un cadrage initial, de jalons intermédiaires et d'un feed-back de fin de mission."
+    },
+    {
+      "id": "b4-r08-qz-009",
+      "section": "2. Organiser la supervision",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque phase du pilotage de la sous-traitance créative à son contenu.",
+      "colonne_a": [
+        "Sélection",
+        "Cadrage",
+        "Suivi",
+        "Évaluation"
+      ],
+      "colonne_b": [
+        "Points de contrôle intermédiaires",
+        "Capitalisation sur la collaboration",
+        "Compétences et adaptation culturelle",
+        "Transmission des standards, sessions d'alignement"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 3],
+        [2, 0],
+        [3, 1]
+      ],
+      "explication": "La sous-traitance se pilote en 4 phases : sélection (compétences + adaptation culturelle), cadrage (standards, alignement), suivi (points de contrôle), évaluation (capitalisation). Le prestataire se traite en partenaire créatif, pas en exécutant."
+    },
+    {
+      "id": "b4-r08-qz-010",
+      "section": "2. Organiser la supervision",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Dans une agence, chaque maquette repasse sans fin entre le DA, le client et la direction : chacun rouvre les points validés par les autres, personne ne tranche, les versions s'accumulent. Quelle pathologie du circuit de validation est à l'œuvre ?",
+      "options": [
+        "la boucle de validation infinie, faute d'autorité finale qui tranche",
+        "la validation parallèle, mal synchronisée",
+        "la subsidiarité créative, poussée trop loin",
+        "le circuit express, déclenché de façon abusive"
+      ],
+      "reponse": 0,
+      "explication": "La boucle de validation infinie est la reprise cyclique des mêmes points par différents acteurs sans autorité finale : versions multiples, démotivation, explosion des délais. Elle se combine souvent aux critères subjectifs et à l'absence d'arbitre final."
+    },
+    {
+      "id": "b4-r08-qz-011",
+      "section": "2. Organiser la supervision",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "En comité de validation, les avis s'alignent systématiquement sur le premier qui s'exprime. Quelle contre-mesure le cours préconise-t-il ?",
+      "options": [
+        "réduire le comité à deux personnes pour limiter les influences",
+        "faire produire une évaluation individuelle écrite avant la réunion collective",
+        "donner la parole en dernier au directeur artistique",
+        "remplacer le comité par une validation automatisée"
+      ],
+      "reponse": 1,
+      "explication": "C'est la pensée de groupe (conformisme en comité), l'un des 3 biais cognitifs avec le biais de confirmation (qui standardise les créations) et l'effet de halo (un détail frappant contamine le jugement). La contre-mesure : l'évaluation individuelle écrite avant la réunion collective."
+    },
+    {
+      "id": "b4-r08-qz-012",
+      "section": "2. Organiser la supervision",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque niveau de l'architecture de validation à ce qu'il valide.",
+      "colonne_a": [
+        "Niveau opérationnel (DA + chef de projet)",
+        "Niveau stratégique (responsables marketing/communication)",
+        "Niveau décisionnel (direction)"
+      ],
+      "colonne_b": [
+        "Arbitrages complexes uniquement : désaccords, prise de risque, innovations hors standards",
+        "Exécution, formats, cohérence visuelle, respect du brief",
+        "Alignement objectifs, pertinence cibles, différenciation, cohérence inter-campagnes"
+      ],
+      "paires": [
+        [0, 1],
+        [1, 2],
+        [2, 0]
+      ],
+      "explication": "L'architecture de référence compte 3 niveaux fondés sur la subsidiarité créative : chaque niveau traite en autonomie les critères qu'il maîtrise le mieux, sans remontée systématique — la direction ne voit que les arbitrages complexes."
+    },
+    {
+      "id": "b4-r08-qz-013",
+      "section": "2. Organiser la supervision",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Chez YSA, un livrable vidéo attend successivement la validation technique, puis créative, puis juridique — chacune bloquant la suivante. Ces trois contrôles portent sur des périmètres indépendants. Que proposer ?",
+      "options": [
+        "un comité d'arbitrage créatif pour trancher les désaccords",
+        "la validation parallèle : évaluations simultanées sur périmètres indépendants, avec point de convergence",
+        "un parcours innovation avec jury d'experts",
+        "une escalade systématique au niveau décisionnel"
+      ],
+      "reponse": 1,
+      "explication": "La validation parallèle fait évaluer simultanément un même livrable par plusieurs parties prenantes sur des périmètres indépendants : délais réduits jusqu'à 60 %, goulets supprimés. Conditions : rôles clairs, critères précis, outils adaptés — et un comité de synthèse au point de convergence."
+    },
+    {
+      "id": "b4-r08-qz-014",
+      "section": "2. Organiser la supervision",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Dans le cas du cours, les pré-validations techniques automatisées (formats, résolutions, éléments obligatoires) ont éliminé 60 % des allers-retours techniques.",
+      "reponse": true,
+      "explication": "Vrai. Avec la refonte du circuit (validation parallèle, RACI), le cas passe de 18 à 8 jours de validation (−55 %) et de 4,2 à 2,1 itérations — le diagnostic initial chiffrait le surcoût à plus de 150 000 € par an (2,3 ETP)."
+    },
+    {
+      "id": "b4-r08-qz-015",
+      "section": "2. Organiser la supervision",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans une matrice RACI appliquée à la validation d'un livrable, qui tranche en dernier ressort ?",
+      "options": [
+        "le R, responsable de l'exécution",
+        "le A, autorité décisionnaire",
+        "le C, consulté pour avis",
+        "le I, informé du résultat"
+      ],
+      "reponse": 1,
+      "explication": "RACI : Responsable de l'exécution, Autorité décisionnaire, Consulté, Informé. Le A détient la décision — c'est ce qui tranche les conflits de légitimité et réduit de 40 % les temps de réponse dans le cas du cours."
+    },
+    {
+      "id": "b4-r08-qz-016",
+      "section": "2. Organiser la supervision",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Pour gagner du temps en cas d'urgence, n'importe quel membre de l'équipe peut déclencher le circuit express de validation.",
+      "reponse": false,
+      "explication": "Faux. Le circuit express (validateurs mobilisés simultanément, critères recentrés) prévoit un responsable désigné du déclenchement, précisément pour éviter les abus. Les deux autres soupapes d'exception : le comité d'arbitrage créatif et le parcours innovation."
+    },
+    {
+      "id": "b4-r08-qz-017",
+      "section": "2. Organiser la supervision",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Communication qualité différenciée : associez chaque public à l'angle et au canal adaptés.",
+      "colonne_a": [
+        "Créatifs",
+        "Managers",
+        "Équipes locales",
+        "Partenaires externes"
+      ],
+      "colonne_b": [
+        "Tableau de bord qui objective, réunion",
+        "Guide technique détaillé qui rassure",
+        "Newsletter visuelle qui inspire, atelier",
+        "Webinaire interactif qui engage"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 0],
+        [2, 3],
+        [3, 1]
+      ],
+      "explication": "La communication qualité se différencie par public et canal : impact des créations pour les créatifs (inspire), pilotage pour les managers (objective), reconnaissance de l'expertise terrain pour les équipes locales (engage), procédures claires pour les partenaires (rassure)."
+    },
+    {
+      "id": "b4-r08-qz-018",
+      "section": "2. Organiser la supervision",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Chez YSA, les validations passent par mail, l'informel par Slack, les fichiers sont dispersés sur plusieurs drives : pertes d'information et erreurs de version se multiplient. Quelle architecture cible viser ?",
+      "options": [
+        "remplacer tous les outils par un logiciel unique qui fait tout",
+        "la centralisation intelligente : un outil pivot orchestre les workflows, les outils spécialisés gardent leur excellence, source de vérité unique",
+        "interdire Slack et revenir au mail pour tout tracer",
+        "laisser chaque équipe choisir ses outils et synchroniser en fin de projet"
+      ],
+      "reponse": 1,
+      "explication": "Face à la fragmentation technologique, la cible n'est pas l'outil unique mais la centralisation intelligente : un outil pivot de gestion de projet orchestre, chaque information n'a qu'un seul « propriétaire » (source de vérité unique), et le déploiement est progressif. Les DAM (Frame.io, Frontify, Bynder) centralisent les assets de marque."
+    },
+    {
+      "id": "b4-r08-qz-019",
+      "section": "3. Contrôler et corriger",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Feedback à un graphiste : « Sur l'affiche du lancement (S), le slogan met l'accent sur le prix en rouge très visible (C), … (I), pourrions-nous explorer une version axée sur le bénéfice soin ? (I) ». Que doit contenir le troisième élément, l'Impact ?",
+      "options": [
+        "un jugement personnel : « je n'aime pas ce rouge »",
+        "la conséquence sur les objectifs : « cela positionne le produit comme discount, contraire à notre image premium »",
+        "la sanction prévue si l'écart n'est pas corrigé",
+        "un rappel du planning de production"
+      ],
+      "reponse": 1,
+      "explication": "Le SBI-I enchaîne Situation, Comportement (fait observé), Impact (conséquence sur les objectifs, pas une impression personnelle) et Intention (question ouverte de co-construction). Principes : valoriser avant de corriger, reformulation positive plutôt que rejet frontal."
+    },
+    {
+      "id": "b4-r08-qz-020",
+      "section": "3. Contrôler et corriger",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Avant de formuler un feedback sur un livrable créatif, la première chose à faire est de relire le brief initial.",
+      "reponse": true,
+      "explication": "Vrai. C'est le brief qui fonde des observations objectives, pas les impressions personnelles. On catégorise ensuite les retours en 3 niveaux : conforme à valoriser, écart mineur (correction simple), écart majeur (refonte)."
+    },
+    {
+      "id": "b4-r08-qz-021",
+      "section": "4. Piloter dans la durée et à l'international",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Après 12 mois de pilotage, une agence affiche des délais en baisse de 22 % et des réclamations en baisse de 35 %, mais ses créations s'uniformisent, elle ne gagne plus aucun prix créatif et le turnover des seniors bondit de 40 %. Que conclure ?",
+      "options": [
+        "le dispositif fonctionne : les indicateurs opérationnels sont tous au vert",
+        "les seniors résistent au changement, il faut renforcer le contrôle",
+        "le système de mesure lui-même est déséquilibré : des indicateurs uniquement opérationnels optimisent l'efficacité au détriment de l'excellence créative",
+        "il faut supprimer toute mesure pour libérer la créativité"
+      ],
+      "reponse": 2,
+      "explication": "C'est le cas CreativeFlow : il faut rééquilibrer le système avec les 3 niveaux d'indicateurs (opérationnels, tactiques, stratégiques) en duos quantitatif + qualitatif, et distinguer écart positif (innovation) et anomalie (dérive). Le pilotage qualité est un levier d'apprentissage, pas de sanction."
+    },
+    {
+      "id": "b4-r08-qz-022",
+      "section": "4. Piloter dans la durée et à l'international",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Matrice impact × complexité : associez chaque famille d'améliorations à son traitement.",
+      "colonne_a": [
+        "Quick wins",
+        "Projets structurants",
+        "Optimisations continues",
+        "Innovations disruptives"
+      ],
+      "colonne_b": [
+        "Refonte de référentiel, sponsorisée par la direction",
+        "Expérimentation contrôlée (ex. IA)",
+        "À traiter d'abord pour entretenir la dynamique",
+        "Micro-améliorations et rituels, effet cumulé"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 0],
+        [2, 3],
+        [3, 1]
+      ],
+      "explication": "Impact élevé/complexité faible = quick wins (d'abord) ; impact et complexité élevés = projets structurants ; effet cumulé = optimisations continues ; IA = innovations disruptives. Les actions vivent dans un backlog priorisé, traité en sprints qualité de 4 semaines, dans une logique Kaizen."
+    }
+  ]
+}

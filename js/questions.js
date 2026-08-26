@@ -334,5 +334,154 @@ var QUESTIONS_COURS = {
     ],
     "resumes_appui": [],
     "html": "<p><b>La modération</b>, c'est veiller à ce que les échanges d'une communauté restent sains et respectueux. L'outil du cours : la <b>charte de modération</b> — un document qui pose les règles du groupe (<a href=\"#\" data-resume-go=\"b2-r10\">R10</a>, section 6). Ce qu'on y trouve :</p>\n<ul><li>Le rappel que la <b>liberté d'expression a des limites légales</b> (insultes, discrimination, harcèlement sont interdits par la loi)</li><li>La définition de ce qui est acceptable ou non dans le groupe (le « langage inapproprié »)</li><li>Des <b>filtres automatiques</b> (bloquer certains mots) et un système de <b>signalement</b> par les membres</li><li>Une <b>échelle de réponses graduées</b> : supprimer un contenu, bannir un membre, ou déplacer un conflit en <b>message privé</b> pour ne pas l'étaler en public</li></ul>\n<p><b>L'e-réputation</b>, c'est l'image de la marque telle qu'elle existe sur Internet — avis, commentaires, mentions. Trois idées du cours (<a href=\"#\" data-resume-go=\"b2-r10\">R10</a>, section 8) :</p>\n<ul><li>Elle se <b>gère en continu</b>, pas seulement en cas de problème : on surveille ce qui se dit (outils de <b>veille</b> comme Google Alerts ou Mention, qui alertent quand la marque est citée).</li><li>Une bonne réputation crée de la <b>confiance</b> (les avis positifs sont le bouche-à-oreille moderne) ; une communauté bien tenue la nourrit, chaque échange public étant une vitrine.</li><li>En cas de critique ou de crise : <b>rapidité et transparence</b> — répondre vite, reconnaître, expliquer ce qu'on corrige. Le cours oppose deux cas d'école : Nestlé (réaction tardive, suppression des critiques → crise amplifiée) et une marque qui s'excuse immédiatement et informe → crise désamorcée.</li></ul>\n<p><b>Les indicateurs</b> pour suivre tout ça (l'énoncé en cite plusieurs) : le nombre d'<b>abonnés</b> et son évolution, les <b>mentions de la marque</b> (combien de fois on parle de vous, et en bien ou en mal — la « tonalité »), l'<b>engagement</b> (likes, partages, commentaires, et le <b>taux d'engagement</b> qui rapporte ces interactions à l'audience), plus les indicateurs de modération eux-mêmes (signalements, contenus supprimés, délais de réponse). Même logique que b2-5 et b2-10 : chaque indicateur se rattache à un objectif.</p>\n<p>Pour approfondir : <a href=\"#\" data-resume-go=\"b2-r10\">R10 — Réseaux sociaux</a> (modération, e-réputation, marketing d'influence, social ads).</p>"
+  },
+  "b4-Q1": {
+    "id": "b4-Q1",
+    "bloc": 4,
+    "dossier": 1,
+    "titre": "Q1 — Analyser la demande : récapitulatif, opportunités, risques",
+    "competence": "C4.1",
+    "resumes": [
+      "b4-r01"
+    ],
+    "resumes_appui": [
+      "b4-r02"
+    ],
+    "html": "<blockquote><p><b>Le Dossier 1 en un mot.</b> Les questions 1 à 5 couvrent la <b>coordination d'une équipe pluridisciplinaire</b> interne/externe (C4.1) : comprendre la demande (Q1), inclure tous les publics et profils (Q2), clarifier rôles et communication (Q3), fixer des objectifs SMART (Q4), organiser le travail hybride (Q5). Le fil rouge : toi, chef de projet chez YSA, entre l'agence et l'annonceur Drumeo.</p></blockquote>\n<p><b>Le récapitulatif de la demande</b> : reformule le brief avec tes mots — qui demande (Drumeo, annonceur), quoi (communication digitale pré-événement, captation live multi-caméras, post-production et diffusion), pour quel événement (Masterclass avec Lars Ulrich, salle en O, public VIP + diffusion en ligne), avec quels objectifs chiffrés. Reformuler ≠ recopier : montre que tu as compris les <b>enjeux</b> (première captation musicale live pour YSA, image premium de Drumeo).</p>\n<p><b>Opportunités et risques</b> : c'est un mini-diagnostic. Côté opportunités : visibilité internationale, nouveau savoir-faire (captation live), reconduction du partenariat. Côté risques : événement en direct (pas de seconde prise), compétence nouvelle pour l'agence, coordination annonceur/prestataire, délais serrés. Les <b>facteurs internes</b> (compétences, organisation, disponibilité de l'équipe) relèvent du diagnostic interne — appuie-toi sur la logique <b>exploitation vs exploration</b> et les enjeux stratégiques de <a href=\"#\" data-resume-go=\"b4-r01\">R1</a> : YSA sort de son cœur de métier, c'est précisément ce qui justifie la formation du Dossier 3.</p>\n<p><b>Le critère évalué</b> attend une évaluation <i>complète</i> : particularités de l'équipe, enjeux marketing/communication, besoins spécifiques des collaborateurs. Structure ta réponse (demande → opportunités → risques → facteurs internes → comment YSA y répond) plutôt que de tout mélanger.</p>\n<p>Pour approfondir : <a href=\"#\" data-resume-go=\"b4-r01\">R1 — Le manager : rôle, leadership et enjeux stratégiques</a>, et la logique objectifs → plan d'action de <a href=\"#\" data-resume-go=\"b4-r02\">R2</a>.</p>"
+  },
+  "b4-Q2": {
+    "id": "b4-Q2",
+    "bloc": 4,
+    "dossier": 1,
+    "titre": "Q2 — Inclusion et accessibilité : la salle en O",
+    "competence": "C4.1",
+    "resumes": [
+      "b4-r04"
+    ],
+    "resumes_appui": [],
+    "html": "<p>La question te donne le plan de la salle (annexe 8) et demande <b>en quoi les aménagements répondent à des besoins variés</b>, puis <b>des améliorations</b>. C'est une application directe du volet diversité/inclusion de <a href=\"#\" data-resume-go=\"b4-r04\">R4</a>.</p>\n<p><b>Lis le plan avec la grille du cours</b> : chaque zone répond à un besoin identifiable. Accès PMR avec rampes normalisées → handicap moteur ; <b>boucles magnétiques</b> → personnes malentendantes appareillées ; <b>zones calmes</b> isolées acoustiquement → personnes <b>neuroatypiques</b> (TSA, hypersensibilité sensorielle) ; signalétique bilingue et pictogrammes universels → diversité linguistique et culturelle ; configuration en O à 360° → proximité et expérience partagée pour tous les publics.</p>\n<p><b>Les deux notions à mobiliser explicitement</b> : l'<b>accessibilité universelle</b> (concevoir dès le départ pour tous — la salle en O, la signalétique) vs les <b>aménagements raisonnables</b> (adaptations ciblées pour un besoin précis — rampes, boucles, zones calmes), et l'<b>effet d'entraînement</b> : un aménagement pensé pour un public bénéficie souvent à tous (les pictogrammes aident les visiteurs étrangers ET les personnes dys).</p>\n<p><b>Pour les améliorations</b>, propose du concret et justifie par le besoin couvert : places PMR aussi en bas des gradins (choix, pas relégation), interprétation LSF ou sous-titrage en direct de la masterclass, éclairage annonçant les transitions sonores pour préparer les publics sensibles, personnel formé à l'accueil des différents handicaps, billetterie en ligne accessible (WCAG), tarif accompagnant. Le critère évalué : défis liés à la <b>diversité culturelle</b> et au <b>handicap</b> identifiés — n'oublie donc pas le volet culturel (public international, codes différents).</p>\n<p>Pour approfondir : <a href=\"#\" data-resume-go=\"b4-r04\">R4 — Manager la diversité et les équipes hybrides</a>.</p>"
+  },
+  "b4-Q3": {
+    "id": "b4-Q3",
+    "bloc": 4,
+    "dossier": 1,
+    "titre": "Q3 — Attentes réciproques et risques de communication",
+    "competence": "C4.1",
+    "resumes": [
+      "b4-r03"
+    ],
+    "resumes_appui": [
+      "b4-r01"
+    ],
+    "html": "<p>La question impose un <b>tableau</b> analysant trois binômes Drumeo ↔ YSA : Jared Falk (PDG Drumeo) ↔ Braeden Fairbridge (PDG YSA), Brandon Toews (animateur/créateur de contenu) ↔ Colin Marshall (directeur créatif), Dave Atkinson (responsable marketing/communication) ↔ Chris Mike (responsable vidéaste/photo). Les rôles de chacun sont dans l'annexe 4 — pars de là, pas de généralités.</p>\n<p><b>La logique</b> : chaque binôme met face à face un donneur d'ordres côté annonceur et son interlocuteur côté prestataire, à trois niveaux — stratégique (les deux PDG : vision, validation, arbitrages), créatif/éditorial (Brandon ↔ Colin : narration, expérience pédagogique vs direction artistique), opérationnel (Dave ↔ Chris : supports marketing vs qualité des images livrées). Pour chaque ligne du tableau : <b>attentes de A envers B, attentes de B envers A, risques si la communication déraille</b>.</p>\n<p><b>Les notions à mobiliser</b> (<a href=\"#\" data-resume-go=\"b4-r03\">R3</a>) : la clarté des rôles et responsabilités (qui décide, qui exécute, qui informe — pense RACI, détaillé dans <a href=\"#\" data-resume-go=\"b4-r04\">R4</a>) ; Watzlawick — toute communication a un <b>contenu</b> et une <b>relation</b>, et beaucoup de tensions naissent du second ; les risques types : attentes implicites non formulées, doublons de validation, contournement du circuit (Jared qui briefe directement Chris), rétention d'information, interprétations divergentes du brief créatif.</p>\n<p><b>Exemples de tensions crédibles</b> : validation tardive des choix artistiques par Drumeo → retards en cascade sur le rétroplanning ; feedback flou (« plus premium ») → itérations inutiles ; Dave qui découvre les teasers au moment de la diffusion → supports non alignés avec la stratégie de marque. Le critère évalué : <b>missions et responsabilités de chacun identifiées</b> — cite les rôles exacts de l'annexe.</p>\n<p>Pour approfondir : <a href=\"#\" data-resume-go=\"b4-r03\">R3 — Piloter l'humain</a> et le rôle du manager dans <a href=\"#\" data-resume-go=\"b4-r01\">R1</a>.</p>"
+  },
+  "b4-Q4": {
+    "id": "b4-Q4",
+    "bloc": 4,
+    "dossier": 1,
+    "titre": "Q4 — Formuler les objectifs SMART de l'événement",
+    "competence": "C4.1",
+    "resumes": [
+      "b4-r02"
+    ],
+    "resumes_appui": [
+      "b4-r05"
+    ],
+    "html": "<p>Question de pure méthode : transformer les <b>indicateurs de réussite du brief</b> (annexe 1) en <b>objectifs SMART</b>. Le brief te donne tout : &gt; 500 000 vues cumulées dans le mois suivant la diffusion, taux d'engagement &gt; 8 %, &gt; 20 retombées presse, &gt; 100 invités présents, 100 % des jalons validés selon le rétroplanning, qualité de captation validée par Drumeo.</p>\n<p><b>La méthode</b> (<a href=\"#\" data-resume-go=\"b4-r02\">R2</a>) : reprends chaque indicateur et vérifie critère par critère — <b>S</b>pécifique (une seule chose, précise), <b>M</b>esurable (un chiffre et sa source de mesure), <b>A</b>tteignable (au regard des moyens : 5 M d'abonnés YouTube Drumeo rendent 500 000 vues crédibles), <b>R</b>éaliste (cohérent avec le contexte), <b>T</b>emporellement défini (une échéance : « dans le mois suivant la diffusion », « le soir du jour J »). Rédige des phrases complètes : « Atteindre 500 000 vues cumulées sur YouTube et les réseaux sociaux dans le mois suivant la diffusion, mesurées via les analytics des plateformes. »</p>\n<p><b>Deux pièges</b> : ne pas te contenter de recopier l'indicateur (l'objectif SMART ajoute l'échéance, la mesure, la justification d'atteignabilité) ; et ne pas inventer d'objectifs hors brief — la question dit « en vous appuyant sur les indicateurs de réussite définis dans le brief ». Tu peux en revanche les hiérarchiser (objectifs de visibilité, d'engagement, de relations presse, d'expérience événementielle, de pilotage projet), ce qui montre la maîtrise de la cascade objectifs → indicateurs de <a href=\"#\" data-resume-go=\"b4-r05\">R5</a>.</p>\n<p>Le critère évalué reprend mot à mot les 5 lettres : structure ta réponse pour que l'évaluateur retrouve chaque critère sans effort.</p>\n<p>Pour approfondir : <a href=\"#\" data-resume-go=\"b4-r02\">R2 — Des objectifs au plan d'action</a> (SMARTEF) et <a href=\"#\" data-resume-go=\"b4-r05\">R5 — Suivre la performance</a> (le lien objectif ↔ KPI).</p>"
+  },
+  "b4-Q5": {
+    "id": "b4-Q5",
+    "bloc": 4,
+    "dossier": 1,
+    "titre": "Q5 — Organiser le travail hybride Drumeo / YSA",
+    "competence": "C4.1",
+    "resumes": [
+      "b4-r04"
+    ],
+    "resumes_appui": [
+      "b4-r03"
+    ],
+    "html": "<p>Une question de <b>synthèse</b> : décrire les modalités de collaboration déjà en place (annexes 5 et 6) et expliquer en quoi elles favorisent <b>coordination</b> et <b>inclusion</b>. Le matériau est fourni, la valeur ajoutée est dans l'analyse.</p>\n<p><b>Ce que donnent les annexes</b> : réunions bimensuelles en visioconférence (Teams/Zoom), rapports écrits mensuels (synthèse YSA + validation Drumeo), tableau de bord partagé (Trello pour les <b>jalons temporels</b>, ClickUp pour la <b>validation des tâches et compétences</b>), Google Drive pour les documents, Slack/Teams pour l'instantané, suite Adobe pour la production créative, répétition générale filmée avec retour en direct. Présente-les en distinguant <b>synchrone</b> (visios, répétition) et <b>asynchrone</b> (rapports, tableaux de bord, Drive) — c'est la grille de <a href=\"#\" data-resume-go=\"b4-r04\">R4</a>.</p>\n<p><b>Pourquoi ça coordonne</b> : chaque outil a un rôle unique et connu de tous (pas de doublon Trello/ClickUp : jalons vs validation — le « double suivi » est explicitement défendu dans l'annexe 6) ; les rituels réguliers créent la prévisibilité ; la <b>standardisation des résultats</b> (Mintzberg) permet de coordonner deux organisations distinctes sans lien hiérarchique ; la traçabilité écrite protège la relation annonceur/prestataire. Mobilise aussi la <b>richesse des médias</b> (Daft &amp; Lengel) : la visio pour les sujets ambigus (direction créative), l'écrit pour le suivi factuel.</p>\n<p><b>Pourquoi ça inclut</b> : l'asynchrone respecte fuseaux horaires et rythmes de chacun ; l'écrit systématique aide les non-natifs et les profils qui traitent mieux l'information posée ; la visio avec support partagé multiplie les canaux de compréhension ; les modalités variées (présentiel jour J, distanciel en amont) laissent chaque profil travailler dans sa zone de confort. Termine par une ou deux améliorations possibles (ordre du jour envoyé à l'avance, comptes rendus systématiques, caméra facultative hors moments clés).</p>\n<p>Pour approfondir : <a href=\"#\" data-resume-go=\"b4-r04\">R4 — Manager la diversité et les équipes hybrides</a> et la communication managériale de <a href=\"#\" data-resume-go=\"b4-r03\">R3</a>.</p>"
+  },
+  "b4-Q6": {
+    "id": "b4-Q6",
+    "bloc": 4,
+    "dossier": 2,
+    "titre": "Q6 — Le tableau de critères qualité des livrables",
+    "competence": "C4.2",
+    "resumes": [
+      "b4-r08"
+    ],
+    "resumes_appui": [
+      "b4-r05"
+    ],
+    "html": "<blockquote><p><b>Le Dossier 2 en un mot.</b> Les questions 6 à 9 couvrent la <b>supervision de la qualité des livrables</b> produits par des équipes créatives internes ou externes (C4.2) : définir les critères (Q6), organiser le processus dans le temps (Q7), outiller la collaboration (Q8), gérer les écarts et le feedback (Q9). Cette fois tu changes de casquette : salarié de <b>Drumeo</b>, tu supervises le prestataire YSA.</p></blockquote>\n<p><b>Ce qui est demandé</b> : un tableau de critères <b>précis et mesurables</b> pour trois étapes — communication pré-événement (teasers, visuels réseaux sociaux), captation vidéo/audio le jour J, diffusion sur YouTube et plateformes. Structure type : étape / livrable / critère de qualité / seuil ou mesure / méthode de contrôle.</p>\n<p><b>La boîte à outils de <a href=\"#\" data-resume-go=\"b4-r08\">R8</a></b> : distingue les <b>critères techniques</b> (formats par plateforme, 4K multi-caméras, synchronisation audio/vidéo, durée des teasers 15-60 s), <b>créatifs</b> (storytelling « découverte d'un morceau en direct », ton premium immersif), <b>stratégiques</b> (respect de l'identité visuelle Drumeo — logo, bleu et blanc, typographies sobres ; message clé de la marque) et <b>contextuels</b> (codes de chaque plateforme : TikTok, Instagram, YouTube Shorts). Rends chaque critère <b>mesurable</b> : fourchettes de tolérance, seuils vert/orange/rouge, checklists par format — un critère flou (« vidéo de qualité ») ne vaut rien, un critère opérationnel (« son haute-fidélité mixé, validé par l'ingénieur son Drumeo avant J-2 ») est notable.</p>\n<p>Le critère évalué exige l'alignement avec <b>la stratégie de marque, la ligne éditoriale et les objectifs de la campagne</b> : relie explicitement tes critères au brief créatif (annexe 1) et aux indicateurs de réussite — c'est le pont avec les KPI de <a href=\"#\" data-resume-go=\"b4-r05\">R5</a>.</p>\n<p>Pour approfondir : <a href=\"#\" data-resume-go=\"b4-r08\">R8 — Superviser la qualité des livrables</a> (dimensions de la qualité, référentiels, seuils).</p>"
+  },
+  "b4-Q7": {
+    "id": "b4-Q7",
+    "bloc": 4,
+    "dossier": 2,
+    "titre": "Q7 — Rétroplanning et processus de supervision",
+    "competence": "C4.2",
+    "resumes": [
+      "b4-r08"
+    ],
+    "resumes_appui": [
+      "b4-r02"
+    ],
+    "html": "<p>Deux livrables en un : un <b>rétroplanning détaillé</b> (étapes, délais, responsables, jalons) et l'explication de <b>comment ce processus garantit la qualité</b> au regard des enjeux stratégiques, du budget et des contraintes de temps.</p>\n<p><b>Le rétroplanning</b> : pars de la date de l'événement et remonte. L'annexe 5 (contrat) te donne l'ossature — phase de préparation (1 à 2 mois : conception créative, plan de communication, logistique), jour J (tournage), post-production et diffusion (1 à 2 mois : montage, habillage, déclinaisons, diffusion, suivi des retombées) — et des jalons contractuels (points d'étape toutes les 3 semaines, rapport final). Détaille à l'intérieur : brief validé, maquettes teasers, validation Drumeo, publication pré-événement, répétition générale filmée, captation, montage master, validation finale, déclinaisons courtes, diffusion, rapport KPI. Pour chaque ligne : responsable nommé (utilise les rôles de l'annexe 4) et jalon de validation. La mécanique de planification (dépendances, Gantt) est dans <a href=\"#\" data-resume-go=\"b4-r02\">R2</a>.</p>\n<p><b>La partie « en quoi ça garantit la qualité »</b> mobilise <a href=\"#\" data-resume-go=\"b4-r08\">R8</a> : des <b>points de contrôle intermédiaires</b> (concept → maquette → avant finalisation) qui évitent l'effet tunnel et les reprises coûteuses ; des <b>jalons de validation</b> avec critères explicites et validateur identifié (qui a le dernier mot côté Drumeo) ; des <b>buffers</b> avant les étapes critiques (un direct ne se rattrape pas) ; l'anticipation des <b>modifications de dernière minute</b> et leur effet domino ; un circuit de validation à niveaux (opérationnel / stratégique) pour ne pas engorger la direction. Relie chaque mécanisme à un enjeu : budget (corriger tôt coûte moins cher), temps (parallélisation des livrables indépendants), stratégie (validation d'alignement de marque avant diffusion).</p>\n<p>Le critère évalué cite les étapes attendues : <b>briefing initial, révision, retours, validations intermédiaires et finales</b> — assure-toi qu'elles apparaissent noir sur blanc.</p>\n<p>Pour approfondir : <a href=\"#\" data-resume-go=\"b4-r08\">R8 — Superviser la qualité des livrables</a> et <a href=\"#\" data-resume-go=\"b4-r02\">R2 — Des objectifs au plan d'action</a>.</p>"
+  },
+  "b4-Q8": {
+    "id": "b4-Q8",
+    "bloc": 4,
+    "dossier": 2,
+    "titre": "Q8 — Outils collaboratifs et routines d'équipe",
+    "competence": "C4.2",
+    "resumes": [
+      "b4-r08"
+    ],
+    "resumes_appui": [
+      "b4-r04"
+    ],
+    "html": "<p>Deux temps : <b>proposer les outils</b> que Drumeo et YSA utilisent pour travailler en cohésion, puis en déduire <b>réflexes et bonnes pratiques</b> (routines quotidiennes, astuces d'organisation) pour créer des automatismes dans l'équipe.</p>\n<p><b>Les outils</b> : appuie-toi d'abord sur l'existant des annexes 5 et 6 — Trello (jalons temporels), ClickUp (validation des tâches et compétences), Google Drive (documents partagés), Slack/Teams (instantané), Zoom/Teams (visios), suite Adobe (production) — puis complète avec la grille de <a href=\"#\" data-resume-go=\"b4-r08\">R8</a> : pour du créatif, un outil doit gérer les <b>gros fichiers</b> sans compression, les <b>formats natifs</b>, offrir une <b>preview intégrée</b>, des <b>commentaires contextuels ancrés sur le visuel</b> (type Frame.io pour la vidéo), un <b>versioning créatif</b> et s'intégrer aux logiciels de création. Le principe d'architecture : un <b>outil pivot</b> (source de vérité unique) + des outils spécialisés reliés, plutôt qu'un empilement — la fragmentation technologique fait perdre du temps et crée des erreurs de version.</p>\n<p><b>Les routines</b> : chaque outil a UN rôle et un seul (jalons ≠ validation ≠ stockage) ; conventions de nommage des fichiers et des versions (jamais de « final_v2_OK ») ; check-list qualité avant toute soumission à validation ; daily ou point hebdo court avec ordre du jour ; toute décision actée par écrit dans l'outil de référence (jamais uniquement à l'oral en visio) ; feedback ancré sur le livrable, pas dispersé en mails ; horaires de réponse convenus entre fuseaux ; répétition générale = revue de tous les réglages tracée dans ClickUp. L'inclusion des profils dans le choix des canaux vient de <a href=\"#\" data-resume-go=\"b4-r04\">R4</a>.</p>\n<p>Le critère évalué : outils <b>adaptés au contexte et à la taille de l'équipe</b>, facilitant <b>partage d'information, suivi des tâches et validation des livrables</b> — justifie chaque outil par un besoin, pas par un catalogue.</p>\n<p>Pour approfondir : <a href=\"#\" data-resume-go=\"b4-r08\">R8 — Superviser la qualité des livrables</a> (outils collaboratifs de supervision) et <a href=\"#\" data-resume-go=\"b4-r04\">R4</a> (travail hybride).</p>"
+  },
+  "b4-Q9": {
+    "id": "b4-Q9",
+    "bloc": 4,
+    "dossier": 2,
+    "titre": "Q9 — Écarts avec le brief et feedback créatif",
+    "competence": "C4.2",
+    "resumes": [
+      "b4-r08"
+    ],
+    "resumes_appui": [
+      "b4-r03"
+    ],
+    "html": "<p>On te montre les <b>premières maquettes de YSA</b> (annexe 9 : publications Facebook, TikTok, Instagram) et on te demande de les comparer au <b>brief initial</b> (annexe 1) : identifier les écarts, puis lister les modifications pour que les supports soient conformes aux attentes et à l'univers Drumeo.</p>\n<p><b>La méthode de <a href=\"#\" data-resume-go=\"b4-r08\">R8</a></b>, à dérouler dans l'ordre : 1) <b>relire le brief avant de regarder les livrables</b> — le jugement se fonde sur des critères objectifs (ton premium immersif, identité graphique Drumeo : logo, bleu et blanc, typographies sobres, éléments Metallica pour valoriser l'invité, storytelling « découverte d'un morceau en direct », formats 15-60 s), pas sur des impressions ; 2) <b>catégoriser</b> chaque constat : conforme à valoriser / écart <b>mineur</b> corrigeable / écart <b>majeur</b> nécessitant une refonte (la typologie mineur–modéré–critique) ; 3) formuler le feedback.</p>\n<p><b>Le feedback</b> : la méthode <b>SBI-I</b> (Situation – Comportement – Impact – Intention) et les principes du feedback constructif — commencer par les réussites (valorisation créative), formuler des demandes <b>spécifiques et actionnables</b> (« remplacer le fond X par la palette bleu/blanc Drumeo », « ajouter le logo en ouverture des teasers », « resserrer la vidéo à 45 s »), jamais de jugement vague (« pas assez impactant »), et des <b>questions ouvertes de co-construction</b> pour repositionner les créatifs en partenaires. Le versant relationnel du feedback est dans <a href=\"#\" data-resume-go=\"b4-r03\">R3</a>.</p>\n<p>Les <b>deux critères évalués</b> disent exactement cela : un feedback <b>factuel, aligné avec les objectifs de campagne, le brief créatif et les critères de qualité prédéfinis</b> (ceux de ta Q6 — boucle la boucle en t'y référant), et des <b>ajustements constructifs et spécifiques</b> (modifier un visuel, revoir le texte, ajuster le ton).</p>\n<p>Pour approfondir : <a href=\"#\" data-resume-go=\"b4-r08\">R8 — Superviser la qualité des livrables</a> (audit d'alignement, gestion des retours créatifs).</p>"
+  },
+  "b4-Q10": {
+    "id": "b4-Q10",
+    "bloc": 4,
+    "dossier": 3,
+    "titre": "Q10 — Proposer une formation adaptée aux besoins",
+    "competence": "C4.3",
+    "resumes": [
+      "b4-r06",
+      "b4-r07"
+    ],
+    "resumes_appui": [],
+    "html": "<blockquote><p><b>Le Dossier 3 en un mot.</b> Les questions 10 et 11 couvrent le <b>développement des compétences de l'équipe</b> (C4.3) : identifier un besoin et y répondre par une formation justifiée (Q10), puis concevoir et animer concrètement la session (Q11).</p></blockquote>\n<p><b>Le contexte</b> : une formation « Production audiovisuelle spécialisée pour la captation musicale live » (4 jours / 28 h, 5 modules — annexe 7) existe déjà. On te demande de la <b>compléter par une autre formation</b> adaptée aux besoins de l'agence, et de <b>justifier</b> en quoi elle renforce l'efficacité opérationnelle, en développant thèmes et sujets abordés.</p>\n<p><b>La démarche en deux temps</b>. D'abord le <b>diagnostic du besoin</b> (<a href=\"#\" data-resume-go=\"b4-r06\">R6</a>) : un besoin de formation = un <b>écart</b> entre compétences requises par le projet et compétences détenues. Cherche ce que la formation existante ne couvre PAS : elle traite la captation (caméras, son, post-production) mais pas, par exemple, la diffusion live multi-plateformes et le streaming (fibre, 1 Gbit/s, régie — annexe 8), ou la gestion d'événement en conditions direct (coordination jour J, gestion de crise, sécurité), ou encore le community management d'un événement live international. Choisis UN axe, nomme l'écart, relie-le aux facteurs internes identifiés en Q1.</p>\n<p>Ensuite la <b>construction</b> (<a href=\"#\" data-resume-go=\"b4-r07\">R7</a>) : structure ta proposition comme l'annexe 7 — objectifs pédagogiques formulés en compétences observables, modules avec durées, progression logique, public visé, prérequis. La justification mobilise l'arbre du plan de développement des compétences (adaptation au poste / maintien dans l'emploi / développement) et le lien direct avec les livrables du contrat : chaque module doit répondre à un risque ou un objectif du projet.</p>\n<p>Le critère évalué : sujets <b>alignés avec les besoins et objectifs du service</b> et modalités <b>appropriées aux besoins du collaborateur et aux moyens techniques</b> — la modalité (présentiel, blended, AFEST…) se choisit, elle ne se subit pas.</p>\n<p>Pour approfondir : <a href=\"#\" data-resume-go=\"b4-r06\">R6 — GEPP et compétences</a> (diagnostic des besoins) et <a href=\"#\" data-resume-go=\"b4-r07\">R7 — Former</a> (construction du plan et modalités).</p>"
+  },
+  "b4-Q11": {
+    "id": "b4-Q11",
+    "bloc": 4,
+    "dossier": 3,
+    "titre": "Q11 — Organiser et animer la session de formation",
+    "competence": "C4.3",
+    "resumes": [
+      "b4-r07"
+    ],
+    "resumes_appui": [],
+    "html": "<p>Suite directe de la Q10 : décrire <b>concrètement</b> l'organisation de la session retenue — supports, outils et logiciels mobilisés, puis les <b>bonnes pratiques pédagogiques</b> du formateur pour une transmission claire, accessible et engageante. Tout est dans <a href=\"#\" data-resume-go=\"b4-r07\">R7</a>.</p>\n<p><b>L'organisation</b> : commence par le cadre — public (l'équipe YSA concernée), effectif, durée et découpage en séquences, modalité justifiée (présentiel pour la pratique en conditions réelles, distanciel ou blended pour la théorie amont, logique AFEST pour l'apprentissage en situation de travail pendant la répétition générale). Décris le déroulé type d'une journée en t'inspirant du format de l'annexe 7 : théorie courte → démonstration → atelier pratique → débrief collectif.</p>\n<p><b>Supports et outils</b> : varie les formats (présentation structurée, guide écrit pas-à-pas, tutoriels vidéo, fiches réflexes plastifiées pour le jour J) — le critère évalué cite explicitement « présentations PowerPoint, guides écrits détaillés, tutoriels vidéo ». Ajoute les outils du contexte : ClickUp pour tracer la validation des acquis au fur et à mesure (annexe 6), Google Drive pour les extraits de captations Drumeo+ fournis par Jared, Zoom pour le retour en direct lors de la répétition filmée, le matériel réel (caméras 4K, console son) pour la pratique.</p>\n<p><b>Les bonnes pratiques pédagogiques</b> : objectifs pédagogiques annoncés en début de session (taxonomie de <b>Bloom</b> : viser l'application, pas la simple restitution) ; <b>chunking</b> — séquences de 15-20 minutes, l'attention décroche au-delà ; méthode <b>inductive</b> (partir d'un cas concret, ici les vidéos Drumeo, pour remonter aux principes) ; alternance théorie/pratique et apprentissage par l'erreur en environnement sécurisé ; langage accessible, concepts illustrés, jargon expliqué (critère évalué) ; <b>accessibilité</b> des supports (lisibilité, sous-titres, formats variés — WCAG) ; posture de <b>facilitateur</b> plus que de professeur (questions ouvertes, position basse, faire produire le groupe) ; évaluation des acquis à chaud et cycle d'amélioration du support.</p>\n<p>Pour approfondir : <a href=\"#\" data-resume-go=\"b4-r07\">R7 — Former : cadre légal, PDC, conception et animation</a>.</p>"
   }
 };

@@ -60,12 +60,25 @@
     },
     {
       "numero": 4,
-      "titre": "",
-      "court": "",
-      "statut": "vide",
-      "epreuve": "",
-      "competences": [],
-      "fiches": []
+      "titre": "Management des acteurs des projets marketing et communication",
+      "court": "Management des acteurs",
+      "statut": "complet",
+      "epreuve": "Écrit 6 h (11 questions, 3 dossiers)",
+      "competences": [
+        "C4.1",
+        "C4.2",
+        "C4.3"
+      ],
+      "fiches": [
+        "b4-r01",
+        "b4-r02",
+        "b4-r03",
+        "b4-r04",
+        "b4-r05",
+        "b4-r06",
+        "b4-r07",
+        "b4-r08"
+      ]
     }
   ]
 }

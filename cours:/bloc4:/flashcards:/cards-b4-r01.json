@@ -1,0 +1,159 @@
+{
+  "resume": "b4-r01",
+  "titre": "Le manager : rôle, leadership et enjeux stratégiques",
+  "bloc": 4,
+  "cartes": [
+    {
+      "id": "b4-r01-fc-001",
+      "section": "1. L'évolution du management",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Management mécaniste et management organique : quelles différences ?",
+      "verso": "Dans l'entreprise classique (mécaniste), le pouvoir de décision est identifié, concentré, centralisé et très généraliste : modèle vertical, rigide, fondé sur l'autorité hiérarchique. Dans l'entreprise organique, vue comme un organisme vivant, le pouvoir est diffus, réparti, décentralisé et très spécialisé : modèle horizontal et fluide qui libère les énergies et l'innovation. Et ce sont les marchés qui tirent les entreprises, non l'inverse."
+    },
+    {
+      "id": "b4-r01-fc-002",
+      "section": "1. L'évolution du management",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 3 grandes missions recentrées du manager d'aujourd'hui ?",
+      "verso": "1. Donner du sens (des repères dans un environnement mouvant). 2. Accompagner et soutenir. 3. Développer l'autonomie (prise de risque, initiative individuelle). S'y ajoutent : relier les expertises et assurer le développement continu des compétences. De « contrôleur », le manager est devenu « stratège, développeur, animateur et soutien ». Image clé : le manager « chef d'orchestre » — il organise, planifie et répartit les rôles entre des individualités singulières mais complémentaires (créatif, expert, discret efficace, pessimiste, optimiste...) pour que toutes les tâches soient réalisées avec exigence dans une même temporalité : il n'y a pas de sous-métiers, c'est l'harmonie qui compte."
+    },
+    {
+      "id": "b4-r01-fc-003",
+      "section": "2. Missions, rôles et postures du manager",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le triptyque autonomie–confiance–responsabilité, et quelle nuance faut-il retenir ?",
+      "verso": "C'est l'un des fondements des nouveaux modes de management : la confiance permet l'autonomie, la prise de risque et les coopérations. Attention : la confiance n'entraîne pas la disparition de toute forme de contrôle (contrôle d'ailleurs facilité par la digitalisation des processus). Les compétences managériales se déplacent vers le « savoir faire faire » plutôt que le savoir-faire."
+    },
+    {
+      "id": "b4-r01-fc-004",
+      "section": "2. Missions, rôles et postures du manager",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Quelle est la posture du manager-coach, et quel est son préalable ?",
+      "verso": "Ne pouvant plus tout contrôler, le manager devient guide, coach (accompagnateur et pédagogue) et facilitateur : questionner plutôt que répondre, soutenir plutôt que juger, faciliter plutôt que diriger. La première attente d'un collaborateur étant d'être reconnu et valorisé, l'écoute est le préalable à la confiance — la compétence sociale indispensable. Son principal dilemme reste de concilier souplesse et autorité."
+    },
+    {
+      "id": "b4-r01-fc-005",
+      "section": "2. Missions, rôles et postures du manager",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 5 types d'informations que le manager doit faire circuler, et les 5 flux ?",
+      "verso": "Opérationnelle (définir la nature du travail), organisationnelle (savoir comment faire), relationnelle (comprendre pourquoi le faire), connexe (se situer au sein du service), générale (connaître la stratégie de l'entreprise). Les 5 flux : descendant, ascendant, latéral, « social » et externe. But : informer pour donner du sens à l'action — le manager est la passerelle entre la direction et son équipe."
+    },
+    {
+      "id": "b4-r01-fc-006",
+      "section": "3. Compétences et leadership",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Hard skills et soft skills : quelle différence, et quelles sont les 3 familles de soft skills ?",
+      "verso": "Hard skills : capacités techniques — compétences opérationnelles, savoir-faire, expertises acquises par diplôme, formation ou expérience. Soft skills : capacités comportementales — intelligence relationnelle, communication, aptitudes interpersonnelles ; transversales, généralement acquises hors du circuit scolaire, elles sont devenues stratégiques. 3 familles : personnelles (confiance, créativité, curiosité, adaptation), interpersonnelles (bienveillance, communication, assertivité, empathie), professionnelles (autonomie, esprit critique, éthique du travail, gestion du stress)."
+    },
+    {
+      "id": "b4-r01-fc-007",
+      "section": "3. Compétences et leadership",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Manager, leader, autorité : comment le cours distingue-t-il ces trois notions ?",
+      "verso": "Le manager est en charge d'une organisation ou d'une entité, investi d'une autorité formelle qui lui donne un statut — et ce statut donne accès à une information privilégiée pour formuler décisions et stratégies. Le leader a une autorité naturelle, un ascendant, une influence dans le groupe : c'est un meneur, mobilisateur d'énergies — un chef statutaire peut ou non être un leader. L'autorité est la capacité reconnue par l'institution d'exercer un pouvoir (décider, par exemple)."
+    },
+    {
+      "id": "b4-r01-fc-008",
+      "section": "3. Compétences et leadership",
+      "niveau": 2,
+      "type": "chiffre",
+      "recto": "Qu'est-ce que le leadership, et qu'a découvert David McClelland ?",
+      "verso": "Le leadership est la capacité d'un individu à exercer une influence sur les autres au point de leur donner envie de le suivre. Le manager qui en a sait donner du sens au travail de l'équipe, motiver par son attitude et sa communication, faire des arbitrages acceptés par le groupe, représenter et défendre le groupe auprès des parties prenantes. David McClelland (psychologue, Harvard) a découvert que les leaders dotés de 6 ou plus des compétences émotionnelles étaient beaucoup plus efficaces que leurs collègues qui en sont dépourvus. À retenir aussi : il n'y a pas de bonne ou de mauvaise personnalité, mais des personnalités adaptées ou non à une situation — les personnes talentueuses ont développé la connaissance de soi et l'humilité intellectuelle. Leadership et management restent complémentaires : il ne suffit pas d'être manager pour être leader, ni l'inverse."
+    },
+    {
+      "id": "b4-r01-fc-009",
+      "section": "4. Anticiper : vision stratégique et changement",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Comment le cours définit-il une stratégie, et quand existe-t-elle vraiment ?",
+      "verso": "« Une stratégie consiste en un processus d'allocation de ressources (au sens large) qui engage de façon durable l'entreprise, son devenir. » Elle est rythmée par un double mouvement analyse/engagement et doit être régulièrement revisitée. Elle n'existe que s'il y a un impératif de choix entre intérêts légitimes en opposition : sans limite de ressources ni concurrence, pas besoin de stratégie — « on fait de la stratégie parce qu'on est coincé »."
+    },
+    {
+      "id": "b4-r01-fc-010",
+      "section": "4. Anticiper : vision stratégique et changement",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Exploitation et exploration : quelle différence, et quelles sont les 4 approches de la stratégie ?",
+      "verso": "Exploitation = utiliser un potentiel existant, le quotidien : fait-on comme il faut ? Exploration = renouveler le potentiel, la stratégie : fait-on ce qu'il faut ? L'art de la stratégie est d'assurer leur coexistence harmonieuse. Les 4 approches qui coexistent : l'anticipation (vision et planification), la réactivité (client au cœur, concurrence et marché), l'équilibre des intérêts (jeux d'acteurs et de pouvoirs) et les logiques d'émergence (innovation, tout-numérique : « on apprend en marchant »)."
+    },
+    {
+      "id": "b4-r01-fc-011",
+      "section": "4. Anticiper : vision stratégique et changement",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels sont les 4 champs interrogés par l'élaboration stratégique, et ses outils ?",
+      "verso": "Écologie (« dans quel monde j'évolue ? quel marché, quelles tendances lourdes ? »), marché (« qu'est-ce que je comprends des signaux ? quel service vendre, à qui ? »), ressources (« ai-je les ressources pour jouer ? ») et prospective (« et demain ? »). Le marketing stratégique est la clé d'entrée pour comprendre le marché ; le marketing opérationnel sert la mise en œuvre. Outils : le business plan, le PMO (Plan Marketing Opérationnel, traduction formalisée de l'ambition en plan économique et commercial à 3 ans) et le budget."
+    },
+    {
+      "id": "b4-r01-fc-012",
+      "section": "4. Anticiper : vision stratégique et changement",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 2 dimensions du changement permanent et les 4 formes de résistances ?",
+      "verso": "L'environnement évolue selon l'instabilité (la vitesse de changement) et l'incertitude (on ne sait pas comment il évoluera). Les résistances sont normales, attendues et même utiles — « impossible de sculpter une statue sans la résistance de la pierre ». 4 formes : passivité, objections, jeux politiques, conflits ouverts. Dans un monde turbulent, il faut passer de la planification à la synchronisation : des ajustements mutuels et permanents qui font converger des actions parallèles vers une intention commune (dialectique intention/situation). Corollaire : la clé du management n'est plus la prévision mais l'intention — le monde complexe met à mal les planificateurs, et le manager crée la cohérence autour de valeurs communes et de règles du jeu (« pas d'implication si confusion ! »), en s'engageant sur trois directions : maîtrise des outils, maturité relationnelle et esprit critique."
+    },
+    {
+      "id": "b4-r01-fc-013",
+      "section": "4. Anticiper : vision stratégique et changement",
+      "niveau": 3,
+      "type": "chiffre",
+      "recto": "Comment identifie-t-on les besoins de compétences, et quel est le chiffre clé sur le reskilling ?",
+      "verso": "L'identification part de la stratégie de l'entreprise, puis des compétences requises par poste : le besoin de formation = la mesure de l'écart entre compétences actuelles et nécessaires. Deux types de besoins : collectifs (changements technologiques, culturels ou réglementaires, formations obligatoires santé/sécurité/environnement) et individuels (liés au poste ou au plan de développement). Chiffre clé : un salarié sur deux dans le monde devrait avoir besoin de reskilling (reconversion) dans les cinq prochaines années. Ne pas survaloriser les jeunes « nés avec le digital » : les seniors apportent recul et équilibre."
+    },
+    {
+      "id": "b4-r01-fc-014",
+      "section": "5. Défis et opportunités du manager d'aujourd'hui",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les défis post-Covid du manager, et ses opportunités ?",
+      "verso": "Deux défis majeurs : la gestion à distance des équipes (maintenir motivation, engagement et contrôle, donc plus d'autonomie, de responsabilisation, de confiance et un management personnalisé) et la crise elle-même (maintenir une vision malgré l'incertitude, apaiser les craintes, assurer une présence virtuelle). La frontière vie pro/vie perso s'est estompée : ce déséquilibre compte parmi les principaux facteurs des départs massifs. Opportunités : l'IA (analyse et prise de décision, gestion des talents, veille, gestion des risques, personnalisation), l'automatisation des tâches répétitives et l'intelligence collective, qui rend l'équipe actrice du changement."
+    },
+    {
+      "id": "b4-r01-fc-015",
+      "section": "5. Défis et opportunités du manager d'aujourd'hui",
+      "niveau": 2,
+      "type": "chiffre",
+      "recto": "Inclusivité et diversité : quelle différence, et quels chiffres à l'appui ?",
+      "verso": "L'inclusivité = assembler tous les salariés dans une mutualité et traiter tout le monde à égalité ; la diversité = favoriser la différence et inciter chacun à être unique. Deux notions complémentaires, sources de créativité, d'innovation et de productivité. Selon Deloitte, une politique inclusive générerait jusqu'à 30 % de chiffre d'affaires en plus par salarié ; l'Institut Montaigne vérifie que l'égalité de genre contribue à de meilleures performances économiques."
+    },
+    {
+      "id": "b4-r01-fc-016",
+      "section": "6. Les enjeux stratégiques du management",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 7 enjeux universels du management, et avec quels outils les piloter ?",
+      "verso": "1. La définition d'une vision à moyen et long terme traduite en stratégie claire et réaliste. 2. La gestion du changement et l'adaptation. 3. L'analyse de l'environnement (tendances, concurrence, innovations). 4. La mobilisation des ressources humaines (attirer, conserver, motiver les talents). 5. Le suivi de la performance commerciale et financière (le socle de base). 6. La gestion des ressources et des risques. 7. La durabilité et la responsabilité sociale (RSE). Outils : SWOT et scénarios prospectifs, veille stratégique, cartographie des parties prenantes, KPI limités aux plus significatifs (5 à 8), projets pilotes avant déploiement massif."
+    },
+    {
+      "id": "b4-r01-fc-017",
+      "section": "6. Les enjeux stratégiques du management",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Croissance, consolidation, transformation : quels enjeux majeurs selon le contexte de l'entreprise ?",
+      "verso": "Croissance (expansion plus ou moins rapide) : gérer la croissance et gérer efficacement les ressources — financements, recrutement et formation, management participatif. Consolidation (croissance terminée, maturité) : stabiliser l'organisation — optimiser les processus, préserver les marges, fidéliser — sans laisser s'installer la routine : provoquer le changement pour remettre les équipes en tension. Transformation (évoluer pour rester compétitif) : redéfinir la stratégie et accompagner le changement (adhésion, minimiser les résistances), digital, IA, omnicanalité."
+    },
+    {
+      "id": "b4-r01-fc-018",
+      "section": "6. Les enjeux stratégiques du management",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Leader, challenger, suiveur : quel enjeu majeur pour chaque positionnement concurrentiel ?",
+      "verso": "Le leader (chef de file, part de marché la plus importante, ex. Coca-Cola) : l'innovation continue, « le carburant du leader ». Le challenger (prétendant, juste derrière le leader, ex. Pepsi Cola — plus petit mais inventif, il bouscule les règles) : se différencier (offres, prix, proposition de valeur) sur des segments ciblés. Le suiveur (faible part de marché, imite le leader à prix plus bas, sans prise de risque — généralement rentable) : s'adapter rapidement, surveiller la concurrence, maîtriser les coûts, soigner réputation et écoute client."
+    },
+    {
+      "id": "b4-r01-fc-019",
+      "section": "6. Les enjeux stratégiques du management",
+      "niveau": 3,
+      "type": "chiffre",
+      "recto": "PME/TPE et multinationales : quelles définitions INSEE et quels enjeux selon la taille ?",
+      "verso": "Les PME/TPE représentent plus de 99 % des entreprises françaises. INSEE (2019) : la PME occupe moins de 250 personnes, avec un CA annuel ≤ 50 M€ ou un bilan ≤ 43 M€ ; la microentreprise (TPE) : moins de 10 personnes, CA ≤ 2 M€. Enjeu majeur des PME : développer une stratégie de croissance avec des ressources limitées (atouts : agilité, flexibilité, créativité). Multinationales : adaptation aux spécificités culturelles et économiques de chaque pays, risques géopolitiques, équipes multiculturelles, chaîne d'approvisionnement mondiale, cybersécurité (données, systèmes, propriété intellectuelle)."
+    }
+  ]
+}

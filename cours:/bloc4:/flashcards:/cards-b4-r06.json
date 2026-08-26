@@ -1,0 +1,183 @@
+{
+  "resume": "b4-r06",
+  "titre": "GEPP et compétences : diagnostiquer, cartographier, évaluer",
+  "bloc": 4,
+  "cartes": [
+    {
+      "id": "b4-r06-fc-001",
+      "section": "1. La GEPP (ex-GPEC)",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que la GEPP et quelles sont ses trois finalités ?",
+      "verso": "La GEPP (Gestion des Emplois et des Parcours Professionnels, ex-GPEC) est une démarche prospective des RH qui accompagne le changement : adapter, à court et moyen termes, les emplois, les effectifs et les compétences à la stratégie et aux évolutions de l'environnement (Ministère du Travail). Trois finalités : le besoin en nombre de collaborateurs, l'adéquation des compétences, le maintien de la motivation et de l'engagement (fidélisation)."
+    },
+    {
+      "id": "b4-r06-fc-002",
+      "section": "1. La GEPP (ex-GPEC)",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 phases de la démarche GEPP ?",
+      "verso": "1. Phase préparatoire / faisabilité : vérifier l'opportunité, constituer un groupe de travail et une structure de pilotage, mobiliser les acteurs. 2. Analyse et diagnostic RH : contexte, existant (emplois, compétences), identification des écarts. 3. Définition du plan d'action : objectifs, priorités, délais, indicateurs, information du CSE. 4. Mise en œuvre et suivi : un processus continu, pas une action ponctuelle. Le tout se conduit en mode projet (SMART, SWOT, Kanban)."
+    },
+    {
+      "id": "b4-r06-fc-003",
+      "section": "2. Le diagnostic RH",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Qu'est-ce que le diagnostic RH, et que couvrent ses analyses quantitative et qualitative ?",
+      "verso": "C'est un état des lieux des ressources humaines complété d'une prospection sur les transformations futures des emplois et des compétences (méthode en ~7 étapes) : il révèle les écarts avec la stratégie et permet une gestion proactive des risques, notamment la pénurie de compétences. Analyse quantitative : ce qui se chiffre, à partir de la BDESE et du SIRH — effectifs (ETP), contrats, turn-over, mobilités, pyramide des âges, absentéisme ; une pyramide déséquilibrée annonce des départs massifs, un turn-over élevé signale un mauvais climat social. Analyse qualitative : ce qui ne se chiffre pas — satisfaction, engagement, climat social, et surtout les référentiels d'emplois, d'activités et de compétences, élaborés via fiches de poste, entretiens et observation en situation de travail."
+    },
+    {
+      "id": "b4-r06-fc-004",
+      "section": "3. Des écarts au plan d'action",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un écart en GEPP et comment l'analyse-t-on ?",
+      "verso": "L'écart est l'inadéquation entre les besoins futurs et les ressources disponibles. Son analyse se formalise en 4 temps : comparaison des besoins futurs avec l'état des lieux, classement par nature (compétences manquantes, effectifs insuffisants), évaluation (quantifier), recherche des causes racines. Outils : tableau de comparaison, graphique en barres, enquêtes, logiciels RH."
+    },
+    {
+      "id": "b4-r06-fc-005",
+      "section": "3. Des écarts au plan d'action",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels sont les 3 horizons d'analyse des écarts, et quelles actions pour chacun ?",
+      "verso": "Immédiat : écart entre compétences attendues (référentiel) et constatées (évaluation) → développement et valorisation des compétences stratégiques. Court terme : besoins planifiés vs compétences amenées à disparaître → reclassement des métiers sensibles, planification des retraites, transfert. Moyen/long terme : orientations stratégiques vs emplois actuels → anticipation des emplois émergents, adaptation des emplois."
+    },
+    {
+      "id": "b4-r06-fc-006",
+      "section": "3. Des écarts au plan d'action",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 5 plans d'ajustement types du plan d'action GEPP ?",
+      "verso": "Plan de développement des compétences (PDC), plan de mobilité interne, plan de rémunération (attractivité, fidélisation), plan de recrutement, plan de reconversion professionnelle — la VAE pouvant constituer un plan à part entière. À retenir : la formation n'est qu'un levier parmi d'autres (recrutement, mobilité, organisation du travail, délégation, externalisation), et chaque action est évaluée."
+    },
+    {
+      "id": "b4-r06-fc-007",
+      "section": "4. La compétence",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Comment Guy Le Boterf définit-il la compétence ?",
+      "verso": "« L'articulation routinière ou originale de ressources internes ou externes pour traiter efficacement une situation particulière afin de produire des résultats satisfaisants à certains critères de performance pour un destinataire. » C'est une combinatoire mobilisée en situation : elle ne se voit pas, seul son résultat dans l'activité est observable. Elle fait intervenir une personne, un champ d'application et un tiers qui évalue et reconnaît."
+    },
+    {
+      "id": "b4-r06-fc-008",
+      "section": "4. La compétence",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 3 catégories de ressources qui composent une compétence ?",
+      "verso": "Les savoirs : connaissances, procédures, normes, souvent formalisés (« Que faut-il connaître ? »). Les savoir-faire : issus de l'expérience — habiletés, automatismes, intuition (« Comment procéder ? »). Les savoir-être : qualités comportementales (soft skills), développables par la formation (« Comment me comporter ? »)."
+    },
+    {
+      "id": "b4-r06-fc-009",
+      "section": "4. La compétence",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Qu'est-ce que la compétence n'est PAS ?",
+      "verso": "Ni la performance (la compétence est le processus qui la produit), ni la qualification (valeur d'échange reconnue par un titre), ni la connaissance (c'est puiser pertinemment dans ses connaissances qui fait la compétence), ni le potentiel (compétence virtuelle), ni l'expérience (mode d'acquisition de la compétence)."
+    },
+    {
+      "id": "b4-r06-fc-010",
+      "section": "4. La compétence",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels types de compétences distingue-t-on, et quels degrés de transférabilité ?",
+      "verso": "Compétence individuelle / collective (les compétences individuelles d'une équipe mises en commun), transverse (utilisable d'un métier à l'autre — clé de la mobilité) et distinctive (rare, ex. brevets : source d'avantage concurrentiel). Transférabilité : forte (même métier, autre structure), moyenne (métier différent, activités similaires), faible/reconversion (champ différent, savoirs à acquérir). La compétence s'acquiert, s'entretient, peut se perdre ou devenir obsolète."
+    },
+    {
+      "id": "b4-r06-fc-011",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le référentiel de compétences ?",
+      "verso": "Un tableau recensant les compétences existantes dans l'entreprise et nécessaires aux emplois ; il regroupe les métiers par compétences, et non par fonctions. Il est facultatif et sert la GPEC, la gestion de carrière, la mobilité et le recrutement. Limites : il exige une culture de la compétence (maturité), un investissement temps et financier considérable, et une actualisation permanente qui peut démobiliser."
+    },
+    {
+      "id": "b4-r06-fc-012",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Travail prescrit et travail réel : pourquoi cette distinction est-elle centrale dans l'élaboration du référentiel ?",
+      "verso": "Lors de la phase de préparation, on observe l'activité (observation + entretiens) en distinguant le travail prescrit du travail réel : le réel révèle des compétences insoupçonnées. Les 3 phases d'élaboration : préparation (lister les emplois, observer), réalisation (dédoublonnage et regroupement par métier, validation par d'autres que les concepteurs, communication direction → IRP → managers → salariés), suivi (mise à jour tous les 2-3 ans, annuelle en cas de mutation)."
+    },
+    {
+      "id": "b4-r06-fc-013",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 3,
+      "type": "liste",
+      "recto": "Comment se structure un référentiel par niveaux, et sur quels appuis externes s'appuyer ?",
+      "verso": "Famille professionnelle (finalité commune, technicité dominante) → sous-famille → emploi-type → poste (situation individuelle : autant de postes que de salariés) → tâche (unité élémentaire de l'activité). Appuis externes : ROME 4.0 de France Travail (successeur de Pôle emploi au 1er janvier 2024), référentiels de branche, RNCP de France Compétences, fiches APEC. La matrice de compétences se construit en 4 étapes : inventaire, regroupement par type, niveaux avec critères, construction. Veille métiers associée : les OPMQC (Observatoires Prospectifs des Métiers, des Qualifications et des Compétences) fournissent statistiques et études par branche — mieux vaut cibler ceux de son secteur ; les HR Analytics dégagent des tendances des données RH et prédisent les risques de départ, en aide à la décision seulement, sous contrainte RGPD (mai 2018) et recommandations CNIL."
+    },
+    {
+      "id": "b4-r06-fc-014",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un emploi-type, et quelles 3 vérifications avant de regrouper des postes ?",
+      "verso": "Notion née au CEREQ (Nicole Mandon, méthode ETED, 1990) : un regroupement de situations de travail aux contenus d'activité identiques ou similaires, suffisamment homogènes pour être occupées par un même individu. C'est une description générique (elle a inspiré le ROME), et non une fiche de poste : ni tâches, ni catégorisation hiérarchique. Trois vérifications avant regroupement : 1. les postes ont 80 % des missions et activités communes ; 2. les compétences requises sont de même nature et de même niveau ; 3. un titulaire peut tenir l'ensemble des postes en moins de 3 mois."
+    },
+    {
+      "id": "b4-r06-fc-015",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 3,
+      "type": "chiffre",
+      "recto": "Que contient la fiche emploi-type, et quels chiffres retenir sur les métiers de demain ?",
+      "verso": "10 rubriques : titre (ni surévalué ni statutaire), famille professionnelle, postes regroupés, raison d'être (une phrase), activités principales (3 à 5), effectifs, compétences requises (savoir-faire généraux / relationnels / techniques — pas de savoir-être), niveau de complexité (débutant, maîtrise, expert), formations en lien, aires de mobilité amont et aval (emplois sources / cibles). Enjeu « Quels métiers en 2030 ? » : plus de 50 % des métiers impactés par une mutation d'ici 10 ans, 20 % n'existent pas encore."
+    },
+    {
+      "id": "b4-r06-fc-016",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que la matrice de polyvalence et que révèle-t-elle ?",
+      "verso": "Elle croise, pour un service, les activités et les personnes, avec le niveau de compétence de chacun. Elle révèle les zones à risque — les compétences détenues par un nombre réduit de collaborateurs, où une absence met l'activité en péril — et donc les priorités de formation, individuelles et collectives. À distinguer : l'aire de mobilité (compétences nécessaires pour passer d'un poste à un autre) et la passerelle de mobilité (qui précise en plus comment on accompagne ce développement) ; mobilité horizontale (poste équivalent) vs verticale (poste supérieur)."
+    },
+    {
+      "id": "b4-r06-fc-017",
+      "section": "6. Diagnostiquer les besoins",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 approches du diagnostic des besoins de compétences ?",
+      "verso": "1. Projet d'entreprise : globale, part du projet stratégique, donne du sens et facilite la priorisation, mais chronophage. 2. Projet de service : diagnostic du service → objectifs de progrès → objectifs de formation. 3. Métier : anticiper les évolutions d'un métier à 3/5 ans, utile quand le recrutement est difficile. 4. Individuelle : écarts sur le poste + projet et demandes du salarié — motivante. Les approches se combinent. Les 4 enjeux du diagnostic : financier, social, managérial, RH."
+    },
+    {
+      "id": "b4-r06-fc-018",
+      "section": "6. Diagnostiquer les besoins",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce que la note d'orientation, et quelle obligation légale l'accompagne ?",
+      "verso": "Un document concis présentant le contexte et les objectifs stratégiques, la politique RH, les besoins opérationnels et les grandes orientations de formation. Elle s'appuie sur l'analyse documentaire (7 thématiques) et des entretiens (Direction générale, CSE, managers). La consultation annuelle du CSE sur les orientations de la formation est une obligation légale, distincte de la consultation sur le plan lui-même."
+    },
+    {
+      "id": "b4-r06-fc-019",
+      "section": "6. Diagnostiquer les besoins",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Comment passe-t-on d'une compétence manquante à un besoin de formation, et quels types de besoins distingue-t-on ?",
+      "verso": "On analyse le poste (activités, résultats attendus, autonomie) pour en déduire les compétences clés — celles qui empêchent la tenue du poste si elles ne sont pas maîtrisées. Les compétences manquantes deviennent des besoins de formation → objectifs opérationnels → objectifs pédagogiques. Attention : toute compétence manquante n'est pas un besoin de formation (recrutement ou réorganisation parfois plus adaptés). On distingue besoins collectifs / individuels, et besoin générique (modalités à définir) / qualifié (action et organisme déjà identifiés)."
+    },
+    {
+      "id": "b4-r06-fc-020",
+      "section": "7. Évaluer et recueillir les besoins",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les principales méthodes d'évaluation des compétences ?",
+      "verso": "L'entretien individuel d'évaluation (annuel, avec le manager : bilan, objectifs, formations, rémunération), l'auto-évaluation (questionnaires remplis chacun de son côté), le 360° (regards croisés, généralement réservé aux managers car lourd), l'entretien de parcours professionnel (EPP, obligatoire, centré sur l'évolution et l'employabilité), l'entretien de groupe (projets collectifs, à compléter d'évaluations individuelles) et l'assessment center (mises en situation concrètes, grille de critères prédéfinis). Le collaborateur doit être informé au préalable de la date et des méthodes. À jour : depuis la loi du 24 octobre 2025, l'entretien professionnel devient l'EPP (art. L. 6315-1), ouvert à tous les salariés sans condition d'ancienneté, tenu tous les 4 ans avec un état des lieux récapitulatif tous les 8 ans."
+    },
+    {
+      "id": "b4-r06-fc-021",
+      "section": "7. Évaluer et recueillir les besoins",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Quelles sont les 3 stratégies de recueil des besoins de formation, et quelle est la règle d'or ?",
+      "verso": "Par l'équipe RH (recueil homogène et professionnel, mais très chronophage), par les managers (la formation devient un acte de management, mais résultats hétérogènes), par un intervenant externe (neutralité, méthodologie éprouvée, prise en charge OPCO possible, mais climat social mal appréhendé). Le choix dépend de la taille, du temps, du budget et du climat social. Règle d'or : jamais pendant l'entretien d'évaluation — la formation est une obligation de l'employeur, jamais une récompense ou une sanction liée aux résultats."
+    },
+    {
+      "id": "b4-r06-fc-022",
+      "section": "8. Maintenir et transférer les compétences",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Mentorat et tutorat : quelle différence, et quelles conditions pour un bon transfert des compétences ?",
+      "verso": "Le mentorat est une relation interpersonnelle de soutien et d'apprentissage, fondée sur l'échange et la confiance, où le mentor (expérimenté) favorise le développement du mentoré — sur la base du volontariat. Le tutorat en est le versant opérationnel : un senior est nommé tuteur d'un nouvel arrivant ou d'un collaborateur en évolution pour transmettre le savoir au quotidien (levier classique d'anticipation des départs en retraite). Le transfert (démarche de knowledge management) assure la continuité de l'activité et limite la déperdition de savoirs ; conditions : volontariat des détenteurs et des apprenants, méthodologie précise, planification et suivi, formation des détenteurs à la transmission, adaptation du temps de travail."
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "resume": "b4-r04",
+  "titre": "Manager la diversité et les équipes hybrides",
+  "bloc": 4,
+  "cartes": [
+    {
+      "id": "b4-r04-fc-001",
+      "section": "1. Cartographier la diversité de l'équipe",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Diversité visible, diversité invisible, intersectionnalité : que recouvre chaque notion ?",
+      "verso": "La diversité visible regroupe les caractéristiques immédiatement perceptibles (genre, origine ethnique, âge, certains handicaps physiques) : elle déclenche premières impressions et biais inconscients. La diversité invisible regroupe les aspects non apparents mais déterminants (orientation sexuelle, handicaps non visibles, neurodiversité, croyances, situations familiales) : elle exige une vigilance particulière. L'intersectionnalité désigne la combinaison unique de ces dimensions que porte chaque collaborateur. La diversité est un impératif stratégique : une étude HBR (2019) montre que les équipes diversifiées sont plus créatives et performantes."
+    },
+    {
+      "id": "b4-r04-fc-002",
+      "section": "1. Cartographier la diversité de l'équipe",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Sur quelles trois dimensions les codes culturels font-ils varier le rapport au travail ?",
+      "verso": "1. La communication : indirecte et respectueuse des hiérarchies (ex. Japon) vs directe et structurée (ex. Allemagne). 2. La décision : consensus et consultation collective vs efficacité et rapidité. 3. La temporalité : séquentielle (monochronique, une tâche après l'autre) vs polychronique (plusieurs activités en parallèle). S'adapter « en bonne intelligence » ne signifie pas coller aux exigences de chacun."
+    },
+    {
+      "id": "b4-r04-fc-003",
+      "section": "1. Cartographier la diversité de l'équipe",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Qu'est-ce que la neurodiversité, et quels talents sont fréquemment associés aux profils TSA, TDAH, dyslexie et HPI ?",
+      "verso": "La neurodiversité désigne les variations naturelles du fonctionnement neurologique. Autisme (TSA) : attention au détail, logique rigoureuse, approche systématique. TDAH : créativité exceptionnelle, capacité d'innovation. Dyslexie : compétences visuelles et spatiales supérieures à la moyenne. HPI : besoin de comprendre les enjeux, le « pourquoi » avant le « comment »."
+    },
+    {
+      "id": "b4-r04-fc-004",
+      "section": "2. Biais, stéréotypes, appartenance",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 4 biais cognitifs du manager présentés dans le cours ?",
+      "verso": "1. Biais de confirmation : ne retenir que ce qui confirme l'opinion préexistante (« ce junior manque d'expérience » → on ne voit que ses erreurs). 2. Effet de halo : une caractéristique influence la perception globale (surévaluer le charismatique). 3. Biais d'ancrage : poids disproportionné de la première information (recrue d'une entreprise prestigieuse durablement surévaluée). 4. Stéréotypes générationnels : traits attribués selon l'âge apparent. Les biais ressortent surtout sous pression et en décision rapide."
+    },
+    {
+      "id": "b4-r04-fc-005",
+      "section": "2. Biais, stéréotypes, appartenance",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Pourquoi les stéréotypes, même « positifs », sont-ils dangereux, et comment se débiaiser ?",
+      "verso": "Ils créent des attentes réductrices qui déclenchent des prophéties autoréalisatrices : les performances s'orientent dans le sens des attentes initiales (ex. cantonner un collaborateur asiatique aux maths, les femmes au relationnel). Débiaisage : recherche active d'informations contradictoires, sources multiples, critères d'évaluation objectifs et mesurables. Auto-diagnostic proposé au manager : un journal de réflexion managériale tenu plusieurs semaines, des retours confidentiels, le Test d'Association Implicite (IAT) et le co-développement entre pairs."
+    },
+    {
+      "id": "b4-r04-fc-006",
+      "section": "2. Biais, stéréotypes, appartenance",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que la sécurité psychologique (Amy Edmondson), et pourquoi est-elle décisive en équipe diverse ?",
+      "verso": "La conviction partagée que l'équipe est un environnement sûr pour prendre des risques interpersonnels : exprimer idées, préoccupations et besoins sans craindre le jugement. En équipe diverse, elle libère les questions naïves et les désaccords constructifs, donc la créativité collective. Elle rejoint le sentiment d'appartenance, qui conditionne engagement et performance : les neurosciences montrent que l'exclusion est traitée par le cerveau comme une menace."
+    },
+    {
+      "id": "b4-r04-fc-007",
+      "section": "3. Les leviers du management inclusif",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Comment adapter sa communication en contexte multiculturel : écoute, non-verbal, feedback ?",
+      "verso": "Écoute active inclusive : posture d'ouverture, contact visuel adapté aux codes culturels, reformulation par questions ouvertes, temps de silence (surtout hors langue maternelle). Proxémique : la gestion de l'espace interpersonnel varie (distance réduite chez les méditerranéens vs espace important chez les nordiques) ; le regard soutenu est respect ici, agression là. Feedback : avec les cultures d'harmonie relationnelle, préférer le « sandwich positif » — encadrer les points d'amélioration par des reconnaissances de réussites — au feedback direct « à la française », vécu comme une attaque."
+    },
+    {
+      "id": "b4-r04-fc-008",
+      "section": "3. Les leviers du management inclusif",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Comment adapter son langage managérial aux profils autiste, TDAH, HPI et dyslexique ?",
+      "verso": "Autiste : factuel, explicite, structuré par écrit, critères précis, pas de métaphores, temps de traitement. TDAH : objectifs segmentés en étapes courtes, points d'étape fréquents, communication dynamique. HPI : expliquer les enjeux stratégiques et le « pourquoi ». Dyslexique : outils d'assistance (synthèse vocale) et supports visuels. Cette précision bénéficie à toute l'équipe."
+    },
+    {
+      "id": "b4-r04-fc-009",
+      "section": "3. Les leviers du management inclusif",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le recrutement inclusif, et pourquoi l'IA n'est-elle pas une solution parfaite ?",
+      "verso": "Approche holistique visant des processus équitables, transparents et accessibles, évaluant les compétences et réalisations plutôt que des critères traditionnels biaisés : critères mesurables, cas concrets, tests de compétences, entretiens structurés, offres inclusives, transparence. L'IA, entraînée sur des données historiques, peut reproduire et amplifier les biais passés (intitulés genrés) et sélectionner des variables corrélées à des caractéristiques protégées — ex. le code postal, corrélé au statut socio-économique donc à l'origine ethnique (biais indirect)."
+    },
+    {
+      "id": "b4-r04-fc-010",
+      "section": "3. Les leviers du management inclusif",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Accessibilité universelle et aménagements raisonnables : quelle différence ?",
+      "verso": "L'accessibilité universelle consiste à concevoir environnements, processus et outils utilisables par le plus grand nombre sans adaptation ultérieure — une stratégie d'optimisation des talents, pas une simple conformité. Les aménagements raisonnables sont des ajustements spécifiques à un collaborateur : physiques (éclairage, acoustique), organisationnels (flexibilité horaire), technologiques (synthèse vocale), avec un ROI généralement positif. Effet d'entraînement : beaucoup d'aménagements profitent à tous (affichage visuel, consignes écrites). Posture de fond, en particulier face au handicap : dépasser l'approche purement compensatoire (ne voir que ce qu'il faut compenser) pour une vision par compétences — les personnes en situation de handicap développent souvent une résilience, une capacité d'adaptation et une résolution de problèmes performantes, qui sont des talents à valoriser."
+    },
+    {
+      "id": "b4-r04-fc-011",
+      "section": "3. Les leviers du management inclusif",
+      "niveau": 2,
+      "type": "application",
+      "recto": "En quoi consiste la flexibilité managériale inclusive, et quels rituels d'équipe l'accompagnent ?",
+      "verso": "Sortir du modèle unique : mêmes objectifs et exigences de qualité pour tous, seuls les moyens sont personnalisés (modalités de communication, rythme de feedback, type de missions) — jamais de réduction des objectifs, et expliquer la logique pour éviter les perceptions d'inéquité. Rituels inclusifs : pratiques collectives récurrentes créant un socle commun, célébrations avec modalités de reconnaissance variées (publique ou discrète), partage culturel ; éviter les formats standardisés ou exclusivement présentiels."
+    },
+    {
+      "id": "b4-r04-fc-012",
+      "section": "3. Les leviers du management inclusif",
+      "niveau": 3,
+      "type": "liste",
+      "recto": "Qu'est-ce que le leadership inclusif, et quels auteurs le cours cite-t-il sur la diversité ?",
+      "verso": "Le leadership inclusif crée un environnement où chacun se sent valorisé, entendu et inclus : le leader est un modèle (tolérance, empathie), fixe des normes d'équité claires et pratique un management par inférence (conclusions tirées d'observations, adaptation permanente). La culture inclusive se perpétue par tolérance zéro, enquêtes anonymes, données démographiques, critères d'inclusion pour les leaders, mentorat. Auteurs cités : Bohnet (What Works, 2016), Page (The Diversity Bonus, 2017), Hofstede (1971), Meyer (The Culture Map), Phillips, Thomas, Buckingham."
+    },
+    {
+      "id": "b4-r04-fc-013",
+      "section": "4. Mesurer et développer l'inclusion",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Indicateurs de diversité et indicateurs d'inclusion : quelle différence ?",
+      "verso": "La diversité mesure la représentation des profils (présence) ; l'inclusion mesure la qualité de leur intégration et leur capacité à contribuer — présence ≠ participation effective. Indicateurs quantitatifs : répartition des opportunités (formation, promotion), taux de rotation par segment, adoption des idées de chaque profil. Qualitatifs : sentiment d'appartenance, équité perçue, sécurité psychologique, via entretiens, focus groups et enquêtes anonymes courtes. La séquence de développement du management inclusif suit 5 étapes, dans l'ordre : 1. auto-diagnostic de ses propres biais, 2. identification des dimensions de diversité de l'équipe, 3. adaptation de la communication et du feedback, 4. aménagements organisationnels, 5. mesure et amélioration continue — soutenues par l'intelligence émotionnelle interculturelle, la formation continue et la capitalisation entre pairs."
+    },
+    {
+      "id": "b4-r04-fc-014",
+      "section": "5. Équipes hybrides : définition et cadres théoriques",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une équipe hybride (4 dimensions), et quels sont ses 3 facteurs d'émergence ?",
+      "verso": "Un collectif de travail caractérisé par la coexistence simultanée d'hétérogénéités multiples selon 4 dimensions : spatiale (co-localisés vs distribués), statutaire (salariés vs freelances, consultants, agences), temporelle (synchrone vs asynchrone), culturelle (cultures d'entreprise, nationalités, générations). Facteurs d'émergence : la digitalisation (pilotage par objectifs et résultats, plus par la présence), la flexibilisation du travail (freelancing, portage salarial, aspirations à l'autonomie), la spécialisation croissante des compétences (accès mondialisé aux experts)."
+    },
+    {
+      "id": "b4-r04-fc-015",
+      "section": "5. Équipes hybrides : définition et cadres théoriques",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels sont les 4 cadres théoriques qui éclairent le management hybride ?",
+      "verso": "1. Contingence structurelle (Lawrence et Lorsch) : efficacité = adéquation structure-environnement ; le manager hybride gère plusieurs environnements simultanés. 2. Coûts de transaction (Williamson) : arbitrage internaliser vs externaliser, en ajoutant recherche, négociation, contractualisation et suivi au coût direct. 3. Approche systémique : l'équipe est un système d'éléments interdépendants, les tensions sont intrinsèques et à réguler — le manager devient régulateur systémique (influence plutôt qu'autorité). 4. Gouvernance des écosystèmes : facilitation, valeur partagée et contrats psychologiques clarifiant les attentes mutuelles."
+    },
+    {
+      "id": "b4-r04-fc-016",
+      "section": "6. Coordonner et piloter une équipe hybride",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 5 mécanismes de coordination de Mintzberg, et comment évoluent-ils en équipe hybride ?",
+      "verso": "Ajustement mutuel (communication informelle), supervision directe (ordres et contrôle), standardisation des procédés, des résultats et des qualifications. En hybride, la supervision directe ne fonctionne plus (dispersion, pas d'autorité sur les externes) et l'ajustement mutuel spontané disparaît : il faut le réinventer (réunions virtuelles, canaux dédiés, rituels) et donner la priorité à la standardisation des résultats — définir livrables, critères de qualité et échéances, puis laisser chacun libre de ses méthodes."
+    },
+    {
+      "id": "b4-r04-fc-017",
+      "section": "6. Coordonner et piloter une équipe hybride",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Pourquoi la matrice RACI est-elle indispensable en équipe hybride, et que signifient ses 4 lettres ?",
+      "verso": "Les équipes hybrides sont des structures matricielles : chaque intervenant dépend de plusieurs autorités, et un externe recevant des instructions contradictoires risque le non-respect de ses engagements contractuels (répercussions juridiques, pas seulement opérationnelles). RACI : Responsible (exécute), Accountable (garant de la bonne fin), Consulted (consulté avant décision), Informed (informé après). Le cours conseille des « ateliers de rôles » en début de projet pour co-construire cette formalisation."
+    },
+    {
+      "id": "b4-r04-fc-018",
+      "section": "6. Coordonner et piloter une équipe hybride",
+      "niveau": 3,
+      "type": "distinction",
+      "recto": "Contrats transactionnels et contrats relationnels (Macneil) : quelle différence et quel usage en hybride ?",
+      "verso": "Les contrats transactionnels régissent un échange ponctuel précisément défini ; les contrats relationnels encadrent une relation durable fondée sur la confiance, avec de la flexibilité. En hybride : cadre formel avec un nouveau prestataire, fonctionnement relationnel avec un partenaire éprouvé — la confiance réduit les coûts de transaction."
+    },
+    {
+      "id": "b4-r04-fc-019",
+      "section": "6. Coordonner et piloter une équipe hybride",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sont les 4 exigences architecturales du SI d'une équipe hybride, et que doit offrir le pilotage ?",
+      "verso": "Sécurité (VPN, authentification multi-facteurs, espaces cloisonnés), interopérabilité (passerelles entre Microsoft 365, Adobe, Google Workspace), accessibilité (intuitivité pour les externes), scalabilité (absorber les évolutions sans rupture) — approche fédératrice plutôt qu'imposer les outils internes. Les outils doivent offrir visualisation en temps réel, traçabilité des modifications, gestion des versions et collaboration asynchrone. Pilotage : tableau de bord équilibré quantitatif (achèvement, délais, budget) + qualitatif (satisfaction client, qualité créative, climat) ; un reporting trop fréquent peut être perçu comme de la défiance."
+    },
+    {
+      "id": "b4-r04-fc-020",
+      "section": "7. Motiver, fédérer et intégrer à distance",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Comment les théories de Maslow, de l'autodétermination et de Herzberg se relisent-elles en équipe hybride ?",
+      "verso": "Maslow : la sécurité diffère selon le statut — le salarié a l'emploi et les avantages sociaux, le freelance gère revenus variables et absence de protection sociale d'entreprise. Autodétermination (Deci et Ryan) : autonomie (motivation forte des externes), compétence (apprentissages croisés), appartenance sociale — le défi le plus complexe à distance. Herzberg : facteurs d'hygiène (clarté contractuelle, fiabilité des outils, équité interne/externe) dont l'absence crée l'insatisfaction, vs facteurs de motivation (reconnaissance, développement, participation, sens) qui créent l'engagement."
+    },
+    {
+      "id": "b4-r04-fc-021",
+      "section": "7. Motiver, fédérer et intégrer à distance",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 3 types de confiance à orchestrer en équipe hybride ?",
+      "verso": "1. Cognitive : évaluation rationnelle de la compétence et de la fiabilité (références, livrables) — le fondement du démarrage. 2. Affective : relations interpersonnelles, empathie, valeurs communes — plus lente à construire mais plus stable, entretenue par l'informel. 3. Institutionnelle : contrats, procédures, contrôles et sanctions — le cadre sécurisant. L'identité collective, elle, ne se décrète pas : manifeste d'équipe, références communes, rituels partagés incluant les distants."
+    },
+    {
+      "id": "b4-r04-fc-022",
+      "section": "7. Motiver, fédérer et intégrer à distance",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Que dit la théorie de la richesse des médias (Daft et Lengel), et quelles vigilances s'y ajoutent ?",
+      "verso": "L'efficacité de la communication dépend de l'adéquation entre la richesse du canal et la complexité du message ; richesse = feedback immédiat, multiplicité des indices, personnalisation, variété du langage. Hiérarchie : face-à-face > visioconférence > téléphone > chat > e-mail. Usage : visio pour décisions complexes, chat pour l'informel, e-mail pour les validations formelles, outils collaboratifs pour le suivi. La théorie de la présence sociale (Short, Williams et Christie) alerte sur l'isolement lié à la médiatisation ; la zoom fatigue impose d'alterner les modalités et de prévoir des pauses. Le même principe guide le choix oral/écrit en interne : l'oral pour les instructions courtes, feedbacks rapides, informations de routine et encouragements ; l'écrit pour les décisions importantes, objectifs et résultats attendus, changements de procédure, évaluations formelles et annonces officielles. Avant de communiquer, quatre questions : quelles informations ? pour quoi faire ? quels circuits ? quels supports et canaux ?"
+    },
+    {
+      "id": "b4-r04-fc-023",
+      "section": "7. Motiver, fédérer et intégrer à distance",
+      "niveau": 2,
+      "type": "application",
+      "recto": "D'où naissent les conflits hybrides, et comment organiser l'intégration d'un nouveau membre à distance ?",
+      "verso": "Conflits : malentendus interculturels (ex. reporting perçu comme un manque de confiance) amplifiés par la distance, déséquilibres de pouvoir (statutaires, informationnels, relationnels) et compétition internes/externes. Prévention : protocoles explicites, feedback régulier, formation interculturelle, intervention rapide dès les signaux faibles, médiation proactive. Onboarding distribué : la socialisation naturelle n'existe plus — parcours consciemment orchestré (sessions individuelles, binôme, formation aux outils, transmission explicite des codes), accompagnement sur plusieurs mois."
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "resume": "b4-r07",
+  "titre": "Former : cadre légal, PDC, conception et animation",
+  "bloc": 4,
+  "questions": [
+    {
+      "id": "b4-r07-qz-001",
+      "section": "1. La formation professionnelle : notions de base",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Un responsable formation constate que ses équipes progressent surtout en travaillant sur de vrais projets, bien plus qu'en salle de cours. Quel modèle théorique décrit ce phénomène ?",
+      "options": [
+        "le modèle 70/20/10 : 70 % des apprentissages viennent de la pratique et de l'expérience",
+        "la taxonomie de Bloom : la pratique est le premier niveau cognitif",
+        "l'andragogie : les adultes n'apprennent qu'en autonomie complète",
+        "le modèle 50/30/20 : la moitié des apprentissages vient des échanges entre collègues"
+      ],
+      "reponse": 0,
+      "explication": "Le modèle 70/20/10 (Centre de Leadership Créatif) : 70 % pratique et expérience, 20 % échanges au travail, 10 % formation formelle — qui capte pourtant 80 % des budgets. Selon Spitzer, plus de 80 % d'une formation traditionnelle est oublié en un mois."
+    },
+    {
+      "id": "b4-r07-qz-002",
+      "section": "2. Le cadre légal : 50 ans de réformes",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle loi a créé le CPF, le CEP et l'entretien professionnel ?",
+      "options": [
+        "la loi Delors du 16 juillet 1971",
+        "la loi du 5 mars 2014",
+        "la loi Travail (El Khomri) de 2016",
+        "la loi Avenir professionnel du 5 septembre 2018"
+      ],
+      "reponse": 1,
+      "explication": "La loi du 5 mars 2014 crée le CPF, le CEP et l'entretien professionnel (plus la contribution unique et le cadre de la FOAD). La loi de 1971 est le texte fondateur ; la loi Avenir 2018 réforme en profondeur gouvernance, fonctionnement et financement."
+    },
+    {
+      "id": "b4-r07-qz-003",
+      "section": "2. Le cadre légal : 50 ans de réformes",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque date clé du cadre légal de la formation à son apport.",
+      "colonne_a": [
+        "16 juillet 1971",
+        "5 septembre 2018",
+        "2019",
+        "1er janvier 2022",
+        "2 mai 2024"
+      ],
+      "colonne_b": [
+        "Qualiopi devient obligatoire pour bénéficier des fonds mutualisés ou publics",
+        "CPF monétisé à 500 €/an, collecte URSSAF, le plan de formation devient PDC",
+        "Loi Delors : texte fondateur de la formation professionnelle continue",
+        "Instauration du ticket modérateur CPF de 100 €",
+        "Loi « Avenir professionnel » : réforme profonde de la gouvernance et du financement"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 4],
+        [2, 1],
+        [3, 0],
+        [4, 3]
+      ],
+      "explication": "Retenir la chronologie : 1971 fondation (Delors), 2014 CPF/CEP/entretien professionnel, 2018 loi Avenir, 2019 entrée en vigueur de la réforme (CPF monétisé, PDC), 2022 Qualiopi obligatoire, 2024 ticket modérateur de 100 €."
+    },
+    {
+      "id": "b4-r07-qz-004",
+      "section": "2. Le cadre légal : 50 ans de réformes",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Depuis le 2 mai 2024, un salarié dont la formation CPF est abondée par son employeur doit tout de même payer le ticket modérateur de 100 €.",
+      "reponse": false,
+      "explication": "Faux. Les formations abondées par l'employeur sont exonérées du ticket modérateur, comme les demandeurs d'emploi, les titulaires de points C2P et les victimes d'AT/MP avec incapacité d'au moins 10 %."
+    },
+    {
+      "id": "b4-r07-qz-005",
+      "section": "3. Financement et qualité",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une agence de 35 salariés veut faire financer une formation par son OPCO. Quelle condition l'organisme de formation choisi doit-il remplir ?",
+      "options": [
+        "être certifié ISO 9001",
+        "détenir la certification Qualiopi",
+        "être enregistré au RNCP",
+        "être accrédité directement par France Compétences"
+      ],
+      "reponse": 1,
+      "explication": "Depuis le 1er janvier 2022, Qualiopi conditionne l'accès aux fonds mutualisés ou publics ; les entreprises de 50 salariés au plus doivent recourir à un organisme Qualiopi pour être financées par leur OPCO. Elle est délivrée par des certificateurs accrédités Cofrac sur la base du RNCQ."
+    },
+    {
+      "id": "b4-r07-qz-006",
+      "section": "4. Les obligations de l'employeur",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelles sont les deux obligations de formation de l'employeur posées par l'article L.6321-1 du Code du travail ?",
+      "options": [
+        "financer le CPF de chaque salarié et proposer un bilan de compétences annuel",
+        "assurer l'adaptation des salariés à leur poste et veiller au maintien de leur employabilité",
+        "établir un PDC chaque année et le faire valider par l'inspection du travail",
+        "proposer une formation certifiante tous les deux ans à chaque salarié"
+      ],
+      "reponse": 1,
+      "explication": "L.6321-1 : adaptation au poste de travail + maintien de la capacité à occuper un emploi (employabilité), à l'initiative de l'employeur. Les formations doivent réellement développer les compétences (Cass. soc., 5 juillet 2018 : 10 000 € pour « perte de chance »)."
+    },
+    {
+      "id": "b4-r07-qz-007",
+      "section": "4. Les obligations de l'employeur",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "L'entretien professionnel a lieu tous les ans et sert à évaluer la performance du salarié.",
+      "reponse": false,
+      "explication": "Faux, deux fois : il a lieu tous les 2 ans (et au retour d'absences longues) et porte sur le projet professionnel et les besoins de formation (Bilan, Analyse, Évolutions) — à ne pas confondre avec l'entretien annuel d'évaluation."
+    },
+    {
+      "id": "b4-r07-qz-008",
+      "section": "4. Les obligations de l'employeur",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans une entreprise de 120 salariés, l'état des lieux à 6 ans révèle qu'un salarié n'a suivi aucune formation non obligatoire. Que risque l'employeur ?",
+      "options": [
+        "une amende administrative versée à l'URSSAF",
+        "un abondement forfaitaire de 3 000 € sur le CPF du salarié",
+        "l'obligation de financer une VAE au salarié",
+        "rien, l'état des lieux n'a pas de valeur contraignante"
+      ],
+      "reponse": 1,
+      "explication": "Dans les entreprises de plus de 50 salariés, si l'état des lieux récapitulatif des 6 ans révèle que les entretiens n'ont pas été tenus ou qu'aucune formation non obligatoire n'a été suivie, l'employeur doit abonder le CPF du salarié de 3 000 €."
+    },
+    {
+      "id": "b4-r07-qz-009",
+      "section": "5. Le plan de développement des compétences",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une assistante administrative est formée à l'anglais professionnel, un savoir-faire transférable utile dans son emploi. Dans quelle sous-catégorie du PDC classer cette action ?",
+      "options": [
+        "adaptation au poste de travail",
+        "maintien dans l'emploi",
+        "développement des compétences",
+        "formation obligatoire au sens de l'article L.6321-2"
+      ],
+      "reponse": 1,
+      "explication": "C'est l'exemple type du cours : savoir-faire transférable requis dans l'emploi = maintien dans l'emploi. L'adaptation au poste vise un savoir-faire spécifique au poste (logiciel de DAO) ; le développement des compétences prépare une évolution ultérieure."
+    },
+    {
+      "id": "b4-r07-qz-010",
+      "section": "5. Le plan de développement des compétences",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Une formation obligatoire (type CACES ou habilitation électrique) peut se dérouler hors temps de travail si le salarié donne son accord écrit.",
+      "reponse": false,
+      "explication": "Faux. Les formations obligatoires se déroulent obligatoirement sur le temps de travail, rémunération maintenue. C'est pour les formations non obligatoires que le hors temps de travail est possible, dans la limite de 30 h/an ou 2 % du forfait sans accord collectif."
+    },
+    {
+      "id": "b4-r07-qz-011",
+      "section": "5. Le plan de développement des compétences",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une compétence est jugée stratégique pour l'entreprise, mais aucune échéance réglementaire ni changement brutal ne presse. Que faire de ce besoin de formation ?",
+      "options": [
+        "le traiter sans délai, comme toute formation importante",
+        "le planifier dans le PDC, car « on verra plus tard » finit en « c'est trop tard »",
+        "l'éliminer : sans urgence, une formation ne se justifie pas",
+        "le basculer sur le CPF du salarié pour ne pas peser sur le budget"
+      ],
+      "reponse": 1,
+      "explication": "Grille urgence × importance : important mais pas urgent = planifier dans le PDC. Urgent + important = sans délai ; ni urgent ni important = éliminer ; et « urgent pas important » n'existe pas — une formation urgente est toujours importante."
+    },
+    {
+      "id": "b4-r07-qz-012",
+      "section": "6. Certifications et validation des acquis",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un salarié souhaite obtenir un titre du RNCP par la VAE. Quelle condition doit-il remplir ?",
+      "options": [
+        "justifier de 3 ans d'expérience professionnelle continue",
+        "justifier d'1 an d'expérience (1 607 h), continue ou non, en rapport direct avec la certification visée",
+        "avoir suivi au moins une formation certifiante dans les 5 dernières années",
+        "obtenir l'accord préalable de son employeur"
+      ],
+      "reponse": 1,
+      "explication": "La VAE exige 1 an d'expérience (1 607 h), continue ou non, en rapport direct avec la certification — expérience professionnelle ou extra-professionnelle (bénévolat, mandats). Le jury prononce une validation totale, partielle ou un refus, et la certification a la même valeur que par les autres voies."
+    },
+    {
+      "id": "b4-r07-qz-013",
+      "section": "6. Certifications et validation des acquis",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque dispositif de certification à sa caractéristique.",
+      "colonne_a": [
+        "RNCP",
+        "Répertoire Spécifique",
+        "Titre Professionnel",
+        "CQP",
+        "CléA"
+      ],
+      "colonne_b": [
+        "« Diplôme sur mesure » créé et délivré par une branche professionnelle, hors tutelle de l'État",
+        "Certification du socle de connaissances et compétences professionnelles, en 7 domaines",
+        "Répertoire des diplômes, titres et CQP, en blocs de compétences, sur 8 niveaux",
+        "Délivré au nom de l'État par le ministère du Travail, composé de blocs CCP",
+        "Habilitations et certifications complémentaires au RNCP, enregistrées 5 ans maximum"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 4],
+        [2, 3],
+        [3, 0],
+        [4, 1]
+      ],
+      "explication": "RNCP = répertoire à 8 niveaux (décret du 8 janvier 2019) avec 3 référentiels par certification ; le Répertoire Spécifique le complète. Le TP émane de l'État (blocs CCP), le CQP d'une branche, et CléA est la première certification interprofessionnelle et paritaire du socle."
+    },
+    {
+      "id": "b4-r07-qz-014",
+      "section": "7. Concevoir la formation : l'ingénierie pédagogique",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Un formateur fait analyser aux stagiaires des cas concrets de captation live, puis leur fait découvrir eux-mêmes les principes généraux. Quelle méthode pédagogique applique-t-il ?",
+      "options": [
+        "la méthode déductive : de la théorie vers l'application",
+        "la méthode inductive : du cas concret vers la théorie",
+        "le chunking : découper le contenu en micro-séquences",
+        "la différenciation pédagogique : adapter aux niveaux de chacun"
+      ],
+      "reponse": 1,
+      "explication": "La méthode inductive part du concret pour faire découvrir les principes — l'inverse de la déductive — et c'est la plus efficace en formation professionnelle. Le chunking, lui, répond au déclin de l'attention d'un adulte après 15-20 minutes."
+    },
+    {
+      "id": "b4-r07-qz-015",
+      "section": "7. Concevoir la formation : l'ingénierie pédagogique",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans la taxonomie de Bloom, l'objectif « concevoir un plan de captation original » se situe à quel niveau ?",
+      "options": [
+        "Mémoriser, le premier niveau",
+        "Appliquer, le niveau intermédiaire",
+        "Évaluer, le cinquième niveau",
+        "Créer, le niveau le plus élevé"
+      ],
+      "reponse": 3,
+      "explication": "La taxonomie de Bloom hiérarchise 6 niveaux cognitifs : Mémoriser → Comprendre → Appliquer → Analyser → Évaluer → Créer. Concevoir une production originale relève du sommet, « Créer ». Les objectifs se formulent SMART, avec des verbes d'action observables."
+    },
+    {
+      "id": "b4-r07-qz-016",
+      "section": "8. Animer : la posture de facilitateur",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Le facilitateur est un expert du contenu qui donne son avis pour aider le groupe à trancher.",
+      "reponse": false,
+      "explication": "Faux. Le facilitateur est expert du processus seulement : le contenu appartient au groupe, et il reste neutre — il ne donne jamais son avis. C'est le formateur qui est expert du contenu et s'implique dans les échanges."
+    },
+    {
+      "id": "b4-r07-qz-017",
+      "section": "9. Modalités et digital learning",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque modalité ou format de formation à sa définition.",
+      "colonne_a": [
+        "Blended learning",
+        "AFEST",
+        "SPOC",
+        "Micro-learning",
+        "Adaptive learning"
+      ],
+      "colonne_b": [
+        "Séquences d'apprentissage très courtes, de 2 à 5 minutes",
+        "Cours en ligne privé pour 15 à 50 participants sélectionnés, avec accompagnement personnalisé",
+        "Combinaison de présentiel et de distanciel, modalités complémentaires",
+        "Personnalisation du parcours par une IA qui analyse les interactions de l'apprenant",
+        "Alternance de mises en situation de travail aménagées et de séquences réflexives animées par un tiers"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 4],
+        [2, 1],
+        [3, 0],
+        [4, 3]
+      ],
+      "explication": "Le blended (37 % selon l'ISTF 2023) est devenu la modalité majoritaire. L'AFEST transforme l'expérience en compétences durables via la séquence réflexive. SPOC = Small Private Online Course, à distinguer du MOOC (massif, ouvert) et du COOC (MOOC interne d'entreprise)."
+    },
+    {
+      "id": "b4-r07-qz-018",
+      "section": "9. Modalités et digital learning",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un module e-learning coûte 2 200 € et rapporte un bénéfice net de 11 840 € par an (erreurs de colis évitées). Quel est son ROI ?",
+      "options": [
+        "environ 19 %",
+        "environ 185 %",
+        "environ 538 %",
+        "environ 640 %"
+      ],
+      "reponse": 2,
+      "explication": "ROI = (bénéfices / coûts) × 100 = (11 840 / 2 200) × 100 = 538 % — c'est le cas CP Livraison du cours. Un ROI inférieur à 100 % signifie que l'investissement n'est pas couvert ; le ROE (Return On Expectation) et les bénéfices qualitatifs complètent l'analyse."
+    }
+  ]
+}

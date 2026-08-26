@@ -1,0 +1,286 @@
+{
+  "resume": "b4-r04",
+  "titre": "Manager la diversité et les équipes hybrides",
+  "bloc": 4,
+  "questions": [
+    {
+      "id": "b4-r04-qz-001",
+      "section": "1. Cartographier la diversité de l'équipe",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Un manager apprend qu'un collaborateur, sans que rien ne le laisse paraître, est dyslexique et traverse une situation familiale difficile. De quel niveau de diversité relèvent ces caractéristiques ?",
+      "options": [
+        "de la diversité visible, car elles finissent toujours par se voir",
+        "de la diversité invisible, qui exige une vigilance particulière du manager",
+        "de l'intersectionnalité, car elles concernent deux dimensions",
+        "de la diversité culturelle, car elles touchent au rapport au travail"
+      ],
+      "reponse": 1,
+      "explication": "La diversité invisible regroupe les aspects non apparents mais déterminants (neurodiversité, croyances, situations familiales, handicaps non visibles) : plus difficile à identifier, elle exige une vigilance particulière. L'intersectionnalité désigne la combinaison unique de dimensions que porte chaque collaborateur."
+    },
+    {
+      "id": "b4-r04-qz-002",
+      "section": "1. Cartographier la diversité de l'équipe",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque profil neuroatypique aux talents que le cours lui associe fréquemment.",
+      "colonne_a": [
+        "Autisme (TSA)",
+        "TDAH",
+        "Dyslexie",
+        "HPI"
+      ],
+      "colonne_b": [
+        "Besoin de comprendre le « pourquoi » avant le « comment »",
+        "Attention au détail, logique rigoureuse, approche systématique",
+        "Créativité exceptionnelle, capacité d'innovation",
+        "Compétences visuelles et spatiales supérieures à la moyenne"
+      ],
+      "paires": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [3, 0]
+      ],
+      "explication": "La neurodiversité désigne les variations naturelles du fonctionnement neurologique : chaque profil porte des talents spécifiques que le manager valorise par une approche par compétences, et non purement compensatoire."
+    },
+    {
+      "id": "b4-r04-qz-003",
+      "section": "1. Cartographier la diversité de l'équipe",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "S'adapter à la diversité culturelle de son équipe signifie coller aux exigences de chacun de ses membres.",
+      "reponse": false,
+      "explication": "Faux. Le cours précise qu'il faut s'adapter aux divergences « en bonne intelligence », ce qui ne signifie pas coller aux exigences de chacun : les codes culturels (autorité, communication directe/indirecte, temps monochronique/polychronique) s'accommodent sans renoncer à un cadre commun."
+    },
+    {
+      "id": "b4-r04-qz-004",
+      "section": "2. Biais, stéréotypes, appartenance",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Un manager continue de surévaluer une recrue des mois après son arrivée, simplement parce qu'elle vient d'une entreprise prestigieuse. Quel biais est à l'œuvre ?",
+      "options": [
+        "le biais de confirmation",
+        "l'effet de halo",
+        "le biais d'ancrage",
+        "un stéréotype générationnel"
+      ],
+      "reponse": 2,
+      "explication": "Le biais d'ancrage donne un poids disproportionné à la première information reçue (ici l'entreprise d'origine). L'effet de halo est proche mais désigne une caractéristique qui influence la perception globale ; le biais de confirmation ne retient que ce qui confirme l'opinion préexistante."
+    },
+    {
+      "id": "b4-r04-qz-005",
+      "section": "2. Biais, stéréotypes, appartenance",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un stéréotype « positif » (par exemple supposer qu'un collaborateur asiatique est excellent en maths) est sans danger managérial.",
+      "reponse": false,
+      "explication": "Faux. Même « positifs », les stéréotypes créent des attentes réductrices qui déclenchent des prophéties autoréalisatrices : les performances s'orientent dans le sens des attentes initiales, et le collaborateur se retrouve cantonné à un rôle."
+    },
+    {
+      "id": "b4-r04-qz-006",
+      "section": "2. Biais, stéréotypes, appartenance",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Comment Amy Edmondson définit-elle la sécurité psychologique ?",
+      "options": [
+        "la garantie contractuelle d'un environnement de travail sans risque physique",
+        "la conviction partagée que l'équipe est un environnement sûr pour prendre des risques interpersonnels",
+        "le sentiment individuel d'être protégé par son manager en cas d'erreur",
+        "l'absence totale de désaccords et de tensions au sein de l'équipe"
+      ],
+      "reponse": 1,
+      "explication": "La sécurité psychologique est la conviction partagée que l'équipe est un environnement sûr pour prendre des risques interpersonnels : exprimer idées, préoccupations et besoins sans craindre le jugement. Elle libère les questions naïves et les désaccords constructifs — elle ne les supprime pas."
+    },
+    {
+      "id": "b4-r04-qz-007",
+      "section": "3. Les leviers du management inclusif",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Tu dois faire un feedback correctif à un collaborateur issu d'une culture d'harmonie relationnelle, pour qui le feedback direct « à la française » serait vécu comme une attaque. Quelle approche le cours recommande-t-il ?",
+      "options": [
+        "reporter le feedback jusqu'à la prochaine évaluation annuelle",
+        "passer par un collègue de la même culture pour transmettre le message",
+        "le « sandwich positif » : encadrer les points d'amélioration par des reconnaissances de réussites",
+        "envoyer le feedback par écrit pour éviter la confrontation"
+      ],
+      "reponse": 2,
+      "explication": "Avec les cultures d'harmonie relationnelle, le cours recommande le « sandwich positif » : encadrer les points d'amélioration par des reconnaissances de réussites, avec un temps d'échange et un accompagnement concret."
+    },
+    {
+      "id": "b4-r04-qz-008",
+      "section": "3. Les leviers du management inclusif",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Tu confies une mission à un collaborateur autiste (TSA). Quelle adaptation de communication est la plus appropriée ?",
+      "options": [
+        "des objectifs segmentés en étapes courtes avec des points d'étape fréquents",
+        "une communication factuelle, explicite, structurée par écrit, sans métaphores, avec un temps de traitement",
+        "commencer par expliquer les enjeux stratégiques et le « pourquoi » de la mission",
+        "privilégier la synthèse vocale et les supports visuels"
+      ],
+      "reponse": 1,
+      "explication": "Pour un profil autiste : factuel, explicite, structuré par écrit, critères précis, pas de métaphores, temps de traitement. Les étapes courtes visent le TDAH, le « pourquoi » le HPI, la synthèse vocale et les supports visuels le profil dyslexique."
+    },
+    {
+      "id": "b4-r04-qz-009",
+      "section": "3. Les leviers du management inclusif",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un outil d'IA de tri de candidatures n'utilise aucune donnée sur l'origine des candidats, mais intègre leur code postal. Pourquoi le cours y voit-il un risque ?",
+      "options": [
+        "le code postal est une donnée dont la collecte est interdite en recrutement",
+        "le code postal est corrélé au statut socio-économique donc à l'origine ethnique : c'est un biais indirect par variable corrélée",
+        "l'IA ne sait pas traiter les données géographiques de manière fiable",
+        "le code postal ne dit rien des compétences, ce qui rend l'outil simplement inutile"
+      ],
+      "reponse": 1,
+      "explication": "Entraînée sur des données historiques, l'IA peut reproduire et amplifier les biais passés et sélectionner des variables corrélées à des caractéristiques protégées : le code postal, corrélé au statut socio-économique donc à l'origine ethnique, produit un biais indirect."
+    },
+    {
+      "id": "b4-r04-qz-010",
+      "section": "3. Les leviers du management inclusif",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une salle de spectacle est conçue dès l'origine avec accès PMR, boucles magnétiques et zones calmes utilisables par tous les publics. De quoi s'agit-il ?",
+      "options": [
+        "d'aménagements raisonnables, car ils ciblent des publics spécifiques",
+        "d'accessibilité universelle : des environnements utilisables par le plus grand nombre sans adaptation ultérieure",
+        "d'une simple conformité réglementaire sans portée managériale",
+        "de flexibilité managériale appliquée aux locaux"
+      ],
+      "reponse": 1,
+      "explication": "L'accessibilité universelle consiste à concevoir environnements, processus et outils utilisables par le plus grand nombre sans adaptation ultérieure — une stratégie d'optimisation des talents. Les aménagements raisonnables sont au contraire des ajustements spécifiques à un collaborateur donné."
+    },
+    {
+      "id": "b4-r04-qz-011",
+      "section": "4. Mesurer et développer l'inclusion",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une entreprise constate que les contributions de ses jeunes collaborateurs, équilibrées en volume de prises de parole, sont moins souvent retenues dans les décisions. Que mesure-t-elle ainsi ?",
+      "options": [
+        "un indicateur de diversité, car il porte sur la représentation des jeunes",
+        "un indicateur d'inclusion : la présence ne garantit pas la participation effective",
+        "un indicateur de performance individuelle des jeunes collaborateurs",
+        "un facteur d'hygiène au sens de Herzberg"
+      ],
+      "reponse": 1,
+      "explication": "C'est l'exemple d'Orange dans le cours : croiser prises de parole et adoption des idées mesure l'inclusion — la qualité de l'intégration et la capacité à contribuer — alors que la diversité ne mesure que la représentation (présence ≠ participation effective)."
+    },
+    {
+      "id": "b4-r04-qz-012",
+      "section": "5. Équipes hybrides : définition et cadres théoriques",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une équipe projet mêle salariés internes, un freelance et une agence partenaire. À quelle dimension d'hétérogénéité de l'équipe hybride cela correspond-il ?",
+      "options": [
+        "la dimension spatiale",
+        "la dimension statutaire",
+        "la dimension temporelle",
+        "la dimension culturelle"
+      ],
+      "reponse": 1,
+      "explication": "La dimension statutaire oppose salariés internes et externes (freelances, consultants, agences, partenaires). La spatiale oppose co-localisés et distribués, la temporelle synchrone et asynchrone, la culturelle cultures d'entreprise, nationalités et générations."
+    },
+    {
+      "id": "b4-r04-qz-013",
+      "section": "5. Équipes hybrides : définition et cadres théoriques",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque cadre théorique du management hybride à son apport.",
+      "colonne_a": [
+        "Contingence structurelle (Lawrence et Lorsch)",
+        "Coûts de transaction (Williamson)",
+        "Approche systémique",
+        "Gouvernance des écosystèmes"
+      ],
+      "colonne_b": [
+        "Facilitation, valeur partagée et contrats psychologiques informels",
+        "Arbitrage internaliser vs externaliser, en comptant recherche, négociation et suivi",
+        "Efficacité = adéquation entre la structure et l'environnement",
+        "Tensions intrinsèques à réguler ; le manager devient régulateur"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 1],
+        [2, 3],
+        [3, 0]
+      ],
+      "explication": "La contingence lie efficacité et adéquation structure-environnement ; Williamson arbitre internalisation et externalisation au-delà du coût direct ; l'approche systémique fait du manager un régulateur d'interdépendances ; la gouvernance des écosystèmes mise sur la facilitation, la valeur partagée et les contrats psychologiques."
+    },
+    {
+      "id": "b4-r04-qz-014",
+      "section": "6. Coordonner et piloter une équipe hybride",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "En équipe hybride, la supervision directe ne fonctionne plus. Vers quel mécanisme de coordination de Mintzberg le manager doit-il prioritairement rééquilibrer ?",
+      "options": [
+        "l'ajustement mutuel spontané, à la machine à café",
+        "la standardisation des résultats : livrables, critères de qualité et échéances définis, liberté des méthodes",
+        "la standardisation des procédés, en imposant les processus internes à tous les externes",
+        "la supervision directe renforcée par des reportings quotidiens"
+      ],
+      "reponse": 1,
+      "explication": "La priorité va à la standardisation des résultats : définir précisément livrables, critères de qualité et échéances, puis laisser chacun libre de ses méthodes — un pilotage par objectifs qui respecte l'autonomie des externes. L'ajustement mutuel doit être réinventé (rituels, canaux dédiés), pas espéré spontané."
+    },
+    {
+      "id": "b4-r04-qz-015",
+      "section": "6. Coordonner et piloter une équipe hybride",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Quand un prestataire externe reçoit des instructions contradictoires de plusieurs donneurs d'ordre, les conséquences sont uniquement opérationnelles.",
+      "reponse": false,
+      "explication": "Faux. Un externe pris entre des instructions contradictoires risque le non-respect de ses engagements contractuels : les conflits de rôles ont des répercussions juridiques, pas seulement opérationnelles. D'où la matrice RACI et les « ateliers de rôles » en début de projet."
+    },
+    {
+      "id": "b4-r04-qz-016",
+      "section": "7. Motiver, fédérer et intégrer à distance",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un freelance se plaint du flou de son contrat et d'outils collaboratifs peu fiables. Au sens de Herzberg, sur quoi le manager agit-il en corrigeant ces points ?",
+      "options": [
+        "sur des facteurs de motivation, qui créeront son engagement",
+        "sur des facteurs d'hygiène, dont l'absence crée l'insatisfaction sans que leur présence suffise à motiver",
+        "sur son besoin d'autonomie au sens de la théorie de l'autodétermination",
+        "sur le sommet de la pyramide de Maslow"
+      ],
+      "reponse": 1,
+      "explication": "Clarté contractuelle, fiabilité des outils, équité interne/externe et process clairs sont des facteurs d'hygiène : leur absence crée l'insatisfaction. L'engagement vient des facteurs de motivation — reconnaissance, développement, participation aux décisions, sens."
+    },
+    {
+      "id": "b4-r04-qz-017",
+      "section": "7. Motiver, fédérer et intégrer à distance",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La confiance affective se construit plus vite que la confiance cognitive, car elle repose sur les émotions.",
+      "reponse": false,
+      "explication": "Faux. La confiance cognitive (évaluation rationnelle de la compétence via références et livrables) est le fondement du démarrage ; la confiance affective (relations, empathie, valeurs communes) est plus lente à construire mais plus stable, entretenue par l'informel. La confiance institutionnelle (contrats, procédures) fournit le cadre sécurisant."
+    },
+    {
+      "id": "b4-r04-qz-018",
+      "section": "7. Motiver, fédérer et intégrer à distance",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Selon la théorie de la richesse des médias (Daft et Lengel), associez chaque canal à son usage type en équipe hybride.",
+      "colonne_a": [
+        "Visioconférence",
+        "Chat (Slack, Teams)",
+        "E-mail",
+        "Outils collaboratifs (Notion, Google Docs)"
+      ],
+      "colonne_b": [
+        "Validations formelles",
+        "Suivi et édition partagée",
+        "Brainstorming et décisions complexes",
+        "Questions rapides et échanges informels"
+      ],
+      "paires": [
+        [0, 2],
+        [1, 3],
+        [2, 0],
+        [3, 1]
+      ],
+      "explication": "L'efficacité dépend de l'adéquation entre la richesse du canal (feedback immédiat, indices multiples, personnalisation) et la complexité du message : visio pour le complexe, chat pour le rapide et l'informel, e-mail pour le formel, outils collaboratifs pour le suivi asynchrone."
+    }
+  ]
+}

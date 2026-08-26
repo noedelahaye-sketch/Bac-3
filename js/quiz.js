@@ -8354,5 +8354,2895 @@ var QUIZ = [
       "Des indicateurs par groupe de KPI : engagement (interactions, commentaires), fidélisation/satisfaction (temps de réponse, sentiment des mentions), notoriété (portée, mentions) — chacun relié à un objectif"
     ],
     "explication": "C'est la structure attendue en Q13 : bonnes pratiques (charte de modération + animation + veille) ET indicateurs de mesure, e-réputation comprise. La rapidité et la transparence font la différence en cas de crise (Nestlé vs Anthropologie)."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-001",
+    "section": "1. L'évolution du management",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une entreprise fonctionne avec un pouvoir de décision diffus, réparti et décentralisé, très spécialisé, dans un modèle horizontal et fluide. À quel modèle de management correspond-elle ?",
+    "options": [
+      "au management mécaniste de l'entreprise classique",
+      "au management organique, qui voit l'entreprise comme un organisme vivant",
+      "au management vertical fondé sur l'autorité hiérarchique",
+      "au management par la prévision et la planification"
+    ],
+    "reponse": 1,
+    "explication": "C'est le management organique : pouvoir diffus, réparti, décentralisé et spécialisé, modèle horizontal qui libère les énergies et l'innovation. À l'inverse, l'entreprise classique (mécaniste) concentre et centralise un pouvoir très généraliste dans un modèle vertical et rigide."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-002",
+    "section": "1. L'évolution du management",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quelles sont les 3 grandes missions recentrées du manager d'aujourd'hui ?",
+    "options": [
+      "prévoir, contrôler, sanctionner",
+      "donner du sens, accompagner et soutenir, développer l'autonomie",
+      "recruter, former, évaluer",
+      "planifier, budgéter, reporter à la direction"
+    ],
+    "reponse": 1,
+    "explication": "De « contrôleur », le manager est devenu « stratège, développeur, animateur et soutien », recentré sur 3 missions : donner du sens (des repères dans un environnement mouvant), accompagner et soutenir, développer l'autonomie (prise de risque, initiative individuelle)."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-003",
+    "section": "2. Missions, rôles et postures du manager",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Dans le triptyque autonomie–confiance–responsabilité, la confiance accordée aux collaborateurs entraîne la disparition de toute forme de contrôle.",
+    "reponse": false,
+    "explication": "Faux. La confiance permet l'autonomie, la prise de risque et les coopérations, mais elle n'entraîne pas la disparition de toute forme de contrôle — un contrôle d'ailleurs facilité par la digitalisation des processus."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-004",
+    "section": "2. Missions, rôles et postures du manager",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque type d'information que le manager fait circuler à son rôle pour le collaborateur.",
+    "colonne_a": [
+      "Information opérationnelle",
+      "Information organisationnelle",
+      "Information relationnelle",
+      "Information connexe",
+      "Information générale"
+    ],
+    "colonne_b": [
+      "Comprendre pourquoi le faire",
+      "Connaître la stratégie de l'entreprise",
+      "Définir la nature du travail à effectuer",
+      "Savoir comment faire",
+      "Se situer au sein du service"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "explication": "Les 5 types d'informations répondent à : quoi (opérationnelle), comment (organisationnelle), pourquoi (relationnelle), où se situer (connexe), dans quelle stratégie (générale). Le but de la communication du manager : informer pour donner du sens à l'action."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-005",
+    "section": "2. Missions, rôles et postures du manager",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Un collaborateur vient voir son manager avec un problème. En posture de coach, que fait le manager ?",
+    "options": [
+      "il donne immédiatement la solution, car son expertise légitime ses décisions",
+      "il questionne plutôt que répondre, soutient plutôt que juger, facilite plutôt que diriger",
+      "il tranche seul puis contrôle l'exécution de sa décision",
+      "il renvoie le problème vers la direction, dont il est la passerelle"
+    ],
+    "reponse": 1,
+    "explication": "La posture de coach (accompagnateur et pédagogue) : questionner plutôt que répondre, soutenir plutôt que juger, faciliter plutôt que diriger. L'objectif est de faire émerger les meilleures idées et de faire « grandir » les collaborateurs, l'écoute étant le préalable à la confiance."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-006",
+    "section": "3. Compétences et leadership",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "La bienveillance, l'assertivité et l'empathie d'un manager relèvent de quelle famille de soft skills ?",
+    "options": [
+      "les soft skills personnelles",
+      "les soft skills interpersonnelles",
+      "les soft skills professionnelles",
+      "les hard skills relationnelles"
+    ],
+    "reponse": 1,
+    "explication": "Les soft skills se répartissent en 3 familles : personnelles (confiance, créativité, curiosité, adaptation), interpersonnelles (bienveillance, communication, assertivité, empathie) et professionnelles (autonomie, esprit critique, éthique du travail, gestion du stress)."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-007",
+    "section": "3. Compétences et leadership",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Un chef d'équipe nommé par la direction peine à entraîner son groupe, tandis qu'un de ses collaborateurs exerce un fort ascendant sur les autres. Comment analyser la situation avec les notions du cours ?",
+    "options": [
+      "le chef est un leader sans autorité, le collaborateur un manager naturel",
+      "le chef a l'autorité formelle du manager, le collaborateur l'autorité naturelle du leader : un chef statutaire peut ne pas être un leader",
+      "le chef manque de hard skills, le collaborateur en a davantage",
+      "la situation est impossible : le statut de manager confère le leadership"
+    ],
+    "reponse": 1,
+    "explication": "Le manager est investi d'une autorité formelle qui lui donne un statut (et l'accès à une information privilégiée) ; le leader a une autorité naturelle, un ascendant qui donne envie de le suivre. Un chef statutaire peut ou non être un leader : les deux notions sont complémentaires."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-008",
+    "section": "3. Compétences et leadership",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Selon David McClelland, les leaders dotés de 6 ou plus des compétences émotionnelles sont beaucoup plus efficaces que leurs collègues qui en sont dépourvus.",
+    "reponse": true,
+    "explication": "Vrai. C'est la découverte du psychologue David McClelland (Harvard). L'intelligence émotionnelle — reconnaître, comprendre et gérer ses émotions et composer avec celles des autres — est un savoir-être clé du manager."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-009",
+    "section": "4. Anticiper : vision stratégique et changement",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "D'après le cours, dans quel cas une entreprise a-t-elle réellement besoin d'une stratégie ?",
+    "options": [
+      "dès qu'elle dépasse une certaine taille",
+      "quand il existe un impératif de choix entre des intérêts légitimes en opposition — « on fait de la stratégie parce qu'on est coincé »",
+      "uniquement en période de crise ou de transformation",
+      "quand ses ressources sont illimitées et qu'elle veut les allouer"
+    ],
+    "reponse": 1,
+    "explication": "Une stratégie — processus d'allocation de ressources qui engage durablement l'entreprise, rythmé par le double mouvement analyse/engagement — n'existe que s'il y a un impératif de choix. Sans limite de ressources ni concurrence, pas besoin de stratégie."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-010",
+    "section": "4. Anticiper : vision stratégique et changement",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque champ de l'élaboration stratégique à la question qu'il pose.",
+    "colonne_a": [
+      "Écologie",
+      "Marché",
+      "Ressources",
+      "Prospective"
+    ],
+    "colonne_b": [
+      "Ai-je les ressources pour jouer ?",
+      "Et demain ?",
+      "Dans quel monde j'évolue ? Quelles tendances lourdes ?",
+      "Qu'est-ce que je comprends des signaux ? Quel service vendre, à qui ?"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "L'élaboration stratégique interroge 4 champs : écologie (le monde, le marché, les tendances lourdes), marché (les signaux, le service à vendre et à qui), ressources (peut-on jouer ?) et prospective (demain). Le marketing stratégique est la clé d'entrée pour comprendre le marché."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-011",
+    "section": "4. Anticiper : vision stratégique et changement",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Face à un projet de réorganisation, un collaborateur multiplie les manœuvres d'alliances en coulisses pour freiner le changement. À quelle forme de résistance cela correspond-il ?",
+    "options": [
+      "la passivité",
+      "les objections",
+      "les jeux politiques",
+      "les conflits ouverts"
+    ],
+    "reponse": 2,
+    "explication": "Les résistances au changement — normales, attendues et même utiles (« impossible de sculpter une statue sans la résistance de la pierre ») — prennent 4 formes : passivité, objections, jeux politiques et conflits ouverts. Les manœuvres d'alliances relèvent des jeux politiques."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-012",
+    "section": "4. Anticiper : vision stratégique et changement",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans un monde turbulent, le cours recommande de passer de la planification à la synchronisation. Qu'est-ce que cela signifie ?",
+    "options": [
+      "fixer des objectifs quantitatifs plus précis et les contrôler plus souvent",
+      "des ajustements mutuels et permanents qui font converger des actions parallèles vers une intention commune",
+      "aligner tous les plannings des équipes sur un calendrier unique",
+      "renoncer à toute forme d'anticipation stratégique"
+    ],
+    "reponse": 1,
+    "explication": "La synchronisation fait converger des actions parallèles vers une intention commune, non vers des objectifs quantitatifs prédéfinis : on passe de la dialectique objectifs/résultats à la dialectique intention/situation, en construisant l'action dans le présent. La solution : adaptabilité et agilité."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-013",
+    "section": "5. Défis et opportunités du manager d'aujourd'hui",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quelles sont les opportunités que l'IA offre au manager d'aujourd'hui ?",
+    "options": [
+      "remplacer la relation managériale par des processus automatisés",
+      "l'analyse et la prise de décision, la gestion des talents, la veille, la gestion des risques et la personnalisation des services",
+      "supprimer le besoin de contrôle grâce à la digitalisation",
+      "réduire les effectifs des équipes créatives"
+    ],
+    "reponse": 1,
+    "explication": "L'IA aide à l'analyse et à la prise de décision, à la gestion des talents (recrutement, évaluation, développement des compétences), à la veille, à la gestion des risques et à la personnalisation des services. L'automatisation des tâches répétitives libère du temps pour les activités à haute valeur ajoutée."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-014",
+    "section": "5. Défis et opportunités du manager d'aujourd'hui",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'inclusivité consiste à favoriser la différence et à inciter chacun à être unique.",
+    "reponse": false,
+    "explication": "Faux, c'est la définition de la diversité. L'inclusivité consiste à assembler tous les salariés dans une mutualité et à traiter tout le monde à égalité. Les deux notions sont complémentaires — et payantes : selon Deloitte, une politique inclusive générerait jusqu'à 30 % de chiffre d'affaires en plus par salarié."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-015",
+    "section": "6. Les enjeux stratégiques du management",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pour suivre ses enjeux stratégiques, combien de KPI une entreprise doit-elle retenir selon le cours ?",
+    "options": [
+      "le plus possible, pour ne rien laisser passer",
+      "un seul indicateur synthétique",
+      "entre 5 et 8, limités aux plus significatifs, avec tableaux de bord et réunions de pilotage",
+      "entre 15 et 20, répartis par service"
+    ],
+    "reponse": 2,
+    "explication": "Les KPI doivent être limités aux plus significatifs (5 à 8), suivis via tableaux de bord et réunions de pilotage. Autres outils des 7 enjeux universels : SWOT et scénarios prospectifs, veille stratégique, cartographie des parties prenantes, projets pilotes avant déploiement massif."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-016",
+    "section": "6. Les enjeux stratégiques du management",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque profil d'entreprise à son enjeu managérial majeur.",
+    "colonne_a": [
+      "Leader du marché (ex. Coca-Cola)",
+      "Challenger (ex. Pepsi Cola)",
+      "Suiveur",
+      "Entreprise en consolidation"
+    ],
+    "colonne_b": [
+      "Stabiliser l'organisation sans laisser s'installer la routine",
+      "L'innovation continue, « le carburant du leader »",
+      "Se différencier : offres, prix, proposition de valeur",
+      "S'adapter rapidement, imiter à moindre coût, maîtriser les coûts"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Le leader mise sur l'innovation continue ; le challenger, plus petit mais inventif, cherche à se différencier ; le suiveur imite le leader à prix plus bas, sans prise de risque. En consolidation (maturité), il faut stabiliser, optimiser et préserver les marges — tout en provoquant le changement pour remettre les équipes en tension."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-001",
+    "section": "1. De la stratégie au plan d'action",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Un manager doit caler les horizons temporels de son pilotage. Quelle association est correcte ?",
+    "options": [
+      "stratégie sur un trimestre, objectifs pluriannuels, plan d'action sur un an",
+      "stratégie pluriannuelle, objectifs sur quelques mois à un an, plan d'action sur quelques semaines à un trimestre",
+      "stratégie sur un an, objectifs sur quelques semaines, plan d'action pluriannuel",
+      "stratégie, objectifs et plan d'action partagent le même horizon annuel"
+    ],
+    "reponse": 1,
+    "explication": "La chaîne descend du plus long au plus court : stratégie pluriannuelle, objectifs sur quelques mois à un an, plans d'action sur quelques semaines à un trimestre. Les objectifs se définissent après la stratégie et avant le lancement du plan d'action."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-002",
+    "section": "2. La méthode SMARTEF, critère par critère",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une direction fixe comme objectif « augmenter le CA », sans plus de précision. Chaque équipe l'interprète à sa façon et les efforts s'éparpillent. Quel critère SMARTEF fait défaut ?",
+    "options": [
+      "Spécifique : la définition doit être claire, sans ambiguïté ni interprétation",
+      "Atteignable : le management doit fournir les moyens",
+      "Ecologique : l'objectif doit être cohérent avec les valeurs",
+      "Fun : l'objectif doit être source de plaisir"
+    ],
+    "reponse": 0,
+    "explication": "Un objectif non spécifique laisse place à plusieurs interprétations : il éparpille les efforts et nuit à la motivation, et doit être reformulé. « Augmenter le CA » est vague ; « de 30 % » est clair et aligne les équipes."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-003",
+    "section": "2. La méthode SMARTEF, critère par critère",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque critère SMARTEF à son exigence.",
+    "colonne_a": [
+      "Mesurable",
+      "Atteignable",
+      "Réaliste",
+      "Ecologique"
+    ],
+    "colonne_b": [
+      "Contextualiser : contraintes, circonstances, alignement sur les objectifs macro",
+      "Cohérence avec l'environnement, l'écosystème et l'éthique",
+      "Quantifier et suivre les progrès par des indicateurs quantitatifs ou qualitatifs",
+      "Réalisable vu les ressources : le management s'engage à fournir les moyens"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Mesurable = indicateurs (quantitatifs ou qualitatifs) ; Atteignable = ressources fournies (compétences, formations, budget, RH, matériel) ; Réaliste = contexte et contraintes (départ d'un collègue, Covid-19, marché saturé) ; Ecologique = environnement + écosystème (partenaires, clients, fournisseurs) + éthique."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-004",
+    "section": "2. La méthode SMARTEF, critère par critère",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le critère Ecologique d'un objectif SMARTEF se limite à la protection de l'environnement naturel.",
+    "reponse": false,
+    "explication": "Faux. Le E couvre aussi l'écosystème (partenaires, clients, fournisseurs, marchés) et l'éthique : la cohérence avec les valeurs, l'ADN et la mission de l'entreprise. Et gare au greenwashing : l'argument écologique utilisé de manière trompeuse pour améliorer son image."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-005",
+    "section": "2. La méthode SMARTEF, critère par critère",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un manager impose un objectif sans fournir ni budget ni formation à son équipe, qui échoue. À quoi s'expose-t-il ?",
+    "options": [
+      "à un défaut de moyens, que les collaborateurs pourraient faire valoir pour ne pas porter l'échec",
+      "à un défaut de pertinence, car l'objectif n'était pas aligné sur la stratégie",
+      "à un défaut de flexibilité, car l'objectif n'était pas ré-ajustable",
+      "à rien : l'échec reste porté par les collaborateurs"
+    ],
+    "reponse": 0,
+    "explication": "Un objectif non atteignable expose le management à un défaut de moyens : fixer un objectif engage à fournir les ressources nécessaires (compétences, formations, budget, RH, matériel). Sans elles, les collaborateurs peuvent refuser de porter l'échec."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-006",
+    "section": "3. Formuler les objectifs : processus et avantages",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une équipe démarre la formulation de ses objectifs. Par quelle étape le processus commence-t-il ?",
+    "options": [
+      "définir une échéance et des jalons intermédiaires",
+      "construire les indicateurs quantitatifs et qualitatifs",
+      "déterminer le contexte et les freins, au besoin avec une matrice SWOT",
+      "examiner les implications éthiques de l'objectif"
+    ],
+    "reponse": 2,
+    "explication": "La première étape est de déterminer le contexte et les freins, au besoin avec une matrice SWOT. Vient ensuite la définition du but en détail, guidée par l'hexamètre de Quintilien (QQOQCCP), puis les indicateurs, l'équilibre ambitieux/atteignable, la pertinence, l'échéance et l'éthique."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-007",
+    "section": "4. Hiérarchiser et décliner les objectifs",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une entreprise veut décliner sa stratégie pour ses forces de vente réparties sur plusieurs régions. Quelle méthode de déclinaison des objectifs est la plus pertinente ?",
+    "options": [
+      "la déclinaison par zones géographiques : la stratégie se « traduit » zone par zone",
+      "la déclinaison par champ thématique : finance, marketing, commercial",
+      "la pondération de chaque critère par un coefficient",
+      "l'estimation paramétrique des objectifs par algorithmes"
+    ],
+    "reponse": 0,
+    "explication": "La déclinaison par zones géographiques est indiquée comme pertinente pour les forces de vente. Les autres voies : l'entonnoir (principaux → secondaires) et la déclinaison par champ thématique. Règle d'or : les objectifs opérationnels sont au service des stratégiques."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-008",
+    "section": "4. Hiérarchiser et décliner les objectifs",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La hiérarchisation des objectifs est une étape indispensable, quel que soit le projet.",
+    "reponse": false,
+    "explication": "Faux. Elle est optionnelle : inutile pour un projet modeste, rapide ou mené de front par des équipes pluridisciplinaires (sauf projet « à tiroirs »). Elle devient précieuse quand les moyens sont restreints (effectifs, budget, compétences), guidée par trois questions : risques à ne pas agir, faisabilité, gain."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-009",
+    "section": "5. Décomposer en tâches : le plan d'action",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Dans le QQOQCCP décliné en plan d'action, qui porte la responsabilité d'une tâche ?",
+    "options": [
+      "toutes les personnes-ressources qui exécutent la tâche, collectivement",
+      "la personne auprès de qui se fait le reporting",
+      "le commanditaire du projet, systématiquement",
+      "personne : la responsabilité reste au niveau de l'objectif"
+    ],
+    "reponse": 1,
+    "explication": "Le « Qui » distingue les personnes-ressources qui exécutent et celle auprès de qui se fait le reporting : c'est elle qui porte la responsabilité — l'obligation de répondre de ses actes, de les assumer et d'en supporter les conséquences du fait de sa charge."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-010",
+    "section": "5. Décomposer en tâches : le plan d'action",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un responsable s'engage à « déployer ses meilleurs efforts pour atteindre l'objectif visé, en ayant agi selon les règles de l'art ». De quoi s'agit-il, et où ce niveau se définit-il ?",
+    "options": [
+      "une obligation de résultat, définie dans le tableau de bord",
+      "une obligation de moyens, définie dans le contrat de travail ou la lettre de mission",
+      "une obligation de résultat, définie dans le plan de ressources",
+      "une obligation de moyens, définie oralement au lancement du projet"
+    ],
+    "reponse": 1,
+    "explication": "C'est l'obligation de moyens : les meilleurs efforts, selon les règles de l'art. L'obligation de résultat impose d'« effectuer sa mission jusqu'au bout », sans réalisation partielle possible. Le niveau se définit en amont, dans le contrat de travail ou la lettre de mission rédigée avant le lancement."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-011",
+    "section": "6. Ressources, séquençage et planification",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque type de dépendance entre les activités A et B à sa règle.",
+    "colonne_a": [
+      "Fin à début (en cascade)",
+      "Début à début",
+      "Fin à fin",
+      "Début à fin"
+    ],
+    "colonne_b": [
+      "A ne peut pas se terminer avant que B n'ait démarré",
+      "A démarre lorsque B se termine",
+      "A peut démarrer dès que B a démarré",
+      "A ne peut pas se terminer avant que B ne soit terminée"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Repérer ces dépendances fait partie du séquençage : « raconter l'histoire » du projet pour fixer l'ordre logique des tâches. Sans chronologie claire, des périodes de latence improductives apparaissent, faute de savoir « à qui de jouer »."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-012",
+    "section": "6. Ressources, séquençage et planification",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pour estimer les délais d'un projet inédit, une équipe veut la méthode la plus précise et fiable, quitte à ce qu'elle soit plus complexe. Laquelle choisir ?",
+    "options": [
+      "l'estimation par analogie, qui part d'une réalisation passée comparable",
+      "l'estimation paramétrique, qui s'appuie sur des algorithmes",
+      "le tableau Kanban, qui suit les échéances de chaque objectif",
+      "le plan de ressources, qui alloue chaque ressource aux tâches"
+    ],
+    "reponse": 1,
+    "explication": "L'estimation paramétrique (algorithmes) est plus complexe, mais plus précise et fiable. L'estimation par analogie est comparative : elle part d'une réalisation passée comparable. Gantt et Kanban sont des outils de gestion du temps, pas d'estimation."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-013",
+    "section": "6. Ressources, séquençage et planification",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Un collaborateur affecté à 100 % sur le projet A peut aussi être affecté au projet B sur les mêmes dates, à condition de prioriser ses tâches.",
+    "reponse": false,
+    "explication": "Faux. C'est un conflit d'affectation à arbitrer : un collaborateur à 100 % sur le projet A ne peut pas être sur le B aux mêmes dates — il faut prioriser les projets par urgence. Cet arbitrage fait partie de la construction du plan de ressources."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-014",
+    "section": "7. Choisir les méthodes selon la situation",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque situation d'entreprise à son approche de fixation des objectifs.",
+    "colonne_a": [
+      "Démarrage / croissance",
+      "Restructuration / redressement",
+      "Innovation / R&D",
+      "Entreprise axée RSE"
+    ],
+    "colonne_b": [
+      "Portefeuille d'innovation : objectifs à court, moyen et long terme hiérarchisés",
+      "Normes et certifications, ou consultation des parties prenantes",
+      "Approche agile : objectifs flexibles face aux changements rapides du marché",
+      "Refaire une matrice SWOT, ou un objectif par processus clé"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "En démarrage, l'agilité suit la vision long terme des fondateurs ; en restructuration, le SWOT rétablit des bases réalistes (ou découpage par processus) ; en R&D, le portefeuille d'innovation hiérarchise par importance stratégique ; en RSE, normes/certifications ou intégration des attentes des parties prenantes."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-015",
+    "section": "8. Mettre en œuvre et piloter le plan d'action",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une enseigne change son système de caisse et veut suivre la progression globale du projet à travers un planning de réunions prédéfini. Quelle instance mettre en place ?",
+    "options": [
+      "un comité de pilotage (CoPil) composé des référents des pôles concernés",
+      "un chef de projet unique, qui remplace toute instance collective",
+      "une réunion de lancement, suffisante pour cadrer le projet",
+      "un rapport d'étape mensuel archivé dans un cloud"
+    ],
+    "reponse": 0,
+    "explication": "Le CoPil se réunit selon un planning prédéfini pour suivre la progression globale ; il est composé des référents des pôles concernés (dans l'exemple du cours : responsable de caisses, DSI, responsable de magasin, DRH pour la formation). Le chef de projet, lui, coordonne actions, budget et délais."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-016",
+    "section": "8. Mettre en œuvre et piloter le plan d'action",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un livrable prend du retard et menace le calendrier du projet. Quelle est la bonne posture du chef de projet face à cet obstacle ?",
+    "options": [
+      "attendre la prochaine réunion planifiée du CoPil pour statuer",
+      "être réactif : ajuster le plan, allouer des ressources supplémentaires (renfort humain), décider rapidement",
+      "annuler le projet pour ne pas cumuler les retards",
+      "figer le plan initial : toute modification créerait des blocages"
+    ],
+    "reponse": 1,
+    "explication": "Face aux imprévus, il faut être réactif : ajuster le plan (différer une livraison pour ne pas mettre en péril le projet entier, changer de processus ou d'outils), allouer des ressources supplémentaires — un retard se compense en renfort humain — et décider rapidement. Le plan doit rester flexible : sans agilité, il enferme dans des blocages."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-001",
+    "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Un manager connaît bien les compétences requises par ses projets, mais découvre régulièrement en cours de mission que les compétences réelles de son équipe ne correspondent pas à ce qu'il croyait. Quel fondement de l'attribution des responsabilités lui manque-t-il ?",
+    "options": [
+      "la capacité à faire concorder l'offre et la demande",
+      "la connaissance en temps réel des compétences de ses équipes",
+      "l'identification des compétences requises par les projets",
+      "la décomposition des missions en tâches spécifiques"
+    ],
+    "reponse": 1,
+    "explication": "L'attribution pertinente repose sur 3 fondements : connaissance en temps réel des compétences, identification des compétences requises, et capacité à faire concorder l'offre et la demande. Ici, c'est la vision actualisée des compétences effectives qui fait défaut."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-002",
+    "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une équipe veut travailler en cycles itératifs courts, avec des livraisons fréquentes de versions partielles et une auto-organisation. Parmi ces outils et méthodes, lequel n'appartient PAS aux méthodes agiles ?",
+    "options": [
+      "Scrum",
+      "Kanban",
+      "le diagramme de Gantt",
+      "Extreme Programming (XP)"
+    ],
+    "reponse": 2,
+    "explication": "Les méthodes agiles les plus connues sont Scrum, Kanban, Extreme Programming (XP) et Lean. Le diagramme de Gantt est un outil de planification détaillée avec interdépendances, utilisé pour évaluer les contraintes de temps — pas une méthode agile."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-003",
+    "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Au niveau collectif, la performance d'une équipe se résume à la somme des compétences individuelles de ses membres.",
+    "reponse": false,
+    "explication": "Faux. L'équipe ne se limite pas à la somme des compétences individuelles : c'est leur complémentarité qui crée la synergie, entretenue par les brainstormings, réunions interdisciplinaires, formations croisées, mentorat et plateformes d'échange."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-004",
+    "section": "2. Distribuer équitablement et efficacement",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Pour être irréprochable, un manager répartit exactement la même charge de travail à chaque membre de l'équipe, sans tenir compte des besoins individuels. Que peut-on en dire ?",
+    "options": [
+      "c'est une répartition équitable, car identique pour tous",
+      "c'est une répartition égalitaire, mais l'égalité absolue ne conduit pas toujours à des résultats équitables",
+      "c'est la seule répartition qui évite les conflits d'équipe",
+      "c'est une répartition équitable à condition d'être transparente"
+    ],
+    "reponse": 1,
+    "explication": "L'égalité = répartition uniforme des charges. L'équité = attribution réfléchie selon les compétences, les aspirations et les contributions passées de chacun. L'égalité absolue ne conduit pas toujours à des résultats équitables."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-005",
+    "section": "2. Distribuer équitablement et efficacement",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un manager implique ses collaborateurs dans le choix de leurs missions. Quels avantages ce leadership participatif apporte-t-il ?",
+    "options": [
+      "appropriation, motivation, culture de l'initiative et de la responsabilisation",
+      "polyvalence, spécialisation, rotation des responsabilités",
+      "reconnaissance, mentorat, coaching individuel",
+      "équilibre de la charge, transparence, critères équitables"
+    ],
+    "reponse": 0,
+    "explication": "Le leadership participatif — impliquer les membres dans le choix de leurs missions — apporte trois avantages : appropriation, motivation, et une culture de l'initiative et de la responsabilisation."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-006",
+    "section": "2. Distribuer équitablement et efficacement",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque outil à son usage principal dans la répartition et le suivi des tâches.",
+    "colonne_a": [
+      "Trello",
+      "Asana",
+      "Jira",
+      "Slack"
+    ],
+    "colonne_b": [
+      "Messagerie instantanée quotidienne",
+      "Suivi des problèmes, versions, planification agile, tableaux Kanban (dev)",
+      "Tableaux visuels : listes, cartes déplaçables, étiquettes pour hiérarchiser",
+      "Projets, tâches, responsabilités, dates d'échéance"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Trello fonctionne par tableaux visuels avec cartes déplaçables ; Asana structure projets, tâches et échéances ; Jira sert au suivi des problèmes et à la planification agile côté développement ; Slack assure la messagerie instantanée du quotidien."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-007",
+    "section": "3. Suivre, réaffecter, améliorer en continu",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Les indicateurs montrent une baisse de satisfaction client et des retards répétés. Comment le manager doit-il aborder la réaffectation des tâches ?",
+    "options": [
+      "comme une opération ponctuelle, à ne déclencher qu'en cas de crise",
+      "comme un processus continu, anticipé par la veille stratégique et croisant compétences requises et compétences effectives",
+      "comme une sanction pour les collaborateurs en difficulté",
+      "comme une décision unilatérale de la direction, sans lien avec les indicateurs"
+    ],
+    "reponse": 1,
+    "explication": "La réaffectation s'anticipe par la veille stratégique (marché, technologies, réglementation), se déclenche sur signaux des indicateurs, et croise les compétences nouvellement requises avec la connaissance en temps réel des compétences effectives. La révision de la distribution est un processus continu, jamais ponctuel."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-008",
+    "section": "3. Suivre, réaffecter, améliorer en continu",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque méthodologie d'amélioration continue à sa démarche.",
+    "colonne_a": [
+      "Kaizen",
+      "Lean Six Sigma",
+      "Design Thinking"
+    ],
+    "colonne_b": [
+      "5 phases : Empathie → Définition → Idéation → Prototype → Test",
+      "Petites améliorations continues : standardisation, mesure, participation des employés",
+      "DMAIC : Définir → Mesurer → Analyser → Améliorer → Contrôler"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Kaizen installe une culture de petites améliorations continues où chacun contribue ; Lean Six Sigma combine Lean Management et Six Sigma (réduire les variations, éliminer les gaspillages) via le DMAIC ; le Design Thinking part des besoins humains en 5 phases."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-009",
+    "section": "3. Suivre, réaffecter, améliorer en continu",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Quand une évaluation révèle des lacunes chez un collaborateur, elle doit servir de couperet pour sanctionner.",
+    "reponse": false,
+    "explication": "Faux. Les évaluations sont des sources d'amélioration, pas un couperet sanctionnateur : les lacunes révélées débouchent sur des plans d'action personnalisés (formations ciblées, mentorat, rotations)."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-010",
+    "section": "4. Évaluer les compétences individuelles et collectives",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quelle est la bonne séquence du processus d'analyse des compétences en 5 étapes ?",
+    "options": [
+      "cartographie → identification → plan de développement → alignement stratégique → évaluation continue",
+      "identification → cartographie → alignement stratégique → plan de développement → évaluation continue",
+      "alignement stratégique → identification → cartographie → évaluation continue → plan de développement",
+      "identification → alignement stratégique → cartographie → évaluation continue → plan de développement"
+    ],
+    "reponse": 1,
+    "explication": "On identifie d'abord (collecte d'informations, compétences tacites), puis on cartographie les profils, on aligne sur les objectifs organisationnels, on élabore les plans de développement (individuels et collectifs), et on évalue en continu."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-011",
+    "section": "4. Évaluer les compétences individuelles et collectives",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un manager veut évaluer les compétences comportementales d'un collaborateur (communication, résolution de problèmes, gestion du temps). Quelle méthode est la plus adaptée ?",
+    "options": [
+      "un examen écrit sur la théorie",
+      "un exercice de codage en situation réelle",
+      "une étude de cas comportementale, complétée par une auto-évaluation",
+      "un QCM de connaissances spécifiques"
+    ],
+    "reponse": 2,
+    "explication": "Les compétences comportementales s'évaluent par études de cas comportementales, évaluation par des tiers, auto-évaluation (prise de conscience, responsabilisation), questionnaires de personnalité et évaluations en situation. Examens écrits et tests pratiques ciblent les compétences techniques, les QCM les connaissances."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-012",
+    "section": "4. Évaluer les compétences individuelles et collectives",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Que mesure le questionnaire de personnalité NEO-PI-R ?",
+    "options": [
+      "4 dimensions : extraversion/introversion, sensation/intuition, pensée/sentiment, jugement/perception",
+      "les cinq grands facteurs : extraversion, ouverture d'esprit, stabilité émotionnelle, conscience, agrément",
+      "les trois compétences collectives : collaboration, communication, leadership",
+      "les biais cognitifs : confirmation, halo, récence"
+    ],
+    "reponse": 1,
+    "explication": "Le NEO-PI-R mesure les cinq grands facteurs (extraversion, ouverture d'esprit, stabilité émotionnelle, conscience, agrément). Le piège : les 4 dimensions (extraversion/introversion, sensation/intuition, pensée/sentiment, jugement/perception) sont celles du MBTI de Myers-Briggs."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-013",
+    "section": "4. Évaluer les compétences individuelles et collectives",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une entreprise met en place une rétroaction à 360° pour un collaborateur. Qui participe à l'évaluation ?",
+    "options": [
+      "uniquement son superviseur, pour garantir la cohérence",
+      "son superviseur, quatre à huit pairs, subordonnés ou collègues (voire parties prenantes externes), plus une auto-évaluation",
+      "uniquement ses pairs, pour éviter le lien hiérarchique",
+      "l'ensemble de l'entreprise, par vote anonyme"
+    ],
+    "reponse": 1,
+    "explication": "La rétroaction à 360° combine le superviseur, quatre à huit pairs, subordonnés, collègues, voire parties prenantes externes (clients, partenaires), complétés par une auto-évaluation. Les évaluateurs sont choisis conjointement par l'organisation et l'employé."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-014",
+    "section": "4. Évaluer les compétences individuelles et collectives",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Dans une rétroaction à 360°, le destinataire sait quel évaluateur a formulé chaque commentaire.",
+    "reponse": false,
+    "explication": "Faux. Le destinataire reçoit des données récapitulatives anonymisées, sans savoir qui a dit quoi. Revers de la médaille : cet anonymat limite l'approfondissement des commentaires — l'un des inconvénients du 360°."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-015",
+    "section": "5. La communication managériale",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Un manager annonce une mauvaise nouvelle à son équipe avec un grand sourire, et le message passe mal. Comment l'analyser avec Watzlawick ?",
+    "options": [
+      "le contenu du message était trop complexe pour l'équipe",
+      "le canal choisi était mauvais : il aurait fallu un écrit",
+      "il manque de congruence : la relation (forme non verbale) contredit le contenu, or la forme conditionne l'acceptation du fond",
+      "l'équipe manque d'écoute active"
+    ],
+    "reponse": 2,
+    "explication": "Selon Watzlawick, la communication se joue à deux niveaux : le contenu (le fond) et la relation (la forme : gestes, voix, posture). La forme en dit plus que le fond et conditionne son acceptation — d'où l'exigence de congruence entre le « comment » non verbal et le « quoi » verbal."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-016",
+    "section": "5. La communication managériale",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un manager doit transmettre un feedback formel d'évaluation et un changement de procédure. Quel canal privilégier ?",
+    "options": [
+      "l'oral, pour l'impact immédiat",
+      "l'écrit, comme pour les décisions importantes et les annonces officielles",
+      "un message vocal asynchrone",
+      "une simple mention en réunion de routine"
+    ],
+    "reponse": 1,
+    "explication": "L'écrit se privilégie pour les décisions importantes, les objectifs et résultats attendus, les changements de procédure, les feedbacks formels d'évaluation, les instructions techniques détaillées et les annonces officielles. L'oral convient aux instructions courtes, feedbacks rapides et encouragements."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-017",
+    "section": "5. La communication managériale",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque registre de communication à ses caractéristiques.",
+    "colonne_a": [
+      "Communication agressive",
+      "Communication passive",
+      "Manipulation",
+      "Assertivité"
+    ],
+    "colonne_b": [
+      "Attitude détournée à proscrire, qui crée méfiance et interlocuteurs sur la défensive",
+      "S'affirmer tout en respectant autrui, en acceptant la contradiction et le compromis",
+      "Directivité proche de la domination : confrontation, critique, jugement pour imposer",
+      "Soumission, évitement, difficulté à dire non par peur du rejet ou du jugement"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Seule l'assertivité (affirmation de soi) est à viser : elle permet d'exprimer un désaccord ou de dire « non » sans rompre la relation. L'agressivité crée un climat hostile, la passivité sacrifie ses propres besoins, la manipulation détruit la confiance."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-018",
+    "section": "5. La communication managériale",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Des objectifs fixés unilatéralement par une direction très directive sont efficaces à long terme, car ils évitent les débats.",
+    "reponse": false,
+    "explication": "Faux. Les objectifs fixés unilatéralement sont à terme contre-productifs : ni partagés ni acceptés. Le choix en commun des objectifs est le préalable à une vraie délégation et responsabilisation — auto-évaluation, autonomie, initiative, appropriation de la stratégie (du sens)."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-001",
+    "section": "1. Cartographier la diversité de l'équipe",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Un manager apprend qu'un collaborateur, sans que rien ne le laisse paraître, est dyslexique et traverse une situation familiale difficile. De quel niveau de diversité relèvent ces caractéristiques ?",
+    "options": [
+      "de la diversité visible, car elles finissent toujours par se voir",
+      "de la diversité invisible, qui exige une vigilance particulière du manager",
+      "de l'intersectionnalité, car elles concernent deux dimensions",
+      "de la diversité culturelle, car elles touchent au rapport au travail"
+    ],
+    "reponse": 1,
+    "explication": "La diversité invisible regroupe les aspects non apparents mais déterminants (neurodiversité, croyances, situations familiales, handicaps non visibles) : plus difficile à identifier, elle exige une vigilance particulière. L'intersectionnalité désigne la combinaison unique de dimensions que porte chaque collaborateur."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-002",
+    "section": "1. Cartographier la diversité de l'équipe",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque profil neuroatypique aux talents que le cours lui associe fréquemment.",
+    "colonne_a": [
+      "Autisme (TSA)",
+      "TDAH",
+      "Dyslexie",
+      "HPI"
+    ],
+    "colonne_b": [
+      "Besoin de comprendre le « pourquoi » avant le « comment »",
+      "Attention au détail, logique rigoureuse, approche systématique",
+      "Créativité exceptionnelle, capacité d'innovation",
+      "Compétences visuelles et spatiales supérieures à la moyenne"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "La neurodiversité désigne les variations naturelles du fonctionnement neurologique : chaque profil porte des talents spécifiques que le manager valorise par une approche par compétences, et non purement compensatoire."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-003",
+    "section": "1. Cartographier la diversité de l'équipe",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "S'adapter à la diversité culturelle de son équipe signifie coller aux exigences de chacun de ses membres.",
+    "reponse": false,
+    "explication": "Faux. Le cours précise qu'il faut s'adapter aux divergences « en bonne intelligence », ce qui ne signifie pas coller aux exigences de chacun : les codes culturels (autorité, communication directe/indirecte, temps monochronique/polychronique) s'accommodent sans renoncer à un cadre commun."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-004",
+    "section": "2. Biais, stéréotypes, appartenance",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Un manager continue de surévaluer une recrue des mois après son arrivée, simplement parce qu'elle vient d'une entreprise prestigieuse. Quel biais est à l'œuvre ?",
+    "options": [
+      "le biais de confirmation",
+      "l'effet de halo",
+      "le biais d'ancrage",
+      "un stéréotype générationnel"
+    ],
+    "reponse": 2,
+    "explication": "Le biais d'ancrage donne un poids disproportionné à la première information reçue (ici l'entreprise d'origine). L'effet de halo est proche mais désigne une caractéristique qui influence la perception globale ; le biais de confirmation ne retient que ce qui confirme l'opinion préexistante."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-005",
+    "section": "2. Biais, stéréotypes, appartenance",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un stéréotype « positif » (par exemple supposer qu'un collaborateur asiatique est excellent en maths) est sans danger managérial.",
+    "reponse": false,
+    "explication": "Faux. Même « positifs », les stéréotypes créent des attentes réductrices qui déclenchent des prophéties autoréalisatrices : les performances s'orientent dans le sens des attentes initiales, et le collaborateur se retrouve cantonné à un rôle."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-006",
+    "section": "2. Biais, stéréotypes, appartenance",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Comment Amy Edmondson définit-elle la sécurité psychologique ?",
+    "options": [
+      "la garantie contractuelle d'un environnement de travail sans risque physique",
+      "la conviction partagée que l'équipe est un environnement sûr pour prendre des risques interpersonnels",
+      "le sentiment individuel d'être protégé par son manager en cas d'erreur",
+      "l'absence totale de désaccords et de tensions au sein de l'équipe"
+    ],
+    "reponse": 1,
+    "explication": "La sécurité psychologique est la conviction partagée que l'équipe est un environnement sûr pour prendre des risques interpersonnels : exprimer idées, préoccupations et besoins sans craindre le jugement. Elle libère les questions naïves et les désaccords constructifs — elle ne les supprime pas."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-007",
+    "section": "3. Les leviers du management inclusif",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Tu dois faire un feedback correctif à un collaborateur issu d'une culture d'harmonie relationnelle, pour qui le feedback direct « à la française » serait vécu comme une attaque. Quelle approche le cours recommande-t-il ?",
+    "options": [
+      "reporter le feedback jusqu'à la prochaine évaluation annuelle",
+      "passer par un collègue de la même culture pour transmettre le message",
+      "le « sandwich positif » : encadrer les points d'amélioration par des reconnaissances de réussites",
+      "envoyer le feedback par écrit pour éviter la confrontation"
+    ],
+    "reponse": 2,
+    "explication": "Avec les cultures d'harmonie relationnelle, le cours recommande le « sandwich positif » : encadrer les points d'amélioration par des reconnaissances de réussites, avec un temps d'échange et un accompagnement concret."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-008",
+    "section": "3. Les leviers du management inclusif",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Tu confies une mission à un collaborateur autiste (TSA). Quelle adaptation de communication est la plus appropriée ?",
+    "options": [
+      "des objectifs segmentés en étapes courtes avec des points d'étape fréquents",
+      "une communication factuelle, explicite, structurée par écrit, sans métaphores, avec un temps de traitement",
+      "commencer par expliquer les enjeux stratégiques et le « pourquoi » de la mission",
+      "privilégier la synthèse vocale et les supports visuels"
+    ],
+    "reponse": 1,
+    "explication": "Pour un profil autiste : factuel, explicite, structuré par écrit, critères précis, pas de métaphores, temps de traitement. Les étapes courtes visent le TDAH, le « pourquoi » le HPI, la synthèse vocale et les supports visuels le profil dyslexique."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-009",
+    "section": "3. Les leviers du management inclusif",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un outil d'IA de tri de candidatures n'utilise aucune donnée sur l'origine des candidats, mais intègre leur code postal. Pourquoi le cours y voit-il un risque ?",
+    "options": [
+      "le code postal est une donnée dont la collecte est interdite en recrutement",
+      "le code postal est corrélé au statut socio-économique donc à l'origine ethnique : c'est un biais indirect par variable corrélée",
+      "l'IA ne sait pas traiter les données géographiques de manière fiable",
+      "le code postal ne dit rien des compétences, ce qui rend l'outil simplement inutile"
+    ],
+    "reponse": 1,
+    "explication": "Entraînée sur des données historiques, l'IA peut reproduire et amplifier les biais passés et sélectionner des variables corrélées à des caractéristiques protégées : le code postal, corrélé au statut socio-économique donc à l'origine ethnique, produit un biais indirect."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-010",
+    "section": "3. Les leviers du management inclusif",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une salle de spectacle est conçue dès l'origine avec accès PMR, boucles magnétiques et zones calmes utilisables par tous les publics. De quoi s'agit-il ?",
+    "options": [
+      "d'aménagements raisonnables, car ils ciblent des publics spécifiques",
+      "d'accessibilité universelle : des environnements utilisables par le plus grand nombre sans adaptation ultérieure",
+      "d'une simple conformité réglementaire sans portée managériale",
+      "de flexibilité managériale appliquée aux locaux"
+    ],
+    "reponse": 1,
+    "explication": "L'accessibilité universelle consiste à concevoir environnements, processus et outils utilisables par le plus grand nombre sans adaptation ultérieure — une stratégie d'optimisation des talents. Les aménagements raisonnables sont au contraire des ajustements spécifiques à un collaborateur donné."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-011",
+    "section": "4. Mesurer et développer l'inclusion",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une entreprise constate que les contributions de ses jeunes collaborateurs, équilibrées en volume de prises de parole, sont moins souvent retenues dans les décisions. Que mesure-t-elle ainsi ?",
+    "options": [
+      "un indicateur de diversité, car il porte sur la représentation des jeunes",
+      "un indicateur d'inclusion : la présence ne garantit pas la participation effective",
+      "un indicateur de performance individuelle des jeunes collaborateurs",
+      "un facteur d'hygiène au sens de Herzberg"
+    ],
+    "reponse": 1,
+    "explication": "C'est l'exemple d'Orange dans le cours : croiser prises de parole et adoption des idées mesure l'inclusion — la qualité de l'intégration et la capacité à contribuer — alors que la diversité ne mesure que la représentation (présence ≠ participation effective)."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-012",
+    "section": "5. Équipes hybrides : définition et cadres théoriques",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une équipe projet mêle salariés internes, un freelance et une agence partenaire. À quelle dimension d'hétérogénéité de l'équipe hybride cela correspond-il ?",
+    "options": [
+      "la dimension spatiale",
+      "la dimension statutaire",
+      "la dimension temporelle",
+      "la dimension culturelle"
+    ],
+    "reponse": 1,
+    "explication": "La dimension statutaire oppose salariés internes et externes (freelances, consultants, agences, partenaires). La spatiale oppose co-localisés et distribués, la temporelle synchrone et asynchrone, la culturelle cultures d'entreprise, nationalités et générations."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-013",
+    "section": "5. Équipes hybrides : définition et cadres théoriques",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque cadre théorique du management hybride à son apport.",
+    "colonne_a": [
+      "Contingence structurelle (Lawrence et Lorsch)",
+      "Coûts de transaction (Williamson)",
+      "Approche systémique",
+      "Gouvernance des écosystèmes"
+    ],
+    "colonne_b": [
+      "Facilitation, valeur partagée et contrats psychologiques informels",
+      "Arbitrage internaliser vs externaliser, en comptant recherche, négociation et suivi",
+      "Efficacité = adéquation entre la structure et l'environnement",
+      "Tensions intrinsèques à réguler ; le manager devient régulateur"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "La contingence lie efficacité et adéquation structure-environnement ; Williamson arbitre internalisation et externalisation au-delà du coût direct ; l'approche systémique fait du manager un régulateur d'interdépendances ; la gouvernance des écosystèmes mise sur la facilitation, la valeur partagée et les contrats psychologiques."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-014",
+    "section": "6. Coordonner et piloter une équipe hybride",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "En équipe hybride, la supervision directe ne fonctionne plus. Vers quel mécanisme de coordination de Mintzberg le manager doit-il prioritairement rééquilibrer ?",
+    "options": [
+      "l'ajustement mutuel spontané, à la machine à café",
+      "la standardisation des résultats : livrables, critères de qualité et échéances définis, liberté des méthodes",
+      "la standardisation des procédés, en imposant les processus internes à tous les externes",
+      "la supervision directe renforcée par des reportings quotidiens"
+    ],
+    "reponse": 1,
+    "explication": "La priorité va à la standardisation des résultats : définir précisément livrables, critères de qualité et échéances, puis laisser chacun libre de ses méthodes — un pilotage par objectifs qui respecte l'autonomie des externes. L'ajustement mutuel doit être réinventé (rituels, canaux dédiés), pas espéré spontané."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-015",
+    "section": "6. Coordonner et piloter une équipe hybride",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Quand un prestataire externe reçoit des instructions contradictoires de plusieurs donneurs d'ordre, les conséquences sont uniquement opérationnelles.",
+    "reponse": false,
+    "explication": "Faux. Un externe pris entre des instructions contradictoires risque le non-respect de ses engagements contractuels : les conflits de rôles ont des répercussions juridiques, pas seulement opérationnelles. D'où la matrice RACI et les « ateliers de rôles » en début de projet."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-016",
+    "section": "7. Motiver, fédérer et intégrer à distance",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un freelance se plaint du flou de son contrat et d'outils collaboratifs peu fiables. Au sens de Herzberg, sur quoi le manager agit-il en corrigeant ces points ?",
+    "options": [
+      "sur des facteurs de motivation, qui créeront son engagement",
+      "sur des facteurs d'hygiène, dont l'absence crée l'insatisfaction sans que leur présence suffise à motiver",
+      "sur son besoin d'autonomie au sens de la théorie de l'autodétermination",
+      "sur le sommet de la pyramide de Maslow"
+    ],
+    "reponse": 1,
+    "explication": "Clarté contractuelle, fiabilité des outils, équité interne/externe et process clairs sont des facteurs d'hygiène : leur absence crée l'insatisfaction. L'engagement vient des facteurs de motivation — reconnaissance, développement, participation aux décisions, sens."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-017",
+    "section": "7. Motiver, fédérer et intégrer à distance",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La confiance affective se construit plus vite que la confiance cognitive, car elle repose sur les émotions.",
+    "reponse": false,
+    "explication": "Faux. La confiance cognitive (évaluation rationnelle de la compétence via références et livrables) est le fondement du démarrage ; la confiance affective (relations, empathie, valeurs communes) est plus lente à construire mais plus stable, entretenue par l'informel. La confiance institutionnelle (contrats, procédures) fournit le cadre sécurisant."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-018",
+    "section": "7. Motiver, fédérer et intégrer à distance",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Selon la théorie de la richesse des médias (Daft et Lengel), associez chaque canal à son usage type en équipe hybride.",
+    "colonne_a": [
+      "Visioconférence",
+      "Chat (Slack, Teams)",
+      "E-mail",
+      "Outils collaboratifs (Notion, Google Docs)"
+    ],
+    "colonne_b": [
+      "Validations formelles",
+      "Suivi et édition partagée",
+      "Brainstorming et décisions complexes",
+      "Questions rapides et échanges informels"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "L'efficacité dépend de l'adéquation entre la richesse du canal (feedback immédiat, indices multiples, personnalisation) et la complexité du message : visio pour le complexe, chat pour le rapide et l'informel, e-mail pour le formel, outils collaboratifs pour le suivi asynchrone."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-001",
+    "section": "1. Pourquoi suivre la performance",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Un manager ne fait aucun point entre le lancement et la clôture d'un projet. Quel est le principal risque identifié par le cours ?",
+    "options": [
+      "les collaborateurs deviennent trop autonomes",
+      "les problèmes s'accumulent et les solutions coûtent plus cher",
+      "la Direction multiplie les contrôles intermédiaires",
+      "les indicateurs quantitatifs perdent leur fiabilité"
+    ],
+    "reponse": 1,
+    "explication": "Sans suivi entre lancement et clôture, les problèmes s'accumulent et les solutions coûtent plus cher. Le suivi sert justement à anticiper les difficultés et à proposer des actions correctives en amont."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-002",
+    "section": "1. Pourquoi suivre la performance",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Suivre uniquement la performance collective suffit, puisque l'intelligence collective rend l'équipe plus efficace que les individus isolés.",
+    "reponse": false,
+    "explication": "Faux. L'intelligence collective justifie le suivi collectif, mais ne suivre que le collectif, c'est risquer de ne pas discerner les talents : le suivi doit aussi être individuel, pour valoriser les contributions et cibler les problèmes."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-003",
+    "section": "2. Des objectifs aux indicateurs",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Un manager veut mesurer la satisfaction client mais découvre que les données ne sont pas accessibles auprès du service concerné. Quel critère d'un bon indicateur est en défaut, et que doit-il faire ?",
+    "options": [
+      "la pertinence : il doit reformuler l'objectif",
+      "la spécificité : il doit adapter l'indicateur à son métier",
+      "la faisabilité : il doit changer d'indicateur",
+      "la mesurabilité : il doit passer à un indicateur comportemental"
+    ],
+    "reponse": 2,
+    "explication": "La faisabilité vérifie que les données sont disponibles (souvent auprès d'autres services) : si elles ne le sont pas, il faut changer d'indicateur. Les autres critères sont la spécificité, la mesurabilité et la pertinence (lien direct et sans ambiguïté)."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-004",
+    "section": "2. Des objectifs aux indicateurs",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque type d'indicateur à son exemple.",
+    "colonne_a": [
+      "Indicateur quantitatif",
+      "Indicateur qualitatif",
+      "Indicateur comportemental (KBI)",
+      "Indicateur collectif"
+    ],
+    "colonne_b": [
+      "Écoute active et gestion d'un conflit",
+      "CA global de l'équipe sur un projet commun",
+      "Taux de transformation mensuel",
+      "Satisfaction client comparée à un socle de standards"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Quantitatif = directement compté (CA, taux de transformation) ; qualitatif = perceptions et avis comparés à un socle de standards connu de tous ; KBI (Key Behavioral Indicators) = comportements et intelligence émotionnelle ; collectif = résultat du groupe, qui renforce la cohésion."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-005",
+    "section": "2. Des objectifs aux indicateurs",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans l'exemple du cours, un commercial réalise un CA de 8 k€ alors que les zones sont fixées à 0-10 k€, 10-20 k€ et 20 k€ et plus. Que conclut le manager ?",
+    "options": [
+      "il est « challenger » : le mettre en binôme avec un performant",
+      "il a mal compris son marché : lui proposer une formation",
+      "il est « performant » : en faire une personne-ressource",
+      "l'indicateur est mal choisi : le remplacer par un KBI"
+    ],
+    "reponse": 1,
+    "explication": "La zone 0-10 k€ signale un marché mal compris, qui appelle une formation ; 10-20 k€ = les « challengers » ; 20 k€ et plus = les « performants », futurs personnes-ressources des challengers. Les seuils servent à situer chacun et à bâtir l'accompagnement."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-006",
+    "section": "2. Des objectifs aux indicateurs",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un manager peut évaluer un collaborateur sur des objectifs qui dépassent sa fiche de poste, à condition de le prévenir à l'avance.",
+    "reponse": false,
+    "explication": "Faux. On n'évalue jamais des résultats qui outrepassent la responsabilité du collaborateur : les objectifs doivent être conformes à sa fiche de poste, ou formalisés par un avenant au contrat de travail ou une lettre de mission — et il doit disposer de toutes les ressources requises."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-007",
+    "section": "2. Des objectifs aux indicateurs",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Un collaborateur affiche des résultats durablement insuffisants sur son poste. Que prévoit l'article L6321-1 du Code du travail ?",
+    "options": [
+      "l'employeur doit assurer l'adaptation des salariés à leur poste, par exemple via un plan de formation",
+      "l'employeur doit proposer un avenant au contrat de travail",
+      "l'employeur doit organiser une évaluation 360° avec l'accord de l'employé",
+      "l'employeur doit employer 6 % de travailleurs en situation de handicap"
+    ],
+    "reponse": 0,
+    "explication": "L'article L6321-1 impose d'assurer l'adaptation des salariés à leur poste : des résultats insuffisants peuvent déclencher un plan de formation. Le taux de 6 % de travailleurs handicapés est une autre obligation légale, mesurée par un KPI RH."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-008",
+    "section": "3. Collecter et suivre : outils et temps forts",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Tous les deux ans, un collaborateur est reçu pour parler de son évolution et de ses besoins de formation. De quel temps fort s'agit-il ?",
+    "options": [
+      "l'entretien annuel d'évaluation, qui fixe ses nouveaux objectifs",
+      "l'entretien professionnel, qui n'évalue pas ses résultats",
+      "le REX, qui capitalise sur les bonnes pratiques",
+      "l'évaluation 360°, qui interroge toutes les parties prenantes"
+    ],
+    "reponse": 1,
+    "explication": "L'entretien professionnel est une obligation légale tous les 2 ans, centré sur l'évolution et les besoins de formation : il n'évalue pas les résultats. C'est le piège classique avec l'entretien annuel d'évaluation, qui lui évalue les résultats et fixe de nouveaux objectifs."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-009",
+    "section": "3. Collecter et suivre : outils et temps forts",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque temps fort managérial à sa description.",
+    "colonne_a": [
+      "Feedback (rétroaction)",
+      "Évaluation 360°",
+      "REX",
+      "Revue de portefeuille"
+    ],
+    "colonne_b": [
+      "Enquête auprès de toutes les parties prenantes, avec l'accord préalable de l'employé",
+      "Évaluation systématique de l'ensemble des projets pour optimiser l'allocation des ressources",
+      "Relater les faits, puis exprimer un ressenti ou faire réagir",
+      "Retour d'expérience de fin de mission pour capitaliser sur les bonnes pratiques"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Le feedback « crée une action en retour » à partir des faits ; le 360° interroge collègues, subordonnés, clients et fournisseurs avec l'accord de l'employé ; le REX clôt une mission en capitalisant ; la revue de portefeuille concerne les équipes commerciales."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-010",
+    "section": "3. Collecter et suivre : outils et temps forts",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans une entreprise, les dirigeants définissent les objectifs et les collaborateurs définissent les résultats clés. Quelle logique OKR est appliquée, et pourquoi est-elle recommandée ?",
+    "options": [
+      "top-down : elle garantit l'alignement stratégique",
+      "bottom-up : elle maximise l'autonomie des équipes",
+      "hybride : c'est la plus engageante",
+      "participative : elle supprime le calendrier de suivi"
+    ],
+    "reponse": 2,
+    "explication": "C'est la logique hybride — objectifs par les dirigeants, résultats clés par les collaborateurs — la plus engageante. En top-down les dirigeants définissent les deux ; en bottom-up les collaborateurs définissent les deux. L'OKR aligne les activités de chacun sur les objectifs globaux."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-011",
+    "section": "3. Collecter et suivre : outils et temps forts",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le bilan social est obligatoire pour toutes les entreprises de plus de 50 salariés.",
+    "reponse": false,
+    "explication": "Faux. Le bilan social est obligatoire au-delà de 300 salariés. C'est un rapport de performance sociale qui compare des données sociales brutes aux deux années précédentes."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-012",
+    "section": "3. Collecter et suivre : outils et temps forts",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une agence veut présenter à son client et aux parties prenantes externes les réalisations du trimestre. Quel support est adapté ?",
+    "options": [
+      "le tableau de bord, navette visuelle entre l'équipe et le manager",
+      "le rapport de performance, conçu pour être publié et diffusé",
+      "le SIRH, qui centralise les données collaborateurs",
+      "l'auto-évaluation, comparée à des normes de référence"
+    ],
+    "reponse": 1,
+    "explication": "Le rapport de performance présente les réalisations d'une période et se publie/diffuse (intranet, parties prenantes externes). Le tableau de bord, lui, est à usage interne : il regroupe les KPI et montre tendances, écarts et progrès en un coup d'œil."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-013",
+    "section": "4. Analyser les résultats, identifier les écarts",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une équipe veut remonter à la cause racine d'un problème en classant les causes possibles en Machines, Méthodes, Matériaux, Mère Nature, Main-d'œuvre et Mesures. Quel outil utilise-t-elle ?",
+    "options": [
+      "l'analyse de variance (ANOVA)",
+      "le McKinsey 7S",
+      "le diagramme d'Ishikawa (Fishbone)",
+      "l'analyse comparative (benchmark)"
+    ],
+    "reponse": 2,
+    "explication": "Le diagramme d'Ishikawa organise causes et effets « en arêtes de poisson » pour remonter à la cause racine via les 6M : Machines, Méthodes, Matériaux, Mère Nature (environnement), Main-d'œuvre, Mesures."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-014",
+    "section": "4. Analyser les résultats, identifier les écarts",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque outil d'analyse à son usage.",
+    "colonne_a": [
+      "Benchmark",
+      "ANOVA",
+      "5 Pourquoi",
+      "McKinsey 7S"
+    ],
+    "colonne_b": [
+      "Approfondir à chaque question jusqu'au dénominateur commun",
+      "Analyser l'interdépendance d'éléments solides et souples",
+      "Comparer ses performances à d'autres entités, sans se limiter à son secteur",
+      "Décomposer statistiquement les écarts en facteurs"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Le benchmark compare à d'autres organisations, marchés ou concurrents ; l'ANOVA mesure l'influence de chaque variable dans les écarts ; les 5 Pourquoi creusent jusqu'à la cause commune ; le 7S articule 3 éléments solides (Stratégie, Structure, Systèmes) et 4 souples (Valeurs partagées, Style, Personnel, Compétences)."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-015",
+    "section": "4. Analyser les résultats, identifier les écarts",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "L'analyse des écarts ne s'intéresse qu'aux écarts négatifs, puisque ce sont eux qu'il faut corriger.",
+    "reponse": false,
+    "explication": "Faux. Les écarts sont positifs (réel > prévu) ou négatifs (réel < prévu), et dans les deux cas on cherche les raisons : les échecs pour y remédier, mais aussi les bonnes pratiques du succès, pour les dupliquer."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-016",
+    "section": "5. Corriger et ajuster",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une vidéo livrée est défectueuse : l'équipe la refait en urgence, sans chercher pourquoi le défaut est apparu. Au sens de « Mots de la Qualité », de quoi s'agit-il ?",
+    "options": [
+      "une action corrective au sens de la norme ISO, qui élimine la cause du défaut",
+      "une action corrective au sens courant, qui supprime simplement le défaut",
+      "une mesure préventive, qui anticipe les problèmes",
+      "un ajustement stratégique des objectifs"
+    ],
+    "reponse": 1,
+    "explication": "Au sens courant (gestion de projet), l'action corrective supprime simplement le défaut : rattrapage, réparation, reprise. Au sens de la norme (certification ISO), elle élimine la cause du défaut — résolution de problème et amélioration continue, à visée curative durable."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-017",
+    "section": "5. Corriger et ajuster",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un manager construit un plan d'action correctif et veut s'assurer de n'oublier aucune dimension. Quelle méthode le garantit ?",
+    "options": [
+      "la méthode CQQCOQP : Comment, Quoi, Qui, Combien, Où, Quand, Pourquoi",
+      "la méthode OKR, déclinée par service et collaborateur",
+      "le learning by doing, proportionné à l'enjeu",
+      "la segmentation par équipe, produit, lieu et période"
+    ],
+    "reponse": 0,
+    "explication": "La méthode CQQCOQP (Comment ? Quoi ? Qui ? Combien ? Où ? Quand ? Pourquoi ?) garantit l'exhaustivité du plan correctif. Comme le plan initial, celui-ci précise actions, responsabilités, ressources et délais, et porte ses propres KPI : délais, coûts, qualité."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-018",
+    "section": "6. Maintenir l'engagement",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Après un projet éprouvant, un manager organise une journée courte d'activités ludiques pour resserrer les liens de l'équipe. Quel levier d'engagement active-t-il ?",
+    "options": [
+      "le challenge commercial, qui stimule la compétition",
+      "le team-building, apparu aux États-Unis au début des années 1980",
+      "l'organisation apprenante, qui reconnaît le droit à l'erreur",
+      "la revue de portefeuille, qui optimise l'allocation des ressources"
+    ],
+    "reponse": 1,
+    "explication": "Le team-building (« renforcement d'équipe »), apparu aux États-Unis au début des années 1980, resserre les liens sociaux par le jeu sur un temps court. Il nourrit le besoin d'appartenance à un collectif, l'un des trois besoins de Maslow que le suivi entretient avec la reconnaissance et l'accomplissement."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-001",
+    "section": "1. La GEPP (ex-GPEC)",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une entreprise veut adapter, à court et moyen termes, ses emplois, ses effectifs et ses compétences à sa stratégie et aux évolutions de son environnement. Quelle démarche engage-t-elle ?",
+    "options": [
+      "un audit social, qui dresse un état des lieux ponctuel des RH",
+      "une GEPP, démarche prospective des ressources humaines qui accompagne le changement",
+      "un plan de sauvegarde de l'emploi, qui organise les départs",
+      "un bilan de compétences, qui évalue chaque salarié individuellement"
+    ],
+    "reponse": 1,
+    "explication": "C'est la définition de la GEPP (ex-GPEC) donnée par le Ministère du Travail : une démarche prospective qui adapte emplois, effectifs et compétences à la stratégie, avec trois finalités — besoin en nombre, adéquation des compétences, motivation et fidélisation."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-002",
+    "section": "1. La GEPP (ex-GPEC)",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans quelles entreprises la négociation sur la GEPP est-elle obligatoire ?",
+    "options": [
+      "dans toutes les entreprises, quelle que soit leur taille",
+      "dans les entreprises de plus de 50 salariés",
+      "dans les entreprises de plus de 300 salariés",
+      "uniquement dans les entreprises publiques"
+    ],
+    "reponse": 2,
+    "explication": "La négociation sur la GEPP n'est obligatoire que dans les entreprises de plus de 300 salariés. Mais toute entreprise, même petite, doit anticiper l'évolution de ses emplois et compétences."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-003",
+    "section": "2. Le diagnostic RH",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Un DRH veut objectiver un turn-over élevé et une pyramide des âges déséquilibrée annonçant des départs massifs. Sur quoi appuie-t-il son analyse ?",
+    "options": [
+      "l'analyse qualitative : entretiens et observation en situation de travail",
+      "l'analyse quantitative : les indicateurs de la BDESE et du SIRH",
+      "la veille métiers menée auprès des OPMQC",
+      "les référentiels d'emplois, d'activités et de compétences"
+    ],
+    "reponse": 1,
+    "explication": "Turn-over, effectifs (ETP), contrats, pyramides des âges et d'ancienneté, absentéisme relèvent de l'analyse quantitative, appuyée sur la BDESE et le SIRH. L'analyse qualitative couvre ce qui ne se chiffre pas : satisfaction, engagement, climat social, référentiels."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-004",
+    "section": "2. Le diagnostic RH",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque outil ou source du diagnostic RH à sa fonction.",
+    "colonne_a": [
+      "BDESE",
+      "SIRH",
+      "OPMQC",
+      "HR Analytics"
+    ],
+    "colonne_b": [
+      "Dégager des tendances des données RH, jusqu'à prédire les risques de départ",
+      "Base de données économiques, sociales et environnementales, socle de l'analyse quantitative",
+      "Système d'information RH fournissant effectifs, contrats et mobilités",
+      "Observatoires prospectifs des métiers, des qualifications et des compétences, pour la veille métiers"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "BDESE et SIRH alimentent l'analyse quantitative interne ; les OPMQC nourrissent la veille métiers sectorielle ; les HR Analytics sont une aide à la décision à combiner avec l'expertise humaine, sous contrainte RGPD (2018) et recommandations CNIL."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-005",
+    "section": "3. Des écarts au plan d'action",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "L'évaluation annuelle révèle que les compétences constatées chez les collaborateurs sont en deçà des compétences attendues dans le référentiel. De quel horizon d'écart s'agit-il, et quelle action engager ?",
+    "options": [
+      "un écart de moyen/long terme : anticiper les emplois émergents",
+      "un écart de court terme : reclasser les métiers sensibles et planifier les retraites",
+      "un écart immédiat : développer et valoriser les compétences stratégiques",
+      "un écart conjoncturel : attendre la prochaine campagne d'évaluation"
+    ],
+    "reponse": 2,
+    "explication": "L'écart entre compétences attendues (référentiel) et constatées (évaluation) est l'écart immédiat, traité par le développement des compétences. Le court terme oppose besoins planifiés et compétences amenées à disparaître ; le moyen/long terme, orientations stratégiques et emplois actuels."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-006",
+    "section": "3. Des écarts au plan d'action",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Lequel de ces plans ne fait PAS partie des cinq plans d'ajustement types de la GEPP ?",
+    "options": [
+      "le plan de développement des compétences",
+      "le plan de communication externe",
+      "le plan de rémunération",
+      "le plan de reconversion professionnelle"
+    ],
+    "reponse": 1,
+    "explication": "Les cinq plans d'ajustement types sont : développement des compétences, mobilité interne, rémunération, recrutement et reconversion professionnelle (la VAE pouvant être un plan à part entière). La formation n'est d'ailleurs qu'un levier parmi d'autres : recrutement, organisation du travail, délégation, externalisation."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-007",
+    "section": "4. La compétence",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Un salarié met en avant son diplôme reconnu par la branche pour prouver qu'il est compétent sur un poste. Que peut-on lui répondre au sens de Le Boterf ?",
+    "options": [
+      "il a raison : le diplôme atteste la compétence",
+      "le diplôme relève de la qualification, valeur d'échange reconnue par un titre — la compétence, elle, ne s'observe que par ses résultats en situation",
+      "le diplôme mesure la performance, pas la compétence",
+      "le diplôme est un potentiel, c'est-à-dire une compétence déjà démontrée"
+    ],
+    "reponse": 1,
+    "explication": "La compétence n'est ni la qualification (titre), ni la performance (elle est le processus qui la produit), ni la connaissance, ni le potentiel (compétence virtuelle), ni l'expérience (mode d'acquisition). C'est une combinatoire de ressources mobilisée en situation, observable seulement par ses résultats."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-008",
+    "section": "4. La compétence",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque notion liée à la compétence à sa caractérisation.",
+    "colonne_a": [
+      "Savoirs",
+      "Savoir-faire",
+      "Savoir-être",
+      "Compétence transverse",
+      "Compétence distinctive"
+    ],
+    "colonne_b": [
+      "Qualités comportementales (soft skills), développables par la formation",
+      "Rare (ex. brevets), source d'avantage concurrentiel",
+      "Connaissances, procédures, normes — souvent formalisés",
+      "Utilisable d'un métier à l'autre, clé de la mobilité",
+      "Issus de l'expérience : habiletés, automatismes, intuition"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "explication": "Savoirs (« Que faut-il connaître ? »), savoir-faire (« Comment procéder ? ») et savoir-être (« Comment me comporter ? ») composent la compétence. S'y ajoutent les distinctions individuelle/collective, transverse (mobilité) et distinctive (avantage concurrentiel)."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-009",
+    "section": "4. La compétence",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "La compétence d'un collaborateur peut s'observer directement, indépendamment de son activité.",
+    "reponse": false,
+    "explication": "Faux. Pour Le Boterf, la compétence est une combinatoire mobilisée en situation : elle ne se voit pas, seul son résultat dans l'activité est observable. D'où le rôle du tiers qui évalue et reconnaît (certification, manager, RH)."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-010",
+    "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Lors de l'élaboration d'un référentiel de compétences, pourquoi observer l'activité sur le terrain plutôt que se contenter des fiches de poste ?",
+    "options": [
+      "parce que les fiches de poste sont des documents confidentiels",
+      "parce que le travail réel révèle des compétences insoupçonnées que le travail prescrit ne décrit pas",
+      "parce que l'observation permet d'évaluer la performance individuelle des salariés",
+      "parce que la loi impose une observation en situation avant toute cartographie"
+    ],
+    "reponse": 1,
+    "explication": "La phase de préparation distingue travail prescrit et travail réel : c'est le réel, saisi par observation et entretiens, qui révèle des compétences insoupçonnées. Suivent la réalisation (dédoublonnage, regroupement, validation, communication) puis le suivi (mise à jour tous les 2-3 ans)."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-011",
+    "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une RH veut regrouper trois postes en un même emploi-type. Quelle condition doit-elle vérifier ?",
+    "options": [
+      "que les postes ont au moins 50 % de missions communes",
+      "que les postes relèvent du même niveau hiérarchique",
+      "que les postes ont 80 % de missions et activités communes, des compétences de même nature et niveau, et qu'un titulaire peut tenir l'ensemble en moins de 3 mois",
+      "que les titulaires des postes sont volontaires pour le regroupement"
+    ],
+    "reponse": 2,
+    "explication": "Les trois vérifications avant regroupement : 80 % des missions et activités communes, compétences de même nature et de même niveau, un titulaire capable de tenir l'ensemble des postes en moins de 3 mois. L'emploi-type ignore la catégorisation hiérarchique."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-012",
+    "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'emploi-type est une fiche de poste détaillée, listant les tâches du titulaire et sa position hiérarchique.",
+    "reponse": false,
+    "explication": "Faux. L'emploi-type (né au CEREQ, méthode ETED de Nicole Mandon, 1990) est une description générique regroupant des situations de travail homogènes — il a inspiré le ROME. Ce n'est pas une fiche de poste : ni tâches, ni catégorisation hiérarchique."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-013",
+    "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Dans une agence audiovisuelle, un seul monteur maîtrise la captation en direct : son absence mettrait la prestation en péril. Quel outil permet de repérer ce risque et d'en faire une priorité de formation ?",
+    "options": [
+      "la pyramide des âges",
+      "la matrice de polyvalence, qui croise activités et personnes avec leur niveau de compétence",
+      "l'organigramme du service",
+      "l'aire de mobilité du poste de monteur"
+    ],
+    "reponse": 1,
+    "explication": "La matrice de polyvalence croise, pour un service, activités et personnes avec le niveau de compétence de chacun. Elle révèle les zones à risque — compétences détenues par un nombre réduit de collaborateurs — et donc les priorités de formation, individuelles et collectives."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-014",
+    "section": "6. Diagnostiquer les besoins",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une entreprise qui peine à recruter veut anticiper les évolutions d'un métier à 3/5 ans pour former ou faire valider les acquis en interne. Quelle approche du diagnostic des besoins adopte-t-elle ?",
+    "options": [
+      "l'approche par le projet d'entreprise",
+      "l'approche par le projet de service",
+      "l'approche métier",
+      "l'approche individuelle"
+    ],
+    "reponse": 2,
+    "explication": "L'approche métier anticipe les évolutions d'un métier à 3/5 ans ; elle est utile quand le recrutement est difficile (formation, VAE) mais exige des fiches métiers/poste. Les quatre approches (projet d'entreprise, projet de service, métier, individuelle) se combinent."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-015",
+    "section": "6. Diagnostiquer les besoins",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque type de besoin de formation à sa définition.",
+    "colonne_a": [
+      "Besoin collectif",
+      "Besoin individuel",
+      "Besoin générique",
+      "Besoin qualifié"
+    ],
+    "colonne_b": [
+      "L'action de formation et l'organisme sont déjà identifiés",
+      "Lié aux projets de changement ou à des dysfonctionnements profonds",
+      "Lié à la tenue ou à la prise de poste, à une mutation",
+      "Les modalités de la formation restent à définir"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Collectif : projets de changement, dysfonctionnements profonds ; individuel : tenue ou prise de poste, mutation. Générique : modalités à définir ; qualifié : action et organisme déjà identifiés. Et rappel : toute compétence manquante n'est pas un besoin de formation."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-016",
+    "section": "7. Évaluer et recueillir les besoins",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Depuis la loi du 24 octobre 2025, à quel rythme l'entretien de parcours professionnel (EPP) doit-il être organisé ?",
+    "options": [
+      "tous les 2 ans, avec un bilan récapitulatif tous les 6 ans",
+      "tous les ans, pour tous les salariés",
+      "tous les 4 ans, avec un état des lieux récapitulatif tous les 8 ans, plus un EPP de mi-carrière et de fin de carrière",
+      "tous les 5 ans, uniquement pour les salariés de plus de 45 ans"
+    ],
+    "reponse": 2,
+    "explication": "La loi du 24 octobre 2025 (art. L. 6315-1) fait de l'entretien professionnel l'EPP : premier EPP dans l'année suivant l'embauche, puis tous les 4 ans (contre 2 auparavant), état des lieux tous les 8 ans (contre 6), plus un EPP de mi-carrière et un EPP de fin de carrière. Le rythme 2 ans / 6 ans est l'ancien régime (loi du 5 mars 2014)."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-017",
+    "section": "7. Évaluer et recueillir les besoins",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Pour gagner du temps, un manager peut recueillir les besoins de formation de ses collaborateurs pendant l'entretien annuel d'évaluation.",
+    "reponse": false,
+    "explication": "Faux. Le recueil peut accompagner l'entretien professionnel, mais jamais l'entretien d'évaluation : la formation est une obligation de l'employeur, jamais une récompense ou une sanction liée aux résultats. Idéalement, le recueil a lieu en septembre/octobre pour une consultation du CSE en novembre."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-018",
+    "section": "8. Maintenir et transférer les compétences",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Pour sécuriser le transfert des compétences avant un départ en retraite, l'employeur peut imposer le mentorat au détenteur des savoirs concernés.",
+    "reponse": false,
+    "explication": "Faux. Le mentorat repose sur le volontariat — du mentor comme du mentoré. Le transfert des compétences (knowledge management) exige aussi une méthodologie précise, une planification et un suivi, la formation des détenteurs à la transmission et l'adaptation du temps de travail. Le tutorat en est le versant opérationnel."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-001",
+    "section": "1. La formation professionnelle : notions de base",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Un responsable formation constate que ses équipes progressent surtout en travaillant sur de vrais projets, bien plus qu'en salle de cours. Quel modèle théorique décrit ce phénomène ?",
+    "options": [
+      "le modèle 70/20/10 : 70 % des apprentissages viennent de la pratique et de l'expérience",
+      "la taxonomie de Bloom : la pratique est le premier niveau cognitif",
+      "l'andragogie : les adultes n'apprennent qu'en autonomie complète",
+      "le modèle 50/30/20 : la moitié des apprentissages vient des échanges entre collègues"
+    ],
+    "reponse": 0,
+    "explication": "Le modèle 70/20/10 (Centre de Leadership Créatif) : 70 % pratique et expérience, 20 % échanges au travail, 10 % formation formelle — qui capte pourtant 80 % des budgets. Selon Spitzer, plus de 80 % d'une formation traditionnelle est oublié en un mois."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-002",
+    "section": "2. Le cadre légal : 50 ans de réformes",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quelle loi a créé le CPF, le CEP et l'entretien professionnel ?",
+    "options": [
+      "la loi Delors du 16 juillet 1971",
+      "la loi du 5 mars 2014",
+      "la loi Travail (El Khomri) de 2016",
+      "la loi Avenir professionnel du 5 septembre 2018"
+    ],
+    "reponse": 1,
+    "explication": "La loi du 5 mars 2014 crée le CPF, le CEP et l'entretien professionnel (plus la contribution unique et le cadre de la FOAD). La loi de 1971 est le texte fondateur ; la loi Avenir 2018 réforme en profondeur gouvernance, fonctionnement et financement."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-003",
+    "section": "2. Le cadre légal : 50 ans de réformes",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque date clé du cadre légal de la formation à son apport.",
+    "colonne_a": [
+      "16 juillet 1971",
+      "5 septembre 2018",
+      "2019",
+      "1er janvier 2022",
+      "2 mai 2024"
+    ],
+    "colonne_b": [
+      "Qualiopi devient obligatoire pour bénéficier des fonds mutualisés ou publics",
+      "CPF monétisé à 500 €/an, collecte URSSAF, le plan de formation devient PDC",
+      "Loi Delors : texte fondateur de la formation professionnelle continue",
+      "Instauration du ticket modérateur CPF de 100 €",
+      "Loi « Avenir professionnel » : réforme profonde de la gouvernance et du financement"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "explication": "Retenir la chronologie : 1971 fondation (Delors), 2014 CPF/CEP/entretien professionnel, 2018 loi Avenir, 2019 entrée en vigueur de la réforme (CPF monétisé, PDC), 2022 Qualiopi obligatoire, 2024 ticket modérateur de 100 €."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-004",
+    "section": "2. Le cadre légal : 50 ans de réformes",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Depuis le 2 mai 2024, un salarié dont la formation CPF est abondée par son employeur doit tout de même payer le ticket modérateur de 100 €.",
+    "reponse": false,
+    "explication": "Faux. Les formations abondées par l'employeur sont exonérées du ticket modérateur, comme les demandeurs d'emploi, les titulaires de points C2P et les victimes d'AT/MP avec incapacité d'au moins 10 %."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-005",
+    "section": "3. Financement et qualité",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une agence de 35 salariés veut faire financer une formation par son OPCO. Quelle condition l'organisme de formation choisi doit-il remplir ?",
+    "options": [
+      "être certifié ISO 9001",
+      "détenir la certification Qualiopi",
+      "être enregistré au RNCP",
+      "être accrédité directement par France Compétences"
+    ],
+    "reponse": 1,
+    "explication": "Depuis le 1er janvier 2022, Qualiopi conditionne l'accès aux fonds mutualisés ou publics ; les entreprises de 50 salariés au plus doivent recourir à un organisme Qualiopi pour être financées par leur OPCO. Elle est délivrée par des certificateurs accrédités Cofrac sur la base du RNCQ."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-006",
+    "section": "4. Les obligations de l'employeur",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quelles sont les deux obligations de formation de l'employeur posées par l'article L.6321-1 du Code du travail ?",
+    "options": [
+      "financer le CPF de chaque salarié et proposer un bilan de compétences annuel",
+      "assurer l'adaptation des salariés à leur poste et veiller au maintien de leur employabilité",
+      "établir un PDC chaque année et le faire valider par l'inspection du travail",
+      "proposer une formation certifiante tous les deux ans à chaque salarié"
+    ],
+    "reponse": 1,
+    "explication": "L.6321-1 : adaptation au poste de travail + maintien de la capacité à occuper un emploi (employabilité), à l'initiative de l'employeur. Les formations doivent réellement développer les compétences (Cass. soc., 5 juillet 2018 : 10 000 € pour « perte de chance »)."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-007",
+    "section": "4. Les obligations de l'employeur",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "L'entretien professionnel a lieu tous les ans et sert à évaluer la performance du salarié.",
+    "reponse": false,
+    "explication": "Faux, deux fois : il a lieu tous les 2 ans (et au retour d'absences longues) et porte sur le projet professionnel et les besoins de formation (Bilan, Analyse, Évolutions) — à ne pas confondre avec l'entretien annuel d'évaluation."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-008",
+    "section": "4. Les obligations de l'employeur",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans une entreprise de 120 salariés, l'état des lieux à 6 ans révèle qu'un salarié n'a suivi aucune formation non obligatoire. Que risque l'employeur ?",
+    "options": [
+      "une amende administrative versée à l'URSSAF",
+      "un abondement forfaitaire de 3 000 € sur le CPF du salarié",
+      "l'obligation de financer une VAE au salarié",
+      "rien, l'état des lieux n'a pas de valeur contraignante"
+    ],
+    "reponse": 1,
+    "explication": "Dans les entreprises de plus de 50 salariés, si l'état des lieux récapitulatif des 6 ans révèle que les entretiens n'ont pas été tenus ou qu'aucune formation non obligatoire n'a été suivie, l'employeur doit abonder le CPF du salarié de 3 000 €."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-009",
+    "section": "5. Le plan de développement des compétences",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une assistante administrative est formée à l'anglais professionnel, un savoir-faire transférable utile dans son emploi. Dans quelle sous-catégorie du PDC classer cette action ?",
+    "options": [
+      "adaptation au poste de travail",
+      "maintien dans l'emploi",
+      "développement des compétences",
+      "formation obligatoire au sens de l'article L.6321-2"
+    ],
+    "reponse": 1,
+    "explication": "C'est l'exemple type du cours : savoir-faire transférable requis dans l'emploi = maintien dans l'emploi. L'adaptation au poste vise un savoir-faire spécifique au poste (logiciel de DAO) ; le développement des compétences prépare une évolution ultérieure."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-010",
+    "section": "5. Le plan de développement des compétences",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une formation obligatoire (type CACES ou habilitation électrique) peut se dérouler hors temps de travail si le salarié donne son accord écrit.",
+    "reponse": false,
+    "explication": "Faux. Les formations obligatoires se déroulent obligatoirement sur le temps de travail, rémunération maintenue. C'est pour les formations non obligatoires que le hors temps de travail est possible, dans la limite de 30 h/an ou 2 % du forfait sans accord collectif."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-011",
+    "section": "5. Le plan de développement des compétences",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une compétence est jugée stratégique pour l'entreprise, mais aucune échéance réglementaire ni changement brutal ne presse. Que faire de ce besoin de formation ?",
+    "options": [
+      "le traiter sans délai, comme toute formation importante",
+      "le planifier dans le PDC, car « on verra plus tard » finit en « c'est trop tard »",
+      "l'éliminer : sans urgence, une formation ne se justifie pas",
+      "le basculer sur le CPF du salarié pour ne pas peser sur le budget"
+    ],
+    "reponse": 1,
+    "explication": "Grille urgence × importance : important mais pas urgent = planifier dans le PDC. Urgent + important = sans délai ; ni urgent ni important = éliminer ; et « urgent pas important » n'existe pas — une formation urgente est toujours importante."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-012",
+    "section": "6. Certifications et validation des acquis",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un salarié souhaite obtenir un titre du RNCP par la VAE. Quelle condition doit-il remplir ?",
+    "options": [
+      "justifier de 3 ans d'expérience professionnelle continue",
+      "justifier d'1 an d'expérience (1 607 h), continue ou non, en rapport direct avec la certification visée",
+      "avoir suivi au moins une formation certifiante dans les 5 dernières années",
+      "obtenir l'accord préalable de son employeur"
+    ],
+    "reponse": 1,
+    "explication": "La VAE exige 1 an d'expérience (1 607 h), continue ou non, en rapport direct avec la certification — expérience professionnelle ou extra-professionnelle (bénévolat, mandats). Le jury prononce une validation totale, partielle ou un refus, et la certification a la même valeur que par les autres voies."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-013",
+    "section": "6. Certifications et validation des acquis",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque dispositif de certification à sa caractéristique.",
+    "colonne_a": [
+      "RNCP",
+      "Répertoire Spécifique",
+      "Titre Professionnel",
+      "CQP",
+      "CléA"
+    ],
+    "colonne_b": [
+      "« Diplôme sur mesure » créé et délivré par une branche professionnelle, hors tutelle de l'État",
+      "Certification du socle de connaissances et compétences professionnelles, en 7 domaines",
+      "Répertoire des diplômes, titres et CQP, en blocs de compétences, sur 8 niveaux",
+      "Délivré au nom de l'État par le ministère du Travail, composé de blocs CCP",
+      "Habilitations et certifications complémentaires au RNCP, enregistrées 5 ans maximum"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "explication": "RNCP = répertoire à 8 niveaux (décret du 8 janvier 2019) avec 3 référentiels par certification ; le Répertoire Spécifique le complète. Le TP émane de l'État (blocs CCP), le CQP d'une branche, et CléA est la première certification interprofessionnelle et paritaire du socle."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-014",
+    "section": "7. Concevoir la formation : l'ingénierie pédagogique",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Un formateur fait analyser aux stagiaires des cas concrets de captation live, puis leur fait découvrir eux-mêmes les principes généraux. Quelle méthode pédagogique applique-t-il ?",
+    "options": [
+      "la méthode déductive : de la théorie vers l'application",
+      "la méthode inductive : du cas concret vers la théorie",
+      "le chunking : découper le contenu en micro-séquences",
+      "la différenciation pédagogique : adapter aux niveaux de chacun"
+    ],
+    "reponse": 1,
+    "explication": "La méthode inductive part du concret pour faire découvrir les principes — l'inverse de la déductive — et c'est la plus efficace en formation professionnelle. Le chunking, lui, répond au déclin de l'attention d'un adulte après 15-20 minutes."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-015",
+    "section": "7. Concevoir la formation : l'ingénierie pédagogique",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans la taxonomie de Bloom, l'objectif « concevoir un plan de captation original » se situe à quel niveau ?",
+    "options": [
+      "Mémoriser, le premier niveau",
+      "Appliquer, le niveau intermédiaire",
+      "Évaluer, le cinquième niveau",
+      "Créer, le niveau le plus élevé"
+    ],
+    "reponse": 3,
+    "explication": "La taxonomie de Bloom hiérarchise 6 niveaux cognitifs : Mémoriser → Comprendre → Appliquer → Analyser → Évaluer → Créer. Concevoir une production originale relève du sommet, « Créer ». Les objectifs se formulent SMART, avec des verbes d'action observables."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-016",
+    "section": "8. Animer : la posture de facilitateur",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Le facilitateur est un expert du contenu qui donne son avis pour aider le groupe à trancher.",
+    "reponse": false,
+    "explication": "Faux. Le facilitateur est expert du processus seulement : le contenu appartient au groupe, et il reste neutre — il ne donne jamais son avis. C'est le formateur qui est expert du contenu et s'implique dans les échanges."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-017",
+    "section": "9. Modalités et digital learning",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque modalité ou format de formation à sa définition.",
+    "colonne_a": [
+      "Blended learning",
+      "AFEST",
+      "SPOC",
+      "Micro-learning",
+      "Adaptive learning"
+    ],
+    "colonne_b": [
+      "Séquences d'apprentissage très courtes, de 2 à 5 minutes",
+      "Cours en ligne privé pour 15 à 50 participants sélectionnés, avec accompagnement personnalisé",
+      "Combinaison de présentiel et de distanciel, modalités complémentaires",
+      "Personnalisation du parcours par une IA qui analyse les interactions de l'apprenant",
+      "Alternance de mises en situation de travail aménagées et de séquences réflexives animées par un tiers"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "explication": "Le blended (37 % selon l'ISTF 2023) est devenu la modalité majoritaire. L'AFEST transforme l'expérience en compétences durables via la séquence réflexive. SPOC = Small Private Online Course, à distinguer du MOOC (massif, ouvert) et du COOC (MOOC interne d'entreprise)."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-018",
+    "section": "9. Modalités et digital learning",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un module e-learning coûte 2 200 € et rapporte un bénéfice net de 11 840 € par an (erreurs de colis évitées). Quel est son ROI ?",
+    "options": [
+      "environ 19 %",
+      "environ 185 %",
+      "environ 538 %",
+      "environ 640 %"
+    ],
+    "reponse": 2,
+    "explication": "ROI = (bénéfices / coûts) × 100 = (11 840 / 2 200) × 100 = 538 % — c'est le cas CP Livraison du cours. Un ROI inférieur à 100 % signifie que l'investissement n'est pas couvert ; le ROE (Return On Expectation) et les bénéfices qualitatifs complètent l'analyse."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-001",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une agence livre une affiche parfaitement exécutée (résolution, typographie, couleurs impeccables), mais son message met en avant le prix alors que la marque cliente est positionnée premium. Quelle dimension de la qualité est en défaut ?",
+    "options": [
+      "la dimension technique, évaluable par checklist",
+      "la dimension créative, liée à l'originalité du concept",
+      "la dimension stratégique, cohérence des choix créatifs avec le business",
+      "aucune : le livrable est conforme puisque techniquement irréprochable"
+    ],
+    "reponse": 2,
+    "explication": "Une production peut être techniquement irréprochable mais stratégiquement hors sujet. La dimension stratégique (attributs de marque, objectifs, cibles, positionnement) s'intègre dès la conception, pas en vérification a posteriori."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-002",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque pilier de l'identité visuelle à l'erreur typique qui le rompt.",
+    "colonne_a": [
+      "Cohérence chromatique",
+      "Uniformité typographique",
+      "Cohérence des éléments graphiques",
+      "Cohérence de l'imagerie",
+      "Harmonie compositionnelle"
+    ],
+    "colonne_b": [
+      "Photo publicitaire saturée pour une marque fondée sur l'authenticité",
+      "Logo collé à d'autres éléments sans respect de la zone de protection",
+      "Empilement de textes sans hiérarchie ni respiration",
+      "Couleur non référencée dans la charte (bleu turquoise, fond jaune vif)",
+      "Police officielle remplacée par une sans-serif générique"
+    ],
+    "paires": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        2
+      ]
+    ],
+    "explication": "Les 5 piliers : chromatique (couleurs de la charte), typographique (polices et hiérarchie), éléments graphiques (dont la zone de protection du logo, les marges de la charte), imagerie (style fidèle aux valeurs), composition (règle des tiers, équilibre des masses)."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-003",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un chef de projet doit rendre contrôlable la valeur « authenticité » de la marque de son client. Quelle formulation de critère est la bonne, selon la méthode du cours ?",
+    "options": [
+      "« Les visuels doivent valoriser l'authenticité de la marque »",
+      "« Décors extérieurs réels, matières naturelles, lumière dorée, tonalité chaleureuse — vérifiés par questions oui/non »",
+      "« Les créatifs doivent s'imprégner de l'esprit de la marque avant de produire »",
+      "« L'authenticité sera appréciée par le directeur artistique au cas par cas »"
+    ],
+    "reponse": 1,
+    "explication": "Superviser, c'est traduire chaque valeur abstraite en éléments observables et mesurables, puis en questions de contrôle binaires (oui/non). C'est l'exemple Le Petit Marseillais : « art de vivre méditerranéen » devient lumière dorée, matières naturelles, décors authentiques, palette provençale."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-004",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Dans un référentiel qualité pyramidal, où classer le critère « le logo et les codes de reconnaissance de la marque sont respectés sur tous les supports et tous les marchés » ?",
+    "options": [
+      "dans les critères adaptatifs, car il varie selon le canal",
+      "dans les critères d'excellence, réservés aux campagnes stratégiques",
+      "dans les critères universels, non négociables quels que soient support et marché",
+      "dans les critères contextuels, liés à la réglementation locale"
+    ],
+    "reponse": 2,
+    "explication": "L'architecture pyramidale compte 3 niveaux : critères universels (reconnaissance de marque, non négociables), critères adaptatifs (contextualisation locale ou par canal), critères d'excellence (productions premium)."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-005",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Plutôt que d'imposer une zone de protection du logo fixe, une agence la définit « entre 15 et 25 mm selon le format ». Quel mécanisme du référentiel applique-t-elle ?",
+    "options": [
+      "un critère bloquant lié à la promesse de marque",
+      "une fourchette de tolérance, qui équilibre précision et flexibilité",
+      "un scoring pondéré avec seuils vert/orange/rouge",
+      "une grille stratégique minimum de 5 à 7 critères"
+    ],
+    "reponse": 1,
+    "explication": "Les fourchettes de tolérance remplacent les valeurs rigides par des plages (zone de protection entre 15 et 25 mm, ±5 % sur les couleurs à l'impression). Avec les critères conditionnels « si… alors… », le scoring et la hiérarchie bloquants/importants/de préférence, elles conditionnent l'adoption du référentiel."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-006",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un livrable qui respecte toutes les valeurs de la marque mais reprend les codes visuels d'un concurrent direct ne constitue pas un écart qualité.",
+    "reponse": false,
+    "explication": "Faux. La cartographie concurrentielle créative fait de la différenciation un critère de qualité à part entière : reproduire les codes d'un concurrent est un écart même si les valeurs sont respectées. Un livrable « conforme mais banalisé » est un échec stratégique silencieux."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-007",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Pour une marque dont l'univers repose sur la nature, un prestataire livre un visuel tourné en décor urbain. Le caractère distinctif est dilué mais pas contredit. Comment qualifier cet écart ?",
+    "options": [
+      "écart mineur : détail d'exécution sans impact perçu",
+      "écart modéré : déviation notable qui dilue le caractère distinctif",
+      "écart critique : contradiction directe avec la promesse, retrait immédiat",
+      "écart positif : une innovation à valoriser"
+    ],
+    "reponse": 1,
+    "explication": "C'est l'exemple type de l'écart modéré (décor urbain au lieu du naturel) : il dilue sans contredire, et son accumulation affaiblit la différenciation. Le mineur est un détail (nuance de bleu hors charte), le critique contredit valeurs ou promesse et exige un recadrage immédiat."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-008",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Votre agence confie un motion design à un free-lance qui n'a jamais travaillé pour le client. Quelle est la bonne pratique de démarrage ?",
+    "options": [
+      "le laisser proposer librement pour préserver sa créativité, puis corriger à la livraison",
+      "lui transmettre un kit de démarrage : brief détaillé, charte graphique, exemples de livrables conformes",
+      "lui demander de signer la charte qualité de l'agence avant tout échange",
+      "programmer uniquement un feed-back de fin de mission pour ne pas le surcharger"
+    ],
+    "reponse": 1,
+    "explication": "Les free-lances, étrangers à la culture de l'agence, se trouvent dans les zones de dilution du contrôle qualité. Le kit de démarrage (brief, charte, exemples conformes) se complète d'un cadrage initial, de jalons intermédiaires et d'un feed-back de fin de mission."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-009",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque phase du pilotage de la sous-traitance créative à son contenu.",
+    "colonne_a": [
+      "Sélection",
+      "Cadrage",
+      "Suivi",
+      "Évaluation"
+    ],
+    "colonne_b": [
+      "Points de contrôle intermédiaires",
+      "Capitalisation sur la collaboration",
+      "Compétences et adaptation culturelle",
+      "Transmission des standards, sessions d'alignement"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "La sous-traitance se pilote en 4 phases : sélection (compétences + adaptation culturelle), cadrage (standards, alignement), suivi (points de contrôle), évaluation (capitalisation). Le prestataire se traite en partenaire créatif, pas en exécutant."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-010",
+    "section": "2. Organiser la supervision",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Dans une agence, chaque maquette repasse sans fin entre le DA, le client et la direction : chacun rouvre les points validés par les autres, personne ne tranche, les versions s'accumulent. Quelle pathologie du circuit de validation est à l'œuvre ?",
+    "options": [
+      "la boucle de validation infinie, faute d'autorité finale qui tranche",
+      "la validation parallèle, mal synchronisée",
+      "la subsidiarité créative, poussée trop loin",
+      "le circuit express, déclenché de façon abusive"
+    ],
+    "reponse": 0,
+    "explication": "La boucle de validation infinie est la reprise cyclique des mêmes points par différents acteurs sans autorité finale : versions multiples, démotivation, explosion des délais. Elle se combine souvent aux critères subjectifs et à l'absence d'arbitre final."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-011",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "En comité de validation, les avis s'alignent systématiquement sur le premier qui s'exprime. Quelle contre-mesure le cours préconise-t-il ?",
+    "options": [
+      "réduire le comité à deux personnes pour limiter les influences",
+      "faire produire une évaluation individuelle écrite avant la réunion collective",
+      "donner la parole en dernier au directeur artistique",
+      "remplacer le comité par une validation automatisée"
+    ],
+    "reponse": 1,
+    "explication": "C'est la pensée de groupe (conformisme en comité), l'un des 3 biais cognitifs avec le biais de confirmation (qui standardise les créations) et l'effet de halo (un détail frappant contamine le jugement). La contre-mesure : l'évaluation individuelle écrite avant la réunion collective."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-012",
+    "section": "2. Organiser la supervision",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque niveau de l'architecture de validation à ce qu'il valide.",
+    "colonne_a": [
+      "Niveau opérationnel (DA + chef de projet)",
+      "Niveau stratégique (responsables marketing/communication)",
+      "Niveau décisionnel (direction)"
+    ],
+    "colonne_b": [
+      "Arbitrages complexes uniquement : désaccords, prise de risque, innovations hors standards",
+      "Exécution, formats, cohérence visuelle, respect du brief",
+      "Alignement objectifs, pertinence cibles, différenciation, cohérence inter-campagnes"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "L'architecture de référence compte 3 niveaux fondés sur la subsidiarité créative : chaque niveau traite en autonomie les critères qu'il maîtrise le mieux, sans remontée systématique — la direction ne voit que les arbitrages complexes."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-013",
+    "section": "2. Organiser la supervision",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Chez YSA, un livrable vidéo attend successivement la validation technique, puis créative, puis juridique — chacune bloquant la suivante. Ces trois contrôles portent sur des périmètres indépendants. Que proposer ?",
+    "options": [
+      "un comité d'arbitrage créatif pour trancher les désaccords",
+      "la validation parallèle : évaluations simultanées sur périmètres indépendants, avec point de convergence",
+      "un parcours innovation avec jury d'experts",
+      "une escalade systématique au niveau décisionnel"
+    ],
+    "reponse": 1,
+    "explication": "La validation parallèle fait évaluer simultanément un même livrable par plusieurs parties prenantes sur des périmètres indépendants : délais réduits jusqu'à 60 %, goulets supprimés. Conditions : rôles clairs, critères précis, outils adaptés — et un comité de synthèse au point de convergence."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-014",
+    "section": "2. Organiser la supervision",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Dans le cas du cours, les pré-validations techniques automatisées (formats, résolutions, éléments obligatoires) ont éliminé 60 % des allers-retours techniques.",
+    "reponse": true,
+    "explication": "Vrai. Avec la refonte du circuit (validation parallèle, RACI), le cas passe de 18 à 8 jours de validation (−55 %) et de 4,2 à 2,1 itérations — le diagnostic initial chiffrait le surcoût à plus de 150 000 € par an (2,3 ETP)."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-015",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans une matrice RACI appliquée à la validation d'un livrable, qui tranche en dernier ressort ?",
+    "options": [
+      "le R, responsable de l'exécution",
+      "le A, autorité décisionnaire",
+      "le C, consulté pour avis",
+      "le I, informé du résultat"
+    ],
+    "reponse": 1,
+    "explication": "RACI : Responsable de l'exécution, Autorité décisionnaire, Consulté, Informé. Le A détient la décision — c'est ce qui tranche les conflits de légitimité et réduit de 40 % les temps de réponse dans le cas du cours."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-016",
+    "section": "2. Organiser la supervision",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Pour gagner du temps en cas d'urgence, n'importe quel membre de l'équipe peut déclencher le circuit express de validation.",
+    "reponse": false,
+    "explication": "Faux. Le circuit express (validateurs mobilisés simultanément, critères recentrés) prévoit un responsable désigné du déclenchement, précisément pour éviter les abus. Les deux autres soupapes d'exception : le comité d'arbitrage créatif et le parcours innovation."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-017",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Communication qualité différenciée : associez chaque public à l'angle et au canal adaptés.",
+    "colonne_a": [
+      "Créatifs",
+      "Managers",
+      "Équipes locales",
+      "Partenaires externes"
+    ],
+    "colonne_b": [
+      "Tableau de bord qui objective, réunion",
+      "Guide technique détaillé qui rassure",
+      "Newsletter visuelle qui inspire, atelier",
+      "Webinaire interactif qui engage"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "La communication qualité se différencie par public et canal : impact des créations pour les créatifs (inspire), pilotage pour les managers (objective), reconnaissance de l'expertise terrain pour les équipes locales (engage), procédures claires pour les partenaires (rassure)."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-018",
+    "section": "2. Organiser la supervision",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Chez YSA, les validations passent par mail, l'informel par Slack, les fichiers sont dispersés sur plusieurs drives : pertes d'information et erreurs de version se multiplient. Quelle architecture cible viser ?",
+    "options": [
+      "remplacer tous les outils par un logiciel unique qui fait tout",
+      "la centralisation intelligente : un outil pivot orchestre les workflows, les outils spécialisés gardent leur excellence, source de vérité unique",
+      "interdire Slack et revenir au mail pour tout tracer",
+      "laisser chaque équipe choisir ses outils et synchroniser en fin de projet"
+    ],
+    "reponse": 1,
+    "explication": "Face à la fragmentation technologique, la cible n'est pas l'outil unique mais la centralisation intelligente : un outil pivot de gestion de projet orchestre, chaque information n'a qu'un seul « propriétaire » (source de vérité unique), et le déploiement est progressif. Les DAM (Frame.io, Frontify, Bynder) centralisent les assets de marque."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-019",
+    "section": "3. Contrôler et corriger",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Feedback à un graphiste : « Sur l'affiche du lancement (S), le slogan met l'accent sur le prix en rouge très visible (C), … (I), pourrions-nous explorer une version axée sur le bénéfice soin ? (I) ». Que doit contenir le troisième élément, l'Impact ?",
+    "options": [
+      "un jugement personnel : « je n'aime pas ce rouge »",
+      "la conséquence sur les objectifs : « cela positionne le produit comme discount, contraire à notre image premium »",
+      "la sanction prévue si l'écart n'est pas corrigé",
+      "un rappel du planning de production"
+    ],
+    "reponse": 1,
+    "explication": "Le SBI-I enchaîne Situation, Comportement (fait observé), Impact (conséquence sur les objectifs, pas une impression personnelle) et Intention (question ouverte de co-construction). Principes : valoriser avant de corriger, reformulation positive plutôt que rejet frontal."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-020",
+    "section": "3. Contrôler et corriger",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Avant de formuler un feedback sur un livrable créatif, la première chose à faire est de relire le brief initial.",
+    "reponse": true,
+    "explication": "Vrai. C'est le brief qui fonde des observations objectives, pas les impressions personnelles. On catégorise ensuite les retours en 3 niveaux : conforme à valoriser, écart mineur (correction simple), écart majeur (refonte)."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-021",
+    "section": "4. Piloter dans la durée et à l'international",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Après 12 mois de pilotage, une agence affiche des délais en baisse de 22 % et des réclamations en baisse de 35 %, mais ses créations s'uniformisent, elle ne gagne plus aucun prix créatif et le turnover des seniors bondit de 40 %. Que conclure ?",
+    "options": [
+      "le dispositif fonctionne : les indicateurs opérationnels sont tous au vert",
+      "les seniors résistent au changement, il faut renforcer le contrôle",
+      "le système de mesure lui-même est déséquilibré : des indicateurs uniquement opérationnels optimisent l'efficacité au détriment de l'excellence créative",
+      "il faut supprimer toute mesure pour libérer la créativité"
+    ],
+    "reponse": 2,
+    "explication": "C'est le cas CreativeFlow : il faut rééquilibrer le système avec les 3 niveaux d'indicateurs (opérationnels, tactiques, stratégiques) en duos quantitatif + qualitatif, et distinguer écart positif (innovation) et anomalie (dérive). Le pilotage qualité est un levier d'apprentissage, pas de sanction."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-022",
+    "section": "4. Piloter dans la durée et à l'international",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Matrice impact × complexité : associez chaque famille d'améliorations à son traitement.",
+    "colonne_a": [
+      "Quick wins",
+      "Projets structurants",
+      "Optimisations continues",
+      "Innovations disruptives"
+    ],
+    "colonne_b": [
+      "Refonte de référentiel, sponsorisée par la direction",
+      "Expérimentation contrôlée (ex. IA)",
+      "À traiter d'abord pour entretenir la dynamique",
+      "Micro-améliorations et rituels, effet cumulé"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Impact élevé/complexité faible = quick wins (d'abord) ; impact et complexité élevés = projets structurants ; effet cumulé = optimisations continues ; IA = innovations disruptives. Les actions vivent dans un backlog priorisé, traité en sprints qualité de 4 semaines, dans une logique Kaizen."
   }
 ];
