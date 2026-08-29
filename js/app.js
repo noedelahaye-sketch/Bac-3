@@ -2100,42 +2100,45 @@
       h+='<option value="'+b.numero+'"'+(String(c.bloc)===String(b.numero)?' selected':'')+'>'+esc(b.code)+' — '+esc(b.titre)+'</option>';
     });
     h+='</select>';
+    /* Rattacher un résumé donne à la carte un aller direct vers le cours dont
+       elle sort. Le choix n'apparaît qu'une fois le bloc connu — et il tient
+       sur la même ligne : chaque rangée prise en haut est perdue pour la carte. */
+    var res=resumesDuBloc(c.bloc);
+    if(res.length){
+      h+='<select class="mm-bloc" id="mmResume" aria-label="Résumé lié"><option value="">Sans résumé lié</option>';
+      res.forEach(function(r){
+        h+='<option value="'+r.id+'"'+(c.resume===r.id?' selected':'')+'>'+esc(r.titre)+'</option>';
+      });
+      h+='</select>';
+    }
     h+='<button class="mm-sup" data-mm-del="'+id+'" title="Supprimer la carte">'+ICON_TRASH+'</button>';
     /* la sauvegarde est automatique ; ce bouton force l'envoi tout de suite,
        pour qui veut la certitude avant de changer d'appareil */
     h+='<button class="mm-sup mm-envoi" data-mm-flush="1" title="Envoyer les modifications maintenant">'+ICON_NUAGE+'</button>';
     h+='<button class="jadd mm-fini" data-mm-voir="'+id+'">Voir la carte</button>';
     h+='</div>';
-    /* Rattacher un résumé donne à la carte un aller direct vers le cours dont
-       elle sort. Le choix n'apparaît qu'une fois le bloc connu. */
-    var res=resumesDuBloc(c.bloc);
-    if(res.length){
-      h+='<div class="mm-lien-cours"><label class="mm-lab" for="mmResume">Résumé lié</label>';
-      h+='<select class="mm-bloc" id="mmResume"><option value="">Aucun</option>';
-      res.forEach(function(r){
-        h+='<option value="'+r.id+'"'+(c.resume===r.id?' selected':'')+'>'+esc(r.titre)+'</option>';
-      });
-      h+='</select></div>';
-    } else if(c.bloc){
-      h+='<div class="mm-lien-cours mm-lien-vide">Pas encore de résumé de cours sur ce bloc.</div>';
-    }
-    /* Bascule plan / aperçu : sur téléphone une seule des deux colonnes tient à
-       l'écran, sur grand écran les deux cohabitent et la bascule disparaît. */
-    h+='<div class="mm-onglets"><button class="mm-onglet on" data-mm-vue="plan">Plan</button><button class="mm-onglet" data-mm-vue="carte">Aperçu</button></div>';
-    h+='<div class="mm-grid" id="mmGrid">';
-    h+='<div class="mm-col mm-col-plan">';
+    /* On travaille sur la carte elle-même : un clic ouvre une idée, les boutons
+       du nœud posent la suivante. Pas d'ajustement automatique ici — le dessin
+       reste à sa taille et le cadre défile, sinon les boîtes rapetissent au fur
+       et à mesure qu'on écrit et on ne vise plus rien. */
+    h+='<div class="mm-canvas mm-canvas-etabli" id="mmCanvas" tabindex="0">'+
+       '<div class="mm-menu" id="mmMenu" hidden></div>'+
+       '<div class="mm-trait" id="mmTrait" hidden></div></div>';
+    h+='<div class="mm-aide mm-aide-etabli">Le <b>+</b> au bout d\'un étage y ajoute une idée. '+
+       'Un clic ouvre ou referme une idée, un double-clic l\'écrit. '+
+       '<b>Entrée</b> : idée sœur &middot; <b>Tab</b> : idée fille &middot; '+
+       '<b>Alt + flèches</b> : déplacer la branche &middot; <b>Échap</b> : sortir. '+
+       'Une idée vidée de son texte disparaît ; le clic droit propose aussi de la supprimer. '+
+       'À la souris, attrape une idée et lâche-la sur une autre : au milieu elle y entre, '+
+       'en haut ou en bas elle se range avant ou après.</div>';
+    /* Le plan reste la source ; il n'a plus à être sous les yeux en permanence,
+       mais il sert encore pour un copier-coller ou une reprise en masse. */
+    h+='<details class="mm-plan"><summary>Plan (texte)</summary>';
     h+='<textarea class="mm-txt-in" id="mmTxt" spellcheck="false" placeholder="Une idée par ligne. Deux espaces pour la rattacher à celle du dessus.">'+esc(c.txt||"")+'</textarea>';
     h+='<div class="mm-outils"><button class="mm-out" data-mm-indent="1" title="Décaler à droite">&rarr;</button>'+
        '<button class="mm-out" data-mm-indent="-1" title="Décaler à gauche">&larr;</button>'+
        (c.txt?'':'<button class="mm-out mm-out-ex" data-mm-exemple="1">Partir d\'un exemple</button>')+
-       '</div>';
-    h+='</div>';
-    h+='<div class="mm-col mm-col-carte">';
-    h+='<div class="mm-zoom"><button class="mm-onglet on" data-mm-zoom="ajuste">Ajuster</button>'+
-       '<button class="mm-onglet" data-mm-zoom="plein">100 %</button></div>';
-    h+='<div class="mm-canvas mm-ajuste" id="mmCanvas"></div>'+
-       '<div class="mm-aide">Touche une idée pour replier ou déplier sa branche.</div></div>';
-    h+='</div>';
+       '</div></details>';
     return h;
   }
 
@@ -2159,6 +2162,473 @@
         save();
         dessineCarte(id);
       });
+    });
+  }
+
+  /* ---------- L'ÉTABLI ----------
+     Écrire directement sur la carte. Le plan indenté reste la seule source :
+     chaque geste (écrire, ajouter, décaler, déplacer) est traduit en retouche
+     de lignes, le texte est réenregistré, la carte redessinée. Rien n'est
+     positionné à la main, donc aucun geste ne peut « casser » la mise en page.
+     etabli.sel = le chemin du nœud choisi ("r" pour le titre).
+     Une idée neuve naît avec un texte à remplacer : une ligne vide n'existe
+     pas dans un plan indenté, elle disparaîtrait à la relecture. Le texte est
+     présélectionné, donc on tape par-dessus sans y penser — et si on ressort
+     sans rien écrire, l'idée s'efface (etabli.neuf). */
+  var IDEE_NEUVE="Nouvelle idée";
+  var etabli={sel:null, neuf:null, glisse:false, dernier:null};
+
+  function etatPlan(c){
+    var arbre=CARTES.parse(c.txt, c.t);
+    return {L:CARTES.enLignes(c.txt), arbre:arbre, map:CARTES.chemins(arbre)};
+  }
+  function ligneDuChemin(map, p){
+    if(!p || p==="r") return -1;
+    var i=map.chemin[p];
+    return (i===undefined)?-1:i;
+  }
+  /* Les nœuds qu'on peut atteindre : ceux d'une branche repliée n'existent pas
+     à l'écran, les flèches doivent les sauter. */
+  function cheminsVisibles(c){
+    var plie=c.plie||{}, out=[];
+    (function d(n){ out.push(n.path); if(!plie[n.path]) n.k.forEach(d); })(CARTES.parse(c.txt, c.t));
+    return out;
+  }
+
+  /* Le passage obligé de toute retouche. fn(lignes, index) renvoie le nouvel
+     index à choisir, -1 pour revenir au titre, ou null si le geste n'a pas de
+     sens (on ne touche alors à rien). */
+  function retouche(id, fn, edite){
+    var c=S.cartes[id]; if(!c) return;
+    var e=etatPlan(c);
+    var ni=fn(e.L, ligneDuChemin(e.map, etabli.sel));
+    if(ni===null || ni===undefined) return;
+    c.txt=e.L.join("\n"); c.at=Date.now(); save();
+    var map2=CARTES.chemins(CARTES.parse(c.txt, c.t));
+    etabli.sel=(ni>=0 && map2.ligne[ni])?map2.ligne[ni]:"r";
+    if(edite==="neuf") etabli.neuf=etabli.sel;
+    dessineEtabli(id);
+    majPlanTexte(id);
+    montreNoeud();
+    if(edite) ouvreEdition(id);
+  }
+
+  function majPlanTexte(id){
+    var ta=document.getElementById("mmTxt");
+    if(ta && document.activeElement!==ta) ta.value=S.cartes[id].txt||"";
+  }
+
+  function dessineEtabli(id){
+    var c=S.cartes[id];
+    var box=document.getElementById("mmCanvas");
+    if(!c || !box || typeof CARTES==="undefined") return;
+    var v=box.querySelector("svg"); if(v) v.parentNode.removeChild(v);
+    box.insertAdjacentHTML("afterbegin", CARTES.svg(CARTES.parse(c.txt, c.t), c.plie||{},
+                                                    {selection:etabli.sel, etabli:true}));
+    fermeMenu();
+  }
+
+  /* Une branche déplacée peut sortir du cadre : on la ramène sous les yeux,
+     sinon on la cherche au défilement après chaque geste. */
+  function montreNoeud(){
+    var box=document.getElementById("mmCanvas");
+    if(!box || !etabli.sel) return;
+    var g=box.querySelector('[data-mm-path="'+etabli.sel+'"]');
+    if(!g) return;
+    var r=g.querySelector("rect").getBoundingClientRect(), cb=box.getBoundingClientRect(), m=48;
+    if(r.top<cb.top+m) box.scrollTop+=r.top-cb.top-m;
+    else if(r.bottom>cb.bottom-m) box.scrollTop+=r.bottom-cb.bottom+m;
+    if(r.left<cb.left+m) box.scrollLeft+=r.left-cb.left-m;
+    else if(r.right>cb.right-m) box.scrollLeft+=r.right-cb.right+m;
+  }
+
+  /* Choisir un nœud ne redessine rien : on déplace le liseré et les outils sur
+     le dessin en place. Reconstruire le SVG au premier clic changerait les
+     éléments sous la souris, et le navigateur n'enverrait plus de double-clic. */
+  function majSelection(id){
+    var box=document.getElementById("mmCanvas");
+    if(!box) return;
+    box.querySelectorAll(".mm-sel").forEach(function(g){ g.classList.remove("mm-sel"); });
+    var g=etabli.sel?box.querySelector('[data-mm-path="'+etabli.sel+'"]'):null;
+    if(g) g.classList.add("mm-sel");
+    /* une idée sans fille reçoit son « + » en face d'elle : il n'existe que
+       tant qu'elle est choisie, donc le dessin doit suivre */
+    var seul=box.querySelector(".mm-ajout-seul");
+    var attendu=!!(g && !g.classList.contains("mm-parent"));
+    if(attendu!==!!seul || (seul && seul.getAttribute("data-mm-ajout")!==etabli.sel)){ dessineEtabli(id); return; }
+  }
+
+  /* Supprimer n'a pas de bouton : on vide une idée et elle s'en va. Le clic
+     droit reste le dernier recours, pour une branche entière qu'on ne veut pas
+     vider idée par idée. Le menu vit dans le cadre qui défile, donc ses
+     coordonnées sont celles du contenu, pas de l'écran. */
+  function demandeSuppression(n){
+    return "Supprimer cette idée et "+(n>1?("les "+n+" qu'elle contient"):"celle qu'elle contient")+" ?";
+  }
+  function fermeMenu(){
+    var m=document.getElementById("mmMenu");
+    if(m){ m.hidden=true; m.innerHTML=""; }
+  }
+  function ouvreMenu(id, chemin, ev){
+    var box=document.getElementById("mmCanvas"), m=document.getElementById("mmMenu");
+    var c=S.cartes[id];
+    if(!box || !m || !c || chemin==="r") return;
+    var e=etatPlan(c), i=ligneDuChemin(e.map, chemin);
+    if(i<0) return;
+    var n=CARTES.plan.finBranche(e.L,i)-i-1;
+    m.innerHTML='<button class="mm-menu-item mm-menu-sup" data-mm-op="sup">'+ICON_TRASH+
+                '<span>Supprimer'+(n?' &middot; '+n+' idée'+(n>1?'s':'')+' dedans':'')+'</span></button>';
+    m.hidden=false;
+    var cb=box.getBoundingClientRect();
+    m.style.left=(ev.clientX-cb.left+box.scrollLeft)+"px";
+    m.style.top=(ev.clientY-cb.top+box.scrollTop)+"px";
+  }
+
+  /* Écrire dans la boîte : un champ posé exactement dessus. On ne redessine
+     pas à chaque frappe — le texte part dans le plan à la validation, ce qui
+     évite de reconstruire le SVG sous le curseur. */
+  function ouvreEdition(id){
+    var c=S.cartes[id], box=document.getElementById("mmCanvas");
+    if(!c || !box || !etabli.sel) return;
+    var g=box.querySelector('[data-mm-path="'+etabli.sel+'"]');
+    if(!g) return;
+    var e=etatPlan(c), i=ligneDuChemin(e.map, etabli.sel);
+    var rb=g.querySelector("rect").getBoundingClientRect(), cb=box.getBoundingClientRect();
+    var inp=document.createElement("input");
+    inp.type="text"; inp.id="mmEdit"; inp.className="mm-edit-in"+(i<0?" mm-edit-racine":"");
+    inp.value=(i<0)?c.t:e.L[i].trim();
+    inp.style.left=(rb.left-cb.left+box.scrollLeft)+"px";
+    inp.style.top=(rb.top-cb.top+box.scrollTop)+"px";
+    inp.style.width=Math.max(rb.width, 190)+"px";
+    inp.style.height=rb.height+"px";
+    box.appendChild(inp);
+    inp.focus(); inp.select();
+    /* stopPropagation : sans lui la touche remonte au cadre, qui la rejouerait
+       (une branche déplacée deux fois, un Échap qui désélectionne aussitôt). */
+    inp.addEventListener("keydown", function(ev){
+      var fleche=(ev.altKey && ev.key.indexOf("Arrow")===0);
+      if(ev.key!=="Enter" && ev.key!=="Tab" && ev.key!=="Escape" && !fleche) return;
+      ev.preventDefault(); ev.stopPropagation();
+      if(ev.key==="Enter"){ valideEdition(id, etabli.sel==="r"?"enfant":"frere"); }
+      else if(ev.key==="Tab" && !ev.shiftKey){ valideEdition(id, "enfant"); }
+      else if(ev.key==="Tab"){ valideEdition(id, null); opNoeud(id, "gauche"); }
+      else if(ev.key==="Escape"){ valideEdition(id, null); focusCanvas(); }
+      else { valideEdition(id, null); opNoeud(id, {ArrowUp:"haut", ArrowDown:"bas", ArrowLeft:"gauche", ArrowRight:"droite"}[ev.key]); }
+    });
+    inp.addEventListener("blur", function(){ valideEdition(id, null); });
+  }
+
+  /* Sortie d'écriture. Une idée laissée vide et sans fille disparaît : c'est ce
+     qui rend l'ajout sans risque — on peut toujours reculer d'un Échap. */
+  function valideEdition(id, suite){
+    var inp=document.getElementById("mmEdit");
+    if(!inp || inp.getAttribute("data-fini")) return;
+    inp.setAttribute("data-fini","1");
+    var txt=inp.value.trim();
+    if(inp.parentNode) inp.parentNode.removeChild(inp);
+    var c=S.cartes[id]; if(!c) return;
+    var e=etatPlan(c), i=ligneDuChemin(e.map, etabli.sel), P=CARTES.plan;
+    if(i<0){
+      if(txt && txt!==c.t){
+        c.t=txt; c.at=Date.now(); save();
+        var ti=document.getElementById("mmTitre"); if(ti) ti.value=c.t;
+        updateTitle();
+      }
+    } else {
+      var dedans=P.finBranche(e.L,i)-i-1;
+      var neuve=(etabli.neuf===etabli.sel && txt===IDEE_NEUVE);
+      etabli.neuf=null;
+      /* Une idée vidée s'en va : c'est la façon la plus simple de supprimer, et
+         elle se rattrape d'un Ctrl+Z... qui n'existe pas ici, alors on demande
+         dès qu'une branche entière partirait avec. */
+      var part=(!txt || neuve);
+      if(part && dedans && !confirm(demandeSuppression(dedans))) part=false;
+      if(part){
+        var p=P.parent(e.L, i);
+        P.supprime(e.L, i);
+        c.txt=e.L.join("\n"); c.at=Date.now(); save();
+        var map2=CARTES.chemins(CARTES.parse(c.txt, c.t));
+        etabli.sel=(p>=0 && map2.ligne[p])?map2.ligne[p]:"r";
+      } else {
+        P.renomme(e.L, i, txt||e.L[i].trim());
+        c.txt=e.L.join("\n"); c.at=Date.now(); save();
+      }
+    }
+    dessineEtabli(id);
+    majPlanTexte(id);
+    if(suite) opNoeud(id, suite);
+  }
+
+  function focusCanvas(){
+    var box=document.getElementById("mmCanvas");
+    if(box) box.focus();
+  }
+
+  function opNoeud(id, op, annonce){
+    var c=S.cartes[id], P=CARTES.plan;
+    if(!c) return;
+    if(op==="enfant"){
+      if(c.plie && etabli.sel) delete c.plie[etabli.sel];
+      retouche(id, function(L,i){ return P.ajouteEnfant(L, i, IDEE_NEUVE); }, "neuf");
+    } else if(op==="frere"){
+      retouche(id, function(L,i){ return i<0?P.ajouteEnfant(L,-1,IDEE_NEUVE):P.ajouteFrere(L, i, IDEE_NEUVE); }, "neuf");
+    } else if(op==="sup"){
+      if(!etabli.sel || etabli.sel==="r") return;
+      var e=etatPlan(c), i=ligneDuChemin(e.map, etabli.sel);
+      if(i<0) return;
+      var n=P.finBranche(e.L,i)-i;
+      /* le menu a déjà dit ce qui partait : on ne redemande pas */
+      if(n>1 && !annonce && !confirm(demandeSuppression(n-1))) return;
+      retouche(id, function(L,j){ return P.supprime(L, j); });
+      focusCanvas();
+    } else if(op==="gauche"){ retouche(id, function(L,i){ var r=P.desindente(L,i); return r<0?null:r; }); focusCanvas(); }
+    else if(op==="droite"){ retouche(id, function(L,i){ var r=P.indente(L,i); return r<0?null:r; }); focusCanvas(); }
+    else if(op==="haut"){ retouche(id, function(L,i){ var r=P.monte(L,i); return r<0?null:r; }); focusCanvas(); }
+    else if(op==="bas"){ retouche(id, function(L,i){ var r=P.descend(L,i); return r<0?null:r; }); focusCanvas(); }
+  }
+
+  function bougeSelection(id, sens){
+    var c=S.cartes[id], vis=cheminsVisibles(c);
+    var i=vis.indexOf(etabli.sel);
+    if(i<0){ etabli.sel=vis[0]; }
+    else { var j=i+sens; if(j<0 || j>=vis.length) return; etabli.sel=vis[j]; }
+    majSelection(id);
+    montreNoeud();
+  }
+
+  /* ---------- glisser-déposer ----------
+     Attraper une idée et la lâcher ailleurs : sur le milieu d'une boîte elle
+     y entre (elle en devient la fille), sur le haut ou le bas elle se range
+     avant ou après. Comme tout le reste, ça finit en retouche de lignes — il
+     n'y a rien de plus à enregistrer.
+     glisse : l'état d'un déplacement en cours, null le reste du temps. */
+  var glisse=null;
+
+  function texteBranche(c, chemin){
+    var e=etatPlan(c), i=ligneDuChemin(e.map, chemin);
+    if(i<0) return c.t;
+    var n=CARTES.plan.finBranche(e.L,i)-i-1;
+    return e.L[i].trim()+(n?"  + "+n+" idée"+(n>1?"s":""):"");
+  }
+  function nettoieCible(){
+    var box=document.getElementById("mmCanvas");
+    if(!box) return;
+    box.querySelectorAll(".mm-cible").forEach(function(g){ g.classList.remove("mm-cible"); });
+    var t=document.getElementById("mmTrait");
+    if(t) t.hidden=true;
+  }
+  /* Le trait vit dans le cadre qui défile, comme les outils : coordonnées du
+     contenu, pas de l'écran. */
+  function marqueTrait(g, r, ou){
+    var box=document.getElementById("mmCanvas"), t=document.getElementById("mmTrait");
+    if(!box || !t) return;
+    var cb=box.getBoundingClientRect();
+    t.style.left=(r.left-cb.left+box.scrollLeft)+"px";
+    t.style.width=r.width+"px";
+    t.style.top=((ou==="avant"?r.top-3:r.bottom+1)-cb.top+box.scrollTop)+"px";
+    t.hidden=false;
+  }
+  /* Une carte de 9 000 pixels de haut ne se traverse pas en un geste : approcher
+     un bord fait défiler le cadre pendant qu'on tient l'idée. */
+  function defileBord(ev){
+    var box=document.getElementById("mmCanvas");
+    if(!box) return;
+    var r=box.getBoundingClientRect(), m=56, pas=22;
+    if(ev.clientY<r.top+m) box.scrollTop-=pas;
+    else if(ev.clientY>r.bottom-m) box.scrollTop+=pas;
+    if(ev.clientX<r.left+m) box.scrollLeft-=pas;
+    else if(ev.clientX>r.right-m) box.scrollLeft+=pas;
+  }
+  function viseCible(ev){
+    if(!glisse) return;
+    nettoieCible();
+    glisse.cible=null; glisse.ou=null;
+    var el=document.elementFromPoint(ev.clientX, ev.clientY);
+    var g=(el && el.closest)?el.closest("[data-mm-path]"):null;
+    if(!g) return;
+    var p=g.getAttribute("data-mm-path");
+    /* ni sur elle-même, ni dans sa propre descendance : la carte perdrait sa racine */
+    if(p===glisse.path || p.indexOf(glisse.path+".")===0) return;
+    var r=g.querySelector("rect").getBoundingClientRect();
+    var t=(ev.clientY-r.top)/Math.max(1,r.height);
+    /* le titre n'a ni avant ni après : on ne peut qu'y entrer */
+    var ou=(p==="r")?"dedans":(t<0.28?"avant":(t>0.72?"apres":"dedans"));
+    glisse.cible=p; glisse.ou=ou;
+    if(ou==="dedans") g.classList.add("mm-cible"); else marqueTrait(g, r, ou);
+  }
+  function surGlisse(ev){
+    if(!glisse) return;
+    if(!glisse.actif){
+      if(Math.abs(ev.clientX-glisse.x0)+Math.abs(ev.clientY-glisse.y0)<6) return;
+      glisse.actif=true;
+      var box=document.getElementById("mmCanvas");
+      if(box){
+        box.classList.add("mm-en-glisse");
+        /* La capture n'est prise qu'ici, une fois le glisser engagé : posée dès
+           l'appui, elle détournerait aussi le clic simple vers le cadre et plus
+           aucune idée ne répondrait au clic. */
+        try{ box.setPointerCapture(glisse.pointeur); }catch(e){}
+      }
+      var f=document.createElement("div");
+      f.id="mmFantome"; f.className="mm-fantome";
+      f.textContent=texteBranche(S.cartes[glisse.id], glisse.path);
+      document.body.appendChild(f);
+    }
+    ev.preventDefault();
+    var f=document.getElementById("mmFantome");
+    if(f){ f.style.left=(ev.clientX+14)+"px"; f.style.top=(ev.clientY+14)+"px"; }
+    viseCible(ev);
+    defileBord(ev);
+  }
+  function finGlisse(){
+    document.removeEventListener("pointermove", surGlisse);
+    document.removeEventListener("pointerup", finGlisse);
+    document.removeEventListener("pointercancel", finGlisse);
+    var boxc=document.getElementById("mmCanvas");
+    if(boxc && glisse && glisse.pointeur!=null && boxc.hasPointerCapture && boxc.hasPointerCapture(glisse.pointeur)){
+      try{ boxc.releasePointerCapture(glisse.pointeur); }catch(e){}
+    }
+    var g=glisse; glisse=null;
+    var f=document.getElementById("mmFantome"); if(f) f.parentNode.removeChild(f);
+    var box=document.getElementById("mmCanvas"); if(box) box.classList.remove("mm-en-glisse");
+    nettoieCible();
+    if(!g || !g.actif) return;
+    /* un clic est envoyé après le lâcher : il désignerait l'ancien chemin, qui
+       ne pointe plus sur la même idée une fois le plan retouché */
+    etabli.glisse=true;
+    if(!g.cible){ dessineEtabli(g.id); return; }
+    var c=S.cartes[g.id];
+    if(!c) return;
+    var e=etatPlan(c), P=CARTES.plan;
+    var depart=ligneDuChemin(e.map, g.path);
+    var cible, ou=g.ou;
+    if(g.cible==="r"){
+      /* lâchée sur le titre : l'idée devient une branche de premier niveau,
+         posée en fin de carte */
+      cible=-1;
+      for(var k=e.L.length-1;k>=0;k--){ if(P.niveau(e.L[k])===1){ cible=k; break; } }
+      ou="apres";
+      if(cible<0 || (cible>=depart && cible<P.finBranche(e.L,depart))){ majSelection(g.id); return; }
+    } else {
+      cible=ligneDuChemin(e.map, g.cible);
+    }
+    if(depart<0 || cible<0){ majSelection(g.id); return; }
+    etabli.sel=g.path;
+    retouche(g.id, function(L,i){
+      var r=P.deplace(L, i, cible, ou);
+      return r<0?null:r;
+    });
+  }
+
+  function bindEtabli(id){
+    var box=document.getElementById("mmCanvas");
+    if(!box) return;
+    dessineEtabli(id);
+    /* On n'attrape rien tant que la souris n'a pas bougé : sans ce seuil, un
+       simple clic deviendrait un déplacement d'un pixel. */
+    box.addEventListener("pointerdown", function(ev){
+      if(ev.pointerType==="touch" || ev.button!==0) return;
+      var t=ev.target;
+      if(!t.closest) return;
+      if(t.closest("#mmMenu") || t.closest("[data-mm-ajout]") || t.closest("#mmEdit")) return;
+      var g=t.closest("[data-mm-path]");
+      if(!g) return;
+      /* un geste neuf efface la trace du précédent : sans ça, un glisser
+         terminé hors du cadre ferait avaler le clic suivant */
+      etabli.glisse=false;
+      var p=g.getAttribute("data-mm-path");
+      if(p==="r") return;                      /* le titre ne se déplace pas */
+      glisse={id:id, path:p, x0:ev.clientX, y0:ev.clientY, actif:false, cible:null, ou:null, pointeur:ev.pointerId};
+      document.addEventListener("pointermove", surGlisse);
+      document.addEventListener("pointerup", finGlisse);
+      /* le navigateur peut reprendre le pointeur (sélection de texte, geste
+         système) : on range alors le fantôme au lieu de le laisser collé */
+      document.addEventListener("pointercancel", finGlisse);
+    });
+    box.addEventListener("contextmenu", function(ev){
+      var g=ev.target.closest?ev.target.closest("[data-mm-path]"):null;
+      if(!g || g.getAttribute("data-mm-path")==="r"){ fermeMenu(); return; }
+      ev.preventDefault();
+      if(document.getElementById("mmEdit")) valideEdition(id, null);
+      etabli.sel=g.getAttribute("data-mm-path");
+      majSelection(id);
+      ouvreMenu(id, etabli.sel, ev);
+    });
+    box.addEventListener("scroll", fermeMenu, {passive:true});
+    box.addEventListener("click", function(ev){
+      var t=ev.target;
+      var m=t.closest?t.closest("[data-mm-op]"):null;
+      if(m){ ev.preventDefault(); fermeMenu(); opNoeud(id, m.getAttribute("data-mm-op"), true); return; }
+      fermeMenu();
+      if(etabli.glisse){ etabli.glisse=false; etabli.dernier=null; return; }
+      /* Le « + » au bout d'un étage : la nouvelle idée se range sous la
+         dernière de cet étage, prête à être écrite. */
+      var plus=t.closest?t.closest("[data-mm-ajout]"):null;
+      if(plus){
+        etabli.dernier=null;
+        if(document.getElementById("mmEdit")) valideEdition(id, null);
+        etabli.sel=plus.getAttribute("data-mm-ajout");
+        opNoeud(id, "enfant");
+        return;
+      }
+      var g=t.closest?t.closest("[data-mm-path]"):null;
+      /* Le double-clic est reconnu ici, au point du clic, et non par
+         l'événement du navigateur : le premier clic replie une branche et
+         réorganise la carte, l'idée visée n'est donc plus sous le curseur au
+         second clic. Deux clics au même endroit valent un double-clic. */
+      var d=etabli.dernier;
+      var deuxieme=!!(d && Date.now()-d.at<450 &&
+                      Math.abs(ev.clientX-d.x)<5 && Math.abs(ev.clientY-d.y)<5);
+      etabli.dernier=null;
+      if(document.getElementById("mmEdit")) valideEdition(id, null);
+      var c2=S.cartes[id];
+      if(!c2.plie) c2.plie={};
+      /* Ce test passe avant tout le reste : au second clic, l'idée visée a pu
+         quitter le curseur (la branche s'est ouverte), et il n'y a parfois plus
+         rien sous la souris. C'est le premier clic qui dit sur quoi on est. */
+      if(deuxieme){
+        /* on voulait le texte, pas le pliage : on rend la branche telle qu'elle
+           était avant le premier clic, puis on ouvre l'écriture */
+        if(d.bascule){
+          if(c2.plie[d.path]) delete c2.plie[d.path]; else c2.plie[d.path]=true;
+          save();
+        }
+        etabli.sel=d.path;
+        dessineEtabli(id);
+        ouvreEdition(id);
+        return;
+      }
+      if(!g){ valideEdition(id, null); return; }
+      var chemin=g.getAttribute("data-mm-path");
+      etabli.sel=chemin;
+      /* Une idée qui porte quelque chose s'ouvre et se referme au clic : c'est
+         le geste attendu sur la boîte elle-même, pas sur une pastille à viser. */
+      var bascule=g.classList.contains("mm-parent");
+      if(bascule){
+        if(c2.plie[chemin]) delete c2.plie[chemin]; else c2.plie[chemin]=true;
+        save(); dessineEtabli(id);
+      } else {
+        majSelection(id);
+      }
+      etabli.dernier={x:ev.clientX, y:ev.clientY, at:Date.now(), path:chemin, bascule:bascule};
+      focusCanvas();
+    });
+    /* Le cadre garde le clavier quand on n'écrit pas : on circule dans la carte
+       aux flèches, on déplace une branche avec Alt. */
+    box.addEventListener("keydown", function(ev){
+      if(document.getElementById("mmEdit")) return;
+      if(!etabli.sel && ev.key.indexOf("Arrow")===0){ etabli.sel="r"; dessineEtabli(id); ev.preventDefault(); return; }
+      if(ev.altKey && ev.key.indexOf("Arrow")===0){
+        ev.preventDefault();
+        opNoeud(id, {ArrowUp:"haut", ArrowDown:"bas", ArrowLeft:"gauche", ArrowRight:"droite"}[ev.key]);
+        return;
+      }
+      if(ev.key==="ArrowUp"){ ev.preventDefault(); bougeSelection(id,-1); }
+      else if(ev.key==="ArrowDown"){ ev.preventDefault(); bougeSelection(id,1); }
+      else if(ev.key==="Enter"){ ev.preventDefault(); if(etabli.sel) ouvreEdition(id); }
+      else if(ev.key==="Tab"){ ev.preventDefault(); if(etabli.sel) opNoeud(id,"enfant"); }
+      else if(ev.key==="Delete"||ev.key==="Backspace"){ ev.preventDefault(); opNoeud(id,"sup"); }
+      else if(ev.key==="Escape"){ fermeMenu(); etabli.sel=null; majSelection(id); }
     });
   }
 
@@ -2263,9 +2733,11 @@
       });
     });
     if(ROUTE.view!=="carteEdit") return;
+    etabli.sel=null;
+    bindEtabli(id);
     var titre=document.getElementById("mmTitre");
     if(titre) titre.addEventListener("input",function(){
-      c.t=titre.value.trim()||"Sans titre"; c.at=Date.now(); save(); dessineCarte(id); updateTitle();
+      c.t=titre.value.trim()||"Sans titre"; c.at=Date.now(); save(); dessineEtabli(id); updateTitle();
     });
     var bloc=document.getElementById("mmBloc");
     if(bloc) bloc.addEventListener("change",function(){
@@ -2282,12 +2754,12 @@
     });
     var ta=document.getElementById("mmTxt");
     if(ta){
-      ta.addEventListener("input",function(){ c.txt=ta.value; c.at=Date.now(); save(); dessineCarte(id); });
+      ta.addEventListener("input",function(){ c.txt=ta.value; c.at=Date.now(); save(); dessineEtabli(id); });
       ta.addEventListener("keydown",function(e){
         if(e.key==="Tab"){
           e.preventDefault();
           decale(ta, e.shiftKey?-1:1);
-          c.txt=ta.value; save(); dessineCarte(id);
+          c.txt=ta.value; save(); dessineEtabli(id);
         } else if(e.key==="Enter"){
           /* la nouvelle ligne reprend l'indentation : sans ça, chaque idée
              sœur demande de retaper les espaces */
@@ -2298,7 +2770,7 @@
           e.preventDefault();
           ta.value=v.slice(0,s)+"\n"+creux+v.slice(ta.selectionEnd);
           ta.selectionStart=ta.selectionEnd=s+1+creux.length;
-          c.txt=ta.value; save(); dessineCarte(id);
+          c.txt=ta.value; save(); dessineEtabli(id);
         }
       });
     }
@@ -2307,20 +2779,12 @@
         if(!ta) return;
         ta.focus();
         decale(ta, parseInt(el.getAttribute("data-mm-indent"),10));
-        c.txt=ta.value; save(); dessineCarte(id);
+        c.txt=ta.value; save(); dessineEtabli(id);
       });
     });
     main.querySelectorAll("[data-mm-exemple]").forEach(function(el){
       el.addEventListener("click",function(){
         c.txt=CARTE_EX; c.at=Date.now(); save(); render();
-      });
-    });
-    main.querySelectorAll("[data-mm-vue]").forEach(function(el){
-      el.addEventListener("click",function(){
-        var vue=el.getAttribute("data-mm-vue");
-        var grid=document.getElementById("mmGrid");
-        if(grid) grid.classList.toggle("montre-carte", vue==="carte");
-        main.querySelectorAll("[data-mm-vue]").forEach(function(b){ b.classList.toggle("on", b===el); });
       });
     });
   }
@@ -3127,7 +3591,8 @@
       main.classList.remove("with-qbottom");
       main.innerHTML=vCarteEdit(ROUTE.id);
       positionQbar();
-      dessineCarte(ROUTE.id);
+      /* le dessin de l'établi est posé par bindEtabli : il doit exister avant
+         qu'on y accroche les gestes, pas après */
     } else if(v==="recherche"){
       main.classList.remove("with-qbottom");
       main.innerHTML=vRecherche(ROUTE.id);

@@ -695,10 +695,6 @@
   .mm-onglet{background:none;border:0;border-radius:7px;color:var(--muted);font:600 12.5px var(--font-text);
     padding:var(--space-8) var(--space-16);cursor:pointer;min-height:38px;}
   .mm-onglet.on{background:var(--paper);color:var(--ink);}
-  .mm-grid{display:grid;grid-template-columns:1fr;gap:var(--space-12);}
-  .mm-grid .mm-col-carte{display:none;}
-  .mm-grid.montre-carte .mm-col-plan{display:none;}
-  .mm-grid.montre-carte .mm-col-carte{display:block;}
   .mm-txt-in{width:100%;min-height:46vh;resize:vertical;background:var(--surface);border:1px solid var(--line);
     border-radius:var(--radius-card);color:var(--ink);font:500 13.5px/1.7 var(--font-code);padding:var(--space-16);tab-size:2;}
   .mm-txt-in:focus{outline:none;border-color:var(--signal);}
@@ -770,12 +766,62 @@
   .mm-canvas.mm-ajuste .mm-svg{max-width:100%;height:auto;}
   .mm-canvas-vide{color:var(--muted);font-size:13px;padding:var(--space-24);text-align:center;}
   .mm-aide{color:var(--muted);font-size:11.5px;margin-top:var(--space-8);}
-  @media (min-width:1080px){
-    .mm-onglets{display:none;}
-    .mm-grid{grid-template-columns:340px 1fr;align-items:start;}
-    .mm-grid .mm-col-carte,.mm-grid.montre-carte .mm-col-plan{display:block;}
-    .mm-txt-in{min-height:62vh;}
-  }
+  /* ---------- l'établi : on écrit sur la carte ----------
+     Le cadre ne s'ajuste pas ici : à taille réduite les boîtes deviennent
+     imprécises à viser, et le champ d'écriture ne tomberait plus dessus. */
+  /* pas de sélection de texte dans l'établi : sans ça, tirer sur une boîte
+     surligne le dessin au lieu de l'attraper */
+  .mm-canvas.mm-canvas-etabli{position:relative;height:calc(100dvh - 262px);min-height:340px;
+    max-height:none;padding:var(--space-16);user-select:none;-webkit-user-select:none;}
+  .mm-canvas-etabli .mm-noeud{cursor:grab;}
+  .mm-canvas-etabli:focus{outline:none;border-color:var(--signal);}
+  .mm-aide-etabli{margin:var(--space-8) 0 var(--space-16);line-height:1.8;}
+  .mm-aide-etabli b{color:var(--ink);font:500 11px var(--font-code);}
+  /* le nœud choisi : un liseré, jamais un aplat — la couleur de branche doit
+     rester lisible pendant qu'on écrit dedans */
+  .mm-noeud.mm-sel .mm-boite{stroke:var(--signal);stroke-width:2;}
+  /* le menu du clic droit : dernier recours pour supprimer une branche entière
+     sans la vider idée par idée. Il vit dans le cadre qui défile. */
+  .mm-menu{position:absolute;z-index:5;background:var(--paper);border:1px solid var(--line);
+    border-radius:var(--radius-control);padding:4px;box-shadow:0 10px 26px rgba(0,0,0,.45);}
+  .mm-menu[hidden]{display:none;}
+  .mm-menu-item{display:flex;align-items:center;gap:var(--space-8);width:100%;height:34px;
+    padding:0 var(--space-12) 0 var(--space-8);background:none;border:0;border-radius:7px;
+    color:var(--muted);font:500 12.5px var(--font-text);white-space:nowrap;cursor:pointer;}
+  .mm-menu-item:hover{background:var(--surface);color:var(--ink);}
+  .mm-menu-sup:hover{color:var(--flag);}
+  /* le « + » d'un étage : dessiné dans la carte, il a sa place réservée dans
+     la mise en page et ne recouvre donc jamais une idée */
+  .mm-ajout{cursor:pointer;}
+  .mm-ajout-boite{fill:var(--paper);stroke:var(--line);stroke-width:1;stroke-dasharray:3 3;}
+  .mm-ajout-txt{fill:var(--muted);font-family:var(--font-text);font-size:14px;font-weight:400;text-anchor:middle;}
+  .mm-ajout:hover .mm-ajout-boite{stroke:var(--signal);stroke-dasharray:none;}
+  .mm-ajout:hover .mm-ajout-txt{fill:var(--ink);}
+  .mm-lien-ajout{stroke-dasharray:4 4;}
+  /* le champ prend la place exacte de la boîte : on écrit là où on regarde */
+  .mm-edit-in{position:absolute;z-index:4;background:var(--paper);border:2px solid var(--signal);
+    border-radius:9px;color:var(--ink);font:500 13px var(--font-text);padding:0 9px;outline:none;}
+  .mm-edit-in.mm-edit-racine{font:600 15px var(--font-display);}
+  /* glisser-déposer : l'idée attrapée suit la souris, la cible se déclare */
+  .mm-en-glisse{cursor:grabbing;}
+  .mm-en-glisse .mm-noeud{cursor:grabbing;}
+  .mm-noeud.mm-cible .mm-boite{stroke:var(--signal);stroke-width:2.5;stroke-dasharray:5 3;}
+  .mm-trait{position:absolute;z-index:3;height:3px;border-radius:2px;background:var(--signal);pointer-events:none;}
+  .mm-trait[hidden]{display:none;}
+  /* posé sur la page, pas dans le cadre : il suit la souris, pas le défilement */
+  .mm-fantome{position:fixed;z-index:60;pointer-events:none;background:var(--paper);
+    border:1px solid var(--signal);border-radius:9px;color:var(--ink);
+    font:500 12.5px var(--font-text);padding:var(--space-8) var(--space-12);max-width:280px;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;opacity:.92;
+    box-shadow:0 10px 24px rgba(0,0,0,.45);}
+  /* le plan reste la source, mais il attend replié */
+  .mm-plan{margin-top:var(--space-16);border-top:1px solid var(--line);padding-top:var(--space-12);}
+  .mm-plan summary{color:var(--muted);font:600 11px var(--font-text);letter-spacing:.14em;
+    text-transform:uppercase;cursor:pointer;list-style:none;}
+  .mm-plan summary::-webkit-details-marker{display:none;}
+  .mm-plan summary::before{content:"\25B8  ";}
+  .mm-plan[open] summary::before{content:"\25BE  ";}
+  .mm-plan .mm-txt-in{margin-top:var(--space-12);min-height:30vh;}
   /* le dessin : la couleur suit la branche de premier niveau */
   .mm-svg{display:block;}
   .mm-lien{fill:none;stroke:var(--line);stroke-width:1.6;}
