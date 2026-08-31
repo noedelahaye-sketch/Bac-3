@@ -2047,7 +2047,12 @@
      Les calques restent hors du zoom : leur texte ne rapetisse donc pas avec
      la carte, et leurs coordonnées sont celles du dessin multipliées par
      l'échelle — VUE.k, la seule variable à connaître. */
-  var VUE={k:1, W:0, H:0};
+  /* VUE.auto : le zoom suit ce qui est affiché. Déplier une branche, ouvrir le
+     cours, passer en plein écran — à chaque fois la carte se remet à la taille
+     du cadre. Zoomer soi-même reprend la main (auto s'éteint) ; « Ajuster » la
+     rend. On ne grossit jamais au-delà de 100 % : une petite carte n'a pas
+     besoin d'être agrandie, elle est déjà entière. */
+  var VUE={k:1, W:0, H:0, auto:true};
   var ZOOM_MIN=0.1, ZOOM_MAX=3;
 
   function zoomBarre(){
@@ -2075,6 +2080,7 @@
     VUE.W=parseFloat(svg && svg.getAttribute("width"))||1;
     VUE.H=parseFloat(svg && svg.getAttribute("height"))||1;
     appliqueZoom();
+    zoomAuto();
   }
   function appliqueZoom(){
     var surface=document.getElementById("mmSurface"), zone=document.getElementById("mmZoom");
@@ -2086,6 +2092,27 @@
     surface.style.height=Math.round(VUE.H*VUE.k)+"px";
     var val=document.getElementById("mmZoomVal");
     if(val) val.textContent=Math.round(VUE.k*100)+" %";
+    var aj=document.querySelector('[data-mm-zoom="ajuste"]');
+    if(aj) aj.classList.toggle("on", VUE.auto);
+  }
+  /* L'échelle qui fait tenir le dessin dans le cadre, jamais au-delà de 100 %. */
+  function zoomQuiTient(){
+    var box=document.getElementById("mmCanvas");
+    if(!box || !VUE.W) return null;
+    var r=box.getBoundingClientRect(), m=32;
+    return Math.min(ZOOM_MAX, Math.max(ZOOM_MIN,
+      Math.min(1, (r.width-m)/VUE.W, (r.height-m)/VUE.H)));
+  }
+  /* Appelé après chaque redessin et à chaque changement de cadre. Le seuil de
+     2 % évite de sautiller pour un mot tapé qui élargit une boîte de trois
+     pixels. */
+  function zoomAuto(){
+    if(!VUE.auto) return;
+    var k=zoomQuiTient();
+    if(k===null || Math.abs(k-VUE.k)<0.02) return;
+    VUE.k=k;
+    appliqueZoom();
+    centreVue();
   }
   /* Zoomer en gardant sous les yeux le point visé : sans cela, la carte fuit
      dès qu'on s'en approche. ax/ay sont en pixels du cadre. */
@@ -2112,11 +2139,10 @@
     box.scrollTop=dy*VUE.k+d2y-ay;
   }
   function ajusteZoom(){
-    var box=document.getElementById("mmCanvas");
-    if(!box || !VUE.W) return;
-    var r=box.getBoundingClientRect(), m=32;
-    VUE.k=Math.min(ZOOM_MAX, Math.max(ZOOM_MIN,
-      Math.min((r.width-m)/VUE.W, (r.height-m)/VUE.H)));
+    var k=zoomQuiTient();
+    if(k===null) return;
+    VUE.auto=true;
+    VUE.k=k;
     appliqueZoom();
     centreVue();
   }
@@ -2141,8 +2167,9 @@
       el.addEventListener("click",function(ev){
         ev.preventDefault();
         var q=el.getAttribute("data-mm-zoom");
-        if(q==="ajuste") ajusteZoom();
-        else if(q==="cent") zoomeVers(1);
+        if(q==="ajuste"){ ajusteZoom(); return; }
+        VUE.auto=false;
+        if(q==="cent") zoomeVers(1);
         else zoomeVers(VUE.k*(q==="plus"?1.25:0.8));
       });
     });
@@ -2151,6 +2178,7 @@
     box.addEventListener("wheel", function(ev){
       if(!ev.ctrlKey && !ev.metaKey) return;
       ev.preventDefault();
+      VUE.auto=false;
       var r=box.getBoundingClientRect();
       zoomeVers(VUE.k*(ev.deltaY<0?1.12:0.89), ev.clientX-r.left, ev.clientY-r.top);
     }, {passive:false});
@@ -2180,9 +2208,9 @@
     });
     box.addEventListener("keydown", function(ev){
       if(document.getElementById("mmEdit")) return;
-      if(ev.key==="+"||ev.key==="="){ ev.preventDefault(); zoomeVers(VUE.k*1.25); }
-      else if(ev.key==="-"){ ev.preventDefault(); zoomeVers(VUE.k*0.8); }
-      else if(ev.key==="0"){ ev.preventDefault(); zoomeVers(1); }
+      if(ev.key==="+"||ev.key==="="){ ev.preventDefault(); VUE.auto=false; zoomeVers(VUE.k*1.25); }
+      else if(ev.key==="-"){ ev.preventDefault(); VUE.auto=false; zoomeVers(VUE.k*0.8); }
+      else if(ev.key==="0"){ ev.preventDefault(); VUE.auto=false; zoomeVers(1); }
     });
   }
 
@@ -2250,7 +2278,10 @@
     /* On ne touche pas au zoom : l'échelle de travail est un choix, et la
        remettre à « Ajuster » réduirait les boîtes au point qu'on ne pourrait
        plus les attraper. Le cadre change de taille, le dessin non. */
-    setTimeout(function(){ var b=document.getElementById("mmCanvas"); if(b) b.focus(); }, 60);
+    setTimeout(function(){
+      zoomAuto();
+      var b=document.getElementById("mmCanvas"); if(b) b.focus();
+    }, 60);
   }
   function bindPleinEcran(){
     main.querySelectorAll("[data-mm-plein]").forEach(function(el){
@@ -2275,9 +2306,9 @@
       el.addEventListener("click", function(){
         etat.ouvert=(el.getAttribute("data-mm-cours")==="1") ? !etat.ouvert : false;
         duoEcrit(etat); duoApplique(etat);
-        /* le zoom reste celui qu'on avait : la carte est simplement plus à
-           l'étroit, elle défile — la remettre à « Ajuster » ferait des boîtes
-           minuscules, plus attrapables à la souris */
+        /* le cadre a changé de largeur : la carte s'y remet, si le zoom
+           automatique est encore en service */
+        zoomAuto();
       });
     });
 
@@ -2303,6 +2334,7 @@
         document.removeEventListener("pointercancel", fin);
         duo.classList.remove("mm-duo-tire");
         duoEcrit(etat);
+        zoomAuto();
       }
       document.addEventListener("pointermove", bouge);
       document.addEventListener("pointerup", fin);
@@ -3835,6 +3867,7 @@
     }
   }
   window.addEventListener("resize",function(){
+    if(ROUTE.view==="carte"||ROUTE.view==="carteEdit"||ROUTE.view==="carteModele") zoomAuto();
     if(ROUTE.view==="question"||ROUTE.view==="bloc") positionQbar();
     if(ROUTE.view==="question") layoutQuestionCols();
     if(ROUTE.view==="coursResume"){
