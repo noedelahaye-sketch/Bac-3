@@ -40,7 +40,6 @@
     --radius-card:16px; --radius-control:10px; --radius-pill:999px;
     --space-4:4px; --space-8:8px; --space-12:12px; --space-16:16px;
     --space-24:24px; --space-32:32px; --space-48:48px;
-    --content-width:1240px;
     --font-display:"Clash Display",-apple-system,sans-serif;
     --font-text:"Instrument Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
     --font-code:"Geist Mono",ui-monospace,Menlo,monospace;
@@ -55,7 +54,7 @@
   body{margin:0;background:var(--paper);}
   .app{
     font-family:var(--font-text); font-size:15px;
-    color:var(--ink); max-width:var(--content-width); margin:0 auto; line-height:1.55; -webkit-font-smoothing:antialiased;
+    color:var(--ink); margin:0 auto; line-height:1.55; -webkit-font-smoothing:antialiased;
   }
   h1,h2{font-family:var(--font-display);font-weight:600;letter-spacing:-0.02em;margin:0;}
   .num,.bignum{font-family:var(--font-display);font-weight:700;letter-spacing:-0.02em;margin:0;line-height:1;}
@@ -74,7 +73,7 @@
   .cadence-compact .seg.relu{background:var(--ink);}
   .cadence-compact .seg.mark{position:relative;}
   .cadence-compact .seg.mark::after{content:"";position:absolute;left:-1px;top:0;bottom:0;width:2px;background:var(--flag);}
-  .navin{max-width:var(--content-width);margin:0 auto;display:flex;gap:2px;overflow-x:auto;padding:var(--space-8) var(--space-12);scrollbar-width:none;}
+  .navin{margin:0 auto;display:flex;gap:2px;overflow-x:auto;padding:var(--space-8) var(--space-12);scrollbar-width:none;}
   .navin::-webkit-scrollbar{display:none;}
   .navsearch{flex:0 0 auto;margin-left:auto;display:flex;align-items:center;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius-pill);background:var(--surface);}
   .navsearch:focus-within{border-color:var(--signal);}
@@ -92,10 +91,13 @@
   .navb i{font-style:normal;font-family:var(--font-code);font-size:10.5px;font-weight:500;background:var(--signal);color:var(--surface);border-radius:var(--radius-pill);padding:1px 6px;}
   .navb.on i{background:var(--surface);color:var(--ink);}
   main{max-width:68ch;margin:0 auto;padding:var(--space-16) 16px var(--space-48);}
-  main.wide{max-width:var(--content-width);}
+  /* pleine largeur sur ordinateur : ce sont les blocs de texte qui gardent une
+     largeur de lecture (.measure, .resume p), pas la page entière */
+  main.wide{max-width:none;}
   .measure{max-width:68ch;}
   @media (min-width:720px){ main{padding-left:20px;padding-right:20px;} .navin{padding-left:20px;padding-right:20px;} }
   @media (min-width:1080px){ main{padding-left:32px;padding-right:32px;} .navin{padding-left:32px;padding-right:32px;} }
+  @media (min-width:1600px){ main{padding-left:48px;padding-right:48px;} .navin{padding-left:48px;padding-right:48px;} }
 
   .cadence{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-card);padding:var(--space-16);margin-bottom:var(--space-16);}
   .verdict{font-family:var(--font-display);font-weight:600;font-size:19px;letter-spacing:-0.02em;line-height:1.2;}
@@ -229,7 +231,9 @@
   .panel.open .pbody,.panel.open .qlist{display:block;}
   .qlist{display:none;border-top:1px solid var(--line);}
 
-  .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-24);}
+  /* auto-fit : sur un grand écran la rangée porte plus de tuiles, et les
+     dernières s'étirent pour finir la ligne au lieu de laisser un vide */
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-24);}
   @media (max-width:1080px){ .tiles{grid-template-columns:repeat(2,1fr);} }
   @media (max-width:720px){ .tiles{grid-template-columns:1fr;} }
   .tile{display:flex;flex-direction:column;align-items:flex-start;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-card);padding:var(--space-16);cursor:pointer;font-family:inherit;width:100%;}
@@ -322,7 +326,9 @@
   .qtitle-row{display:flex;align-items:baseline;justify-content:center;gap:var(--space-12);margin-top:var(--space-16);}
   .qtitle-row .qhead-title{margin:0;}
 
-  .q-cols{display:grid;grid-template-columns:1fr;gap:var(--space-24);margin-top:var(--space-8);}
+  /* la page Question reste une page de lecture et de rédaction : sa largeur
+     de travail est bornée même quand la fenêtre est bien plus large */
+  .q-cols{display:grid;grid-template-columns:1fr;gap:var(--space-24);margin-top:var(--space-8);max-width:1240px;}
   .q-left{min-width:0;}
   .q-right{min-width:0;}
   .q-right .lab:first-child{margin-top:var(--space-32);}
@@ -376,7 +382,7 @@
 
   .qbottom{position:fixed;left:0;right:0;bottom:0;z-index:15;background:var(--paper);border-top:1px solid var(--line);}
   .qbottom-inner{max-width:68ch;margin:0 auto;padding:var(--space-8) 16px;}
-  .qbottom-inner.wide{max-width:var(--content-width);}
+  .qbottom-inner.wide{max-width:none;}
   @media (min-width:720px){ .qbottom-inner{padding-left:20px;padding-right:20px;} }
   @media (min-width:1080px){ .qbottom-inner{padding-left:32px;padding-right:32px;} }
   .qseq{display:flex;justify-content:space-between;margin-top:var(--space-8);}
@@ -446,7 +452,9 @@
   .rc-app.plain{background:none;border-radius:0;padding:0;margin-top:0;}
   .rc-src{margin:var(--space-8) 0 0;padding-left:18px;font-size:11.5px;color:var(--muted);}
   .rc-src li{margin-bottom:var(--space-4);}
-  .resume{font-size:13.5px;line-height:1.6;}
+  /* le résumé garde une largeur de travail : le texte est borné à 76ch et la
+     colonne de marge doit rester à côté de lui, pas à l'autre bout de l'écran */
+  .resume{font-size:13.5px;line-height:1.6;max-width:1180px;}
   .resume p{margin:0 0 var(--space-12);} .resume p:last-child{margin-bottom:0;}
   .resume b{font-weight:600;} .resume i{font-style:italic;color:color-mix(in srgb, var(--ink) 68%, var(--muted));}
   /* largeur de lecture bornée sur le texte courant, pas sur tableaux/tuiles */
@@ -739,16 +747,8 @@
     border:1px solid var(--line);border-radius:var(--radius-control);color:var(--muted);
     font:600 12.5px var(--font-text);padding:0 var(--space-12);min-height:40px;cursor:pointer;}
   .mmv-edit:hover{border-color:var(--signal);color:var(--ink);}
-  /* hauteur définie : sans elle, le max-height:100% du dessin ne s'applique
-     pas et une grande carte se fait rogner au lieu de se réduire */
   .mm-canvas.mmv-canvas{height:calc(100dvh - 190px);min-height:280px;
     display:flex;padding:var(--space-16);}
-  /* centré par margin:auto, pas par align-items : sinon le haut d'une carte
-     plus grande que le cadre devient inatteignable au défilement */
-  .mmv-canvas .mm-svg{margin:auto;}
-  /* les deux contraintes ensemble : le dessin se réduit en gardant ses
-     proportions, sans jamais être rogné */
-  .mm-canvas.mmv-canvas.mm-ajuste .mm-svg{max-height:100%;width:auto;height:auto;}
   @media (max-width:640px){
     .mmv-titre{order:-1;flex-basis:100%;font-size:17px;}
     .mmv-retour{order:1;}
@@ -756,14 +756,27 @@
     .mmv-edit{order:3;margin-left:auto;}
     .mm-canvas.mmv-canvas{height:calc(100dvh - 240px);}
   }
-  .mm-zoom{display:flex;gap:var(--space-4);background:var(--surface);border:1px solid var(--line);
+  .mm-zoom{display:flex;align-items:center;gap:2px;background:var(--surface);border:1px solid var(--line);
     border-radius:var(--radius-control);padding:3px;margin-bottom:var(--space-8);width:max-content;}
   .mm-zoom .mm-onglet{padding:var(--space-4) var(--space-12);min-height:32px;font-size:11.5px;}
+  .mm-zb{width:30px;height:30px;display:flex;align-items:center;justify-content:center;background:none;
+    border:0;border-radius:7px;color:var(--muted);font:400 17px var(--font-text);line-height:1;cursor:pointer;}
+  .mm-zb:hover{background:var(--paper);color:var(--ink);}
+  .mm-zval{min-width:56px;height:30px;background:none;border:0;border-radius:7px;color:var(--ink);
+    font:500 12px var(--font-code);cursor:pointer;}
+  .mm-zval:hover{background:var(--paper);}
+  .mm-zajuste{margin-left:2px;}
   .mm-canvas{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-card);
     padding:var(--space-8);overflow:auto;max-height:72vh;}
-  /* ajusté : le dessin se met à la largeur disponible, jamais au-delà de sa
-     taille naturelle — sinon une petite carte serait grossie pour rien */
-  .mm-canvas.mm-ajuste .mm-svg{max-width:100%;height:auto;}
+  /* ---------- les trois couches du cadre ----------
+     .mm-surface porte la taille du dessin zoomé (c'est elle qui défile) et sert
+     d'origine aux calques ; .mm-plan-zoom porte l'échelle. Le dessin plus petit
+     que le cadre se centre par margin:auto — align-items rendrait le haut d'une
+     grande carte inatteignable au défilement. */
+  .mm-surface{position:relative;flex:0 0 auto;margin:auto;}
+  .mm-plan-zoom{transform-origin:0 0;}
+  .mm-canvas.mm-en-main{cursor:grabbing;}
+  .mm-canvas.mm-en-main .mm-noeud,.mm-canvas.mm-en-main .mm-ajout{cursor:grabbing;}
   .mm-canvas-vide{color:var(--muted);font-size:13px;padding:var(--space-24);text-align:center;}
   .mm-aide{color:var(--muted);font-size:11.5px;margin-top:var(--space-8);}
   /* ---------- l'établi : on écrit sur la carte ----------

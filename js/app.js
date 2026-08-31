@@ -2031,6 +2031,148 @@
     return h;
   }
 
+  /* ---------- ZOOM ET DÉPLACEMENT ----------
+     Une carte de 200 idées ne tient sur aucun écran : il faut pouvoir s'en
+     approcher et la parcourir. Trois couches empilées dans le cadre :
+
+       #mmCanvas   le cadre qui défile
+         #mmSurface   aux dimensions du dessin une fois zoomé (donc ce qui
+                      défile), et l'origine des calques posés par-dessus
+           #mmZoom      aux dimensions réelles du dessin, mis à l'échelle
+             <svg>
+           #mmMenu, #mmTrait, #mmEdit   calques, en pixels du dessin zoomé
+
+     Les calques restent hors du zoom : leur texte ne rapetisse donc pas avec
+     la carte, et leurs coordonnées sont celles du dessin multipliées par
+     l'échelle — VUE.k, la seule variable à connaître. */
+  var VUE={k:1, W:0, H:0};
+  var ZOOM_MIN=0.1, ZOOM_MAX=3;
+
+  function zoomBarre(){
+    return '<div class="mm-zoom mmv-zoom">'+
+      '<button class="mm-zb" data-mm-zoom="moins" title="Dézoomer (touche −)">&minus;</button>'+
+      '<button class="mm-zval" id="mmZoomVal" data-mm-zoom="cent" title="Revenir à 100 % (touche 0)">100 %</button>'+
+      '<button class="mm-zb" data-mm-zoom="plus" title="Zoomer (touche +)">+</button>'+
+      '<button class="mm-onglet mm-zajuste" data-mm-zoom="ajuste" title="Tout voir">Ajuster</button>'+
+      '</div>';
+  }
+  /* etabli : la carte reçoit en plus les calques de l'établi. */
+  function cadreHtml(etabli){
+    return '<div class="mm-surface" id="mmSurface"><div class="mm-plan-zoom" id="mmZoom"></div>'+
+      (etabli?'<div class="mm-menu" id="mmMenu" hidden></div><div class="mm-trait" id="mmTrait" hidden></div>':'')+
+      '</div>';
+  }
+  /* Remplace le seul SVG, garde les calques en place. */
+  function poseDessin(svgHtml){
+    var zone=document.getElementById("mmZoom");
+    if(!zone) return;
+    var vieux=zone.querySelector("svg");
+    if(vieux) zone.removeChild(vieux);
+    zone.insertAdjacentHTML("afterbegin", svgHtml);
+    var svg=zone.querySelector("svg");
+    VUE.W=parseFloat(svg && svg.getAttribute("width"))||1;
+    VUE.H=parseFloat(svg && svg.getAttribute("height"))||1;
+    appliqueZoom();
+  }
+  function appliqueZoom(){
+    var surface=document.getElementById("mmSurface"), zone=document.getElementById("mmZoom");
+    if(!surface || !zone) return;
+    zone.style.width=VUE.W+"px";
+    zone.style.height=VUE.H+"px";
+    zone.style.transform="scale("+VUE.k+")";
+    surface.style.width=Math.round(VUE.W*VUE.k)+"px";
+    surface.style.height=Math.round(VUE.H*VUE.k)+"px";
+    var val=document.getElementById("mmZoomVal");
+    if(val) val.textContent=Math.round(VUE.k*100)+" %";
+  }
+  /* Zoomer en gardant sous les yeux le point visé : sans cela, la carte fuit
+     dès qu'on s'en approche. ax/ay sont en pixels du cadre. */
+  function zoomeVers(k, ax, ay){
+    var box=document.getElementById("mmCanvas");
+    if(!box) return;
+    k=Math.min(ZOOM_MAX, Math.max(ZOOM_MIN, k));
+    var r=box.getBoundingClientRect();
+    if(ax===undefined){ ax=r.width/2; ay=r.height/2; }
+    /* le point du dessin actuellement sous (ax, ay) */
+    var surface=document.getElementById("mmSurface");
+    var decalage=surface?(surface.getBoundingClientRect().left-r.left+box.scrollLeft):0;
+    var decalageY=surface?(surface.getBoundingClientRect().top-r.top+box.scrollTop):0;
+    var dx=(box.scrollLeft+ax-decalage)/VUE.k, dy=(box.scrollTop+ay-decalageY)/VUE.k;
+    VUE.k=k;
+    appliqueZoom();
+    /* la surface peut être centrée quand elle est plus petite que le cadre :
+       on relit son décalage après coup plutôt que de le supposer nul */
+    var r2=box.getBoundingClientRect();
+    var s2=document.getElementById("mmSurface");
+    var d2=s2?(s2.getBoundingClientRect().left-r2.left+box.scrollLeft):0;
+    var d2y=s2?(s2.getBoundingClientRect().top-r2.top+box.scrollTop):0;
+    box.scrollLeft=dx*VUE.k+d2-ax;
+    box.scrollTop=dy*VUE.k+d2y-ay;
+  }
+  function ajusteZoom(){
+    var box=document.getElementById("mmCanvas");
+    if(!box || !VUE.W) return;
+    var r=box.getBoundingClientRect(), m=32;
+    VUE.k=Math.min(ZOOM_MAX, Math.max(ZOOM_MIN,
+      Math.min((r.width-m)/VUE.W, (r.height-m)/VUE.H)));
+    appliqueZoom();
+    box.scrollLeft=0; box.scrollTop=0;
+  }
+  /* Les gestes de navigation, communs aux trois vues : molette pour zoomer,
+     fond tiré pour se déplacer, boutons et clavier. fondSeul : dans l'établi
+     on ne tire que le fond, les boîtes servent déjà au glisser-déposer. */
+  function bindNavigationCarte(fondSeul){
+    var box=document.getElementById("mmCanvas");
+    if(!box) return;
+    main.querySelectorAll("[data-mm-zoom]").forEach(function(el){
+      el.addEventListener("click",function(ev){
+        ev.preventDefault();
+        var q=el.getAttribute("data-mm-zoom");
+        if(q==="ajuste") ajusteZoom();
+        else if(q==="cent") zoomeVers(1);
+        else zoomeVers(VUE.k*(q==="plus"?1.25:0.8));
+      });
+    });
+    /* Ctrl/⌘ + molette et pincement du trackpad zooment ; la molette seule
+       défile, comme partout ailleurs. */
+    box.addEventListener("wheel", function(ev){
+      if(!ev.ctrlKey && !ev.metaKey) return;
+      ev.preventDefault();
+      var r=box.getBoundingClientRect();
+      zoomeVers(VUE.k*(ev.deltaY<0?1.12:0.89), ev.clientX-r.left, ev.clientY-r.top);
+    }, {passive:false});
+    box.addEventListener("pointerdown", function(ev){
+      if(ev.pointerType==="touch") return;
+      var t=ev.target;
+      var surUnNoeud=t.closest && (t.closest("[data-mm-path]")||t.closest("[data-mm-ajout]")||t.closest("#mmMenu")||t.closest("#mmEdit"));
+      var milieu=(ev.button===1);
+      if(!milieu && (ev.button!==0 || (fondSeul && surUnNoeud))) return;
+      var x0=ev.clientX, y0=ev.clientY, sx=box.scrollLeft, sy=box.scrollTop, parti=false;
+      function bouge(e){
+        var dx=e.clientX-x0, dy=e.clientY-y0;
+        if(!parti && Math.abs(dx)+Math.abs(dy)<6) return;
+        parti=true;
+        box.classList.add("mm-en-main");
+        box.scrollLeft=sx-dx; box.scrollTop=sy-dy;
+      }
+      function fin(){
+        document.removeEventListener("pointermove", bouge);
+        document.removeEventListener("pointerup", fin);
+        box.classList.remove("mm-en-main");
+        /* un déplacement n'est pas un clic : on avale celui qui suit */
+        if(parti) etabli.glisse=true;
+      }
+      document.addEventListener("pointermove", bouge);
+      document.addEventListener("pointerup", fin);
+    });
+    box.addEventListener("keydown", function(ev){
+      if(document.getElementById("mmEdit")) return;
+      if(ev.key==="+"||ev.key==="="){ ev.preventDefault(); zoomeVers(VUE.k*1.25); }
+      else if(ev.key==="-"){ ev.preventDefault(); zoomeVers(VUE.k*0.8); }
+      else if(ev.key==="0"){ ev.preventDefault(); zoomeVers(1); }
+    });
+  }
+
   /* Aperçu d'un modèle : la même page que la carte, mais rien n'est à toi.
      On la parcourt, on la replie, puis on décide de l'ajouter ou non. Le
      pliage n'est gardé que le temps de la visite — rien n'est enregistré. */
@@ -2043,14 +2185,13 @@
     var h='<div class="mmv-bar">';
     h+='<button class="mmv-retour" data-crumb="cartesModeles" title="Tous les modèles">'+ICON_RETOUR+'</button>';
     h+='<span class="mmv-titre">'+esc(m.titre)+'<span class="mmv-etiq">modèle</span></span>';
-    h+='<div class="mm-zoom mmv-zoom"><button class="mm-onglet on" data-mm-zoom="ajuste">Ajuster</button>'+
-       '<button class="mm-onglet" data-mm-zoom="plein">100 %</button></div>';
+    h+=zoomBarre();
     if(r) h+='<button class="mmv-edit mmv-cours" data-go-resume="'+m.resume+'" title="'+esc(r.titre)+'">'+ICON_BOOK+'<span>Cours</span></button>';
     h+=deja
       ? '<button class="mmv-edit" data-go-carte="'+deja+'">'+ICON_BOOK+'<span>Voir ma carte</span></button>'
       : '<button class="jadd mmv-ajout" data-mm-modele="'+m.id+'">Ajouter à mes cartes</button>';
     h+='</div>';
-    h+='<div class="mm-canvas mmv-canvas mm-ajuste" id="mmCanvas"></div>';
+    h+='<div class="mm-canvas mmv-canvas" id="mmCanvas" tabindex="0">'+cadreHtml(false)+'</div>';
     return h;
   }
 
@@ -2059,9 +2200,11 @@
     var box=document.getElementById("mmCanvas");
     if(!m || !box || typeof CARTES==="undefined") return;
     if(!apercuPlie[mid]) apercuPlie[mid]={};
-    box.innerHTML=CARTES.svg(CARTES.parse(m.plan, m.titre), apercuPlie[mid]);
+    poseDessin(CARTES.svg(CARTES.parse(m.plan, m.titre), apercuPlie[mid]));
     box.querySelectorAll("[data-mm-path]").forEach(function(g){
       g.addEventListener("click",function(){
+        /* un déplacement de la carte n'est pas un clic sur une idée */
+        if(etabli.glisse){ etabli.glisse=false; return; }
         var p=g.getAttribute("data-mm-path");
         if(apercuPlie[mid][p]) delete apercuPlie[mid][p]; else apercuPlie[mid][p]=true;
         dessineModele(mid);
@@ -2077,14 +2220,13 @@
     var h='<div class="mmv-bar">';
     h+='<button class="mmv-retour" data-crumb="cartes" title="Toutes les cartes">'+ICON_RETOUR+'</button>';
     h+='<span class="mmv-titre">'+esc(c.t)+'</span>';
-    h+='<div class="mm-zoom mmv-zoom"><button class="mm-onglet on" data-mm-zoom="ajuste">Ajuster</button>'+
-       '<button class="mm-onglet" data-mm-zoom="plein">100 %</button></div>';
+    h+=zoomBarre();
     var r=resumeDeLaCarte(c);
     if(r) h+='<button class="mmv-edit mmv-cours" data-go-resume="'+r.id+'" title="'+esc(r.titre)+'">'+ICON_BOOK+'<span>Cours</span></button>';
     h+='<button class="mmv-edit" data-mm-edit="'+id+'">'+ICON_PENCIL+'<span>Modifier</span></button>';
     h+='<button class="mmv-edit mmv-del" data-mm-del="'+id+'" title="Supprimer la carte">'+ICON_TRASH+'</button>';
     h+='</div>';
-    h+='<div class="mm-canvas mmv-canvas mm-ajuste" id="mmCanvas"></div>';
+    h+='<div class="mm-canvas mmv-canvas" id="mmCanvas" tabindex="0">'+cadreHtml(false)+'</div>';
     return h;
   }
 
@@ -2115,15 +2257,14 @@
     /* la sauvegarde est automatique ; ce bouton force l'envoi tout de suite,
        pour qui veut la certitude avant de changer d'appareil */
     h+='<button class="mm-sup mm-envoi" data-mm-flush="1" title="Envoyer les modifications maintenant">'+ICON_NUAGE+'</button>';
+    h+=zoomBarre();
     h+='<button class="jadd mm-fini" data-mm-voir="'+id+'">Voir la carte</button>';
     h+='</div>';
     /* On travaille sur la carte elle-même : un clic ouvre une idée, les boutons
        du nœud posent la suivante. Pas d'ajustement automatique ici — le dessin
        reste à sa taille et le cadre défile, sinon les boîtes rapetissent au fur
        et à mesure qu'on écrit et on ne vise plus rien. */
-    h+='<div class="mm-canvas mm-canvas-etabli" id="mmCanvas" tabindex="0">'+
-       '<div class="mm-menu" id="mmMenu" hidden></div>'+
-       '<div class="mm-trait" id="mmTrait" hidden></div></div>';
+    h+='<div class="mm-canvas mm-canvas-etabli" id="mmCanvas" tabindex="0">'+cadreHtml(true)+'</div>';
     h+='<div class="mm-aide mm-aide-etabli">Le <b>+</b> au bout d\'un étage y ajoute une idée. '+
        'Un clic ouvre ou referme une idée, un double-clic l\'écrit. '+
        '<b>Entrée</b> : idée sœur &middot; <b>Tab</b> : idée fille &middot; '+
@@ -2150,12 +2291,14 @@
     if(!c || !box || typeof CARTES==="undefined") return;
     var arbre=CARTES.parse(c.txt, c.t);
     if(!arbre.k.length){
-      box.innerHTML='<div class="mm-canvas-vide">La carte apparaît ici dès la première ligne du plan.</div>';
+      var zone=document.getElementById("mmZoom");
+      if(zone) zone.innerHTML='<div class="mm-canvas-vide">La carte apparaît ici dès la première ligne du plan.</div>';
       return;
     }
-    box.innerHTML=CARTES.svg(arbre, c.plie||{});
+    poseDessin(CARTES.svg(arbre, c.plie||{}));
     box.querySelectorAll("[data-mm-path]").forEach(function(g){
       g.addEventListener("click",function(){
+        if(etabli.glisse){ etabli.glisse=false; return; }
         var p=g.getAttribute("data-mm-path");
         if(!c.plie) c.plie={};
         if(c.plie[p]) delete c.plie[p]; else c.plie[p]=true;
@@ -2222,9 +2365,7 @@
     var c=S.cartes[id];
     var box=document.getElementById("mmCanvas");
     if(!c || !box || typeof CARTES==="undefined") return;
-    var v=box.querySelector("svg"); if(v) v.parentNode.removeChild(v);
-    box.insertAdjacentHTML("afterbegin", CARTES.svg(CARTES.parse(c.txt, c.t), c.plie||{},
-                                                    {selection:etabli.sel, etabli:true}));
+    poseDessin(CARTES.svg(CARTES.parse(c.txt, c.t), c.plie||{}, {selection:etabli.sel, etabli:true}));
     fermeMenu();
   }
 
@@ -2265,6 +2406,14 @@
   function demandeSuppression(n){
     return "Supprimer cette idée et "+(n>1?("les "+n+" qu'elle contient"):"celle qu'elle contient")+" ?";
   }
+  /* La boîte d'un nœud en coordonnées du dessin (attributs du <rect>, donc
+     insensibles au zoom) ; les calques les multiplient par VUE.k. */
+  function boiteNoeud(g){
+    var r=g && g.querySelector("rect");
+    if(!r) return null;
+    return {x:parseFloat(r.getAttribute("x")), y:parseFloat(r.getAttribute("y")),
+            w:parseFloat(r.getAttribute("width")), h:parseFloat(r.getAttribute("height"))};
+  }
   function fermeMenu(){
     var m=document.getElementById("mmMenu");
     if(m){ m.hidden=true; m.innerHTML=""; }
@@ -2279,9 +2428,10 @@
     m.innerHTML='<button class="mm-menu-item mm-menu-sup" data-mm-op="sup">'+ICON_TRASH+
                 '<span>Supprimer'+(n?' &middot; '+n+' idée'+(n>1?'s':'')+' dedans':'')+'</span></button>';
     m.hidden=false;
-    var cb=box.getBoundingClientRect();
-    m.style.left=(ev.clientX-cb.left+box.scrollLeft)+"px";
-    m.style.top=(ev.clientY-cb.top+box.scrollTop)+"px";
+    var surface=document.getElementById("mmSurface");
+    var sb=(surface||box).getBoundingClientRect();
+    m.style.left=(ev.clientX-sb.left)+"px";
+    m.style.top=(ev.clientY-sb.top)+"px";
   }
 
   /* Écrire dans la boîte : un champ posé exactement dessus. On ne redessine
@@ -2293,15 +2443,19 @@
     var g=box.querySelector('[data-mm-path="'+etabli.sel+'"]');
     if(!g) return;
     var e=etatPlan(c), i=ligneDuChemin(e.map, etabli.sel);
-    var rb=g.querySelector("rect").getBoundingClientRect(), cb=box.getBoundingClientRect();
+    var b=boiteNoeud(g);
+    if(!b) return;
     var inp=document.createElement("input");
     inp.type="text"; inp.id="mmEdit"; inp.className="mm-edit-in"+(i<0?" mm-edit-racine":"");
     inp.value=(i<0)?c.t:e.L[i].trim();
-    inp.style.left=(rb.left-cb.left+box.scrollLeft)+"px";
-    inp.style.top=(rb.top-cb.top+box.scrollTop)+"px";
-    inp.style.width=Math.max(rb.width, 190)+"px";
-    inp.style.height=rb.height+"px";
-    box.appendChild(inp);
+    inp.style.left=(b.x*VUE.k)+"px";
+    inp.style.top=(b.y*VUE.k)+"px";
+    inp.style.width=Math.max(b.w*VUE.k, 190)+"px";
+    inp.style.height=(b.h*VUE.k)+"px";
+    /* le champ n'est pas dans la couche zoomée : sa police suit l'échelle à
+       la main, sinon on écrirait en corps 13 sur une boîte réduite de moitié */
+    inp.style.fontSize=Math.max(10, (i<0?15:13)*VUE.k)+"px";
+    (document.getElementById("mmSurface")||box).appendChild(inp);
     inp.focus(); inp.select();
     /* stopPropagation : sans lui la touche remonte au cadre, qui la rejouerait
        (une branche déplacée deux fois, un Échap qui désélectionne aussitôt). */
@@ -2420,12 +2574,11 @@
   /* Le trait vit dans le cadre qui défile, comme les outils : coordonnées du
      contenu, pas de l'écran. */
   function marqueTrait(g, r, ou){
-    var box=document.getElementById("mmCanvas"), t=document.getElementById("mmTrait");
-    if(!box || !t) return;
-    var cb=box.getBoundingClientRect();
-    t.style.left=(r.left-cb.left+box.scrollLeft)+"px";
-    t.style.width=r.width+"px";
-    t.style.top=((ou==="avant"?r.top-3:r.bottom+1)-cb.top+box.scrollTop)+"px";
+    var t=document.getElementById("mmTrait"), b=boiteNoeud(g);
+    if(!t || !b) return;
+    t.style.left=(b.x*VUE.k)+"px";
+    t.style.width=(b.w*VUE.k)+"px";
+    t.style.top=(((ou==="avant"?b.y-3:b.y+b.h+1))*VUE.k)+"px";
     t.hidden=false;
   }
   /* Une carte de 9 000 pixels de haut ne se traverse pas en un geste : approcher
@@ -2523,6 +2676,7 @@
   function bindEtabli(id){
     var box=document.getElementById("mmCanvas");
     if(!box) return;
+    VUE.k=1;
     dessineEtabli(id);
     /* On n'attrape rien tant que la souris n'a pas bougé : sans ce seuil, un
        simple clic deviendrait un déplacement d'un pixel. */
@@ -2722,16 +2876,13 @@
         delete S.cartes[id]; save(); go("cartes");
       });
     });
+    if(ROUTE.view==="carteModele"){ bindNavigationCarte(false); return; }
     if(ROUTE.view!=="carte" && ROUTE.view!=="carteEdit") return;
     var id=ROUTE.id, c=S.cartes[id];
     if(!c) return;
-    main.querySelectorAll("[data-mm-zoom]").forEach(function(el){
-      el.addEventListener("click",function(){
-        var box=document.getElementById("mmCanvas");
-        if(box) box.classList.toggle("mm-ajuste", el.getAttribute("data-mm-zoom")==="ajuste");
-        main.querySelectorAll("[data-mm-zoom]").forEach(function(b){ b.classList.toggle("on", b===el); });
-      });
-    });
+    /* en lecture on tire la carte de n'importe où ; dans l'établi seulement par
+       le fond, les boîtes servant au glisser-déposer */
+    bindNavigationCarte(ROUTE.view==="carteEdit");
     if(ROUTE.view!=="carteEdit") return;
     etabli.sel=null;
     bindEtabli(id);
@@ -3582,11 +3733,11 @@
     } else if(v==="carteModele"){
       main.classList.remove("with-qbottom");
       main.innerHTML=vCarteModele(ROUTE.id);
-      dessineModele(ROUTE.id);
+      VUE.k=1; dessineModele(ROUTE.id); ajusteZoom();
     } else if(v==="carte"){
       main.classList.remove("with-qbottom");
       main.innerHTML=vCarte(ROUTE.id);
-      dessineCarte(ROUTE.id);
+      VUE.k=1; dessineCarte(ROUTE.id); ajusteZoom();
     } else if(v==="carteEdit"){
       main.classList.remove("with-qbottom");
       main.innerHTML=vCarteEdit(ROUTE.id);
