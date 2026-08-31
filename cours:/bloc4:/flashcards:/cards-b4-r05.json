@@ -9,7 +9,7 @@
       "niveau": 1,
       "type": "liste",
       "recto": "Qu'est-ce que le suivi de performance, et quelles sont les trois grandes raisons de le mener ?",
-      "verso": "C'est l'une des principales missions du management : suivre les résultats individuels ET collectifs via des indicateurs (KPI) pour s'assurer que les efforts convergent, anticiper les difficultés et proposer des actions correctives en amont. Trois raisons : 1. Décider objectivement — des données factuelles fondent les arbitrages (recadrage, réallocation, changement de cap). 2. Motiver et faire progresser — le suivi améliore la communication et la productivité, entretient la motivation et accompagne la montée en compétences. 3. Légitimer le manager — les résultats crédibilisent ses choix vis-à-vis de la Direction comme des collaborateurs, et fondent le système de reconnaissance et de récompense (primes)."
+      "verso": "Suivre les résultats individuels et collectifs par des KPI, pour anticiper les difficultés et corriger en amont.\nTrois raisons : décider objectivement, motiver et faire progresser, légitimer le manager."
     },
     {
       "id": "b4-r05-fc-002",
@@ -17,7 +17,7 @@
       "niveau": 1,
       "type": "definition",
       "recto": "Comment passe-t-on des objectifs stratégiques aux indicateurs de chaque collaborateur ?",
-      "verso": "Par une cascade : les objectifs stratégiques se déclinent en sous-objectifs par service, traduits en objectifs opérationnels dans le plan d'action, puis déclinés pour chaque membre de l'équipe. À chaque objectif (idéalement SMARTEF) on associe l'indicateur qui mesure sa réalisation : un indicateur pertinent est en lien direct avec l'objectif. Inutile de les multiplier — un indicateur ciblé informe mieux que trois non significatifs. Les KPI se choisissent selon les Facteurs Clés de Succès (FCS)."
+      "verso": "Par une cascade : objectifs stratégiques, puis par service, puis par collaborateur. À chaque objectif son indicateur, en lien direct avec lui.\nPeu d'indicateurs mais ciblés, choisis selon les facteurs clés de succès."
     },
     {
       "id": "b4-r05-fc-003",
@@ -25,7 +25,7 @@
       "niveau": 1,
       "type": "liste",
       "recto": "Quels sont les trois types d'indicateurs de performance ?",
-      "verso": "1. Quantitatifs : directement comptés, en valeur absolue ou relative (CA mensuel, taux de transformation, respect des délais). 2. Qualitatifs : non chiffrés — perceptions, avis, opinions — comparés à un socle de standards connu de tous (satisfaction client). 3. Comportementaux ou KBI (Key Behavioral Indicators) : comportements et intelligence émotionnelle (gérer un conflit, écoute active, empathie, esprit d'initiative)."
+      "verso": "1. Quantitatifs : comptés, en valeur absolue ou relative (CA, taux de transformation).\n2. Qualitatifs : perceptions et avis, comparés à un socle de standards.\n3. Comportementaux (KBI) : écoute active, gestion d'un conflit, initiative."
     },
     {
       "id": "b4-r05-fc-004",
@@ -33,7 +33,7 @@
       "niveau": 1,
       "type": "liste",
       "recto": "Quels sont les quatre critères d'un bon indicateur ?",
-      "verso": "1. Spécificité : spécifique au métier, à l'équipe, à la culture de l'organisation. 2. Mesurabilité : peut-il être chiffré ? Sinon, sur quelles données fiables s'appuyer ? 3. Faisabilité : les données sont-elles disponibles (souvent auprès d'autres services) ? Sinon, changer d'indicateur. 4. Pertinence : lien direct et sans ambiguïté entre ce qui est mesuré et les données observées."
+      "verso": "1. Spécificité : propre au métier et à l'équipe.\n2. Mesurabilité : chiffrable, ou appuyé sur des données fiables.\n3. Faisabilité : les données sont disponibles.\n4. Pertinence : lien direct et sans ambiguïté avec ce qu'on observe."
     },
     {
       "id": "b4-r05-fc-005",
@@ -41,7 +41,7 @@
       "niveau": 2,
       "type": "application",
       "recto": "À quoi servent les seuils de performance et les zones vertes, oranges, rouges ?",
-      "verso": "Les seuils délimitent des zones à partir desquelles la performance est jugée satisfaisante ou insuffisante : ils permettent de situer chacun et de bâtir l'accompagnement. Exemple du cours : CA en 3 zones — 0-10 k€ (marché mal compris, formation), 10-20 k€ (challengers), 20 k€ et plus (performants, futurs personnes-ressources des challengers). L'indicateur doit éclairer la marge de progression."
+      "verso": "Ils disent à partir de quand la performance est satisfaisante ou non : ils situent chacun et fondent l'accompagnement.\nExemple : 0-10 k€ (formation), 10-20 k€ (challengers), 20 k€ et plus (performants)."
     },
     {
       "id": "b4-r05-fc-006",
@@ -49,7 +49,7 @@
       "niveau": 2,
       "type": "distinction",
       "recto": "Indicateurs individuels et indicateurs collectifs : quels effets et quelle articulation ?",
-      "verso": "Les indicateurs individuels (CA par zone) valorisent la contribution de chacun, mais peuvent créer un climat compétitif. Les indicateurs collectifs (CA global, projet commun) renforcent la cohésion. En cas de résultat collectif insuffisant, le résultat individuel permet de cibler le problème (région, produit, clientèle). À retenir : la performance collective mesure la synergie du groupe (l'intelligence collective), mais ne suivre que le collectif, c'est risquer de ne pas discerner les talents. Le suivi est une responsabilité collective qui exige la transparence — gare au biais de rétention d'information (le commercial qui garde un partenariat pour lui)."
+      "verso": "Individuels : ils valorisent la contribution de chacun, mais peuvent créer un climat compétitif.\nCollectifs : ils renforcent la cohésion.\nSi le collectif décroche, l'individuel permet de cibler le problème."
     },
     {
       "id": "b4-r05-fc-007",
@@ -57,7 +57,7 @@
       "niveau": 3,
       "type": "chiffre",
       "recto": "Quels sont les KPI RH types, et quel taux légal de travailleurs handicapés s'impose ?",
-      "verso": "KPI RH : turn-over, taux d'égalité femmes/hommes, taux de handicap, absentéisme. Le taux de handicap correspond à une obligation légale : 6 % des effectifs."
+      "verso": "Turn-over, taux d'égalité femmes/hommes, taux de handicap, absentéisme.\nLe taux de handicap répond à une obligation légale : 6 % des effectifs."
     },
     {
       "id": "b4-r05-fc-008",
@@ -65,7 +65,7 @@
       "niveau": 3,
       "type": "chiffre",
       "recto": "Quel cadre juridique encadre les objectifs individuels d'un collaborateur ?",
-      "verso": "Les objectifs doivent être alignés sur ses responsabilités et compétences : conformes à sa fiche de poste, ou formalisés par un avenant au contrat de travail (courant pour les commerciaux) ou une lettre de mission (mission temporaire, expatriation, intérim). On n'évalue jamais des résultats qui outrepassent sa responsabilité, et il doit disposer de toutes les ressources requises. L'article L6321-1 du Code du travail impose d'assurer l'adaptation des salariés à leur poste : des résultats insuffisants peuvent déclencher un plan de formation."
+      "verso": "Ils doivent être alignés sur les responsabilités et compétences : fiche de poste, avenant au contrat ou lettre de mission.\nL'article L6321-1 impose d'adapter le salarié à son poste : des résultats insuffisants appellent une formation."
     },
     {
       "id": "b4-r05-fc-009",
@@ -73,7 +73,7 @@
       "niveau": 2,
       "type": "liste",
       "recto": "Sur quels outils s'appuie la collecte des données de performance ?",
-      "verso": "Sur des données fiables et disponibles : extraction du CRM (Customer Relationship Management, gestion de la relation client), sollicitation des autres services, SIRH (Système d'Information des Ressources Humaines : turn-over, absentéisme), outils de Business Intelligence (BI ou Informatique Décisionnelle, aide à la décision sur données factuelles). Les quantitatifs se centralisent dans un outil unique partagé ; les qualitatifs se collectent par enquêtes, entretiens et observations, sans biais."
+      "verso": "CRM (relation client), SIRH (turn-over, absentéisme), outils de Business Intelligence.\nLes données quantitatives se centralisent dans un outil partagé ; les qualitatives viennent d'enquêtes, entretiens, observations."
     },
     {
       "id": "b4-r05-fc-010",
@@ -81,7 +81,7 @@
       "niveau": 3,
       "type": "chiffre",
       "recto": "Qu'est-ce que le bilan social et à partir de quel effectif est-il obligatoire ?",
-      "verso": "C'est un rapport de performance sociale : des données sociales brutes comparées aux deux années précédentes. Il est obligatoire au-delà de 300 salariés."
+      "verso": "Un rapport de performance sociale : des données sociales brutes comparées aux deux années précédentes.\nObligatoire au-delà de 300 salariés."
     },
     {
       "id": "b4-r05-fc-011",
@@ -89,7 +89,7 @@
       "niveau": 2,
       "type": "liste",
       "recto": "Citez les autres temps forts managériaux du suivi (hors entretiens annuel et professionnel).",
-      "verso": "Le feedback ou rétroaction (« créer une action en retour » : relater les faits puis exprimer un ressenti ou faire réagir), l'évaluation 360° (enquête auprès de toutes les parties prenantes internes et externes, avec l'accord préalable de l'employé), le REX (Retour d'Expérience de fin de mission, pour capitaliser sur les bonnes pratiques), la revue de portefeuille (équipes commerciales : évaluer l'ensemble des projets pour optimiser l'allocation des ressources) et l'auto-évaluation (le collaborateur s'évalue vs des normes de référence)."
+      "verso": "Le feedback (relater les faits, puis faire réagir), l'évaluation 360° (avec l'accord de l'employé), le REX de fin de mission.\nPlus la revue de portefeuille et l'auto-évaluation."
     },
     {
       "id": "b4-r05-fc-012",
@@ -97,7 +97,7 @@
       "niveau": 1,
       "type": "definition",
       "recto": "Qu'est-ce que la méthode OKR et quelles sont ses trois logiques de mise en place ?",
-      "verso": "OKR (Objectives and Key Results) : méthode née dans la Silicon Valley (Netflix, Google) qui aligne les activités de chacun sur les objectifs globaux — chacun comprend l'intérêt de son travail, ce qui renforce motivation et sens. Trois logiques : top-down (les dirigeants définissent objectifs ET résultats clés), bottom-up (les collaborateurs définissent les deux), hybride (objectifs par les dirigeants, résultats clés par les collaborateurs — la plus engageante)."
+      "verso": "OKR (Objectives and Key Results) : aligner les activités de chacun sur les objectifs globaux, pour que chacun voie l'intérêt de son travail.\nTrois logiques : top-down, bottom-up, hybride — la plus engageante."
     },
     {
       "id": "b4-r05-fc-013",
@@ -105,7 +105,7 @@
       "niveau": 1,
       "type": "distinction",
       "recto": "Analyse des résultats et analyse des écarts : quels sont ces deux temps ?",
-      "verso": "L'analyse des résultats est la prise de connaissance objective des données quantitatives et qualitatives : un état des lieux. L'analyse des écarts compare ensuite ces données aux objectifs, prévisions ou normes : les écarts sont les différences entre réel et prévisionnel, positifs (réel > prévu) ou négatifs (réel < prévu). Dans les deux cas on cherche les raisons : les échecs pour y remédier, mais aussi les bonnes pratiques du succès, pour les dupliquer."
+      "verso": "Analyse des résultats : l'état des lieux objectif des données.\nAnalyse des écarts : la comparaison au prévu — écarts positifs (mieux que prévu) ou négatifs. On cherche les causes des échecs comme des succès."
     },
     {
       "id": "b4-r05-fc-014",
@@ -113,7 +113,7 @@
       "niveau": 2,
       "type": "distinction",
       "recto": "Facteurs endogènes et facteurs exogènes : comment les distinguer dans l'analyse ?",
-      "verso": "Les facteurs endogènes sont propres à l'équipe : efforts, compétences, investissement. Les facteurs exogènes viennent de l'extérieur : marché, lois, société. L'analyse cherche aussi des corrélations (satisfaction client médiocre liée au turn-over, donc fidéliser les collaborateurs) et peut s'approfondir par analyse individuelle des contributions ou segmentation (équipe, produit, lieu, période)."
+      "verso": "Endogènes : propres à l'équipe — efforts, compétences, investissement.\nExogènes : venus de l'extérieur — marché, lois, société."
     },
     {
       "id": "b4-r05-fc-015",
@@ -121,7 +121,7 @@
       "niveau": 1,
       "type": "liste",
       "recto": "Le diagramme d'Ishikawa est souvent présenté avec 5M : quel 6e M s'ajoute ici, et sous quels autres noms les familles apparaissent-elles ?",
-      "verso": "Le 6e M est Mesures : la façon même dont on observe et chiffre le phénomène peut être la cause de l'écart constaté. Les 6M retenus ici : Machines (= Moyens), Méthodes, Matériaux (= Matières), Mère Nature (= Milieu, l'environnement), Main-d'œuvre, Mesures. Le principe reste inchangé : un diagramme causes-effets « en arêtes de poisson » (Fishbone) pour remonter à la cause racine d'un problème."
+      "verso": "Le 6e M est Mesures : la façon même d'observer et de chiffrer peut créer l'écart constaté.\nLes 6M : Machines (Moyens), Méthodes, Matériaux (Matières), Mère Nature (Milieu), Main-d'œuvre, Mesures."
     },
     {
       "id": "b4-r05-fc-016",
@@ -129,7 +129,7 @@
       "niveau": 2,
       "type": "liste",
       "recto": "Citez les autres outils de la boîte à outils de l'analyse (hors Ishikawa).",
-      "verso": "L'analyse comparative ou benchmark (se comparer à d'autres entités, sans se limiter à son secteur), l'analyse des tendances (données historiques, saisonnalités), l'analyse de variance ANOVA (décomposer statistiquement les écarts en facteurs), les 5 Pourquoi (approfondir à chaque « pourquoi » jusqu'au dénominateur commun), l'arbre des causes (arborescence collective pour un problème multifactoriel), le McKinsey 7S (3 éléments solides : Stratégie, Structure, Systèmes ; 4 souples : Valeurs partagées, Style, Personnel, Compétences), le SWOT et les analyses de processus et financières."
+      "verso": "Benchmark, analyse des tendances, ANOVA, 5 Pourquoi, arbre des causes.\nPlus le McKinsey 7S (Stratégie, Structure, Systèmes ; Valeurs partagées, Style, Personnel, Compétences), le SWOT et les analyses financières."
     },
     {
       "id": "b4-r05-fc-017",
@@ -137,7 +137,7 @@
       "niveau": 1,
       "type": "distinction",
       "recto": "Quelles sont les deux acceptions de l'action corrective selon « Mots de la Qualité » (France Qualité) ?",
-      "verso": "Au sens de la norme (certification ISO), elle élimine la cause du défaut : résolution de problème, amélioration continue, visée curative durable. Au sens courant (gestion de projet), elle supprime simplement le défaut : rattrapage, réparation, reprise. On distingue aussi les mesures curatives (traiter le problème survenu — l'action corrective est réactive, a posteriori) des mesures préventives (anticiper). Toujours se demander : ce problème aurait-il pu être anticipé ?"
+      "verso": "Au sens de la norme ISO : elle élimine la cause du défaut — visée curative durable.\nAu sens courant : elle supprime le défaut — rattrapage, réparation.\nÀ distinguer du préventif, qui anticipe."
     },
     {
       "id": "b4-r05-fc-018",
@@ -145,7 +145,7 @@
       "niveau": 1,
       "type": "liste",
       "recto": "Comment construit-on un plan d'action correctif ?",
-      "verso": "1. Analyser les causes de l'échec même partiel (facteurs internes/externes, un SWOT est utile). 2. Éventuellement réévaluer les objectifs (réalistes et SMARTEF, ou trop ambitieux ?). 3. Construire le plan : comme le plan initial, il précise actions, responsabilités, ressources, délais, et exige les mêmes pilotage, suivi et communication. La méthode CQQCOQP (Comment ? Quoi ? Qui ? Combien ? Où ? Quand ? Pourquoi ?) garantit l'exhaustivité. Il porte ses propres KPI : délais, coûts, qualité."
+      "verso": "1. Analyser les causes de l'échec, même partiel.\n2. Réévaluer les objectifs s'ils étaient trop ambitieux.\n3. Bâtir le plan comme le plan initial : actions, responsabilités, ressources, délais.\nSes KPI : délais, coûts, qualité."
     },
     {
       "id": "b4-r05-fc-019",
@@ -153,7 +153,7 @@
       "niveau": 2,
       "type": "application",
       "recto": "Quelles actions correctives selon que la difficulté est individuelle ou collective ?",
-      "verso": "Individuelles : formation, tutorat, mentorat, coaching, ou learning by doing — confier une mission à qui n'a pas encore les compétences pour le faire grandir en situation réelle (tâches proportionnées à l'enjeu) — avec suivi par feedbacks réguliers et entretien annuel. Collectives : analyse des causes profondes menée avec le groupe, puis nouvelles méthodes de travail, nouveaux process, communication interne repensée, répartition des tâches revue selon les compétences (une allocation déficiente explique souvent l'échec)."
+      "verso": "Individuelles : formation, tutorat, mentorat, learning by doing — confier une mission pour grandir en situation réelle.\nCollectives : causes analysées avec le groupe, nouveaux process, répartition des tâches revue."
     },
     {
       "id": "b4-r05-fc-020",
@@ -161,7 +161,7 @@
       "niveau": 2,
       "type": "distinction",
       "recto": "Efficience et efficacité : quelle différence, et quand ajuster les objectifs eux-mêmes ?",
-      "verso": "L'efficience est « la consommation des ressources utilisées dans la production d'un résultat » (rapport résultats/ressources) ; l'efficacité est l'atteinte du résultat — le reporting sert les deux. L'ajustement des objectifs, opérationnel ou stratégique, intervient après un décalage plan/réalisation ou un changement (stratégie globale, réglementation, environnement, RH) : « à l'impossible nul n'est tenu » (ex. la crise Covid-19 en 2020). Ajuster = changer de direction, décaler dans le temps ou revoir la cible."
+      "verso": "Efficience : le rapport entre le résultat et les ressources consommées. Efficacité : l'atteinte du résultat.\nAjuster les objectifs après un décalage ou un changement : « à l'impossible nul n'est tenu »."
     },
     {
       "id": "b4-r05-fc-021",
@@ -169,7 +169,7 @@
       "niveau": 1,
       "type": "definition",
       "recto": "Comment définit-on la motivation au travail, et quels besoins de Maslow le suivi nourrit-il ?",
-      "verso": "« Un processus qui active, oriente, dynamise et maintient le comportement des individus vers la réalisation d'objectifs attendus » — les moteurs des collaborateurs. Le suivi nourrit trois besoins de la pyramide de Maslow : la reconnaissance (récompenses : primes, mobilité interne, promotion, projets ambitieux), la réalisation/accomplissement (concrétiser ses efforts) et l'appartenance à un collectif (le suivi collectif renforce la cohésion). Un management qui donne du sens engage. Leviers concrets : le team-building (« renforcement d'équipe », né aux États-Unis au début des années 1980 : resserrer les liens sociaux par le jeu, sur un temps court), les challenges commerciaux, la capitalisation sur les succès et les organisations apprenantes reconnaissant le droit à l'erreur. Selon l'Observatoire du Management 2021 (Oasys Mobilisation), 68 % des collaborateurs jugent leur manager « bon manager », soit + 5 points vs 2019."
+      "verso": "« Un processus qui active, oriente, dynamise et maintient le comportement vers la réalisation d'objectifs attendus. »\nLe suivi nourrit trois besoins de Maslow : reconnaissance, accomplissement, appartenance au collectif."
     }
   ]
 }

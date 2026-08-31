@@ -9,7 +9,7 @@
       "niveau": 1,
       "type": "definition",
       "recto": "Quelles sont les 3 dimensions de la qualité d'un livrable créatif, et comment s'évaluent-elles ?",
-      "verso": "1. La dimension technique (résolution, profils colorimétriques, formats, lisibilité) : objective, mesurable par checklist. 2. La dimension créative (originalité, pertinence visuelle, capacité à émouvoir, adéquation à l'univers de marque) : plus subjective, exige une expertise fine. 3. La dimension stratégique (cohérence des choix créatifs avec les attributs de marque, les objectifs, les cibles, le positionnement) : à intégrer dès la conception, pas en vérification a posteriori. Une production peut être techniquement irréprochable mais stratégiquement hors sujet. Croisées en grille à double entrée, les dimensions technique et créative donnent 4 profils de production : parfaite sur les deux plans (l'idéal), techniquement correcte mais créativement faible (typique de l'urgence), créativement forte mais techniquement fragile (à renforcer), défaillante sur les deux (à retravailler intégralement) — une typologie qui guide les plans d'action."
+      "verso": "1. Technique : résolution, formats, lisibilité — objective, vérifiable par checklist.\n2. Créative : originalité, adéquation à l'univers de marque — plus subjective.\n3. Stratégique : cohérence avec les objectifs et le positionnement, à intégrer dès la conception."
     },
     {
       "id": "b4-r08-fc-002",
@@ -17,7 +17,7 @@
       "niveau": 1,
       "type": "liste",
       "recto": "À quels 3 niveaux s'analyse la cohérence d'un livrable, et quelle distinction structure les règles de marque ?",
-      "verso": "1. Cohérence intra-projet : harmonie entre les éléments du livrable. 2. Cohérence intra-marque : respect des codes visuels, du ton, des territoires d'expression. 3. Cohérence inter-temporelle : complémentarité avec les communications précédentes. On distingue les éléments invariants (respectés sur tous les supports) des zones de flexibilité (adaptables au format), consignés dans des tableaux de bord créatifs."
+      "verso": "1. Intra-projet : harmonie entre les éléments du livrable.\n2. Intra-marque : codes visuels, ton, territoires d'expression.\n3. Inter-temporelle : complémentarité avec les communications précédentes.\nOn distingue les invariants des zones de flexibilité."
     },
     {
       "id": "b4-r08-fc-003",
@@ -25,7 +25,7 @@
       "niveau": 1,
       "type": "liste",
       "recto": "Quels sont les 5 piliers de l'identité visuelle ?",
-      "verso": "1. La cohérence chromatique (couleurs référencées dans la charte). 2. L'uniformité typographique (polices officielles, hiérarchie des tailles et graisses). 3. La cohérence des éléments graphiques (dont la zone de protection du logo : les marges définies par la charte). 4. La cohérence de l'imagerie (style photographique fidèle aux valeurs). 5. L'harmonie compositionnelle (règle des tiers, équilibre des masses, respiration)."
+      "verso": "1. Cohérence chromatique. 2. Uniformité typographique. 3. Cohérence des éléments graphiques, dont la zone de protection du logo.\n4. Cohérence de l'imagerie. 5. Harmonie compositionnelle (règle des tiers, respiration)."
     },
     {
       "id": "b4-r08-fc-004",
@@ -33,7 +33,7 @@
       "niveau": 2,
       "type": "liste",
       "recto": "Comment traduit-on une stratégie de marque abstraite en critères de supervision ?",
-      "verso": "En 3 étapes : 1. Analyser l'historique et les communications existantes pour déceler les constantes visuelles et éditoriales. 2. Interroger les équipes sur leur perception spontanée de la marque. 3. Traduire chaque valeur abstraite en éléments observables et mesurables (couleurs, typographies, tonalité), puis en questions de contrôle binaires (oui/non). S'y ajoutent la hiérarchisation des valeurs en tension (l'une devient le socle, l'autre s'exprime dans son respect) et la promesse de marque comme fil conducteur (cascade : promesse → valeurs → codes → checklists)."
+      "verso": "1. Analyser l'historique des communications pour en déceler les constantes.\n2. Interroger les équipes sur leur perception spontanée.\n3. Traduire chaque valeur en éléments observables, puis en questions de contrôle binaires."
     },
     {
       "id": "b4-r08-fc-005",
@@ -41,7 +41,7 @@
       "niveau": 2,
       "type": "definition",
       "recto": "À quoi sert la cartographie concurrentielle créative, et pourquoi un livrable « conforme mais banalisé » est-il un échec ?",
-      "verso": "Elle visualise les territoires créatifs occupés par les concurrents : reproduire les codes d'un concurrent direct est un écart qualité même si les valeurs de la marque sont respectées. Un livrable conforme mais banalisé est un « échec stratégique silencieux » : la différenciation est un critère de qualité à part entière."
+      "verso": "Elle visualise les territoires créatifs occupés par les concurrents : reprendre les codes d'un concurrent direct est un écart qualité.\n« Conforme mais banalisé » est un échec silencieux : la différenciation est un critère à part entière."
     },
     {
       "id": "b4-r08-fc-006",
@@ -49,7 +49,7 @@
       "niveau": 1,
       "type": "definition",
       "recto": "Qu'est-ce qu'un référentiel qualité et comment est-il architecturé ?",
-      "verso": "Ce n'est pas un catalogue de règles mais un système de pilotage créatif, en architecture pyramidale à 3 niveaux : les critères universels (reconnaissance de marque, non négociables quels que soient le support et le marché), les critères adaptatifs (contextualisation locale ou par canal), les critères d'excellence (productions premium, campagnes stratégiques)."
+      "verso": "Pas un catalogue de règles mais un système de pilotage créatif, en pyramide à 3 niveaux :\ncritères universels (non négociables), adaptatifs (contexte local ou canal), d'excellence (productions premium)."
     },
     {
       "id": "b4-r08-fc-007",
@@ -57,7 +57,7 @@
       "niveau": 1,
       "type": "chiffre",
       "recto": "Quels sont les 4 types de critères d'un référentiel, avec les valeurs techniques de référence pour le print et le digital ?",
-      "verso": "1. Techniques : objectifs et sans approximation — 300 DPI pour le print, CMJN pour l'impression, RVB pour le digital, formats par canal. 2. Créatifs : style photographique, tonalité graphique, équilibre texte/image (à illustrer d'exemples). 3. Stratégiques : messages clés, positionnement — les plus négligés. 4. Contextuels : culturels, réglementaires, concurrentiels. Erreur classique : appliquer les mêmes critères à tous les formats — cela produit des sur-qualités coûteuses et inutiles, ou des sous-qualités préjudiciables."
+      "verso": "1. Techniques : 300 DPI en print, CMJN à l'impression, RVB en digital.\n2. Créatifs : style photographique, équilibre texte/image.\n3. Stratégiques : messages clés, positionnement — les plus négligés.\n4. Contextuels : culturels, réglementaires."
     },
     {
       "id": "b4-r08-fc-008",
@@ -65,7 +65,7 @@
       "niveau": 2,
       "type": "liste",
       "recto": "Quels mécanismes assurent l'équilibre précision/flexibilité d'un référentiel qualité ?",
-      "verso": "Les fourchettes de tolérance (plages plutôt que valeurs rigides : zone de protection du logo entre 15 et 25 mm, ±5 % sur les couleurs à l'impression) ; les critères conditionnels « si… alors… » ; la pondération et le scoring avec seuils vert/orange/rouge ; la hiérarchie bloquants (liés à la promesse) / importants (liés aux valeurs) / de préférence (optimisations) ; la grille stratégique minimum de 5 à 7 critères, évaluable en moins de 10 minutes pour les validations courantes."
+      "verso": "Des fourchettes de tolérance plutôt que des valeurs rigides, des critères conditionnels « si… alors… », un scoring à seuils vert/orange/rouge.\nUne hiérarchie : bloquants, importants, de préférence. Grille minimum : 5 à 7 critères."
     },
     {
       "id": "b4-r08-fc-009",
@@ -73,7 +73,7 @@
       "niveau": 1,
       "type": "definition",
       "recto": "Quels sont les 3 niveaux d'écart au référentiel, et que fait-on après avoir repéré un écart ?",
-      "verso": "Écart mineur : détail d'exécution sans impact perçu (nuance de bleu hors charte), mais dont l'accumulation érode la cohérence. Écart modéré : déviation notable qui dilue le caractère distinctif sans le contredire ; l'accumulation affaiblit la différenciation. Écart critique : contradiction directe avec les valeurs ou la promesse — recadrage immédiat, voire retrait. Chaque écart appelle une analyse causale : brief imprécis, contraintes techniques mal anticipées, influence concurrentielle, manque de formation, collaboration externe mal pilotée."
+      "verso": "Mineur : détail sans impact perçu, mais son accumulation érode la cohérence.\nModéré : dilue le caractère distinctif sans le contredire.\nCritique : contredit les valeurs ou la promesse — recadrage immédiat.\nChaque écart appelle une analyse causale."
     },
     {
       "id": "b4-r08-fc-010",
@@ -81,7 +81,7 @@
       "niveau": 2,
       "type": "application",
       "recto": "Comment sécuriser la qualité du travail d'un free-lance, étranger à la culture de l'agence ?",
-      "verso": "Les free-lances travaillent dans les « zones de dilution du contrôle qualité » (plus on s'éloigne du centre décisionnel, plus le risque de dérive augmente). On leur transmet un kit de démarrage : brief détaillé, charte graphique, exemples de livrables conformes — suivi d'un cadrage initial, de jalons intermédiaires et d'un feed-back de fin de mission. Le pilotage de la sous-traitance suit 4 phases — sélection (compétences + adaptation culturelle), cadrage (transmission des standards, sessions d'alignement), suivi (points de contrôle intermédiaires), évaluation (capitalisation) — appuyées sur deux outils qui uniformisent les attentes : le creative toolkit (codes visuels, territoires narratifs, standards techniques) et les livrables d'ancrage (moodboards, références, briefs, critères, processus de validation). Le prestataire se traite en partenaire créatif, pas en exécutant."
+      "verso": "Il travaille dans une zone de dilution du contrôle : plus on s'éloigne du centre, plus le risque de dérive augmente.\nOn lui donne un kit de démarrage — brief détaillé, charte, exemples conformes — puis cadrage, jalons et feedback de fin."
     },
     {
       "id": "b4-r08-fc-011",
@@ -89,7 +89,7 @@
       "niveau": 2,
       "type": "liste",
       "recto": "Quels sont les 3 points de friction structurels d'un projet créatif, et leurs parades ?",
-      "verso": "1. Les transitions entre étapes (risque de perte d'intention créative à chaque passage de relais → documents de transmission, points de passage obligatoires). 2. Les changements d'intervenant en cours de projet (discontinuité → journal de production traçant intentions et arbitrages). 3. Les modifications tardives (effet domino d'ajustements en cascade → seuils d'alerte, validation renforcée)."
+      "verso": "1. Les transitions entre étapes : l'intention créative se perd au passage de relais.\n2. Les changements d'intervenant : discontinuité.\n3. Les modifications tardives : effet domino.\nParades : documents de transmission, journal de production, seuils d'alerte."
     },
     {
       "id": "b4-r08-fc-012",
@@ -97,7 +97,7 @@
       "niveau": 3,
       "type": "distinction",
       "recto": "Buffers qualitatifs et qualité focale : à quelle contrainte répond chacun ?",
-      "verso": "Les buffers qualitatifs répondent à la contrainte temporelle : zones tampons du rétroplanning qui absorbent imprévus et allers-retours clients (l'impact du temps sur la qualité n'est pas linéaire, il y a des seuils critiques ; on privilégie aussi la parallélisation des tâches). La qualité focale/sélective répond à la contrainte budgétaire : ne jamais rogner uniformément (médiocrité générale) mais concentrer l'investissement sur les éléments porteurs d'impact (logo, typographie, palette) et assumer des solutions standardisées sur le secondaire, en documentant les arbitrages."
+      "verso": "Buffers qualitatifs : contrainte de temps — des zones tampons du rétroplanning qui absorbent imprévus et allers-retours.\nQualité focale : contrainte de budget — investir sur ce qui porte l'impact plutôt que rogner partout."
     },
     {
       "id": "b4-r08-fc-013",
@@ -105,7 +105,7 @@
       "niveau": 1,
       "type": "definition",
       "recto": "Qu'est-ce que la boucle de validation infinie, et quelles sont les autres pathologies classiques des circuits de validation ?",
-      "verso": "La boucle de validation infinie est la reprise cyclique des mêmes points par différents acteurs sans autorité finale qui tranche → versions multiples, démotivation, explosion des délais. Autres pathologies : les critères subjectifs (« pas assez impactant » : la validation devient négociation), l'absence d'arbitre final (compromis en cascade qui diluent le concept), les validations redondantes entre niveaux hiérarchiques. Un circuit trop lourd est contourné : il doit s'intégrer au flux créatif."
+      "verso": "La reprise cyclique des mêmes points par différents acteurs, sans autorité finale qui tranche : versions multiples, délais qui explosent.\nAutres : critères subjectifs, absence d'arbitre, validations redondantes."
     },
     {
       "id": "b4-r08-fc-014",
@@ -113,7 +113,7 @@
       "niveau": 2,
       "type": "liste",
       "recto": "Aux biais de confirmation et de halo, déjà connus du manager, quel biais propre au comité de validation créative s'ajoute — et quelle contre-mesure ?",
-      "verso": "La pensée de groupe : le conformisme en comité, où personne ne contredit l'avis qui se dessine. Contre-mesure : l'évaluation individuelle écrite AVANT la réunion collective. Effet spécifique des deux autres sur la création : le biais de confirmation standardise les créations (on ne cherche que ce qui confirme ses convictions), l'effet de halo laisse un détail frappant contaminer le jugement global du livrable."
+      "verso": "La pensée de groupe : le conformisme en comité, où personne ne contredit l'avis qui se dessine.\nContre-mesure : l'évaluation individuelle écrite avant la réunion collective."
     },
     {
       "id": "b4-r08-fc-015",
@@ -121,7 +121,7 @@
       "niveau": 1,
       "type": "liste",
       "recto": "Quels sont les 3 niveaux de l'architecture de validation de référence, et quel principe la fonde ?",
-      "verso": "1. Niveau opérationnel (DA + chef de projet) : technique et créatif de base — exécution, formats, cohérence visuelle, respect du brief. 2. Niveau stratégique (responsables marketing/communication) : alignement objectifs, pertinence cibles, différenciation, cohérence inter-campagnes. 3. Niveau décisionnel (direction) : arbitrages complexes uniquement — désaccords, prise de risque, innovations hors standards. Principe : la subsidiarité créative — chaque niveau traite en autonomie les critères qu'il maîtrise le mieux, sans remontée systématique. Un circuit performant repose sur 4 piliers : rôles clairs, critères explicites, jalons définis, escalade maîtrisée."
+      "verso": "1. Opérationnel (DA, chef de projet) : exécution, formats, respect du brief.\n2. Stratégique (marketing) : alignement, cibles, différenciation.\n3. Décisionnel (direction) : arbitrages complexes seulement.\nPrincipe : la subsidiarité créative."
     },
     {
       "id": "b4-r08-fc-016",
@@ -129,7 +129,7 @@
       "niveau": 1,
       "type": "definition",
       "recto": "Qu'est-ce que la validation parallèle, et à quelles conditions fonctionne-t-elle ?",
-      "verso": "Plusieurs parties prenantes évaluent simultanément un même livrable sur des périmètres indépendants. Avantages : délais réduits jusqu'à 60 %, goulets d'étranglement supprimés, validateurs autonomes. Conditions : clarté absolue des rôles, critères précis, outils numériques adaptés. On identifie les validations indépendantes (tableau croisé validateurs × critères), on décompose le flux avec micro-jalons et points de convergence (comité de synthèse). À ne pas forcer sur les décisions exigeant un débat collectif."
+      "verso": "Plusieurs validateurs évaluent le même livrable en même temps, sur des périmètres indépendants : jusqu'à 60 % de délai en moins.\nConditions : rôles clairs, critères précis, outils adaptés. À éviter quand la décision exige un débat collectif."
     },
     {
       "id": "b4-r08-fc-017",
@@ -137,7 +137,7 @@
       "niveau": 1,
       "type": "definition",
       "recto": "Quelles sont les 3 soupapes de la gestion des exceptions dans un circuit de validation ?",
-      "verso": "1. Le circuit express pour les urgences : validateurs mobilisés simultanément, critères recentrés, avec un responsable désigné du déclenchement pour éviter les abus. 2. Le comité d'arbitrage créatif : des experts légitimes par leur compétence, saisis en cas de désaccord persistant. 3. Le parcours innovation : un jury d'experts pour les créations atypiques, hors critères standard. En amont, c'est la matrice RACI qui formalise qui fait quoi et tranche les conflits de légitimité."
+      "verso": "1. Le circuit express pour les urgences, avec un responsable désigné pour éviter les abus.\n2. Le comité d'arbitrage créatif, en cas de désaccord persistant.\n3. Le parcours innovation, pour les créations hors critères standard."
     },
     {
       "id": "b4-r08-fc-018",
@@ -145,7 +145,7 @@
       "niveau": 2,
       "type": "application",
       "recto": "Au-delà de la matrice pouvoir/intérêt, que faut-il repérer chez les parties prenantes de la qualité, et comment les animer ?",
-      "verso": "À repérer en plus du classement pouvoir/intérêt : les coalitions informelles (bloc créatif, financier, terrain) et le pouvoir informel (réseaux d'influence réels, zones d'ombre relationnelles). Deux distinctions opérationnelles : freins rationnels (traités par l'information et la formation) vs résistances émotionnelles (traitées par la relation) ; tensions productives (à préserver) vs conflits destructeurs. Levier fédérateur : révéler et formaliser les objectifs communs. Animation : ateliers de co-définition des critères, vote pondéré, et boucle de feedback en 4 étapes — collecter → analyser collectivement → décider et agir → informer les contributeurs."
+      "verso": "Les coalitions informelles et le pouvoir informel : l'organigramme ne dit pas les réseaux d'influence réels.\nDistinguer freins rationnels (information) et résistances émotionnelles (relation).\nAnimation : ateliers de co-définition, vote pondéré."
     },
     {
       "id": "b4-r08-fc-019",
@@ -153,7 +153,7 @@
       "niveau": 1,
       "type": "liste",
       "recto": "Quels sont les 7 critères de sélection d'un outil collaboratif en environnement créatif ?",
-      "verso": "1. Gestion des gros fichiers (plusieurs Go) sans compression. 2. Support natif des formats spécialisés (PSD, AI, INDD — la conversion PDF fait perdre calques et métadonnées). 3. Preview intégrée (valider sans posséder les logiciels). 4. Commentaires ancrés sur des zones précises du visuel. 5. Versioning créatif (arborescence d'alternatives, traçabilité des décisions). 6. Intégration aux logiciels de création (plugins Adobe, Figma). 7. Sécurité (accès granulaires, traçabilité). S'y ajoutent l'interopérabilité (API, connecteurs testés) et le coût total de possession (TCO : licences + formation + accompagnement + maintenance)."
+      "verso": "Gros fichiers sans compression, formats natifs (PSD, AI, INDD), preview intégrée, commentaires ancrés sur le visuel.\nVersioning créatif, intégration aux logiciels de création, sécurité et traçabilité."
     },
     {
       "id": "b4-r08-fc-020",
@@ -161,7 +161,7 @@
       "niveau": 1,
       "type": "definition",
       "recto": "Qu'est-ce que la « centralisation intelligente » des outils, et que fait un DAM ?",
-      "verso": "Un outil pivot (gestion de projet collaborative) orchestre les workflows, les outils spécialisés gardent leur excellence, et chaque information n'a qu'un seul « propriétaire » (source de vérité unique). Le déploiement est progressif (équipes pilotes → créatifs → marketing). Les DAM (Digital Asset Management) type Frame.io, Frontify ou Bynder centralisent, versionnent et contrôlent l'accès aux assets de marque. Point de départ : l'audit en 4 phases de la fragmentation technologique (cartographier tous les outils même informels, analyser les usages réels, examiner les transferts, vérifier l'outil pilote)."
+      "verso": "Un outil pivot orchestre les workflows, les outils spécialisés gardent leur excellence, chaque information a une seule source de vérité.\nLe DAM (Frame.io, Frontify, Bynder) centralise, versionne et contrôle l'accès aux assets de marque."
     },
     {
       "id": "b4-r08-fc-021",
@@ -169,7 +169,7 @@
       "niveau": 2,
       "type": "application",
       "recto": "Comment mène-t-on un audit d'alignement créatif ?",
-      "verso": "Constituer un corpus représentatif des productions récentes (6 à 12 mois, tous canaux, mêlant projets emblématiques, cas moyens et livrables problématiques), appliquer la grille stratégique à chaque pièce, classer en fortement alignées / partiellement alignées / hors stratégie, puis analyser les patterns d'écarts (par canal, période, prestataire). L'audit révèle des écarts systémiques et des corrélations (urgence/budget serré ↔ écarts), qui appellent des mesures organisationnelles. Les productions exemplaires deviennent des « référentiels vivants » pour former."
+      "verso": "Constituer un corpus des productions récentes (6 à 12 mois, tous canaux), appliquer la grille stratégique à chaque pièce.\nClasser en fortement alignées, partiellement, hors stratégie — puis analyser les patterns par canal ou prestataire."
     },
     {
       "id": "b4-r08-fc-022",
@@ -177,7 +177,7 @@
       "niveau": 1,
       "type": "liste",
       "recto": "Que fait-on avant de formuler un feedback créatif, et quelles sont les 3 catégories de retours ?",
-      "verso": "Avant tout feedback, relire le brief initial : c'est lui qui fonde des observations objectives, pas les impressions personnelles. Puis catégoriser : 1. Conforme à valoriser (respect de la charte, composition efficace — à nommer explicitement, la reconnaissance précède l'amélioration). 2. Écart mineur (ajustement technique rapide : taille de police, virgule — correction simple, bienveillante). 3. Écart majeur (contradiction avec le positionnement ou les objectifs du brief — refonte, nouvelle approche créative)."
+      "verso": "Relire le brief initial : lui seul fonde des observations objectives.\n1. Conforme à valoriser — à nommer explicitement.\n2. Écart mineur : correction simple.\n3. Écart majeur : refonte, nouvelle approche."
     },
     {
       "id": "b4-r08-fc-023",
@@ -185,7 +185,7 @@
       "niveau": 1,
       "type": "definition",
       "recto": "Comment se structure un feedback SBI-I, et quels principes l'accompagnent ?",
-      "verso": "Situation (« sur l'affiche proposée pour le lancement… »), Comportement (fait observé : « le slogan met l'accent sur le prix, en rouge très visible »), Impact (conséquence sur les objectifs : « cela positionne le produit comme discount »), Intention (ouverture : « pourrions-nous explorer une version qui mette en avant le bénéfice soin ? »). Trois principes : valoriser avant de corriger, poser des questions ouvertes de co-construction (les créatifs redeviennent partenaires de solution), pratiquer la reformulation positive plutôt qu'un rejet frontal."
+      "verso": "Situation (le livrable concerné), Comportement (le fait observé), Impact (la conséquence sur les objectifs), Intention (l'ouverture).\nTrois principes : valoriser avant de corriger, questionner plutôt qu'asséner, reformuler positivement."
     },
     {
       "id": "b4-r08-fc-024",
@@ -193,7 +193,7 @@
       "niveau": 1,
       "type": "liste",
       "recto": "À quels 3 moments intervient la prévention des écarts, et avec quels outils ?",
-      "verso": "Avant : le brief renforcé traduit chaque élément stratégique en exigences opérationnelles, avec exemples visuels « à faire / à ne pas faire » et rappel des codes interdits. Pendant : points de contrôle intermédiaires (concept, maquette, avant finalisation) pour corriger les dérives avant qu'elles ne se cristallisent. Après : capitalisation — analyse des projets sans écart, bibliothèque de cas modèles utilisée en formation. Attention au sur-contrôle : un système préventif efficace se fait oublier. Formation associée : jeu des écarts (30 min), débrief collectif mensuel (45 min), mini-test d'alignement avant projet."
+      "verso": "Avant : un brief renforcé, avec des exemples « à faire / à ne pas faire ».\nPendant : des points de contrôle intermédiaires, avant que la dérive ne se cristallise.\nAprès : la capitalisation, en bibliothèque de cas modèles."
     },
     {
       "id": "b4-r08-fc-025",
@@ -201,7 +201,7 @@
       "niveau": 2,
       "type": "liste",
       "recto": "Comment structure-t-on la mesure de la performance qualité créative ?",
-      "verso": "Face à 3 paradoxes (quantifier sans brider, objectiver le subjectif, évaluer sans tuer la spontanéité) : 3 niveaux d'indicateurs — opérationnels (quotidien : temps de traitement, allers-retours), tactiques (mensuel : coût par livrable, délai de validation), stratégiques (trimestriel : reconnaissance créative, ROI) — présentés en « duos » quantitatif + qualitatif. Les données croisent 4 sources : automatiques (outils), déclaratives (enquêtes), observationnelles (audits), externes (retours clients). L'interprétation exige une pondération contextuelle et la prise en compte du cycle de vie (Exploration → Conception → Réalisation → Finalisation). La performance d'un circuit de validation se mesure elle aussi sur 4 dimensions : temps moyen de validation, nombre d'itérations, satisfaction des parties prenantes, impact qualité — les pré-validations techniques automatisées (formats, résolutions, éléments obligatoires) et une matrice RACI claire font chuter les allers-retours et les délais."
+      "verso": "3 niveaux d'indicateurs : opérationnels (quotidien), tactiques (mensuel), stratégiques (trimestriel), présentés en duos quantitatif et qualitatif.\n4 sources : automatiques, déclaratives, observationnelles, externes."
     },
     {
       "id": "b4-r08-fc-026",
@@ -209,7 +209,7 @@
       "niveau": 2,
       "type": "distinction",
       "recto": "Écart positif et anomalie : quelle différence, et que montre le cas CreativeFlow ?",
-      "verso": "L'écart positif est une innovation (un dépassement de délai qui a produit des ajustements très appréciés) ; l'anomalie est une dérive (une accélération qui masque une baisse de qualité). Le pilotage qualité est un levier d'apprentissage, pas de sanction. CreativeFlow : après 12 mois, délais −22 % et réclamations −35 %, mais uniformisation des créations, aucun prix créatif (contre trois avant), turnover des seniors +40 %, temps d'exploration −43 % — des indicateurs uniquement opérationnels optimisent l'efficacité au détriment de l'excellence créative."
+      "verso": "Écart positif : une innovation — un dépassement qui a produit un résultat apprécié. Anomalie : une dérive masquée.\nCreativeFlow : délais −22 % mais aucun prix créatif et turnover des seniors +40 % — l'efficacité au prix de l'excellence."
     },
     {
       "id": "b4-r08-fc-027",
@@ -217,7 +217,7 @@
       "niveau": 3,
       "type": "chiffre",
       "recto": "Qu'est-ce que l'architecture « glocale » et sa répartition de référence ?",
-      "verso": "Une pyramide de standards : globaux non négociables (ADN de marque), adaptatifs régionaux, locaux spécifiques — avec la répartition de référence 60 % globaux / 25 % régionaux / 15 % locaux, équilibre dynamique à réviser périodiquement. Les référentiels sont modulaires et versionnés dans une base internationale ; la cartographie des invariants définit des « corridors d'adaptation » où les équipes locales évoluent sans validation centrale. Organisation : équipe centrale gardienne de la cohérence, référents qualité locaux biculturels, correspondants créatifs chez les partenaires, binômes interculturels, mesure à double grille (indicateurs globaux + locaux)."
+      "verso": "Une pyramide de standards : globaux non négociables, adaptatifs régionaux, locaux spécifiques.\nRépartition de référence : 60 % globaux, 25 % régionaux, 15 % locaux — un équilibre à réviser périodiquement."
     }
   ]
 }

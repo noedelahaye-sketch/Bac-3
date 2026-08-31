@@ -6067,7 +6067,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "distinction",
     "recto": "Management mécaniste et management organique : quelles différences ?",
-    "verso": "Dans l'entreprise classique (mécaniste), le pouvoir de décision est identifié, concentré, centralisé et très généraliste : modèle vertical, rigide, fondé sur l'autorité hiérarchique. Dans l'entreprise organique, vue comme un organisme vivant, le pouvoir est diffus, réparti, décentralisé et très spécialisé : modèle horizontal et fluide qui libère les énergies et l'innovation. Et ce sont les marchés qui tirent les entreprises, non l'inverse.",
+    "verso": "Mécaniste : pouvoir concentré, centralisé, généraliste — modèle vertical et rigide.\nOrganique : pouvoir diffus, décentralisé, spécialisé — modèle horizontal et fluide, qui libère l'innovation.",
     "ancre": "s-1-l-evolution-du-management-du-controle-au-sens",
     "secTitre": "1. L'évolution du management : du contrôle au sens"
   },
@@ -6079,7 +6079,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quelles sont les 3 grandes missions recentrées du manager d'aujourd'hui ?",
-    "verso": "1. Donner du sens (des repères dans un environnement mouvant). 2. Accompagner et soutenir. 3. Développer l'autonomie (prise de risque, initiative individuelle). S'y ajoutent : relier les expertises et assurer le développement continu des compétences. De « contrôleur », le manager est devenu « stratège, développeur, animateur et soutien ». Image clé : le manager « chef d'orchestre » — il organise, planifie et répartit les rôles entre des individualités singulières mais complémentaires (créatif, expert, discret efficace, pessimiste, optimiste...) pour que toutes les tâches soient réalisées avec exigence dans une même temporalité : il n'y a pas de sous-métiers, c'est l'harmonie qui compte.",
+    "verso": "1. Donner du sens. 2. Accompagner et soutenir. 3. Développer l'autonomie.\nDe « contrôleur », le manager devient stratège, développeur, animateur et soutien.",
     "ancre": "s-1-l-evolution-du-management-du-controle-au-sens",
     "secTitre": "1. L'évolution du management : du contrôle au sens"
   },
@@ -6091,7 +6091,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce que le triptyque autonomie–confiance–responsabilité, et quelle nuance faut-il retenir ?",
-    "verso": "C'est l'un des fondements des nouveaux modes de management : la confiance permet l'autonomie, la prise de risque et les coopérations. Attention : la confiance n'entraîne pas la disparition de toute forme de contrôle (contrôle d'ailleurs facilité par la digitalisation des processus). Les compétences managériales se déplacent vers le « savoir faire faire » plutôt que le savoir-faire.",
+    "verso": "La confiance permet l'autonomie, la prise de risque et les coopérations.\nNuance : elle ne fait pas disparaître tout contrôle — la digitalisation des processus le facilite même.",
     "ancre": "s-2-missions-roles-et-postures-du-manager",
     "secTitre": "2. Missions, rôles et postures du manager"
   },
@@ -6103,7 +6103,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "application",
     "recto": "Quelle est la posture du manager-coach, et quel est son préalable ?",
-    "verso": "Ne pouvant plus tout contrôler, le manager devient guide, coach (accompagnateur et pédagogue) et facilitateur : questionner plutôt que répondre, soutenir plutôt que juger, faciliter plutôt que diriger. La première attente d'un collaborateur étant d'être reconnu et valorisé, l'écoute est le préalable à la confiance — la compétence sociale indispensable. Son principal dilemme reste de concilier souplesse et autorité.",
+    "verso": "Guide, coach et facilitateur : questionner plutôt que répondre, soutenir plutôt que juger, faciliter plutôt que diriger.\nPréalable : l'écoute. La première attente d'un collaborateur est d'être reconnu et valorisé.",
     "ancre": "s-2-missions-roles-et-postures-du-manager",
     "secTitre": "2. Missions, rôles et postures du manager"
   },
@@ -6115,7 +6115,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quels sont les 5 types d'informations que le manager doit faire circuler, et les 5 flux ?",
-    "verso": "Opérationnelle (définir la nature du travail), organisationnelle (savoir comment faire), relationnelle (comprendre pourquoi le faire), connexe (se situer au sein du service), générale (connaître la stratégie de l'entreprise). Les 5 flux : descendant, ascendant, latéral, « social » et externe. But : informer pour donner du sens à l'action — le manager est la passerelle entre la direction et son équipe.",
+    "verso": "Opérationnelle (quoi faire), organisationnelle (comment), relationnelle (pourquoi), connexe (où se situer), générale (la stratégie).\nLes 5 flux : descendant, ascendant, latéral, social, externe.",
     "ancre": "s-2-missions-roles-et-postures-du-manager",
     "secTitre": "2. Missions, rôles et postures du manager"
   },
@@ -6127,7 +6127,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "distinction",
     "recto": "Hard skills et soft skills : quelle différence, et quelles sont les 3 familles de soft skills ?",
-    "verso": "Hard skills : capacités techniques — compétences opérationnelles, savoir-faire, expertises acquises par diplôme, formation ou expérience. Soft skills : capacités comportementales — intelligence relationnelle, communication, aptitudes interpersonnelles ; transversales, généralement acquises hors du circuit scolaire, elles sont devenues stratégiques. 3 familles : personnelles (confiance, créativité, curiosité, adaptation), interpersonnelles (bienveillance, communication, assertivité, empathie), professionnelles (autonomie, esprit critique, éthique du travail, gestion du stress).",
+    "verso": "Hard skills : capacités techniques, acquises par diplôme, formation ou expérience. Soft skills : capacités comportementales, transversales.\n3 familles : personnelles (créativité), interpersonnelles (empathie), professionnelles (esprit critique).",
     "ancre": "s-3-competences-et-leadership",
     "secTitre": "3. Compétences et leadership"
   },
@@ -6139,7 +6139,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "distinction",
     "recto": "Manager, leader, autorité : comment le cours distingue-t-il ces trois notions ?",
-    "verso": "Le manager est en charge d'une organisation ou d'une entité, investi d'une autorité formelle qui lui donne un statut — et ce statut donne accès à une information privilégiée pour formuler décisions et stratégies. Le leader a une autorité naturelle, un ascendant, une influence dans le groupe : c'est un meneur, mobilisateur d'énergies — un chef statutaire peut ou non être un leader. L'autorité est la capacité reconnue par l'institution d'exercer un pouvoir (décider, par exemple).",
+    "verso": "Manager : autorité formelle, donc un statut et une information privilégiée pour décider.\nLeader : autorité naturelle, ascendant, mobilisateur. Un chef statutaire peut ne pas être un leader.\nAutorité : capacité reconnue par l'institution d'exercer un pouvoir.",
     "ancre": "s-3-competences-et-leadership",
     "secTitre": "3. Compétences et leadership"
   },
@@ -6151,7 +6151,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "chiffre",
     "recto": "Qu'est-ce que le leadership, et qu'a découvert David McClelland ?",
-    "verso": "Le leadership est la capacité d'un individu à exercer une influence sur les autres au point de leur donner envie de le suivre. Le manager qui en a sait donner du sens au travail de l'équipe, motiver par son attitude et sa communication, faire des arbitrages acceptés par le groupe, représenter et défendre le groupe auprès des parties prenantes. David McClelland (psychologue, Harvard) a découvert que les leaders dotés de 6 ou plus des compétences émotionnelles étaient beaucoup plus efficaces que leurs collègues qui en sont dépourvus. À retenir aussi : il n'y a pas de bonne ou de mauvaise personnalité, mais des personnalités adaptées ou non à une situation — les personnes talentueuses ont développé la connaissance de soi et l'humilité intellectuelle. Leadership et management restent complémentaires : il ne suffit pas d'être manager pour être leader, ni l'inverse.",
+    "verso": "Le leadership est la capacité d'influencer les autres au point de leur donner envie de vous suivre.\nMcClelland (Harvard) : les leaders dotés de 6 compétences émotionnelles ou plus sont bien plus efficaces.",
     "ancre": "s-3-competences-et-leadership",
     "secTitre": "3. Compétences et leadership"
   },
@@ -6163,7 +6163,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Comment le cours définit-il une stratégie, et quand existe-t-elle vraiment ?",
-    "verso": "« Une stratégie consiste en un processus d'allocation de ressources (au sens large) qui engage de façon durable l'entreprise, son devenir. » Elle est rythmée par un double mouvement analyse/engagement et doit être régulièrement revisitée. Elle n'existe que s'il y a un impératif de choix entre intérêts légitimes en opposition : sans limite de ressources ni concurrence, pas besoin de stratégie — « on fait de la stratégie parce qu'on est coincé ».",
+    "verso": "« Un processus d'allocation de ressources qui engage de façon durable l'entreprise, son devenir. » Double mouvement : analyse et engagement.\nElle n'existe que s'il y a un impératif de choix : « on fait de la stratégie parce qu'on est coincé ».",
     "ancre": "s-4-anticiper-vision-strategique-et-changement",
     "secTitre": "4. Anticiper : vision stratégique et changement"
   },
@@ -6175,7 +6175,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "distinction",
     "recto": "Exploitation et exploration : quelle différence, et quelles sont les 4 approches de la stratégie ?",
-    "verso": "Exploitation = utiliser un potentiel existant, le quotidien : fait-on comme il faut ? Exploration = renouveler le potentiel, la stratégie : fait-on ce qu'il faut ? L'art de la stratégie est d'assurer leur coexistence harmonieuse. Les 4 approches qui coexistent : l'anticipation (vision et planification), la réactivité (client au cœur, concurrence et marché), l'équilibre des intérêts (jeux d'acteurs et de pouvoirs) et les logiques d'émergence (innovation, tout-numérique : « on apprend en marchant »).",
+    "verso": "Exploitation : utiliser le potentiel existant — fait-on comme il faut ? Exploration : le renouveler — fait-on ce qu'il faut ?\nLes 4 approches : anticipation, réactivité, équilibre des intérêts, logiques d'émergence.",
     "ancre": "s-4-anticiper-vision-strategique-et-changement",
     "secTitre": "4. Anticiper : vision stratégique et changement"
   },
@@ -6187,7 +6187,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Quels sont les 4 champs interrogés par l'élaboration stratégique, et ses outils ?",
-    "verso": "Écologie (« dans quel monde j'évolue ? quel marché, quelles tendances lourdes ? »), marché (« qu'est-ce que je comprends des signaux ? quel service vendre, à qui ? »), ressources (« ai-je les ressources pour jouer ? ») et prospective (« et demain ? »). Le marketing stratégique est la clé d'entrée pour comprendre le marché ; le marketing opérationnel sert la mise en œuvre. Outils : le business plan, le PMO (Plan Marketing Opérationnel, traduction formalisée de l'ambition en plan économique et commercial à 3 ans) et le budget.",
+    "verso": "Écologie (quel monde, quel marché ?), marché (quels signaux, vendre quoi et à qui ?), ressources (de quoi jouer ?), prospective (et demain ?).\nOutils : business plan, PMO (plan à 3 ans), budget.",
     "ancre": "s-4-anticiper-vision-strategique-et-changement",
     "secTitre": "4. Anticiper : vision stratégique et changement"
   },
@@ -6199,7 +6199,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quelles sont les 2 dimensions du changement permanent et les 4 formes de résistances ?",
-    "verso": "L'environnement évolue selon l'instabilité (la vitesse de changement) et l'incertitude (on ne sait pas comment il évoluera). Les résistances sont normales, attendues et même utiles — « impossible de sculpter une statue sans la résistance de la pierre ». 4 formes : passivité, objections, jeux politiques, conflits ouverts. Dans un monde turbulent, il faut passer de la planification à la synchronisation : des ajustements mutuels et permanents qui font converger des actions parallèles vers une intention commune (dialectique intention/situation). Corollaire : la clé du management n'est plus la prévision mais l'intention — le monde complexe met à mal les planificateurs, et le manager crée la cohérence autour de valeurs communes et de règles du jeu (« pas d'implication si confusion ! »), en s'engageant sur trois directions : maîtrise des outils, maturité relationnelle et esprit critique.",
+    "verso": "Instabilité : la vitesse du changement. Incertitude : on ignore comment il évoluera.\nRésistances normales et même utiles, en 4 formes : passivité, objections, jeux politiques, conflits ouverts.",
     "ancre": "s-4-anticiper-vision-strategique-et-changement",
     "secTitre": "4. Anticiper : vision stratégique et changement"
   },
@@ -6211,7 +6211,7 @@ var FLASHCARDS = [
     "niveau": 3,
     "type": "chiffre",
     "recto": "Comment identifie-t-on les besoins de compétences, et quel est le chiffre clé sur le reskilling ?",
-    "verso": "L'identification part de la stratégie de l'entreprise, puis des compétences requises par poste : le besoin de formation = la mesure de l'écart entre compétences actuelles et nécessaires. Deux types de besoins : collectifs (changements technologiques, culturels ou réglementaires, formations obligatoires santé/sécurité/environnement) et individuels (liés au poste ou au plan de développement). Chiffre clé : un salarié sur deux dans le monde devrait avoir besoin de reskilling (reconversion) dans les cinq prochaines années. Ne pas survaloriser les jeunes « nés avec le digital » : les seniors apportent recul et équilibre.",
+    "verso": "Le besoin de formation est l'écart entre les compétences détenues et celles requises — on part de la stratégie, puis des postes.\nChiffre clé : un salarié sur deux dans le monde aura besoin de reskilling d'ici cinq ans.",
     "ancre": "s-4-anticiper-vision-strategique-et-changement",
     "secTitre": "4. Anticiper : vision stratégique et changement"
   },
@@ -6223,7 +6223,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quels sont les défis post-Covid du manager, et ses opportunités ?",
-    "verso": "Deux défis majeurs : la gestion à distance des équipes (maintenir motivation, engagement et contrôle, donc plus d'autonomie, de responsabilisation, de confiance et un management personnalisé) et la crise elle-même (maintenir une vision malgré l'incertitude, apaiser les craintes, assurer une présence virtuelle). La frontière vie pro/vie perso s'est estompée : ce déséquilibre compte parmi les principaux facteurs des départs massifs. Opportunités : l'IA (analyse et prise de décision, gestion des talents, veille, gestion des risques, personnalisation), l'automatisation des tâches répétitives et l'intelligence collective, qui rend l'équipe actrice du changement.",
+    "verso": "Défis : gérer les équipes à distance (autonomie, confiance, management personnalisé) et la crise elle-même (garder une vision malgré l'incertitude).\nOpportunités : l'IA, l'automatisation des tâches répétitives, l'intelligence collective.",
     "ancre": "s-5-defis-et-opportunites-du-manager-d-aujourd-hui",
     "secTitre": "5. Défis et opportunités du manager d'aujourd'hui"
   },
@@ -6235,7 +6235,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "chiffre",
     "recto": "Inclusivité et diversité : quelle différence, et quels chiffres à l'appui ?",
-    "verso": "L'inclusivité = assembler tous les salariés dans une mutualité et traiter tout le monde à égalité ; la diversité = favoriser la différence et inciter chacun à être unique. Deux notions complémentaires, sources de créativité, d'innovation et de productivité. Selon Deloitte, une politique inclusive générerait jusqu'à 30 % de chiffre d'affaires en plus par salarié ; l'Institut Montaigne vérifie que l'égalité de genre contribue à de meilleures performances économiques.",
+    "verso": "Inclusivité : assembler tous les salariés et traiter à égalité. Diversité : favoriser la différence, inciter chacun à être unique.\nDeloitte : une politique inclusive générerait jusqu'à 30 % de CA en plus par salarié.",
     "ancre": "s-5-defis-et-opportunites-du-manager-d-aujourd-hui",
     "secTitre": "5. Défis et opportunités du manager d'aujourd'hui"
   },
@@ -6247,7 +6247,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quels sont les 7 enjeux universels du management, et avec quels outils les piloter ?",
-    "verso": "1. La définition d'une vision à moyen et long terme traduite en stratégie claire et réaliste. 2. La gestion du changement et l'adaptation. 3. L'analyse de l'environnement (tendances, concurrence, innovations). 4. La mobilisation des ressources humaines (attirer, conserver, motiver les talents). 5. Le suivi de la performance commerciale et financière (le socle de base). 6. La gestion des ressources et des risques. 7. La durabilité et la responsabilité sociale (RSE). Outils : SWOT et scénarios prospectifs, veille stratégique, cartographie des parties prenantes, KPI limités aux plus significatifs (5 à 8), projets pilotes avant déploiement massif.",
+    "verso": "Vision, gestion du changement, analyse de l'environnement, mobilisation des RH, suivi de la performance, gestion des ressources et des risques, RSE.\nOutils : SWOT, veille, cartographie des parties prenantes, 5 à 8 KPI, projets pilotes.",
     "ancre": "s-6-les-enjeux-strategiques-du-management",
     "secTitre": "6. Les enjeux stratégiques du management"
   },
@@ -6259,7 +6259,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "distinction",
     "recto": "Croissance, consolidation, transformation : quels enjeux majeurs selon le contexte de l'entreprise ?",
-    "verso": "Croissance (expansion plus ou moins rapide) : gérer la croissance et gérer efficacement les ressources — financements, recrutement et formation, management participatif. Consolidation (croissance terminée, maturité) : stabiliser l'organisation — optimiser les processus, préserver les marges, fidéliser — sans laisser s'installer la routine : provoquer le changement pour remettre les équipes en tension. Transformation (évoluer pour rester compétitif) : redéfinir la stratégie et accompagner le changement (adhésion, minimiser les résistances), digital, IA, omnicanalité.",
+    "verso": "Croissance : gérer la croissance et les ressources (financements, recrutement, formation).\nConsolidation : stabiliser et optimiser, sans laisser s'installer la routine.\nTransformation : redéfinir la stratégie et accompagner le changement.",
     "ancre": "s-6-les-enjeux-strategiques-du-management",
     "secTitre": "6. Les enjeux stratégiques du management"
   },
@@ -6271,7 +6271,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "distinction",
     "recto": "Leader, challenger, suiveur : quel enjeu majeur pour chaque positionnement concurrentiel ?",
-    "verso": "Le leader (chef de file, part de marché la plus importante, ex. Coca-Cola) : l'innovation continue, « le carburant du leader ». Le challenger (prétendant, juste derrière le leader, ex. Pepsi Cola — plus petit mais inventif, il bouscule les règles) : se différencier (offres, prix, proposition de valeur) sur des segments ciblés. Le suiveur (faible part de marché, imite le leader à prix plus bas, sans prise de risque — généralement rentable) : s'adapter rapidement, surveiller la concurrence, maîtriser les coûts, soigner réputation et écoute client.",
+    "verso": "Leader (Coca-Cola) : l'innovation continue, « le carburant du leader ».\nChallenger (Pepsi) : se différencier sur des segments ciblés.\nSuiveur : s'adapter vite, maîtriser les coûts, surveiller la concurrence.",
     "ancre": "s-6-les-enjeux-strategiques-du-management",
     "secTitre": "6. Les enjeux stratégiques du management"
   },
@@ -6283,7 +6283,7 @@ var FLASHCARDS = [
     "niveau": 3,
     "type": "chiffre",
     "recto": "PME/TPE et multinationales : quelles définitions INSEE et quels enjeux selon la taille ?",
-    "verso": "Les PME/TPE représentent plus de 99 % des entreprises françaises. INSEE (2019) : la PME occupe moins de 250 personnes, avec un CA annuel ≤ 50 M€ ou un bilan ≤ 43 M€ ; la microentreprise (TPE) : moins de 10 personnes, CA ≤ 2 M€. Enjeu majeur des PME : développer une stratégie de croissance avec des ressources limitées (atouts : agilité, flexibilité, créativité). Multinationales : adaptation aux spécificités culturelles et économiques de chaque pays, risques géopolitiques, équipes multiculturelles, chaîne d'approvisionnement mondiale, cybersécurité (données, systèmes, propriété intellectuelle).",
+    "verso": "PME/TPE : plus de 99 % des entreprises françaises. INSEE : moins de 250 personnes, CA ≤ 50 M€ (TPE : moins de 10, CA ≤ 2 M€).\nEnjeu PME : croître avec des ressources limitées. Multinationales : adaptation culturelle, risques géopolitiques, cybersécurité.",
     "ancre": "s-6-les-enjeux-strategiques-du-management",
     "secTitre": "6. Les enjeux stratégiques du management"
   },
@@ -6295,7 +6295,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "chiffre",
     "recto": "Quand définit-on les objectifs, et quel est l'horizon temporel de chaque niveau (stratégie, objectifs, plan d'action) ?",
-    "verso": "Les objectifs se définissent après la stratégie et avant le lancement du plan d'action : la stratégie fixe les axes, les objectifs les déclinent, le plan d'action les réalise sur le terrain. Horizons : stratégie pluriannuelle, objectifs sur quelques mois à un an, plans d'action sur quelques semaines à un trimestre.",
+    "verso": "Après la stratégie, avant le plan d'action : la stratégie fixe les axes, les objectifs les déclinent, le plan les réalise.\nHorizons : stratégie pluriannuelle, objectifs de quelques mois à un an, plan d'action de quelques semaines à un trimestre.",
     "ancre": "s-1-de-la-strategie-au-plan-d-action",
     "secTitre": "1. De la stratégie au plan d'action"
   },
@@ -6307,7 +6307,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quelles sont les 4 fonctions des objectifs pour une équipe ?",
-    "verso": "1. Donner du sens : rattachée à un objectif, l'action devient lisible. 2. Motiver : le suivi des indicateurs montre la progression et permet de se challenger. 3. Responsabiliser : chacun porte sa part de co-responsabilité dans les résultats. 4. Piloter : un cap et un tableau de bord partagé. Au-delà du projet lui-même, côté RH : l'atteinte des objectifs donne au manager une matière factuelle pour l'entretien annuel d'évaluation, et les difficultés rencontrées en cours de route orientent les formations à suivre.",
+    "verso": "1. Donner du sens. 2. Motiver (les indicateurs montrent la progression). 3. Responsabiliser. 4. Piloter (un cap, un tableau de bord partagé).\nLeur atteinte nourrit aussi l'entretien annuel d'évaluation.",
     "ancre": "s-1-de-la-strategie-au-plan-d-action",
     "secTitre": "1. De la stratégie au plan d'action"
   },
@@ -6319,7 +6319,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Que signifie l'acronyme SMARTEF, et quels types d'indicateurs servent le critère Mesurable ?",
-    "verso": "Spécifique, Mesurable, Atteignable, Réaliste, Temporellement défini, Ecologique, Fun. Le critère Mesurable s'appuie sur des indicateurs quantitatifs (chiffres) ou qualitatifs (notoriété, satisfaction — mesurés par sondage, enquête, baromètre) pour quantifier et suivre les progrès. Variantes de l'acronyme : SMART (les 5 premiers critères), SMARTER qui ajoute un dernier R — Ré-ajustable, l'objectif doit pouvoir être revu si un changement majeur survient — et SMARTEF qui ajoute Ecologique et Fun.",
+    "verso": "Spécifique, Mesurable, Atteignable, Réaliste, Temporellement défini, Ecologique, Fun.\nMesurable s'appuie sur des indicateurs quantitatifs (chiffres) ou qualitatifs (satisfaction, notoriété — sondage, enquête).",
     "ancre": "s-2-la-methode-smartef-critere-par-critere",
     "secTitre": "2. La méthode SMARTEF, critère par critère"
   },
@@ -6331,7 +6331,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "definition",
     "recto": "Que recouvre le critère Ecologique d'un objectif SMARTEF, et quel piège faut-il éviter ?",
-    "verso": "Pas seulement l'environnement : aussi l'écosystème (partenaires, clients, fournisseurs, marchés) et l'éthique — cohérence avec les valeurs, l'ADN, la mission. Le piège : le greenwashing, « méthode de marketing consistant à communiquer auprès du public en utilisant l'argument écologique de manière trompeuse pour améliorer son image ». L'engagement doit être réel et authentique.",
+    "verso": "Pas seulement l'environnement : aussi l'écosystème (partenaires, clients, fournisseurs) et l'éthique — cohérence avec les valeurs et l'ADN.\nLe piège : le greenwashing, l'argument écologique utilisé de manière trompeuse.",
     "ancre": "s-2-la-methode-smartef-critere-par-critere",
     "secTitre": "2. La méthode SMARTEF, critère par critère"
   },
@@ -6343,7 +6343,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "application",
     "recto": "Quels sont les deux pièges d'un objectif mal formulé (non spécifique, non atteignable) ?",
-    "verso": "Un objectif non spécifique (plusieurs interprétations possibles : à reformuler) éparpille les efforts et nuit à la motivation. Un objectif non atteignable expose le management à un défaut de moyens : les collaborateurs pourraient le faire valoir pour ne pas porter l'échec — le management s'engage à fournir les ressources (compétences, formations, budget, RH, matériel).",
+    "verso": "Non spécifique : plusieurs interprétations, donc efforts éparpillés et motivation atteinte. À reformuler.\nNon atteignable : les collaborateurs peuvent opposer le défaut de moyens pour ne pas porter l'échec.",
     "ancre": "s-2-la-methode-smartef-critere-par-critere",
     "secTitre": "2. La méthode SMARTEF, critère par critère"
   },
@@ -6355,7 +6355,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quelles sont les étapes du processus de formulation des objectifs, et que se passe-t-il après le pilotage ?",
-    "verso": "1. Déterminer le contexte et les freins (au besoin avec une matrice SWOT). 2. Définir le but en détail (hexamètre de Quintilien, QQOQCCP). 3. Construire les indicateurs. 4. Vérifier l'équilibre ambitieux mais atteignable. 5. Vérifier la pertinence (valeurs, objectifs globaux). 6. Définir une échéance. 7. Examiner les implications éthiques — plus rester flexible. Après suivi et pilotage vient la livraison, avec le bilan individuel et collectif et le retour d'expérience (Rex) des parties prenantes.",
+    "verso": "Contexte et freins (SWOT), but détaillé (QQOQCCP), indicateurs, équilibre ambitieux/atteignable, pertinence, échéance, éthique — et rester flexible.\nAprès le pilotage : livraison, bilan, retour d'expérience (Rex).",
     "ancre": "s-3-formuler-les-objectifs-processus-et-avantages",
     "secTitre": "3. Formuler les objectifs : processus et avantages"
   },
@@ -6367,7 +6367,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Comment décline-t-on les objectifs principaux en objectifs secondaires ?",
-    "verso": "Par la logique de l'entonnoir (ou pyramide inversée) : on établit d'abord les objectifs principaux, puis on en déduit les secondaires. Deux autres méthodes : par champ thématique (finance, marketing, commercial...) ou par zones géographiques (pertinent pour les forces de vente). Règle d'or : les objectifs opérationnels sont au service des stratégiques.",
+    "verso": "Par l'entonnoir (pyramide inversée) : d'abord les objectifs principaux, on en déduit les secondaires.\nAutres méthodes : par champ thématique ou par zone géographique. Les opérationnels servent les stratégiques.",
     "ancre": "s-4-hierarchiser-et-decliner-les-objectifs",
     "secTitre": "4. Hiérarchiser et décliner les objectifs"
   },
@@ -6379,7 +6379,7 @@ var FLASHCARDS = [
     "niveau": 3,
     "type": "application",
     "recto": "La hiérarchisation des objectifs est-elle toujours nécessaire, et comment la mène-t-on ?",
-    "verso": "Non, elle est optionnelle : inutile pour un projet modeste, rapide, ou mené de front par des équipes pluridisciplinaires (sauf projet « à tiroirs » où chaque phase conditionne la suivante). Elle est précieuse quand les moyens sont restreints (effectifs, budget, compétences). Trois questions-guides : conséquences/risques à ne pas agir ? degré de faisabilité ? gain à traiter en priorité ? On peut ensuite pondérer chaque critère (poids, coefficient).",
+    "verso": "Non, elle est optionnelle : inutile sur un projet modeste ou rapide, précieuse quand les moyens sont restreints.\nTrois questions : risques à ne pas agir ? faisabilité ? gain à traiter en priorité ? Puis pondération.",
     "ancre": "s-4-hierarchiser-et-decliner-les-objectifs",
     "secTitre": "4. Hiérarchiser et décliner les objectifs"
   },
@@ -6391,7 +6391,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Comment le QQOQCCP se décline-t-il pour documenter le plan d'action ?",
-    "verso": "Quoi : la mission, la tâche. Qui : les personnes-ressources qui exécutent et celle auprès de qui se fait le reporting (elle porte la responsabilité). Où : le territoire géographique. Quand : démarrage, deadline, durée, jalons. Comment : les moyens alloués (financiers, humains, formation...). Combien : personnes mobilisées, CA ou résultat chiffré. Pourquoi : l'enjeu, le lien avec l'objectif. Avec les KPI intégrés, le plan devient un tableau de bord de l'activité (ex. de KPI : le NPS pour la satisfaction client).",
+    "verso": "Quoi (la tâche), Qui (qui exécute, et qui porte la responsabilité), Où, Quand (jalons), Comment (les moyens), Combien, Pourquoi (l'enjeu).\nAvec les KPI, le plan devient le tableau de bord de l'activité.",
     "ancre": "s-5-decomposer-en-taches-le-plan-d-action",
     "secTitre": "5. Décomposer en tâches : le plan d'action"
   },
@@ -6403,7 +6403,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "distinction",
     "recto": "Obligation de moyens et obligation de résultat : quelle différence, et où se définit ce niveau ?",
-    "verso": "Obligation de moyens : « déployer ses meilleurs efforts pour atteindre l'objectif visé, en ayant agi selon les règles de l'art ». Obligation de résultat : « effectuer sa mission jusqu'au bout », sans réalisation partielle possible. Ce niveau se définit en amont, dans le contrat de travail ou la lettre de mission rédigée avant le lancement. La responsabilité elle-même = l'obligation de répondre de ses actes, de les assumer et d'en supporter les conséquences.",
+    "verso": "Moyens : « déployer ses meilleurs efforts, en ayant agi selon les règles de l'art ».\nRésultat : « effectuer sa mission jusqu'au bout », sans réalisation partielle.\nCe niveau se fixe dans le contrat de travail ou la lettre de mission.",
     "ancre": "s-5-decomposer-en-taches-le-plan-d-action",
     "secTitre": "5. Décomposer en tâches : le plan d'action"
   },
@@ -6415,7 +6415,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quelles sont les grandes familles de ressources d'un projet, et qu'est-ce que le plan de ressources ?",
-    "verso": "Trois grandes familles : humaines (CDI, CDD, stage, alternance, intérim, prestataires, experts, cabinets conseil), matérielles (locaux, équipements, véhicules), financières (budget global ou lignes budgétaires) — auxquelles s'ajoutent les technologiques (logiciels, outils, compatibilité du parc). Le plan de ressources indique comment chaque ressource sera allouée aux tâches ; l'allocation est parfois négociée avec la direction (N+1) ou les opérationnels (N-1).",
+    "verso": "Humaines (CDI, CDD, intérim, prestataires), matérielles (locaux, équipements), financières — plus les technologiques (logiciels, outils).\nLe plan de ressources dit comment chacune est allouée aux tâches.",
     "ancre": "s-6-ressources-sequencage-et-planification",
     "secTitre": "6. Ressources, séquençage et planification"
   },
@@ -6427,7 +6427,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "distinction",
     "recto": "Estimation par analogie et estimation paramétrique : quelle différence ?",
-    "verso": "L'estimation par analogie est comparative : on part d'une réalisation passée comparable pour estimer les délais. L'estimation paramétrique s'appuie sur des algorithmes : plus complexe, mais plus précise et fiable. Elles servent le séquençage, qui « raconte l'histoire » du projet pour fixer l'ordre logique des tâches et éviter les périodes de latence improductives.",
+    "verso": "Par analogie : comparative, on part d'une réalisation passée comparable.\nParamétrique : par algorithmes — plus complexe, mais plus précise et fiable.",
     "ancre": "s-6-ressources-sequencage-et-planification",
     "secTitre": "6. Ressources, séquençage et planification"
   },
@@ -6439,7 +6439,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quelles sont les 4 dépendances possibles entre deux activités A et B ?",
-    "verso": "Fin à début (en cascade) : A démarre lorsque B se termine. Début à début : A peut démarrer dès que B a démarré. Fin à fin : A ne peut pas se terminer avant que B ne soit terminée. Début à fin : A ne peut pas se terminer avant que B n'ait démarré.",
+    "verso": "Fin à début (en cascade) : A démarre quand B se termine.\nDébut à début : A démarre dès que B a démarré.\nFin à fin : A ne peut finir avant B.\nDébut à fin : A ne peut finir avant que B ait démarré.",
     "ancre": "s-6-ressources-sequencage-et-planification",
     "secTitre": "6. Ressources, séquençage et planification"
   },
@@ -6451,7 +6451,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "distinction",
     "recto": "Le rétroplanning et le diagramme de Gantt sont déjà connus : qu'apporte en plus le tableau Kanban ?",
-    "verso": "Le Gantt est le repère du temps qui passe : il visualise l'avancée de chaque tâche, période par période. Le tableau Kanban, lui, suit les échéances objectif par objectif en colonnes d'état (à faire / en cours / fait) : c'est un outil de flux, issu des méthodes agiles, et non un outil de calendrier. Dans les deux cas, la planification se conclut par les KPI associés (performance des délais, des coûts...).",
+    "verso": "Le Gantt est le repère du temps qui passe : l'avancée de chaque tâche, période par période.\nLe Kanban suit les échéances par colonnes d'état (à faire / en cours / fait) : un outil de flux, pas de calendrier.",
     "ancre": "s-6-ressources-sequencage-et-planification",
     "secTitre": "6. Ressources, séquençage et planification"
   },
@@ -6463,7 +6463,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Quels sont les 3 paramètres qui guident le choix des méthodes de mise en œuvre ?",
-    "verso": "1. Les caractéristiques uniques des objectifs. 2. L'inventaire des ressources disponibles. 3. Les contraintes : internes (manque de savoir-faire, de budget) ou externes (concurrence, tendances du marché, préférences des clients, réglementation, délais). En cas de budget serré, on évalue le retour sur investissement (ROI) potentiel pour confirmer l'intérêt d'investir.",
+    "verso": "1. Les caractéristiques uniques des objectifs.\n2. L'inventaire des ressources disponibles.\n3. Les contraintes, internes (savoir-faire, budget) ou externes (concurrence, marché, réglementation).\nBudget serré : évaluer le ROI potentiel.",
     "ancre": "s-7-choisir-les-methodes-selon-la-situation",
     "secTitre": "7. Choisir les méthodes selon la situation"
   },
@@ -6475,7 +6475,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Pourquoi et à quels moments communiquer le plan d'action aux parties prenantes ?",
-    "verso": "Communiquer, c'est engager (on ne s'implique pas dans une démarche dont on ignore le sens) et témoigner de la considération. Trois moments : en amont (réflexion, co-construction), au lancement officiel (éventuellement avec un événement), puis en continu (suivi d'avancée, point budgétaire, retards et urgences, confirmation des livrables). Les destinataires : ceux qui interviendront, mais aussi ceux affectés directement ou indirectement.",
+    "verso": "Communiquer, c'est engager — on ne s'implique pas dans une démarche dont on ignore le sens — et témoigner de la considération.\nTrois moments : en amont, au lancement officiel, puis en continu.",
     "ancre": "s-8-mettre-en-uvre-et-piloter-le-plan-d-action",
     "secTitre": "8. Mettre en œuvre et piloter le plan d'action"
   },
@@ -6487,7 +6487,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "distinction",
     "recto": "Chef de projet et comité de pilotage (CoPil) : quels rôles respectifs, et par quels canaux suivre l'avancement ?",
-    "verso": "Le chef de projet coordonne actions, budget et délais. Le CoPil, composé des référents des pôles concernés, se réunit selon un planning prédéfini pour suivre la progression globale. Le suivi passe par trois canaux : réunions de suivi (présentiel ou distanciel), rapports d'étape (écrits, datés, archivables dans un cloud) et outils de suivi de projet comme Jira ou Slack.",
+    "verso": "Le chef de projet coordonne actions, budget et délais. Le CoPil, référents des pôles concernés, suit la progression globale.\nTrois canaux : réunions de suivi, rapports d'étape, outils de projet (Jira, Slack).",
     "ancre": "s-8-mettre-en-uvre-et-piloter-le-plan-d-action",
     "secTitre": "8. Mettre en œuvre et piloter le plan d'action"
   },
@@ -6499,7 +6499,7 @@ var FLASHCARDS = [
     "niveau": 3,
     "type": "application",
     "recto": "Comment gérer les obstacles en cours de plan d'action, et que faire des résultats obtenus ?",
-    "verso": "Être réactif : ajuster le plan (différer une livraison, changer de processus ou d'outils), allouer des ressources supplémentaires (un retard se compense en renfort humain), décider rapidement ; le CoPil peut piloter des « projets en marge » pour lever les freins. Ensuite : souligner les succès (reconnaissance, montée en compétences), capitaliser sur les bonnes pratiques, et garder le plan flexible — jusqu'à accueillir l'ajustement des objectifs personnels des collaborateurs.",
+    "verso": "Être réactif : ajuster le plan, allouer des ressources supplémentaires, décider vite. Le CoPil peut lancer des « projets en marge ».\nEnsuite : souligner les succès, capitaliser sur les bonnes pratiques, garder le plan flexible.",
     "ancre": "s-8-mettre-en-uvre-et-piloter-le-plan-d-action",
     "secTitre": "8. Mettre en œuvre et piloter le plan d'action"
   },
@@ -6511,7 +6511,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Sur quels 3 fondements repose une attribution pertinente des responsabilités ?",
-    "verso": "1. Une connaissance en temps réel des compétences de ses équipes. 2. L'identification des compétences requises par les projets en cours et à venir. 3. La capacité à faire concorder l'offre et la demande (flexibilité, suivi continu, formation). Enjeu : satisfaction et performance côté équipe ; efficacité opérationnelle, ressources optimisées et gestion proactive des risques côté entreprise. En amont, le manager saisit la vision du projet (traduire les attentes des parties prenantes en objectifs clairs — la vision est la « boussole » des décisions), puis cadre les besoins de la mission par un SWOT appliqué tâche par tâche : forces = compétences disponibles, faiblesses = manques, opportunités = collaborations externes, menaces = contraintes budgétaires.",
+    "verso": "1. Connaître en temps réel les compétences de ses équipes.\n2. Identifier celles que les projets exigent, en cours et à venir.\n3. Faire concorder l'offre et la demande : flexibilité, suivi continu, formation.",
     "ancre": "s-1-attribuer-les-taches-de-la-mission-a-la-feuille-de-route",
     "secTitre": "1. Attribuer les tâches : de la mission à la feuille de route"
   },
@@ -6523,7 +6523,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Que privilégient les méthodes agiles, et quelles sont les plus connues ?",
-    "verso": "Les méthodes agiles privilégient flexibilité, collaboration et adaptabilité : cycles itératifs courts, livraisons fréquentes de versions partielles, équipes auto-organisées. Les plus connues : Scrum, Kanban, Extreme Programming (XP) et Lean.",
+    "verso": "Flexibilité, collaboration, adaptabilité : cycles itératifs courts, livraisons fréquentes, équipes auto-organisées.\nLes plus connues : Scrum, Kanban, Extreme Programming (XP), Lean.",
     "ancre": "s-1-attribuer-les-taches-de-la-mission-a-la-feuille-de-route",
     "secTitre": "1. Attribuer les tâches : de la mission à la feuille de route"
   },
@@ -6535,7 +6535,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "distinction",
     "recto": "L'alignement compétences-tâches se joue à deux niveaux : lesquels ?",
-    "verso": "Niveau individuel : faire correspondre les compétences de chacun (hard skills techniques ET soft skills : communication, résolution de conflits, prise de décision, leadership) aux exigences de chaque tâche, via cartographie et matrices de compétences. Niveau collectif : l'équipe ne se limite pas à la somme des compétences individuelles — leur complémentarité crée la synergie (brainstormings, réunions interdisciplinaires, formations croisées, mentorat). C'est la même distinction qui structure l'analyse des compétences : l'analyse individuelle évalue connaissances, compétences techniques, aptitudes, attitudes et expériences de chacun (forces/faiblesses, alignement au poste, besoins de formation) ; l'analyse collective, la façon dont elles se combinent et interagissent en équipe.",
+    "verso": "Individuel : faire correspondre les compétences de chacun aux exigences de la tâche (cartographie, matrice de compétences).\nCollectif : l'équipe dépasse la somme des compétences — la complémentarité crée la synergie.",
     "ancre": "s-1-attribuer-les-taches-de-la-mission-a-la-feuille-de-route",
     "secTitre": "1. Attribuer les tâches : de la mission à la feuille de route"
   },
@@ -6547,7 +6547,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "distinction",
     "recto": "Équité et égalité dans la répartition des tâches : quelle différence ?",
-    "verso": "L'égalité est une répartition uniforme des charges, sans tenir compte des besoins individuels. L'équité est une attribution réfléchie selon les compétences, les aspirations et les contributions passées de chacun. L'égalité absolue ne conduit pas toujours à des résultats équitables.",
+    "verso": "Égalité : répartition uniforme des charges, sans tenir compte des besoins individuels.\nÉquité : attribution réfléchie selon les compétences, les aspirations et les contributions passées.",
     "ancre": "s-2-distribuer-equitablement-et-efficacement",
     "secTitre": "2. Distribuer équitablement et efficacement"
   },
@@ -6559,7 +6559,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Quelles sont les dimensions d'une distribution équitable des tâches ?",
-    "verso": "1. L'équilibre de la charge de travail : évaluer compétences, disponibilités et capacités ; personne ne doit être submergé ; ajustement régulier via un suivi. 2. L'équité des opportunités : accès de chacun à des projets stimulants et responsabilités stratégiques, opportunités communiquées de manière transparente, critères équitables. 3. La gestion des préférences et aspirations : discussions ouvertes régulières, tâches alignées sur les intérêts, Plan de Développement Individuel (PDI) dynamique et co-construit. Levier associé : le leadership participatif — impliquer les membres dans le choix de leurs missions apporte appropriation, motivation et culture de l'initiative ; priorités et délais restent interconnectés (les priorités donnent l'ordre, les délais la visibilité).",
+    "verso": "1. L'équilibre de la charge : personne ne doit être submergé.\n2. L'équité des opportunités : accès transparent aux projets stimulants.\n3. Les préférences et aspirations, via un plan de développement individuel (PDI).",
     "ancre": "s-2-distribuer-equitablement-et-efficacement",
     "secTitre": "2. Distribuer équitablement et efficacement"
   },
@@ -6571,7 +6571,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "application",
     "recto": "Comment se déclenche et s'anticipe la réaffectation des tâches ?",
-    "verso": "Elle s'anticipe par la veille stratégique (marché, technologies, réglementation) et se déclenche sur signaux des indicateurs (baisse de satisfaction client, retards). Elle croise les compétences nouvellement requises et la connaissance en temps réel des compétences effectives. La révision de la distribution est un processus continu, jamais ponctuel : redistribution, rotation, délégation de nouvelles responsabilités. Trois leviers : redistribution, rotation des responsabilités (déplacement périodique entre fonctions — nouvelles compétences, compréhension des processus, perspective élargie) et délégation de nouvelles responsabilités. Limite à connaître : trop de polyvalence surcharge et fait obstacle aux spécialisations, qui ont beaucoup de valeur.",
+    "verso": "Anticipée par la veille stratégique (marché, technologies, réglementation), déclenchée par les indicateurs : satisfaction en baisse, retards.\nC'est un processus continu : redistribution, rotation, délégation.",
     "ancre": "s-3-suivre-reaffecter-ameliorer-en-continu",
     "secTitre": "3. Suivre, réaffecter, améliorer en continu"
   },
@@ -6583,7 +6583,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Outre la roue de Deming (PDCA), quelles sont les 3 méthodologies d'amélioration continue à connaître, et leurs étapes ?",
-    "verso": "1. Kaizen : petites améliorations continues, culture d'évolution constante, chacun contribue (standardisation, mesure des performances, participation des employés). 2. Lean Six Sigma (Lean Management + Six Sigma) : réduire les variations et éliminer les gaspillages, via la démarche DMAIC — Définir → Mesurer → Analyser → Améliorer → Contrôler. 3. Design Thinking : méthode axée sur les besoins humains, la créativité et l'innovation, en 5 phases — Empathie → Définition → Idéation → Prototype → Test.",
+    "verso": "Kaizen : petites améliorations continues, chacun contribue.\nLean Six Sigma : réduire les variations et les gaspillages, par le DMAIC (Définir, Mesurer, Analyser, Améliorer, Contrôler).\nDesign Thinking : Empathie, Définition, Idéation, Prototype, Test.",
     "ancre": "s-3-suivre-reaffecter-ameliorer-en-continu",
     "secTitre": "3. Suivre, réaffecter, améliorer en continu"
   },
@@ -6595,7 +6595,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quelles sont les 5 étapes du processus d'analyse des compétences ?",
-    "verso": "1. Identification : collecte d'informations (entretiens, évaluations, auto-évaluations, retours d'expérience) et exploration des compétences tacites (expérience, intelligence émotionnelle). 2. Cartographie : profils détaillés par individu, forces dominantes et lacunes. 3. Alignement stratégique : comparaison avec les objectifs organisationnels, réajustements. 4. Plan de développement : plans individuels + développement collectif. 5. Évaluation continue : révision régulière, feedback et réajustement.",
+    "verso": "1. Identification (entretiens, évaluations, compétences tacites).\n2. Cartographie des profils.\n3. Alignement stratégique.\n4. Plan de développement.\n5. Évaluation continue.",
     "ancre": "s-4-evaluer-les-competences-individuelles-et-collectives",
     "secTitre": "4. Évaluer les compétences individuelles et collectives"
   },
@@ -6607,7 +6607,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Quelles méthodes pour évaluer compétences techniques, connaissances spécifiques et compétences comportementales ?",
-    "verso": "Techniques : tests pratiques (mises en situation réelles), évaluation par des pairs ou experts, examens écrits. Connaissances spécifiques : QCM, études de cas, entretiens structurés. Comportementales : études de cas comportementales (communication, résolution de problèmes, gestion du temps), évaluation par des tiers, auto-évaluation (prise de conscience, responsabilisation), questionnaires de personnalité, entretiens menés par des psychologues, évaluations en situation.",
+    "verso": "Techniques : tests pratiques, évaluation par les pairs, examens écrits.\nConnaissances : QCM, études de cas, entretiens structurés.\nComportementales : mises en situation, auto-évaluation, questionnaires de personnalité.",
     "ancre": "s-4-evaluer-les-competences-individuelles-et-collectives",
     "secTitre": "4. Évaluer les compétences individuelles et collectives"
   },
@@ -6619,7 +6619,7 @@ var FLASHCARDS = [
     "niveau": 3,
     "type": "chiffre",
     "recto": "NEO-PI-R et MBTI : que mesure chacun de ces questionnaires de personnalité ?",
-    "verso": "Le NEO-PI-R mesure les cinq grands facteurs : extraversion, ouverture d'esprit, stabilité émotionnelle, conscience, agrément. Le MBTI (Myers-Briggs) repose sur 4 dimensions : extraversion/introversion, sensation/intuition, pensée/sentiment, jugement/perception.",
+    "verso": "NEO-PI-R : les cinq grands facteurs — extraversion, ouverture, stabilité émotionnelle, conscience, agrément.\nMBTI : 4 dimensions — extraversion/introversion, sensation/intuition, pensée/sentiment, jugement/perception.",
     "ancre": "s-4-evaluer-les-competences-individuelles-et-collectives",
     "secTitre": "4. Évaluer les compétences individuelles et collectives"
   },
@@ -6631,7 +6631,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce que la rétroaction à 360° ?",
-    "verso": "Chaque collaborateur reçoit des commentaires sur sa performance de son superviseur et de quatre à huit pairs, subordonnés, collègues, voire parties prenantes externes (clients, partenaires), complétés par une auto-évaluation. Les évaluateurs sont choisis conjointement par l'organisation et l'employé. Le destinataire reçoit des données récapitulatives anonymisées, sans savoir qui a dit quoi. Risque majeur : les biais (confirmation, halo, récence). Garde-fous : former les évaluateurs aux biais, grilles standardisées à critères objectifs, minimum 5-6 évaluateurs diversifiés, validation RH avant transmission, réunions de calibration et agrégation anonymisée.",
+    "verso": "Des commentaires sur la performance venant du superviseur et de 4 à 8 pairs, subordonnés ou clients, plus une auto-évaluation.\nLe destinataire reçoit des données récapitulatives anonymisées, sans savoir qui a dit quoi.",
     "ancre": "s-4-evaluer-les-competences-individuelles-et-collectives",
     "secTitre": "4. Évaluer les compétences individuelles et collectives"
   },
@@ -6643,7 +6643,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "application",
     "recto": "Que se passe-t-il après une évaluation 360° ? Décrivez la séquence complète.",
-    "verso": "Analyser les commentaires → débriefer → élaborer un PDP → suivre. Débriefing en 3 temps (cadre sécurisant, 1 h minimum) : écoute du ressenti, clarification de chaque commentaire avec exemples concrets, reformulation positive des critiques en opportunités — posture de coach, pas de juge, technique du sandwich (force → axe d'amélioration → force). PDP co-construit : 2-3 objectifs prioritaires maximum en SMART, jalons à 1, 3 et 6 mois. Suivi : points mensuels de 30 minutes en one-to-one, tableau de bord partagé, évaluation à 6 mois.",
+    "verso": "Analyser les commentaires, débriefer, élaborer un PDP, suivre.\nDébriefing en 3 temps : écoute du ressenti, clarification par des exemples, reformulation positive. Posture de coach, pas de juge.\nPDP : 2 à 3 objectifs SMART, jalons à 1, 3 et 6 mois.",
     "ancre": "s-4-evaluer-les-competences-individuelles-et-collectives",
     "secTitre": "4. Évaluer les compétences individuelles et collectives"
   },
@@ -6655,7 +6655,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Selon Paul Watzlawick, à quels deux niveaux se déroule la communication ?",
-    "verso": "Au niveau du contenu (le fond : mots, phrases, images) et au niveau de la relation (la forme avec laquelle le message est délivré : gestes, voix, posture, attitude). La forme en dit plus que le fond, et la forme conditionne l'acceptation du fond — d'où l'exigence de congruence entre le « comment » non verbal et le « quoi » verbal (le paralangage étant la forme gestuelle et audiovisuelle de la communication).",
+    "verso": "Le contenu (le fond : mots, images) et la relation (la forme : gestes, voix, posture).\nLa forme en dit plus que le fond et conditionne son acceptation — d'où l'exigence de congruence.",
     "ancre": "s-5-la-communication-manageriale",
     "secTitre": "5. La communication managériale"
   },
@@ -6667,7 +6667,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Quelles sont les 3 fonctions de la communication, et quelle est la mission première du manager ?",
-    "verso": "1. L'expression (communiquer une intention, une émotion). 2. La représentation (transmettre des informations, un savoir). 3. L'action sur autrui (convaincre, séduire, influencer, transmettre des ordres). La mission première du manager : « fabriquer du sens » — donner une perspective, proposer un projet. Communiquer signifie « mettre en commun », avec un langage et un code communs.",
+    "verso": "1. L'expression (une intention, une émotion). 2. La représentation (une information, un savoir). 3. L'action sur autrui (convaincre, influencer).\nMission première du manager : « fabriquer du sens ».",
     "ancre": "s-5-la-communication-manageriale",
     "secTitre": "5. La communication managériale"
   },
@@ -6679,7 +6679,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "definition",
     "recto": "Pourquoi la communication passe-t-elle mal, même entre gens de bonne volonté ?",
-    "verso": "Aucun passage d'information ne se fait sans déformation : personne n'a le même vécu ni le même vocabulaire. Chacun a son cadre de référence (valeurs, logique de raisonnement, vision du monde, codes propres) et ses filtres ; les a priori, préjugés et idées préconçues brouillent l'échange. Parade : être le plus précis possible dans son langage. Autre écueil : l'information utile reste au niveau du manager ou est communiquée sommairement, sans sens ni explications.",
+    "verso": "Aucun passage d'information ne se fait sans déformation : ni le même vécu, ni le même vocabulaire.\nChacun a son cadre de référence et ses filtres — a priori, préjugés. Parade : le langage le plus précis possible.",
     "ancre": "s-5-la-communication-manageriale",
     "secTitre": "5. La communication managériale"
   },
@@ -6691,7 +6691,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce que l'écoute active, et quels sont ses 3 niveaux ?",
-    "verso": "Entendre est naturel, écouter relève d'une volonté (on bloque souvent l'écoute parce qu'on pense plus vite qu'on ne parle). Elle sollicite l'intellect (questions, reformulation) et l'émotionnel (encourager l'expression). 3 niveaux : les mots (contenu), le non-verbal (signes parallèles), le changement de rythme (plus lent = doute, inquiétude ; plus rapide = impatience → question de contrôle). Avec l'empathie, elle installe la sécurité psychologique : LE critère de performance d'une équipe qui prime (droit à l'erreur, oser parler des problèmes).",
+    "verso": "Entendre est naturel, écouter relève d'une volonté : elle sollicite l'intellect (questions, reformulation) et l'émotionnel.\n3 niveaux : les mots, le non-verbal, le changement de rythme (lent = doute, rapide = impatience).",
     "ancre": "s-5-la-communication-manageriale",
     "secTitre": "5. La communication managériale"
   },
@@ -6703,7 +6703,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce que le micromanagement et quelles sont ses 3 conséquences ?",
-    "verso": "Surveiller de très près l'activité de ses collaborateurs et contrôler minutieusement leurs tâches — le manager se noie dans les détails et inhibe les initiatives. 3 conséquences : absence d'autonomie (frustration, démotivation, productivité moindre), absence de créativité (plus de nouvelles idées), excès de stress (pression forte, manque de confiance). Le manque de délégation en est le comportement sous-jacent (peur de perdre le pouvoir, manque de confiance ou de méthode).",
+    "verso": "Surveiller de très près et contrôler minutieusement les tâches : le manager se noie dans les détails et inhibe les initiatives.\n3 conséquences : absence d'autonomie, absence de créativité, excès de stress.",
     "ancre": "s-5-la-communication-manageriale",
     "secTitre": "5. La communication managériale"
   },
@@ -6715,7 +6715,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "distinction",
     "recto": "Aux registres passif, agressif et assertif, quel 4e registre le management ajoute-t-il — et quelles conséquences pour l'équipe ?",
-    "verso": "La manipulation : une attitude détournée, jamais frontale, qui obtient sans demander — à proscrire, car elle installe durablement la méfiance. Conséquences managériales des trois autres : l'agressivité est une directivité proche de la domination (confrontation, jugement pour imposer) → climat hostile et résistances ; la passivité est une soumission par évitement (peur du rejet, difficulté à dire non) ; l'assertivité, la posture à viser, permet d'exprimer un désaccord ou de dire « non » en acceptant la contradiction et le compromis, sans rompre la relation.",
+    "verso": "La manipulation : une attitude détournée, jamais frontale, à proscrire — elle installe durablement la méfiance.\nAgressivité : climat hostile et résistances. Passivité : besoins tus. L'assertivité reste la posture à viser.",
     "ancre": "s-5-la-communication-manageriale",
     "secTitre": "5. La communication managériale"
   },
@@ -6727,7 +6727,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Diversité visible, diversité invisible, intersectionnalité : que recouvre chaque notion ?",
-    "verso": "La diversité visible regroupe les caractéristiques immédiatement perceptibles (genre, origine ethnique, âge, certains handicaps physiques) : elle déclenche premières impressions et biais inconscients. La diversité invisible regroupe les aspects non apparents mais déterminants (orientation sexuelle, handicaps non visibles, neurodiversité, croyances, situations familiales) : elle exige une vigilance particulière. L'intersectionnalité désigne la combinaison unique de ces dimensions que porte chaque collaborateur. La diversité est un impératif stratégique : une étude HBR (2019) montre que les équipes diversifiées sont plus créatives et performantes.",
+    "verso": "Visible : ce qui se perçoit d'emblée — genre, origine, âge. Elle déclenche les biais inconscients.\nInvisible : orientation, handicaps non visibles, neurodiversité, croyances.\nIntersectionnalité : la combinaison unique que porte chacun.",
     "ancre": "s-1-cartographier-la-diversite-de-l-equipe",
     "secTitre": "1. Cartographier la diversité de l'équipe"
   },
@@ -6739,7 +6739,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Sur quelles trois dimensions les codes culturels font-ils varier le rapport au travail ?",
-    "verso": "1. La communication : indirecte et respectueuse des hiérarchies (ex. Japon) vs directe et structurée (ex. Allemagne). 2. La décision : consensus et consultation collective vs efficacité et rapidité. 3. La temporalité : séquentielle (monochronique, une tâche après l'autre) vs polychronique (plusieurs activités en parallèle). S'adapter « en bonne intelligence » ne signifie pas coller aux exigences de chacun.",
+    "verso": "1. La communication : indirecte et respectueuse des hiérarchies (Japon) ou directe (Allemagne).\n2. La décision : par consensus ou par rapidité.\n3. La temporalité : une tâche à la fois (monochronique) ou en parallèle.",
     "ancre": "s-1-cartographier-la-diversite-de-l-equipe",
     "secTitre": "1. Cartographier la diversité de l'équipe"
   },
@@ -6751,7 +6751,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Qu'est-ce que la neurodiversité, et quels talents sont fréquemment associés aux profils TSA, TDAH, dyslexie et HPI ?",
-    "verso": "La neurodiversité désigne les variations naturelles du fonctionnement neurologique. Autisme (TSA) : attention au détail, logique rigoureuse, approche systématique. TDAH : créativité exceptionnelle, capacité d'innovation. Dyslexie : compétences visuelles et spatiales supérieures à la moyenne. HPI : besoin de comprendre les enjeux, le « pourquoi » avant le « comment ».",
+    "verso": "Les variations naturelles du fonctionnement neurologique.\nTSA : attention au détail, logique rigoureuse. TDAH : créativité, innovation. Dyslexie : compétences visuelles et spatiales. HPI : besoin du « pourquoi ».",
     "ancre": "s-1-cartographier-la-diversite-de-l-equipe",
     "secTitre": "1. Cartographier la diversité de l'équipe"
   },
@@ -6763,7 +6763,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quels sont les 4 biais cognitifs du manager présentés dans le cours ?",
-    "verso": "1. Biais de confirmation : ne retenir que ce qui confirme l'opinion préexistante (« ce junior manque d'expérience » → on ne voit que ses erreurs). 2. Effet de halo : une caractéristique influence la perception globale (surévaluer le charismatique). 3. Biais d'ancrage : poids disproportionné de la première information (recrue d'une entreprise prestigieuse durablement surévaluée). 4. Stéréotypes générationnels : traits attribués selon l'âge apparent. Les biais ressortent surtout sous pression et en décision rapide.",
+    "verso": "1. Confirmation : ne retenir que ce qui confirme son opinion.\n2. Halo : une caractéristique teinte tout le jugement.\n3. Ancrage : poids excessif de la première information.\n4. Stéréotypes générationnels.",
     "ancre": "s-2-biais-stereotypes-appartenance",
     "secTitre": "2. Biais, stéréotypes, appartenance"
   },
@@ -6775,7 +6775,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "definition",
     "recto": "Pourquoi les stéréotypes, même « positifs », sont-ils dangereux, et comment se débiaiser ?",
-    "verso": "Ils créent des attentes réductrices qui déclenchent des prophéties autoréalisatrices : les performances s'orientent dans le sens des attentes initiales (ex. cantonner un collaborateur asiatique aux maths, les femmes au relationnel). Débiaisage : recherche active d'informations contradictoires, sources multiples, critères d'évaluation objectifs et mesurables. Auto-diagnostic proposé au manager : un journal de réflexion managériale tenu plusieurs semaines, des retours confidentiels, le Test d'Association Implicite (IAT) et le co-développement entre pairs.",
+    "verso": "Ils créent des attentes réductrices qui deviennent des prophéties autoréalisatrices : les performances suivent les attentes.\nDébiaisage : informations contradictoires, critères objectifs, journal managérial, test IAT.",
     "ancre": "s-2-biais-stereotypes-appartenance",
     "secTitre": "2. Biais, stéréotypes, appartenance"
   },
@@ -6787,7 +6787,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce que la sécurité psychologique (Amy Edmondson), et pourquoi est-elle décisive en équipe diverse ?",
-    "verso": "La conviction partagée que l'équipe est un environnement sûr pour prendre des risques interpersonnels : exprimer idées, préoccupations et besoins sans craindre le jugement. En équipe diverse, elle libère les questions naïves et les désaccords constructifs, donc la créativité collective. Elle rejoint le sentiment d'appartenance, qui conditionne engagement et performance : les neurosciences montrent que l'exclusion est traitée par le cerveau comme une menace.",
+    "verso": "La conviction partagée que l'équipe est un environnement sûr pour prendre des risques interpersonnels, sans craindre le jugement.\nEn équipe diverse, elle libère les questions naïves et les désaccords — donc la créativité.",
     "ancre": "s-2-biais-stereotypes-appartenance",
     "secTitre": "2. Biais, stéréotypes, appartenance"
   },
@@ -6799,7 +6799,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "application",
     "recto": "Comment adapter sa communication en contexte multiculturel : écoute, non-verbal, feedback ?",
-    "verso": "Écoute active inclusive : posture d'ouverture, contact visuel adapté aux codes culturels, reformulation par questions ouvertes, temps de silence (surtout hors langue maternelle). Proxémique : la gestion de l'espace interpersonnel varie (distance réduite chez les méditerranéens vs espace important chez les nordiques) ; le regard soutenu est respect ici, agression là. Feedback : avec les cultures d'harmonie relationnelle, préférer le « sandwich positif » — encadrer les points d'amélioration par des reconnaissances de réussites — au feedback direct « à la française », vécu comme une attaque.",
+    "verso": "Écoute : reformulation, temps de silence, contact visuel adapté aux codes culturels.\nNon-verbal : la proxémique varie, le regard soutenu est respect ici, agression là.\nFeedback : « sandwich positif » avec les cultures d'harmonie.",
     "ancre": "s-3-les-leviers-du-management-inclusif",
     "secTitre": "3. Les leviers du management inclusif"
   },
@@ -6811,7 +6811,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Comment adapter son langage managérial aux profils autiste, TDAH, HPI et dyslexique ?",
-    "verso": "Autiste : factuel, explicite, structuré par écrit, critères précis, pas de métaphores, temps de traitement. TDAH : objectifs segmentés en étapes courtes, points d'étape fréquents, communication dynamique. HPI : expliquer les enjeux stratégiques et le « pourquoi ». Dyslexique : outils d'assistance (synthèse vocale) et supports visuels. Cette précision bénéficie à toute l'équipe.",
+    "verso": "Autiste : factuel, explicite, écrit, sans métaphores.\nTDAH : étapes courtes, points fréquents.\nHPI : les enjeux, le « pourquoi ».\nDyslexique : supports visuels, synthèse vocale.",
     "ancre": "s-3-les-leviers-du-management-inclusif",
     "secTitre": "3. Les leviers du management inclusif"
   },
@@ -6823,7 +6823,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce que le recrutement inclusif, et pourquoi l'IA n'est-elle pas une solution parfaite ?",
-    "verso": "Approche holistique visant des processus équitables, transparents et accessibles, évaluant les compétences et réalisations plutôt que des critères traditionnels biaisés : critères mesurables, cas concrets, tests de compétences, entretiens structurés, offres inclusives, transparence. L'IA, entraînée sur des données historiques, peut reproduire et amplifier les biais passés (intitulés genrés) et sélectionner des variables corrélées à des caractéristiques protégées — ex. le code postal, corrélé au statut socio-économique donc à l'origine ethnique (biais indirect).",
+    "verso": "Des processus équitables, transparents et accessibles, qui évaluent les compétences et réalisations plutôt que des critères biaisés.\nL'IA apprend sur des données historiques : elle reproduit et amplifie les biais passés.",
     "ancre": "s-3-les-leviers-du-management-inclusif",
     "secTitre": "3. Les leviers du management inclusif"
   },
@@ -6835,7 +6835,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "distinction",
     "recto": "Accessibilité universelle et aménagements raisonnables : quelle différence ?",
-    "verso": "L'accessibilité universelle consiste à concevoir environnements, processus et outils utilisables par le plus grand nombre sans adaptation ultérieure — une stratégie d'optimisation des talents, pas une simple conformité. Les aménagements raisonnables sont des ajustements spécifiques à un collaborateur : physiques (éclairage, acoustique), organisationnels (flexibilité horaire), technologiques (synthèse vocale), avec un ROI généralement positif. Effet d'entraînement : beaucoup d'aménagements profitent à tous (affichage visuel, consignes écrites). Posture de fond, en particulier face au handicap : dépasser l'approche purement compensatoire (ne voir que ce qu'il faut compenser) pour une vision par compétences — les personnes en situation de handicap développent souvent une résilience, une capacité d'adaptation et une résolution de problèmes performantes, qui sont des talents à valoriser.",
+    "verso": "Accessibilité universelle : concevoir en amont pour le plus grand nombre, sans adaptation ultérieure.\nAménagements raisonnables : ajustements propres à une personne — éclairage, horaires, synthèse vocale.",
     "ancre": "s-3-les-leviers-du-management-inclusif",
     "secTitre": "3. Les leviers du management inclusif"
   },
@@ -6847,7 +6847,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "application",
     "recto": "En quoi consiste la flexibilité managériale inclusive, et quels rituels d'équipe l'accompagnent ?",
-    "verso": "Sortir du modèle unique : mêmes objectifs et exigences de qualité pour tous, seuls les moyens sont personnalisés (modalités de communication, rythme de feedback, type de missions) — jamais de réduction des objectifs, et expliquer la logique pour éviter les perceptions d'inéquité. Rituels inclusifs : pratiques collectives récurrentes créant un socle commun, célébrations avec modalités de reconnaissance variées (publique ou discrète), partage culturel ; éviter les formats standardisés ou exclusivement présentiels.",
+    "verso": "Mêmes objectifs et mêmes exigences pour tous, seuls les moyens sont personnalisés. Jamais de réduction d'objectifs.\nRituels inclusifs : reconnaissance variée (publique ou discrète), pas de format uniquement présentiel.",
     "ancre": "s-3-les-leviers-du-management-inclusif",
     "secTitre": "3. Les leviers du management inclusif"
   },
@@ -6859,7 +6859,7 @@ var FLASHCARDS = [
     "niveau": 3,
     "type": "liste",
     "recto": "Qu'est-ce que le leadership inclusif, et quels auteurs le cours cite-t-il sur la diversité ?",
-    "verso": "Le leadership inclusif crée un environnement où chacun se sent valorisé, entendu et inclus : le leader est un modèle (tolérance, empathie), fixe des normes d'équité claires et pratique un management par inférence (conclusions tirées d'observations, adaptation permanente). La culture inclusive se perpétue par tolérance zéro, enquêtes anonymes, données démographiques, critères d'inclusion pour les leaders, mentorat. Auteurs cités : Bohnet (What Works, 2016), Page (The Diversity Bonus, 2017), Hofstede (1971), Meyer (The Culture Map), Phillips, Thomas, Buckingham.",
+    "verso": "Créer un environnement où chacun se sent valorisé, entendu et inclus : le leader est un modèle et fixe des normes d'équité claires.\nAuteurs : Bohnet, Page, Hofstede, Meyer, Phillips, Thomas, Buckingham.",
     "ancre": "s-3-les-leviers-du-management-inclusif",
     "secTitre": "3. Les leviers du management inclusif"
   },
@@ -6871,7 +6871,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "distinction",
     "recto": "Indicateurs de diversité et indicateurs d'inclusion : quelle différence ?",
-    "verso": "La diversité mesure la représentation des profils (présence) ; l'inclusion mesure la qualité de leur intégration et leur capacité à contribuer — présence ≠ participation effective. Indicateurs quantitatifs : répartition des opportunités (formation, promotion), taux de rotation par segment, adoption des idées de chaque profil. Qualitatifs : sentiment d'appartenance, équité perçue, sécurité psychologique, via entretiens, focus groups et enquêtes anonymes courtes. La séquence de développement du management inclusif suit 5 étapes, dans l'ordre : 1. auto-diagnostic de ses propres biais, 2. identification des dimensions de diversité de l'équipe, 3. adaptation de la communication et du feedback, 4. aménagements organisationnels, 5. mesure et amélioration continue — soutenues par l'intelligence émotionnelle interculturelle, la formation continue et la capitalisation entre pairs.",
+    "verso": "La diversité mesure la représentation : qui est là.\nL'inclusion mesure la qualité de l'intégration : qui contribue vraiment — présence n'est pas participation.",
     "ancre": "s-4-mesurer-et-developper-l-inclusion",
     "secTitre": "4. Mesurer et développer l'inclusion"
   },
@@ -6883,7 +6883,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce qu'une équipe hybride (4 dimensions), et quels sont ses 3 facteurs d'émergence ?",
-    "verso": "Un collectif de travail caractérisé par la coexistence simultanée d'hétérogénéités multiples selon 4 dimensions : spatiale (co-localisés vs distribués), statutaire (salariés vs freelances, consultants, agences), temporelle (synchrone vs asynchrone), culturelle (cultures d'entreprise, nationalités, générations). Facteurs d'émergence : la digitalisation (pilotage par objectifs et résultats, plus par la présence), la flexibilisation du travail (freelancing, portage salarial, aspirations à l'autonomie), la spécialisation croissante des compétences (accès mondialisé aux experts).",
+    "verso": "4 dimensions : spatiale (co-localisés ou distribués), statutaire (salariés ou externes), temporelle (synchrone ou non), culturelle.\n3 facteurs : digitalisation, flexibilisation du travail, spécialisation des compétences.",
     "ancre": "s-5-equipes-hybrides-definition-et-cadres-theoriques",
     "secTitre": "5. Équipes hybrides : définition et cadres théoriques"
   },
@@ -6895,7 +6895,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Quels sont les 4 cadres théoriques qui éclairent le management hybride ?",
-    "verso": "1. Contingence structurelle (Lawrence et Lorsch) : efficacité = adéquation structure-environnement ; le manager hybride gère plusieurs environnements simultanés. 2. Coûts de transaction (Williamson) : arbitrage internaliser vs externaliser, en ajoutant recherche, négociation, contractualisation et suivi au coût direct. 3. Approche systémique : l'équipe est un système d'éléments interdépendants, les tensions sont intrinsèques et à réguler — le manager devient régulateur systémique (influence plutôt qu'autorité). 4. Gouvernance des écosystèmes : facilitation, valeur partagée et contrats psychologiques clarifiant les attentes mutuelles.",
+    "verso": "1. Contingence structurelle (Lawrence et Lorsch) : plusieurs environnements à la fois.\n2. Coûts de transaction (Williamson) : internaliser ou externaliser.\n3. Approche systémique : le manager régule les tensions.\n4. Gouvernance des écosystèmes : facilitation et contrats psychologiques.",
     "ancre": "s-5-equipes-hybrides-definition-et-cadres-theoriques",
     "secTitre": "5. Équipes hybrides : définition et cadres théoriques"
   },
@@ -6907,7 +6907,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quels sont les 5 mécanismes de coordination de Mintzberg, et comment évoluent-ils en équipe hybride ?",
-    "verso": "Ajustement mutuel (communication informelle), supervision directe (ordres et contrôle), standardisation des procédés, des résultats et des qualifications. En hybride, la supervision directe ne fonctionne plus (dispersion, pas d'autorité sur les externes) et l'ajustement mutuel spontané disparaît : il faut le réinventer (réunions virtuelles, canaux dédiés, rituels) et donner la priorité à la standardisation des résultats — définir livrables, critères de qualité et échéances, puis laisser chacun libre de ses méthodes.",
+    "verso": "Ajustement mutuel, supervision directe, standardisation des procédés, des résultats, des qualifications.\nEn hybride : la supervision directe ne fonctionne plus, on priorise la standardisation des résultats — livrables et échéances, méthodes libres.",
     "ancre": "s-6-coordonner-et-piloter-une-equipe-hybride",
     "secTitre": "6. Coordonner et piloter une équipe hybride"
   },
@@ -6919,7 +6919,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Pourquoi la matrice RACI est-elle indispensable en équipe hybride, et que signifient ses 4 lettres ?",
-    "verso": "Les équipes hybrides sont des structures matricielles : chaque intervenant dépend de plusieurs autorités, et un externe recevant des instructions contradictoires risque le non-respect de ses engagements contractuels (répercussions juridiques, pas seulement opérationnelles). RACI : Responsible (exécute), Accountable (garant de la bonne fin), Consulted (consulté avant décision), Informed (informé après). Le cours conseille des « ateliers de rôles » en début de projet pour co-construire cette formalisation.",
+    "verso": "Responsible (exécute), Accountable (garant), Consulted (avant décision), Informed (après).\nEn matriciel, un externe recevant des instructions contradictoires risque de manquer à ses engagements — répercussions juridiques.",
     "ancre": "s-6-coordonner-et-piloter-une-equipe-hybride",
     "secTitre": "6. Coordonner et piloter une équipe hybride"
   },
@@ -6931,7 +6931,7 @@ var FLASHCARDS = [
     "niveau": 3,
     "type": "distinction",
     "recto": "Contrats transactionnels et contrats relationnels (Macneil) : quelle différence et quel usage en hybride ?",
-    "verso": "Les contrats transactionnels régissent un échange ponctuel précisément défini ; les contrats relationnels encadrent une relation durable fondée sur la confiance, avec de la flexibilité. En hybride : cadre formel avec un nouveau prestataire, fonctionnement relationnel avec un partenaire éprouvé — la confiance réduit les coûts de transaction.",
+    "verso": "Transactionnel : un échange ponctuel, précisément défini.\nRelationnel : une relation durable fondée sur la confiance, avec de la flexibilité.\nCadre formel avec un nouveau prestataire, relationnel avec un partenaire éprouvé.",
     "ancre": "s-6-coordonner-et-piloter-une-equipe-hybride",
     "secTitre": "6. Coordonner et piloter une équipe hybride"
   },
@@ -6943,7 +6943,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Quelles sont les 4 exigences architecturales du SI d'une équipe hybride, et que doit offrir le pilotage ?",
-    "verso": "Sécurité (VPN, authentification multi-facteurs, espaces cloisonnés), interopérabilité (passerelles entre Microsoft 365, Adobe, Google Workspace), accessibilité (intuitivité pour les externes), scalabilité (absorber les évolutions sans rupture) — approche fédératrice plutôt qu'imposer les outils internes. Les outils doivent offrir visualisation en temps réel, traçabilité des modifications, gestion des versions et collaboration asynchrone. Pilotage : tableau de bord équilibré quantitatif (achèvement, délais, budget) + qualitatif (satisfaction client, qualité créative, climat) ; un reporting trop fréquent peut être perçu comme de la défiance.",
+    "verso": "Sécurité (VPN, authentification multi-facteurs), interopérabilité, accessibilité pour les externes, scalabilité.\nPilotage : tableau de bord équilibré, quantitatif et qualitatif. Un reporting trop fréquent est perçu comme de la défiance.",
     "ancre": "s-6-coordonner-et-piloter-une-equipe-hybride",
     "secTitre": "6. Coordonner et piloter une équipe hybride"
   },
@@ -6955,7 +6955,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Comment les théories de Maslow, de l'autodétermination et de Herzberg se relisent-elles en équipe hybride ?",
-    "verso": "Maslow : la sécurité diffère selon le statut — le salarié a l'emploi et les avantages sociaux, le freelance gère revenus variables et absence de protection sociale d'entreprise. Autodétermination (Deci et Ryan) : autonomie (motivation forte des externes), compétence (apprentissages croisés), appartenance sociale — le défi le plus complexe à distance. Herzberg : facteurs d'hygiène (clarté contractuelle, fiabilité des outils, équité interne/externe) dont l'absence crée l'insatisfaction, vs facteurs de motivation (reconnaissance, développement, participation, sens) qui créent l'engagement.",
+    "verso": "Maslow : la sécurité diffère selon le statut — le freelance n'a ni emploi stable ni protection d'entreprise.\nAutodétermination : autonomie, compétence, appartenance — la plus difficile à distance.\nHerzberg : l'hygiène évite l'insatisfaction, la motivation crée l'engagement.",
     "ancre": "s-7-motiver-federer-et-integrer-a-distance",
     "secTitre": "7. Motiver, fédérer et intégrer à distance"
   },
@@ -6967,7 +6967,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quels sont les 3 types de confiance à orchestrer en équipe hybride ?",
-    "verso": "1. Cognitive : évaluation rationnelle de la compétence et de la fiabilité (références, livrables) — le fondement du démarrage. 2. Affective : relations interpersonnelles, empathie, valeurs communes — plus lente à construire mais plus stable, entretenue par l'informel. 3. Institutionnelle : contrats, procédures, contrôles et sanctions — le cadre sécurisant. L'identité collective, elle, ne se décrète pas : manifeste d'équipe, références communes, rituels partagés incluant les distants.",
+    "verso": "1. Cognitive : la compétence et la fiabilité constatées — le fondement du démarrage.\n2. Affective : empathie et valeurs communes, plus lente mais plus stable.\n3. Institutionnelle : contrats et procédures, le cadre sécurisant.",
     "ancre": "s-7-motiver-federer-et-integrer-a-distance",
     "secTitre": "7. Motiver, fédérer et intégrer à distance"
   },
@@ -6979,7 +6979,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Que dit la théorie de la richesse des médias (Daft et Lengel), et quelles vigilances s'y ajoutent ?",
-    "verso": "L'efficacité de la communication dépend de l'adéquation entre la richesse du canal et la complexité du message ; richesse = feedback immédiat, multiplicité des indices, personnalisation, variété du langage. Hiérarchie : face-à-face > visioconférence > téléphone > chat > e-mail. Usage : visio pour décisions complexes, chat pour l'informel, e-mail pour les validations formelles, outils collaboratifs pour le suivi. La théorie de la présence sociale (Short, Williams et Christie) alerte sur l'isolement lié à la médiatisation ; la zoom fatigue impose d'alterner les modalités et de prévoir des pauses. Le même principe guide le choix oral/écrit en interne : l'oral pour les instructions courtes, feedbacks rapides, informations de routine et encouragements ; l'écrit pour les décisions importantes, objectifs et résultats attendus, changements de procédure, évaluations formelles et annonces officielles. Avant de communiquer, quatre questions : quelles informations ? pour quoi faire ? quels circuits ? quels supports et canaux ?",
+    "verso": "L'efficacité dépend de l'adéquation entre la richesse du canal et la complexité du message.\nHiérarchie : face-à-face > visio > téléphone > chat > e-mail.\nVigilance : isolement à distance, et zoom fatigue — alterner les modalités.",
     "ancre": "s-7-motiver-federer-et-integrer-a-distance",
     "secTitre": "7. Motiver, fédérer et intégrer à distance"
   },
@@ -6991,7 +6991,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "application",
     "recto": "D'où naissent les conflits hybrides, et comment organiser l'intégration d'un nouveau membre à distance ?",
-    "verso": "Conflits : malentendus interculturels (ex. reporting perçu comme un manque de confiance) amplifiés par la distance, déséquilibres de pouvoir (statutaires, informationnels, relationnels) et compétition internes/externes. Prévention : protocoles explicites, feedback régulier, formation interculturelle, intervention rapide dès les signaux faibles, médiation proactive. Onboarding distribué : la socialisation naturelle n'existe plus — parcours consciemment orchestré (sessions individuelles, binôme, formation aux outils, transmission explicite des codes), accompagnement sur plusieurs mois.",
+    "verso": "Conflits : malentendus interculturels amplifiés par la distance, déséquilibres de pouvoir, compétition internes/externes.\nIntégration : la socialisation naturelle n'existe plus — parcours orchestré, sur plusieurs mois.",
     "ancre": "s-7-motiver-federer-et-integrer-a-distance",
     "secTitre": "7. Motiver, fédérer et intégrer à distance"
   },
@@ -7003,7 +7003,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Qu'est-ce que le suivi de performance, et quelles sont les trois grandes raisons de le mener ?",
-    "verso": "C'est l'une des principales missions du management : suivre les résultats individuels ET collectifs via des indicateurs (KPI) pour s'assurer que les efforts convergent, anticiper les difficultés et proposer des actions correctives en amont. Trois raisons : 1. Décider objectivement — des données factuelles fondent les arbitrages (recadrage, réallocation, changement de cap). 2. Motiver et faire progresser — le suivi améliore la communication et la productivité, entretient la motivation et accompagne la montée en compétences. 3. Légitimer le manager — les résultats crédibilisent ses choix vis-à-vis de la Direction comme des collaborateurs, et fondent le système de reconnaissance et de récompense (primes).",
+    "verso": "Suivre les résultats individuels et collectifs par des KPI, pour anticiper les difficultés et corriger en amont.\nTrois raisons : décider objectivement, motiver et faire progresser, légitimer le manager.",
     "ancre": "s-1-pourquoi-suivre-la-performance",
     "secTitre": "1. Pourquoi suivre la performance"
   },
@@ -7015,7 +7015,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Comment passe-t-on des objectifs stratégiques aux indicateurs de chaque collaborateur ?",
-    "verso": "Par une cascade : les objectifs stratégiques se déclinent en sous-objectifs par service, traduits en objectifs opérationnels dans le plan d'action, puis déclinés pour chaque membre de l'équipe. À chaque objectif (idéalement SMARTEF) on associe l'indicateur qui mesure sa réalisation : un indicateur pertinent est en lien direct avec l'objectif. Inutile de les multiplier — un indicateur ciblé informe mieux que trois non significatifs. Les KPI se choisissent selon les Facteurs Clés de Succès (FCS).",
+    "verso": "Par une cascade : objectifs stratégiques, puis par service, puis par collaborateur. À chaque objectif son indicateur, en lien direct avec lui.\nPeu d'indicateurs mais ciblés, choisis selon les facteurs clés de succès.",
     "ancre": "s-2-des-objectifs-aux-indicateurs-construire-le-systeme-de-mes",
     "secTitre": "2. Des objectifs aux indicateurs : construire le système de mesure"
   },
@@ -7027,7 +7027,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quels sont les trois types d'indicateurs de performance ?",
-    "verso": "1. Quantitatifs : directement comptés, en valeur absolue ou relative (CA mensuel, taux de transformation, respect des délais). 2. Qualitatifs : non chiffrés — perceptions, avis, opinions — comparés à un socle de standards connu de tous (satisfaction client). 3. Comportementaux ou KBI (Key Behavioral Indicators) : comportements et intelligence émotionnelle (gérer un conflit, écoute active, empathie, esprit d'initiative).",
+    "verso": "1. Quantitatifs : comptés, en valeur absolue ou relative (CA, taux de transformation).\n2. Qualitatifs : perceptions et avis, comparés à un socle de standards.\n3. Comportementaux (KBI) : écoute active, gestion d'un conflit, initiative.",
     "ancre": "s-2-des-objectifs-aux-indicateurs-construire-le-systeme-de-mes",
     "secTitre": "2. Des objectifs aux indicateurs : construire le système de mesure"
   },
@@ -7039,7 +7039,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quels sont les quatre critères d'un bon indicateur ?",
-    "verso": "1. Spécificité : spécifique au métier, à l'équipe, à la culture de l'organisation. 2. Mesurabilité : peut-il être chiffré ? Sinon, sur quelles données fiables s'appuyer ? 3. Faisabilité : les données sont-elles disponibles (souvent auprès d'autres services) ? Sinon, changer d'indicateur. 4. Pertinence : lien direct et sans ambiguïté entre ce qui est mesuré et les données observées.",
+    "verso": "1. Spécificité : propre au métier et à l'équipe.\n2. Mesurabilité : chiffrable, ou appuyé sur des données fiables.\n3. Faisabilité : les données sont disponibles.\n4. Pertinence : lien direct et sans ambiguïté avec ce qu'on observe.",
     "ancre": "s-2-des-objectifs-aux-indicateurs-construire-le-systeme-de-mes",
     "secTitre": "2. Des objectifs aux indicateurs : construire le système de mesure"
   },
@@ -7051,7 +7051,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "application",
     "recto": "À quoi servent les seuils de performance et les zones vertes, oranges, rouges ?",
-    "verso": "Les seuils délimitent des zones à partir desquelles la performance est jugée satisfaisante ou insuffisante : ils permettent de situer chacun et de bâtir l'accompagnement. Exemple du cours : CA en 3 zones — 0-10 k€ (marché mal compris, formation), 10-20 k€ (challengers), 20 k€ et plus (performants, futurs personnes-ressources des challengers). L'indicateur doit éclairer la marge de progression.",
+    "verso": "Ils disent à partir de quand la performance est satisfaisante ou non : ils situent chacun et fondent l'accompagnement.\nExemple : 0-10 k€ (formation), 10-20 k€ (challengers), 20 k€ et plus (performants).",
     "ancre": "s-2-des-objectifs-aux-indicateurs-construire-le-systeme-de-mes",
     "secTitre": "2. Des objectifs aux indicateurs : construire le système de mesure"
   },
@@ -7063,7 +7063,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "distinction",
     "recto": "Indicateurs individuels et indicateurs collectifs : quels effets et quelle articulation ?",
-    "verso": "Les indicateurs individuels (CA par zone) valorisent la contribution de chacun, mais peuvent créer un climat compétitif. Les indicateurs collectifs (CA global, projet commun) renforcent la cohésion. En cas de résultat collectif insuffisant, le résultat individuel permet de cibler le problème (région, produit, clientèle). À retenir : la performance collective mesure la synergie du groupe (l'intelligence collective), mais ne suivre que le collectif, c'est risquer de ne pas discerner les talents. Le suivi est une responsabilité collective qui exige la transparence — gare au biais de rétention d'information (le commercial qui garde un partenariat pour lui).",
+    "verso": "Individuels : ils valorisent la contribution de chacun, mais peuvent créer un climat compétitif.\nCollectifs : ils renforcent la cohésion.\nSi le collectif décroche, l'individuel permet de cibler le problème.",
     "ancre": "s-2-des-objectifs-aux-indicateurs-construire-le-systeme-de-mes",
     "secTitre": "2. Des objectifs aux indicateurs : construire le système de mesure"
   },
@@ -7075,7 +7075,7 @@ var FLASHCARDS = [
     "niveau": 3,
     "type": "chiffre",
     "recto": "Quels sont les KPI RH types, et quel taux légal de travailleurs handicapés s'impose ?",
-    "verso": "KPI RH : turn-over, taux d'égalité femmes/hommes, taux de handicap, absentéisme. Le taux de handicap correspond à une obligation légale : 6 % des effectifs.",
+    "verso": "Turn-over, taux d'égalité femmes/hommes, taux de handicap, absentéisme.\nLe taux de handicap répond à une obligation légale : 6 % des effectifs.",
     "ancre": "s-2-des-objectifs-aux-indicateurs-construire-le-systeme-de-mes",
     "secTitre": "2. Des objectifs aux indicateurs : construire le système de mesure"
   },
@@ -7087,7 +7087,7 @@ var FLASHCARDS = [
     "niveau": 3,
     "type": "chiffre",
     "recto": "Quel cadre juridique encadre les objectifs individuels d'un collaborateur ?",
-    "verso": "Les objectifs doivent être alignés sur ses responsabilités et compétences : conformes à sa fiche de poste, ou formalisés par un avenant au contrat de travail (courant pour les commerciaux) ou une lettre de mission (mission temporaire, expatriation, intérim). On n'évalue jamais des résultats qui outrepassent sa responsabilité, et il doit disposer de toutes les ressources requises. L'article L6321-1 du Code du travail impose d'assurer l'adaptation des salariés à leur poste : des résultats insuffisants peuvent déclencher un plan de formation.",
+    "verso": "Ils doivent être alignés sur les responsabilités et compétences : fiche de poste, avenant au contrat ou lettre de mission.\nL'article L6321-1 impose d'adapter le salarié à son poste : des résultats insuffisants appellent une formation.",
     "ancre": "s-2-des-objectifs-aux-indicateurs-construire-le-systeme-de-mes",
     "secTitre": "2. Des objectifs aux indicateurs : construire le système de mesure"
   },
@@ -7099,7 +7099,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Sur quels outils s'appuie la collecte des données de performance ?",
-    "verso": "Sur des données fiables et disponibles : extraction du CRM (Customer Relationship Management, gestion de la relation client), sollicitation des autres services, SIRH (Système d'Information des Ressources Humaines : turn-over, absentéisme), outils de Business Intelligence (BI ou Informatique Décisionnelle, aide à la décision sur données factuelles). Les quantitatifs se centralisent dans un outil unique partagé ; les qualitatifs se collectent par enquêtes, entretiens et observations, sans biais.",
+    "verso": "CRM (relation client), SIRH (turn-over, absentéisme), outils de Business Intelligence.\nLes données quantitatives se centralisent dans un outil partagé ; les qualitatives viennent d'enquêtes, entretiens, observations.",
     "ancre": "s-3-collecter-et-suivre-outils-et-temps-forts",
     "secTitre": "3. Collecter et suivre : outils et temps forts"
   },
@@ -7111,7 +7111,7 @@ var FLASHCARDS = [
     "niveau": 3,
     "type": "chiffre",
     "recto": "Qu'est-ce que le bilan social et à partir de quel effectif est-il obligatoire ?",
-    "verso": "C'est un rapport de performance sociale : des données sociales brutes comparées aux deux années précédentes. Il est obligatoire au-delà de 300 salariés.",
+    "verso": "Un rapport de performance sociale : des données sociales brutes comparées aux deux années précédentes.\nObligatoire au-delà de 300 salariés.",
     "ancre": "s-3-collecter-et-suivre-outils-et-temps-forts",
     "secTitre": "3. Collecter et suivre : outils et temps forts"
   },
@@ -7123,7 +7123,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Citez les autres temps forts managériaux du suivi (hors entretiens annuel et professionnel).",
-    "verso": "Le feedback ou rétroaction (« créer une action en retour » : relater les faits puis exprimer un ressenti ou faire réagir), l'évaluation 360° (enquête auprès de toutes les parties prenantes internes et externes, avec l'accord préalable de l'employé), le REX (Retour d'Expérience de fin de mission, pour capitaliser sur les bonnes pratiques), la revue de portefeuille (équipes commerciales : évaluer l'ensemble des projets pour optimiser l'allocation des ressources) et l'auto-évaluation (le collaborateur s'évalue vs des normes de référence).",
+    "verso": "Le feedback (relater les faits, puis faire réagir), l'évaluation 360° (avec l'accord de l'employé), le REX de fin de mission.\nPlus la revue de portefeuille et l'auto-évaluation.",
     "ancre": "s-3-collecter-et-suivre-outils-et-temps-forts",
     "secTitre": "3. Collecter et suivre : outils et temps forts"
   },
@@ -7135,7 +7135,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce que la méthode OKR et quelles sont ses trois logiques de mise en place ?",
-    "verso": "OKR (Objectives and Key Results) : méthode née dans la Silicon Valley (Netflix, Google) qui aligne les activités de chacun sur les objectifs globaux — chacun comprend l'intérêt de son travail, ce qui renforce motivation et sens. Trois logiques : top-down (les dirigeants définissent objectifs ET résultats clés), bottom-up (les collaborateurs définissent les deux), hybride (objectifs par les dirigeants, résultats clés par les collaborateurs — la plus engageante).",
+    "verso": "OKR (Objectives and Key Results) : aligner les activités de chacun sur les objectifs globaux, pour que chacun voie l'intérêt de son travail.\nTrois logiques : top-down, bottom-up, hybride — la plus engageante.",
     "ancre": "s-3-collecter-et-suivre-outils-et-temps-forts",
     "secTitre": "3. Collecter et suivre : outils et temps forts"
   },
@@ -7147,7 +7147,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "distinction",
     "recto": "Analyse des résultats et analyse des écarts : quels sont ces deux temps ?",
-    "verso": "L'analyse des résultats est la prise de connaissance objective des données quantitatives et qualitatives : un état des lieux. L'analyse des écarts compare ensuite ces données aux objectifs, prévisions ou normes : les écarts sont les différences entre réel et prévisionnel, positifs (réel > prévu) ou négatifs (réel < prévu). Dans les deux cas on cherche les raisons : les échecs pour y remédier, mais aussi les bonnes pratiques du succès, pour les dupliquer.",
+    "verso": "Analyse des résultats : l'état des lieux objectif des données.\nAnalyse des écarts : la comparaison au prévu — écarts positifs (mieux que prévu) ou négatifs. On cherche les causes des échecs comme des succès.",
     "ancre": "s-4-analyser-les-resultats-identifier-les-ecarts",
     "secTitre": "4. Analyser les résultats, identifier les écarts"
   },
@@ -7159,7 +7159,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "distinction",
     "recto": "Facteurs endogènes et facteurs exogènes : comment les distinguer dans l'analyse ?",
-    "verso": "Les facteurs endogènes sont propres à l'équipe : efforts, compétences, investissement. Les facteurs exogènes viennent de l'extérieur : marché, lois, société. L'analyse cherche aussi des corrélations (satisfaction client médiocre liée au turn-over, donc fidéliser les collaborateurs) et peut s'approfondir par analyse individuelle des contributions ou segmentation (équipe, produit, lieu, période).",
+    "verso": "Endogènes : propres à l'équipe — efforts, compétences, investissement.\nExogènes : venus de l'extérieur — marché, lois, société.",
     "ancre": "s-4-analyser-les-resultats-identifier-les-ecarts",
     "secTitre": "4. Analyser les résultats, identifier les écarts"
   },
@@ -7171,7 +7171,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Le diagramme d'Ishikawa est souvent présenté avec 5M : quel 6e M s'ajoute ici, et sous quels autres noms les familles apparaissent-elles ?",
-    "verso": "Le 6e M est Mesures : la façon même dont on observe et chiffre le phénomène peut être la cause de l'écart constaté. Les 6M retenus ici : Machines (= Moyens), Méthodes, Matériaux (= Matières), Mère Nature (= Milieu, l'environnement), Main-d'œuvre, Mesures. Le principe reste inchangé : un diagramme causes-effets « en arêtes de poisson » (Fishbone) pour remonter à la cause racine d'un problème.",
+    "verso": "Le 6e M est Mesures : la façon même d'observer et de chiffrer peut créer l'écart constaté.\nLes 6M : Machines (Moyens), Méthodes, Matériaux (Matières), Mère Nature (Milieu), Main-d'œuvre, Mesures.",
     "ancre": "s-4-analyser-les-resultats-identifier-les-ecarts",
     "secTitre": "4. Analyser les résultats, identifier les écarts"
   },
@@ -7183,7 +7183,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Citez les autres outils de la boîte à outils de l'analyse (hors Ishikawa).",
-    "verso": "L'analyse comparative ou benchmark (se comparer à d'autres entités, sans se limiter à son secteur), l'analyse des tendances (données historiques, saisonnalités), l'analyse de variance ANOVA (décomposer statistiquement les écarts en facteurs), les 5 Pourquoi (approfondir à chaque « pourquoi » jusqu'au dénominateur commun), l'arbre des causes (arborescence collective pour un problème multifactoriel), le McKinsey 7S (3 éléments solides : Stratégie, Structure, Systèmes ; 4 souples : Valeurs partagées, Style, Personnel, Compétences), le SWOT et les analyses de processus et financières.",
+    "verso": "Benchmark, analyse des tendances, ANOVA, 5 Pourquoi, arbre des causes.\nPlus le McKinsey 7S (Stratégie, Structure, Systèmes ; Valeurs partagées, Style, Personnel, Compétences), le SWOT et les analyses financières.",
     "ancre": "s-4-analyser-les-resultats-identifier-les-ecarts",
     "secTitre": "4. Analyser les résultats, identifier les écarts"
   },
@@ -7195,7 +7195,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "distinction",
     "recto": "Quelles sont les deux acceptions de l'action corrective selon « Mots de la Qualité » (France Qualité) ?",
-    "verso": "Au sens de la norme (certification ISO), elle élimine la cause du défaut : résolution de problème, amélioration continue, visée curative durable. Au sens courant (gestion de projet), elle supprime simplement le défaut : rattrapage, réparation, reprise. On distingue aussi les mesures curatives (traiter le problème survenu — l'action corrective est réactive, a posteriori) des mesures préventives (anticiper). Toujours se demander : ce problème aurait-il pu être anticipé ?",
+    "verso": "Au sens de la norme ISO : elle élimine la cause du défaut — visée curative durable.\nAu sens courant : elle supprime le défaut — rattrapage, réparation.\nÀ distinguer du préventif, qui anticipe.",
     "ancre": "s-5-corriger-et-ajuster",
     "secTitre": "5. Corriger et ajuster"
   },
@@ -7207,7 +7207,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Comment construit-on un plan d'action correctif ?",
-    "verso": "1. Analyser les causes de l'échec même partiel (facteurs internes/externes, un SWOT est utile). 2. Éventuellement réévaluer les objectifs (réalistes et SMARTEF, ou trop ambitieux ?). 3. Construire le plan : comme le plan initial, il précise actions, responsabilités, ressources, délais, et exige les mêmes pilotage, suivi et communication. La méthode CQQCOQP (Comment ? Quoi ? Qui ? Combien ? Où ? Quand ? Pourquoi ?) garantit l'exhaustivité. Il porte ses propres KPI : délais, coûts, qualité.",
+    "verso": "1. Analyser les causes de l'échec, même partiel.\n2. Réévaluer les objectifs s'ils étaient trop ambitieux.\n3. Bâtir le plan comme le plan initial : actions, responsabilités, ressources, délais.\nSes KPI : délais, coûts, qualité.",
     "ancre": "s-5-corriger-et-ajuster",
     "secTitre": "5. Corriger et ajuster"
   },
@@ -7219,7 +7219,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "application",
     "recto": "Quelles actions correctives selon que la difficulté est individuelle ou collective ?",
-    "verso": "Individuelles : formation, tutorat, mentorat, coaching, ou learning by doing — confier une mission à qui n'a pas encore les compétences pour le faire grandir en situation réelle (tâches proportionnées à l'enjeu) — avec suivi par feedbacks réguliers et entretien annuel. Collectives : analyse des causes profondes menée avec le groupe, puis nouvelles méthodes de travail, nouveaux process, communication interne repensée, répartition des tâches revue selon les compétences (une allocation déficiente explique souvent l'échec).",
+    "verso": "Individuelles : formation, tutorat, mentorat, learning by doing — confier une mission pour grandir en situation réelle.\nCollectives : causes analysées avec le groupe, nouveaux process, répartition des tâches revue.",
     "ancre": "s-5-corriger-et-ajuster",
     "secTitre": "5. Corriger et ajuster"
   },
@@ -7231,7 +7231,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "distinction",
     "recto": "Efficience et efficacité : quelle différence, et quand ajuster les objectifs eux-mêmes ?",
-    "verso": "L'efficience est « la consommation des ressources utilisées dans la production d'un résultat » (rapport résultats/ressources) ; l'efficacité est l'atteinte du résultat — le reporting sert les deux. L'ajustement des objectifs, opérationnel ou stratégique, intervient après un décalage plan/réalisation ou un changement (stratégie globale, réglementation, environnement, RH) : « à l'impossible nul n'est tenu » (ex. la crise Covid-19 en 2020). Ajuster = changer de direction, décaler dans le temps ou revoir la cible.",
+    "verso": "Efficience : le rapport entre le résultat et les ressources consommées. Efficacité : l'atteinte du résultat.\nAjuster les objectifs après un décalage ou un changement : « à l'impossible nul n'est tenu ».",
     "ancre": "s-5-corriger-et-ajuster",
     "secTitre": "5. Corriger et ajuster"
   },
@@ -7243,7 +7243,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Comment définit-on la motivation au travail, et quels besoins de Maslow le suivi nourrit-il ?",
-    "verso": "« Un processus qui active, oriente, dynamise et maintient le comportement des individus vers la réalisation d'objectifs attendus » — les moteurs des collaborateurs. Le suivi nourrit trois besoins de la pyramide de Maslow : la reconnaissance (récompenses : primes, mobilité interne, promotion, projets ambitieux), la réalisation/accomplissement (concrétiser ses efforts) et l'appartenance à un collectif (le suivi collectif renforce la cohésion). Un management qui donne du sens engage. Leviers concrets : le team-building (« renforcement d'équipe », né aux États-Unis au début des années 1980 : resserrer les liens sociaux par le jeu, sur un temps court), les challenges commerciaux, la capitalisation sur les succès et les organisations apprenantes reconnaissant le droit à l'erreur. Selon l'Observatoire du Management 2021 (Oasys Mobilisation), 68 % des collaborateurs jugent leur manager « bon manager », soit + 5 points vs 2019.",
+    "verso": "« Un processus qui active, oriente, dynamise et maintient le comportement vers la réalisation d'objectifs attendus. »\nLe suivi nourrit trois besoins de Maslow : reconnaissance, accomplissement, appartenance au collectif.",
     "ancre": "s-6-maintenir-l-engagement",
     "secTitre": "6. Maintenir l'engagement"
   },
@@ -7255,7 +7255,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce que la GEPP et quelles sont ses trois finalités ?",
-    "verso": "La GEPP (Gestion des Emplois et des Parcours Professionnels, ex-GPEC) est une démarche prospective des RH qui accompagne le changement : adapter, à court et moyen termes, les emplois, les effectifs et les compétences à la stratégie et aux évolutions de l'environnement (Ministère du Travail). Trois finalités : le besoin en nombre de collaborateurs, l'adéquation des compétences, le maintien de la motivation et de l'engagement (fidélisation).",
+    "verso": "Une démarche prospective des RH qui adapte, à court et moyen termes, les emplois, les effectifs et les compétences à la stratégie.\nTrois finalités : le nombre de collaborateurs, l'adéquation des compétences, la motivation et l'engagement.",
     "ancre": "s-1-la-gepp-ex-gpec-anticiper-les-emplois-et-les-competences",
     "secTitre": "1. La GEPP (ex-GPEC) : anticiper les emplois et les compétences"
   },
@@ -7267,7 +7267,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quelles sont les 4 phases de la démarche GEPP ?",
-    "verso": "1. Phase préparatoire / faisabilité : vérifier l'opportunité, constituer un groupe de travail et une structure de pilotage, mobiliser les acteurs. 2. Analyse et diagnostic RH : contexte, existant (emplois, compétences), identification des écarts. 3. Définition du plan d'action : objectifs, priorités, délais, indicateurs, information du CSE. 4. Mise en œuvre et suivi : un processus continu, pas une action ponctuelle. Le tout se conduit en mode projet (SMART, SWOT, Kanban).",
+    "verso": "1. Préparatoire : opportunité, groupe de travail, mobilisation des acteurs.\n2. Analyse et diagnostic RH : contexte, existant, écarts.\n3. Plan d'action : objectifs, priorités, indicateurs, information du CSE.\n4. Mise en œuvre et suivi, en continu.",
     "ancre": "s-1-la-gepp-ex-gpec-anticiper-les-emplois-et-les-competences",
     "secTitre": "1. La GEPP (ex-GPEC) : anticiper les emplois et les compétences"
   },
@@ -7279,7 +7279,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "distinction",
     "recto": "Qu'est-ce que le diagnostic RH, et que couvrent ses analyses quantitative et qualitative ?",
-    "verso": "C'est un état des lieux des ressources humaines complété d'une prospection sur les transformations futures des emplois et des compétences (méthode en ~7 étapes) : il révèle les écarts avec la stratégie et permet une gestion proactive des risques, notamment la pénurie de compétences. Analyse quantitative : ce qui se chiffre, à partir de la BDESE et du SIRH — effectifs (ETP), contrats, turn-over, mobilités, pyramide des âges, absentéisme ; une pyramide déséquilibrée annonce des départs massifs, un turn-over élevé signale un mauvais climat social. Analyse qualitative : ce qui ne se chiffre pas — satisfaction, engagement, climat social, et surtout les référentiels d'emplois, d'activités et de compétences, élaborés via fiches de poste, entretiens et observation en situation de travail.",
+    "verso": "Un état des lieux des RH, complété d'une prospection sur les emplois et compétences futurs.\nQuantitative : effectifs, contrats, turn-over, pyramide des âges (BDESE, SIRH).\nQualitative : climat social, engagement, référentiels de compétences.",
     "ancre": "s-2-le-diagnostic-rh-pilier-de-la-demarche",
     "secTitre": "2. Le diagnostic RH, pilier de la démarche"
   },
@@ -7291,7 +7291,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce qu'un écart en GEPP et comment l'analyse-t-on ?",
-    "verso": "L'écart est l'inadéquation entre les besoins futurs et les ressources disponibles. Son analyse se formalise en 4 temps : comparaison des besoins futurs avec l'état des lieux, classement par nature (compétences manquantes, effectifs insuffisants), évaluation (quantifier), recherche des causes racines. Outils : tableau de comparaison, graphique en barres, enquêtes, logiciels RH.",
+    "verso": "L'inadéquation entre les besoins futurs et les ressources disponibles.\nEn 4 temps : comparer besoins et état des lieux, classer par nature, évaluer, chercher les causes racines.",
     "ancre": "s-3-des-ecarts-au-plan-d-action",
     "secTitre": "3. Des écarts au plan d'action"
   },
@@ -7303,7 +7303,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Quels sont les 3 horizons d'analyse des écarts, et quelles actions pour chacun ?",
-    "verso": "Immédiat : écart entre compétences attendues (référentiel) et constatées (évaluation) → développement et valorisation des compétences stratégiques. Court terme : besoins planifiés vs compétences amenées à disparaître → reclassement des métiers sensibles, planification des retraites, transfert. Moyen/long terme : orientations stratégiques vs emplois actuels → anticipation des emplois émergents, adaptation des emplois.",
+    "verso": "Immédiat : compétences attendues vs constatées → développer.\nCourt terme : compétences amenées à disparaître → reclasser, transférer.\nMoyen/long terme : orientations stratégiques vs emplois actuels → anticiper les métiers émergents.",
     "ancre": "s-3-des-ecarts-au-plan-d-action",
     "secTitre": "3. Des écarts au plan d'action"
   },
@@ -7315,7 +7315,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quels sont les 5 plans d'ajustement types du plan d'action GEPP ?",
-    "verso": "Plan de développement des compétences (PDC), plan de mobilité interne, plan de rémunération (attractivité, fidélisation), plan de recrutement, plan de reconversion professionnelle — la VAE pouvant constituer un plan à part entière. À retenir : la formation n'est qu'un levier parmi d'autres (recrutement, mobilité, organisation du travail, délégation, externalisation), et chaque action est évaluée.",
+    "verso": "Développement des compétences (PDC), mobilité interne, rémunération, recrutement, reconversion — la VAE pouvant en être un à part entière.\nLa formation n'est qu'un levier parmi d'autres.",
     "ancre": "s-3-des-ecarts-au-plan-d-action",
     "secTitre": "3. Des écarts au plan d'action"
   },
@@ -7327,7 +7327,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Comment Guy Le Boterf définit-il la compétence ?",
-    "verso": "« L'articulation routinière ou originale de ressources internes ou externes pour traiter efficacement une situation particulière afin de produire des résultats satisfaisants à certains critères de performance pour un destinataire. » C'est une combinatoire mobilisée en situation : elle ne se voit pas, seul son résultat dans l'activité est observable. Elle fait intervenir une personne, un champ d'application et un tiers qui évalue et reconnaît.",
+    "verso": "« L'articulation de ressources internes ou externes pour traiter efficacement une situation particulière. »\nC'est une combinatoire mobilisée en situation : elle ne se voit pas, seul son résultat est observable.",
     "ancre": "s-4-la-competence-bien-la-definir-avant-de-la-cartographier",
     "secTitre": "4. La compétence : bien la définir avant de la cartographier"
   },
@@ -7339,7 +7339,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quelles sont les 3 catégories de ressources qui composent une compétence ?",
-    "verso": "Les savoirs : connaissances, procédures, normes, souvent formalisés (« Que faut-il connaître ? »). Les savoir-faire : issus de l'expérience — habiletés, automatismes, intuition (« Comment procéder ? »). Les savoir-être : qualités comportementales (soft skills), développables par la formation (« Comment me comporter ? »).",
+    "verso": "Les savoirs : connaissances, procédures, normes — que faut-il connaître ?\nLes savoir-faire : habiletés et automatismes issus de l'expérience — comment procéder ?\nLes savoir-être : qualités comportementales — comment me comporter ?",
     "ancre": "s-4-la-competence-bien-la-definir-avant-de-la-cartographier",
     "secTitre": "4. La compétence : bien la définir avant de la cartographier"
   },
@@ -7351,7 +7351,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "distinction",
     "recto": "Qu'est-ce que la compétence n'est PAS ?",
-    "verso": "Ni la performance (la compétence est le processus qui la produit), ni la qualification (valeur d'échange reconnue par un titre), ni la connaissance (c'est puiser pertinemment dans ses connaissances qui fait la compétence), ni le potentiel (compétence virtuelle), ni l'expérience (mode d'acquisition de la compétence).",
+    "verso": "Ni la performance (la compétence est le processus qui la produit), ni la qualification (un titre reconnu).\nNi la connaissance, ni le potentiel (compétence virtuelle), ni l'expérience (son mode d'acquisition).",
     "ancre": "s-4-la-competence-bien-la-definir-avant-de-la-cartographier",
     "secTitre": "4. La compétence : bien la définir avant de la cartographier"
   },
@@ -7363,7 +7363,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Quels types de compétences distingue-t-on, et quels degrés de transférabilité ?",
-    "verso": "Compétence individuelle / collective (les compétences individuelles d'une équipe mises en commun), transverse (utilisable d'un métier à l'autre — clé de la mobilité) et distinctive (rare, ex. brevets : source d'avantage concurrentiel). Transférabilité : forte (même métier, autre structure), moyenne (métier différent, activités similaires), faible/reconversion (champ différent, savoirs à acquérir). La compétence s'acquiert, s'entretient, peut se perdre ou devenir obsolète.",
+    "verso": "Individuelle ou collective, transverse (d'un métier à l'autre, clé de la mobilité), distinctive (rare, source d'avantage concurrentiel).\nTransférabilité forte (même métier), moyenne (activités proches) ou faible (reconversion).",
     "ancre": "s-4-la-competence-bien-la-definir-avant-de-la-cartographier",
     "secTitre": "4. La compétence : bien la définir avant de la cartographier"
   },
@@ -7375,7 +7375,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce que le référentiel de compétences ?",
-    "verso": "Un tableau recensant les compétences existantes dans l'entreprise et nécessaires aux emplois ; il regroupe les métiers par compétences, et non par fonctions. Il est facultatif et sert la GPEC, la gestion de carrière, la mobilité et le recrutement. Limites : il exige une culture de la compétence (maturité), un investissement temps et financier considérable, et une actualisation permanente qui peut démobiliser.",
+    "verso": "Un tableau des compétences existantes et nécessaires, qui regroupe les métiers par compétences et non par fonctions.\nFacultatif. Limites : il exige une culture de la compétence et une actualisation permanente, coûteuse.",
     "ancre": "s-5-cartographier-referentiels-emplois-types-mobilite",
     "secTitre": "5. Cartographier : référentiels, emplois-types, mobilité"
   },
@@ -7387,7 +7387,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "distinction",
     "recto": "Travail prescrit et travail réel : pourquoi cette distinction est-elle centrale dans l'élaboration du référentiel ?",
-    "verso": "Lors de la phase de préparation, on observe l'activité (observation + entretiens) en distinguant le travail prescrit du travail réel : le réel révèle des compétences insoupçonnées. Les 3 phases d'élaboration : préparation (lister les emplois, observer), réalisation (dédoublonnage et regroupement par métier, validation par d'autres que les concepteurs, communication direction → IRP → managers → salariés), suivi (mise à jour tous les 2-3 ans, annuelle en cas de mutation).",
+    "verso": "Le prescrit, c'est ce qui est demandé ; le réel, ce qui est vraiment fait.\nLe travail réel révèle des compétences insoupçonnées — c'est lui qu'on observe, sur le terrain et en entretien.",
     "ancre": "s-5-cartographier-referentiels-emplois-types-mobilite",
     "secTitre": "5. Cartographier : référentiels, emplois-types, mobilité"
   },
@@ -7399,7 +7399,7 @@ var FLASHCARDS = [
     "niveau": 3,
     "type": "liste",
     "recto": "Comment se structure un référentiel par niveaux, et sur quels appuis externes s'appuyer ?",
-    "verso": "Famille professionnelle (finalité commune, technicité dominante) → sous-famille → emploi-type → poste (situation individuelle : autant de postes que de salariés) → tâche (unité élémentaire de l'activité). Appuis externes : ROME 4.0 de France Travail (successeur de Pôle emploi au 1er janvier 2024), référentiels de branche, RNCP de France Compétences, fiches APEC. La matrice de compétences se construit en 4 étapes : inventaire, regroupement par type, niveaux avec critères, construction. Veille métiers associée : les OPMQC (Observatoires Prospectifs des Métiers, des Qualifications et des Compétences) fournissent statistiques et études par branche — mieux vaut cibler ceux de son secteur ; les HR Analytics dégagent des tendances des données RH et prédisent les risques de départ, en aide à la décision seulement, sous contrainte RGPD (mai 2018) et recommandations CNIL.",
+    "verso": "Famille professionnelle → sous-famille → emploi-type → poste → tâche.\nAppuis externes : ROME 4.0 de France Travail, référentiels de branche, RNCP, fiches APEC.",
     "ancre": "s-5-cartographier-referentiels-emplois-types-mobilite",
     "secTitre": "5. Cartographier : référentiels, emplois-types, mobilité"
   },
@@ -7411,7 +7411,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce qu'un emploi-type, et quelles 3 vérifications avant de regrouper des postes ?",
-    "verso": "Notion née au CEREQ (Nicole Mandon, méthode ETED, 1990) : un regroupement de situations de travail aux contenus d'activité identiques ou similaires, suffisamment homogènes pour être occupées par un même individu. C'est une description générique (elle a inspiré le ROME), et non une fiche de poste : ni tâches, ni catégorisation hiérarchique. Trois vérifications avant regroupement : 1. les postes ont 80 % des missions et activités communes ; 2. les compétences requises sont de même nature et de même niveau ; 3. un titulaire peut tenir l'ensemble des postes en moins de 3 mois.",
+    "verso": "Un regroupement de situations de travail assez homogènes pour être occupées par une même personne. Générique, ce n'est pas une fiche de poste.\n3 vérifications : 80 % d'activités communes, compétences de même niveau, tenable en moins de 3 mois.",
     "ancre": "s-5-cartographier-referentiels-emplois-types-mobilite",
     "secTitre": "5. Cartographier : référentiels, emplois-types, mobilité"
   },
@@ -7423,7 +7423,7 @@ var FLASHCARDS = [
     "niveau": 3,
     "type": "chiffre",
     "recto": "Que contient la fiche emploi-type, et quels chiffres retenir sur les métiers de demain ?",
-    "verso": "10 rubriques : titre (ni surévalué ni statutaire), famille professionnelle, postes regroupés, raison d'être (une phrase), activités principales (3 à 5), effectifs, compétences requises (savoir-faire généraux / relationnels / techniques — pas de savoir-être), niveau de complexité (débutant, maîtrise, expert), formations en lien, aires de mobilité amont et aval (emplois sources / cibles). Enjeu « Quels métiers en 2030 ? » : plus de 50 % des métiers impactés par une mutation d'ici 10 ans, 20 % n'existent pas encore.",
+    "verso": "Titre, famille, postes regroupés, raison d'être, activités principales, effectifs, compétences requises, niveau de complexité, formations, aires de mobilité.\nChiffres : plus de 50 % des métiers mutent d'ici 10 ans, 20 % n'existent pas encore.",
     "ancre": "s-5-cartographier-referentiels-emplois-types-mobilite",
     "secTitre": "5. Cartographier : référentiels, emplois-types, mobilité"
   },
@@ -7435,7 +7435,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce que la matrice de polyvalence et que révèle-t-elle ?",
-    "verso": "Elle croise, pour un service, les activités et les personnes, avec le niveau de compétence de chacun. Elle révèle les zones à risque — les compétences détenues par un nombre réduit de collaborateurs, où une absence met l'activité en péril — et donc les priorités de formation, individuelles et collectives. À distinguer : l'aire de mobilité (compétences nécessaires pour passer d'un poste à un autre) et la passerelle de mobilité (qui précise en plus comment on accompagne ce développement) ; mobilité horizontale (poste équivalent) vs verticale (poste supérieur).",
+    "verso": "Elle croise activités et personnes d'un service, avec le niveau de chacun.\nElle révèle les zones à risque — une compétence détenue par trop peu de gens — donc les priorités de formation.",
     "ancre": "s-5-cartographier-referentiels-emplois-types-mobilite",
     "secTitre": "5. Cartographier : référentiels, emplois-types, mobilité"
   },
@@ -7447,7 +7447,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quelles sont les 4 approches du diagnostic des besoins de compétences ?",
-    "verso": "1. Projet d'entreprise : globale, part du projet stratégique, donne du sens et facilite la priorisation, mais chronophage. 2. Projet de service : diagnostic du service → objectifs de progrès → objectifs de formation. 3. Métier : anticiper les évolutions d'un métier à 3/5 ans, utile quand le recrutement est difficile. 4. Individuelle : écarts sur le poste + projet et demandes du salarié — motivante. Les approches se combinent. Les 4 enjeux du diagnostic : financier, social, managérial, RH.",
+    "verso": "1. Projet d'entreprise : globale, donne du sens, mais chronophage.\n2. Projet de service.\n3. Métier : évolutions à 3-5 ans.\n4. Individuelle : écarts sur le poste et projet du salarié.\nElles se combinent.",
     "ancre": "s-6-diagnostiquer-les-besoins-de-competences-et-de-formation",
     "secTitre": "6. Diagnostiquer les besoins de compétences et de formation"
   },
@@ -7459,7 +7459,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "definition",
     "recto": "Qu'est-ce que la note d'orientation, et quelle obligation légale l'accompagne ?",
-    "verso": "Un document concis présentant le contexte et les objectifs stratégiques, la politique RH, les besoins opérationnels et les grandes orientations de formation. Elle s'appuie sur l'analyse documentaire (7 thématiques) et des entretiens (Direction générale, CSE, managers). La consultation annuelle du CSE sur les orientations de la formation est une obligation légale, distincte de la consultation sur le plan lui-même.",
+    "verso": "Un document concis : contexte et objectifs stratégiques, politique RH, besoins opérationnels, grandes orientations de formation.\nLa consultation annuelle du CSE sur les orientations de la formation est une obligation légale.",
     "ancre": "s-6-diagnostiquer-les-besoins-de-competences-et-de-formation",
     "secTitre": "6. Diagnostiquer les besoins de compétences et de formation"
   },
@@ -7471,7 +7471,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "application",
     "recto": "Comment passe-t-on d'une compétence manquante à un besoin de formation, et quels types de besoins distingue-t-on ?",
-    "verso": "On analyse le poste (activités, résultats attendus, autonomie) pour en déduire les compétences clés — celles qui empêchent la tenue du poste si elles ne sont pas maîtrisées. Les compétences manquantes deviennent des besoins de formation → objectifs opérationnels → objectifs pédagogiques. Attention : toute compétence manquante n'est pas un besoin de formation (recrutement ou réorganisation parfois plus adaptés). On distingue besoins collectifs / individuels, et besoin générique (modalités à définir) / qualifié (action et organisme déjà identifiés).",
+    "verso": "On analyse le poste pour en tirer les compétences clés — celles sans lesquelles le poste ne peut être tenu.\nAttention : toute compétence manquante n'est pas un besoin de formation. Besoins collectifs ou individuels, génériques ou qualifiés.",
     "ancre": "s-6-diagnostiquer-les-besoins-de-competences-et-de-formation",
     "secTitre": "6. Diagnostiquer les besoins de compétences et de formation"
   },
@@ -7483,7 +7483,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quelles sont les principales méthodes d'évaluation des compétences ?",
-    "verso": "L'entretien individuel d'évaluation (annuel, avec le manager : bilan, objectifs, formations, rémunération), l'auto-évaluation (questionnaires remplis chacun de son côté), le 360° (regards croisés, généralement réservé aux managers car lourd), l'entretien de parcours professionnel (EPP, obligatoire, centré sur l'évolution et l'employabilité), l'entretien de groupe (projets collectifs, à compléter d'évaluations individuelles) et l'assessment center (mises en situation concrètes, grille de critères prédéfinis). Le collaborateur doit être informé au préalable de la date et des méthodes. À jour : depuis la loi du 24 octobre 2025, l'entretien professionnel devient l'EPP (art. L. 6315-1), ouvert à tous les salariés sans condition d'ancienneté, tenu tous les 4 ans avec un état des lieux récapitulatif tous les 8 ans.",
+    "verso": "Entretien annuel d'évaluation, auto-évaluation, 360° (réservé aux managers), entretien de parcours professionnel (EPP), entretien de groupe, assessment center.\nDepuis la loi du 24 octobre 2025 : EPP tous les 4 ans, bilan tous les 8 ans.",
     "ancre": "s-7-evaluer-les-competences-et-recueillir-les-besoins",
     "secTitre": "7. Évaluer les compétences et recueillir les besoins"
   },
@@ -7495,7 +7495,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "distinction",
     "recto": "Quelles sont les 3 stratégies de recueil des besoins de formation, et quelle est la règle d'or ?",
-    "verso": "Par l'équipe RH (recueil homogène et professionnel, mais très chronophage), par les managers (la formation devient un acte de management, mais résultats hétérogènes), par un intervenant externe (neutralité, méthodologie éprouvée, prise en charge OPCO possible, mais climat social mal appréhendé). Le choix dépend de la taille, du temps, du budget et du climat social. Règle d'or : jamais pendant l'entretien d'évaluation — la formation est une obligation de l'employeur, jamais une récompense ou une sanction liée aux résultats.",
+    "verso": "Par les RH (homogène mais chronophage), par les managers (acte de management mais hétérogène), par un externe (neutre, mais climat social mal saisi).\nRègle d'or : jamais pendant l'entretien d'évaluation — la formation n'est ni récompense ni sanction.",
     "ancre": "s-7-evaluer-les-competences-et-recueillir-les-besoins",
     "secTitre": "7. Évaluer les compétences et recueillir les besoins"
   },
@@ -7507,7 +7507,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "distinction",
     "recto": "Mentorat et tutorat : quelle différence, et quelles conditions pour un bon transfert des compétences ?",
-    "verso": "Le mentorat est une relation interpersonnelle de soutien et d'apprentissage, fondée sur l'échange et la confiance, où le mentor (expérimenté) favorise le développement du mentoré — sur la base du volontariat. Le tutorat en est le versant opérationnel : un senior est nommé tuteur d'un nouvel arrivant ou d'un collaborateur en évolution pour transmettre le savoir au quotidien (levier classique d'anticipation des départs en retraite). Le transfert (démarche de knowledge management) assure la continuité de l'activité et limite la déperdition de savoirs ; conditions : volontariat des détenteurs et des apprenants, méthodologie précise, planification et suivi, formation des détenteurs à la transmission, adaptation du temps de travail.",
+    "verso": "Mentorat : relation de soutien et d'apprentissage fondée sur la confiance, sur la base du volontariat.\nTutorat : le versant opérationnel — un senior transmet au quotidien à un nouvel arrivant.\nCondition commune : le volontariat des deux côtés.",
     "ancre": "s-8-maintenir-et-transferer-les-competences",
     "secTitre": "8. Maintenir et transférer les compétences"
   },
@@ -7519,7 +7519,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "distinction",
     "recto": "Formation initiale et formation professionnelle continue (FPC) : quelles différences ?",
-    "verso": "La formation initiale est le cursus (enseignement professionnel, supérieur, apprentissage) où l'on acquiert les bases d'une profession, sanctionné par un diplôme. La FPC concerne les actifs : améliorer ses compétences, se reconvertir. Trois différences : le public, le coût (la continue est toujours payante mais finançable, ex. CPF) et l'organisation (pendant ou hors temps de travail). La continue relève de l'andragogie, la pédagogie des adultes fondée sur l'expérience et l'autonomie.",
+    "verso": "Initiale : le cursus qui donne les bases d'un métier, sanctionné par un diplôme.\nContinue (FPC) : pour les actifs — se perfectionner ou se reconvertir.\nTrois différences : le public, le coût, l'organisation (sur ou hors temps de travail).",
     "ancre": "s-1-la-formation-professionnelle-notions-de-base",
     "secTitre": "1. La formation professionnelle: notions de base"
   },
@@ -7531,7 +7531,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "chiffre",
     "recto": "Que dit le modèle 70/20/10, et quel paradoxe budgétaire révèle-t-il ?",
-    "verso": "70 % des apprentissages viennent de la pratique et de l'expérience, 20 % des échanges au travail (d'où le social learning), 10 % de la formation formelle — qui capte pourtant 80 % des budgets. Modèle du Centre de Leadership Créatif (années 1960). Selon Spitzer, on a oublié en un mois plus de 80 % d'une formation traditionnelle : c'est la pratique (essai-erreur) qui ancre.",
+    "verso": "70 % des apprentissages viennent de la pratique, 20 % des échanges au travail, 10 % de la formation formelle.\nLe paradoxe : ces 10 % captent 80 % des budgets.",
     "ancre": "s-1-la-formation-professionnelle-notions-de-base",
     "secTitre": "1. La formation professionnelle: notions de base"
   },
@@ -7543,7 +7543,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Citez les grands jalons légaux de la formation professionnelle, de 1971 à 2018.",
-    "verso": "Mécanique française : un ANI (Accord National Interprofessionnel) puis une loi qui le reprend. Loi du 16 juillet 1971 (loi Delors) : texte fondateur. 2004 : la « formation tout au long de la vie » entre dans le Code du travail. 2009 : la formation devient un levier RH de la GPEC. Loi du 5 mars 2014 : CPF, CEP, entretien professionnel, contribution unique, cadre de la FOAD (art. L.6353-1). Loi Travail 2016 : CPA. Loi « Avenir professionnel » du 5 septembre 2018 : réforme profonde (gouvernance, fonctionnement, financement).",
+    "verso": "Un ANI est négocié, puis une loi le reprend.\n1971 (loi Delors) : texte fondateur. 2004 : la formation tout au long de la vie. 2014 : CPF, CEP, entretien professionnel.\n2018, loi Avenir professionnel : réforme profonde.",
     "ancre": "s-2-le-cadre-legal-50-ans-de-reformes",
     "secTitre": "2. Le cadre légal: 50 ans de réformes"
   },
@@ -7555,7 +7555,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "chiffre",
     "recto": "Qu'apporte la réforme entrée en vigueur en 2019, côté individus et côté entreprises ?",
-    "verso": "Individus : CPF monétisé à 500 €/an (plafond 5 000 €), 800 €/an pour les peu qualifiés (plafond 8 000 €), CPF de transition, application mobile, CEP renforcé. Entreprises : contribution unique collectée automatiquement par l'URSSAF, cotisation CPF-CDD (1 %), mutualisation au profit des TPE/PME, nouvelle définition de l'action de formation (AFEST), et le plan de formation devient le plan de développement des compétences (PDC).",
+    "verso": "Individus : CPF monétisé à 500 €/an (800 € pour les peu qualifiés), CPF de transition, CEP renforcé.\nEntreprises : contribution unique collectée par l'URSSAF, AFEST reconnue, et le plan de formation devient le PDC.",
     "ancre": "s-2-le-cadre-legal-50-ans-de-reformes",
     "secTitre": "2. Le cadre légal: 50 ans de réformes"
   },
@@ -7567,7 +7567,7 @@ var FLASHCARDS = [
     "niveau": 3,
     "type": "chiffre",
     "recto": "Qu'est-ce que le ticket modérateur CPF, et qui en est exonéré ?",
-    "verso": "Depuis le 2 mai 2024, une participation forfaitaire de 100 € est demandée au titulaire du CPF qui mobilise son compte. Exonérés : demandeurs d'emploi, formations abondées par l'employeur, points C2P, incapacité AT/MP d'au moins 10 %. Même période : sous-traitance plafonnée à 80 % du CA sur Mon Compte Formation, contrôles OPCO renforcés ; 2023 avait apporté les lois anti-fraude au CPF et l'expérimentation de la VAE inversée.",
+    "verso": "Depuis le 2 mai 2024, une participation de 100 € est demandée au titulaire qui mobilise son compte.\nExonérés : demandeurs d'emploi, formations abondées par l'employeur, points C2P, incapacité AT/MP d'au moins 10 %.",
     "ancre": "s-2-le-cadre-legal-50-ans-de-reformes",
     "secTitre": "2. Le cadre légal: 50 ans de réformes"
   },
@@ -7579,7 +7579,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Quelles sont les trois contributions de l'employeur au financement de la formation ?",
-    "verso": "1. La CUFPA (Contribution Unique à la Formation Professionnelle et à l'Alternance) : toutes les entreprises, 1,23 % si moins de 11 salariés, 1,68 % au-delà (volets formation + taxe d'apprentissage). 2. La CSA (Contribution Supplémentaire à l'Apprentissage) : entreprises d'au moins 250 salariés dont le quota d'alternants est inférieur à 5 %. 3. La contribution CPF-CDD (1 %).",
+    "verso": "1. La CUFPA : toutes les entreprises — 1,23 % sous 11 salariés, 1,68 % au-delà.\n2. La CSA : à partir de 250 salariés, si moins de 5 % d'alternants.\n3. La contribution CPF-CDD (1 %).",
     "ancre": "s-3-financement-et-qualite",
     "secTitre": "3. Financement et qualité"
   },
@@ -7591,7 +7591,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "chiffre",
     "recto": "Comment France Compétences répartit-elle les fonds de la formation ?",
-    "verso": "73,26 % pour l'alternance (OPCO, Régions) ; 15,47 % pour le CPF, versés à la Caisse des Dépôts qui gère les comptes ; 5,48 % pour le PDC des entreprises de moins de 50 salariés via les OPCO ; le reste pour les transitions professionnelles et le CEP. Budget 2023 : 14,9 Md€, financé à 70 % par les entreprises.",
+    "verso": "73,26 % à l'alternance (OPCO, Régions), 15,47 % au CPF via la Caisse des Dépôts, 5,48 % au PDC des moins de 50 salariés.\nBudget 2023 : 14,9 Md€, financé à 70 % par les entreprises.",
     "ancre": "s-3-financement-et-qualite",
     "secTitre": "3. Financement et qualité"
   },
@@ -7603,7 +7603,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce que Qualiopi et pourquoi est-elle incontournable ?",
-    "verso": "Depuis le 1er janvier 2022, un prestataire de formation doit détenir la certification Qualiopi pour faire bénéficier ses clients de fonds mutualisés ou publics (OPCO, État, Régions, Caisse des Dépôts...). Elle est délivrée par des certificateurs accrédités par le Cofrac, sur la base du Référentiel National de Certification Qualité (RNCQ). Les entreprises de 50 salariés au plus doivent recourir à un organisme Qualiopi pour être financées par leur OPCO.",
+    "verso": "Depuis le 1er janvier 2022, un organisme doit détenir Qualiopi pour que ses clients bénéficient de fonds mutualisés ou publics.\nDélivrée par des certificateurs accrédités Cofrac, sur le référentiel national RNCQ.",
     "ancre": "s-3-financement-et-qualite",
     "secTitre": "3. Financement et qualité"
   },
@@ -7615,7 +7615,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Quelles sont les deux obligations de formation de l'employeur (art. L.6321-1) ?",
-    "verso": "Assurer l'adaptation des salariés à leur poste de travail, et veiller au maintien de leur capacité à occuper un emploi (employabilité) face à l'évolution des emplois, des technologies et des organisations. L'initiative revient à l'employeur et les formations doivent réellement développer les compétences : Cass. soc., 5 juillet 2018, 10 000 € pour « perte de chance » à un salarié qui avait suivi 17 formations courtes toutes liées à son seul métier.",
+    "verso": "1. Assurer l'adaptation des salariés à leur poste de travail.\n2. Veiller au maintien de leur capacité à occuper un emploi — l'employabilité.\nL'initiative revient à l'employeur, et les formations doivent réellement développer les compétences.",
     "ancre": "s-4-les-obligations-de-l-employeur",
     "secTitre": "4. Les obligations de l'employeur"
   },
@@ -7627,7 +7627,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "chiffre",
     "recto": "Entretien professionnel (EPP) : quel rythme avant et après la loi du 24 octobre 2025, quel contenu, quelle sanction ?",
-    "verso": "Régime issu de la loi de 2014 : tous les 2 ans (et au retour d'absences longues), avec un état des lieux récapitulatif tous les 6 ans vérifiant que les entretiens ont eu lieu, qu'au moins une formation non obligatoire a été suivie et qu'il y a eu certification ou progression. La loi du 24 octobre 2025 le rebaptise EPP (art. L. 6315-1) et l'étend à toutes les entreprises et tous les salariés sans condition d'ancienneté : premier EPP dans l'année suivant l'embauche, puis tous les 4 ans, état des lieux tous les 8 ans, plus un EPP de mi-carrière et un EPP de fin de carrière (dans les 2 ans précédant le 60e anniversaire). Contenu : projet professionnel, besoins de formation, information sur la VAE, le CPF et le CEP — en trois temps : Bilan, Analyse, Évolutions. Piège classique : l'EPP n'évalue PAS les résultats — c'est l'entretien annuel d'évaluation qui juge les résultats, les forces/faiblesses et fixe de nouveaux objectifs (et qui, seul, reste insuffisant : à compléter de feedbacks réguliers sur des jalons). Sanction (plus de 50 salariés) : abondement forfaitaire de 3 000 € sur le CPF du salarié.",
+    "verso": "Avant : tous les 2 ans, bilan récapitulatif à 6 ans.\nDepuis la loi du 24 octobre 2025 : tous les 4 ans, bilan à 8 ans, plus un EPP de mi-carrière et de fin de carrière.\nIl n'évalue pas les résultats. Sanction : 3 000 € sur le CPF.",
     "ancre": "s-4-les-obligations-de-l-employeur",
     "secTitre": "4. Les obligations de l'employeur"
   },
@@ -7639,7 +7639,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce que le PDC, et que peut-il inclure ou exclure ?",
-    "verso": "Issu de la loi Avenir 2018 (il remplace le plan de formation), le PDC recense l'ensemble des actions de formation mises en place par l'employeur. Non obligatoire mais fortement recommandé, pluriannuel, appuyé sur les entretiens. Une action de formation = « parcours pédagogique permettant l'atteinte d'un objectif professionnel » (art. L.6313-3). Il peut inclure : formations internes/externes, bilans de compétences, VAE, alternance, AFEST, actions co-construites. Exclus et non finançables par l'OPCO : sensibilisation, bien-être, gestion du stress pour public indifférencié, loisirs.",
+    "verso": "Le plan de développement des compétences recense toutes les actions de formation mises en place par l'employeur. Facultatif mais recommandé.\nExclus, non finançables : sensibilisation, bien-être, gestion du stress tout public, loisirs.",
     "ancre": "s-5-le-plan-de-developpement-des-competences-pdc",
     "secTitre": "5. Le plan de développement des compétences (PDC)"
   },
@@ -7651,7 +7651,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Que sont les formations obligatoires (art. L.6321-2) et quelles sont leurs deux familles ?",
-    "verso": "« Toute action qui conditionne l'exercice d'une activité ou d'une fonction », en application d'un texte légal, réglementaire ou conventionnel. Deux familles : hygiène et sécurité (prévention des risques) et permis/habilitations (CACES, FIMO, habilitations électriques B1/B2, certification AMF, secourisme, incendie). Un accident impliquant un salarié non habilité engage la responsabilité civile et pénale de l'employeur ; le chargé de formation suit les échéances de « recyclage ».",
+    "verso": "« Toute action qui conditionne l'exercice d'une activité ou d'une fonction », imposée par un texte.\nDeux familles : hygiène et sécurité, permis et habilitations (CACES, FIMO, habilitations électriques, AMF).",
     "ancre": "s-5-le-plan-de-developpement-des-competences-pdc",
     "secTitre": "5. Le plan de développement des compétences (PDC)"
   },
@@ -7663,7 +7663,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "distinction",
     "recto": "Adaptation au poste, maintien dans l'emploi, développement des compétences : comment classer une action non obligatoire ?",
-    "verso": "Adaptation au poste : savoir-faire spécifique requis dans le poste (ex. architecte formé à un logiciel de DAO). Maintien dans l'emploi : savoir-faire transférable requis dans l'emploi (ex. assistant administratif à l'anglais professionnel). Développement des compétences : savoir-faire non requis actuellement, utile pour une évolution ultérieure — levier de motivation et de fidélisation (ex. chargé d'affaires formé au management).",
+    "verso": "Adaptation au poste : savoir-faire spécifique au poste tenu.\nMaintien dans l'emploi : savoir-faire transférable, requis dans l'emploi.\nDéveloppement : savoir-faire non requis aujourd'hui, utile pour évoluer.",
     "ancre": "s-5-le-plan-de-developpement-des-competences-pdc",
     "secTitre": "5. Le plan de développement des compétences (PDC)"
   },
@@ -7675,7 +7675,7 @@ var FLASHCARDS = [
     "niveau": 3,
     "type": "chiffre",
     "recto": "Formations et temps de travail : quelles règles selon la catégorie ?",
-    "verso": "Les formations obligatoires se déroulent obligatoirement sur le temps de travail, rémunération maintenue. Les non obligatoires peuvent avoir lieu hors temps de travail (non rémunérées) : limites fixées par accord collectif ou, sans accord, avec l'accord écrit du salarié, dans la limite de 30 h/an ou 2 % du forfait (218 jours × 2 % = 4,4 jours). Le refus du salarié n'est ni une faute ni un motif de licenciement.",
+    "verso": "Obligatoires : sur le temps de travail, rémunération maintenue.\nNon obligatoires : possibles hors temps de travail, non rémunérées — 30 h/an ou 2 % du forfait sans accord collectif.\nLe refus n'est ni une faute ni un motif de licenciement.",
     "ancre": "s-5-le-plan-de-developpement-des-competences-pdc",
     "secTitre": "5. Le plan de développement des compétences (PDC)"
   },
@@ -7687,7 +7687,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Quelles sont les 6 étapes d'élaboration du PDC ?",
-    "verso": "1. Identifier les besoins (orientations stratégiques + entretiens + obligations et recyclages), idéalement en septembre-octobre. 2. Préparer le plan (hiérarchiser, collaborateurs, heures, modalités). 3. Chiffrer (coûts directs et indirects, financements OPCO). 4. Communiquer et consulter le CSE — obligatoire dès 50 salariés, avis tous les ans. 5. Déployer et suivre (convocations, émargements, certifications). 6. Évaluer : efficacité et ROI.",
+    "verso": "1. Identifier les besoins (septembre-octobre).\n2. Préparer le plan.\n3. Chiffrer, coûts directs et indirects.\n4. Consulter le CSE, obligatoire dès 50 salariés.\n5. Déployer et suivre.\n6. Évaluer, jusqu'au ROI.",
     "ancre": "s-5-le-plan-de-developpement-des-competences-pdc",
     "secTitre": "5. Le plan de développement des compétences (PDC)"
   },
@@ -7699,7 +7699,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "application",
     "recto": "Comment prioriser les besoins de formation avec la grille urgence × importance ?",
-    "verso": "Urgence : obligation réglementaire, changement brutal, compétence en train d'être perdue, ou raisons pragmatiques (salarié jamais formé, budget non consommé). Importance : pour l'entreprise (stratégie, compétences clés) et pour le salarié (évolution, motivation). Urgent + important : sans délai (risques juridiques sinon). Important, pas urgent : planifier dans le PDC. Urgent, pas important : n'existe pas — une formation urgente est toujours importante. Ni l'un ni l'autre : éliminer.",
+    "verso": "Urgent et important : sans délai, il y a un risque juridique.\nImportant mais pas urgent : à planifier dans le PDC.\nUrgent mais pas important : cela n'existe pas — une formation urgente est toujours importante.\nNi l'un ni l'autre : éliminer.",
     "ancre": "s-5-le-plan-de-developpement-des-competences-pdc",
     "secTitre": "5. Le plan de développement des compétences (PDC)"
   },
@@ -7711,7 +7711,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "RNCP, Répertoire Spécifique, Titre Professionnel, CQP, CléA : que recouvre chaque dispositif ?",
-    "verso": "RNCP : diplômes, titres et CQP, chaque certification = 3 référentiels (activités, compétences, évaluation) en blocs de compétences, 8 niveaux (décret du 8 janvier 2019). Répertoire Spécifique : habilitations et certifications complémentaires, enregistrées 5 ans max. Titre Professionnel : délivré au nom de l'État par le ministère du Travail, blocs CCP. CQP : « diplôme sur mesure » créé par une branche professionnelle, hors tutelle de l'État. CléA : première certification interprofessionnelle et paritaire du socle de connaissances et compétences, 7 domaines.",
+    "verso": "RNCP : diplômes, titres et CQP, en blocs de compétences, 8 niveaux.\nRépertoire Spécifique : certifications complémentaires, 5 ans max.\nTitre Professionnel : délivré par l'État. CQP : créé par une branche. CléA : le socle, 7 domaines.",
     "ancre": "s-6-certifications-et-validation-des-acquis",
     "secTitre": "6. Certifications et validation des acquis"
   },
@@ -7723,7 +7723,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "chiffre",
     "recto": "VAE : condition d'accès, issue possible, différence avec la VAPP ?",
-    "verso": "La VAE permet d'obtenir une certification du RNCP en validant l'expérience (professionnelle ou extra-professionnelle : bénévolat, mandats). Condition : 1 an d'expérience (1 607 h), continue ou non, en rapport direct avec la certification visée. Le jury de professionnels prononce une validation totale, partielle (contrôle complémentaire) ou un refus ; la certification a la même valeur que par les autres voies. La VAPP vise, elle, la reprise d'études.",
+    "verso": "Obtenir une certification du RNCP en validant son expérience, professionnelle ou non (bénévolat, mandats).\nCondition : 1 an d'expérience (1 607 h) en rapport direct avec la certification. Issue : validation totale, partielle ou refus.\nLa VAPP vise la reprise d'études.",
     "ancre": "s-6-certifications-et-validation-des-acquis",
     "secTitre": "6. Certifications et validation des acquis"
   },
@@ -7735,7 +7735,7 @@ var FLASHCARDS = [
     "niveau": 3,
     "type": "chiffre",
     "recto": "Quels sont les délais et plafonds de la procédure VAE et du congé VAE ?",
-    "verso": "Recevabilité : dossier Cerfa, silence de 2 mois = acceptation ; 1 demande par certification et 3 certifications max par an. Congé VAE (CVAE) : 24 h max sur temps de travail rémunéré, demande 30 jours avant, réponse sous 15 jours (silence = accord), renouvelable après 1 an sauf validation partielle. Financement : employeur (PDC), CPF, fonds personnels ; OPCO pour les moins de 50 salariés.",
+    "verso": "Recevabilité : silence de 2 mois = acceptation ; 1 demande par certification, 3 par an au plus.\nCongé VAE : 24 h rémunérées, demandées 30 jours avant, réponse sous 15 jours (silence = accord).",
     "ancre": "s-6-certifications-et-validation-des-acquis",
     "secTitre": "6. Certifications et validation des acquis"
   },
@@ -7747,7 +7747,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Comment analyser le public d'une formation avant de la concevoir ?",
-    "verso": "Avec les 5W + 2H : qui (profil), quoi (acquis), où (contexte), quand (contraintes temporelles), pourquoi (motivations), comment (préférences d'apprentissage), combien (disponibilité). L'expertise préalable détermine le niveau de complexité : viser la zone proximale de développement — ni trop facile (ennui), ni trop difficile (découragement) — avec une différenciation pédagogique (modules optionnels, rappels, challenges).",
+    "verso": "Avec les 5W + 2H : qui, quoi (les acquis), où, quand, pourquoi (les motivations), comment (les préférences), combien (la disponibilité).\nViser la zone proximale de développement : ni trop facile, ni trop difficile.",
     "ancre": "s-7-concevoir-la-formation-l-ingenierie-pedagogique",
     "secTitre": "7. Concevoir la formation: l'ingénierie pédagogique"
   },
@@ -7759,7 +7759,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quels sont les 6 niveaux de la taxonomie de Bloom, et comment formuler les objectifs ?",
-    "verso": "Mémoriser → Comprendre → Appliquer → Analyser → Évaluer → Créer : elle structure la progression et sert de diagnostic. Chaque objectif est formulé SMART (Spécifique, Mesurable, Atteignable, Pertinent, Temporellement défini), avec des verbes d'action observables (« identifier », « créer » — pas « connaître »), aligné sur les référentiels métiers.",
+    "verso": "Mémoriser, Comprendre, Appliquer, Analyser, Évaluer, Créer.\nLes objectifs se formulent en SMART, avec des verbes d'action observables — « identifier », « créer », jamais « connaître ».",
     "ancre": "s-7-concevoir-la-formation-l-ingenierie-pedagogique",
     "secTitre": "7. Concevoir la formation: l'ingénierie pédagogique"
   },
@@ -7771,7 +7771,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "application",
     "recto": "Comment structurer les contenus d'une formation pour des adultes ?",
-    "verso": "Trois piliers : cohérence, progressivité, contextualisation, avec une structure pyramidale du général au particulier. L'attention d'un adulte décline après 15-20 minutes : d'où le chunking (micro-séquences), les marqueurs de progression et les points de contrôle. La méthode inductive — du cas concret vers la théorie, inverse de la déductive — est la plus efficace en formation professionnelle : les apprenants découvrent eux-mêmes les principes.",
+    "verso": "Trois piliers : cohérence, progressivité, contextualisation.\nL'attention d'un adulte décline après 15-20 minutes : d'où le chunking en micro-séquences.\nMéthode inductive — du cas concret vers la théorie — la plus efficace en formation professionnelle.",
     "ancre": "s-7-concevoir-la-formation-l-ingenierie-pedagogique",
     "secTitre": "7. Concevoir la formation: l'ingénierie pédagogique"
   },
@@ -7783,7 +7783,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "chiffre",
     "recto": "Quelles exigences pour les supports (accessibilité) et quelle démarche qualité (cycle 3-2-1) ?",
-    "verso": "Les intelligences multiples (Gardner) imposent de croiser les modalités : vidéo pour les processus, infographies pour synthétiser, simulations pour expérimenter sans risque, quiz pour rendre acteur. Accessibilité dès la conception : contraste d'au moins 4,5:1 (standards WCAG), pas d'information portée par la seule couleur ; supports responsifs et modulaires. Cycle « 3-2-1 » : 3 niveaux de validation (technique, pédagogique, utilisateur), 2 phases de test (interne puis échantillon), 1 processus d'amélioration continue documenté ; les learning analytics révèlent les décrochages.",
+    "verso": "Croiser les modalités (Gardner) : vidéo, infographies, simulations, quiz.\nAccessibilité dès la conception : contraste d'au moins 4,5:1 (WCAG), jamais l'information par la seule couleur.\nCycle 3-2-1 : 3 validations, 2 tests, 1 amélioration continue.",
     "ancre": "s-7-concevoir-la-formation-l-ingenierie-pedagogique",
     "secTitre": "7. Concevoir la formation: l'ingénierie pédagogique"
   },
@@ -7795,7 +7795,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "distinction",
     "recto": "Formateur et facilitateur : quelle différence fondamentale ?",
-    "verso": "Le formateur est expert du contenu (et construit son processus pédagogique), il s'implique dans les échanges. Le facilitateur est expert du processus seulement — le contenu appartient au groupe — et reste neutre : il ne donne jamais son avis. D'après Roger Schwarte, la facilitation est un processus par lequel un intervenant aide un groupe à identifier et résoudre une problématique, produire des idées, décider. Le formateur peut « emprunter la cape » du facilitateur pour certaines séquences. En pratique, la facilitation combine trois approches (dialogue pour libérer la parole et diverger — ex. World Café ; atelier pour converger vers une décision — ex. speed boat ; agile, garant des valeurs de l'agilité), trois rôles (architecte qui conçoit le déroulé, pilote garant du fil conducteur, guide qui dénoue les conflits) et cinq étapes : poser le cadre et l'objectif → donner les consignes → lancer les échanges → canaliser les énergies → synthétiser. Posture : neutralité, écoute, présence active, le plus souvent en position basse.",
+    "verso": "Le formateur est expert du contenu et s'implique dans les échanges.\nLe facilitateur est expert du processus seulement : il reste neutre et ne donne jamais son avis — le contenu appartient au groupe.",
     "ancre": "s-8-animer-la-posture-de-facilitateur",
     "secTitre": "8. Animer: la posture de facilitateur"
   },
@@ -7807,7 +7807,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "distinction",
     "recto": "Présentiel, distanciel, blended, AFEST : comment les distinguer ?",
-    "verso": "Présentiel : participants réunis physiquement — adaptation en temps réel, mises en situation, lien humain, mais planning fixe et coûts. Distanciel (e-learning) : contenus par internet, synchrone (classe virtuelle) ou asynchrone — flexible mais isolement. Blended : combinaison des deux, modalités complémentaires et non concurrentes, devenue la modalité privilégiée. AFEST : alternance répétée de 2 séquences — mise en situation de travail aménagée à des fins didactiques, puis séquence réflexive hors production animée par un tiers. Le multimodal ajoute l'expérientiel (4 facteurs : lieux, situations, supports, outils).",
+    "verso": "Présentiel : adaptation en temps réel et mises en situation, mais planning fixe.\nDistanciel : flexible, mais isolement.\nBlended : les deux, complémentaires — la modalité privilégiée.\nAFEST : mise en situation de travail, puis séquence réflexive.",
     "ancre": "s-9-modalites-et-digital-learning",
     "secTitre": "9. Modalités et digital learning"
   },
@@ -7819,7 +7819,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Digital learning : quels formats et quels outils de gestion ?",
-    "verso": "Le digital learning (terme qui remplace « e-learning » depuis 2013) couvre tout le processus de formation. Formats : MOOC (massif, ouvert), COOC (MOOC interne d'entreprise), SPOC (15 à 50 participants sélectionnés), serious game, adaptive learning (personnalisation par IA), micro-learning (2-5 min), social et mobile learning. Le LMS gère, distribue et suit les formations (reporting, taux de complétion, gamification — leader : 360Learning) ; le TMS gère la logistique. ISTF 2023 : le blended learning (37 %) devient majoritaire, devant le présentiel (36 %) et le 100 % digital (27 %, +10 points).",
+    "verso": "Formats : MOOC (massif, ouvert), COOC (interne), SPOC (15 à 50 participants), serious game, adaptive learning, micro-learning.\nOutils : le LMS gère et suit les formations, le TMS gère la logistique.",
     "ancre": "s-9-modalites-et-digital-learning",
     "secTitre": "9. Modalités et digital learning"
   },
@@ -7831,7 +7831,7 @@ var FLASHCARDS = [
     "niveau": 3,
     "type": "chiffre",
     "recto": "Comment calcule-t-on le ROI d'une formation, et que donne le cas CP Livraison du cours ?",
-    "verso": "ROI = (Bénéfices de la formation / Coûts de la formation) × 100 ; moins de 100 % = investissement non couvert. Coûts directs (conception, supports, animation, salaires des formés) + indirects (LMS, temps de gestion, remplacement). Cas CP Livraison : 30 salariés font 1 erreur de colis/semaine à 9 € ; module e-learning à 2 200 € ; bénéfice 14 040 €/an, net 11 840 € ; ROI = (11 840 / 2 200) × 100 = 538 %. Ne pas raisonner que coûts : le ROE (Return On Expectation) et les bénéfices qualitatifs complètent le ROI.",
+    "verso": "ROI = (bénéfices / coûts) × 100. En dessous de 100 %, l'investissement n'est pas couvert.\nCas CP Livraison : 2 200 € de coûts, 11 840 € de bénéfice net — ROI de 538 %.",
     "ancre": "s-9-modalites-et-digital-learning",
     "secTitre": "9. Modalités et digital learning"
   },
@@ -7843,7 +7843,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Quelles sont les 3 dimensions de la qualité d'un livrable créatif, et comment s'évaluent-elles ?",
-    "verso": "1. La dimension technique (résolution, profils colorimétriques, formats, lisibilité) : objective, mesurable par checklist. 2. La dimension créative (originalité, pertinence visuelle, capacité à émouvoir, adéquation à l'univers de marque) : plus subjective, exige une expertise fine. 3. La dimension stratégique (cohérence des choix créatifs avec les attributs de marque, les objectifs, les cibles, le positionnement) : à intégrer dès la conception, pas en vérification a posteriori. Une production peut être techniquement irréprochable mais stratégiquement hors sujet. Croisées en grille à double entrée, les dimensions technique et créative donnent 4 profils de production : parfaite sur les deux plans (l'idéal), techniquement correcte mais créativement faible (typique de l'urgence), créativement forte mais techniquement fragile (à renforcer), défaillante sur les deux (à retravailler intégralement) — une typologie qui guide les plans d'action.",
+    "verso": "1. Technique : résolution, formats, lisibilité — objective, vérifiable par checklist.\n2. Créative : originalité, adéquation à l'univers de marque — plus subjective.\n3. Stratégique : cohérence avec les objectifs et le positionnement, à intégrer dès la conception.",
     "ancre": "s-1-definir-la-qualite-d-un-livrable-creatif",
     "secTitre": "1. Définir la qualité d'un livrable créatif"
   },
@@ -7855,7 +7855,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "À quels 3 niveaux s'analyse la cohérence d'un livrable, et quelle distinction structure les règles de marque ?",
-    "verso": "1. Cohérence intra-projet : harmonie entre les éléments du livrable. 2. Cohérence intra-marque : respect des codes visuels, du ton, des territoires d'expression. 3. Cohérence inter-temporelle : complémentarité avec les communications précédentes. On distingue les éléments invariants (respectés sur tous les supports) des zones de flexibilité (adaptables au format), consignés dans des tableaux de bord créatifs.",
+    "verso": "1. Intra-projet : harmonie entre les éléments du livrable.\n2. Intra-marque : codes visuels, ton, territoires d'expression.\n3. Inter-temporelle : complémentarité avec les communications précédentes.\nOn distingue les invariants des zones de flexibilité.",
     "ancre": "s-1-definir-la-qualite-d-un-livrable-creatif",
     "secTitre": "1. Définir la qualité d'un livrable créatif"
   },
@@ -7867,7 +7867,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quels sont les 5 piliers de l'identité visuelle ?",
-    "verso": "1. La cohérence chromatique (couleurs référencées dans la charte). 2. L'uniformité typographique (polices officielles, hiérarchie des tailles et graisses). 3. La cohérence des éléments graphiques (dont la zone de protection du logo : les marges définies par la charte). 4. La cohérence de l'imagerie (style photographique fidèle aux valeurs). 5. L'harmonie compositionnelle (règle des tiers, équilibre des masses, respiration).",
+    "verso": "1. Cohérence chromatique. 2. Uniformité typographique. 3. Cohérence des éléments graphiques, dont la zone de protection du logo.\n4. Cohérence de l'imagerie. 5. Harmonie compositionnelle (règle des tiers, respiration).",
     "ancre": "s-1-definir-la-qualite-d-un-livrable-creatif",
     "secTitre": "1. Définir la qualité d'un livrable créatif"
   },
@@ -7879,7 +7879,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Comment traduit-on une stratégie de marque abstraite en critères de supervision ?",
-    "verso": "En 3 étapes : 1. Analyser l'historique et les communications existantes pour déceler les constantes visuelles et éditoriales. 2. Interroger les équipes sur leur perception spontanée de la marque. 3. Traduire chaque valeur abstraite en éléments observables et mesurables (couleurs, typographies, tonalité), puis en questions de contrôle binaires (oui/non). S'y ajoutent la hiérarchisation des valeurs en tension (l'une devient le socle, l'autre s'exprime dans son respect) et la promesse de marque comme fil conducteur (cascade : promesse → valeurs → codes → checklists).",
+    "verso": "1. Analyser l'historique des communications pour en déceler les constantes.\n2. Interroger les équipes sur leur perception spontanée.\n3. Traduire chaque valeur en éléments observables, puis en questions de contrôle binaires.",
     "ancre": "s-1-definir-la-qualite-d-un-livrable-creatif",
     "secTitre": "1. Définir la qualité d'un livrable créatif"
   },
@@ -7891,7 +7891,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "definition",
     "recto": "À quoi sert la cartographie concurrentielle créative, et pourquoi un livrable « conforme mais banalisé » est-il un échec ?",
-    "verso": "Elle visualise les territoires créatifs occupés par les concurrents : reproduire les codes d'un concurrent direct est un écart qualité même si les valeurs de la marque sont respectées. Un livrable conforme mais banalisé est un « échec stratégique silencieux » : la différenciation est un critère de qualité à part entière.",
+    "verso": "Elle visualise les territoires créatifs occupés par les concurrents : reprendre les codes d'un concurrent direct est un écart qualité.\n« Conforme mais banalisé » est un échec silencieux : la différenciation est un critère à part entière.",
     "ancre": "s-1-definir-la-qualite-d-un-livrable-creatif",
     "secTitre": "1. Définir la qualité d'un livrable créatif"
   },
@@ -7903,7 +7903,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce qu'un référentiel qualité et comment est-il architecturé ?",
-    "verso": "Ce n'est pas un catalogue de règles mais un système de pilotage créatif, en architecture pyramidale à 3 niveaux : les critères universels (reconnaissance de marque, non négociables quels que soient le support et le marché), les critères adaptatifs (contextualisation locale ou par canal), les critères d'excellence (productions premium, campagnes stratégiques).",
+    "verso": "Pas un catalogue de règles mais un système de pilotage créatif, en pyramide à 3 niveaux :\ncritères universels (non négociables), adaptatifs (contexte local ou canal), d'excellence (productions premium).",
     "ancre": "s-1-definir-la-qualite-d-un-livrable-creatif",
     "secTitre": "1. Définir la qualité d'un livrable créatif"
   },
@@ -7915,7 +7915,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "chiffre",
     "recto": "Quels sont les 4 types de critères d'un référentiel, avec les valeurs techniques de référence pour le print et le digital ?",
-    "verso": "1. Techniques : objectifs et sans approximation — 300 DPI pour le print, CMJN pour l'impression, RVB pour le digital, formats par canal. 2. Créatifs : style photographique, tonalité graphique, équilibre texte/image (à illustrer d'exemples). 3. Stratégiques : messages clés, positionnement — les plus négligés. 4. Contextuels : culturels, réglementaires, concurrentiels. Erreur classique : appliquer les mêmes critères à tous les formats — cela produit des sur-qualités coûteuses et inutiles, ou des sous-qualités préjudiciables.",
+    "verso": "1. Techniques : 300 DPI en print, CMJN à l'impression, RVB en digital.\n2. Créatifs : style photographique, équilibre texte/image.\n3. Stratégiques : messages clés, positionnement — les plus négligés.\n4. Contextuels : culturels, réglementaires.",
     "ancre": "s-1-definir-la-qualite-d-un-livrable-creatif",
     "secTitre": "1. Définir la qualité d'un livrable créatif"
   },
@@ -7927,7 +7927,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Quels mécanismes assurent l'équilibre précision/flexibilité d'un référentiel qualité ?",
-    "verso": "Les fourchettes de tolérance (plages plutôt que valeurs rigides : zone de protection du logo entre 15 et 25 mm, ±5 % sur les couleurs à l'impression) ; les critères conditionnels « si… alors… » ; la pondération et le scoring avec seuils vert/orange/rouge ; la hiérarchie bloquants (liés à la promesse) / importants (liés aux valeurs) / de préférence (optimisations) ; la grille stratégique minimum de 5 à 7 critères, évaluable en moins de 10 minutes pour les validations courantes.",
+    "verso": "Des fourchettes de tolérance plutôt que des valeurs rigides, des critères conditionnels « si… alors… », un scoring à seuils vert/orange/rouge.\nUne hiérarchie : bloquants, importants, de préférence. Grille minimum : 5 à 7 critères.",
     "ancre": "s-1-definir-la-qualite-d-un-livrable-creatif",
     "secTitre": "1. Définir la qualité d'un livrable créatif"
   },
@@ -7939,7 +7939,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Quels sont les 3 niveaux d'écart au référentiel, et que fait-on après avoir repéré un écart ?",
-    "verso": "Écart mineur : détail d'exécution sans impact perçu (nuance de bleu hors charte), mais dont l'accumulation érode la cohérence. Écart modéré : déviation notable qui dilue le caractère distinctif sans le contredire ; l'accumulation affaiblit la différenciation. Écart critique : contradiction directe avec les valeurs ou la promesse — recadrage immédiat, voire retrait. Chaque écart appelle une analyse causale : brief imprécis, contraintes techniques mal anticipées, influence concurrentielle, manque de formation, collaboration externe mal pilotée.",
+    "verso": "Mineur : détail sans impact perçu, mais son accumulation érode la cohérence.\nModéré : dilue le caractère distinctif sans le contredire.\nCritique : contredit les valeurs ou la promesse — recadrage immédiat.\nChaque écart appelle une analyse causale.",
     "ancre": "s-1-definir-la-qualite-d-un-livrable-creatif",
     "secTitre": "1. Définir la qualité d'un livrable créatif"
   },
@@ -7951,7 +7951,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "application",
     "recto": "Comment sécuriser la qualité du travail d'un free-lance, étranger à la culture de l'agence ?",
-    "verso": "Les free-lances travaillent dans les « zones de dilution du contrôle qualité » (plus on s'éloigne du centre décisionnel, plus le risque de dérive augmente). On leur transmet un kit de démarrage : brief détaillé, charte graphique, exemples de livrables conformes — suivi d'un cadrage initial, de jalons intermédiaires et d'un feed-back de fin de mission. Le pilotage de la sous-traitance suit 4 phases — sélection (compétences + adaptation culturelle), cadrage (transmission des standards, sessions d'alignement), suivi (points de contrôle intermédiaires), évaluation (capitalisation) — appuyées sur deux outils qui uniformisent les attentes : le creative toolkit (codes visuels, territoires narratifs, standards techniques) et les livrables d'ancrage (moodboards, références, briefs, critères, processus de validation). Le prestataire se traite en partenaire créatif, pas en exécutant.",
+    "verso": "Il travaille dans une zone de dilution du contrôle : plus on s'éloigne du centre, plus le risque de dérive augmente.\nOn lui donne un kit de démarrage — brief détaillé, charte, exemples conformes — puis cadrage, jalons et feedback de fin.",
     "ancre": "s-2-organiser-la-supervision",
     "secTitre": "2. Organiser la supervision"
   },
@@ -7963,7 +7963,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Quels sont les 3 points de friction structurels d'un projet créatif, et leurs parades ?",
-    "verso": "1. Les transitions entre étapes (risque de perte d'intention créative à chaque passage de relais → documents de transmission, points de passage obligatoires). 2. Les changements d'intervenant en cours de projet (discontinuité → journal de production traçant intentions et arbitrages). 3. Les modifications tardives (effet domino d'ajustements en cascade → seuils d'alerte, validation renforcée).",
+    "verso": "1. Les transitions entre étapes : l'intention créative se perd au passage de relais.\n2. Les changements d'intervenant : discontinuité.\n3. Les modifications tardives : effet domino.\nParades : documents de transmission, journal de production, seuils d'alerte.",
     "ancre": "s-2-organiser-la-supervision",
     "secTitre": "2. Organiser la supervision"
   },
@@ -7975,7 +7975,7 @@ var FLASHCARDS = [
     "niveau": 3,
     "type": "distinction",
     "recto": "Buffers qualitatifs et qualité focale : à quelle contrainte répond chacun ?",
-    "verso": "Les buffers qualitatifs répondent à la contrainte temporelle : zones tampons du rétroplanning qui absorbent imprévus et allers-retours clients (l'impact du temps sur la qualité n'est pas linéaire, il y a des seuils critiques ; on privilégie aussi la parallélisation des tâches). La qualité focale/sélective répond à la contrainte budgétaire : ne jamais rogner uniformément (médiocrité générale) mais concentrer l'investissement sur les éléments porteurs d'impact (logo, typographie, palette) et assumer des solutions standardisées sur le secondaire, en documentant les arbitrages.",
+    "verso": "Buffers qualitatifs : contrainte de temps — des zones tampons du rétroplanning qui absorbent imprévus et allers-retours.\nQualité focale : contrainte de budget — investir sur ce qui porte l'impact plutôt que rogner partout.",
     "ancre": "s-2-organiser-la-supervision",
     "secTitre": "2. Organiser la supervision"
   },
@@ -7987,7 +7987,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce que la boucle de validation infinie, et quelles sont les autres pathologies classiques des circuits de validation ?",
-    "verso": "La boucle de validation infinie est la reprise cyclique des mêmes points par différents acteurs sans autorité finale qui tranche → versions multiples, démotivation, explosion des délais. Autres pathologies : les critères subjectifs (« pas assez impactant » : la validation devient négociation), l'absence d'arbitre final (compromis en cascade qui diluent le concept), les validations redondantes entre niveaux hiérarchiques. Un circuit trop lourd est contourné : il doit s'intégrer au flux créatif.",
+    "verso": "La reprise cyclique des mêmes points par différents acteurs, sans autorité finale qui tranche : versions multiples, délais qui explosent.\nAutres : critères subjectifs, absence d'arbitre, validations redondantes.",
     "ancre": "s-2-organiser-la-supervision",
     "secTitre": "2. Organiser la supervision"
   },
@@ -7999,7 +7999,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Aux biais de confirmation et de halo, déjà connus du manager, quel biais propre au comité de validation créative s'ajoute — et quelle contre-mesure ?",
-    "verso": "La pensée de groupe : le conformisme en comité, où personne ne contredit l'avis qui se dessine. Contre-mesure : l'évaluation individuelle écrite AVANT la réunion collective. Effet spécifique des deux autres sur la création : le biais de confirmation standardise les créations (on ne cherche que ce qui confirme ses convictions), l'effet de halo laisse un détail frappant contaminer le jugement global du livrable.",
+    "verso": "La pensée de groupe : le conformisme en comité, où personne ne contredit l'avis qui se dessine.\nContre-mesure : l'évaluation individuelle écrite avant la réunion collective.",
     "ancre": "s-2-organiser-la-supervision",
     "secTitre": "2. Organiser la supervision"
   },
@@ -8011,7 +8011,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quels sont les 3 niveaux de l'architecture de validation de référence, et quel principe la fonde ?",
-    "verso": "1. Niveau opérationnel (DA + chef de projet) : technique et créatif de base — exécution, formats, cohérence visuelle, respect du brief. 2. Niveau stratégique (responsables marketing/communication) : alignement objectifs, pertinence cibles, différenciation, cohérence inter-campagnes. 3. Niveau décisionnel (direction) : arbitrages complexes uniquement — désaccords, prise de risque, innovations hors standards. Principe : la subsidiarité créative — chaque niveau traite en autonomie les critères qu'il maîtrise le mieux, sans remontée systématique. Un circuit performant repose sur 4 piliers : rôles clairs, critères explicites, jalons définis, escalade maîtrisée.",
+    "verso": "1. Opérationnel (DA, chef de projet) : exécution, formats, respect du brief.\n2. Stratégique (marketing) : alignement, cibles, différenciation.\n3. Décisionnel (direction) : arbitrages complexes seulement.\nPrincipe : la subsidiarité créative.",
     "ancre": "s-2-organiser-la-supervision",
     "secTitre": "2. Organiser la supervision"
   },
@@ -8023,7 +8023,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce que la validation parallèle, et à quelles conditions fonctionne-t-elle ?",
-    "verso": "Plusieurs parties prenantes évaluent simultanément un même livrable sur des périmètres indépendants. Avantages : délais réduits jusqu'à 60 %, goulets d'étranglement supprimés, validateurs autonomes. Conditions : clarté absolue des rôles, critères précis, outils numériques adaptés. On identifie les validations indépendantes (tableau croisé validateurs × critères), on décompose le flux avec micro-jalons et points de convergence (comité de synthèse). À ne pas forcer sur les décisions exigeant un débat collectif.",
+    "verso": "Plusieurs validateurs évaluent le même livrable en même temps, sur des périmètres indépendants : jusqu'à 60 % de délai en moins.\nConditions : rôles clairs, critères précis, outils adaptés. À éviter quand la décision exige un débat collectif.",
     "ancre": "s-2-organiser-la-supervision",
     "secTitre": "2. Organiser la supervision"
   },
@@ -8035,7 +8035,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Quelles sont les 3 soupapes de la gestion des exceptions dans un circuit de validation ?",
-    "verso": "1. Le circuit express pour les urgences : validateurs mobilisés simultanément, critères recentrés, avec un responsable désigné du déclenchement pour éviter les abus. 2. Le comité d'arbitrage créatif : des experts légitimes par leur compétence, saisis en cas de désaccord persistant. 3. Le parcours innovation : un jury d'experts pour les créations atypiques, hors critères standard. En amont, c'est la matrice RACI qui formalise qui fait quoi et tranche les conflits de légitimité.",
+    "verso": "1. Le circuit express pour les urgences, avec un responsable désigné pour éviter les abus.\n2. Le comité d'arbitrage créatif, en cas de désaccord persistant.\n3. Le parcours innovation, pour les créations hors critères standard.",
     "ancre": "s-2-organiser-la-supervision",
     "secTitre": "2. Organiser la supervision"
   },
@@ -8047,7 +8047,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "application",
     "recto": "Au-delà de la matrice pouvoir/intérêt, que faut-il repérer chez les parties prenantes de la qualité, et comment les animer ?",
-    "verso": "À repérer en plus du classement pouvoir/intérêt : les coalitions informelles (bloc créatif, financier, terrain) et le pouvoir informel (réseaux d'influence réels, zones d'ombre relationnelles). Deux distinctions opérationnelles : freins rationnels (traités par l'information et la formation) vs résistances émotionnelles (traitées par la relation) ; tensions productives (à préserver) vs conflits destructeurs. Levier fédérateur : révéler et formaliser les objectifs communs. Animation : ateliers de co-définition des critères, vote pondéré, et boucle de feedback en 4 étapes — collecter → analyser collectivement → décider et agir → informer les contributeurs.",
+    "verso": "Les coalitions informelles et le pouvoir informel : l'organigramme ne dit pas les réseaux d'influence réels.\nDistinguer freins rationnels (information) et résistances émotionnelles (relation).\nAnimation : ateliers de co-définition, vote pondéré.",
     "ancre": "s-2-organiser-la-supervision",
     "secTitre": "2. Organiser la supervision"
   },
@@ -8059,7 +8059,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Quels sont les 7 critères de sélection d'un outil collaboratif en environnement créatif ?",
-    "verso": "1. Gestion des gros fichiers (plusieurs Go) sans compression. 2. Support natif des formats spécialisés (PSD, AI, INDD — la conversion PDF fait perdre calques et métadonnées). 3. Preview intégrée (valider sans posséder les logiciels). 4. Commentaires ancrés sur des zones précises du visuel. 5. Versioning créatif (arborescence d'alternatives, traçabilité des décisions). 6. Intégration aux logiciels de création (plugins Adobe, Figma). 7. Sécurité (accès granulaires, traçabilité). S'y ajoutent l'interopérabilité (API, connecteurs testés) et le coût total de possession (TCO : licences + formation + accompagnement + maintenance).",
+    "verso": "Gros fichiers sans compression, formats natifs (PSD, AI, INDD), preview intégrée, commentaires ancrés sur le visuel.\nVersioning créatif, intégration aux logiciels de création, sécurité et traçabilité.",
     "ancre": "s-2-organiser-la-supervision",
     "secTitre": "2. Organiser la supervision"
   },
@@ -8071,7 +8071,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Qu'est-ce que la « centralisation intelligente » des outils, et que fait un DAM ?",
-    "verso": "Un outil pivot (gestion de projet collaborative) orchestre les workflows, les outils spécialisés gardent leur excellence, et chaque information n'a qu'un seul « propriétaire » (source de vérité unique). Le déploiement est progressif (équipes pilotes → créatifs → marketing). Les DAM (Digital Asset Management) type Frame.io, Frontify ou Bynder centralisent, versionnent et contrôlent l'accès aux assets de marque. Point de départ : l'audit en 4 phases de la fragmentation technologique (cartographier tous les outils même informels, analyser les usages réels, examiner les transferts, vérifier l'outil pilote).",
+    "verso": "Un outil pivot orchestre les workflows, les outils spécialisés gardent leur excellence, chaque information a une seule source de vérité.\nLe DAM (Frame.io, Frontify, Bynder) centralise, versionne et contrôle l'accès aux assets de marque.",
     "ancre": "s-2-organiser-la-supervision",
     "secTitre": "2. Organiser la supervision"
   },
@@ -8083,7 +8083,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "application",
     "recto": "Comment mène-t-on un audit d'alignement créatif ?",
-    "verso": "Constituer un corpus représentatif des productions récentes (6 à 12 mois, tous canaux, mêlant projets emblématiques, cas moyens et livrables problématiques), appliquer la grille stratégique à chaque pièce, classer en fortement alignées / partiellement alignées / hors stratégie, puis analyser les patterns d'écarts (par canal, période, prestataire). L'audit révèle des écarts systémiques et des corrélations (urgence/budget serré ↔ écarts), qui appellent des mesures organisationnelles. Les productions exemplaires deviennent des « référentiels vivants » pour former.",
+    "verso": "Constituer un corpus des productions récentes (6 à 12 mois, tous canaux), appliquer la grille stratégique à chaque pièce.\nClasser en fortement alignées, partiellement, hors stratégie — puis analyser les patterns par canal ou prestataire.",
     "ancre": "s-3-controler-et-corriger",
     "secTitre": "3. Contrôler et corriger"
   },
@@ -8095,7 +8095,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "Que fait-on avant de formuler un feedback créatif, et quelles sont les 3 catégories de retours ?",
-    "verso": "Avant tout feedback, relire le brief initial : c'est lui qui fonde des observations objectives, pas les impressions personnelles. Puis catégoriser : 1. Conforme à valoriser (respect de la charte, composition efficace — à nommer explicitement, la reconnaissance précède l'amélioration). 2. Écart mineur (ajustement technique rapide : taille de police, virgule — correction simple, bienveillante). 3. Écart majeur (contradiction avec le positionnement ou les objectifs du brief — refonte, nouvelle approche créative).",
+    "verso": "Relire le brief initial : lui seul fonde des observations objectives.\n1. Conforme à valoriser — à nommer explicitement.\n2. Écart mineur : correction simple.\n3. Écart majeur : refonte, nouvelle approche.",
     "ancre": "s-3-controler-et-corriger",
     "secTitre": "3. Contrôler et corriger"
   },
@@ -8107,7 +8107,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "definition",
     "recto": "Comment se structure un feedback SBI-I, et quels principes l'accompagnent ?",
-    "verso": "Situation (« sur l'affiche proposée pour le lancement… »), Comportement (fait observé : « le slogan met l'accent sur le prix, en rouge très visible »), Impact (conséquence sur les objectifs : « cela positionne le produit comme discount »), Intention (ouverture : « pourrions-nous explorer une version qui mette en avant le bénéfice soin ? »). Trois principes : valoriser avant de corriger, poser des questions ouvertes de co-construction (les créatifs redeviennent partenaires de solution), pratiquer la reformulation positive plutôt qu'un rejet frontal.",
+    "verso": "Situation (le livrable concerné), Comportement (le fait observé), Impact (la conséquence sur les objectifs), Intention (l'ouverture).\nTrois principes : valoriser avant de corriger, questionner plutôt qu'asséner, reformuler positivement.",
     "ancre": "s-3-controler-et-corriger",
     "secTitre": "3. Contrôler et corriger"
   },
@@ -8119,7 +8119,7 @@ var FLASHCARDS = [
     "niveau": 1,
     "type": "liste",
     "recto": "À quels 3 moments intervient la prévention des écarts, et avec quels outils ?",
-    "verso": "Avant : le brief renforcé traduit chaque élément stratégique en exigences opérationnelles, avec exemples visuels « à faire / à ne pas faire » et rappel des codes interdits. Pendant : points de contrôle intermédiaires (concept, maquette, avant finalisation) pour corriger les dérives avant qu'elles ne se cristallisent. Après : capitalisation — analyse des projets sans écart, bibliothèque de cas modèles utilisée en formation. Attention au sur-contrôle : un système préventif efficace se fait oublier. Formation associée : jeu des écarts (30 min), débrief collectif mensuel (45 min), mini-test d'alignement avant projet.",
+    "verso": "Avant : un brief renforcé, avec des exemples « à faire / à ne pas faire ».\nPendant : des points de contrôle intermédiaires, avant que la dérive ne se cristallise.\nAprès : la capitalisation, en bibliothèque de cas modèles.",
     "ancre": "s-3-controler-et-corriger",
     "secTitre": "3. Contrôler et corriger"
   },
@@ -8131,7 +8131,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "liste",
     "recto": "Comment structure-t-on la mesure de la performance qualité créative ?",
-    "verso": "Face à 3 paradoxes (quantifier sans brider, objectiver le subjectif, évaluer sans tuer la spontanéité) : 3 niveaux d'indicateurs — opérationnels (quotidien : temps de traitement, allers-retours), tactiques (mensuel : coût par livrable, délai de validation), stratégiques (trimestriel : reconnaissance créative, ROI) — présentés en « duos » quantitatif + qualitatif. Les données croisent 4 sources : automatiques (outils), déclaratives (enquêtes), observationnelles (audits), externes (retours clients). L'interprétation exige une pondération contextuelle et la prise en compte du cycle de vie (Exploration → Conception → Réalisation → Finalisation). La performance d'un circuit de validation se mesure elle aussi sur 4 dimensions : temps moyen de validation, nombre d'itérations, satisfaction des parties prenantes, impact qualité — les pré-validations techniques automatisées (formats, résolutions, éléments obligatoires) et une matrice RACI claire font chuter les allers-retours et les délais.",
+    "verso": "3 niveaux d'indicateurs : opérationnels (quotidien), tactiques (mensuel), stratégiques (trimestriel), présentés en duos quantitatif et qualitatif.\n4 sources : automatiques, déclaratives, observationnelles, externes.",
     "ancre": "s-4-piloter-dans-la-duree-et-a-l-international",
     "secTitre": "4. Piloter dans la durée et à l'international"
   },
@@ -8143,7 +8143,7 @@ var FLASHCARDS = [
     "niveau": 2,
     "type": "distinction",
     "recto": "Écart positif et anomalie : quelle différence, et que montre le cas CreativeFlow ?",
-    "verso": "L'écart positif est une innovation (un dépassement de délai qui a produit des ajustements très appréciés) ; l'anomalie est une dérive (une accélération qui masque une baisse de qualité). Le pilotage qualité est un levier d'apprentissage, pas de sanction. CreativeFlow : après 12 mois, délais −22 % et réclamations −35 %, mais uniformisation des créations, aucun prix créatif (contre trois avant), turnover des seniors +40 %, temps d'exploration −43 % — des indicateurs uniquement opérationnels optimisent l'efficacité au détriment de l'excellence créative.",
+    "verso": "Écart positif : une innovation — un dépassement qui a produit un résultat apprécié. Anomalie : une dérive masquée.\nCreativeFlow : délais −22 % mais aucun prix créatif et turnover des seniors +40 % — l'efficacité au prix de l'excellence.",
     "ancre": "s-4-piloter-dans-la-duree-et-a-l-international",
     "secTitre": "4. Piloter dans la durée et à l'international"
   },
@@ -8155,7 +8155,7 @@ var FLASHCARDS = [
     "niveau": 3,
     "type": "chiffre",
     "recto": "Qu'est-ce que l'architecture « glocale » et sa répartition de référence ?",
-    "verso": "Une pyramide de standards : globaux non négociables (ADN de marque), adaptatifs régionaux, locaux spécifiques — avec la répartition de référence 60 % globaux / 25 % régionaux / 15 % locaux, équilibre dynamique à réviser périodiquement. Les référentiels sont modulaires et versionnés dans une base internationale ; la cartographie des invariants définit des « corridors d'adaptation » où les équipes locales évoluent sans validation centrale. Organisation : équipe centrale gardienne de la cohérence, référents qualité locaux biculturels, correspondants créatifs chez les partenaires, binômes interculturels, mesure à double grille (indicateurs globaux + locaux).",
+    "verso": "Une pyramide de standards : globaux non négociables, adaptatifs régionaux, locaux spécifiques.\nRépartition de référence : 60 % globaux, 25 % régionaux, 15 % locaux — un équilibre à réviser périodiquement.",
     "ancre": "s-4-piloter-dans-la-duree-et-a-l-international",
     "secTitre": "4. Piloter dans la durée et à l'international"
   }
