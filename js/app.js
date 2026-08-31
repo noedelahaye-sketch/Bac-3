@@ -2118,7 +2118,18 @@
     VUE.k=Math.min(ZOOM_MAX, Math.max(ZOOM_MIN,
       Math.min((r.width-m)/VUE.W, (r.height-m)/VUE.H)));
     appliqueZoom();
-    box.scrollLeft=0; box.scrollTop=0;
+    centreVue();
+  }
+  /* La carte se lit de la racine vers la droite, et la racine est posée à
+     mi-hauteur du dessin : on centre donc verticalement — sans quoi on ouvre
+     toujours sur le haut de la carte, loin d'elle — et on reste au bord gauche,
+     là où la racine se trouve. Quand le dessin tient dans le cadre, c'est le
+     margin:auto de la surface qui s'en charge et il n'y a rien à défiler. */
+  function centreVue(){
+    var box=document.getElementById("mmCanvas");
+    if(!box) return;
+    box.scrollLeft=0;
+    box.scrollTop=Math.max(0, (box.scrollHeight-box.clientHeight)/2);
   }
   /* Les gestes de navigation, communs aux trois vues : molette pour zoomer,
      fond tiré pour se déplacer, boutons et clavier. fondSeul : dans l'établi
@@ -2842,6 +2853,7 @@
     bindDuoCours(id);
     bindPleinEcran();
     dessineEtabli(id);
+    centreVue();
     /* On n'attrape rien tant que la souris n'a pas bougé : sans ce seuil, un
        simple clic deviendrait un déplacement d'un pixel. */
     box.addEventListener("pointerdown", function(ev){

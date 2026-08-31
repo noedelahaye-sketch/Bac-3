@@ -766,8 +766,11 @@
     font:500 12px var(--font-code);cursor:pointer;}
   .mm-zval:hover{background:var(--paper);}
   .mm-zajuste{margin-left:2px;}
+  /* display:flex + margin:auto sur la surface : le dessin plus petit que le
+     cadre se centre. C'est margin:auto et non align-items, sinon le haut d'une
+     carte plus grande que le cadre deviendrait inatteignable au défilement. */
   .mm-canvas{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-card);
-    padding:var(--space-8);overflow:auto;max-height:72vh;}
+    padding:var(--space-8);overflow:auto;max-height:72vh;display:flex;}
   /* ---------- les trois couches du cadre ----------
      .mm-surface porte la taille du dessin zoomé (c'est elle qui défile) et sert
      d'origine aux calques ; .mm-plan-zoom porte l'échelle. Le dessin plus petit
@@ -851,6 +854,10 @@
     .mm-duo.mm-duo-ouvert .mm-canvas-etabli{flex:0 0 auto;}
     .mm-duo.mm-duo-ouvert>.mm-poignee-duo{display:none;}
     .mm-cours{height:60vh;margin-top:var(--space-12);}
+    /* empilées ET en plein écran : sans partage explicite, le cadre de la carte
+       n'a plus de hauteur propre et s'écrase à quelques dizaines de pixels */
+    .mm-plein .mm-duo.mm-duo-ouvert .mm-canvas.mm-canvas-etabli{flex:1 1 50%;min-height:180px;}
+    .mm-plein .mm-cours{flex:1 1 50%;height:auto;min-height:180px;margin-top:0;}
   }
 
   /* pas de sélection de texte dans l'établi : sans ça, tirer sur une boîte
