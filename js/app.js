@@ -2210,6 +2210,13 @@
      Deux chemins : le plein écran du navigateur quand il l'accorde (la barre
      d'adresse s'efface aussi), sinon une simple couverture de la fenêtre. Dans
      les deux cas c'est la même classe qui habille, donc le même rendu. */
+  /* Où poser ce qui doit flotter au-dessus de tout. En plein écran natif, le
+     navigateur ne dessine QUE le sous-arbre passé en plein écran : une étiquette
+     posée sur <body> y serait invisible. Elle va donc dans l'élément en plein
+     écran quand il y en a un. */
+  function couchePardessus(){
+    return document.fullscreenElement || document.body;
+  }
   function estPlein(){
     var e=document.getElementById("mmEtabli");
     return !!(e && e.classList.contains("mm-plein"));
@@ -2229,8 +2236,10 @@
       var q=document.exitFullscreen();
       if(q && q.catch) q.catch(function(){});
     }
-    /* le cadre a changé de taille : on remontre la carte en entier */
-    setTimeout(function(){ ajusteZoom(); var b=document.getElementById("mmCanvas"); if(b) b.focus(); }, 60);
+    /* On ne touche pas au zoom : l'échelle de travail est un choix, et la
+       remettre à « Ajuster » réduirait les boîtes au point qu'on ne pourrait
+       plus les attraper. Le cadre change de taille, le dessin non. */
+    setTimeout(function(){ var b=document.getElementById("mmCanvas"); if(b) b.focus(); }, 60);
   }
   function bindPleinEcran(){
     main.querySelectorAll("[data-mm-plein]").forEach(function(el){
@@ -2255,8 +2264,9 @@
       el.addEventListener("click", function(){
         etat.ouvert=(el.getAttribute("data-mm-cours")==="1") ? !etat.ouvert : false;
         duoEcrit(etat); duoApplique(etat);
-        /* la carte a changé de largeur : on la remet en entier sous les yeux */
-        ajusteZoom();
+        /* le zoom reste celui qu'on avait : la carte est simplement plus à
+           l'étroit, elle défile — la remettre à « Ajuster » ferait des boîtes
+           minuscules, plus attrapables à la souris */
       });
     });
 
@@ -2777,7 +2787,7 @@
       var f=document.createElement("div");
       f.id="mmFantome"; f.className="mm-fantome";
       f.textContent=texteBranche(S.cartes[glisse.id], glisse.path);
-      document.body.appendChild(f);
+      couchePardessus().appendChild(f);
     }
     ev.preventDefault();
     var f=document.getElementById("mmFantome");
