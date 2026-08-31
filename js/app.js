@@ -2173,6 +2173,85 @@
     });
   }
 
+  /* ---------- LE COURS À CÔTÉ DE LA CARTE ----------
+     Construire une carte mentale, c'est relire le cours en même temps : le
+     panneau de droite l'affiche en entier, sans quitter l'établi. La part de
+     largeur donnée à chacun se règle en tirant la barre qui les sépare, et se
+     retient d'une carte à l'autre — c'est un réglage d'écran, propre à
+     l'appareil, il n'a donc rien à faire dans les données synchronisées. */
+  var DUO_CLE="studi-duo-cours";
+  var DUO_MIN=0.25, DUO_MAX=0.8;
+
+  function duoLu(){
+    try{
+      var v=JSON.parse(localStorage.getItem(DUO_CLE)||"{}");
+      return {ouvert:!!v.ouvert, part:Math.min(DUO_MAX, Math.max(DUO_MIN, v.part||0.58))};
+    }catch(e){ return {ouvert:false, part:0.58}; }
+  }
+  function duoEcrit(v){
+    try{ localStorage.setItem(DUO_CLE, JSON.stringify(v)); }catch(e){}
+  }
+  function duoApplique(v){
+    var duo=document.getElementById("mmDuo");
+    if(!duo || duo.classList.contains("mm-duo-seul")) return;
+    duo.classList.toggle("mm-duo-ouvert", v.ouvert);
+    /* la carte prend sa part, le cours le reste — moins la poignée */
+    duo.style.setProperty("--part-carte", (v.part*100).toFixed(2)+"%");
+    var btn=document.getElementById("mmCoursBtn");
+    if(btn) btn.classList.toggle("on", v.ouvert);
+  }
+  function bindDuoCours(id){
+    var duo=document.getElementById("mmDuo");
+    if(!duo || duo.classList.contains("mm-duo-seul")) return;
+    var etat=duoLu();
+    duoApplique(etat);
+
+    main.querySelectorAll("[data-mm-cours]").forEach(function(el){
+      el.addEventListener("click", function(){
+        etat.ouvert=(el.getAttribute("data-mm-cours")==="1") ? !etat.ouvert : false;
+        duoEcrit(etat); duoApplique(etat);
+        /* la carte a changé de largeur : on la remet en entier sous les yeux */
+        ajusteZoom();
+      });
+    });
+
+    var barre=document.getElementById("mmDuoSplit");
+    if(!barre) return;
+    /* On écoute le document, sans capture du pointeur : la capture détourne les
+       événements et, sur certains navigateurs, interrompt le geste en cours de
+       route. La classe mm-duo-tire coupe la sélection de texte pendant le
+       glisser, sinon on surligne le cours au lieu de déplacer la barre. */
+    barre.addEventListener("pointerdown", function(ev){
+      if(ev.button!==0) return;
+      ev.preventDefault();
+      duo.classList.add("mm-duo-tire");
+      function bouge(e){
+        var r=duo.getBoundingClientRect();
+        if(r.width<10) return;
+        etat.part=Math.min(DUO_MAX, Math.max(DUO_MIN, (e.clientX-r.left)/r.width));
+        duoApplique(etat);
+      }
+      function fin(){
+        document.removeEventListener("pointermove", bouge);
+        document.removeEventListener("pointerup", fin);
+        document.removeEventListener("pointercancel", fin);
+        duo.classList.remove("mm-duo-tire");
+        duoEcrit(etat);
+      }
+      document.addEventListener("pointermove", bouge);
+      document.addEventListener("pointerup", fin);
+      document.addEventListener("pointercancel", fin);
+    });
+    /* au clavier : les flèches déplacent la barre par pas de 2 % */
+    barre.setAttribute("tabindex","0");
+    barre.addEventListener("keydown", function(ev){
+      if(ev.key!=="ArrowLeft" && ev.key!=="ArrowRight") return;
+      ev.preventDefault();
+      etat.part=Math.min(DUO_MAX, Math.max(DUO_MIN, etat.part+(ev.key==="ArrowRight"?0.02:-0.02)));
+      duoEcrit(etat); duoApplique(etat);
+    });
+  }
+
   /* Aperçu d'un modèle : la même page que la carte, mais rien n'est à toi.
      On la parcourt, on la replie, puis on décide de l'ajouter ou non. Le
      pliage n'est gardé que le temps de la visite — rien n'est enregistré. */
@@ -2258,13 +2337,32 @@
        pour qui veut la certitude avant de changer d'appareil */
     h+='<button class="mm-sup mm-envoi" data-mm-flush="1" title="Envoyer les modifications maintenant">'+ICON_NUAGE+'</button>';
     h+=zoomBarre();
+    /* Le cours à côté de la carte : construire une carte mentale, c'est relire
+       le cours en même temps. Le bouton n'a de sens qu'avec un résumé rattaché. */
+    var rlie=resumeDeLaCarte(c);
+    if(rlie) h+='<button class="mm-sup mm-cours-btn" id="mmCoursBtn" data-mm-cours="1" '+
+                'title="'+esc(rlie.titre)+'">'+ICON_BOOK+'<span>Cours</span></button>';
     h+='<button class="jadd mm-fini" data-mm-voir="'+id+'">Voir la carte</button>';
     h+='</div>';
     /* On travaille sur la carte elle-même : un clic ouvre une idée, les boutons
        du nœud posent la suivante. Pas d'ajustement automatique ici — le dessin
        reste à sa taille et le cadre défile, sinon les boîtes rapetissent au fur
        et à mesure qu'on écrit et on ne vise plus rien. */
+    h+='<div class="mm-duo'+(rlie?'':' mm-duo-seul')+'" id="mmDuo">';
     h+='<div class="mm-canvas mm-canvas-etabli" id="mmCanvas" tabindex="0">'+cadreHtml(true)+'</div>';
+    if(rlie){
+      /* La poignée porte le redimensionnement : on tire, les deux fenêtres se
+         partagent la largeur. La proportion choisie tient d'une carte à l'autre. */
+      h+='<div class="mm-poignee-duo" id="mmDuoSplit" role="separator" aria-orientation="vertical" '+
+         'title="Tirer pour partager la largeur"><span></span></div>';
+      h+='<aside class="mm-cours" id="mmCoursPan">';
+      h+='<div class="mm-cours-tete"><span class="mm-cours-titre">'+esc(rlie.titre)+'</span>'+
+         '<button class="mm-cours-ouvrir" data-go-resume="'+rlie.id+'" title="Ouvrir la page du cours">'+ICON_BOOK+'</button>'+
+         '<button class="mm-cours-fermer" data-mm-cours="0" title="Fermer le cours">&times;</button></div>';
+      h+='<div class="mm-cours-corps"><div class="resume">'+rlie.html+'</div></div>';
+      h+='</aside>';
+    }
+    h+='</div>';
     h+='<div class="mm-aide mm-aide-etabli">Le <b>+</b> au bout d\'un étage y ajoute une idée. '+
        'Un clic ouvre ou referme une idée, un double-clic l\'écrit. '+
        '<b>Entrée</b> : idée sœur &middot; <b>Tab</b> : idée fille &middot; '+
@@ -2677,6 +2775,7 @@
     var box=document.getElementById("mmCanvas");
     if(!box) return;
     VUE.k=1;
+    bindDuoCours(id);
     dessineEtabli(id);
     /* On n'attrape rien tant que la souris n'a pas bougé : sans ce seuil, un
        simple clic deviendrait un déplacement d'un pixel. */

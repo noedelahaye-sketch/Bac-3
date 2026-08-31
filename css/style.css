@@ -782,6 +782,56 @@
   /* ---------- l'établi : on écrit sur la carte ----------
      Le cadre ne s'ajuste pas ici : à taille réduite les boîtes deviennent
      imprécises à viser, et le champ d'écriture ne tomberait plus dessus. */
+  /* ---------- la carte et le cours côte à côte ----------
+     Deux fenêtres et la poignée qui les sépare. --part-carte, posée par le
+     script, dit la part de largeur qui revient à la carte ; le cours prend le
+     reste. Panneau fermé, la carte occupe tout. */
+  .mm-duo{display:flex;align-items:stretch;gap:0;--part-carte:58%;}
+  .mm-duo .mm-canvas-etabli{flex:1 1 auto;min-width:0;}
+  .mm-duo>.mm-poignee-duo,.mm-duo>.mm-cours{display:none;}
+  .mm-duo.mm-duo-ouvert>.mm-poignee-duo,.mm-duo.mm-duo-ouvert>.mm-cours{display:flex;}
+  .mm-duo.mm-duo-ouvert .mm-canvas-etabli{flex:0 0 var(--part-carte);}
+  /* la poignée : large de 14 px pour être facile à attraper, mais ne montrant
+     qu'un trait — c'est une séparation, pas un objet de plus à regarder */
+  .mm-poignee-duo{flex:0 0 18px;align-items:center;justify-content:center;cursor:col-resize;
+    background:none;border:0;padding:0;touch-action:none;}
+  .mm-poignee-duo>span{display:block;width:2px;height:44px;border-radius:2px;background:var(--line);
+    transition:background .12s ease,height .12s ease;}
+  .mm-poignee-duo:hover>span,.mm-poignee-duo:focus-visible>span{background:var(--signal);height:72px;}
+  .mm-poignee-duo:focus-visible{outline:none;}
+  /* pendant le glisser, plus aucune sélection possible nulle part : sans ça on
+     surligne le texte du cours en déplaçant la barre */
+  .mm-duo-tire,.mm-duo-tire *{cursor:col-resize !important;user-select:none !important;}
+  .mm-duo-tire .mm-poignee-duo>span{background:var(--signal);height:100%;border-radius:0;}
+  /* le cours : même cadre que la carte, son propre défilement */
+  .mm-cours{flex:1 1 auto;min-width:0;flex-direction:column;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;
+    height:calc(100dvh - 262px);min-height:340px;}
+  .mm-cours-tete{flex:0 0 auto;display:flex;align-items:center;gap:var(--space-8);
+    padding:var(--space-8) var(--space-12);border-bottom:1px solid var(--line);background:var(--paper);}
+  .mm-cours-titre{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+    font:600 12.5px var(--font-text);color:var(--ink);}
+  .mm-cours-ouvrir,.mm-cours-fermer{flex:0 0 auto;display:flex;align-items:center;justify-content:center;
+    width:30px;height:30px;background:none;border:0;border-radius:7px;color:var(--muted);cursor:pointer;}
+  .mm-cours-fermer{font:400 20px var(--font-text);line-height:1;}
+  .mm-cours-ouvrir:hover,.mm-cours-fermer:hover{background:var(--surface);color:var(--ink);}
+  .mm-cours-corps{flex:1 1 auto;min-height:0;overflow:auto;padding:var(--space-16);}
+  /* dans le panneau, le cours n'a plus besoin de sa largeur de page ni de sa
+     colonne de marge : tout tient dans une seule colonne étroite */
+  .mm-cours-corps .resume{max-width:none;}
+  .mm-cours-corps .resume p,.mm-cours-corps .resume ul,
+  .mm-cours-corps .resume ol,.mm-cours-corps .resume blockquote{max-width:none;}
+  .mm-cours-corps .resume h3{margin-top:var(--space-24);}
+  .mm-cours-btn{width:auto;gap:var(--space-8);padding:0 var(--space-12);font:600 12.5px var(--font-text);}
+  .mm-cours-btn.on{border-color:var(--signal);color:var(--ink);}
+  /* écran étroit : les deux fenêtres l'une sous l'autre plutôt que serrées */
+  @media (max-width:900px){
+    .mm-duo{flex-direction:column;}
+    .mm-duo.mm-duo-ouvert .mm-canvas-etabli{flex:0 0 auto;}
+    .mm-duo.mm-duo-ouvert>.mm-poignee-duo{display:none;}
+    .mm-cours{height:60vh;margin-top:var(--space-12);}
+  }
+
   /* pas de sélection de texte dans l'établi : sans ça, tirer sur une boîte
      surligne le dessin au lieu de l'attraper */
   .mm-canvas.mm-canvas-etabli{position:relative;height:calc(100dvh - 262px);min-height:340px;
