@@ -1503,6 +1503,8 @@
 
   var ICON_NUAGE='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16a4 4 0 0 0-.9-7.9 5.5 5.5 0 0 0-10.6 1.6A3.5 3.5 0 0 0 5 16"/><path d="M12 12v9"/><path d="m8.5 15.5 3.5-3.5 3.5 3.5"/></svg>';
   var ICON_RETOUR='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>';
+  var ICON_PLEIN='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M16 3h3a2 2 0 0 1 2 2v3"/><path d="M8 21H5a2 2 0 0 1-2-2v-3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>';
+  var ICON_QUITTE='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3a2 2 0 0 0 2-2V3"/><path d="M21 8h-3a2 2 0 0 1-2-2V3"/><path d="M3 16h3a2 2 0 0 1 2 2v3"/><path d="M21 16h-3a2 2 0 0 0-2 2v3"/></svg>';
   var ICON_BOOK='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>';
   var ICON_PENCIL='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>';
   var ICON_TRASH='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>';
@@ -2200,6 +2202,49 @@
     var btn=document.getElementById("mmCoursBtn");
     if(btn) btn.classList.toggle("on", v.ouvert);
   }
+  /* ---------- PLEIN ÉCRAN ----------
+     La carte prend l'écran, avec le strict nécessaire : le zoom et Ajuster, le
+     cours, l'envoi des modifications, et la sortie. Le reste de l'en-tête (bloc,
+     résumé lié, suppression) disparaît — on y revient en sortant.
+
+     Deux chemins : le plein écran du navigateur quand il l'accorde (la barre
+     d'adresse s'efface aussi), sinon une simple couverture de la fenêtre. Dans
+     les deux cas c'est la même classe qui habille, donc le même rendu. */
+  function estPlein(){
+    var e=document.getElementById("mmEtabli");
+    return !!(e && e.classList.contains("mm-plein"));
+  }
+  function pleinEcran(oui){
+    var e=document.getElementById("mmEtabli");
+    if(!e) return;
+    e.classList.toggle("mm-plein", oui);
+    var btn=document.getElementById("mmPleinBtn");
+    if(btn) btn.classList.toggle("on", oui);
+    if(oui && e.requestFullscreen && !document.fullscreenElement){
+      /* refus possible (réglage du navigateur, page imbriquée) : la couverture
+         de fenêtre suffit alors, on n'a rien à rattraper */
+      var p=e.requestFullscreen();
+      if(p && p.catch) p.catch(function(){});
+    } else if(!oui && document.fullscreenElement && document.exitFullscreen){
+      var q=document.exitFullscreen();
+      if(q && q.catch) q.catch(function(){});
+    }
+    /* le cadre a changé de taille : on remontre la carte en entier */
+    setTimeout(function(){ ajusteZoom(); var b=document.getElementById("mmCanvas"); if(b) b.focus(); }, 60);
+  }
+  function bindPleinEcran(){
+    main.querySelectorAll("[data-mm-plein]").forEach(function(el){
+      el.addEventListener("click", function(){
+        pleinEcran(el.getAttribute("data-mm-plein")==="1");
+      });
+    });
+    /* Échap rend la main au navigateur : on suit ce qu'il décide plutôt que de
+       supposer que l'on est encore en plein écran */
+    document.addEventListener("fullscreenchange", function(){
+      if(!document.fullscreenElement && estPlein()) pleinEcran(false);
+    });
+  }
+
   function bindDuoCours(id){
     var duo=document.getElementById("mmDuo");
     if(!duo || duo.classList.contains("mm-duo-seul")) return;
@@ -2314,6 +2359,9 @@
     var c=S.cartes[id];
     if(!c) return '<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Cartes mentales",view:"cartes"}])+'</div><div class="mm-intro">Cette carte n\'existe plus.</div>';
     var h='<div class="qbar">'+renderBreadcrumb([{label:"Cartes mentales",view:"cartes"},{label:esc(c.t),view:"carte",param:id},{label:"Modifier"}])+'</div>';
+    /* En-tête et fenêtres dans une même enveloppe : c'est elle qui passe en
+       plein écran, avec ce qu'il faut dedans — zoom, Ajuster, cours, envoi. */
+    h+='<div class="mm-etabli" id="mmEtabli">';
     h+='<div class="mm-head">';
     h+='<input class="mm-titre" id="mmTitre" value="'+esc(c.t)+'" aria-label="Titre de la carte">';
     h+='<select class="mm-bloc" id="mmBloc" aria-label="Bloc de rattachement"><option value="">Sans bloc</option>';
@@ -2342,6 +2390,11 @@
     var rlie=resumeDeLaCarte(c);
     if(rlie) h+='<button class="mm-sup mm-cours-btn" id="mmCoursBtn" data-mm-cours="1" '+
                 'title="'+esc(rlie.titre)+'">'+ICON_BOOK+'<span>Cours</span></button>';
+    /* Plein écran : la carte et le cours, sans rien d'autre autour. */
+    h+='<button class="mm-sup mm-plein-btn" id="mmPleinBtn" data-mm-plein="1" '+
+       'title="Plein écran">'+ICON_PLEIN+'</button>';
+    h+='<button class="mm-sup mm-plein-btn mm-quitte-btn" data-mm-plein="0" '+
+       'title="Quitter le plein écran">'+ICON_QUITTE+'<span>Quitter</span></button>';
     h+='<button class="jadd mm-fini" data-mm-voir="'+id+'">Voir la carte</button>';
     h+='</div>';
     /* On travaille sur la carte elle-même : un clic ouvre une idée, les boutons
@@ -2362,6 +2415,7 @@
       h+='<div class="mm-cours-corps"><div class="resume">'+rlie.html+'</div></div>';
       h+='</aside>';
     }
+    h+='</div>';
     h+='</div>';
     h+='<div class="mm-aide mm-aide-etabli">Le <b>+</b> au bout d\'un étage y ajoute une idée. '+
        'Un clic ouvre ou referme une idée, un double-clic l\'écrit. '+
@@ -2776,6 +2830,7 @@
     if(!box) return;
     VUE.k=1;
     bindDuoCours(id);
+    bindPleinEcran();
     dessineEtabli(id);
     /* On n'attrape rien tant que la souris n'a pas bougé : sans ce seuil, un
        simple clic deviendrait un déplacement d'un pixel. */

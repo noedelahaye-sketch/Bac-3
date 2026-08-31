@@ -782,6 +782,27 @@
   /* ---------- l'établi : on écrit sur la carte ----------
      Le cadre ne s'ajuste pas ici : à taille réduite les boîtes deviennent
      imprécises à viser, et le champ d'écriture ne tomberait plus dessus. */
+  /* ---------- plein écran ----------
+     La même enveloppe que d'habitude, mais qui couvre la fenêtre. On ne garde
+     dans l'en-tête que ce qui sert pendant qu'on construit : titre, zoom,
+     Ajuster, cours, envoi, sortie. Le bouton « Quitter » n'existe qu'ici, le
+     bouton « Plein écran » disparaît alors — un seul des deux à la fois. */
+  .mm-quitte-btn{display:none;}
+  .mm-plein{position:fixed;inset:0;z-index:60;background:var(--paper);
+    display:flex;flex-direction:column;gap:var(--space-12);padding:var(--space-16);margin:0;}
+  .mm-plein .mm-head{margin:0;flex:0 0 auto;}
+  /* hors sujet en plein écran : on y revient en sortant */
+  .mm-plein .mm-bloc,.mm-plein [data-mm-del],.mm-plein .mm-fini,.mm-plein .mm-plein-btn[data-mm-plein="1"]{display:none;}
+  .mm-plein .mm-quitte-btn{display:flex;width:auto;gap:var(--space-8);padding:0 var(--space-12);
+    font:600 12.5px var(--font-text);margin-left:auto;}
+  /* les deux fenêtres prennent toute la hauteur restante */
+  .mm-plein .mm-duo{flex:1 1 auto;min-height:0;}
+  /* .mm-canvas.mm-canvas-etabli porte deux classes et vient plus bas dans la
+     feuille : sans les deux classes ici, sa hauteur fixe l'emporterait */
+  .mm-plein .mm-canvas.mm-canvas-etabli,.mm-plein .mm-cours{height:auto;min-height:0;max-height:none;}
+  .mm-plein-btn{width:44px;}
+  .mm-plein-btn.on{border-color:var(--signal);color:var(--ink);}
+
   /* ---------- la carte et le cours côte à côte ----------
      Deux fenêtres et la poignée qui les sépare. --part-carte, posée par le
      script, dit la part de largeur qui revient à la carte ; le cours prend le
