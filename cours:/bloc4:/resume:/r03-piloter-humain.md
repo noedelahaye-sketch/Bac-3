@@ -18,7 +18,8 @@ sources:
 
 # Piloter l'humain : répartir les tâches, évaluer, communiquer
 
-> **Ce que couvre ce résumé.** Cœur de la coordination d'équipe (**C4.1**) : attribuer tâches et responsabilités, évaluer compétences individuelles et collectives (rétroaction 360°, plan de développement), communiquer en manager (Watzlawick, écoute active, assertivité). Nourrit la **Q3** (attentes réciproques Drumeo↔YSA, tensions de communication), appuie **Q5** (organisation, outils) et **Q9** (feedback sur écarts).
+> **Ce que couvre ce résumé.** Cœur de la coordination d'équipe (**C4.1**) : attribuer tâches et responsabilités, évaluer compétences individuelles et collectives (rétroaction 360°, plan de développement), communiquer en manager (Watzlawick, écoute active, assertivité).
+> Nourrit la **Q3** (attentes réciproques Drumeo↔YSA, tensions de communication), appuie **Q5** (organisation, outils) et **Q9** (feedback sur écarts).
 >
 > **Comment lire ce résumé.** Texte et tableaux = **noyau à apprendre** (flashcards, quiz) ; blocs 💡 = aides sautables ; blocs 🎯 = repères examen ; lignes 📖 = définitions.
 
@@ -28,7 +29,13 @@ sources:
 
 ### 1.1 Les trois fondements de l'attribution des responsabilités
 
-Fondements d'une attribution pertinente : ① **connaissance en temps réel des compétences** des équipes ; ② **identification des compétences requises** par les projets en cours et à venir ; ③ capacité à **faire concorder l'offre et la demande** (flexibilité, suivi continu, formation). Enjeux : satisfaction, performance (équipe) ; efficacité opérationnelle, ressources optimisées, gestion proactive des risques (entreprise).
+Fondements d'une attribution pertinente :
+
+- ① **connaissance en temps réel des compétences** des équipes
+- ② **identification des compétences requises** par les projets en cours et à venir
+- ③ capacité à **faire concorder l'offre et la demande** (flexibilité, suivi continu, formation)
+
+Enjeux : satisfaction, performance (équipe) ; efficacité opérationnelle, ressources optimisées, gestion proactive des risques (entreprise).
 
 ### 1.2 Identifier les besoins de mission
 
@@ -43,7 +50,9 @@ Fondements d'une attribution pertinente : ① **connaissance en temps réel des 
 
 ### 1.3 Décomposer en tâches et cartographier les compétences
 
-**Décomposer les missions en tâches spécifiques et réalisables** (feuille de route claire) ; par tâche, repérer **hard skills** (techniques) et **soft skills** tout aussi indispensables (communication, résolution de conflits, prise de décision, leadership). Outil central : **cartographie**/**matrices de compétences** (forces individuelles ↔ exigences des tâches), à deux niveaux :
+**Décomposer les missions en tâches spécifiques et réalisables** (feuille de route claire) ; par tâche, repérer **hard skills** (techniques) et **soft skills** tout aussi indispensables (communication, résolution de conflits, prise de décision, leadership).
+
+Outil central : **cartographie**/**matrices de compétences** (forces individuelles ↔ exigences des tâches), à deux niveaux :
 
 | Niveau | Principe |
 |---|---|
@@ -62,11 +71,17 @@ Fondements d'une attribution pertinente : ① **connaissance en temps réel des 
 
 > 📖 L'**égalité** = répartition **uniforme** des charges, ignorant les besoins individuels. L'**équité** = attribution **réfléchie** selon compétences, aspirations, contributions passées. L'égalité absolue ne produit pas toujours des résultats équitables.
 
-Trois volets : **équilibre de la charge** (compétences, disponibilités, capacités ; personne de submergé ; ajustement par suivi régulier), **équité des opportunités** (accès aux **projets stimulants** et responsabilités stratégiques, communication **transparente**, critères équitables), **préférences et aspirations** (discussions ouvertes régulières sur les objectifs professionnels, tâches alignées sur les intérêts, **Plan de Développement Individuel — PDI** dynamique, co-construit, aligné sur les ambitions long terme).
+Trois volets :
+
+- **équilibre de la charge** (compétences, disponibilités, capacités ; personne de submergé ; ajustement par suivi régulier)
+- **équité des opportunités** (accès aux **projets stimulants** et responsabilités stratégiques, communication **transparente**, critères équitables)
+- **préférences et aspirations** (discussions ouvertes régulières sur les objectifs professionnels, tâches alignées sur les intérêts, **Plan de Développement Individuel — PDI** dynamique, co-construit, aligné sur les ambitions long terme)
 
 ### 2.2 Efficacité : leadership participatif, priorités, outils
 
-L'attribution stratégique exploite **forces individuelles et compétences complémentaires**. **Leadership participatif** (missions choisies avec les membres) → **appropriation**, **motivation**, culture de l'**initiative**/responsabilisation. **Priorités** (contribution aux objectifs stratégiques) et **délais** (calendrier clair et accessible, réunions régulières, suivi partagé), **interconnectés** : ordre + visibilité.
+L'attribution stratégique exploite **forces individuelles et compétences complémentaires**. **Leadership participatif** (missions choisies avec les membres) → **appropriation**, **motivation**, culture de l'**initiative**/responsabilisation.
+
+**Priorités** (contribution aux objectifs stratégiques) et **délais** (calendrier clair et accessible, réunions régulières, suivi partagé), **interconnectés** : ordre + visibilité.
 
 | Outil | Usage |
 |---|---|
@@ -76,7 +91,8 @@ L'attribution stratégique exploite **forces individuelles et compétences compl
 | **Monday.com, Google Sheets, Kanban** | Suivi partagé de l'avancement |
 | **Slack** | Messagerie instantanée quotidienne |
 
-> 🎯 **Q5 (repère examen).** Outillage Drumeo/YSA fourni : **Trello** (jalons), **ClickUp** (validation des tâches), **Google Drive**, **Slack/Teams**, réunions bimensuelles Zoom, rapports mensuels — justifie chacun par le besoin couvert (cette section). « Inclusion des profils » → 2.1 : charge équilibrée, opportunités transparentes, aspirations et modes de travail (présentiel/distanciel) pris en compte.
+> 🎯 **Q5 (repère examen).** Outillage Drumeo/YSA fourni : **Trello** (jalons), **ClickUp** (validation des tâches), **Google Drive**, **Slack/Teams**, réunions bimensuelles Zoom, rapports mensuels — justifie chacun par le besoin couvert (cette section).
+> « Inclusion des profils » → 2.1 : charge équilibrée, opportunités transparentes, aspirations et modes de travail (présentiel/distanciel) pris en compte.
 
 ### 2.3 Motiver et développer par l'attribution
 
@@ -91,9 +107,17 @@ L'attribution stratégique exploite **forces individuelles et compétences compl
 
 ### 3.1 Suivi des performances et réaffectation
 
-Suivi : **surveillance constante des KPI** (tableaux de bord, **tendances** pour anticiper), **retours** de l'équipe et des parties prenantes externes (clients, fournisseurs — vision holistique), **entretiens individualisés**. Lacunes → plans d'action personnalisés (formations ciblées, mentorat, rotations) : **amélioration, pas couperet sanctionnateur**.
+Suivi :
 
-**Réaffectation des tâches** : anticipée par la **veille stratégique** (marché, technologies, réglementation), déclenchée par les indicateurs (satisfaction client en baisse, retards) ; croise compétences **nouvellement requises** et compétences effectives **en temps réel**. Révision = **processus continu**, jamais ponctuel, aligné sur les objectifs organisationnels : redistribution, rotation, délégation de nouvelles responsabilités.
+- **surveillance constante des KPI** (tableaux de bord, **tendances** pour anticiper)
+- **retours** de l'équipe et des parties prenantes externes (clients, fournisseurs — vision holistique)
+- **entretiens individualisés**
+
+Lacunes → plans d'action personnalisés (formations ciblées, mentorat, rotations) : **amélioration, pas couperet sanctionnateur**.
+
+**Réaffectation des tâches** : anticipée par la **veille stratégique** (marché, technologies, réglementation), déclenchée par les indicateurs (satisfaction client en baisse, retards) ; croise compétences **nouvellement requises** et compétences effectives **en temps réel**.
+
+Révision = **processus continu**, jamais ponctuel, aligné sur les objectifs organisationnels : redistribution, rotation, délégation de nouvelles responsabilités.
 
 ### 3.2 Les trois méthodologies d'amélioration continue
 
@@ -111,7 +135,8 @@ Suivi : **surveillance constante des KPI** (tableaux de bord, **tendances** pour
 
 ### 4.1 Deux niveaux d'analyse, un processus en 5 étapes
 
-> 📖 L'analyse des compétences **individuelles** évalue connaissances, compétences techniques, aptitudes, attitudes, expériences de chacun (forces/faiblesses, alignement au poste, développement, besoins de formation) ; l'analyse **collective**, comment ces compétences **se combinent et interagissent** en équipe (complémentarités, dynamique de groupe, synergie).
+> 📖 L'analyse des compétences **individuelles** évalue connaissances, compétences techniques, aptitudes, attitudes, expériences de chacun (forces/faiblesses, alignement au poste, développement, besoins de formation) ;
+> l'analyse **collective**, comment ces compétences **se combinent et interagissent** en équipe (complémentarités, dynamique de groupe, synergie).
 
 **Processus d'analyse** en 5 étapes (cartographie approfondie : [R6](r06-gepp-competences.md)) :
 
@@ -133,13 +158,20 @@ Suivi : **surveillance constante des KPI** (tableaux de bord, **tendances** pour
 
 ### 4.3 Les compétences collectives : complémentarité et synergie
 
-**Compétences complémentaires** : comprendre forces/faiblesses individuelles → **alignement sur tâches et objectifs d'équipe** (recherche proactive des compétences manquantes) → collaboration, communication ouverte (réunions de présentation des expertises). Bénéfices : **synergie opérationnelle, innovation, résolution efficace des problèmes, motivation, satisfaction**.
+**Compétences complémentaires** : comprendre forces/faiblesses individuelles → **alignement sur tâches et objectifs d'équipe** (recherche proactive des compétences manquantes) → collaboration, communication ouverte (réunions de présentation des expertises).
 
-Trois compétences interconnectées : **collaboration** (observation du travail d'équipe + pairs), **communication** (observation directe — clarté, écoute active, langage corporel —, simulations, **communication virtuelle** évaluée spécifiquement), **leadership** (prise de décision, délégation, influence, inspiration — via subordonnés, auto-évaluation, simulations, **feedbacks à 360°**, résultats).
+Bénéfices : **synergie opérationnelle, innovation, résolution efficace des problèmes, motivation, satisfaction**.
+
+Trois compétences interconnectées :
+
+- **collaboration** (observation du travail d'équipe + pairs)
+- **communication** (observation directe — clarté, écoute active, langage corporel —, simulations, **communication virtuelle** évaluée spécifiquement)
+- **leadership** (prise de décision, délégation, influence, inspiration — via subordonnés, auto-évaluation, simulations, **feedbacks à 360°**, résultats)
 
 ### 4.4 La rétroaction à 360°
 
-> 📖 **Rétroaction à 360°** : commentaires sur la performance venant du **superviseur** et de **quatre à huit** pairs, subordonnés, collègues, voire parties prenantes externes (clients, partenaires), plus **auto-évaluation**. Évaluateurs choisis **conjointement** par organisation et employé ; le destinataire reçoit des données **récapitulatives anonymisées**, sans savoir qui a dit quoi.
+> 📖 **Rétroaction à 360°** : commentaires sur la performance venant du **superviseur** et de **quatre à huit** pairs, subordonnés, collègues, voire parties prenantes externes (clients, partenaires), plus **auto-évaluation**.
+> Évaluateurs choisis **conjointement** par organisation et employé ; le destinataire reçoit des données **récapitulatives anonymisées**, sans savoir qui a dit quoi.
 
 | Avantages | Inconvénients |
 |---|---|
@@ -178,11 +210,15 @@ D'où la **congruence** : « comment » non verbal cohérent avec le « quoi » 
 | **Oral** | Instructions courtes et directes ; feedbacks rapides ; routine ; encouragements, remerciements (impact immédiat) |
 | **Écrit** | Décisions importantes ; objectifs et résultats attendus ; changements de procédure ; **feedbacks formels** ; instructions techniques détaillées ; annonces officielles |
 
-Écrit **lisible** = lecture encouragée, compréhension favorisée, mémorisation facilitée. À distance : **synchrone** (immédiat — appel/facecam pour l'urgent-important, visio pour réunions/entretiens) ou **asynchrone** (différé — mail pour le complexe, outils collaboratifs pour réagir à plusieurs). Avant de communiquer, **4 questions** : quelles **informations** ? **pour quoi faire** ? quels **circuits** (remonter, descendre, circuler) ? quels **supports et canaux** ?
+Écrit **lisible** = lecture encouragée, compréhension favorisée, mémorisation facilitée. À distance : **synchrone** (immédiat — appel/facecam pour l'urgent-important, visio pour réunions/entretiens) ou **asynchrone** (différé — mail pour le complexe, outils collaboratifs pour réagir à plusieurs).
+
+Avant de communiquer, **4 questions** : quelles **informations** ? **pour quoi faire** ? quels **circuits** (remonter, descendre, circuler) ? quels **supports et canaux** ?
 
 ### 5.3 Pourquoi la communication passe mal
 
-Aucun passage d'information **sans déformation** : ni même vécu, ni même vocabulaire ; chacun a son **cadre de référence** (valeurs, logique de raisonnement, vision du monde, codes propres) et ses **filtres** — **a priori, préjugés, idées préconçues** brouillent l'échange. Parade : langage **le plus précis possible**. Autre écueil : l'information utile **reste au niveau du manager** ou arrive sommairement, sans sens ni explications.
+Aucun passage d'information **sans déformation** : ni même vécu, ni même vocabulaire ; chacun a son **cadre de référence** (valeurs, logique de raisonnement, vision du monde, codes propres) et ses **filtres** — **a priori, préjugés, idées préconçues** brouillent l'échange. Parade : langage **le plus précis possible**.
+
+Autre écueil : l'information utile **reste au niveau du manager** ou arrive sommairement, sans sens ni explications.
 
 ### 5.4 Bonnes pratiques : confiance, écoute active, adaptation
 
@@ -195,13 +231,23 @@ Aucun passage d'information **sans déformation** : ni même vécu, ni même voc
 
 ### 5.5 Feedback, coévaluation et objectifs partagés
 
-La critique constructive exige une communication **fluide, horizontale** (dans l'équipe) **et verticale** (deux sens manager↔collaborateur), des **feedbacks réguliers** — pas qu'aux moments sensibles : aussi réussites, initiatives, idées — et la **coévaluation** (évaluations individuelles et de groupe) garante d'autonomie.
+La critique constructive exige :
 
-Objectifs **fixés unilatéralement** (direction très directive) = **contre-productifs à terme** (ni partagés ni acceptés). Leur **choix en commun** conditionne **délégation et responsabilisation** — auto-évaluation, autonomie, initiative, appropriation de la stratégie (du **sens**) — et nourrit estime et confiance en soi. Suivi : retours rapides, feedback immédiat, transparence.
+- une communication **fluide, horizontale** (dans l'équipe) **et verticale** (deux sens manager↔collaborateur)
+- des **feedbacks réguliers** — pas qu'aux moments sensibles : aussi réussites, initiatives, idées —
+- et la **coévaluation** (évaluations individuelles et de groupe) garante d'autonomie.
+
+Objectifs **fixés unilatéralement** (direction très directive) = **contre-productifs à terme** (ni partagés ni acceptés).
+
+Leur **choix en commun** conditionne **délégation et responsabilisation** — auto-évaluation, autonomie, initiative, appropriation de la stratégie (du **sens**) — et nourrit estime et confiance en soi.
+
+Suivi : retours rapides, feedback immédiat, transparence.
 
 ### 5.6 Les mauvaises pratiques à éviter
 
-> 📖 Le **micromanagement** : surveiller de très près et contrôler minutieusement les tâches ; le manager, noyé dans les détails, inhibe les initiatives. **Trois conséquences** : ① **absence d'autonomie** (frustration, démotivation, productivité moindre) ; ② **absence de créativité** (plus d'idées nouvelles) ; ③ **excès de stress** (pression forte, manque de confiance). Sous-jacent : le **manque de délégation** (peur de perdre le pouvoir, manque de confiance ou de méthode) — manager débordé, équipe qui stagne, potentiel inexploité.
+> 📖 Le **micromanagement** : surveiller de très près et contrôler minutieusement les tâches ; le manager, noyé dans les détails, inhibe les initiatives.
+> **Trois conséquences** : ① **absence d'autonomie** (frustration, démotivation, productivité moindre) ; ② **absence de créativité** (plus d'idées nouvelles) ; ③ **excès de stress** (pression forte, manque de confiance).
+> Sous-jacent : le **manque de délégation** (peur de perdre le pouvoir, manque de confiance ou de méthode) — manager débordé, équipe qui stagne, potentiel inexploité.
 
 | Registre | Caractéristiques |
 |---|---|
@@ -210,9 +256,17 @@ Objectifs **fixés unilatéralement** (direction très directive) = **contre-pro
 | **Manipulation** | Attitude détournée à proscrire → méfiance, interlocuteurs sur la défensive |
 | **Assertivité** ✔ | **Affirmation de soi respectueuse d'autrui** : exprimer clairement objectifs, sentiments, idées, droits, besoins ; accepter contradiction et **compromis** ; désaccord ou « non » possibles **sans rompre la relation** |
 
-Enfin, **ignorer les différences culturelles et générationnelles** ([R4](r04-diversite-equipes-hybrides.md)). **Culturelles** (modes de communication, valeurs, attentes) : esprit d'équipe empêché — fuite des talents, créativité limitée, productivité en baisse, barrières de communication. **Générationnelles** (**baby-boomers, générations X, Y, Z** : attitudes, valeurs, préférences distinctes) : conflits de générations, résistance accrue au changement. Apports uniques : **seniors** = expérience, recul, cadrage ; **jeunes** = créativité, maîtrise du numérique. Management interculturel : communication diversifiée, reconnaissance des compétences et de l'individu, « au cas par cas », lien social, contact maintenu.
+Enfin, **ignorer les différences culturelles et générationnelles** ([R4](r04-diversite-equipes-hybrides.md)) :
 
-> 🎯 **Q3, volet tensions (repère examen).** Tensions Drumeo↔YSA par mauvaise communication : directives vagues, attentes non clarifiées → incertitude, malentendus ; information retenue → blocages ; micromanagement d'un binôme sur l'autre → frustration, démotivation ; ton agressif ou passif plutôt qu'assertif → climat hostile ou besoins tus ; différences culturelles ignorées → incompréhensions. Remèdes : cadre clair, feedbacks réguliers, écoute active, assertivité, outils partagés.
+- **Culturelles** (modes de communication, valeurs, attentes) : esprit d'équipe empêché — fuite des talents, créativité limitée, productivité en baisse, barrières de communication.
+- **Générationnelles** (**baby-boomers, générations X, Y, Z** : attitudes, valeurs, préférences distinctes) : conflits de générations, résistance accrue au changement.
+
+Apports uniques : **seniors** = expérience, recul, cadrage ; **jeunes** = créativité, maîtrise du numérique. Management interculturel : communication diversifiée, reconnaissance des compétences et de l'individu, « au cas par cas », lien social, contact maintenu.
+
+> 🎯 **Q3, volet tensions (repère examen).** Tensions Drumeo↔YSA par mauvaise communication :
+> directives vagues, attentes non clarifiées → incertitude, malentendus ; information retenue → blocages ; micromanagement d'un binôme sur l'autre → frustration, démotivation ;
+> ton agressif ou passif plutôt qu'assertif → climat hostile ou besoins tus ; différences culturelles ignorées → incompréhensions.
+> Remèdes : cadre clair, feedbacks réguliers, écoute active, assertivité, outils partagés.
 
 ---
 

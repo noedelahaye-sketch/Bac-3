@@ -38,7 +38,9 @@ Trois raisons :
 2. **Motiver et faire progresser** : meilleure **communication** (chiffres ET pratiques), **productivité**, **motivation** (son absence la dilue), **montée en compétences**.
 3. **Légitimer le manager** : les résultats **crédibilisent les choix managériaux** face à la Direction (le manager « rend compte » à son N+2) et aux collaborateurs — **reconnaissance et récompense** (primes) reposent sur cette évaluation.
 
-Le suivi, **responsabilité collective**, exige la **transparence** (biais de **rétention d'information** : le commercial gardant un partenariat pour lui). Il couvre le **collectif** (synergie, **intelligence collective** : « une équipe d'agents coopérants résout les problèmes plus efficacement qu'isolément ») ET l'**individuel** (sinon les talents restent indiscernables), les **résultats** ET la **montée en compétences** (savoirs, savoir-faire, savoir-être).
+Le suivi, **responsabilité collective**, exige la **transparence** (biais de **rétention d'information** : le commercial gardant un partenariat pour lui).
+
+Il couvre le **collectif** (synergie, **intelligence collective** : « une équipe d'agents coopérants résout les problèmes plus efficacement qu'isolément ») ET l'**individuel** (sinon les talents restent indiscernables), les **résultats** ET la **montée en compétences** (savoirs, savoir-faire, savoir-être).
 
 ---
 
@@ -46,7 +48,9 @@ Le suivi, **responsabilité collective**, exige la **transparence** (biais de **
 
 ### 2.1 La cascade objectifs → indicateurs
 
-Les **objectifs stratégiques** se déclinent par service en **objectifs opérationnels** (plan d'action), puis pour **chaque membre**. À chaque objectif (idéalement **SMARTEF** — [R2](r02-objectifs-plan-action.md)) son indicateur, en **lien direct avec l'objectif** (la clé). Peu d'indicateurs mais ciblés : un significatif vaut mieux que trois non significatifs. KPI selon le domaine et les **Facteurs Clés de Succès** (FCS : condition essentielle pour qu'un projet aboutisse).
+Les **objectifs stratégiques** se déclinent par service en **objectifs opérationnels** (plan d'action), puis pour **chaque membre**. À chaque objectif (idéalement **SMARTEF** — [R2](r02-objectifs-plan-action.md)) son indicateur, en **lien direct avec l'objectif** (la clé).
+
+Peu d'indicateurs mais ciblés : un significatif vaut mieux que trois non significatifs. KPI selon le domaine et les **Facteurs Clés de Succès** (FCS : condition essentielle pour qu'un projet aboutisse).
 
 ### 2.2 Les trois types d'indicateurs
 
@@ -56,7 +60,9 @@ Les **objectifs stratégiques** se déclinent par service en **objectifs opérat
 | **Qualitatifs** | Non chiffrés : perceptions, avis, opinions, vs **socle de standards** connu de tous | Satisfaction client, intégrer les contraintes de production dans la vente |
 | **Comportementaux (KBI)** | *Key Behavioral Indicators* : comportements, intelligence émotionnelle | Gérer un conflit, écoute active, empathie, esprit d'initiative |
 
-Un critère qualitatif peut se mesurer quantitativement (satisfaction via nombre d'avis positifs). Indicateurs **individuels** (CA par zone — valorisent la contribution, climat parfois compétitif) ou **collectifs** (CA global, projet commun — cohésion). Collectif insuffisant ? L'individuel **cible** le problème (région, produit, clientèle).
+Un critère qualitatif peut se mesurer quantitativement (satisfaction via nombre d'avis positifs). Indicateurs **individuels** (CA par zone — valorisent la contribution, climat parfois compétitif) ou **collectifs** (CA global, projet commun — cohésion).
+
+Collectif insuffisant ? L'individuel **cible** le problème (région, produit, clientèle).
 
 ### 2.3 Les quatre critères d'un bon indicateur, les seuils et les zones
 
@@ -83,9 +89,18 @@ On fixe ensuite des **seuils de performance** : « zones » **vertes, oranges, r
 
 ### 2.5 Le cadre juridique de l'objectif individuel
 
-Objectifs individuels **alignés sur responsabilités et compétences** : conformes à la **fiche de poste**, ou formalisés par **avenant au contrat de travail** (courant chez les commerciaux) ou **lettre de mission** (« document officiel qui décrit les responsabilités et objectifs d'une personne dans le cadre d'une tâche spécifique ou d'une mission temporaire » — expatriation, intérim). Ne jamais évaluer des résultats **outrepassant la responsabilité** du collaborateur ; son obligation de résultats suppose **toutes les ressources** requises. L'article **L6321-1 du Code du travail** impose l'**adaptation des salariés à leur poste** : résultats insuffisants → plan de formation ([R7](r07-formation.md)).
+Objectifs individuels **alignés sur responsabilités et compétences** :
 
-> 🎯 **Repère examen (Q4).** Le brief Drumeo fournit des indicateurs bruts (> 500 000 vues en 1 mois, engagement > 8 %, > 20 retombées presse, > 100 invités, 100 % des jalons validés) : transforme-les en **objectifs SMART** ([R2](r02-objectifs-plan-action.md)) via le filtre 2.3 — mesurables, faisables (données accessibles ?), spécifiques, pertinents — et pense aux seuils d'alerte.
+- conformes à la **fiche de poste**
+- ou formalisés par **avenant au contrat de travail** (courant chez les commerciaux)
+- ou **lettre de mission** (« document officiel qui décrit les responsabilités et objectifs d'une personne dans le cadre d'une tâche spécifique ou d'une mission temporaire » — expatriation, intérim).
+
+Ne jamais évaluer des résultats **outrepassant la responsabilité** du collaborateur ; son obligation de résultats suppose **toutes les ressources** requises.
+
+L'article **L6321-1 du Code du travail** impose l'**adaptation des salariés à leur poste** : résultats insuffisants → plan de formation ([R7](r07-formation.md)).
+
+> 🎯 **Repère examen (Q4).** Le brief Drumeo fournit des indicateurs bruts (> 500 000 vues en 1 mois, engagement > 8 %, > 20 retombées presse, > 100 invités, 100 % des jalons validés) :
+> transforme-les en **objectifs SMART** ([R2](r02-objectifs-plan-action.md)) via le filtre 2.3 — mesurables, faisables (données accessibles ?), spécifiques, pertinents — et pense aux seuils d'alerte.
 
 ---
 
@@ -93,7 +108,15 @@ Objectifs individuels **alignés sur responsabilités et compétences** : confor
 
 ### 3.1 La collecte des données
 
-Données **fiables et disponibles** : **CRM** (Customer Relationship Management, gestion de la relation client), autres services (juridique, marketing pour avis clients), **SIRH** (Système d'Information des Ressources Humaines : données collaborateurs, turn-over, absentéisme), **Business Intelligence** (BI ou Informatique Décisionnelle : décider sur données factuelles). Quantitatifs centralisés dans un outil unique (feuille de calcul **partagée**, plateforme collaborative) ; qualitatifs par enquêtes, entretiens, observations, sans biais. Interprétation à l'instant T et **sur période de référence**, en valeur absolue (CA + 50 k€ vs M-1) ou relative (+ 3,5 %).
+Données **fiables et disponibles** :
+
+- **CRM** (Customer Relationship Management, gestion de la relation client), autres services (juridique, marketing pour avis clients)
+- **SIRH** (Système d'Information des Ressources Humaines : données collaborateurs, turn-over, absentéisme)
+- **Business Intelligence** (BI ou Informatique Décisionnelle : décider sur données factuelles)
+
+Quantitatifs centralisés dans un outil unique (feuille de calcul **partagée**, plateforme collaborative) ; qualitatifs par enquêtes, entretiens, observations, sans biais.
+
+Interprétation à l'instant T et **sur période de référence**, en valeur absolue (CA + 50 k€ vs M-1) ou relative (+ 3,5 %).
 
 ### 3.2 Tableaux de bord et rapports
 
@@ -118,9 +141,12 @@ Données **fiables et disponibles** : **CRM** (Customer Relationship Management,
 
 > 📖 **OKR** (*Objectives and Key Results*, Objectifs et Résultats Clés) : méthode née dans la Silicon Valley (Netflix, Google) qui **aligne** les activités de chacun sur les **objectifs globaux** — chacun comprend l'intérêt de son travail, ce qui renforce motivation et sens.
 
-Mise en place : objectifs globaux sur échéance adaptée au marché (souvent l'année), déclinés par service, équipe, collaborateur ; **calendrier de suivi** adapté (bimensuel ou mensuel en long terme). Trois logiques : **top-down** (objectifs ET résultats clés par les dirigeants), **bottom-up** (les deux par les collaborateurs), **hybride** (objectifs dirigeants, résultats clés collaborateurs — la plus engageante).
+Mise en place : objectifs globaux sur échéance adaptée au marché (souvent l'année), déclinés par service, équipe, collaborateur ; **calendrier de suivi** adapté (bimensuel ou mensuel en long terme).
 
-> 🎯 **Repère examen (Q6/Q7).** Tableau de critères qualité (Q6) : chaque critère passe le filtre 2.3 — **précis et mesurable** (pas « une bonne captation » mais « zéro interruption de flux »). Rétroplanning (Q7) : jalons = temps forts de contrôle, tableau de bord partagé, reporting régulier vers Drumeo (rapports mensuels du brief).
+Trois logiques : **top-down** (objectifs ET résultats clés par les dirigeants), **bottom-up** (les deux par les collaborateurs), **hybride** (objectifs dirigeants, résultats clés collaborateurs — la plus engageante).
+
+> 🎯 **Repère examen (Q6/Q7).** Tableau de critères qualité (Q6) : chaque critère passe le filtre 2.3 — **précis et mesurable** (pas « une bonne captation » mais « zéro interruption de flux »).
+> Rétroplanning (Q7) : jalons = temps forts de contrôle, tableau de bord partagé, reporting régulier vers Drumeo (rapports mensuels du brief).
 
 ---
 
@@ -128,9 +154,16 @@ Mise en place : objectifs globaux sur échéance adaptée au marché (souvent l'
 
 ### 4.1 Deux temps : résultats, puis écarts
 
-> 📖 L'**analyse des résultats** est la prise de connaissance objective des données quantitatives et qualitatives (état des lieux). L'**analyse des écarts** compare ensuite ces données aux objectifs, prévisions ou normes : les **écarts** sont les différences entre réel et prévisionnel, **positifs** (réel > prévu) ou **négatifs** (réel < prévu).
+> 📖 L'**analyse des résultats** est la prise de connaissance objective des données quantitatives et qualitatives (état des lieux).
+> L'**analyse des écarts** compare ensuite ces données aux objectifs, prévisions ou normes : les **écarts** sont les différences entre réel et prévisionnel, **positifs** (réel > prévu) ou **négatifs** (réel < prévu).
 
-Dans les deux cas, comprendre : échecs pour y remédier, **bonnes pratiques du succès à dupliquer**. Les KPI servent de **base d'étalonnage** (résultats attendus). Distinguer **facteurs endogènes** (équipe : efforts, compétences, investissement) et **exogènes** (marché, lois, société) ; chercher des **corrélations** (satisfaction client médiocre ↔ turn-over → fidéliser les collaborateurs). Approfondir : contributions individuelles, ou **segmentation** (équipe, produit, lieu, période). Bonnes pratiques : SMARTEF, données précises et fiables, méthode adaptée aux ressources, **parties prenantes intégrées** (contexte).
+Dans les deux cas, comprendre : échecs pour y remédier, **bonnes pratiques du succès à dupliquer**. Les KPI servent de **base d'étalonnage** (résultats attendus).
+
+Distinguer **facteurs endogènes** (équipe : efforts, compétences, investissement) et **exogènes** (marché, lois, société) ; chercher des **corrélations** (satisfaction client médiocre ↔ turn-over → fidéliser les collaborateurs).
+
+Approfondir : contributions individuelles, ou **segmentation** (équipe, produit, lieu, période).
+
+Bonnes pratiques : SMARTEF, données précises et fiables, méthode adaptée aux ressources, **parties prenantes intégrées** (contexte).
 
 ### 4.2 La boîte à outils de l'analyse
 
@@ -146,7 +179,8 @@ Dans les deux cas, comprendre : échecs pour y remédier, **bonnes pratiques du 
 | **SWOT** | Forces/faiblesses internes, opportunités/menaces externes — en amont ET en cours de projet |
 | **Analyses de processus et financières** | Cartographie des processus, valeur ajoutée ; ratios, budgets comparatifs |
 
-> 🎯 **Repère examen (Q9).** Écarts entre les livrables YSA et le brief Drumeo = une **analyse d'écarts** : le brief joue le rôle du prévisionnel, le livrable celui du réel. Réponds en deux temps — constat objectif, puis causes (endogènes ou exogènes) — avant de proposer feedback et modifications.
+> 🎯 **Repère examen (Q9).** Écarts entre les livrables YSA et le brief Drumeo = une **analyse d'écarts** : le brief joue le rôle du prévisionnel, le livrable celui du réel.
+> Réponds en deux temps — constat objectif, puis causes (endogènes ou exogènes) — avant de proposer feedback et modifications.
 
 ---
 
@@ -154,13 +188,22 @@ Dans les deux cas, comprendre : échecs pour y remédier, **bonnes pratiques du 
 
 ### 5.1 L'action corrective : deux acceptions
 
-> 📖 Selon « Mots de la Qualité » (France Qualité), l'**action corrective** a deux sens : au sens de la **norme** (certification ISO), elle **élimine la cause du défaut** — résolution de problème, amélioration continue, visée **curative** durable ; au **sens courant** (gestion de projet), elle **supprime simplement le défaut** — rattrapage, réparation, reprise.
+> 📖 Selon « Mots de la Qualité » (France Qualité), l'**action corrective** a deux sens : au sens de la **norme** (certification ISO), elle **élimine la cause du défaut** — résolution de problème, amélioration continue, visée **curative** durable ;
+> au **sens courant** (gestion de projet), elle **supprime simplement le défaut** — rattrapage, réparation, reprise.
 
 S'y ajoutent mesures **curatives** (traiter le problème survenu — action corrective **réactive**, a posteriori) vs **préventives** (anticiper). Toujours se demander : ce problème aurait-il pu être anticipé ?
 
 ### 5.2 Le plan d'action correctif
 
-Démarche : **analyser les causes** de l'échec même partiel (facteurs internes/externes — SWOT utile), éventuellement **réévaluer les objectifs** (réalistes et SMARTEF, ou trop ambitieux ?), puis bâtir le **plan d'action correctif** : comme le plan initial — actions, **responsabilités, ressources, délais**, mêmes pilotage, suivi, communication. **CQQCOQP** (Comment ? Quoi ? Qui ? Combien ? Où ? Quand ? Pourquoi ?) garantit l'exhaustivité. Ses **KPI : délais, coûts, qualité**. Couvrant tout le projet, il remplace le plan initial ; sinon pilotage conjoint. Fil rouge : accroître la performance initiale ? **Détection précoce** des écarts : traiter avant aggravation, réallouer les ressources, anticiper les retards, maintenir la motivation, gérer les risques.
+Démarche :
+
+- **analyser les causes** de l'échec même partiel (facteurs internes/externes — SWOT utile)
+- éventuellement **réévaluer les objectifs** (réalistes et SMARTEF, ou trop ambitieux ?)
+- puis bâtir le **plan d'action correctif** : comme le plan initial — actions, **responsabilités, ressources, délais**, mêmes pilotage, suivi, communication
+
+**CQQCOQP** (Comment ? Quoi ? Qui ? Combien ? Où ? Quand ? Pourquoi ?) garantit l'exhaustivité. Ses **KPI : délais, coûts, qualité**. Couvrant tout le projet, il remplace le plan initial ; sinon pilotage conjoint. Fil rouge : accroître la performance initiale ?
+
+**Détection précoce** des écarts : traiter avant aggravation, réallouer les ressources, anticiper les retards, maintenir la motivation, gérer les risques.
 
 ### 5.3 Individuelles ou collectives
 
@@ -169,7 +212,9 @@ Démarche : **analyser les causes** de l'échec même partiel (facteurs internes
 
 ### 5.4 Ajuster les objectifs eux-mêmes
 
-L'ajustement est **opérationnel** ou **stratégique**, après décalage plan/réalisation ou **changement** (stratégie globale, réglementation, environnement, RH — grève…). « À l'impossible nul n'est tenu » : ignorer les changements serait une fiction (ex. crise Covid-19, 2020). Ajuster : changer de direction, décaler dans le temps, revoir la cible.
+L'ajustement est **opérationnel** ou **stratégique**, après décalage plan/réalisation ou **changement** (stratégie globale, réglementation, environnement, RH — grève…). « À l'impossible nul n'est tenu » : ignorer les changements serait une fiction (ex. crise Covid-19, 2020).
+
+Ajuster : changer de direction, décaler dans le temps, revoir la cible.
 
 > 📖 **Efficience** : « la consommation des ressources utilisées dans la production d'un résultat » — rapport résultats / ressources. À distinguer de l'**efficacité** (atteinte du résultat) : le reporting sert les deux.
 
@@ -179,9 +224,19 @@ L'ajustement est **opérationnel** ou **stratégique**, après décalage plan/r�
 
 > 📖 « La **motivation au travail** peut se définir comme un processus qui active, oriente, dynamise et maintient le comportement des individus vers la réalisation d'objectifs attendus » — les « moteurs » des collaborateurs.
 
-Le suivi nourrit trois besoins de la **pyramide de Maslow** : **reconnaissance** (performances soulignées ; récompenses — primes, mobilité interne, promotion, projets ambitieux), **réalisation/accomplissement** (concrétiser ses efforts), **appartenance à un collectif** (le suivi collectif renforce la cohésion). Un management qui **donne du sens** engage — engagement : propension à fournir et maintenir des efforts pour la réussite commune.
+Le suivi nourrit trois besoins de la **pyramide de Maslow** :
 
-Leviers collectifs : **team-building** (« renforcement d'équipe », né aux États-Unis au début des années 1980 : resserrer les liens sociaux par le jeu, sur un temps court), **challenges** commerciaux, **capitalisation sur les succès** à chaque étape validée. Les **organisations apprenantes** valorisent apprentissage continu et **droit à l'erreur** : l'échec devient occasion d'apprendre. Observatoire du Management 2021 (Oasys Mobilisation) : **68 %** des collaborateurs jugent leur manager « bon manager », + 5 points vs 2019.
+- **reconnaissance** (performances soulignées ; récompenses — primes, mobilité interne, promotion, projets ambitieux)
+- **réalisation/accomplissement** (concrétiser ses efforts)
+- **appartenance à un collectif** (le suivi collectif renforce la cohésion)
+
+Un management qui **donne du sens** engage — engagement : propension à fournir et maintenir des efforts pour la réussite commune.
+
+Leviers collectifs : **team-building** (« renforcement d'équipe », né aux États-Unis au début des années 1980 : resserrer les liens sociaux par le jeu, sur un temps court), **challenges** commerciaux, **capitalisation sur les succès** à chaque étape validée.
+
+Les **organisations apprenantes** valorisent apprentissage continu et **droit à l'erreur** : l'échec devient occasion d'apprendre.
+
+Observatoire du Management 2021 (Oasys Mobilisation) : **68 %** des collaborateurs jugent leur manager « bon manager », + 5 points vs 2019.
 
 ---
 
