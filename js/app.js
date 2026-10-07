@@ -415,7 +415,25 @@
       return (S.due[a.id]||0)-(S.due[b.id]||0);
     });
   }
-  function newCardsIn(list){ return activeCards(list).filter(function(c){ return !(S.box[c.id]); }); }
+  /* Les cartes neuves arrivent dans l'ordre : d'abord celles des résumés déjà lus,
+     puis le reste, chaque groupe suivant l'ordre du cours (bloc → résumé → carte).
+     Tri stable : à rang égal, l'ordre du fichier source est conservé. */
+  function rangResume(){
+    var m={}, k=0;
+    allResumesOrdered().forEach(function(r){ m[r.id]=k++; });
+    return m;
+  }
+  function newCardsIn(list){
+    var rang=rangResume(), n=Object.keys(rang).length;
+    var cards=activeCards(list).filter(function(c){ return !(S.box[c.id]); });
+    var cle=function(c){
+      var r=(c.resume in rang)?rang[c.resume]:n;
+      return (luEtat(c.resume)==="lu"?0:n+1)+r;
+    };
+    return cards.map(function(c,i){ return {c:c,i:i,k:cle(c)}; })
+      .sort(function(a,b){ return a.k-b.k || a.i-b.i; })
+      .map(function(x){ return x.c; });
+  }
   /* Ce qui reste du quota, réparti entre révisions et nouvelles. Une part du
      quota est réservée aux nouvelles (proportionnelle à ce qu'il reste à faire)
      pour que l'avancée dans le cours ne s'arrête pas dès qu'il y a du retard. */
@@ -496,7 +514,7 @@
      le neuf ne suffit pas, ou, sans plafond, quand il n'y a plus rien de neuf.
      Ces cartes de complément sont marquées « libres » : voir carteLibre(). */
   function serieTest(pool, max){
-    var neuves=shuffle(newCardsIn(pool));
+    var neuves=newCardsIn(pool);
     var vues=shuffle(activeCards(pool).filter(function(c){ return !!S.box[c.id]; }));
     var list, complement;
     if(max){ list=neuves.slice(0,max); complement=vues.slice(0, Math.max(0, max-list.length)); }
@@ -1402,6 +1420,7 @@
     });
     h+='</div>';
     h+='<div class="tiles">'+renderCardSortTile()+'</div>';
+    h+='<p><button class="linkf" data-cards-reset-all="1">Remettre toutes les flashcards à zéro</button></p>';
     return h;
   }
 
@@ -4014,6 +4033,14 @@
     });
     main.querySelectorAll("[data-cs-save-only]").forEach(function(el){
       el.addEventListener("click",function(){ enregistrerEdition(el.getAttribute("data-cs-save-only"), false); });
+    });
+    main.querySelectorAll("[data-cards-reset-all]").forEach(function(el){
+      el.addEventListener("click",function(){
+        if(!confirm("Remettre toutes les flashcards à zéro ? Boîtes, échéances, séries et historique de cartes seront effacés (sur tous les appareils synchronisés). Les cartes modifiées ou masquées sont conservées.")) return;
+        S.box={}; S.due={}; S.fail={}; S.cardRuns=[];
+        S.newToday={d:0,n:0}; S.doneToday={d:0,n:0}; S.streak={current:0,max:0,lastDate:0};
+        save(); render();
+      });
     });
     main.querySelectorAll("[data-cs-reset]").forEach(function(el){
       el.addEventListener("click",function(){ delete S.cardEdits[el.getAttribute("data-cs-reset")]; save(); render(); });
