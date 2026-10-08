@@ -42,7 +42,13 @@
     opts = opts || {};
     var headers = Object.assign({"Authorization":"token "+getSyncToken(), "Accept":"application/vnd.github+json"}, opts.headers||{});
     var res = await fetch(url, Object.assign({}, opts, {headers:headers}));
-    if(!res.ok){ var e=new Error("gh "+res.status); e.status=res.status; throw e; }
+    if(!res.ok){
+      var e=new Error("gh "+res.status); e.status=res.status;
+      /* ce que GitHub répond vraiment : sans ça, un 403 ne dit pas pourquoi */
+      e.scopes=res.headers.get("x-oauth-scopes");
+      try{ e.detail=(await res.json()).message||""; }catch(x){ e.detail=""; }
+      throw e;
+    }
     if(res.status===204) return null;
     return res.json();
   }
@@ -99,7 +105,11 @@
   function causeSync(e){
     var s=e&&e.status;
     if(s===401) return "jeton refusé — il a expiré ou a été révoqué, il faut en recréer un";
-    if(s===403) return "accès refusé — le jeton n'a pas la portée « gist », ou la limite d'appels est atteinte";
+    if(s===403){
+      var d=e.detail?" · GitHub répond : « "+e.detail+" »":"";
+      var sc=(e.scopes===null||e.scopes===undefined)?" · jeton sans portées (fine-grained ?)":(" · portées du jeton : "+(e.scopes||"aucune"));
+      return "accès refusé"+sc+d;
+    }
     if(s===404) return "sauvegarde introuvable sur GitHub";
     if(s===422) return "requête rejetée par GitHub";
     if(s) return "erreur GitHub "+s;
