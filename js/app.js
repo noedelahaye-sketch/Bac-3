@@ -1380,15 +1380,34 @@
       '<span class="cta-sub cta-retard">Facultatif</span></button>';
   }
 
-  function renderDashPanel(clickable){
-    var active=activeCards();
+  /* Par bloc : les mêmes révisions que les cartes du jour, jamais de carte neuve.
+     Le quota est celui du jour, partagé entre blocs : réviser ici fait descendre
+     le décompte global. */
+  function renderCtaBloc(list, numero){
+    var b=revisionsBreakdown(list), cls='tile cta-tile cta-rev';
+    if(b.quota){
+      return '<button class="'+cls+'" data-flashcards-revisions="jour:'+numero+'">Cartes du jour ('+b.quota+')'+
+        '<span class="cta-sub">Révisions de ce bloc</span>'+
+        (b.bonus?'<span class="cta-sub cta-retard">+ '+b.bonus+' en bonus</span>':'')+'</button>';
+    }
+    if(b.bonus){
+      return '<button class="'+cls+' cta-bonus" data-flashcards-revisions="bonus:'+numero+'">Continuer en bonus ('+b.bonus+')'+
+        '<span class="cta-sub">Révisions de ce bloc</span>'+
+        '<span class="cta-sub cta-retard">Facultatif</span></button>';
+    }
+    return '<div class="'+cls+' cta-vide">Cartes du jour'+
+      '<span class="cta-sub">Rien à revoir dans ce bloc</span></div>';
+  }
+
+  function renderDashPanel(clickable, list, titre){
+    var active=activeCards(list);
     var vus=active.filter(function(c){return (S.box[c.id]||0)>0;}).length;
     var maitr=active.filter(function(c){return (S.box[c.id]||0)>=4;}).length;
     var n1=active.filter(function(c){return (S.box[c.id]||0)===1 && !S.fail[c.id];}).length;
     var n2=active.filter(function(c){return (S.box[c.id]||0)===2;}).length;
     var n3=active.filter(function(c){return (S.box[c.id]||0)===3;}).length;
     var streakCur=streakDisplay(), streakMax=(S.streak&&S.streak.max)||0;
-    var h='<div class="mini dash-panel'+(clickable?' clickable" data-go="flashcards"':'"')+'><div class="lab">Tableau de bord global</div><div class="stats stats-top">';
+    var h='<div class="mini dash-panel'+(clickable?' clickable" data-go="flashcards"':'"')+'><div class="lab">'+(titre||'Tableau de bord global')+'</div><div class="stats stats-top">';
     h+='<div class="stat"><div class="num">'+vus+'<span class="on">/'+active.length+'</span></div><div class="lbl">cartes vues</div></div>';
     h+='<div class="stat"><div class="badge-stack">';
     h+='<span class="stat-badge lvl1">Niveau 1 &middot; '+n1+'</span>';
@@ -1396,7 +1415,7 @@
     h+='<span class="stat-badge lvl3">Niveau 3 &middot; '+n3+'</span>';
     h+='<span class="stat-badge lvl4">Maîtrisées : '+maitr+'</span>';
     h+='</div></div>';
-    h+='<div class="stat"><div class="num">'+streakCur+'</div><div class="lbl">jours d\'affilée</div><div class="dash-sub">Record : '+streakMax+'</div></div>';
+    if(!list) h+='<div class="stat"><div class="num">'+streakCur+'</div><div class="lbl">jours d\'affilée</div><div class="dash-sub">Record : '+streakMax+'</div></div>';
     h+='</div></div>';
     return h;
   }
@@ -1417,7 +1436,8 @@
         h+='<button class="tile" data-go-flashcards-bloc="'+b.numero+'">';
         h+='<span class="tile-code code">Bloc '+b.numero+'</span>';
         h+='<span class="tile-title">'+b.court+'</span>';
-        h+='<span class="tile-cas">'+n+' carte'+(n>1?'s':'')+'</span>';
+        var rv=revisionsBreakdown(activeCards().filter(function(c){return c.bloc===b.numero;})).total;
+        h+='<span class="tile-cas">'+n+' carte'+(n>1?'s':'')+(rv?' &middot; '+rv+' à revoir':'')+'</span>';
         h+='<span class="tile-quiz-btn" data-flashcards-bloc-random="'+b.numero+':10">Réviser 10 cartes</span>';
         h+='</button>';
       } else {
@@ -1444,14 +1464,9 @@
     var h='<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Flashcards",view:"flashcards"},{label:b.court}])+'</div>';
     h+='<h1 class="qhead-title">'+b.titre+'</h1><div class="qhead-code code">'+list.length+' cartes</div>';
 
-    var d=buildDueQueue(list).length;
-    var vus=list.filter(function(c){return (S.box[c.id]||0)>0;}).length;
-    var maitr=list.filter(function(c){return (S.box[c.id]||0)>=4;}).length;
-    h+='<div class="lab">Tableau de bord</div>';
-    h+='<div class="stats stats-top">';
-    h+='<div class="stat"><div class="num">'+d+'</div><div class="lbl">Cartes à revoir</div></div>';
-    h+='<div class="stat"><div class="num">'+vus+'<span class="on">/'+list.length+'</span></div><div class="lbl">Vues</div></div>';
-    h+='<div class="stat"><div class="num">'+maitr+'</div><div class="lbl">Maîtrisées</div></div>';
+    h+='<div class="grid-cta-dash">';
+    h+=renderCtaBloc(list, numero);
+    h+=renderDashPanel(false, list, 'Tableau de bord du bloc');
     h+='</div>';
     var runs=(S.cardRuns||[]).filter(function(r){return String(r.bloc)===String(numero);});
     if(runs.length){
@@ -4159,8 +4174,10 @@
     main.querySelectorAll("[data-flashcards-revisions]").forEach(function(el){
       el.addEventListener("click",function(e){
         e.stopPropagation();
-        var bonus=el.getAttribute("data-flashcards-revisions")==="bonus";
-        var rq=buildRevisionsQueue(FLASHCARDS, bonus);
+        var rp=el.getAttribute("data-flashcards-revisions").split(":");
+        var bonus=rp[0]==="bonus";
+        var pool=rp[1]?activeCards().filter(function(c){return String(c.bloc)===rp[1];}):FLASHCARDS;
+        var rq=buildRevisionsQueue(pool, bonus);
         if(!rq.length){ go("flashcards"); return; }
         SES={list:rq,i:0,show:false,ok:0,capped:!bonus,bonus:bonus};
         if(ROUTE.view!=="flashcards" && ROUTE.view!=="flashcardsBloc"){
