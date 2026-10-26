@@ -173,9 +173,16 @@
   .bilan-card:hover{border-color:var(--signal);}
   .bilan-card .num{font-family:var(--font-display);font-weight:700;font-size:28px;letter-spacing:-0.02em;line-height:1;}
   .bilan-card .lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.09em;font-weight:600;}
+  .stats.stats-top.stats-runs{margin-top:var(--space-32);}
   .grid-cta-dash{display:flex;gap:var(--space-12);align-items:stretch;flex-wrap:wrap;}
-  @media (max-width:720px){ .grid-cta-dash{flex-direction:column;} .grid-cta-dash .cta-tile{width:100%;} }
   .grid-cta-dash .cta-tile{width:200px;flex:0 0 auto;}
+  @media (max-width:720px){
+    .grid-cta-dash .cta-tile{width:calc(50% - var(--space-12)/2);flex:1 1 0;min-width:0;padding-left:var(--space-12);padding-right:var(--space-12);}
+    .grid-cta-dash .mini.dash-panel{width:100%;flex:1 1 100%;}
+    .grid-cta-dash.grid-bloc{flex-wrap:nowrap;}
+    .grid-cta-dash.grid-bloc .cta-tile{flex:0 0 38%;width:38%;}
+    .grid-cta-dash.grid-bloc .mini.dash-panel{flex:1 1 0;width:auto;min-width:0;padding-left:var(--space-12);padding-right:var(--space-12);}
+  }
   .dash-row{display:flex;justify-content:center;}
   .mini.dash-panel{cursor:default;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;width:auto;flex:0 1 auto;}
   .mini.dash-panel:hover{border-color:var(--line);}
@@ -208,8 +215,8 @@
   /* bonus : objectif atteint, donc plus de bleu d'appel à l'action */
   .tile.cta-tile.cta-bonus{--cta:#3F7A5E;font-size:17px;}
   /* révisions seules : une porte à côté du bleu du jour, pas un second appel */
-  .tile.cta-tile.cta-rev{--cta:var(--surface);border-color:var(--line);color:var(--ink);font-size:17px;}
-  .tile.cta-tile.cta-rev:hover{background:var(--surface);border-color:var(--signal);}
+  .tile.cta-tile.cta-rev{--cta:#EAB308;background:color-mix(in srgb, var(--cta) 8%, var(--surface));border:0.5px solid var(--cta);color:var(--ink);font-size:17px;}
+  .tile.cta-tile.cta-rev:hover{background:color-mix(in srgb, var(--cta) 14%, var(--surface));border-color:var(--cta);}
   .cta-rev .cta-sub{color:var(--muted);}
   .tile.cta-tile.cta-vide{--cta:var(--surface);border-color:var(--line);color:var(--muted);cursor:default;font-size:17px;}
   .cta-vide .cta-sub{color:var(--muted);}

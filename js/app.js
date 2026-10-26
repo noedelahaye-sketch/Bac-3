@@ -1464,7 +1464,7 @@
     var h='<div class="qbar">'+renderBreadcrumb([{label:"Apprendre",view:"apprendre"},{label:"Flashcards",view:"flashcards"},{label:b.court}])+'</div>';
     h+='<h1 class="qhead-title">'+b.titre+'</h1><div class="qhead-code code">'+list.length+' cartes</div>';
 
-    h+='<div class="grid-cta-dash">';
+    h+='<div class="grid-cta-dash grid-bloc">';
     h+=renderCtaBloc(list, numero);
     h+=renderDashPanel(false, list, 'Tableau de bord du bloc');
     h+='</div>';
@@ -1472,15 +1472,11 @@
     if(runs.length){
       var best=runs.reduce(function(a,r){var p=r.ok/r.n;return p>a?p:a;},0);
       var avg=runs.reduce(function(a,r){return a+r.ok/r.n;},0)/runs.length;
-      h+='<div class="stats stats-top">';
+      h+='<div class="stats stats-top stats-runs">';
       h+='<div class="stat"><div class="num">'+runs.length+'</div><div class="lbl">Séries réalisées</div></div>';
       h+='<div class="stat"><div class="num">'+Math.round(best*100)+'<span class="on">%</span></div><div class="lbl">Meilleure série</div></div>';
       h+='<div class="stat"><div class="num">'+Math.round(avg*100)+'<span class="on">%</span></div><div class="lbl">Score moyen</div></div>';
       h+='</div>';
-      h+='<div class="lab">Historique</div>';
-      runs.slice(-8).reverse().forEach(function(r){
-        h+='<div class="hrow"><span>'+r.d+'</span><b>'+r.ok+' / '+r.n+'</b></div>';
-      });
     } else h+='<p class="rappel">Aucune série réalisée pour ce bloc pour l\'instant.</p>';
 
     h+='<div class="lab">Par sujet</div><div class="tiles">';
