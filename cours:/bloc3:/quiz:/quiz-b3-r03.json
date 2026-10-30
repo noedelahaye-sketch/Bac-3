@@ -1,0 +1,811 @@
+{
+  "resume": "b3-r03",
+  "titre": "Les données clients : sources, outils et RGPD",
+  "bloc": 3,
+  "questions": [
+    {
+      "id": "b3-r03-qz-001",
+      "section": "1. La donnée et sa valeur",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce qui distingue une donnée d'une information ?",
+      "options": [
+        "la donnée est brute et sans signification en soi ; traitée et contextualisée, elle devient une information qui permet de décider",
+        "la donnée est toujours chiffrée, l'information toujours textuelle",
+        "l'information est collectée en ligne, la donnée hors ligne",
+        "il n'y a aucune différence"
+      ],
+      "reponse": 0,
+      "explication": "Une donnée (nombres, textes, images, sons) n'a pas de signification en soi. Une fois traitée et contextualisée, elle devient une information utile à la décision."
+    },
+    {
+      "id": "b3-r03-qz-002",
+      "section": "1. La donnée et sa valeur",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans quelle catégorie ranger des fichiers JSON ou XML ?",
+      "options": [
+        "les données structurées",
+        "les données non structurées",
+        "les données semi-structurées",
+        "les données tertiaires"
+      ],
+      "reponse": 2,
+      "explication": "JSON et XML sont semi-structurés. Les données structurées sont en bases relationnelles, faciles à interroger ; les non structurées (texte libre, images, audio, vidéo) demandent des techniques plus avancées."
+    },
+    {
+      "id": "b3-r03-qz-003",
+      "section": "1. La donnée et sa valeur",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque « V » de la donnée à la réponse à lui apporter.",
+      "colonne_a": [
+        "Volume",
+        "Variété",
+        "Véracité",
+        "Volatilité",
+        "Valeur"
+      ],
+      "colonne_b": [
+        "Mécanismes d'archivage",
+        "Stockage évolutif",
+        "Identifier les données à réelle valeur commerciale",
+        "Processus de correction des erreurs",
+        "Plateformes polyvalentes (Hadoop), normalisation"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "explication": "Le cours présente six V. Le sixième, la vélocité (vitesse de génération et de traitement), appelle des systèmes de collecte rapides."
+    },
+    {
+      "id": "b3-r03-qz-004",
+      "section": "1. La donnée et sa valeur",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Lesquelles sont des données offline ? (3 réponses)",
+      "options": [
+        "les formulaires prospects remplis sur un salon",
+        "les recherches en ligne",
+        "les passages en caisse",
+        "les données GPS en temps réel",
+        "les programmes de fidélité"
+      ],
+      "reponse": [
+        0,
+        2,
+        4
+      ],
+      "explication": "Les données offline ne sont pas connectées à un réseau : formulaires sur salon, passages en caisse, programmes de fidélité, systèmes de point de vente. Les recherches en ligne et le GPS en temps réel sont online."
+    },
+    {
+      "id": "b3-r03-qz-005",
+      "section": "1. La donnée et sa valeur",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Une entreprise qui achète une base de third party data à un marchand de données peut s'exonérer de sa responsabilité si la collecte initiale était illégale.",
+      "reponse": false,
+      "explication": "Faux. L'acheteur est entièrement responsable si la collecte était illégale : il ne peut pas s'exonérer. Pour les second party data, il faut aussi vérifier que le partenaire respecte le RGPD."
+    },
+    {
+      "id": "b3-r03-qz-006",
+      "section": "1. La donnée et sa valeur",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Le cours écrit « données secondaires (second party data) ». Pourquoi est-ce un piège ?",
+      "options": [
+        "parce que les deux termes désignent des données illégales",
+        "parce que « secondaire » désigne un niveau de traitement, alors que « second party » désigne une origine (un partenaire)",
+        "parce que les données secondaires sont toujours tertiaires",
+        "parce que les second party data n'existent pas"
+      ],
+      "reponse": 1,
+      "explication": "Secondaire = déjà collectée et traitée par d'autres pour d'autres besoins (niveau de traitement). Second party = venue d'une entreprise partenaire (origine). Deux classements différents."
+    },
+    {
+      "id": "b3-r03-qz-007",
+      "section": "1. La donnée et sa valeur",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelles données le cours désigne-t-il comme posant le plus de problèmes de vie privée ?",
+      "options": [
+        "les données primaires",
+        "les données de l'INSEE",
+        "les données comptables publiées",
+        "les données tertiaires, souvent issues des réseaux sociaux ou de Google sur des comportements génériques"
+      ],
+      "reponse": 3,
+      "explication": "Les données tertiaires ajoutent un niveau d'agrégation ou d'analyse, souvent à partir des réseaux sociaux ou de Google. Exemple de dérive : Cambridge Analytica."
+    },
+    {
+      "id": "b3-r03-qz-008",
+      "section": "1. La donnée et sa valeur",
+      "niveau": 3,
+      "format": "texte_a_trous",
+      "question": "Complétez le cas Cambridge Analytica.",
+      "texte": "Une application de quiz Facebook, téléchargée par environ {1} personnes, a aspiré les données de millions de leurs {2} sans consentement. Ces données ont servi à construire des profils {3} utilisés en politique. Le scandale éclate en {4}.",
+      "trous": [
+        "270 000",
+        "amis",
+        "psychographiques",
+        "2018"
+      ],
+      "explication": "L'application date de 2014 (Aleksandr Kogan). Les profils ont servi à la campagne de Trump en 2016 et au Brexit."
+    },
+    {
+      "id": "b3-r03-qz-009",
+      "section": "1. La donnée et sa valeur",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Une Big Data n'est pas forcément ouverte, et une Open Data n'est pas forcément énorme.",
+      "reponse": true,
+      "explication": "Vrai. Le Big Data se définit par l'ampleur, l'Open Data par l'usage ouvert (librement disponibles, sans restriction : INSEE, CNIL, bilans publiés par obligation légale)."
+    },
+    {
+      "id": "b3-r03-qz-010",
+      "section": "1. La donnée et sa valeur",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce qui distingue la Data Science du Big Data ?",
+      "options": [
+        "la Data Science ne traite que de petits volumes",
+        "la Data Science concerne les outils de stockage",
+        "le Big Data est une branche de la Data Science",
+        "le Big Data concerne les outils informatiques (émission, transmission, stockage), la Data Science les méthodes d'analyse"
+      ],
+      "reponse": 3,
+      "explication": "La Data Science, domaine multidisciplinaire, extrait des connaissances des données, mégadonnées ou non. Elle produit des Data Products, comme les moteurs de recommandation (Netflix, Spotify)."
+    },
+    {
+      "id": "b3-r03-qz-011",
+      "section": "2. Big Data, Fast Data, Smart Data",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque notion à l'exemple du cours.",
+      "colonne_a": [
+        "Big Data",
+        "Fast Data",
+        "Smart Data"
+      ],
+      "colonne_b": [
+        "La Poste : délais réduits, tournées optimisées",
+        "Netflix et House of Cards",
+        "Waze : trafic et dangers en temps réel"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Big Data = très gros volumes ; Fast Data = temps réel ; Smart Data = sélectionner à la source les informations stratégiques, sans stocker l'inutile."
+    },
+    {
+      "id": "b3-r03-qz-012",
+      "section": "2. Big Data, Fast Data, Smart Data",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "À quels « V » répond surtout le Smart Data ?",
+      "options": [
+        "volume et vélocité",
+        "variété et volatilité",
+        "volume et variété",
+        "valeur et véracité"
+      ],
+      "reponse": 3,
+      "explication": "Le Big Data répond surtout à volume, variété, vélocité ; le Smart Data à valeur et véracité."
+    },
+    {
+      "id": "b3-r03-qz-013",
+      "section": "2. Big Data, Fast Data, Smart Data",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Quel volume quotidien de données le cours cite-t-il pour 2022, et à quel rythme évolue-t-il ?",
+      "options": [
+        "2,5 trillions d'octets par jour, un volume qui double tous les deux ans",
+        "2,5 milliards d'octets par jour, stable",
+        "25 trillions d'octets par jour, qui double chaque année",
+        "250 000 octets par jour, en baisse"
+      ],
+      "reponse": 0,
+      "explication": "2,5 trillions d'octets par jour en 2022, doublant tous les deux ans. Le cours soulève aussi la question énergétique des data centers."
+    },
+    {
+      "id": "b3-r03-qz-014",
+      "section": "2. Big Data, Fast Data, Smart Data",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un hôpital privilégie la sécurité et l'intégrité des données, la vie privée et le respect de la loi. Quelle stratégie data adopte-t-il ?",
+      "options": [
+        "offensive",
+        "défensive",
+        "Big Opportunity",
+        "Smart Data"
+      ],
+      "reponse": 1,
+      "explication": "La stratégie défensive vise la sécurité et l'intégrité ; l'offensive, la compétitivité et la rentabilité (commerce de détail)."
+    },
+    {
+      "id": "b3-r03-qz-015",
+      "section": "2. Big Data, Fast Data, Smart Data",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Une entreprise a fortement investi dans le Big Data alors que son secteur est peu mature et produit trop peu de données. Dans quelle case de la matrice d'appétence se trouve-t-elle ?",
+      "options": [
+        "Big Observation",
+        "Big Problem",
+        "Big Risk",
+        "Big Opportunity"
+      ],
+      "reponse": 2,
+      "explication": "Big Risk : trop peu de données, investissement non rentabilisé. Big Observation = sans appétence, secteur peu mature ; Big Problem = sans appétence, secteur mature ; Big Opportunity = a investi, secteur mature."
+    },
+    {
+      "id": "b3-r03-qz-016",
+      "section": "2. Big Data, Fast Data, Smart Data",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Que suppose le fait de devenir data driven ? (3 réponses)",
+      "options": [
+        "l'engagement de la gouvernance, avec des objectifs suivis par KPI",
+        "l'abandon de toute intuition",
+        "la formation des collaborateurs",
+        "une infrastructure technologique adaptée",
+        "l'achat systématique de third party data"
+      ],
+      "reponse": [
+        0,
+        2,
+        3
+      ],
+      "explication": "Quatre conditions : engagement de la gouvernance, formation, infrastructure, compréhension approfondie des clients. Être data driven, c'est décider sur l'analyse plutôt que sur l'intuition seule."
+    },
+    {
+      "id": "b3-r03-qz-017",
+      "section": "3. Analyser et stocker les données online",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que le Big Quali ?",
+      "options": [
+        "la capacité à recueillir et analyser une masse de données qualitatives (avis, commentaires) pour saisir toutes les facettes d'une marque",
+        "un panel qualitatif de très grande taille",
+        "un label de qualité des données",
+        "une étude qualitative réalisée par un cabinet"
+      ],
+      "reponse": 0,
+      "explication": "Le Big Quali s'appuie sur le NLP (traitement automatisé du langage naturel) et le machine learning pour détecter thèmes récurrents, opinions et sentiments."
+    },
+    {
+      "id": "b3-r03-qz-018",
+      "section": "3. Analyser et stocker les données online",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le marketing participatif comporte une dimension affective : la confiance et la fidélité poussent les clients à produire du contenu.",
+      "reponse": true,
+      "explication": "Vrai. Il a une dimension objective (messages et outils qui incitent à participer) et une dimension affective. Exemple : Hasbro fait voter le public sur 16 nouvelles cartes du Monopoly."
+    },
+    {
+      "id": "b3-r03-qz-019",
+      "section": "3. Analyser et stocker les données online",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 4 étapes du modèle Dataflow de data visualisation.",
+      "elements": [
+        "Mapping (tables associées à des éléments visuels)",
+        "Collecte des données brutes",
+        "Structuration visuelle",
+        "Transformation (métadonnées, élimination de l'inutile, tables)"
+      ],
+      "ordre": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "explication": "Collecte → transformation → mapping → structuration visuelle. La data visualisation est un outil d'aide à la décision et de communication."
+    },
+    {
+      "id": "b3-r03-qz-020",
+      "section": "3. Analyser et stocker les données online",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Lesquelles font partie des 6 bonnes pratiques du data cleaning ? (3 réponses)",
+      "options": [
+        "supprimer les doublons",
+        "conserver toutes les données, même inexactes",
+        "valider après nettoyage",
+        "communiquer les procédures aux équipes",
+        "analyser avant de nettoyer"
+      ],
+      "reponse": [
+        0,
+        2,
+        3
+      ],
+      "explication": "Surveiller les erreurs (registre), normaliser et automatiser, supprimer les doublons, valider après nettoyage, analyser une fois les données propres, communiquer les procédures."
+    },
+    {
+      "id": "b3-r03-qz-021",
+      "section": "3. Analyser et stocker les données online",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle solution stocke à bas coût des données brutes, structurées ou non, sans les transformer ?",
+      "options": [
+        "le Data Warehouse",
+        "le CRM",
+        "le Data Lake",
+        "le tableur"
+      ],
+      "reponse": 2,
+      "explication": "Le Data Lake stocke des données brutes, sans transformation ; il est hautement évolutif. Le Data Warehouse est centralisé et structuré, avec des données transformées pour le reporting et l'analyse."
+    },
+    {
+      "id": "b3-r03-qz-022",
+      "section": "3. Analyser et stocker les données online",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Un seul avis très négatif peut suffire à détourner des internautes d'une marque.",
+      "reponse": true,
+      "explication": "Vrai. Le feedback digital est riche mais volatil : copié, amplifié, déformé. Les avis restent subjectifs (avis contradictoires sur un même restaurant TripAdvisor). Il faut répondre aux mécontents et piloter les avis."
+    },
+    {
+      "id": "b3-r03-qz-023",
+      "section": "4. Collecter des données marketing multicanales",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelles colonnes doit comporter le tableau d'inventaire des sources de données ?",
+      "options": [
+        "canal, données générées, format, fréquence de mise à jour, limitations, responsable interne",
+        "canal, budget, nombre de clics, CA",
+        "nom du prestataire, prix, date de contrat",
+        "segment, persona, message, KPI"
+      ],
+      "reponse": 0,
+      "explication": "Méthode : lister chaque canal, identifier ses outils de mesure, documenter le format, noter les limitations ; puis un schéma visuel des flux pour repérer convergences et ruptures."
+    },
+    {
+      "id": "b3-r03-qz-024",
+      "section": "4. Collecter des données marketing multicanales",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la procédure de configuration du tracking pour chaque outil.",
+      "elements": [
+        "Test de déclenchement (mode Debug)",
+        "Configuration des événements clés",
+        "Documentation interne",
+        "Installation via Google Tag Manager"
+      ],
+      "ordre": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "explication": "Google Tag Manager centralise les balises ; on configure les événements, on teste, on documente."
+    },
+    {
+      "id": "b3-r03-qz-025",
+      "section": "4. Collecter des données marketing multicanales",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "À quoi sert la Conversions API (CAPI) de Facebook ?",
+      "options": [
+        "à acheter des données tierces",
+        "à mesurer le NPS",
+        "à transmettre les événements côté serveur pour limiter les pertes dues aux bloqueurs",
+        "à anonymiser les adresses IP"
+      ],
+      "reponse": 2,
+      "explication": "Le Facebook Pixel doit être installé sur toutes les pages, y compris la confirmation de commande ; la CAPI, côté serveur, compense les pertes liées aux bloqueurs."
+    },
+    {
+      "id": "b3-r03-qz-026",
+      "section": "4. Collecter des données marketing multicanales",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque critère de qualité des données à la question qu'il pose.",
+      "colonne_a": [
+        "Exactitude",
+        "Complétude",
+        "Cohérence",
+        "Fraîcheur",
+        "Granularité"
+      ],
+      "colonne_b": [
+        "Les données sont-elles assez récentes ?",
+        "Les sources concordent-elles entre elles ?",
+        "Les données reflètent-elles la réalité ?",
+        "Le niveau de détail permet-il de segmenter ?",
+        "Manque-t-il des données nécessaires au calcul des KPI ?"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "explication": "Audit mensuel : chaque source notée de 1 à 5 sur chaque critère, action corrective sous 3/5."
+    },
+    {
+      "id": "b3-r03-qz-027",
+      "section": "4. Collecter des données marketing multicanales",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Google Analytics compte 1 247 transactions contre 1 329 commandes réelles chez TechnoSport. Laquelle n'est PAS une cause d'écart identifiée par le cours ?",
+      "options": [
+        "des pages de confirmation non trackées (virement)",
+        "une redirection PayPal mal configurée",
+        "le refus de cookies",
+        "un taux de rebond trop élevé"
+      ],
+      "reponse": 3,
+      "explication": "Les trois causes : pages de confirmation non trackées, redirection PayPal mal configurée, refus de cookies. Après correction, l'écart passe de plus de 6 % à moins de 2 %, avec une réconciliation mensuelle."
+    },
+    {
+      "id": "b3-r03-qz-028",
+      "section": "4. Collecter des données marketing multicanales",
+      "niveau": 3,
+      "format": "texte_a_trous",
+      "question": "Complétez les seuils d'alerte automatique proposés par le module collecte.",
+      "texte": "Trafic en baisse de {1} sur la moyenne des 7 derniers jours ; conversions en hausse de {2} (doublons, bug) ; taux de rebond supérieur à {3}.",
+      "trous": [
+        "30 %",
+        "200 %",
+        "85 %"
+      ],
+      "explication": "Ces alertes s'affichent dans un tableau de bord vert, orange, rouge (Looker Studio et Sheets)."
+    },
+    {
+      "id": "b3-r03-qz-029",
+      "section": "4. Collecter des données marketing multicanales",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Face au blocage des cookies tiers par les navigateurs, le cours recommande de privilégier les données first-party.",
+      "reponse": true,
+      "explication": "Vrai. Safari bloque les cookies tiers et iOS 14.5 exige un consentement pour le suivi inter-applications : d'où la priorité au first-party. Autre limite : échantillonnage de GA et quotas d'API des outils gratuits."
+    },
+    {
+      "id": "b3-r03-qz-030",
+      "section": "4. Collecter des données marketing multicanales",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Quelles durées de conservation le module collecte cite-t-il pour les cookies analytics et les données de prospection ?",
+      "options": [
+        "26 mois et 3 ans",
+        "13 mois et 25 mois",
+        "6 mois et 12 mois",
+        "25 mois et 13 mois"
+      ],
+      "reponse": 1,
+      "explication": "Module collecte : 13 mois maximum pour les cookies analytics, 25 mois pour la prospection. Le module RGPD paramètre GA à 26 mois maximum. Cite la source de la durée retenue."
+    },
+    {
+      "id": "b3-r03-qz-031",
+      "section": "4. Collecter des données marketing multicanales",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Au foodtruck PrepMyMeal, comment relier un scan de QR code à une inscription puis à un réachat dans Google Analytics et le CRM ?",
+      "options": [
+        "en tagant les QR codes avec des paramètres UTM et en réconciliant les ventes caisse avec les inscriptions",
+        "en achetant une base de third party data",
+        "en supprimant le bandeau cookies",
+        "en ne gardant que les avis Trustpilot"
+      ],
+      "reponse": 0,
+      "explication": "Des QR codes tracés avec des UTM (par ville) et une réconciliation entre caisse, tablettes, CRM et inscriptions app font converger les données."
+    },
+    {
+      "id": "b3-r03-qz-032",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Une entreprise américaine sans aucun établissement en Europe n'est pas concernée par le RGPD, même si elle traite des données de résidents européens.",
+      "reponse": false,
+      "explication": "Faux. Le RGPD s'applique à toute organisation, publique ou privée, même hors UE, dès lors qu'elle traite des données de résidents européens."
+    },
+    {
+      "id": "b3-r03-qz-033",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quel est le montant maximal des sanctions RGPD ?",
+      "options": [
+        "2 % du CA national ou 10 millions d'euros, le montant le plus faible",
+        "10 % du CA mondial annuel",
+        "1 million d'euros forfaitaire",
+        "4 % du CA mondial annuel ou 20 millions d'euros, le montant le plus élevé"
+      ],
+      "reponse": 3,
+      "explication": "Jusqu'à 4 % du CA mondial annuel ou 20 millions d'euros, le montant le plus élevé. Exemple cité : Carrefour, 600 000 € pour défaut de transparence."
+    },
+    {
+      "id": "b3-r03-qz-034",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque traitement à sa base légale la plus adaptée.",
+      "colonne_a": [
+        "Envoi d'une newsletter promotionnelle",
+        "Suivi d'une commande et livraison",
+        "Conservation des factures",
+        "Optimisation du site et personnalisation (clients existants)"
+      ],
+      "colonne_b": [
+        "Obligation légale",
+        "Intérêt légitime, avec test de proportionnalité",
+        "Consentement",
+        "Exécution d'un contrat"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Six bases légales : consentement, contrat, obligation légale, intérêts vitaux, mission de service public, intérêt légitime. L'intérêt légitime exige un test en 3 colonnes : intérêt, nécessité, équilibre."
+    },
+    {
+      "id": "b3-r03-qz-035",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La géolocalisation précise et le tracking comportemental peuvent reposer sur l'intérêt légitime, sans consentement explicite.",
+      "reponse": false,
+      "explication": "Faux. D'après les corrigés du module, l'historique d'achats et les préférences déclarées peuvent relever de l'intérêt légitime, mais la géolocalisation précise et le tracking comportemental exigent un consentement explicite."
+    },
+    {
+      "id": "b3-r03-qz-036",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque critère du consentement RGPD à ce qu'il impose.",
+      "colonne_a": [
+        "Libre",
+        "Spécifique",
+        "Éclairé",
+        "Univoque"
+      ],
+      "colonne_b": [
+        "Une case par finalité",
+        "Phrases affirmatives, sans double négation",
+        "Aucune case pré-cochée, pas d'accès conditionné",
+        "Dire qui collecte, pourquoi, comment, combien de temps, avec qui"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Le consentement est aussi révocable à tout moment, et la charge de la preuve incombe à l'entreprise (trace horodatée, double opt-in)."
+    },
+    {
+      "id": "b3-r03-qz-037",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un bandeau cookies affiche un grand bouton « Accepter » et cache le lien « Refuser ». Qu'en dit le cours ?",
+      "options": [
+        "c'est autorisé si la politique de confidentialité est accessible",
+        "c'est une bonne pratique d'optimisation du taux de consentement",
+        "c'est autorisé pour les cookies analytics",
+        "c'est une violation : pas de design manipulateur"
+      ],
+      "reponse": 3,
+      "explication": "On peut optimiser la clarté et mettre en avant les bénéfices, jamais forcer le choix. Le bandeau doit offrir trois choix clairs : accepter tout, refuser, personnaliser."
+    },
+    {
+      "id": "b3-r03-qz-038",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Une entreprise peut refuser une demande d'effacement de données si elle doit les conserver pour une obligation comptable, à condition de documenter sa décision.",
+      "reponse": true,
+      "explication": "Vrai. Le droit à l'effacement n'est pas absolu : on peut refuser pour une obligation légale (comptabilité, garantie), la liberté d'expression ou la défense en justice."
+    },
+    {
+      "id": "b3-r03-qz-039",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Dans quel délai maximal faut-il répondre à une demande d'exercice de droits ?",
+      "options": [
+        "72 heures",
+        "15 jours",
+        "30 jours",
+        "3 mois"
+      ],
+      "reponse": 2,
+      "explication": "30 jours maximum. Organisation : une adresse e-mail dédiée et un formulaire accessible sur toutes les pages. Ne pas confondre avec les 72 heures de notification d'une violation à la CNIL."
+    },
+    {
+      "id": "b3-r03-qz-040",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel document le cours présente-t-il comme « la pierre angulaire » de la conformité RGPD ?",
+      "options": [
+        "la politique cookies",
+        "le registre des traitements",
+        "le contrat de sous-traitance",
+        "l'AIPD"
+      ],
+      "reponse": 1,
+      "explication": "Le registre des traitements (modèle CNIL) : une fiche par traitement (base légale, finalités, données, personnes, destinataires, durées, sécurité), révisée chaque trimestre. C'est l'outil du principe d'accountability."
+    },
+    {
+      "id": "b3-r03-qz-041",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une AIPD est obligatoire quand un traitement remplit au moins combien des 9 critères de la CNIL ?",
+      "options": [
+        "1",
+        "2",
+        "5",
+        "9"
+      ],
+      "reponse": 1,
+      "explication": "Au moins 2 des 9 critères (scoring, décision automatique, surveillance, données sensibles, grande échelle, croisement de données, personnes vulnérables, nouvelle technologie, accès à un service), ou si le traitement figure sur la liste CNIL. Un scoring comportemental à grande échelle déclenche l'AIPD."
+    },
+    {
+      "id": "b3-r03-qz-042",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque cookie à son niveau de consentement.",
+      "colonne_a": [
+        "Panier, authentification, sécurité",
+        "Amélioration de l'expérience sans tracking",
+        "Publicité ciblée et profilage"
+      ],
+      "colonne_b": [
+        "Consentement explicite",
+        "Exemptés de consentement",
+        "Consentement simplifié"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Poursuivre la navigation ne vaut plus consentement. Une CMP (Didomi, Axeptio) gère le consentement ; en cas de refus, on bascule sur un ciblage contextuel."
+    },
+    {
+      "id": "b3-r03-qz-043",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Quand PrepMyMeal confie ses livraisons à un transporteur sous-traitant, c'est le transporteur qui devient seul responsable de la protection des données de livraison.",
+      "reponse": false,
+      "explication": "Faux. Le sous-traitant traite les données pour le compte du responsable, selon ses instructions ; le responsable reste garant. Il faut des clauses RGPD au contrat, un droit d'audit, un référent chez le sous-traitant."
+    },
+    {
+      "id": "b3-r03-qz-044",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Dans quel délai notifier une violation de données à la CNIL ?",
+      "options": [
+        "72 heures, sauf absence de risque pour les personnes",
+        "30 jours",
+        "immédiatement, sans exception",
+        "à la fin de l'enquête interne"
+      ],
+      "reponse": 0,
+      "explication": "72 heures, en précisant la nature de la violation, les catégories et le nombre de personnes, les conséquences, les mesures prises. Les personnes concernées doivent aussi être informées."
+    },
+    {
+      "id": "b3-r03-qz-045",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 3,
+      "format": "qcm_multiple",
+      "question": "Lesquels font partie du « RGPD Check » en 10 points avant chaque campagne ? (3 réponses)",
+      "options": [
+        "la base légale",
+        "le taux d'ouverture prévu",
+        "la durée de conservation",
+        "la conformité des sous-traitants",
+        "le budget média"
+      ],
+      "reponse": [
+        0,
+        2,
+        3
+      ],
+      "explication": "Les 10 points : base légale, mentions d'information, consentement, durée de conservation, sécurisation, registre, droits des utilisateurs, sous-traitants, cookies, documentation de preuve."
+    },
+    {
+      "id": "b3-r03-qz-046",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Expliquez en quoi la cartographie du parcours PrepMyMeal respecte le RGPD (Q3). Donnez la méthode et au moins trois points de contact traités.",
+      "attendus": [
+        "Méthode : reprendre les points de contact de la cartographie un par un (donnée, base légale, information/consentement, durée)",
+        "Inscription via QR code ou site : consentement spécifique, case non cochée, double opt-in, preuve horodatée",
+        "Commande et livraison : exécution du contrat ; transporteur = sous-traitant encadré par contrat",
+        "Site, GA, heatmaps : bandeau cookies à 3 choix via une CMP, IP anonymisée, conservation limitée",
+        "Tablettes et avis : information, réponses anonymisées",
+        "Obligations transversales : registre, droits (30 jours), sécurité, notification sous 72 h, AIPD si scoring"
+      ],
+      "explication": "Le critère : « les processus de collecte et d'analyse des données respectent les exigences de la RGPD ». Ne pas réciter le cours sans le relier aux points de contact."
+    }
+  ]
+}

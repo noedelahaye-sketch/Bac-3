@@ -1,0 +1,796 @@
+{
+  "resume": "b3-r09",
+  "titre": "Analyser les écarts et formuler des recommandations",
+  "bloc": 3,
+  "questions": [
+    {
+      "id": "b3-r09-qz-001",
+      "section": "1. Analyser un écart en 4 étapes",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle question se poser avant d'analyser un écart de performance ?",
+      "options": [
+        "« Qui est responsable ? »",
+        "« Les concurrents ont-ils fait mieux ? »",
+        "« Combien coûtera la correction ? »",
+        "« Mon objectif était-il réaliste et fondé sur des données fiables ? »"
+      ],
+      "reponse": 3,
+      "explication": "Un écart ne signale pas toujours un problème de performance : il peut révéler un défaut de projection ou une méconnaissance du marché."
+    },
+    {
+      "id": "b3-r09-qz-002",
+      "section": "1. Analyser un écart en 4 étapes",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 4 étapes de l'analyse d'un écart.",
+      "elements": [
+        "Segmenter l'analyse",
+        "Formuler des hypothèses vérifiables",
+        "Quantifier l'écart en absolu et en relatif",
+        "Évaluer la significativité de l'écart"
+      ],
+      "ordre": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "explication": "Quantifier → significativité → segmenter → hypothèses. Cette démarche évite les conclusions hâtives et prépare l'investigation des causes."
+    },
+    {
+      "id": "b3-r09-qz-003",
+      "section": "1. Analyser un écart en 4 étapes",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Le CAC réel est de 42 € pour un objectif de 50 €. Quels sont l'écart absolu et l'écart relatif ?",
+      "options": [
+        "+8 € et +19 %",
+        "−8 € et −19 %",
+        "−8 € et −16 %",
+        "+8 € et +16 %"
+      ],
+      "reponse": 2,
+      "explication": "Absolu = 42 − 50 = −8 € ; relatif = −8 / 50 × 100 = −16 %. Pour un coût, cet écart négatif est favorable."
+    },
+    {
+      "id": "b3-r09-qz-004",
+      "section": "1. Analyser un écart en 4 étapes",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Le taux de conversion e-mail est de 2,1 % pour un objectif de 2,8 %. Comment exprimer l'écart ?",
+      "options": [
+        "−0,7 point, soit −25 % en relatif",
+        "−0,7 %, soit −0,7 point",
+        "−25 points",
+        "+0,7 point"
+      ],
+      "reponse": 0,
+      "explication": "Pour un taux, l'écart absolu s'exprime en points (2,1 − 2,8 = −0,7 point) et l'écart relatif en % (−0,7 / 2,8 = −25 %). Ne jamais se contenter de « en dessous de l'objectif »."
+    },
+    {
+      "id": "b3-r09-qz-005",
+      "section": "1. Analyser un écart en 4 étapes",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Pour un temps d'attente, un écart négatif entre le réalisé et l'objectif est favorable.",
+      "reponse": true,
+      "explication": "Vrai : attendre moins que prévu est une bonne nouvelle. Pour un CA ou un taux de conversion, un écart négatif est défavorable. Toujours préciser le sens de l'écart."
+    },
+    {
+      "id": "b3-r09-qz-006",
+      "section": "1. Analyser un écart en 4 étapes",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Pour juger si un écart est significatif, que faut-il regarder ? (3 réponses)",
+      "options": [
+        "sa durée",
+        "sa récurrence",
+        "le budget de la campagne",
+        "son amplitude par rapport aux variations habituelles",
+        "le nombre de canaux utilisés"
+      ],
+      "reponse": [
+        0,
+        1,
+        3
+      ],
+      "explication": "Une variation peut venir de la saisonnalité, d'un événement externe ou d'un petit échantillon. Outils : un test de signifiance (type t-test) ou au moins la médiane des 3 mois précédents."
+    },
+    {
+      "id": "b3-r09-qz-007",
+      "section": "1. Analyser un écart en 4 étapes",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez les règles de segmentation d'un écart.",
+      "texte": "Selon le principe de {1}, 20 % des causes expliquent 80 % de la variation. Trois dimensions suffisent en général : le canal, la {2} et le segment client. Chaque segment doit compter au moins {3} événements pour être fiable.",
+      "trous": [
+        "Pareto",
+        "temporalité",
+        "100"
+      ],
+      "explication": "Trop de sous-segments rendent les conclusions non significatives. Outil : une matrice croisée segments × canaux."
+    },
+    {
+      "id": "b3-r09-qz-008",
+      "section": "1. Analyser un écart en 4 étapes",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Laquelle est une hypothèse explicative « actionnable » au sens du module ?",
+      "options": [
+        "« Les utilisateurs mobiles sont moins engagés »",
+        "« Le marché va mal »",
+        "« La baisse sur mobile coïncide avec la mise à jour du site »",
+        "« Les clients ont changé »"
+      ],
+      "reponse": 2,
+      "explication": "Une bonne hypothèse est concrète et vérifiable, fondée sur les données et les événements de la période."
+    },
+    {
+      "id": "b3-r09-qz-009",
+      "section": "1. Analyser un écart en 4 étapes",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Conversion e-mail globale à 2,1 % (objectif 2,8 %), mais 3,4 % chez les nouveaux abonnés et 1,2 % chez les abonnés de plus de 6 mois. Où est le problème ?",
+      "options": [
+        "dans l'acquisition de nouveaux abonnés",
+        "dans la rétention des abonnés anciens : le contenu ne se renouvelle pas assez",
+        "dans le budget publicitaire",
+        "dans le taux d'ouverture global"
+      ],
+      "reponse": 1,
+      "explication": "La segmentation transforme un problème vague en action ciblée : personnaliser pour les anciens plutôt que refaire toute la stratégie e-mail."
+    },
+    {
+      "id": "b3-r09-qz-010",
+      "section": "2. Contextualiser : benchmarks, cycles, événements",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Une conversion de 2,8 % pour un objectif de 3,2 % peut être une excellente performance.",
+      "reponse": true,
+      "explication": "Vrai, si la moyenne sectorielle est de 2,1 %. Une performance ne s'évalue jamais dans l'absolu : le benchmark évite l'erreur « sous l'objectif donc en échec »."
+    },
+    {
+      "id": "b3-r09-qz-011",
+      "section": "2. Contextualiser : benchmarks, cycles, événements",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelles caractéristiques doit avoir une source de benchmark ?",
+      "options": [
+        "être récente (moins de 2 ans) et de la même zone géographique",
+        "être gratuite",
+        "venir d'un concurrent direct",
+        "dater d'au moins 5 ans pour être stable"
+      ],
+      "reponse": 0,
+      "explication": "Sources citées : rapports Google par secteur, études Mailchimp, Facebook Business, Salesforce, Statista, Kantar. Concurrents : SEMrush, Ahrefs, SimilarWeb."
+    },
+    {
+      "id": "b3-r09-qz-012",
+      "section": "2. Contextualiser : benchmarks, cycles, événements",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque situation au diagnostic le plus probable.",
+      "colonne_a": [
+        "Résultats dans la fourchette historique et proches du secteur",
+        "Résultats en baisse alors que les concurrents progressent",
+        "Trafic +10 % alors que le marché fait +25 %"
+      ],
+      "colonne_b": [
+        "Perte de part de marché malgré la hausse",
+        "Objectifs trop ambitieux",
+        "Cause interne"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "La lecture croisée historique interne / benchmark externe situe les responsabilités au bon niveau."
+    },
+    {
+      "id": "b3-r09-qz-013",
+      "section": "2. Contextualiser : benchmarks, cycles, événements",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle visualisation révèle instantanément les créneaux jour × heure les plus performants ?",
+      "options": [
+        "un camembert",
+        "une heat map temporelle",
+        "un graphique en aires empilées",
+        "un tableau brut"
+      ],
+      "reponse": 1,
+      "explication": "Heat maps temporelles = patterns jour/heure ; courbes avec moyenne mobile = tendances sans bruit ; aires empilées = évolution de la répartition entre canaux."
+    },
+    {
+      "id": "b3-r09-qz-014",
+      "section": "2. Contextualiser : benchmarks, cycles, événements",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Une baisse du trafic organique le jour de la mise à jour d'un article prouve que cette mise à jour en est la cause.",
+      "reponse": false,
+      "explication": "Faux : attention aux corrélations trompeuses. Une mise à jour de l'algorithme Google le même jour peut être la vraie cause. Il faut isoler chaque variable et penser aux effets retardés."
+    },
+    {
+      "id": "b3-r09-qz-015",
+      "section": "2. Contextualiser : benchmarks, cycles, événements",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelles colonnes contient le journal des événements marketing ?",
+      "options": [
+        "Date, Événement, Hypothèse d'impact, KPI cible",
+        "Canal, Budget, Clics, CA",
+        "Client, Réclamation, Réponse",
+        "Objectif, Réalisé, Écart"
+      ],
+      "reponse": 0,
+      "explication": "On y consigne lancements de campagnes, modifications du site, changements de prix, actions concurrentes et événements externes, pour une analyse avant/après rigoureuse, idéalement avec un groupe de contrôle."
+    },
+    {
+      "id": "b3-r09-qz-016",
+      "section": "2. Contextualiser : benchmarks, cycles, événements",
+      "niveau": 3,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la construction d'une prévision simple.",
+      "elements": [
+        "Ajouter les variations saisonnières (coefficients par mois)",
+        "Intégrer les événements prévisibles comme des chocs ponctuels",
+        "Identifier la tendance de fond sur 12 à 24 mois (régression linéaire)"
+      ],
+      "ordre": [
+        2,
+        0,
+        1
+      ],
+      "explication": "Horizon fiable : 3 à 6 mois. Toujours présenter des fourchettes, réviser avec les données réelles, décliner en capacité (renfort du SAV, ressources commerciales)."
+    },
+    {
+      "id": "b3-r09-qz-017",
+      "section": "3. Interpréter : signal ou bruit, corrélation ou cause",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quelles techniques permettent de distinguer un signal faible d'une fluctuation normale ? (3 réponses)",
+      "options": [
+        "une moyenne mobile sur 30 jours",
+        "l'analyse des écarts-types",
+        "la comparaison avec l'année précédente",
+        "le nombre de likes",
+        "la suppression des valeurs extrêmes"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Ces trois techniques séparent l'effet saisonnier du changement structurel. Exemple : le fitness baisse de 20 % en août et monte de 40 % en janvier."
+    },
+    {
+      "id": "b3-r09-qz-018",
+      "section": "3. Interpréter : signal ou bruit, corrélation ou cause",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Le trafic a chuté de 15 % en une semaine. Que vérifier avant de déclencher une alerte générale ?",
+      "options": [
+        "le contexte saisonnier, les sources concernées et les segments touchés",
+        "le budget de l'année",
+        "le salaire des équipes",
+        "rien : il faut alerter immédiatement"
+      ],
+      "reponse": 0,
+      "explication": "Si la baisse ne touche qu'un canal ou un segment, on analyse cette niche avant d'agir globalement."
+    },
+    {
+      "id": "b3-r09-qz-019",
+      "section": "3. Interpréter : signal ou bruit, corrélation ou cause",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que la « triangulation des données » ?",
+      "options": [
+        "comparer trois concurrents",
+        "diviser l'échantillon en trois",
+        "calculer trois indicateurs",
+        "croiser au moins deux sources ou méthodes (quanti et quali, interne et externe, CRM et web analytics) pour valider une hypothèse"
+      ],
+      "reponse": 3,
+      "explication": "Elle limite les biais d'interprétation. Ensuite, un test A/B sur un petit segment confirme la causalité avant de généraliser."
+    },
+    {
+      "id": "b3-r09-qz-020",
+      "section": "3. Interpréter : signal ou bruit, corrélation ou cause",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une optimisation a généré 63 000 € de CA additionnel pour un investissement de 12 000 €. Quel est le ROI ?",
+      "options": [
+        "525 %",
+        "425 %",
+        "19 %",
+        "5,25"
+      ],
+      "reponse": 1,
+      "explication": "ROI = (CA additionnel − coût) / coût × 100 = (63 000 − 12 000) / 12 000 = 425 %. Le rapport 63 000 / 12 000 = 5,25 serait une logique de ROAS."
+    },
+    {
+      "id": "b3-r09-qz-021",
+      "section": "3. Interpréter : signal ou bruit, corrélation ou cause",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Suivre les clics et les impressions suffit à défendre le budget marketing face à la direction.",
+      "reponse": false,
+      "explication": "Faux. Rester sur les métriques marketing fragilise le marketing dans les arbitrages budgétaires. Établir des liens chiffrés entre actions et résultats business le fait passer de centre de coût à centre de profit."
+    },
+    {
+      "id": "b3-r09-qz-022",
+      "section": "4. Trouver la cause",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 5 étapes de l'investigation d'une anomalie.",
+      "elements": [
+        "Tester les hypothèses sur des données granulaires",
+        "Documenter les conclusions",
+        "Circonscrire le problème (quand, quels segments, quelle ampleur)",
+        "Valider par des analyses complémentaires",
+        "Inventorier les changements internes et externes de la période"
+      ],
+      "ordre": [
+        2,
+        4,
+        0,
+        3,
+        1
+      ],
+      "explication": "Pour départager deux hypothèses : « si X, alors test Y » (un bug toucherait seulement le mobile ; un changement d'algorithme, tous les canaux payants)."
+    },
+    {
+      "id": "b3-r09-qz-023",
+      "section": "4. Trouver la cause",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans l'exemple des 5 pourquoi de TechnoSport, à quoi aboutit le cinquième pourquoi ?",
+      "options": [
+        "au prix trop élevé",
+        "à un problème de ciblage publicitaire",
+        "à la concurrence d'Apple",
+        "à l'absence d'audit technique prévu après la refonte du site"
+      ],
+      "reponse": 3,
+      "explication": "Conversion −20 % → moins d'ajouts au panier → moins de temps sur les pages → images lentes → non optimisées pour mobile → pas d'audit post-refonte. Un 6e pourquoi remonte à une cause organisationnelle : des process qualité jamais formalisés."
+    },
+    {
+      "id": "b3-r09-qz-024",
+      "section": "4. Trouver la cause",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Dans la méthode des 5 pourquoi, chaque réponse peut reposer sur l'intuition de l'équipe, du moment qu'on va jusqu'au cinquième pourquoi.",
+      "reponse": false,
+      "explication": "Faux. Chaque « pourquoi » doit s'appuyer sur une donnée ; si elle manque, on met en place son suivi. On peut compléter par le diagramme d'Ishikawa."
+    },
+    {
+      "id": "b3-r09-qz-025",
+      "section": "4. Trouver la cause",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Lequel de ces segments respecte les trois règles d'une segmentation utile ?",
+      "options": [
+        "« clients de plus de 35 ans »",
+        "« tous les clients »",
+        "« clients VIP urbains, 30-45 ans, ayant commandé 3 fois en 6 mois »",
+        "« clients qui ont visité le site une fois »"
+      ],
+      "reponse": 2,
+      "explication": "Un segment utile représente au moins 5 % de la base, est homogène en interne et hétérogène avec les autres, et surtout actionnable. « Les moyennes tuent l'analyse. »"
+    },
+    {
+      "id": "b3-r09-qz-026",
+      "section": "4. Trouver la cause",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque effet entre canaux à sa définition.",
+      "colonne_a": [
+        "Synergie (effet de halo)",
+        "Cannibalisation"
+      ],
+      "colonne_b": [
+        "Des canaux se disputent la même audience ; le coût d'acquisition gonfle sans gain global",
+        "Un canal rend les autres plus efficaces sans capter lui-même l'attribution"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Exemples : le display améliore le taux de clic du search (halo) ; le SEA capte des conversions qui seraient venues du SEO (cannibalisation, ROAS en baisse)."
+    },
+    {
+      "id": "b3-r09-qz-027",
+      "section": "4. Trouver la cause",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Couper une campagne Facebook Ads au CPA élevé peut faire baisser le trafic organique de marque.",
+      "reponse": true,
+      "explication": "Vrai : les canaux interagissent, parfois avec retard. D'où une matrice d'interdépendance et l'analyse sur plusieurs fenêtres (immédiat, 7 jours, 30 jours)."
+    },
+    {
+      "id": "b3-r09-qz-028",
+      "section": "5. Prioriser les actions",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque case de la matrice impact / effort à sa catégorie.",
+      "colonne_a": [
+        "Fort impact, faible effort",
+        "Fort impact, fort effort",
+        "Faible impact, faible effort",
+        "Faible impact, fort effort"
+      ],
+      "colonne_b": [
+        "Actions à éviter",
+        "Quick wins",
+        "Projets de remplissage",
+        "Projets majeurs"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "Score de priorité = impact × impact / effort (notés de 1 à 5), pour favoriser le fort impact. Utilisée en équipe, la matrice objective les débats."
+    },
+    {
+      "id": "b3-r09-qz-029",
+      "section": "5. Prioriser les actions",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une action est notée impact 4 et effort 2. Quel est son score de priorité selon le module ?",
+      "options": [
+        "2",
+        "6",
+        "8",
+        "16"
+      ],
+      "reponse": 2,
+      "explication": "Score = impact × impact / effort = 4 × 4 / 2 = 8."
+    },
+    {
+      "id": "b3-r09-qz-030",
+      "section": "5. Prioriser les actions",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Vous prévoyez +10 % de conversion grâce à une action. Sur quelle base le module conseille-t-il de calculer le ROI prévisionnel ?",
+      "options": [
+        "+20 %, pour motiver l'équipe",
+        "+10 %, la valeur prévue",
+        "+5 %, par prudence",
+        "0 %, pour ne prendre aucun risque"
+      ],
+      "reponse": 2,
+      "explication": "Les gains sont souvent surestimés (saturation, réaction des concurrents) et les coûts sous-estimés. On travaille en fourchettes et scénarios."
+    },
+    {
+      "id": "b3-r09-qz-031",
+      "section": "5. Prioriser les actions",
+      "niveau": 3,
+      "format": "qcm_multiple",
+      "question": "Quels éléments affinent un ROI prévisionnel ? (3 réponses)",
+      "options": [
+        "distinguer revenus additionnels et économies de coûts",
+        "tenir compte du délai de retour (payback period)",
+        "appliquer un coefficient de risque (0,8 action maîtrisée, 0,5 incertaine)",
+        "arrondir les gains au chiffre supérieur",
+        "ignorer les coûts indirects"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Un ROI modeste rentabilisé en 3 mois peut valoir mieux qu'un excellent ROI à 24 mois, surtout sous contrainte de trésorerie."
+    },
+    {
+      "id": "b3-r09-qz-032",
+      "section": "6. Formuler une recommandation qui convainc",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 5 parties d'une recommandation structurée.",
+      "elements": [
+        "Les bénéfices attendus chiffrés",
+        "Le contexte et l'enjeu",
+        "Les risques et mesures de mitigation",
+        "L'analyse des données",
+        "La recommandation et son plan d'action"
+      ],
+      "ordre": [
+        1,
+        3,
+        4,
+        0,
+        2
+      ],
+      "explication": "Cet ordre suit le questionnement naturel du décideur : comprendre le problème, vérifier l'analyse, visualiser la proposition, chiffrer, identifier les risques."
+    },
+    {
+      "id": "b3-r09-qz-033",
+      "section": "6. Formuler une recommandation qui convainc",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque destinataire à l'angle à privilégier pour une même recommandation technique.",
+      "colonne_a": [
+        "Directeur général",
+        "Responsable IT",
+        "Équipe marketing"
+      ],
+      "colonne_b": [
+        "Actions opérationnelles concrètes et planning",
+        "Impact business, CA additionnel, ROI",
+        "Implications techniques, ressources, compatibilité"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Avant chaque présentation : qui est l'audience ? quelles sont ses priorités ? quelles objections pourrait-elle avoir ?"
+    },
+    {
+      "id": "b3-r09-qz-034",
+      "section": "6. Formuler une recommandation qui convainc",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Selon le module, mieux vaut finaliser un plan parfait avant de lancer la moindre action.",
+      "reponse": false,
+      "explication": "Faux : un plan imparfait exécuté à 100 % est plus efficace qu'un plan parfait qui reste sur le papier. On commence par quelques quick wins pour créer une dynamique, puis on intègre les projets ambitieux."
+    },
+    {
+      "id": "b3-r09-qz-035",
+      "section": "6. Formuler une recommandation qui convainc",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez les 4 étapes de définition des critères de succès.",
+      "texte": "1. Spécifier les métriques avec des valeurs {1}. 2. Définir les délais : une mesure intermédiaire (ex. 4 semaines) et une évaluation {2} (ex. 12 semaines). 3. Établir des critères d'{3}. 4. Préparer un plan d'{4}.",
+      "trous": [
+        "cibles",
+        "définitive",
+        "arrêt",
+        "apprentissage"
+      ],
+      "explication": "Le tableau de suivi post-implémentation : objectif, KPI de départ, KPI cible, résultat à J+30 / J+60 / J+90, commentaires et actions correctives."
+    },
+    {
+      "id": "b3-r09-qz-036",
+      "section": "6. Formuler une recommandation qui convainc",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que contient la diapositive « Projection d'impact » recommandée par le module ?",
+      "options": [
+        "les KPI actuels, la projection après action, le ROI prévisionnel et le plan de suivi",
+        "le logo et le slogan de la marque",
+        "la liste des concurrents",
+        "l'organigramme de l'équipe"
+      ],
+      "reponse": 0,
+      "explication": "Exemple : +30 % de budget Facebook sur les femmes 25-35 ans (conversion 4,2 %, CAC 28 €, panier 145 €) : 8 400 € → environ 300 clients et 43 500 € de CA, ROI ≈ 420 %."
+    },
+    {
+      "id": "b3-r09-qz-037",
+      "section": "6. Formuler une recommandation qui convainc",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Selon le critère de la Q9, que doit intégrer une préconisation « opérationnelle » ? (4 réponses)",
+      "options": [
+        "le planning envisagé",
+        "les acteurs",
+        "les moyens à mobiliser",
+        "une estimation des coûts",
+        "le logo de la campagne",
+        "l'avis des concurrents"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Ce second critère est souvent oublié. Ajoute l'écart traité et un KPI de succès pour chaque action."
+    },
+    {
+      "id": "b3-r09-qz-038",
+      "section": "7. Le cercle vertueux d'optimisation continue",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 6 étapes du cercle vertueux d'optimisation continue.",
+      "elements": [
+        "Réalisation d'un test en conditions contrôlées",
+        "Formulation d'une hypothèse testable",
+        "Implémentation des solutions qui fonctionnent",
+        "Nouvelle analyse avec les données enrichies",
+        "Analyse des données pour identifier une opportunité",
+        "Apprentissage à partir des résultats"
+      ],
+      "ordre": [
+        4,
+        1,
+        0,
+        5,
+        2,
+        3
+      ],
+      "explication": "L'analyse ponctuelle s'arrête au rapport ; l'optimisation continue fait de chaque résultat le point de départ du cycle suivant."
+    },
+    {
+      "id": "b3-r09-qz-039",
+      "section": "7. Le cercle vertueux d'optimisation continue",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La validation hiérarchique fait partie des 6 étapes du cercle vertueux d'optimisation continue.",
+      "reponse": false,
+      "explication": "Faux. Les 6 étapes : analyse, hypothèse, test, apprentissage, implémentation, nouvelle analyse."
+    },
+    {
+      "id": "b3-r09-qz-040",
+      "section": "7. Le cercle vertueux d'optimisation continue",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque pilier de l'optimisation continue à son rôle.",
+      "colonne_a": [
+        "Documentation partagée",
+        "Rituels structurés",
+        "Culture transverse"
+      ],
+      "colonne_b": [
+        "Rendez-vous hebdomadaires, mensuels et trimestriels pour analyser et prioriser",
+        "Impliquer marketing, produit, commercial et service client",
+        "Mémoire collective : chaque test consigné de façon standardisée"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "explication": "Sans mémoire collective, chaque équipe recommence à zéro ; la culture transverse accélère le déploiement des apprentissages."
+    },
+    {
+      "id": "b3-r09-qz-041",
+      "section": "7. Le cercle vertueux d'optimisation continue",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que révèle un taux de tests validés trop élevé ?",
+      "options": [
+        "une excellente maîtrise des hypothèses",
+        "un budget d'expérimentation insuffisant",
+        "une équipe particulièrement compétente",
+        "un manque de prise de risque : des hypothèses trop « sûres »"
+      ],
+      "reponse": 3,
+      "explication": "L'optimisation continue suppose d'accepter l'échec comme source d'apprentissage et d'oser tester des approches audacieuses."
+    },
+    {
+      "id": "b3-r09-qz-042",
+      "section": "7. Le cercle vertueux d'optimisation continue",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "GoodFoodBox voit sa conversion visiteurs → abonnés stagner. Quel test le corrigé propose-t-il ?",
+      "options": [
+        "doubler le budget publicitaire",
+        "un A/B test d'un formulaire d'abonnement simplifié sur 50 % du trafic, avec un succès fixé à +10 % de conversion",
+        "supprimer l'abonnement",
+        "lancer une enquête auprès des concurrents"
+      ],
+      "reponse": 1,
+      "explication": "Hypothèse : le formulaire est trop long. Le test est documenté dans une fiche (objectif, hypothèse, méthode, résultats, décision). Si concluant, déploiement puis optimisation de l'étape suivante."
+    },
+    {
+      "id": "b3-r09-qz-043",
+      "section": "8. Application au foodtruck PrepMyMeal",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "D'après les annexes 7 et 8, quels objectifs du brief du CEO sont atteints en moyenne sur la tournée ? (3 réponses)",
+      "options": [
+        "le CA total de plus de 100 000 €",
+        "un temps d'attente de 6 minutes maximum",
+        "au moins 700 inscriptions par ville",
+        "un taux de réachat d'au moins 25 %",
+        "une satisfaction d'au moins 4,3/5"
+      ],
+      "reponse": [
+        0,
+        2,
+        3
+      ],
+      "explication": "CA 108 000 € (+8 %), inscriptions 791 par ville (+13 %), réachat 25,0 % en moyenne. Manqués : attente 7,3 min (seule Strasbourg sous 6), satisfaction 4,16 (Paris et Marseille seulement), conversion 29,9 %, mentions 481 par ville."
+    },
+    {
+      "id": "b3-r09-qz-044",
+      "section": "8. Application au foodtruck PrepMyMeal",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Le temps d'attente atteint 9,2 minutes à Nantes, dernière étape de la tournée. Que révèle l'analyse chronologique ?",
+      "options": [
+        "que Nantes est une ville particulièrement exigeante",
+        "que le temps d'attente n'a aucun effet sur la satisfaction",
+        "que l'objectif de 6 minutes était trop facile",
+        "qu'il n'y a pas eu de boucle d'apprentissage d'une ville à l'autre"
+      ],
+      "reponse": 3,
+      "explication": "Segmenter par semaine (S1 Paris → S8 Nantes) montre que l'attente ne s'améliore pas : la tournée n'a pas fonctionné en cercle vertueux."
+    },
+    {
+      "id": "b3-r09-qz-045",
+      "section": "8. Application au foodtruck PrepMyMeal",
+      "niveau": 3,
+      "format": "qcm_multiple",
+      "question": "Quelles anomalies de l'annexe 7 faut-il signaler avant d'interpréter les résultats ? (3 réponses)",
+      "options": [
+        "Lyon : 200 clients à 7 % de conversion, mais 18 000 € de CA et 800 inscriptions",
+        "la colonne « taux d'engagement digital » reprend les inscriptions en valeur absolue",
+        "Marseille affiche la meilleure satisfaction",
+        "la marge nette dépasse CA − coût opérationnel dans toutes les villes",
+        "Paris a le plus de mentions"
+      ],
+      "reponse": [
+        0,
+        1,
+        3
+      ],
+      "explication": "S'y ajoutent les adresses de Strasbourg et Lyon copiées de Lille. Les signaler, poser une hypothèse de lecture et recommander une fiabilisation des données (caisse, CRM)."
+    },
+    {
+      "id": "b3-r09-qz-046",
+      "section": "8. Application au foodtruck PrepMyMeal",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Interprétez les résultats du foodtruck face au brief du CEO et proposez une action corrective opérationnelle complète pour l'écart le plus marqué (Q9).",
+      "attendus": [
+        "Quantifier les écarts en absolu et en relatif, avec leur sens (temps d'attente 7,3 min pour 6, soit +1,3 min défavorable ; seule Strasbourg à l'objectif)",
+        "Signaler les anomalies de données avant d'interpréter (Lyon, colonne engagement, marge nette)",
+        "Relever aussi les réussites : CA total 108 000 €, inscriptions, Paris (7/8) et Marseille (6/8)",
+        "Hypothèse de cause (5 pourquoi) : pas de précommande, paiement et préparation à la commande, effectif fixe aux pics",
+        "Action : précommande via l'app (QR code) + terminal sans contact + renfort aux pics, avec planning (avant la tournée suivante), acteurs (chef de produit app, responsable opérations), moyens, coût estimé, KPI de succès (attente ≤ 6 min, mesure à J+30)"
+      ],
+      "explication": "Les deux critères : actions adaptées aux causes et aux écarts ; préconisations opérationnelles avec planning, acteurs, moyens et estimation des coûts."
+    }
+  ]
+}

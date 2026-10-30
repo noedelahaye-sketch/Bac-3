@@ -1,0 +1,135 @@
+{
+  "resume": "b3-r05",
+  "titre": "Concevoir et administrer l'enquête de satisfaction",
+  "bloc": 3,
+  "cartes": [
+    {
+      "id": "b3-r05-fc-001",
+      "section": "1. Pourquoi enquêter sur la satisfaction",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 4 enjeux d'une enquête de satisfaction ?",
+      "verso": "Rentabilité (le client satisfait rachète et fait le buzz), fidélité (un client fidèle coûte moins cher qu'un prospect), norme ISO (questionnaires réguliers exigés), stimulant interne (enquête auprès du personnel).\nC'est la méthode de mesure la plus utilisée : meilleur équilibre entre fiabilité et contraintes."
+    },
+    {
+      "id": "b3-r05-fc-002",
+      "section": "1. Pourquoi enquêter sur la satisfaction",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le taux de retour, et quels sont les deux leviers du taux de réponse ?",
+      "verso": "La proportion de questionnaires dûment remplis et renvoyés ; plus il est élevé, plus les résultats sont fiables.\nLeviers : optimiser la cible (pas de personnes non concernées) et donner envie de participer (prévenir le client, communiquer de façon claire et attractive)."
+    },
+    {
+      "id": "b3-r05-fc-003",
+      "section": "2. Le cadre de l'enquête",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Comment le contexte de l'entreprise oriente-t-il l'enquête, et que faut-il avant de fixer l'objectif ?",
+      "verso": "En lancement : vérifier le potentiel du marché. En maturité : se remettre en question avant de revoir la stratégie. Auprès des clients inactifs : comprendre pourquoi ils se détachent.\nOn ne peut pas définir les objectifs sans les hypothèses générales de l'enquête ; objectif SMART."
+    },
+    {
+      "id": "b3-r05-fc-004",
+      "section": "2. Le cadre de l'enquête",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Enquête menée en interne ou par un cabinet d'études : avantages et inconvénients ?",
+      "verso": "Interne : maîtrise du sujet, rapidité, coût faible ; mais manque d'objectivité, questions trop techniques.\nCabinet : professionnalisme, regard extérieur et objectivité ; mais coût élevé, délais plus longs, risque pour la confidentialité.\nLa décision dépend surtout du budget. « Trop d'études tuent l'étude. »"
+    },
+    {
+      "id": "b3-r05-fc-005",
+      "section": "3. Rédiger le questionnaire",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelle est la structure d'un questionnaire (technique de l'entonnoir) ?",
+      "verso": "1. Introduction (but, collaboration, remerciement, durée). 2. Questions générales et simples, de prise de contact. 3. Corps en blocs thématiques, du général au particulier, avec transitions. 4. Questions d'identification à la fin, quand la confiance est établie."
+    },
+    {
+      "id": "b3-r05-fc-006",
+      "section": "3. Rédiger le questionnaire",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Que prévoir pour une question fermée, une question à choix multiples, et à quoi sert une question filtre ?",
+      "verso": "Fermée : prévoir la case « ne sait pas ». Choix multiples : prévoir la rubrique « autre ». Ouverte : attention aux nombreux « sans opinion ».\nFiltre : repérer les répondants fantaisistes en reformulant une question (et aiguiller : « avez-vous vu le foodtruck ? »)."
+    },
+    {
+      "id": "b3-r05-fc-007",
+      "section": "3. Rédiger le questionnaire",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Échelle de Likert, échelle numérique, échelle d'Osgood : quelles différences ?",
+      "verso": "Likert : propositions notées de 1 à 4, de « pas du tout d'accord » à « tout à fait d'accord » ; nombre pair pour forcer à trancher.\nNumérique : une note chiffrée (0 à 10).\nOsgood (sémantique différentielle) : un axe entre deux mots opposés (« traditionnelle ↔ innovante »)."
+    },
+    {
+      "id": "b3-r05-fc-008",
+      "section": "4. Échantillonner",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Quelles sont les 4 méthodes de choix des individus ?",
+      "verso": "Aléatoire : tirage au sort, chance égale ; en théorie la seule valable.\nQuotas : une mini-population de même composition que la population.\nItinéraires : règles strictes de sélection dans l'espace.\nArbitraire : échantillon intuitif, quand on ne mesure pas une fréquence."
+    },
+    {
+      "id": "b3-r05-fc-009",
+      "section": "4. Échantillonner",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Pourquoi les clients ayant commenté en ligne ne suffisent-ils pas comme panel PrepMyMeal (Q5) ?",
+      "verso": "Auto-sélection (surtout des très mécontents ou très satisfaits), petit nombre, profils non représentatifs.\nIl faut des quotas calés sur l'annexe 1 (jeunes actifs 38 %, sportifs 25 %, bien-être 30 %, nouveaux 7 %, voire sur-représentés), plus les visiteurs du foodtruck et les inactifs."
+    },
+    {
+      "id": "b3-r05-fc-010",
+      "section": "5. Diffuser l'enquête",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Face-à-face, rue, téléphone, voie postale, Internet : quel atout et quelle faiblesse principale ?",
+      "verso": "Face-à-face : le plus sûr, le plus coûteux (20 min max).\nRue : gratuit, mais non représentatif.\nTéléphone : économique, mais bref et sans visuel.\nPostal : économique, mais non-réponse très élevée.\nInternet : coût très compétitif et rapide, mais biais technophile."
+    },
+    {
+      "id": "b3-r05-fc-011",
+      "section": "5. Diffuser l'enquête",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Quels éléments le critère de la Q6 cite-t-il pour les modalités d'administration ?",
+      "verso": "Canal, éléments déclencheurs, périodicité, relances, outil de suivi — adaptés aux objectifs, au public et au budget.\nEx. : e-mail CRM + SMS + tablette au foodtruck ; après livraison ou dégustation ; à chaque étape puis trimestriel ; relances J+3 et J+7 ; Google Forms ou Sphinx."
+    },
+    {
+      "id": "b3-r05-fc-012",
+      "section": "6. L'approche par le risque",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Risque et problème : quelle différence ?",
+      "verso": "Risque : événement incertain qui, s'il se réalise, peut nuire aux objectifs ; on l'anticipe par des actions préventives. Il s'évalue en probabilité × impact.\nProblème : événement déjà produit, qui exige une action immédiate."
+    },
+    {
+      "id": "b3-r05-fc-013",
+      "section": "6. L'approche par le risque",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sont les 4 étapes du processus de maîtrise du risque ?",
+      "verso": "1. Établir le cadre (contexte, veille). 2. Identifier et analyser (signaux faibles → convergents → organisés → faits). 3. Évaluer (probabilité, impact, gravité ; AMDEC). 4. Traiter (plan de gestion, culture du risque).\nProcessus itératif."
+    },
+    {
+      "id": "b3-r05-fc-014",
+      "section": "6. L'approche par le risque",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 stratégies face à un risque ?",
+      "verso": "Élimination (secteurs à risque zéro ; on ne peut pas tout éliminer), transfert (contrat, assurance, clause de responsabilité du prestataire), atténuation (réduire probabilité ou impact), acceptation (quand traiter coûte plus que le risque)."
+    },
+    {
+      "id": "b3-r05-fc-015",
+      "section": "6. L'approche par le risque",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que l'AMDEC, et comment calcule-t-on sa criticité ?",
+      "verso": "Analyse des Modes de Défaillance, de leurs Effets et de leur Criticité : identifier, évaluer et prioriser les défaillances potentielles.\nC = F × G × D (Fréquence × Gravité × Détection). 4 niveaux : faible, moyen, élevé, critique.\nEx. de mode de défaillance : « pas de panel significatif »."
+    },
+    {
+      "id": "b3-r05-fc-016",
+      "section": "6. L'approche par le risque",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "KPI d'un projet d'enquête : process, input, output, leading, lagging, outcome ?",
+      "verso": "Process : délais, temps de réponse, taux d'erreur. Input : budget utilisé. Output : taux de retour, taux de réponse. Leading : atteinte des objectifs de l'enquête. Lagging : ROI, taux d'abandon, taux de complétion. Outcome : répondants qui rachètent, NPS."
+    }
+  ]
+}

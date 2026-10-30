@@ -51,12 +51,26 @@
     },
     {
       "numero": 3,
-      "titre": "",
-      "court": "",
-      "statut": "vide",
-      "epreuve": "",
-      "competences": [],
-      "fiches": []
+      "titre": "Pilotage de la performance des actions marketing et communication",
+      "court": "Pilotage de la performance",
+      "statut": "complet",
+      "epreuve": "Écrit 6 h (9 questions, 3 dossiers)",
+      "competences": [
+        "C3.1",
+        "C3.2",
+        "C3.3"
+      ],
+      "fiches": [
+        "b3-r01",
+        "b3-r02",
+        "b3-r03",
+        "b3-r04",
+        "b3-r05",
+        "b3-r06",
+        "b3-r07",
+        "b3-r08",
+        "b3-r09"
+      ]
     },
     {
       "numero": 4,

@@ -1,0 +1,852 @@
+{
+  "resume": "b3-r08",
+  "titre": "Concevoir, outiller et diffuser le tableau de bord",
+  "bloc": 3,
+  "questions": [
+    {
+      "id": "b3-r08-qz-001",
+      "section": "1. Le tableau de bord : définition, types, qualités",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle est la fonction première d'un tableau de bord ?",
+      "options": [
+        "archiver toutes les données de l'entreprise",
+        "évaluer individuellement les salariés",
+        "remplacer le reporting comptable",
+        "identifier le plus tôt possible les écarts entre objectifs et réalité pour engager des actions correctives"
+      ],
+      "reponse": 3,
+      "explication": "C'est un outil de pilotage lisible et synthétique. Il se diffuse et devient aussi un outil de communication interne et de motivation."
+    },
+    {
+      "id": "b3-r08-qz-002",
+      "section": "1. Le tableau de bord : définition, types, qualités",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un tableau de bord est destiné à une seule personne, le dirigeant.",
+      "reponse": false,
+      "explication": "Faux. Il se diffuse et se partage : il transmet les objectifs et la stratégie, implique toutes les parties prenantes et motive les équipes."
+    },
+    {
+      "id": "b3-r08-qz-003",
+      "section": "1. Le tableau de bord : définition, types, qualités",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque type de tableau de bord à ce qu'il suit.",
+      "colonne_a": [
+        "Stratégique (prospectif, balanced scorecard)",
+        "Opérationnel",
+        "Budgétaire"
+      ],
+      "colonne_b": [
+        "Les résultats comparés au budget prévisionnel",
+        "Les déterminants de la performance, à long terme",
+        "Les plans d'action, à court terme"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Tous visent le même but : suivre la réalisation des objectifs et décider, en impliquant les acteurs."
+    },
+    {
+      "id": "b3-r08-qz-004",
+      "section": "1. Le tableau de bord : définition, types, qualités",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les qualités d'un tableau de bord ? (4 réponses)",
+      "options": [
+        "simple",
+        "exhaustif",
+        "pertinent",
+        "synoptique",
+        "actualisé",
+        "confidentiel"
+      ],
+      "reponse": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "explication": "Simple (10 à 15 indicateurs maximum), pertinent (corrélé aux objectifs), synoptique (l'essentiel d'un coup d'œil), actualisé. L'exhaustivité nuit à la lisibilité."
+    },
+    {
+      "id": "b3-r08-qz-005",
+      "section": "1. Le tableau de bord : définition, types, qualités",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Tous les supports s'accordent sur le même nombre d'indicateurs dans un tableau de bord.",
+      "reponse": false,
+      "explication": "Faux. Les cours « papier » disent 10 à 15 (« une dizaine » dans l'essentiel du cours commercial) ; le module limite la vue stratégique à 5 et la vue mobile à 3 ; la pyramide des KPI donne 2-3 / 5-7 / 10-15. Retiens : peu à la direction, davantage à l'opérationnel."
+    },
+    {
+      "id": "b3-r08-qz-006",
+      "section": "1. Le tableau de bord : définition, types, qualités",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez ce que le tableau de bord doit préciser pour chaque indicateur.",
+      "texte": "Le mode de {1}, l'objectif {2}, le {3}, l'{4} entre objectif et réalisé, un commentaire et les actions {5}. Il faut aussi préciser la périodicité d'édition et le processus de collecte.",
+      "trous": [
+        "calcul",
+        "cible",
+        "réalisé",
+        "écart",
+        "correctrices"
+      ],
+      "explication": "C'est la structure à reprendre dans la copie Excel de la Q8 : une ligne par KPI du brief."
+    },
+    {
+      "id": "b3-r08-qz-007",
+      "section": "1. Le tableau de bord : définition, types, qualités",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle est la différence entre un indicateur de résultat et un indicateur de suivi ?",
+      "options": [
+        "le premier est qualitatif, le second quantitatif",
+        "le premier mesure le résultat final a posteriori ; le second est un jalon qui permet d'anticiper et de corriger avant que le résultat soit acquis",
+        "le premier concerne les ventes, le second les RH",
+        "il n'y a pas de différence"
+      ],
+      "reponse": 1,
+      "explication": "L'indicateur de résultat sert au contrôle des objectifs ; l'indicateur de suivi permet de réagir en cours de route."
+    },
+    {
+      "id": "b3-r08-qz-008",
+      "section": "1. Le tableau de bord : définition, types, qualités",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque type d'indicateur à son exemple.",
+      "colonne_a": [
+        "De résultat",
+        "De moyens",
+        "De variables d'action",
+        "D'environnement"
+      ],
+      "colonne_b": [
+        "Pourcentage de personnel formé",
+        "Ratio moyens engagés / unités produites",
+        "Activité des concurrents et du marché",
+        "Niveau de marge atteint"
+      ],
+      "paires": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "explication": "On sélectionne les types adaptés à l'activité. Certains indicateurs, les « clignotants », ont une fonction d'alerte en cas d'évolution anormale."
+    },
+    {
+      "id": "b3-r08-qz-009",
+      "section": "1. Le tableau de bord : définition, types, qualités",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Comment le cours « Analyse et présentation » définit-il la rentabilité commerciale d'une opération ?",
+      "options": [
+        "marge / CA",
+        "CA / coût total de l'opération",
+        "coût de l'opération / nombre de contacts utiles",
+        "CA / nombre de clients"
+      ],
+      "reponse": 1,
+      "explication": "Rentabilité = CA / coût total. Coût d'acquisition du contact = coût de l'opération / contacts utiles ; panier moyen = CA / nombre de clients."
+    },
+    {
+      "id": "b3-r08-qz-010",
+      "section": "1. Le tableau de bord : définition, types, qualités",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque KPI commercial à sa famille.",
+      "colonne_a": [
+        "Taux de décroché",
+        "Panier moyen",
+        "Taux de résolution au premier contact"
+      ],
+      "colonne_b": [
+        "Qualité de la relation commerciale",
+        "Productivité commerciale",
+        "Rentabilité commerciale"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Productivité : productivité des appels, taux de décroché, taux de transformation, taux de remontée. Rentabilité : coût d'acquisition du contact, panier moyen, taux de marge et de marque. Qualité : satisfaction, CES, NPS, FCR."
+    },
+    {
+      "id": "b3-r08-qz-011",
+      "section": "1. Le tableau de bord : définition, types, qualités",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Le cours « Analyse et présentation d'un tableau de bord » mesure le NPS sur une échelle de 0 à 10.",
+      "reponse": false,
+      "explication": "Faux : ce cours note le NPS de 1 à 10 et le CES de 1 à 5. La référence reste le module NPS/CSAT/CES : NPS de 0 à 10, CES de 1 à 7."
+    },
+    {
+      "id": "b3-r08-qz-012",
+      "section": "1. Le tableau de bord : définition, types, qualités",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Comparer le CA prévu au CA réalisé pour fixer le cap relève de quel objectif du tableau de bord ?",
+      "options": [
+        "un objectif de reporting",
+        "un objectif de conformité",
+        "un objectif de communication externe",
+        "un objectif de pilotage"
+      ],
+      "reponse": 3,
+      "explication": "Le pilotage est prévisionnel ; le reporting analyse une période passée (CA réalisé) pour conclure et communiquer. Le reporting collecte les données au quotidien, ensuite réintégrées dans les tableaux de bord."
+    },
+    {
+      "id": "b3-r08-qz-013",
+      "section": "2. Architecturer le tableau de bord par public",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque niveau de la pyramide de décision à son contenu.",
+      "colonne_a": [
+        "Stratégique (direction)",
+        "Tactique (responsables)",
+        "Opérationnel (équipes terrain)"
+      ],
+      "colonne_b": [
+        "Données temps réel et granulaires : CPC, CTR, rebond, engagement par post",
+        "Indicateurs synthétiques : CA marketing, ROI, satisfaction, part de marché",
+        "Analyses par canal et par période : CA par canal, coût d'acquisition, conversion"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Un seul tableau pour tous génère plus de confusion que de clarté. La navigation doit être bidirectionnelle, du global au détail et inversement."
+    },
+    {
+      "id": "b3-r08-qz-014",
+      "section": "2. Architecturer le tableau de bord par public",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 4 pages de navigation d'un dashboard proposées par le module.",
+      "elements": [
+        "Détail campagne / créatif / audience avec filtres dynamiques",
+        "Synthèse des 5 indicateurs clés",
+        "Module de détection des anomalies avec alertes",
+        "Vue détaillée par canal (barres horizontales)"
+      ],
+      "ordre": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "explication": "Du général au spécifique : synthèse → canal → détail → anomalies. Avant de construire, on dresse la matrice des publics et besoins ; après, on teste avec 2-3 utilisateurs."
+    },
+    {
+      "id": "b3-r08-qz-015",
+      "section": "2. Architecturer le tableau de bord par public",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la règle des proportions visuelles.",
+      "texte": "{1} de l'espace aux KPI principaux, {2} aux indicateurs secondaires, {3} aux métriques de contexte. Les KPI principaux se placent en {4}.",
+      "trous": [
+        "40 %",
+        "35 %",
+        "25 %",
+        "haut à gauche"
+      ],
+      "explication": "En culture occidentale, l'œil suit un parcours en Z. Trois KPI « héros » bien mis en valeur valent mieux que quinze traités à égalité."
+    },
+    {
+      "id": "b3-r08-qz-016",
+      "section": "2. Architecturer le tableau de bord par public",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le module conseille de regrouper les indicateurs d'un dashboard par source de données (Facebook, GA4, CRM) pour faciliter la maintenance.",
+      "reponse": false,
+      "explication": "Faux. On les groupe par finalité métier (acquisition, conversion, fidélisation), peu importe leur source. Cette organisation divise par deux le temps de recherche."
+    },
+    {
+      "id": "b3-r08-qz-017",
+      "section": "2. Architecturer le tableau de bord par public",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "En quoi consiste le test du « regard flou » ?",
+      "options": [
+        "afficher le dashboard sans couleur",
+        "reculer de 2 mètres et plisser les yeux pour vérifier que les KPI principaux ressortent en premier",
+        "demander à un utilisateur de lire le dashboard en 5 secondes",
+        "imprimer le dashboard en petit format"
+      ],
+      "reponse": 1,
+      "explication": "Si ce ne sont pas les KPI principaux qui captent l'attention, on ajuste tailles, couleurs et positions."
+    },
+    {
+      "id": "b3-r08-qz-018",
+      "section": "3. Choisir les visualisations et les codes graphiques",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque message au graphique le plus adapté.",
+      "colonne_a": [
+        "Évolution du CA sur 12 mois",
+        "Comparaison des conversions entre 5 canaux",
+        "Répartition du budget en 4 grandes catégories",
+        "Relation entre budget investi et conversions par campagne"
+      ],
+      "colonne_b": [
+        "Secteurs (camembert)",
+        "Nuage de points",
+        "Courbe",
+        "Barres horizontales"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Règle d'or : un graphique = un message unique et clair. S'il faut l'expliquer à l'oral, il est mal choisi."
+    },
+    {
+      "id": "b3-r08-qz-019",
+      "section": "3. Choisir les visualisations et les codes graphiques",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Combien de catégories maximum pour un graphique en secteurs ?",
+      "options": [
+        "3",
+        "5",
+        "8",
+        "15"
+      ],
+      "reponse": 1,
+      "explication": "Au-delà de 5, il devient illisible : on regroupe les catégories de moins de 5 % dans « Autres ». Les barres horizontales restent lisibles jusqu'à 15 catégories. Jamais de 3D."
+    },
+    {
+      "id": "b3-r08-qz-020",
+      "section": "3. Choisir les visualisations et les codes graphiques",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "À quoi réserver les couleurs vives dans un tableau de bord ?",
+      "options": [
+        "aux titres",
+        "aux indicateurs les plus anciens",
+        "à tous les graphiques, pour les dynamiser",
+        "aux alertes critiques et aux performances exceptionnelles"
+      ],
+      "reponse": 3,
+      "explication": "Rouge = alerte, orange = vigilance, vert = objectif atteint, gris = neutre ; palette neutre pour le reste. Une couleur par canal, toujours la même."
+    },
+    {
+      "id": "b3-r08-qz-021",
+      "section": "3. Choisir les visualisations et les codes graphiques",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un graphique de tableau de bord peut reposer entièrement sur les couleurs, puisqu'il est consulté à l'écran.",
+      "reponse": false,
+      "explication": "Faux. Un bon graphique doit rester compréhensible imprimé en noir et blanc : ce test révèle la dépendance excessive aux couleurs (on renforce formes, motifs, tailles). On teste aussi le daltonisme (Color Oracle, Coblis)."
+    },
+    {
+      "id": "b3-r08-qz-022",
+      "section": "3. Choisir les visualisations et les codes graphiques",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Lesquelles sont des erreurs classiques de data visualisation ? (3 réponses)",
+      "options": [
+        "un camembert à plus de 5 parts",
+        "une légende avec unités et période de référence",
+        "des graphiques en 3D",
+        "des axes coupés sans le signaler",
+        "une couleur constante par canal"
+      ],
+      "reponse": [
+        0,
+        2,
+        3
+      ],
+      "explication": "S'y ajoutent la multiplication de couleurs sans signification et l'affichage de tout sans hiérarchie. La légende explicite et la couleur constante sont de bonnes pratiques."
+    },
+    {
+      "id": "b3-r08-qz-023",
+      "section": "4. Opérationnel ou stratégique : deux philosophies",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce qui caractérise un dashboard stratégique ?",
+      "options": [
+        "une forte densité d'informations et des filtres complexes",
+        "une actualisation horaire",
+        "cinq KPI maximum, une courbe de tendance et une section « À retenir »",
+        "le détail par créatif publicitaire"
+      ],
+      "reponse": 2,
+      "explication": "La direction y consacre rarement plus de dix minutes. L'opérationnel, lui, privilégie densité et interactivité, avec les alertes en haut."
+    },
+    {
+      "id": "b3-r08-qz-024",
+      "section": "4. Opérationnel ou stratégique : deux philosophies",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que contient la section « À retenir » d'un dashboard stratégique ?",
+      "options": [
+        "trois points de synthèse maximum et une recommandation prioritaire, concrète et chiffrée",
+        "la liste de toutes les campagnes",
+        "les définitions des indicateurs",
+        "les droits d'accès"
+      ],
+      "reponse": 0,
+      "explication": "Chaque KPI stratégique est aussi accompagné d'un commentaire de contexte (saisonnalité, événement, facteur externe)."
+    },
+    {
+      "id": "b3-r08-qz-025",
+      "section": "4. Opérationnel ou stratégique : deux philosophies",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Ajouter des métriques opérationnelles détaillées dans un dashboard stratégique améliore la prise de décision de la direction.",
+      "reponse": false,
+      "explication": "Faux. Cela dilue l'attention : un dirigeant face à 50 indicateurs n'utilisera pas l'outil."
+    },
+    {
+      "id": "b3-r08-qz-026",
+      "section": "4. Opérationnel ou stratégique : deux philosophies",
+      "niveau": 3,
+      "format": "texte_a_trous",
+      "question": "Complétez les seuils d'alerte du dashboard opérationnel de TechnoSport.",
+      "texte": "Une alerte orange se déclenche au-delà de {1} d'écart avec la moyenne mobile sur 7 jours, une alerte rouge au-delà de {2}.",
+      "trous": [
+        "15 %",
+        "30 %"
+      ],
+      "explication": "Des seuils intelligents signalent les déviations significatives sans fausses alertes qui décrédibiliseraient le système."
+    },
+    {
+      "id": "b3-r08-qz-027",
+      "section": "4. Opérationnel ou stratégique : deux philosophies",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque niveau d'accès au tableau de bord à son public.",
+      "colonne_a": [
+        "Consultation",
+        "Analyse complète",
+        "Administration"
+      ],
+      "colonne_b": [
+        "Équipe marketing : toutes les métriques, filtres, exports",
+        "Responsables et direction : données financières, paramétrage des alertes",
+        "Commerciaux et service client : leads, conversion, satisfaction, sans coûts ni budgets"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "explication": "Principe du besoin d'en connaître ; les accès sont tracés pour comprendre l'usage réel."
+    },
+    {
+      "id": "b3-r08-qz-028",
+      "section": "5. Personnalisation et expérience utilisateur",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans un dashboard personnalisable, qu'est-ce qui doit rester fixe ?",
+      "options": [
+        "l'ordre des widgets",
+        "les filtres",
+        "les définitions des indicateurs, les codes couleur et les structures de données",
+        "les vues sauvegardées"
+      ],
+      "reponse": 2,
+      "explication": "Principe de « cohérence dans la diversité » : chacun réorganise, mais tous manipulent les mêmes données avec les mêmes définitions."
+    },
+    {
+      "id": "b3-r08-qz-029",
+      "section": "5. Personnalisation et expérience utilisateur",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez les règles d'expérience utilisateur.",
+      "texte": "Toute donnée importante doit être accessible en {1} clics maximum. Le dashboard doit s'afficher en moins de {2} secondes. La version mobile affiche les {3} KPI critiques.",
+      "trous": [
+        "3",
+        "10",
+        "3"
+      ],
+      "explication": "Un dashboard trop lent ou trop rigide finit abandonné au profit d'exports Excel artisanaux."
+    },
+    {
+      "id": "b3-r08-qz-030",
+      "section": "6. Outils, connexions, automatisation, distribution",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une petite équipe, sans budget, travaille dans l'écosystème Google et a besoin d'un dashboard rapidement. Quel outil choisir ?",
+      "options": [
+        "Power BI",
+        "Tableau",
+        "Looker Studio",
+        "un ERP"
+      ],
+      "reponse": 2,
+      "explication": "Looker Studio est gratuit et connecté nativement à GA, Google Ads, Search Console, YouTube. Limites : calculs avancés, lenteur sur gros volumes, dépendance à Google."
+    },
+    {
+      "id": "b3-r08-qz-031",
+      "section": "6. Outils, connexions, automatisation, distribution",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque outil de dataviz à son profil.",
+      "colonne_a": [
+        "Power BI",
+        "Tableau",
+        "DashThis",
+        "Klipfolio"
+      ],
+      "colonne_b": [
+        "Équipes légères et agences, connecteurs marketing préconfigurés",
+        "Personnalisation poussée des visualisations",
+        "Modélisation avancée, IA, collaboration ; environ 10 € par utilisateur et par mois",
+        "Référence pour les analyses statistiques et le data mining"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Conseils : anticiper les besoins à 3-5 ans et tester chaque outil 2 semaines avec ses vraies données. Un outil puissant mal adopté vaut moins qu'un outil simple utilisé."
+    },
+    {
+      "id": "b3-r08-qz-032",
+      "section": "6. Outils, connexions, automatisation, distribution",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi créer des comptes de service dédiés pour les connexions de données d'un dashboard ?",
+      "options": [
+        "pour réduire le coût des licences",
+        "pour éviter le RGPD",
+        "pour contourner les quotas d'API",
+        "pour garantir la continuité du service si un collaborateur part ou change de droits"
+      ],
+      "reponse": 3,
+      "explication": "Procédure : comptes de service, moindre privilège, documentation, revue trimestrielle des droits, alerte en cas de révocation, procédure de récupération."
+    },
+    {
+      "id": "b3-r08-qz-033",
+      "section": "6. Outils, connexions, automatisation, distribution",
+      "niveau": 3,
+      "format": "qcm_multiple",
+      "question": "Quelles bonnes pratiques de performance des connexions le module recommande-t-il ? (3 réponses)",
+      "options": [
+        "privilégier des données pré-agrégées plutôt que brutes",
+        "récupérer « toutes les données disponibles » à chaque requête",
+        "limiter la fenêtre de tendance à 13 mois et archiver au-delà",
+        "surveiller les connexions par un méta-dashboard",
+        "rafraîchir toutes les sources chaque minute"
+      ],
+      "reponse": [
+        0,
+        2,
+        3
+      ],
+      "explication": "Les données pré-agrégées divisent le traitement par 10. Il faut aussi tenir compte des quotas d'API (GA : 10 000 requêtes par jour) et des délais de stabilisation (GA : 24-48 h)."
+    },
+    {
+      "id": "b3-r08-qz-034",
+      "section": "6. Outils, connexions, automatisation, distribution",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque type de données à sa fréquence de rafraîchissement recommandée.",
+      "colonne_a": [
+        "Publicitaires (Google Ads, Facebook Ads)",
+        "Web analytics (GA)",
+        "CRM",
+        "Satisfaction (NPS, CSAT)",
+        "Financières"
+      ],
+      "colonne_b": [
+        "Hebdomadaire",
+        "Mensuelle ou trimestrielle",
+        "Horaire ou quotidienne",
+        "Mensuelle",
+        "Quotidienne"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "explication": "Règle : caler la fréquence sur les cycles de décision. La satisfaction est mensuelle, le temps que des tendances significatives apparaissent."
+    },
+    {
+      "id": "b3-r08-qz-035",
+      "section": "6. Outils, connexions, automatisation, distribution",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Plus un dashboard déclenche d'alertes automatiques, plus l'équipe réagit vite aux problèmes.",
+      "reponse": false,
+      "explication": "Faux. Une alerte qui ne déclenche aucune action concrète n'est probablement pas nécessaire : on limite les alertes à 3 à 5 KPI à fort impact et on les contextualise (« conversion mobile −15 % depuis la mise en ligne de la nouvelle page produit hier »)."
+    },
+    {
+      "id": "b3-r08-qz-036",
+      "section": "6. Outils, connexions, automatisation, distribution",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque niveau d'alerte à son canal de diffusion.",
+      "colonne_a": [
+        "Critique (ROI négatif, budget épuisé)",
+        "Importante (conversion −10 %, coût d'acquisition +20 %)",
+        "Informative (pic de trafic, objectif atteint)"
+      ],
+      "colonne_b": [
+        "Slack / Teams",
+        "SMS immédiat",
+        "E-mail détaillé avec lien vers l'analyse"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Cette hiérarchisation évite la surcharge informationnelle tout en garantissant une réaction rapide aux situations critiques."
+    },
+    {
+      "id": "b3-r08-qz-037",
+      "section": "6. Outils, connexions, automatisation, distribution",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel est le meilleur moment pour envoyer un rapport hebdomadaire automatique ?",
+      "options": [
+        "le lundi matin, quand les équipes planifient leur semaine",
+        "le vendredi après-midi",
+        "le samedi",
+        "à n'importe quel moment"
+      ],
+      "reponse": 0,
+      "explication": "Un envoi le vendredi après-midi a moins de chances d'être consulté. On adapte aussi le canal : e-mail pour les rapports, Slack pour l'urgence, accès direct pour la consultation, réunion pour le storytelling."
+    },
+    {
+      "id": "b3-r08-qz-038",
+      "section": "6. Outils, connexions, automatisation, distribution",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Comment mesurer l'efficacité de la distribution des tableaux de bord ?",
+      "options": [
+        "au nombre de rapports envoyés",
+        "au nombre de graphiques",
+        "au coût de l'outil",
+        "par les vues, la durée de consultation, le taux d'ouverture des envois et surtout les décisions influencées"
+      ],
+      "reponse": 3,
+      "explication": "« L'efficacité se mesure aux décisions qu'il influence, pas au nombre de rapports envoyés. » Un dashboard « Usage des dashboards » suit ces indicateurs."
+    },
+    {
+      "id": "b3-r08-qz-039",
+      "section": "6. Outils, connexions, automatisation, distribution",
+      "niveau": 3,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 4 phases du déploiement proposé dans l'application HealthyHub.",
+      "elements": [
+        "Pilote sur 1 à 2 enseignes et ajustements",
+        "Optimisation et consolidation",
+        "Cadrage, préparation et POC",
+        "Montée en charge sur les autres enseignes"
+      ],
+      "ordre": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "explication": "Cadrage et POC (sur FitConnect) → pilote → généralisation → optimisation, calé hors saisons hautes. Gouvernance : charte, responsables data, ambassadeurs data, RGPD."
+    },
+    {
+      "id": "b3-r08-qz-040",
+      "section": "7. Analyser, piloter et diffuser le tableau de bord",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Le réalisé dépasse nettement l'objectif. Que préconise le cours ?",
+      "options": [
+        "ne rien faire",
+        "réajuster les objectifs",
+        "réduire les moyens",
+        "supprimer l'indicateur"
+      ],
+      "reponse": 1,
+      "explication": "Écart négatif → corriger la trajectoire ; écart positif → réajuster les objectifs. Deux approches : managériale (motivation) et de gestion (coût, rentabilité)."
+    },
+    {
+      "id": "b3-r08-qz-041",
+      "section": "7. Analyser, piloter et diffuser le tableau de bord",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les finalités du tableau de bord ? (4 réponses)",
+      "options": [
+        "mesure",
+        "diagnostic",
+        "sanction",
+        "communication",
+        "motivation",
+        "archivage"
+      ],
+      "reponse": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "explication": "Cinq finalités : mesure, diagnostic, communication, information (se situer dans un réseau), motivation."
+    },
+    {
+      "id": "b3-r08-qz-042",
+      "section": "7. Analyser, piloter et diffuser le tableau de bord",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un tableau de bord donne les raisons d'une baisse de performance et les solutions à mettre en œuvre.",
+      "reponse": false,
+      "explication": "Faux. Il alerte, il n'explique pas. C'est au dirigeant d'analyser les causes : internes (stocks, gestion), externes (saisonnalité, concurrence) ou objectifs trop élevés."
+    },
+    {
+      "id": "b3-r08-qz-043",
+      "section": "7. Analyser, piloter et diffuser le tableau de bord",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Plusieurs non-conformités mineures se répètent. Que recommande le cours ?",
+      "options": [
+        "les traiter une à une, en aval",
+        "les ignorer, car elles sont mineures",
+        "faire du curatif à la source, en amont, car ensemble elles peuvent traduire un problème plus important",
+        "changer d'indicateur"
+      ],
+      "reponse": 2,
+      "explication": "Le responsable de l'action corrective mobilise d'autres services et décrit la non-conformité et ses causes probables."
+    },
+    {
+      "id": "b3-r08-qz-044",
+      "section": "7. Analyser, piloter et diffuser le tableau de bord",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le cours recommande que la direction conçoive seule le tableau de bord, puis l'impose aux équipes pour garantir sa cohérence.",
+      "reponse": false,
+      "explication": "Faux. Il faut le co-construire avec les équipes concernées (commerciaux, SAV, techniciens) : un tableau de bord doit être accepté et diffusé, il ne sert pas à imposer des idées. La co-construction augmente la motivation et le réalisme."
+    },
+    {
+      "id": "b3-r08-qz-045",
+      "section": "7. Analyser, piloter et diffuser le tableau de bord",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Pour une entreprise récente, avec peu d'historique, une analyse très régulière du tableau de bord aide à fixer ensuite des objectifs réalistes.",
+      "reponse": true,
+      "explication": "Vrai, le cours le souligne. C'est exactement la situation de PrepMyMeal avec sa première tournée de foodtruck."
+    },
+    {
+      "id": "b3-r08-qz-046",
+      "section": "7. Analyser, piloter et diffuser le tableau de bord",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Décrivez le tableau de bord opérationnel du foodtruck à construire en Q8 : structure, visualisations, outil, fréquence et destinataires.",
+      "attendus": [
+        "Bandeau de 4-5 KPI héros en haut à gauche, avec jauges vs objectifs : CA total (108 000 € pour > 100 000 €), conversion (≈ 30 % pour 35 %), satisfaction (≈ 4,2 pour 4,3), attente (≈ 7,3 min pour 6), inscriptions (≈ 791 pour 700)",
+        "Tableau ville × KPI avec mise en forme conditionnelle vert / orange / rouge ; chaque ligne avec formule, cible, réalisé, écart, commentaire, action",
+        "Barres horizontales du CA par ville avec la bande 12 000-15 000 € ; courbe semaine 1 → 8 ; nuage coût / marge",
+        "Zone « À retenir » : 3 constats, 1 recommandation chiffrée ; note sur les anomalies (Lyon, colonne engagement)",
+        "Outil : Excel pour la copie, Looker Studio en production ; suivi quotidien, bilan par ville ; équipe du truck (opérationnel) et CEO (5 KPI)"
+      ],
+      "explication": "Critère : visualisations intuitives, suivi facile des KPI, aide à la décision."
+    }
+  ]
+}

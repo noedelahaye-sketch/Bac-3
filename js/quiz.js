@@ -8356,6 +8356,7975 @@ var QUIZ = [
     "explication": "C'est la structure attendue en Q13 : bonnes pratiques (charte de modération + animation + veille) ET indicateurs de mesure, e-réputation comprise. La rapidité et la transparence font la différence en cas de crise (Nestlé vs Anthropologie)."
   },
   {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-001",
+    "section": "1. La connaissance client : pourquoi et comment",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Selon le cours, comment la stratégie d'identification relationnelle considère-t-elle les clients ?",
+    "options": [
+      "d'abord comme des acheteurs potentiels, ensuite comme des partenaires",
+      "uniquement comme des sources de données à exploiter",
+      "d'abord comme des partenaires, ensuite comme des acheteurs potentiels",
+      "comme des prescripteurs à rémunérer"
+    ],
+    "reponse": 2,
+    "explication": "Le marketing relationnel établit une relation de confiance en situant les clients d'abord comme des partenaires, ensuite comme des acheteurs potentiels. Raison : conserver un client coûte moins cher qu'en conquérir un nouveau."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-002",
+    "section": "1. La connaissance client : pourquoi et comment",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Le marketing one-to-one, caractéristique du marketing relationnel, s'oppose au marketing one-to-many qui s'adresse au plus grand nombre.",
+    "reponse": true,
+    "explication": "Vrai. Le marketing relationnel se caractérise par la personnalisation : marketing one-to-one (relation individualisée, d'humain à humain), opposé au one-to-many. Il suppose une culture « customer centric »."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-003",
+    "section": "1. La connaissance client : pourquoi et comment",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Lesquels font partie des 5 leviers du marketing relationnel cités par le cours ? (3 réponses)",
+    "options": [
+      "développer le CRM",
+      "réduire les prix pour tous les clients",
+      "faire participer les clients à la vie de la marque",
+      "multiplier les campagnes de publicité de masse",
+      "mettre en place un programme de fidélisation"
+    ],
+    "reponse": [
+      0,
+      2,
+      4
+    ],
+    "explication": "Les 5 leviers : développer le CRM, mieux connaître les clients, engager le dialogue, faire participer les clients à la vie de la marque, mettre en place un programme de fidélisation. Baisse générale des prix et publicité de masse relèvent d'une logique one-to-many."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-004",
+    "section": "1. La connaissance client : pourquoi et comment",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque source de collecte aux données qu'elle fournit en priorité.",
+    "colonne_a": [
+      "Programme de fidélité",
+      "Échanges d'après-vente",
+      "Site internet vitrine",
+      "Réseaux sociaux"
+    ],
+    "colonne_b": [
+      "Commentaires, « J'aime », partages, messages privés",
+      "Produits achetés, fréquence, montant",
+      "Pages vues, produits consultés, temps passé",
+      "Historique des problèmes, réactions sur l'expérience"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Chaque source a sa spécialité : le programme de fidélité renseigne les achats (fréquence, montant), l'après-vente les problèmes, le site la navigation, les réseaux sociaux les interactions. S'y ajoutent le formulaire de contact et la messagerie téléphonique."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-005",
+    "section": "1. La connaissance client : pourquoi et comment",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 4 étapes pour enrichir la base clients par les réseaux sociaux.",
+    "elements": [
+      "Trier : supprimer les données inutiles et dédoublonner",
+      "Partage et communauté (boutons de partage)",
+      "Segmentation qualitative en 4 familles de données",
+      "Exploiter les interactions et identifier les leaders d'opinion"
+    ],
+    "ordre": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "explication": "Partage et communauté → exploiter les interactions et repérer les leaders d'opinion (à recruter comme ambassadeurs ; indicateur clics / conversion) → trier et dédoublonner → segmentation qualitative."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-006",
+    "section": "1. La connaissance client : pourquoi et comment",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Parmi les 4 familles de données de la segmentation qualitative, laquelle est la moins utilisée, et pourquoi ?",
+    "options": [
+      "les données contextuelles, car elles relèvent souvent du domaine privé et sont les plus difficiles à obtenir",
+      "les données transactionnelles, car elles sont trop volumineuses",
+      "les données sociodémographiques, car elles sont interdites par le RGPD",
+      "les données relationnelles, car elles changent trop vite"
+    ],
+    "reponse": 0,
+    "explication": "Les données contextuelles (environnement du contact) sont les moins utilisées : souvent du domaine privé, elles sont les plus difficiles à obtenir. Les trois autres familles : sociodémographiques, transactionnelles, relationnelles et comportementales."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-007",
+    "section": "1. La connaissance client : pourquoi et comment",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Une base de données achetée sur Internet est un bon moyen d'enrichir rapidement son fichier, à condition qu'elle soit volumineuse.",
+    "reponse": false,
+    "explication": "Faux. Ces bases manquent souvent de fiabilité et de conformité légale. Un fichier doit être « qualifié » : des données réelles, sur des personnes qui correspondent à la cible. Sinon, on s'expose à des plaintes et à des avis négatifs."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-008",
+    "section": "2. Comprendre ce qui motive : les motivations repères",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque motivation repère à l'exemple donné par le cours.",
+    "colonne_a": [
+      "Fonctionnelle",
+      "Émotionnelle",
+      "Sécurité",
+      "Estime de soi",
+      "Accomplissement personnel"
+    ],
+    "colonne_b": [
+      "Assurance habitation",
+      "Cours pour apprendre une compétence",
+      "Machine à laver à options",
+      "Vêtements de marque",
+      "Parfum qui évoque des souvenirs"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "explication": "Fonctionnelle = commodité, gain de temps ; émotionnelle = se sentir heureux ; sécurité = stabilité, fiabilité ; estime de soi = renforcer son image ; accomplissement = croissance. La 6e, sociale, renvoie aux choix vestimentaires (appartenance)."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-009",
+    "section": "2. Comprendre ce qui motive : les motivations repères",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Les motivations repères sont décrites comme des « boussoles cachées ». Que signifie cette image ?",
+    "options": [
+      "elles sont souvent inconscientes et orientent les décisions au-delà du besoin du produit",
+      "elles sont dissimulées volontairement par les clients aux enquêteurs",
+      "elles ne concernent que les achats impulsifs",
+      "elles ne peuvent être mesurées que par l'observation"
+    ],
+    "reponse": 0,
+    "explication": "Les motivations repères dépassent le besoin du produit, répondent à des besoins plus larges et souvent inconscients, et s'enracinent dans les expériences, valeurs et émotions. Elles agissent comme des filtres : une interaction qui n'y répond pas provoque déception et frustration."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-010",
+    "section": "2. Comprendre ce qui motive : les motivations repères",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez la matrice REPERE.",
+    "texte": "R pour {1} (émotions et sensations), E pour {2} (aspects fonctionnels), P pour {3} (aspirations à long terme), E pour {4} (action, efficacité), R pour {5} (socialisation, partage) et E pour {6} (changement, nouvelles habitudes).",
+    "trous": [
+      "Recherche",
+      "Évaluation",
+      "Préférence",
+      "Engagement",
+      "Réaction",
+      "Évolution"
+    ],
+    "explication": "La matrice REPERE organise et classe les motivations repères en six composantes. Piège : le cours annonce « cinq composantes » mais l'acronyme et la liste en comptent six."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-011",
+    "section": "2. Comprendre ce qui motive : les motivations repères",
+    "niveau": 3,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 5 étapes d'utilisation de la matrice REPERE.",
+    "elements": [
+      "Personnaliser les stratégies",
+      "Créer des profils de parcours",
+      "Repérer les points de friction et d'opportunité",
+      "Suivre et ajuster",
+      "Analyser schémas et tendances"
+    ],
+    "ordre": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ],
+    "explication": "Profils de parcours → schémas et tendances → points de friction et d'opportunité → personnalisation → suivi et ajustement. La conception, elle, suit 3 étapes : collecte, identification et classement, attribution aux étapes du parcours."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-012",
+    "section": "2. Comprendre ce qui motive : les motivations repères",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "D'après l'annexe 1, les jeunes actifs urbains sont « motivés par le gain de temps, mais sensibles au prix ». Comment le lire avec la grille du cours ?",
+    "options": [
+      "une motivation sociale et un frein émotionnel",
+      "une motivation d'accomplissement et un frein de sécurité",
+      "une motivation d'estime de soi sans frein",
+      "une motivation fonctionnelle et un frein lié au prix"
+    ],
+    "reponse": 3,
+    "explication": "Le gain de temps est une motivation fonctionnelle ; la sensibilité au prix est un frein. Le questionnaire de Q4 doit précisément explorer motivations, freins et attentes."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-013",
+    "section": "3. Le client expert (ou client connecté)",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque rôle du client expert à son exemple.",
+    "colonne_a": [
+      "Communicant",
+      "Co-constructeur de la marque",
+      "Co-producteur de contenus"
+    ],
+    "colonne_b": [
+      "Vidéos de déballage (unboxing) sur YouTube",
+      "Avis publiés sur les réseaux, forums et blogs",
+      "Vote de la communauté Ba&sh sur des silhouettes en 3D"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Le client expert, actif et engagé, communique (opinions, avis), co-construit la marque et les offres (Ba&sh), co-produit des contenus (unboxing, revues)."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-014",
+    "section": "3. Le client expert (ou client connecté)",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un client qui pose une question en message privé Facebook puis poursuit par e-mail ne devrait pas avoir à reformuler sa demande : le service client doit connaître le premier échange.",
+    "reponse": true,
+    "explication": "Vrai. Le client expert passe d'un canal à l'autre et attend que l'information le suive. D'où le principe d'intégration des canaux dans la conception de son parcours."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-015",
+    "section": "3. Le client expert (ou client connecté)",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Lesquels font partie des 6 principes de conception du parcours du client expert ? (3 réponses)",
+    "options": [
+      "segmenter le parcours",
+      "imposer un canal unique pour simplifier",
+      "garantir fluidité et simplicité",
+      "allonger les formulaires pour mieux qualifier",
+      "mesurer et optimiser"
+    ],
+    "reponse": [
+      0,
+      2,
+      4
+    ],
+    "explication": "Les 6 principes : analyser les données, segmenter le parcours, ordonnancement logique, personnaliser, fluidité et simplicité (formulaires courts, paiement sécurisé), mesurer et optimiser."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-016",
+    "section": "3. Le client expert (ou client connecté)",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans les avis Trustpilot de PrepMyMeal, un client calcule un coût de « 34 € par jour » et compare avec d'autres modes d'alimentation. Comment traiter ce type d'avis ?",
+    "options": [
+      "l'ignorer, car il s'agit d'un cas isolé",
+      "le supprimer pour protéger l'image de la marque",
+      "le traiter comme une donnée d'analyse, typique d'un client expert",
+      "y répondre uniquement par un geste commercial"
+    ],
+    "reponse": 2,
+    "explication": "C'est typiquement le comportement d'un client expert, plus informé et plus exigeant. Ses arguments (prix, comparaison, prestataire de livraison) sont des données d'analyse pour le diagnostic de Q2."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-017",
+    "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les statuts successifs d'un individu, du premier au dernier.",
+    "elements": [
+      "Prospect",
+      "Ambassadeur",
+      "Suspect",
+      "Client fidèle",
+      "Lead"
+    ],
+    "ordre": [
+      2,
+      4,
+      0,
+      3,
+      1
+    ],
+    "explication": "Suspect (correspond à la cible, aucune interaction) → lead (a manifesté un intérêt) → prospect (besoins qualifiés) → acheteur puis client fidèle → ambassadeur (promeut la marque et réduit les dépenses publicitaires)."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-018",
+    "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un visiteur s'inscrit à la newsletter d'une marque sans avoir encore échangé avec un commercial. Quel est son statut ?",
+    "options": [
+      "un suspect",
+      "un lead",
+      "un prospect chaud",
+      "un client"
+    ],
+    "reponse": 1,
+    "explication": "Il a manifesté un intérêt (inscription, question, clic) : c'est un lead. Il deviendra prospect quand ses besoins seront qualifiés ; un prospect chaud (lead qualifié +) contacte un commercial pour une offre précise."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-019",
+    "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Parmi les 6 étapes de la relation client, laquelle est la plus longue, et laquelle est la plus courte ?",
+    "options": [
+      "la plus longue : le marketing ; la plus courte : la recommandation",
+      "la plus longue : le service à la clientèle ; la plus courte : la qualification",
+      "la plus longue : la qualification ; la plus courte : la vente",
+      "la plus longue : la vente ; la plus courte : la transaction"
+    ],
+    "reponse": 3,
+    "explication": "La vente est l'étape la plus longue (le prospect décide ; durée selon le cycle de vente). La transaction est la plus courte : passage du pilier vente au pilier service client."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-020",
+    "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Tous les supports du bloc présentent la relation client en 6 étapes.",
+    "reponse": false,
+    "explication": "Faux. « Les étapes de la relation client » en compte 6 (marketing, qualification, vente, transaction, service à la clientèle, recommandation). « Introduction à la connaissance des clients » présente une stratégie CRM en 7 étapes, qui commence par le choix de la stratégie marketing et ajoute la fidélisation."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-021",
+    "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Lors d'une conférence professionnelle, un client satisfait témoigne publiquement de son expérience, de façon préparée. De quelle forme de recommandation s'agit-il ?",
+    "options": [
+      "une recommandation informelle par compensation",
+      "un lead nurturing",
+      "une recommandation formelle",
+      "un parrainage"
+    ],
+    "reponse": 2,
+    "explication": "La recommandation formelle est un témoignage public, organisé et préparé (événement, foire, conférence) ou enregistré. L'informelle passe par le réseau du client, par motivation ou compensation. « Le témoignage d'une personne vaut 10 fois plus que la publicité d'une entreprise. »"
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-022",
+    "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Le client et le consommateur sont toujours la même personne.",
+    "reponse": false,
+    "explication": "Faux. Le client achète, le consommateur consomme : le parent qui achète un jouet pour son enfant est client, l'enfant est consommateur. De même, le prospect n'est qu'un client potentiel."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-023",
+    "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+    "niveau": 3,
+    "format": "texte_a_trous",
+    "question": "Complétez les chiffres du cours.",
+    "texte": "{1} des Français ne restent pas avec une structure qui commet deux fois la même erreur. {2} des visiteurs d'une boutique e-commerce deviennent clients, contre près de {3} en boutique physique. Selon la loi de Pareto, {4} des clients font 80 % du chiffre d'affaires.",
+    "trous": [
+      "70 %",
+      "2 %",
+      "40 %",
+      "20 %"
+    ],
+    "explication": "Ces chiffres justifient l'effort de fidélisation et l'enjeu de la conversion en ligne. Le cours ajoute : « mieux vaut un client fidèle que 10 clients occasionnels »."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-024",
+    "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque étape du cycle de vie du client à la stratégie marketing correspondante.",
+    "colonne_a": [
+      "Atteindre",
+      "Acquérir",
+      "Convertir",
+      "Retenir",
+      "Fidéliser"
+    ],
+    "colonne_b": [
+      "Rétention : sondages, programme « voix du client », FAQ",
+      "Fidélité : programmes à plusieurs niveaux, parrainage",
+      "Sensibilisation : notoriété, « comment avez-vous entendu parler de nous ? »",
+      "Achat : analyser les abandons, relancer les paniers abandonnés",
+      "Considération : contenu clair, comparateurs, chat"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "explication": "Le cycle de vie du client, issu du CRM, compte 5 étapes. C'est un cycle : le client peut abandonner à chaque étape et recommencer."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-025",
+    "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Quelle part des ventes potentielles la relance des paniers abandonnés récupère-t-elle, selon le cours ?",
+    "options": [
+      "environ 2 %",
+      "environ 40 %",
+      "environ 25 %",
+      "environ 10 %"
+    ],
+    "reponse": 3,
+    "explication": "Environ 10 % des ventes potentielles, sous réserve des consentements (RGPD). C'est un levier de l'étape « convertir »."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-026",
+    "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quelle est la formule de la CLV donnée par le cours ?",
+    "options": [
+      "CA du client × durée de la relation (années) − coûts totaux d'acquisition et de service",
+      "panier moyen × fréquence d'achat mensuelle",
+      "CA total / nombre de clients",
+      "marge du client − coût de la dernière campagne"
+    ],
+    "reponse": 0,
+    "explication": "CLV = CA du client × durée de la relation − coûts d'acquisition et de service. Indicateur prospectif : l'acquisition est un coût ponctuel, les revenus s'accumulent chaque année. Fréquence × panier ne donne qu'une valeur mensuelle."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-027",
+    "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La CLV est plus pertinente pour évaluer une base clients dans son ensemble que pour piloter une action précise du plan marketing.",
+    "reponse": true,
+    "explication": "Vrai. La CLV est pertinente au niveau macro (base clients), difficile au niveau micro. C'est le ROMI qui opère action par action. La CLV vient du marketing direct et sert peu pour les investissements difficiles à chiffrer, comme la marque."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-028",
+    "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+    "niveau": 3,
+    "format": "qcm_multiple",
+    "question": "Quels sont les 3 paramètres du capital client ? (3 réponses)",
+    "options": [
+      "value equity",
+      "brand equity",
+      "lead scoring",
+      "retention equity",
+      "share of voice"
+    ],
+    "reponse": [
+      0,
+      1,
+      3
+    ],
+    "explication": "Le capital client combine CLV et ROMI à partir de la value equity (perception objective de la marque), de la brand equity et de la retention equity (fidélité). Le modèle de Lemon et Zeithaml calcule la probabilité de changement de marque."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-029",
+    "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+    "niveau": 1,
+    "format": "texte_a_trous",
+    "question": "Complétez la définition de la segmentation RFM.",
+    "texte": "R pour {1}, la date du dernier achat ; F pour {2}, le nombre d'achats sur une période ; M pour {3}, le chiffre d'affaires cumulé. Elle fait apparaître un cycle : client nouveau, puis bon client, puis {4}, puis inactif.",
+    "trous": [
+      "Récence",
+      "Fréquence",
+      "Montant",
+      "occasionnel"
+    ],
+    "explication": "La RFM est « probablement la segmentation la plus utilisée ». Actions associées : welcome pack pour les nouveaux, plan de réactivation pour ceux qui glissent vers l'inactivité, soirées privées pour les VIP."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-030",
+    "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+    "niveau": 2,
+    "format": "ouverte",
+    "question": "À partir de l'annexe 1 (fréquence d'achat, panier moyen, taux de fidélité par segment), identifiez le segment le plus précieux de PrepMyMeal et celui qui décroche. Justifiez par un calcul.",
+    "attendus": [
+      "Valeur mensuelle par client = fréquence × panier : sportifs 2,1 × 45 € = 94,50 € ; jeunes actifs 1,5 × 38 € = 57 € ; bien-être 1,3 × 35 € = 45,50 € ; nouveaux 1 × 32 € = 32 €",
+      "Pondérée par le nombre de clients, la part des sportifs dans le CA mensuel estimé est d'environ 39 %",
+      "Les sportifs (fidélité 68 %) sont le segment le plus précieux et le vivier d'ambassadeurs",
+      "Les nouveaux clients (fidélité 35 %, forte perte après la 1re commande) décrochent entre conversion et rétention",
+      "La CLV complète ne peut pas être calculée : coûts et durée de relation inconnus, à signaler"
+    ],
+    "explication": "Exercice type Q2/Q5 : lire le CRM en valeur, pas seulement en effectifs, puis le relier au cycle de vie du client."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-031",
+    "section": "5. Segmenter et cibler : les outils propres au bloc 3",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qui distingue la segmentation à 360° d'une segmentation traditionnelle ?",
+    "options": [
+      "elle ne s'appuie que sur des critères démographiques",
+      "elle analyse les clients sous plusieurs angles en intégrant différentes sources de données",
+      "elle remplace le ciblage et le positionnement",
+      "elle est réservée au BtoB"
+    ],
+    "reponse": 1,
+    "explication": "La segmentation à 360° intègre différentes sources de données pour une image multidimensionnelle du marché. Vigilance : difficulté de collecte, besoin technologique, vie privée et réglementation."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-032",
+    "section": "5. Segmenter et cibler : les outils propres au bloc 3",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans un arbre de segmentation, que représentent les nœuds et les branches ?",
+    "options": [
+      "les nœuds sont des clients, les branches des achats",
+      "les nœuds sont des segments finaux, les branches des produits",
+      "les nœuds sont des canaux, les branches des messages",
+      "les nœuds sont des critères de segmentation, les branches des décisions fondées sur ces critères"
+    ],
+    "reponse": 3,
+    "explication": "L'arbre de segmentation (arbre de décision, de classification) divise un ensemble de données en sous-groupes plus petits et plus homogènes : chaque nœud est un critère, chaque branche une décision. Il vient du machine learning."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-033",
+    "section": "5. Segmenter et cibler : les outils propres au bloc 3",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque notion à sa définition selon le support « Le ciblage ».",
+    "colonne_a": [
+      "Cœur de cible",
+      "Cible secondaire",
+      "Prescripteur",
+      "Influenceur",
+      "Cible de communication"
+    ],
+    "colonne_b": [
+      "Personne de confiance qui recommande dans un cadre personnel, informel",
+      "Description fine de la cible principale",
+      "Cible marketing élargie aux prescripteurs, experts, influenceurs",
+      "Ceux qui relaient ou amplifient le message sans être visés par l'offre",
+      "Audience engagée, rôle quasi professionnel (contenus sponsorisés)"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        2
+      ]
+    ],
+    "explication": "Piège : B1-R4 donne une autre lecture du cœur de cible (les décisionnaires). Ici, c'est la description fine de la cible principale."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-034",
+    "section": "5. Segmenter et cibler : les outils propres au bloc 3",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une marque affiche des maillots de bain sur une page consacrée aux activités estivales. Quelle méthode de ciblage utilise-t-elle ?",
+    "options": [
+      "le ciblage contextuel",
+      "le retargeting",
+      "le ciblage comportemental",
+      "le ciblage géographique"
+    ],
+    "reponse": 0,
+    "explication": "Le ciblage contextuel s'appuie sur l'environnement du moment. Le comportemental utilise le comportement passé, le retargeting relance ceux qui n'ont pas finalisé leur achat."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-035",
+    "section": "5. Segmenter et cibler : les outils propres au bloc 3",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "L'approche push, qui consiste à aller vers le client par la publicité et les promotions, est plus coûteuse que l'approche pull.",
+    "reponse": true,
+    "explication": "Vrai. Le push est plus visible et direct, mais plus coûteux. Le pull attire le client par l'attractivité de l'offre, le contenu, la réputation. Bricorama combine les deux (carte Bricobonus et newsletters)."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-036",
+    "section": "5. Segmenter et cibler : les outils propres au bloc 3",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une entreprise s'adresse simultanément à plusieurs segments en concevant une offre spécifique pour chacun. Quelle stratégie de ciblage applique-t-elle ?",
+    "options": [
+      "le ciblage de masse",
+      "le ciblage indifférencié",
+      "le ciblage différencié par un message unique",
+      "le ciblage multisegment"
+    ],
+    "reponse": 3,
+    "explication": "Le multisegment vise plusieurs segments en même temps avec une offre spécifique pour chacun. Le ciblage de masse (indifférencié) propose une approche universelle ; le différencié, une approche distincte par segment quand les besoins varient fortement."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-037",
+    "section": "5. Segmenter et cibler : les outils propres au bloc 3",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez la méthode IAC d'évaluation d'un segment.",
+    "texte": "I pour {1} : l'affinité du segment avec l'offre. A pour {2} : les canaux et la logistique pour l'atteindre. C pour {3} : les ressources et compétences pour le servir. IAC est complémentaire des {4}, qui jugent les pressions concurrentielles.",
+    "trous": [
+      "Intérêt",
+      "Accessibilité",
+      "Capacités",
+      "5 forces de Porter"
+    ],
+    "explication": "IAC juge la pertinence du segment pour l'entreprise ; Porter, adapté au ciblage, juge son attractivité concurrentielle. Ce cours range les « avantages concurrentiels » en 5e force (version classique en B1-R2)."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-038",
+    "section": "5. Segmenter et cibler : les outils propres au bloc 3",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Selon le cours, segmentation, ciblage et positionnement peuvent être menés dans n'importe quel ordre, de façon itérative.",
+    "reponse": false,
+    "explication": "Faux. Ils s'appliquent dans l'ordre : la logique itérative est « quasi impossible ». Ils sont interdépendants : la défaillance d'une étape se répercute sur la suivante, et aucune ne remplace l'autre."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-039",
+    "section": "6. L'adoption des nouveaux produits : la courbe d'adoption",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque catégorie d'adoptants à sa part sur la courbe d'adoption.",
+    "colonne_a": [
+      "Innovateurs",
+      "Adopteurs précoces",
+      "Majorité précoce",
+      "Retardataires"
+    ],
+    "colonne_b": [
+      "34 %",
+      "16 %",
+      "3 %",
+      "13 %"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Innovateurs 3 %, adopteurs précoces 13 %, majorité précoce 34 %, majorité tardive 34 %, retardataires 16 %. La courbe se représente en S."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-040",
+    "section": "6. L'adoption des nouveaux produits : la courbe d'adoption",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Où la figure du cours place-t-elle le « gouffre », et que signifie-t-il ?",
+    "options": [
+      "entre majorité tardive et retardataires : les derniers refusent toute innovation",
+      "entre innovateurs et adopteurs précoces : le produit manque de technologie",
+      "entre adopteurs précoces et majorité précoce : on passe de la recherche de technologie à la recherche de solutions, praticité et fiabilité",
+      "après les retardataires : le produit entre en déclin"
+    ],
+    "reponse": 2,
+    "explication": "À gauche du gouffre, on veut de la technologie et des performances ; à droite, des solutions, de la praticité et de la fiabilité. La majorité précoce veut des preuves de valeur avant d'acheter."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-041",
+    "section": "6. L'adoption des nouveaux produits : la courbe d'adoption",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Sur quels facteurs du rythme d'adoption le foodtruck PrepMyMeal agit-il directement ? (3 réponses)",
+    "options": [
+      "la complexité, réduite : on goûte avant de commander en ligne",
+      "le test social : partage, hashtags, concours photo",
+      "la saisonnalité de la demande",
+      "les avantages perçus : dégustation des recettes vegan et low carb",
+      "le prix de référence du marché"
+    ],
+    "reponse": [
+      0,
+      1,
+      3
+    ],
+    "explication": "Les 4 facteurs du rythme d'adoption : avantages perçus, compatibilité, complexité, test social. Le foodtruck réduit la complexité, active le test social et rend visibles les avantages."
+  },
+  {
+    "resume": "b3-r01",
+    "bloc": 3,
+    "id": "b3-r01-qz-042",
+    "section": "6. L'adoption des nouveaux produits : la courbe d'adoption",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Dans un parcours client, de nombreux prospects abandonnent juste après la découverte d'un nouveau produit. Que signale ce symptôme, selon le cours ?",
+    "options": [
+      "un problème d'expérience utilisateur",
+      "un problème de communication des bénéfices",
+      "un problème de prix",
+      "un problème de logistique"
+    ],
+    "reponse": 1,
+    "explication": "Des abandons après la découverte signalent un problème de communication des bénéfices. Des blocages entre deux étapes signalent plutôt un problème d'expérience utilisateur."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-001",
+    "section": "1. Parcours, points de contact et moments de vérité",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Selon le cours, que comporte nécessairement un parcours client ?",
+    "options": [
+      "un seul canal et un seul point de contact",
+      "une étape de recommandation",
+      "obligatoirement un achat en ligne",
+      "de nombreux points de contact liés entre eux et au moins un moment de vérité"
+    ],
+    "reponse": 3,
+    "explication": "Le parcours client est le chemin que prend un consommateur pour effectuer une tâche du début à la fin. Il comporte de nombreux points de contact liés entre eux et au moins un moment de vérité."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-002",
+    "section": "1. Parcours, points de contact et moments de vérité",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Un moment de vérité peut être destructeur de valeur.",
+    "reponse": true,
+    "explication": "Vrai. Le moment de vérité est un instant clé à très forte influence, positive ou négative, sur la perception de la marque : il peut être créateur ou destructeur de valeur."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-003",
+    "section": "1. Parcours, points de contact et moments de vérité",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une commande PrepMyMeal n'est jamais livrée malgré plusieurs reports. Comment qualifier cet instant négatif ?",
+    "options": [
+      "un temps d'attente, moins dangereux car l'expérience continue",
+      "un ZMOT",
+      "un moment de vérité positif, car le SAV a répondu",
+      "un point de défaillance, plus dangereux car il peut mettre fin à l'expérience"
+    ],
+    "reponse": 3,
+    "explication": "Le point de défaillance est une réalité capable de mettre fin à l'expérience : il est plus dangereux que le temps d'attente, où l'expérience continue. La livraison est le point de défaillance du parcours PrepMyMeal ; le SAV réactif, un moment de vérité positif."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-004",
+    "section": "1. Parcours, points de contact et moments de vérité",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Qu'est-ce que le ZMOT ?",
+    "options": [
+      "l'instant où l'acheteur fait une première recherche en ligne pour se faire un avis, avant même que le vendeur sache qu'il s'y intéresse",
+      "le moment où le client ouvre le colis",
+      "le dernier point de contact avant l'achat",
+      "l'instant où le client publie un avis négatif"
+    ],
+    "reponse": 0,
+    "explication": "Zero Moment of Truth, rattaché à Google depuis 2011. C'est un moment de vérité à l'initiative du client : la quête d'informations fiables."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-005",
+    "section": "1. Parcours, points de contact et moments de vérité",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels moments de vérité sont à l'initiative du client ? (3 réponses)",
+    "options": [
+      "la quête d'informations fiables",
+      "accorder du temps et de l'écoute au client",
+      "se décider à acheter",
+      "connaître les attentes du client",
+      "partager son expérience"
+    ],
+    "reponse": [
+      0,
+      2,
+      4
+    ],
+    "explication": "À l'initiative du client : quête d'informations fiables, décision d'achat, expérience d'achat, partage de l'expérience. À l'initiative de l'entreprise : accorder du temps, accorder la primauté au client, connaître ses attentes."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-006",
+    "section": "1. Parcours, points de contact et moments de vérité",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Selon des psychologues cités par le cours, on se souvient surtout d'un événement d'après le ressenti au pic d'émotion, ce qui compte pour la gestion des réclamations.",
+    "reponse": true,
+    "explication": "Vrai. C'est pourquoi certains spécialistes font de l'émotion le critère majeur pour identifier un moment de vérité, et pourquoi un moment de vérité conditionne les suivants."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-007",
+    "section": "1. Parcours, points de contact et moments de vérité",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "C'est l'entreprise qui définit les moments de vérité de ses clients, à partir de ses objectifs commerciaux.",
+    "reponse": false,
+    "explication": "Faux. Ce sont les clients qui définissent leurs moments de vérité (vol annulé, déclaration de sinistre). D'où l'importance d'une bonne stratégie d'écoute des avis."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-008",
+    "section": "1. Parcours, points de contact et moments de vérité",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Pour détecter les moments de vérité, quelle méthode les experts jugent-ils la plus bénéfique ?",
+    "options": [
+      "la simulation par intelligence artificielle",
+      "l'analyse exclusive des ventes",
+      "la méthode collaborative : mesures quantitatives, détection d'insights et alignement participatif des acteurs internes",
+      "le sondage téléphonique aléatoire"
+    ],
+    "reponse": 2,
+    "explication": "La méthode collaborative combine l'analyse de mesures quantitatives, la détection d'insights (besoins réels, conscients ou inconscients) et l'alignement participatif des acteurs internes. Parmi les 6 méthodes d'identification, les entretiens qualitatifs sont jugés les plus bénéfiques."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-009",
+    "section": "1. Parcours, points de contact et moments de vérité",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Dans une cartographie du parcours, où le cours dit-il qu'« apparaît le moment de vérité » ?",
+    "options": [
+      "dans la ligne des canaux utilisés",
+      "dans le parcours émotionnel",
+      "dans la colonne des coûts",
+      "dans les KPI de conversion"
+    ],
+    "reponse": 1,
+    "explication": "Actions et points de contact sur l'axe horizontal, autres données sur la verticale, sans oublier le parcours émotionnel : c'est là qu'apparaît le moment de vérité."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-010",
+    "section": "2. Scénariser et cartographier le parcours",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quels sont les deux apports d'un scénario de parcours client ?",
+    "options": [
+      "réduire les coûts et augmenter les prix",
+      "remplacer le CRM et l'enquête de satisfaction",
+      "segmenter et cibler",
+      "la compréhension (voir où le client s'égare) et la collaboration (langage visuel partagé entre équipes)"
+    ],
+    "reponse": 3,
+    "explication": "Le scénario traduit des données foisonnantes en image (compréhension) et crée un langage visuel partagé entre marketing, ventes et service client (collaboration)."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-011",
+    "section": "2. Scénariser et cartographier le parcours",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Que montre une carte d'expérience pour chaque étape du parcours ?",
+    "options": [
+      "points de contact, émotions ressenties, canaux utilisés, défis rencontrés",
+      "le chiffre d'affaires et la marge par client",
+      "les concurrents et leurs prix",
+      "le planning des équipes"
+    ],
+    "reponse": 0,
+    "explication": "La carte d'expérience détaille, pour chaque étape, les points de contact, les émotions, les canaux et les défis. Le diagramme, lui, montre les transitions entre phases."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-012",
+    "section": "2. Scénariser et cartographier le parcours",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 3 temps de conception d'un scénario de parcours.",
+    "elements": [
+      "Intégrer les points de contact et les canaux, en repérant les changements de canal",
+      "Collecter les données et identifier les étapes",
+      "Organiser les étapes dans un ordre logique et chronologique"
+    ],
+    "ordre": [
+      1,
+      2,
+      0
+    ],
+    "explication": "Collecte (interactions en ligne, historiques d'achat, canaux, enquêtes de satisfaction) → ordonnancement selon le « flux naturel » du client → intégration des points de contact et des changements de canal, pour une expérience « sans couture »."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-013",
+    "section": "2. Scénariser et cartographier le parcours",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque étape du parcours à la stratégie marketing adaptée.",
+    "colonne_a": [
+      "Reconnaissance du besoin",
+      "Considération",
+      "Décision",
+      "Action",
+      "Recommandation"
+    ],
+    "colonne_b": [
+      "Processus fluide, confirmation, suivi de commande",
+      "Remise au parrain et au filleul",
+      "Contenus informatifs, sensibilisation",
+      "Offres spéciales, essai gratuit, avis",
+      "Comparaisons, guides d'achat, témoignages"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "explication": "Le marketing s'adapte à l'étape : éduquer, puis comparer, puis déclencher la décision, faciliter l'action, fidéliser (service client, demande d'avis) et inciter au parrainage."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-014",
+    "section": "2. Scénariser et cartographier le parcours",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Lesquelles font partie de la méthode en 7 étapes pour améliorer l'expérience et la conversion ? (3 réponses)",
+    "options": [
+      "analyser les abandons et les points critiques",
+      "allonger le processus pour mieux qualifier le client",
+      "simplifier le processus (paiement en un clic)",
+      "communiquer de manière proactive avec ceux qui hésitent ou ont abandonné",
+      "supprimer la collecte de données"
+    ],
+    "reponse": [
+      0,
+      2,
+      3
+    ],
+    "explication": "Les 7 étapes : analyser les abandons, collecter et utiliser les données, personnaliser, informer aux moments clés, simplifier, communiquer de manière proactive, mesurer et ajuster."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-015",
+    "section": "2. Scénariser et cartographier le parcours",
+    "niveau": 2,
+    "format": "ouverte",
+    "question": "Décrivez la forme que doit prendre la cartographie du parcours client de PrepMyMeal demandée en Q1, et précisez quelles lignes ne doivent pas manquer.",
+    "attendus": [
+      "Une carte d'expérience en tableau",
+      "En colonnes, les étapes : découverte, intérêt et considération, commande, livraison et consommation, fidélisation et recommandation",
+      "En lignes : actions du client, points de contact, outils et supports, émotions, frictions, moments de vérité, pistes d'amélioration",
+      "La ligne « outils et supports » répond à l'énoncé ; la ligne « émotions » révèle les moments de vérité",
+      "Intégrer le foodtruck comme point de contact physique dans un parcours jusque-là digital"
+    ],
+    "explication": "Le critère d'évaluation demande, pour chaque étape, les points de bascule : frictions, opportunités et moments clés."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-016",
+    "section": "3. Gérer les canaux de la relation client",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Dans quel mode de gestion des canaux l'opérateur voit-il tout l'historique du client, quel que soit le canal du contact ?",
+    "options": [
+      "le multicanal",
+      "le cross canal",
+      "l'omnicanal, géré sur une seule plateforme CRM",
+      "le monocanal"
+    ],
+    "reponse": 2,
+    "explication": "En omnicanal, les canaux forment un tout géré sur une seule plateforme (ex. easiware). Le multicanal gère chaque canal en silo ; le cross canal crée des passerelles sans tout centraliser."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-017",
+    "section": "3. Gérer les canaux de la relation client",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Selon le cours, une gestion multicanale en silos peut aller jusqu'à provoquer un risque d'abandon de poste chez les employés.",
+    "reponse": true,
+    "explication": "Vrai. Côté employés, le multicanal en silos les oblige à jongler entre outils : perte de productivité et risque d'abandon de poste. Côté clients : fiche recréée à chaque contact, données en doublon."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-018",
+    "section": "3. Gérer les canaux de la relation client",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une marque réserve son chat aux pages produit et oriente les questions de commande vers le mail. Quel principe applique-t-elle ?",
+    "options": [
+      "le right channeling",
+      "le multicanal",
+      "le self care",
+      "le retargeting"
+    ],
+    "reponse": 0,
+    "explication": "Le right channeling positionne chaque canal là où le client s'attend à trouver l'entreprise et l'oriente vers le canal le plus adapté au bon moment. Le mail sert surtout en après-vente, les messageries instantanées avant l'achat."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-019",
+    "section": "3. Gérer les canaux de la relation client",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quels sont les deux incontournables d'une FAQ dynamique ?",
+    "options": [
+      "une vidéo et un numéro de téléphone",
+      "un chatbot et un live chat",
+      "un formulaire et une adresse postale",
+      "le langage naturel et une base de données unifiée et centralisée"
+    ],
+    "reponse": 3,
+    "explication": "La FAQ est un outil de self care, à bâtir sur les données d'usage. Double atout : elle allège le service client et satisfait le client (« rétribution symbolique »)."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-020",
+    "section": "3. Gérer les canaux de la relation client",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque canal de relation client à sa particularité.",
+    "colonne_a": [
+      "Mail",
+      "Téléphone",
+      "Chatbot",
+      "Live chat",
+      "Messaging"
+    ],
+    "colonne_b": [
+      "Robot fondé sur l'IA, « souvent plus efficace qu'un opérateur humain »",
+      "Premier canal de relation client, à humaniser",
+      "Le client n'a pas à quitter son réseau social",
+      "Lien humain ; le client s'y confie davantage, « mine d'or » d'informations",
+      "Conversation avec un opérateur humain, ancêtre du chatbot"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        2
+      ]
+    ],
+    "explication": "Règles : être présent sur les bons canaux au bon moment, accompagner sans forcer, ne pas multiplier les outils, s'appuyer sur un bon CRM."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-021",
+    "section": "3. Gérer les canaux de la relation client",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Le formulaire de contact est le premier canal de relation client.",
+    "reponse": false,
+    "explication": "Faux. C'est le mail. Le formulaire de contact sert à la réassurance et aux questions précises ; il est chronophage, avec une faible valeur ajoutée par réponse."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-022",
+    "section": "4. Le parcours ATWAD",
+    "niveau": 1,
+    "format": "texte_a_trous",
+    "question": "Complétez la définition du parcours ATWAD.",
+    "texte": "ATWAD signifie AnyTime, {1}, on {2}. AnyTime exige un accès {3}, AnyWhere une expérience cohérente au domicile, au travail et en déplacement, Any Devices une compatibilité avec tous les {4}.",
+    "trous": [
+      "AnyWhere",
+      "Any Devices",
+      "24 h/24, 7 j/7",
+      "formats d'écran"
+    ],
+    "explication": "Ses piliers : présence permanente, accessibilité universelle, adaptabilité multisupport. Exemples cités : Salesforce, Amazon, Airbnb, Netflix."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-023",
+    "section": "4. Le parcours ATWAD",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel est, selon le cours, le défi le plus sensible d'un parcours ATWAD ?",
+    "options": [
+      "le coût des écrans",
+      "la confidentialité, la sécurité et la conformité réglementaire, car plus de points de contact signifie plus de vulnérabilités",
+      "le recrutement des vendeurs",
+      "la saisonnalité des ventes"
+    ],
+    "reponse": 1,
+    "explication": "S'y ajoutent la coordination des canaux et la gestion des données. Réponses : politiques de protection des données, formation du personnel, communication transparente."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-024",
+    "section": "4. Le parcours ATWAD",
+    "niveau": 3,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les premières étapes de conception d'un parcours ATWAD.",
+    "elements": [
+      "Développement de la disponibilité (redondance, mises à jour en heures creuses)",
+      "Analyse des besoins et des points de transition entre dispositifs",
+      "Conception de l'accessibilité (cross-platform, parité web/mobile, responsive)"
+    ],
+    "ordre": [
+      1,
+      2,
+      0
+    ],
+    "explication": "Analyse des besoins → accessibilité → disponibilité, puis AnyTime, AnyWhere et Any Devices. Les étapes sont chronologiques mais à mener de façon itérative."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-025",
+    "section": "4. Le parcours ATWAD",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque dimension ATWAD à la critique qu'elle permet d'adresser au parcours PrepMyMeal.",
+    "colonne_a": [
+      "AnyTime",
+      "AnyWhere",
+      "Any Devices"
+    ],
+    "colonne_b": [
+      "Bugs du site, parité site/app (revenu iOS 78,9 %, Android 21,1 %)",
+      "Créneaux de livraison non respectés",
+      "Point relais à 20-30 minutes, livraison du mardi au samedi seulement"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "ATWAD donne trois angles de critique utiles en Q1 et Q2."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-026",
+    "section": "5. L'entonnoir de conversion",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les étapes de l'entonnoir de conversion.",
+    "elements": [
+      "Décision",
+      "Intérêt",
+      "Action",
+      "Prise de conscience",
+      "Considération"
+    ],
+    "ordre": [
+      3,
+      1,
+      4,
+      0,
+      2
+    ],
+    "explication": "Prise de conscience → intérêt → considération → décision → action. Certains prospects sautent des étapes ou suivent un parcours non linéaire."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-027",
+    "section": "5. L'entonnoir de conversion",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'entonnoir de conversion ne sert qu'en ligne.",
+    "reponse": false,
+    "explication": "Faux. Il sert surtout en ligne, mais « vaut tout autant » pour la vente classique."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-028",
+    "section": "5. L'entonnoir de conversion",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Des prospects abandonnent à l'étape « action » parce que les frais de livraison sont élevés et l'achat complexe. Quelle mesure le cours préconise-t-il ?",
+    "options": [
+      "des publicités plus ciblées",
+      "des contenus de comparaison plus détaillés",
+      "des démonstrations en direct",
+      "un paiement simple, des formulaires clairs et moins d'étapes"
+    ],
+    "reponse": 3,
+    "explication": "À l'étape action, on simplifie. Les publicités ciblées répondent à la prise de conscience, les comparatifs à la considération, les démonstrations à la décision."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-029",
+    "section": "5. L'entonnoir de conversion",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque transition de l'entonnoir à ce que le retargeting doit afficher.",
+    "colonne_a": [
+      "Prise de conscience → intérêt",
+      "Intérêt → considération",
+      "Considération → décision",
+      "Décision → action"
+    ],
+    "colonne_b": [
+      "La preuve sociale (succès des anciens clients)",
+      "Le sentiment d'urgence (réduction temporaire, livraison gratuite)",
+      "Des publicités qui maintiennent la marque à l'esprit",
+      "Les avantages spécifiques du produit consulté"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Le retargeting exploite le comportement passé pour ramener les prospects perdus, avec un message adapté à chaque transition."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-030",
+    "section": "5. L'entonnoir de conversion",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Dans un A/B test, que doit contenir la version B ?",
+    "options": [
+      "une seule modification par rapport à la version A",
+      "toutes les améliorations envisagées en même temps",
+      "un nouveau site complet",
+      "le même contenu, diffusé sur un autre canal"
+    ],
+    "reponse": 0,
+    "explication": "A = version actuelle, B = une seule modification, pour attribuer l'écart à cette modification. On divise le trafic en deux groupes égaux, on compare les conversions, on déploie la gagnante (ex. bouton vert +15 %)."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-031",
+    "section": "5. L'entonnoir de conversion",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Avant de calculer un taux de conversion global à partir de l'annexe 2 de PrepMyMeal, il faut signaler que les captures Google Analytics ne couvrent pas toutes la même période.",
+    "reponse": true,
+    "explication": "Vrai. Les captures portent sur des périodes différentes (7 derniers jours, depuis fin septembre…). Le signaler est un gage de rigueur dans le diagnostic de Q2."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-032",
+    "section": "6. Le growth hacking et son entonnoir",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Qui a conceptualisé le growth hacking, et quel est son horizon ?",
+    "options": [
+      "Philip Kotler ; le long terme",
+      "Peter Schwartz ; le moyen terme",
+      "Bernard Schmitt ; le long terme",
+      "Sean Ellis (Dropbox) ; le court terme"
+    ],
+    "reponse": 3,
+    "explication": "Sean Ellis. Le growth hacking vise une croissance très forte à coût très faible, à court terme, avec des méthodes intrusives, parfois à la limite de la légalité. L'inbound marketing, lui, joue le long terme."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-033",
+    "section": "6. Le growth hacking et son entonnoir",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Growth hacking et inbound marketing sont deux approches incompatibles, car leurs finalités s'opposent.",
+    "reponse": false,
+    "explication": "Faux. Ils ont la même finalité (attirer des visiteurs et générer des conversions) et sont complémentaires. Le growth hacking adapte l'offre elle-même en temps réel ; l'inbound, les contenus."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-034",
+    "section": "6. Le growth hacking et son entonnoir",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles dérives du growth hacking le cours signale-t-il ? (3 réponses)",
+    "options": [
+      "abîmer l'image d'une marque installée par des pratiques « limites »",
+      "un coût d'acquisition trop élevé",
+      "casser le cercle vertueux de la confiance par des contenus trompeurs",
+      "la rupture du consentement RGPD",
+      "une croissance trop lente"
+    ],
+    "reponse": [
+      0,
+      2,
+      3
+    ],
+    "explication": "L'usage commercial des données doit être clairement exposé et limité dans le temps ; la collecte massive expose à des poursuites. Le growth hacking est au contraire peu coûteux et rapide."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-035",
+    "section": "6. Le growth hacking et son entonnoir",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque phase de l'entonnoir du growth hacking à sa question clé.",
+    "colonne_a": [
+      "Acquisition",
+      "Activation",
+      "Rétention",
+      "Revenu",
+      "Recommandation"
+    ],
+    "colonne_b": [
+      "L'utilisateur génère-t-il des revenus ?",
+      "L'utilisateur parle-t-il de l'entreprise ?",
+      "Comment les utilisateurs trouvent-ils l'entreprise ?",
+      "L'utilisateur revient-il fréquemment ?",
+      "L'utilisateur a-t-il une première expérience réussie ?"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "explication": "Le growth hacker optimise chaque phase pour rendre la portée exponentielle. Grille utile pour justifier les KPI du foodtruck en Q7."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-036",
+    "section": "6. Le growth hacking et son entonnoir",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Uber affiche les chauffeurs disponibles à proximité dès l'ouverture de l'application. Quelle phase de l'entonnoir du growth hacking cette astuce optimise-t-elle ?",
+    "options": [
+      "l'acquisition",
+      "la recommandation",
+      "le revenu",
+      "l'activation"
+    ],
+    "reponse": 3,
+    "explication": "L'activation : offrir une première expérience réussie, pour réduire les téléchargements sans usage. Exemples d'autres phases : Pinterest et son défilement infini (rétention), Dropbox et son parrainage (recommandation)."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-037",
+    "section": "6. Le growth hacking et son entonnoir",
+    "niveau": 3,
+    "format": "texte_a_trous",
+    "question": "Complétez les exemples de growth hacking.",
+    "texte": "Instagram s'est recentré sur la photo et les filtres : {1} utilisateurs en une semaine, puis un rachat par Facebook pour {2} 18 mois plus tard. Twitter a constaté que les comptes de moins de {3} followers restaient inactifs. Airbnb a automatisé ses publications sur {4}.",
+    "trous": [
+      "100 000",
+      "1 milliard de dollars",
+      "15",
+      "Craigslist"
+    ],
+    "explication": "Ces succès illustrent les notions clés du growth hacking : rapidité d'adaptation, usage permanent des données, créativité."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-038",
+    "section": "7. Anticiper : la méthode des scénarios (futuribles)",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque méthode d'analyse à la limite que le cours lui attribue face à l'incertitude à long terme.",
+    "colonne_a": [
+      "SWOT",
+      "PESTEL",
+      "5 forces de Porter",
+      "Méthode DELPHI"
+    ],
+    "colonne_b": [
+      "Liste exhaustive sans hiérarchisation du poids de chaque facteur",
+      "Dépend de la qualité des données initiales et de la représentativité des experts",
+      "Photographie de la situation actuelle, anticipe mal les tendances",
+      "S'adapte mal aux environnements instables"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Ces limites justifient la prospective par scénarios (futuribles), qui intègre une pluralité de possibilités."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-039",
+    "section": "7. Anticiper : la méthode des scénarios (futuribles)",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans la méthode des scénarios de Peter Schwartz, comment qualifier un phénomène à forte inertie, très structurant, lent mais infléchissable ?",
+    "options": [
+      "une rupture",
+      "un signal faible",
+      "une tendance lourde",
+      "une variable motrice"
+    ],
+    "reponse": 2,
+    "explication": "Tendances lourdes : forte inertie. Signaux faibles (émergences) : phénomènes naissants. Incertitudes / ruptures : date imprévisible, forts impacts."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-040",
+    "section": "7. Anticiper : la méthode des scénarios (futuribles)",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "On peut dater avec certitude la méthode des scénarios de Peter Schwartz de 1993.",
+    "reponse": false,
+    "explication": "Faux. Le cours la date de 1993, mais cite aussi son livre The Art of the Long View (1991) et son usage chez Shell dans les années 1970, pour anticiper les chocs pétroliers. Retiens le nom, pas la date."
+  },
+  {
+    "resume": "b3-r02",
+    "bloc": 3,
+    "id": "b3-r02-qz-041",
+    "section": "7. Anticiper : la méthode des scénarios (futuribles)",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une fois les tendances dégagées, par quelle hypothèse la méthode des scénarios commence-t-elle ?",
+    "options": [
+      "l'hypothèse la plus disruptive",
+      "l'hypothèse la plus rentable",
+      "l'hypothèse tendancielle, sans rupture",
+      "l'hypothèse retenue par la direction"
+    ],
+    "reponse": 2,
+    "explication": "On formule d'abord une hypothèse tendancielle, puis des hypothèses plus disruptives (signaux faibles confirmés, rupture). La méthode compte 2 phases : cartographie du système, puis schématisation des scénarios."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-001",
+    "section": "1. La donnée et sa valeur",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Qu'est-ce qui distingue une donnée d'une information ?",
+    "options": [
+      "la donnée est brute et sans signification en soi ; traitée et contextualisée, elle devient une information qui permet de décider",
+      "la donnée est toujours chiffrée, l'information toujours textuelle",
+      "l'information est collectée en ligne, la donnée hors ligne",
+      "il n'y a aucune différence"
+    ],
+    "reponse": 0,
+    "explication": "Une donnée (nombres, textes, images, sons) n'a pas de signification en soi. Une fois traitée et contextualisée, elle devient une information utile à la décision."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-002",
+    "section": "1. La donnée et sa valeur",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans quelle catégorie ranger des fichiers JSON ou XML ?",
+    "options": [
+      "les données structurées",
+      "les données non structurées",
+      "les données semi-structurées",
+      "les données tertiaires"
+    ],
+    "reponse": 2,
+    "explication": "JSON et XML sont semi-structurés. Les données structurées sont en bases relationnelles, faciles à interroger ; les non structurées (texte libre, images, audio, vidéo) demandent des techniques plus avancées."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-003",
+    "section": "1. La donnée et sa valeur",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque « V » de la donnée à la réponse à lui apporter.",
+    "colonne_a": [
+      "Volume",
+      "Variété",
+      "Véracité",
+      "Volatilité",
+      "Valeur"
+    ],
+    "colonne_b": [
+      "Mécanismes d'archivage",
+      "Stockage évolutif",
+      "Identifier les données à réelle valeur commerciale",
+      "Processus de correction des erreurs",
+      "Plateformes polyvalentes (Hadoop), normalisation"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        2
+      ]
+    ],
+    "explication": "Le cours présente six V. Le sixième, la vélocité (vitesse de génération et de traitement), appelle des systèmes de collecte rapides."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-004",
+    "section": "1. La donnée et sa valeur",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Lesquelles sont des données offline ? (3 réponses)",
+    "options": [
+      "les formulaires prospects remplis sur un salon",
+      "les recherches en ligne",
+      "les passages en caisse",
+      "les données GPS en temps réel",
+      "les programmes de fidélité"
+    ],
+    "reponse": [
+      0,
+      2,
+      4
+    ],
+    "explication": "Les données offline ne sont pas connectées à un réseau : formulaires sur salon, passages en caisse, programmes de fidélité, systèmes de point de vente. Les recherches en ligne et le GPS en temps réel sont online."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-005",
+    "section": "1. La donnée et sa valeur",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une entreprise qui achète une base de third party data à un marchand de données peut s'exonérer de sa responsabilité si la collecte initiale était illégale.",
+    "reponse": false,
+    "explication": "Faux. L'acheteur est entièrement responsable si la collecte était illégale : il ne peut pas s'exonérer. Pour les second party data, il faut aussi vérifier que le partenaire respecte le RGPD."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-006",
+    "section": "1. La donnée et sa valeur",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Le cours écrit « données secondaires (second party data) ». Pourquoi est-ce un piège ?",
+    "options": [
+      "parce que les deux termes désignent des données illégales",
+      "parce que « secondaire » désigne un niveau de traitement, alors que « second party » désigne une origine (un partenaire)",
+      "parce que les données secondaires sont toujours tertiaires",
+      "parce que les second party data n'existent pas"
+    ],
+    "reponse": 1,
+    "explication": "Secondaire = déjà collectée et traitée par d'autres pour d'autres besoins (niveau de traitement). Second party = venue d'une entreprise partenaire (origine). Deux classements différents."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-007",
+    "section": "1. La donnée et sa valeur",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelles données le cours désigne-t-il comme posant le plus de problèmes de vie privée ?",
+    "options": [
+      "les données primaires",
+      "les données de l'INSEE",
+      "les données comptables publiées",
+      "les données tertiaires, souvent issues des réseaux sociaux ou de Google sur des comportements génériques"
+    ],
+    "reponse": 3,
+    "explication": "Les données tertiaires ajoutent un niveau d'agrégation ou d'analyse, souvent à partir des réseaux sociaux ou de Google. Exemple de dérive : Cambridge Analytica."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-008",
+    "section": "1. La donnée et sa valeur",
+    "niveau": 3,
+    "format": "texte_a_trous",
+    "question": "Complétez le cas Cambridge Analytica.",
+    "texte": "Une application de quiz Facebook, téléchargée par environ {1} personnes, a aspiré les données de millions de leurs {2} sans consentement. Ces données ont servi à construire des profils {3} utilisés en politique. Le scandale éclate en {4}.",
+    "trous": [
+      "270 000",
+      "amis",
+      "psychographiques",
+      "2018"
+    ],
+    "explication": "L'application date de 2014 (Aleksandr Kogan). Les profils ont servi à la campagne de Trump en 2016 et au Brexit."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-009",
+    "section": "1. La donnée et sa valeur",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une Big Data n'est pas forcément ouverte, et une Open Data n'est pas forcément énorme.",
+    "reponse": true,
+    "explication": "Vrai. Le Big Data se définit par l'ampleur, l'Open Data par l'usage ouvert (librement disponibles, sans restriction : INSEE, CNIL, bilans publiés par obligation légale)."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-010",
+    "section": "1. La donnée et sa valeur",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qui distingue la Data Science du Big Data ?",
+    "options": [
+      "la Data Science ne traite que de petits volumes",
+      "la Data Science concerne les outils de stockage",
+      "le Big Data est une branche de la Data Science",
+      "le Big Data concerne les outils informatiques (émission, transmission, stockage), la Data Science les méthodes d'analyse"
+    ],
+    "reponse": 3,
+    "explication": "La Data Science, domaine multidisciplinaire, extrait des connaissances des données, mégadonnées ou non. Elle produit des Data Products, comme les moteurs de recommandation (Netflix, Spotify)."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-011",
+    "section": "2. Big Data, Fast Data, Smart Data",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque notion à l'exemple du cours.",
+    "colonne_a": [
+      "Big Data",
+      "Fast Data",
+      "Smart Data"
+    ],
+    "colonne_b": [
+      "La Poste : délais réduits, tournées optimisées",
+      "Netflix et House of Cards",
+      "Waze : trafic et dangers en temps réel"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Big Data = très gros volumes ; Fast Data = temps réel ; Smart Data = sélectionner à la source les informations stratégiques, sans stocker l'inutile."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-012",
+    "section": "2. Big Data, Fast Data, Smart Data",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "À quels « V » répond surtout le Smart Data ?",
+    "options": [
+      "volume et vélocité",
+      "variété et volatilité",
+      "volume et variété",
+      "valeur et véracité"
+    ],
+    "reponse": 3,
+    "explication": "Le Big Data répond surtout à volume, variété, vélocité ; le Smart Data à valeur et véracité."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-013",
+    "section": "2. Big Data, Fast Data, Smart Data",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Quel volume quotidien de données le cours cite-t-il pour 2022, et à quel rythme évolue-t-il ?",
+    "options": [
+      "2,5 trillions d'octets par jour, un volume qui double tous les deux ans",
+      "2,5 milliards d'octets par jour, stable",
+      "25 trillions d'octets par jour, qui double chaque année",
+      "250 000 octets par jour, en baisse"
+    ],
+    "reponse": 0,
+    "explication": "2,5 trillions d'octets par jour en 2022, doublant tous les deux ans. Le cours soulève aussi la question énergétique des data centers."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-014",
+    "section": "2. Big Data, Fast Data, Smart Data",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un hôpital privilégie la sécurité et l'intégrité des données, la vie privée et le respect de la loi. Quelle stratégie data adopte-t-il ?",
+    "options": [
+      "offensive",
+      "défensive",
+      "Big Opportunity",
+      "Smart Data"
+    ],
+    "reponse": 1,
+    "explication": "La stratégie défensive vise la sécurité et l'intégrité ; l'offensive, la compétitivité et la rentabilité (commerce de détail)."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-015",
+    "section": "2. Big Data, Fast Data, Smart Data",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Une entreprise a fortement investi dans le Big Data alors que son secteur est peu mature et produit trop peu de données. Dans quelle case de la matrice d'appétence se trouve-t-elle ?",
+    "options": [
+      "Big Observation",
+      "Big Problem",
+      "Big Risk",
+      "Big Opportunity"
+    ],
+    "reponse": 2,
+    "explication": "Big Risk : trop peu de données, investissement non rentabilisé. Big Observation = sans appétence, secteur peu mature ; Big Problem = sans appétence, secteur mature ; Big Opportunity = a investi, secteur mature."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-016",
+    "section": "2. Big Data, Fast Data, Smart Data",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Que suppose le fait de devenir data driven ? (3 réponses)",
+    "options": [
+      "l'engagement de la gouvernance, avec des objectifs suivis par KPI",
+      "l'abandon de toute intuition",
+      "la formation des collaborateurs",
+      "une infrastructure technologique adaptée",
+      "l'achat systématique de third party data"
+    ],
+    "reponse": [
+      0,
+      2,
+      3
+    ],
+    "explication": "Quatre conditions : engagement de la gouvernance, formation, infrastructure, compréhension approfondie des clients. Être data driven, c'est décider sur l'analyse plutôt que sur l'intuition seule."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-017",
+    "section": "3. Analyser et stocker les données online",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que le Big Quali ?",
+    "options": [
+      "la capacité à recueillir et analyser une masse de données qualitatives (avis, commentaires) pour saisir toutes les facettes d'une marque",
+      "un panel qualitatif de très grande taille",
+      "un label de qualité des données",
+      "une étude qualitative réalisée par un cabinet"
+    ],
+    "reponse": 0,
+    "explication": "Le Big Quali s'appuie sur le NLP (traitement automatisé du langage naturel) et le machine learning pour détecter thèmes récurrents, opinions et sentiments."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-018",
+    "section": "3. Analyser et stocker les données online",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le marketing participatif comporte une dimension affective : la confiance et la fidélité poussent les clients à produire du contenu.",
+    "reponse": true,
+    "explication": "Vrai. Il a une dimension objective (messages et outils qui incitent à participer) et une dimension affective. Exemple : Hasbro fait voter le public sur 16 nouvelles cartes du Monopoly."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-019",
+    "section": "3. Analyser et stocker les données online",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 4 étapes du modèle Dataflow de data visualisation.",
+    "elements": [
+      "Mapping (tables associées à des éléments visuels)",
+      "Collecte des données brutes",
+      "Structuration visuelle",
+      "Transformation (métadonnées, élimination de l'inutile, tables)"
+    ],
+    "ordre": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "explication": "Collecte → transformation → mapping → structuration visuelle. La data visualisation est un outil d'aide à la décision et de communication."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-020",
+    "section": "3. Analyser et stocker les données online",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Lesquelles font partie des 6 bonnes pratiques du data cleaning ? (3 réponses)",
+    "options": [
+      "supprimer les doublons",
+      "conserver toutes les données, même inexactes",
+      "valider après nettoyage",
+      "communiquer les procédures aux équipes",
+      "analyser avant de nettoyer"
+    ],
+    "reponse": [
+      0,
+      2,
+      3
+    ],
+    "explication": "Surveiller les erreurs (registre), normaliser et automatiser, supprimer les doublons, valider après nettoyage, analyser une fois les données propres, communiquer les procédures."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-021",
+    "section": "3. Analyser et stocker les données online",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quelle solution stocke à bas coût des données brutes, structurées ou non, sans les transformer ?",
+    "options": [
+      "le Data Warehouse",
+      "le CRM",
+      "le Data Lake",
+      "le tableur"
+    ],
+    "reponse": 2,
+    "explication": "Le Data Lake stocke des données brutes, sans transformation ; il est hautement évolutif. Le Data Warehouse est centralisé et structuré, avec des données transformées pour le reporting et l'analyse."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-022",
+    "section": "3. Analyser et stocker les données online",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Un seul avis très négatif peut suffire à détourner des internautes d'une marque.",
+    "reponse": true,
+    "explication": "Vrai. Le feedback digital est riche mais volatil : copié, amplifié, déformé. Les avis restent subjectifs (avis contradictoires sur un même restaurant TripAdvisor). Il faut répondre aux mécontents et piloter les avis."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-023",
+    "section": "4. Collecter des données marketing multicanales",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelles colonnes doit comporter le tableau d'inventaire des sources de données ?",
+    "options": [
+      "canal, données générées, format, fréquence de mise à jour, limitations, responsable interne",
+      "canal, budget, nombre de clics, CA",
+      "nom du prestataire, prix, date de contrat",
+      "segment, persona, message, KPI"
+    ],
+    "reponse": 0,
+    "explication": "Méthode : lister chaque canal, identifier ses outils de mesure, documenter le format, noter les limitations ; puis un schéma visuel des flux pour repérer convergences et ruptures."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-024",
+    "section": "4. Collecter des données marketing multicanales",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la procédure de configuration du tracking pour chaque outil.",
+    "elements": [
+      "Test de déclenchement (mode Debug)",
+      "Configuration des événements clés",
+      "Documentation interne",
+      "Installation via Google Tag Manager"
+    ],
+    "ordre": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "explication": "Google Tag Manager centralise les balises ; on configure les événements, on teste, on documente."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-025",
+    "section": "4. Collecter des données marketing multicanales",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "À quoi sert la Conversions API (CAPI) de Facebook ?",
+    "options": [
+      "à acheter des données tierces",
+      "à mesurer le NPS",
+      "à transmettre les événements côté serveur pour limiter les pertes dues aux bloqueurs",
+      "à anonymiser les adresses IP"
+    ],
+    "reponse": 2,
+    "explication": "Le Facebook Pixel doit être installé sur toutes les pages, y compris la confirmation de commande ; la CAPI, côté serveur, compense les pertes liées aux bloqueurs."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-026",
+    "section": "4. Collecter des données marketing multicanales",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque critère de qualité des données à la question qu'il pose.",
+    "colonne_a": [
+      "Exactitude",
+      "Complétude",
+      "Cohérence",
+      "Fraîcheur",
+      "Granularité"
+    ],
+    "colonne_b": [
+      "Les données sont-elles assez récentes ?",
+      "Les sources concordent-elles entre elles ?",
+      "Les données reflètent-elles la réalité ?",
+      "Le niveau de détail permet-il de segmenter ?",
+      "Manque-t-il des données nécessaires au calcul des KPI ?"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "explication": "Audit mensuel : chaque source notée de 1 à 5 sur chaque critère, action corrective sous 3/5."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-027",
+    "section": "4. Collecter des données marketing multicanales",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Google Analytics compte 1 247 transactions contre 1 329 commandes réelles chez TechnoSport. Laquelle n'est PAS une cause d'écart identifiée par le cours ?",
+    "options": [
+      "des pages de confirmation non trackées (virement)",
+      "une redirection PayPal mal configurée",
+      "le refus de cookies",
+      "un taux de rebond trop élevé"
+    ],
+    "reponse": 3,
+    "explication": "Les trois causes : pages de confirmation non trackées, redirection PayPal mal configurée, refus de cookies. Après correction, l'écart passe de plus de 6 % à moins de 2 %, avec une réconciliation mensuelle."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-028",
+    "section": "4. Collecter des données marketing multicanales",
+    "niveau": 3,
+    "format": "texte_a_trous",
+    "question": "Complétez les seuils d'alerte automatique proposés par le module collecte.",
+    "texte": "Trafic en baisse de {1} sur la moyenne des 7 derniers jours ; conversions en hausse de {2} (doublons, bug) ; taux de rebond supérieur à {3}.",
+    "trous": [
+      "30 %",
+      "200 %",
+      "85 %"
+    ],
+    "explication": "Ces alertes s'affichent dans un tableau de bord vert, orange, rouge (Looker Studio et Sheets)."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-029",
+    "section": "4. Collecter des données marketing multicanales",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Face au blocage des cookies tiers par les navigateurs, le cours recommande de privilégier les données first-party.",
+    "reponse": true,
+    "explication": "Vrai. Safari bloque les cookies tiers et iOS 14.5 exige un consentement pour le suivi inter-applications : d'où la priorité au first-party. Autre limite : échantillonnage de GA et quotas d'API des outils gratuits."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-030",
+    "section": "4. Collecter des données marketing multicanales",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Quelles durées de conservation le module collecte cite-t-il pour les cookies analytics et les données de prospection ?",
+    "options": [
+      "26 mois et 3 ans",
+      "13 mois et 25 mois",
+      "6 mois et 12 mois",
+      "25 mois et 13 mois"
+    ],
+    "reponse": 1,
+    "explication": "Module collecte : 13 mois maximum pour les cookies analytics, 25 mois pour la prospection. Le module RGPD paramètre GA à 26 mois maximum. Cite la source de la durée retenue."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-031",
+    "section": "4. Collecter des données marketing multicanales",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Au foodtruck PrepMyMeal, comment relier un scan de QR code à une inscription puis à un réachat dans Google Analytics et le CRM ?",
+    "options": [
+      "en tagant les QR codes avec des paramètres UTM et en réconciliant les ventes caisse avec les inscriptions",
+      "en achetant une base de third party data",
+      "en supprimant le bandeau cookies",
+      "en ne gardant que les avis Trustpilot"
+    ],
+    "reponse": 0,
+    "explication": "Des QR codes tracés avec des UTM (par ville) et une réconciliation entre caisse, tablettes, CRM et inscriptions app font converger les données."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-032",
+    "section": "5. Le RGPD appliqué à la collecte marketing",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Une entreprise américaine sans aucun établissement en Europe n'est pas concernée par le RGPD, même si elle traite des données de résidents européens.",
+    "reponse": false,
+    "explication": "Faux. Le RGPD s'applique à toute organisation, publique ou privée, même hors UE, dès lors qu'elle traite des données de résidents européens."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-033",
+    "section": "5. Le RGPD appliqué à la collecte marketing",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quel est le montant maximal des sanctions RGPD ?",
+    "options": [
+      "2 % du CA national ou 10 millions d'euros, le montant le plus faible",
+      "10 % du CA mondial annuel",
+      "1 million d'euros forfaitaire",
+      "4 % du CA mondial annuel ou 20 millions d'euros, le montant le plus élevé"
+    ],
+    "reponse": 3,
+    "explication": "Jusqu'à 4 % du CA mondial annuel ou 20 millions d'euros, le montant le plus élevé. Exemple cité : Carrefour, 600 000 € pour défaut de transparence."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-034",
+    "section": "5. Le RGPD appliqué à la collecte marketing",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque traitement à sa base légale la plus adaptée.",
+    "colonne_a": [
+      "Envoi d'une newsletter promotionnelle",
+      "Suivi d'une commande et livraison",
+      "Conservation des factures",
+      "Optimisation du site et personnalisation (clients existants)"
+    ],
+    "colonne_b": [
+      "Obligation légale",
+      "Intérêt légitime, avec test de proportionnalité",
+      "Consentement",
+      "Exécution d'un contrat"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Six bases légales : consentement, contrat, obligation légale, intérêts vitaux, mission de service public, intérêt légitime. L'intérêt légitime exige un test en 3 colonnes : intérêt, nécessité, équilibre."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-035",
+    "section": "5. Le RGPD appliqué à la collecte marketing",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La géolocalisation précise et le tracking comportemental peuvent reposer sur l'intérêt légitime, sans consentement explicite.",
+    "reponse": false,
+    "explication": "Faux. D'après les corrigés du module, l'historique d'achats et les préférences déclarées peuvent relever de l'intérêt légitime, mais la géolocalisation précise et le tracking comportemental exigent un consentement explicite."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-036",
+    "section": "5. Le RGPD appliqué à la collecte marketing",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque critère du consentement RGPD à ce qu'il impose.",
+    "colonne_a": [
+      "Libre",
+      "Spécifique",
+      "Éclairé",
+      "Univoque"
+    ],
+    "colonne_b": [
+      "Une case par finalité",
+      "Phrases affirmatives, sans double négation",
+      "Aucune case pré-cochée, pas d'accès conditionné",
+      "Dire qui collecte, pourquoi, comment, combien de temps, avec qui"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Le consentement est aussi révocable à tout moment, et la charge de la preuve incombe à l'entreprise (trace horodatée, double opt-in)."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-037",
+    "section": "5. Le RGPD appliqué à la collecte marketing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un bandeau cookies affiche un grand bouton « Accepter » et cache le lien « Refuser ». Qu'en dit le cours ?",
+    "options": [
+      "c'est autorisé si la politique de confidentialité est accessible",
+      "c'est une bonne pratique d'optimisation du taux de consentement",
+      "c'est autorisé pour les cookies analytics",
+      "c'est une violation : pas de design manipulateur"
+    ],
+    "reponse": 3,
+    "explication": "On peut optimiser la clarté et mettre en avant les bénéfices, jamais forcer le choix. Le bandeau doit offrir trois choix clairs : accepter tout, refuser, personnaliser."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-038",
+    "section": "5. Le RGPD appliqué à la collecte marketing",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une entreprise peut refuser une demande d'effacement de données si elle doit les conserver pour une obligation comptable, à condition de documenter sa décision.",
+    "reponse": true,
+    "explication": "Vrai. Le droit à l'effacement n'est pas absolu : on peut refuser pour une obligation légale (comptabilité, garantie), la liberté d'expression ou la défense en justice."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-039",
+    "section": "5. Le RGPD appliqué à la collecte marketing",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Dans quel délai maximal faut-il répondre à une demande d'exercice de droits ?",
+    "options": [
+      "72 heures",
+      "15 jours",
+      "30 jours",
+      "3 mois"
+    ],
+    "reponse": 2,
+    "explication": "30 jours maximum. Organisation : une adresse e-mail dédiée et un formulaire accessible sur toutes les pages. Ne pas confondre avec les 72 heures de notification d'une violation à la CNIL."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-040",
+    "section": "5. Le RGPD appliqué à la collecte marketing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel document le cours présente-t-il comme « la pierre angulaire » de la conformité RGPD ?",
+    "options": [
+      "la politique cookies",
+      "le registre des traitements",
+      "le contrat de sous-traitance",
+      "l'AIPD"
+    ],
+    "reponse": 1,
+    "explication": "Le registre des traitements (modèle CNIL) : une fiche par traitement (base légale, finalités, données, personnes, destinataires, durées, sécurité), révisée chaque trimestre. C'est l'outil du principe d'accountability."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-041",
+    "section": "5. Le RGPD appliqué à la collecte marketing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une AIPD est obligatoire quand un traitement remplit au moins combien des 9 critères de la CNIL ?",
+    "options": [
+      "1",
+      "2",
+      "5",
+      "9"
+    ],
+    "reponse": 1,
+    "explication": "Au moins 2 des 9 critères (scoring, décision automatique, surveillance, données sensibles, grande échelle, croisement de données, personnes vulnérables, nouvelle technologie, accès à un service), ou si le traitement figure sur la liste CNIL. Un scoring comportemental à grande échelle déclenche l'AIPD."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-042",
+    "section": "5. Le RGPD appliqué à la collecte marketing",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque cookie à son niveau de consentement.",
+    "colonne_a": [
+      "Panier, authentification, sécurité",
+      "Amélioration de l'expérience sans tracking",
+      "Publicité ciblée et profilage"
+    ],
+    "colonne_b": [
+      "Consentement explicite",
+      "Exemptés de consentement",
+      "Consentement simplifié"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Poursuivre la navigation ne vaut plus consentement. Une CMP (Didomi, Axeptio) gère le consentement ; en cas de refus, on bascule sur un ciblage contextuel."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-043",
+    "section": "5. Le RGPD appliqué à la collecte marketing",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Quand PrepMyMeal confie ses livraisons à un transporteur sous-traitant, c'est le transporteur qui devient seul responsable de la protection des données de livraison.",
+    "reponse": false,
+    "explication": "Faux. Le sous-traitant traite les données pour le compte du responsable, selon ses instructions ; le responsable reste garant. Il faut des clauses RGPD au contrat, un droit d'audit, un référent chez le sous-traitant."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-044",
+    "section": "5. Le RGPD appliqué à la collecte marketing",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Dans quel délai notifier une violation de données à la CNIL ?",
+    "options": [
+      "72 heures, sauf absence de risque pour les personnes",
+      "30 jours",
+      "immédiatement, sans exception",
+      "à la fin de l'enquête interne"
+    ],
+    "reponse": 0,
+    "explication": "72 heures, en précisant la nature de la violation, les catégories et le nombre de personnes, les conséquences, les mesures prises. Les personnes concernées doivent aussi être informées."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-045",
+    "section": "5. Le RGPD appliqué à la collecte marketing",
+    "niveau": 3,
+    "format": "qcm_multiple",
+    "question": "Lesquels font partie du « RGPD Check » en 10 points avant chaque campagne ? (3 réponses)",
+    "options": [
+      "la base légale",
+      "le taux d'ouverture prévu",
+      "la durée de conservation",
+      "la conformité des sous-traitants",
+      "le budget média"
+    ],
+    "reponse": [
+      0,
+      2,
+      3
+    ],
+    "explication": "Les 10 points : base légale, mentions d'information, consentement, durée de conservation, sécurisation, registre, droits des utilisateurs, sous-traitants, cookies, documentation de preuve."
+  },
+  {
+    "resume": "b3-r03",
+    "bloc": 3,
+    "id": "b3-r03-qz-046",
+    "section": "5. Le RGPD appliqué à la collecte marketing",
+    "niveau": 2,
+    "format": "ouverte",
+    "question": "Expliquez en quoi la cartographie du parcours PrepMyMeal respecte le RGPD (Q3). Donnez la méthode et au moins trois points de contact traités.",
+    "attendus": [
+      "Méthode : reprendre les points de contact de la cartographie un par un (donnée, base légale, information/consentement, durée)",
+      "Inscription via QR code ou site : consentement spécifique, case non cochée, double opt-in, preuve horodatée",
+      "Commande et livraison : exécution du contrat ; transporteur = sous-traitant encadré par contrat",
+      "Site, GA, heatmaps : bandeau cookies à 3 choix via une CMP, IP anonymisée, conservation limitée",
+      "Tablettes et avis : information, réponses anonymisées",
+      "Obligations transversales : registre, droits (30 jours), sécurité, notification sous 72 h, AIPD si scoring"
+    ],
+    "explication": "Le critère : « les processus de collecte et d'analyse des données respectent les exigences de la RGPD ». Ne pas réciter le cours sans le relier aux points de contact."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-001",
+    "section": "1. Le marketing expérientiel",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Pour Bernard Schmitt (1999), qu'est-ce que le marketing expérientiel ?",
+    "options": [
+      "une technique de réduction des prix en magasin",
+      "l'étude des comportements d'achat en ligne",
+      "la publicité télévisée émotionnelle",
+      "la transformation d'un simple achat en une expérience immersive et unique, « la technique de fidélisation la plus efficace »"
+    ],
+    "reponse": 3,
+    "explication": "Les marques passent ainsi du « product centric » au « user centric » : le consommateur désire le produit pour ses valeurs hédoniques, d'usage ou sociales."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-002",
+    "section": "1. Le marketing expérientiel",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Selon le cours, le service est une notion plus large que l'expérience.",
+    "reponse": false,
+    "explication": "Faux. L'expérience est plus large : elle intègre l'échange et l'amélioration. Le service est plus réducteur (étymologie latine servire, « servir, être esclave »)."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-003",
+    "section": "1. Le marketing expérientiel",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Mattel installe un faux panneau Pictionary animé par une personne cachée derrière une caméra. De quelle forme de marketing expérientiel s'agit-il ?",
+    "options": [
+      "une expérience dans le cadre d'un achat",
+      "du marketing sensoriel",
+      "une expérience dans un cadre promotionnel ou publicitaire",
+      "du phygital"
+    ],
+    "reponse": 2,
+    "explication": "Le cadre promotionnel vise un public plus large : clients, prospects, influenceurs, journalistes. Le cadre de l'achat vise les clients (accueil, théâtralisation, sensoriel, immersif : Lush, Nature & Découvertes)."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-004",
+    "section": "1. Le marketing expérientiel",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 4 phases fondamentales de l'expérience.",
+    "elements": [
+      "La consommation",
+      "Avant l'achat : l'anticipation",
+      "Après : le souvenir",
+      "L'achat"
+    ],
+    "ordre": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "explication": "Anticipation (le plaisir de la projection) → achat (l'ambiance pèse beaucoup) → consommation (sensations, émotions) → souvenir (personnel ou partagé)."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-005",
+    "section": "1. Le marketing expérientiel",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque module d'expérience stratégique à son objectif.",
+    "colonne_a": [
+      "Sensoriel",
+      "Émotionnel",
+      "Intellectuel",
+      "D'action",
+      "Tribal"
+    ],
+    "colonne_b": [
+      "Modifier le comportement",
+      "Développer le sentiment d'appartenance",
+      "Stimuler les 5 sens",
+      "Impliquer le consommateur pour créer de l'engagement",
+      "Toucher les sentiments"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "explication": "Ces 5 modules structurent l'expérience. Exemple : Lindt (même décor dans tous les magasins, chocolat offert, odeur de chocolat, démonstrations)."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-006",
+    "section": "1. Le marketing expérientiel",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez les 3 dimensions de l'expérience comparée au théâtre.",
+    "texte": "Le {1} correspond à l'ambiance et à l'approche sensorielle ; l'{2} à l'histoire de la marque racontée ; l'{3} aux actes proposés au client.",
+    "trous": [
+      "décor",
+      "intrigue",
+      "action"
+    ],
+    "explication": "L'objectif est une expérience « hors du commun et totalement absorbante » : raconter une histoire, faire jouer les vendeurs comme des acteurs, utiliser les produits comme accessoires."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-007",
+    "section": "1. Le marketing expérientiel",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Le marketing expérientiel fonctionne aussi en BtoB.",
+    "reponse": true,
+    "explication": "Vrai, le cours le précise. Rappel de vigilance : un détail négatif, même léger, peut stopper l'immersion et le désir d'achat."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-008",
+    "section": "1. Le marketing expérientiel",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Dans l'application Sézane, que fait la cliente dans « L'Appartement » ?",
+    "options": [
+      "elle essaie dans un lieu de vie, puis commande en ligne",
+      "elle achète uniquement en caisse",
+      "elle participe à une vente privée réservée aux VIP",
+      "elle retire des commandes passées par téléphone"
+    ],
+    "reponse": 0,
+    "explication": "Sézane, marque née sur le Web (environ 90 % de ventes en ligne), propose un lieu de vie (meubles chinés, bar à fleurs, cinéma caché). Avec sa conciergerie et ses vendeuses équipées de tablettes, c'est le phygital et le vendeur augmenté."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-009",
+    "section": "2. Le marketing sensoriel",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Sur quels éléments le marketing sensoriel séduit-il le client ?",
+    "options": [
+      "sur les caractéristiques intrinsèques du produit",
+      "sur le prix",
+      "sur des éléments extrinsèques : odeur, ambiance, couleurs",
+      "sur la garantie"
+    ],
+    "reponse": 2,
+    "explication": "Comme le marketing émotionnel, il détache le client des caractéristiques intrinsèques du produit pour le séduire par des éléments extrinsèques, et crée un climat de confiance et de bien-être."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-010",
+    "section": "2. Le marketing sensoriel",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Sur quelles réactions l'ambiance d'un point de vente agit-elle ?",
+    "options": [
+      "sur les réactions conatives (achats, temps passé) et les réactions affectives et cognitives (plaisir, évaluation de la qualité)",
+      "seulement sur la mémorisation de la marque",
+      "seulement sur le prix perçu",
+      "sur aucune réaction mesurable"
+    ],
+    "reponse": 0,
+    "explication": "L'ambiance devient un facteur clé de succès qui permet au magasin physique de concurrencer le web : un client qui se sent bien reste plus longtemps et dépense plus."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-011",
+    "section": "2. Le marketing sensoriel",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Selon des études des années 60, 80 % des informations passent par la vue.",
+    "reponse": true,
+    "explication": "Vrai. La vue est le premier contact entre la marque et le client. Couleurs chaudes = stimulation, froides = apaisement, avec des perceptions variables selon les cultures."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-012",
+    "section": "2. Le marketing sensoriel",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un magasin veut favoriser les achats impulsifs et une rotation rapide des clients. Quelle musique choisir ?",
+    "options": [
+      "un tempo lent",
+      "le silence",
+      "une musique de Noël toute l'année",
+      "un tempo rapide"
+    ],
+    "reponse": 3,
+    "explication": "Tempo rapide = achats impulsifs, rotation rapide. Tempo lent = achats réfléchis, flânerie (Sephora, restaurant). Le silence est souvent synonyme d'angoisse."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-013",
+    "section": "2. Le marketing sensoriel",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Que dit le cours du marketing gustatif ? (3 réponses)",
+    "options": [
+      "aucune « tricherie » n'est possible : si ce n'est pas bon, la cible n'achète pas",
+      "il est réservé aux produits alimentaires",
+      "la dégustation est souvent couplée à une promotion",
+      "il rassure pour une marque nouvelle ou peu connue",
+      "il réduit les achats non prévus"
+    ],
+    "reponse": [
+      0,
+      2,
+      3
+    ],
+    "explication": "Il augmente au contraire les achats non prévus et sert aussi pour les dentifrices et cosmétiques. C'est le levier naturel du foodtruck PrepMyMeal."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-014",
+    "section": "2. Le marketing sensoriel",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Chez Nature & Découvertes, le client s'assoit dans le fauteuil massant pour le plaisir et reste plus longtemps. De quel toucher s'agit-il ?",
+    "options": [
+      "le toucher instrumental",
+      "le toucher autotélique",
+      "le toucher fonctionnel",
+      "le toucher social"
+    ],
+    "reponse": 1,
+    "explication": "Toucher autotélique = se faire plaisir et rester plus longtemps. Toucher instrumental = s'informer, juger la qualité, le poids, la texture."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-015",
+    "section": "2. Le marketing sensoriel",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Avec une senteur d'ambiance adaptée, le client a l'impression de passer moins de temps en magasin.",
+    "reponse": true,
+    "explication": "Vrai. Il reste donc plus longtemps et revient plus souvent. Les odeurs doivent être reconnaissables et congruentes (agrume = tonifiant, vanille = chaleur), sinon la démarche redevient rationnelle."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-016",
+    "section": "2. Le marketing sensoriel",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "De quand le cours date-t-il le marketing auditif ?",
+    "options": [
+      "des années 1960, avec la musique d'ambiance",
+      "de 2013, avec le phygital",
+      "de l'arrivée de la radio",
+      "du XIIIe siècle : les marchands ambulants chantaient leurs offres"
+    ],
+    "reponse": 3,
+    "explication": "Le marketing auditif remonte au XIIIe siècle. Il porte sur l'ambiance sonore et sur le son du produit (le bruit d'une voiture signale sa qualité)."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-017",
+    "section": "3. Thématiser et théâtraliser le point de vente",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quelle est la différence entre thématisation et théâtralisation ?",
+    "options": [
+      "la thématisation est l'habillage de l'offre et du point de vente (les directives) ; la théâtralisation est sa mise en scène (la mise en œuvre)",
+      "la thématisation est réservée au web, la théâtralisation au magasin",
+      "ce sont deux synonymes",
+      "la théâtralisation précède la thématisation"
+    ],
+    "reponse": 0,
+    "explication": "Avec la thématisation, l'achat devient un loisir et le magasin un concept store. La théâtralisation en est la matérialisation."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-018",
+    "section": "3. Thématiser et théâtraliser le point de vente",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque niveau de thématisation à son exemple.",
+    "colonne_a": [
+      "Partielle",
+      "Autour de la cible",
+      "Autour d'une valeur",
+      "Communautaire"
+    ],
+    "colonne_b": [
+      "Nature & Découvertes et le respect de la nature",
+      "Magasins de surf ou de roller, vendeurs issus de la communauté",
+      "Castorama et ses Castostages de bricolage",
+      "Imaginarium : une entrée adulte et une à taille d'enfant"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Le niveau se choisit selon le positionnement et les ressources. La thématisation partielle est ponctuelle et donne une image d'expert."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-019",
+    "section": "3. Thématiser et théâtraliser le point de vente",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les 3 composantes de la théâtralisation ? (3 réponses)",
+    "options": [
+      "le rappel du thème (énonciation)",
+      "le décor",
+      "le prix d'appel",
+      "les acteurs (personnel et clients)",
+      "la publicité télévisée"
+    ],
+    "reponse": [
+      0,
+      1,
+      3
+    ],
+    "explication": "Rappel du thème, décor, acteurs. Les règles : cohérence, crédibilité, authenticité, car le consommateur « n'est pas dupe »."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-020",
+    "section": "3. Thématiser et théâtraliser le point de vente",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Recruter des « vendeurs passionnés » issus de la communauté simplifie le recrutement et le management.",
+    "reponse": false,
+    "explication": "Faux. Mêler passion et cadre professionnel complique le recrutement et le management, même si ces vendeurs renforcent la crédibilité du point de vente."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-021",
+    "section": "4. Le phygital et le vendeur augmenté",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Selon le cours, quand le phygital est-il né et qui l'a inventé ?",
+    "options": [
+      "en 2008, par les pure players",
+      "en 2020, avec la crise sanitaire",
+      "en 2013, par les retailers",
+      "en 1999, par Bernard Schmitt"
+    ],
+    "reponse": 2,
+    "explication": "Le phygital (physique + digital), né en 2013 et inventé par les retailers, est synonyme de « digitalisation du point de vente »."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-022",
+    "section": "4. Le phygital et le vendeur augmenté",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque outil phygital à son principe.",
+    "colonne_a": [
+      "E-réservation",
+      "Click-and-collect",
+      "Code-barres connecté",
+      "M-paiement"
+    ],
+    "colonne_b": [
+      "Payer par smartphone, sans attente en caisse",
+      "Réserver en ligne sans acheter, pour essayer en magasin",
+      "Scanné au smartphone, il donne informations, conseils, vidéos",
+      "Acheter en ligne, retirer en magasin sans frais de port"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Exemples : Sephora Flash, Monop'Easy (scanner et payer dans l'appli), Nespresso et son avatar qui fait la queue à la place du client."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-023",
+    "section": "4. Le phygital et le vendeur augmenté",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Qu'est-ce qui distingue le vendeur augmenté du vendeur connecté ?",
+    "options": [
+      "il possède une tablette",
+      "il utilise aussi l'IA pour une hyperpersonnalisation, avec une vision à 360° du client, des produits et de la concurrence",
+      "il travaille uniquement en ligne",
+      "il est remplacé par un chatbot"
+    ],
+    "reponse": 1,
+    "explication": "Le vendeur connecté est équipé d'un appareil ; le vendeur augmenté passe de vendeur à conseiller, d'un mode réactif à prescriptif. Les deux notions sont souvent confondues."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-024",
+    "section": "4. Le phygital et le vendeur augmenté",
+    "niveau": 3,
+    "format": "texte_a_trous",
+    "question": "Complétez les chiffres de la Mobile Marketing Association.",
+    "texte": "{1} des consommateurs sont venus en magasin après au moins une recherche internet ; {2} après avoir reçu une communication ; {3} des destinataires d'une communication géolocalisée se sont rendus au point de vente. Un beacon a une portée de {4} maximum.",
+    "trous": [
+      "66 %",
+      "58 %",
+      "70 %",
+      "70 m"
+    ],
+    "explication": "Ces chiffres justifient le vendeur augmenté et le marketing mobile (geofencing, beacons Bluetooth pour ceux qui ont l'application)."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-025",
+    "section": "4. Le phygital et le vendeur augmenté",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les outils du vendeur augmenté suffisent à garantir son succès, sans investissement particulier en formation.",
+    "reponse": false,
+    "explication": "Faux. Les conditions de réussite sont l'investissement (des outils « aussi chers qu'indispensables ») et surtout la formation des vendeurs."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-026",
+    "section": "5. Le marketing conversationnel",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Qu'est-ce qui caractérise le marketing conversationnel par rapport au marketing relationnel ?",
+    "options": [
+      "il privilégie la newsletter et la relation à long terme",
+      "il ne s'adresse qu'aux prospects",
+      "il remplace définitivement le marketing relationnel",
+      "il crée un dialogue bidirectionnel en temps réel, pour un engagement immédiat"
+    ],
+    "reponse": 3,
+    "explication": "Le conversationnel passe par les chatbots, messageries, assistants vocaux, réseaux sociaux. Le relationnel vise la relation à long terme. Les deux coexistent dans une stratégie globale."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-027",
+    "section": "5. Le marketing conversationnel",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Quelle hausse de revenus le cours attribue-t-il, en 2020, aux entreprises équipées de chatbots ?",
+    "options": [
+      "+ 12 %",
+      "+ 25 %",
+      "+ 48 %",
+      "+ 80 %"
+    ],
+    "reponse": 2,
+    "explication": "+ 48 % de revenus en 2020. Enjeux à maîtriser : fiabilité, sécurité des données, cohérence, ton adapté, éviter la sur-sollicitation."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-028",
+    "section": "5. Le marketing conversationnel",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "KLM envoie des notifications en temps réel (retards, portes) et propose son chatbot BlueBot de la réservation à l'enregistrement. Pour quelle friction PrepMyMeal ce modèle est-il pertinent ?",
+    "options": [
+      "la livraison défaillante, par des notifications de livraison en temps réel",
+      "le prix trop élevé",
+      "la monotonie des plats",
+      "le manque de mentions digitales"
+    ],
+    "reponse": 0,
+    "explication": "Clé 2 de la fidélisation (service client efficace) + marketing conversationnel : informer en temps réel sur la livraison réduit le point de défaillance du parcours."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-029",
+    "section": "6. Le marketing alternatif",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une technique de marketing alternatif cesse d'être alternative dès qu'elle est reprise par d'autres marques.",
+    "reponse": true,
+    "explication": "Vrai. C'est pourquoi le cours parle de « concept flou » et de renouvellement régulier. Le marketing alternatif est né de la lassitude face à la publicité d'interruption."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-030",
+    "section": "6. Le marketing alternatif",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque technique de marketing alternatif à son exemple.",
+    "colonne_a": [
+      "Ambush marketing",
+      "Street marketing",
+      "Stealth marketing",
+      "Ambient marketing"
+    ],
+    "colonne_b": [
+      "Placement de produit dans Stranger Things",
+      "Toblerone et KitKat détournant le mobilier urbain",
+      "Supportrices en sous-vêtements DIM à la Coupe du monde de rugby",
+      "Abribus détournés par Barbie ou Coca-Cola"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Ambush = profiter d'un événement sans en être partenaire (DIM, devant 14 millions de téléspectateurs). Street = la rue. Stealth = de manière détournée. Ambient = se fondre dans l'environnement."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-031",
+    "section": "6. Le marketing alternatif",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle technique de marketing alternatif le cours situe-t-il « à la limite de la légalité et de la déontologie », utile aux petites entreprises ?",
+    "options": [
+      "le street marketing",
+      "la guérilla marketing",
+      "l'ambient marketing",
+      "le marketing sensoriel"
+    ],
+    "reponse": 1,
+    "explication": "La guérilla : actions non conventionnelles et ponctuelles, nées aux États-Unis, « anti-marketing ». Exemple cité : Rona."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-032",
+    "section": "6. Le marketing alternatif",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Lesquelles font partie des 6 raisons d'utiliser le marketing alternatif ? (3 réponses)",
+    "options": [
+      "améliorer la notoriété",
+      "augmenter la répétition publicitaire à la télévision",
+      "baisser les budgets, car il coûte surtout en créativité",
+      "faire de la publicité sans le dire",
+      "remplacer l'étude de marché"
+    ],
+    "reponse": [
+      0,
+      2,
+      3
+    ],
+    "explication": "Les 6 raisons : notoriété, marquer par l'émotion et l'inattendu, cibler précisément, délivrer le message autrement, baisser les budgets, faire de la publicité sans le dire."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-033",
+    "section": "6. Le marketing alternatif",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Pour les villes de la tournée sous l'objectif de 500 mentions digitales, quelle préconisation respecte l'esprit du cours ?",
+    "options": [
+      "s'installer sans autorisation sur un événement concurrent",
+      "publier de faux avis positifs",
+      "coupler le foodtruck à un événement local ou à une action d'ambient marketing qui provoque le partage, en cohérence avec la marque",
+      "multiplier les spots radio"
+    ],
+    "reponse": 2,
+    "explication": "Le foodtruck est déjà du street marketing et du marketing expérientiel promotionnel. Le couplage événementiel ou l'ambient marketing provoquent le partage ; la cohérence et l'absence de tromperie restent impératives."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-034",
+    "section": "7. Les clés de la fidélisation",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Combien de fois moins cher coûte la fidélisation d'un client par rapport à l'acquisition d'un nouveau ?",
+    "options": [
+      "1,5 à 2 fois",
+      "elle coûte autant",
+      "10 à 15 fois",
+      "3 à 7 fois"
+    ],
+    "reponse": 3,
+    "explication": "3 à 7 fois moins cher. Selon Peter Fisk (Customer Genius), + 5 % de fidélité = + 25 % à + 55 % de profits."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-035",
+    "section": "7. Les clés de la fidélisation",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Comment mesure-t-on l'efficacité de l'allongement de la durée de vie du client, selon le cours ?",
+    "options": [
+      "par le taux de rétention, sans compter les nouveaux clients",
+      "par le nombre total de clients en fin de période",
+      "par le nombre de nouveaux clients acquis",
+      "par le panier moyen"
+    ],
+    "reponse": 0,
+    "explication": "Le taux de rétention compte les clients restés fidèles sur une période, sans compter les nouveaux. Il mesure la lutte contre l'attrition (churn)."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-036",
+    "section": "7. Les clés de la fidélisation",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez la règle sur le bouche-à-oreille.",
+    "texte": "Un client très satisfait parle de son expérience à {1} personnes, un client très mécontent à près de {2}. L'{3}, le contenu généré par les utilisateurs, est « le saint Graal » de la promotion à moindre frais.",
+    "trous": [
+      "3",
+      "10",
+      "UGC"
+    ],
+    "explication": "D'où l'enjeu de la customer advocacy et de la gestion des mécontents."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-037",
+    "section": "7. Les clés de la fidélisation",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Lesquelles font partie des 5 clés de la fidélisation ? (3 réponses)",
+    "options": [
+      "créer un lien de confiance en personnalisant la relation",
+      "baisser les prix pour tous les clients",
+      "écouter le client et lui donner la parole",
+      "enrichir et améliorer son offre grâce aux retours clients",
+      "augmenter la pression publicitaire"
+    ],
+    "reponse": [
+      0,
+      2,
+      3
+    ],
+    "explication": "Les 5 clés : lien de confiance personnalisé, relation et service client efficaces, programme de fidélité, écoute du client, enrichissement de l'offre."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-038",
+    "section": "7. Les clés de la fidélisation",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un programme de fidélité suffit à fidéliser, même sans culture client dans l'entreprise.",
+    "reponse": false,
+    "explication": "Faux. Souvent vu comme « LA solution », il échoue sans culture client. Tendance : la digitalisation (un Français possède 7 à 14 cartes, d'où le passage à l'appli)."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-039",
+    "section": "7. Les clés de la fidélisation",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque friction PrepMyMeal au levier de fidélisation adapté.",
+    "colonne_a": [
+      "Nouveaux clients perdus après la 1re commande",
+      "Monotonie des plats",
+      "Livraison défaillante",
+      "Temps d'attente au foodtruck"
+    ],
+    "colonne_b": [
+      "Clé 5 : enrichir l'offre, rotation des recettes",
+      "M-paiement, précommande via l'app",
+      "Clé 1 : confiance dès le 1er achat, offre de 2e commande",
+      "Clé 2 : service client efficace, notifications en temps réel"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Pour chaque friction de la cartographie (Q1) ou chaque écart (Q9), un levier précis du cours."
+  },
+  {
+    "resume": "b3-r04",
+    "bloc": 3,
+    "id": "b3-r04-qz-040",
+    "section": "7. Les clés de la fidélisation",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Selon la clé « écouter le client », auprès de qui faut-il recueillir les avis ?",
+    "options": [
+      "uniquement auprès des clients les plus fidèles",
+      "uniquement auprès des mécontents",
+      "uniquement auprès des prospects",
+      "pas seulement auprès des plus fidèles"
+    ],
+    "reponse": 3,
+    "explication": "Écouter, ce n'est pas « le client est roi » : c'est comprendre qui il est et ce qu'il veut, en recueillant les avis largement (groupes de discussion, communautés, forums), pas seulement chez les plus fidèles."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-001",
+    "section": "1. Pourquoi enquêter sur la satisfaction",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Pourquoi l'enquête de satisfaction est-elle la méthode de mesure la plus utilisée ?",
+    "options": [
+      "parce qu'elle est obligatoire pour toutes les entreprises",
+      "parce qu'elle offre le meilleur équilibre entre fiabilité et contraintes",
+      "parce qu'elle ne coûte rien",
+      "parce qu'elle remplace l'analyse des ventes"
+    ],
+    "reponse": 1,
+    "explication": "Elle offre « le meilleur équilibre entre fiabilité et contraintes ». Les études quantitatives prolongent le qualitatif : l'un comprend les attentes, l'autre valide et mesure."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-002",
+    "section": "1. Pourquoi enquêter sur la satisfaction",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels enjeux l'enquête de satisfaction sert-elle, selon le cours ? (3 réponses)",
+    "options": [
+      "la rentabilité : le client satisfait rachète et fait le buzz",
+      "la démarche qualité ISO, qui exige des questionnaires réguliers",
+      "la réduction des effectifs",
+      "un stimulant interne, quand l'enquête vise le personnel",
+      "la fixation des prix de vente"
+    ],
+    "reponse": [
+      0,
+      1,
+      3
+    ],
+    "explication": "Quatre enjeux : rentabilité, fidélité (un client fidèle coûte moins cher qu'un prospect), norme ISO, stimulant interne (« fidéliser le personnel comme un client »)."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-003",
+    "section": "1. Pourquoi enquêter sur la satisfaction",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un client insatisfait communique beaucoup plus qu'un client satisfait : il ne faut pas le négliger.",
+    "reponse": true,
+    "explication": "Vrai. Le cours le souligne au titre de l'enjeu de fidélité. Un client très mécontent en parle à près de 10 personnes, un très satisfait à 3."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-004",
+    "section": "1. Pourquoi enquêter sur la satisfaction",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quels sont les deux leviers pour améliorer le taux de réponse ?",
+    "options": [
+      "allonger le questionnaire et multiplier les relances téléphoniques",
+      "réduire l'échantillon et supprimer l'introduction",
+      "interroger uniquement les clients fidèles et promettre des cadeaux de valeur",
+      "optimiser la cible et donner envie de participer (prévenir le client, communiquer de façon claire et attractive)"
+    ],
+    "reponse": 3,
+    "explication": "Le taux de retour est la proportion de questionnaires dûment remplis et renvoyés ; plus il est élevé, plus les résultats sont fiables."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-005",
+    "section": "1. Pourquoi enquêter sur la satisfaction",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Qu'a révélé le questionnaire d'Émile Noël, qui perdait des parts de marché en magasins bio ?",
+    "options": [
+      "une préférence pour le local, moins cher que le bio, mais une disposition à payer plus en vacances et en épiceries fines",
+      "un rejet des huiles bio",
+      "un problème de packaging",
+      "un problème de distribution en grandes surfaces"
+    ],
+    "reponse": 0,
+    "explication": "Émile Noël passe de 16,7 % de parts de marché en 2020 à environ 15 % en 2022. Le questionnaire, diffusé sur les réseaux sociaux, a conduit à revoir le positionnement."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-006",
+    "section": "2. Le cadre de l'enquête",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une enquête auprès des clients inactifs sert surtout à :",
+    "options": [
+      "vérifier le potentiel du marché",
+      "comprendre pourquoi ils se détachent",
+      "fixer les prix",
+      "recruter des ambassadeurs"
+    ],
+    "reponse": 1,
+    "explication": "Le contexte oriente l'enquête : en lancement, vérifier le potentiel ; en maturité, se remettre en question ; auprès des inactifs, comprendre le détachement."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-007",
+    "section": "2. Le cadre de l'enquête",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "On peut définir les objectifs d'une enquête sans avoir formulé d'hypothèses générales.",
+    "reponse": false,
+    "explication": "Faux. On ne peut pas définir les objectifs sans les hypothèses générales de l'enquête. L'objectif se définit par trois questions : que cherche-t-on à mettre en évidence, que veut-on vérifier, faut-il revoir l'offre ?"
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-008",
+    "section": "2. Le cadre de l'enquête",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi le cours cite-t-il l'exemple « pourquoi une Porsche ? » à propos du qualitatif ?",
+    "options": [
+      "pour montrer que le qualitatif sert à dénombrer",
+      "pour montrer que le quantitatif suffit",
+      "pour illustrer le non-dit : on ne répondra pas spontanément « pour impressionner »",
+      "pour illustrer un biais d'échantillonnage"
+    ],
+    "reponse": 2,
+    "explication": "Le qualitatif répond à « pourquoi ? comment ? » et explore les motivations profondes, les freins, le non-dit. Le quantitatif répond à « combien ? »."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-009",
+    "section": "2. Le cadre de l'enquête",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Une enquête quantitative interroge les clients d'un hypermarché uniquement le lundi. Quelle limite du quantitatif illustre-t-elle ?",
+    "options": [
+      "la durée : on oublie les familles et les actifs",
+      "la capacité d'analyse",
+      "le nombre de facteurs",
+      "le biais d'endogroupe"
+    ],
+    "reponse": 0,
+    "explication": "Limites du quantitatif : taille de l'échantillon, durée (le lundi seulement), nombre de facteurs (5 à 10 minutes pour répondre), capacité d'analyse (l'odeur de la rôtisserie biaise une question sur le poulet)."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-010",
+    "section": "2. Le cadre de l'enquête",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque étude qualitative ponctuelle à son objet.",
+    "colonne_a": [
+      "Étude préalable",
+      "Étude d'image",
+      "Étude de positionnement",
+      "Étude de comportement",
+      "Tests"
+    ],
+    "colonne_b": [
+      "Observer et interpréter les réactions (magasin test Auchan)",
+      "Conditionnement, goût, nom (paquet BN)",
+      "« Débroussailler » et fixer la méthode",
+      "Photographie des concurrents sur des axes, pour trouver une place libre",
+      "Comment la marque est perçue, connue, appréciée"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "explication": "La sixième, l'étude de motivation, cherche le mobile caché, les motivations et les freins."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-011",
+    "section": "2. Le cadre de l'enquête",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qu'un panel ?",
+    "options": [
+      "un groupe de discussion ponctuel",
+      "un questionnaire en ligne",
+      "un ensemble de clients mécontents",
+      "une enquête permanente : un échantillon permanent et représentatif interrogé à intervalles réguliers"
+    ],
+    "reponse": 3,
+    "explication": "Vendu par abonnement, il pèse parfois plus de la moitié des budgets d'études des produits de grande consommation. Consommateurs : Worldpanel (TNS Sofres), Homescan (Nielsen) ; distributeurs : Nielsen, IRI."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-012",
+    "section": "2. Le cadre de l'enquête",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Interroger les partenaires d'une entreprise (fournisseurs, distributeurs) l'oblige à exécuter leurs souhaits.",
+    "reponse": false,
+    "explication": "Faux. Les interroger n'oblige pas à exécuter leurs souhaits (« une voiture à 5 roues »). En interne, « trop d'études tuent l'étude » : solliciter à bon escient."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-013",
+    "section": "2. Le cadre de l'enquête",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quel est le principal inconvénient d'une enquête menée par l'équipe marketing interne ?",
+    "options": [
+      "son coût élevé",
+      "des délais plus longs",
+      "un risque pour la confidentialité",
+      "le manque d'objectivité : les équipes « croient en leur projet »"
+    ],
+    "reponse": 3,
+    "explication": "Coût élevé, délais longs et risque de confidentialité sont les inconvénients du cabinet d'études. L'interne gagne en rapidité et en coût. La décision dépend surtout du budget."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-014",
+    "section": "3. Rédiger le questionnaire",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque type de question (support « Les méthodes de questionnement ») à son principe.",
+    "colonne_a": [
+      "De contrôle",
+      "Orientée",
+      "Provocante",
+      "Stimulante",
+      "Alternative"
+    ],
+    "colonne_b": [
+      "Soutire une information qui ne viendrait pas autrement",
+      "Choix entre plusieurs réponses",
+      "Vérifie la cohérence du raisonnement",
+      "S'appuie sur des compliments pour obtenir plus d'informations",
+      "Guide la personne vers un résultat visé"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "explication": "S'y ajoutent les questions ouvertes et fermées. Méthode classique : les 5 W + H (quoi, qui, où, pourquoi, quand, comment)."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-015",
+    "section": "3. Rédiger le questionnaire",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un enquêteur lance « Vous aimez le dessin ? Moi aussi ! » et accorde plus d'attention à ce répondant. Quel biais commet-il ?",
+    "options": [
+      "le biais d'endogroupe",
+      "le biais de mémoire",
+      "le biais de prestige",
+      "le biais technophile"
+    ],
+    "reponse": 0,
+    "explication": "Le biais d'endogroupe consiste à favoriser un répondant qui partage vos goûts : il altère l'objectivité. Qualités de l'enquêteur : intelligence, ouverture, objectivité."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-016",
+    "section": "3. Rédiger le questionnaire",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Comment reformuler « Jouez-vous beaucoup au tennis ? » selon les règles de rédaction ?",
+    "options": [
+      "« Combien d'heures par semaine jouez-vous au tennis ? »",
+      "« Aimez-vous le tennis ? »",
+      "« Êtes-vous un excellent joueur de tennis ? »",
+      "« Le tennis est-il important pour vous ? »"
+    ],
+    "reponse": 0,
+    "explication": "Une question doit être claire, précise, non ambiguë : « beaucoup » est vague. Les autres règles : attractive, compréhensible, non biaisée."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-017",
+    "section": "3. Rédiger le questionnaire",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Les biais de réponse viennent de questions qui font appel à… (3 réponses)",
+    "options": [
+      "la mémoire",
+      "un chiffre précis",
+      "le prestige",
+      "la religion ou le milieu social",
+      "une échelle numérique"
+    ],
+    "reponse": [
+      0,
+      2,
+      3
+    ],
+    "explication": "Les biais viennent des questions qui font appel à la mémoire, aux désirs, au prestige, à l'éducation, à la religion, au milieu social."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-018",
+    "section": "3. Rédiger le questionnaire",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la structure d'un questionnaire.",
+    "elements": [
+      "Corps en blocs thématiques",
+      "Questions d'identification (âge, profession…)",
+      "Introduction (but, durée, remerciement)",
+      "Questions générales et simples de prise de contact"
+    ],
+    "ordre": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "explication": "Technique de l'entonnoir : on commence simple pour gagner la confiance ; l'identification vient à la fin, quand la confiance est établie."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-019",
+    "section": "3. Rédiger le questionnaire",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les questions d'identification (sexe, âge, profession) se placent de préférence en fin de questionnaire.",
+    "reponse": true,
+    "explication": "Vrai. Elles viennent à la fin, quand la confiance est établie. Le début du questionnaire sert à gagner cette confiance."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-020",
+    "section": "3. Rédiger le questionnaire",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Il faut raccourcir un questionnaire de 45 minutes. Que conseille le cours ?",
+    "options": [
+      "éliminer tout ce qui ne sert pas l'objectif",
+      "supprimer l'introduction",
+      "transformer toutes les questions en questions ouvertes",
+      "le diviser en deux enquêtes envoyées le même jour"
+    ],
+    "reponse": 0,
+    "explication": "15 à 20 minutes s'obtiennent plus facilement que 45 ; la fatigue dégrade la précision. On élimine tout ce qui ne sert pas l'objectif."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-021",
+    "section": "3. Rédiger le questionnaire",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque type de question à la règle qui l'accompagne.",
+    "colonne_a": [
+      "Fermée à réponse unique",
+      "Ouverte",
+      "À choix multiples",
+      "Filtre"
+    ],
+    "colonne_b": [
+      "Prévoir la rubrique « autre »",
+      "Repérer les répondants fantaisistes en reformulant une question",
+      "Prévoir la case « ne sait pas »",
+      "Attention aux nombreux « sans opinion » et au dépouillement difficile"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "S'y ajoute la question avec classement (ordre de préférence)."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-022",
+    "section": "3. Rédiger le questionnaire",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi le cours recommande-t-il une échelle de Likert à nombre pair de choix (1 à 4) ?",
+    "options": [
+      "pour faciliter le calcul de la moyenne",
+      "pour respecter la norme ISO",
+      "pour forcer l'enquêté à trancher",
+      "pour réduire la durée du questionnaire"
+    ],
+    "reponse": 2,
+    "explication": "Sans position neutre, l'enquêté doit se prononcer. Piège : le module satisfaction mesure le CSAT sur 1 à 5 et le brief du CEO note la satisfaction sur 5. Choisis, justifie, puis garde la même échelle."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-023",
+    "section": "3. Rédiger le questionnaire",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pour mesurer l'image du foodtruck sur un axe « traditionnelle ↔ innovante », quelle échelle utiliser ?",
+    "options": [
+      "une échelle de Likert",
+      "une échelle numérique de 0 à 10",
+      "une question à classement",
+      "une échelle sémantique différentielle (Osgood)"
+    ],
+    "reponse": 3,
+    "explication": "L'échelle d'Osgood place un axe entre deux pôles définis par des mots opposés, avec des cases intermédiaires. Les visuels (smileys) peuvent aider certains publics."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-024",
+    "section": "3. Rédiger le questionnaire",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 7 étapes d'élaboration d'un questionnaire.",
+    "elements": [
+      "Tester sur un échantillon",
+      "Fixer l'objectif (SMART)",
+      "Déterminer les personnes concernées",
+      "Analyser",
+      "Définir la structure",
+      "Dépouiller",
+      "Élaborer le questionnaire et l'introduire"
+    ],
+    "ordre": [
+      1,
+      4,
+      6,
+      2,
+      0,
+      5,
+      3
+    ],
+    "explication": "Objectif → structure → élaboration → personnes concernées → test → dépouillement → analyse. L'objectif sert de fil conducteur."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-025",
+    "section": "3. Rédiger le questionnaire",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Pour gagner du temps, on peut remplacer le test du questionnaire par une simulation par intelligence artificielle.",
+    "reponse": false,
+    "explication": "Faux. L'IA ne saisit pas les émotions ni le vécu. Le test porte sur quelques dizaines à quelques centaines de personnes extérieures à l'entreprise, aussi différentes que possible."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-026",
+    "section": "3. Rédiger le questionnaire",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Quels sont les trois sous-concepts de l'expérience client que les questions doivent couvrir ?",
+    "options": [
+      "l'expérience d'usage, de partage, et de relation humaine et digitale",
+      "le prix, le produit, la promotion",
+      "l'avant, le pendant, l'après",
+      "la vue, l'ouïe, le goût"
+    ],
+    "reponse": 0,
+    "explication": "Expérience d'usage, expérience de partage, expérience de relation humaine et digitale."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-027",
+    "section": "3. Rédiger le questionnaire",
+    "niveau": 2,
+    "format": "ouverte",
+    "question": "Proposez l'ossature du questionnaire de satisfaction PrepMyMeal (Q4) : objectif, cible, structure et formats de questions.",
+    "attendus": [
+      "Objectif SMART (ex. identifier d'ici une date les principaux freins au réachat et l'intérêt pour le foodtruck auprès d'un nombre défini de clients)",
+      "Cible : les 4 segments du CRM et les visiteurs du foodtruck",
+      "Structure en entonnoir : introduction (but, durée, RGPD), questions de contact, blocs thématiques, identification à la fin",
+      "Au moins 10 questions variées : choix multiples avec « autre » (motivations, freins), Likert (satisfaction par étape), ouverte (attentes), question filtre (a-t-il vu le foodtruck ?), Osgood (image innovante), NPS",
+      "Questions sans ambiguïté, une seule idée par question, non orientées ; questionnaire court, adapté au mobile"
+    ],
+    "explication": "Critères : objectifs clairs et alignés, questions sans risque d'interprétation préjudiciable, formats adaptés au public et au taux de réponse visé."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-028",
+    "section": "4. Échantillonner",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Sur quelles 3 décisions repose une procédure d'échantillonnage ?",
+    "options": [
+      "le budget, le canal, l'outil",
+      "l'unité de sondage, la taille de l'échantillon, le choix des individus",
+      "l'objectif, l'hypothèse, le questionnaire",
+      "la cible, le message, la relance"
+    ],
+    "reponse": 1,
+    "explication": "L'unité de sondage peut être l'individu, le foyer, l'entreprise ou la commune. Pour des populations de milliers d'individus, le recensement est impossible : on sonde un échantillon."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-029",
+    "section": "4. Échantillonner",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un échantillon de 1 000 Français sur 60 millions donne une estimation aussi précise qu'un échantillon de 1 000 Belges sur 10 millions.",
+    "reponse": true,
+    "explication": "Vrai. La précision dépend de la taille absolue de l'échantillon, pas du rapport à la population. Elle n'augmente pas non plus proportionnellement à la taille."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-030",
+    "section": "4. Échantillonner",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque méthode d'échantillonnage à son principe.",
+    "colonne_a": [
+      "Aléatoire",
+      "Quotas",
+      "Itinéraires",
+      "Arbitraire"
+    ],
+    "colonne_b": [
+      "Règles strictes de sélection dans l'espace (« logements multiples de 3 »)",
+      "Échantillon intuitif, quand on ne mesure pas une fréquence",
+      "Tirage au sort, chaque unité a une chance égale",
+      "Mini-population de même composition que la population"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "L'aléatoire est en théorie la seule méthode valable. Toujours préciser méthode et taille de l'échantillon."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-031",
+    "section": "4. Échantillonner",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Pourquoi les clients ayant commenté en ligne ne suffisent-ils pas à former le panel PrepMyMeal (Q5) ? (3 réponses)",
+    "options": [
+      "auto-sélection : ce sont souvent les très mécontents ou les très satisfaits",
+      "ils sont trop nombreux",
+      "petit nombre",
+      "profils non représentatifs des segments",
+      "ils n'ont pas consenti au RGPD"
+    ],
+    "reponse": [
+      0,
+      2,
+      3
+    ],
+    "explication": "Il faut des quotas calés sur l'annexe 1 (jeunes actifs 38 %, sportifs 25 %, bien-être 30 %, nouveaux 7 %, voire sur-représentés), plus les visiteurs du foodtruck et les clients inactifs."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-032",
+    "section": "5. Diffuser l'enquête",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque mode d'administration à sa principale faiblesse.",
+    "colonne_a": [
+      "Face-à-face à domicile",
+      "Dans la rue",
+      "Téléphone",
+      "Voie postale",
+      "Internet"
+    ],
+    "colonne_b": [
+      "Taux de non-réponse très élevé",
+      "Biais technophile, représentativité du grand public difficile",
+      "Coût élevé, 20 minutes maximum",
+      "Bref, sans visuel, identité incertaine",
+      "Échantillon non représentatif"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "explication": "Le face-à-face est « le plus sûr, le plus coûteux » ; Internet a un coût très compétitif et une grande rapidité."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-033",
+    "section": "5. Diffuser l'enquête",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pour une enquête en ligne sur un sujet d'innovation, quel biais faut-il anticiper ?",
+    "options": [
+      "un biais lié à la présence de l'enquêteur",
+      "un biais lié au bruit de la rue",
+      "un biais d'endogroupe",
+      "un biais technophile : les internautes sont plus attirés par la technologie"
+    ],
+    "reponse": 3,
+    "explication": "Les seniors, ouvriers et bas revenus sont moins connectés : les internautes, plus « technophiles », biaisent les sujets d'innovation."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-034",
+    "section": "5. Diffuser l'enquête",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "À quoi sert la récompense associée à une enquête CAWI ? (3 réponses)",
+    "options": [
+      "obtenir plus de répondants",
+      "améliorer la représentativité",
+      "réduire les abandons",
+      "orienter les réponses vers le positif",
+      "éviter le consentement RGPD"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "CAWI = Computer Assisted Web Interview. La récompense (loterie, bon d'achat) vise trois buts : plus de répondants, meilleure représentativité, moins d'abandons."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-035",
+    "section": "5. Diffuser l'enquête",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque outil de traitement d'enquête à sa caractéristique.",
+    "colonne_a": [
+      "Sphinx",
+      "Ethnos",
+      "Google Forms",
+      "SurveyMonkey"
+    ],
+    "colonne_b": [
+      "Gratuit, simple, multilingue, mais fonctions trop générales",
+      "Modèles prêts à l'emploi, assistance 24 h/24, version gratuite limitée",
+      "Très complet depuis 1985, mais coûteux et formation nécessaire",
+      "Complet, en 4 modules"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Le choix dépend du budget. Traitement : éliminer les questionnaires incomplets, dépouiller par logiciel, rédiger un rapport avec méthodologie et préconisations."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-036",
+    "section": "5. Diffuser l'enquête",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Le critère de la Q6 cite les modalités d'administration à préciser. Lesquelles ?",
+    "options": [
+      "cible, message, slogan, visuel",
+      "canal, éléments déclencheurs, périodicité, relances, outil de suivi",
+      "budget, ROI, marge, CA",
+      "objectif, hypothèse, échantillon, quotas"
+    ],
+    "reponse": 1,
+    "explication": "À adapter aux objectifs, au public et au budget. Exemple : e-mail CRM + SMS + tablette au foodtruck ; après livraison ou dégustation ; à chaque étape puis trimestriel ; relances J+3 et J+7 ; Google Forms ou Sphinx."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-037",
+    "section": "6. L'approche par le risque",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Un risque est un événement qui s'est déjà produit et qui exige une action immédiate.",
+    "reponse": false,
+    "explication": "Faux. C'est la définition d'un problème. Un risque est incertain : on l'anticipe par des actions préventives et on l'évalue en probabilité × impact."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-038",
+    "section": "6. L'approche par le risque",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un client se plaint de la lenteur du service client dans le traitement de sa première réclamation. Comment le cours nomme-t-il ce phénomène ?",
+    "options": [
+      "un risque contractuel",
+      "un risque juridique",
+      "une sur-réclamation",
+      "un cygne noir"
+    ],
+    "reponse": 2,
+    "explication": "La sur-réclamation porte sur la gestion de la réclamation elle-même. Le risque de réclamation, ou de litige, est celui qui touche le plus l'image."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-039",
+    "section": "6. L'approche par le risque",
+    "niveau": 3,
+    "format": "appariement",
+    "question": "Associez chaque étape du projet d'enquête à son risque principal.",
+    "colonne_a": [
+      "Définition des objectifs",
+      "Planification",
+      "Identification des parties prenantes",
+      "Conception du questionnaire"
+    ],
+    "colonne_b": [
+      "Mauvais ciblage",
+      "Opérationnel : inadéquation avec les objectifs",
+      "Stratégique",
+      "Délais"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "La conduite de l'enquête cumule des risques RH, opérationnels, financiers et de délais. La vulnérabilité des données est un risque à part."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-040",
+    "section": "6. L'approche par le risque",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles précautions le cours impose-t-il pour les données sensibles recueillies par une enquête ? (3 réponses)",
+    "options": [
+      "limiter la collecte au strict nécessaire",
+      "anonymiser ou pseudonymiser",
+      "les conserver sans limite de durée",
+      "supprimer les données à l'issue de la durée nécessaire",
+      "les partager avec tous les services"
+    ],
+    "reponse": [
+      0,
+      1,
+      3
+    ],
+    "explication": "S'y ajoutent le consentement éclairé, un stockage sécurisé et un accès restreint. Données sensibles : santé, opinions politiques, religieuses, syndicales."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-041",
+    "section": "6. L'approche par le risque",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les signaux du marché, du plus précoce au plus tardif, dans l'identification des risques.",
+    "elements": [
+      "Signaux convergents (tendances : on peut encore éviter)",
+      "Faits (on réagit)",
+      "Signaux isolés et faibles (visibles avec la BI et le Data Mining)",
+      "Signaux organisés (menaces : on peut diminuer les impacts)"
+    ],
+    "ordre": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "explication": "Plus le signal est détecté tôt, plus la marge de manœuvre est grande. Le Data Mining connaît 5 traitements : association, analyse de séquence, classification, clustering, prédiction."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-042",
+    "section": "6. L'approche par le risque",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque stratégie face au risque à son principe.",
+    "colonne_a": [
+      "Élimination",
+      "Transfert",
+      "Atténuation",
+      "Acceptation"
+    ],
+    "colonne_b": [
+      "Accepter consciemment, quand traiter coûte plus que le risque",
+      "Supprimer la possibilité du risque (secteurs à risque zéro)",
+      "Réduire la probabilité ou l'impact (formation, processus)",
+      "Déplacer la responsabilité par contrat ou assurance"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "On ne peut pas éliminer tous les risques. Pour une enquête, le transfert passe par une clause de responsabilité du prestataire."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-043",
+    "section": "6. L'approche par le risque",
+    "niveau": 1,
+    "format": "texte_a_trous",
+    "question": "Complétez l'indice de criticité AMDEC.",
+    "texte": "C = {1} × {2} × {3}. L'AMDEC est l'Analyse des Modes de Défaillance, de leurs Effets et de leur {4}.",
+    "trous": [
+      "F (fréquence)",
+      "G (gravité)",
+      "D (détection)",
+      "Criticité"
+    ],
+    "explication": "4 niveaux : faible, moyen, élevé, critique. Les seuils du cours (1 à 10, 11 à 16, 17 à 20, 21 à 24) dépendent des échelles choisies."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-044",
+    "section": "6. L'approche par le risque",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Quelle norme est la plus utilisée pour la gestion des risques, tout risque et tout secteur confondus ?",
+    "options": [
+      "ISO 26000",
+      "ISO 27005",
+      "ISO 31010",
+      "ISO 31000"
+    ],
+    "reponse": 3,
+    "explication": "ISO 31000. ISO 31010 = techniques d'évaluation ; ISO 26000 = RSE ; ISO 27005 = sécurité de l'information ; COSO ERM = gestion intégrée ; PMI-RMP = projets."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-045",
+    "section": "6. L'approche par le risque",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Selon la théorie du cygne noir de Nassim Nicholas Taleb, un processus de gestion des risques bien conçu permet d'anticiper tous les événements à fort impact.",
+    "reponse": false,
+    "explication": "Faux. Le cygne noir désigne des événements rares, imprévisibles, à fort impact : d'où une approche humble et résiliente, sans confiance aveugle dans le processus."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-046",
+    "section": "6. L'approche par le risque",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque type de KPI du projet d'enquête à un exemple.",
+    "colonne_a": [
+      "Process",
+      "Input",
+      "Output",
+      "Lagging",
+      "Outcome"
+    ],
+    "colonne_b": [
+      "Taux de répondants qui reviennent acheter, NPS",
+      "Taux de retour, taux de réponse",
+      "Temps de réponse moyen, taux d'erreur",
+      "Taux d'utilisation du budget",
+      "ROI de l'opération, taux d'abandon, taux de complétion"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        0
+      ]
+    ],
+    "explication": "Le leading mesure l'impact sur les performances futures (atteinte des objectifs de l'enquête). Ces KPI nourrissent le « suivi et contrôle » de la Q6."
+  },
+  {
+    "resume": "b3-r05",
+    "bloc": 3,
+    "id": "b3-r05-qz-047",
+    "section": "6. L'approche par le risque",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Comment calcule-t-on le taux de complétion d'une enquête ?",
+    "options": [
+      "questionnaires complétés / questionnaires distribués",
+      "répondants / invités",
+      "questionnaires commencés mais non finis / commencés",
+      "réponses erronées / réponses totales"
+    ],
+    "reponse": 0,
+    "explication": "Complétion = complétés / distribués. Le taux de réponse = répondants / invités ; le taux d'abandon = commencés mais non finis ; le taux d'erreur = réponses erronées ou manquantes."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-001",
+    "section": "1. Pourquoi mesurer la satisfaction",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quels sont les objectifs de la mesure de la satisfaction client ? (3 réponses)",
+    "options": [
+      "évaluer l'expérience client à chaque interaction",
+      "remplacer les indicateurs commerciaux",
+      "identifier les points d'amélioration",
+      "anticiper les besoins, une baisse soudaine signalant un problème émergent",
+      "réduire le nombre de canaux"
+    ],
+    "reponse": [
+      0,
+      2,
+      3
+    ],
+    "explication": "Quatre objectifs : évaluer l'expérience, identifier les points d'amélioration, anticiper les besoins, fidéliser et faire recommander."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-002",
+    "section": "1. Pourquoi mesurer la satisfaction",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les indicateurs de satisfaction peuvent refléter la performance des employés.",
+    "reponse": true,
+    "explication": "Vrai. L'engagement des employés figure parmi les 5 avantages de la mesure : des clients satisfaits peuvent être le résultat d'employés engagés et bien formés. Les autres : amélioration continue, décisions sur preuves, différenciation, réduction des réclamations."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-003",
+    "section": "1. Pourquoi mesurer la satisfaction",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi le taux de conversion et le coût d'acquisition ne suffisent-ils pas à piloter la relation client ?",
+    "options": [
+      "parce qu'ils sont trop difficiles à calculer",
+      "parce qu'ils ne disent rien de ce que ressent le client ni de sa propension à rester",
+      "parce qu'ils sont interdits par le RGPD",
+      "parce qu'ils ne concernent que le B2B"
+    ],
+    "reponse": 1,
+    "explication": "Ces indicateurs disent si une campagne est efficace, pas ce que ressent le client. La satisfaction est un levier de création de valeur, corrélé à la CLV, donc au ROI."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-004",
+    "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque indicateur à ce qu'il mesure.",
+    "colonne_a": [
+      "CSAT",
+      "NPS",
+      "CES"
+    ],
+    "colonne_b": [
+      "L'effort fourni pour obtenir une réponse ou accomplir une tâche",
+      "La satisfaction ponctuelle après une interaction précise",
+      "La propension à recommander, l'attachement à la marque"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Ce sont des indicateurs d'attitude : ils mesurent ce que le client déclare. Le CSAT porte sur le résultat immédiat, le NPS sur la relation globale, le CES sur la facilité du processus."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-005",
+    "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Résultats d'une enquête : 10 % pas du tout satisfaits, 15 % peu satisfaits, 45 % plutôt satisfaits, 30 % très satisfaits. Quel est le CSAT ?",
+    "options": [
+      "30 %",
+      "45 %",
+      "50 %",
+      "75 %"
+    ],
+    "reponse": 3,
+    "explication": "CSAT = % de satisfaits = 45 + 30 = 75 %. Chaque entreprise décide des notes qui valent « satisfait » (en général 4-5 sur 5)."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-006",
+    "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans quel délai le module conseille-t-il d'envoyer une enquête CSAT ?",
+    "options": [
+      "au plus près de l'expérience, idéalement sous 24 à 48 heures",
+      "30 jours après l'achat",
+      "une fois par an",
+      "uniquement après une réclamation"
+    ],
+    "reponse": 0,
+    "explication": "La proximité temporelle garantit une mémoire précise. On personnalise aussi la formulation (« résolution de votre problème », « votre commande ») et on fixe des objectifs canal par canal."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-007",
+    "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Les supports du bloc s'accordent tous sur une seule échelle pour le CSAT.",
+    "reponse": false,
+    "explication": "Faux. Le cours « Indicateurs » propose 1 à 5 ou 1 à 7 ; le module NPS/CSAT/CES 1 à 5 ou 1 à 10 (satisfaits = 4-5 sur 5 ou 8-10 sur 10). L'échelle se choisit, puis ne change plus."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-008",
+    "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+    "niveau": 1,
+    "format": "texte_a_trous",
+    "question": "Complétez la définition du NPS.",
+    "texte": "La question porte sur une échelle de {1}. Les promoteurs donnent {2}, les passifs {3}, les détracteurs {4}. NPS = % de promoteurs − % de {5}.",
+    "trous": [
+      "0 à 10",
+      "9 ou 10",
+      "7 ou 8",
+      "0 à 6",
+      "détracteurs"
+    ],
+    "explication": "Le NPS (Fred Reichheld, 2003) varie de −100 à +100 et s'exprime en points. Les passifs ne comptent pas dans le calcul."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-009",
+    "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une enquête donne 60 % de promoteurs, 20 % de passifs et 20 % de détracteurs. Quel est le NPS ?",
+    "options": [
+      "+ 60",
+      "+ 80",
+      "+ 20",
+      "+ 40"
+    ],
+    "reponse": 3,
+    "explication": "NPS = 60 − 20 = + 40. Selon les seuils du module, c'est la limite entre « satisfaisant » (+20 à +40) et « base réellement attachée » (> +40)."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-010",
+    "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "TechnoSport obtient 25 % de promoteurs, 60 % de passifs et 15 % de détracteurs. Le support annonce un NPS de + 15. Qu'en dire ?",
+    "options": [
+      "c'est exact",
+      "le NPS ne peut pas être calculé sans les passifs",
+      "le calcul donne + 40",
+      "le calcul donne + 10 : il faut toujours poser le calcul"
+    ],
+    "reponse": 3,
+    "explication": "NPS = 25 − 15 = + 10. Le support se trompe : à l'examen, pose toujours le calcul."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-011",
+    "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un NPS de 0 est déjà un résultat préoccupant.",
+    "reponse": true,
+    "explication": "Vrai. Il révèle un équilibre entre promoteurs et détracteurs, donc une absence d'enthousiasme. Seuils : < 0 alarme ; 0 à +20 perfectible ; +20 à +40 satisfaisant ; > +40 excellent."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-012",
+    "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi calculer le NPS par segment (canal d'acquisition, zone, gamme) ?",
+    "options": [
+      "pour augmenter artificiellement le score",
+      "parce que le NPS global est interdit",
+      "parce qu'un score agrégé masque des problèmes localisés",
+      "pour réduire le nombre de répondants"
+    ],
+    "reponse": 2,
+    "explication": "Chez TechnoSport, les clients venus des réseaux sociaux affichent + 45, ceux des comparateurs de prix + 12 : d'où une réallocation de 30 % du budget média vers les réseaux sociaux."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-013",
+    "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Quand envoyer l'enquête NPS en B2C et en B2B, selon le module ?",
+    "options": [
+      "le jour de l'achat dans les deux cas",
+      "7 jours après livraison en B2C, 30 jours après achat en B2B",
+      "30 jours en B2C, 7 jours en B2B",
+      "une fois par an dans les deux cas"
+    ],
+    "reponse": 1,
+    "explication": "En B2C, 7 jours après livraison : entre réception et oubli. En B2B, 30 jours : le temps de tester en conditions réelles."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-014",
+    "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+    "niveau": 3,
+    "format": "texte_a_trous",
+    "question": "Complétez la valeur prédictive du NPS selon le module.",
+    "texte": "Une amélioration d'un point de NPS correspond à environ {1} de rétention sur douze mois. Les promoteurs génèrent un CA récurrent {2} fois supérieur aux passifs.",
+    "trous": [
+      "+12 à 15 %",
+      "2,3"
+    ],
+    "explication": "Ce lien permet de quantifier l'impact financier des investissements en expérience client."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-015",
+    "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Résultats d'une enquête d'effort : 10 % très difficile, 15 % assez difficile, 15 % neutre, 40 % assez facile, 20 % très facile. Quel est le CES selon le cours « Indicateurs » ?",
+    "options": [
+      "+ 35",
+      "− 35",
+      "60 %",
+      "− 60"
+    ],
+    "reponse": 1,
+    "explication": "CES = % difficile − % facile = (10 + 15) − (40 + 20) = − 35. Plus il est bas, mieux c'est ; l'idéal tend vers − 100."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-016",
+    "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un client résolu rapidement mais au prix d'un effort élevé rachète en général davantage qu'un client qui a vécu une expérience fluide mais plus lente.",
+    "reponse": false,
+    "explication": "Faux. C'est le paradoxe de l'effort : avec un CES > 5, la probabilité de rachat est inférieure de 40 %. Un effort post-achat excessif augmente le churn de 35 à 50 %. Il faut privilégier la fluidité sur la vitesse."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-017",
+    "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Des clients ont un NPS élevé, un CSAT moyen sur la commande et un CES dégradé au SAV. Comment le module les qualifie-t-il ?",
+    "options": [
+      "des ambassadeurs à recruter",
+      "des passifs sans risque",
+      "des clients « satisfaits mais frustrés », segment à risque",
+      "des détracteurs"
+    ],
+    "reponse": 2,
+    "explication": "Ces clients rachètent 25 % de moins que la moyenne : un segment à risque invisible si l'on ne regarde qu'un indicateur. D'où l'intérêt de croiser les trois mesures."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-018",
+    "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La « note de satisfaction globale d'au moins 4,3/5 » du brief du CEO de PrepMyMeal est une note moyenne, pas un CSAT au sens strict.",
+    "reponse": true,
+    "explication": "Vrai. Le CSAT est un pourcentage de satisfaits ; le brief fixe une note moyenne. En Q7, propose le CSAT et le NPS en précisant le calcul de chacun."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-019",
+    "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Quelles vues le module recommande-t-il d'ajouter au tableau de bord mensuel pour convaincre la direction ?",
+    "options": [
+      "« Revenue per NPS Tier » et « Churn per CES Tier »",
+      "le nombre de likes et de followers",
+      "le taux d'ouverture et de clic",
+      "la part de voix et le reach"
+    ],
+    "reponse": 0,
+    "explication": "CA par tranche de NPS et churn par tranche de CES : ces vues relient directement la satisfaction aux indicateurs financiers."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-020",
+    "section": "3. Les autres indicateurs quantitatifs",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "100 000 clients en début de période, 10 000 perdus, 20 000 nouveaux, 110 000 en fin de période. Quel est le taux de rétention ?",
+    "options": [
+      "110 %",
+      "100 %",
+      "80 %",
+      "90 %"
+    ],
+    "reponse": 3,
+    "explication": "Rétention = (clients finaux − nouveaux) / clients initiaux × 100 = (110 000 − 20 000) / 100 000 = 90 %. Il faut retirer les nouveaux, sinon on gonfle la rétention."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-021",
+    "section": "3. Les autres indicateurs quantitatifs",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Avec les mêmes données (100 000 clients initiaux, 10 000 perdus), quel est le taux de churn ?",
+    "options": [
+      "10 %",
+      "20 %",
+      "9 %",
+      "11 %"
+    ],
+    "reponse": 0,
+    "explication": "Churn = clients perdus / clients initiaux × 100 = 10 %. Ici, rétention + churn = 100 % car tous les clients initiaux sont soit restés, soit partis."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-022",
+    "section": "3. Les autres indicateurs quantitatifs",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un magasin en ligne enregistre 2 000 achats sur l'année pour 500 clients uniques. Quelle est la fréquence moyenne d'achat ?",
+    "options": [
+      "0,25",
+      "2,5",
+      "40",
+      "4"
+    ],
+    "reponse": 3,
+    "explication": "Fréquence = achats / clients uniques = 2 000 / 500 = 4. Élevée : fidélité, demande continue ; faible : concurrence, offre étroite ou service à revoir."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-023",
+    "section": "3. Les autres indicateurs quantitatifs",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un taux de rétention de 30 % peut être normal dans le commerce digital, même s'il serait faible dans la banque.",
+    "reponse": true,
+    "explication": "Vrai. Repères du cours : environ 75 % dans la banque, environ 30 % dans le commerce digital. Ne jamais comparer un taux à un autre secteur."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-024",
+    "section": "3. Les autres indicateurs quantitatifs",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "À quelle famille d'indicateurs appartient le « taux de réachat ≥ 25 % » du brief du CEO ?",
+    "options": [
+      "aux indicateurs d'attitude",
+      "aux indicateurs de notoriété",
+      "aux indicateurs de rétention (comportementaux)",
+      "aux indicateurs de visibilité"
+    ],
+    "reponse": 2,
+    "explication": "Rétention, churn et fréquence d'achat sont des indicateurs comportementaux : ils mesurent ce que le client fait, pas ce qu'il dit. L'annexe 1 donne déjà des fréquences et des taux de fidélité par segment."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-025",
+    "section": "4. Les indicateurs qualitatifs",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque méthode qualitative à son usage.",
+    "colonne_a": [
+      "Entretien individuel en profondeur",
+      "Entretien semi-structuré",
+      "Focus group de testeurs",
+      "Focus group d'utilisateurs potentiels"
+    ],
+    "colonne_b": [
+      "Recueillir l'avis de non-clients face à un prototype",
+      "Comprendre l'insatisfaction d'un client mécontent",
+      "Questions préparées + relances selon les réponses",
+      "Impressions détaillées après un bêta-test"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Autres formes : entretiens de groupe avec des experts, focus groups de consommateurs et de brainstorming. La constitution de panels homogènes et ciblés est déterminante."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-026",
+    "section": "4. Les indicateurs qualitatifs",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la méthode d'analyse des verbatims proposée par le module.",
+    "elements": [
+      "Classer en plan d'action à 3 niveaux",
+      "Catégoriser les commentaires (produit, livraison, SAV, prix…)",
+      "Quantifier la fréquence de chaque thème",
+      "Diffuser un top 3 mensuel des irritants"
+    ],
+    "ordre": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "explication": "Catégoriser → quantifier (text mining) → plan à 3 niveaux → top 3 des irritants partagé avec les équipes. Garder la même codification dans le temps."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-027",
+    "section": "4. Les indicateurs qualitatifs",
+    "niveau": 1,
+    "format": "texte_a_trous",
+    "question": "Complétez le plan d'action à 3 niveaux pour classer les verbatims.",
+    "texte": "« {1} » pour les irritants critiques ; « {2} » pour les améliorations souhaitables ; « {3} ».",
+    "trous": [
+      "Corriger immédiatement",
+      "Améliorer sous 3 mois",
+      "Opportunités d'innovation"
+    ],
+    "explication": "On documente les progrès et on les aligne sur les cycles budgétaires."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-028",
+    "section": "4. Les indicateurs qualitatifs",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans les avis Trustpilot de PrepMyMeal, dans quelle catégorie du plan à 3 niveaux classer les problèmes de livraison ?",
+    "options": [
+      "« Corriger immédiatement »",
+      "« Améliorer sous 3 mois »",
+      "« Opportunités d'innovation »",
+      "aucune, car ils viennent du transporteur"
+    ],
+    "reponse": 0,
+    "explication": "La livraison est le point de défaillance du parcours : irritant critique. Les bugs du site relèvent plutôt du « sous 3 mois », la demande de variété des « opportunités d'innovation ». Le transporteur est un partenaire à associer aux solutions."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-029",
+    "section": "4. Les indicateurs qualitatifs",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'observation des clients réduit les biais liés aux réponses déclaratives.",
+    "reponse": true,
+    "explication": "Vrai. Elle capte les comportements réels, les expressions et signaux non verbaux, sans interroger. Au foodtruck : file d'attente, abandons avant la caisse, réactions à la dégustation."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-030",
+    "section": "5. Analyser les résultats",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Pour représenter l'évolution de la satisfaction sur douze mois, quel type de graphique utiliser ?",
+    "options": [
+      "un graphique de structure (camembert)",
+      "un nuage de points",
+      "un tableau sans graphique",
+      "un graphique de variation (courbe)"
+    ],
+    "reponse": 3,
+    "explication": "Graphiques de variation (courbes, histogrammes) = évolution dans le temps ; graphiques de structure (camemberts) = répartition à un instant donné. Toujours un titre, une légende et l'effectif."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-031",
+    "section": "5. Analyser les résultats",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Comment analyse-t-on des données qualitatives, selon le cours ?",
+    "options": [
+      "par personne interrogée, puis question par question",
+      "uniquement par tri à plat",
+      "par régression multivariée",
+      "en ne gardant que les réponses positives"
+    ],
+    "reponse": 0,
+    "explication": "On analyse par personne puis par question, avec une présentation par question ou par critère, des intertitres et des extraits d'entretiens. Le quantitatif passe par tris à plat et tris croisés."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-032",
+    "section": "5. Analyser les résultats",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "On peut mélanger des échelles de 1 à 5 et de 1 à 10 selon les enquêtes sans gêner les comparaisons dans le temps.",
+    "reponse": false,
+    "explication": "Faux. Il faut standardiser les échelles (une seule, 1-5 ou 1-10) dans toutes les enquêtes, sinon les comparaisons temporelles deviennent impossibles. TechnoSport standardise sur 1-10."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-033",
+    "section": "5. Analyser les résultats",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 4 étapes d'analyse des tendances de satisfaction (module).",
+    "elements": [
+      "Analyser les corrélations satisfaction / comportement d'achat",
+      "Calculer l'évolution temporelle des scores",
+      "Repérer les segments atypiques",
+      "Segmenter par cohortes d'acquisition"
+    ],
+    "ordre": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "explication": "Évolution temporelle → cohortes → corrélations → segments atypiques. La régression hiérarchise ensuite les facteurs (livraison 35 % de la variance du NPS chez TechnoSport)."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-034",
+    "section": "5. Analyser les résultats",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Le NPS global de TechnoSport progresse de + 15 à + 28, mais les nouveaux clients sont à + 35 et les historiques à + 18. Que révèle cette analyse longitudinale ?",
+    "options": [
+      "que les améliorations profitent surtout aux nouveaux parcours, pas aux clients existants",
+      "que le NPS global est faux",
+      "que les clients historiques sont des détracteurs",
+      "que la promotion a fonctionné"
+    ],
+    "reponse": 0,
+    "explication": "La moyenne cache deux réalités. L'analyse par cohortes montre aussi que les clients acquis en promotion ont un NPS inférieur de 8 points : la promotion crée des attentes que l'offre ne tient pas."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-035",
+    "section": "5. Analyser les résultats",
+    "niveau": 3,
+    "format": "texte_a_trous",
+    "question": "Complétez les seuils d'alerte de satisfaction proposés par le module.",
+    "texte": "Une investigation se déclenche si le NPS passe sous {1}, si le CSAT passe sous {2}, ou si le CES dépasse {3}.",
+    "trous": [
+      "+20",
+      "3,5/5",
+      "5"
+    ],
+    "explication": "Exemple : le NPS de TechnoSport tombe de + 28 à + 21 en deux semaines ; l'alerte révèle un bug de l'app de commande, corrigé en 48 h."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-036",
+    "section": "5. Analyser les résultats",
+    "niveau": 2,
+    "format": "ouverte",
+    "question": "Explicitez la méthodologie d'analyse des résultats de l'enquête PrepMyMeal demandée en Q6 (taille de l'échantillon, taux de réponse, méthodes statistiques).",
+    "attendus": [
+      "Contrôler la base : nombre de répondants, taux de réponse par canal, respect des quotas, redressement si un segment manque",
+      "Tri à plat de chaque question ; calcul du CSAT, du NPS (% promoteurs − % détracteurs) et du CES",
+      "Tris croisés par segment (jeunes actifs, sportifs, bien-être, nouveaux), par ville du foodtruck et par canal",
+      "Codification des verbatims et top 3 des irritants",
+      "Restitution en graphiques (courbes, barres) avec titre, légende, effectif ; plan d'action à 3 niveaux"
+    ],
+    "explication": "Le critère cite explicitement la taille de l'échantillon, le taux de réponse et les méthodes statistiques : reprends ces mots."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-037",
+    "section": "6. Restituer les résultats",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels inconvénients le cours attribue-t-il à la restitution « classique » (rapport écrit et soutenance) ? (3 réponses)",
+    "options": [
+      "un manque de clarté et d'efficacité",
+      "un rapport dense, ou au contraire trop simplifié",
+      "l'impossibilité d'ajouter des graphiques",
+      "une dépendance à l'aisance orale du présentateur",
+      "l'obligation d'un serveur web"
+    ],
+    "reponse": [
+      0,
+      1,
+      3
+    ],
+    "explication": "S'y ajoute un public parfois peu au fait des objectifs. Alternatives : le web-reporting (rapport sur un serveur, commenté en temps réel) et l'application web dynamique."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-038",
+    "section": "6. Restituer les résultats",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Avec une application web dynamique de restitution, quel rôle garde le chargé d'études ?",
+    "options": [
+      "aucun : l'outil fait tout",
+      "préparer un plan de tri et une arborescence d'accès ; on ne sous-traite pas l'analyse au commanditaire",
+      "imprimer le rapport",
+      "répondre aux questions par téléphone"
+    ],
+    "reponse": 1,
+    "explication": "L'utilisateur navigue dans des résultats calculés en temps réel, mais dans une structure préparée pour lui. Variante : le logiciel de traitement en ligne (Survey-Dashboard de So Concept)."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-039",
+    "section": "6. Restituer les résultats",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le CAWI automatise non seulement l'administration de l'enquête en ligne, mais aussi son traitement.",
+    "reponse": true,
+    "explication": "Vrai. Les logiciels livrent vite des résultats graphiques, et certains (Ethnos) proposent même automatiquement une matrice d'action."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-040",
+    "section": "7. Communiquer les résultats selon le destinataire",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque destinataire des résultats au message qu'il faut lui adresser.",
+    "colonne_a": [
+      "Collaborateurs",
+      "Managers",
+      "Clients",
+      "Prospects",
+      "Partenaires"
+    ],
+    "colonne_b": [
+      "Remerciement et actions menées suite à l'enquête",
+      "Résultats de leur équipe et actions concrètes à mener",
+      "Points forts comme argument de vente (« X % de clients satisfaits »)",
+      "Leur rôle direct dans la satisfaction client",
+      "Leur part dans la satisfaction des clients communs, ce qui les concerne"
+    ],
+    "paires": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "explication": "Un message par destinataire, sur le canal adapté (réunions en face à face pour les équipes, en ligne pour les clients)."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-041",
+    "section": "7. Communiquer les résultats selon le destinataire",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Pour préserver la motivation des équipes et l'image de la marque, il est préférable de taire les résultats négatifs d'une enquête.",
+    "reponse": false,
+    "explication": "Faux. La transparence est essentielle : cacher le négatif porte préjudice à la confiance. La reconnaître pousse les destinataires à collaborer aux solutions."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-042",
+    "section": "7. Communiquer les résultats selon le destinataire",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 6 étapes pour impliquer les destinataires dans les actions correctives.",
+    "elements": [
+      "Définir des plans d'action SMART",
+      "Analyser ensemble les résultats",
+      "Communiquer régulièrement sur les avancées",
+      "Identifier les actions prioritaires avec eux",
+      "Impliquer également les clients",
+      "Encourager les initiatives et récompenser"
+    ],
+    "ordre": [
+      1,
+      3,
+      0,
+      5,
+      2,
+      4
+    ],
+    "explication": "Analyser ensemble → prioriser → plans SMART → initiatives et reconnaissance → communication régulière (célébrer les succès) → impliquer les clients (focus groups)."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-043",
+    "section": "7. Communiquer les résultats selon le destinataire",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Les avis Trustpilot de PrepMyMeal mettent en cause le transporteur. À quel destinataire faut-il communiquer ce résultat ?",
+    "options": [
+      "uniquement à la direction",
+      "à personne, pour ne pas froisser le partenaire",
+      "aux prospects, pour expliquer les retards",
+      "au partenaire logistique, que le résultat concerne directement"
+    ],
+    "reponse": 3,
+    "explication": "Les partenaires sont des destinataires à part entière : on leur partage ce qui les concerne et on les inclut dans la recherche de solutions communes."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-044",
+    "section": "8. La boucle de rétroaction",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quelle étape boucle la boucle de rétroaction dans l'exemple du restaurant ?",
+    "options": [
+      "embaucher du personnel",
+      "supprimer les avis négatifs",
+      "baisser les prix",
+      "envoyer une nouvelle enquête pour vérifier que les clients perçoivent l'amélioration"
+    ],
+    "reponse": 3,
+    "explication": "Enquête → analyse → tendance → décision → mise en œuvre et surveillance → nouvelle enquête de vérification → hausse de la satisfaction et de la réputation."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-045",
+    "section": "8. La boucle de rétroaction",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que contient le « tableau de transformation des insights » du module ?",
+    "options": [
+      "chaque verbatim ou tendance, priorisé selon son impact business, avec un pilote, une deadline et un KPI de succès",
+      "la liste des clients mécontents à relancer",
+      "les scores NPS par ville",
+      "le budget marketing annuel"
+    ],
+    "reponse": 0,
+    "explication": "Suivi mensuel, revue trimestrielle, triggers automatisés dans le CRM, indicateur de satisfaction dans les objectifs individuels : l'insight devient un projet."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-046",
+    "section": "8. La boucle de rétroaction",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un NPS qui progresse sans effet sur les indicateurs business révèle que les insights ne sont pas transformés en améliorations opérationnelles.",
+    "reponse": true,
+    "explication": "Vrai, c'est un « fondamental » du module : il faut relier, chiffres à l'appui, satisfaction et performance commerciale."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-047",
+    "section": "8. La boucle de rétroaction",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi limiter les sollicitations à une enquête par client et par trimestre ?",
+    "options": [
+      "pour respecter le RGPD",
+      "parce que les outils gratuits sont limités",
+      "parce que la fatigue d'enquête fait baisser les réponses et biaise les résultats vers les plus mécontents",
+      "pour réduire les coûts d'impression"
+    ],
+    "reponse": 2,
+    "explication": "Seuls les plus mécontents restent motivés à répondre. On sollicite de préférence après un moment positif, avec des modèles personnalisés (+35 % de taux de réponse chez TechnoSport)."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-048",
+    "section": "9. L'audit client",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Qu'est-ce qui distingue l'audit client de l'audit interne ?",
+    "options": [
+      "l'audit client est toujours externe, l'audit interne toujours interne",
+      "l'audit client analyse la satisfaction et les attentes des clients ; l'audit interne la conformité des processus et des contrôles",
+      "l'audit client ne porte que sur les prix",
+      "il n'y a aucune différence"
+    ],
+    "reponse": 1,
+    "explication": "L'audit client peut être mené par une équipe interne ou un auditeur externe. L'audit interne vérifie la conformité et identifie les risques opérationnels."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-049",
+    "section": "9. L'audit client",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 5 étapes de préparation d'un audit client.",
+    "elements": [
+      "Former les équipes internes",
+      "Établir le périmètre et les objectifs",
+      "Planifier et organiser les étapes",
+      "Préparer la documentation (listes de contrôle, guides d'entretien)",
+      "Collecter les données pertinentes"
+    ],
+    "ordre": [
+      1,
+      4,
+      3,
+      0,
+      2
+    ],
+    "explication": "Périmètre et objectifs → collecte → documentation → formation des équipes → planification."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-050",
+    "section": "9. L'audit client",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les règles mutuelles pour un audit client bénéfique ? (3 réponses)",
+    "options": [
+      "établir une relation de confiance",
+      "respecter la confidentialité des informations",
+      "garder les résultats secrets vis-à-vis de l'entreprise",
+      "promouvoir une communication ouverte et constructive",
+      "limiter les échanges au strict minimum"
+    ],
+    "reponse": [
+      0,
+      1,
+      3
+    ],
+    "explication": "Quatre règles : confiance, rôles et responsabilités clarifiés, confidentialité, communication ouverte et constructive."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-051",
+    "section": "9. L'audit client",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Laquelle n'est PAS une méthodologie d'audit citée par le cours ?",
+    "options": [
+      "l'audit basé sur les risques",
+      "l'audit par échantillonnage",
+      "l'audit analytique",
+      "l'audit par benchmark tarifaire"
+    ],
+    "reponse": 3,
+    "explication": "Les quatre méthodologies : basé sur les risques, par échantillonnage, analytique, par procédure. Techniques : analyse documentaire, entretiens, questionnaires, observation, tests de conformité."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-052",
+    "section": "9. L'audit client",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelles sont les 3 phases de gestion des suites d'un audit client ?",
+    "options": [
+      "rédiger, imprimer, archiver",
+      "sanctionner, former, recruter",
+      "suivre les actions correctives, évaluer leur efficacité, nourrir l'amélioration continue",
+      "communiquer, oublier, recommencer"
+    ],
+    "reponse": 2,
+    "explication": "Le suivi vérifie délais et normes, l'évaluation compare avant et après, l'amélioration continue capitalise les apprentissages."
+  },
+  {
+    "resume": "b3-r06",
+    "bloc": 3,
+    "id": "b3-r06-qz-053",
+    "section": "10. Application : passer de l'avis client à l'action",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Des clients d'un fabricant de meubles en kit écrivent « je pensais qu'il était livré monté » et « la notice est incompréhensible ». Quelle lecture et quelle action ?",
+    "options": [
+      "les clients sont de mauvaise foi : ne rien changer",
+      "baisser les prix",
+      "l'information sur le montage est absente ou peu visible : l'afficher clairement, ajouter des tutoriels vidéo, simplifier la notice",
+      "arrêter la vente en ligne"
+    ],
+    "reponse": 2,
+    "explication": "Un avis négatif est utile : il donne les clés pour ne pas reproduire l'erreur. La démarche : synthétiser en problématiques, prioriser, proposer une réponse par problème, prévoir une mesure de contrôle."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-001",
+    "section": "1. Pourquoi mesurer",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Par rapport à quoi mesure-t-on la performance d'une action marketing ?",
+    "options": [
+      "par rapport aux résultats des concurrents uniquement",
+      "par rapport au budget dépensé uniquement",
+      "par rapport à l'année précédente uniquement",
+      "par rapport aux objectifs fixés en amont"
+    ],
+    "reponse": 3,
+    "explication": "Une performance est un rendement ; la mesurer, c'est le jauger par rapport aux objectifs fixés en amont. La mesure peut être positive ou négative."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-002",
+    "section": "1. Pourquoi mesurer",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez les chiffres du coût de l'absence de mesure.",
+    "texte": "Une campagne défaillante peut consommer {1} du budget avant qu'on s'en aperçoive. Avec 10 000 € par mois, une mesure appropriée ferait passer de 100 à {2} nouveaux clients. TechnoSport avait dépensé {3} en publicité Facebook sans savoir quelles campagnes vendaient.",
+    "trous": [
+      "80 %",
+      "180-200",
+      "50 000 €"
+    ],
+    "explication": "Sans mesure, on reproduit indéfiniment les mêmes erreurs et on perd le contact avec le marché."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-003",
+    "section": "1. Pourquoi mesurer",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Devenir data-driven consiste à remplacer l'intuition par les données.",
+    "reponse": false,
+    "explication": "Faux. C'est créer un dialogue permanent entre expertise métier et signaux du marché : « vos hypothèses deviennent des tests, vos convictions des métriques à valider »."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-004",
+    "section": "1. Pourquoi mesurer",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles lacunes Camille identifie-t-elle chez TechnoSport ? (3 réponses)",
+    "options": [
+      "aucun tracking des conversions",
+      "un budget marketing trop faible",
+      "un parcours client inconnu",
+      "un coût d'acquisition client approximatif",
+      "trop de canaux de vente"
+    ],
+    "reponse": [
+      0,
+      2,
+      3
+    ],
+    "explication": "S'y ajoute l'absence de culture du reporting : chacun son Excel, rien de standardisé."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-005",
+    "section": "1. Pourquoi mesurer",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Pour démarrer la mesure avec trois indicateurs, associez chaque type d'indicateur à son exemple.",
+    "colonne_a": [
+      "Volume",
+      "Qualité",
+      "Valeur"
+    ],
+    "colonne_b": [
+      "Chiffre d'affaires généré",
+      "Trafic",
+      "Taux de conversion"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Trois indicateurs plutôt que tout tracker dès le départ : une approche progressive qui construit la culture de la mesure."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-006",
+    "section": "1. Pourquoi mesurer",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Comment Veepee a-t-il divisé par deux ses coûts d'acquisition ?",
+    "options": [
+      "en supprimant ses campagnes payantes",
+      "par un tracking unifié de la 1re interaction à la 10e commande, qui a révélé la valeur à long terme de canaux jugés chers",
+      "en baissant ses prix",
+      "en recrutant des influenceurs"
+    ],
+    "reponse": 1,
+    "explication": "La vision longitudinale a montré que certains canaux, chers au premier achat, apportaient une valeur client exceptionnelle sur le long terme."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-007",
+    "section": "1. Pourquoi mesurer",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que faut-il faire avant de lancer une campagne pour pouvoir en mesurer l'efficacité ?",
+    "options": [
+      "comptabiliser les visites et ventes habituelles, pour disposer d'un point de comparaison",
+      "choisir le modèle d'attribution data-driven",
+      "acheter une base de prospects",
+      "fixer le budget de l'année suivante"
+    ],
+    "reponse": 0,
+    "explication": "Sans point de comparaison, impossible d'isoler l'effet de la campagne. Une mauvaise performance peut avoir plusieurs causes (ciblage, prix, qualité, contenu, canal)."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-008",
+    "section": "1. Pourquoi mesurer",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Actionner un levier trop faiblement peut produire une amélioration presque nulle des performances.",
+    "reponse": true,
+    "explication": "Vrai. Il faut choisir le bon levier et son intensité : un levier mal choisi est contre-productif, un levier trop faible n'améliore presque rien."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-009",
+    "section": "2. Des objectifs SMART aux KPI",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles difficultés crée un objectif flou comme « augmenter la visibilité » ? (3 réponses)",
+    "options": [
+      "aucune stratégie cohérente, d'où des actions dispersées",
+      "une mesure impossible, qui fragilise le budget marketing",
+      "des coûts publicitaires automatiquement plus bas",
+      "un désalignement entre services",
+      "une meilleure créativité"
+    ],
+    "reponse": [
+      0,
+      1,
+      3
+    ],
+    "explication": "Stratégie incohérente, mesure impossible, désalignement des parties prenantes : trois raisons de formuler des objectifs SMART."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-010",
+    "section": "2. Des objectifs SMART aux KPI",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "La conversion actuelle est de 2,1 % et la moyenne sectorielle de 2,8 %. Quel objectif respecte le critère « Atteignable » du module ?",
+    "options": [
+      "15 % en six mois",
+      "10 % en un an",
+      "2,6 % en six mois",
+      "2,1 % sans échéance"
+    ],
+    "reponse": 2,
+    "explication": "Atteignable = ambition calibrée sur l'historique et les benchmarks. « Réaliste » vérifie ensuite les ressources (humaines, financières, techniques)."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-011",
+    "section": "2. Des objectifs SMART aux KPI",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Qu'est-ce qui fait d'une métrique un véritable KPI ?",
+    "options": [
+      "elle est affichée en grand sur le tableau de bord",
+      "elle progresse chaque mois",
+      "elle est calculée par Google Analytics",
+      "elle est directement reliée à un objectif stratégique et elle est actionnable"
+    ],
+    "reponse": 3,
+    "explication": "Un KPI dit où l'on en est, s'il faut agir et dans quelle direction. « Tout ce qui se mesure s'améliore » : on choisit les KPI avant le déploiement de la campagne."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-012",
+    "section": "3. Les familles de KPI marketing",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque objectif marketing à sa famille d'indicateurs et un exemple.",
+    "colonne_a": [
+      "Faire connaître la marque",
+      "Créer l'engagement",
+      "Générer des leads",
+      "Convertir en ventes",
+      "Fidéliser"
+    ],
+    "colonne_b": [
+      "Performance commerciale : taux de conversion, panier moyen, ROI",
+      "Visibilité et notoriété : impressions, reach, share of voice",
+      "Rétention : CLV, taux de réachat",
+      "Interaction : taux d'engagement, partages",
+      "Génération de prospects : coût par lead"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        2
+      ]
+    ],
+    "explication": "Règle : combiner volume, qualité et valeur sur un même dashboard. Piège : le module SMART classe en 4 familles (visibilité, engagement, conversion, coût et rentabilité)."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-013",
+    "section": "3. Les familles de KPI marketing",
+    "niveau": 3,
+    "format": "qcm_multiple",
+    "question": "Quelles familles d'indicateurs le cours « La mesure de la performance » distingue-t-il ? (3 réponses)",
+    "options": [
+      "financiers",
+      "organisationnels",
+      "sensoriels",
+      "RSE",
+      "émotionnels"
+    ],
+    "reponse": [
+      0,
+      1,
+      3
+    ],
+    "explication": "Financiers, organisationnels, commerciaux, RSE. À l'examen, prends le classement qui colle aux objectifs de l'énoncé."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-014",
+    "section": "3. Les familles de KPI marketing",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une campagne génère 2 millions d'impressions mais ne touche que 150 000 personnes uniques. Que vaut la fréquence moyenne ?",
+    "options": [
+      "environ 1,3",
+      "environ 7,5",
+      "environ 13,3",
+      "150 000"
+    ],
+    "reponse": 2,
+    "explication": "Fréquence = impressions / reach = 2 000 000 / 150 000 ≈ 13,3 contacts par personne : bon pour la mémorisation, ou facteur de lassitude. Impressions = affichages, vus ou non ; reach = personnes uniques."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-015",
+    "section": "3. Les familles de KPI marketing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que mesure le share of voice ?",
+    "options": [
+      "la visibilité de la marque par rapport à ses concurrents sur un sujet",
+      "le nombre de messages vocaux reçus",
+      "la part du budget consacrée à la radio",
+      "le taux d'ouverture des e-mails"
+    ],
+    "reponse": 0,
+    "explication": "Ex. : TechnoSport 15 % des conversations sur les montres de running, contre 35 % pour Apple Watch et 25 % pour Garmin."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-016",
+    "section": "3. Les familles de KPI marketing",
+    "niveau": 1,
+    "format": "texte_a_trous",
+    "question": "Complétez les formules.",
+    "texte": "Taux d'engagement = interactions / {1} × 100. Taux de rebond = visiteurs n'ayant vu qu'{2} / total des visiteurs × 100 ; au-delà de {3}, il faut s'inquiéter. Taux de conversion = conversions / {4} × 100.",
+    "trous": [
+      "portée",
+      "une seule page",
+      "40 %",
+      "visiteurs uniques"
+    ],
+    "explication": "Exemple : 300 commandes pour 10 000 visiteurs = 3 % de conversion."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-017",
+    "section": "3. Les familles de KPI marketing",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un contenu très engageant sur les réseaux sociaux peut ne générer aucune vente.",
+    "reponse": true,
+    "explication": "Vrai. Engagement ≠ performance commerciale. Il faut croiser engagement brut (likes) et engagement utile (clics, conversions)."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-018",
+    "section": "3. Les familles de KPI marketing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une annonce affiche un fort taux de clic mais un taux de conversion décevant. Que révèle ce décalage ?",
+    "options": [
+      "une audience trop restreinte",
+      "un problème de cohérence entre la promesse publicitaire et l'offre réelle",
+      "un trop grand nombre de likes",
+      "un problème de reach"
+    ],
+    "reponse": 1,
+    "explication": "À l'inverse, beaucoup de likes mais peu de clics révèlent un décalage entre l'intérêt exprimé et l'intention d'achat."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-019",
+    "section": "3. Les familles de KPI marketing",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une campagne Facebook rapporte 4,20 € de chiffre d'affaires pour 1 € de dépense publicitaire. Quel indicateur exprime ce rapport ?",
+    "options": [
+      "un ROI de 420 %",
+      "un CPA de 4,20 €",
+      "un ROAS de 4,2",
+      "une CLV de 4,20 €"
+    ],
+    "reponse": 2,
+    "explication": "ROAS = CA généré / dépense publicitaire. Le ROI rapporte un gain (marge) au coût total : (gain − coût) / coût × 100."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-020",
+    "section": "3. Les familles de KPI marketing",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Quand le module écrit « ROI de 400 % (4 € de chiffre d'affaires pour 1 € investi) », il décrit en réalité un ROAS de 4.",
+    "reponse": true,
+    "explication": "Vrai. Rapporter un CA à une dépense, c'est un ROAS. Pose toujours la formule à l'examen."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-021",
+    "section": "3. Les familles de KPI marketing",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le ROAS, à lui seul, suffit à mesurer l'efficacité d'une campagne.",
+    "reponse": false,
+    "explication": "Faux. C'est bien un KPI, mais il dit seulement si la campagne a été rentable. On l'accompagne de taux de conversion, d'ouverture, de délivrabilité, de plaintes."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-022",
+    "section": "3. Les familles de KPI marketing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Les clients venus des réseaux sociaux rachètent à 45 %, ceux de Google Ads à 28 %, mais Google Ads génère de plus gros premiers paniers. Quelle leçon en tirer ?",
+    "options": [
+      "il faut couper les réseaux sociaux",
+      "les indicateurs long terme (réachat, CLV) peuvent renverser le classement des canaux",
+      "le panier moyen est le seul indicateur fiable",
+      "il faut couper Google Ads"
+    ],
+    "reponse": 1,
+    "explication": "Ne pas oublier CLV, réachat, fidélisation : comparer chaque trimestre CPA, panier moyen, CLV et réachat par canal (rentables à court ou à long terme)."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-023",
+    "section": "3. Les familles de KPI marketing",
+    "niveau": 3,
+    "format": "texte_a_trous",
+    "question": "Complétez les repères e-mailing du cours « La mesure de la performance ».",
+    "texte": "Un taux de plaintes raisonnable est de {1} ; au-delà de {2}, les filtres classent la campagne en spam. Un taux de désabonnement est excellent à {3} ou moins. Le taux de réactivité rapporte les cliqueurs aux {4}.",
+    "trous": [
+      "0,1 %",
+      "0,5 %",
+      "0,2 %",
+      "ouvreurs"
+    ],
+    "explication": "Piège : un faible taux de désabonnement n'implique pas automatiquement une forte conversion."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-024",
+    "section": "3. Les familles de KPI marketing",
+    "niveau": 3,
+    "format": "appariement",
+    "question": "Associez chaque outil de mesure à sa spécialité.",
+    "colonne_a": [
+      "Google Analytics",
+      "Optimizely",
+      "Qualaroo",
+      "Crazy Egg"
+    ],
+    "colonne_b": [
+      "Questionnaires intégrés aux pages du site",
+      "Zones les plus cliquées de l'écran",
+      "Mesure globale du comportement des internautes, ≈ 80 % du marché",
+      "Performance comparée des landing pages"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "S'y ajoutent les statistiques des plateformes publicitaires et les commentaires des visiteurs, « très bons indicateurs »."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-025",
+    "section": "4. Action ou résultat : éviter les vanity metrics",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Lequel est une métrique de résultat ?",
+    "options": [
+      "le nombre de posts publiés par semaine",
+      "le nombre de newsletters envoyées",
+      "le nombre de campagnes lancées",
+      "le chiffre d'affaires généré par une campagne d'e-mailing"
+    ],
+    "reponse": 3,
+    "explication": "Les métriques d'action mesurent ce que l'on fait ; celles de résultat, ce que l'on obtient. On suit les deux, mais on pilote sur les résultats."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-026",
+    "section": "4. Action ou résultat : éviter les vanity metrics",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Un nombre de followers en croissance régulière est en soi la preuve d'une stratégie performante.",
+    "reponse": false,
+    "explication": "Faux. C'est l'exemple type de vanity metric : si ces followers n'achètent pas et ne recommandent pas, la croissance reste stérile commercialement."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-027",
+    "section": "4. Action ou résultat : éviter les vanity metrics",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Au foodtruck PrepMyMeal, lequel est une métrique d'action et non de résultat ?",
+    "options": [
+      "le nombre d'inscriptions sur l'app",
+      "le chiffre d'affaires par ville",
+      "le taux de réachat",
+      "le nombre de flyers distribués"
+    ],
+    "reponse": 3,
+    "explication": "Flyers distribués ou jours de présence mesurent l'activité. Les résultats : clients, conversion, CA, inscriptions, réachat, mentions."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-028",
+    "section": "5. Hiérarchiser : la pyramide des KPI",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque niveau de la pyramide des KPI au nombre d'indicateurs conseillé.",
+    "colonne_a": [
+      "Stratégique",
+      "Tactique",
+      "Opérationnel"
+    ],
+    "colonne_b": [
+      "5 à 7",
+      "10 à 15",
+      "2 à 3"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "explication": "Stratégique : direction (part de marché, CLV, NPS). Tactique : responsables de campagne (CPA par canal, conversion). Opérationnel : gestionnaires (trafic, engagement du jour)."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-029",
+    "section": "5. Hiérarchiser : la pyramide des KPI",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi ne pas suivre chaque jour un indicateur lent comme la part de marché ?",
+    "options": [
+      "parce que cela crée du bruit sans valeur ajoutée",
+      "parce que c'est interdit",
+      "parce que la part de marché n'est pas un KPI",
+      "parce que les outils ne le permettent pas"
+    ],
+    "reponse": 0,
+    "explication": "La fréquence de suivi s'adapte à la vitesse d'évolution de l'indicateur : un indicateur volatil (CPC) exige au contraire un suivi rapproché."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-030",
+    "section": "5. Hiérarchiser : la pyramide des KPI",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la méthode de construction de la pyramide des KPI.",
+    "elements": [
+      "Décliner en objectifs tactiques",
+      "Traduire en actions opérationnelles mesurables",
+      "Identifier les objectifs stratégiques"
+    ],
+    "ordre": [
+      2,
+      0,
+      1
+    ],
+    "explication": "Chaque niveau est cohérent avec le niveau supérieur et alimente le niveau inférieur : tous les efforts sont alignés."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-031",
+    "section": "6. Aligner chaque KPI sur un objectif",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quelles deux questions poser pour chaque KPI ? (2 réponses)",
+    "options": [
+      "« Pourquoi ce KPI est-il suivi ? »",
+      "« Combien coûte l'outil qui le mesure ? »",
+      "« À quelle décision ce KPI sert-il ? »",
+      "« Est-il facile à faire progresser ? »"
+    ],
+    "reponse": [
+      0,
+      2
+    ],
+    "explication": "Ces deux questions évitent la mesure pour la mesure et gardent le système orienté vers l'action."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-032",
+    "section": "6. Aligner chaque KPI sur un objectif",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que le « KPI Kill Process » ?",
+    "options": [
+      "supprimer chaque trimestre les KPI qui n'ont servi à aucune décision",
+      "supprimer les KPI en baisse",
+      "supprimer tous les KPI opérationnels",
+      "remplacer les KPI par des OKR"
+    ],
+    "reponse": 0,
+    "explication": "Il garde le tableau de bord épuré. Il complète la matrice d'alignement KPI × objectifs (avec l'action déclenchée) et la revue trimestrielle avec la direction. Abandonner des KPI historiques suscite des résistances : il faut expliquer."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-033",
+    "section": "6. Aligner chaque KPI sur un objectif",
+    "niveau": 2,
+    "format": "ouverte",
+    "question": "Sélectionnez et justifiez les KPI du foodtruck PrepMyMeal (Q7) en montrant comment ils traduisent les objectifs du brief, avec les outils de collecte et les précautions RGPD.",
+    "attendus": [
+      "Présenter une matrice : objectif → KPI (formule, cible du brief) → outil de collecte → précaution RGPD",
+      "Visibilité/notoriété : mentions digitales (≥ 500/ville), taux d'engagement (> 40 %) ; social listening ; données publiques agrégées",
+      "Ventes : visiteurs (1 200/ville), conversion (≥ 35 %), CA (12-15 k€/ville, > 100 k€), panier moyen ; caisse ; pas de donnée personnelle",
+      "Acquisition/fidélisation : inscriptions (≥ 700/ville), réachat (≥ 25 %) ; CRM, QR codes UTM, GA ; consentement, double opt-in",
+      "Expérience : temps d'attente (≤ 6 min), satisfaction (≥ 4,3/5), NPS, verbatims ; caisse, tablettes, enquête ; réponses anonymisées",
+      "Inclure des KPI qualitatifs et distinguer ROAS et ROI pour la rentabilité"
+    ],
+    "explication": "Le critère : KPI alignés sur les objectifs, processus de collecte et d'analyse explicité, adapté et conforme au RGPD."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-034",
+    "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Combien de points de contact un client a-t-il, selon le module, avant de finaliser un achat ?",
+    "options": [
+      "1 ou 2",
+      "3 à 4",
+      "7 à 10",
+      "plus de 30"
+    ],
+    "reponse": 2,
+    "explication": "7 à 10 points de contact, sur plusieurs semaines ou mois : le parcours ressemble à une toile d'araignée. Le customer journey mapping cartographie ces interactions."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-035",
+    "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Sans mesure adaptée, on risque de sous-estimer les canaux d'influence, comme les réseaux sociaux, au profit des canaux de conversion, comme Google Ads.",
+    "reponse": true,
+    "explication": "Vrai. Les canaux d'influence construisent la préférence de marque ; les canaux de conversion récoltent la vente et captent l'attribution en last-click."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-036",
+    "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Chez TechnoSport, le mobile représente 60 % du trafic mais 35 % des conversions. Quelle erreur une mesure cross-device évite-t-elle ?",
+    "options": [
+      "réduire à tort les investissements mobiles, alors que le mobile génère la demande (phénomène ROPO)",
+      "augmenter le budget desktop",
+      "supprimer Google Analytics",
+      "ignorer le taux de rebond"
+    ],
+    "reponse": 0,
+    "explication": "ROPO = Research Online, Purchase Offline : on s'informe sur mobile, on achète ailleurs. Parades : relier GA et CRM, User-ID, CDP."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-037",
+    "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle limite de Google Analytics le module souligne-t-il ?",
+    "options": [
+      "il ne mesure pas le trafic mobile",
+      "il est payant",
+      "il raisonne en sessions : un client qui revient deux heures plus tard compte pour deux sessions",
+      "il ne compte pas les conversions"
+    ],
+    "reponse": 2,
+    "explication": "La continuité du parcours est brisée. De plus, chaque plateforme publicitaire a ses propres règles d'attribution : d'où l'intérêt d'une vue unifiée (GA + CRM, CDP)."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-038",
+    "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque modèle d'attribution à sa règle de répartition du crédit.",
+    "colonne_a": [
+      "Last-Click",
+      "First-Click",
+      "Linéaire",
+      "Time-Decay",
+      "Position-Based (en U)"
+    ],
+    "colonne_b": [
+      "Crédit croissant à l'approche de l'achat",
+      "100 % au premier point de contact",
+      "40 % au premier, 40 % au dernier, 20 % aux intermédiaires",
+      "100 % au dernier point de contact",
+      "Parts égales entre tous les points de contact"
+    ],
+    "paires": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        2
+      ]
+    ],
+    "explication": "Le Data-Driven calcule le crédit par apprentissage automatique ; il exige un gros volume de données, GA4 ou Adobe Analytics et des compétences."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-039",
+    "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "BioZen n'observe que les canaux qui ferment les ventes ; le dernier clic vient de Google Ads en remarketing. Quel modèle utilise-t-elle probablement, et que lui recommander ?",
+    "options": [
+      "First-Click ; passer au Last-Click",
+      "Linéaire ; passer au Time-Decay",
+      "Last-Click ; passer au Position-Based (en U), qui valorise aussi la découverte sur Instagram",
+      "Data-Driven ; passer au First-Click"
+    ],
+    "reponse": 2,
+    "explication": "Le Last-Click donne tout le crédit au remarketing. Le modèle en U valorise le premier contact (Instagram) et le dernier (Google Ads), avec une part pour le SEO et la newsletter. À 6-12 mois, le Data-Driven révélerait les meilleures combinaisons."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-040",
+    "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque contexte d'entreprise au modèle d'attribution le plus approprié.",
+    "colonne_a": [
+      "Startup de mode, achats impulsifs en 24-48 h",
+      "Marque de cosmétiques investissant en notoriété",
+      "Éditeur B2B, cycle de vente de 6 mois",
+      "PME aux budgets équilibrés entre acquisition et remarketing",
+      "Retailer omnicanal intégrant ses ventes en magasin"
+    ],
+    "colonne_b": [
+      "Linéaire",
+      "Data-Driven avec intégration offline",
+      "Last-Click",
+      "Position-Based (en U)",
+      "First-Click"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "explication": "Le choix dépend du cycle d'achat, du budget, de la diversité des canaux, des objectifs et de la maturité analytique."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-041",
+    "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Il est recommandé de s'en tenir à un seul modèle d'attribution pour garder une lecture simple des performances.",
+    "reponse": false,
+    "explication": "Faux. Comparer plusieurs modèles révèle les biais de chacun et donne une vision nuancée du rôle de chaque levier."
+  },
+  {
+    "resume": "b3-r07",
+    "bloc": 3,
+    "id": "b3-r07-qz-042",
+    "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Le foodtruck crée le premier contact, un e-mail de relance déclenche ensuite le réachat en ligne. Pourquoi un modèle Last-Click serait-il trompeur ?",
+    "options": [
+      "parce qu'il attribuerait tout le crédit au foodtruck",
+      "parce qu'il attribuerait tout le réachat à l'e-mail de relance et sous-estimerait le foodtruck",
+      "parce qu'il ne compte pas les ventes en ligne",
+      "parce qu'il est interdit par le RGPD"
+    ],
+    "reponse": 1,
+    "explication": "D'où un modèle en U (foodtruck = premier contact, e-mail = dernier) et des QR codes tagués par ville (UTM) pour relier la visite au truck, l'inscription et le réachat."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-001",
+    "section": "1. Le tableau de bord : définition, types, qualités",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quelle est la fonction première d'un tableau de bord ?",
+    "options": [
+      "archiver toutes les données de l'entreprise",
+      "évaluer individuellement les salariés",
+      "remplacer le reporting comptable",
+      "identifier le plus tôt possible les écarts entre objectifs et réalité pour engager des actions correctives"
+    ],
+    "reponse": 3,
+    "explication": "C'est un outil de pilotage lisible et synthétique. Il se diffuse et devient aussi un outil de communication interne et de motivation."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-002",
+    "section": "1. Le tableau de bord : définition, types, qualités",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un tableau de bord est destiné à une seule personne, le dirigeant.",
+    "reponse": false,
+    "explication": "Faux. Il se diffuse et se partage : il transmet les objectifs et la stratégie, implique toutes les parties prenantes et motive les équipes."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-003",
+    "section": "1. Le tableau de bord : définition, types, qualités",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque type de tableau de bord à ce qu'il suit.",
+    "colonne_a": [
+      "Stratégique (prospectif, balanced scorecard)",
+      "Opérationnel",
+      "Budgétaire"
+    ],
+    "colonne_b": [
+      "Les résultats comparés au budget prévisionnel",
+      "Les déterminants de la performance, à long terme",
+      "Les plans d'action, à court terme"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Tous visent le même but : suivre la réalisation des objectifs et décider, en impliquant les acteurs."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-004",
+    "section": "1. Le tableau de bord : définition, types, qualités",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les qualités d'un tableau de bord ? (4 réponses)",
+    "options": [
+      "simple",
+      "exhaustif",
+      "pertinent",
+      "synoptique",
+      "actualisé",
+      "confidentiel"
+    ],
+    "reponse": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "explication": "Simple (10 à 15 indicateurs maximum), pertinent (corrélé aux objectifs), synoptique (l'essentiel d'un coup d'œil), actualisé. L'exhaustivité nuit à la lisibilité."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-005",
+    "section": "1. Le tableau de bord : définition, types, qualités",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Tous les supports s'accordent sur le même nombre d'indicateurs dans un tableau de bord.",
+    "reponse": false,
+    "explication": "Faux. Les cours « papier » disent 10 à 15 (« une dizaine » dans l'essentiel du cours commercial) ; le module limite la vue stratégique à 5 et la vue mobile à 3 ; la pyramide des KPI donne 2-3 / 5-7 / 10-15. Retiens : peu à la direction, davantage à l'opérationnel."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-006",
+    "section": "1. Le tableau de bord : définition, types, qualités",
+    "niveau": 1,
+    "format": "texte_a_trous",
+    "question": "Complétez ce que le tableau de bord doit préciser pour chaque indicateur.",
+    "texte": "Le mode de {1}, l'objectif {2}, le {3}, l'{4} entre objectif et réalisé, un commentaire et les actions {5}. Il faut aussi préciser la périodicité d'édition et le processus de collecte.",
+    "trous": [
+      "calcul",
+      "cible",
+      "réalisé",
+      "écart",
+      "correctrices"
+    ],
+    "explication": "C'est la structure à reprendre dans la copie Excel de la Q8 : une ligne par KPI du brief."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-007",
+    "section": "1. Le tableau de bord : définition, types, qualités",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quelle est la différence entre un indicateur de résultat et un indicateur de suivi ?",
+    "options": [
+      "le premier est qualitatif, le second quantitatif",
+      "le premier mesure le résultat final a posteriori ; le second est un jalon qui permet d'anticiper et de corriger avant que le résultat soit acquis",
+      "le premier concerne les ventes, le second les RH",
+      "il n'y a pas de différence"
+    ],
+    "reponse": 1,
+    "explication": "L'indicateur de résultat sert au contrôle des objectifs ; l'indicateur de suivi permet de réagir en cours de route."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-008",
+    "section": "1. Le tableau de bord : définition, types, qualités",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque type d'indicateur à son exemple.",
+    "colonne_a": [
+      "De résultat",
+      "De moyens",
+      "De variables d'action",
+      "D'environnement"
+    ],
+    "colonne_b": [
+      "Pourcentage de personnel formé",
+      "Ratio moyens engagés / unités produites",
+      "Activité des concurrents et du marché",
+      "Niveau de marge atteint"
+    ],
+    "paires": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "explication": "On sélectionne les types adaptés à l'activité. Certains indicateurs, les « clignotants », ont une fonction d'alerte en cas d'évolution anormale."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-009",
+    "section": "1. Le tableau de bord : définition, types, qualités",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Comment le cours « Analyse et présentation » définit-il la rentabilité commerciale d'une opération ?",
+    "options": [
+      "marge / CA",
+      "CA / coût total de l'opération",
+      "coût de l'opération / nombre de contacts utiles",
+      "CA / nombre de clients"
+    ],
+    "reponse": 1,
+    "explication": "Rentabilité = CA / coût total. Coût d'acquisition du contact = coût de l'opération / contacts utiles ; panier moyen = CA / nombre de clients."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-010",
+    "section": "1. Le tableau de bord : définition, types, qualités",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque KPI commercial à sa famille.",
+    "colonne_a": [
+      "Taux de décroché",
+      "Panier moyen",
+      "Taux de résolution au premier contact"
+    ],
+    "colonne_b": [
+      "Qualité de la relation commerciale",
+      "Productivité commerciale",
+      "Rentabilité commerciale"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Productivité : productivité des appels, taux de décroché, taux de transformation, taux de remontée. Rentabilité : coût d'acquisition du contact, panier moyen, taux de marge et de marque. Qualité : satisfaction, CES, NPS, FCR."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-011",
+    "section": "1. Le tableau de bord : définition, types, qualités",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Le cours « Analyse et présentation d'un tableau de bord » mesure le NPS sur une échelle de 0 à 10.",
+    "reponse": false,
+    "explication": "Faux : ce cours note le NPS de 1 à 10 et le CES de 1 à 5. La référence reste le module NPS/CSAT/CES : NPS de 0 à 10, CES de 1 à 7."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-012",
+    "section": "1. Le tableau de bord : définition, types, qualités",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Comparer le CA prévu au CA réalisé pour fixer le cap relève de quel objectif du tableau de bord ?",
+    "options": [
+      "un objectif de reporting",
+      "un objectif de conformité",
+      "un objectif de communication externe",
+      "un objectif de pilotage"
+    ],
+    "reponse": 3,
+    "explication": "Le pilotage est prévisionnel ; le reporting analyse une période passée (CA réalisé) pour conclure et communiquer. Le reporting collecte les données au quotidien, ensuite réintégrées dans les tableaux de bord."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-013",
+    "section": "2. Architecturer le tableau de bord par public",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque niveau de la pyramide de décision à son contenu.",
+    "colonne_a": [
+      "Stratégique (direction)",
+      "Tactique (responsables)",
+      "Opérationnel (équipes terrain)"
+    ],
+    "colonne_b": [
+      "Données temps réel et granulaires : CPC, CTR, rebond, engagement par post",
+      "Indicateurs synthétiques : CA marketing, ROI, satisfaction, part de marché",
+      "Analyses par canal et par période : CA par canal, coût d'acquisition, conversion"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Un seul tableau pour tous génère plus de confusion que de clarté. La navigation doit être bidirectionnelle, du global au détail et inversement."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-014",
+    "section": "2. Architecturer le tableau de bord par public",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 4 pages de navigation d'un dashboard proposées par le module.",
+    "elements": [
+      "Détail campagne / créatif / audience avec filtres dynamiques",
+      "Synthèse des 5 indicateurs clés",
+      "Module de détection des anomalies avec alertes",
+      "Vue détaillée par canal (barres horizontales)"
+    ],
+    "ordre": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "explication": "Du général au spécifique : synthèse → canal → détail → anomalies. Avant de construire, on dresse la matrice des publics et besoins ; après, on teste avec 2-3 utilisateurs."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-015",
+    "section": "2. Architecturer le tableau de bord par public",
+    "niveau": 1,
+    "format": "texte_a_trous",
+    "question": "Complétez la règle des proportions visuelles.",
+    "texte": "{1} de l'espace aux KPI principaux, {2} aux indicateurs secondaires, {3} aux métriques de contexte. Les KPI principaux se placent en {4}.",
+    "trous": [
+      "40 %",
+      "35 %",
+      "25 %",
+      "haut à gauche"
+    ],
+    "explication": "En culture occidentale, l'œil suit un parcours en Z. Trois KPI « héros » bien mis en valeur valent mieux que quinze traités à égalité."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-016",
+    "section": "2. Architecturer le tableau de bord par public",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le module conseille de regrouper les indicateurs d'un dashboard par source de données (Facebook, GA4, CRM) pour faciliter la maintenance.",
+    "reponse": false,
+    "explication": "Faux. On les groupe par finalité métier (acquisition, conversion, fidélisation), peu importe leur source. Cette organisation divise par deux le temps de recherche."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-017",
+    "section": "2. Architecturer le tableau de bord par public",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "En quoi consiste le test du « regard flou » ?",
+    "options": [
+      "afficher le dashboard sans couleur",
+      "reculer de 2 mètres et plisser les yeux pour vérifier que les KPI principaux ressortent en premier",
+      "demander à un utilisateur de lire le dashboard en 5 secondes",
+      "imprimer le dashboard en petit format"
+    ],
+    "reponse": 1,
+    "explication": "Si ce ne sont pas les KPI principaux qui captent l'attention, on ajuste tailles, couleurs et positions."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-018",
+    "section": "3. Choisir les visualisations et les codes graphiques",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque message au graphique le plus adapté.",
+    "colonne_a": [
+      "Évolution du CA sur 12 mois",
+      "Comparaison des conversions entre 5 canaux",
+      "Répartition du budget en 4 grandes catégories",
+      "Relation entre budget investi et conversions par campagne"
+    ],
+    "colonne_b": [
+      "Secteurs (camembert)",
+      "Nuage de points",
+      "Courbe",
+      "Barres horizontales"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Règle d'or : un graphique = un message unique et clair. S'il faut l'expliquer à l'oral, il est mal choisi."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-019",
+    "section": "3. Choisir les visualisations et les codes graphiques",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Combien de catégories maximum pour un graphique en secteurs ?",
+    "options": [
+      "3",
+      "5",
+      "8",
+      "15"
+    ],
+    "reponse": 1,
+    "explication": "Au-delà de 5, il devient illisible : on regroupe les catégories de moins de 5 % dans « Autres ». Les barres horizontales restent lisibles jusqu'à 15 catégories. Jamais de 3D."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-020",
+    "section": "3. Choisir les visualisations et les codes graphiques",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "À quoi réserver les couleurs vives dans un tableau de bord ?",
+    "options": [
+      "aux titres",
+      "aux indicateurs les plus anciens",
+      "à tous les graphiques, pour les dynamiser",
+      "aux alertes critiques et aux performances exceptionnelles"
+    ],
+    "reponse": 3,
+    "explication": "Rouge = alerte, orange = vigilance, vert = objectif atteint, gris = neutre ; palette neutre pour le reste. Une couleur par canal, toujours la même."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-021",
+    "section": "3. Choisir les visualisations et les codes graphiques",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un graphique de tableau de bord peut reposer entièrement sur les couleurs, puisqu'il est consulté à l'écran.",
+    "reponse": false,
+    "explication": "Faux. Un bon graphique doit rester compréhensible imprimé en noir et blanc : ce test révèle la dépendance excessive aux couleurs (on renforce formes, motifs, tailles). On teste aussi le daltonisme (Color Oracle, Coblis)."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-022",
+    "section": "3. Choisir les visualisations et les codes graphiques",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Lesquelles sont des erreurs classiques de data visualisation ? (3 réponses)",
+    "options": [
+      "un camembert à plus de 5 parts",
+      "une légende avec unités et période de référence",
+      "des graphiques en 3D",
+      "des axes coupés sans le signaler",
+      "une couleur constante par canal"
+    ],
+    "reponse": [
+      0,
+      2,
+      3
+    ],
+    "explication": "S'y ajoutent la multiplication de couleurs sans signification et l'affichage de tout sans hiérarchie. La légende explicite et la couleur constante sont de bonnes pratiques."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-023",
+    "section": "4. Opérationnel ou stratégique : deux philosophies",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Qu'est-ce qui caractérise un dashboard stratégique ?",
+    "options": [
+      "une forte densité d'informations et des filtres complexes",
+      "une actualisation horaire",
+      "cinq KPI maximum, une courbe de tendance et une section « À retenir »",
+      "le détail par créatif publicitaire"
+    ],
+    "reponse": 2,
+    "explication": "La direction y consacre rarement plus de dix minutes. L'opérationnel, lui, privilégie densité et interactivité, avec les alertes en haut."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-024",
+    "section": "4. Opérationnel ou stratégique : deux philosophies",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que contient la section « À retenir » d'un dashboard stratégique ?",
+    "options": [
+      "trois points de synthèse maximum et une recommandation prioritaire, concrète et chiffrée",
+      "la liste de toutes les campagnes",
+      "les définitions des indicateurs",
+      "les droits d'accès"
+    ],
+    "reponse": 0,
+    "explication": "Chaque KPI stratégique est aussi accompagné d'un commentaire de contexte (saisonnalité, événement, facteur externe)."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-025",
+    "section": "4. Opérationnel ou stratégique : deux philosophies",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Ajouter des métriques opérationnelles détaillées dans un dashboard stratégique améliore la prise de décision de la direction.",
+    "reponse": false,
+    "explication": "Faux. Cela dilue l'attention : un dirigeant face à 50 indicateurs n'utilisera pas l'outil."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-026",
+    "section": "4. Opérationnel ou stratégique : deux philosophies",
+    "niveau": 3,
+    "format": "texte_a_trous",
+    "question": "Complétez les seuils d'alerte du dashboard opérationnel de TechnoSport.",
+    "texte": "Une alerte orange se déclenche au-delà de {1} d'écart avec la moyenne mobile sur 7 jours, une alerte rouge au-delà de {2}.",
+    "trous": [
+      "15 %",
+      "30 %"
+    ],
+    "explication": "Des seuils intelligents signalent les déviations significatives sans fausses alertes qui décrédibiliseraient le système."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-027",
+    "section": "4. Opérationnel ou stratégique : deux philosophies",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque niveau d'accès au tableau de bord à son public.",
+    "colonne_a": [
+      "Consultation",
+      "Analyse complète",
+      "Administration"
+    ],
+    "colonne_b": [
+      "Équipe marketing : toutes les métriques, filtres, exports",
+      "Responsables et direction : données financières, paramétrage des alertes",
+      "Commerciaux et service client : leads, conversion, satisfaction, sans coûts ni budgets"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "explication": "Principe du besoin d'en connaître ; les accès sont tracés pour comprendre l'usage réel."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-028",
+    "section": "5. Personnalisation et expérience utilisateur",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans un dashboard personnalisable, qu'est-ce qui doit rester fixe ?",
+    "options": [
+      "l'ordre des widgets",
+      "les filtres",
+      "les définitions des indicateurs, les codes couleur et les structures de données",
+      "les vues sauvegardées"
+    ],
+    "reponse": 2,
+    "explication": "Principe de « cohérence dans la diversité » : chacun réorganise, mais tous manipulent les mêmes données avec les mêmes définitions."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-029",
+    "section": "5. Personnalisation et expérience utilisateur",
+    "niveau": 1,
+    "format": "texte_a_trous",
+    "question": "Complétez les règles d'expérience utilisateur.",
+    "texte": "Toute donnée importante doit être accessible en {1} clics maximum. Le dashboard doit s'afficher en moins de {2} secondes. La version mobile affiche les {3} KPI critiques.",
+    "trous": [
+      "3",
+      "10",
+      "3"
+    ],
+    "explication": "Un dashboard trop lent ou trop rigide finit abandonné au profit d'exports Excel artisanaux."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-030",
+    "section": "6. Outils, connexions, automatisation, distribution",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une petite équipe, sans budget, travaille dans l'écosystème Google et a besoin d'un dashboard rapidement. Quel outil choisir ?",
+    "options": [
+      "Power BI",
+      "Tableau",
+      "Looker Studio",
+      "un ERP"
+    ],
+    "reponse": 2,
+    "explication": "Looker Studio est gratuit et connecté nativement à GA, Google Ads, Search Console, YouTube. Limites : calculs avancés, lenteur sur gros volumes, dépendance à Google."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-031",
+    "section": "6. Outils, connexions, automatisation, distribution",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque outil de dataviz à son profil.",
+    "colonne_a": [
+      "Power BI",
+      "Tableau",
+      "DashThis",
+      "Klipfolio"
+    ],
+    "colonne_b": [
+      "Équipes légères et agences, connecteurs marketing préconfigurés",
+      "Personnalisation poussée des visualisations",
+      "Modélisation avancée, IA, collaboration ; environ 10 € par utilisateur et par mois",
+      "Référence pour les analyses statistiques et le data mining"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Conseils : anticiper les besoins à 3-5 ans et tester chaque outil 2 semaines avec ses vraies données. Un outil puissant mal adopté vaut moins qu'un outil simple utilisé."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-032",
+    "section": "6. Outils, connexions, automatisation, distribution",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi créer des comptes de service dédiés pour les connexions de données d'un dashboard ?",
+    "options": [
+      "pour réduire le coût des licences",
+      "pour éviter le RGPD",
+      "pour contourner les quotas d'API",
+      "pour garantir la continuité du service si un collaborateur part ou change de droits"
+    ],
+    "reponse": 3,
+    "explication": "Procédure : comptes de service, moindre privilège, documentation, revue trimestrielle des droits, alerte en cas de révocation, procédure de récupération."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-033",
+    "section": "6. Outils, connexions, automatisation, distribution",
+    "niveau": 3,
+    "format": "qcm_multiple",
+    "question": "Quelles bonnes pratiques de performance des connexions le module recommande-t-il ? (3 réponses)",
+    "options": [
+      "privilégier des données pré-agrégées plutôt que brutes",
+      "récupérer « toutes les données disponibles » à chaque requête",
+      "limiter la fenêtre de tendance à 13 mois et archiver au-delà",
+      "surveiller les connexions par un méta-dashboard",
+      "rafraîchir toutes les sources chaque minute"
+    ],
+    "reponse": [
+      0,
+      2,
+      3
+    ],
+    "explication": "Les données pré-agrégées divisent le traitement par 10. Il faut aussi tenir compte des quotas d'API (GA : 10 000 requêtes par jour) et des délais de stabilisation (GA : 24-48 h)."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-034",
+    "section": "6. Outils, connexions, automatisation, distribution",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque type de données à sa fréquence de rafraîchissement recommandée.",
+    "colonne_a": [
+      "Publicitaires (Google Ads, Facebook Ads)",
+      "Web analytics (GA)",
+      "CRM",
+      "Satisfaction (NPS, CSAT)",
+      "Financières"
+    ],
+    "colonne_b": [
+      "Hebdomadaire",
+      "Mensuelle ou trimestrielle",
+      "Horaire ou quotidienne",
+      "Mensuelle",
+      "Quotidienne"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "explication": "Règle : caler la fréquence sur les cycles de décision. La satisfaction est mensuelle, le temps que des tendances significatives apparaissent."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-035",
+    "section": "6. Outils, connexions, automatisation, distribution",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Plus un dashboard déclenche d'alertes automatiques, plus l'équipe réagit vite aux problèmes.",
+    "reponse": false,
+    "explication": "Faux. Une alerte qui ne déclenche aucune action concrète n'est probablement pas nécessaire : on limite les alertes à 3 à 5 KPI à fort impact et on les contextualise (« conversion mobile −15 % depuis la mise en ligne de la nouvelle page produit hier »)."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-036",
+    "section": "6. Outils, connexions, automatisation, distribution",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque niveau d'alerte à son canal de diffusion.",
+    "colonne_a": [
+      "Critique (ROI négatif, budget épuisé)",
+      "Importante (conversion −10 %, coût d'acquisition +20 %)",
+      "Informative (pic de trafic, objectif atteint)"
+    ],
+    "colonne_b": [
+      "Slack / Teams",
+      "SMS immédiat",
+      "E-mail détaillé avec lien vers l'analyse"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Cette hiérarchisation évite la surcharge informationnelle tout en garantissant une réaction rapide aux situations critiques."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-037",
+    "section": "6. Outils, connexions, automatisation, distribution",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel est le meilleur moment pour envoyer un rapport hebdomadaire automatique ?",
+    "options": [
+      "le lundi matin, quand les équipes planifient leur semaine",
+      "le vendredi après-midi",
+      "le samedi",
+      "à n'importe quel moment"
+    ],
+    "reponse": 0,
+    "explication": "Un envoi le vendredi après-midi a moins de chances d'être consulté. On adapte aussi le canal : e-mail pour les rapports, Slack pour l'urgence, accès direct pour la consultation, réunion pour le storytelling."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-038",
+    "section": "6. Outils, connexions, automatisation, distribution",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Comment mesurer l'efficacité de la distribution des tableaux de bord ?",
+    "options": [
+      "au nombre de rapports envoyés",
+      "au nombre de graphiques",
+      "au coût de l'outil",
+      "par les vues, la durée de consultation, le taux d'ouverture des envois et surtout les décisions influencées"
+    ],
+    "reponse": 3,
+    "explication": "« L'efficacité se mesure aux décisions qu'il influence, pas au nombre de rapports envoyés. » Un dashboard « Usage des dashboards » suit ces indicateurs."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-039",
+    "section": "6. Outils, connexions, automatisation, distribution",
+    "niveau": 3,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 4 phases du déploiement proposé dans l'application HealthyHub.",
+    "elements": [
+      "Pilote sur 1 à 2 enseignes et ajustements",
+      "Optimisation et consolidation",
+      "Cadrage, préparation et POC",
+      "Montée en charge sur les autres enseignes"
+    ],
+    "ordre": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "explication": "Cadrage et POC (sur FitConnect) → pilote → généralisation → optimisation, calé hors saisons hautes. Gouvernance : charte, responsables data, ambassadeurs data, RGPD."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-040",
+    "section": "7. Analyser, piloter et diffuser le tableau de bord",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Le réalisé dépasse nettement l'objectif. Que préconise le cours ?",
+    "options": [
+      "ne rien faire",
+      "réajuster les objectifs",
+      "réduire les moyens",
+      "supprimer l'indicateur"
+    ],
+    "reponse": 1,
+    "explication": "Écart négatif → corriger la trajectoire ; écart positif → réajuster les objectifs. Deux approches : managériale (motivation) et de gestion (coût, rentabilité)."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-041",
+    "section": "7. Analyser, piloter et diffuser le tableau de bord",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les finalités du tableau de bord ? (4 réponses)",
+    "options": [
+      "mesure",
+      "diagnostic",
+      "sanction",
+      "communication",
+      "motivation",
+      "archivage"
+    ],
+    "reponse": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "explication": "Cinq finalités : mesure, diagnostic, communication, information (se situer dans un réseau), motivation."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-042",
+    "section": "7. Analyser, piloter et diffuser le tableau de bord",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un tableau de bord donne les raisons d'une baisse de performance et les solutions à mettre en œuvre.",
+    "reponse": false,
+    "explication": "Faux. Il alerte, il n'explique pas. C'est au dirigeant d'analyser les causes : internes (stocks, gestion), externes (saisonnalité, concurrence) ou objectifs trop élevés."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-043",
+    "section": "7. Analyser, piloter et diffuser le tableau de bord",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Plusieurs non-conformités mineures se répètent. Que recommande le cours ?",
+    "options": [
+      "les traiter une à une, en aval",
+      "les ignorer, car elles sont mineures",
+      "faire du curatif à la source, en amont, car ensemble elles peuvent traduire un problème plus important",
+      "changer d'indicateur"
+    ],
+    "reponse": 2,
+    "explication": "Le responsable de l'action corrective mobilise d'autres services et décrit la non-conformité et ses causes probables."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-044",
+    "section": "7. Analyser, piloter et diffuser le tableau de bord",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le cours recommande que la direction conçoive seule le tableau de bord, puis l'impose aux équipes pour garantir sa cohérence.",
+    "reponse": false,
+    "explication": "Faux. Il faut le co-construire avec les équipes concernées (commerciaux, SAV, techniciens) : un tableau de bord doit être accepté et diffusé, il ne sert pas à imposer des idées. La co-construction augmente la motivation et le réalisme."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-045",
+    "section": "7. Analyser, piloter et diffuser le tableau de bord",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Pour une entreprise récente, avec peu d'historique, une analyse très régulière du tableau de bord aide à fixer ensuite des objectifs réalistes.",
+    "reponse": true,
+    "explication": "Vrai, le cours le souligne. C'est exactement la situation de PrepMyMeal avec sa première tournée de foodtruck."
+  },
+  {
+    "resume": "b3-r08",
+    "bloc": 3,
+    "id": "b3-r08-qz-046",
+    "section": "7. Analyser, piloter et diffuser le tableau de bord",
+    "niveau": 2,
+    "format": "ouverte",
+    "question": "Décrivez le tableau de bord opérationnel du foodtruck à construire en Q8 : structure, visualisations, outil, fréquence et destinataires.",
+    "attendus": [
+      "Bandeau de 4-5 KPI héros en haut à gauche, avec jauges vs objectifs : CA total (108 000 € pour > 100 000 €), conversion (≈ 30 % pour 35 %), satisfaction (≈ 4,2 pour 4,3), attente (≈ 7,3 min pour 6), inscriptions (≈ 791 pour 700)",
+      "Tableau ville × KPI avec mise en forme conditionnelle vert / orange / rouge ; chaque ligne avec formule, cible, réalisé, écart, commentaire, action",
+      "Barres horizontales du CA par ville avec la bande 12 000-15 000 € ; courbe semaine 1 → 8 ; nuage coût / marge",
+      "Zone « À retenir » : 3 constats, 1 recommandation chiffrée ; note sur les anomalies (Lyon, colonne engagement)",
+      "Outil : Excel pour la copie, Looker Studio en production ; suivi quotidien, bilan par ville ; équipe du truck (opérationnel) et CEO (5 KPI)"
+    ],
+    "explication": "Critère : visualisations intuitives, suivi facile des KPI, aide à la décision."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-001",
+    "section": "1. Analyser un écart en 4 étapes",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quelle question se poser avant d'analyser un écart de performance ?",
+    "options": [
+      "« Qui est responsable ? »",
+      "« Les concurrents ont-ils fait mieux ? »",
+      "« Combien coûtera la correction ? »",
+      "« Mon objectif était-il réaliste et fondé sur des données fiables ? »"
+    ],
+    "reponse": 3,
+    "explication": "Un écart ne signale pas toujours un problème de performance : il peut révéler un défaut de projection ou une méconnaissance du marché."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-002",
+    "section": "1. Analyser un écart en 4 étapes",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 4 étapes de l'analyse d'un écart.",
+    "elements": [
+      "Segmenter l'analyse",
+      "Formuler des hypothèses vérifiables",
+      "Quantifier l'écart en absolu et en relatif",
+      "Évaluer la significativité de l'écart"
+    ],
+    "ordre": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "explication": "Quantifier → significativité → segmenter → hypothèses. Cette démarche évite les conclusions hâtives et prépare l'investigation des causes."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-003",
+    "section": "1. Analyser un écart en 4 étapes",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Le CAC réel est de 42 € pour un objectif de 50 €. Quels sont l'écart absolu et l'écart relatif ?",
+    "options": [
+      "+8 € et +19 %",
+      "−8 € et −19 %",
+      "−8 € et −16 %",
+      "+8 € et +16 %"
+    ],
+    "reponse": 2,
+    "explication": "Absolu = 42 − 50 = −8 € ; relatif = −8 / 50 × 100 = −16 %. Pour un coût, cet écart négatif est favorable."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-004",
+    "section": "1. Analyser un écart en 4 étapes",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Le taux de conversion e-mail est de 2,1 % pour un objectif de 2,8 %. Comment exprimer l'écart ?",
+    "options": [
+      "−0,7 point, soit −25 % en relatif",
+      "−0,7 %, soit −0,7 point",
+      "−25 points",
+      "+0,7 point"
+    ],
+    "reponse": 0,
+    "explication": "Pour un taux, l'écart absolu s'exprime en points (2,1 − 2,8 = −0,7 point) et l'écart relatif en % (−0,7 / 2,8 = −25 %). Ne jamais se contenter de « en dessous de l'objectif »."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-005",
+    "section": "1. Analyser un écart en 4 étapes",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Pour un temps d'attente, un écart négatif entre le réalisé et l'objectif est favorable.",
+    "reponse": true,
+    "explication": "Vrai : attendre moins que prévu est une bonne nouvelle. Pour un CA ou un taux de conversion, un écart négatif est défavorable. Toujours préciser le sens de l'écart."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-006",
+    "section": "1. Analyser un écart en 4 étapes",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Pour juger si un écart est significatif, que faut-il regarder ? (3 réponses)",
+    "options": [
+      "sa durée",
+      "sa récurrence",
+      "le budget de la campagne",
+      "son amplitude par rapport aux variations habituelles",
+      "le nombre de canaux utilisés"
+    ],
+    "reponse": [
+      0,
+      1,
+      3
+    ],
+    "explication": "Une variation peut venir de la saisonnalité, d'un événement externe ou d'un petit échantillon. Outils : un test de signifiance (type t-test) ou au moins la médiane des 3 mois précédents."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-007",
+    "section": "1. Analyser un écart en 4 étapes",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez les règles de segmentation d'un écart.",
+    "texte": "Selon le principe de {1}, 20 % des causes expliquent 80 % de la variation. Trois dimensions suffisent en général : le canal, la {2} et le segment client. Chaque segment doit compter au moins {3} événements pour être fiable.",
+    "trous": [
+      "Pareto",
+      "temporalité",
+      "100"
+    ],
+    "explication": "Trop de sous-segments rendent les conclusions non significatives. Outil : une matrice croisée segments × canaux."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-008",
+    "section": "1. Analyser un écart en 4 étapes",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Laquelle est une hypothèse explicative « actionnable » au sens du module ?",
+    "options": [
+      "« Les utilisateurs mobiles sont moins engagés »",
+      "« Le marché va mal »",
+      "« La baisse sur mobile coïncide avec la mise à jour du site »",
+      "« Les clients ont changé »"
+    ],
+    "reponse": 2,
+    "explication": "Une bonne hypothèse est concrète et vérifiable, fondée sur les données et les événements de la période."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-009",
+    "section": "1. Analyser un écart en 4 étapes",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Conversion e-mail globale à 2,1 % (objectif 2,8 %), mais 3,4 % chez les nouveaux abonnés et 1,2 % chez les abonnés de plus de 6 mois. Où est le problème ?",
+    "options": [
+      "dans l'acquisition de nouveaux abonnés",
+      "dans la rétention des abonnés anciens : le contenu ne se renouvelle pas assez",
+      "dans le budget publicitaire",
+      "dans le taux d'ouverture global"
+    ],
+    "reponse": 1,
+    "explication": "La segmentation transforme un problème vague en action ciblée : personnaliser pour les anciens plutôt que refaire toute la stratégie e-mail."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-010",
+    "section": "2. Contextualiser : benchmarks, cycles, événements",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Une conversion de 2,8 % pour un objectif de 3,2 % peut être une excellente performance.",
+    "reponse": true,
+    "explication": "Vrai, si la moyenne sectorielle est de 2,1 %. Une performance ne s'évalue jamais dans l'absolu : le benchmark évite l'erreur « sous l'objectif donc en échec »."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-011",
+    "section": "2. Contextualiser : benchmarks, cycles, événements",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelles caractéristiques doit avoir une source de benchmark ?",
+    "options": [
+      "être récente (moins de 2 ans) et de la même zone géographique",
+      "être gratuite",
+      "venir d'un concurrent direct",
+      "dater d'au moins 5 ans pour être stable"
+    ],
+    "reponse": 0,
+    "explication": "Sources citées : rapports Google par secteur, études Mailchimp, Facebook Business, Salesforce, Statista, Kantar. Concurrents : SEMrush, Ahrefs, SimilarWeb."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-012",
+    "section": "2. Contextualiser : benchmarks, cycles, événements",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque situation au diagnostic le plus probable.",
+    "colonne_a": [
+      "Résultats dans la fourchette historique et proches du secteur",
+      "Résultats en baisse alors que les concurrents progressent",
+      "Trafic +10 % alors que le marché fait +25 %"
+    ],
+    "colonne_b": [
+      "Perte de part de marché malgré la hausse",
+      "Objectifs trop ambitieux",
+      "Cause interne"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "La lecture croisée historique interne / benchmark externe situe les responsabilités au bon niveau."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-013",
+    "section": "2. Contextualiser : benchmarks, cycles, événements",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle visualisation révèle instantanément les créneaux jour × heure les plus performants ?",
+    "options": [
+      "un camembert",
+      "une heat map temporelle",
+      "un graphique en aires empilées",
+      "un tableau brut"
+    ],
+    "reponse": 1,
+    "explication": "Heat maps temporelles = patterns jour/heure ; courbes avec moyenne mobile = tendances sans bruit ; aires empilées = évolution de la répartition entre canaux."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-014",
+    "section": "2. Contextualiser : benchmarks, cycles, événements",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une baisse du trafic organique le jour de la mise à jour d'un article prouve que cette mise à jour en est la cause.",
+    "reponse": false,
+    "explication": "Faux : attention aux corrélations trompeuses. Une mise à jour de l'algorithme Google le même jour peut être la vraie cause. Il faut isoler chaque variable et penser aux effets retardés."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-015",
+    "section": "2. Contextualiser : benchmarks, cycles, événements",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelles colonnes contient le journal des événements marketing ?",
+    "options": [
+      "Date, Événement, Hypothèse d'impact, KPI cible",
+      "Canal, Budget, Clics, CA",
+      "Client, Réclamation, Réponse",
+      "Objectif, Réalisé, Écart"
+    ],
+    "reponse": 0,
+    "explication": "On y consigne lancements de campagnes, modifications du site, changements de prix, actions concurrentes et événements externes, pour une analyse avant/après rigoureuse, idéalement avec un groupe de contrôle."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-016",
+    "section": "2. Contextualiser : benchmarks, cycles, événements",
+    "niveau": 3,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la construction d'une prévision simple.",
+    "elements": [
+      "Ajouter les variations saisonnières (coefficients par mois)",
+      "Intégrer les événements prévisibles comme des chocs ponctuels",
+      "Identifier la tendance de fond sur 12 à 24 mois (régression linéaire)"
+    ],
+    "ordre": [
+      2,
+      0,
+      1
+    ],
+    "explication": "Horizon fiable : 3 à 6 mois. Toujours présenter des fourchettes, réviser avec les données réelles, décliner en capacité (renfort du SAV, ressources commerciales)."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-017",
+    "section": "3. Interpréter : signal ou bruit, corrélation ou cause",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quelles techniques permettent de distinguer un signal faible d'une fluctuation normale ? (3 réponses)",
+    "options": [
+      "une moyenne mobile sur 30 jours",
+      "l'analyse des écarts-types",
+      "la comparaison avec l'année précédente",
+      "le nombre de likes",
+      "la suppression des valeurs extrêmes"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Ces trois techniques séparent l'effet saisonnier du changement structurel. Exemple : le fitness baisse de 20 % en août et monte de 40 % en janvier."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-018",
+    "section": "3. Interpréter : signal ou bruit, corrélation ou cause",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Le trafic a chuté de 15 % en une semaine. Que vérifier avant de déclencher une alerte générale ?",
+    "options": [
+      "le contexte saisonnier, les sources concernées et les segments touchés",
+      "le budget de l'année",
+      "le salaire des équipes",
+      "rien : il faut alerter immédiatement"
+    ],
+    "reponse": 0,
+    "explication": "Si la baisse ne touche qu'un canal ou un segment, on analyse cette niche avant d'agir globalement."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-019",
+    "section": "3. Interpréter : signal ou bruit, corrélation ou cause",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que la « triangulation des données » ?",
+    "options": [
+      "comparer trois concurrents",
+      "diviser l'échantillon en trois",
+      "calculer trois indicateurs",
+      "croiser au moins deux sources ou méthodes (quanti et quali, interne et externe, CRM et web analytics) pour valider une hypothèse"
+    ],
+    "reponse": 3,
+    "explication": "Elle limite les biais d'interprétation. Ensuite, un test A/B sur un petit segment confirme la causalité avant de généraliser."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-020",
+    "section": "3. Interpréter : signal ou bruit, corrélation ou cause",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Une optimisation a généré 63 000 € de CA additionnel pour un investissement de 12 000 €. Quel est le ROI ?",
+    "options": [
+      "525 %",
+      "425 %",
+      "19 %",
+      "5,25"
+    ],
+    "reponse": 1,
+    "explication": "ROI = (CA additionnel − coût) / coût × 100 = (63 000 − 12 000) / 12 000 = 425 %. Le rapport 63 000 / 12 000 = 5,25 serait une logique de ROAS."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-021",
+    "section": "3. Interpréter : signal ou bruit, corrélation ou cause",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Suivre les clics et les impressions suffit à défendre le budget marketing face à la direction.",
+    "reponse": false,
+    "explication": "Faux. Rester sur les métriques marketing fragilise le marketing dans les arbitrages budgétaires. Établir des liens chiffrés entre actions et résultats business le fait passer de centre de coût à centre de profit."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-022",
+    "section": "4. Trouver la cause",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 5 étapes de l'investigation d'une anomalie.",
+    "elements": [
+      "Tester les hypothèses sur des données granulaires",
+      "Documenter les conclusions",
+      "Circonscrire le problème (quand, quels segments, quelle ampleur)",
+      "Valider par des analyses complémentaires",
+      "Inventorier les changements internes et externes de la période"
+    ],
+    "ordre": [
+      2,
+      4,
+      0,
+      3,
+      1
+    ],
+    "explication": "Pour départager deux hypothèses : « si X, alors test Y » (un bug toucherait seulement le mobile ; un changement d'algorithme, tous les canaux payants)."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-023",
+    "section": "4. Trouver la cause",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans l'exemple des 5 pourquoi de TechnoSport, à quoi aboutit le cinquième pourquoi ?",
+    "options": [
+      "au prix trop élevé",
+      "à un problème de ciblage publicitaire",
+      "à la concurrence d'Apple",
+      "à l'absence d'audit technique prévu après la refonte du site"
+    ],
+    "reponse": 3,
+    "explication": "Conversion −20 % → moins d'ajouts au panier → moins de temps sur les pages → images lentes → non optimisées pour mobile → pas d'audit post-refonte. Un 6e pourquoi remonte à une cause organisationnelle : des process qualité jamais formalisés."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-024",
+    "section": "4. Trouver la cause",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Dans la méthode des 5 pourquoi, chaque réponse peut reposer sur l'intuition de l'équipe, du moment qu'on va jusqu'au cinquième pourquoi.",
+    "reponse": false,
+    "explication": "Faux. Chaque « pourquoi » doit s'appuyer sur une donnée ; si elle manque, on met en place son suivi. On peut compléter par le diagramme d'Ishikawa."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-025",
+    "section": "4. Trouver la cause",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Lequel de ces segments respecte les trois règles d'une segmentation utile ?",
+    "options": [
+      "« clients de plus de 35 ans »",
+      "« tous les clients »",
+      "« clients VIP urbains, 30-45 ans, ayant commandé 3 fois en 6 mois »",
+      "« clients qui ont visité le site une fois »"
+    ],
+    "reponse": 2,
+    "explication": "Un segment utile représente au moins 5 % de la base, est homogène en interne et hétérogène avec les autres, et surtout actionnable. « Les moyennes tuent l'analyse. »"
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-026",
+    "section": "4. Trouver la cause",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque effet entre canaux à sa définition.",
+    "colonne_a": [
+      "Synergie (effet de halo)",
+      "Cannibalisation"
+    ],
+    "colonne_b": [
+      "Des canaux se disputent la même audience ; le coût d'acquisition gonfle sans gain global",
+      "Un canal rend les autres plus efficaces sans capter lui-même l'attribution"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Exemples : le display améliore le taux de clic du search (halo) ; le SEA capte des conversions qui seraient venues du SEO (cannibalisation, ROAS en baisse)."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-027",
+    "section": "4. Trouver la cause",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Couper une campagne Facebook Ads au CPA élevé peut faire baisser le trafic organique de marque.",
+    "reponse": true,
+    "explication": "Vrai : les canaux interagissent, parfois avec retard. D'où une matrice d'interdépendance et l'analyse sur plusieurs fenêtres (immédiat, 7 jours, 30 jours)."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-028",
+    "section": "5. Prioriser les actions",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque case de la matrice impact / effort à sa catégorie.",
+    "colonne_a": [
+      "Fort impact, faible effort",
+      "Fort impact, fort effort",
+      "Faible impact, faible effort",
+      "Faible impact, fort effort"
+    ],
+    "colonne_b": [
+      "Actions à éviter",
+      "Quick wins",
+      "Projets de remplissage",
+      "Projets majeurs"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Score de priorité = impact × impact / effort (notés de 1 à 5), pour favoriser le fort impact. Utilisée en équipe, la matrice objective les débats."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-029",
+    "section": "5. Prioriser les actions",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une action est notée impact 4 et effort 2. Quel est son score de priorité selon le module ?",
+    "options": [
+      "2",
+      "6",
+      "8",
+      "16"
+    ],
+    "reponse": 2,
+    "explication": "Score = impact × impact / effort = 4 × 4 / 2 = 8."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-030",
+    "section": "5. Prioriser les actions",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Vous prévoyez +10 % de conversion grâce à une action. Sur quelle base le module conseille-t-il de calculer le ROI prévisionnel ?",
+    "options": [
+      "+20 %, pour motiver l'équipe",
+      "+10 %, la valeur prévue",
+      "+5 %, par prudence",
+      "0 %, pour ne prendre aucun risque"
+    ],
+    "reponse": 2,
+    "explication": "Les gains sont souvent surestimés (saturation, réaction des concurrents) et les coûts sous-estimés. On travaille en fourchettes et scénarios."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-031",
+    "section": "5. Prioriser les actions",
+    "niveau": 3,
+    "format": "qcm_multiple",
+    "question": "Quels éléments affinent un ROI prévisionnel ? (3 réponses)",
+    "options": [
+      "distinguer revenus additionnels et économies de coûts",
+      "tenir compte du délai de retour (payback period)",
+      "appliquer un coefficient de risque (0,8 action maîtrisée, 0,5 incertaine)",
+      "arrondir les gains au chiffre supérieur",
+      "ignorer les coûts indirects"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Un ROI modeste rentabilisé en 3 mois peut valoir mieux qu'un excellent ROI à 24 mois, surtout sous contrainte de trésorerie."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-032",
+    "section": "6. Formuler une recommandation qui convainc",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 5 parties d'une recommandation structurée.",
+    "elements": [
+      "Les bénéfices attendus chiffrés",
+      "Le contexte et l'enjeu",
+      "Les risques et mesures de mitigation",
+      "L'analyse des données",
+      "La recommandation et son plan d'action"
+    ],
+    "ordre": [
+      1,
+      3,
+      4,
+      0,
+      2
+    ],
+    "explication": "Cet ordre suit le questionnement naturel du décideur : comprendre le problème, vérifier l'analyse, visualiser la proposition, chiffrer, identifier les risques."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-033",
+    "section": "6. Formuler une recommandation qui convainc",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque destinataire à l'angle à privilégier pour une même recommandation technique.",
+    "colonne_a": [
+      "Directeur général",
+      "Responsable IT",
+      "Équipe marketing"
+    ],
+    "colonne_b": [
+      "Actions opérationnelles concrètes et planning",
+      "Impact business, CA additionnel, ROI",
+      "Implications techniques, ressources, compatibilité"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Avant chaque présentation : qui est l'audience ? quelles sont ses priorités ? quelles objections pourrait-elle avoir ?"
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-034",
+    "section": "6. Formuler une recommandation qui convainc",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Selon le module, mieux vaut finaliser un plan parfait avant de lancer la moindre action.",
+    "reponse": false,
+    "explication": "Faux : un plan imparfait exécuté à 100 % est plus efficace qu'un plan parfait qui reste sur le papier. On commence par quelques quick wins pour créer une dynamique, puis on intègre les projets ambitieux."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-035",
+    "section": "6. Formuler une recommandation qui convainc",
+    "niveau": 1,
+    "format": "texte_a_trous",
+    "question": "Complétez les 4 étapes de définition des critères de succès.",
+    "texte": "1. Spécifier les métriques avec des valeurs {1}. 2. Définir les délais : une mesure intermédiaire (ex. 4 semaines) et une évaluation {2} (ex. 12 semaines). 3. Établir des critères d'{3}. 4. Préparer un plan d'{4}.",
+    "trous": [
+      "cibles",
+      "définitive",
+      "arrêt",
+      "apprentissage"
+    ],
+    "explication": "Le tableau de suivi post-implémentation : objectif, KPI de départ, KPI cible, résultat à J+30 / J+60 / J+90, commentaires et actions correctives."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-036",
+    "section": "6. Formuler une recommandation qui convainc",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que contient la diapositive « Projection d'impact » recommandée par le module ?",
+    "options": [
+      "les KPI actuels, la projection après action, le ROI prévisionnel et le plan de suivi",
+      "le logo et le slogan de la marque",
+      "la liste des concurrents",
+      "l'organigramme de l'équipe"
+    ],
+    "reponse": 0,
+    "explication": "Exemple : +30 % de budget Facebook sur les femmes 25-35 ans (conversion 4,2 %, CAC 28 €, panier 145 €) : 8 400 € → environ 300 clients et 43 500 € de CA, ROI ≈ 420 %."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-037",
+    "section": "6. Formuler une recommandation qui convainc",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Selon le critère de la Q9, que doit intégrer une préconisation « opérationnelle » ? (4 réponses)",
+    "options": [
+      "le planning envisagé",
+      "les acteurs",
+      "les moyens à mobiliser",
+      "une estimation des coûts",
+      "le logo de la campagne",
+      "l'avis des concurrents"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Ce second critère est souvent oublié. Ajoute l'écart traité et un KPI de succès pour chaque action."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-038",
+    "section": "7. Le cercle vertueux d'optimisation continue",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 6 étapes du cercle vertueux d'optimisation continue.",
+    "elements": [
+      "Réalisation d'un test en conditions contrôlées",
+      "Formulation d'une hypothèse testable",
+      "Implémentation des solutions qui fonctionnent",
+      "Nouvelle analyse avec les données enrichies",
+      "Analyse des données pour identifier une opportunité",
+      "Apprentissage à partir des résultats"
+    ],
+    "ordre": [
+      4,
+      1,
+      0,
+      5,
+      2,
+      3
+    ],
+    "explication": "L'analyse ponctuelle s'arrête au rapport ; l'optimisation continue fait de chaque résultat le point de départ du cycle suivant."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-039",
+    "section": "7. Le cercle vertueux d'optimisation continue",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La validation hiérarchique fait partie des 6 étapes du cercle vertueux d'optimisation continue.",
+    "reponse": false,
+    "explication": "Faux. Les 6 étapes : analyse, hypothèse, test, apprentissage, implémentation, nouvelle analyse."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-040",
+    "section": "7. Le cercle vertueux d'optimisation continue",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque pilier de l'optimisation continue à son rôle.",
+    "colonne_a": [
+      "Documentation partagée",
+      "Rituels structurés",
+      "Culture transverse"
+    ],
+    "colonne_b": [
+      "Rendez-vous hebdomadaires, mensuels et trimestriels pour analyser et prioriser",
+      "Impliquer marketing, produit, commercial et service client",
+      "Mémoire collective : chaque test consigné de façon standardisée"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "explication": "Sans mémoire collective, chaque équipe recommence à zéro ; la culture transverse accélère le déploiement des apprentissages."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-041",
+    "section": "7. Le cercle vertueux d'optimisation continue",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que révèle un taux de tests validés trop élevé ?",
+    "options": [
+      "une excellente maîtrise des hypothèses",
+      "un budget d'expérimentation insuffisant",
+      "une équipe particulièrement compétente",
+      "un manque de prise de risque : des hypothèses trop « sûres »"
+    ],
+    "reponse": 3,
+    "explication": "L'optimisation continue suppose d'accepter l'échec comme source d'apprentissage et d'oser tester des approches audacieuses."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-042",
+    "section": "7. Le cercle vertueux d'optimisation continue",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "GoodFoodBox voit sa conversion visiteurs → abonnés stagner. Quel test le corrigé propose-t-il ?",
+    "options": [
+      "doubler le budget publicitaire",
+      "un A/B test d'un formulaire d'abonnement simplifié sur 50 % du trafic, avec un succès fixé à +10 % de conversion",
+      "supprimer l'abonnement",
+      "lancer une enquête auprès des concurrents"
+    ],
+    "reponse": 1,
+    "explication": "Hypothèse : le formulaire est trop long. Le test est documenté dans une fiche (objectif, hypothèse, méthode, résultats, décision). Si concluant, déploiement puis optimisation de l'étape suivante."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-043",
+    "section": "8. Application au foodtruck PrepMyMeal",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "D'après les annexes 7 et 8, quels objectifs du brief du CEO sont atteints en moyenne sur la tournée ? (3 réponses)",
+    "options": [
+      "le CA total de plus de 100 000 €",
+      "un temps d'attente de 6 minutes maximum",
+      "au moins 700 inscriptions par ville",
+      "un taux de réachat d'au moins 25 %",
+      "une satisfaction d'au moins 4,3/5"
+    ],
+    "reponse": [
+      0,
+      2,
+      3
+    ],
+    "explication": "CA 108 000 € (+8 %), inscriptions 791 par ville (+13 %), réachat 25,0 % en moyenne. Manqués : attente 7,3 min (seule Strasbourg sous 6), satisfaction 4,16 (Paris et Marseille seulement), conversion 29,9 %, mentions 481 par ville."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-044",
+    "section": "8. Application au foodtruck PrepMyMeal",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Le temps d'attente atteint 9,2 minutes à Nantes, dernière étape de la tournée. Que révèle l'analyse chronologique ?",
+    "options": [
+      "que Nantes est une ville particulièrement exigeante",
+      "que le temps d'attente n'a aucun effet sur la satisfaction",
+      "que l'objectif de 6 minutes était trop facile",
+      "qu'il n'y a pas eu de boucle d'apprentissage d'une ville à l'autre"
+    ],
+    "reponse": 3,
+    "explication": "Segmenter par semaine (S1 Paris → S8 Nantes) montre que l'attente ne s'améliore pas : la tournée n'a pas fonctionné en cercle vertueux."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-045",
+    "section": "8. Application au foodtruck PrepMyMeal",
+    "niveau": 3,
+    "format": "qcm_multiple",
+    "question": "Quelles anomalies de l'annexe 7 faut-il signaler avant d'interpréter les résultats ? (3 réponses)",
+    "options": [
+      "Lyon : 200 clients à 7 % de conversion, mais 18 000 € de CA et 800 inscriptions",
+      "la colonne « taux d'engagement digital » reprend les inscriptions en valeur absolue",
+      "Marseille affiche la meilleure satisfaction",
+      "la marge nette dépasse CA − coût opérationnel dans toutes les villes",
+      "Paris a le plus de mentions"
+    ],
+    "reponse": [
+      0,
+      1,
+      3
+    ],
+    "explication": "S'y ajoutent les adresses de Strasbourg et Lyon copiées de Lille. Les signaler, poser une hypothèse de lecture et recommander une fiabilisation des données (caisse, CRM)."
+  },
+  {
+    "resume": "b3-r09",
+    "bloc": 3,
+    "id": "b3-r09-qz-046",
+    "section": "8. Application au foodtruck PrepMyMeal",
+    "niveau": 2,
+    "format": "ouverte",
+    "question": "Interprétez les résultats du foodtruck face au brief du CEO et proposez une action corrective opérationnelle complète pour l'écart le plus marqué (Q9).",
+    "attendus": [
+      "Quantifier les écarts en absolu et en relatif, avec leur sens (temps d'attente 7,3 min pour 6, soit +1,3 min défavorable ; seule Strasbourg à l'objectif)",
+      "Signaler les anomalies de données avant d'interpréter (Lyon, colonne engagement, marge nette)",
+      "Relever aussi les réussites : CA total 108 000 €, inscriptions, Paris (7/8) et Marseille (6/8)",
+      "Hypothèse de cause (5 pourquoi) : pas de précommande, paiement et préparation à la commande, effectif fixe aux pics",
+      "Action : précommande via l'app (QR code) + terminal sans contact + renfort aux pics, avec planning (avant la tournée suivante), acteurs (chef de produit app, responsable opérations), moyens, coût estimé, KPI de succès (attente ≤ 6 min, mesure à J+30)"
+    ],
+    "explication": "Les deux critères : actions adaptées aux causes et aux écarts ; préconisations opérationnelles avec planning, acteurs, moyens et estimation des coûts."
+  },
+  {
     "resume": "b4-r01",
     "bloc": 4,
     "id": "b4-r01-qz-001",

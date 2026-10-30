@@ -1,0 +1,135 @@
+{
+  "resume": "b3-r01",
+  "titre": "Connaître le client : motivations, cycle de vie, valeur et ciblage",
+  "bloc": 3,
+  "cartes": [
+    {
+      "id": "b3-r01-fc-001",
+      "section": "1. La connaissance client : pourquoi et comment",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que la stratégie d'identification relationnelle (marketing relationnel), et pourquoi la mener ?",
+      "verso": "Établir une relation de confiance en voyant les clients d'abord comme des partenaires, ensuite comme des acheteurs potentiels.\nPourquoi : conserver un client coûte moins cher qu'en conquérir un nouveau, et le client fidèle achète plus volontiers des produits complémentaires."
+    },
+    {
+      "id": "b3-r01-fc-002",
+      "section": "1. La connaissance client : pourquoi et comment",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 familles de données de la segmentation qualitative, et laquelle est la moins utilisée ?",
+      "verso": "Sociodémographiques (âge, sexe, lieu), transactionnelles (dates, montants), relationnelles et comportementales (contacts, statut d'acheteur, interactions), contextuelles.\nLes contextuelles sont les moins utilisées : souvent du domaine privé, les plus difficiles à obtenir."
+    },
+    {
+      "id": "b3-r01-fc-003",
+      "section": "2. Comprendre ce qui motive : les motivations repères",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 6 catégories de motivations repères ?",
+      "verso": "Fonctionnelle (commodité, gain de temps), émotionnelle (bonheur, confiance), sociale (appartenance, tendances), sécurité (stabilité, fiabilité), estime de soi (image), accomplissement personnel (croissance, objectifs).\nCe sont des « boussoles cachées », souvent inconscientes, qui filtrent chaque interaction."
+    },
+    {
+      "id": "b3-r01-fc-004",
+      "section": "2. Comprendre ce qui motive : les motivations repères",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Que signifient les lettres de la matrice REPERE ?",
+      "verso": "Recherche (émotions, sensations), Évaluation (réflexion, aspects fonctionnels), Préférence (aspirations long terme), Engagement (action, efficacité, autonomie), Réaction (socialisation, partage), Évolution (changement, nouvelles habitudes).\nPiège : le cours annonce « cinq composantes » mais en liste six."
+    },
+    {
+      "id": "b3-r01-fc-005",
+      "section": "3. Le client expert (ou client connecté)",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 3 rôles du client expert (client connecté) ?",
+      "verso": "Communicant (opinions sur réseaux, forums, avis), co-constructeur de la marque et des offres (Ba&sh fait voter sa communauté sur des silhouettes en 3D), co-producteur de contenus (unboxing, revues YouTube)."
+    },
+    {
+      "id": "b3-r01-fc-006",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Suspect, lead, prospect : comment les distinguer ?",
+      "verso": "Suspect : correspond à la cible, mais aucune interaction avec l'entreprise.\nLead : a manifesté un intérêt (question, inscription newsletter, clic).\nProspect : besoins qualifiés grâce aux échanges. Tiède = lead qualifié ; chaud = lead qualifié +, contacte un commercial pour une offre précise."
+    },
+    {
+      "id": "b3-r01-fc-007",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 6 étapes de la relation client ?",
+      "verso": "1. Marketing (cible → lead : lead nurturing, lead scoring). 2. Qualification (lead → prospect). 3. Vente (la plus longue). 4. Transaction (la plus courte, prospect → client). 5. Service à la clientèle (livraison + support). 6. Recommandation.\nPiège : un autre support en compte 7 (ajoute « fidélisation »)."
+    },
+    {
+      "id": "b3-r01-fc-008",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Recommandation formelle et recommandation informelle : quelle différence ?",
+      "verso": "Formelle : le client témoigne en public, de façon organisée (événement, conférence) ou enregistrée ; un témoin connu crée un effet levier.\nInformelle : il parle à son réseau, par motivation ou par compensation ; la récompense n'est pas obligatoire.\n« Le témoignage d'une personne vaut 10 fois plus que la publicité d'une entreprise. »"
+    },
+    {
+      "id": "b3-r01-fc-009",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 5 étapes du cycle de vie du client, et la stratégie associée à chacune ?",
+      "verso": "Atteindre (sensibilisation), acquérir (considération), convertir (achat), retenir (rétention), fidéliser (fidélité).\nC'est un cycle, issu du CRM : le client peut abandonner à chaque étape et recommencer."
+    },
+    {
+      "id": "b3-r01-fc-010",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Comment calcule-t-on la CLV, et quelle est sa principale limite ?",
+      "verso": "CLV = CA du client × durée de la relation (années) − coûts totaux d'acquisition et de service. Indicateur prospectif : plus la relation dure, plus le client devient précieux (l'acquisition est un coût ponctuel).\nLimite : pertinente au niveau macro (base clients), difficile au niveau micro (plan marketing)."
+    },
+    {
+      "id": "b3-r01-fc-011",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Que signifie RFM, et quel cycle client met-elle en évidence ?",
+      "verso": "Récence (date du dernier achat), Fréquence (nombre d'achats sur la période), Montant (CA cumulé).\nCycle : nouveau → bon client → occasionnel → inactif. Actions : welcome pack, plan de réactivation, soirées VIP.\nC'est « probablement la segmentation la plus utilisée »."
+    },
+    {
+      "id": "b3-r01-fc-012",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 2,
+      "type": "application",
+      "recto": "PrepMyMeal : quel segment pèse le plus en valeur, et lequel décroche ? (annexe 1)",
+      "verso": "Valeur mensuelle = fréquence × panier : sportifs 2,1 × 45 € = 94,50 € (≈ 39 % du CA estimé), jeunes actifs 57 €, bien-être 45,50 €, nouveaux 32 €.\nLes nouveaux clients (fidélité 35 %, forte perte après la 1re commande) décrochent entre conversion et rétention ; les sportifs (68 %) sont le vivier d'ambassadeurs."
+    },
+    {
+      "id": "b3-r01-fc-013",
+      "section": "5. Segmenter et cibler : les outils propres au bloc 3",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Cible principale, cœur de cible, cible secondaire : quelles définitions dans ce bloc ?",
+      "verso": "Cible principale : le consommateur visé en priorité.\nCœur de cible : description fine de la cible principale (ex. 25-45 ans urbains).\nCible secondaire : ceux qui relaient ou amplifient le message sans être visés par l'offre.\nPiège : B1-R4 lit le cœur de cible autrement."
+    },
+    {
+      "id": "b3-r01-fc-014",
+      "section": "5. Segmenter et cibler : les outils propres au bloc 3",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce que la méthode IAC, et en quoi complète-t-elle Porter pour évaluer un segment ?",
+      "verso": "Intérêt (affinité du segment avec l'offre), Accessibilité (canaux, logistique), Capacités (ressources pour le servir).\nIAC juge la pertinence du segment pour l'entreprise ; les 5 forces de Porter (adaptées au ciblage) jugent les pressions concurrentielles."
+    },
+    {
+      "id": "b3-r01-fc-015",
+      "section": "6. L'adoption des nouveaux produits : la courbe d'adoption",
+      "niveau": 1,
+      "type": "chiffre",
+      "recto": "Quelles sont les 5 catégories de la courbe d'adoption et leur part ?",
+      "verso": "Innovateurs 3 %, adopteurs précoces 13 %, majorité précoce 34 %, majorité tardive 34 %, retardataires 16 %.\nUn « gouffre » sépare adopteurs précoces et majorité précoce : technologie et performances à gauche, solutions, praticité et fiabilité à droite."
+    },
+    {
+      "id": "b3-r01-fc-016",
+      "section": "6. L'adoption des nouveaux produits : la courbe d'adoption",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels sont les 4 facteurs du rythme d'adoption, et sur lesquels joue le foodtruck PrepMyMeal ?",
+      "verso": "Avantages perçus, compatibilité, complexité, test social.\nLe foodtruck réduit la complexité (on goûte avant de commander en ligne), active le test social (partage, concours photo) et montre les avantages perçus (dégustation des recettes vegan et low carb)."
+    }
+  ]
+}

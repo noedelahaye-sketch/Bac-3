@@ -1,0 +1,143 @@
+{
+  "resume": "b3-r02",
+  "titre": "Analyser et cartographier le parcours client",
+  "bloc": 3,
+  "cartes": [
+    {
+      "id": "b3-r02-fc-001",
+      "section": "1. Parcours, points de contact et moments de vérité",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Parcours client, point de contact, moment de vérité : quelles définitions ?",
+      "verso": "Parcours client : chemin que prend un consommateur pour effectuer une tâche du début à la fin ; il comporte de nombreux points de contact liés et au moins un moment de vérité.\nPoint de contact : un instant de contact le long du parcours.\nMoment de vérité : instant clé, à très forte influence positive ou négative, créateur ou destructeur de valeur."
+    },
+    {
+      "id": "b3-r02-fc-002",
+      "section": "1. Parcours, points de contact et moments de vérité",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Temps d'attente et point de défaillance : lequel est le plus dangereux ?",
+      "verso": "Temps d'attente : moment difficile, mais l'expérience continue — moins dangereux.\nPoint de défaillance : réalité capable de mettre fin à l'expérience (limite technologique, coupure Internet) — plus dangereux.\nPrepMyMeal : la livraison qui n'arrive jamais est un point de défaillance."
+    },
+    {
+      "id": "b3-r02-fc-003",
+      "section": "1. Parcours, points de contact et moments de vérité",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le ZMOT ?",
+      "verso": "Zero Moment of Truth (moment zéro de vérité) : l'instant où l'acheteur fait une première recherche en ligne pour se faire un avis, avant même que le vendeur sache qu'il s'y intéresse.\nLe cours le rattache à Google, depuis 2011."
+    },
+    {
+      "id": "b3-r02-fc-004",
+      "section": "1. Parcours, points de contact et moments de vérité",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Pourquoi l'émotion compte-t-elle autant dans un moment de vérité, et qu'en tirer pour les réclamations ?",
+      "verso": "Un moment de vérité conditionne les suivants ; on se souvient d'un événement d'après le ressenti au pic d'émotion. Certains font de l'émotion le critère majeur d'identification.\nPour les réclamations : soigner ce pic émotionnel. Ce sont les clients qui définissent leurs moments de vérité, pas l'entreprise."
+    },
+    {
+      "id": "b3-r02-fc-005",
+      "section": "2. Scénariser et cartographier le parcours",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un scénario de parcours client, et quels sont ses deux apports ?",
+      "verso": "Une trame narrative qui capte et ordonne les étapes du consommateur, pour en produire une représentation visuelle.\nApports : compréhension (où le client s'égare, où la conversion se concrétise) et collaboration (langage visuel partagé entre marketing, ventes et service client)."
+    },
+    {
+      "id": "b3-r02-fc-006",
+      "section": "2. Scénariser et cartographier le parcours",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 3 étapes de conception d'un scénario de parcours ?",
+      "verso": "1. Collecter les données et identifier les étapes (interactions en ligne, historiques d'achat, canaux, enquêtes de satisfaction). 2. Les organiser dans un ordre logique et chronologique. 3. Intégrer points de contact et canaux, en repérant les changements de canal."
+    },
+    {
+      "id": "b3-r02-fc-007",
+      "section": "2. Scénariser et cartographier le parcours",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Quelle forme donner à la cartographie du parcours PrepMyMeal (Q1) ?",
+      "verso": "Une carte d'expérience en tableau. En colonnes : découverte → considération → commande → livraison et consommation → fidélisation et recommandation.\nEn lignes : actions, points de contact, outils et supports, émotions, frictions, moments de vérité, pistes d'amélioration. La ligne émotions révèle les moments de vérité."
+    },
+    {
+      "id": "b3-r02-fc-008",
+      "section": "3. Gérer les canaux de la relation client",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce que le right channeling ?",
+      "verso": "Positionner chaque canal là où le client s'attend à trouver l'entreprise, et l'orienter vers le canal le plus adapté au bon moment.\nEx. : le mail sert surtout en après-vente, les messageries instantanées avant l'achat, un chat sur la page produit."
+    },
+    {
+      "id": "b3-r02-fc-009",
+      "section": "4. Le parcours ATWAD",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Que signifie ATWAD et quelles sont ses trois exigences ?",
+      "verso": "AnyTime, AnyWhere, on Any Devices.\nAnyTime : accès 24 h/24, 7 j/7. AnyWhere : expérience cohérente au domicile, au travail, en déplacement. Any Devices : tous formats d'écran.\nDéfis : confidentialité, sécurité (plus de points de contact = plus de vulnérabilités), conformité."
+    },
+    {
+      "id": "b3-r02-fc-010",
+      "section": "4. Le parcours ATWAD",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quelles critiques ATWAD permet-il d'adresser au parcours PrepMyMeal ?",
+      "verso": "AnyTime : créneaux de livraison non respectés.\nAnyWhere : point relais à 20-30 minutes, livraison seulement du mardi au samedi.\nAny Devices : bugs du site, parité site/app (revenu iOS 78,9 % / Android 21,1 %)."
+    },
+    {
+      "id": "b3-r02-fc-011",
+      "section": "5. L'entonnoir de conversion",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 5 étapes de l'entonnoir de conversion ?",
+      "verso": "Prise de conscience → intérêt → considération → décision → action.\nLarge à l'entrée, il se rétrécit ; certains prospects sautent des étapes ou suivent un parcours non linéaire."
+    },
+    {
+      "id": "b3-r02-fc-012",
+      "section": "5. L'entonnoir de conversion",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Que faut-il afficher en retargeting à chaque transition de l'entonnoir ?",
+      "verso": "Prise de conscience → intérêt : garder la marque à l'esprit.\nIntérêt → considération : les avantages spécifiques.\nConsidération → décision : la preuve sociale.\nDécision → action : le sentiment d'urgence (réduction temporaire, livraison gratuite)."
+    },
+    {
+      "id": "b3-r02-fc-013",
+      "section": "5. L'entonnoir de conversion",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Comment se déroule un A/B test (5 temps) ?",
+      "verso": "1. Identifier les éléments à fort impact (CTA, couleur de bouton, formulaire). 2. Créer une version A (actuelle) et une version B avec une seule modification. 3. Diviser le trafic en deux groupes égaux. 4. Analyser les taux de conversion. 5. Déployer la gagnante."
+    },
+    {
+      "id": "b3-r02-fc-014",
+      "section": "6. Le growth hacking et son entonnoir",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Growth hacking et inbound marketing : quelles différences ?",
+      "verso": "Growth hacking (Sean Ellis, Dropbox) : croissance très forte à coût très faible, court terme, intrusif, parfois à la limite de la légalité ; on adapte l'offre elle-même en temps réel.\nInbound : long terme, personas, contenus à valeur ajoutée.\nMême finalité ; approches complémentaires. Risque RGPD : rupture du consentement."
+    },
+    {
+      "id": "b3-r02-fc-015",
+      "section": "6. Le growth hacking et son entonnoir",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 5 phases de l'entonnoir du growth hacking ?",
+      "verso": "1. Acquisition (comment nous trouve-t-on ?). 2. Activation (première expérience réussie ?). 3. Rétention (revient-il ?). 4. Revenu (génère-t-il des revenus ?). 5. Recommandation (parle-t-il de nous ?).\nGrille utile pour justifier les KPI du foodtruck (Q7)."
+    },
+    {
+      "id": "b3-r02-fc-016",
+      "section": "7. Anticiper : la méthode des scénarios (futuribles)",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un futurible, et quelle limite des outils classiques justifie la méthode des scénarios ?",
+      "verso": "Futurible (« futur » + « possible ») : une représentation intégrant une pluralité de possibilités plutôt qu'une vision unique.\nLimites : SWOT = photo actuelle ; PESTEL = pas de hiérarchisation ; Porter = s'adapte mal à l'instabilité ; DELPHI = dépend des données initiales et des experts."
+    },
+    {
+      "id": "b3-r02-fc-017",
+      "section": "7. Anticiper : la méthode des scénarios (futuribles)",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles sont les 2 phases de la méthode des scénarios de Peter Schwartz, et les 3 types d'évolution ?",
+      "verso": "1. Cartographie du système (éléments, liens, variables motrices). 2. Schématisation des scénarios.\nTypes d'évolution : tendances lourdes (forte inertie), émergences / signaux faibles, incertitudes / ruptures (date imprévisible, fort impact).\nOn formule une hypothèse tendancielle, puis des hypothèses disruptives."
+    }
+  ]
+}

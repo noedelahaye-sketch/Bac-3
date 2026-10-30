@@ -1,0 +1,780 @@
+{
+  "resume": "b3-r01",
+  "titre": "Connaître le client : motivations, cycle de vie, valeur et ciblage",
+  "bloc": 3,
+  "questions": [
+    {
+      "id": "b3-r01-qz-001",
+      "section": "1. La connaissance client : pourquoi et comment",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Selon le cours, comment la stratégie d'identification relationnelle considère-t-elle les clients ?",
+      "options": [
+        "d'abord comme des acheteurs potentiels, ensuite comme des partenaires",
+        "uniquement comme des sources de données à exploiter",
+        "d'abord comme des partenaires, ensuite comme des acheteurs potentiels",
+        "comme des prescripteurs à rémunérer"
+      ],
+      "reponse": 2,
+      "explication": "Le marketing relationnel établit une relation de confiance en situant les clients d'abord comme des partenaires, ensuite comme des acheteurs potentiels. Raison : conserver un client coûte moins cher qu'en conquérir un nouveau."
+    },
+    {
+      "id": "b3-r01-qz-002",
+      "section": "1. La connaissance client : pourquoi et comment",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Le marketing one-to-one, caractéristique du marketing relationnel, s'oppose au marketing one-to-many qui s'adresse au plus grand nombre.",
+      "reponse": true,
+      "explication": "Vrai. Le marketing relationnel se caractérise par la personnalisation : marketing one-to-one (relation individualisée, d'humain à humain), opposé au one-to-many. Il suppose une culture « customer centric »."
+    },
+    {
+      "id": "b3-r01-qz-003",
+      "section": "1. La connaissance client : pourquoi et comment",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Lesquels font partie des 5 leviers du marketing relationnel cités par le cours ? (3 réponses)",
+      "options": [
+        "développer le CRM",
+        "réduire les prix pour tous les clients",
+        "faire participer les clients à la vie de la marque",
+        "multiplier les campagnes de publicité de masse",
+        "mettre en place un programme de fidélisation"
+      ],
+      "reponse": [
+        0,
+        2,
+        4
+      ],
+      "explication": "Les 5 leviers : développer le CRM, mieux connaître les clients, engager le dialogue, faire participer les clients à la vie de la marque, mettre en place un programme de fidélisation. Baisse générale des prix et publicité de masse relèvent d'une logique one-to-many."
+    },
+    {
+      "id": "b3-r01-qz-004",
+      "section": "1. La connaissance client : pourquoi et comment",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque source de collecte aux données qu'elle fournit en priorité.",
+      "colonne_a": [
+        "Programme de fidélité",
+        "Échanges d'après-vente",
+        "Site internet vitrine",
+        "Réseaux sociaux"
+      ],
+      "colonne_b": [
+        "Commentaires, « J'aime », partages, messages privés",
+        "Produits achetés, fréquence, montant",
+        "Pages vues, produits consultés, temps passé",
+        "Historique des problèmes, réactions sur l'expérience"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "Chaque source a sa spécialité : le programme de fidélité renseigne les achats (fréquence, montant), l'après-vente les problèmes, le site la navigation, les réseaux sociaux les interactions. S'y ajoutent le formulaire de contact et la messagerie téléphonique."
+    },
+    {
+      "id": "b3-r01-qz-005",
+      "section": "1. La connaissance client : pourquoi et comment",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 4 étapes pour enrichir la base clients par les réseaux sociaux.",
+      "elements": [
+        "Trier : supprimer les données inutiles et dédoublonner",
+        "Partage et communauté (boutons de partage)",
+        "Segmentation qualitative en 4 familles de données",
+        "Exploiter les interactions et identifier les leaders d'opinion"
+      ],
+      "ordre": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "explication": "Partage et communauté → exploiter les interactions et repérer les leaders d'opinion (à recruter comme ambassadeurs ; indicateur clics / conversion) → trier et dédoublonner → segmentation qualitative."
+    },
+    {
+      "id": "b3-r01-qz-006",
+      "section": "1. La connaissance client : pourquoi et comment",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Parmi les 4 familles de données de la segmentation qualitative, laquelle est la moins utilisée, et pourquoi ?",
+      "options": [
+        "les données contextuelles, car elles relèvent souvent du domaine privé et sont les plus difficiles à obtenir",
+        "les données transactionnelles, car elles sont trop volumineuses",
+        "les données sociodémographiques, car elles sont interdites par le RGPD",
+        "les données relationnelles, car elles changent trop vite"
+      ],
+      "reponse": 0,
+      "explication": "Les données contextuelles (environnement du contact) sont les moins utilisées : souvent du domaine privé, elles sont les plus difficiles à obtenir. Les trois autres familles : sociodémographiques, transactionnelles, relationnelles et comportementales."
+    },
+    {
+      "id": "b3-r01-qz-007",
+      "section": "1. La connaissance client : pourquoi et comment",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Une base de données achetée sur Internet est un bon moyen d'enrichir rapidement son fichier, à condition qu'elle soit volumineuse.",
+      "reponse": false,
+      "explication": "Faux. Ces bases manquent souvent de fiabilité et de conformité légale. Un fichier doit être « qualifié » : des données réelles, sur des personnes qui correspondent à la cible. Sinon, on s'expose à des plaintes et à des avis négatifs."
+    },
+    {
+      "id": "b3-r01-qz-008",
+      "section": "2. Comprendre ce qui motive : les motivations repères",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque motivation repère à l'exemple donné par le cours.",
+      "colonne_a": [
+        "Fonctionnelle",
+        "Émotionnelle",
+        "Sécurité",
+        "Estime de soi",
+        "Accomplissement personnel"
+      ],
+      "colonne_b": [
+        "Assurance habitation",
+        "Cours pour apprendre une compétence",
+        "Machine à laver à options",
+        "Vêtements de marque",
+        "Parfum qui évoque des souvenirs"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "explication": "Fonctionnelle = commodité, gain de temps ; émotionnelle = se sentir heureux ; sécurité = stabilité, fiabilité ; estime de soi = renforcer son image ; accomplissement = croissance. La 6e, sociale, renvoie aux choix vestimentaires (appartenance)."
+    },
+    {
+      "id": "b3-r01-qz-009",
+      "section": "2. Comprendre ce qui motive : les motivations repères",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Les motivations repères sont décrites comme des « boussoles cachées ». Que signifie cette image ?",
+      "options": [
+        "elles sont souvent inconscientes et orientent les décisions au-delà du besoin du produit",
+        "elles sont dissimulées volontairement par les clients aux enquêteurs",
+        "elles ne concernent que les achats impulsifs",
+        "elles ne peuvent être mesurées que par l'observation"
+      ],
+      "reponse": 0,
+      "explication": "Les motivations repères dépassent le besoin du produit, répondent à des besoins plus larges et souvent inconscients, et s'enracinent dans les expériences, valeurs et émotions. Elles agissent comme des filtres : une interaction qui n'y répond pas provoque déception et frustration."
+    },
+    {
+      "id": "b3-r01-qz-010",
+      "section": "2. Comprendre ce qui motive : les motivations repères",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez la matrice REPERE.",
+      "texte": "R pour {1} (émotions et sensations), E pour {2} (aspects fonctionnels), P pour {3} (aspirations à long terme), E pour {4} (action, efficacité), R pour {5} (socialisation, partage) et E pour {6} (changement, nouvelles habitudes).",
+      "trous": [
+        "Recherche",
+        "Évaluation",
+        "Préférence",
+        "Engagement",
+        "Réaction",
+        "Évolution"
+      ],
+      "explication": "La matrice REPERE organise et classe les motivations repères en six composantes. Piège : le cours annonce « cinq composantes » mais l'acronyme et la liste en comptent six."
+    },
+    {
+      "id": "b3-r01-qz-011",
+      "section": "2. Comprendre ce qui motive : les motivations repères",
+      "niveau": 3,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 5 étapes d'utilisation de la matrice REPERE.",
+      "elements": [
+        "Personnaliser les stratégies",
+        "Créer des profils de parcours",
+        "Repérer les points de friction et d'opportunité",
+        "Suivre et ajuster",
+        "Analyser schémas et tendances"
+      ],
+      "ordre": [
+        1,
+        4,
+        2,
+        0,
+        3
+      ],
+      "explication": "Profils de parcours → schémas et tendances → points de friction et d'opportunité → personnalisation → suivi et ajustement. La conception, elle, suit 3 étapes : collecte, identification et classement, attribution aux étapes du parcours."
+    },
+    {
+      "id": "b3-r01-qz-012",
+      "section": "2. Comprendre ce qui motive : les motivations repères",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "D'après l'annexe 1, les jeunes actifs urbains sont « motivés par le gain de temps, mais sensibles au prix ». Comment le lire avec la grille du cours ?",
+      "options": [
+        "une motivation sociale et un frein émotionnel",
+        "une motivation d'accomplissement et un frein de sécurité",
+        "une motivation d'estime de soi sans frein",
+        "une motivation fonctionnelle et un frein lié au prix"
+      ],
+      "reponse": 3,
+      "explication": "Le gain de temps est une motivation fonctionnelle ; la sensibilité au prix est un frein. Le questionnaire de Q4 doit précisément explorer motivations, freins et attentes."
+    },
+    {
+      "id": "b3-r01-qz-013",
+      "section": "3. Le client expert (ou client connecté)",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque rôle du client expert à son exemple.",
+      "colonne_a": [
+        "Communicant",
+        "Co-constructeur de la marque",
+        "Co-producteur de contenus"
+      ],
+      "colonne_b": [
+        "Vidéos de déballage (unboxing) sur YouTube",
+        "Avis publiés sur les réseaux, forums et blogs",
+        "Vote de la communauté Ba&sh sur des silhouettes en 3D"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Le client expert, actif et engagé, communique (opinions, avis), co-construit la marque et les offres (Ba&sh), co-produit des contenus (unboxing, revues)."
+    },
+    {
+      "id": "b3-r01-qz-014",
+      "section": "3. Le client expert (ou client connecté)",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un client qui pose une question en message privé Facebook puis poursuit par e-mail ne devrait pas avoir à reformuler sa demande : le service client doit connaître le premier échange.",
+      "reponse": true,
+      "explication": "Vrai. Le client expert passe d'un canal à l'autre et attend que l'information le suive. D'où le principe d'intégration des canaux dans la conception de son parcours."
+    },
+    {
+      "id": "b3-r01-qz-015",
+      "section": "3. Le client expert (ou client connecté)",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Lesquels font partie des 6 principes de conception du parcours du client expert ? (3 réponses)",
+      "options": [
+        "segmenter le parcours",
+        "imposer un canal unique pour simplifier",
+        "garantir fluidité et simplicité",
+        "allonger les formulaires pour mieux qualifier",
+        "mesurer et optimiser"
+      ],
+      "reponse": [
+        0,
+        2,
+        4
+      ],
+      "explication": "Les 6 principes : analyser les données, segmenter le parcours, ordonnancement logique, personnaliser, fluidité et simplicité (formulaires courts, paiement sécurisé), mesurer et optimiser."
+    },
+    {
+      "id": "b3-r01-qz-016",
+      "section": "3. Le client expert (ou client connecté)",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans les avis Trustpilot de PrepMyMeal, un client calcule un coût de « 34 € par jour » et compare avec d'autres modes d'alimentation. Comment traiter ce type d'avis ?",
+      "options": [
+        "l'ignorer, car il s'agit d'un cas isolé",
+        "le supprimer pour protéger l'image de la marque",
+        "le traiter comme une donnée d'analyse, typique d'un client expert",
+        "y répondre uniquement par un geste commercial"
+      ],
+      "reponse": 2,
+      "explication": "C'est typiquement le comportement d'un client expert, plus informé et plus exigeant. Ses arguments (prix, comparaison, prestataire de livraison) sont des données d'analyse pour le diagnostic de Q2."
+    },
+    {
+      "id": "b3-r01-qz-017",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les statuts successifs d'un individu, du premier au dernier.",
+      "elements": [
+        "Prospect",
+        "Ambassadeur",
+        "Suspect",
+        "Client fidèle",
+        "Lead"
+      ],
+      "ordre": [
+        2,
+        4,
+        0,
+        3,
+        1
+      ],
+      "explication": "Suspect (correspond à la cible, aucune interaction) → lead (a manifesté un intérêt) → prospect (besoins qualifiés) → acheteur puis client fidèle → ambassadeur (promeut la marque et réduit les dépenses publicitaires)."
+    },
+    {
+      "id": "b3-r01-qz-018",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un visiteur s'inscrit à la newsletter d'une marque sans avoir encore échangé avec un commercial. Quel est son statut ?",
+      "options": [
+        "un suspect",
+        "un lead",
+        "un prospect chaud",
+        "un client"
+      ],
+      "reponse": 1,
+      "explication": "Il a manifesté un intérêt (inscription, question, clic) : c'est un lead. Il deviendra prospect quand ses besoins seront qualifiés ; un prospect chaud (lead qualifié +) contacte un commercial pour une offre précise."
+    },
+    {
+      "id": "b3-r01-qz-019",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Parmi les 6 étapes de la relation client, laquelle est la plus longue, et laquelle est la plus courte ?",
+      "options": [
+        "la plus longue : le marketing ; la plus courte : la recommandation",
+        "la plus longue : le service à la clientèle ; la plus courte : la qualification",
+        "la plus longue : la qualification ; la plus courte : la vente",
+        "la plus longue : la vente ; la plus courte : la transaction"
+      ],
+      "reponse": 3,
+      "explication": "La vente est l'étape la plus longue (le prospect décide ; durée selon le cycle de vente). La transaction est la plus courte : passage du pilier vente au pilier service client."
+    },
+    {
+      "id": "b3-r01-qz-020",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Tous les supports du bloc présentent la relation client en 6 étapes.",
+      "reponse": false,
+      "explication": "Faux. « Les étapes de la relation client » en compte 6 (marketing, qualification, vente, transaction, service à la clientèle, recommandation). « Introduction à la connaissance des clients » présente une stratégie CRM en 7 étapes, qui commence par le choix de la stratégie marketing et ajoute la fidélisation."
+    },
+    {
+      "id": "b3-r01-qz-021",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Lors d'une conférence professionnelle, un client satisfait témoigne publiquement de son expérience, de façon préparée. De quelle forme de recommandation s'agit-il ?",
+      "options": [
+        "une recommandation informelle par compensation",
+        "un lead nurturing",
+        "une recommandation formelle",
+        "un parrainage"
+      ],
+      "reponse": 2,
+      "explication": "La recommandation formelle est un témoignage public, organisé et préparé (événement, foire, conférence) ou enregistré. L'informelle passe par le réseau du client, par motivation ou compensation. « Le témoignage d'une personne vaut 10 fois plus que la publicité d'une entreprise. »"
+    },
+    {
+      "id": "b3-r01-qz-022",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Le client et le consommateur sont toujours la même personne.",
+      "reponse": false,
+      "explication": "Faux. Le client achète, le consommateur consomme : le parent qui achète un jouet pour son enfant est client, l'enfant est consommateur. De même, le prospect n'est qu'un client potentiel."
+    },
+    {
+      "id": "b3-r01-qz-023",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 3,
+      "format": "texte_a_trous",
+      "question": "Complétez les chiffres du cours.",
+      "texte": "{1} des Français ne restent pas avec une structure qui commet deux fois la même erreur. {2} des visiteurs d'une boutique e-commerce deviennent clients, contre près de {3} en boutique physique. Selon la loi de Pareto, {4} des clients font 80 % du chiffre d'affaires.",
+      "trous": [
+        "70 %",
+        "2 %",
+        "40 %",
+        "20 %"
+      ],
+      "explication": "Ces chiffres justifient l'effort de fidélisation et l'enjeu de la conversion en ligne. Le cours ajoute : « mieux vaut un client fidèle que 10 clients occasionnels »."
+    },
+    {
+      "id": "b3-r01-qz-024",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque étape du cycle de vie du client à la stratégie marketing correspondante.",
+      "colonne_a": [
+        "Atteindre",
+        "Acquérir",
+        "Convertir",
+        "Retenir",
+        "Fidéliser"
+      ],
+      "colonne_b": [
+        "Rétention : sondages, programme « voix du client », FAQ",
+        "Fidélité : programmes à plusieurs niveaux, parrainage",
+        "Sensibilisation : notoriété, « comment avez-vous entendu parler de nous ? »",
+        "Achat : analyser les abandons, relancer les paniers abandonnés",
+        "Considération : contenu clair, comparateurs, chat"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "explication": "Le cycle de vie du client, issu du CRM, compte 5 étapes. C'est un cycle : le client peut abandonner à chaque étape et recommencer."
+    },
+    {
+      "id": "b3-r01-qz-025",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Quelle part des ventes potentielles la relance des paniers abandonnés récupère-t-elle, selon le cours ?",
+      "options": [
+        "environ 2 %",
+        "environ 40 %",
+        "environ 25 %",
+        "environ 10 %"
+      ],
+      "reponse": 3,
+      "explication": "Environ 10 % des ventes potentielles, sous réserve des consentements (RGPD). C'est un levier de l'étape « convertir »."
+    },
+    {
+      "id": "b3-r01-qz-026",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle est la formule de la CLV donnée par le cours ?",
+      "options": [
+        "CA du client × durée de la relation (années) − coûts totaux d'acquisition et de service",
+        "panier moyen × fréquence d'achat mensuelle",
+        "CA total / nombre de clients",
+        "marge du client − coût de la dernière campagne"
+      ],
+      "reponse": 0,
+      "explication": "CLV = CA du client × durée de la relation − coûts d'acquisition et de service. Indicateur prospectif : l'acquisition est un coût ponctuel, les revenus s'accumulent chaque année. Fréquence × panier ne donne qu'une valeur mensuelle."
+    },
+    {
+      "id": "b3-r01-qz-027",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La CLV est plus pertinente pour évaluer une base clients dans son ensemble que pour piloter une action précise du plan marketing.",
+      "reponse": true,
+      "explication": "Vrai. La CLV est pertinente au niveau macro (base clients), difficile au niveau micro. C'est le ROMI qui opère action par action. La CLV vient du marketing direct et sert peu pour les investissements difficiles à chiffrer, comme la marque."
+    },
+    {
+      "id": "b3-r01-qz-028",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 3,
+      "format": "qcm_multiple",
+      "question": "Quels sont les 3 paramètres du capital client ? (3 réponses)",
+      "options": [
+        "value equity",
+        "brand equity",
+        "lead scoring",
+        "retention equity",
+        "share of voice"
+      ],
+      "reponse": [
+        0,
+        1,
+        3
+      ],
+      "explication": "Le capital client combine CLV et ROMI à partir de la value equity (perception objective de la marque), de la brand equity et de la retention equity (fidélité). Le modèle de Lemon et Zeithaml calcule la probabilité de changement de marque."
+    },
+    {
+      "id": "b3-r01-qz-029",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition de la segmentation RFM.",
+      "texte": "R pour {1}, la date du dernier achat ; F pour {2}, le nombre d'achats sur une période ; M pour {3}, le chiffre d'affaires cumulé. Elle fait apparaître un cycle : client nouveau, puis bon client, puis {4}, puis inactif.",
+      "trous": [
+        "Récence",
+        "Fréquence",
+        "Montant",
+        "occasionnel"
+      ],
+      "explication": "La RFM est « probablement la segmentation la plus utilisée ». Actions associées : welcome pack pour les nouveaux, plan de réactivation pour ceux qui glissent vers l'inactivité, soirées privées pour les VIP."
+    },
+    {
+      "id": "b3-r01-qz-030",
+      "section": "4. Du suspect à l'ambassadeur : statuts, étapes et cycle de vie",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "À partir de l'annexe 1 (fréquence d'achat, panier moyen, taux de fidélité par segment), identifiez le segment le plus précieux de PrepMyMeal et celui qui décroche. Justifiez par un calcul.",
+      "attendus": [
+        "Valeur mensuelle par client = fréquence × panier : sportifs 2,1 × 45 € = 94,50 € ; jeunes actifs 1,5 × 38 € = 57 € ; bien-être 1,3 × 35 € = 45,50 € ; nouveaux 1 × 32 € = 32 €",
+        "Pondérée par le nombre de clients, la part des sportifs dans le CA mensuel estimé est d'environ 39 %",
+        "Les sportifs (fidélité 68 %) sont le segment le plus précieux et le vivier d'ambassadeurs",
+        "Les nouveaux clients (fidélité 35 %, forte perte après la 1re commande) décrochent entre conversion et rétention",
+        "La CLV complète ne peut pas être calculée : coûts et durée de relation inconnus, à signaler"
+      ],
+      "explication": "Exercice type Q2/Q5 : lire le CRM en valeur, pas seulement en effectifs, puis le relier au cycle de vie du client."
+    },
+    {
+      "id": "b3-r01-qz-031",
+      "section": "5. Segmenter et cibler : les outils propres au bloc 3",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce qui distingue la segmentation à 360° d'une segmentation traditionnelle ?",
+      "options": [
+        "elle ne s'appuie que sur des critères démographiques",
+        "elle analyse les clients sous plusieurs angles en intégrant différentes sources de données",
+        "elle remplace le ciblage et le positionnement",
+        "elle est réservée au BtoB"
+      ],
+      "reponse": 1,
+      "explication": "La segmentation à 360° intègre différentes sources de données pour une image multidimensionnelle du marché. Vigilance : difficulté de collecte, besoin technologique, vie privée et réglementation."
+    },
+    {
+      "id": "b3-r01-qz-032",
+      "section": "5. Segmenter et cibler : les outils propres au bloc 3",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans un arbre de segmentation, que représentent les nœuds et les branches ?",
+      "options": [
+        "les nœuds sont des clients, les branches des achats",
+        "les nœuds sont des segments finaux, les branches des produits",
+        "les nœuds sont des canaux, les branches des messages",
+        "les nœuds sont des critères de segmentation, les branches des décisions fondées sur ces critères"
+      ],
+      "reponse": 3,
+      "explication": "L'arbre de segmentation (arbre de décision, de classification) divise un ensemble de données en sous-groupes plus petits et plus homogènes : chaque nœud est un critère, chaque branche une décision. Il vient du machine learning."
+    },
+    {
+      "id": "b3-r01-qz-033",
+      "section": "5. Segmenter et cibler : les outils propres au bloc 3",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque notion à sa définition selon le support « Le ciblage ».",
+      "colonne_a": [
+        "Cœur de cible",
+        "Cible secondaire",
+        "Prescripteur",
+        "Influenceur",
+        "Cible de communication"
+      ],
+      "colonne_b": [
+        "Personne de confiance qui recommande dans un cadre personnel, informel",
+        "Description fine de la cible principale",
+        "Cible marketing élargie aux prescripteurs, experts, influenceurs",
+        "Ceux qui relaient ou amplifient le message sans être visés par l'offre",
+        "Audience engagée, rôle quasi professionnel (contenus sponsorisés)"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "explication": "Piège : B1-R4 donne une autre lecture du cœur de cible (les décisionnaires). Ici, c'est la description fine de la cible principale."
+    },
+    {
+      "id": "b3-r01-qz-034",
+      "section": "5. Segmenter et cibler : les outils propres au bloc 3",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une marque affiche des maillots de bain sur une page consacrée aux activités estivales. Quelle méthode de ciblage utilise-t-elle ?",
+      "options": [
+        "le ciblage contextuel",
+        "le retargeting",
+        "le ciblage comportemental",
+        "le ciblage géographique"
+      ],
+      "reponse": 0,
+      "explication": "Le ciblage contextuel s'appuie sur l'environnement du moment. Le comportemental utilise le comportement passé, le retargeting relance ceux qui n'ont pas finalisé leur achat."
+    },
+    {
+      "id": "b3-r01-qz-035",
+      "section": "5. Segmenter et cibler : les outils propres au bloc 3",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "L'approche push, qui consiste à aller vers le client par la publicité et les promotions, est plus coûteuse que l'approche pull.",
+      "reponse": true,
+      "explication": "Vrai. Le push est plus visible et direct, mais plus coûteux. Le pull attire le client par l'attractivité de l'offre, le contenu, la réputation. Bricorama combine les deux (carte Bricobonus et newsletters)."
+    },
+    {
+      "id": "b3-r01-qz-036",
+      "section": "5. Segmenter et cibler : les outils propres au bloc 3",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une entreprise s'adresse simultanément à plusieurs segments en concevant une offre spécifique pour chacun. Quelle stratégie de ciblage applique-t-elle ?",
+      "options": [
+        "le ciblage de masse",
+        "le ciblage indifférencié",
+        "le ciblage différencié par un message unique",
+        "le ciblage multisegment"
+      ],
+      "reponse": 3,
+      "explication": "Le multisegment vise plusieurs segments en même temps avec une offre spécifique pour chacun. Le ciblage de masse (indifférencié) propose une approche universelle ; le différencié, une approche distincte par segment quand les besoins varient fortement."
+    },
+    {
+      "id": "b3-r01-qz-037",
+      "section": "5. Segmenter et cibler : les outils propres au bloc 3",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez la méthode IAC d'évaluation d'un segment.",
+      "texte": "I pour {1} : l'affinité du segment avec l'offre. A pour {2} : les canaux et la logistique pour l'atteindre. C pour {3} : les ressources et compétences pour le servir. IAC est complémentaire des {4}, qui jugent les pressions concurrentielles.",
+      "trous": [
+        "Intérêt",
+        "Accessibilité",
+        "Capacités",
+        "5 forces de Porter"
+      ],
+      "explication": "IAC juge la pertinence du segment pour l'entreprise ; Porter, adapté au ciblage, juge son attractivité concurrentielle. Ce cours range les « avantages concurrentiels » en 5e force (version classique en B1-R2)."
+    },
+    {
+      "id": "b3-r01-qz-038",
+      "section": "5. Segmenter et cibler : les outils propres au bloc 3",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Selon le cours, segmentation, ciblage et positionnement peuvent être menés dans n'importe quel ordre, de façon itérative.",
+      "reponse": false,
+      "explication": "Faux. Ils s'appliquent dans l'ordre : la logique itérative est « quasi impossible ». Ils sont interdépendants : la défaillance d'une étape se répercute sur la suivante, et aucune ne remplace l'autre."
+    },
+    {
+      "id": "b3-r01-qz-039",
+      "section": "6. L'adoption des nouveaux produits : la courbe d'adoption",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque catégorie d'adoptants à sa part sur la courbe d'adoption.",
+      "colonne_a": [
+        "Innovateurs",
+        "Adopteurs précoces",
+        "Majorité précoce",
+        "Retardataires"
+      ],
+      "colonne_b": [
+        "34 %",
+        "16 %",
+        "3 %",
+        "13 %"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Innovateurs 3 %, adopteurs précoces 13 %, majorité précoce 34 %, majorité tardive 34 %, retardataires 16 %. La courbe se représente en S."
+    },
+    {
+      "id": "b3-r01-qz-040",
+      "section": "6. L'adoption des nouveaux produits : la courbe d'adoption",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Où la figure du cours place-t-elle le « gouffre », et que signifie-t-il ?",
+      "options": [
+        "entre majorité tardive et retardataires : les derniers refusent toute innovation",
+        "entre innovateurs et adopteurs précoces : le produit manque de technologie",
+        "entre adopteurs précoces et majorité précoce : on passe de la recherche de technologie à la recherche de solutions, praticité et fiabilité",
+        "après les retardataires : le produit entre en déclin"
+      ],
+      "reponse": 2,
+      "explication": "À gauche du gouffre, on veut de la technologie et des performances ; à droite, des solutions, de la praticité et de la fiabilité. La majorité précoce veut des preuves de valeur avant d'acheter."
+    },
+    {
+      "id": "b3-r01-qz-041",
+      "section": "6. L'adoption des nouveaux produits : la courbe d'adoption",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Sur quels facteurs du rythme d'adoption le foodtruck PrepMyMeal agit-il directement ? (3 réponses)",
+      "options": [
+        "la complexité, réduite : on goûte avant de commander en ligne",
+        "le test social : partage, hashtags, concours photo",
+        "la saisonnalité de la demande",
+        "les avantages perçus : dégustation des recettes vegan et low carb",
+        "le prix de référence du marché"
+      ],
+      "reponse": [
+        0,
+        1,
+        3
+      ],
+      "explication": "Les 4 facteurs du rythme d'adoption : avantages perçus, compatibilité, complexité, test social. Le foodtruck réduit la complexité, active le test social et rend visibles les avantages."
+    },
+    {
+      "id": "b3-r01-qz-042",
+      "section": "6. L'adoption des nouveaux produits : la courbe d'adoption",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Dans un parcours client, de nombreux prospects abandonnent juste après la découverte d'un nouveau produit. Que signale ce symptôme, selon le cours ?",
+      "options": [
+        "un problème d'expérience utilisateur",
+        "un problème de communication des bénéfices",
+        "un problème de prix",
+        "un problème de logistique"
+      ],
+      "reponse": 1,
+      "explication": "Des abandons après la découverte signalent un problème de communication des bénéfices. Des blocages entre deux étapes signalent plutôt un problème d'expérience utilisateur."
+    }
+  ]
+}

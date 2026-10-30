@@ -1,0 +1,703 @@
+{
+  "resume": "b3-r04",
+  "titre": "Optimiser l'expérience client et fidéliser",
+  "bloc": 3,
+  "questions": [
+    {
+      "id": "b3-r04-qz-001",
+      "section": "1. Le marketing expérientiel",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Pour Bernard Schmitt (1999), qu'est-ce que le marketing expérientiel ?",
+      "options": [
+        "une technique de réduction des prix en magasin",
+        "l'étude des comportements d'achat en ligne",
+        "la publicité télévisée émotionnelle",
+        "la transformation d'un simple achat en une expérience immersive et unique, « la technique de fidélisation la plus efficace »"
+      ],
+      "reponse": 3,
+      "explication": "Les marques passent ainsi du « product centric » au « user centric » : le consommateur désire le produit pour ses valeurs hédoniques, d'usage ou sociales."
+    },
+    {
+      "id": "b3-r04-qz-002",
+      "section": "1. Le marketing expérientiel",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Selon le cours, le service est une notion plus large que l'expérience.",
+      "reponse": false,
+      "explication": "Faux. L'expérience est plus large : elle intègre l'échange et l'amélioration. Le service est plus réducteur (étymologie latine servire, « servir, être esclave »)."
+    },
+    {
+      "id": "b3-r04-qz-003",
+      "section": "1. Le marketing expérientiel",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Mattel installe un faux panneau Pictionary animé par une personne cachée derrière une caméra. De quelle forme de marketing expérientiel s'agit-il ?",
+      "options": [
+        "une expérience dans le cadre d'un achat",
+        "du marketing sensoriel",
+        "une expérience dans un cadre promotionnel ou publicitaire",
+        "du phygital"
+      ],
+      "reponse": 2,
+      "explication": "Le cadre promotionnel vise un public plus large : clients, prospects, influenceurs, journalistes. Le cadre de l'achat vise les clients (accueil, théâtralisation, sensoriel, immersif : Lush, Nature & Découvertes)."
+    },
+    {
+      "id": "b3-r04-qz-004",
+      "section": "1. Le marketing expérientiel",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 4 phases fondamentales de l'expérience.",
+      "elements": [
+        "La consommation",
+        "Avant l'achat : l'anticipation",
+        "Après : le souvenir",
+        "L'achat"
+      ],
+      "ordre": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "explication": "Anticipation (le plaisir de la projection) → achat (l'ambiance pèse beaucoup) → consommation (sensations, émotions) → souvenir (personnel ou partagé)."
+    },
+    {
+      "id": "b3-r04-qz-005",
+      "section": "1. Le marketing expérientiel",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque module d'expérience stratégique à son objectif.",
+      "colonne_a": [
+        "Sensoriel",
+        "Émotionnel",
+        "Intellectuel",
+        "D'action",
+        "Tribal"
+      ],
+      "colonne_b": [
+        "Modifier le comportement",
+        "Développer le sentiment d'appartenance",
+        "Stimuler les 5 sens",
+        "Impliquer le consommateur pour créer de l'engagement",
+        "Toucher les sentiments"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "explication": "Ces 5 modules structurent l'expérience. Exemple : Lindt (même décor dans tous les magasins, chocolat offert, odeur de chocolat, démonstrations)."
+    },
+    {
+      "id": "b3-r04-qz-006",
+      "section": "1. Le marketing expérientiel",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez les 3 dimensions de l'expérience comparée au théâtre.",
+      "texte": "Le {1} correspond à l'ambiance et à l'approche sensorielle ; l'{2} à l'histoire de la marque racontée ; l'{3} aux actes proposés au client.",
+      "trous": [
+        "décor",
+        "intrigue",
+        "action"
+      ],
+      "explication": "L'objectif est une expérience « hors du commun et totalement absorbante » : raconter une histoire, faire jouer les vendeurs comme des acteurs, utiliser les produits comme accessoires."
+    },
+    {
+      "id": "b3-r04-qz-007",
+      "section": "1. Le marketing expérientiel",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Le marketing expérientiel fonctionne aussi en BtoB.",
+      "reponse": true,
+      "explication": "Vrai, le cours le précise. Rappel de vigilance : un détail négatif, même léger, peut stopper l'immersion et le désir d'achat."
+    },
+    {
+      "id": "b3-r04-qz-008",
+      "section": "1. Le marketing expérientiel",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Dans l'application Sézane, que fait la cliente dans « L'Appartement » ?",
+      "options": [
+        "elle essaie dans un lieu de vie, puis commande en ligne",
+        "elle achète uniquement en caisse",
+        "elle participe à une vente privée réservée aux VIP",
+        "elle retire des commandes passées par téléphone"
+      ],
+      "reponse": 0,
+      "explication": "Sézane, marque née sur le Web (environ 90 % de ventes en ligne), propose un lieu de vie (meubles chinés, bar à fleurs, cinéma caché). Avec sa conciergerie et ses vendeuses équipées de tablettes, c'est le phygital et le vendeur augmenté."
+    },
+    {
+      "id": "b3-r04-qz-009",
+      "section": "2. Le marketing sensoriel",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Sur quels éléments le marketing sensoriel séduit-il le client ?",
+      "options": [
+        "sur les caractéristiques intrinsèques du produit",
+        "sur le prix",
+        "sur des éléments extrinsèques : odeur, ambiance, couleurs",
+        "sur la garantie"
+      ],
+      "reponse": 2,
+      "explication": "Comme le marketing émotionnel, il détache le client des caractéristiques intrinsèques du produit pour le séduire par des éléments extrinsèques, et crée un climat de confiance et de bien-être."
+    },
+    {
+      "id": "b3-r04-qz-010",
+      "section": "2. Le marketing sensoriel",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Sur quelles réactions l'ambiance d'un point de vente agit-elle ?",
+      "options": [
+        "sur les réactions conatives (achats, temps passé) et les réactions affectives et cognitives (plaisir, évaluation de la qualité)",
+        "seulement sur la mémorisation de la marque",
+        "seulement sur le prix perçu",
+        "sur aucune réaction mesurable"
+      ],
+      "reponse": 0,
+      "explication": "L'ambiance devient un facteur clé de succès qui permet au magasin physique de concurrencer le web : un client qui se sent bien reste plus longtemps et dépense plus."
+    },
+    {
+      "id": "b3-r04-qz-011",
+      "section": "2. Le marketing sensoriel",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Selon des études des années 60, 80 % des informations passent par la vue.",
+      "reponse": true,
+      "explication": "Vrai. La vue est le premier contact entre la marque et le client. Couleurs chaudes = stimulation, froides = apaisement, avec des perceptions variables selon les cultures."
+    },
+    {
+      "id": "b3-r04-qz-012",
+      "section": "2. Le marketing sensoriel",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un magasin veut favoriser les achats impulsifs et une rotation rapide des clients. Quelle musique choisir ?",
+      "options": [
+        "un tempo lent",
+        "le silence",
+        "une musique de Noël toute l'année",
+        "un tempo rapide"
+      ],
+      "reponse": 3,
+      "explication": "Tempo rapide = achats impulsifs, rotation rapide. Tempo lent = achats réfléchis, flânerie (Sephora, restaurant). Le silence est souvent synonyme d'angoisse."
+    },
+    {
+      "id": "b3-r04-qz-013",
+      "section": "2. Le marketing sensoriel",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Que dit le cours du marketing gustatif ? (3 réponses)",
+      "options": [
+        "aucune « tricherie » n'est possible : si ce n'est pas bon, la cible n'achète pas",
+        "il est réservé aux produits alimentaires",
+        "la dégustation est souvent couplée à une promotion",
+        "il rassure pour une marque nouvelle ou peu connue",
+        "il réduit les achats non prévus"
+      ],
+      "reponse": [
+        0,
+        2,
+        3
+      ],
+      "explication": "Il augmente au contraire les achats non prévus et sert aussi pour les dentifrices et cosmétiques. C'est le levier naturel du foodtruck PrepMyMeal."
+    },
+    {
+      "id": "b3-r04-qz-014",
+      "section": "2. Le marketing sensoriel",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Chez Nature & Découvertes, le client s'assoit dans le fauteuil massant pour le plaisir et reste plus longtemps. De quel toucher s'agit-il ?",
+      "options": [
+        "le toucher instrumental",
+        "le toucher autotélique",
+        "le toucher fonctionnel",
+        "le toucher social"
+      ],
+      "reponse": 1,
+      "explication": "Toucher autotélique = se faire plaisir et rester plus longtemps. Toucher instrumental = s'informer, juger la qualité, le poids, la texture."
+    },
+    {
+      "id": "b3-r04-qz-015",
+      "section": "2. Le marketing sensoriel",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Avec une senteur d'ambiance adaptée, le client a l'impression de passer moins de temps en magasin.",
+      "reponse": true,
+      "explication": "Vrai. Il reste donc plus longtemps et revient plus souvent. Les odeurs doivent être reconnaissables et congruentes (agrume = tonifiant, vanille = chaleur), sinon la démarche redevient rationnelle."
+    },
+    {
+      "id": "b3-r04-qz-016",
+      "section": "2. Le marketing sensoriel",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "De quand le cours date-t-il le marketing auditif ?",
+      "options": [
+        "des années 1960, avec la musique d'ambiance",
+        "de 2013, avec le phygital",
+        "de l'arrivée de la radio",
+        "du XIIIe siècle : les marchands ambulants chantaient leurs offres"
+      ],
+      "reponse": 3,
+      "explication": "Le marketing auditif remonte au XIIIe siècle. Il porte sur l'ambiance sonore et sur le son du produit (le bruit d'une voiture signale sa qualité)."
+    },
+    {
+      "id": "b3-r04-qz-017",
+      "section": "3. Thématiser et théâtraliser le point de vente",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle est la différence entre thématisation et théâtralisation ?",
+      "options": [
+        "la thématisation est l'habillage de l'offre et du point de vente (les directives) ; la théâtralisation est sa mise en scène (la mise en œuvre)",
+        "la thématisation est réservée au web, la théâtralisation au magasin",
+        "ce sont deux synonymes",
+        "la théâtralisation précède la thématisation"
+      ],
+      "reponse": 0,
+      "explication": "Avec la thématisation, l'achat devient un loisir et le magasin un concept store. La théâtralisation en est la matérialisation."
+    },
+    {
+      "id": "b3-r04-qz-018",
+      "section": "3. Thématiser et théâtraliser le point de vente",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque niveau de thématisation à son exemple.",
+      "colonne_a": [
+        "Partielle",
+        "Autour de la cible",
+        "Autour d'une valeur",
+        "Communautaire"
+      ],
+      "colonne_b": [
+        "Nature & Découvertes et le respect de la nature",
+        "Magasins de surf ou de roller, vendeurs issus de la communauté",
+        "Castorama et ses Castostages de bricolage",
+        "Imaginarium : une entrée adulte et une à taille d'enfant"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Le niveau se choisit selon le positionnement et les ressources. La thématisation partielle est ponctuelle et donne une image d'expert."
+    },
+    {
+      "id": "b3-r04-qz-019",
+      "section": "3. Thématiser et théâtraliser le point de vente",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les 3 composantes de la théâtralisation ? (3 réponses)",
+      "options": [
+        "le rappel du thème (énonciation)",
+        "le décor",
+        "le prix d'appel",
+        "les acteurs (personnel et clients)",
+        "la publicité télévisée"
+      ],
+      "reponse": [
+        0,
+        1,
+        3
+      ],
+      "explication": "Rappel du thème, décor, acteurs. Les règles : cohérence, crédibilité, authenticité, car le consommateur « n'est pas dupe »."
+    },
+    {
+      "id": "b3-r04-qz-020",
+      "section": "3. Thématiser et théâtraliser le point de vente",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Recruter des « vendeurs passionnés » issus de la communauté simplifie le recrutement et le management.",
+      "reponse": false,
+      "explication": "Faux. Mêler passion et cadre professionnel complique le recrutement et le management, même si ces vendeurs renforcent la crédibilité du point de vente."
+    },
+    {
+      "id": "b3-r04-qz-021",
+      "section": "4. Le phygital et le vendeur augmenté",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Selon le cours, quand le phygital est-il né et qui l'a inventé ?",
+      "options": [
+        "en 2008, par les pure players",
+        "en 2020, avec la crise sanitaire",
+        "en 2013, par les retailers",
+        "en 1999, par Bernard Schmitt"
+      ],
+      "reponse": 2,
+      "explication": "Le phygital (physique + digital), né en 2013 et inventé par les retailers, est synonyme de « digitalisation du point de vente »."
+    },
+    {
+      "id": "b3-r04-qz-022",
+      "section": "4. Le phygital et le vendeur augmenté",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque outil phygital à son principe.",
+      "colonne_a": [
+        "E-réservation",
+        "Click-and-collect",
+        "Code-barres connecté",
+        "M-paiement"
+      ],
+      "colonne_b": [
+        "Payer par smartphone, sans attente en caisse",
+        "Réserver en ligne sans acheter, pour essayer en magasin",
+        "Scanné au smartphone, il donne informations, conseils, vidéos",
+        "Acheter en ligne, retirer en magasin sans frais de port"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "Exemples : Sephora Flash, Monop'Easy (scanner et payer dans l'appli), Nespresso et son avatar qui fait la queue à la place du client."
+    },
+    {
+      "id": "b3-r04-qz-023",
+      "section": "4. Le phygital et le vendeur augmenté",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce qui distingue le vendeur augmenté du vendeur connecté ?",
+      "options": [
+        "il possède une tablette",
+        "il utilise aussi l'IA pour une hyperpersonnalisation, avec une vision à 360° du client, des produits et de la concurrence",
+        "il travaille uniquement en ligne",
+        "il est remplacé par un chatbot"
+      ],
+      "reponse": 1,
+      "explication": "Le vendeur connecté est équipé d'un appareil ; le vendeur augmenté passe de vendeur à conseiller, d'un mode réactif à prescriptif. Les deux notions sont souvent confondues."
+    },
+    {
+      "id": "b3-r04-qz-024",
+      "section": "4. Le phygital et le vendeur augmenté",
+      "niveau": 3,
+      "format": "texte_a_trous",
+      "question": "Complétez les chiffres de la Mobile Marketing Association.",
+      "texte": "{1} des consommateurs sont venus en magasin après au moins une recherche internet ; {2} après avoir reçu une communication ; {3} des destinataires d'une communication géolocalisée se sont rendus au point de vente. Un beacon a une portée de {4} maximum.",
+      "trous": [
+        "66 %",
+        "58 %",
+        "70 %",
+        "70 m"
+      ],
+      "explication": "Ces chiffres justifient le vendeur augmenté et le marketing mobile (geofencing, beacons Bluetooth pour ceux qui ont l'application)."
+    },
+    {
+      "id": "b3-r04-qz-025",
+      "section": "4. Le phygital et le vendeur augmenté",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les outils du vendeur augmenté suffisent à garantir son succès, sans investissement particulier en formation.",
+      "reponse": false,
+      "explication": "Faux. Les conditions de réussite sont l'investissement (des outils « aussi chers qu'indispensables ») et surtout la formation des vendeurs."
+    },
+    {
+      "id": "b3-r04-qz-026",
+      "section": "5. Le marketing conversationnel",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce qui caractérise le marketing conversationnel par rapport au marketing relationnel ?",
+      "options": [
+        "il privilégie la newsletter et la relation à long terme",
+        "il ne s'adresse qu'aux prospects",
+        "il remplace définitivement le marketing relationnel",
+        "il crée un dialogue bidirectionnel en temps réel, pour un engagement immédiat"
+      ],
+      "reponse": 3,
+      "explication": "Le conversationnel passe par les chatbots, messageries, assistants vocaux, réseaux sociaux. Le relationnel vise la relation à long terme. Les deux coexistent dans une stratégie globale."
+    },
+    {
+      "id": "b3-r04-qz-027",
+      "section": "5. Le marketing conversationnel",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Quelle hausse de revenus le cours attribue-t-il, en 2020, aux entreprises équipées de chatbots ?",
+      "options": [
+        "+ 12 %",
+        "+ 25 %",
+        "+ 48 %",
+        "+ 80 %"
+      ],
+      "reponse": 2,
+      "explication": "+ 48 % de revenus en 2020. Enjeux à maîtriser : fiabilité, sécurité des données, cohérence, ton adapté, éviter la sur-sollicitation."
+    },
+    {
+      "id": "b3-r04-qz-028",
+      "section": "5. Le marketing conversationnel",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "KLM envoie des notifications en temps réel (retards, portes) et propose son chatbot BlueBot de la réservation à l'enregistrement. Pour quelle friction PrepMyMeal ce modèle est-il pertinent ?",
+      "options": [
+        "la livraison défaillante, par des notifications de livraison en temps réel",
+        "le prix trop élevé",
+        "la monotonie des plats",
+        "le manque de mentions digitales"
+      ],
+      "reponse": 0,
+      "explication": "Clé 2 de la fidélisation (service client efficace) + marketing conversationnel : informer en temps réel sur la livraison réduit le point de défaillance du parcours."
+    },
+    {
+      "id": "b3-r04-qz-029",
+      "section": "6. Le marketing alternatif",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Une technique de marketing alternatif cesse d'être alternative dès qu'elle est reprise par d'autres marques.",
+      "reponse": true,
+      "explication": "Vrai. C'est pourquoi le cours parle de « concept flou » et de renouvellement régulier. Le marketing alternatif est né de la lassitude face à la publicité d'interruption."
+    },
+    {
+      "id": "b3-r04-qz-030",
+      "section": "6. Le marketing alternatif",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque technique de marketing alternatif à son exemple.",
+      "colonne_a": [
+        "Ambush marketing",
+        "Street marketing",
+        "Stealth marketing",
+        "Ambient marketing"
+      ],
+      "colonne_b": [
+        "Placement de produit dans Stranger Things",
+        "Toblerone et KitKat détournant le mobilier urbain",
+        "Supportrices en sous-vêtements DIM à la Coupe du monde de rugby",
+        "Abribus détournés par Barbie ou Coca-Cola"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Ambush = profiter d'un événement sans en être partenaire (DIM, devant 14 millions de téléspectateurs). Street = la rue. Stealth = de manière détournée. Ambient = se fondre dans l'environnement."
+    },
+    {
+      "id": "b3-r04-qz-031",
+      "section": "6. Le marketing alternatif",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle technique de marketing alternatif le cours situe-t-il « à la limite de la légalité et de la déontologie », utile aux petites entreprises ?",
+      "options": [
+        "le street marketing",
+        "la guérilla marketing",
+        "l'ambient marketing",
+        "le marketing sensoriel"
+      ],
+      "reponse": 1,
+      "explication": "La guérilla : actions non conventionnelles et ponctuelles, nées aux États-Unis, « anti-marketing ». Exemple cité : Rona."
+    },
+    {
+      "id": "b3-r04-qz-032",
+      "section": "6. Le marketing alternatif",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Lesquelles font partie des 6 raisons d'utiliser le marketing alternatif ? (3 réponses)",
+      "options": [
+        "améliorer la notoriété",
+        "augmenter la répétition publicitaire à la télévision",
+        "baisser les budgets, car il coûte surtout en créativité",
+        "faire de la publicité sans le dire",
+        "remplacer l'étude de marché"
+      ],
+      "reponse": [
+        0,
+        2,
+        3
+      ],
+      "explication": "Les 6 raisons : notoriété, marquer par l'émotion et l'inattendu, cibler précisément, délivrer le message autrement, baisser les budgets, faire de la publicité sans le dire."
+    },
+    {
+      "id": "b3-r04-qz-033",
+      "section": "6. Le marketing alternatif",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Pour les villes de la tournée sous l'objectif de 500 mentions digitales, quelle préconisation respecte l'esprit du cours ?",
+      "options": [
+        "s'installer sans autorisation sur un événement concurrent",
+        "publier de faux avis positifs",
+        "coupler le foodtruck à un événement local ou à une action d'ambient marketing qui provoque le partage, en cohérence avec la marque",
+        "multiplier les spots radio"
+      ],
+      "reponse": 2,
+      "explication": "Le foodtruck est déjà du street marketing et du marketing expérientiel promotionnel. Le couplage événementiel ou l'ambient marketing provoquent le partage ; la cohérence et l'absence de tromperie restent impératives."
+    },
+    {
+      "id": "b3-r04-qz-034",
+      "section": "7. Les clés de la fidélisation",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Combien de fois moins cher coûte la fidélisation d'un client par rapport à l'acquisition d'un nouveau ?",
+      "options": [
+        "1,5 à 2 fois",
+        "elle coûte autant",
+        "10 à 15 fois",
+        "3 à 7 fois"
+      ],
+      "reponse": 3,
+      "explication": "3 à 7 fois moins cher. Selon Peter Fisk (Customer Genius), + 5 % de fidélité = + 25 % à + 55 % de profits."
+    },
+    {
+      "id": "b3-r04-qz-035",
+      "section": "7. Les clés de la fidélisation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Comment mesure-t-on l'efficacité de l'allongement de la durée de vie du client, selon le cours ?",
+      "options": [
+        "par le taux de rétention, sans compter les nouveaux clients",
+        "par le nombre total de clients en fin de période",
+        "par le nombre de nouveaux clients acquis",
+        "par le panier moyen"
+      ],
+      "reponse": 0,
+      "explication": "Le taux de rétention compte les clients restés fidèles sur une période, sans compter les nouveaux. Il mesure la lutte contre l'attrition (churn)."
+    },
+    {
+      "id": "b3-r04-qz-036",
+      "section": "7. Les clés de la fidélisation",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez la règle sur le bouche-à-oreille.",
+      "texte": "Un client très satisfait parle de son expérience à {1} personnes, un client très mécontent à près de {2}. L'{3}, le contenu généré par les utilisateurs, est « le saint Graal » de la promotion à moindre frais.",
+      "trous": [
+        "3",
+        "10",
+        "UGC"
+      ],
+      "explication": "D'où l'enjeu de la customer advocacy et de la gestion des mécontents."
+    },
+    {
+      "id": "b3-r04-qz-037",
+      "section": "7. Les clés de la fidélisation",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Lesquelles font partie des 5 clés de la fidélisation ? (3 réponses)",
+      "options": [
+        "créer un lien de confiance en personnalisant la relation",
+        "baisser les prix pour tous les clients",
+        "écouter le client et lui donner la parole",
+        "enrichir et améliorer son offre grâce aux retours clients",
+        "augmenter la pression publicitaire"
+      ],
+      "reponse": [
+        0,
+        2,
+        3
+      ],
+      "explication": "Les 5 clés : lien de confiance personnalisé, relation et service client efficaces, programme de fidélité, écoute du client, enrichissement de l'offre."
+    },
+    {
+      "id": "b3-r04-qz-038",
+      "section": "7. Les clés de la fidélisation",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un programme de fidélité suffit à fidéliser, même sans culture client dans l'entreprise.",
+      "reponse": false,
+      "explication": "Faux. Souvent vu comme « LA solution », il échoue sans culture client. Tendance : la digitalisation (un Français possède 7 à 14 cartes, d'où le passage à l'appli)."
+    },
+    {
+      "id": "b3-r04-qz-039",
+      "section": "7. Les clés de la fidélisation",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque friction PrepMyMeal au levier de fidélisation adapté.",
+      "colonne_a": [
+        "Nouveaux clients perdus après la 1re commande",
+        "Monotonie des plats",
+        "Livraison défaillante",
+        "Temps d'attente au foodtruck"
+      ],
+      "colonne_b": [
+        "Clé 5 : enrichir l'offre, rotation des recettes",
+        "M-paiement, précommande via l'app",
+        "Clé 1 : confiance dès le 1er achat, offre de 2e commande",
+        "Clé 2 : service client efficace, notifications en temps réel"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Pour chaque friction de la cartographie (Q1) ou chaque écart (Q9), un levier précis du cours."
+    },
+    {
+      "id": "b3-r04-qz-040",
+      "section": "7. Les clés de la fidélisation",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Selon la clé « écouter le client », auprès de qui faut-il recueillir les avis ?",
+      "options": [
+        "uniquement auprès des clients les plus fidèles",
+        "uniquement auprès des mécontents",
+        "uniquement auprès des prospects",
+        "pas seulement auprès des plus fidèles"
+      ],
+      "reponse": 3,
+      "explication": "Écouter, ce n'est pas « le client est roi » : c'est comprendre qui il est et ce qu'il veut, en recueillant les avis largement (groupes de discussion, communautés, forums), pas seulement chez les plus fidèles."
+    }
+  ]
+}

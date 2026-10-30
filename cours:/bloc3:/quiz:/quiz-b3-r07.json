@@ -1,0 +1,754 @@
+{
+  "resume": "b3-r07",
+  "titre": "Mesurer la performance : objectifs, KPI et attribution",
+  "bloc": 3,
+  "questions": [
+    {
+      "id": "b3-r07-qz-001",
+      "section": "1. Pourquoi mesurer",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Par rapport à quoi mesure-t-on la performance d'une action marketing ?",
+      "options": [
+        "par rapport aux résultats des concurrents uniquement",
+        "par rapport au budget dépensé uniquement",
+        "par rapport à l'année précédente uniquement",
+        "par rapport aux objectifs fixés en amont"
+      ],
+      "reponse": 3,
+      "explication": "Une performance est un rendement ; la mesurer, c'est le jauger par rapport aux objectifs fixés en amont. La mesure peut être positive ou négative."
+    },
+    {
+      "id": "b3-r07-qz-002",
+      "section": "1. Pourquoi mesurer",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez les chiffres du coût de l'absence de mesure.",
+      "texte": "Une campagne défaillante peut consommer {1} du budget avant qu'on s'en aperçoive. Avec 10 000 € par mois, une mesure appropriée ferait passer de 100 à {2} nouveaux clients. TechnoSport avait dépensé {3} en publicité Facebook sans savoir quelles campagnes vendaient.",
+      "trous": [
+        "80 %",
+        "180-200",
+        "50 000 €"
+      ],
+      "explication": "Sans mesure, on reproduit indéfiniment les mêmes erreurs et on perd le contact avec le marché."
+    },
+    {
+      "id": "b3-r07-qz-003",
+      "section": "1. Pourquoi mesurer",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Devenir data-driven consiste à remplacer l'intuition par les données.",
+      "reponse": false,
+      "explication": "Faux. C'est créer un dialogue permanent entre expertise métier et signaux du marché : « vos hypothèses deviennent des tests, vos convictions des métriques à valider »."
+    },
+    {
+      "id": "b3-r07-qz-004",
+      "section": "1. Pourquoi mesurer",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles lacunes Camille identifie-t-elle chez TechnoSport ? (3 réponses)",
+      "options": [
+        "aucun tracking des conversions",
+        "un budget marketing trop faible",
+        "un parcours client inconnu",
+        "un coût d'acquisition client approximatif",
+        "trop de canaux de vente"
+      ],
+      "reponse": [
+        0,
+        2,
+        3
+      ],
+      "explication": "S'y ajoute l'absence de culture du reporting : chacun son Excel, rien de standardisé."
+    },
+    {
+      "id": "b3-r07-qz-005",
+      "section": "1. Pourquoi mesurer",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Pour démarrer la mesure avec trois indicateurs, associez chaque type d'indicateur à son exemple.",
+      "colonne_a": [
+        "Volume",
+        "Qualité",
+        "Valeur"
+      ],
+      "colonne_b": [
+        "Chiffre d'affaires généré",
+        "Trafic",
+        "Taux de conversion"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Trois indicateurs plutôt que tout tracker dès le départ : une approche progressive qui construit la culture de la mesure."
+    },
+    {
+      "id": "b3-r07-qz-006",
+      "section": "1. Pourquoi mesurer",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Comment Veepee a-t-il divisé par deux ses coûts d'acquisition ?",
+      "options": [
+        "en supprimant ses campagnes payantes",
+        "par un tracking unifié de la 1re interaction à la 10e commande, qui a révélé la valeur à long terme de canaux jugés chers",
+        "en baissant ses prix",
+        "en recrutant des influenceurs"
+      ],
+      "reponse": 1,
+      "explication": "La vision longitudinale a montré que certains canaux, chers au premier achat, apportaient une valeur client exceptionnelle sur le long terme."
+    },
+    {
+      "id": "b3-r07-qz-007",
+      "section": "1. Pourquoi mesurer",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que faut-il faire avant de lancer une campagne pour pouvoir en mesurer l'efficacité ?",
+      "options": [
+        "comptabiliser les visites et ventes habituelles, pour disposer d'un point de comparaison",
+        "choisir le modèle d'attribution data-driven",
+        "acheter une base de prospects",
+        "fixer le budget de l'année suivante"
+      ],
+      "reponse": 0,
+      "explication": "Sans point de comparaison, impossible d'isoler l'effet de la campagne. Une mauvaise performance peut avoir plusieurs causes (ciblage, prix, qualité, contenu, canal)."
+    },
+    {
+      "id": "b3-r07-qz-008",
+      "section": "1. Pourquoi mesurer",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Actionner un levier trop faiblement peut produire une amélioration presque nulle des performances.",
+      "reponse": true,
+      "explication": "Vrai. Il faut choisir le bon levier et son intensité : un levier mal choisi est contre-productif, un levier trop faible n'améliore presque rien."
+    },
+    {
+      "id": "b3-r07-qz-009",
+      "section": "2. Des objectifs SMART aux KPI",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles difficultés crée un objectif flou comme « augmenter la visibilité » ? (3 réponses)",
+      "options": [
+        "aucune stratégie cohérente, d'où des actions dispersées",
+        "une mesure impossible, qui fragilise le budget marketing",
+        "des coûts publicitaires automatiquement plus bas",
+        "un désalignement entre services",
+        "une meilleure créativité"
+      ],
+      "reponse": [
+        0,
+        1,
+        3
+      ],
+      "explication": "Stratégie incohérente, mesure impossible, désalignement des parties prenantes : trois raisons de formuler des objectifs SMART."
+    },
+    {
+      "id": "b3-r07-qz-010",
+      "section": "2. Des objectifs SMART aux KPI",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "La conversion actuelle est de 2,1 % et la moyenne sectorielle de 2,8 %. Quel objectif respecte le critère « Atteignable » du module ?",
+      "options": [
+        "15 % en six mois",
+        "10 % en un an",
+        "2,6 % en six mois",
+        "2,1 % sans échéance"
+      ],
+      "reponse": 2,
+      "explication": "Atteignable = ambition calibrée sur l'historique et les benchmarks. « Réaliste » vérifie ensuite les ressources (humaines, financières, techniques)."
+    },
+    {
+      "id": "b3-r07-qz-011",
+      "section": "2. Des objectifs SMART aux KPI",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce qui fait d'une métrique un véritable KPI ?",
+      "options": [
+        "elle est affichée en grand sur le tableau de bord",
+        "elle progresse chaque mois",
+        "elle est calculée par Google Analytics",
+        "elle est directement reliée à un objectif stratégique et elle est actionnable"
+      ],
+      "reponse": 3,
+      "explication": "Un KPI dit où l'on en est, s'il faut agir et dans quelle direction. « Tout ce qui se mesure s'améliore » : on choisit les KPI avant le déploiement de la campagne."
+    },
+    {
+      "id": "b3-r07-qz-012",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque objectif marketing à sa famille d'indicateurs et un exemple.",
+      "colonne_a": [
+        "Faire connaître la marque",
+        "Créer l'engagement",
+        "Générer des leads",
+        "Convertir en ventes",
+        "Fidéliser"
+      ],
+      "colonne_b": [
+        "Performance commerciale : taux de conversion, panier moyen, ROI",
+        "Visibilité et notoriété : impressions, reach, share of voice",
+        "Rétention : CLV, taux de réachat",
+        "Interaction : taux d'engagement, partages",
+        "Génération de prospects : coût par lead"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "explication": "Règle : combiner volume, qualité et valeur sur un même dashboard. Piège : le module SMART classe en 4 familles (visibilité, engagement, conversion, coût et rentabilité)."
+    },
+    {
+      "id": "b3-r07-qz-013",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 3,
+      "format": "qcm_multiple",
+      "question": "Quelles familles d'indicateurs le cours « La mesure de la performance » distingue-t-il ? (3 réponses)",
+      "options": [
+        "financiers",
+        "organisationnels",
+        "sensoriels",
+        "RSE",
+        "émotionnels"
+      ],
+      "reponse": [
+        0,
+        1,
+        3
+      ],
+      "explication": "Financiers, organisationnels, commerciaux, RSE. À l'examen, prends le classement qui colle aux objectifs de l'énoncé."
+    },
+    {
+      "id": "b3-r07-qz-014",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une campagne génère 2 millions d'impressions mais ne touche que 150 000 personnes uniques. Que vaut la fréquence moyenne ?",
+      "options": [
+        "environ 1,3",
+        "environ 7,5",
+        "environ 13,3",
+        "150 000"
+      ],
+      "reponse": 2,
+      "explication": "Fréquence = impressions / reach = 2 000 000 / 150 000 ≈ 13,3 contacts par personne : bon pour la mémorisation, ou facteur de lassitude. Impressions = affichages, vus ou non ; reach = personnes uniques."
+    },
+    {
+      "id": "b3-r07-qz-015",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que mesure le share of voice ?",
+      "options": [
+        "la visibilité de la marque par rapport à ses concurrents sur un sujet",
+        "le nombre de messages vocaux reçus",
+        "la part du budget consacrée à la radio",
+        "le taux d'ouverture des e-mails"
+      ],
+      "reponse": 0,
+      "explication": "Ex. : TechnoSport 15 % des conversations sur les montres de running, contre 35 % pour Apple Watch et 25 % pour Garmin."
+    },
+    {
+      "id": "b3-r07-qz-016",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez les formules.",
+      "texte": "Taux d'engagement = interactions / {1} × 100. Taux de rebond = visiteurs n'ayant vu qu'{2} / total des visiteurs × 100 ; au-delà de {3}, il faut s'inquiéter. Taux de conversion = conversions / {4} × 100.",
+      "trous": [
+        "portée",
+        "une seule page",
+        "40 %",
+        "visiteurs uniques"
+      ],
+      "explication": "Exemple : 300 commandes pour 10 000 visiteurs = 3 % de conversion."
+    },
+    {
+      "id": "b3-r07-qz-017",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un contenu très engageant sur les réseaux sociaux peut ne générer aucune vente.",
+      "reponse": true,
+      "explication": "Vrai. Engagement ≠ performance commerciale. Il faut croiser engagement brut (likes) et engagement utile (clics, conversions)."
+    },
+    {
+      "id": "b3-r07-qz-018",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une annonce affiche un fort taux de clic mais un taux de conversion décevant. Que révèle ce décalage ?",
+      "options": [
+        "une audience trop restreinte",
+        "un problème de cohérence entre la promesse publicitaire et l'offre réelle",
+        "un trop grand nombre de likes",
+        "un problème de reach"
+      ],
+      "reponse": 1,
+      "explication": "À l'inverse, beaucoup de likes mais peu de clics révèlent un décalage entre l'intérêt exprimé et l'intention d'achat."
+    },
+    {
+      "id": "b3-r07-qz-019",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une campagne Facebook rapporte 4,20 € de chiffre d'affaires pour 1 € de dépense publicitaire. Quel indicateur exprime ce rapport ?",
+      "options": [
+        "un ROI de 420 %",
+        "un CPA de 4,20 €",
+        "un ROAS de 4,2",
+        "une CLV de 4,20 €"
+      ],
+      "reponse": 2,
+      "explication": "ROAS = CA généré / dépense publicitaire. Le ROI rapporte un gain (marge) au coût total : (gain − coût) / coût × 100."
+    },
+    {
+      "id": "b3-r07-qz-020",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Quand le module écrit « ROI de 400 % (4 € de chiffre d'affaires pour 1 € investi) », il décrit en réalité un ROAS de 4.",
+      "reponse": true,
+      "explication": "Vrai. Rapporter un CA à une dépense, c'est un ROAS. Pose toujours la formule à l'examen."
+    },
+    {
+      "id": "b3-r07-qz-021",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le ROAS, à lui seul, suffit à mesurer l'efficacité d'une campagne.",
+      "reponse": false,
+      "explication": "Faux. C'est bien un KPI, mais il dit seulement si la campagne a été rentable. On l'accompagne de taux de conversion, d'ouverture, de délivrabilité, de plaintes."
+    },
+    {
+      "id": "b3-r07-qz-022",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Les clients venus des réseaux sociaux rachètent à 45 %, ceux de Google Ads à 28 %, mais Google Ads génère de plus gros premiers paniers. Quelle leçon en tirer ?",
+      "options": [
+        "il faut couper les réseaux sociaux",
+        "les indicateurs long terme (réachat, CLV) peuvent renverser le classement des canaux",
+        "le panier moyen est le seul indicateur fiable",
+        "il faut couper Google Ads"
+      ],
+      "reponse": 1,
+      "explication": "Ne pas oublier CLV, réachat, fidélisation : comparer chaque trimestre CPA, panier moyen, CLV et réachat par canal (rentables à court ou à long terme)."
+    },
+    {
+      "id": "b3-r07-qz-023",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 3,
+      "format": "texte_a_trous",
+      "question": "Complétez les repères e-mailing du cours « La mesure de la performance ».",
+      "texte": "Un taux de plaintes raisonnable est de {1} ; au-delà de {2}, les filtres classent la campagne en spam. Un taux de désabonnement est excellent à {3} ou moins. Le taux de réactivité rapporte les cliqueurs aux {4}.",
+      "trous": [
+        "0,1 %",
+        "0,5 %",
+        "0,2 %",
+        "ouvreurs"
+      ],
+      "explication": "Piège : un faible taux de désabonnement n'implique pas automatiquement une forte conversion."
+    },
+    {
+      "id": "b3-r07-qz-024",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 3,
+      "format": "appariement",
+      "question": "Associez chaque outil de mesure à sa spécialité.",
+      "colonne_a": [
+        "Google Analytics",
+        "Optimizely",
+        "Qualaroo",
+        "Crazy Egg"
+      ],
+      "colonne_b": [
+        "Questionnaires intégrés aux pages du site",
+        "Zones les plus cliquées de l'écran",
+        "Mesure globale du comportement des internautes, ≈ 80 % du marché",
+        "Performance comparée des landing pages"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "S'y ajoutent les statistiques des plateformes publicitaires et les commentaires des visiteurs, « très bons indicateurs »."
+    },
+    {
+      "id": "b3-r07-qz-025",
+      "section": "4. Action ou résultat : éviter les vanity metrics",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Lequel est une métrique de résultat ?",
+      "options": [
+        "le nombre de posts publiés par semaine",
+        "le nombre de newsletters envoyées",
+        "le nombre de campagnes lancées",
+        "le chiffre d'affaires généré par une campagne d'e-mailing"
+      ],
+      "reponse": 3,
+      "explication": "Les métriques d'action mesurent ce que l'on fait ; celles de résultat, ce que l'on obtient. On suit les deux, mais on pilote sur les résultats."
+    },
+    {
+      "id": "b3-r07-qz-026",
+      "section": "4. Action ou résultat : éviter les vanity metrics",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Un nombre de followers en croissance régulière est en soi la preuve d'une stratégie performante.",
+      "reponse": false,
+      "explication": "Faux. C'est l'exemple type de vanity metric : si ces followers n'achètent pas et ne recommandent pas, la croissance reste stérile commercialement."
+    },
+    {
+      "id": "b3-r07-qz-027",
+      "section": "4. Action ou résultat : éviter les vanity metrics",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Au foodtruck PrepMyMeal, lequel est une métrique d'action et non de résultat ?",
+      "options": [
+        "le nombre d'inscriptions sur l'app",
+        "le chiffre d'affaires par ville",
+        "le taux de réachat",
+        "le nombre de flyers distribués"
+      ],
+      "reponse": 3,
+      "explication": "Flyers distribués ou jours de présence mesurent l'activité. Les résultats : clients, conversion, CA, inscriptions, réachat, mentions."
+    },
+    {
+      "id": "b3-r07-qz-028",
+      "section": "5. Hiérarchiser : la pyramide des KPI",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque niveau de la pyramide des KPI au nombre d'indicateurs conseillé.",
+      "colonne_a": [
+        "Stratégique",
+        "Tactique",
+        "Opérationnel"
+      ],
+      "colonne_b": [
+        "5 à 7",
+        "10 à 15",
+        "2 à 3"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "explication": "Stratégique : direction (part de marché, CLV, NPS). Tactique : responsables de campagne (CPA par canal, conversion). Opérationnel : gestionnaires (trafic, engagement du jour)."
+    },
+    {
+      "id": "b3-r07-qz-029",
+      "section": "5. Hiérarchiser : la pyramide des KPI",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi ne pas suivre chaque jour un indicateur lent comme la part de marché ?",
+      "options": [
+        "parce que cela crée du bruit sans valeur ajoutée",
+        "parce que c'est interdit",
+        "parce que la part de marché n'est pas un KPI",
+        "parce que les outils ne le permettent pas"
+      ],
+      "reponse": 0,
+      "explication": "La fréquence de suivi s'adapte à la vitesse d'évolution de l'indicateur : un indicateur volatil (CPC) exige au contraire un suivi rapproché."
+    },
+    {
+      "id": "b3-r07-qz-030",
+      "section": "5. Hiérarchiser : la pyramide des KPI",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la méthode de construction de la pyramide des KPI.",
+      "elements": [
+        "Décliner en objectifs tactiques",
+        "Traduire en actions opérationnelles mesurables",
+        "Identifier les objectifs stratégiques"
+      ],
+      "ordre": [
+        2,
+        0,
+        1
+      ],
+      "explication": "Chaque niveau est cohérent avec le niveau supérieur et alimente le niveau inférieur : tous les efforts sont alignés."
+    },
+    {
+      "id": "b3-r07-qz-031",
+      "section": "6. Aligner chaque KPI sur un objectif",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quelles deux questions poser pour chaque KPI ? (2 réponses)",
+      "options": [
+        "« Pourquoi ce KPI est-il suivi ? »",
+        "« Combien coûte l'outil qui le mesure ? »",
+        "« À quelle décision ce KPI sert-il ? »",
+        "« Est-il facile à faire progresser ? »"
+      ],
+      "reponse": [
+        0,
+        2
+      ],
+      "explication": "Ces deux questions évitent la mesure pour la mesure et gardent le système orienté vers l'action."
+    },
+    {
+      "id": "b3-r07-qz-032",
+      "section": "6. Aligner chaque KPI sur un objectif",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que le « KPI Kill Process » ?",
+      "options": [
+        "supprimer chaque trimestre les KPI qui n'ont servi à aucune décision",
+        "supprimer les KPI en baisse",
+        "supprimer tous les KPI opérationnels",
+        "remplacer les KPI par des OKR"
+      ],
+      "reponse": 0,
+      "explication": "Il garde le tableau de bord épuré. Il complète la matrice d'alignement KPI × objectifs (avec l'action déclenchée) et la revue trimestrielle avec la direction. Abandonner des KPI historiques suscite des résistances : il faut expliquer."
+    },
+    {
+      "id": "b3-r07-qz-033",
+      "section": "6. Aligner chaque KPI sur un objectif",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Sélectionnez et justifiez les KPI du foodtruck PrepMyMeal (Q7) en montrant comment ils traduisent les objectifs du brief, avec les outils de collecte et les précautions RGPD.",
+      "attendus": [
+        "Présenter une matrice : objectif → KPI (formule, cible du brief) → outil de collecte → précaution RGPD",
+        "Visibilité/notoriété : mentions digitales (≥ 500/ville), taux d'engagement (> 40 %) ; social listening ; données publiques agrégées",
+        "Ventes : visiteurs (1 200/ville), conversion (≥ 35 %), CA (12-15 k€/ville, > 100 k€), panier moyen ; caisse ; pas de donnée personnelle",
+        "Acquisition/fidélisation : inscriptions (≥ 700/ville), réachat (≥ 25 %) ; CRM, QR codes UTM, GA ; consentement, double opt-in",
+        "Expérience : temps d'attente (≤ 6 min), satisfaction (≥ 4,3/5), NPS, verbatims ; caisse, tablettes, enquête ; réponses anonymisées",
+        "Inclure des KPI qualitatifs et distinguer ROAS et ROI pour la rentabilité"
+      ],
+      "explication": "Le critère : KPI alignés sur les objectifs, processus de collecte et d'analyse explicité, adapté et conforme au RGPD."
+    },
+    {
+      "id": "b3-r07-qz-034",
+      "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Combien de points de contact un client a-t-il, selon le module, avant de finaliser un achat ?",
+      "options": [
+        "1 ou 2",
+        "3 à 4",
+        "7 à 10",
+        "plus de 30"
+      ],
+      "reponse": 2,
+      "explication": "7 à 10 points de contact, sur plusieurs semaines ou mois : le parcours ressemble à une toile d'araignée. Le customer journey mapping cartographie ces interactions."
+    },
+    {
+      "id": "b3-r07-qz-035",
+      "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Sans mesure adaptée, on risque de sous-estimer les canaux d'influence, comme les réseaux sociaux, au profit des canaux de conversion, comme Google Ads.",
+      "reponse": true,
+      "explication": "Vrai. Les canaux d'influence construisent la préférence de marque ; les canaux de conversion récoltent la vente et captent l'attribution en last-click."
+    },
+    {
+      "id": "b3-r07-qz-036",
+      "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Chez TechnoSport, le mobile représente 60 % du trafic mais 35 % des conversions. Quelle erreur une mesure cross-device évite-t-elle ?",
+      "options": [
+        "réduire à tort les investissements mobiles, alors que le mobile génère la demande (phénomène ROPO)",
+        "augmenter le budget desktop",
+        "supprimer Google Analytics",
+        "ignorer le taux de rebond"
+      ],
+      "reponse": 0,
+      "explication": "ROPO = Research Online, Purchase Offline : on s'informe sur mobile, on achète ailleurs. Parades : relier GA et CRM, User-ID, CDP."
+    },
+    {
+      "id": "b3-r07-qz-037",
+      "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle limite de Google Analytics le module souligne-t-il ?",
+      "options": [
+        "il ne mesure pas le trafic mobile",
+        "il est payant",
+        "il raisonne en sessions : un client qui revient deux heures plus tard compte pour deux sessions",
+        "il ne compte pas les conversions"
+      ],
+      "reponse": 2,
+      "explication": "La continuité du parcours est brisée. De plus, chaque plateforme publicitaire a ses propres règles d'attribution : d'où l'intérêt d'une vue unifiée (GA + CRM, CDP)."
+    },
+    {
+      "id": "b3-r07-qz-038",
+      "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque modèle d'attribution à sa règle de répartition du crédit.",
+      "colonne_a": [
+        "Last-Click",
+        "First-Click",
+        "Linéaire",
+        "Time-Decay",
+        "Position-Based (en U)"
+      ],
+      "colonne_b": [
+        "Crédit croissant à l'approche de l'achat",
+        "100 % au premier point de contact",
+        "40 % au premier, 40 % au dernier, 20 % aux intermédiaires",
+        "100 % au dernier point de contact",
+        "Parts égales entre tous les points de contact"
+      ],
+      "paires": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "explication": "Le Data-Driven calcule le crédit par apprentissage automatique ; il exige un gros volume de données, GA4 ou Adobe Analytics et des compétences."
+    },
+    {
+      "id": "b3-r07-qz-039",
+      "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "BioZen n'observe que les canaux qui ferment les ventes ; le dernier clic vient de Google Ads en remarketing. Quel modèle utilise-t-elle probablement, et que lui recommander ?",
+      "options": [
+        "First-Click ; passer au Last-Click",
+        "Linéaire ; passer au Time-Decay",
+        "Last-Click ; passer au Position-Based (en U), qui valorise aussi la découverte sur Instagram",
+        "Data-Driven ; passer au First-Click"
+      ],
+      "reponse": 2,
+      "explication": "Le Last-Click donne tout le crédit au remarketing. Le modèle en U valorise le premier contact (Instagram) et le dernier (Google Ads), avec une part pour le SEO et la newsletter. À 6-12 mois, le Data-Driven révélerait les meilleures combinaisons."
+    },
+    {
+      "id": "b3-r07-qz-040",
+      "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque contexte d'entreprise au modèle d'attribution le plus approprié.",
+      "colonne_a": [
+        "Startup de mode, achats impulsifs en 24-48 h",
+        "Marque de cosmétiques investissant en notoriété",
+        "Éditeur B2B, cycle de vente de 6 mois",
+        "PME aux budgets équilibrés entre acquisition et remarketing",
+        "Retailer omnicanal intégrant ses ventes en magasin"
+      ],
+      "colonne_b": [
+        "Linéaire",
+        "Data-Driven avec intégration offline",
+        "Last-Click",
+        "Position-Based (en U)",
+        "First-Click"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "explication": "Le choix dépend du cycle d'achat, du budget, de la diversité des canaux, des objectifs et de la maturité analytique."
+    },
+    {
+      "id": "b3-r07-qz-041",
+      "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Il est recommandé de s'en tenir à un seul modèle d'attribution pour garder une lecture simple des performances.",
+      "reponse": false,
+      "explication": "Faux. Comparer plusieurs modèles révèle les biais de chacun et donne une vision nuancée du rôle de chaque levier."
+    },
+    {
+      "id": "b3-r07-qz-042",
+      "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Le foodtruck crée le premier contact, un e-mail de relance déclenche ensuite le réachat en ligne. Pourquoi un modèle Last-Click serait-il trompeur ?",
+      "options": [
+        "parce qu'il attribuerait tout le crédit au foodtruck",
+        "parce qu'il attribuerait tout le réachat à l'e-mail de relance et sous-estimerait le foodtruck",
+        "parce qu'il ne compte pas les ventes en ligne",
+        "parce qu'il est interdit par le RGPD"
+      ],
+      "reponse": 1,
+      "explication": "D'où un modèle en U (foodtruck = premier contact, e-mail = dernier) et des QR codes tagués par ville (UTM) pour relier la visite au truck, l'inscription et le réachat."
+    }
+  ]
+}

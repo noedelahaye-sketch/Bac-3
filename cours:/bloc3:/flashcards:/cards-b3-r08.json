@@ -1,0 +1,135 @@
+{
+  "resume": "b3-r08",
+  "titre": "Concevoir, outiller et diffuser le tableau de bord",
+  "bloc": 3,
+  "cartes": [
+    {
+      "id": "b3-r08-fc-001",
+      "section": "1. Le tableau de bord : définition, types, qualités",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'un tableau de bord ?",
+      "verso": "Un outil de pilotage qui présente de manière lisible et synthétique les résultats grâce à des indicateurs de performance. Il identifie le plus tôt possible les écarts entre objectifs et réalité, et oriente les actions correctives.\nIl se diffuse : outil de communication interne et de motivation."
+    },
+    {
+      "id": "b3-r08-fc-002",
+      "section": "1. Le tableau de bord : définition, types, qualités",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Tableau de bord stratégique, opérationnel, budgétaire : quelles différences ?",
+      "verso": "Stratégique (prospectif, balanced scorecard) : les déterminants de la performance, long terme.\nOpérationnel : le suivi des plans d'action, court terme.\nBudgétaire : les résultats comparés au budget prévisionnel, pour en faire ressortir les écarts."
+    },
+    {
+      "id": "b3-r08-fc-003",
+      "section": "1. Le tableau de bord : définition, types, qualités",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 qualités d'un tableau de bord ?",
+      "verso": "Simple (10 à 15 indicateurs maximum), pertinent (indicateurs corrélés aux objectifs), synoptique (l'essentiel d'un coup d'œil), actualisé."
+    },
+    {
+      "id": "b3-r08-fc-004",
+      "section": "1. Le tableau de bord : définition, types, qualités",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Que faut-il préciser pour chaque indicateur d'un tableau de bord ?",
+      "verso": "Mode de calcul, objectif cible, réalisé, écart, commentaire, actions correctrices.\nPlus la périodicité d'édition et le processus de collecte.\nC'est la structure à reprendre dans la copie Excel de la Q8."
+    },
+    {
+      "id": "b3-r08-fc-005",
+      "section": "1. Le tableau de bord : définition, types, qualités",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Indicateurs de résultat et indicateurs de suivi : quelle différence ?",
+      "verso": "Résultat : mesurent le résultat final d'une action ; constat a posteriori, contrôle des objectifs.\nSuivi : jalons qui mesurent la progression ; permettent d'anticiper et de corriger avant que le résultat soit acquis."
+    },
+    {
+      "id": "b3-r08-fc-006",
+      "section": "2. Architecturer le tableau de bord par public",
+      "niveau": 1,
+      "type": "chiffre",
+      "recto": "Quelle est la règle des proportions visuelles, et où placer les KPI principaux ?",
+      "verso": "40 % de l'espace aux KPI principaux, 35 % aux indicateurs secondaires, 25 % au contexte.\nLes KPI « héros » en haut à gauche (lecture en Z en culture occidentale). Grouper par finalité métier (acquisition, conversion, fidélisation), pas par source technique."
+    },
+    {
+      "id": "b3-r08-fc-007",
+      "section": "3. Choisir les visualisations et les codes graphiques",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Quel graphique pour quel message ?",
+      "verso": "Évolution dans le temps → courbe. Comparaison entre catégories → barres horizontales. Répartition simple → secteurs (5 catégories max, jamais en 3D). Corrélation entre 2 variables → nuage de points. Chiffre clé → KPI seul.\nRègle d'or : un graphique = un message unique."
+    },
+    {
+      "id": "b3-r08-fc-008",
+      "section": "3. Choisir les visualisations et les codes graphiques",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels codes couleur adopter dans un tableau de bord ?",
+      "verso": "Rouge = alerte critique ; orange = vigilance ; vert = objectif atteint ; gris = neutre. Couleurs vives réservées aux alertes, palette neutre pour le reste.\nUne couleur par canal, toujours la même. Tester le daltonisme et l'impression noir et blanc."
+    },
+    {
+      "id": "b3-r08-fc-009",
+      "section": "4. Opérationnel ou stratégique : deux philosophies",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Dashboard opérationnel et dashboard stratégique : quelles différences ?",
+      "verso": "Opérationnel : densité d'information actualisée, interactivité ; alertes en haut, métriques au centre, détails en périphérie ; consulté plusieurs fois par jour.\nStratégique : 5 KPI maximum, une courbe de tendance, une section « À retenir » (3 points + 1 recommandation chiffrée) ; consulté en ≤ 10 minutes."
+    },
+    {
+      "id": "b3-r08-fc-010",
+      "section": "6. Outils, connexions, automatisation, distribution",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Looker Studio, Power BI, Tableau, DashThis : pour quel usage ?",
+      "verso": "Looker Studio : gratuit, simple, écosystème Google ; petit budget, besoin rapide.\nPower BI : analyses avancées, IA, collaboration, payant (≈ 10 €/utilisateur/mois) ; stratégie data ambitieuse.\nTableau : analyses statistiques complexes.\nDashThis : équipe légère, agences."
+    },
+    {
+      "id": "b3-r08-fc-011",
+      "section": "6. Outils, connexions, automatisation, distribution",
+      "niveau": 2,
+      "type": "chiffre",
+      "recto": "À quelle fréquence rafraîchir chaque type de données ?",
+      "verso": "Publicitaires : horaire ou quotidien. Web analytics : quotidien. CRM : hebdomadaire. Satisfaction (NPS, CSAT) : mensuel. Financières : mensuel ou trimestriel.\nRègle : caler la fréquence sur les cycles de décision."
+    },
+    {
+      "id": "b3-r08-fc-012",
+      "section": "6. Outils, connexions, automatisation, distribution",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quels sont les 3 niveaux d'alerte et leur canal, et quelle règle pour une alerte utile ?",
+      "verso": "Critique (ROI négatif, budget épuisé) → SMS. Important (conversion −10 %, coût d'acquisition +20 %) → e-mail détaillé. Informatif (pic de trafic, objectif atteint) → Slack/Teams.\nRègle : 3 à 5 KPI d'alerte maximum ; une alerte doit déclencher une action et être contextualisée."
+    },
+    {
+      "id": "b3-r08-fc-013",
+      "section": "7. Analyser, piloter et diffuser le tableau de bord",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Que faire selon que l'écart entre réalisé et objectif est négatif ou positif ?",
+      "verso": "Négatif : corriger la trajectoire (leviers d'action).\nPositif : réajuster les objectifs.\nDeux approches : managériale (indicateurs = motivation) et de gestion (coût, rentabilité)."
+    },
+    {
+      "id": "b3-r08-fc-014",
+      "section": "7. Analyser, piloter et diffuser le tableau de bord",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 5 finalités du tableau de bord ?",
+      "verso": "Mesure (résultats vs objectifs), diagnostic (dysfonctionnements sous le seuil de tolérance), communication (équipes, direction), information (se situer dans un réseau), motivation."
+    },
+    {
+      "id": "b3-r08-fc-015",
+      "section": "7. Analyser, piloter et diffuser le tableau de bord",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Le tableau de bord explique-t-il les écarts ? Que faire ensuite ?",
+      "verso": "Non : il alerte, il ne donne ni les raisons ni les solutions. Le dirigeant diagnostique les causes internes (stocks, organisation), externes (saison, concurrence) ou des objectifs trop élevés, complète par des entretiens, puis décide des actions correctives avec l'équipe.\nOn le co-construit avec les équipes pour qu'il soit accepté."
+    },
+    {
+      "id": "b3-r08-fc-016",
+      "section": "7. Analyser, piloter et diffuser le tableau de bord",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quelle structure donner au tableau de bord du foodtruck (Q8) ?",
+      "verso": "Bandeau de 4-5 KPI héros avec jauges vs objectifs (CA, conversion, satisfaction, attente, inscriptions) ; tableau ville × KPI en vert/orange/rouge ; barres horizontales du CA par ville avec la bande 12 000-15 000 € ; courbe semaine 1 → 8 ; nuage coût / marge ; zone « À retenir »."
+    }
+  ]
+}

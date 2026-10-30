@@ -1,0 +1,127 @@
+{
+  "resume": "b3-r03",
+  "titre": "Les données clients : sources, outils et RGPD",
+  "bloc": 3,
+  "cartes": [
+    {
+      "id": "b3-r03-fc-001",
+      "section": "1. La donnée et sa valeur",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Donnée et information ; données structurées et non structurées : quelles différences ?",
+      "verso": "Donnée : information brute, sans signification en soi ; traitée et contextualisée, elle devient une information qui permet de décider.\nStructurées : organisées, en bases relationnelles, faciles à interroger. Non structurées : texte libre, images, audio, vidéo. Semi-structurées : JSON, XML."
+    },
+    {
+      "id": "b3-r03-fc-002",
+      "section": "1. La donnée et sa valeur",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 6 « V » de la donnée présentés dans le cours ?",
+      "verso": "Volume (quantité), Vélocité (vitesse, temps réel), Variété (types), Véracité (fiabilité), Volatilité (durée de vie), Valeur (informations exploitables)."
+    },
+    {
+      "id": "b3-r03-fc-003",
+      "section": "1. La donnée et sa valeur",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Big Data, Open Data, Data Science : qu'est-ce qui les distingue ?",
+      "verso": "Big Data : se définit par l'ampleur ; concerne les outils informatiques (émission, transmission, stockage).\nOpen Data : se définit par l'usage ouvert (librement disponibles, sans restriction ; INSEE, CNIL).\nData Science : les méthodes d'analyse, mégadonnées ou non ; crée des Data Products (moteurs de recommandation)."
+    },
+    {
+      "id": "b3-r03-fc-004",
+      "section": "2. Big Data, Fast Data, Smart Data",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Big Data, Fast Data, Smart Data : quelles différences et quels exemples ?",
+      "verso": "Big Data : très gros volumes (Netflix et House of Cards).\nFast Data : collecte et analyse en temps réel (Waze).\nSmart Data : sélectionner à la source les informations stratégiques sans stocker l'inutile (La Poste).\nLe Big Data répond à volume, variété, vélocité ; le Smart Data à valeur et véracité."
+    },
+    {
+      "id": "b3-r03-fc-005",
+      "section": "2. Big Data, Fast Data, Smart Data",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Stratégie data défensive et offensive : quelle différence ?",
+      "verso": "Défensive : sécurité et intégrité des données, vie privée, respect de la loi (un hôpital).\nOffensive : compétitivité et rentabilité, par l'analyse, la modélisation, l'enrichissement (commerce de détail)."
+    },
+    {
+      "id": "b3-r03-fc-006",
+      "section": "3. Analyser et stocker les données online",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Data Lake et Data Warehouse : quelle différence ?",
+      "verso": "Data Lake : stocke à bas coût des données brutes, structurées ou non, sans transformation ; hautement évolutif.\nData Warehouse : centralisé et structuré, données transformées pour le reporting et l'analyse, avec historique.\nStockage distribué : données réparties sur plusieurs serveurs, tolérance aux pannes."
+    },
+    {
+      "id": "b3-r03-fc-007",
+      "section": "4. Collecter des données marketing multicanales",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 5 critères de qualité des données ?",
+      "verso": "Exactitude (reflètent-elles la réalité ?), complétude (manque-t-il des données ?), cohérence (les sources concordent-elles ?), fraîcheur (assez récentes ?), granularité (assez détaillées pour segmenter ?).\nAudit mensuel noté de 1 à 5, action corrective sous 3/5."
+    },
+    {
+      "id": "b3-r03-fc-008",
+      "section": "4. Collecter des données marketing multicanales",
+      "niveau": 3,
+      "type": "chiffre",
+      "recto": "Quelles durées de conservation les modules citent-ils, et quel piège ?",
+      "verso": "Module collecte : 13 mois maximum pour les cookies analytics, 25 mois pour les données de prospection.\nModule RGPD : Google Analytics paramétré à 26 mois maximum ; newsletter : 3 ans après le dernier contact.\nPiège : ces durées diffèrent, cite la source."
+    },
+    {
+      "id": "b3-r03-fc-009",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 1,
+      "type": "chiffre",
+      "recto": "À qui s'applique le RGPD, depuis quand, et quelles sanctions prévoit-il ?",
+      "verso": "Depuis mai 2018, à toute organisation, publique ou privée, même hors UE, dès qu'elle traite des données de résidents européens.\nSanctions : jusqu'à 4 % du CA mondial annuel ou 20 millions d'euros, le montant le plus élevé. Ex. Carrefour : 600 000 €."
+    },
+    {
+      "id": "b3-r03-fc-010",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 6 bases légales d'un traitement, et lesquelles servent en marketing ?",
+      "verso": "Consentement, exécution d'un contrat, obligation légale, sauvegarde des intérêts vitaux, mission de service public, intérêt légitime.\nMarketing : consentement (newsletter, cookies pub), contrat (suivi de commande), intérêt légitime (optimisation, personnalisation) avec un test de proportionnalité (intérêt, nécessité, équilibre)."
+    },
+    {
+      "id": "b3-r03-fc-011",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Le droit à l'effacement est-il absolu ? Et dans quel délai répondre à une demande ?",
+      "verso": "Non : on peut refuser pour une obligation légale (comptabilité, garantie), la liberté d'expression ou la défense en justice, en documentant la décision.\nDélai de réponse aux demandes de droits : 30 jours maximum."
+    },
+    {
+      "id": "b3-r03-fc-012",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Quand une AIPD est-elle obligatoire ?",
+      "verso": "Analyse d'impact sur la protection des données (article 35) : pour les traitements listés par la CNIL, ou ceux qui remplissent au moins 2 des 9 critères (scoring, décision automatique, surveillance, données sensibles, grande échelle, croisement de données, personnes vulnérables, nouvelle technologie, accès à un service)."
+    },
+    {
+      "id": "b3-r03-fc-013",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "Cookies exemptés, à consentement simplifié, à consentement explicite : lesquels ?",
+      "verso": "Exemptés (strictement nécessaires) : panier, authentification, sécurité.\nConsentement simplifié : amélioration de l'expérience sans tracking.\nConsentement explicite : publicité ciblée, partage avec des tiers, profilage.\nBandeau à 3 choix : accepter, refuser, personnaliser ; poursuivre la navigation ne vaut pas consentement."
+    },
+    {
+      "id": "b3-r03-fc-014",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 1,
+      "type": "chiffre",
+      "recto": "Qu'est-ce qu'un sous-traitant au sens du RGPD, et dans quel délai notifier une violation de données ?",
+      "verso": "Il traite des données pour le compte du responsable, selon ses instructions ; le responsable reste garant (clauses au contrat, droit d'audit). Ex. le transporteur de PrepMyMeal.\nViolation : notification à la CNIL sous 72 heures, sauf absence de risque pour les personnes."
+    },
+    {
+      "id": "b3-r03-fc-015",
+      "section": "5. Le RGPD appliqué à la collecte marketing",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Comment structurer la réponse RGPD de la Q3 (cartographie conforme) ?",
+      "verso": "Point de contact par point de contact : donnée collectée, base légale, information et consentement, durée.\nEx. : inscription via QR code = consentement spécifique et double opt-in ; commande = contrat ; transporteur = sous-traitant ; GA = consentement cookies, IP anonymisée.\nPuis : droits (30 jours), registre, AIPD si scoring, sécurité, 72 h."
+    }
+  ]
+}

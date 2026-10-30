@@ -1,0 +1,746 @@
+{
+  "resume": "b3-r02",
+  "titre": "Analyser et cartographier le parcours client",
+  "bloc": 3,
+  "questions": [
+    {
+      "id": "b3-r02-qz-001",
+      "section": "1. Parcours, points de contact et moments de vérité",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Selon le cours, que comporte nécessairement un parcours client ?",
+      "options": [
+        "un seul canal et un seul point de contact",
+        "une étape de recommandation",
+        "obligatoirement un achat en ligne",
+        "de nombreux points de contact liés entre eux et au moins un moment de vérité"
+      ],
+      "reponse": 3,
+      "explication": "Le parcours client est le chemin que prend un consommateur pour effectuer une tâche du début à la fin. Il comporte de nombreux points de contact liés entre eux et au moins un moment de vérité."
+    },
+    {
+      "id": "b3-r02-qz-002",
+      "section": "1. Parcours, points de contact et moments de vérité",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Un moment de vérité peut être destructeur de valeur.",
+      "reponse": true,
+      "explication": "Vrai. Le moment de vérité est un instant clé à très forte influence, positive ou négative, sur la perception de la marque : il peut être créateur ou destructeur de valeur."
+    },
+    {
+      "id": "b3-r02-qz-003",
+      "section": "1. Parcours, points de contact et moments de vérité",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une commande PrepMyMeal n'est jamais livrée malgré plusieurs reports. Comment qualifier cet instant négatif ?",
+      "options": [
+        "un temps d'attente, moins dangereux car l'expérience continue",
+        "un ZMOT",
+        "un moment de vérité positif, car le SAV a répondu",
+        "un point de défaillance, plus dangereux car il peut mettre fin à l'expérience"
+      ],
+      "reponse": 3,
+      "explication": "Le point de défaillance est une réalité capable de mettre fin à l'expérience : il est plus dangereux que le temps d'attente, où l'expérience continue. La livraison est le point de défaillance du parcours PrepMyMeal ; le SAV réactif, un moment de vérité positif."
+    },
+    {
+      "id": "b3-r02-qz-004",
+      "section": "1. Parcours, points de contact et moments de vérité",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce que le ZMOT ?",
+      "options": [
+        "l'instant où l'acheteur fait une première recherche en ligne pour se faire un avis, avant même que le vendeur sache qu'il s'y intéresse",
+        "le moment où le client ouvre le colis",
+        "le dernier point de contact avant l'achat",
+        "l'instant où le client publie un avis négatif"
+      ],
+      "reponse": 0,
+      "explication": "Zero Moment of Truth, rattaché à Google depuis 2011. C'est un moment de vérité à l'initiative du client : la quête d'informations fiables."
+    },
+    {
+      "id": "b3-r02-qz-005",
+      "section": "1. Parcours, points de contact et moments de vérité",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels moments de vérité sont à l'initiative du client ? (3 réponses)",
+      "options": [
+        "la quête d'informations fiables",
+        "accorder du temps et de l'écoute au client",
+        "se décider à acheter",
+        "connaître les attentes du client",
+        "partager son expérience"
+      ],
+      "reponse": [
+        0,
+        2,
+        4
+      ],
+      "explication": "À l'initiative du client : quête d'informations fiables, décision d'achat, expérience d'achat, partage de l'expérience. À l'initiative de l'entreprise : accorder du temps, accorder la primauté au client, connaître ses attentes."
+    },
+    {
+      "id": "b3-r02-qz-006",
+      "section": "1. Parcours, points de contact et moments de vérité",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Selon des psychologues cités par le cours, on se souvient surtout d'un événement d'après le ressenti au pic d'émotion, ce qui compte pour la gestion des réclamations.",
+      "reponse": true,
+      "explication": "Vrai. C'est pourquoi certains spécialistes font de l'émotion le critère majeur pour identifier un moment de vérité, et pourquoi un moment de vérité conditionne les suivants."
+    },
+    {
+      "id": "b3-r02-qz-007",
+      "section": "1. Parcours, points de contact et moments de vérité",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "C'est l'entreprise qui définit les moments de vérité de ses clients, à partir de ses objectifs commerciaux.",
+      "reponse": false,
+      "explication": "Faux. Ce sont les clients qui définissent leurs moments de vérité (vol annulé, déclaration de sinistre). D'où l'importance d'une bonne stratégie d'écoute des avis."
+    },
+    {
+      "id": "b3-r02-qz-008",
+      "section": "1. Parcours, points de contact et moments de vérité",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Pour détecter les moments de vérité, quelle méthode les experts jugent-ils la plus bénéfique ?",
+      "options": [
+        "la simulation par intelligence artificielle",
+        "l'analyse exclusive des ventes",
+        "la méthode collaborative : mesures quantitatives, détection d'insights et alignement participatif des acteurs internes",
+        "le sondage téléphonique aléatoire"
+      ],
+      "reponse": 2,
+      "explication": "La méthode collaborative combine l'analyse de mesures quantitatives, la détection d'insights (besoins réels, conscients ou inconscients) et l'alignement participatif des acteurs internes. Parmi les 6 méthodes d'identification, les entretiens qualitatifs sont jugés les plus bénéfiques."
+    },
+    {
+      "id": "b3-r02-qz-009",
+      "section": "1. Parcours, points de contact et moments de vérité",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Dans une cartographie du parcours, où le cours dit-il qu'« apparaît le moment de vérité » ?",
+      "options": [
+        "dans la ligne des canaux utilisés",
+        "dans le parcours émotionnel",
+        "dans la colonne des coûts",
+        "dans les KPI de conversion"
+      ],
+      "reponse": 1,
+      "explication": "Actions et points de contact sur l'axe horizontal, autres données sur la verticale, sans oublier le parcours émotionnel : c'est là qu'apparaît le moment de vérité."
+    },
+    {
+      "id": "b3-r02-qz-010",
+      "section": "2. Scénariser et cartographier le parcours",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quels sont les deux apports d'un scénario de parcours client ?",
+      "options": [
+        "réduire les coûts et augmenter les prix",
+        "remplacer le CRM et l'enquête de satisfaction",
+        "segmenter et cibler",
+        "la compréhension (voir où le client s'égare) et la collaboration (langage visuel partagé entre équipes)"
+      ],
+      "reponse": 3,
+      "explication": "Le scénario traduit des données foisonnantes en image (compréhension) et crée un langage visuel partagé entre marketing, ventes et service client (collaboration)."
+    },
+    {
+      "id": "b3-r02-qz-011",
+      "section": "2. Scénariser et cartographier le parcours",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Que montre une carte d'expérience pour chaque étape du parcours ?",
+      "options": [
+        "points de contact, émotions ressenties, canaux utilisés, défis rencontrés",
+        "le chiffre d'affaires et la marge par client",
+        "les concurrents et leurs prix",
+        "le planning des équipes"
+      ],
+      "reponse": 0,
+      "explication": "La carte d'expérience détaille, pour chaque étape, les points de contact, les émotions, les canaux et les défis. Le diagramme, lui, montre les transitions entre phases."
+    },
+    {
+      "id": "b3-r02-qz-012",
+      "section": "2. Scénariser et cartographier le parcours",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 3 temps de conception d'un scénario de parcours.",
+      "elements": [
+        "Intégrer les points de contact et les canaux, en repérant les changements de canal",
+        "Collecter les données et identifier les étapes",
+        "Organiser les étapes dans un ordre logique et chronologique"
+      ],
+      "ordre": [
+        1,
+        2,
+        0
+      ],
+      "explication": "Collecte (interactions en ligne, historiques d'achat, canaux, enquêtes de satisfaction) → ordonnancement selon le « flux naturel » du client → intégration des points de contact et des changements de canal, pour une expérience « sans couture »."
+    },
+    {
+      "id": "b3-r02-qz-013",
+      "section": "2. Scénariser et cartographier le parcours",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque étape du parcours à la stratégie marketing adaptée.",
+      "colonne_a": [
+        "Reconnaissance du besoin",
+        "Considération",
+        "Décision",
+        "Action",
+        "Recommandation"
+      ],
+      "colonne_b": [
+        "Processus fluide, confirmation, suivi de commande",
+        "Remise au parrain et au filleul",
+        "Contenus informatifs, sensibilisation",
+        "Offres spéciales, essai gratuit, avis",
+        "Comparaisons, guides d'achat, témoignages"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "explication": "Le marketing s'adapte à l'étape : éduquer, puis comparer, puis déclencher la décision, faciliter l'action, fidéliser (service client, demande d'avis) et inciter au parrainage."
+    },
+    {
+      "id": "b3-r02-qz-014",
+      "section": "2. Scénariser et cartographier le parcours",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Lesquelles font partie de la méthode en 7 étapes pour améliorer l'expérience et la conversion ? (3 réponses)",
+      "options": [
+        "analyser les abandons et les points critiques",
+        "allonger le processus pour mieux qualifier le client",
+        "simplifier le processus (paiement en un clic)",
+        "communiquer de manière proactive avec ceux qui hésitent ou ont abandonné",
+        "supprimer la collecte de données"
+      ],
+      "reponse": [
+        0,
+        2,
+        3
+      ],
+      "explication": "Les 7 étapes : analyser les abandons, collecter et utiliser les données, personnaliser, informer aux moments clés, simplifier, communiquer de manière proactive, mesurer et ajuster."
+    },
+    {
+      "id": "b3-r02-qz-015",
+      "section": "2. Scénariser et cartographier le parcours",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Décrivez la forme que doit prendre la cartographie du parcours client de PrepMyMeal demandée en Q1, et précisez quelles lignes ne doivent pas manquer.",
+      "attendus": [
+        "Une carte d'expérience en tableau",
+        "En colonnes, les étapes : découverte, intérêt et considération, commande, livraison et consommation, fidélisation et recommandation",
+        "En lignes : actions du client, points de contact, outils et supports, émotions, frictions, moments de vérité, pistes d'amélioration",
+        "La ligne « outils et supports » répond à l'énoncé ; la ligne « émotions » révèle les moments de vérité",
+        "Intégrer le foodtruck comme point de contact physique dans un parcours jusque-là digital"
+      ],
+      "explication": "Le critère d'évaluation demande, pour chaque étape, les points de bascule : frictions, opportunités et moments clés."
+    },
+    {
+      "id": "b3-r02-qz-016",
+      "section": "3. Gérer les canaux de la relation client",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Dans quel mode de gestion des canaux l'opérateur voit-il tout l'historique du client, quel que soit le canal du contact ?",
+      "options": [
+        "le multicanal",
+        "le cross canal",
+        "l'omnicanal, géré sur une seule plateforme CRM",
+        "le monocanal"
+      ],
+      "reponse": 2,
+      "explication": "En omnicanal, les canaux forment un tout géré sur une seule plateforme (ex. easiware). Le multicanal gère chaque canal en silo ; le cross canal crée des passerelles sans tout centraliser."
+    },
+    {
+      "id": "b3-r02-qz-017",
+      "section": "3. Gérer les canaux de la relation client",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Selon le cours, une gestion multicanale en silos peut aller jusqu'à provoquer un risque d'abandon de poste chez les employés.",
+      "reponse": true,
+      "explication": "Vrai. Côté employés, le multicanal en silos les oblige à jongler entre outils : perte de productivité et risque d'abandon de poste. Côté clients : fiche recréée à chaque contact, données en doublon."
+    },
+    {
+      "id": "b3-r02-qz-018",
+      "section": "3. Gérer les canaux de la relation client",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une marque réserve son chat aux pages produit et oriente les questions de commande vers le mail. Quel principe applique-t-elle ?",
+      "options": [
+        "le right channeling",
+        "le multicanal",
+        "le self care",
+        "le retargeting"
+      ],
+      "reponse": 0,
+      "explication": "Le right channeling positionne chaque canal là où le client s'attend à trouver l'entreprise et l'oriente vers le canal le plus adapté au bon moment. Le mail sert surtout en après-vente, les messageries instantanées avant l'achat."
+    },
+    {
+      "id": "b3-r02-qz-019",
+      "section": "3. Gérer les canaux de la relation client",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quels sont les deux incontournables d'une FAQ dynamique ?",
+      "options": [
+        "une vidéo et un numéro de téléphone",
+        "un chatbot et un live chat",
+        "un formulaire et une adresse postale",
+        "le langage naturel et une base de données unifiée et centralisée"
+      ],
+      "reponse": 3,
+      "explication": "La FAQ est un outil de self care, à bâtir sur les données d'usage. Double atout : elle allège le service client et satisfait le client (« rétribution symbolique »)."
+    },
+    {
+      "id": "b3-r02-qz-020",
+      "section": "3. Gérer les canaux de la relation client",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque canal de relation client à sa particularité.",
+      "colonne_a": [
+        "Mail",
+        "Téléphone",
+        "Chatbot",
+        "Live chat",
+        "Messaging"
+      ],
+      "colonne_b": [
+        "Robot fondé sur l'IA, « souvent plus efficace qu'un opérateur humain »",
+        "Premier canal de relation client, à humaniser",
+        "Le client n'a pas à quitter son réseau social",
+        "Lien humain ; le client s'y confie davantage, « mine d'or » d'informations",
+        "Conversation avec un opérateur humain, ancêtre du chatbot"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "explication": "Règles : être présent sur les bons canaux au bon moment, accompagner sans forcer, ne pas multiplier les outils, s'appuyer sur un bon CRM."
+    },
+    {
+      "id": "b3-r02-qz-021",
+      "section": "3. Gérer les canaux de la relation client",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Le formulaire de contact est le premier canal de relation client.",
+      "reponse": false,
+      "explication": "Faux. C'est le mail. Le formulaire de contact sert à la réassurance et aux questions précises ; il est chronophage, avec une faible valeur ajoutée par réponse."
+    },
+    {
+      "id": "b3-r02-qz-022",
+      "section": "4. Le parcours ATWAD",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition du parcours ATWAD.",
+      "texte": "ATWAD signifie AnyTime, {1}, on {2}. AnyTime exige un accès {3}, AnyWhere une expérience cohérente au domicile, au travail et en déplacement, Any Devices une compatibilité avec tous les {4}.",
+      "trous": [
+        "AnyWhere",
+        "Any Devices",
+        "24 h/24, 7 j/7",
+        "formats d'écran"
+      ],
+      "explication": "Ses piliers : présence permanente, accessibilité universelle, adaptabilité multisupport. Exemples cités : Salesforce, Amazon, Airbnb, Netflix."
+    },
+    {
+      "id": "b3-r02-qz-023",
+      "section": "4. Le parcours ATWAD",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel est, selon le cours, le défi le plus sensible d'un parcours ATWAD ?",
+      "options": [
+        "le coût des écrans",
+        "la confidentialité, la sécurité et la conformité réglementaire, car plus de points de contact signifie plus de vulnérabilités",
+        "le recrutement des vendeurs",
+        "la saisonnalité des ventes"
+      ],
+      "reponse": 1,
+      "explication": "S'y ajoutent la coordination des canaux et la gestion des données. Réponses : politiques de protection des données, formation du personnel, communication transparente."
+    },
+    {
+      "id": "b3-r02-qz-024",
+      "section": "4. Le parcours ATWAD",
+      "niveau": 3,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les premières étapes de conception d'un parcours ATWAD.",
+      "elements": [
+        "Développement de la disponibilité (redondance, mises à jour en heures creuses)",
+        "Analyse des besoins et des points de transition entre dispositifs",
+        "Conception de l'accessibilité (cross-platform, parité web/mobile, responsive)"
+      ],
+      "ordre": [
+        1,
+        2,
+        0
+      ],
+      "explication": "Analyse des besoins → accessibilité → disponibilité, puis AnyTime, AnyWhere et Any Devices. Les étapes sont chronologiques mais à mener de façon itérative."
+    },
+    {
+      "id": "b3-r02-qz-025",
+      "section": "4. Le parcours ATWAD",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque dimension ATWAD à la critique qu'elle permet d'adresser au parcours PrepMyMeal.",
+      "colonne_a": [
+        "AnyTime",
+        "AnyWhere",
+        "Any Devices"
+      ],
+      "colonne_b": [
+        "Bugs du site, parité site/app (revenu iOS 78,9 %, Android 21,1 %)",
+        "Créneaux de livraison non respectés",
+        "Point relais à 20-30 minutes, livraison du mardi au samedi seulement"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "ATWAD donne trois angles de critique utiles en Q1 et Q2."
+    },
+    {
+      "id": "b3-r02-qz-026",
+      "section": "5. L'entonnoir de conversion",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les étapes de l'entonnoir de conversion.",
+      "elements": [
+        "Décision",
+        "Intérêt",
+        "Action",
+        "Prise de conscience",
+        "Considération"
+      ],
+      "ordre": [
+        3,
+        1,
+        4,
+        0,
+        2
+      ],
+      "explication": "Prise de conscience → intérêt → considération → décision → action. Certains prospects sautent des étapes ou suivent un parcours non linéaire."
+    },
+    {
+      "id": "b3-r02-qz-027",
+      "section": "5. L'entonnoir de conversion",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "L'entonnoir de conversion ne sert qu'en ligne.",
+      "reponse": false,
+      "explication": "Faux. Il sert surtout en ligne, mais « vaut tout autant » pour la vente classique."
+    },
+    {
+      "id": "b3-r02-qz-028",
+      "section": "5. L'entonnoir de conversion",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Des prospects abandonnent à l'étape « action » parce que les frais de livraison sont élevés et l'achat complexe. Quelle mesure le cours préconise-t-il ?",
+      "options": [
+        "des publicités plus ciblées",
+        "des contenus de comparaison plus détaillés",
+        "des démonstrations en direct",
+        "un paiement simple, des formulaires clairs et moins d'étapes"
+      ],
+      "reponse": 3,
+      "explication": "À l'étape action, on simplifie. Les publicités ciblées répondent à la prise de conscience, les comparatifs à la considération, les démonstrations à la décision."
+    },
+    {
+      "id": "b3-r02-qz-029",
+      "section": "5. L'entonnoir de conversion",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque transition de l'entonnoir à ce que le retargeting doit afficher.",
+      "colonne_a": [
+        "Prise de conscience → intérêt",
+        "Intérêt → considération",
+        "Considération → décision",
+        "Décision → action"
+      ],
+      "colonne_b": [
+        "La preuve sociale (succès des anciens clients)",
+        "Le sentiment d'urgence (réduction temporaire, livraison gratuite)",
+        "Des publicités qui maintiennent la marque à l'esprit",
+        "Les avantages spécifiques du produit consulté"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Le retargeting exploite le comportement passé pour ramener les prospects perdus, avec un message adapté à chaque transition."
+    },
+    {
+      "id": "b3-r02-qz-030",
+      "section": "5. L'entonnoir de conversion",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Dans un A/B test, que doit contenir la version B ?",
+      "options": [
+        "une seule modification par rapport à la version A",
+        "toutes les améliorations envisagées en même temps",
+        "un nouveau site complet",
+        "le même contenu, diffusé sur un autre canal"
+      ],
+      "reponse": 0,
+      "explication": "A = version actuelle, B = une seule modification, pour attribuer l'écart à cette modification. On divise le trafic en deux groupes égaux, on compare les conversions, on déploie la gagnante (ex. bouton vert +15 %)."
+    },
+    {
+      "id": "b3-r02-qz-031",
+      "section": "5. L'entonnoir de conversion",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Avant de calculer un taux de conversion global à partir de l'annexe 2 de PrepMyMeal, il faut signaler que les captures Google Analytics ne couvrent pas toutes la même période.",
+      "reponse": true,
+      "explication": "Vrai. Les captures portent sur des périodes différentes (7 derniers jours, depuis fin septembre…). Le signaler est un gage de rigueur dans le diagnostic de Q2."
+    },
+    {
+      "id": "b3-r02-qz-032",
+      "section": "6. Le growth hacking et son entonnoir",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qui a conceptualisé le growth hacking, et quel est son horizon ?",
+      "options": [
+        "Philip Kotler ; le long terme",
+        "Peter Schwartz ; le moyen terme",
+        "Bernard Schmitt ; le long terme",
+        "Sean Ellis (Dropbox) ; le court terme"
+      ],
+      "reponse": 3,
+      "explication": "Sean Ellis. Le growth hacking vise une croissance très forte à coût très faible, à court terme, avec des méthodes intrusives, parfois à la limite de la légalité. L'inbound marketing, lui, joue le long terme."
+    },
+    {
+      "id": "b3-r02-qz-033",
+      "section": "6. Le growth hacking et son entonnoir",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Growth hacking et inbound marketing sont deux approches incompatibles, car leurs finalités s'opposent.",
+      "reponse": false,
+      "explication": "Faux. Ils ont la même finalité (attirer des visiteurs et générer des conversions) et sont complémentaires. Le growth hacking adapte l'offre elle-même en temps réel ; l'inbound, les contenus."
+    },
+    {
+      "id": "b3-r02-qz-034",
+      "section": "6. Le growth hacking et son entonnoir",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles dérives du growth hacking le cours signale-t-il ? (3 réponses)",
+      "options": [
+        "abîmer l'image d'une marque installée par des pratiques « limites »",
+        "un coût d'acquisition trop élevé",
+        "casser le cercle vertueux de la confiance par des contenus trompeurs",
+        "la rupture du consentement RGPD",
+        "une croissance trop lente"
+      ],
+      "reponse": [
+        0,
+        2,
+        3
+      ],
+      "explication": "L'usage commercial des données doit être clairement exposé et limité dans le temps ; la collecte massive expose à des poursuites. Le growth hacking est au contraire peu coûteux et rapide."
+    },
+    {
+      "id": "b3-r02-qz-035",
+      "section": "6. Le growth hacking et son entonnoir",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque phase de l'entonnoir du growth hacking à sa question clé.",
+      "colonne_a": [
+        "Acquisition",
+        "Activation",
+        "Rétention",
+        "Revenu",
+        "Recommandation"
+      ],
+      "colonne_b": [
+        "L'utilisateur génère-t-il des revenus ?",
+        "L'utilisateur parle-t-il de l'entreprise ?",
+        "Comment les utilisateurs trouvent-ils l'entreprise ?",
+        "L'utilisateur revient-il fréquemment ?",
+        "L'utilisateur a-t-il une première expérience réussie ?"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "explication": "Le growth hacker optimise chaque phase pour rendre la portée exponentielle. Grille utile pour justifier les KPI du foodtruck en Q7."
+    },
+    {
+      "id": "b3-r02-qz-036",
+      "section": "6. Le growth hacking et son entonnoir",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Uber affiche les chauffeurs disponibles à proximité dès l'ouverture de l'application. Quelle phase de l'entonnoir du growth hacking cette astuce optimise-t-elle ?",
+      "options": [
+        "l'acquisition",
+        "la recommandation",
+        "le revenu",
+        "l'activation"
+      ],
+      "reponse": 3,
+      "explication": "L'activation : offrir une première expérience réussie, pour réduire les téléchargements sans usage. Exemples d'autres phases : Pinterest et son défilement infini (rétention), Dropbox et son parrainage (recommandation)."
+    },
+    {
+      "id": "b3-r02-qz-037",
+      "section": "6. Le growth hacking et son entonnoir",
+      "niveau": 3,
+      "format": "texte_a_trous",
+      "question": "Complétez les exemples de growth hacking.",
+      "texte": "Instagram s'est recentré sur la photo et les filtres : {1} utilisateurs en une semaine, puis un rachat par Facebook pour {2} 18 mois plus tard. Twitter a constaté que les comptes de moins de {3} followers restaient inactifs. Airbnb a automatisé ses publications sur {4}.",
+      "trous": [
+        "100 000",
+        "1 milliard de dollars",
+        "15",
+        "Craigslist"
+      ],
+      "explication": "Ces succès illustrent les notions clés du growth hacking : rapidité d'adaptation, usage permanent des données, créativité."
+    },
+    {
+      "id": "b3-r02-qz-038",
+      "section": "7. Anticiper : la méthode des scénarios (futuribles)",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque méthode d'analyse à la limite que le cours lui attribue face à l'incertitude à long terme.",
+      "colonne_a": [
+        "SWOT",
+        "PESTEL",
+        "5 forces de Porter",
+        "Méthode DELPHI"
+      ],
+      "colonne_b": [
+        "Liste exhaustive sans hiérarchisation du poids de chaque facteur",
+        "Dépend de la qualité des données initiales et de la représentativité des experts",
+        "Photographie de la situation actuelle, anticipe mal les tendances",
+        "S'adapte mal aux environnements instables"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Ces limites justifient la prospective par scénarios (futuribles), qui intègre une pluralité de possibilités."
+    },
+    {
+      "id": "b3-r02-qz-039",
+      "section": "7. Anticiper : la méthode des scénarios (futuribles)",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans la méthode des scénarios de Peter Schwartz, comment qualifier un phénomène à forte inertie, très structurant, lent mais infléchissable ?",
+      "options": [
+        "une rupture",
+        "un signal faible",
+        "une tendance lourde",
+        "une variable motrice"
+      ],
+      "reponse": 2,
+      "explication": "Tendances lourdes : forte inertie. Signaux faibles (émergences) : phénomènes naissants. Incertitudes / ruptures : date imprévisible, forts impacts."
+    },
+    {
+      "id": "b3-r02-qz-040",
+      "section": "7. Anticiper : la méthode des scénarios (futuribles)",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "On peut dater avec certitude la méthode des scénarios de Peter Schwartz de 1993.",
+      "reponse": false,
+      "explication": "Faux. Le cours la date de 1993, mais cite aussi son livre The Art of the Long View (1991) et son usage chez Shell dans les années 1970, pour anticiper les chocs pétroliers. Retiens le nom, pas la date."
+    },
+    {
+      "id": "b3-r02-qz-041",
+      "section": "7. Anticiper : la méthode des scénarios (futuribles)",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une fois les tendances dégagées, par quelle hypothèse la méthode des scénarios commence-t-elle ?",
+      "options": [
+        "l'hypothèse la plus disruptive",
+        "l'hypothèse la plus rentable",
+        "l'hypothèse tendancielle, sans rupture",
+        "l'hypothèse retenue par la direction"
+      ],
+      "reponse": 2,
+      "explication": "On formule d'abord une hypothèse tendancielle, puis des hypothèses plus disruptives (signaux faibles confirmés, rupture). La méthode compte 2 phases : cartographie du système, puis schématisation des scénarios."
+    }
+  ]
+}

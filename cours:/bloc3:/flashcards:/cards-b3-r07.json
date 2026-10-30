@@ -1,0 +1,135 @@
+{
+  "resume": "b3-r07",
+  "titre": "Mesurer la performance : objectifs, KPI et attribution",
+  "bloc": 3,
+  "cartes": [
+    {
+      "id": "b3-r07-fc-001",
+      "section": "1. Pourquoi mesurer",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Devenir data-driven, est-ce remplacer l'intuition par les données ?",
+      "verso": "Non : c'est créer un dialogue permanent entre expertise métier et signaux du marché. « Vos hypothèses deviennent des tests, vos convictions des métriques à valider. »\nC'est une conduite du changement : la donnée devient un outil partagé."
+    },
+    {
+      "id": "b3-r07-fc-002",
+      "section": "1. Pourquoi mesurer",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Par quels 3 indicateurs démarrer une démarche de mesure ?",
+      "verso": "Un indicateur de volume (trafic), un de qualité (taux de conversion), un de valeur (CA généré).\nEt commencer par un audit des dépenses des 6 derniers mois : « poches de performance » et « zones de fuite budgétaire »."
+    },
+    {
+      "id": "b3-r07-fc-003",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles familles de KPI correspondent aux objectifs marketing (module « Fondamentaux ») ?",
+      "verso": "Faire connaître → visibilité et notoriété. Créer l'engagement → interaction. Générer des leads → génération de prospects. Convertir → performance commerciale. Fidéliser → rétention et fidélisation.\nPiège : le module SMART en compte 4 (visibilité, engagement, conversion, coût et rentabilité)."
+    },
+    {
+      "id": "b3-r07-fc-004",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Impressions, reach, fréquence, share of voice : quelles définitions ?",
+      "verso": "Impressions : nombre total d'affichages, vus ou non. Reach (portée) : personnes uniques touchées. Fréquence = impressions / reach.\nShare of voice (part de voix) : visibilité de la marque par rapport aux concurrents sur un sujet."
+    },
+    {
+      "id": "b3-r07-fc-005",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 1,
+      "type": "chiffre",
+      "recto": "Comment calcule-t-on le taux d'engagement et le taux de rebond ? Quel seuil de rebond inquiète ?",
+      "verso": "Engagement = interactions (likes, commentaires, partages, clics) / portée × 100.\nRebond = visiteurs n'ayant vu qu'une page / total des visiteurs × 100 ; au-delà de 40 %, il faut s'inquiéter."
+    },
+    {
+      "id": "b3-r07-fc-006",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Pourquoi l'engagement ne suffit-il pas à juger une action ?",
+      "verso": "Engagement ≠ performance commerciale. Croiser engagement brut (likes) et engagement utile (clics, conversions).\nBeaucoup de likes, peu de clics : décalage entre intérêt et intention d'achat. Fort clic, conversion décevante : décalage entre promesse publicitaire et offre réelle."
+    },
+    {
+      "id": "b3-r07-fc-007",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 1,
+      "type": "chiffre",
+      "recto": "Taux de conversion et panier moyen : quelles formules ? Exemple : 300 commandes pour 10 000 visiteurs.",
+      "verso": "Conversion = conversions / visiteurs uniques × 100 = 3 %.\nPanier moyen = CA / nombre de commandes.\nMéthode : partir de l'objectif business et remonter le parcours (ajout au panier, finalisation, conversion par source)."
+    },
+    {
+      "id": "b3-r07-fc-008",
+      "section": "3. Les familles de KPI marketing",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "ROAS et ROI : quelle différence ?",
+      "verso": "ROAS (Return On Ad Spend) = CA généré / dépense publicitaire ; 4,2 = 4,20 € de CA pour 1 € investi.\nROI = (gain − coût) / coût × 100 : rentabilité globale.\nPiège : le module écrit « ROI de 400 % (4 € de CA pour 1 €) » — c'est un ROAS de 4."
+    },
+    {
+      "id": "b3-r07-fc-009",
+      "section": "4. Action ou résultat : éviter les vanity metrics",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Métriques d'action et métriques de résultat : quelle différence, et sur lesquelles piloter ?",
+      "verso": "Action : ce que l'on fait (posts publiés, e-mails envoyés, campagnes lancées).\nRésultat : ce que l'on obtient (engagement, conversions, revenus).\nSuivre les deux, piloter sur les résultats : « vos actions ne valent que par les résultats qu'elles produisent »."
+    },
+    {
+      "id": "b3-r07-fc-010",
+      "section": "4. Action ou résultat : éviter les vanity metrics",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce qu'une vanity metric ? Donnez un exemple.",
+      "verso": "Une métrique de vanité flatte l'ego et donne une impression de succès sans contribuer aux objectifs business.\nEx. : nombre de followers qui n'achètent pas, taux d'ouverture élevé sans clic ni conversion, likes non reliés aux inscriptions."
+    },
+    {
+      "id": "b3-r07-fc-011",
+      "section": "5. Hiérarchiser : la pyramide des KPI",
+      "niveau": 1,
+      "type": "chiffre",
+      "recto": "Combien de KPI à chaque niveau de la pyramide, pour qui ?",
+      "verso": "Stratégique : 2-3 KPI (part de marché, CLV, NPS), pour la direction.\nTactique : 5-7 KPI (CPA par canal, conversion, CA par source), pour les responsables.\nOpérationnel : 10-15 KPI (trafic, engagement, conversions du jour), pour les gestionnaires de campagne."
+    },
+    {
+      "id": "b3-r07-fc-012",
+      "section": "6. Aligner chaque KPI sur un objectif",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles deux questions poser pour chaque KPI, et quels outils d'alignement le module propose-t-il ?",
+      "verso": "« Pourquoi ce KPI est-il suivi ? » et « À quelle décision sert-il ? »\nOutils : matrice d'alignement KPI × objectifs (avec l'action déclenchée), revue trimestrielle avec la direction, « KPI Kill Process » (supprimer chaque trimestre les KPI qui n'ont servi à aucune décision)."
+    },
+    {
+      "id": "b3-r07-fc-013",
+      "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+      "niveau": 2,
+      "type": "definition",
+      "recto": "Qu'est-ce que le ROPO, et quelle erreur évite la mesure cross-device ?",
+      "verso": "Research Online, Purchase Offline : s'informer sur un support (souvent mobile), acheter sur un autre.\nTechnoSport : mobile = 60 % du trafic mais 35 % des conversions. Sans mesure cross-device, on couperait à tort le mobile, qui génère la demande.\nParades : GA + CRM, User-ID, CDP."
+    },
+    {
+      "id": "b3-r07-fc-014",
+      "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Last-Click, First-Click, Linéaire, Time-Decay : comment chacun répartit-il le crédit d'une conversion ?",
+      "verso": "Last-Click : 100 % au dernier contact (favorise search payant, e-mail, remarketing).\nFirst-Click : 100 % au premier (valorise la découverte).\nLinéaire : parts égales entre tous.\nTime-Decay : crédit croissant à l'approche de l'achat."
+    },
+    {
+      "id": "b3-r07-fc-015",
+      "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+      "niveau": 1,
+      "type": "chiffre",
+      "recto": "Modèle Position-Based (en U) et modèle Data-Driven : principe et usage ?",
+      "verso": "En U : 40 % au premier contact, 40 % au dernier, 20 % aux intermédiaires ; compromis acquisition + conversion, adapté aux cycles longs (B2B).\nData-Driven : crédit calculé par apprentissage automatique ; prérequis : gros volume de données, GA4 ou Adobe Analytics, compétences."
+    },
+    {
+      "id": "b3-r07-fc-016",
+      "section": "7. Mesurer un parcours fragmenté : attribution et cross-device",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Associez un modèle d'attribution à chaque contexte : achat impulsif en 24-48 h ; marque qui investit en notoriété ; B2B à cycle de 6 mois ; budgets équilibrés acquisition/remarketing ; retailer omnicanal.",
+      "verso": "Impulsif → Last-Click. Notoriété → First-Click. B2B cycle long → Position-Based (en U). Budgets équilibrés → Linéaire. Omnicanal avec ventes en magasin → Data-Driven avec intégration offline."
+    }
+  ]
+}

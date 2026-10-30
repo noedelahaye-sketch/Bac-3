@@ -1,0 +1,843 @@
+{
+  "resume": "b3-r06",
+  "titre": "Mesurer la satisfaction, analyser et restituer les résultats",
+  "bloc": 3,
+  "questions": [
+    {
+      "id": "b3-r06-qz-001",
+      "section": "1. Pourquoi mesurer la satisfaction",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quels sont les objectifs de la mesure de la satisfaction client ? (3 réponses)",
+      "options": [
+        "évaluer l'expérience client à chaque interaction",
+        "remplacer les indicateurs commerciaux",
+        "identifier les points d'amélioration",
+        "anticiper les besoins, une baisse soudaine signalant un problème émergent",
+        "réduire le nombre de canaux"
+      ],
+      "reponse": [
+        0,
+        2,
+        3
+      ],
+      "explication": "Quatre objectifs : évaluer l'expérience, identifier les points d'amélioration, anticiper les besoins, fidéliser et faire recommander."
+    },
+    {
+      "id": "b3-r06-qz-002",
+      "section": "1. Pourquoi mesurer la satisfaction",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les indicateurs de satisfaction peuvent refléter la performance des employés.",
+      "reponse": true,
+      "explication": "Vrai. L'engagement des employés figure parmi les 5 avantages de la mesure : des clients satisfaits peuvent être le résultat d'employés engagés et bien formés. Les autres : amélioration continue, décisions sur preuves, différenciation, réduction des réclamations."
+    },
+    {
+      "id": "b3-r06-qz-003",
+      "section": "1. Pourquoi mesurer la satisfaction",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi le taux de conversion et le coût d'acquisition ne suffisent-ils pas à piloter la relation client ?",
+      "options": [
+        "parce qu'ils sont trop difficiles à calculer",
+        "parce qu'ils ne disent rien de ce que ressent le client ni de sa propension à rester",
+        "parce qu'ils sont interdits par le RGPD",
+        "parce qu'ils ne concernent que le B2B"
+      ],
+      "reponse": 1,
+      "explication": "Ces indicateurs disent si une campagne est efficace, pas ce que ressent le client. La satisfaction est un levier de création de valeur, corrélé à la CLV, donc au ROI."
+    },
+    {
+      "id": "b3-r06-qz-004",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque indicateur à ce qu'il mesure.",
+      "colonne_a": [
+        "CSAT",
+        "NPS",
+        "CES"
+      ],
+      "colonne_b": [
+        "L'effort fourni pour obtenir une réponse ou accomplir une tâche",
+        "La satisfaction ponctuelle après une interaction précise",
+        "La propension à recommander, l'attachement à la marque"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Ce sont des indicateurs d'attitude : ils mesurent ce que le client déclare. Le CSAT porte sur le résultat immédiat, le NPS sur la relation globale, le CES sur la facilité du processus."
+    },
+    {
+      "id": "b3-r06-qz-005",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Résultats d'une enquête : 10 % pas du tout satisfaits, 15 % peu satisfaits, 45 % plutôt satisfaits, 30 % très satisfaits. Quel est le CSAT ?",
+      "options": [
+        "30 %",
+        "45 %",
+        "50 %",
+        "75 %"
+      ],
+      "reponse": 3,
+      "explication": "CSAT = % de satisfaits = 45 + 30 = 75 %. Chaque entreprise décide des notes qui valent « satisfait » (en général 4-5 sur 5)."
+    },
+    {
+      "id": "b3-r06-qz-006",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans quel délai le module conseille-t-il d'envoyer une enquête CSAT ?",
+      "options": [
+        "au plus près de l'expérience, idéalement sous 24 à 48 heures",
+        "30 jours après l'achat",
+        "une fois par an",
+        "uniquement après une réclamation"
+      ],
+      "reponse": 0,
+      "explication": "La proximité temporelle garantit une mémoire précise. On personnalise aussi la formulation (« résolution de votre problème », « votre commande ») et on fixe des objectifs canal par canal."
+    },
+    {
+      "id": "b3-r06-qz-007",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Les supports du bloc s'accordent tous sur une seule échelle pour le CSAT.",
+      "reponse": false,
+      "explication": "Faux. Le cours « Indicateurs » propose 1 à 5 ou 1 à 7 ; le module NPS/CSAT/CES 1 à 5 ou 1 à 10 (satisfaits = 4-5 sur 5 ou 8-10 sur 10). L'échelle se choisit, puis ne change plus."
+    },
+    {
+      "id": "b3-r06-qz-008",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition du NPS.",
+      "texte": "La question porte sur une échelle de {1}. Les promoteurs donnent {2}, les passifs {3}, les détracteurs {4}. NPS = % de promoteurs − % de {5}.",
+      "trous": [
+        "0 à 10",
+        "9 ou 10",
+        "7 ou 8",
+        "0 à 6",
+        "détracteurs"
+      ],
+      "explication": "Le NPS (Fred Reichheld, 2003) varie de −100 à +100 et s'exprime en points. Les passifs ne comptent pas dans le calcul."
+    },
+    {
+      "id": "b3-r06-qz-009",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Une enquête donne 60 % de promoteurs, 20 % de passifs et 20 % de détracteurs. Quel est le NPS ?",
+      "options": [
+        "+ 60",
+        "+ 80",
+        "+ 20",
+        "+ 40"
+      ],
+      "reponse": 3,
+      "explication": "NPS = 60 − 20 = + 40. Selon les seuils du module, c'est la limite entre « satisfaisant » (+20 à +40) et « base réellement attachée » (> +40)."
+    },
+    {
+      "id": "b3-r06-qz-010",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "TechnoSport obtient 25 % de promoteurs, 60 % de passifs et 15 % de détracteurs. Le support annonce un NPS de + 15. Qu'en dire ?",
+      "options": [
+        "c'est exact",
+        "le NPS ne peut pas être calculé sans les passifs",
+        "le calcul donne + 40",
+        "le calcul donne + 10 : il faut toujours poser le calcul"
+      ],
+      "reponse": 3,
+      "explication": "NPS = 25 − 15 = + 10. Le support se trompe : à l'examen, pose toujours le calcul."
+    },
+    {
+      "id": "b3-r06-qz-011",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un NPS de 0 est déjà un résultat préoccupant.",
+      "reponse": true,
+      "explication": "Vrai. Il révèle un équilibre entre promoteurs et détracteurs, donc une absence d'enthousiasme. Seuils : < 0 alarme ; 0 à +20 perfectible ; +20 à +40 satisfaisant ; > +40 excellent."
+    },
+    {
+      "id": "b3-r06-qz-012",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi calculer le NPS par segment (canal d'acquisition, zone, gamme) ?",
+      "options": [
+        "pour augmenter artificiellement le score",
+        "parce que le NPS global est interdit",
+        "parce qu'un score agrégé masque des problèmes localisés",
+        "pour réduire le nombre de répondants"
+      ],
+      "reponse": 2,
+      "explication": "Chez TechnoSport, les clients venus des réseaux sociaux affichent + 45, ceux des comparateurs de prix + 12 : d'où une réallocation de 30 % du budget média vers les réseaux sociaux."
+    },
+    {
+      "id": "b3-r06-qz-013",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Quand envoyer l'enquête NPS en B2C et en B2B, selon le module ?",
+      "options": [
+        "le jour de l'achat dans les deux cas",
+        "7 jours après livraison en B2C, 30 jours après achat en B2B",
+        "30 jours en B2C, 7 jours en B2B",
+        "une fois par an dans les deux cas"
+      ],
+      "reponse": 1,
+      "explication": "En B2C, 7 jours après livraison : entre réception et oubli. En B2B, 30 jours : le temps de tester en conditions réelles."
+    },
+    {
+      "id": "b3-r06-qz-014",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 3,
+      "format": "texte_a_trous",
+      "question": "Complétez la valeur prédictive du NPS selon le module.",
+      "texte": "Une amélioration d'un point de NPS correspond à environ {1} de rétention sur douze mois. Les promoteurs génèrent un CA récurrent {2} fois supérieur aux passifs.",
+      "trous": [
+        "+12 à 15 %",
+        "2,3"
+      ],
+      "explication": "Ce lien permet de quantifier l'impact financier des investissements en expérience client."
+    },
+    {
+      "id": "b3-r06-qz-015",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Résultats d'une enquête d'effort : 10 % très difficile, 15 % assez difficile, 15 % neutre, 40 % assez facile, 20 % très facile. Quel est le CES selon le cours « Indicateurs » ?",
+      "options": [
+        "+ 35",
+        "− 35",
+        "60 %",
+        "− 60"
+      ],
+      "reponse": 1,
+      "explication": "CES = % difficile − % facile = (10 + 15) − (40 + 20) = − 35. Plus il est bas, mieux c'est ; l'idéal tend vers − 100."
+    },
+    {
+      "id": "b3-r06-qz-016",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un client résolu rapidement mais au prix d'un effort élevé rachète en général davantage qu'un client qui a vécu une expérience fluide mais plus lente.",
+      "reponse": false,
+      "explication": "Faux. C'est le paradoxe de l'effort : avec un CES > 5, la probabilité de rachat est inférieure de 40 %. Un effort post-achat excessif augmente le churn de 35 à 50 %. Il faut privilégier la fluidité sur la vitesse."
+    },
+    {
+      "id": "b3-r06-qz-017",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Des clients ont un NPS élevé, un CSAT moyen sur la commande et un CES dégradé au SAV. Comment le module les qualifie-t-il ?",
+      "options": [
+        "des ambassadeurs à recruter",
+        "des passifs sans risque",
+        "des clients « satisfaits mais frustrés », segment à risque",
+        "des détracteurs"
+      ],
+      "reponse": 2,
+      "explication": "Ces clients rachètent 25 % de moins que la moyenne : un segment à risque invisible si l'on ne regarde qu'un indicateur. D'où l'intérêt de croiser les trois mesures."
+    },
+    {
+      "id": "b3-r06-qz-018",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La « note de satisfaction globale d'au moins 4,3/5 » du brief du CEO de PrepMyMeal est une note moyenne, pas un CSAT au sens strict.",
+      "reponse": true,
+      "explication": "Vrai. Le CSAT est un pourcentage de satisfaits ; le brief fixe une note moyenne. En Q7, propose le CSAT et le NPS en précisant le calcul de chacun."
+    },
+    {
+      "id": "b3-r06-qz-019",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Quelles vues le module recommande-t-il d'ajouter au tableau de bord mensuel pour convaincre la direction ?",
+      "options": [
+        "« Revenue per NPS Tier » et « Churn per CES Tier »",
+        "le nombre de likes et de followers",
+        "le taux d'ouverture et de clic",
+        "la part de voix et le reach"
+      ],
+      "reponse": 0,
+      "explication": "CA par tranche de NPS et churn par tranche de CES : ces vues relient directement la satisfaction aux indicateurs financiers."
+    },
+    {
+      "id": "b3-r06-qz-020",
+      "section": "3. Les autres indicateurs quantitatifs",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "100 000 clients en début de période, 10 000 perdus, 20 000 nouveaux, 110 000 en fin de période. Quel est le taux de rétention ?",
+      "options": [
+        "110 %",
+        "100 %",
+        "80 %",
+        "90 %"
+      ],
+      "reponse": 3,
+      "explication": "Rétention = (clients finaux − nouveaux) / clients initiaux × 100 = (110 000 − 20 000) / 100 000 = 90 %. Il faut retirer les nouveaux, sinon on gonfle la rétention."
+    },
+    {
+      "id": "b3-r06-qz-021",
+      "section": "3. Les autres indicateurs quantitatifs",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Avec les mêmes données (100 000 clients initiaux, 10 000 perdus), quel est le taux de churn ?",
+      "options": [
+        "10 %",
+        "20 %",
+        "9 %",
+        "11 %"
+      ],
+      "reponse": 0,
+      "explication": "Churn = clients perdus / clients initiaux × 100 = 10 %. Ici, rétention + churn = 100 % car tous les clients initiaux sont soit restés, soit partis."
+    },
+    {
+      "id": "b3-r06-qz-022",
+      "section": "3. Les autres indicateurs quantitatifs",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un magasin en ligne enregistre 2 000 achats sur l'année pour 500 clients uniques. Quelle est la fréquence moyenne d'achat ?",
+      "options": [
+        "0,25",
+        "2,5",
+        "40",
+        "4"
+      ],
+      "reponse": 3,
+      "explication": "Fréquence = achats / clients uniques = 2 000 / 500 = 4. Élevée : fidélité, demande continue ; faible : concurrence, offre étroite ou service à revoir."
+    },
+    {
+      "id": "b3-r06-qz-023",
+      "section": "3. Les autres indicateurs quantitatifs",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un taux de rétention de 30 % peut être normal dans le commerce digital, même s'il serait faible dans la banque.",
+      "reponse": true,
+      "explication": "Vrai. Repères du cours : environ 75 % dans la banque, environ 30 % dans le commerce digital. Ne jamais comparer un taux à un autre secteur."
+    },
+    {
+      "id": "b3-r06-qz-024",
+      "section": "3. Les autres indicateurs quantitatifs",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "À quelle famille d'indicateurs appartient le « taux de réachat ≥ 25 % » du brief du CEO ?",
+      "options": [
+        "aux indicateurs d'attitude",
+        "aux indicateurs de notoriété",
+        "aux indicateurs de rétention (comportementaux)",
+        "aux indicateurs de visibilité"
+      ],
+      "reponse": 2,
+      "explication": "Rétention, churn et fréquence d'achat sont des indicateurs comportementaux : ils mesurent ce que le client fait, pas ce qu'il dit. L'annexe 1 donne déjà des fréquences et des taux de fidélité par segment."
+    },
+    {
+      "id": "b3-r06-qz-025",
+      "section": "4. Les indicateurs qualitatifs",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque méthode qualitative à son usage.",
+      "colonne_a": [
+        "Entretien individuel en profondeur",
+        "Entretien semi-structuré",
+        "Focus group de testeurs",
+        "Focus group d'utilisateurs potentiels"
+      ],
+      "colonne_b": [
+        "Recueillir l'avis de non-clients face à un prototype",
+        "Comprendre l'insatisfaction d'un client mécontent",
+        "Questions préparées + relances selon les réponses",
+        "Impressions détaillées après un bêta-test"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "Autres formes : entretiens de groupe avec des experts, focus groups de consommateurs et de brainstorming. La constitution de panels homogènes et ciblés est déterminante."
+    },
+    {
+      "id": "b3-r06-qz-026",
+      "section": "4. Les indicateurs qualitatifs",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la méthode d'analyse des verbatims proposée par le module.",
+      "elements": [
+        "Classer en plan d'action à 3 niveaux",
+        "Catégoriser les commentaires (produit, livraison, SAV, prix…)",
+        "Quantifier la fréquence de chaque thème",
+        "Diffuser un top 3 mensuel des irritants"
+      ],
+      "ordre": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "explication": "Catégoriser → quantifier (text mining) → plan à 3 niveaux → top 3 des irritants partagé avec les équipes. Garder la même codification dans le temps."
+    },
+    {
+      "id": "b3-r06-qz-027",
+      "section": "4. Les indicateurs qualitatifs",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez le plan d'action à 3 niveaux pour classer les verbatims.",
+      "texte": "« {1} » pour les irritants critiques ; « {2} » pour les améliorations souhaitables ; « {3} ».",
+      "trous": [
+        "Corriger immédiatement",
+        "Améliorer sous 3 mois",
+        "Opportunités d'innovation"
+      ],
+      "explication": "On documente les progrès et on les aligne sur les cycles budgétaires."
+    },
+    {
+      "id": "b3-r06-qz-028",
+      "section": "4. Les indicateurs qualitatifs",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans les avis Trustpilot de PrepMyMeal, dans quelle catégorie du plan à 3 niveaux classer les problèmes de livraison ?",
+      "options": [
+        "« Corriger immédiatement »",
+        "« Améliorer sous 3 mois »",
+        "« Opportunités d'innovation »",
+        "aucune, car ils viennent du transporteur"
+      ],
+      "reponse": 0,
+      "explication": "La livraison est le point de défaillance du parcours : irritant critique. Les bugs du site relèvent plutôt du « sous 3 mois », la demande de variété des « opportunités d'innovation ». Le transporteur est un partenaire à associer aux solutions."
+    },
+    {
+      "id": "b3-r06-qz-029",
+      "section": "4. Les indicateurs qualitatifs",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "L'observation des clients réduit les biais liés aux réponses déclaratives.",
+      "reponse": true,
+      "explication": "Vrai. Elle capte les comportements réels, les expressions et signaux non verbaux, sans interroger. Au foodtruck : file d'attente, abandons avant la caisse, réactions à la dégustation."
+    },
+    {
+      "id": "b3-r06-qz-030",
+      "section": "5. Analyser les résultats",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Pour représenter l'évolution de la satisfaction sur douze mois, quel type de graphique utiliser ?",
+      "options": [
+        "un graphique de structure (camembert)",
+        "un nuage de points",
+        "un tableau sans graphique",
+        "un graphique de variation (courbe)"
+      ],
+      "reponse": 3,
+      "explication": "Graphiques de variation (courbes, histogrammes) = évolution dans le temps ; graphiques de structure (camemberts) = répartition à un instant donné. Toujours un titre, une légende et l'effectif."
+    },
+    {
+      "id": "b3-r06-qz-031",
+      "section": "5. Analyser les résultats",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Comment analyse-t-on des données qualitatives, selon le cours ?",
+      "options": [
+        "par personne interrogée, puis question par question",
+        "uniquement par tri à plat",
+        "par régression multivariée",
+        "en ne gardant que les réponses positives"
+      ],
+      "reponse": 0,
+      "explication": "On analyse par personne puis par question, avec une présentation par question ou par critère, des intertitres et des extraits d'entretiens. Le quantitatif passe par tris à plat et tris croisés."
+    },
+    {
+      "id": "b3-r06-qz-032",
+      "section": "5. Analyser les résultats",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "On peut mélanger des échelles de 1 à 5 et de 1 à 10 selon les enquêtes sans gêner les comparaisons dans le temps.",
+      "reponse": false,
+      "explication": "Faux. Il faut standardiser les échelles (une seule, 1-5 ou 1-10) dans toutes les enquêtes, sinon les comparaisons temporelles deviennent impossibles. TechnoSport standardise sur 1-10."
+    },
+    {
+      "id": "b3-r06-qz-033",
+      "section": "5. Analyser les résultats",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 4 étapes d'analyse des tendances de satisfaction (module).",
+      "elements": [
+        "Analyser les corrélations satisfaction / comportement d'achat",
+        "Calculer l'évolution temporelle des scores",
+        "Repérer les segments atypiques",
+        "Segmenter par cohortes d'acquisition"
+      ],
+      "ordre": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "explication": "Évolution temporelle → cohortes → corrélations → segments atypiques. La régression hiérarchise ensuite les facteurs (livraison 35 % de la variance du NPS chez TechnoSport)."
+    },
+    {
+      "id": "b3-r06-qz-034",
+      "section": "5. Analyser les résultats",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Le NPS global de TechnoSport progresse de + 15 à + 28, mais les nouveaux clients sont à + 35 et les historiques à + 18. Que révèle cette analyse longitudinale ?",
+      "options": [
+        "que les améliorations profitent surtout aux nouveaux parcours, pas aux clients existants",
+        "que le NPS global est faux",
+        "que les clients historiques sont des détracteurs",
+        "que la promotion a fonctionné"
+      ],
+      "reponse": 0,
+      "explication": "La moyenne cache deux réalités. L'analyse par cohortes montre aussi que les clients acquis en promotion ont un NPS inférieur de 8 points : la promotion crée des attentes que l'offre ne tient pas."
+    },
+    {
+      "id": "b3-r06-qz-035",
+      "section": "5. Analyser les résultats",
+      "niveau": 3,
+      "format": "texte_a_trous",
+      "question": "Complétez les seuils d'alerte de satisfaction proposés par le module.",
+      "texte": "Une investigation se déclenche si le NPS passe sous {1}, si le CSAT passe sous {2}, ou si le CES dépasse {3}.",
+      "trous": [
+        "+20",
+        "3,5/5",
+        "5"
+      ],
+      "explication": "Exemple : le NPS de TechnoSport tombe de + 28 à + 21 en deux semaines ; l'alerte révèle un bug de l'app de commande, corrigé en 48 h."
+    },
+    {
+      "id": "b3-r06-qz-036",
+      "section": "5. Analyser les résultats",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Explicitez la méthodologie d'analyse des résultats de l'enquête PrepMyMeal demandée en Q6 (taille de l'échantillon, taux de réponse, méthodes statistiques).",
+      "attendus": [
+        "Contrôler la base : nombre de répondants, taux de réponse par canal, respect des quotas, redressement si un segment manque",
+        "Tri à plat de chaque question ; calcul du CSAT, du NPS (% promoteurs − % détracteurs) et du CES",
+        "Tris croisés par segment (jeunes actifs, sportifs, bien-être, nouveaux), par ville du foodtruck et par canal",
+        "Codification des verbatims et top 3 des irritants",
+        "Restitution en graphiques (courbes, barres) avec titre, légende, effectif ; plan d'action à 3 niveaux"
+      ],
+      "explication": "Le critère cite explicitement la taille de l'échantillon, le taux de réponse et les méthodes statistiques : reprends ces mots."
+    },
+    {
+      "id": "b3-r06-qz-037",
+      "section": "6. Restituer les résultats",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels inconvénients le cours attribue-t-il à la restitution « classique » (rapport écrit et soutenance) ? (3 réponses)",
+      "options": [
+        "un manque de clarté et d'efficacité",
+        "un rapport dense, ou au contraire trop simplifié",
+        "l'impossibilité d'ajouter des graphiques",
+        "une dépendance à l'aisance orale du présentateur",
+        "l'obligation d'un serveur web"
+      ],
+      "reponse": [
+        0,
+        1,
+        3
+      ],
+      "explication": "S'y ajoute un public parfois peu au fait des objectifs. Alternatives : le web-reporting (rapport sur un serveur, commenté en temps réel) et l'application web dynamique."
+    },
+    {
+      "id": "b3-r06-qz-038",
+      "section": "6. Restituer les résultats",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Avec une application web dynamique de restitution, quel rôle garde le chargé d'études ?",
+      "options": [
+        "aucun : l'outil fait tout",
+        "préparer un plan de tri et une arborescence d'accès ; on ne sous-traite pas l'analyse au commanditaire",
+        "imprimer le rapport",
+        "répondre aux questions par téléphone"
+      ],
+      "reponse": 1,
+      "explication": "L'utilisateur navigue dans des résultats calculés en temps réel, mais dans une structure préparée pour lui. Variante : le logiciel de traitement en ligne (Survey-Dashboard de So Concept)."
+    },
+    {
+      "id": "b3-r06-qz-039",
+      "section": "6. Restituer les résultats",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le CAWI automatise non seulement l'administration de l'enquête en ligne, mais aussi son traitement.",
+      "reponse": true,
+      "explication": "Vrai. Les logiciels livrent vite des résultats graphiques, et certains (Ethnos) proposent même automatiquement une matrice d'action."
+    },
+    {
+      "id": "b3-r06-qz-040",
+      "section": "7. Communiquer les résultats selon le destinataire",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque destinataire des résultats au message qu'il faut lui adresser.",
+      "colonne_a": [
+        "Collaborateurs",
+        "Managers",
+        "Clients",
+        "Prospects",
+        "Partenaires"
+      ],
+      "colonne_b": [
+        "Remerciement et actions menées suite à l'enquête",
+        "Résultats de leur équipe et actions concrètes à mener",
+        "Points forts comme argument de vente (« X % de clients satisfaits »)",
+        "Leur rôle direct dans la satisfaction client",
+        "Leur part dans la satisfaction des clients communs, ce qui les concerne"
+      ],
+      "paires": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "explication": "Un message par destinataire, sur le canal adapté (réunions en face à face pour les équipes, en ligne pour les clients)."
+    },
+    {
+      "id": "b3-r06-qz-041",
+      "section": "7. Communiquer les résultats selon le destinataire",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Pour préserver la motivation des équipes et l'image de la marque, il est préférable de taire les résultats négatifs d'une enquête.",
+      "reponse": false,
+      "explication": "Faux. La transparence est essentielle : cacher le négatif porte préjudice à la confiance. La reconnaître pousse les destinataires à collaborer aux solutions."
+    },
+    {
+      "id": "b3-r06-qz-042",
+      "section": "7. Communiquer les résultats selon le destinataire",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 6 étapes pour impliquer les destinataires dans les actions correctives.",
+      "elements": [
+        "Définir des plans d'action SMART",
+        "Analyser ensemble les résultats",
+        "Communiquer régulièrement sur les avancées",
+        "Identifier les actions prioritaires avec eux",
+        "Impliquer également les clients",
+        "Encourager les initiatives et récompenser"
+      ],
+      "ordre": [
+        1,
+        3,
+        0,
+        5,
+        2,
+        4
+      ],
+      "explication": "Analyser ensemble → prioriser → plans SMART → initiatives et reconnaissance → communication régulière (célébrer les succès) → impliquer les clients (focus groups)."
+    },
+    {
+      "id": "b3-r06-qz-043",
+      "section": "7. Communiquer les résultats selon le destinataire",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Les avis Trustpilot de PrepMyMeal mettent en cause le transporteur. À quel destinataire faut-il communiquer ce résultat ?",
+      "options": [
+        "uniquement à la direction",
+        "à personne, pour ne pas froisser le partenaire",
+        "aux prospects, pour expliquer les retards",
+        "au partenaire logistique, que le résultat concerne directement"
+      ],
+      "reponse": 3,
+      "explication": "Les partenaires sont des destinataires à part entière : on leur partage ce qui les concerne et on les inclut dans la recherche de solutions communes."
+    },
+    {
+      "id": "b3-r06-qz-044",
+      "section": "8. La boucle de rétroaction",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle étape boucle la boucle de rétroaction dans l'exemple du restaurant ?",
+      "options": [
+        "embaucher du personnel",
+        "supprimer les avis négatifs",
+        "baisser les prix",
+        "envoyer une nouvelle enquête pour vérifier que les clients perçoivent l'amélioration"
+      ],
+      "reponse": 3,
+      "explication": "Enquête → analyse → tendance → décision → mise en œuvre et surveillance → nouvelle enquête de vérification → hausse de la satisfaction et de la réputation."
+    },
+    {
+      "id": "b3-r06-qz-045",
+      "section": "8. La boucle de rétroaction",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que contient le « tableau de transformation des insights » du module ?",
+      "options": [
+        "chaque verbatim ou tendance, priorisé selon son impact business, avec un pilote, une deadline et un KPI de succès",
+        "la liste des clients mécontents à relancer",
+        "les scores NPS par ville",
+        "le budget marketing annuel"
+      ],
+      "reponse": 0,
+      "explication": "Suivi mensuel, revue trimestrielle, triggers automatisés dans le CRM, indicateur de satisfaction dans les objectifs individuels : l'insight devient un projet."
+    },
+    {
+      "id": "b3-r06-qz-046",
+      "section": "8. La boucle de rétroaction",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un NPS qui progresse sans effet sur les indicateurs business révèle que les insights ne sont pas transformés en améliorations opérationnelles.",
+      "reponse": true,
+      "explication": "Vrai, c'est un « fondamental » du module : il faut relier, chiffres à l'appui, satisfaction et performance commerciale."
+    },
+    {
+      "id": "b3-r06-qz-047",
+      "section": "8. La boucle de rétroaction",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi limiter les sollicitations à une enquête par client et par trimestre ?",
+      "options": [
+        "pour respecter le RGPD",
+        "parce que les outils gratuits sont limités",
+        "parce que la fatigue d'enquête fait baisser les réponses et biaise les résultats vers les plus mécontents",
+        "pour réduire les coûts d'impression"
+      ],
+      "reponse": 2,
+      "explication": "Seuls les plus mécontents restent motivés à répondre. On sollicite de préférence après un moment positif, avec des modèles personnalisés (+35 % de taux de réponse chez TechnoSport)."
+    },
+    {
+      "id": "b3-r06-qz-048",
+      "section": "9. L'audit client",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce qui distingue l'audit client de l'audit interne ?",
+      "options": [
+        "l'audit client est toujours externe, l'audit interne toujours interne",
+        "l'audit client analyse la satisfaction et les attentes des clients ; l'audit interne la conformité des processus et des contrôles",
+        "l'audit client ne porte que sur les prix",
+        "il n'y a aucune différence"
+      ],
+      "reponse": 1,
+      "explication": "L'audit client peut être mené par une équipe interne ou un auditeur externe. L'audit interne vérifie la conformité et identifie les risques opérationnels."
+    },
+    {
+      "id": "b3-r06-qz-049",
+      "section": "9. L'audit client",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 5 étapes de préparation d'un audit client.",
+      "elements": [
+        "Former les équipes internes",
+        "Établir le périmètre et les objectifs",
+        "Planifier et organiser les étapes",
+        "Préparer la documentation (listes de contrôle, guides d'entretien)",
+        "Collecter les données pertinentes"
+      ],
+      "ordre": [
+        1,
+        4,
+        3,
+        0,
+        2
+      ],
+      "explication": "Périmètre et objectifs → collecte → documentation → formation des équipes → planification."
+    },
+    {
+      "id": "b3-r06-qz-050",
+      "section": "9. L'audit client",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les règles mutuelles pour un audit client bénéfique ? (3 réponses)",
+      "options": [
+        "établir une relation de confiance",
+        "respecter la confidentialité des informations",
+        "garder les résultats secrets vis-à-vis de l'entreprise",
+        "promouvoir une communication ouverte et constructive",
+        "limiter les échanges au strict minimum"
+      ],
+      "reponse": [
+        0,
+        1,
+        3
+      ],
+      "explication": "Quatre règles : confiance, rôles et responsabilités clarifiés, confidentialité, communication ouverte et constructive."
+    },
+    {
+      "id": "b3-r06-qz-051",
+      "section": "9. L'audit client",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Laquelle n'est PAS une méthodologie d'audit citée par le cours ?",
+      "options": [
+        "l'audit basé sur les risques",
+        "l'audit par échantillonnage",
+        "l'audit analytique",
+        "l'audit par benchmark tarifaire"
+      ],
+      "reponse": 3,
+      "explication": "Les quatre méthodologies : basé sur les risques, par échantillonnage, analytique, par procédure. Techniques : analyse documentaire, entretiens, questionnaires, observation, tests de conformité."
+    },
+    {
+      "id": "b3-r06-qz-052",
+      "section": "9. L'audit client",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelles sont les 3 phases de gestion des suites d'un audit client ?",
+      "options": [
+        "rédiger, imprimer, archiver",
+        "sanctionner, former, recruter",
+        "suivre les actions correctives, évaluer leur efficacité, nourrir l'amélioration continue",
+        "communiquer, oublier, recommencer"
+      ],
+      "reponse": 2,
+      "explication": "Le suivi vérifie délais et normes, l'évaluation compare avant et après, l'amélioration continue capitalise les apprentissages."
+    },
+    {
+      "id": "b3-r06-qz-053",
+      "section": "10. Application : passer de l'avis client à l'action",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Des clients d'un fabricant de meubles en kit écrivent « je pensais qu'il était livré monté » et « la notice est incompréhensible ». Quelle lecture et quelle action ?",
+      "options": [
+        "les clients sont de mauvaise foi : ne rien changer",
+        "baisser les prix",
+        "l'information sur le montage est absente ou peu visible : l'afficher clairement, ajouter des tutoriels vidéo, simplifier la notice",
+        "arrêter la vente en ligne"
+      ],
+      "reponse": 2,
+      "explication": "Un avis négatif est utile : il donne les clés pour ne pas reproduire l'erreur. La démarche : synthétiser en problématiques, prioriser, proposer une réponse par problème, prévoir une mesure de contrôle."
+    }
+  ]
+}

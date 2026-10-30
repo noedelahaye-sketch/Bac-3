@@ -1,0 +1,135 @@
+{
+  "resume": "b3-r09",
+  "titre": "Analyser les écarts et formuler des recommandations",
+  "bloc": 3,
+  "cartes": [
+    {
+      "id": "b3-r09-fc-001",
+      "section": "1. Analyser un écart en 4 étapes",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 étapes d'analyse d'un écart, et quelle question se poser avant ?",
+      "verso": "Avant : « mon objectif était-il réaliste et fondé sur des données fiables ? »\n1. Quantifier l'écart. 2. Évaluer sa significativité. 3. Segmenter. 4. Formuler des hypothèses vérifiables."
+    },
+    {
+      "id": "b3-r09-fc-002",
+      "section": "1. Analyser un écart en 4 étapes",
+      "niveau": 1,
+      "type": "chiffre",
+      "recto": "Écart absolu et écart relatif : formules ? Exemple : CAC réel 42 € pour un objectif de 50 €.",
+      "verso": "Absolu = réalisé − objectif = 42 − 50 = −8 €.\nRelatif = (réalisé − objectif) / objectif × 100 = −16 %.\nPour un taux, l'écart absolu s'exprime en points : 2,1 % pour 2,8 % = −0,7 point, soit −25 %."
+    },
+    {
+      "id": "b3-r09-fc-003",
+      "section": "1. Analyser un écart en 4 étapes",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Un écart négatif est-il toujours défavorable ?",
+      "verso": "Non : pour un coût ou un temps d'attente, un écart négatif est favorable ; pour un CA ou un taux de conversion, il est défavorable.\nToujours préciser « favorable » ou « défavorable »."
+    },
+    {
+      "id": "b3-r09-fc-004",
+      "section": "2. Contextualiser : benchmarks, cycles, événements",
+      "niveau": 1,
+      "type": "application",
+      "recto": "2,8 % de conversion pour 3,2 % visés : est-ce un échec ?",
+      "verso": "Pas forcément : si le secteur est à 2,1 %, c'est excellent. Une performance ne s'évalue jamais dans l'absolu.\nBenchmarks : sources de moins de 2 ans, de la même zone géographique."
+    },
+    {
+      "id": "b3-r09-fc-005",
+      "section": "2. Contextualiser : benchmarks, cycles, événements",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Comment la lecture croisée interne / externe oriente-t-elle le diagnostic ?",
+      "verso": "Résultats dans la fourchette historique et proches du secteur → objectifs trop ambitieux.\nRésultats en baisse quand les concurrents progressent → cause interne.\nTrafic +10 % quand le marché fait +25 % → perte de part de marché."
+    },
+    {
+      "id": "b3-r09-fc-006",
+      "section": "3. Interpréter : signal ou bruit, corrélation ou cause",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles techniques distinguent un signal faible d'une fluctuation normale, et quelles 3 vérifications faire avant d'alerter ?",
+      "verso": "Techniques : moyenne mobile sur 30 jours, écarts-types, comparaison avec l'année précédente.\nVérifications : le contexte saisonnier, les sources concernées (global ou un canal ?), les segments touchés."
+    },
+    {
+      "id": "b3-r09-fc-007",
+      "section": "4. Trouver la cause",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 5 étapes de l'investigation d'une anomalie ?",
+      "verso": "1. Circonscrire (quand, quels segments, quelle ampleur). 2. Inventorier les changements internes et externes. 3. Tester les hypothèses sur des données granulaires. 4. Valider. 5. Documenter.\nPour départager deux hypothèses : « si X, alors test Y »."
+    },
+    {
+      "id": "b3-r09-fc-008",
+      "section": "4. Trouver la cause",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que la méthode des 5 pourquoi, et à quelle condition est-elle fiable ?",
+      "verso": "Creuser chaque réponse par un nouveau « pourquoi » jusqu'à la cause racine, pour traiter la cause et non le symptôme. Un 6e pourquoi peut révéler une cause organisationnelle.\nCondition : chaque « pourquoi » s'appuie sur une donnée. Elle décloisonne (marketing, IT, produit) ; à compléter par l'Ishikawa."
+    },
+    {
+      "id": "b3-r09-fc-009",
+      "section": "5. Prioriser les actions",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Matrice impact / effort : quelles sont les 4 catégories, et comment calcule-t-on le score de priorité ?",
+      "verso": "Fort impact + faible effort : quick wins (priorité immédiate). Fort impact + fort effort : projets majeurs (à planifier). Faible impact + faible effort : projets de remplissage. Faible impact + fort effort : actions à éviter.\nScore = impact × impact / effort (notés de 1 à 5)."
+    },
+    {
+      "id": "b3-r09-fc-010",
+      "section": "6. Formuler une recommandation qui convainc",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 5 parties d'une recommandation structurée ?",
+      "verso": "1. Contexte et enjeu. 2. Analyse des données. 3. Recommandation et plan d'action. 4. Bénéfices attendus chiffrés. 5. Risques et mesures de mitigation.\nCet ordre suit le questionnement naturel du décideur."
+    },
+    {
+      "id": "b3-r09-fc-011",
+      "section": "6. Formuler une recommandation qui convainc",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 étapes pour définir les critères de succès d'une recommandation ?",
+      "verso": "1. Métriques et cibles précises. 2. Délais d'évaluation : mesure intermédiaire (4 semaines) et définitive (12 semaines). 3. Critères d'arrêt. 4. Plan d'apprentissage.\nSuivi post-implémentation à J+30, J+60, J+90."
+    },
+    {
+      "id": "b3-r09-fc-012",
+      "section": "6. Formuler une recommandation qui convainc",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Quels éléments doit contenir une préconisation « opérationnelle » au sens de la Q9 ?",
+      "verso": "Le planning, les acteurs, les moyens à mobiliser et une estimation des coûts (critère de l'énoncé).\nPlus l'écart traité et un KPI de succès. Ex. : précommande via l'app (attente), avant la tournée suivante, chef de produit app, 2 000-5 000 €, attente ≤ 6 min."
+    },
+    {
+      "id": "b3-r09-fc-013",
+      "section": "7. Le cercle vertueux d'optimisation continue",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 6 étapes du cercle vertueux d'optimisation continue ?",
+      "verso": "1. Analyser les données pour identifier une opportunité. 2. Formuler une hypothèse testable. 3. Tester en conditions contrôlées. 4. Apprendre des résultats. 5. Implémenter ce qui fonctionne. 6. Nouvelle analyse avec les données enrichies.\nPiège : la « validation hiérarchique » n'en fait pas partie."
+    },
+    {
+      "id": "b3-r09-fc-014",
+      "section": "7. Le cercle vertueux d'optimisation continue",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 3 piliers de l'optimisation continue ?",
+      "verso": "Documentation partagée (mémoire collective, fiche standardisée par test), rituels structurés (rendez-vous hebdomadaires, mensuels, trimestriels), culture transverse (marketing, produit, commercial, service client)."
+    },
+    {
+      "id": "b3-r09-fc-015",
+      "section": "8. Application au foodtruck PrepMyMeal",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Foodtruck : quels objectifs du brief sont atteints, lesquels sont manqués ?",
+      "verso": "Atteints : CA total 108 000 € (> 100 000 €), inscriptions 791 par ville (≥ 700), réachat 25 % en moyenne.\nManqués : temps d'attente 7,3 min (≤ 6 ; seule Strasbourg), satisfaction 4,16 (≥ 4,3 ; Paris et Marseille seulement), conversion 29,9 % (≥ 35 %), mentions 481 par ville (≥ 500)."
+    },
+    {
+      "id": "b3-r09-fc-016",
+      "section": "8. Application au foodtruck PrepMyMeal",
+      "niveau": 2,
+      "type": "liste",
+      "recto": "Quelles anomalies de données faut-il signaler dans l'annexe 7 avant d'interpréter ?",
+      "verso": "Lyon : 200 clients à 7 % mais 18 000 € et 800 inscriptions (incohérent). La colonne « engagement digital » reprend les inscriptions en valeur absolue. La marge nette dépasse CA − coût dans toutes les villes. Les adresses de Strasbourg et Lyon sont celles de Lille."
+    }
+  ]
+}

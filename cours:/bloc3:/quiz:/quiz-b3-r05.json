@@ -1,0 +1,941 @@
+{
+  "resume": "b3-r05",
+  "titre": "Concevoir et administrer l'enquête de satisfaction",
+  "bloc": 3,
+  "questions": [
+    {
+      "id": "b3-r05-qz-001",
+      "section": "1. Pourquoi enquêter sur la satisfaction",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Pourquoi l'enquête de satisfaction est-elle la méthode de mesure la plus utilisée ?",
+      "options": [
+        "parce qu'elle est obligatoire pour toutes les entreprises",
+        "parce qu'elle offre le meilleur équilibre entre fiabilité et contraintes",
+        "parce qu'elle ne coûte rien",
+        "parce qu'elle remplace l'analyse des ventes"
+      ],
+      "reponse": 1,
+      "explication": "Elle offre « le meilleur équilibre entre fiabilité et contraintes ». Les études quantitatives prolongent le qualitatif : l'un comprend les attentes, l'autre valide et mesure."
+    },
+    {
+      "id": "b3-r05-qz-002",
+      "section": "1. Pourquoi enquêter sur la satisfaction",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels enjeux l'enquête de satisfaction sert-elle, selon le cours ? (3 réponses)",
+      "options": [
+        "la rentabilité : le client satisfait rachète et fait le buzz",
+        "la démarche qualité ISO, qui exige des questionnaires réguliers",
+        "la réduction des effectifs",
+        "un stimulant interne, quand l'enquête vise le personnel",
+        "la fixation des prix de vente"
+      ],
+      "reponse": [
+        0,
+        1,
+        3
+      ],
+      "explication": "Quatre enjeux : rentabilité, fidélité (un client fidèle coûte moins cher qu'un prospect), norme ISO, stimulant interne (« fidéliser le personnel comme un client »)."
+    },
+    {
+      "id": "b3-r05-qz-003",
+      "section": "1. Pourquoi enquêter sur la satisfaction",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un client insatisfait communique beaucoup plus qu'un client satisfait : il ne faut pas le négliger.",
+      "reponse": true,
+      "explication": "Vrai. Le cours le souligne au titre de l'enjeu de fidélité. Un client très mécontent en parle à près de 10 personnes, un très satisfait à 3."
+    },
+    {
+      "id": "b3-r05-qz-004",
+      "section": "1. Pourquoi enquêter sur la satisfaction",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quels sont les deux leviers pour améliorer le taux de réponse ?",
+      "options": [
+        "allonger le questionnaire et multiplier les relances téléphoniques",
+        "réduire l'échantillon et supprimer l'introduction",
+        "interroger uniquement les clients fidèles et promettre des cadeaux de valeur",
+        "optimiser la cible et donner envie de participer (prévenir le client, communiquer de façon claire et attractive)"
+      ],
+      "reponse": 3,
+      "explication": "Le taux de retour est la proportion de questionnaires dûment remplis et renvoyés ; plus il est élevé, plus les résultats sont fiables."
+    },
+    {
+      "id": "b3-r05-qz-005",
+      "section": "1. Pourquoi enquêter sur la satisfaction",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Qu'a révélé le questionnaire d'Émile Noël, qui perdait des parts de marché en magasins bio ?",
+      "options": [
+        "une préférence pour le local, moins cher que le bio, mais une disposition à payer plus en vacances et en épiceries fines",
+        "un rejet des huiles bio",
+        "un problème de packaging",
+        "un problème de distribution en grandes surfaces"
+      ],
+      "reponse": 0,
+      "explication": "Émile Noël passe de 16,7 % de parts de marché en 2020 à environ 15 % en 2022. Le questionnaire, diffusé sur les réseaux sociaux, a conduit à revoir le positionnement."
+    },
+    {
+      "id": "b3-r05-qz-006",
+      "section": "2. Le cadre de l'enquête",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une enquête auprès des clients inactifs sert surtout à :",
+      "options": [
+        "vérifier le potentiel du marché",
+        "comprendre pourquoi ils se détachent",
+        "fixer les prix",
+        "recruter des ambassadeurs"
+      ],
+      "reponse": 1,
+      "explication": "Le contexte oriente l'enquête : en lancement, vérifier le potentiel ; en maturité, se remettre en question ; auprès des inactifs, comprendre le détachement."
+    },
+    {
+      "id": "b3-r05-qz-007",
+      "section": "2. Le cadre de l'enquête",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "On peut définir les objectifs d'une enquête sans avoir formulé d'hypothèses générales.",
+      "reponse": false,
+      "explication": "Faux. On ne peut pas définir les objectifs sans les hypothèses générales de l'enquête. L'objectif se définit par trois questions : que cherche-t-on à mettre en évidence, que veut-on vérifier, faut-il revoir l'offre ?"
+    },
+    {
+      "id": "b3-r05-qz-008",
+      "section": "2. Le cadre de l'enquête",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi le cours cite-t-il l'exemple « pourquoi une Porsche ? » à propos du qualitatif ?",
+      "options": [
+        "pour montrer que le qualitatif sert à dénombrer",
+        "pour montrer que le quantitatif suffit",
+        "pour illustrer le non-dit : on ne répondra pas spontanément « pour impressionner »",
+        "pour illustrer un biais d'échantillonnage"
+      ],
+      "reponse": 2,
+      "explication": "Le qualitatif répond à « pourquoi ? comment ? » et explore les motivations profondes, les freins, le non-dit. Le quantitatif répond à « combien ? »."
+    },
+    {
+      "id": "b3-r05-qz-009",
+      "section": "2. Le cadre de l'enquête",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Une enquête quantitative interroge les clients d'un hypermarché uniquement le lundi. Quelle limite du quantitatif illustre-t-elle ?",
+      "options": [
+        "la durée : on oublie les familles et les actifs",
+        "la capacité d'analyse",
+        "le nombre de facteurs",
+        "le biais d'endogroupe"
+      ],
+      "reponse": 0,
+      "explication": "Limites du quantitatif : taille de l'échantillon, durée (le lundi seulement), nombre de facteurs (5 à 10 minutes pour répondre), capacité d'analyse (l'odeur de la rôtisserie biaise une question sur le poulet)."
+    },
+    {
+      "id": "b3-r05-qz-010",
+      "section": "2. Le cadre de l'enquête",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque étude qualitative ponctuelle à son objet.",
+      "colonne_a": [
+        "Étude préalable",
+        "Étude d'image",
+        "Étude de positionnement",
+        "Étude de comportement",
+        "Tests"
+      ],
+      "colonne_b": [
+        "Observer et interpréter les réactions (magasin test Auchan)",
+        "Conditionnement, goût, nom (paquet BN)",
+        "« Débroussailler » et fixer la méthode",
+        "Photographie des concurrents sur des axes, pour trouver une place libre",
+        "Comment la marque est perçue, connue, appréciée"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "explication": "La sixième, l'étude de motivation, cherche le mobile caché, les motivations et les freins."
+    },
+    {
+      "id": "b3-r05-qz-011",
+      "section": "2. Le cadre de l'enquête",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce qu'un panel ?",
+      "options": [
+        "un groupe de discussion ponctuel",
+        "un questionnaire en ligne",
+        "un ensemble de clients mécontents",
+        "une enquête permanente : un échantillon permanent et représentatif interrogé à intervalles réguliers"
+      ],
+      "reponse": 3,
+      "explication": "Vendu par abonnement, il pèse parfois plus de la moitié des budgets d'études des produits de grande consommation. Consommateurs : Worldpanel (TNS Sofres), Homescan (Nielsen) ; distributeurs : Nielsen, IRI."
+    },
+    {
+      "id": "b3-r05-qz-012",
+      "section": "2. Le cadre de l'enquête",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Interroger les partenaires d'une entreprise (fournisseurs, distributeurs) l'oblige à exécuter leurs souhaits.",
+      "reponse": false,
+      "explication": "Faux. Les interroger n'oblige pas à exécuter leurs souhaits (« une voiture à 5 roues »). En interne, « trop d'études tuent l'étude » : solliciter à bon escient."
+    },
+    {
+      "id": "b3-r05-qz-013",
+      "section": "2. Le cadre de l'enquête",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quel est le principal inconvénient d'une enquête menée par l'équipe marketing interne ?",
+      "options": [
+        "son coût élevé",
+        "des délais plus longs",
+        "un risque pour la confidentialité",
+        "le manque d'objectivité : les équipes « croient en leur projet »"
+      ],
+      "reponse": 3,
+      "explication": "Coût élevé, délais longs et risque de confidentialité sont les inconvénients du cabinet d'études. L'interne gagne en rapidité et en coût. La décision dépend surtout du budget."
+    },
+    {
+      "id": "b3-r05-qz-014",
+      "section": "3. Rédiger le questionnaire",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque type de question (support « Les méthodes de questionnement ») à son principe.",
+      "colonne_a": [
+        "De contrôle",
+        "Orientée",
+        "Provocante",
+        "Stimulante",
+        "Alternative"
+      ],
+      "colonne_b": [
+        "Soutire une information qui ne viendrait pas autrement",
+        "Choix entre plusieurs réponses",
+        "Vérifie la cohérence du raisonnement",
+        "S'appuie sur des compliments pour obtenir plus d'informations",
+        "Guide la personne vers un résultat visé"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "explication": "S'y ajoutent les questions ouvertes et fermées. Méthode classique : les 5 W + H (quoi, qui, où, pourquoi, quand, comment)."
+    },
+    {
+      "id": "b3-r05-qz-015",
+      "section": "3. Rédiger le questionnaire",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un enquêteur lance « Vous aimez le dessin ? Moi aussi ! » et accorde plus d'attention à ce répondant. Quel biais commet-il ?",
+      "options": [
+        "le biais d'endogroupe",
+        "le biais de mémoire",
+        "le biais de prestige",
+        "le biais technophile"
+      ],
+      "reponse": 0,
+      "explication": "Le biais d'endogroupe consiste à favoriser un répondant qui partage vos goûts : il altère l'objectivité. Qualités de l'enquêteur : intelligence, ouverture, objectivité."
+    },
+    {
+      "id": "b3-r05-qz-016",
+      "section": "3. Rédiger le questionnaire",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Comment reformuler « Jouez-vous beaucoup au tennis ? » selon les règles de rédaction ?",
+      "options": [
+        "« Combien d'heures par semaine jouez-vous au tennis ? »",
+        "« Aimez-vous le tennis ? »",
+        "« Êtes-vous un excellent joueur de tennis ? »",
+        "« Le tennis est-il important pour vous ? »"
+      ],
+      "reponse": 0,
+      "explication": "Une question doit être claire, précise, non ambiguë : « beaucoup » est vague. Les autres règles : attractive, compréhensible, non biaisée."
+    },
+    {
+      "id": "b3-r05-qz-017",
+      "section": "3. Rédiger le questionnaire",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Les biais de réponse viennent de questions qui font appel à… (3 réponses)",
+      "options": [
+        "la mémoire",
+        "un chiffre précis",
+        "le prestige",
+        "la religion ou le milieu social",
+        "une échelle numérique"
+      ],
+      "reponse": [
+        0,
+        2,
+        3
+      ],
+      "explication": "Les biais viennent des questions qui font appel à la mémoire, aux désirs, au prestige, à l'éducation, à la religion, au milieu social."
+    },
+    {
+      "id": "b3-r05-qz-018",
+      "section": "3. Rédiger le questionnaire",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la structure d'un questionnaire.",
+      "elements": [
+        "Corps en blocs thématiques",
+        "Questions d'identification (âge, profession…)",
+        "Introduction (but, durée, remerciement)",
+        "Questions générales et simples de prise de contact"
+      ],
+      "ordre": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "explication": "Technique de l'entonnoir : on commence simple pour gagner la confiance ; l'identification vient à la fin, quand la confiance est établie."
+    },
+    {
+      "id": "b3-r05-qz-019",
+      "section": "3. Rédiger le questionnaire",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les questions d'identification (sexe, âge, profession) se placent de préférence en fin de questionnaire.",
+      "reponse": true,
+      "explication": "Vrai. Elles viennent à la fin, quand la confiance est établie. Le début du questionnaire sert à gagner cette confiance."
+    },
+    {
+      "id": "b3-r05-qz-020",
+      "section": "3. Rédiger le questionnaire",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Il faut raccourcir un questionnaire de 45 minutes. Que conseille le cours ?",
+      "options": [
+        "éliminer tout ce qui ne sert pas l'objectif",
+        "supprimer l'introduction",
+        "transformer toutes les questions en questions ouvertes",
+        "le diviser en deux enquêtes envoyées le même jour"
+      ],
+      "reponse": 0,
+      "explication": "15 à 20 minutes s'obtiennent plus facilement que 45 ; la fatigue dégrade la précision. On élimine tout ce qui ne sert pas l'objectif."
+    },
+    {
+      "id": "b3-r05-qz-021",
+      "section": "3. Rédiger le questionnaire",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque type de question à la règle qui l'accompagne.",
+      "colonne_a": [
+        "Fermée à réponse unique",
+        "Ouverte",
+        "À choix multiples",
+        "Filtre"
+      ],
+      "colonne_b": [
+        "Prévoir la rubrique « autre »",
+        "Repérer les répondants fantaisistes en reformulant une question",
+        "Prévoir la case « ne sait pas »",
+        "Attention aux nombreux « sans opinion » et au dépouillement difficile"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "S'y ajoute la question avec classement (ordre de préférence)."
+    },
+    {
+      "id": "b3-r05-qz-022",
+      "section": "3. Rédiger le questionnaire",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi le cours recommande-t-il une échelle de Likert à nombre pair de choix (1 à 4) ?",
+      "options": [
+        "pour faciliter le calcul de la moyenne",
+        "pour respecter la norme ISO",
+        "pour forcer l'enquêté à trancher",
+        "pour réduire la durée du questionnaire"
+      ],
+      "reponse": 2,
+      "explication": "Sans position neutre, l'enquêté doit se prononcer. Piège : le module satisfaction mesure le CSAT sur 1 à 5 et le brief du CEO note la satisfaction sur 5. Choisis, justifie, puis garde la même échelle."
+    },
+    {
+      "id": "b3-r05-qz-023",
+      "section": "3. Rédiger le questionnaire",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pour mesurer l'image du foodtruck sur un axe « traditionnelle ↔ innovante », quelle échelle utiliser ?",
+      "options": [
+        "une échelle de Likert",
+        "une échelle numérique de 0 à 10",
+        "une question à classement",
+        "une échelle sémantique différentielle (Osgood)"
+      ],
+      "reponse": 3,
+      "explication": "L'échelle d'Osgood place un axe entre deux pôles définis par des mots opposés, avec des cases intermédiaires. Les visuels (smileys) peuvent aider certains publics."
+    },
+    {
+      "id": "b3-r05-qz-024",
+      "section": "3. Rédiger le questionnaire",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 7 étapes d'élaboration d'un questionnaire.",
+      "elements": [
+        "Tester sur un échantillon",
+        "Fixer l'objectif (SMART)",
+        "Déterminer les personnes concernées",
+        "Analyser",
+        "Définir la structure",
+        "Dépouiller",
+        "Élaborer le questionnaire et l'introduire"
+      ],
+      "ordre": [
+        1,
+        4,
+        6,
+        2,
+        0,
+        5,
+        3
+      ],
+      "explication": "Objectif → structure → élaboration → personnes concernées → test → dépouillement → analyse. L'objectif sert de fil conducteur."
+    },
+    {
+      "id": "b3-r05-qz-025",
+      "section": "3. Rédiger le questionnaire",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Pour gagner du temps, on peut remplacer le test du questionnaire par une simulation par intelligence artificielle.",
+      "reponse": false,
+      "explication": "Faux. L'IA ne saisit pas les émotions ni le vécu. Le test porte sur quelques dizaines à quelques centaines de personnes extérieures à l'entreprise, aussi différentes que possible."
+    },
+    {
+      "id": "b3-r05-qz-026",
+      "section": "3. Rédiger le questionnaire",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Quels sont les trois sous-concepts de l'expérience client que les questions doivent couvrir ?",
+      "options": [
+        "l'expérience d'usage, de partage, et de relation humaine et digitale",
+        "le prix, le produit, la promotion",
+        "l'avant, le pendant, l'après",
+        "la vue, l'ouïe, le goût"
+      ],
+      "reponse": 0,
+      "explication": "Expérience d'usage, expérience de partage, expérience de relation humaine et digitale."
+    },
+    {
+      "id": "b3-r05-qz-027",
+      "section": "3. Rédiger le questionnaire",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Proposez l'ossature du questionnaire de satisfaction PrepMyMeal (Q4) : objectif, cible, structure et formats de questions.",
+      "attendus": [
+        "Objectif SMART (ex. identifier d'ici une date les principaux freins au réachat et l'intérêt pour le foodtruck auprès d'un nombre défini de clients)",
+        "Cible : les 4 segments du CRM et les visiteurs du foodtruck",
+        "Structure en entonnoir : introduction (but, durée, RGPD), questions de contact, blocs thématiques, identification à la fin",
+        "Au moins 10 questions variées : choix multiples avec « autre » (motivations, freins), Likert (satisfaction par étape), ouverte (attentes), question filtre (a-t-il vu le foodtruck ?), Osgood (image innovante), NPS",
+        "Questions sans ambiguïté, une seule idée par question, non orientées ; questionnaire court, adapté au mobile"
+      ],
+      "explication": "Critères : objectifs clairs et alignés, questions sans risque d'interprétation préjudiciable, formats adaptés au public et au taux de réponse visé."
+    },
+    {
+      "id": "b3-r05-qz-028",
+      "section": "4. Échantillonner",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Sur quelles 3 décisions repose une procédure d'échantillonnage ?",
+      "options": [
+        "le budget, le canal, l'outil",
+        "l'unité de sondage, la taille de l'échantillon, le choix des individus",
+        "l'objectif, l'hypothèse, le questionnaire",
+        "la cible, le message, la relance"
+      ],
+      "reponse": 1,
+      "explication": "L'unité de sondage peut être l'individu, le foyer, l'entreprise ou la commune. Pour des populations de milliers d'individus, le recensement est impossible : on sonde un échantillon."
+    },
+    {
+      "id": "b3-r05-qz-029",
+      "section": "4. Échantillonner",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un échantillon de 1 000 Français sur 60 millions donne une estimation aussi précise qu'un échantillon de 1 000 Belges sur 10 millions.",
+      "reponse": true,
+      "explication": "Vrai. La précision dépend de la taille absolue de l'échantillon, pas du rapport à la population. Elle n'augmente pas non plus proportionnellement à la taille."
+    },
+    {
+      "id": "b3-r05-qz-030",
+      "section": "4. Échantillonner",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque méthode d'échantillonnage à son principe.",
+      "colonne_a": [
+        "Aléatoire",
+        "Quotas",
+        "Itinéraires",
+        "Arbitraire"
+      ],
+      "colonne_b": [
+        "Règles strictes de sélection dans l'espace (« logements multiples de 3 »)",
+        "Échantillon intuitif, quand on ne mesure pas une fréquence",
+        "Tirage au sort, chaque unité a une chance égale",
+        "Mini-population de même composition que la population"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "L'aléatoire est en théorie la seule méthode valable. Toujours préciser méthode et taille de l'échantillon."
+    },
+    {
+      "id": "b3-r05-qz-031",
+      "section": "4. Échantillonner",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Pourquoi les clients ayant commenté en ligne ne suffisent-ils pas à former le panel PrepMyMeal (Q5) ? (3 réponses)",
+      "options": [
+        "auto-sélection : ce sont souvent les très mécontents ou les très satisfaits",
+        "ils sont trop nombreux",
+        "petit nombre",
+        "profils non représentatifs des segments",
+        "ils n'ont pas consenti au RGPD"
+      ],
+      "reponse": [
+        0,
+        2,
+        3
+      ],
+      "explication": "Il faut des quotas calés sur l'annexe 1 (jeunes actifs 38 %, sportifs 25 %, bien-être 30 %, nouveaux 7 %, voire sur-représentés), plus les visiteurs du foodtruck et les clients inactifs."
+    },
+    {
+      "id": "b3-r05-qz-032",
+      "section": "5. Diffuser l'enquête",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque mode d'administration à sa principale faiblesse.",
+      "colonne_a": [
+        "Face-à-face à domicile",
+        "Dans la rue",
+        "Téléphone",
+        "Voie postale",
+        "Internet"
+      ],
+      "colonne_b": [
+        "Taux de non-réponse très élevé",
+        "Biais technophile, représentativité du grand public difficile",
+        "Coût élevé, 20 minutes maximum",
+        "Bref, sans visuel, identité incertaine",
+        "Échantillon non représentatif"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "explication": "Le face-à-face est « le plus sûr, le plus coûteux » ; Internet a un coût très compétitif et une grande rapidité."
+    },
+    {
+      "id": "b3-r05-qz-033",
+      "section": "5. Diffuser l'enquête",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pour une enquête en ligne sur un sujet d'innovation, quel biais faut-il anticiper ?",
+      "options": [
+        "un biais lié à la présence de l'enquêteur",
+        "un biais lié au bruit de la rue",
+        "un biais d'endogroupe",
+        "un biais technophile : les internautes sont plus attirés par la technologie"
+      ],
+      "reponse": 3,
+      "explication": "Les seniors, ouvriers et bas revenus sont moins connectés : les internautes, plus « technophiles », biaisent les sujets d'innovation."
+    },
+    {
+      "id": "b3-r05-qz-034",
+      "section": "5. Diffuser l'enquête",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "À quoi sert la récompense associée à une enquête CAWI ? (3 réponses)",
+      "options": [
+        "obtenir plus de répondants",
+        "améliorer la représentativité",
+        "réduire les abandons",
+        "orienter les réponses vers le positif",
+        "éviter le consentement RGPD"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "CAWI = Computer Assisted Web Interview. La récompense (loterie, bon d'achat) vise trois buts : plus de répondants, meilleure représentativité, moins d'abandons."
+    },
+    {
+      "id": "b3-r05-qz-035",
+      "section": "5. Diffuser l'enquête",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque outil de traitement d'enquête à sa caractéristique.",
+      "colonne_a": [
+        "Sphinx",
+        "Ethnos",
+        "Google Forms",
+        "SurveyMonkey"
+      ],
+      "colonne_b": [
+        "Gratuit, simple, multilingue, mais fonctions trop générales",
+        "Modèles prêts à l'emploi, assistance 24 h/24, version gratuite limitée",
+        "Très complet depuis 1985, mais coûteux et formation nécessaire",
+        "Complet, en 4 modules"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Le choix dépend du budget. Traitement : éliminer les questionnaires incomplets, dépouiller par logiciel, rédiger un rapport avec méthodologie et préconisations."
+    },
+    {
+      "id": "b3-r05-qz-036",
+      "section": "5. Diffuser l'enquête",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Le critère de la Q6 cite les modalités d'administration à préciser. Lesquelles ?",
+      "options": [
+        "cible, message, slogan, visuel",
+        "canal, éléments déclencheurs, périodicité, relances, outil de suivi",
+        "budget, ROI, marge, CA",
+        "objectif, hypothèse, échantillon, quotas"
+      ],
+      "reponse": 1,
+      "explication": "À adapter aux objectifs, au public et au budget. Exemple : e-mail CRM + SMS + tablette au foodtruck ; après livraison ou dégustation ; à chaque étape puis trimestriel ; relances J+3 et J+7 ; Google Forms ou Sphinx."
+    },
+    {
+      "id": "b3-r05-qz-037",
+      "section": "6. L'approche par le risque",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Un risque est un événement qui s'est déjà produit et qui exige une action immédiate.",
+      "reponse": false,
+      "explication": "Faux. C'est la définition d'un problème. Un risque est incertain : on l'anticipe par des actions préventives et on l'évalue en probabilité × impact."
+    },
+    {
+      "id": "b3-r05-qz-038",
+      "section": "6. L'approche par le risque",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un client se plaint de la lenteur du service client dans le traitement de sa première réclamation. Comment le cours nomme-t-il ce phénomène ?",
+      "options": [
+        "un risque contractuel",
+        "un risque juridique",
+        "une sur-réclamation",
+        "un cygne noir"
+      ],
+      "reponse": 2,
+      "explication": "La sur-réclamation porte sur la gestion de la réclamation elle-même. Le risque de réclamation, ou de litige, est celui qui touche le plus l'image."
+    },
+    {
+      "id": "b3-r05-qz-039",
+      "section": "6. L'approche par le risque",
+      "niveau": 3,
+      "format": "appariement",
+      "question": "Associez chaque étape du projet d'enquête à son risque principal.",
+      "colonne_a": [
+        "Définition des objectifs",
+        "Planification",
+        "Identification des parties prenantes",
+        "Conception du questionnaire"
+      ],
+      "colonne_b": [
+        "Mauvais ciblage",
+        "Opérationnel : inadéquation avec les objectifs",
+        "Stratégique",
+        "Délais"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "La conduite de l'enquête cumule des risques RH, opérationnels, financiers et de délais. La vulnérabilité des données est un risque à part."
+    },
+    {
+      "id": "b3-r05-qz-040",
+      "section": "6. L'approche par le risque",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles précautions le cours impose-t-il pour les données sensibles recueillies par une enquête ? (3 réponses)",
+      "options": [
+        "limiter la collecte au strict nécessaire",
+        "anonymiser ou pseudonymiser",
+        "les conserver sans limite de durée",
+        "supprimer les données à l'issue de la durée nécessaire",
+        "les partager avec tous les services"
+      ],
+      "reponse": [
+        0,
+        1,
+        3
+      ],
+      "explication": "S'y ajoutent le consentement éclairé, un stockage sécurisé et un accès restreint. Données sensibles : santé, opinions politiques, religieuses, syndicales."
+    },
+    {
+      "id": "b3-r05-qz-041",
+      "section": "6. L'approche par le risque",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les signaux du marché, du plus précoce au plus tardif, dans l'identification des risques.",
+      "elements": [
+        "Signaux convergents (tendances : on peut encore éviter)",
+        "Faits (on réagit)",
+        "Signaux isolés et faibles (visibles avec la BI et le Data Mining)",
+        "Signaux organisés (menaces : on peut diminuer les impacts)"
+      ],
+      "ordre": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "explication": "Plus le signal est détecté tôt, plus la marge de manœuvre est grande. Le Data Mining connaît 5 traitements : association, analyse de séquence, classification, clustering, prédiction."
+    },
+    {
+      "id": "b3-r05-qz-042",
+      "section": "6. L'approche par le risque",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque stratégie face au risque à son principe.",
+      "colonne_a": [
+        "Élimination",
+        "Transfert",
+        "Atténuation",
+        "Acceptation"
+      ],
+      "colonne_b": [
+        "Accepter consciemment, quand traiter coûte plus que le risque",
+        "Supprimer la possibilité du risque (secteurs à risque zéro)",
+        "Réduire la probabilité ou l'impact (formation, processus)",
+        "Déplacer la responsabilité par contrat ou assurance"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "On ne peut pas éliminer tous les risques. Pour une enquête, le transfert passe par une clause de responsabilité du prestataire."
+    },
+    {
+      "id": "b3-r05-qz-043",
+      "section": "6. L'approche par le risque",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez l'indice de criticité AMDEC.",
+      "texte": "C = {1} × {2} × {3}. L'AMDEC est l'Analyse des Modes de Défaillance, de leurs Effets et de leur {4}.",
+      "trous": [
+        "F (fréquence)",
+        "G (gravité)",
+        "D (détection)",
+        "Criticité"
+      ],
+      "explication": "4 niveaux : faible, moyen, élevé, critique. Les seuils du cours (1 à 10, 11 à 16, 17 à 20, 21 à 24) dépendent des échelles choisies."
+    },
+    {
+      "id": "b3-r05-qz-044",
+      "section": "6. L'approche par le risque",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Quelle norme est la plus utilisée pour la gestion des risques, tout risque et tout secteur confondus ?",
+      "options": [
+        "ISO 26000",
+        "ISO 27005",
+        "ISO 31010",
+        "ISO 31000"
+      ],
+      "reponse": 3,
+      "explication": "ISO 31000. ISO 31010 = techniques d'évaluation ; ISO 26000 = RSE ; ISO 27005 = sécurité de l'information ; COSO ERM = gestion intégrée ; PMI-RMP = projets."
+    },
+    {
+      "id": "b3-r05-qz-045",
+      "section": "6. L'approche par le risque",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Selon la théorie du cygne noir de Nassim Nicholas Taleb, un processus de gestion des risques bien conçu permet d'anticiper tous les événements à fort impact.",
+      "reponse": false,
+      "explication": "Faux. Le cygne noir désigne des événements rares, imprévisibles, à fort impact : d'où une approche humble et résiliente, sans confiance aveugle dans le processus."
+    },
+    {
+      "id": "b3-r05-qz-046",
+      "section": "6. L'approche par le risque",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque type de KPI du projet d'enquête à un exemple.",
+      "colonne_a": [
+        "Process",
+        "Input",
+        "Output",
+        "Lagging",
+        "Outcome"
+      ],
+      "colonne_b": [
+        "Taux de répondants qui reviennent acheter, NPS",
+        "Taux de retour, taux de réponse",
+        "Temps de réponse moyen, taux d'erreur",
+        "Taux d'utilisation du budget",
+        "ROI de l'opération, taux d'abandon, taux de complétion"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "explication": "Le leading mesure l'impact sur les performances futures (atteinte des objectifs de l'enquête). Ces KPI nourrissent le « suivi et contrôle » de la Q6."
+    },
+    {
+      "id": "b3-r05-qz-047",
+      "section": "6. L'approche par le risque",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Comment calcule-t-on le taux de complétion d'une enquête ?",
+      "options": [
+        "questionnaires complétés / questionnaires distribués",
+        "répondants / invités",
+        "questionnaires commencés mais non finis / commencés",
+        "réponses erronées / réponses totales"
+      ],
+      "reponse": 0,
+      "explication": "Complétion = complétés / distribués. Le taux de réponse = répondants / invités ; le taux d'abandon = commencés mais non finis ; le taux d'erreur = réponses erronées ou manquantes."
+    }
+  ]
+}

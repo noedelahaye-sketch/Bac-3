@@ -1,0 +1,143 @@
+{
+  "resume": "b3-r06",
+  "titre": "Mesurer la satisfaction, analyser et restituer les résultats",
+  "bloc": 3,
+  "cartes": [
+    {
+      "id": "b3-r06-fc-001",
+      "section": "1. Pourquoi mesurer la satisfaction",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 4 objectifs de la mesure de la satisfaction client ?",
+      "verso": "1. Évaluer l'expérience client à chaque interaction. 2. Identifier les points d'amélioration. 3. Anticiper les besoins (une baisse soudaine signale un problème émergent). 4. Fidéliser et faire recommander."
+    },
+    {
+      "id": "b3-r06-fc-002",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "CSAT, NPS, CES : que mesure chacun ?",
+      "verso": "CSAT : la satisfaction ponctuelle, après une interaction précise (résultat immédiat).\nNPS : la propension à recommander, l'attachement (relation globale, comportement futur).\nCES : l'effort fourni pour obtenir une réponse (facilité du processus) ; il prédit le churn."
+    },
+    {
+      "id": "b3-r06-fc-003",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 1,
+      "type": "chiffre",
+      "recto": "Comment calcule-t-on le CSAT ? Exemple : 10 % pas du tout satisfaits, 15 % peu, 45 % plutôt, 30 % très satisfaits.",
+      "verso": "CSAT = % de satisfaits (les deux modalités positives, ex. 4-5 sur 5).\nIci : 45 + 30 = 75 %.\nÀ envoyer sous 24-48 h ; objectifs fixés canal par canal."
+    },
+    {
+      "id": "b3-r06-fc-004",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 1,
+      "type": "chiffre",
+      "recto": "NPS : quelle question, quelles catégories, quel calcul ?",
+      "verso": "« Sur une échelle de 0 à 10, quelle est la probabilité que vous recommandiez notre entreprise ? » (Fred Reichheld, 2003).\nPromoteurs 9-10, passifs 7-8 (non comptés), détracteurs 0-6.\nNPS = % promoteurs − % détracteurs, de −100 à +100 ; il s'exprime en points."
+    },
+    {
+      "id": "b3-r06-fc-005",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Calculez le NPS : 25 % de promoteurs, 60 % de passifs, 15 % de détracteurs. Quel piège dans le support ?",
+      "verso": "NPS = 25 − 15 = +10.\nPiège : le support annonce +15 pour ces chiffres. Toujours poser le calcul."
+    },
+    {
+      "id": "b3-r06-fc-006",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 1,
+      "type": "chiffre",
+      "recto": "Quels sont les seuils de lecture du NPS ?",
+      "verso": "< 0 : signal d'alarme. 0 à +20 : acceptable mais perfectible. +20 à +40 : satisfaisant. > +40 : base réellement attachée.\nUn NPS de 0 est déjà préoccupant (absence d'enthousiasme)."
+    },
+    {
+      "id": "b3-r06-fc-007",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 2,
+      "type": "chiffre",
+      "recto": "Comment calcule-t-on le CES ? Exemple : 10 % très difficile, 15 % assez difficile, 15 % neutre, 40 % assez facile, 20 % très facile.",
+      "verso": "CES = % « difficile » − % « facile » = (10 + 15) − (40 + 20) = −35.\nPlus il est bas, mieux c'est (idéal : −100). Échelle de 1 à 7.\nPiège : annoncer le sens de l'échelle, les supports ne le formulent pas de la même façon."
+    },
+    {
+      "id": "b3-r06-fc-008",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 2,
+      "type": "application",
+      "recto": "Qu'est-ce que le « paradoxe de l'effort », et quelle conclusion en tirer ?",
+      "verso": "Les clients résolus vite mais avec effort (CES > 5) rachètent 40 % de moins que ceux qui ont vécu une expérience fluide, même plus lente. Un effort élevé après l'achat augmente le churn de 35 à 50 %.\nConclusion : privilégier la fluidité sur la vitesse."
+    },
+    {
+      "id": "b3-r06-fc-009",
+      "section": "2. Les trois indicateurs d'attitude : CSAT, NPS, CES",
+      "niveau": 2,
+      "type": "application",
+      "recto": "La « satisfaction ≥ 4,3/5 » du brief du CEO est-elle un CSAT ?",
+      "verso": "Non : c'est une note moyenne. Le CSAT est un % de satisfaits.\nDans le questionnaire, prévoir un NPS (0-10) et un CSAT (1-5), éventuellement un CES sur l'attente ou la commande."
+    },
+    {
+      "id": "b3-r06-fc-010",
+      "section": "3. Les autres indicateurs quantitatifs",
+      "niveau": 1,
+      "type": "chiffre",
+      "recto": "Taux de rétention et taux de churn : quelles formules ? Exemple : 100 000 clients au départ, 10 000 perdus, 20 000 nouveaux, 110 000 à la fin.",
+      "verso": "Rétention = (clients finaux − nouveaux) / clients initiaux × 100 = (110 000 − 20 000) / 100 000 = 90 %.\nChurn = clients perdus / clients initiaux × 100 = 10 %.\nPiège : il faut retirer les nouveaux, sinon on gonfle la rétention."
+    },
+    {
+      "id": "b3-r06-fc-011",
+      "section": "4. Les indicateurs qualitatifs",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Comment analyser les verbatims (méthode du module) ?",
+      "verso": "Catégoriser (produit, livraison, service client, prix, communication) → quantifier la fréquence de chaque thème (text mining) → garder la même codification dans le temps → plan à 3 niveaux : « corriger immédiatement », « améliorer sous 3 mois », « opportunités d'innovation » → top 3 mensuel des irritants."
+    },
+    {
+      "id": "b3-r06-fc-012",
+      "section": "5. Analyser les résultats",
+      "niveau": 3,
+      "type": "chiffre",
+      "recto": "Quels seuils d'alerte automatique le module propose-t-il pour la satisfaction ?",
+      "verso": "NPS < +20, CSAT < 3,5/5, CES > 5.\nEx. : une chute de NPS de +28 à +21 en deux semaines révèle un bug de l'app de commande, corrigé en 48 h."
+    },
+    {
+      "id": "b3-r06-fc-013",
+      "section": "7. Communiquer les résultats selon le destinataire",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 4 destinataires des résultats d'une enquête, et le message pour chacun ?",
+      "verso": "Collaborateurs : leur rôle dans la satisfaction. Managers : résultats de leur équipe et actions concrètes. Clients : remerciement et actions menées ; prospects : argument de vente. Partenaires : leur part, ce qui les concerne.\nToujours en transparence, sans cacher le négatif."
+    },
+    {
+      "id": "b3-r06-fc-014",
+      "section": "8. La boucle de rétroaction",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que la boucle de rétroaction, et comment l'industrialiser ?",
+      "verso": "Recueillir, analyser et exploiter les retours clients pour améliorer en continu, puis vérifier par une nouvelle enquête que l'amélioration est perçue.\nL'industrialiser : tableau de transformation des insights (pilote, deadline, KPI), revue trimestrielle, triggers automatisés dans le CRM."
+    },
+    {
+      "id": "b3-r06-fc-015",
+      "section": "8. La boucle de rétroaction",
+      "niveau": 2,
+      "type": "chiffre",
+      "recto": "À quel rythme maximum solliciter un client, et pourquoi ?",
+      "verso": "Une enquête maximum par client et par trimestre.\nAu-delà, la fatigue d'enquête fait baisser les réponses et biaise les résultats vers les plus mécontents."
+    },
+    {
+      "id": "b3-r06-fc-016",
+      "section": "9. L'audit client",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Audit client et audit interne : quelle différence ?",
+      "verso": "Audit client : évaluation systématique et structurée de la satisfaction et des attentes des clients.\nAudit interne : conformité des processus, systèmes et contrôles internes ; risques opérationnels."
+    },
+    {
+      "id": "b3-r06-fc-017",
+      "section": "9. L'audit client",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 5 étapes de préparation d'un audit client ?",
+      "verso": "1. Établir le périmètre et les objectifs. 2. Collecter les données pertinentes. 3. Préparer la documentation (listes de contrôle, questionnaires, modèles de rapport). 4. Former les équipes internes. 5. Planifier et organiser."
+    }
+  ]
+}

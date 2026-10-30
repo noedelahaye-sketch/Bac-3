@@ -1,0 +1,119 @@
+{
+  "resume": "b3-r04",
+  "titre": "Optimiser l'expérience client et fidéliser",
+  "bloc": 3,
+  "cartes": [
+    {
+      "id": "b3-r04-fc-001",
+      "section": "1. Le marketing expérientiel",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Comment Mercator et Bernard Schmitt définissent-ils le marketing expérientiel ?",
+      "verso": "Mercator : « création d'expériences qui permettent d'engager le consommateur dans une relation positive, riche en sens et en sensations, avec une marque ».\nSchmitt (1999) : transformer un achat en expérience immersive et unique ; « la technique de fidélisation la plus efficace ». On passe du product centric au user centric."
+    },
+    {
+      "id": "b3-r04-fc-002",
+      "section": "1. Le marketing expérientiel",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 4 phases fondamentales de l'expérience ?",
+      "verso": "Avant l'achat (anticipation, projection), l'achat (l'ambiance pèse beaucoup), la consommation (sensations, émotions), après (le souvenir, personnel ou partagé).\nAttention : un détail négatif, même léger, peut stopper l'immersion."
+    },
+    {
+      "id": "b3-r04-fc-003",
+      "section": "2. Le marketing sensoriel",
+      "niveau": 1,
+      "type": "definition",
+      "recto": "Qu'est-ce que le marketing sensoriel, et sur quoi agit l'ambiance ?",
+      "verso": "Les techniques qui font appel aux 5 sens pour séduire et déclencher l'achat, par des éléments extrinsèques au produit (odeur, ambiance, couleurs).\nL'ambiance agit sur les réactions conatives (achats, temps passé) et affectives et cognitives (plaisir, évaluation de la qualité). Un client qui se sent bien reste plus et dépense plus."
+    },
+    {
+      "id": "b3-r04-fc-004",
+      "section": "2. Le marketing sensoriel",
+      "niveau": 1,
+      "type": "application",
+      "recto": "Pourquoi le marketing gustatif convient-il au foodtruck PrepMyMeal ?",
+      "verso": "Aucune « tricherie » possible : si ce n'est pas bon, la cible n'achète pas. La dégustation, souvent couplée à une promotion, rassure pour une marque nouvelle ou peu connue et augmente les achats non prévus.\nC'est exactement la situation du foodtruck : goûter avant de commander en ligne."
+    },
+    {
+      "id": "b3-r04-fc-005",
+      "section": "3. Thématiser et théâtraliser le point de vente",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Thématisation et théâtralisation : quelle différence ?",
+      "verso": "Thématisation : l'« habillage » de l'offre et du point de vente pour dépasser sa fonction première ; elle donne les directives.\nThéâtralisation : sa matérialisation, sa mise en scène ; elle les met en œuvre.\nL'achat devient un loisir, le magasin un concept store."
+    },
+    {
+      "id": "b3-r04-fc-006",
+      "section": "4. Le phygital et le vendeur augmenté",
+      "niveau": 2,
+      "type": "distinction",
+      "recto": "E-réservation et click-and-collect : quelle différence ? Et quel irritant supprime le m-paiement ?",
+      "verso": "E-réservation : réserver en ligne sans acheter, pour être sûr de trouver et d'essayer.\nClick-and-collect : acheter en ligne, retirer en magasin (pas de frais de port).\nLe m-paiement supprime l'irritant de l'attente en caisse — piste pour le temps d'attente du foodtruck."
+    },
+    {
+      "id": "b3-r04-fc-007",
+      "section": "4. Le phygital et le vendeur augmenté",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Vendeur connecté et vendeur augmenté : quelle différence ?",
+      "verso": "Connecté : équipé d'un appareil (tablette, smartphone).\nAugmenté : utilise aussi l'IA pour une « hyperpersonnalisation », accède aux données clients, produits et concurrence, vision à 360° ; il passe de vendeur à conseiller, d'un mode réactif à prescriptif.\nConditions : investissement et formation."
+    },
+    {
+      "id": "b3-r04-fc-008",
+      "section": "5. Le marketing conversationnel",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Marketing relationnel et marketing conversationnel : quelle différence ?",
+      "verso": "Relationnel : relation à long terme, fidélisation, communications plus traditionnelles (newsletter).\nConversationnel : dialogue bidirectionnel en temps réel, engagement immédiat, personnalisation au besoin du moment (chatbots, messageries, assistants vocaux).\nLes deux coexistent."
+    },
+    {
+      "id": "b3-r04-fc-009",
+      "section": "6. Le marketing alternatif",
+      "niveau": 1,
+      "type": "distinction",
+      "recto": "Guérilla, street, ambush, stealth et ambient marketing : quelles différences ?",
+      "verso": "Guérilla : actions ponctuelles, à la limite de la légalité. Street : la rue et les lieux publics. Ambush : profiter d'un événement sans en être partenaire (DIM, Coupe du monde de rugby). Stealth : parler de la marque de manière détournée (placement de produit). Ambient : se fondre dans l'environnement pour surprendre et être partagé."
+    },
+    {
+      "id": "b3-r04-fc-010",
+      "section": "7. Les clés de la fidélisation",
+      "niveau": 1,
+      "type": "chiffre",
+      "recto": "Combien coûte la fidélisation par rapport à l'acquisition, et quel effet a +5 % de fidélité ?",
+      "verso": "Fidéliser coûte 3 à 7 fois moins cher qu'acquérir un nouveau client.\nPeter Fisk (Customer Genius) : + 5 % de fidélité = + 25 % à + 55 % de profits."
+    },
+    {
+      "id": "b3-r04-fc-011",
+      "section": "7. Les clés de la fidélisation",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quels sont les 4 enjeux de la fidélisation ?",
+      "verso": "1. Allonger la durée de vie du client, éviter l'attrition (churn). 2. Améliorer le CA (achats plus fréquents, panier plus élevé). 3. Promouvoir l'entreprise à moindre frais (customer advocacy, UGC). 4. Améliorer la connaissance client."
+    },
+    {
+      "id": "b3-r04-fc-012",
+      "section": "7. Les clés de la fidélisation",
+      "niveau": 2,
+      "type": "chiffre",
+      "recto": "À combien de personnes un client très satisfait et un client très mécontent parlent-ils de leur expérience ?",
+      "verso": "Très satisfait : à 3 personnes. Très mécontent : à près de 10.\nD'où l'importance de traiter les avis négatifs (et le biais des panels de commentateurs en ligne)."
+    },
+    {
+      "id": "b3-r04-fc-013",
+      "section": "7. Les clés de la fidélisation",
+      "niveau": 1,
+      "type": "liste",
+      "recto": "Quelles sont les 5 clés de la fidélisation ?",
+      "verso": "1. Créer un lien de confiance en personnalisant la relation (dès le 1er achat). 2. Une relation et un service client efficaces. 3. Un programme de fidélité (qui échoue sans culture client). 4. Écouter le client et lui donner la parole. 5. Enrichir et améliorer son offre grâce aux retours clients."
+    },
+    {
+      "id": "b3-r04-fc-014",
+      "section": "7. Les clés de la fidélisation",
+      "niveau": 2,
+      "type": "application",
+      "recto": "PrepMyMeal : quel levier de fidélisation pour les nouveaux clients perdus après la 1re commande, et pour la monotonie des plats ?",
+      "verso": "Nouveaux clients : clé 1, confiance dès le premier achat (confirmation, demande d'avis, offre de 2e commande).\nMonotonie : clé 5, enrichir l'offre (rotation des recettes, nouveautés testées au foodtruck).\nSportifs fidèles à 68 % : clé 3, programme de fidélité, pyramide jusqu'au militant."
+    }
+  ]
+}
