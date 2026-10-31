@@ -11,11 +11,11 @@
       "question": "Une entreprise veut adapter, à court et moyen termes, ses emplois, ses effectifs et ses compétences à sa stratégie et aux évolutions de son environnement. Quelle démarche engage-t-elle ?",
       "options": [
         "un audit social, qui dresse un état des lieux ponctuel des RH",
-        "une GEPP, démarche prospective des ressources humaines qui accompagne le changement",
         "un plan de sauvegarde de l'emploi, qui organise les départs",
+        "une GEPP, démarche prospective des ressources humaines qui accompagne le changement",
         "un bilan de compétences, qui évalue chaque salarié individuellement"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "C'est la définition de la GEPP (ex-GPEC) donnée par le Ministère du Travail : une démarche prospective qui adapte emplois, effectifs et compétences à la stratégie, avec trois finalités — besoin en nombre, adéquation des compétences, motivation et fidélisation."
     },
     {
@@ -41,11 +41,11 @@
       "question": "Un DRH veut objectiver un turn-over élevé et une pyramide des âges déséquilibrée annonçant des départs massifs. Sur quoi appuie-t-il son analyse ?",
       "options": [
         "l'analyse qualitative : entretiens et observation en situation de travail",
-        "l'analyse quantitative : les indicateurs de la BDESE et du SIRH",
+        "les référentiels d'emplois, d'activités et de compétences",
         "la veille métiers menée auprès des OPMQC",
-        "les référentiels d'emplois, d'activités et de compétences"
+        "l'analyse quantitative : les indicateurs de la BDESE et du SIRH"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "Turn-over, effectifs (ETP), contrats, pyramides des âges et d'ancienneté, absentéisme relèvent de l'analyse quantitative, appuyée sur la BDESE et le SIRH. L'analyse qualitative couvre ce qui ne se chiffre pas : satisfaction, engagement, climat social, référentiels."
     },
     {
@@ -67,10 +67,22 @@
         "Observatoires prospectifs des métiers, des qualifications et des compétences, pour la veille métiers"
       ],
       "paires": [
-        [0, 1],
-        [1, 2],
-        [2, 3],
-        [3, 0]
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
       ],
       "explication": "BDESE et SIRH alimentent l'analyse quantitative interne ; les OPMQC nourrissent la veille métiers sectorielle ; les HR Analytics sont une aide à la décision à combiner avec l'expertise humaine, sous contrainte RGPD (2018) et recommandations CNIL."
     },
@@ -82,11 +94,11 @@
       "question": "L'évaluation annuelle révèle que les compétences constatées chez les collaborateurs sont en deçà des compétences attendues dans le référentiel. De quel horizon d'écart s'agit-il, et quelle action engager ?",
       "options": [
         "un écart de moyen/long terme : anticiper les emplois émergents",
-        "un écart de court terme : reclasser les métiers sensibles et planifier les retraites",
         "un écart immédiat : développer et valoriser les compétences stratégiques",
+        "un écart de court terme : reclasser les métiers sensibles et planifier les retraites",
         "un écart conjoncturel : attendre la prochaine campagne d'évaluation"
       ],
-      "reponse": 2,
+      "reponse": 1,
       "explication": "L'écart entre compétences attendues (référentiel) et constatées (évaluation) est l'écart immédiat, traité par le développement des compétences. Le court terme oppose besoins planifiés et compétences amenées à disparaître ; le moyen/long terme, orientations stratégiques et emplois actuels."
     },
     {
@@ -97,11 +109,11 @@
       "question": "Lequel de ces plans ne fait PAS partie des cinq plans d'ajustement types de la GEPP ?",
       "options": [
         "le plan de développement des compétences",
-        "le plan de communication externe",
         "le plan de rémunération",
+        "le plan de communication externe",
         "le plan de reconversion professionnelle"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "Les cinq plans d'ajustement types sont : développement des compétences, mobilité interne, rémunération, recrutement et reconversion professionnelle (la VAE pouvant être un plan à part entière). La formation n'est d'ailleurs qu'un levier parmi d'autres : recrutement, organisation du travail, délégation, externalisation."
     },
     {
@@ -111,12 +123,12 @@
       "format": "qcm",
       "question": "Un salarié met en avant son diplôme reconnu par la branche pour prouver qu'il est compétent sur un poste. Que peut-on lui répondre au sens de Le Boterf ?",
       "options": [
-        "il a raison : le diplôme atteste la compétence",
         "le diplôme relève de la qualification, valeur d'échange reconnue par un titre — la compétence, elle, ne s'observe que par ses résultats en situation",
+        "il a raison : le diplôme atteste la compétence",
         "le diplôme mesure la performance, pas la compétence",
         "le diplôme est un potentiel, c'est-à-dire une compétence déjà démontrée"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "La compétence n'est ni la qualification (titre), ni la performance (elle est le processus qui la produit), ni la connaissance, ni le potentiel (compétence virtuelle), ni l'expérience (mode d'acquisition). C'est une combinatoire de ressources mobilisée en situation, observable seulement par ses résultats."
     },
     {
@@ -140,11 +152,26 @@
         "Issus de l'expérience : habiletés, automatismes, intuition"
       ],
       "paires": [
-        [0, 2],
-        [1, 4],
-        [2, 0],
-        [3, 3],
-        [4, 1]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          1
+        ]
       ],
       "explication": "Savoirs (« Que faut-il connaître ? »), savoir-faire (« Comment procéder ? ») et savoir-être (« Comment me comporter ? ») composent la compétence. S'y ajoutent les distinctions individuelle/collective, transverse (mobilité) et distinctive (avantage concurrentiel)."
     },
@@ -165,11 +192,11 @@
       "question": "Lors de l'élaboration d'un référentiel de compétences, pourquoi observer l'activité sur le terrain plutôt que se contenter des fiches de poste ?",
       "options": [
         "parce que les fiches de poste sont des documents confidentiels",
-        "parce que le travail réel révèle des compétences insoupçonnées que le travail prescrit ne décrit pas",
+        "parce que la loi impose une observation en situation avant toute cartographie",
         "parce que l'observation permet d'évaluer la performance individuelle des salariés",
-        "parce que la loi impose une observation en situation avant toute cartographie"
+        "parce que le travail réel révèle des compétences insoupçonnées que le travail prescrit ne décrit pas"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "La phase de préparation distingue travail prescrit et travail réel : c'est le réel, saisi par observation et entretiens, qui révèle des compétences insoupçonnées. Suivent la réalisation (dédoublonnage, regroupement, validation, communication) puis le suivi (mise à jour tous les 2-3 ans)."
     },
     {
@@ -180,11 +207,11 @@
       "question": "Une RH veut regrouper trois postes en un même emploi-type. Quelle condition doit-elle vérifier ?",
       "options": [
         "que les postes ont au moins 50 % de missions communes",
-        "que les postes relèvent du même niveau hiérarchique",
         "que les postes ont 80 % de missions et activités communes, des compétences de même nature et niveau, et qu'un titulaire peut tenir l'ensemble en moins de 3 mois",
+        "que les postes relèvent du même niveau hiérarchique",
         "que les titulaires des postes sont volontaires pour le regroupement"
       ],
-      "reponse": 2,
+      "reponse": 1,
       "explication": "Les trois vérifications avant regroupement : 80 % des missions et activités communes, compétences de même nature et de même niveau, un titulaire capable de tenir l'ensemble des postes en moins de 3 mois. L'emploi-type ignore la catégorisation hiérarchique."
     },
     {
@@ -204,11 +231,11 @@
       "question": "Dans une agence audiovisuelle, un seul monteur maîtrise la captation en direct : son absence mettrait la prestation en péril. Quel outil permet de repérer ce risque et d'en faire une priorité de formation ?",
       "options": [
         "la pyramide des âges",
-        "la matrice de polyvalence, qui croise activités et personnes avec leur niveau de compétence",
         "l'organigramme du service",
+        "la matrice de polyvalence, qui croise activités et personnes avec leur niveau de compétence",
         "l'aire de mobilité du poste de monteur"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "La matrice de polyvalence croise, pour un service, activités et personnes avec le niveau de compétence de chacun. Elle révèle les zones à risque — compétences détenues par un nombre réduit de collaborateurs — et donc les priorités de formation, individuelles et collectives."
     },
     {
@@ -218,12 +245,12 @@
       "format": "qcm",
       "question": "Une entreprise qui peine à recruter veut anticiper les évolutions d'un métier à 3/5 ans pour former ou faire valider les acquis en interne. Quelle approche du diagnostic des besoins adopte-t-elle ?",
       "options": [
-        "l'approche par le projet d'entreprise",
-        "l'approche par le projet de service",
         "l'approche métier",
+        "l'approche par le projet de service",
+        "l'approche par le projet d'entreprise",
         "l'approche individuelle"
       ],
-      "reponse": 2,
+      "reponse": 0,
       "explication": "L'approche métier anticipe les évolutions d'un métier à 3/5 ans ; elle est utile quand le recrutement est difficile (formation, VAE) mais exige des fiches métiers/poste. Les quatre approches (projet d'entreprise, projet de service, métier, individuelle) se combinent."
     },
     {
@@ -245,10 +272,22 @@
         "Les modalités de la formation restent à définir"
       ],
       "paires": [
-        [0, 1],
-        [1, 2],
-        [2, 3],
-        [3, 0]
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
       ],
       "explication": "Collectif : projets de changement, dysfonctionnements profonds ; individuel : tenue ou prise de poste, mutation. Générique : modalités à définir ; qualifié : action et organisme déjà identifiés. Et rappel : toute compétence manquante n'est pas un besoin de formation."
     },
@@ -261,10 +300,10 @@
       "options": [
         "tous les 2 ans, avec un bilan récapitulatif tous les 6 ans",
         "tous les ans, pour tous les salariés",
-        "tous les 4 ans, avec un état des lieux récapitulatif tous les 8 ans, plus un EPP de mi-carrière et de fin de carrière",
-        "tous les 5 ans, uniquement pour les salariés de plus de 45 ans"
+        "tous les 5 ans, uniquement pour les salariés de plus de 45 ans",
+        "tous les 4 ans, avec un état des lieux récapitulatif tous les 8 ans, plus un EPP de mi-carrière et de fin de carrière"
       ],
-      "reponse": 2,
+      "reponse": 3,
       "explication": "La loi du 24 octobre 2025 (art. L. 6315-1) fait de l'entretien professionnel l'EPP : premier EPP dans l'année suivant l'embauche, puis tous les 4 ans (contre 2 auparavant), état des lieux tous les 8 ans (contre 6), plus un EPP de mi-carrière et un EPP de fin de carrière. Le rythme 2 ans / 6 ans est l'ancien régime (loi du 5 mars 2014)."
     },
     {
@@ -284,6 +323,886 @@
       "question": "Pour sécuriser le transfert des compétences avant un départ en retraite, l'employeur peut imposer le mentorat au détenteur des savoirs concernés.",
       "reponse": false,
       "explication": "Faux. Le mentorat repose sur le volontariat — du mentor comme du mentoré. Le transfert des compétences (knowledge management) exige aussi une méthodologie précise, une planification et un suivi, la formation des détenteurs à la transmission et l'adaptation du temps de travail. Le tutorat en est le versant opérationnel."
+    },
+    {
+      "id": "b4-r06-qz-019",
+      "section": "1. La GEPP (ex-GPEC)",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les 3 finalités de la GEPP ? (3 réponses)",
+      "options": [
+        "le besoin en nombre de collaborateurs",
+        "l'adéquation des compétences",
+        "la motivation et l'engagement (fidélisation)",
+        "la réduction des salaires",
+        "la suppression des entretiens"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Négociation obligatoire au-delà de 300 salariés, mais toute entreprise doit anticiper."
+    },
+    {
+      "id": "b4-r06-qz-020",
+      "section": "1. La GEPP (ex-GPEC)",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 4 phases de la GEPP.",
+      "elements": [
+        "Définition du plan d'action",
+        "Mise en œuvre et suivi",
+        "Phase préparatoire / faisabilité",
+        "Analyse et diagnostic RH"
+      ],
+      "ordre": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "explication": "Le suivi est un processus continu ; on conduit la GEPP en mode projet."
+    },
+    {
+      "id": "b4-r06-qz-021",
+      "section": "1. La GEPP (ex-GPEC)",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle instance faut-il informer lors de la définition du plan d'action GEPP ?",
+      "options": [
+        "la CNIL",
+        "le CSE",
+        "l'URSSAF",
+        "France Travail"
+      ],
+      "reponse": 1,
+      "explication": "Le plan fixe objectifs, priorités, délais et indicateurs."
+    },
+    {
+      "id": "b4-r06-qz-022",
+      "section": "1. La GEPP (ex-GPEC)",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le workforce planning, version anglo-saxonne de la GEPP, est moins formaliste et donne la priorité aux besoins de l'entreprise.",
+      "reponse": true,
+      "explication": "Vrai : analyse régulière des ressources nécessaires au plan stratégique, moins individualiste. La négociation collective manque d'agilité."
+    },
+    {
+      "id": "b4-r06-qz-023",
+      "section": "1. La GEPP (ex-GPEC)",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Dans la phase préparatoire, par quoi relie-t-on la GEPP à la stratégie ? (3 réponses)",
+      "options": [
+        "l'environnement",
+        "le secteur (observatoire des métiers)",
+        "la culture d'entreprise",
+        "le cours de bourse",
+        "l'avis des clients uniquement"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "On constitue aussi un groupe de travail, une structure de pilotage et on mobilise les acteurs."
+    },
+    {
+      "id": "b4-r06-qz-024",
+      "section": "2. Le diagnostic RH",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce que le diagnostic RH ?",
+      "options": [
+        "un audit comptable",
+        "un entretien annuel",
+        "un état des lieux des RH plus une prospection sur les transformations futures des emplois et compétences",
+        "une enquête de satisfaction client"
+      ],
+      "reponse": 2,
+      "explication": "Il révèle les écarts avec la stratégie et permet une gestion proactive des risques, notamment la pénurie de compétences."
+    },
+    {
+      "id": "b4-r06-qz-025",
+      "section": "2. Le diagnostic RH",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles étapes font partie de la méthode du diagnostic RH ? (4 réponses)",
+      "options": [
+        "la structure des RH (contrats, effectifs, pyramides)",
+        "les compétences clés présentes",
+        "les recrutements passés et futurs",
+        "le transfert des connaissances",
+        "le calcul du chiffre d'affaires",
+        "le choix du logo"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Les 7 : structure, compétences clés, recrutements, besoins en formation, transfert des connaissances, processus et outils RH, anticipation des besoins futurs."
+    },
+    {
+      "id": "b4-r06-qz-026",
+      "section": "2. Le diagnostic RH",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque signal du diagnostic à ce qu'il révèle.",
+      "colonne_a": [
+        "Pyramide des âges déséquilibrée",
+        "Turn-over élevé"
+      ],
+      "colonne_b": [
+        "Mauvais climat social",
+        "Départs massifs à venir"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Analyse quantitative sur BDESE et SIRH."
+    },
+    {
+      "id": "b4-r06-qz-027",
+      "section": "2. Le diagnostic RH",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que couvre surtout l'analyse qualitative du diagnostic RH ?",
+      "options": [
+        "la satisfaction, l'engagement, le climat social et les référentiels d'emplois et de compétences",
+        "les effectifs en ETP",
+        "la masse salariale",
+        "le nombre d'accidents"
+      ],
+      "reponse": 0,
+      "explication": "Les référentiels s'élaborent avec personnel et encadrement : fiches de poste, entretiens, observation en situation de travail."
+    },
+    {
+      "id": "b4-r06-qz-028",
+      "section": "2. Le diagnostic RH",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Pour la veille métiers via les OPMQC, le cours conseille de multiplier les sources, même peu analysées.",
+      "reponse": false,
+      "explication": "Faux : cibler son secteur, moins de sources mais mieux analysées."
+    },
+    {
+      "id": "b4-r06-qz-029",
+      "section": "2. Le diagnostic RH",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les HR Analytics, qui prédisent par exemple les risques de départ, doivent rester une aide à la décision combinée à l'expertise humaine.",
+      "reponse": true,
+      "explication": "Vrai, sous RGPD et recommandations CNIL."
+    },
+    {
+      "id": "b4-r06-qz-030",
+      "section": "3. Des écarts au plan d'action",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition de l'écart en GEPP.",
+      "texte": "L'écart est l'{1} entre les besoins {2} et les ressources {3}.",
+      "trous": [
+        "inadéquation",
+        "futurs",
+        "disponibles"
+      ],
+      "explication": "Analyse en 4 temps : comparaison, classement par nature, évaluation, causes racines."
+    },
+    {
+      "id": "b4-r06-qz-031",
+      "section": "3. Des écarts au plan d'action",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque horizon d'écart à l'action type.",
+      "colonne_a": [
+        "Immédiat",
+        "Court terme",
+        "Moyen / long terme"
+      ],
+      "colonne_b": [
+        "Emplois émergents, adaptation des emplois",
+        "Développer et valoriser les compétences stratégiques",
+        "Reclassement des métiers sensibles, planification des retraites"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Immédiat : compétences attendues vs constatées ; court terme : compétences amenées à disparaître ; moyen/long terme : orientations stratégiques."
+    },
+    {
+      "id": "b4-r06-qz-032",
+      "section": "3. Des écarts au plan d'action",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels facteurs d'évolution font naître les besoins futurs ? (3 réponses)",
+      "options": [
+        "normatifs (lois, certifications)",
+        "numériques",
+        "de marché (clients, concurrence, RSE)",
+        "astrologiques",
+        "personnels du dirigeant"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Ils se repèrent par la veille."
+    },
+    {
+      "id": "b4-r06-qz-033",
+      "section": "3. Des écarts au plan d'action",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La formation n'est qu'un levier parmi d'autres pour combler un écart de compétences.",
+      "reponse": true,
+      "explication": "Vrai : recrutement, mobilité, organisation du travail, délégation, externalisation."
+    },
+    {
+      "id": "b4-r06-qz-034",
+      "section": "3. Des écarts au plan d'action",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Quel dispositif le cours cite-t-il comme pouvant constituer un plan d'ajustement à part entière ?",
+      "options": [
+        "la BDESE",
+        "le bilan social",
+        "le CSE",
+        "la VAE"
+      ],
+      "reponse": 3,
+      "explication": "5 plans : développement des compétences, mobilité interne, rémunération, recrutement, reconversion."
+    },
+    {
+      "id": "b4-r06-qz-035",
+      "section": "4. La compétence",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition de Le Boterf.",
+      "texte": "La compétence est l'{1} de ressources internes ou externes pour traiter efficacement une {2} particulière afin de produire des résultats satisfaisants pour un {3}.",
+      "trous": [
+        "articulation",
+        "situation",
+        "destinataire"
+      ],
+      "explication": "Une combinatoire mobilisée en situation : seul son résultat est observable."
+    },
+    {
+      "id": "b4-r06-qz-036",
+      "section": "4. La compétence",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Que suppose une compétence selon le cours ? (3 réponses)",
+      "options": [
+        "une personne",
+        "un champ d'application",
+        "un tiers qui évalue et reconnaît",
+        "un diplôme obligatoire",
+        "une ancienneté minimale"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Le tiers peut être une certification, un manager, la RH."
+    },
+    {
+      "id": "b4-r06-qz-037",
+      "section": "4. La compétence",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque niveau de transférabilité à sa situation.",
+      "colonne_a": [
+        "Forte",
+        "Moyenne",
+        "Faible / reconversion"
+      ],
+      "colonne_b": [
+        "Métier différent, activités similaires",
+        "Champ différent, savoirs à acquérir",
+        "Même métier, autre structure"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "explication": "La compétence s'acquiert, s'entretient, peut se perdre ou devenir obsolète."
+    },
+    {
+      "id": "b4-r06-qz-038",
+      "section": "4. La compétence",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "La compétence n'est pas… Associez chaque notion voisine à ce qu'elle est vraiment.",
+      "colonne_a": [
+        "Performance",
+        "Potentiel",
+        "Expérience",
+        "Connaissance"
+      ],
+      "colonne_b": [
+        "Mode d'acquisition",
+        "Compétence virtuelle",
+        "Ressource dans laquelle la compétence puise",
+        "Ce que la compétence produit"
+      ],
+      "paires": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "explication": "Elle n'est pas non plus la qualification, valeur d'échange reconnue par un titre."
+    },
+    {
+      "id": "b4-r06-qz-039",
+      "section": "4. La compétence",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une entreprise détient des brevets rares qui la démarquent. De quel type de compétence s'agit-il ?",
+      "options": [
+        "transverse",
+        "distinctive",
+        "individuelle",
+        "générique"
+      ],
+      "reponse": 1,
+      "explication": "La compétence distinctive est un avantage concurrentiel. La transverse passe d'un métier à l'autre : clé de la mobilité."
+    },
+    {
+      "id": "b4-r06-qz-040",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Le référentiel de compétences regroupe les métiers par fonctions.",
+      "reponse": false,
+      "explication": "Faux : il les regroupe par compétences, et non par fonctions."
+    },
+    {
+      "id": "b4-r06-qz-041",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "À quelle fréquence met-on à jour un référentiel de compétences ?",
+      "options": [
+        "tous les mois",
+        "tous les 10 ans",
+        "tous les 2-3 ans, chaque année en cas de mutation",
+        "jamais"
+      ],
+      "reponse": 2,
+      "explication": "Phases : préparation, réalisation (dédoublonnage, validation, communication), suivi."
+    },
+    {
+      "id": "b4-r06-qz-042",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les limites du référentiel de compétences ? (3 réponses)",
+      "options": [
+        "il exige une culture de la compétence",
+        "il demande un investissement considérable en temps et en argent",
+        "son actualisation permanente peut démobiliser",
+        "il est interdit par la loi",
+        "il remplace le contrat de travail"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "D'où son caractère facultatif."
+    },
+    {
+      "id": "b4-r06-qz-043",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Classez les niveaux de la cartographie, du plus large au plus fin.",
+      "elements": [
+        "Poste",
+        "Emploi-type",
+        "Tâche",
+        "Famille professionnelle",
+        "Sous-famille"
+      ],
+      "ordre": [
+        3,
+        4,
+        1,
+        0,
+        2
+      ],
+      "explication": "Autant de postes que de salariés ; la tâche est l'unité élémentaire."
+    },
+    {
+      "id": "b4-r06-qz-044",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qui a remplacé Pôle emploi et porte le référentiel ROME 4.0 ?",
+      "options": [
+        "France Travail",
+        "France Compétences",
+        "l'APEC",
+        "le CEREQ"
+      ],
+      "reponse": 0,
+      "explication": "Depuis le 1er janvier 2024. Autres appuis : référentiels de branche, RNCP de France Compétences, fiches APEC."
+    },
+    {
+      "id": "b4-r06-qz-045",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Où et par quelle méthode est né l'emploi-type ?",
+      "options": [
+        "à l'INSEE, méthode RFM",
+        "chez France Travail, méthode ROME",
+        "à l'APEC, méthode SMART",
+        "au CEREQ, méthode ETED (Nicole Mandon, 1990)"
+      ],
+      "reponse": 3,
+      "explication": "Il a inspiré le ROME."
+    },
+    {
+      "id": "b4-r06-qz-046",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La fiche emploi-type liste les savoir-être requis.",
+      "reponse": false,
+      "explication": "Faux : elle liste les savoir-faire généraux, relationnels et techniques, pas les savoir-être."
+    },
+    {
+      "id": "b4-r06-qz-047",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez les chiffres de l'étude « Quels métiers en 2030 ? ».",
+      "texte": "Plus de {1} % des métiers seront impactés par une mutation d'ici 10 ans, et {2} % n'existent pas encore.",
+      "trous": [
+        "50",
+        "20"
+      ],
+      "explication": "D'où l'enjeu de cartographier pour anticiper."
+    },
+    {
+      "id": "b4-r06-qz-048",
+      "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque notion de mobilité à sa définition.",
+      "colonne_a": [
+        "Aire de mobilité",
+        "Passerelle de mobilité",
+        "Mobilité horizontale",
+        "Mobilité verticale"
+      ],
+      "colonne_b": [
+        "Poste de niveau supérieur",
+        "Poste de niveau équivalent, autre service",
+        "Compétences nécessaires pour passer d'un poste à un autre",
+        "Précise en plus comment on accompagne ce développement"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "La fiche emploi-type indique les emplois sources et cibles."
+    },
+    {
+      "id": "b4-r06-qz-049",
+      "section": "6. Diagnostiquer les besoins",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels sont les 4 enjeux du diagnostic des besoins de formation ? (4 réponses)",
+      "options": [
+        "financier",
+        "social",
+        "managérial",
+        "RH",
+        "esthétique",
+        "juridique pénal"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "C'est la première étape du PDC."
+    },
+    {
+      "id": "b4-r06-qz-050",
+      "section": "6. Diagnostiquer les besoins",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque approche du diagnostic à sa vigilance.",
+      "colonne_a": [
+        "Projet d'entreprise",
+        "Projet de service",
+        "Métier",
+        "Individuelle"
+      ],
+      "colonne_b": [
+        "Exige des fiches métiers et de poste",
+        "À intégrer aux exigences du métier et du service",
+        "Implication forte, chronophage",
+        "À intégrer au projet global"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Les approches sont combinables."
+    },
+    {
+      "id": "b4-r06-qz-051",
+      "section": "6. Diagnostiquer les besoins",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que la note d'orientation ?",
+      "options": [
+        "le plan de formation détaillé",
+        "un document concis présentant contexte, objectifs stratégiques, politique RH et grandes orientations de formation",
+        "un compte rendu d'entretien",
+        "une note de service disciplinaire"
+      ],
+      "reponse": 1,
+      "explication": "La consultation annuelle du CSE sur les orientations de la formation est une obligation légale distincte de celle sur le plan."
+    },
+    {
+      "id": "b4-r06-qz-052",
+      "section": "6. Diagnostiquer les besoins",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce qu'une compétence clé d'un poste ?",
+      "options": [
+        "une compétence rare sur le marché",
+        "une compétence certifiée",
+        "une compétence dont la non-maîtrise empêche la tenue du poste",
+        "une soft skill"
+      ],
+      "reponse": 2,
+      "explication": "Identifier les compétences d'un poste, c'est l'analyser : activités, puis compétences clés."
+    },
+    {
+      "id": "b4-r06-qz-053",
+      "section": "6. Diagnostiquer les besoins",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la traduction des écarts en formation.",
+      "elements": [
+        "Objectifs pédagogiques",
+        "Besoins de formation",
+        "Compétences manquantes",
+        "Objectifs opérationnels"
+      ],
+      "ordre": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "explication": "Mais toute compétence manquante n'est pas un besoin de formation."
+    },
+    {
+      "id": "b4-r06-qz-054",
+      "section": "6. Diagnostiquer les besoins",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le Responsable Formation doit trier les problèmes remontés, car certains relèvent de l'organisation et non de la formation.",
+      "reponse": true,
+      "explication": "Vrai."
+    },
+    {
+      "id": "b4-r06-qz-055",
+      "section": "7. Évaluer et recueillir les besoins",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque méthode d'évaluation à son principe.",
+      "colonne_a": [
+        "Assessment center",
+        "360°",
+        "Entretien de groupe",
+        "Auto-évaluation"
+      ],
+      "colonne_b": [
+        "Projets collectifs, à compléter d'évaluations individuelles",
+        "Questionnaires remplis chacun de son côté",
+        "Mises en situation concrètes avec grille de critères",
+        "Regards croisés, généralement réservés aux managers"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Le collaborateur est informé au préalable de la date et des méthodes."
+    },
+    {
+      "id": "b4-r06-qz-056",
+      "section": "7. Évaluer et recueillir les besoins",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quand a lieu le premier EPP depuis la loi du 24 octobre 2025 ?",
+      "options": [
+        "dans l'année suivant l'embauche",
+        "dès le premier jour",
+        "après 2 ans d'ancienneté",
+        "après 4 ans d'ancienneté"
+      ],
+      "reponse": 0,
+      "explication": "Puis tous les 4 ans, état des lieux à 8 ans, plus un EPP de mi-carrière et un de fin de carrière."
+    },
+    {
+      "id": "b4-r06-qz-057",
+      "section": "7. Évaluer et recueillir les besoins",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque stratégie de recueil des besoins à son principal inconvénient.",
+      "colonne_a": [
+        "Équipe RH",
+        "Managers",
+        "Intervenant externe"
+      ],
+      "colonne_b": [
+        "Acceptation difficile, climat social mal appréhendé",
+        "Très chronophage, managers court-circuités",
+        "Résultats hétérogènes, salariés qui n'osent pas s'exprimer"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Choix selon taille, temps, budget et climat social."
+    },
+    {
+      "id": "b4-r06-qz-058",
+      "section": "7. Évaluer et recueillir les besoins",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "La formation peut servir de récompense ou de sanction à l'issue d'une évaluation.",
+      "reponse": false,
+      "explication": "Faux : c'est une obligation de l'employeur, jamais une récompense ni une sanction."
+    },
+    {
+      "id": "b4-r06-qz-059",
+      "section": "7. Évaluer et recueillir les besoins",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quand recueillir idéalement les besoins de formation ?",
+      "options": [
+        "en janvier",
+        "au fil de l'eau sans calendrier",
+        "en juillet",
+        "en septembre/octobre, pour une consultation du CSE en novembre"
+      ],
+      "reponse": 3,
+      "explication": "Grilles d'évaluation et questionnaires complètent le recueil."
+    },
+    {
+      "id": "b4-r06-qz-060",
+      "section": "7. Évaluer et recueillir les besoins",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles familles de données l'entretien d'évaluation collecte-t-il ? (3 réponses)",
+      "options": [
+        "les compétences (hard et soft skills)",
+        "l'engagement (charge, reconnaissance, équilibre)",
+        "les objectifs SMART de l'année",
+        "les données de santé",
+        "les opinions politiques"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "La DRH en tire talents, PDC personnalisés, cartographies et plans de succession."
+    },
+    {
+      "id": "b4-r06-qz-061",
+      "section": "8. Maintenir et transférer les compétences",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque dispositif de transfert à sa définition.",
+      "colonne_a": [
+        "Mentorat",
+        "Tutorat"
+      ],
+      "colonne_b": [
+        "Un senior transmet le savoir au quotidien à un nouvel arrivant",
+        "Relation de soutien et d'apprentissage fondée sur l'échange et la confiance, sur la base du volontariat"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Le tutorat est le versant opérationnel, levier classique d'anticipation des départs en retraite."
+    },
+    {
+      "id": "b4-r06-qz-062",
+      "section": "8. Maintenir et transférer les compétences",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles conditions le transfert de compétences exige-t-il ? (4 réponses)",
+      "options": [
+        "le volontariat des détenteurs et des apprenants",
+        "une méthodologie précise",
+        "la formation des détenteurs à la transmission",
+        "l'adaptation du temps de travail",
+        "l'obligation imposée par l'employeur",
+        "l'absence de suivi"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Il assure la continuité de l'activité et limite la déperdition de savoirs."
+    },
+    {
+      "id": "b4-r06-qz-063",
+      "section": "8. Maintenir et transférer les compétences",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que l'inbound recruiting ?",
+      "options": [
+        "recruter uniquement en interne",
+        "attirer les candidats qualifiés en faisant connaître l'entreprise et ses valeurs",
+        "externaliser le recrutement",
+        "recruter par cooptation"
+      ],
+      "reponse": 1,
+      "explication": "Il s'appuie sur la marque employeur : sites carrière, jobboards, LinkedIn."
+    },
+    {
+      "id": "b4-r06-qz-064",
+      "section": "8. Maintenir et transférer les compétences",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Selon le cours, il est souvent plus rentable de faire monter en compétences que de recruter.",
+      "reponse": true,
+      "explication": "Vrai. 66 % des cadres bénéficient de formation professionnelle en France."
+    },
+    {
+      "id": "b4-r06-qz-065",
+      "section": "8. Maintenir et transférer les compétences",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Justifiez, selon la logique GEPP, une formation destinée à combler une compétence nouvelle requise par un projet.",
+      "attendus": [
+        "Diagnostic : compétence clé non maîtrisée pour le projet",
+        "Écart immédiat entre compétences requises et détenues",
+        "Besoin collectif et qualifié (l'action existe)",
+        "Matrice de polyvalence : zone à risque si une seule personne maîtrise la compétence",
+        "Double bénéfice : besoin ponctuel comblé et compétence distinctive durable, fidélisation"
+      ],
+      "explication": "Un besoin ponctuel traité en investissement stratégique."
     }
   ]
 }

@@ -9,8 +9,13 @@
       "niveau": 1,
       "format": "qcm",
       "question": "« L'Oréal, parce que je le vaux bien » mobilise quel type de motivation ?",
-      "options": ["rationnelle", "hédoniste", "oblative", "éthique"],
-      "reponse": 1,
+      "options": [
+        "rationnelle",
+        "oblative",
+        "hédoniste",
+        "éthique"
+      ],
+      "reponse": 2,
       "explication": "La motivation hédoniste s'adresse au plaisir et à la satisfaction attendue pour soi-même. L'oblative est tournée vers autrui, l'éthique vers un devoir supérieur à sa propre personne."
     },
     {
@@ -20,12 +25,12 @@
       "format": "qcm",
       "question": "« Est-ce bien raisonnable d'acheter tel produit alors que son prix est excessif ? » illustre :",
       "options": [
-        "un frein lié à la peur",
         "un frein lié à l'inhibition",
+        "un frein lié à la peur",
         "une motivation rationnelle",
         "un risque perçu"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "Le frein d'inhibition traduit une motivation jugée frivole, inutile voire honteuse : la cible développe un sentiment de culpabilité et s'autocensure. Le frein lié à la peur relève du manque de confiance en son jugement."
     },
     {
@@ -36,11 +41,11 @@
       "question": "Un groupe de référence se distingue d'un groupe d'appartenance parce que :",
       "options": [
         "il est plus large et moins structuré",
-        "on y adhère par choix, alors qu'on est rattaché de fait au groupe d'appartenance",
+        "il est défini par des critères sociodémographiques objectifs",
         "il regroupe uniquement des leaders d'opinion",
-        "il est défini par des critères sociodémographiques objectifs"
+        "on y adhère par choix, alors qu'on est rattaché de fait au groupe d'appartenance"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "L'adhésion au groupe de référence tient au fait qu'on se reconnaît dans ses opinions et ses comportements."
     },
     {
@@ -79,8 +84,13 @@
       "niveau": 1,
       "format": "qcm",
       "question": "Au sein de la cible principale, le noyau des individus les plus motivés et les plus réceptifs s'appelle :",
-      "options": ["la cible relai", "la cible secondaire", "le cœur de cible", "la cible d'influence"],
-      "reponse": 2,
+      "options": [
+        "le cœur de cible",
+        "la cible secondaire",
+        "la cible relai",
+        "la cible d'influence"
+      ],
+      "reponse": 0,
       "explication": "C'est la cible à toucher impérativement : plus fort potentiel d'adhésion."
     },
     {
@@ -91,11 +101,11 @@
       "question": "Quelle question caractérise la cible communication, par opposition à la cible marketing ?",
       "options": [
         "« À qui voulez-vous vendre ? »",
-        "« Qui voulez-vous toucher ? »",
+        "« Quel canal privilégiez-vous ? »",
         "« Quel budget allouez-vous ? »",
-        "« Quel canal privilégiez-vous ? »"
+        "« Qui voulez-vous toucher ? »"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "La cible marketing répond à « À qui voulez-vous vendre ? ». Les deux stratégies doivent être cohérentes et synchronisées : un message contradictoire pousse les cibles vers la concurrence."
     },
     {
@@ -119,8 +129,13 @@
       "niveau": 2,
       "format": "qcm",
       "question": "La méthode K-Means appartient à quelle famille de méthodes de clustering ?",
-      "options": ["hiérarchiques", "centroïdes", "à densité", "probabilistes"],
-      "reponse": 1,
+      "options": [
+        "hiérarchiques",
+        "à densité",
+        "centroïdes",
+        "probabilistes"
+      ],
+      "reponse": 2,
       "explication": "K-Means répartit les clients en k segments de manière à minimiser la variance intra-cluster. DBSCAN et OPTICS relèvent des méthodes à densité, la CAH des méthodes hiérarchiques."
     },
     {
@@ -130,12 +145,12 @@
       "format": "qcm",
       "question": "Qui a initié la méthode des personas, et dans quel ouvrage ?",
       "options": [
-        "Tony Zambito, dans ses travaux sur le buyer persona",
         "Alan Cooper, dans The Inmates Are Running the Asylum",
+        "Tony Zambito, dans ses travaux sur le buyer persona",
         "Philip Kotler, dans Marketing Management",
         "HubSpot, dans sa méthodologie inbound"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "En 1999. Zambito a ensuite développé le buyer persona, et HubSpot l'a popularisé via ses solutions d'inbound marketing."
     },
     {
@@ -146,11 +161,11 @@
       "question": "Pourquoi créer un persona négatif ?",
       "options": [
         "pour anticiper les critiques de la concurrence",
-        "pour identifier les profils dont le coût d'acquisition est trop élevé ou qui ne correspondent pas à l'offre",
+        "pour segmenter les clients insatisfaits",
         "pour tester la robustesse du positionnement",
-        "pour segmenter les clients insatisfaits"
+        "pour identifier les profils dont le coût d'acquisition est trop élevé ou qui ne correspondent pas à l'offre"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "Recenser ces profils permet de prioriser les actions sur les personas à meilleur potentiel."
     },
     {
@@ -176,11 +191,11 @@
       "question": "Le nudge marketing se caractérise par :",
       "options": [
         "une incitation contraignante appuyée sur des sanctions",
-        "une incitation douce influençant sans restreindre la liberté de choix",
         "une personnalisation algorithmique des offres en temps réel",
+        "une incitation douce influençant sans restreindre la liberté de choix",
         "une communication fondée sur la preuve scientifique"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "Il s'appuie sur les biais cognitifs et les motivations sous-jacentes, par des suggestions contextuelles ou des aménagements environnementaux."
     },
     {
@@ -189,8 +204,20 @@
       "niveau": 1,
       "format": "qcm_multiple",
       "question": "Quels sont les 4 types de motivations ? (4 réponses)",
-      "options": ["rationnelles", "impulsives", "hédonistes", "oblatives", "sociales", "éthiques ou d'auto-expression"],
-      "reponse": [0, 2, 3, 5],
+      "options": [
+        "rationnelles",
+        "impulsives",
+        "hédonistes",
+        "oblatives",
+        "sociales",
+        "éthiques ou d'auto-expression"
+      ],
+      "reponse": [
+        0,
+        2,
+        3,
+        5
+      ],
       "explication": "Les motivations oblatives sont tournées vers autrui : chercher à faire plaisir à l'autre."
     },
     {
@@ -207,7 +234,12 @@
         "de rentabilité",
         "d'avantages recherchés"
       ],
-      "reponse": [0, 2, 3, 5],
+      "reponse": [
+        0,
+        2,
+        3,
+        5
+      ],
       "explication": "La fidélité est un critère du comportement d'achat, elle ne constitue pas une famille à part entière."
     },
     {
@@ -216,8 +248,20 @@
       "niveau": 1,
       "format": "qcm_multiple",
       "question": "Quels sont les 4 niveaux de hiérarchisation des cibles ? (4 réponses)",
-      "options": ["cible principale", "cible captive", "cœur de cible", "cible secondaire", "cible latente", "cible relai"],
-      "reponse": [0, 2, 3, 5],
+      "options": [
+        "cible principale",
+        "cible captive",
+        "cœur de cible",
+        "cible secondaire",
+        "cible latente",
+        "cible relai"
+      ],
+      "reponse": [
+        0,
+        2,
+        3,
+        5
+      ],
       "explication": "Dans certaines stratégies, cibles secondaires et relais sont regroupées : on hiérarchise alors trois niveaux."
     },
     {
@@ -234,7 +278,12 @@
         "l'organigramme de l'entreprise",
         "Google Analytics"
       ],
-      "reponse": [0, 1, 3, 5],
+      "reponse": [
+        0,
+        1,
+        3,
+        5
+      ],
       "explication": "S'y ajoutent les interviews de clients et prospects réels, les sondages en ligne, et la participation aux forums et blogs traitant des problématiques de la cible."
     },
     {
@@ -243,8 +292,24 @@
       "niveau": 1,
       "format": "qcm_multiple",
       "question": "Quelles sont les 6 règles d'un bon positionnement ? (6 réponses)",
-      "options": ["clair", "innovant", "attractif", "spécifique", "crédible", "consensuel", "rentable", "durable"],
-      "reponse": [0, 2, 3, 4, 6, 7],
+      "options": [
+        "clair",
+        "innovant",
+        "attractif",
+        "spécifique",
+        "crédible",
+        "consensuel",
+        "rentable",
+        "durable"
+      ],
+      "reponse": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
       "explication": "« Clair » signifie des caractéristiques précises et peu nombreuses, exprimées en une phrase synthétique — condition de la mémorisation."
     },
     {
@@ -254,7 +319,13 @@
       "format": "texte_a_trous",
       "question": "Complétez les définitions des motivations et des freins.",
       "texte": "La {1} est une raison qui pousse à un certain comportement pour satisfaire un {2} non satisfait. Les {3} sont les raisons qui tendent à bloquer un comportement. Ils sont de deux types : ceux liés à l'{4}, où la cible s'autocensure par culpabilité, et ceux liés à la {5}, où elle manque de confiance en son propre jugement.",
-      "trous": ["motivation", "besoin", "freins", "inhibition", "peur"],
+      "trous": [
+        "motivation",
+        "besoin",
+        "freins",
+        "inhibition",
+        "peur"
+      ],
       "explication": "On mobilise aussi la pyramide des besoins pour situer les cibles sur une échelle et adapter le message."
     },
     {
@@ -264,7 +335,14 @@
       "format": "texte_a_trous",
       "question": "Complétez la hiérarchie des cibles.",
       "texte": "La cible {1} est le segment homogène visé en priorité, auquel on consacre les actions et le budget les plus importants. Le {2} est le noyau des individus les plus motivés et réceptifs. La cible {3} est moins touchée directement mais peut intervenir en {4} d'information. La cible {5} n'est pas touchée directement, mais elle a le pouvoir de {6} le message et d'influencer les publics.",
-      "trous": ["principale", "cœur de cible", "secondaire", "rebond", "relai", "relayer"],
+      "trous": [
+        "principale",
+        "cœur de cible",
+        "secondaire",
+        "rebond",
+        "relai",
+        "relayer"
+      ],
       "explication": "La cible relai regroupe prescripteurs, influenceurs, leaders d'opinion, journalistes et personnalités."
     },
     {
@@ -274,7 +352,13 @@
       "format": "texte_a_trous",
       "question": "Complétez la définition du ciblage selon le Mercator.",
       "texte": "Le ciblage, aussi appelé {1}, est « un choix {2} consistant à déterminer le ou les {3} de clients que l'on cherche à {4}, conquérir ou {5} par sa politique et ses actions marketing ».",
-      "trous": ["targeting", "stratégique", "segments", "influencer", "fidéliser"],
+      "trous": [
+        "targeting",
+        "stratégique",
+        "segments",
+        "influencer",
+        "fidéliser"
+      ],
       "explication": "Ses trois objectifs : personnaliser le message, augmenter l'efficacité de la campagne, réduire les coûts en évitant les contacts inutiles."
     },
     {
@@ -284,7 +368,13 @@
       "format": "texte_a_trous",
       "question": "Complétez la définition du persona.",
       "texte": "Un persona est l'{1} de l'utilisateur ou du client idéal. C'est un personnage {2} dont le profil détaillé correspond à celui des individus types auxquels la marque veut s'adresser en priorité. Il rend {3} et {4} le travail de segmentation. Il faut se limiter à {5} personas pour ne pas diluer la précision.",
-      "trous": ["archétype", "fictif", "visible", "concret", "4 ou 5"],
+      "trous": [
+        "archétype",
+        "fictif",
+        "visible",
+        "concret",
+        "4 ou 5"
+      ],
       "explication": "Il faut aussi les réactualiser régulièrement : usages et tendances de consommation changent constamment."
     },
     {
@@ -294,7 +384,13 @@
       "format": "texte_a_trous",
       "question": "Complétez les deux faces du positionnement.",
       "texte": "Le positionnement {1} est la place de l'entreprise dans l'{2} des consommateurs par rapport aux entreprises concurrentes. Le positionnement {3} est la manière dont elle désire être perçue. Lorsque les deux {4}, l'entreprise a réussi sa communication — ce que vérifient les {5} de concept.",
-      "trous": ["perçu", "esprit", "voulu", "concordent", "tests"],
+      "trous": [
+        "perçu",
+        "esprit",
+        "voulu",
+        "concordent",
+        "tests"
+      ],
       "explication": "Les tests de concept mesurent l'intérêt et la perception par rapport à l'offre concurrente."
     },
     {
@@ -366,14 +462,36 @@
       "niveau": 1,
       "format": "appariement",
       "question": "Associez chaque type de motivation à son ressort.",
-      "colonne_a": ["Rationnelle", "Hédoniste", "Oblative", "Éthique"],
+      "colonne_a": [
+        "Rationnelle",
+        "Hédoniste",
+        "Oblative",
+        "Éthique"
+      ],
       "colonne_b": [
         "Un sentiment de devoir supérieur à sa propre personne",
         "S'adresse à la raison, à l'utilité, à la connaissance",
         "Tournée vers autrui, chercher à faire plaisir à l'autre",
         "Le plaisir, la satisfaction attendue pour soi-même"
       ],
-      "paires": [[0, 1], [1, 3], [2, 2], [3, 0]],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ]
+      ],
       "explication": "Situer la motivation dominante d'un segment permet d'adapter l'axe créatif du message."
     },
     {
@@ -382,13 +500,30 @@
       "niveau": 2,
       "format": "appariement",
       "question": "Associez chaque méthode de clustering à son principe.",
-      "colonne_a": ["Classification Ascendante Hiérarchique", "K-Means", "DBSCAN"],
+      "colonne_a": [
+        "Classification Ascendante Hiérarchique",
+        "K-Means",
+        "DBSCAN"
+      ],
       "colonne_b": [
         "Répartir en k segments en minimisant la variance intra-cluster",
         "Identifier les clusters d'après la densité des points",
         "Partir de chaque observation comme cluster individuel et fusionner les plus similaires"
       ],
-      "paires": [[0, 2], [1, 0], [2, 1]],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
       "explication": "Les méthodes à densité sont utiles pour détecter des clusters de formes complexes et de tailles variables."
     },
     {
@@ -397,14 +532,36 @@
       "niveau": 1,
       "format": "appariement",
       "question": "Associez chaque règle du positionnement à son exigence.",
-      "colonne_a": ["Clair", "Spécifique", "Crédible", "Rentable"],
+      "colonne_a": [
+        "Clair",
+        "Spécifique",
+        "Crédible",
+        "Rentable"
+      ],
       "colonne_b": [
         "Il traduit une réalité et un potentiel économiques",
         "Caractéristiques précises et peu nombreuses, en une phrase",
         "Honnêteté, cohérence et réalisme",
         "Propre à la marque, il ne doit pas se rapprocher de celui des concurrents"
       ],
-      "paires": [[0, 1], [1, 3], [2, 2], [3, 0]],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ]
+      ],
       "explication": "Les deux règles restantes sont « attractif » (répond à une réelle problématique) et « durable »."
     },
     {
@@ -420,7 +577,13 @@
         "Identification des avantages concurrentiels possibles",
         "Définition de l'univers de référence voulu"
       ],
-      "ordre": [1, 4, 3, 0, 2],
+      "ordre": [
+        1,
+        4,
+        3,
+        0,
+        2
+      ],
       "explication": "Le choix se fait en fonction du positionnement des autres acteurs et de la capacité de l'entreprise à le respecter."
     },
     {
@@ -435,7 +598,12 @@
         "Incarner les segments retenus sous forme de personas",
         "Choisir les segments prioritaires et les hiérarchiser"
       ],
-      "ordre": [1, 3, 2, 0],
+      "ordre": [
+        1,
+        3,
+        2,
+        0
+      ],
       "explication": "Segmentation, ciblage, positionnement — le persona s'insère entre le ciblage et le positionnement, en rendant les segments concrets."
     },
     {
@@ -483,6 +651,922 @@
         "Trois exigences : stratégies créatives conformes aux normes déontologiques, ciblage respectueux de la vie privée, publicité responsable et transparente"
       ],
       "explication": "Le cadre légal (RGPD, encadrement de la publicité) fixe un plancher, pas un plafond : la déontologie va au-delà."
+    },
+    {
+      "id": "q-f04-039",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quels éléments composent le facteur individuel « personnalité » ?",
+      "options": [
+        "sa constitution, les traits de personnalité et l'image de soi",
+        "le revenu, la CSP et l'habitat",
+        "les groupes d'appartenance et de référence",
+        "les rituels et l'imaginaire collectif"
+      ],
+      "reponse": 0,
+      "explication": "Les autres facteurs individuels : l'attitude et la perception, l'expérience et l'apprentissage, les motivations et les freins."
+    },
+    {
+      "id": "q-f04-040",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Dans le processus de sélection de l'information (perception), quels éléments jouent un rôle prépondérant ? (3 réponses)",
+      "options": [
+        "l'image de soi",
+        "le risque perçu",
+        "la sensibilité à la marque",
+        "la zone de chalandise",
+        "le cœur de cible"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "La perception est la façon dont le consommateur sélectionne et interprète les informations ; l'attitude est la tendance à appréhender et évaluer un produit, une marque ou une enseigne."
+    },
+    {
+      "id": "q-f04-041",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "« Tel produit est-il vraiment de qualité ? » illustre :",
+      "options": [
+        "une motivation oblative",
+        "un frein lié à l'inhibition",
+        "une motivation rationnelle",
+        "un frein lié à la peur"
+      ],
+      "reponse": 3,
+      "explication": "Le frein lié à la peur : manque de confiance en son jugement, peur de faire une erreur, ou défiance vis-à-vis de l'objet."
+    },
+    {
+      "id": "q-f04-042",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "« Curieux et connectés ? Faites le plein d'idées pour vos enfants ! » (Médiathèques de Villeurbanne) mobilise une motivation :",
+      "options": [
+        "hédoniste",
+        "oblative",
+        "éthique ou d'auto-expression",
+        "rationnelle"
+      ],
+      "reponse": 1,
+      "explication": "Oblative : tournée vers autrui, chercher à faire plaisir à l'autre."
+    },
+    {
+      "id": "q-f04-043",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les comportements déviants par rapport aux normes sociales ne sont jamais tolérés, même lorsqu'ils restent discrets.",
+      "reponse": false,
+      "explication": "Faux : ils peuvent être tolérés s'ils restent discrets. Le non-respect des normes entraîne réprobation, sanction ou exclusion ; elles évoluent dans le temps."
+    },
+    {
+      "id": "q-f04-044",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Au-delà des influenceurs, qui sont les leaders d'opinion ?",
+      "options": [
+        "uniquement les célébrités du web",
+        "les membres du cœur de cible",
+        "ceux qui exercent une autorité intellectuelle et/ou affective : personnalités politiques, journalistes, prescripteurs",
+        "les clients les plus fidèles"
+      ],
+      "reponse": 2,
+      "explication": "La « dynamique de groupe » explique comment les individus s'influencent ; Internet a renforcé leurs capacités d'influence."
+    },
+    {
+      "id": "q-f04-045",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition sociologique de la culture.",
+      "texte": "La culture regroupe un ensemble de manières de penser et d'agir, {1} et {2} par les membres d'une collectivité. Elle s'incarne dans l'{3} et dans les {4}.",
+      "trous": [
+        "apprises",
+        "partagées",
+        "imaginaire collectif",
+        "rituels"
+      ],
+      "propositions": [
+        "apprises",
+        "partagées",
+        "imaginaire collectif",
+        "rituels",
+        "imposées",
+        "normes sociales"
+      ],
+      "explication": "Sa transmission peut être formalisée et consciente ou informelle et inconsciente."
+    },
+    {
+      "id": "q-f04-046",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Selon quels 3 critères s'analysent les styles de vie ?",
+      "options": [
+        "activités, valeurs, opinions",
+        "âge, sexe, revenu",
+        "fréquence, fidélité, usage",
+        "prix, produit, distribution"
+      ],
+      "reponse": 0,
+      "explication": "Ils peuvent être émergents ou établis et permettent d'identifier les sociostyles."
+    },
+    {
+      "id": "q-f04-047",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Le consommateur doit désormais être considéré comme un « consom'acteur », acteur du processus marketing.",
+      "reponse": true,
+      "explication": "Vrai : il dispose de nombreux moyens d'expression et d'influence."
+    },
+    {
+      "id": "q-f04-048",
+      "section": "1. Comprendre le consommateur",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "À quoi sert la pyramide des besoins dans l'analyse des cibles ?",
+      "options": [
+        "à calculer la part de marché",
+        "à hiérarchiser les cibles relais",
+        "à tracer la zone de chalandise",
+        "à situer les cibles sur une échelle des besoins et adapter le message au besoin qu'elles cherchent à satisfaire"
+      ],
+      "reponse": 3,
+      "explication": "On mobilise aussi les archétypes de Jung et la psychologie des couleurs."
+    },
+    {
+      "id": "q-f04-049",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque dynamique du consommateur contemporain à son exemple.",
+      "colonne_a": [
+        "Méfiance consumériste",
+        "Asymétrie informationnelle réduite",
+        "Hyperconnexion",
+        "Engagement RSE"
+      ],
+      "colonne_b": [
+        "Netflix et ses extraits courts sur Instagram",
+        "Patagonia",
+        "Back Market et la transparence sur la qualité",
+        "Decathlon, transparence et comparateurs"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "La 5e dynamique, le Customer Power, renverse les rapports de force traditionnels."
+    },
+    {
+      "id": "q-f04-050",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans la dynamique d'hyperconnexion, comment fonctionne le smartphone ?",
+      "options": [
+        "comme un simple outil de paiement",
+        "comme un organe cognitif externe",
+        "comme un média de masse",
+        "comme un frein à l'achat"
+      ],
+      "reponse": 1,
+      "explication": "Logique Mobile First, temps d'attention réduit, formats courts, consommation médiatique rapide et sélective."
+    },
+    {
+      "id": "q-f04-051",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Que désigne la « consonance cognitive » dans l'engagement RSE du consommateur ?",
+      "options": [
+        "la mémorisation d'un slogan",
+        "l'écart entre prix et qualité",
+        "la cohérence entre valeurs personnelles et actes d'achat",
+        "la fidélité à une enseigne"
+      ],
+      "reponse": 2,
+      "explication": "S'y ajoutent une littératie RSE croissante et la recherche de preuves tangibles d'engagement."
+    },
+    {
+      "id": "q-f04-052",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque nouvel écosystème commercial à sa caractéristique.",
+      "colonne_a": [
+        "Omnicanalité",
+        "Phygital",
+        "Social commerce",
+        "DNVB"
+      ],
+      "colonne_b": [
+        "Intégration verticale et relation directe avec le consommateur",
+        "Réseaux sociaux comme canaux de découverte et de vente",
+        "Unification des canaux pour une expérience fluide",
+        "Fusion du digital et du physique (Click & Collect)"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "DNVB = Digital Native Vertical Brands. Le social commerce s'appuie sur la micro-influence et l'UGC."
+    },
+    {
+      "id": "q-f04-053",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels défis éthiques pose l'hyperpersonnalisation ? (2 réponses)",
+      "options": [
+        "la manipulation comportementale",
+        "les biais algorithmiques",
+        "la baisse du temps d'attention",
+        "la fin des médias de masse"
+      ],
+      "reponse": [
+        0,
+        1
+      ],
+      "explication": "Elle exploite des données multi-sources pour créer des expériences individualisées en temps réel."
+    },
+    {
+      "id": "q-f04-054",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le paiement fractionné ouvre l'accès à la consommation premium.",
+      "reponse": true,
+      "explication": "Vrai. Les paiements dématérialisés, c'est aussi l'instantanéité, les cryptomonnaies et la désintermédiation."
+    },
+    {
+      "id": "q-f04-055",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Selon Bertrand Bathelot, qu'est-ce qui caractérise une communauté ?",
+      "options": [
+        "un sentiment d'appartenance",
+        "une même tranche d'âge",
+        "une même zone géographique",
+        "un même revenu"
+      ],
+      "reponse": 0,
+      "explication": "Un groupe qui interagit, partage et utilise des informations liées à des centres d'intérêt, caractéristiques démographiques ou activités professionnelles communes."
+    },
+    {
+      "id": "q-f04-056",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Entre quelles années est née la génération X ?",
+      "options": [
+        "1946 et 1964",
+        "1997 et 2010",
+        "1981 et 1996",
+        "1965 et 1980"
+      ],
+      "reponse": 3,
+      "explication": "Quatre générations types : baby-boomers, X, Y, Z, auxquelles s'ajoutent la génération alpha et la Silver Génération."
+    },
+    {
+      "id": "q-f04-057",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels archétypes la typologie de Strauss et Howe associe-t-elle aux générations ? (4 réponses)",
+      "options": [
+        "Héros",
+        "Artiste",
+        "Prophète",
+        "Nomade",
+        "Explorateur",
+        "Sage"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Explorateur et Sage relèvent des archétypes de Jung, pas de Strauss et Howe."
+    },
+    {
+      "id": "q-f04-058",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La « ménagère de moins de 50 ans » a disparu des cibles des médias de masse.",
+      "reponse": false,
+      "explication": "Faux : elle n'a pas disparu mais a changé de définition (femmes plus actives, tâches partagées, hommes et enfants décisionnaires). Les communicants glissent vers une adresse au genre neutre."
+    },
+    {
+      "id": "q-f04-059",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce qui caractérise la Silver Génération ?",
+      "options": [
+        "société de la transparence et concurrence humain contre machine",
+        "temps libre, vie sociale active et fort pouvoir d'achat",
+        "hyperconnexion et formats courts",
+        "méfiance totale envers le digital"
+      ],
+      "reponse": 1,
+      "explication": "« Société de la transparence et concurrence humain contre machine » décrit la génération alpha (avec la crise écologique)."
+    },
+    {
+      "id": "q-f04-060",
+      "section": "2. Le consommateur contemporain",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Les outils digitaux qui amplifient les mouvements contestataires sont issus de la même révolution numérique que les dispositifs de surveillance développés en réponse.",
+      "reponse": true,
+      "explication": "Vrai : reconnaissance faciale, traçage, récupération des données."
+    },
+    {
+      "id": "q-f04-061",
+      "section": "3. La zone de chalandise",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "De quelle zone provient la majorité des clients d'un point de vente ?",
+      "options": [
+        "la zone tertiaire",
+        "la zone secondaire",
+        "la zone primaire",
+        "la zone relai"
+      ],
+      "reponse": 2,
+      "explication": "La zone de chalandise représente la zone d'attractivité commerciale du point de vente."
+    },
+    {
+      "id": "q-f04-062",
+      "section": "3. La zone de chalandise",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Une analyse de zone de chalandise bien menée peut prétendre à l'exhaustivité.",
+      "reponse": false,
+      "explication": "Faux : les choix visent à inclure la majorité des habitudes de déplacement, sans qu'aucune analyse puisse prétendre à l'exhaustivité."
+    },
+    {
+      "id": "q-f04-063",
+      "section": "3. La zone de chalandise",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles analyses mène-t-on sur une zone de chalandise ? (3 réponses)",
+      "options": [
+        "analyse géographique",
+        "analyse démographique",
+        "veille sur les produits et tendances locales",
+        "analyse BCG",
+        "benchmarking interne"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Sources : INSEE, CCI, observatoires locaux. Les barrières naturelles, frontières et infrastructures pèsent dans le tracé."
+    },
+    {
+      "id": "q-f04-064",
+      "section": "4. Les cibles",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez le triptyque fondateur de la stratégie de communication.",
+      "texte": "{1}, {2} et {3} représentent le triptyque fondateur de la stratégie de communication. L'{4} en sera l'expression.",
+      "trous": [
+        "Positionnement",
+        "objectifs",
+        "cibles",
+        "axe créatif"
+      ],
+      "propositions": [
+        "Positionnement",
+        "objectifs",
+        "cibles",
+        "axe créatif",
+        "budget",
+        "média"
+      ],
+      "explication": "Le responsable de projet doit faire preuve d'empathie envers les publics."
+    },
+    {
+      "id": "q-f04-065",
+      "section": "4. Les cibles",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "« Renouveler l'adhésion d'au moins 75 % des membres de l'association » est un exemple de critère :",
+      "options": [
+        "quantitatif, appuyé sur les objectifs de communication",
+        "qualitatif",
+        "psychographique",
+        "de positionnement"
+      ],
+      "reponse": 0,
+      "explication": "Les critères quantitatifs s'appuient aussi sur des statistiques nationales (INSEE)."
+    },
+    {
+      "id": "q-f04-066",
+      "section": "4. Les cibles",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Par quels moyens définit-on les critères qualitatifs d'une cible ? (3 réponses)",
+      "options": [
+        "les études qualitatives",
+        "les études de motivation",
+        "les échelles d'attitudes",
+        "les recensements INSEE",
+        "les courbes isochrones"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Ils permettent de comprendre les centres d'intérêt, le sociotype, les motivations et freins, les habitudes comportementales."
+    },
+    {
+      "id": "q-f04-067",
+      "section": "4. Les cibles",
+      "niveau": 3,
+      "format": "appariement",
+      "question": "Dans la lecture par proximité avec l'objectif stratégique, associez chaque niveau à son public.",
+      "colonne_a": [
+        "Cœur de cible",
+        "Cible principale",
+        "Cible secondaire"
+      ],
+      "colonne_b": [
+        "Ceux qui influencent la décision",
+        "Les relais d'information",
+        "Les décisionnaires"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "explication": "Dans certaines stratégies, cibles secondaires et relais sont regroupées : on hiérarchise alors trois niveaux."
+    },
+    {
+      "id": "q-f04-068",
+      "section": "4. Les cibles",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "En BtoB, les cibles sont plus nombreuses qu'en BtoC, mais homogènes.",
+      "reponse": false,
+      "explication": "Faux : elles sont moins nombreuses mais souvent hétérogènes (entreprises, administrations, associations, coopératives)."
+    },
+    {
+      "id": "q-f04-069",
+      "section": "4. Les cibles",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les 3 familles de critères pour identifier les cibles en BtoB ? (3 réponses)",
+      "options": [
+        "les facteurs structurels",
+        "les paramètres de commercialisation ou d'exploitation",
+        "les avantages recherchés",
+        "les rituels",
+        "l'imaginaire collectif"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Facteurs structurels : secteur, taille, situation géographique, méthodes d'achat."
+    },
+    {
+      "id": "q-f04-070",
+      "section": "4. Les cibles",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Pourquoi faut-il distinguer, en BtoB, si la solution est utilisée par l'annonceur lui-même ou destinée à ses clients ?",
+      "options": [
+        "pour fixer le prix",
+        "pour calculer la zone de chalandise",
+        "pour respecter le RGPD",
+        "pour adapter le message à la cible finale"
+      ],
+      "reponse": 3,
+      "explication": "Dans le second cas, l'annonceur évaluera l'intérêt stratégique tel que ses propres cibles le percevront."
+    },
+    {
+      "id": "q-f04-071",
+      "section": "4. Les cibles",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les variables démographiques sont des caractéristiques subjectives, peu prédictives des comportements.",
+      "reponse": false,
+      "explication": "Faux : ce sont des caractéristiques objectives, souvent prédictives de comportements. En BtoC, quatre familles : démographiques, psychologiques, sociologiques, culturelles."
+    },
+    {
+      "id": "q-f04-072",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "En fonction de quoi choisit-on les critères de segmentation ?",
+      "options": [
+        "du budget de la concurrence",
+        "des objectifs de communication et des résultats de l'audit préalable",
+        "du nombre de personas",
+        "des préférences du dirigeant"
+      ],
+      "reponse": 1,
+      "explication": "Les sous-groupes doivent être homogènes, de taille suffisante et opérationnels."
+    },
+    {
+      "id": "q-f04-073",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels usages du clustering cite le cours ? (3 réponses)",
+      "options": [
+        "la segmentation de marché",
+        "l'identification des comportements annonçant une perte de clients",
+        "l'optimisation des campagnes publicitaires",
+        "le dépôt de brevets",
+        "le calcul de la TVA"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Le repérage des comportements annonçant une perte de clients permet de déployer des stratégies de rétention ciblées."
+    },
+    {
+      "id": "q-f04-074",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "La Classification Ascendante Hiérarchique part de l'ensemble des observations et le divise progressivement en sous-clusters.",
+      "reponse": false,
+      "explication": "Faux : c'est la classification descendante. La CAH part de chaque observation comme cluster individuel et fusionne progressivement les plus similaires."
+    },
+    {
+      "id": "q-f04-075",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel est l'objectif de la méthode K-Means ?",
+      "options": [
+        "maximiser la variance intra-cluster",
+        "détecter des clusters de formes complexes",
+        "minimiser la variance intra-cluster",
+        "construire une matrice de distances"
+      ],
+      "reponse": 2,
+      "explication": "On part de k points initiaux servant de centres. Les formes complexes relèvent des méthodes à densité (DBSCAN, OPTICS)."
+    },
+    {
+      "id": "q-f04-076",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels sont les objectifs du ciblage ? (3 réponses)",
+      "options": [
+        "personnaliser le message",
+        "augmenter l'efficacité de la campagne",
+        "réduire les coûts en évitant les contacts inutiles",
+        "toucher tout le monde avec un message unique",
+        "supprimer la segmentation"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Le but est de comprendre ce qui influence les cibles pour leur proposer une offre susceptible de les intéresser."
+    },
+    {
+      "id": "q-f04-077",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les techniques quantitative et qualitative de ciblage s'excluent : il faut choisir l'une ou l'autre.",
+      "reponse": false,
+      "explication": "Faux : elles sont généralement combinées. La qualitative cible selon des préférences comportementales (plaisir ou ascétisme, aventure ou centrage)."
+    },
+    {
+      "id": "q-f04-078",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Avec l'intelligence artificielle, à quel enjeu le ciblage se confronte-t-il ?",
+      "options": [
+        "la prédiction : le calcul algorithmique des futurs comportements et besoins",
+        "la disparition des données",
+        "le retour aux médias de masse",
+        "l'interdiction des personas"
+      ],
+      "reponse": 0,
+      "explication": "Personnalisation et prédiction s'opposent à la culture des médias de masse."
+    },
+    {
+      "id": "q-f04-079",
+      "section": "5. Segmentation et ciblage",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels outils permettent d'analyser un segment après le découpage ? (4 réponses)",
+      "options": [
+        "le persona",
+        "la carte d'empathie",
+        "le parcours user",
+        "le user story mapping",
+        "la matrice BCG",
+        "le PESTEL"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Exemple de segmentation : Airbnb segmente hôtes et voyageurs selon la fréquence des réservations et les préférences de logement."
+    },
+    {
+      "id": "q-f04-080",
+      "section": "6. Les personas",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels avantages Alan Cooper attribue-t-il aux personas ? (3 réponses)",
+      "options": [
+        "fournir aux équipes une vision commune des utilisateurs cibles",
+        "hiérarchiser des solutions centrées sur leurs besoins",
+        "comprendre leurs motivations",
+        "réduire le budget média",
+        "remplacer les études quantitatives"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Il initie la méthode en 1999 ; il est aussi le créateur du Visual Basic."
+    },
+    {
+      "id": "q-f04-081",
+      "section": "6. Les personas",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque acteur à sa contribution à la notion de persona.",
+      "colonne_a": [
+        "Alan Cooper",
+        "Tony Zambito",
+        "HubSpot"
+      ],
+      "colonne_b": [
+        "Popularisation via l'inbound marketing",
+        "Initiation de la méthode (1999)",
+        "Notion de buyer persona"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "On distingue aujourd'hui user persona, buyer persona et reader persona (stratégie de contenus)."
+    },
+    {
+      "id": "q-f04-082",
+      "section": "6. Les personas",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans l'exemple du club de fitness (Laura et Olivier), quelle solution découle de la « douleur client » partagée ?",
+      "options": [
+        "baisser les prix",
+        "multiplier les cours collectifs",
+        "ouvrir 24h/24",
+        "un espace d'accueil des enfants et des abonnements familiaux"
+      ],
+      "reponse": 3,
+      "explication": "La douleur partagée : l'organisation du temps et de la garde. D'où des abonnements familiaux et non plus seulement individuels."
+    },
+    {
+      "id": "q-f04-083",
+      "section": "6. Les personas",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Chaque persona est une création collective, nourrie par les commerciaux, le SAV et les community managers.",
+      "reponse": true,
+      "explication": "Vrai : leur feedback sur les problématiques, attentes, objections et critiques renforce la pertinence de l'archétype."
+    },
+    {
+      "id": "q-f04-084",
+      "section": "6. Les personas",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "En BtoB, quelles catégories de personas faut-il créer ?",
+      "options": [
+        "un seul persona par secteur",
+        "celui de l'entreprise et celui de chaque individu ciblé en son sein",
+        "uniquement celui du dirigeant",
+        "uniquement des personas négatifs"
+      ],
+      "reponse": 1,
+      "explication": "La décision y est souvent collégiale, le processus rationnel, long et complexe ; il faut construire une relation de confiance en amont."
+    },
+    {
+      "id": "q-f04-085",
+      "section": "6. Les personas",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Une fois construits, les personas restent valables durablement et n'ont pas besoin d'être réactualisés.",
+      "reponse": false,
+      "explication": "Faux : il faut les réactualiser régulièrement, car usages et tendances de consommation changent constamment."
+    },
+    {
+      "id": "q-f04-086",
+      "section": "6. Les personas",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi le persona améliore-t-il la stratégie de contenus d'un site web ?",
+      "options": [
+        "il augmente le nombre de pages",
+        "il remplace le référencement",
+        "produire des contenus sans s'interroger sur leur valeur pour l'audience ne procure aucun retour sur investissement",
+        "il supprime le besoin d'analytics"
+      ],
+      "reponse": 2,
+      "explication": "Il permet aussi d'élaborer la stratégie autour du client plutôt que de l'offre et d'anticiper les objections."
+    },
+    {
+      "id": "q-f04-087",
+      "section": "7. Le positionnement",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition du positionnement.",
+      "texte": "Le positionnement apporte à l'offre une position {1}, {2} et {3} sur un marché et dans l'esprit des consommateurs. Il s'appuie sur des critères objectifs et {4}.",
+      "trous": [
+        "distinctive",
+        "crédible",
+        "attrayante",
+        "subjectifs"
+      ],
+      "propositions": [
+        "distinctive",
+        "crédible",
+        "attrayante",
+        "subjectifs",
+        "temporaire",
+        "financiers"
+      ],
+      "explication": "Objectifs : résultats, prix, services complémentaires ; subjectifs : image, symbolisme, comparaison avec la concurrence."
+    },
+    {
+      "id": "q-f04-088",
+      "section": "7. Le positionnement",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "À quelles 3 questions répond le positionnement ? (3 réponses)",
+      "options": [
+        "Dans quel marché ou segment se situe l'entreprise ?",
+        "À quelle cible s'adresse-t-elle ?",
+        "Quels sont ses avantages concurrentiels ?",
+        "Quel est son chiffre d'affaires ?",
+        "Combien de salariés compte-t-elle ?"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Questions préalables : le marché, les concurrents, les clients ciblés, la proposition de valeur."
+    },
+    {
+      "id": "q-f04-089",
+      "section": "7. Le positionnement",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pour Air France, la SNCF est :",
+      "options": [
+        "un concurrent indirect",
+        "un concurrent direct",
+        "un fournisseur",
+        "une cible relai"
+      ],
+      "reponse": 0,
+      "explication": "Concurrent indirect : même besoin, réponse différente. British Airways est un concurrent direct."
+    },
+    {
+      "id": "q-f04-090",
+      "section": "7. Le positionnement",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Si c'est le consommateur qui décide du positionnement, la marque se retrouve en situation passive.",
+      "reponse": true,
+      "explication": "Vrai : elle ne peut alors agir en cas d'image erronée ou nuisible. Le positionnement doit être maîtrisé et contrôlé par la marque."
+    },
+    {
+      "id": "q-f04-091",
+      "section": "7. Le positionnement",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Comment Nespresso s'est-il différencié ?",
+      "options": [
+        "par des prix bas en grande surface",
+        "par l'absence de communication",
+        "par une gamme de thés",
+        "par une offre de capsules unique et une distribution propre, hors circuits classiques"
+      ],
+      "reponse": 3,
+      "explication": "Boutiques spécialisées et site, avec une communication renforcée par l'image de célébrités."
+    },
+    {
+      "id": "q-f04-092",
+      "section": "7. Le positionnement",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "À l'étape du choix, on retient plusieurs avantages concurrentiels pour multiplier les arguments.",
+      "reponse": false,
+      "explication": "Faux : on en sélectionne un seul, selon le positionnement des autres acteurs et la capacité de l'entreprise à le respecter."
+    },
+    {
+      "id": "q-f04-093",
+      "section": "8. Les limites du ciblage",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les 3 exigences de l'adaptation créative responsable ? (3 réponses)",
+      "options": [
+        "des stratégies créatives conformes aux normes déontologiques",
+        "des approches de ciblage respectueuses de la vie privée",
+        "une publicité responsable et transparente",
+        "un ciblage le plus large possible",
+        "l'usage systématique du nudge"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Des pratiques irresponsables entraînent des conséquences financières et des dommages à la réputation."
+    },
+    {
+      "id": "q-f04-094",
+      "section": "8. Les limites du ciblage",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le nudge marketing est réservé au marketing commercial et n'est pas utilisé en politique publique.",
+      "reponse": false,
+      "explication": "Faux : il est largement utilisé en marketing comme en politique publique. Il s'appuie sur les biais cognitifs, sans mesure coercitive."
     }
   ]
 }

@@ -11,11 +11,11 @@
       "question": "Un manager connaît bien les compétences requises par ses projets, mais découvre régulièrement en cours de mission que les compétences réelles de son équipe ne correspondent pas à ce qu'il croyait. Quel fondement de l'attribution des responsabilités lui manque-t-il ?",
       "options": [
         "la capacité à faire concorder l'offre et la demande",
-        "la connaissance en temps réel des compétences de ses équipes",
         "l'identification des compétences requises par les projets",
+        "la connaissance en temps réel des compétences de ses équipes",
         "la décomposition des missions en tâches spécifiques"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "L'attribution pertinente repose sur 3 fondements : connaissance en temps réel des compétences, identification des compétences requises, et capacité à faire concorder l'offre et la demande. Ici, c'est la vision actualisée des compétences effectives qui fait défaut."
     },
     {
@@ -25,12 +25,12 @@
       "format": "qcm",
       "question": "Une équipe veut travailler en cycles itératifs courts, avec des livraisons fréquentes de versions partielles et une auto-organisation. Parmi ces outils et méthodes, lequel n'appartient PAS aux méthodes agiles ?",
       "options": [
-        "Scrum",
-        "Kanban",
         "le diagramme de Gantt",
+        "Kanban",
+        "Scrum",
         "Extreme Programming (XP)"
       ],
-      "reponse": 2,
+      "reponse": 0,
       "explication": "Les méthodes agiles les plus connues sont Scrum, Kanban, Extreme Programming (XP) et Lean. Le diagramme de Gantt est un outil de planification détaillée avec interdépendances, utilisé pour évaluer les contraintes de temps — pas une méthode agile."
     },
     {
@@ -50,11 +50,11 @@
       "question": "Pour être irréprochable, un manager répartit exactement la même charge de travail à chaque membre de l'équipe, sans tenir compte des besoins individuels. Que peut-on en dire ?",
       "options": [
         "c'est une répartition équitable, car identique pour tous",
-        "c'est une répartition égalitaire, mais l'égalité absolue ne conduit pas toujours à des résultats équitables",
+        "c'est une répartition équitable à condition d'être transparente",
         "c'est la seule répartition qui évite les conflits d'équipe",
-        "c'est une répartition équitable à condition d'être transparente"
+        "c'est une répartition égalitaire, mais l'égalité absolue ne conduit pas toujours à des résultats équitables"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "L'égalité = répartition uniforme des charges. L'équité = attribution réfléchie selon les compétences, les aspirations et les contributions passées de chacun. L'égalité absolue ne conduit pas toujours à des résultats équitables."
     },
     {
@@ -64,12 +64,12 @@
       "format": "qcm",
       "question": "Un manager implique ses collaborateurs dans le choix de leurs missions. Quels avantages ce leadership participatif apporte-t-il ?",
       "options": [
-        "appropriation, motivation, culture de l'initiative et de la responsabilisation",
         "polyvalence, spécialisation, rotation des responsabilités",
+        "appropriation, motivation, culture de l'initiative et de la responsabilisation",
         "reconnaissance, mentorat, coaching individuel",
         "équilibre de la charge, transparence, critères équitables"
       ],
-      "reponse": 0,
+      "reponse": 1,
       "explication": "Le leadership participatif — impliquer les membres dans le choix de leurs missions — apporte trois avantages : appropriation, motivation, et une culture de l'initiative et de la responsabilisation."
     },
     {
@@ -91,10 +91,22 @@
         "Projets, tâches, responsabilités, dates d'échéance"
       ],
       "paires": [
-        [0, 2],
-        [1, 3],
-        [2, 1],
-        [3, 0]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
       ],
       "explication": "Trello fonctionne par tableaux visuels avec cartes déplaçables ; Asana structure projets, tâches et échéances ; Jira sert au suivi des problèmes et à la planification agile côté développement ; Slack assure la messagerie instantanée du quotidien."
     },
@@ -106,11 +118,11 @@
       "question": "Les indicateurs montrent une baisse de satisfaction client et des retards répétés. Comment le manager doit-il aborder la réaffectation des tâches ?",
       "options": [
         "comme une opération ponctuelle, à ne déclencher qu'en cas de crise",
-        "comme un processus continu, anticipé par la veille stratégique et croisant compétences requises et compétences effectives",
         "comme une sanction pour les collaborateurs en difficulté",
+        "comme un processus continu, anticipé par la veille stratégique et croisant compétences requises et compétences effectives",
         "comme une décision unilatérale de la direction, sans lien avec les indicateurs"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "La réaffectation s'anticipe par la veille stratégique (marché, technologies, réglementation), se déclenche sur signaux des indicateurs, et croise les compétences nouvellement requises avec la connaissance en temps réel des compétences effectives. La révision de la distribution est un processus continu, jamais ponctuel."
     },
     {
@@ -130,9 +142,18 @@
         "DMAIC : Définir → Mesurer → Analyser → Améliorer → Contrôler"
       ],
       "paires": [
-        [0, 1],
-        [1, 2],
-        [2, 0]
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
       ],
       "explication": "Kaizen installe une culture de petites améliorations continues où chacun contribue ; Lean Six Sigma combine Lean Management et Six Sigma (réduire les variations, éliminer les gaspillages) via le DMAIC ; le Design Thinking part des besoins humains en 5 phases."
     },
@@ -152,12 +173,12 @@
       "format": "qcm",
       "question": "Quelle est la bonne séquence du processus d'analyse des compétences en 5 étapes ?",
       "options": [
-        "cartographie → identification → plan de développement → alignement stratégique → évaluation continue",
         "identification → cartographie → alignement stratégique → plan de développement → évaluation continue",
+        "cartographie → identification → plan de développement → alignement stratégique → évaluation continue",
         "alignement stratégique → identification → cartographie → évaluation continue → plan de développement",
         "identification → alignement stratégique → cartographie → évaluation continue → plan de développement"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "On identifie d'abord (collecte d'informations, compétences tacites), puis on cartographie les profils, on aligne sur les objectifs organisationnels, on élabore les plans de développement (individuels et collectifs), et on évalue en continu."
     },
     {
@@ -169,10 +190,10 @@
       "options": [
         "un examen écrit sur la théorie",
         "un exercice de codage en situation réelle",
-        "une étude de cas comportementale, complétée par une auto-évaluation",
-        "un QCM de connaissances spécifiques"
+        "un QCM de connaissances spécifiques",
+        "une étude de cas comportementale, complétée par une auto-évaluation"
       ],
-      "reponse": 2,
+      "reponse": 3,
       "explication": "Les compétences comportementales s'évaluent par études de cas comportementales, évaluation par des tiers, auto-évaluation (prise de conscience, responsabilisation), questionnaires de personnalité et évaluations en situation. Examens écrits et tests pratiques ciblent les compétences techniques, les QCM les connaissances."
     },
     {
@@ -198,11 +219,11 @@
       "question": "Une entreprise met en place une rétroaction à 360° pour un collaborateur. Qui participe à l'évaluation ?",
       "options": [
         "uniquement son superviseur, pour garantir la cohérence",
-        "son superviseur, quatre à huit pairs, subordonnés ou collègues (voire parties prenantes externes), plus une auto-évaluation",
         "uniquement ses pairs, pour éviter le lien hiérarchique",
+        "son superviseur, quatre à huit pairs, subordonnés ou collègues (voire parties prenantes externes), plus une auto-évaluation",
         "l'ensemble de l'entreprise, par vote anonyme"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "La rétroaction à 360° combine le superviseur, quatre à huit pairs, subordonnés, collègues, voire parties prenantes externes (clients, partenaires), complétés par une auto-évaluation. Les évaluateurs sont choisis conjointement par l'organisation et l'employé."
     },
     {
@@ -221,12 +242,12 @@
       "format": "qcm",
       "question": "Un manager annonce une mauvaise nouvelle à son équipe avec un grand sourire, et le message passe mal. Comment l'analyser avec Watzlawick ?",
       "options": [
-        "le contenu du message était trop complexe pour l'équipe",
-        "le canal choisi était mauvais : il aurait fallu un écrit",
         "il manque de congruence : la relation (forme non verbale) contredit le contenu, or la forme conditionne l'acceptation du fond",
+        "le canal choisi était mauvais : il aurait fallu un écrit",
+        "le contenu du message était trop complexe pour l'équipe",
         "l'équipe manque d'écoute active"
       ],
-      "reponse": 2,
+      "reponse": 0,
       "explication": "Selon Watzlawick, la communication se joue à deux niveaux : le contenu (le fond) et la relation (la forme : gestes, voix, posture). La forme en dit plus que le fond et conditionne son acceptation — d'où l'exigence de congruence entre le « comment » non verbal et le « quoi » verbal."
     },
     {
@@ -237,11 +258,11 @@
       "question": "Un manager doit transmettre un feedback formel d'évaluation et un changement de procédure. Quel canal privilégier ?",
       "options": [
         "l'oral, pour l'impact immédiat",
-        "l'écrit, comme pour les décisions importantes et les annonces officielles",
+        "une simple mention en réunion de routine",
         "un message vocal asynchrone",
-        "une simple mention en réunion de routine"
+        "l'écrit, comme pour les décisions importantes et les annonces officielles"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "L'écrit se privilégie pour les décisions importantes, les objectifs et résultats attendus, les changements de procédure, les feedbacks formels d'évaluation, les instructions techniques détaillées et les annonces officielles. L'oral convient aux instructions courtes, feedbacks rapides et encouragements."
     },
     {
@@ -263,10 +284,22 @@
         "Soumission, évitement, difficulté à dire non par peur du rejet ou du jugement"
       ],
       "paires": [
-        [0, 2],
-        [1, 3],
-        [2, 0],
-        [3, 1]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
       ],
       "explication": "Seule l'assertivité (affirmation de soi) est à viser : elle permet d'exprimer un désaccord ou de dire « non » sans rompre la relation. L'agressivité crée un climat hostile, la passivité sacrifie ses propres besoins, la manipulation détruit la confiance."
     },
@@ -278,6 +311,751 @@
       "question": "Des objectifs fixés unilatéralement par une direction très directive sont efficaces à long terme, car ils évitent les débats.",
       "reponse": false,
       "explication": "Faux. Les objectifs fixés unilatéralement sont à terme contre-productifs : ni partagés ni acceptés. Le choix en commun des objectifs est le préalable à une vraie délégation et responsabilisation — auto-évaluation, autonomie, initiative, appropriation de la stratégie (du sens)."
+    },
+    {
+      "id": "b4-r03-qz-019",
+      "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quels sont les 3 fondements d'une attribution pertinente des responsabilités ? (3 réponses)",
+      "options": [
+        "la connaissance en temps réel des compétences des équipes",
+        "l'identification des compétences requises par les projets",
+        "la capacité à faire concorder l'offre et la demande de compétences",
+        "l'ancienneté de chaque collaborateur",
+        "la préférence du manager"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Faire concorder suppose flexibilité, suivi continu et formation."
+    },
+    {
+      "id": "b4-r03-qz-020",
+      "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Dans un SWOT appliqué tâche par tâche, associez chaque case à son contenu.",
+      "colonne_a": [
+        "Forces",
+        "Faiblesses",
+        "Opportunités",
+        "Menaces"
+      ],
+      "colonne_b": [
+        "Collaborations externes possibles",
+        "Contraintes budgétaires et de ressources",
+        "Compétences disponibles",
+        "Compétences manquantes"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Le SWOT sert à analyser les parties prenantes et les besoins de mission."
+    },
+    {
+      "id": "b4-r03-qz-021",
+      "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Que représente la vision du projet dans l'identification des besoins de mission ?",
+      "options": [
+        "un document comptable",
+        "la « boussole » des décisions, qui traduit les attentes des parties prenantes en objectifs clairs",
+        "la liste des tâches",
+        "le planning Gantt"
+      ],
+      "reponse": 1,
+      "explication": "Ensuite : analyse des parties prenantes, résultats attendus (KPI), contraintes de temps et de ressources."
+    },
+    {
+      "id": "b4-r03-qz-022",
+      "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les principales méthodes agiles citées ? (4 réponses)",
+      "options": [
+        "Scrum",
+        "Kanban",
+        "Extreme Programming (XP)",
+        "Lean",
+        "Cycle en V",
+        "PERT"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Cycles itératifs courts, livraisons fréquentes de versions partielles, équipes auto-organisées."
+    },
+    {
+      "id": "b4-r03-qz-023",
+      "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Pour chaque tâche, les soft skills (communication, résolution de conflits, leadership) sont aussi indispensables que les hard skills.",
+      "reponse": true,
+      "explication": "Vrai. La cartographie des compétences croise les forces individuelles et les exigences des tâches."
+    },
+    {
+      "id": "b4-r03-qz-024",
+      "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque niveau de la cartographie des compétences à son principe.",
+      "colonne_a": [
+        "Individuel",
+        "Collectif"
+      ],
+      "colonne_b": [
+        "L'équipe dépasse la somme des compétences : la complémentarité crée la synergie",
+        "Compétences de chacun ↔ exigences de chaque tâche"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Le collectif se nourrit de brainstormings, réunions interdisciplinaires, formations croisées, mentorat."
+    },
+    {
+      "id": "b4-r03-qz-025",
+      "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Les équipes virtuelles en télétravail demandent des compétences propres, comme la gestion des fuseaux horaires et de la communication à distance.",
+      "reponse": true,
+      "explication": "Vrai, le cours le souligne dans l'identification des besoins de mission."
+    },
+    {
+      "id": "b4-r03-qz-026",
+      "section": "2. Distribuer équitablement et efficacement",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque notion à sa définition.",
+      "colonne_a": [
+        "Égalité",
+        "Équité"
+      ],
+      "colonne_b": [
+        "Attribution réfléchie selon compétences, aspirations et contributions passées",
+        "Répartition uniforme des charges, sans tenir compte des besoins individuels"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "L'égalité absolue ne produit pas toujours des résultats équitables."
+    },
+    {
+      "id": "b4-r03-qz-027",
+      "section": "2. Distribuer équitablement et efficacement",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels sont les 3 volets de l'équité dans la distribution des tâches ? (3 réponses)",
+      "options": [
+        "l'équilibre de la charge",
+        "l'équité des opportunités",
+        "les préférences et aspirations",
+        "l'égalité stricte des heures",
+        "la rotation obligatoire chaque semaine"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Accès transparent aux projets stimulants ; aspirations prises en compte via un PDI dynamique et co-construit."
+    },
+    {
+      "id": "b4-r03-qz-028",
+      "section": "2. Distribuer équitablement et efficacement",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que désigne le PDI dans la distribution des tâches ?",
+      "options": [
+        "le Planning Des Interventions",
+        "le Programme de Diversité Interne",
+        "le Plan de Développement Individuel, dynamique, co-construit et aligné sur les ambitions long terme",
+        "le Projet de Délégation Intégrale"
+      ],
+      "reponse": 2,
+      "explication": "Il s'appuie sur des discussions ouvertes et régulières sur les objectifs professionnels."
+    },
+    {
+      "id": "b4-r03-qz-029",
+      "section": "2. Distribuer équitablement et efficacement",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition du feedback constructif.",
+      "texte": "Un feedback constructif associe des exemples {1}, des suggestions d'{2} et la reconnaissance des {3}. Il est continu et {4}.",
+      "trous": [
+        "concrets",
+        "amélioration",
+        "efforts",
+        "bidirectionnel"
+      ],
+      "explication": "Il s'accompagne de reconnaissance : cérémonies régulières, plateformes internes célébrant les succès."
+    },
+    {
+      "id": "b4-r03-qz-030",
+      "section": "2. Distribuer équitablement et efficacement",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La rotation des responsabilités est d'autant plus bénéfique qu'elle est régulière.",
+      "reponse": true,
+      "explication": "Vrai : elle apporte de nouvelles compétences, une compréhension des processus et une perspective élargie."
+    },
+    {
+      "id": "b4-r03-qz-031",
+      "section": "2. Distribuer équitablement et efficacement",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Le cours recommande de développer la polyvalence sans limite, car elle sécurise toujours l'organisation.",
+      "reponse": false,
+      "explication": "Faux. Planifiée et encouragée, elle a des limites : l'excès surcharge et nuit aux spécialisations, de grande valeur."
+    },
+    {
+      "id": "b4-r03-qz-032",
+      "section": "2. Distribuer équitablement et efficacement",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi priorités et délais sont-ils dits « interconnectés » ?",
+      "options": [
+        "parce qu'ensemble ils donnent l'ordre des tâches et leur visibilité (calendrier clair, suivi partagé)",
+        "parce qu'ils sont fixés par le même logiciel",
+        "parce qu'ils dépendent du budget",
+        "parce qu'ils sont décidés par le client"
+      ],
+      "reponse": 0,
+      "explication": "Priorités = contribution aux objectifs stratégiques ; délais = calendrier accessible et réunions régulières."
+    },
+    {
+      "id": "b4-r03-qz-033",
+      "section": "3. Suivre, réaffecter, améliorer en continu",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Sur quoi s'appuie le suivi des performances ? (3 réponses)",
+      "options": [
+        "la surveillance constante des KPI et de leurs tendances",
+        "les retours de l'équipe et des parties prenantes externes",
+        "les entretiens individualisés",
+        "la seule intuition du manager",
+        "les rumeurs"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Clients et fournisseurs apportent une vision holistique."
+    },
+    {
+      "id": "b4-r03-qz-034",
+      "section": "3. Suivre, réaffecter, améliorer en continu",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce qui permet d'anticiper une réaffectation des tâches ?",
+      "options": [
+        "le tirage au sort",
+        "l'entretien annuel uniquement",
+        "la demande du client",
+        "la veille stratégique (marché, technologies, réglementation)"
+      ],
+      "reponse": 3,
+      "explication": "La réaffectation croise compétences nouvellement requises et compétences effectives en temps réel."
+    },
+    {
+      "id": "b4-r03-qz-035",
+      "section": "3. Suivre, réaffecter, améliorer en continu",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les étapes de la démarche DMAIC (Lean Six Sigma).",
+      "elements": [
+        "Améliorer",
+        "Mesurer",
+        "Contrôler",
+        "Définir",
+        "Analyser"
+      ],
+      "ordre": [
+        3,
+        1,
+        4,
+        0,
+        2
+      ],
+      "explication": "Définir → Mesurer → Analyser → Améliorer → Contrôler : réduire les variations, éliminer les gaspillages."
+    },
+    {
+      "id": "b4-r03-qz-036",
+      "section": "3. Suivre, réaffecter, améliorer en continu",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 5 phases du Design Thinking.",
+      "elements": [
+        "Prototype",
+        "Empathie",
+        "Test",
+        "Idéation",
+        "Définition"
+      ],
+      "ordre": [
+        1,
+        4,
+        3,
+        0,
+        2
+      ],
+      "explication": "Méthode axée sur les besoins humains, la créativité et l'innovation."
+    },
+    {
+      "id": "b4-r03-qz-037",
+      "section": "3. Suivre, réaffecter, améliorer en continu",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une équipe veut réduire le temps d'attente en production en chassant les gaspillages grâce aux données. Quelle méthode convient ?",
+      "options": [
+        "le Kaizen",
+        "le Lean Six Sigma",
+        "le Design Thinking",
+        "le MBTI"
+      ],
+      "reponse": 1,
+      "explication": "Kaizen = petits pas permanents ; Design Thinking = partir de l'utilisateur."
+    },
+    {
+      "id": "b4-r03-qz-038",
+      "section": "4. Évaluer les compétences individuelles et collectives",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "L'étape d'identification des compétences doit aussi repérer les compétences tacites, comme l'expérience ou l'intelligence émotionnelle.",
+      "reponse": true,
+      "explication": "Vrai : entretiens, évaluations, auto-évaluations, retours d'expérience, plus les compétences tacites."
+    },
+    {
+      "id": "b4-r03-qz-039",
+      "section": "4. Évaluer les compétences individuelles et collectives",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque volet d'évaluation à une méthode adaptée.",
+      "colonne_a": [
+        "Compétences techniques",
+        "Connaissances spécifiques",
+        "Compétences comportementales"
+      ],
+      "colonne_b": [
+        "QCM, études de cas, entretiens structurés",
+        "Questionnaires de personnalité, évaluation par tiers, mises en situation",
+        "Tests pratiques, évaluation par pairs ou experts, examens écrits"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "explication": "Chaque volet a ses outils propres."
+    },
+    {
+      "id": "b4-r03-qz-040",
+      "section": "4. Évaluer les compétences individuelles et collectives",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Combien de dimensions mesure le MBTI (Myers-Briggs) ?",
+      "options": [
+        "2",
+        "5",
+        "4",
+        "8"
+      ],
+      "reponse": 2,
+      "explication": "Extraversion/introversion, sensation/intuition, pensée/sentiment, jugement/perception. Le NEO-PI-R mesure les cinq grands facteurs."
+    },
+    {
+      "id": "b4-r03-qz-041",
+      "section": "4. Évaluer les compétences individuelles et collectives",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les 3 compétences collectives interconnectées ? (3 réponses)",
+      "options": [
+        "la collaboration",
+        "la communication",
+        "le leadership",
+        "la polyvalence",
+        "l'ancienneté"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "La communication virtuelle s'évalue spécifiquement ; le leadership via subordonnés, simulations, feedbacks à 360°."
+    },
+    {
+      "id": "b4-r03-qz-042",
+      "section": "4. Évaluer les compétences individuelles et collectives",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Dans une rétroaction à 360°, les évaluateurs sont choisis par l'employé seul.",
+      "reponse": false,
+      "explication": "Faux : ils sont choisis conjointement par l'organisation et l'employé ; le destinataire reçoit des données anonymisées."
+    },
+    {
+      "id": "b4-r03-qz-043",
+      "section": "4. Évaluer les compétences individuelles et collectives",
+      "niveau": 3,
+      "format": "qcm_multiple",
+      "question": "Quels garde-fous limitent les biais d'une rétroaction à 360° ? (4 réponses)",
+      "options": [
+        "former les évaluateurs aux biais (confirmation, halo, récence)",
+        "utiliser des grilles standardisées à critères objectifs",
+        "diversifier les évaluateurs (5-6 personnes minimum)",
+        "tenir des réunions de calibration",
+        "limiter l'évaluation au seul manager",
+        "révéler l'identité des évaluateurs"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "S'y ajoutent validation RH avant transmission et anonymisation renforcée avec agrégation."
+    },
+    {
+      "id": "b4-r03-qz-044",
+      "section": "4. Évaluer les compétences individuelles et collectives",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Lequel est un inconvénient de la rétroaction à 360° ?",
+      "options": [
+        "elle peut se focaliser sur les faiblesses et l'anonymat limite l'approfondissement",
+        "elle révèle les besoins de formation",
+        "elle réduit les biais",
+        "elle renforce la responsabilité"
+      ],
+      "reponse": 0,
+      "explication": "Autres limites : mise en œuvre hâtive, évaluateurs inexpérimentés, manipulation de groupe, traitement de données lourd."
+    },
+    {
+      "id": "b4-r03-qz-045",
+      "section": "4. Évaluer les compétences individuelles et collectives",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 3 temps du débriefing d'une évaluation.",
+      "elements": [
+        "Clarifier les commentaires avec des exemples concrets",
+        "Reformuler positivement les critiques en opportunités",
+        "Écouter le ressenti"
+      ],
+      "ordre": [
+        2,
+        0,
+        1
+      ],
+      "explication": "Cadre sécurisant, 1 h minimum, posture de coach et non de juge."
+    },
+    {
+      "id": "b4-r03-qz-046",
+      "section": "4. Évaluer les compétences individuelles et collectives",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "En quoi consiste la technique du sandwich ?",
+      "options": [
+        "axe d'amélioration → force → axe d'amélioration",
+        "question → réponse → question",
+        "critique → critique → félicitation",
+        "force → axe d'amélioration → force"
+      ],
+      "reponse": 3,
+      "explication": "Elle encadre l'axe d'amélioration par deux points forts."
+    },
+    {
+      "id": "b4-r03-qz-047",
+      "section": "4. Évaluer les compétences individuelles et collectives",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez les règles du plan de développement personnel (PDP).",
+      "texte": "Le PDP est co-construit, avec {1} objectifs prioritaires maximum en SMART, des jalons à 1, 3 et {2} mois. Le suivi passe par des one-to-one {3} de 30 minutes.",
+      "trous": [
+        "2-3",
+        "6",
+        "mensuels"
+      ],
+      "explication": "Ressources (formations, mentorat), indicateurs mesurables, victoires célébrées, évaluation à 6 mois."
+    },
+    {
+      "id": "b4-r03-qz-048",
+      "section": "5. La communication managériale",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les 3 fonctions de la communication ? (3 réponses)",
+      "options": [
+        "l'expression",
+        "la représentation",
+        "l'action sur autrui",
+        "la sanction",
+        "l'archivage"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Mission première du manager : « fabriquer du sens »."
+    },
+    {
+      "id": "b4-r03-qz-049",
+      "section": "5. La communication managériale",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Selon Watzlawick, la forme conditionne l'acceptation du fond.",
+      "reponse": true,
+      "explication": "Vrai : la forme (gestes, voix, posture) en dit plus que le fond (mots, phrases)."
+    },
+    {
+      "id": "b4-r03-qz-050",
+      "section": "5. La communication managériale",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque mode de communication à distance à son usage.",
+      "colonne_a": [
+        "Appel ou facecam (synchrone)",
+        "Visio (synchrone)",
+        "Mail (asynchrone)",
+        "Outils collaboratifs (asynchrone)"
+      ],
+      "colonne_b": [
+        "Réagir à plusieurs",
+        "Réunions et entretiens",
+        "L'urgent-important",
+        "Le complexe"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "Synchrone = immédiat ; asynchrone = différé."
+    },
+    {
+      "id": "b4-r03-qz-051",
+      "section": "5. La communication managériale",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles 4 questions se poser avant de communiquer ? (4 réponses)",
+      "options": [
+        "quelles informations ?",
+        "pour quoi faire ?",
+        "quels circuits ?",
+        "quels supports et canaux ?",
+        "qui a raison ?",
+        "combien de temps parler ?"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Remonter, descendre, faire circuler l'information."
+    },
+    {
+      "id": "b4-r03-qz-052",
+      "section": "5. La communication managériale",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi aucune information ne passe-t-elle sans déformation ?",
+      "options": [
+        "parce que les outils numériques sont défaillants",
+        "parce que chacun a son cadre de référence et ses filtres (a priori, préjugés, idées préconçues)",
+        "parce que les managers mentent",
+        "parce que l'écrit est toujours ambigu"
+      ],
+      "reponse": 1,
+      "explication": "Ni même vécu ni même vocabulaire. Parade : un langage le plus précis possible."
+    },
+    {
+      "id": "b4-r03-qz-053",
+      "section": "5. La communication managériale",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel critère prime sur la performance d'une équipe selon le cours ?",
+      "options": [
+        "la rémunération",
+        "le nombre de réunions",
+        "la sécurité psychologique",
+        "l'ancienneté moyenne"
+      ],
+      "reponse": 2,
+      "explication": "En confiance, on ose prendre des risques, on a droit à l'erreur, on demande de l'aide. Elle s'installe par écoute active et empathie."
+    },
+    {
+      "id": "b4-r03-qz-054",
+      "section": "5. La communication managériale",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque niveau d'écoute active à ce qu'il capte.",
+      "colonne_a": [
+        "Les mots",
+        "Le non-verbal",
+        "Le changement de rythme"
+      ],
+      "colonne_b": [
+        "Lent = doute ; rapide = impatience",
+        "Le contenu",
+        "Les signes parallèles"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Entendre est naturel, écouter relève d'une volonté."
+    },
+    {
+      "id": "b4-r03-qz-055",
+      "section": "5. La communication managériale",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "L'empathie consiste à se mettre à la place de l'autre au point d'abandonner son propre point de vue.",
+      "reponse": false,
+      "explication": "Faux : on comprend ce que l'autre ressent tout en conservant sa propre intégrité."
+    },
+    {
+      "id": "b4-r03-qz-056",
+      "section": "5. La communication managériale",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les 3 conséquences du micromanagement ? (3 réponses)",
+      "options": [
+        "absence d'autonomie",
+        "absence de créativité",
+        "excès de stress",
+        "hausse de la productivité",
+        "meilleure délégation"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Sous-jacent : le manque de délégation (peur de perdre le pouvoir, manque de confiance ou de méthode)."
+    },
+    {
+      "id": "b4-r03-qz-057",
+      "section": "5. La communication managériale",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "L'assertivité permet de dire non ou d'exprimer un désaccord sans rompre la relation.",
+      "reponse": true,
+      "explication": "Vrai : affirmation de soi respectueuse d'autrui, qui accepte contradiction et compromis."
+    },
+    {
+      "id": "b4-r03-qz-058",
+      "section": "5. La communication managériale",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que dit la « loi de réciprocité » en communication managériale ?",
+      "options": [
+        "plus je suis positif, plus les autres le sont",
+        "plus je contrôle, plus les autres obéissent",
+        "chacun doit rendre ce qu'il reçoit en salaire",
+        "toute critique appelle une contre-critique"
+      ],
+      "reponse": 0,
+      "explication": "Reconnaître performances et initiatives développe implication et engagement."
+    },
+    {
+      "id": "b4-r03-qz-059",
+      "section": "5. La communication managériale",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Qu'apportent respectivement seniors et jeunes dans une équipe intergénérationnelle ?",
+      "options": [
+        "seniors : créativité ; jeunes : recul",
+        "rien de spécifique",
+        "seniors : numérique ; jeunes : cadrage",
+        "seniors : expérience, recul, cadrage ; jeunes : créativité, maîtrise du numérique"
+      ],
+      "reponse": 3,
+      "explication": "Ignorer les différences générationnelles crée conflits et résistance au changement."
+    },
+    {
+      "id": "b4-r03-qz-060",
+      "section": "5. La communication managériale",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Une équipe projet connaît des tensions dues à une mauvaise communication. Identifiez les causes probables et les remèdes selon le cours.",
+      "attendus": [
+        "Causes : directives vagues, attentes non clarifiées, information retenue",
+        "Micromanagement d'un acteur sur l'autre : frustration, démotivation",
+        "Registre agressif ou passif au lieu d'assertif",
+        "Différences culturelles ou générationnelles ignorées",
+        "Remèdes : cadre clair, feedbacks réguliers, écoute active, assertivité, outils partagés"
+      ],
+      "explication": "La communication est un échange social : la forme conditionne l'acceptation du fond."
     }
   ]
 }

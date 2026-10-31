@@ -17,7 +17,14 @@
         "Distribution du contenu",
         "Sélection des plateformes adaptées"
       ],
-      "ordre": [1, 3, 5, 0, 4, 2],
+      "ordre": [
+        1,
+        3,
+        5,
+        0,
+        4,
+        2
+      ],
       "explication": "État des lieux/objectifs → cible → plateformes (cible × objectifs) → planning éditorial → distribution → évaluation. Être sur les réseaux sans stratégie ne sert à rien."
     },
     {
@@ -29,10 +36,10 @@
       "options": [
         "notoriété",
         "engagement",
-        "conversion",
-        "fidélisation / satisfaction"
+        "fidélisation / satisfaction",
+        "conversion"
       ],
-      "reponse": 3,
+      "reponse": 2,
       "explication": "Les 4 groupes : notoriété (mentions, portée, abonnés), engagement (interactions, commentaires, clics), conversion (trafic, leads, ventes attribuées), fidélisation/satisfaction (temps de réponse, sentiment, avis). C'est la grille attendue en Q13."
     },
     {
@@ -42,12 +49,12 @@
       "format": "qcm",
       "question": "Une marque publie des articles de fond pour positionner son expertise. De quel type de publication s'agit-il ?",
       "options": [
-        "des publications engageantes",
         "des publications informatives",
+        "des publications engageantes",
         "des publications promotionnelles",
         "des publications sponsorisées"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "Trois types à équilibrer : informatives (positionner l'expertise), engageantes (susciter l'interaction), promotionnelles. La ligne éditoriale fixe aussi le ton (formel/informel), les visuels sous charte et les hashtags."
     },
     {
@@ -67,11 +74,11 @@
       "question": "Pourquoi sous-titrer les vidéos et stories publiées sur les réseaux sociaux ?",
       "options": [
         "pour améliorer le référencement de la vidéo",
-        "pour l'accessibilité : beaucoup d'utilisateurs regardent sans le son",
+        "pour contourner les limites de durée",
         "parce que les CGU des plateformes l'imposent",
-        "pour contourner les limites de durée"
+        "pour l'accessibilité : beaucoup d'utilisateurs regardent sans le son"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "Le sous-titrage est une fonctionnalité d'accessibilité à intégrer à la ligne éditoriale — avec les émojis (avec discernement), la géolocalisation, les hashtags et la publication légale des contenus (droits)."
     },
     {
@@ -125,11 +132,26 @@
         "1ʳᵉ plateforme professionnelle : BtoB, marque employeur, social selling"
       ],
       "paires": [
-        [0, 3],
-        [1, 4],
-        [2, 1],
-        [3, 0],
-        [4, 2]
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          2
+        ]
       ],
       "explication": "Instagram complète le tableau : visuel, jeunes adultes, image de marque et influence. Le choix de la plateforme découle du croisement cible × objectifs (étape 3 de la stratégie)."
     },
@@ -169,7 +191,13 @@
         "Micro-interaction : like, vote, notation",
         "Partage : relayer à son réseau"
       ],
-      "ordre": [1, 3, 4, 0, 2],
+      "ordre": [
+        1,
+        3,
+        4,
+        0,
+        2
+      ],
       "explication": "Attention → micro-interaction → partage (qui démultiplie la portée) → avis → contribution. L'engagement est le processus d'interaction entre une entité et sa communauté."
     },
     {
@@ -186,7 +214,12 @@
         "l'envoi massif de messages non sollicités",
         "la « technique de la question » pour déclencher la conversation"
       ],
-      "reponse": [0, 2, 3, 5],
+      "reponse": [
+        0,
+        2,
+        3,
+        5
+      ],
       "explication": "S'ajoutent les contenus exclusifs et la mise en avant des membres. L'achat de followers et le spam sont des pratiques abusives contraires à l'éthique numérique (transparence, authenticité, respect de la vie privée)."
     },
     {
@@ -220,12 +253,12 @@
       "format": "qcm",
       "question": "En France, que risque un influenceur qui ne signale pas l'intention commerciale d'un partenariat ?",
       "options": [
-        "un simple avertissement de la plateforme",
         "jusqu'à 2 ans d'emprisonnement et 300 000 € d'amende pour pratique commerciale trompeuse",
+        "un simple avertissement de la plateforme",
         "la suppression de son compte",
         "une amende forfaitaire de 1 500 €"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "La transparence est obligatoire : les partenariats commerciaux doivent être clairement divulgués. S'ajoutent les règles sectorielles (alcool, jeux d'argent, actes médicaux). La marque se protège par une charte interne et des lignes directrices de divulgation."
     },
     {
@@ -271,6 +304,688 @@
         "Des indicateurs par groupe de KPI : engagement (interactions, commentaires), fidélisation/satisfaction (temps de réponse, sentiment des mentions), notoriété (portée, mentions) — chacun relié à un objectif"
       ],
       "explication": "C'est la structure attendue en Q13 : bonnes pratiques (charte de modération + animation + veille) ET indicateurs de mesure, e-réputation comprise. La rapidité et la transparence font la différence en cas de crise (Nestlé vs Anthropologie)."
+    },
+    {
+      "id": "b2-r10-qz-019",
+      "section": "1. Le community manager",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Comment le cours définit-il le community manager ?",
+      "options": [
+        "le directeur marketing qui conçoit la stratégie",
+        "un influenceur rémunéré",
+        "l'ambassadeur de l'entreprise sur les réseaux et l'intermédiaire entre l'entreprise et ses clients",
+        "un développeur web"
+      ],
+      "reponse": 2,
+      "explication": "Rattaché au marketing ou à la communication, il met en œuvre la stratégie social media."
+    },
+    {
+      "id": "b2-r10-qz-020",
+      "section": "1. Le community manager",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles missions relèvent du community manager ? (4 réponses)",
+      "options": [
+        "création et planification des contenus",
+        "animation et modération",
+        "veille (marque, concurrence, tendances)",
+        "reporting",
+        "fixation des prix",
+        "recrutement des commerciaux"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Outils : Hootsuite, Buffer, Canva, Photoshop, outils d'analyse."
+    },
+    {
+      "id": "b2-r10-qz-021",
+      "section": "1. Le community manager",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Selon le cours, être présent sur les réseaux sociaux sans stratégie ne sert à rien.",
+      "reponse": true,
+      "explication": "Vrai : 87 % des Français ont un smartphone, mais la présence doit suivre une stratégie en 6 étapes."
+    },
+    {
+      "id": "b2-r10-qz-022",
+      "section": "1. Le community manager",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque KPI à son groupe.",
+      "colonne_a": [
+        "Croissance du nombre d'abonnés",
+        "Taux d'engagement",
+        "Trafic vers le site",
+        "Sentiment des mentions"
+      ],
+      "colonne_b": [
+        "Fidélisation / satisfaction",
+        "Engagement",
+        "Notoriété",
+        "Conversion"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "Taux d'engagement = (likes + commentaires + partages) / portée."
+    },
+    {
+      "id": "b2-r10-qz-023",
+      "section": "2. La ligne éditoriale d'un réseau social",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Sur quoi se construit la ligne éditoriale d'un réseau social ? (4 réponses)",
+      "options": [
+        "l'analyse de l'audience cible",
+        "les messages alignés sur les valeurs",
+        "le ton (formel ou informel)",
+        "les types de publications",
+        "le cours de bourse",
+        "le choix du siège social"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Plus les aspects visuels et les fonctionnalités spécifiques (hashtags, sous-titrage)."
+    },
+    {
+      "id": "b2-r10-qz-024",
+      "section": "2. La ligne éditoriale d'un réseau social",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque type de publication à son but.",
+      "colonne_a": [
+        "Informative",
+        "Engageante",
+        "Promotionnelle"
+      ],
+      "colonne_b": [
+        "Vendre une offre",
+        "Positionner l'expertise",
+        "Susciter l'interaction"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Les trois sont à équilibrer."
+    },
+    {
+      "id": "b2-r10-qz-025",
+      "section": "2. La ligne éditoriale d'un réseau social",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Sur les réseaux sociaux, une marque doit toujours adopter un ton formel.",
+      "reponse": false,
+      "explication": "Faux : le ton peut être informel s'il reste cohérent avec l'image et la cible (Old Spice et son ton décalé)."
+    },
+    {
+      "id": "b2-r10-qz-026",
+      "section": "3. Écrire et créer du contenu",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi soigner ses réponses aux commentaires selon le cours ?",
+      "options": [
+        "parce que répondre est une vitrine du service client",
+        "pour gonfler les statistiques",
+        "pour éviter la modération",
+        "parce que c'est obligatoire légalement"
+      ],
+      "reponse": 0,
+      "explication": "Types de contenus écrits : posts, légendes, commentaires, bios, articles longs."
+    },
+    {
+      "id": "b2-r10-qz-027",
+      "section": "3. Écrire et créer du contenu",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la démarche de stratégie de contenu.",
+      "elements": [
+        "Personas",
+        "Calendrier de publication",
+        "Organisation (qui publie, quand)",
+        "Événements à venir (marronniers)",
+        "État des lieux de la présence",
+        "Canaux retenus"
+      ],
+      "ordre": [
+        2,
+        4,
+        0,
+        5,
+        3,
+        1
+      ],
+      "explication": "Le calendrier donne la vue d'ensemble : dates, réseaux, formats, responsables."
+    },
+    {
+      "id": "b2-r10-qz-028",
+      "section": "3. Écrire et créer du contenu",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que permet le tracking des URL par paramètres UTM ?",
+      "options": [
+        "de raccourcir les liens",
+        "d'augmenter la portée organique",
+        "de bloquer les robots",
+        "d'attribuer le trafic à sa source"
+      ],
+      "reponse": 3,
+      "explication": "Google Analytics mesure ensuite l'impact sur le site."
+    },
+    {
+      "id": "b2-r10-qz-029",
+      "section": "3. Écrire et créer du contenu",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque rôle de la vidéo à son exemple.",
+      "colonne_a": [
+        "Didactique",
+        "Publicitaire",
+        "Inspirationnel"
+      ],
+      "colonne_b": [
+        "Nike « Dream Crazier » et ses athlètes féminines",
+        "Tutoriel",
+        "Promotion d'une offre"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Formats : vidéos de fil, réels verticaux (TikTok 15-60 s), lives, stories."
+    },
+    {
+      "id": "b2-r10-qz-030",
+      "section": "3. Écrire et créer du contenu",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les stories à la une (highlights) disparaissent elles aussi au bout de 24 heures.",
+      "reponse": false,
+      "explication": "Faux : elles pérennisent les stories sur le profil, contrairement aux stories classiques, éphémères."
+    },
+    {
+      "id": "b2-r10-qz-031",
+      "section": "3. Écrire et créer du contenu",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'apporte la narration interactive dans une story ?",
+      "options": [
+        "un format horizontal",
+        "sondages, questions et quiz qui rendent le public participant actif",
+        "une durée illimitée",
+        "un référencement Google"
+      ],
+      "reponse": 1,
+      "explication": "La narration enrichie ajoute texte animé, stickers, musique. Penser rétention : accrocher dès la première séquence."
+    },
+    {
+      "id": "b2-r10-qz-032",
+      "section": "4. Les plateformes",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Combien de caractères maximum pour un message sur X (Twitter) ?",
+      "options": [
+        "140",
+        "500",
+        "280",
+        "2 200"
+      ],
+      "reponse": 2,
+      "explication": "Avec 1 à 3 hashtags et des vidéos d'environ 45 s."
+    },
+    {
+      "id": "b2-r10-qz-033",
+      "section": "4. Les plateformes",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle plateforme touche le public le plus jeune selon le cours ?",
+      "options": [
+        "Snapchat",
+        "Facebook",
+        "LinkedIn",
+        "X"
+      ],
+      "reponse": 0,
+      "explication": "Snaps et stories éphémères, filtres et lenses."
+    },
+    {
+      "id": "b2-r10-qz-034",
+      "section": "4. Les plateformes",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels invariants s'appliquent à la création de contenu, quelle que soit la plateforme ? (4 réponses)",
+      "options": [
+        "respecter les codes du réseau",
+        "adapter la fréquence",
+        "soigner l'accroche",
+        "analyser les statistiques et ajuster",
+        "publier le même contenu partout sans adaptation",
+        "ignorer la charte graphique"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Et utiliser les formats natifs favorisés par les algorithmes."
+    },
+    {
+      "id": "b2-r10-qz-035",
+      "section": "4. Les plateformes",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Sur LinkedIn comme sur X, il faut publier plusieurs fois par jour pour rester visible.",
+      "reponse": false,
+      "explication": "Faux : la fréquence s'adapte à chaque réseau. Environ un message par jour sur X, des posts moins fréquents mais soignés sur LinkedIn."
+    },
+    {
+      "id": "b2-r10-qz-036",
+      "section": "5. Animer la communauté",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Autour de quoi se construit une communauté ?",
+      "options": [
+        "un prix bas",
+        "un algorithme",
+        "une publicité",
+        "un intérêt commun (marque, thème, produit)"
+      ],
+      "reponse": 3,
+      "explication": "L'engagement est le processus d'interaction entre l'entité et sa communauté."
+    },
+    {
+      "id": "b2-r10-qz-037",
+      "section": "5. Animer la communauté",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque levier d'animation à son effet.",
+      "colonne_a": [
+        "Like",
+        "Commentaire",
+        "Partage",
+        "Mention / identification"
+      ],
+      "colonne_b": [
+        "Interaction personnalisée",
+        "Visibilité démultipliée",
+        "Approbation simple",
+        "Interaction essentielle, à laquelle il faut répondre"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "L'enjeu est de faire monter l'engagement."
+    },
+    {
+      "id": "b2-r10-qz-038",
+      "section": "5. Animer la communauté",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Acheter des followers est une technique d'animation acceptable pour accélérer la croissance d'une communauté.",
+      "reponse": false,
+      "explication": "Faux : c'est une pratique abusive, comme le spam ou les dark patterns. L'éthique numérique impose transparence et authenticité."
+    },
+    {
+      "id": "b2-r10-qz-039",
+      "section": "5. Animer la communauté",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Quel cadre éthique encadre l'animation de communauté ?",
+      "options": [
+        "aucun",
+        "respect de la vie privée, transparence, vigilance sur l'IA et le Big Data dans le ciblage",
+        "seulement la loi sur la presse",
+        "le code de la route"
+      ],
+      "reponse": 1,
+      "explication": "Communication transparente et authentique."
+    },
+    {
+      "id": "b2-r10-qz-040",
+      "section": "6. La modération",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Que contient une charte de modération ? (4 réponses)",
+      "options": [
+        "les rappels à la loi",
+        "les règles de courtoisie et de bienséance",
+        "les règles typographiques",
+        "l'échelle des réponses possibles",
+        "le tarif des publicités",
+        "le planning éditorial"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Elle maintient un espace en ligne sain et respectueux."
+    },
+    {
+      "id": "b2-r10-qz-041",
+      "section": "6. La modération",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Sur les réseaux sociaux, la liberté d'expression est absolue.",
+      "reponse": false,
+      "explication": "Faux : injure, diffamation, incitation à la haine, harcèlement sont des limites légales."
+    },
+    {
+      "id": "b2-r10-qz-042",
+      "section": "6. La modération",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que la charte entend par « langage inapproprié » ?",
+      "options": [
+        "toute critique de la marque",
+        "les fautes d'orthographe",
+        "vulgarité, insultes, propos discriminatoires, y compris des expressions « tendance » aux sous-entendus problématiques",
+        "les émojis"
+      ],
+      "reponse": 2,
+      "explication": "Avec un processus de signalement par la communauté et des filtres automatiques de mots-clés."
+    },
+    {
+      "id": "b2-r10-qz-043",
+      "section": "6. La modération",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque situation à la réponse graduée adaptée.",
+      "colonne_a": [
+        "Un commentaire injurieux isolé",
+        "Un utilisateur récidiviste",
+        "Un client mécontent qui s'emporte en public"
+      ],
+      "colonne_b": [
+        "Évacuer en message privé",
+        "Supprimer le contenu avec avertissement",
+        "Bannir"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Supprimer, bannir, évacuer en MP."
+    },
+    {
+      "id": "b2-r10-qz-044",
+      "section": "7. Le marketing d'influence",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels sont les risques du marketing d'influence ? (4 réponses)",
+      "options": [
+        "des coûts élevés",
+        "une perte de crédibilité si la promotion paraît dissimulée",
+        "une perte de contrôle sur la représentation de la marque",
+        "un risque de crise de réputation",
+        "l'absence totale de réglementation",
+        "un ROI toujours nul"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Son ROI est pourtant jugé supérieur au SEO, à l'e-mailing et à la publicité sociale."
+    },
+    {
+      "id": "b2-r10-qz-045",
+      "section": "7. Le marketing d'influence",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les étapes d'une campagne d'influence.",
+      "elements": [
+        "Le brief",
+        "Négociation et contrat",
+        "Suivi des résultats",
+        "Stratégie et objectifs",
+        "Identification des influenceurs"
+      ],
+      "ordre": [
+        3,
+        4,
+        1,
+        0,
+        2
+      ],
+      "explication": "Suivi par codes promo, liens trackés, KPI d'engagement."
+    },
+    {
+      "id": "b2-r10-qz-046",
+      "section": "7. Le marketing d'influence",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que doit prévoir le contrat avec un influenceur ?",
+      "options": [
+        "livrables, calendrier, rémunération, mentions de transparence, droits d'utilisation, exclusivité",
+        "seulement le prix",
+        "rien, un accord oral suffit",
+        "uniquement la date de publication"
+      ],
+      "reponse": 0,
+      "explication": "Le brief précise ensuite contexte, message, éléments imposés ou interdits, liberté créative."
+    },
+    {
+      "id": "b2-r10-qz-047",
+      "section": "8. L'e-réputation",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "La gestion de la réputation en ligne est une tâche continue.",
+      "reponse": true,
+      "explication": "Vrai : créer, cultiver et maintenir l'image numérique. C'est le nouveau bouche-à-oreille, permanent et public."
+    },
+    {
+      "id": "b2-r10-qz-048",
+      "section": "8. L'e-réputation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quels outils de veille citer pour suivre les avis et mentions en direct ?",
+      "options": [
+        "Photoshop, InDesign",
+        "Zoom, Teams",
+        "Excel, Word",
+        "Google Alerts, Mention, Owler"
+      ],
+      "reponse": 3,
+      "explication": "Première étape : évaluer la réputation actuelle."
+    },
+    {
+      "id": "b2-r10-qz-049",
+      "section": "8. L'e-réputation",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque cas de crise à son issue.",
+      "colonne_a": [
+        "Nestlé / Kit Kat (2010)",
+        "Anthropologie.com"
+      ],
+      "colonne_b": [
+        "Excuses immédiates et geste commercial : crise désamorcée",
+        "Réaction tardive et suppression des critiques : crise amplifiée"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "La rapidité et la transparence font toute la différence."
+    },
+    {
+      "id": "b2-r10-qz-050",
+      "section": "8. L'e-réputation",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles bonnes pratiques d'e-réputation le cours recommande-t-il ? (3 réponses)",
+      "options": [
+        "ne pas laisser publier librement sur son mur",
+        "ne jamais publier de données sensibles",
+        "répondre vite et avec transparence aux critiques",
+        "supprimer systématiquement les avis négatifs",
+        "ignorer les critiques"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Transformer le négatif en démonstration de sérieux."
+    },
+    {
+      "id": "b2-r10-qz-051",
+      "section": "8. L'e-réputation",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Une politique de réseaux sociaux se limite à choisir les plateformes, sans préciser qui répond ni dans quels délais.",
+      "reponse": false,
+      "explication": "Faux : elle précise qui répond, comment et en combien de temps, au service des objectifs d'e-réputation."
+    },
+    {
+      "id": "b2-r10-qz-052",
+      "section": "9. Les social ads",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "D'où vient la puissance des social ads ?",
+      "options": [
+        "de leur gratuité",
+        "des données captées sur les utilisateurs, qui permettent un ciblage très fin",
+        "de leur durée",
+        "de l'absence de mention « sponsorisé »"
+      ],
+      "reponse": 1,
+      "explication": "Ciblage démographique, par intérêts ou comportemental."
+    },
+    {
+      "id": "b2-r10-qz-053",
+      "section": "9. Les social ads",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque ordre d'objectif à ses indicateurs.",
+      "colonne_a": [
+        "Cognitif",
+        "Affectif",
+        "Conatif"
+      ],
+      "colonne_b": [
+        "Clics, trafic, ventes, installations d'app",
+        "Impressions, portée, couverture",
+        "Likes, commentaires, partages"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Facebook décline : sensibilisation, considération, conversion."
+    },
+    {
+      "id": "b2-r10-qz-054",
+      "section": "9. Les social ads",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Les social ads se justifient notamment par la baisse de la portée organique des publications.",
+      "reponse": true,
+      "explication": "Vrai : la visibilité naturelle ne suffit plus."
+    },
+    {
+      "id": "b2-r10-qz-055",
+      "section": "9. Les social ads",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Lequel de ces éléments n'est PAS une bonne pratique des social ads ?",
+      "options": [
+        "une créativité accrocheuse",
+        "la cohérence avec l'identité de marque",
+        "masquer la mention « sponsorisé »",
+        "l'alignement avec la stratégie globale"
+      ],
+      "reponse": 2,
+      "explication": "La mention « sponsorisé » est obligatoire et signale la publicité."
     }
   ]
 }

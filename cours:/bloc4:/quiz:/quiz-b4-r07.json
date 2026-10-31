@@ -10,12 +10,12 @@
       "format": "qcm",
       "question": "Un responsable formation constate que ses équipes progressent surtout en travaillant sur de vrais projets, bien plus qu'en salle de cours. Quel modèle théorique décrit ce phénomène ?",
       "options": [
-        "le modèle 70/20/10 : 70 % des apprentissages viennent de la pratique et de l'expérience",
-        "la taxonomie de Bloom : la pratique est le premier niveau cognitif",
         "l'andragogie : les adultes n'apprennent qu'en autonomie complète",
+        "la taxonomie de Bloom : la pratique est le premier niveau cognitif",
+        "le modèle 70/20/10 : 70 % des apprentissages viennent de la pratique et de l'expérience",
         "le modèle 50/30/20 : la moitié des apprentissages vient des échanges entre collègues"
       ],
-      "reponse": 0,
+      "reponse": 2,
       "explication": "Le modèle 70/20/10 (Centre de Leadership Créatif) : 70 % pratique et expérience, 20 % échanges au travail, 10 % formation formelle — qui capte pourtant 80 % des budgets. Selon Spitzer, plus de 80 % d'une formation traditionnelle est oublié en un mois."
     },
     {
@@ -25,12 +25,12 @@
       "format": "qcm",
       "question": "Quelle loi a créé le CPF, le CEP et l'entretien professionnel ?",
       "options": [
-        "la loi Delors du 16 juillet 1971",
         "la loi du 5 mars 2014",
+        "la loi Delors du 16 juillet 1971",
         "la loi Travail (El Khomri) de 2016",
         "la loi Avenir professionnel du 5 septembre 2018"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "La loi du 5 mars 2014 crée le CPF, le CEP et l'entretien professionnel (plus la contribution unique et le cadre de la FOAD). La loi de 1971 est le texte fondateur ; la loi Avenir 2018 réforme en profondeur gouvernance, fonctionnement et financement."
     },
     {
@@ -54,11 +54,26 @@
         "Loi « Avenir professionnel » : réforme profonde de la gouvernance et du financement"
       ],
       "paires": [
-        [0, 2],
-        [1, 4],
-        [2, 1],
-        [3, 0],
-        [4, 3]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          3
+        ]
       ],
       "explication": "Retenir la chronologie : 1971 fondation (Delors), 2014 CPF/CEP/entretien professionnel, 2018 loi Avenir, 2019 entrée en vigueur de la réforme (CPF monétisé, PDC), 2022 Qualiopi obligatoire, 2024 ticket modérateur de 100 €."
     },
@@ -79,11 +94,11 @@
       "question": "Une agence de 35 salariés veut faire financer une formation par son OPCO. Quelle condition l'organisme de formation choisi doit-il remplir ?",
       "options": [
         "être certifié ISO 9001",
-        "détenir la certification Qualiopi",
+        "être accrédité directement par France Compétences",
         "être enregistré au RNCP",
-        "être accrédité directement par France Compétences"
+        "détenir la certification Qualiopi"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "Depuis le 1er janvier 2022, Qualiopi conditionne l'accès aux fonds mutualisés ou publics ; les entreprises de 50 salariés au plus doivent recourir à un organisme Qualiopi pour être financées par leur OPCO. Elle est délivrée par des certificateurs accrédités Cofrac sur la base du RNCQ."
     },
     {
@@ -118,11 +133,11 @@
       "question": "Dans une entreprise de 120 salariés, l'état des lieux à 6 ans révèle qu'un salarié n'a suivi aucune formation non obligatoire. Que risque l'employeur ?",
       "options": [
         "une amende administrative versée à l'URSSAF",
-        "un abondement forfaitaire de 3 000 € sur le CPF du salarié",
         "l'obligation de financer une VAE au salarié",
+        "un abondement forfaitaire de 3 000 € sur le CPF du salarié",
         "rien, l'état des lieux n'a pas de valeur contraignante"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "Dans les entreprises de plus de 50 salariés, si l'état des lieux récapitulatif des 6 ans révèle que les entretiens n'ont pas été tenus ou qu'aucune formation non obligatoire n'a été suivie, l'employeur doit abonder le CPF du salarié de 3 000 €."
     },
     {
@@ -132,12 +147,12 @@
       "format": "qcm",
       "question": "Une assistante administrative est formée à l'anglais professionnel, un savoir-faire transférable utile dans son emploi. Dans quelle sous-catégorie du PDC classer cette action ?",
       "options": [
-        "adaptation au poste de travail",
         "maintien dans l'emploi",
+        "adaptation au poste de travail",
         "développement des compétences",
         "formation obligatoire au sens de l'article L.6321-2"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "C'est l'exemple type du cours : savoir-faire transférable requis dans l'emploi = maintien dans l'emploi. L'adaptation au poste vise un savoir-faire spécifique au poste (logiciel de DAO) ; le développement des compétences prépare une évolution ultérieure."
     },
     {
@@ -157,11 +172,11 @@
       "question": "Une compétence est jugée stratégique pour l'entreprise, mais aucune échéance réglementaire ni changement brutal ne presse. Que faire de ce besoin de formation ?",
       "options": [
         "le traiter sans délai, comme toute formation importante",
-        "le planifier dans le PDC, car « on verra plus tard » finit en « c'est trop tard »",
+        "le basculer sur le CPF du salarié pour ne pas peser sur le budget",
         "l'éliminer : sans urgence, une formation ne se justifie pas",
-        "le basculer sur le CPF du salarié pour ne pas peser sur le budget"
+        "le planifier dans le PDC, car « on verra plus tard » finit en « c'est trop tard »"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "Grille urgence × importance : important mais pas urgent = planifier dans le PDC. Urgent + important = sans délai ; ni urgent ni important = éliminer ; et « urgent pas important » n'existe pas — une formation urgente est toujours importante."
     },
     {
@@ -200,11 +215,26 @@
         "Habilitations et certifications complémentaires au RNCP, enregistrées 5 ans maximum"
       ],
       "paires": [
-        [0, 2],
-        [1, 4],
-        [2, 3],
-        [3, 0],
-        [4, 1]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ]
       ],
       "explication": "RNCP = répertoire à 8 niveaux (décret du 8 janvier 2019) avec 3 référentiels par certification ; le Répertoire Spécifique le complète. Le TP émane de l'État (blocs CCP), le CQP d'une branche, et CléA est la première certification interprofessionnelle et paritaire du socle."
     },
@@ -216,11 +246,11 @@
       "question": "Un formateur fait analyser aux stagiaires des cas concrets de captation live, puis leur fait découvrir eux-mêmes les principes généraux. Quelle méthode pédagogique applique-t-il ?",
       "options": [
         "la méthode déductive : de la théorie vers l'application",
-        "la méthode inductive : du cas concret vers la théorie",
         "le chunking : découper le contenu en micro-séquences",
+        "la méthode inductive : du cas concret vers la théorie",
         "la différenciation pédagogique : adapter aux niveaux de chacun"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "La méthode inductive part du concret pour faire découvrir les principes — l'inverse de la déductive — et c'est la plus efficace en formation professionnelle. Le chunking, lui, répond au déclin de l'attention d'un adulte après 15-20 minutes."
     },
     {
@@ -230,12 +260,12 @@
       "format": "qcm",
       "question": "Dans la taxonomie de Bloom, l'objectif « concevoir un plan de captation original » se situe à quel niveau ?",
       "options": [
-        "Mémoriser, le premier niveau",
+        "Créer, le niveau le plus élevé",
         "Appliquer, le niveau intermédiaire",
         "Évaluer, le cinquième niveau",
-        "Créer, le niveau le plus élevé"
+        "Mémoriser, le premier niveau"
       ],
-      "reponse": 3,
+      "reponse": 0,
       "explication": "La taxonomie de Bloom hiérarchise 6 niveaux cognitifs : Mémoriser → Comprendre → Appliquer → Analyser → Évaluer → Créer. Concevoir une production originale relève du sommet, « Créer ». Les objectifs se formulent SMART, avec des verbes d'action observables."
     },
     {
@@ -268,11 +298,26 @@
         "Alternance de mises en situation de travail aménagées et de séquences réflexives animées par un tiers"
       ],
       "paires": [
-        [0, 2],
-        [1, 4],
-        [2, 1],
-        [3, 0],
-        [4, 3]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          3
+        ]
       ],
       "explication": "Le blended (37 % selon l'ISTF 2023) est devenu la modalité majoritaire. L'AFEST transforme l'expérience en compétences durables via la séquence réflexive. SPOC = Small Private Online Course, à distinguer du MOOC (massif, ouvert) et du COOC (MOOC interne d'entreprise)."
     },
@@ -285,11 +330,868 @@
       "options": [
         "environ 19 %",
         "environ 185 %",
-        "environ 538 %",
-        "environ 640 %"
+        "environ 640 %",
+        "environ 538 %"
+      ],
+      "reponse": 3,
+      "explication": "ROI = (bénéfices / coûts) × 100 = (11 840 / 2 200) × 100 = 538 % — c'est le cas CP Livraison du cours. Un ROI inférieur à 100 % signifie que l'investissement n'est pas couvert ; le ROE (Return On Expectation) et les bénéfices qualitatifs complètent l'analyse."
+    },
+    {
+      "id": "b4-r07-qz-019",
+      "section": "1. La formation professionnelle : notions de base",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque type de formation à sa définition.",
+      "colonne_a": [
+        "Formation initiale",
+        "Formation professionnelle continue (FPC)"
+      ],
+      "colonne_b": [
+        "Pour les actifs : développer ses compétences ou se reconvertir",
+        "Cursus donnant les bases d'une profession, sanctionné par un diplôme"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Trois différences : public, coût (la continue est payante mais finançable), organisation."
+    },
+    {
+      "id": "b4-r07-qz-020",
+      "section": "1. La formation professionnelle : notions de base",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Comment appelle-t-on la pédagogie propre aux adultes ?",
+      "options": [
+        "la pédagogie",
+        "l'andragogie",
+        "la didactique",
+        "la maïeutique"
+      ],
+      "reponse": 1,
+      "explication": "Elle s'appuie sur l'expérience, l'autonomie et des méthodes actives."
+    },
+    {
+      "id": "b4-r07-qz-021",
+      "section": "1. La formation professionnelle : notions de base",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Dans le modèle 70/20/10, la formation formelle, qui pèse 10 % des apprentissages, capte pourtant 80 % des budgets.",
+      "reponse": true,
+      "explication": "Vrai : 70 % par la pratique, 20 % par les échanges (social learning), 10 % par la formation formelle."
+    },
+    {
+      "id": "b4-r07-qz-022",
+      "section": "1. La formation professionnelle : notions de base",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Selon Spitzer, quelle part d'une formation est oubliée en un mois ?",
+      "options": [
+        "20 %",
+        "50 %",
+        "80 %",
+        "95 %"
       ],
       "reponse": 2,
-      "explication": "ROI = (bénéfices / coûts) × 100 = (11 840 / 2 200) × 100 = 538 % — c'est le cas CP Livraison du cours. Un ROI inférieur à 100 % signifie que l'investissement n'est pas couvert ; le ROE (Return On Expectation) et les bénéfices qualitatifs complètent l'analyse."
+      "explication": "La pratique (essai-erreur) ancre les apprentissages."
+    },
+    {
+      "id": "b4-r07-qz-023",
+      "section": "1. La formation professionnelle : notions de base",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque type d'éducation à son cadre.",
+      "colonne_a": [
+        "Formelle",
+        "Non formelle",
+        "Informelle"
+      ],
+      "colonne_b": [
+        "Expérience, échanges",
+        "Hors institution (en entreprise par exemple)",
+        "Institution nationale"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Distinction utile pour situer une action de formation."
+    },
+    {
+      "id": "b4-r07-qz-024",
+      "section": "1. La formation professionnelle : notions de base",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce qu'une formation certifiante ?",
+      "options": [
+        "une formation menant à un diplôme, Titre Professionnel ou CQP inscrit au RNCP",
+        "une formation sans évaluation",
+        "une formation interne non reconnue",
+        "une formation obligatoire de sécurité"
+      ],
+      "reponse": 0,
+      "explication": "À distinguer de la qualifiante et de la diplômante (diplôme d'État)."
+    },
+    {
+      "id": "b4-r07-qz-025",
+      "section": "2. Le cadre légal : 50 ans de réformes",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle est l'originalité française de la construction du droit de la formation ?",
+      "options": [
+        "la loi précède toujours la négociation",
+        "un référendum",
+        "un décret européen",
+        "un Accord National Interprofessionnel (ANI) négocié, puis repris par la loi"
+      ],
+      "reponse": 3,
+      "explication": "ANI 1970 + loi Delors de 1971, textes fondateurs de la FPC."
+    },
+    {
+      "id": "b4-r07-qz-026",
+      "section": "2. Le cadre légal : 50 ans de réformes",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle loi a inscrit la « formation tout au long de la vie » au Code du travail ?",
+      "options": [
+        "la loi de 1971",
+        "la loi du 4 mai 2004",
+        "la loi Travail de 2016",
+        "la loi Avenir professionnel de 2018"
+      ],
+      "reponse": 1,
+      "explication": "La loi de 2009 a ensuite fait de la formation un levier RH de la GPEC."
+    },
+    {
+      "id": "b4-r07-qz-027",
+      "section": "2. Le cadre légal : 50 ans de réformes",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez la monétisation du CPF depuis 2019.",
+      "texte": "Le CPF est crédité de {1} € par an (plafond 5 000 €), et de {2} € par an (plafond 8 000 €) pour les salariés peu qualifiés.",
+      "trous": [
+        "500",
+        "800"
+      ],
+      "explication": "La réforme crée aussi le CPF de transition et renforce le CEP."
+    },
+    {
+      "id": "b4-r07-qz-028",
+      "section": "2. Le cadre légal : 50 ans de réformes",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Côté entreprises, qu'a apporté la réforme entrée en vigueur en 2019 ? (3 réponses)",
+      "options": [
+        "une contribution unique collectée par l'URSSAF",
+        "une action de formation redéfinie, incluant l'AFEST",
+        "le plan de formation renommé PDC",
+        "la suppression du CPF",
+        "la fin de Qualiopi"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "S'y ajoutent la cotisation CPF-CDD (1 %) et la mutualisation pour les TPE/PME."
+    },
+    {
+      "id": "b4-r07-qz-029",
+      "section": "2. Le cadre légal : 50 ans de réformes",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel est le montant du ticket modérateur CPF depuis le 2 mai 2024 ?",
+      "options": [
+        "50 €",
+        "150 €",
+        "100 €",
+        "10 % du coût"
+      ],
+      "reponse": 2,
+      "explication": "Exonérés : demandeurs d'emploi, formations abondées par l'employeur, points C2P, incapacité AT/MP ≥ 10 %."
+    },
+    {
+      "id": "b4-r07-qz-030",
+      "section": "2. Le cadre légal : 50 ans de réformes",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "La VAE inversée, expérimentée depuis 2023, combine situation de travail et contrat de professionnalisation.",
+      "reponse": true,
+      "explication": "Vrai : 2023 voit aussi les lois anti-fraude CPF et une VAE modernisée."
+    },
+    {
+      "id": "b4-r07-qz-031",
+      "section": "3. Financement et qualité",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez les taux de la CUFPA.",
+      "texte": "La CUFPA s'élève à {1} % de la masse salariale sous 11 salariés et à {2} % au-delà.",
+      "trous": [
+        "1,23",
+        "1,68"
+      ],
+      "explication": "Elle comprend un volet formation et la taxe d'apprentissage. S'y ajoutent la CSA (≥ 250 salariés, alternants < 5 %) et le CPF-CDD."
+    },
+    {
+      "id": "b4-r07-qz-032",
+      "section": "3. Financement et qualité",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qui redistribue les fonds de la formation professionnelle ?",
+      "options": [
+        "France Compétences",
+        "l'URSSAF",
+        "la CNIL",
+        "le CSE"
+      ],
+      "reponse": 0,
+      "explication": "Budget 2023 : 14,9 Md€, dont 73,26 % pour l'alternance et 15,47 % pour le CPF via la Caisse des Dépôts."
+    },
+    {
+      "id": "b4-r07-qz-033",
+      "section": "3. Financement et qualité",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "L'essentiel du budget de France Compétences finance le CPF.",
+      "reponse": false,
+      "explication": "Faux : 73,26 % vont à l'alternance, 15,47 % au CPF via la Caisse des Dépôts."
+    },
+    {
+      "id": "b4-r07-qz-034",
+      "section": "3. Financement et qualité",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Sur quel référentiel repose la certification Qualiopi ?",
+      "options": [
+        "l'ISO 9001",
+        "le ROME",
+        "le RNCP",
+        "le RNCQ (Référentiel National de Certification Qualité)"
+      ],
+      "reponse": 3,
+      "explication": "Délivrée par des certificateurs accrédités Cofrac, obligatoire depuis le 1er janvier 2022 pour accéder aux fonds publics ou mutualisés."
+    },
+    {
+      "id": "b4-r07-qz-035",
+      "section": "3. Financement et qualité",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Pour une entreprise de plus de 50 salariés, Qualiopi reste une condition obligatoire de financement OPCO.",
+      "reponse": false,
+      "explication": "Faux : obligatoire pour le financement OPCO des entreprises ≤ 50 salariés ; au-delà, c'est un critère de choix."
+    },
+    {
+      "id": "b4-r07-qz-036",
+      "section": "4. Les obligations de l'employeur",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que retient l'arrêt de la Cour de cassation du 5 juillet 2018 cité par le cours ?",
+      "options": [
+        "l'employeur peut refuser toute formation",
+        "17 formations courtes liées au seul métier ne suffisent pas : 10 000 € pour « perte de chance »",
+        "la formation est à l'initiative du salarié",
+        "le CPF est obligatoire"
+      ],
+      "reponse": 1,
+      "explication": "Les formations doivent développer réellement les compétences et l'employabilité."
+    },
+    {
+      "id": "b4-r07-qz-037",
+      "section": "4. Les obligations de l'employeur",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 3 temps de l'entretien professionnel.",
+      "elements": [
+        "Analyse",
+        "Évolutions",
+        "Bilan"
+      ],
+      "ordre": [
+        2,
+        0,
+        1
+      ],
+      "explication": "Il traite du projet professionnel et des besoins de formation, distinct de l'entretien annuel d'évaluation."
+    },
+    {
+      "id": "b4-r07-qz-038",
+      "section": "5. Le plan de développement des compétences",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Le PDC est obligatoire pour toutes les entreprises.",
+      "reponse": false,
+      "explication": "Faux : non obligatoire mais fortement recommandé. Il recense l'ensemble des actions de formation de l'employeur."
+    },
+    {
+      "id": "b4-r07-qz-039",
+      "section": "5. Le plan de développement des compétences",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Que peut contenir un PDC ? (4 réponses)",
+      "options": [
+        "des bilans de compétences",
+        "des VAE",
+        "des AFEST",
+        "des actions co-construites (CPF abondé)",
+        "des activités de loisirs",
+        "une sensibilisation au bien-être pour un public indifférencié"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Sensibilisation, bien-être, gestion du stress pour un public indifférencié et loisirs sont exclus et non finançables OPCO."
+    },
+    {
+      "id": "b4-r07-qz-040",
+      "section": "5. Le plan de développement des compétences",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce qu'une formation obligatoire (art. L.6321-2) ?",
+      "options": [
+        "toute formation demandée par le salarié",
+        "toute formation de plus de 30 heures",
+        "toute action qui conditionne l'exercice d'une activité ou d'une fonction",
+        "toute formation certifiante"
+      ],
+      "reponse": 2,
+      "explication": "Hygiène et sécurité, permis et habilitations : CACES, FIMO, habilitations électriques, AMF, secourisme."
+    },
+    {
+      "id": "b4-r07-qz-041",
+      "section": "5. Le plan de développement des compétences",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque cas à sa sous-catégorie de formation.",
+      "colonne_a": [
+        "Architecte formé à un logiciel de DAO",
+        "Assistante formée à l'anglais professionnel",
+        "Chargé d'affaires formé au management pour devenir responsable commercial"
+      ],
+      "colonne_b": [
+        "Développement des compétences",
+        "Adaptation au poste",
+        "Maintien dans l'emploi"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Savoir-faire spécifique au poste / transférable / évolution ultérieure."
+    },
+    {
+      "id": "b4-r07-qz-042",
+      "section": "5. Le plan de développement des compétences",
+      "niveau": 3,
+      "format": "texte_a_trous",
+      "question": "Complétez la règle des formations non obligatoires hors temps de travail sans accord collectif.",
+      "texte": "Il faut l'accord écrit du salarié, dans la limite de {1} heures par an ou de {2} % du forfait jours.",
+      "trous": [
+        "30",
+        "2"
+      ],
+      "explication": "218 j × 2 % = 4,4 jours. Le refus n'est ni fautif ni un motif de licenciement."
+    },
+    {
+      "id": "b4-r07-qz-043",
+      "section": "5. Le plan de développement des compétences",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 6 étapes d'élaboration du PDC.",
+      "elements": [
+        "Consulter le CSE",
+        "Recueillir les besoins",
+        "Chiffrer",
+        "Évaluer",
+        "Préparer le plan",
+        "Déployer et suivre"
+      ],
+      "ordre": [
+        1,
+        4,
+        2,
+        0,
+        5,
+        3
+      ],
+      "explication": "Besoins idéalement en septembre-octobre, CSE en novembre."
+    },
+    {
+      "id": "b4-r07-qz-044",
+      "section": "5. Le plan de développement des compétences",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "À partir de quel effectif le CSE doit-il être consulté chaque année sur le PDC ?",
+      "options": [
+        "50 salariés",
+        "11 salariés",
+        "250 salariés",
+        "300 salariés"
+      ],
+      "reponse": 0,
+      "explication": "Avis tous les ans, ou tous les 3 ans maximum par accord."
+    },
+    {
+      "id": "b4-r07-qz-045",
+      "section": "5. Le plan de développement des compétences",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque coût de formation à sa catégorie.",
+      "colonne_a": [
+        "Rémunération du formateur",
+        "Perte de production pendant la formation"
+      ],
+      "colonne_b": [
+        "Coût indirect",
+        "Coût direct"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Directs : formateur, inscription, matériel, déplacements, salaire du formé. Indirects : perte de production, remplaçant."
+    },
+    {
+      "id": "b4-r07-qz-046",
+      "section": "5. Le plan de développement des compétences",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Dans la matrice urgence × importance, la case « urgent mais pas important » n'existe pas.",
+      "reponse": true,
+      "explication": "Vrai : une formation urgente est forcément importante. Urgent + important = sans délai ; important seul = planifier ; ni l'un ni l'autre = éliminer."
+    },
+    {
+      "id": "b4-r07-qz-047",
+      "section": "6. Certifications et validation des acquis",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Combien de niveaux compte le RNCP depuis le décret du 8 janvier 2019 ?",
+      "options": [
+        "5",
+        "6",
+        "10",
+        "8"
+      ],
+      "reponse": 3,
+      "explication": "Du niveau 1 (savoirs de base) au niveau 8 (Doctorat) ; niveau 6 = Bachelor/Licence, niveau 7 = Master."
+    },
+    {
+      "id": "b4-r07-qz-048",
+      "section": "6. Certifications et validation des acquis",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels référentiels structurent une certification RNCP ? (3 réponses)",
+      "options": [
+        "activités",
+        "compétences",
+        "évaluation",
+        "rémunération",
+        "recrutement"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Organisés en blocs de compétences."
+    },
+    {
+      "id": "b4-r07-qz-049",
+      "section": "6. Certifications et validation des acquis",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que CléA ?",
+      "options": [
+        "un CQP de branche",
+        "la 1re certification interprofessionnelle sur le socle de connaissances et de compétences professionnelles (7 domaines)",
+        "un titre professionnel d'État",
+        "une habilitation électrique"
+      ],
+      "reponse": 1,
+      "explication": "Français, calcul, numérique, travail en équipe, autonomie, apprendre à apprendre, gestes et sécurité."
+    },
+    {
+      "id": "b4-r07-qz-050",
+      "section": "6. Certifications et validation des acquis",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La VAE peut valoriser une expérience extra-professionnelle comme le bénévolat.",
+      "reponse": true,
+      "explication": "Vrai, si elle est en rapport direct avec la certification visée. La VAPP vise la reprise d'études."
+    },
+    {
+      "id": "b4-r07-qz-051",
+      "section": "6. Certifications et validation des acquis",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la démarche de VAE.",
+      "elements": [
+        "Accompagnement face au référentiel",
+        "Jury de professionnels",
+        "Dossier de recevabilité"
+      ],
+      "ordre": [
+        2,
+        0,
+        1
+      ],
+      "explication": "Le jury décide une validation totale, partielle (contrôle complémentaire) ou un refus."
+    },
+    {
+      "id": "b4-r07-qz-052",
+      "section": "6. Certifications et validation des acquis",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle est la durée maximale du congé VAE rémunéré ?",
+      "options": [
+        "7 heures",
+        "35 heures",
+        "24 heures",
+        "5 jours"
+      ],
+      "reponse": 2,
+      "explication": "Demande 30 jours avant ; réponse sous 15 jours (silence = accord)."
+    },
+    {
+      "id": "b4-r07-qz-053",
+      "section": "7. Concevoir la formation : l'ingénierie pédagogique",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Classez les 6 niveaux de la taxonomie de Bloom, du plus simple au plus complexe.",
+      "elements": [
+        "Analyser",
+        "Mémoriser",
+        "Créer",
+        "Comprendre",
+        "Évaluer",
+        "Appliquer"
+      ],
+      "ordre": [
+        1,
+        3,
+        5,
+        0,
+        4,
+        2
+      ],
+      "explication": "Elle sert la progression et le diagnostic."
+    },
+    {
+      "id": "b4-r07-qz-054",
+      "section": "7. Concevoir la formation : l'ingénierie pédagogique",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que vise la « zone proximale de développement » ?",
+      "options": [
+        "une difficulté ni trop facile ni trop difficile, via la différenciation pédagogique",
+        "un contenu très facile pour rassurer",
+        "un contenu très difficile pour stimuler",
+        "un niveau identique pour tous"
+      ],
+      "reponse": 0,
+      "explication": "Modules optionnels, rappels, challenges adaptés à l'expertise préalable."
+    },
+    {
+      "id": "b4-r07-qz-055",
+      "section": "7. Concevoir la formation : l'ingénierie pédagogique",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Lequel de ces verbes convient à un objectif pédagogique observable ?",
+      "options": [
+        "connaître",
+        "comprendre",
+        "savoir",
+        "identifier"
+      ],
+      "reponse": 3,
+      "explication": "On utilise des verbes d'action observables (identifier, créer), pas « connaître »."
+    },
+    {
+      "id": "b4-r07-qz-056",
+      "section": "7. Concevoir la formation : l'ingénierie pédagogique",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez la règle d'attention en formation d'adultes.",
+      "texte": "L'attention décline après {1} minutes : on découpe en micro-séquences, c'est le {2}.",
+      "trous": [
+        "15-20",
+        "chunking"
+      ],
+      "explication": "Avec des marqueurs de progression et des points de contrôle."
+    },
+    {
+      "id": "b4-r07-qz-057",
+      "section": "7. Concevoir la formation : l'ingénierie pédagogique",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "L'accessibilité d'un support de formation se traite après sa conception.",
+      "reponse": false,
+      "explication": "Faux : dès la conception (contraste ≥ 4,5:1 WCAG, jamais la couleur seule, polices lisibles)."
+    },
+    {
+      "id": "b4-r07-qz-058",
+      "section": "7. Concevoir la formation : l'ingénierie pédagogique",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Que désigne le cycle qualité « 3-2-1 » ?",
+      "options": [
+        "3 jours, 2 formateurs, 1 salle",
+        "3 niveaux de validation, 2 phases de test, 1 processus d'amélioration continue",
+        "3 objectifs, 2 évaluations, 1 certification",
+        "3 modules, 2 quiz, 1 examen"
+      ],
+      "reponse": 1,
+      "explication": "Validation technique, pédagogique, utilisateur ; tests interne et sur échantillon d'apprenants."
+    },
+    {
+      "id": "b4-r07-qz-059",
+      "section": "8. Animer : la posture de facilitateur",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque approche de facilitation à sa visée.",
+      "colonne_a": [
+        "Dialogue (World Café)",
+        "Atelier (speed boat)",
+        "Agile"
+      ],
+      "colonne_b": [
+        "Garant des valeurs agiles et de l'amélioration continue",
+        "Parole libérée, divergence, créativité",
+        "Structurée, convergence vers une décision"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "La facilitation est d'abord un processus (Roger Schwarte)."
+    },
+    {
+      "id": "b4-r07-qz-060",
+      "section": "8. Animer : la posture de facilitateur",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle position le facilitateur adopte-t-il le plus souvent ?",
+      "options": [
+        "la position haute en permanence",
+        "aucune position",
+        "la position basse, avec une position haute ponctuelle pour (re)poser le cadre",
+        "la position d'expert du contenu"
+      ],
+      "reponse": 2,
+      "explication": "Neutralité, écoute du dit et du non-dit, bienveillance, présence active."
+    },
+    {
+      "id": "b4-r07-qz-061",
+      "section": "8. Animer : la posture de facilitateur",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels sont les 3 rôles du facilitateur ? (3 réponses)",
+      "options": [
+        "architecte",
+        "pilote",
+        "guide",
+        "juge",
+        "expert du contenu"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Architecte du déroulé, pilote du fil conducteur, guide qui dénoue les conflits."
+    },
+    {
+      "id": "b4-r07-qz-062",
+      "section": "8. Animer : la posture de facilitateur",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 5 étapes de la facilitation.",
+      "elements": [
+        "Lancement",
+        "Synthèse",
+        "Cadre et objectif",
+        "Canalisation",
+        "Consignes"
+      ],
+      "ordre": [
+        2,
+        4,
+        0,
+        3,
+        1
+      ],
+      "explication": "Disposition de salle adaptée : cercle pour le co-développement, cabaret pour le World Café."
+    },
+    {
+      "id": "b4-r07-qz-063",
+      "section": "9. Modalités et digital learning",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "En quoi consiste l'AFEST ?",
+      "options": [
+        "l'alternance d'une mise en situation de travail aménagée et d'une séquence réflexive animée par un tiers",
+        "une formation 100 % en ligne",
+        "un MOOC d'entreprise",
+        "un séminaire en présentiel"
+      ],
+      "reponse": 0,
+      "explication": "Elle confronte les traces de l'activité au prescrit ; expérimentée depuis 2016."
+    },
+    {
+      "id": "b4-r07-qz-064",
+      "section": "9. Modalités et digital learning",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le digital learning ne désigne que les formations suivies à distance.",
+      "reponse": false,
+      "explication": "Faux : il couvre tout le processus de formation, en présentiel comme à distance ; l'e-learning n'en est qu'une composante."
+    },
+    {
+      "id": "b4-r07-qz-065",
+      "section": "9. Modalités et digital learning",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque format à sa définition.",
+      "colonne_a": [
+        "MOOC",
+        "COOC",
+        "Serious game",
+        "Crowd learning"
+      ],
+      "colonne_b": [
+        "Jeu pédagogique avec scoring",
+        "Apprentissage « par la foule »",
+        "Cours en ligne massif, ouvert et interactif",
+        "MOOC interne à une entreprise"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Le SPOC réunit 15 à 50 participants sélectionnés avec un accompagnement personnalisé."
+    },
+    {
+      "id": "b4-r07-qz-066",
+      "section": "9. Modalités et digital learning",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque outil à sa fonction.",
+      "colonne_a": [
+        "LMS",
+        "TMS"
+      ],
+      "colonne_b": [
+        "Logistique : sessions, salles, budgets",
+        "Gestion, diffusion et suivi des formations (reporting, complétion, gamification)"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Leader LMS cité : 360Learning."
+    },
+    {
+      "id": "b4-r07-qz-067",
+      "section": "9. Modalités et digital learning",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Selon l'ISTF 2023, quelle modalité est majoritaire ?",
+      "options": [
+        "le 100 % digital",
+        "le présentiel",
+        "l'AFEST",
+        "le blended learning (37 %)"
+      ],
+      "reponse": 3,
+      "explication": "Présentiel 36 %, 100 % digital 27 % ; 56 % des entreprises veulent plus de multimodal."
+    },
+    {
+      "id": "b4-r07-qz-068",
+      "section": "9. Modalités et digital learning",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Un ROI de formation inférieur à 100 % signifie que l'investissement n'est pas couvert.",
+      "reponse": true,
+      "explication": "Vrai avec la formule du cours ROI = bénéfices / coûts × 100. Le ROE (Return On Expectation) complète le ROI."
+    },
+    {
+      "id": "b4-r07-qz-069",
+      "section": "9. Modalités et digital learning",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Organisez une session de formation pour une équipe qui doit maîtriser une nouvelle compétence technique avant un événement.",
+      "attendus": [
+        "Analyser le public en 5W + 2H",
+        "Fixer des objectifs SMART adossés à Bloom, avec des verbes observables",
+        "Structurer en séquences de 15-20 min, méthode inductive sur cas réels",
+        "Varier des supports accessibles (vidéo, infographies, simulations, quiz)",
+        "Justifier la modalité (blended ou AFEST), les outils (LMS), l'animation facilitante et l'évaluation (complétion, satisfaction, ROI)"
+      ],
+      "explication": "Chaque choix se justifie par un besoin ou une contrainte."
     }
   ]
 }

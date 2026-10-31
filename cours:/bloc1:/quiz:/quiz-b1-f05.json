@@ -11,11 +11,11 @@
       "question": "Selon l'OCDE, quels sont les 4 types d'innovation ?",
       "options": [
         "incrémentale, adjacente, de rupture, radicale",
-        "de produit, de procédé, de commercialisation, d'organisation",
         "low tech, high tech, hybride, frugale",
+        "de produit, de procédé, de commercialisation, d'organisation",
         "Need Seekers, Market Readers, Technology Drivers, Fast Followers"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "La réponse 0 est la classification économique par degré ; la réponse 3 décrit les stratégies d'innovation identifiées par PwC."
     },
     {
@@ -25,12 +25,12 @@
       "format": "qcm",
       "question": "Qu'est-ce qui transforme une invention en innovation ?",
       "options": [
-        "le dépôt d'un brevet",
         "sa mise en forme en produit commercialisable, donc son intérêt économique",
+        "le dépôt d'un brevet",
         "sa validation par un organisme de normalisation",
         "son caractère radical et non incrémental"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "C'est l'intérêt économique qui fait la différence entre les deux notions."
     },
     {
@@ -39,8 +39,13 @@
       "niveau": 2,
       "format": "qcm",
       "question": "Une entreprise qui exploite intensivement sa R&D interne pour développer des innovations radicales relève de quelle stratégie PwC ?",
-      "options": ["Need Seekers", "Market Readers", "Technology Drivers", "Open innovators"],
-      "reponse": 2,
+      "options": [
+        "Need Seekers",
+        "Market Readers",
+        "Open innovators",
+        "Technology Drivers"
+      ],
+      "reponse": 3,
       "explication": "Les Need Seekers anticipent le marché pour être les premiers à répondre aux nouvelles attentes ; les Market Readers créent de la valeur par la personnalisation et l'innovation incrémentale."
     },
     {
@@ -66,11 +71,11 @@
       "question": "Comment se mesure le brand equity ?",
       "options": [
         "par la part de marché en valeur",
-        "par la notoriété, le NPS et la préférence de marque",
         "par le taux d'engagement sur les réseaux sociaux",
+        "par la notoriété, le NPS et la préférence de marque",
         "par le taux de conversion du site"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "Le brand equity est la valeur perçue de la marque au-delà de ses attributs fonctionnels."
     },
     {
@@ -79,8 +84,13 @@
       "niveau": 1,
       "format": "qcm",
       "question": "Que représente le 5ᵉ P du mix omnicanal ?",
-      "options": ["Process", "Physical evidence", "People", "Personalization"],
-      "reponse": 2,
+      "options": [
+        "People",
+        "Physical evidence",
+        "Process",
+        "Personalization"
+      ],
+      "reponse": 0,
       "explication": "People représente le client et la relation entretenue avec lui : le mettre au cœur du processus et lui permettre de choisir le lieu, l'heure et le support — où il veut, quand il veut, comme il veut."
     },
     {
@@ -91,11 +101,11 @@
       "question": "Le yield management consiste à :",
       "options": [
         "optimiser les marges par la réduction des coûts d'achat",
-        "trouver un équilibre entre le prix et le taux d'occupation",
+        "personnaliser le prix selon le profil du client",
         "aligner les prix sur ceux des comparateurs en ligne",
-        "personnaliser le prix selon le profil du client"
+        "trouver un équilibre entre le prix et le taux d'occupation"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "Le prix est différencié selon le taux d'occupation et le moment de la réservation. Très utilisé dans l'hôtellerie et les transports, il constitue le business model d'acteurs comme Lastminute."
     },
     {
@@ -121,11 +131,11 @@
       "question": "L'utilitarisme évalue la moralité d'une action selon :",
       "options": [
         "l'intention et le respect de principes universels",
-        "les conséquences et le bien-être collectif",
         "la conformité aux normes professionnelles",
+        "les conséquences et le bien-être collectif",
         "l'authenticité de la marque"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "La réponse 0 décrit la déontologie. Ces deux traditions philosophiques structurent l'éthique marketing, née dans les années 1970 en réponse au consumérisme."
     },
     {
@@ -134,7 +144,12 @@
       "niveau": 1,
       "format": "qcm",
       "question": "Une marque tait les impacts environnementaux défavorables de son produit tout en communiquant sur ses points forts. De quel type de greenwashing s'agit-il ?",
-      "options": ["par omission", "par commission", "par suggestion", "par compensation"],
+      "options": [
+        "par omission",
+        "par commission",
+        "par suggestion",
+        "par compensation"
+      ],
       "reponse": 0,
       "explication": "Le greenwashing par commission consiste à affirmer un bénéfice inexistant ; par suggestion, à laisser croire par l'image ou le vocabulaire."
     },
@@ -144,8 +159,13 @@
       "niveau": 1,
       "format": "qcm",
       "question": "Quelle norme définit l'éco-conception ?",
-      "options": ["ISO 14040", "ISO 14006", "ISO 26000", "ISO 14044"],
-      "reponse": 1,
+      "options": [
+        "ISO 14040",
+        "ISO 14044",
+        "ISO 26000",
+        "ISO 14006"
+      ],
+      "reponse": 3,
       "explication": "ISO 14040 et 14044 encadrent l'Analyse du Cycle de Vie ; ISO 26000 est le cadre méthodologique de la responsabilité sociétale des organisations."
     },
     {
@@ -156,11 +176,11 @@
       "question": "À quoi sert l'étape d'interprétation de l'ACV ?",
       "options": [
         "à quantifier les flux entrants et sortants",
-        "à traduire les flux en impacts environnementaux potentiels",
         "à identifier les points chauds environnementaux et les leviers d'amélioration prioritaires",
+        "à traduire les flux en impacts environnementaux potentiels",
         "à préciser les limites du système analysé"
       ],
-      "reponse": 2,
+      "reponse": 1,
       "explication": "Les quatre étapes : définition des objectifs et du champ, inventaire du cycle de vie, évaluation de l'impact, interprétation des résultats."
     },
     {
@@ -169,8 +189,20 @@
       "niveau": 1,
       "format": "qcm_multiple",
       "question": "Quels sont les 4 types d'innovation par degré ? (4 réponses)",
-      "options": ["incrémentale", "défensive", "adjacente", "de rupture", "frugale", "radicale"],
-      "reponse": [0, 2, 3, 5],
+      "options": [
+        "incrémentale",
+        "défensive",
+        "adjacente",
+        "de rupture",
+        "frugale",
+        "radicale"
+      ],
+      "reponse": [
+        0,
+        2,
+        3,
+        5
+      ],
       "explication": "L'innovation adjacente transpose une technologie existante sur un marché différent, en lui attribuant un nouvel usage."
     },
     {
@@ -187,7 +219,12 @@
         "budget médias responsables",
         "émissions de CO₂"
       ],
-      "reponse": [0, 2, 3, 5],
+      "reponse": [
+        0,
+        2,
+        3,
+        5
+      ],
       "explication": "Équité et diversité relèvent de la dimension sociale ; le budget médias responsables et les fournisseurs locaux de la dimension économique."
     },
     {
@@ -203,7 +240,11 @@
         "délocaliser la production",
         "régénérer les systèmes naturels"
       ],
-      "reponse": [0, 2, 4],
+      "reponse": [
+        0,
+        2,
+        4
+      ],
       "explication": "Elle s'oppose à l'économie linéaire : extraire – produire – jeter. Exemples cités : Patagonia, IKEA, Renault."
     },
     {
@@ -220,7 +261,12 @@
         "domination par les coûts",
         "magasins connectés et QR codes"
       ],
-      "reponse": [0, 2, 3, 5],
+      "reponse": [
+        0,
+        2,
+        3,
+        5
+      ],
       "explication": "Le yield management relève de la politique prix, la domination par les coûts d'une stratégie générique."
     },
     {
@@ -230,7 +276,13 @@
       "format": "texte_a_trous",
       "question": "Complétez la définition de l'innovation selon l'OCDE.",
       "texte": "L'innovation est « la mise en {1} d'un produit (bien ou service) ou d'un {2} nouveau ou sensiblement {3}, d'une nouvelle méthode de {4} ou d'une nouvelle méthode {5} dans les pratiques de l'entreprise ».",
-      "trous": ["œuvre", "procédé", "amélioré", "commercialisation", "organisationnelle"],
+      "trous": [
+        "œuvre",
+        "procédé",
+        "amélioré",
+        "commercialisation",
+        "organisationnelle"
+      ],
       "explication": "D'où les 4 types OCDE : innovation de produit, de procédé, de commercialisation, d'organisation."
     },
     {
@@ -240,7 +292,14 @@
       "format": "texte_a_trous",
       "question": "Complétez la progression vers l'omnicanal.",
       "texte": "Le {1} désigne plusieurs canaux gérés de façon indépendante ou complémentaire. Le {2} désigne des canaux qui se {3} : acheter sur le web et retirer en magasin. L'{4} est la dernière étape : une expérience client {5} et {6}, créant un attachement particulier à la marque.",
-      "trous": ["multicanal", "cross-canal", "synchronisent", "omnicanal", "unique", "fluide"],
+      "trous": [
+        "multicanal",
+        "cross-canal",
+        "synchronisent",
+        "omnicanal",
+        "unique",
+        "fluide"
+      ],
       "explication": "Les trois paramètres de l'omnicanal : l'expérience, le parcours client, le relationnel."
     },
     {
@@ -250,7 +309,13 @@
       "format": "texte_a_trous",
       "question": "Complétez la définition de l'éco-conception selon la norme ISO 14006.",
       "texte": "L'éco-conception est l'intégration {1} des aspects environnementaux dans la {2} et le développement de produits et services. Approche {3}, elle vise à réduire les impacts tout au long du {4}, de l'extraction des matières premières à la {5}.",
-      "trous": ["systématique", "conception", "préventive", "cycle de vie", "fin de vie"],
+      "trous": [
+        "systématique",
+        "conception",
+        "préventive",
+        "cycle de vie",
+        "fin de vie"
+      ],
       "explication": "Ses trois caractéristiques essentielles : systématique, préventive, et vision cycle de vie."
     },
     {
@@ -260,7 +325,12 @@
       "format": "texte_a_trous",
       "question": "Complétez les trois formes de greenwashing.",
       "texte": "Le greenwashing est l'{1} entre la communication environnementale et les pratiques réelles. Par {2} : taire les impacts défavorables. Par {3} : affirmer un bénéfice inexistant. Par {4} : laisser croire par l'image ou le vocabulaire.",
-      "trous": ["écart", "omission", "commission", "suggestion"],
+      "trous": [
+        "écart",
+        "omission",
+        "commission",
+        "suggestion"
+      ],
       "explication": "La parade tient en trois exigences : transparence, traçabilité, reconnaissance des limites."
     },
     {
@@ -270,7 +340,14 @@
       "format": "texte_a_trous",
       "question": "Complétez le cadre de la veille et du reporting RSE.",
       "texte": "L'approche {1} — Environnement, Social, Gouvernance — sert de grille d'évaluation des performances non financières. Le cadre réglementaire comprend la loi {2}, la {3} (Déclaration de Performance Extra-Financière) et la {4}. Les référentiels internationaux sont le {5} et le {6}.",
-      "trous": ["ESG", "Pacte", "DPEF", "CSRD", "GRI", "SASB"],
+      "trous": [
+        "ESG",
+        "Pacte",
+        "DPEF",
+        "CSRD",
+        "GRI",
+        "SASB"
+      ],
       "explication": "S'y ajoute la taxonomie européenne. ISO 26000 fournit le cadre méthodologique de la responsabilité sociétale."
     },
     {
@@ -351,14 +428,36 @@
       "niveau": 1,
       "format": "appariement",
       "question": "Associez chaque type d'innovation à son principe.",
-      "colonne_a": ["Incrémentale", "Adjacente", "De rupture", "Radicale"],
+      "colonne_a": [
+        "Incrémentale",
+        "Adjacente",
+        "De rupture",
+        "Radicale"
+      ],
       "colonne_b": [
         "Proposer un produit totalement nouveau et créer un marché",
         "Perfectionner un produit existant, dans une logique d'amélioration continue",
         "Proposer un produit existant en version simplifiée, moins chère, plus accessible",
         "Introduire une technologie existante sur un marché différent, avec un nouvel usage"
       ],
-      "paires": [[0, 1], [1, 3], [2, 2], [3, 0]],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ]
+      ],
       "explication": "Les entreprises innovantes élaborent une stratégie d'innovation sur la durée et l'alignent sur leur stratégie globale."
     },
     {
@@ -367,14 +466,36 @@
       "niveau": 1,
       "format": "appariement",
       "question": "Associez chaque notion à sa définition.",
-      "colonne_a": ["Brand", "Branding", "Expérience client", "Brand equity"],
+      "colonne_a": [
+        "Brand",
+        "Branding",
+        "Expérience client",
+        "Brand equity"
+      ],
       "colonne_b": [
         "La mise en œuvre opérationnelle : storytelling, alignement omnicanal, cohérence des signes",
         "La valeur perçue de la marque au-delà de ses attributs fonctionnels",
         "L'identité profonde et stable de la marque, son essence immuable",
         "La perception vécue par les clients"
       ],
-      "paires": [[0, 2], [1, 0], [2, 3], [3, 1]],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ]
+      ],
       "explication": "Les trois premières forment un écosystème interdépendant : la cohérence entre elles est la condition de la confiance durable."
     },
     {
@@ -383,14 +504,36 @@
       "niveau": 2,
       "format": "appariement",
       "question": "Associez chaque notion éthique à son contenu.",
-      "colonne_a": ["Utilitarisme", "Déontologie", "Marketing 3.0", "Persuasion éthique"],
+      "colonne_a": [
+        "Utilitarisme",
+        "Déontologie",
+        "Marketing 3.0",
+        "Persuasion éthique"
+      ],
       "colonne_b": [
         "Co-construction de sens et engagement volontaire, respectant l'intelligence des publics",
         "Évalue la moralité selon les conséquences et le bien-être collectif",
         "Déplace le centre de gravité vers les valeurs et crée des communautés d'engagement",
         "Juge la moralité selon l'intention et le respect de principes universels"
       ],
-      "paires": [[0, 1], [1, 3], [2, 2], [3, 0]],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ]
+      ],
       "explication": "L'éthique marketing émerge dans les années 1970, en réponse au consumérisme."
     },
     {
@@ -405,7 +548,12 @@
         "Interprétation des résultats et identification des points chauds",
         "Inventaire du cycle de vie : quantifier les flux entrants et sortants"
       ],
-      "ordre": [1, 3, 0, 2],
+      "ordre": [
+        1,
+        3,
+        0,
+        2
+      ],
       "explication": "L'ACV s'appuie sur les standards ISO 14040 et 14044, qui garantissent la reproductibilité et la comparabilité des analyses."
     },
     {
@@ -420,7 +568,12 @@
         "Mesurer l'impact",
         "Élaborer une stratégie alignée sur ses valeurs"
       ],
-      "ordre": [1, 3, 0, 2],
+      "ordre": [
+        1,
+        3,
+        0,
+        2
+      ],
       "explication": "Impliquer les employés dans la promotion du marketing responsable renforce la responsabilité sociale de l'entreprise."
     },
     {
@@ -471,6 +624,828 @@
         "Mention utile : l'innovation est aussi une expérience inclusive — design universel, prise en compte de la diversité des publics"
       ],
       "explication": "La co-innovation en interne suppose également un esprit et un management collaboratifs, parfois structurés par des Fab Lab."
+    },
+    {
+      "id": "q-f05-038",
+      "section": "1. L'innovation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Proposer un produit existant dans une version simplifiée, de moindre qualité et à tarif inférieur relève de l'innovation :",
+      "options": [
+        "incrémentale",
+        "adjacente",
+        "de rupture (disruptive)",
+        "radicale"
+      ],
+      "reponse": 2,
+      "explication": "Elle rend le produit plus accessible en coût et en fonctionnalités. La radicale crée un nouveau marché avec un produit totalement nouveau."
+    },
+    {
+      "id": "q-f05-039",
+      "section": "1. L'innovation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que désigne le low tech ?",
+      "options": [
+        "la conception et l'usage d'une technologie à faible impact environnemental, économique et accessible à tous",
+        "une technologie dépassée",
+        "une technologie de pointe",
+        "une innovation radicale"
+      ],
+      "reponse": 0,
+      "explication": "Le high tech désigne la conception et l'usage d'une technologie de pointe."
+    },
+    {
+      "id": "q-f05-040",
+      "section": "1. L'innovation",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Selon l'étude PwC, les entreprises innovantes élaborent leur stratégie d'innovation au coup par coup, indépendamment de leur stratégie globale.",
+      "reponse": false,
+      "explication": "Faux : elles l'élaborent sur la durée et l'alignent sur leur stratégie globale."
+    },
+    {
+      "id": "q-f05-041",
+      "section": "1. L'innovation",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce que la co-innovation ?",
+      "options": [
+        "copier l'innovation d'un concurrent",
+        "déposer un brevet commun",
+        "innover seul en R&D interne",
+        "faire participer les acteurs de son écosystème pour faire émerger des solutions inédites grâce aux savoir-faire de chacun"
+      ],
+      "reponse": 3,
+      "explication": "Elle permet de réaliser rapidement des expérimentations en situation réelle avec des clients."
+    },
+    {
+      "id": "q-f05-042",
+      "section": "1. L'innovation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel partenariat illustre la co-innovation dans le cours ?",
+      "options": [
+        "Apple – Nike",
+        "EDF – Starbucks – Orange autour de la plateforme Imagine",
+        "Renault – IKEA",
+        "Patagonia – Decathlon"
+      ],
+      "reponse": 1,
+      "explication": "Exemple de co-innovation entre acteurs d'un même écosystème."
+    },
+    {
+      "id": "q-f05-043",
+      "section": "1. L'innovation",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels sont les risques de la co-innovation ? (4 réponses)",
+      "options": [
+        "la propriété intellectuelle",
+        "le mauvais ciblage du périmètre commun",
+        "l'absence de méthodologie et d'outils partagés",
+        "l'espionnage industriel",
+        "la baisse obligatoire des prix",
+        "l'interdiction de communiquer"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Ces risques sont à anticiper avant d'ouvrir son processus d'innovation."
+    },
+    {
+      "id": "q-f05-044",
+      "section": "1. L'innovation",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Dans un contrat de façonnage, le façonnier peut utiliser des matières supplémentaires d'une valeur supérieure à celles fournies par le fabricant.",
+      "reponse": false,
+      "explication": "Faux : les matières supplémentaires doivent être de valeur inférieure. Le fabricant apporte les matières premières et en reste propriétaire."
+    },
+    {
+      "id": "q-f05-045",
+      "section": "1. L'innovation",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque contrat de sous-traitance à sa caractéristique.",
+      "colonne_a": [
+        "Contrat de façonnage",
+        "Contrat de fabrication"
+      ],
+      "colonne_b": [
+        "Le sous-traitant est un exécutant qui livre les produits finis selon un cahier des charges",
+        "Le produit reste la propriété du donneur d'ouvrage ; partenariat possiblement très fort"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Les sous-traitants sont des partenaires d'innovation à des degrés différents selon le contrat."
+    },
+    {
+      "id": "q-f05-046",
+      "section": "1. L'innovation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Comment s'appellent les espaces d'incubation qui structurent parfois la co-innovation en interne ?",
+      "options": [
+        "les showrooms",
+        "les drive",
+        "les Fab Lab",
+        "les pure players"
+      ],
+      "reponse": 2,
+      "explication": "La co-innovation interne suppose un esprit et un management collaboratifs."
+    },
+    {
+      "id": "q-f05-047",
+      "section": "1. L'innovation",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "L'innovation est à la fois une expérience inventive et une expérience inclusive.",
+      "reponse": true,
+      "explication": "Vrai : concevoir en tenant compte de la diversité des publics."
+    },
+    {
+      "id": "q-f05-048",
+      "section": "1. L'innovation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Par quelles méthodes les clients deviennent-ils un vecteur d'innovation ?",
+      "options": [
+        "l'UX Design et le CX Design",
+        "le yield management",
+        "le geofencing",
+        "le greenwashing"
+      ],
+      "reponse": 0,
+      "explication": "Les degrés d'implication vont de la simple consultation à la co-création, jusqu'à la gestion structurée du feedback client."
+    },
+    {
+      "id": "q-f05-049",
+      "section": "2. Marque et expérience client",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Le brand désigne :",
+      "options": [
+        "la perception vécue par les clients",
+        "les éléments tangibles du storytelling",
+        "la valeur économique de la marque",
+        "l'identité profonde et stable de la marque, son essence immuable"
+      ],
+      "reponse": 3,
+      "explication": "Mission, vision, personnalité (Aaker et Keller). Il guide les décisions stratégiques."
+    },
+    {
+      "id": "q-f05-050",
+      "section": "2. Marque et expérience client",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La cohérence entre brand, branding et expérience client est essentielle pour créer une relation de confiance durable.",
+      "reponse": true,
+      "explication": "Vrai : c'est la cohérence perçue, faite d'authenticité et de fiabilité, dans un écosystème interdépendant."
+    },
+    {
+      "id": "q-f05-051",
+      "section": "2. Marque et expérience client",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que l'expérience omnicanale par rapport au CX et à l'UX ?",
+      "options": [
+        "un synonyme de l'UX",
+        "la synthèse CX/UX, qui les unifie sur l'ensemble des points de contact",
+        "une partie de l'UX",
+        "l'opposé du CX"
+      ],
+      "reponse": 1,
+      "explication": "CX : ensemble des interactions sur tout le parcours ; UX : expérience sur une interface, un produit ou un service donné."
+    },
+    {
+      "id": "q-f05-052",
+      "section": "2. Marque et expérience client",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que sont les moments de vérité du parcours client ?",
+      "options": [
+        "les promotions",
+        "les avis négatifs",
+        "les interactions critiques qui déterminent la perception globale",
+        "les dates de lancement"
+      ],
+      "reponse": 2,
+      "explication": "On cartographie le parcours, on mesure émotions et performances à chaque étape, puis on priorise selon l'impact perçu."
+    },
+    {
+      "id": "q-f05-053",
+      "section": "2. Marque et expérience client",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les 3 dimensions de l'expérience ? (3 réponses)",
+      "options": [
+        "cognitive",
+        "affective",
+        "comportementale",
+        "financière",
+        "juridique"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "S'y ajoute la stimulation multisensorielle, qui renforce l'attachement. Les micro-interactions ont des impacts business mesurables."
+    },
+    {
+      "id": "q-f05-054",
+      "section": "3. Le mix marketing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'a permis le développement web de France Loisirs ?",
+      "options": [
+        "rajeunir sa clientèle, avec un public plus jeune et plus urbain",
+        "fermer tous ses magasins",
+        "augmenter ses prix",
+        "passer directement à l'omnicanal"
+      ],
+      "reponse": 0,
+      "explication": "Exemple de multicanal : plusieurs canaux gérés de façon indépendante ou complémentaire."
+    },
+    {
+      "id": "q-f05-055",
+      "section": "3. Le mix marketing",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la progression des stratégies de canaux.",
+      "elements": [
+        "Omnicanal",
+        "Multicanal",
+        "Cross-canal"
+      ],
+      "ordre": [
+        1,
+        2,
+        0
+      ],
+      "explication": "Multicanal (canaux indépendants) → cross-canal (canaux synchronisés) → omnicanal (expérience unique et fluide)."
+    },
+    {
+      "id": "q-f05-056",
+      "section": "3. Le mix marketing",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels sont les 3 paramètres de l'omnicanal ? (3 réponses)",
+      "options": [
+        "l'expérience",
+        "le parcours client",
+        "le relationnel",
+        "le prix unique",
+        "le catalogue papier"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Le 5ᵉ P, People : où il veut, quand il veut, comme il veut."
+    },
+    {
+      "id": "q-f05-057",
+      "section": "3. Le mix marketing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi les enseignes physiques adoptent-elles souvent une stratégie prix hybride, avec des exclusivités web ?",
+      "options": [
+        "pour augmenter les prix en magasin",
+        "pour respecter la loi AGEC",
+        "pour supprimer le web",
+        "pour préserver leur compétitivité face aux pure players"
+      ],
+      "reponse": 3,
+      "explication": "Les marques préfèrent en général proposer les mêmes offres au même tarif quel que soit le canal."
+    },
+    {
+      "id": "q-f05-058",
+      "section": "3. Le mix marketing",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles tarifications flexibles la transparence d'Internet a-t-elle favorisées ? (4 réponses)",
+      "options": [
+        "le tarif en temps réel",
+        "les forfaits à l'usage",
+        "les prix groupés",
+        "les ventes aux enchères",
+        "le prix unique national imposé",
+        "la suppression des promotions"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Les comparateurs ont soumis la politique prix à une transparence accrue."
+    },
+    {
+      "id": "q-f05-059",
+      "section": "3. Le mix marketing",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le yield management constitue le business model même de certains acteurs comme Lastminute.",
+      "reponse": true,
+      "explication": "Vrai. Très utilisé dans l'hôtellerie et les transports, il différencie le prix selon le taux d'occupation et le moment de la réservation."
+    },
+    {
+      "id": "q-f05-060",
+      "section": "3. Le mix marketing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Le geofencing est :",
+      "options": [
+        "une barrière à l'entrée",
+        "une technique de marketing mobile ciblant les individus selon leur localisation",
+        "une méthode de clustering",
+        "un label environnemental"
+      ],
+      "reponse": 1,
+      "explication": "Il fait partie des pratiques de distribution omnicanale, avec le click and collect et le drive."
+    },
+    {
+      "id": "q-f05-061",
+      "section": "3. Le mix marketing",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "En politique de distribution omnicanale, on choisit d'abord les canaux, puis on étudie la cible.",
+      "reponse": false,
+      "explication": "Faux : il faut d'abord étudier la cible, ses habitudes de consommation et ses médias de prédilection, pour un parcours cohérent, complémentaire et fluide."
+    },
+    {
+      "id": "q-f05-062",
+      "section": "3. Le mix marketing",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "« Nous considérons nos clients comme des invités, à une fête où nous sommes les hôtes. » Qui l'a dit ?",
+      "options": [
+        "Steve Jobs",
+        "Philip Kotler",
+        "Jeff Bezos",
+        "Jeremy Bentham"
+      ],
+      "reponse": 2,
+      "explication": "« C'est notre job d'améliorer leur expérience un peu plus chaque jour. »"
+    },
+    {
+      "id": "q-f05-063",
+      "section": "3. Le mix marketing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Comment s'appellent les utilisateurs dont il faut connaître les produits plébiscités dans une stratégie m-commerce ?",
+      "options": [
+        "les mobinautes",
+        "les pure players",
+        "les façonniers",
+        "les early adopters"
+      ],
+      "reponse": 0,
+      "explication": "Le m-commerce croît grâce à la mobilité, l'immédiateté et l'ergonomie. Il faut bien définir sa cible et penser omnicanal."
+    },
+    {
+      "id": "q-f05-064",
+      "section": "3. Le mix marketing",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque approche du marketing international à son principe.",
+      "colonne_a": [
+        "Marketing international global",
+        "Marketing international glocal"
+      ],
+      "colonne_b": [
+        "Standardisation adaptée",
+        "Standardisation"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "La 3e approche est le marketing à l'exportation."
+    },
+    {
+      "id": "q-f05-065",
+      "section": "3. Le mix marketing",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels avantages offre le développement à l'international ? (3 réponses)",
+      "options": [
+        "l'accès à de nouveaux clients",
+        "la diversification des revenus et la réduction des risques",
+        "le renforcement de la notoriété",
+        "la disparition des spécificités culturelles",
+        "la fin de toute concurrence"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Accompagnement : Business France, CCI internationales. L'adaptation culturelle est souvent le facteur décisif."
+    },
+    {
+      "id": "q-f05-066",
+      "section": "4. L'éthique",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quand émerge l'éthique marketing, et en réponse à quoi ?",
+      "options": [
+        "dans les années 1950, en réponse à la publicité télévisée",
+        "dans les années 2020, en réponse à la CSRD",
+        "dans les années 2000, en réponse au digital",
+        "dans les années 1970, en réponse au consumérisme"
+      ],
+      "reponse": 3,
+      "explication": "Deux traditions la structurent : l'utilitarisme (Bentham) et la déontologie."
+    },
+    {
+      "id": "q-f05-067",
+      "section": "4. L'éthique",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Sur quels 3 piliers repose la confiance ? (3 réponses)",
+      "options": [
+        "crédibilité",
+        "bienveillance",
+        "intégrité",
+        "notoriété",
+        "rentabilité"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "La cohérence temporelle entre promesses et actions est déterminante."
+    },
+    {
+      "id": "q-f05-068",
+      "section": "4. L'éthique",
+      "niveau": 3,
+      "format": "appariement",
+      "question": "Associez chaque modèle de l'authenticité à son contenu.",
+      "colonne_a": [
+        "Beverland",
+        "Gilmore et Pine"
+      ],
+      "colonne_b": [
+        "4 formes : naturelle, originale, exceptionnelle, référentielle",
+        "5 dimensions : héritage, sincérité, expertise, résistance, ancrage"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Dans les deux cas, la cohérence temporelle entre promesses et actions compte."
+    },
+    {
+      "id": "q-f05-069",
+      "section": "4. L'éthique",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le Marketing 3.0 de Kotler recentre le marketing sur le produit et ses caractéristiques techniques.",
+      "reponse": false,
+      "explication": "Faux : il déplace le centre de gravité du produit vers le consommateur, puis vers les valeurs, et crée des communautés d'engagement autour de causes partagées."
+    },
+    {
+      "id": "q-f05-070",
+      "section": "4. L'éthique",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Affirmer un bénéfice environnemental inexistant relève du greenwashing par :",
+      "options": [
+        "omission",
+        "commission",
+        "suggestion",
+        "déontologie"
+      ],
+      "reponse": 1,
+      "explication": "Omission : taire les impacts défavorables ; suggestion : laisser croire par l'image ou le vocabulaire."
+    },
+    {
+      "id": "q-f05-071",
+      "section": "4. L'éthique",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Sur quelles 3 exigences repose la communication responsable ? (3 réponses)",
+      "options": [
+        "transparence",
+        "traçabilité",
+        "reconnaissance des limites",
+        "exagération des bénéfices",
+        "formulations vagues"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Il faut communiquer proportionnellement à l'impact réel et éviter les formulations vagues ou non quantifiées."
+    },
+    {
+      "id": "q-f05-072",
+      "section": "4. L'éthique",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Selon l'ADEME, quelle part des consommateurs français est méfiante vis-à-vis des allégations environnementales non vérifiées ?",
+      "options": [
+        "39 %",
+        "59 %",
+        "79 %",
+        "99 %"
+      ],
+      "reponse": 2,
+      "explication": "La directive européenne impose des critères de preuve stricts ; l'ARPP exige une précision lexicale accrue."
+    },
+    {
+      "id": "q-f05-073",
+      "section": "4. L'éthique",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "L'intégration éthique dans le mix marketing consiste à ajouter une couche de communication responsable aux 4P existants.",
+      "reponse": false,
+      "explication": "Faux : elle s'opère sur les 4P et transforme la valeur intrinsèque de l'entreprise, plutôt que de s'ajouter comme une couche de communication."
+    },
+    {
+      "id": "q-f05-074",
+      "section": "5. Marketing responsable",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Comment se définit le marketing responsable ?",
+      "options": [
+        "une approche éthique conciliant objectifs commerciaux et considérations morales et sociales",
+        "un marketing réservé aux ONG",
+        "un marketing sans budget",
+        "une obligation légale"
+      ],
+      "reponse": 0,
+      "explication": "Il implique des critères éthiques dès la conception, une communication transparente et des initiatives sociales et environnementales."
+    },
+    {
+      "id": "q-f05-075",
+      "section": "5. Marketing responsable",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le respect de la transparence et de l'honnêteté conduit à une fidélité accrue et à une meilleure réputation.",
+      "reponse": true,
+      "explication": "Vrai : les consommateurs soutiennent plus volontiers les marques qui partagent leurs valeurs."
+    },
+    {
+      "id": "q-f05-076",
+      "section": "5. Marketing responsable",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que doivent faire les messages responsables, au-delà de refléter l'engagement éthique ?",
+      "options": [
+        "être les plus nombreux possible",
+        "éviter tout chiffre",
+        "rester confidentiels",
+        "sensibiliser et inciter à l'action"
+      ],
+      "reponse": 3,
+      "explication": "Le choix des supports est essentiel ; impliquer les employés renforce la responsabilité sociale de l'entreprise."
+    },
+    {
+      "id": "q-f05-077",
+      "section": "6. Évaluer l'impact RSE",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque dimension RSE à ses indicateurs.",
+      "colonne_a": [
+        "Sociale",
+        "Environnementale",
+        "Économique"
+      ],
+      "colonne_b": [
+        "Fournisseurs locaux, budget médias responsables",
+        "Équité, diversité, bien-être",
+        "Empreinte carbone, déchets, émissions de CO₂"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Ces indicateurs forment le référentiel RSE de la stratégie marketing."
+    },
+    {
+      "id": "q-f05-078",
+      "section": "6. Évaluer l'impact RSE",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Les stéréotypes véhiculés par une campagne relèvent de quel type d'impact ?",
+      "options": [
+        "impact direct",
+        "impact indirect",
+        "impact économique",
+        "impact nul"
+      ],
+      "reponse": 1,
+      "explication": "Impacts directs : énergie, déchets, émissions liées aux activités marketing ; indirects : influence sur les comportements, stéréotypes."
+    },
+    {
+      "id": "q-f05-079",
+      "section": "6. Évaluer l'impact RSE",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque référentiel à sa nature.",
+      "colonne_a": [
+        "ISO 26000",
+        "GRI"
+      ],
+      "colonne_b": [
+        "Standard international de reporting développement durable",
+        "Cadre méthodologique de la responsabilité sociétale des organisations"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "S'y ajoutent le SASB et la taxonomie européenne."
+    },
+    {
+      "id": "q-f05-080",
+      "section": "6. Évaluer l'impact RSE",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "En quels 3 niveaux les tableaux de bord RSE marketing structurent-ils les indicateurs ? (3 réponses)",
+      "options": [
+        "stratégiques",
+        "tactiques",
+        "opérationnels",
+        "fiscaux",
+        "juridiques"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Ils s'appuient sur la collecte automatisée (API, web analytics) et doivent être intégrés aux décisions."
+    },
+    {
+      "id": "q-f05-081",
+      "section": "6. Évaluer l'impact RSE",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle part des consommateurs se déclare prête à changer de marque pour réduire son impact environnemental ?",
+      "options": [
+        "23 %",
+        "53 %",
+        "73 %",
+        "93 %"
+      ],
+      "reponse": 2,
+      "explication": "Patagonia montre qu'une contrainte environnementale peut devenir un avantage concurrentiel durable."
+    },
+    {
+      "id": "q-f05-082",
+      "section": "7. Éco-conception",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les deux forces de contrainte qui poussent vers l'économie circulaire ? (2 réponses)",
+      "options": [
+        "les réglementations environnementales, dont la loi AGEC",
+        "les investisseurs ESG",
+        "les comparateurs de prix",
+        "les pure players"
+      ],
+      "reponse": [
+        0,
+        1
+      ],
+      "explication": "Exemples d'entreprises engagées : Patagonia, IKEA, Renault."
+    },
+    {
+      "id": "q-f05-083",
+      "section": "7. Éco-conception",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "L'approche préventive de l'éco-conception évite les coûts de mise en conformité tardive.",
+      "reponse": true,
+      "explication": "Vrai : elle anticipe les impacts plutôt que de les corriger a posteriori."
+    },
+    {
+      "id": "q-f05-084",
+      "section": "7. Éco-conception",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'a fait le fabricant d'enceintes Lexon ?",
+      "options": [
+        "il a redesigné ses produits pour faciliter le démontage des composants et leur recyclabilité",
+        "il a supprimé ses emballages",
+        "il a délocalisé sa production",
+        "il a lancé une gamme low cost"
+      ],
+      "reponse": 0,
+      "explication": "Résultat : réduction des coûts de fin de vie et argument de vente."
+    },
+    {
+      "id": "q-f05-085",
+      "section": "7. Éco-conception",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Sur quels standards s'appuie l'ACV ?",
+      "options": [
+        "ISO 9001",
+        "ISO 14006",
+        "ISO 26000",
+        "ISO 14040 et 14044"
+      ],
+      "reponse": 3,
+      "explication": "Ils garantissent la reproductibilité et la comparabilité des analyses. ISO 14006 définit l'éco-conception."
+    },
+    {
+      "id": "q-f05-086",
+      "section": "7. Éco-conception",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Pour débuter, le cours conseille de réaliser une ACV complète sur l'ensemble de la gamme.",
+      "reponse": false,
+      "explication": "Faux : il conseille une mini-ACV simplifiée sur un produit phare. Des bases comme Ecoinvent fournissent les facteurs de référence."
+    },
+    {
+      "id": "q-f05-087",
+      "section": "7. Éco-conception",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que le design universel ?",
+      "options": [
+        "un design identique dans tous les pays",
+        "la conception de produits et services accessibles à tous, indépendamment des capacités",
+        "un logo standardisé",
+        "une norme ISO"
+      ],
+      "reponse": 1,
+      "explication": "C'est le pendant social de l'éco-conception : penser l'accessibilité dès l'origine."
+    },
+    {
+      "id": "q-f05-088",
+      "section": "7. Éco-conception",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Que peut combiner une entreprise dans une démarche de numérique responsable ? (2 réponses)",
+      "options": [
+        "une politique d'achat atteignable (durée de vie, reconditionné, réparabilité)",
+        "des pratiques quotidiennes et écogestes",
+        "le renouvellement annuel du parc informatique",
+        "l'abandon de tout outil numérique"
+      ],
+      "reponse": [
+        0,
+        1
+      ],
+      "explication": "Les labels peuvent guider, même si peu s'adressent exclusivement au numérique responsable."
+    },
+    {
+      "id": "q-f05-089",
+      "section": "7. Éco-conception",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "De nombreux labels s'adressent exclusivement au numérique responsable.",
+      "reponse": false,
+      "explication": "Faux : peu de labels s'y consacrent exclusivement, même s'ils peuvent servir de guide."
     }
   ]
 }

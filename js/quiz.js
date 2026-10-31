@@ -9,11 +9,11 @@ var QUIZ = [
     "question": "Selon Claude Revel, l'intelligence économique est :",
     "options": [
       "un ensemble de technologies de traitement automatisé de l'information",
-      "un mode de gouvernance fondé sur la maîtrise et l'exploitation de l'information stratégique pour créer de la valeur durable dans une entité",
       "une méthode de collecte d'informations confidentielles sur les concurrents",
+      "un mode de gouvernance fondé sur la maîtrise et l'exploitation de l'information stratégique pour créer de la valeur durable dans une entité",
       "un service rattaché à la direction financière chargé de l'analyse de marché"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "L'IE est un mode de gouvernance, pas une technologie ni un service. Officiellement : processus de collecte, analyse, valorisation, diffusion et protection de l'information économique stratégique."
   },
   {
@@ -25,12 +25,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Qu'est-ce qui distingue fondamentalement l'intelligence économique de l'espionnage économique ?",
     "options": [
-      "l'IE se pratique uniquement dans les grandes entreprises",
-      "l'IE est encadrée par le SISSE, l'espionnage ne l'est pas",
       "l'IE exploite exclusivement des sources ouvertes et légalement accessibles, l'espionnage vise l'information « noire »",
+      "l'IE est encadrée par le SISSE, l'espionnage ne l'est pas",
+      "l'IE se pratique uniquement dans les grandes entreprises",
       "l'IE porte sur les concurrents, l'espionnage sur les États"
     ],
-    "reponse": 2,
+    "reponse": 0,
     "explication": "L'information « noire » est protégée par le secret ou à accès restreint ; son obtention non autorisée est une infraction punie par la loi."
   },
   {
@@ -43,11 +43,11 @@ var QUIZ = [
     "question": "La veille stratégique est :",
     "options": [
       "un synonyme de veille informationnelle",
-      "un sous-domaine de la veille informationnelle et le premier pilier de l'intelligence économique",
+      "une veille exclusivement tournée vers l'environnement externe",
       "l'étape qui suit le benchmarking dans la démarche d'IE",
-      "une veille exclusivement tournée vers l'environnement externe"
+      "un sous-domaine de la veille informationnelle et le premier pilier de l'intelligence économique"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "Elle englobe la veille interne (opérations, finances, compétences distinctives) et la veille externe (concurrence, marché, réglementation)."
   },
   {
@@ -93,12 +93,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "L'approche Push consiste à :",
     "options": [
-      "effectuer périodiquement des recherches ciblées à l'aide de moteurs et de bases de données",
       "recevoir l'information de façon automatisée selon des critères prédéfinis",
+      "effectuer périodiquement des recherches ciblées à l'aide de moteurs et de bases de données",
       "diffuser sélectivement les rapports de veille aux parties prenantes",
       "solliciter les commerciaux pour faire remonter les informations du terrain"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Le Push (flux RSS notamment) s'oppose au Pull, qui est la recherche active. La combinaison des deux constitue une stratégie complète."
   },
   {
@@ -111,11 +111,11 @@ var QUIZ = [
     "question": "Un concurrent indirect est un acteur qui :",
     "options": [
       "cible la même clientèle avec un produit très similaire",
-      "propose un produit différent, mais qui répond au même besoin",
+      "n'est pas encore entré sur le marché",
       "propose un produit différent, mais qui s'adresse à la même cible",
-      "n'est pas encore entré sur le marché"
+      "propose un produit différent, mais qui répond au même besoin"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "La réponse 0 décrit le concurrent direct, la réponse 2 le concurrent tertiaire ou de substitution, la réponse 3 le concurrent potentiel."
   },
   {
@@ -128,11 +128,11 @@ var QUIZ = [
     "question": "Pourquoi surveiller les offres d'emploi publiées par un concurrent ?",
     "options": [
       "pour évaluer sa santé financière",
-      "parce qu'elles constituent une information « noire » légalement accessible",
       "parce que le profil des recrutements révèle sa stratégie à venir",
+      "parce qu'elles constituent une information « noire » légalement accessible",
       "pour mesurer sa part de marché"
     ],
-    "reponse": 2,
+    "reponse": 1,
     "explication": "Recruter des ingénieurs laisse présager de nouveaux produits ; chercher des commerciaux sur un secteur précis indique une attaque de ce marché."
   },
   {
@@ -145,11 +145,11 @@ var QUIZ = [
     "question": "Une tendance lourde est détectée lorsqu'elle est :",
     "options": [
       "relayée par au moins trois sources indépendantes",
-      "importante et constante",
       "confirmée par un panel d'experts selon la méthode Delphi",
+      "importante et constante",
       "mesurable en part de marché"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "C'est la veille environnementale qui l'identifie, en observant les principaux indicateurs sociaux, économiques et démographiques."
   },
   {
@@ -161,12 +161,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "La veille intégrée se caractérise par :",
     "options": [
-      "l'internalisation complète de la veille, sans prestataire externe",
       "le croisement des dimensions technologiques, réglementaires et sociétales",
+      "l'internalisation complète de la veille, sans prestataire externe",
       "l'intégration de la veille au système d'information de l'entreprise",
       "la centralisation de la veille au sein d'un service unique"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Elle dépasse la veille en silos par une approche systémique révélant les interdépendances : une innovation technologique déclenche une évolution normative, qui rencontre une acceptabilité sociale variable."
   },
   {
@@ -178,12 +178,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Que permet réellement l'automatisation de la veille ?",
     "options": [
-      "la collecte, mais pas le traitement de l'information",
+      "uniquement la surveillance des réseaux sociaux",
       "le traitement, mais pas la diffusion",
       "l'ensemble du cycle, de la collecte à la recommandation",
-      "uniquement la surveillance des réseaux sociaux"
+      "la collecte, mais pas le traitement de l'information"
     ],
-    "reponse": 0,
+    "reponse": 3,
     "explication": "De nombreuses solutions automatisent la collecte, mais aucune n'est optimale pour le traitement. Sélection, organisation et analyse reposent impérativement sur l'humain."
   },
   {
@@ -196,11 +196,11 @@ var QUIZ = [
     "question": "Une innovation qui consiste à proposer un produit existant dans une version simplifiée, de moindre qualité et à tarif inférieur est dite :",
     "options": [
       "incrémentale",
-      "adjacente",
       "de rupture",
+      "adjacente",
       "radicale"
     ],
-    "reponse": 2,
+    "reponse": 1,
     "explication": "L'innovation de rupture (ou disruptive) rend le produit plus accessible en coût et en fonctionnalités. L'adjacente transpose une technologie existante sur un marché différent ; la radicale crée un marché nouveau."
   },
   {
@@ -757,6 +757,524 @@ var QUIZ = [
     "explication": "La veille collaborative repose sur la désignation de correspondants veille, des sessions de partage régulières et une plateforme collaborative centralisée."
   },
   {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-039",
+    "section": "1. L'intelligence économique",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel service porte la politique publique d'intelligence économique en France ?",
+    "options": [
+      "la CNIL",
+      "l'INSEE",
+      "le SISSE, rattaché à Bercy et relayé en régions par les préfets",
+      "l'ARCOM"
+    ],
+    "reponse": 2,
+    "explication": "Service de l'Information Stratégique et de la Sécurité Économiques. L'IE est aussi une démarche managériale et un domaine de recherche."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-040",
+    "section": "1. L'intelligence économique",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque forme de puissance à sa définition.",
+    "colonne_a": [
+      "Hard power",
+      "Soft power",
+      "Smart power"
+    ],
+    "colonne_b": [
+      "Combinaison des deux",
+      "Coercition",
+      "Influence idéologique et culturelle"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Notions à connaître en IE, avec la coopétition, la normalisation, le Knowledge Management."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-041",
+    "section": "1. L'intelligence économique",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "L'intelligence économique se confond avec des technologies comme la Business Intelligence ou le Big Data Analytics.",
+    "reponse": false,
+    "explication": "Faux : l'IE ne se réduit ni à ces technologies, ni aux seuls processus qu'elle emploie (veille, Knowledge Management, lobbying)."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-042",
+    "section": "2. La veille",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quels sont les objectifs de la veille ? (4 réponses)",
+    "options": [
+      "prendre des décisions éclairées",
+      "améliorer la compétitivité",
+      "mieux gérer les risques",
+      "identifier de nouvelles opportunités",
+      "espionner les concurrents",
+      "remplacer la stratégie"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Le 5e : bénéficier d'une vue d'ensemble sur les tendances."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-043",
+    "section": "2. La veille",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Blockbuster a fait faillite en 2014 notamment parce qu'il n'a pas pris au sérieux l'accélération des vitesses de téléchargement.",
+    "reponse": true,
+    "explication": "Vrai : un signal faible mal interprété, qui annonçait l'explosion du streaming."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-044",
+    "section": "2. La veille",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque type de source à sa caractéristique.",
+    "colonne_a": [
+      "Sources formalisées",
+      "Sources informelles"
+    ],
+    "colonne_b": [
+      "Plus difficiles à identifier, mais souvent confidentielles et stratégiques",
+      "Accessibles, connues, fiables et qualitatives"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Le mieux est de multiplier et recouper les sources."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-045",
+    "section": "2. La veille",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque source à la nature d'information qu'elle apporte.",
+    "colonne_a": [
+      "Legifrance",
+      "INPI, brevets",
+      "CREDOC, INSEE"
+    ],
+    "colonne_b": [
+      "Commerciale",
+      "Juridique",
+      "Technique"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Le répertoire distingue sources internes et externes par nature d'information."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-046",
+    "section": "3. Les types de veille",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "« Votre marque n'est pas ce que vous en dites, mais ce que Google en dit ! » : qui l'a dit ?",
+    "options": [
+      "Chris Anderson",
+      "Igor Ansoff",
+      "Claude Revel",
+      "Bertrand Bathelot"
+    ],
+    "reponse": 0,
+    "explication": "L'e-réputation dépend davantage de la visibilité des avis que de leur quantité."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-047",
+    "section": "3. Les types de veille",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Sur quoi s'appuie le CSE dans la veille sociale ?",
+    "options": [
+      "le registre du commerce",
+      "les réseaux sociaux",
+      "le CRM",
+      "la BDESE, base de données économiques, sociales et environnementales"
+    ],
+    "reponse": 3,
+    "explication": "La veille sociale est impulsée par la direction, la DRH et les IRP (CSE, délégation syndicale)."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-048",
+    "section": "3. Les types de veille",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "En veille fournisseurs, le prix doit être le critère prioritaire de sélection.",
+    "reponse": false,
+    "explication": "Faux : qualité, fiabilité et rapidité priment sur le long terme. Les recommandations sont le moyen le plus fiable de trouver un prestataire."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-049",
+    "section": "3. Les types de veille",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Autour de quelle approche la veille RSE structure-t-elle son analyse ?",
+    "options": [
+      "SWOT",
+      "ESG (Environnement, Social, Gouvernance)",
+      "AIDA",
+      "RFM"
+    ],
+    "reponse": 1,
+    "explication": "Cadre : loi Pacte, DPEF, CSRD ; référentiels GRI, SASB, taxonomie européenne."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-050",
+    "section": "3. Les types de veille",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Pourquoi la cartographie des écosystèmes intègre-t-elle une veille extra-sectorielle ?",
+    "options": [
+      "pour réduire les coûts",
+      "pour respecter le RGPD",
+      "parce que l'estompage des frontières sectorielles rend insuffisante la surveillance des seuls concurrents directs",
+      "pour surveiller les salariés"
+    ],
+    "reponse": 2,
+    "explication": "Approche concentrique par cercles : concurrents, substituts, nouveaux entrants, ONG, think tanks, institutions."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-051",
+    "section": "4. Le cycle de veille",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 4 temps du traitement de l'information.",
+    "elements": [
+      "Stockage sécurisé",
+      "Diffusion et accès",
+      "Collecte",
+      "Traitement (classement, hiérarchisation)"
+    ],
+    "ordre": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "explication": "Le plan de veille formalise aussi le stockage et le partage des données."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-052",
+    "section": "4. Le cycle de veille",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque outil de veille à sa catégorie.",
+    "colonne_a": [
+      "Google Alertes, Talkwalker",
+      "Hootsuite, Mention, Brandwatch",
+      "Similarweb, Semrush"
+    ],
+    "colonne_b": [
+      "Plateformes spécialisées",
+      "Alertes par mots-clés",
+      "Surveillance des médias sociaux"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "La qualité du retour dépend de la pertinence des mots-clés retenus."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-053",
+    "section": "4. Le cycle de veille",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les salons et conférences (Viva Tech, CES) complètent utilement la veille numérique.",
+    "reponse": true,
+    "explication": "Vrai : les échanges en présentiel sont des sources hors digital précieuses."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-054",
+    "section": "5. La veille concurrentielle",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que sont les concurrents potentiels ?",
+    "options": [
+      "les nouveaux entrants ou entreprises existantes qui étendent leurs activités",
+      "les concurrents directs",
+      "les fournisseurs",
+      "les clients"
+    ],
+    "reponse": 0,
+    "explication": "Ils s'ajoutent aux concurrents directs, indirects et tertiaires."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-055",
+    "section": "5. La veille concurrentielle",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Aux yeux du client, c'est la satisfaction du besoin qui l'emporte, d'où l'attention croissante portée à la concurrence indirecte.",
+    "reponse": true,
+    "explication": "Vrai : la SNCF doit par exemple surveiller les compagnies aériennes."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-056",
+    "section": "6. Anticipation et prospective",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les limites de la prospective ? (3 réponses)",
+    "options": [
+      "incertitude et limites de précision",
+      "subjectivité des scénarios",
+      "coût en temps, experts et technologies",
+      "elle prédit l'avenir avec certitude",
+      "elle est interdite"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Elle ne prédit pas l'avenir : elle l'anticipe pour éclairer les décisions."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-057",
+    "section": "6. Anticipation et prospective",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque état d'esprit à sa caractéristique.",
+    "colonne_a": [
+      "État d'esprit fixe",
+      "État d'esprit en développement"
+    ],
+    "colonne_b": [
+      "Apprentissage continu, défis vus comme des opportunités",
+      "Compétences jugées immuables, résistance au changement"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "L'anticipation suppose un mindset de croissance."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-058",
+    "section": "6. Anticipation et prospective",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez le schéma managérial des 5C.",
+    "texte": "{1}, Collaboration, {2} (pensée critique), {3}, Compassion.",
+    "trous": [
+      "Créativité",
+      "Critique",
+      "Communication"
+    ],
+    "propositions": [
+      "Créativité",
+      "Critique",
+      "Communication",
+      "Contrôle",
+      "Compétition"
+    ],
+    "explication": "L'intelligence collective repose sur la diversité des points de vue (Jung : pensée, sentiment, intuition, sensation)."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-059",
+    "section": "7. Restitution",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une information relayée par une seule source suffit à crédibiliser une recherche de veille.",
+    "reponse": false,
+    "explication": "Faux : n'avoir qu'une source décrédibilise la recherche ; une information relayée par plusieurs sources y gagne du poids."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-060",
+    "section": "7. Restitution",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les objectifs de la synthétisation des veilles ? (3 réponses)",
+    "options": [
+      "ne pas se noyer dans le flux",
+      "assurer la traçabilité des recherches",
+      "partager simplement son cheminement",
+      "supprimer toutes les sources",
+      "éviter toute analyse"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "On résume chaque thématique en gardant les recherches les plus pertinentes."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-061",
+    "section": "8. Limites et risques",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Comment se protéger des fake news selon le cours ?",
+    "options": [
+      "par la censure",
+      "en ne lisant que les réseaux sociaux",
+      "en arrêtant la veille",
+      "par la confiance, la transparence, l'exemplarité et l'esprit critique"
+    ],
+    "reponse": 3,
+    "explication": "Elles sont difficiles à réglementer sans porter atteinte à la liberté d'expression."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-062",
+    "section": "9. Veille et innovation",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque stratégie d'innovation (étude PwC) à son principe.",
+    "colonne_a": [
+      "Need Seekers",
+      "Market Readers",
+      "Technology Drivers"
+    ],
+    "colonne_b": [
+      "Expertise technologique et R&D internes",
+      "Être le premier à répondre aux nouvelles attentes",
+      "Attentes des clients existants, innovation incrémentale"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Trois stratégies d'innovation."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-063",
+    "section": "9. Veille et innovation",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Transposer une technologie existante sur un marché différent relève de quel type d'innovation ?",
+    "options": [
+      "incrémentale",
+      "adjacente",
+      "de rupture",
+      "radicale"
+    ],
+    "reponse": 1,
+    "explication": "Incrémentale = perfectionner l'existant ; radicale = produit totalement nouveau."
+  },
+  {
+    "resume": "b1-f01",
+    "bloc": 1,
+    "id": "q-f01-064",
+    "section": "9. Veille et innovation",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le design thinking a été développé au MIT dans les années 2000.",
+    "reponse": false,
+    "explication": "Faux : il a été développé à Stanford dans les années 80. Il se pratique en ateliers co-créatifs pluridisciplinaires, centrés sur les usages."
+  },
+  {
     "resume": "b1-f02",
     "bloc": 1,
     "id": "q-f02-001",
@@ -766,11 +1284,11 @@ var QUIZ = [
     "question": "Qu'est-ce qui distingue le diagnostic de l'analyse ?",
     "options": [
       "le diagnostic est réalisé par la direction, l'analyse par les opérationnels",
-      "le diagnostic ne retient que les points différenciants, ayant un impact majeur et mesurables",
       "le diagnostic porte sur l'interne, l'analyse sur l'externe",
+      "le diagnostic ne retient que les points différenciants, ayant un impact majeur et mesurables",
       "le diagnostic est chiffré, l'analyse est qualitative"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Tous les paramètres relevés dans l'analyse ne sont pas retenus dans le diagnostic. Il ne faut pas surcharger : seuls les facteurs à impact actuel et prévisionnel majeur, et mesurables."
   },
   {
@@ -782,12 +1300,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Le marché substitut regroupe :",
     "options": [
-      "les produits complémentaires du marché principal",
-      "les produits différents mais de nature proche",
       "les produits aux fonctions identiques utilisant un moyen ou une technologie différente",
+      "les produits différents mais de nature proche",
+      "les produits complémentaires du marché principal",
       "plusieurs marchés principaux réunis"
     ],
-    "reponse": 2,
+    "reponse": 0,
     "explication": "C'est toute la concurrence indirecte. La réponse 1 décrit le marché support, la réponse 3 le marché générique."
   },
   {
@@ -800,11 +1318,11 @@ var QUIZ = [
     "question": "Un produit s'est vendu à 300 000 exemplaires pour 150 000 € de CA. Le marché a réalisé 650 000 € de CA avec 550 000 produits vendus. Que peut-on en conclure ?",
     "options": [
       "l'entreprise est positionnée haut de gamme",
-      "l'entreprise privilégie le volume sur la marge, dans une stratégie de pénétration",
+      "les données sont insuffisantes pour conclure",
       "l'entreprise est leader en valeur sur son marché",
-      "les données sont insuffisantes pour conclure"
+      "l'entreprise privilégie le volume sur la marge, dans une stratégie de pénétration"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "Part de marché en valeur = 23 %, en volume = 55 %. Un gros volume pour un CA proportionnellement faible : il s'agit probablement d'un produit à bas prix."
   },
   {
@@ -850,12 +1368,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Quelle est la finalité principale de la matrice PESTEL ?",
     "options": [
-      "hiérarchiser les concurrents selon leur part de marché",
       "préparer l'analyse SWOT en classant les informations en opportunités ou menaces",
+      "hiérarchiser les concurrents selon leur part de marché",
       "évaluer le portefeuille de produits de l'entreprise",
       "mesurer l'intensité concurrentielle d'un secteur"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Elle analyse le macro-environnement en six composantes, qu'il faut ensuite hiérarchiser puis classer en opportunités ou menaces."
   },
   {
@@ -869,10 +1387,10 @@ var QUIZ = [
     "options": [
       "les partenaires financiers",
       "les distributeurs",
-      "l'influence de l'État",
-      "les associations de consommateurs"
+      "les associations de consommateurs",
+      "l'influence de l'État"
     ],
-    "reponse": 2,
+    "reponse": 3,
     "explication": "Ses décisions peuvent favoriser ou freiner l'entrée de nouveaux acteurs, influencer les coûts, créer des opportunités ou des contraintes."
   },
   {
@@ -918,12 +1436,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Une entreprise réactualise un produit existant et étend sa gamme sur son marché actuel. Dans quelle case de la matrice Ansoff se situe-t-elle ?",
     "options": [
-      "pénétration de marché",
-      "extension de marché",
       "développement de produit",
+      "extension de marché",
+      "pénétration de marché",
       "diversification"
     ],
-    "reponse": 2,
+    "reponse": 0,
     "explication": "Produits nouveaux × marchés actuels = développement de produit. La pénétration porte sur produits actuels × marchés actuels."
   },
   {
@@ -937,10 +1455,10 @@ var QUIZ = [
     "options": [
       "domination par les coûts",
       "différenciation",
-      "concentration ou focalisation",
-      "diversification"
+      "diversification",
+      "concentration ou focalisation"
     ],
-    "reponse": 2,
+    "reponse": 3,
     "explication": "L'avantage recherché dans la focalisation peut être lié au coût ou à la différenciation. La diversification est un axe de stratégie globale, pas une stratégie générique de Porter."
   },
   {
@@ -1451,6 +1969,466 @@ var QUIZ = [
     "explication": "Une organisation qui reste dans le statu quo signe son déclin : elle doit organiser la flexibilité mentale et collective."
   },
   {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-036",
+    "section": "1. À quoi sert le diagnostic",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Autour de quels 3 verbes tourne le raisonnement marketing ?",
+    "options": [
+      "vendre, acheter, livrer",
+      "observer, copier, adapter",
+      "analyser, décider, agir",
+      "planifier, contrôler, sanctionner"
+    ],
+    "reponse": 2,
+    "explication": "Le diagnostic donne lieu aux objectifs, puis à la segmentation, au ciblage et au positionnement."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-037",
+    "section": "1. À quoi sert le diagnostic",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Pour être exhaustif, le diagnostic doit retenir tous les facteurs identifiés, même mineurs.",
+    "reponse": false,
+    "explication": "Faux : il ne retient que les facteurs ayant un impact actuel et prévisionnel majeur, et mesurables ; il ne faut pas surcharger l'analyse."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-038",
+    "section": "2. L'analyse externe",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque niveau d'environnement à son outil d'analyse.",
+    "colonne_a": [
+      "Macro-environnement",
+      "Micro-environnement"
+    ],
+    "colonne_b": [
+      "5 forces de Porter",
+      "PESTEL"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Les deux alimentent les opportunités et menaces du SWOT."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-039",
+    "section": "2. L'analyse externe",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels acteurs composent le micro-environnement ? (4 réponses)",
+    "options": [
+      "la clientèle",
+      "les partenaires financiers",
+      "les partenaires commerciaux",
+      "le marché et ses acteurs",
+      "les cycles économiques",
+      "la politique monétaire"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Les cycles économiques et la politique monétaire relèvent du macro-environnement (PESTEL)."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-040",
+    "section": "2. L'analyse externe",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel marché une entreprise doit-elle surveiller pour se développer ou saisir une opportunité, au-delà de son marché principal ?",
+    "options": [
+      "le marché générique, ainsi que les marchés complémentaires et substituts",
+      "uniquement son marché principal",
+      "aucun autre",
+      "le seul marché support"
+    ],
+    "reponse": 0,
+    "explication": "Elle doit rester focalisée sur son marché principal pour réussir."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-041",
+    "section": "2. L'analyse externe",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un produit réalise 200 000 € de CA sur un marché de 800 000 €. Quelle est sa part de marché en valeur ?",
+    "options": [
+      "4 %",
+      "80 %",
+      "40 %",
+      "25 %"
+    ],
+    "reponse": 3,
+    "explication": "Part de marché = ventes du produit / ventes totales du marché × 100 = 25 %."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-042",
+    "section": "2. L'analyse externe",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels critères marketing permettent de comparer la position concurrentielle ? (4 réponses)",
+    "options": [
+      "la part de marché",
+      "le taux de fidélité",
+      "le taux de préférence",
+      "le taux de notoriété",
+      "le nombre de salariés",
+      "l'âge du dirigeant"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "L'analyse concurrentielle doit être continue, avec un double objectif défensif et offensif."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-043",
+    "section": "2. L'analyse externe",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque niveau de concurrence à son exemple.",
+    "colonne_a": [
+      "Concurrence marque",
+      "Concurrence produit",
+      "Concurrence générique"
+    ],
+    "colonne_b": [
+      "Faire du sport : foot, boxe, gymnastique",
+      "Plusieurs marques pour un même produit",
+      "Appareil photo, tablette ou smartphone pour prendre des photos"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "La concurrence s'entend au sens large."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-044",
+    "section": "3. L'analyse interne",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi comparer ses ressources à celles des concurrents ?",
+    "options": [
+      "pour les copier",
+      "pour identifier celles qui sont exclusives et en tirer un avantage compétitif",
+      "pour réduire les salaires",
+      "pour sous-traiter"
+    ],
+    "reponse": 1,
+    "explication": "Ressources humaines, technologiques, financières ; internalisées ou sous-traitées. On en déduit la culture d'entreprise."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-045",
+    "section": "3. L'analyse interne",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles activités sont principales dans la chaîne de valeur ? (4 réponses)",
+    "options": [
+      "logistique interne",
+      "production",
+      "logistique externe",
+      "commercialisation et vente",
+      "gestion des ressources humaines",
+      "infrastructure de l'entreprise"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Le 5e : les services. RH et infrastructure sont des activités de soutien."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-046",
+    "section": "3. L'analyse interne",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Après évaluation, on attribue une note à chaque service de l'entreprise pour les hiérarchiser, du plus créateur de valeur au plus pénalisant.",
+    "reponse": true,
+    "explication": "Vrai. On construit aussi un historique marketing, à comparer à l'histoire de l'entreprise."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-047",
+    "section": "4. Les matrices",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quand la menace des produits de substitution est-elle importante ?",
+    "options": [
+      "quand le substitut est cher et peu performant",
+      "jamais",
+      "quand le consommateur ne consent pas beaucoup d'effort à changer ou que le substitut a un bon rapport prix/performance",
+      "uniquement sur les marchés de luxe"
+    ],
+    "reponse": 2,
+    "explication": "Les barrières à l'entrée (financière, technologique, commerciale, légale) conditionnent, elles, la menace des nouveaux entrants."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-048",
+    "section": "4. Les matrices",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Dans l'exemple de l'automobile électrique, l'État crée à la fois une opportunité (subventions) et une barrière à l'entrée (normes CO₂).",
+    "reponse": true,
+    "explication": "Vrai : c'est la 6e force de Porter, l'influence de l'État."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-049",
+    "section": "4. Les matrices",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans l'exemple Magnum, que représentent les bâtonnets classiques dans la matrice BCG ?",
+    "options": [
+      "des vaches à lait",
+      "des dilemmes",
+      "des stars",
+      "des poids morts"
+    ],
+    "reponse": 0,
+    "explication": "Stars : éditions limitées saisonnières ; dilemmes : pots de glace et formats vegan."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-050",
+    "section": "4. Les matrices",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque case de la matrice Ansoff à sa stratégie.",
+    "colonne_a": [
+      "Produits actuels / marchés actuels",
+      "Produits actuels / marchés nouveaux",
+      "Produits nouveaux / marchés nouveaux"
+    ],
+    "colonne_b": [
+      "Diversification",
+      "Pénétration de marché",
+      "Extension de marché"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Produits nouveaux / marchés actuels : développement de produit."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-051",
+    "section": "4. Les matrices",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Par qui la matrice ADL a-t-elle été mise en place ?",
+    "options": [
+      "le Boston Consulting Group",
+      "Igor Ansoff",
+      "Michael Porter",
+      "Arthur D. Little, cabinet fondé en 1886"
+    ],
+    "reponse": 3,
+    "explication": "Elle offre une vision plus fine que la BCG, mais mêle données objectives et subjectives : à croiser avec un autre outil."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-052",
+    "section": "4. Les matrices",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quels critères utilise typiquement un mapping concurrentiel ?",
+    "options": [
+      "l'âge et le sexe",
+      "la qualité et le prix",
+      "le CA et les effectifs",
+      "la date de création"
+    ],
+    "reponse": 1,
+    "explication": "C'est une carte perceptuelle. La grille d'analyse de la concurrence présente, elle, forces et faiblesses de chaque concurrent."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-053",
+    "section": "5. Stratégies",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quels sont les deux leviers de la domination par les coûts ?",
+    "options": [
+      "publicité et packaging",
+      "augmenter les prix et réduire la gamme",
+      "jouer sur les volumes pour diminuer les coûts d'achat, ou rationaliser ses process",
+      "diversifier et intégrer"
+    ],
+    "reponse": 2,
+    "explication": "Pour une cible large, sur un marché aux produits peu différenciés (grande distribution)."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-054",
+    "section": "5. Stratégies",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La différenciation se fait uniquement vers le haut, en améliorant la valeur perçue.",
+    "reponse": false,
+    "explication": "Faux : elle peut aussi se faire vers le bas, en épurant le produit pour le rendre plus accessible."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-055",
+    "section": "5. Stratégies",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel outil organise une déclinaison top-down de la corporate strategy ?",
+    "options": [
+      "le balanced scorecard",
+      "le mapping",
+      "le PESTEL",
+      "la matrice BCG"
+    ],
+    "reponse": 0,
+    "explication": "Le plan marketing comporte ensuite objectifs, cible, budget et actions concrètes."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-056",
+    "section": "6. Les matrices de veille",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la démarche de la matrice des acteurs clés.",
+    "elements": [
+      "Mise en évidence des relations de cause à effet",
+      "Évaluation de l'impact potentiel de chaque partie prenante",
+      "Identification et classification des acteurs",
+      "Structuration des données collectées"
+    ],
+    "ordre": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "explication": "Elle sert de base à des partenariats stratégiques durables."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-057",
+    "section": "6. Les matrices de veille",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'analyse le rapport d'étonnement ?",
+    "options": [
+      "la satisfaction des salariés",
+      "la notoriété",
+      "les prix des concurrents",
+      "les écarts entre résultats attendus et résultats réels"
+    ],
+    "reponse": 3,
+    "explication": "Identifier les facteurs sous-jacents des divergences permet d'ajuster stratégies et plans d'action."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-058",
+    "section": "7. Le benchmarking",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le benchmarking externe peut s'appuyer sur des entreprises d'autres secteurs, reconnues leaders dans le domaine étudié.",
+    "reponse": true,
+    "explication": "Vrai : il ouvre sur des pratiques réellement nouvelles, mais l'accès à l'information est plus difficile."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-059",
+    "section": "7. Le benchmarking",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel est le rôle de la veille par rapport au benchmarking ?",
+    "options": [
+      "elle le remplace",
+      "elle intervient en amont pour faciliter le processus, notamment choisir les bons partenaires",
+      "elle intervient après pour sanctionner",
+      "aucun lien"
+    ],
+    "reponse": 1,
+    "explication": "Le benchmarking va plus loin que la veille concurrentielle : il ne se limite ni aux concurrents ni à un secteur."
+  },
+  {
+    "resume": "b1-f02",
+    "bloc": 1,
+    "id": "q-f02-060",
+    "section": "7. Le benchmarking",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Le benchmarking interne est exempt de risques, car les données sont facilement accessibles.",
+    "reponse": false,
+    "explication": "Faux : les conflits internes peuvent fausser l'exercice et le degré d'apprentissage reste limité."
+  },
+  {
     "resume": "b1-f03",
     "bloc": 1,
     "id": "q-f03-001",
@@ -1460,11 +2438,11 @@ var QUIZ = [
     "question": "Une étude exploratoire se caractérise par :",
     "options": [
       "un échantillon large et représentatif",
-      "une approche flexible et un échantillon de faible taille, 10 à 20 répondants",
       "l'identification de relations de cause à effet entre variables",
+      "une approche flexible et un échantillon de faible taille, 10 à 20 répondants",
       "la production d'une photographie du marché à un instant T"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Au départ, le chargé d'études ne sait pas forcément ce qu'il cherche. Les entretiens étant profonds et chronophages, l'échantillon reste réduit."
   },
   {
@@ -1476,12 +2454,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Des données collectées pour un autre objectif et réutilisées pour un nouveau sujet sont dites :",
     "options": [
-      "primaires",
       "secondaires",
+      "primaires",
       "qualitatives",
       "empiriques"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Les données primaires sont recueillies spécifiquement pour répondre à un besoin précis de l'étude."
   },
   {
@@ -1528,11 +2506,11 @@ var QUIZ = [
     "question": "Combien de participants réunit un focus group ?",
     "options": [
       "3 à 5",
-      "7 à 10",
       "12 à 15",
+      "7 à 10",
       "20 à 30"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Sept à dix personnes partageant un intérêt commun pour le sujet, avec un guide d'animation en quatre temps : introduction, panorama général, centrage, conclusion."
   },
   {
@@ -1544,12 +2522,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Pour étudier des comportements spontanés sans biais d'interaction, quelle méthode privilégier ?",
     "options": [
-      "l'observation participante",
       "l'observation non participante",
+      "l'observation participante",
       "l'entretien en profondeur",
       "le groupe nominal"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "L'observation participante permet en revanche d'accéder à des contextes fermés et de comprendre les usages de l'intérieur."
   },
   {
@@ -1562,11 +2540,11 @@ var QUIZ = [
     "question": "Une étude quantitative se caractérise par :",
     "options": [
       "un échantillon sélectionné pour la diversité des profils",
-      "l'extrapolation de résultats chiffrés à l'ensemble de la population étudiée",
+      "l'absence de questionnaire structuré",
       "l'exploration des motivations inconscientes des répondants",
-      "l'absence de questionnaire structuré"
+      "l'extrapolation de résultats chiffrés à l'ensemble de la population étudiée"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "Elle est faite par sondage, généralement auprès d'échantillons représentatifs."
   },
   {
@@ -1596,11 +2574,11 @@ var QUIZ = [
     "question": "Quelle est la forme d'exploitation la plus courante des résultats d'une enquête ?",
     "options": [
       "les tris croisés",
-      "les tris à plat",
       "les moyennes",
+      "les tris à plat",
       "les régressions"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Les trois formes disponibles sont les tris à plat, les tris croisés et les moyennes."
   },
   {
@@ -1612,12 +2590,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Quel est le critère décisif dans la constitution d'un échantillon quantitatif ?",
     "options": [
-      "sa taille, la plus grande possible",
       "sa représentativité par rapport à la population à étudier",
+      "sa taille, la plus grande possible",
       "la disponibilité des répondants",
       "la diversité maximale des profils, y compris marginaux"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "La réponse 3 décrit l'échantillonnage qualitatif, qui vise la représentation de la diversité et non la représentativité statistique."
   },
   {
@@ -1630,11 +2608,11 @@ var QUIZ = [
     "question": "La méthode des quotas est :",
     "options": [
       "une méthode probabiliste exigeant une base de sondage complète",
-      "une méthode non probabiliste consistant à reproduire les statistiques de la population globale",
+      "une méthode réservée aux études qualitatives",
       "une technique de recrutement des répondants en ligne",
-      "une méthode réservée aux études qualitatives"
+      "une méthode non probabiliste consistant à reproduire les statistiques de la population globale"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "C'est la méthode empirique la plus couramment utilisée, et la plus rapide à mettre en œuvre."
   },
   {
@@ -1647,11 +2625,11 @@ var QUIZ = [
     "question": "Sous le RGPD, à qui incombe la charge de la preuve du consentement ?",
     "options": [
       "à la personne concernée",
-      "à la CNIL",
       "au responsable du traitement",
+      "à la CNIL",
       "au sous-traitant technique"
     ],
-    "reponse": 2,
+    "reponse": 1,
     "explication": "Le consentement ne peut être présumé : il doit être donné volontairement, explicitement et par écrit avant toute utilisation."
   },
   {
@@ -2127,6 +3105,536 @@ var QUIZ = [
     "explication": "Les manquements les plus sanctionnés sont le traitement sans consentement explicite préalable et les lacunes dans la sécurité. Au-delà de l'obligation légale, la confiance des clients repose sur cette gestion responsable."
   },
   {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-036",
+    "section": "1. Les études de marché",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque famille d'études à sa finalité.",
+    "colonne_a": [
+      "Exploratoire",
+      "Descriptive",
+      "Explicative, prédictive et causale"
+    ],
+    "colonne_b": [
+      "Identifier les relations entre variables pour prédire",
+      "Combler un manque d'information sur un phénomène",
+      "Donner une photographie d'un marché à un instant T"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "L'étude de marché sert à comprendre, décrire, expliquer, vérifier et prévoir."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-037",
+    "section": "1. Les études de marché",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Dans une étude causale, associez chaque type de variable à son rôle.",
+    "colonne_a": [
+      "Variable explicative",
+      "Variable expliquée"
+    ],
+    "colonne_b": [
+      "Son évolution est causée par l'autre",
+      "Variable de référence"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Les systèmes d'aide à la décision en sont la suite logique, mais coûteux et techniques."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-038",
+    "section": "1. Les études de marché",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "De quoi dépend le choix entre étude qualitative et quantitative ? (4 réponses)",
+    "options": [
+      "la problématique",
+      "l'objectif",
+      "le terrain",
+      "le budget",
+      "la couleur du logo",
+      "l'ancienneté du chargé d'études"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "La complémentarité est la règle."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-039",
+    "section": "2. Les études qualitatives",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que vise l'échantillonnage par diversité en qualitatif ?",
+    "options": [
+      "la représentativité statistique",
+      "n'interroger que les meilleurs clients",
+      "interroger tous les profils types de la cible, y compris les profils marginaux",
+      "réduire le coût"
+    ],
+    "reponse": 2,
+    "explication": "La triangulation recoupe ensuite les informations par plusieurs méthodes de collecte."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-040",
+    "section": "2. Les études qualitatives",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 4 phases du guide d'entretien individuel.",
+    "elements": [
+      "Approfondissement",
+      "Introduction",
+      "Conclusion",
+      "Centrage"
+    ],
+    "ordre": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "explication": "Questions ouvertes, deux heures d'entretien, écoute active (respecter les silences)."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-041",
+    "section": "2. Les études qualitatives",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Combien de temps prévoir pour un entretien individuel en profondeur ?",
+    "options": [
+      "2 heures",
+      "30 minutes",
+      "15 minutes",
+      "une journée"
+    ],
+    "reponse": 0,
+    "explication": "Le temps d'explorer les motivations inconscientes et les mécanismes de défense."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-042",
+    "section": "2. Les études qualitatives",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Dans un focus group, l'animateur doit cadrer les profils extravertis et sécuriser les introvertis.",
+    "reponse": true,
+    "explication": "Vrai, et modérer les blocages en reformulant."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-043",
+    "section": "2. Les études qualitatives",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qui caractérise le groupe nominal ?",
+    "options": [
+      "une discussion libre sans structure",
+      "une observation silencieuse",
+      "un entretien en face-à-face",
+      "l'alternance de réflexion individuelle et de discussion collective"
+    ],
+    "reponse": 3,
+    "explication": "Technique structurée de production d'idées."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-044",
+    "section": "2. Les études qualitatives",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel est l'intérêt de l'observation participante ?",
+    "options": [
+      "éviter tout biais d'interaction",
+      "accéder à des contextes fermés et comprendre les usages de l'intérieur",
+      "mesurer statistiquement",
+      "réduire la durée"
+    ],
+    "reponse": 1,
+    "explication": "L'enquêteur s'immerge et interagit. L'observation mixte croise comportements et discours."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-045",
+    "section": "2. Les études qualitatives",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "L'étude qualitative est la seule étude efficace pour décrire et comprendre un comportement, un phénomène ou une perception.",
+    "reponse": true,
+    "explication": "Vrai, bien qu'elle soit difficile à mettre en place et exige souvent des spécialistes."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-046",
+    "section": "3. Les études quantitatives",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque type de mesure à ce qu'il capte.",
+    "colonne_a": [
+      "Mesures comportementales",
+      "Mesures de la perception"
+    ],
+    "colonne_b": [
+      "Ce que le consommateur pense, ressent, mémorise",
+      "Ce que fait le consommateur"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Exemple : un baromètre annuel notoriété et image."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-047",
+    "section": "3. Les études quantitatives",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi interroger des acteurs externes (fournisseurs, prestataires) en quantitatif ?",
+    "options": [
+      "pour les sanctionner",
+      "pour réduire leurs prix",
+      "pour mesurer leur performance, renforcer les relations et comprendre les tendances",
+      "ce n'est pas possible"
+    ],
+    "reponse": 2,
+    "explication": "Les employés, devenus ambassadeurs, sont aussi un public d'étude."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-048",
+    "section": "3. Les études quantitatives",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les études quantitatives n'exigent ni représentativité rigoureuse de l'échantillon ni précision particulière des questions.",
+    "reponse": false,
+    "explication": "Faux : ce sont précisément leurs exigences. En contrepartie, elles sont relativement faciles à administrer et souvent moins coûteuses."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-049",
+    "section": "4. Réaliser une enquête",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que faut-il faire des réponses aux questions ouvertes ?",
+    "options": [
+      "les codifier : regrouper les idées proches et y classer les réponses",
+      "les ignorer",
+      "les saisir telles quelles en chiffres",
+      "les publier"
+    ],
+    "reponse": 0,
+    "explication": "Les réponses fermées se saisissent directement."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-050",
+    "section": "4. Réaliser une enquête",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel est l'avantage du face-à-face comme mode d'administration ?",
+    "options": [
+      "il est le moins cher",
+      "il ne demande aucune équipe",
+      "il est le plus rapide",
+      "il permet de relever les réactions des sondés"
+    ],
+    "reponse": 3,
+    "explication": "Mais il mobilise une équipe importante."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-051",
+    "section": "4. Réaliser une enquête",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre le plan type du rapport d'étude.",
+    "elements": [
+      "Résultats détaillés de l'enquête",
+      "Opportunités et/ou menaces relevées",
+      "Présentation succincte du projet et du marché",
+      "Synthèse de l'étude justifiant les décisions"
+    ],
+    "ordre": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "explication": "C'est un réel outil de décision, pour dirigeants, marketing et partenaires."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-052",
+    "section": "5. L'échantillonnage",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi multiplier les questions par personne peut-il biaiser l'enquête ?",
+    "options": [
+      "parce que cela réduit le coût",
+      "parce qu'un sondage trop long fait baisser l'attention et augmenter l'ennui",
+      "parce que les réponses deviennent trop précises",
+      "cela n'a aucun effet"
+    ],
+    "reponse": 1,
+    "explication": "Le nombre de questions est le second levier, avec le nombre de personnes."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-053",
+    "section": "5. L'échantillonnage",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La méthode probabiliste est la plus rapide à mettre en œuvre, même sans base de sondage.",
+    "reponse": false,
+    "explication": "Faux : elle exige une base de sondage fiable et complète. La méthode empirique (quotas) est la plus rapide."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-054",
+    "section": "6. Le numérique",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels avantages Internet apporte-t-il aux études ? (3 réponses)",
+    "options": [
+      "une connexion à la convenance de l'enquêté",
+      "une réflexion plus en profondeur du participant",
+      "un coût et une rapidité intéressants",
+      "une représentativité garantie",
+      "l'absence de tout biais"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Questionnaires et focus groups en ligne, communautés, observation de la navigation."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-055",
+    "section": "6. Le numérique",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque dispositif à sa logique.",
+    "colonne_a": [
+      "Communauté en ligne",
+      "Panel"
+    ],
+    "colonne_b": [
+      "Répétition de mesures comparables",
+      "Échange continu et engagement"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Le crowdsourcing mobilise une foule de contributeurs, avec des contreparties."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-056",
+    "section": "6. Le numérique",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque approche du questionnaire en ligne à son principe.",
+    "colonne_a": [
+      "Séquentielle",
+      "Panoramique"
+    ],
+    "colonne_b": [
+      "Le répondant a une vue d'ensemble et navigue",
+      "Les questions se déroulent une à une, dans un ordre imposé"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Deux approches complémentaires."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-057",
+    "section": "6. Le numérique",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "La médiation par l'écran ne change rien au discours recueilli en qualitatif.",
+    "reponse": false,
+    "explication": "Faux : c'est la « libération de l'avis » ; le répondant s'exprime parfois plus librement, mais le registre change."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-058",
+    "section": "7. CRM",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'apporte le CRM retargeting par rapport au reciblage classique ?",
+    "options": [
+      "il coûte moins cher",
+      "il supprime l'e-mail",
+      "il évite d'afficher un produit que le client a déjà acheté, grâce à l'historique on et offline",
+      "il cible des inconnus"
+    ],
+    "reponse": 2,
+    "explication": "Il combine e-mail et display pour maximiser ROI et rétention."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-059",
+    "section": "7. CRM",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que le CRM display ?",
+    "options": [
+      "connecter une DMP au serveur publicitaire pour diffuser de la publicité aux clients identifiés",
+      "un écran en magasin",
+      "un tableau de bord commercial",
+      "un logiciel de caisse"
+    ],
+    "reponse": 0,
+    "explication": "Le CRM capitalise sur les données online et offline."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-060",
+    "section": "8. RGPD",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les données personnelles sont considérées comme des actifs tangibles, de valeur pour leur détenteur et pour l'individu.",
+    "reponse": true,
+    "explication": "Vrai. Les données sensibles bénéficient d'une protection renforcée."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-061",
+    "section": "8. RGPD",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quels articles du RGPD définissent les informations à fournir lors de la collecte ?",
+    "options": [
+      "les articles 1 et 2",
+      "l'article 9",
+      "l'article 35",
+      "les articles 13 et 14"
+    ],
+    "reponse": 3,
+    "explication": "Collecte directe auprès de la personne (art. 13) ou indirecte (art. 14)."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-062",
+    "section": "8. RGPD",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel droit permet de ne pas être soumis à une décision fondée uniquement sur un traitement automatisé, y compris le profilage ?",
+    "options": [
+      "le droit à la portabilité",
+      "le droit relatif à la décision automatisée",
+      "le droit de rectification",
+      "le droit d'accès"
+    ],
+    "reponse": 1,
+    "explication": "Il vise les décisions produisant des effets juridiques significatifs."
+  },
+  {
+    "resume": "b1-f03",
+    "bloc": 1,
+    "id": "q-f03-063",
+    "section": "8. RGPD",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Que doit faire l'entreprise pour se mettre en conformité ? (4 réponses)",
+    "options": [
+      "se fonder sur une base légale",
+      "recueillir un consentement éclairé",
+      "sécuriser les données",
+      "sensibiliser ses salariés",
+      "collecter le maximum de données",
+      "garder les données sans limite"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Manquements les plus sanctionnés : traitement sans consentement explicite et lacunes de sécurité."
+  },
+  {
     "resume": "b1-f04",
     "bloc": 1,
     "id": "q-f04-001",
@@ -2136,11 +3644,11 @@ var QUIZ = [
     "question": "« L'Oréal, parce que je le vaux bien » mobilise quel type de motivation ?",
     "options": [
       "rationnelle",
-      "hédoniste",
       "oblative",
+      "hédoniste",
       "éthique"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "La motivation hédoniste s'adresse au plaisir et à la satisfaction attendue pour soi-même. L'oblative est tournée vers autrui, l'éthique vers un devoir supérieur à sa propre personne."
   },
   {
@@ -2152,12 +3660,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "« Est-ce bien raisonnable d'acheter tel produit alors que son prix est excessif ? » illustre :",
     "options": [
-      "un frein lié à la peur",
       "un frein lié à l'inhibition",
+      "un frein lié à la peur",
       "une motivation rationnelle",
       "un risque perçu"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Le frein d'inhibition traduit une motivation jugée frivole, inutile voire honteuse : la cible développe un sentiment de culpabilité et s'autocensure. Le frein lié à la peur relève du manque de confiance en son jugement."
   },
   {
@@ -2170,11 +3678,11 @@ var QUIZ = [
     "question": "Un groupe de référence se distingue d'un groupe d'appartenance parce que :",
     "options": [
       "il est plus large et moins structuré",
-      "on y adhère par choix, alors qu'on est rattaché de fait au groupe d'appartenance",
+      "il est défini par des critères sociodémographiques objectifs",
       "il regroupe uniquement des leaders d'opinion",
-      "il est défini par des critères sociodémographiques objectifs"
+      "on y adhère par choix, alors qu'on est rattaché de fait au groupe d'appartenance"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "L'adhésion au groupe de référence tient au fait qu'on se reconnaît dans ses opinions et ses comportements."
   },
   {
@@ -2220,12 +3728,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Au sein de la cible principale, le noyau des individus les plus motivés et les plus réceptifs s'appelle :",
     "options": [
-      "la cible relai",
-      "la cible secondaire",
       "le cœur de cible",
+      "la cible secondaire",
+      "la cible relai",
       "la cible d'influence"
     ],
-    "reponse": 2,
+    "reponse": 0,
     "explication": "C'est la cible à toucher impérativement : plus fort potentiel d'adhésion."
   },
   {
@@ -2238,11 +3746,11 @@ var QUIZ = [
     "question": "Quelle question caractérise la cible communication, par opposition à la cible marketing ?",
     "options": [
       "« À qui voulez-vous vendre ? »",
-      "« Qui voulez-vous toucher ? »",
+      "« Quel canal privilégiez-vous ? »",
       "« Quel budget allouez-vous ? »",
-      "« Quel canal privilégiez-vous ? »"
+      "« Qui voulez-vous toucher ? »"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "La cible marketing répond à « À qui voulez-vous vendre ? ». Les deux stratégies doivent être cohérentes et synchronisées : un message contradictoire pousse les cibles vers la concurrence."
   },
   {
@@ -2272,11 +3780,11 @@ var QUIZ = [
     "question": "La méthode K-Means appartient à quelle famille de méthodes de clustering ?",
     "options": [
       "hiérarchiques",
-      "centroïdes",
       "à densité",
+      "centroïdes",
       "probabilistes"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "K-Means répartit les clients en k segments de manière à minimiser la variance intra-cluster. DBSCAN et OPTICS relèvent des méthodes à densité, la CAH des méthodes hiérarchiques."
   },
   {
@@ -2288,12 +3796,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Qui a initié la méthode des personas, et dans quel ouvrage ?",
     "options": [
-      "Tony Zambito, dans ses travaux sur le buyer persona",
       "Alan Cooper, dans The Inmates Are Running the Asylum",
+      "Tony Zambito, dans ses travaux sur le buyer persona",
       "Philip Kotler, dans Marketing Management",
       "HubSpot, dans sa méthodologie inbound"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "En 1999. Zambito a ensuite développé le buyer persona, et HubSpot l'a popularisé via ses solutions d'inbound marketing."
   },
   {
@@ -2306,11 +3814,11 @@ var QUIZ = [
     "question": "Pourquoi créer un persona négatif ?",
     "options": [
       "pour anticiper les critiques de la concurrence",
-      "pour identifier les profils dont le coût d'acquisition est trop élevé ou qui ne correspondent pas à l'offre",
+      "pour segmenter les clients insatisfaits",
       "pour tester la robustesse du positionnement",
-      "pour segmenter les clients insatisfaits"
+      "pour identifier les profils dont le coût d'acquisition est trop élevé ou qui ne correspondent pas à l'offre"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "Recenser ces profils permet de prioriser les actions sur les personas à meilleur potentiel."
   },
   {
@@ -2340,11 +3848,11 @@ var QUIZ = [
     "question": "Le nudge marketing se caractérise par :",
     "options": [
       "une incitation contraignante appuyée sur des sanctions",
-      "une incitation douce influençant sans restreindre la liberté de choix",
       "une personnalisation algorithmique des offres en temps réel",
+      "une incitation douce influençant sans restreindre la liberté de choix",
       "une communication fondée sur la preuve scientifique"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Il s'appuie sur les biais cognitifs et les motivations sous-jacentes, par des suggestions contextuelles ou des aménagements environnementaux."
   },
   {
@@ -2852,6 +4360,1034 @@ var QUIZ = [
     "explication": "Le cadre légal (RGPD, encadrement de la publicité) fixe un plancher, pas un plafond : la déontologie va au-delà."
   },
   {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-039",
+    "section": "1. Comprendre le consommateur",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quels éléments composent le facteur individuel « personnalité » ?",
+    "options": [
+      "sa constitution, les traits de personnalité et l'image de soi",
+      "le revenu, la CSP et l'habitat",
+      "les groupes d'appartenance et de référence",
+      "les rituels et l'imaginaire collectif"
+    ],
+    "reponse": 0,
+    "explication": "Les autres facteurs individuels : l'attitude et la perception, l'expérience et l'apprentissage, les motivations et les freins."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-040",
+    "section": "1. Comprendre le consommateur",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Dans le processus de sélection de l'information (perception), quels éléments jouent un rôle prépondérant ? (3 réponses)",
+    "options": [
+      "l'image de soi",
+      "le risque perçu",
+      "la sensibilité à la marque",
+      "la zone de chalandise",
+      "le cœur de cible"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "La perception est la façon dont le consommateur sélectionne et interprète les informations ; l'attitude est la tendance à appréhender et évaluer un produit, une marque ou une enseigne."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-041",
+    "section": "1. Comprendre le consommateur",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "« Tel produit est-il vraiment de qualité ? » illustre :",
+    "options": [
+      "une motivation oblative",
+      "un frein lié à l'inhibition",
+      "une motivation rationnelle",
+      "un frein lié à la peur"
+    ],
+    "reponse": 3,
+    "explication": "Le frein lié à la peur : manque de confiance en son jugement, peur de faire une erreur, ou défiance vis-à-vis de l'objet."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-042",
+    "section": "1. Comprendre le consommateur",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "« Curieux et connectés ? Faites le plein d'idées pour vos enfants ! » (Médiathèques de Villeurbanne) mobilise une motivation :",
+    "options": [
+      "hédoniste",
+      "oblative",
+      "éthique ou d'auto-expression",
+      "rationnelle"
+    ],
+    "reponse": 1,
+    "explication": "Oblative : tournée vers autrui, chercher à faire plaisir à l'autre."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-043",
+    "section": "1. Comprendre le consommateur",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les comportements déviants par rapport aux normes sociales ne sont jamais tolérés, même lorsqu'ils restent discrets.",
+    "reponse": false,
+    "explication": "Faux : ils peuvent être tolérés s'ils restent discrets. Le non-respect des normes entraîne réprobation, sanction ou exclusion ; elles évoluent dans le temps."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-044",
+    "section": "1. Comprendre le consommateur",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Au-delà des influenceurs, qui sont les leaders d'opinion ?",
+    "options": [
+      "uniquement les célébrités du web",
+      "les membres du cœur de cible",
+      "ceux qui exercent une autorité intellectuelle et/ou affective : personnalités politiques, journalistes, prescripteurs",
+      "les clients les plus fidèles"
+    ],
+    "reponse": 2,
+    "explication": "La « dynamique de groupe » explique comment les individus s'influencent ; Internet a renforcé leurs capacités d'influence."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-045",
+    "section": "1. Comprendre le consommateur",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez la définition sociologique de la culture.",
+    "texte": "La culture regroupe un ensemble de manières de penser et d'agir, {1} et {2} par les membres d'une collectivité. Elle s'incarne dans l'{3} et dans les {4}.",
+    "trous": [
+      "apprises",
+      "partagées",
+      "imaginaire collectif",
+      "rituels"
+    ],
+    "propositions": [
+      "apprises",
+      "partagées",
+      "imaginaire collectif",
+      "rituels",
+      "imposées",
+      "normes sociales"
+    ],
+    "explication": "Sa transmission peut être formalisée et consciente ou informelle et inconsciente."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-046",
+    "section": "1. Comprendre le consommateur",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Selon quels 3 critères s'analysent les styles de vie ?",
+    "options": [
+      "activités, valeurs, opinions",
+      "âge, sexe, revenu",
+      "fréquence, fidélité, usage",
+      "prix, produit, distribution"
+    ],
+    "reponse": 0,
+    "explication": "Ils peuvent être émergents ou établis et permettent d'identifier les sociostyles."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-047",
+    "section": "1. Comprendre le consommateur",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Le consommateur doit désormais être considéré comme un « consom'acteur », acteur du processus marketing.",
+    "reponse": true,
+    "explication": "Vrai : il dispose de nombreux moyens d'expression et d'influence."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-048",
+    "section": "1. Comprendre le consommateur",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "À quoi sert la pyramide des besoins dans l'analyse des cibles ?",
+    "options": [
+      "à calculer la part de marché",
+      "à hiérarchiser les cibles relais",
+      "à tracer la zone de chalandise",
+      "à situer les cibles sur une échelle des besoins et adapter le message au besoin qu'elles cherchent à satisfaire"
+    ],
+    "reponse": 3,
+    "explication": "On mobilise aussi les archétypes de Jung et la psychologie des couleurs."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-049",
+    "section": "2. Le consommateur contemporain",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque dynamique du consommateur contemporain à son exemple.",
+    "colonne_a": [
+      "Méfiance consumériste",
+      "Asymétrie informationnelle réduite",
+      "Hyperconnexion",
+      "Engagement RSE"
+    ],
+    "colonne_b": [
+      "Netflix et ses extraits courts sur Instagram",
+      "Patagonia",
+      "Back Market et la transparence sur la qualité",
+      "Decathlon, transparence et comparateurs"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "La 5e dynamique, le Customer Power, renverse les rapports de force traditionnels."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-050",
+    "section": "2. Le consommateur contemporain",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans la dynamique d'hyperconnexion, comment fonctionne le smartphone ?",
+    "options": [
+      "comme un simple outil de paiement",
+      "comme un organe cognitif externe",
+      "comme un média de masse",
+      "comme un frein à l'achat"
+    ],
+    "reponse": 1,
+    "explication": "Logique Mobile First, temps d'attention réduit, formats courts, consommation médiatique rapide et sélective."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-051",
+    "section": "2. Le consommateur contemporain",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Que désigne la « consonance cognitive » dans l'engagement RSE du consommateur ?",
+    "options": [
+      "la mémorisation d'un slogan",
+      "l'écart entre prix et qualité",
+      "la cohérence entre valeurs personnelles et actes d'achat",
+      "la fidélité à une enseigne"
+    ],
+    "reponse": 2,
+    "explication": "S'y ajoutent une littératie RSE croissante et la recherche de preuves tangibles d'engagement."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-052",
+    "section": "2. Le consommateur contemporain",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque nouvel écosystème commercial à sa caractéristique.",
+    "colonne_a": [
+      "Omnicanalité",
+      "Phygital",
+      "Social commerce",
+      "DNVB"
+    ],
+    "colonne_b": [
+      "Intégration verticale et relation directe avec le consommateur",
+      "Réseaux sociaux comme canaux de découverte et de vente",
+      "Unification des canaux pour une expérience fluide",
+      "Fusion du digital et du physique (Click & Collect)"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "DNVB = Digital Native Vertical Brands. Le social commerce s'appuie sur la micro-influence et l'UGC."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-053",
+    "section": "2. Le consommateur contemporain",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels défis éthiques pose l'hyperpersonnalisation ? (2 réponses)",
+    "options": [
+      "la manipulation comportementale",
+      "les biais algorithmiques",
+      "la baisse du temps d'attention",
+      "la fin des médias de masse"
+    ],
+    "reponse": [
+      0,
+      1
+    ],
+    "explication": "Elle exploite des données multi-sources pour créer des expériences individualisées en temps réel."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-054",
+    "section": "2. Le consommateur contemporain",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le paiement fractionné ouvre l'accès à la consommation premium.",
+    "reponse": true,
+    "explication": "Vrai. Les paiements dématérialisés, c'est aussi l'instantanéité, les cryptomonnaies et la désintermédiation."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-055",
+    "section": "2. Le consommateur contemporain",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Selon Bertrand Bathelot, qu'est-ce qui caractérise une communauté ?",
+    "options": [
+      "un sentiment d'appartenance",
+      "une même tranche d'âge",
+      "une même zone géographique",
+      "un même revenu"
+    ],
+    "reponse": 0,
+    "explication": "Un groupe qui interagit, partage et utilise des informations liées à des centres d'intérêt, caractéristiques démographiques ou activités professionnelles communes."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-056",
+    "section": "2. Le consommateur contemporain",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Entre quelles années est née la génération X ?",
+    "options": [
+      "1946 et 1964",
+      "1997 et 2010",
+      "1981 et 1996",
+      "1965 et 1980"
+    ],
+    "reponse": 3,
+    "explication": "Quatre générations types : baby-boomers, X, Y, Z, auxquelles s'ajoutent la génération alpha et la Silver Génération."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-057",
+    "section": "2. Le consommateur contemporain",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels archétypes la typologie de Strauss et Howe associe-t-elle aux générations ? (4 réponses)",
+    "options": [
+      "Héros",
+      "Artiste",
+      "Prophète",
+      "Nomade",
+      "Explorateur",
+      "Sage"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Explorateur et Sage relèvent des archétypes de Jung, pas de Strauss et Howe."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-058",
+    "section": "2. Le consommateur contemporain",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La « ménagère de moins de 50 ans » a disparu des cibles des médias de masse.",
+    "reponse": false,
+    "explication": "Faux : elle n'a pas disparu mais a changé de définition (femmes plus actives, tâches partagées, hommes et enfants décisionnaires). Les communicants glissent vers une adresse au genre neutre."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-059",
+    "section": "2. Le consommateur contemporain",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qui caractérise la Silver Génération ?",
+    "options": [
+      "société de la transparence et concurrence humain contre machine",
+      "temps libre, vie sociale active et fort pouvoir d'achat",
+      "hyperconnexion et formats courts",
+      "méfiance totale envers le digital"
+    ],
+    "reponse": 1,
+    "explication": "« Société de la transparence et concurrence humain contre machine » décrit la génération alpha (avec la crise écologique)."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-060",
+    "section": "2. Le consommateur contemporain",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Les outils digitaux qui amplifient les mouvements contestataires sont issus de la même révolution numérique que les dispositifs de surveillance développés en réponse.",
+    "reponse": true,
+    "explication": "Vrai : reconnaissance faciale, traçage, récupération des données."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-061",
+    "section": "3. La zone de chalandise",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "De quelle zone provient la majorité des clients d'un point de vente ?",
+    "options": [
+      "la zone tertiaire",
+      "la zone secondaire",
+      "la zone primaire",
+      "la zone relai"
+    ],
+    "reponse": 2,
+    "explication": "La zone de chalandise représente la zone d'attractivité commerciale du point de vente."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-062",
+    "section": "3. La zone de chalandise",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une analyse de zone de chalandise bien menée peut prétendre à l'exhaustivité.",
+    "reponse": false,
+    "explication": "Faux : les choix visent à inclure la majorité des habitudes de déplacement, sans qu'aucune analyse puisse prétendre à l'exhaustivité."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-063",
+    "section": "3. La zone de chalandise",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles analyses mène-t-on sur une zone de chalandise ? (3 réponses)",
+    "options": [
+      "analyse géographique",
+      "analyse démographique",
+      "veille sur les produits et tendances locales",
+      "analyse BCG",
+      "benchmarking interne"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Sources : INSEE, CCI, observatoires locaux. Les barrières naturelles, frontières et infrastructures pèsent dans le tracé."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-064",
+    "section": "4. Les cibles",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez le triptyque fondateur de la stratégie de communication.",
+    "texte": "{1}, {2} et {3} représentent le triptyque fondateur de la stratégie de communication. L'{4} en sera l'expression.",
+    "trous": [
+      "Positionnement",
+      "objectifs",
+      "cibles",
+      "axe créatif"
+    ],
+    "propositions": [
+      "Positionnement",
+      "objectifs",
+      "cibles",
+      "axe créatif",
+      "budget",
+      "média"
+    ],
+    "explication": "Le responsable de projet doit faire preuve d'empathie envers les publics."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-065",
+    "section": "4. Les cibles",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "« Renouveler l'adhésion d'au moins 75 % des membres de l'association » est un exemple de critère :",
+    "options": [
+      "quantitatif, appuyé sur les objectifs de communication",
+      "qualitatif",
+      "psychographique",
+      "de positionnement"
+    ],
+    "reponse": 0,
+    "explication": "Les critères quantitatifs s'appuient aussi sur des statistiques nationales (INSEE)."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-066",
+    "section": "4. Les cibles",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Par quels moyens définit-on les critères qualitatifs d'une cible ? (3 réponses)",
+    "options": [
+      "les études qualitatives",
+      "les études de motivation",
+      "les échelles d'attitudes",
+      "les recensements INSEE",
+      "les courbes isochrones"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Ils permettent de comprendre les centres d'intérêt, le sociotype, les motivations et freins, les habitudes comportementales."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-067",
+    "section": "4. Les cibles",
+    "niveau": 3,
+    "format": "appariement",
+    "question": "Dans la lecture par proximité avec l'objectif stratégique, associez chaque niveau à son public.",
+    "colonne_a": [
+      "Cœur de cible",
+      "Cible principale",
+      "Cible secondaire"
+    ],
+    "colonne_b": [
+      "Ceux qui influencent la décision",
+      "Les relais d'information",
+      "Les décisionnaires"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "explication": "Dans certaines stratégies, cibles secondaires et relais sont regroupées : on hiérarchise alors trois niveaux."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-068",
+    "section": "4. Les cibles",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "En BtoB, les cibles sont plus nombreuses qu'en BtoC, mais homogènes.",
+    "reponse": false,
+    "explication": "Faux : elles sont moins nombreuses mais souvent hétérogènes (entreprises, administrations, associations, coopératives)."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-069",
+    "section": "4. Les cibles",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les 3 familles de critères pour identifier les cibles en BtoB ? (3 réponses)",
+    "options": [
+      "les facteurs structurels",
+      "les paramètres de commercialisation ou d'exploitation",
+      "les avantages recherchés",
+      "les rituels",
+      "l'imaginaire collectif"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Facteurs structurels : secteur, taille, situation géographique, méthodes d'achat."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-070",
+    "section": "4. Les cibles",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Pourquoi faut-il distinguer, en BtoB, si la solution est utilisée par l'annonceur lui-même ou destinée à ses clients ?",
+    "options": [
+      "pour fixer le prix",
+      "pour calculer la zone de chalandise",
+      "pour respecter le RGPD",
+      "pour adapter le message à la cible finale"
+    ],
+    "reponse": 3,
+    "explication": "Dans le second cas, l'annonceur évaluera l'intérêt stratégique tel que ses propres cibles le percevront."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-071",
+    "section": "4. Les cibles",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les variables démographiques sont des caractéristiques subjectives, peu prédictives des comportements.",
+    "reponse": false,
+    "explication": "Faux : ce sont des caractéristiques objectives, souvent prédictives de comportements. En BtoC, quatre familles : démographiques, psychologiques, sociologiques, culturelles."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-072",
+    "section": "5. Segmentation et ciblage",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "En fonction de quoi choisit-on les critères de segmentation ?",
+    "options": [
+      "du budget de la concurrence",
+      "des objectifs de communication et des résultats de l'audit préalable",
+      "du nombre de personas",
+      "des préférences du dirigeant"
+    ],
+    "reponse": 1,
+    "explication": "Les sous-groupes doivent être homogènes, de taille suffisante et opérationnels."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-073",
+    "section": "5. Segmentation et ciblage",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels usages du clustering cite le cours ? (3 réponses)",
+    "options": [
+      "la segmentation de marché",
+      "l'identification des comportements annonçant une perte de clients",
+      "l'optimisation des campagnes publicitaires",
+      "le dépôt de brevets",
+      "le calcul de la TVA"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Le repérage des comportements annonçant une perte de clients permet de déployer des stratégies de rétention ciblées."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-074",
+    "section": "5. Segmentation et ciblage",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "La Classification Ascendante Hiérarchique part de l'ensemble des observations et le divise progressivement en sous-clusters.",
+    "reponse": false,
+    "explication": "Faux : c'est la classification descendante. La CAH part de chaque observation comme cluster individuel et fusionne progressivement les plus similaires."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-075",
+    "section": "5. Segmentation et ciblage",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel est l'objectif de la méthode K-Means ?",
+    "options": [
+      "maximiser la variance intra-cluster",
+      "détecter des clusters de formes complexes",
+      "minimiser la variance intra-cluster",
+      "construire une matrice de distances"
+    ],
+    "reponse": 2,
+    "explication": "On part de k points initiaux servant de centres. Les formes complexes relèvent des méthodes à densité (DBSCAN, OPTICS)."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-076",
+    "section": "5. Segmentation et ciblage",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les objectifs du ciblage ? (3 réponses)",
+    "options": [
+      "personnaliser le message",
+      "augmenter l'efficacité de la campagne",
+      "réduire les coûts en évitant les contacts inutiles",
+      "toucher tout le monde avec un message unique",
+      "supprimer la segmentation"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Le but est de comprendre ce qui influence les cibles pour leur proposer une offre susceptible de les intéresser."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-077",
+    "section": "5. Segmentation et ciblage",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les techniques quantitative et qualitative de ciblage s'excluent : il faut choisir l'une ou l'autre.",
+    "reponse": false,
+    "explication": "Faux : elles sont généralement combinées. La qualitative cible selon des préférences comportementales (plaisir ou ascétisme, aventure ou centrage)."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-078",
+    "section": "5. Segmentation et ciblage",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Avec l'intelligence artificielle, à quel enjeu le ciblage se confronte-t-il ?",
+    "options": [
+      "la prédiction : le calcul algorithmique des futurs comportements et besoins",
+      "la disparition des données",
+      "le retour aux médias de masse",
+      "l'interdiction des personas"
+    ],
+    "reponse": 0,
+    "explication": "Personnalisation et prédiction s'opposent à la culture des médias de masse."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-079",
+    "section": "5. Segmentation et ciblage",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels outils permettent d'analyser un segment après le découpage ? (4 réponses)",
+    "options": [
+      "le persona",
+      "la carte d'empathie",
+      "le parcours user",
+      "le user story mapping",
+      "la matrice BCG",
+      "le PESTEL"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Exemple de segmentation : Airbnb segmente hôtes et voyageurs selon la fréquence des réservations et les préférences de logement."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-080",
+    "section": "6. Les personas",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels avantages Alan Cooper attribue-t-il aux personas ? (3 réponses)",
+    "options": [
+      "fournir aux équipes une vision commune des utilisateurs cibles",
+      "hiérarchiser des solutions centrées sur leurs besoins",
+      "comprendre leurs motivations",
+      "réduire le budget média",
+      "remplacer les études quantitatives"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Il initie la méthode en 1999 ; il est aussi le créateur du Visual Basic."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-081",
+    "section": "6. Les personas",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque acteur à sa contribution à la notion de persona.",
+    "colonne_a": [
+      "Alan Cooper",
+      "Tony Zambito",
+      "HubSpot"
+    ],
+    "colonne_b": [
+      "Popularisation via l'inbound marketing",
+      "Initiation de la méthode (1999)",
+      "Notion de buyer persona"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "On distingue aujourd'hui user persona, buyer persona et reader persona (stratégie de contenus)."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-082",
+    "section": "6. Les personas",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans l'exemple du club de fitness (Laura et Olivier), quelle solution découle de la « douleur client » partagée ?",
+    "options": [
+      "baisser les prix",
+      "multiplier les cours collectifs",
+      "ouvrir 24h/24",
+      "un espace d'accueil des enfants et des abonnements familiaux"
+    ],
+    "reponse": 3,
+    "explication": "La douleur partagée : l'organisation du temps et de la garde. D'où des abonnements familiaux et non plus seulement individuels."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-083",
+    "section": "6. Les personas",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Chaque persona est une création collective, nourrie par les commerciaux, le SAV et les community managers.",
+    "reponse": true,
+    "explication": "Vrai : leur feedback sur les problématiques, attentes, objections et critiques renforce la pertinence de l'archétype."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-084",
+    "section": "6. Les personas",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "En BtoB, quelles catégories de personas faut-il créer ?",
+    "options": [
+      "un seul persona par secteur",
+      "celui de l'entreprise et celui de chaque individu ciblé en son sein",
+      "uniquement celui du dirigeant",
+      "uniquement des personas négatifs"
+    ],
+    "reponse": 1,
+    "explication": "La décision y est souvent collégiale, le processus rationnel, long et complexe ; il faut construire une relation de confiance en amont."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-085",
+    "section": "6. Les personas",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une fois construits, les personas restent valables durablement et n'ont pas besoin d'être réactualisés.",
+    "reponse": false,
+    "explication": "Faux : il faut les réactualiser régulièrement, car usages et tendances de consommation changent constamment."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-086",
+    "section": "6. Les personas",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi le persona améliore-t-il la stratégie de contenus d'un site web ?",
+    "options": [
+      "il augmente le nombre de pages",
+      "il remplace le référencement",
+      "produire des contenus sans s'interroger sur leur valeur pour l'audience ne procure aucun retour sur investissement",
+      "il supprime le besoin d'analytics"
+    ],
+    "reponse": 2,
+    "explication": "Il permet aussi d'élaborer la stratégie autour du client plutôt que de l'offre et d'anticiper les objections."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-087",
+    "section": "7. Le positionnement",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez la définition du positionnement.",
+    "texte": "Le positionnement apporte à l'offre une position {1}, {2} et {3} sur un marché et dans l'esprit des consommateurs. Il s'appuie sur des critères objectifs et {4}.",
+    "trous": [
+      "distinctive",
+      "crédible",
+      "attrayante",
+      "subjectifs"
+    ],
+    "propositions": [
+      "distinctive",
+      "crédible",
+      "attrayante",
+      "subjectifs",
+      "temporaire",
+      "financiers"
+    ],
+    "explication": "Objectifs : résultats, prix, services complémentaires ; subjectifs : image, symbolisme, comparaison avec la concurrence."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-088",
+    "section": "7. Le positionnement",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "À quelles 3 questions répond le positionnement ? (3 réponses)",
+    "options": [
+      "Dans quel marché ou segment se situe l'entreprise ?",
+      "À quelle cible s'adresse-t-elle ?",
+      "Quels sont ses avantages concurrentiels ?",
+      "Quel est son chiffre d'affaires ?",
+      "Combien de salariés compte-t-elle ?"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Questions préalables : le marché, les concurrents, les clients ciblés, la proposition de valeur."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-089",
+    "section": "7. Le positionnement",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pour Air France, la SNCF est :",
+    "options": [
+      "un concurrent indirect",
+      "un concurrent direct",
+      "un fournisseur",
+      "une cible relai"
+    ],
+    "reponse": 0,
+    "explication": "Concurrent indirect : même besoin, réponse différente. British Airways est un concurrent direct."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-090",
+    "section": "7. Le positionnement",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Si c'est le consommateur qui décide du positionnement, la marque se retrouve en situation passive.",
+    "reponse": true,
+    "explication": "Vrai : elle ne peut alors agir en cas d'image erronée ou nuisible. Le positionnement doit être maîtrisé et contrôlé par la marque."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-091",
+    "section": "7. Le positionnement",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Comment Nespresso s'est-il différencié ?",
+    "options": [
+      "par des prix bas en grande surface",
+      "par l'absence de communication",
+      "par une gamme de thés",
+      "par une offre de capsules unique et une distribution propre, hors circuits classiques"
+    ],
+    "reponse": 3,
+    "explication": "Boutiques spécialisées et site, avec une communication renforcée par l'image de célébrités."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-092",
+    "section": "7. Le positionnement",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "À l'étape du choix, on retient plusieurs avantages concurrentiels pour multiplier les arguments.",
+    "reponse": false,
+    "explication": "Faux : on en sélectionne un seul, selon le positionnement des autres acteurs et la capacité de l'entreprise à le respecter."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-093",
+    "section": "8. Les limites du ciblage",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les 3 exigences de l'adaptation créative responsable ? (3 réponses)",
+    "options": [
+      "des stratégies créatives conformes aux normes déontologiques",
+      "des approches de ciblage respectueuses de la vie privée",
+      "une publicité responsable et transparente",
+      "un ciblage le plus large possible",
+      "l'usage systématique du nudge"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Des pratiques irresponsables entraînent des conséquences financières et des dommages à la réputation."
+  },
+  {
+    "resume": "b1-f04",
+    "bloc": 1,
+    "id": "q-f04-094",
+    "section": "8. Les limites du ciblage",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le nudge marketing est réservé au marketing commercial et n'est pas utilisé en politique publique.",
+    "reponse": false,
+    "explication": "Faux : il est largement utilisé en marketing comme en politique publique. Il s'appuie sur les biais cognitifs, sans mesure coercitive."
+  },
+  {
     "resume": "b1-f05",
     "bloc": 1,
     "id": "q-f05-001",
@@ -2861,11 +5397,11 @@ var QUIZ = [
     "question": "Selon l'OCDE, quels sont les 4 types d'innovation ?",
     "options": [
       "incrémentale, adjacente, de rupture, radicale",
-      "de produit, de procédé, de commercialisation, d'organisation",
       "low tech, high tech, hybride, frugale",
+      "de produit, de procédé, de commercialisation, d'organisation",
       "Need Seekers, Market Readers, Technology Drivers, Fast Followers"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "La réponse 0 est la classification économique par degré ; la réponse 3 décrit les stratégies d'innovation identifiées par PwC."
   },
   {
@@ -2877,12 +5413,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Qu'est-ce qui transforme une invention en innovation ?",
     "options": [
-      "le dépôt d'un brevet",
       "sa mise en forme en produit commercialisable, donc son intérêt économique",
+      "le dépôt d'un brevet",
       "sa validation par un organisme de normalisation",
       "son caractère radical et non incrémental"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "C'est l'intérêt économique qui fait la différence entre les deux notions."
   },
   {
@@ -2896,10 +5432,10 @@ var QUIZ = [
     "options": [
       "Need Seekers",
       "Market Readers",
-      "Technology Drivers",
-      "Open innovators"
+      "Open innovators",
+      "Technology Drivers"
     ],
-    "reponse": 2,
+    "reponse": 3,
     "explication": "Les Need Seekers anticipent le marché pour être les premiers à répondre aux nouvelles attentes ; les Market Readers créent de la valeur par la personnalisation et l'innovation incrémentale."
   },
   {
@@ -2929,11 +5465,11 @@ var QUIZ = [
     "question": "Comment se mesure le brand equity ?",
     "options": [
       "par la part de marché en valeur",
-      "par la notoriété, le NPS et la préférence de marque",
       "par le taux d'engagement sur les réseaux sociaux",
+      "par la notoriété, le NPS et la préférence de marque",
       "par le taux de conversion du site"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Le brand equity est la valeur perçue de la marque au-delà de ses attributs fonctionnels."
   },
   {
@@ -2945,12 +5481,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Que représente le 5ᵉ P du mix omnicanal ?",
     "options": [
-      "Process",
-      "Physical evidence",
       "People",
+      "Physical evidence",
+      "Process",
       "Personalization"
     ],
-    "reponse": 2,
+    "reponse": 0,
     "explication": "People représente le client et la relation entretenue avec lui : le mettre au cœur du processus et lui permettre de choisir le lieu, l'heure et le support — où il veut, quand il veut, comme il veut."
   },
   {
@@ -2963,11 +5499,11 @@ var QUIZ = [
     "question": "Le yield management consiste à :",
     "options": [
       "optimiser les marges par la réduction des coûts d'achat",
-      "trouver un équilibre entre le prix et le taux d'occupation",
+      "personnaliser le prix selon le profil du client",
       "aligner les prix sur ceux des comparateurs en ligne",
-      "personnaliser le prix selon le profil du client"
+      "trouver un équilibre entre le prix et le taux d'occupation"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "Le prix est différencié selon le taux d'occupation et le moment de la réservation. Très utilisé dans l'hôtellerie et les transports, il constitue le business model d'acteurs comme Lastminute."
   },
   {
@@ -2997,11 +5533,11 @@ var QUIZ = [
     "question": "L'utilitarisme évalue la moralité d'une action selon :",
     "options": [
       "l'intention et le respect de principes universels",
-      "les conséquences et le bien-être collectif",
       "la conformité aux normes professionnelles",
+      "les conséquences et le bien-être collectif",
       "l'authenticité de la marque"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "La réponse 0 décrit la déontologie. Ces deux traditions philosophiques structurent l'éthique marketing, née dans les années 1970 en réponse au consumérisme."
   },
   {
@@ -3031,11 +5567,11 @@ var QUIZ = [
     "question": "Quelle norme définit l'éco-conception ?",
     "options": [
       "ISO 14040",
-      "ISO 14006",
+      "ISO 14044",
       "ISO 26000",
-      "ISO 14044"
+      "ISO 14006"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "ISO 14040 et 14044 encadrent l'Analyse du Cycle de Vie ; ISO 26000 est le cadre méthodologique de la responsabilité sociétale des organisations."
   },
   {
@@ -3048,11 +5584,11 @@ var QUIZ = [
     "question": "À quoi sert l'étape d'interprétation de l'ACV ?",
     "options": [
       "à quantifier les flux entrants et sortants",
-      "à traduire les flux en impacts environnementaux potentiels",
       "à identifier les points chauds environnementaux et les leviers d'amélioration prioritaires",
+      "à traduire les flux en impacts environnementaux potentiels",
       "à préciser les limites du système analysé"
     ],
-    "reponse": 2,
+    "reponse": 1,
     "explication": "Les quatre étapes : définition des objectifs et du champ, inventaire du cycle de vie, évaluation de l'impact, interprétation des résultats."
   },
   {
@@ -3548,6 +6084,932 @@ var QUIZ = [
     "explication": "La co-innovation en interne suppose également un esprit et un management collaboratifs, parfois structurés par des Fab Lab."
   },
   {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-038",
+    "section": "1. L'innovation",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Proposer un produit existant dans une version simplifiée, de moindre qualité et à tarif inférieur relève de l'innovation :",
+    "options": [
+      "incrémentale",
+      "adjacente",
+      "de rupture (disruptive)",
+      "radicale"
+    ],
+    "reponse": 2,
+    "explication": "Elle rend le produit plus accessible en coût et en fonctionnalités. La radicale crée un nouveau marché avec un produit totalement nouveau."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-039",
+    "section": "1. L'innovation",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que désigne le low tech ?",
+    "options": [
+      "la conception et l'usage d'une technologie à faible impact environnemental, économique et accessible à tous",
+      "une technologie dépassée",
+      "une technologie de pointe",
+      "une innovation radicale"
+    ],
+    "reponse": 0,
+    "explication": "Le high tech désigne la conception et l'usage d'une technologie de pointe."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-040",
+    "section": "1. L'innovation",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Selon l'étude PwC, les entreprises innovantes élaborent leur stratégie d'innovation au coup par coup, indépendamment de leur stratégie globale.",
+    "reponse": false,
+    "explication": "Faux : elles l'élaborent sur la durée et l'alignent sur leur stratégie globale."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-041",
+    "section": "1. L'innovation",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Qu'est-ce que la co-innovation ?",
+    "options": [
+      "copier l'innovation d'un concurrent",
+      "déposer un brevet commun",
+      "innover seul en R&D interne",
+      "faire participer les acteurs de son écosystème pour faire émerger des solutions inédites grâce aux savoir-faire de chacun"
+    ],
+    "reponse": 3,
+    "explication": "Elle permet de réaliser rapidement des expérimentations en situation réelle avec des clients."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-042",
+    "section": "1. L'innovation",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel partenariat illustre la co-innovation dans le cours ?",
+    "options": [
+      "Apple – Nike",
+      "EDF – Starbucks – Orange autour de la plateforme Imagine",
+      "Renault – IKEA",
+      "Patagonia – Decathlon"
+    ],
+    "reponse": 1,
+    "explication": "Exemple de co-innovation entre acteurs d'un même écosystème."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-043",
+    "section": "1. L'innovation",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les risques de la co-innovation ? (4 réponses)",
+    "options": [
+      "la propriété intellectuelle",
+      "le mauvais ciblage du périmètre commun",
+      "l'absence de méthodologie et d'outils partagés",
+      "l'espionnage industriel",
+      "la baisse obligatoire des prix",
+      "l'interdiction de communiquer"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Ces risques sont à anticiper avant d'ouvrir son processus d'innovation."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-044",
+    "section": "1. L'innovation",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Dans un contrat de façonnage, le façonnier peut utiliser des matières supplémentaires d'une valeur supérieure à celles fournies par le fabricant.",
+    "reponse": false,
+    "explication": "Faux : les matières supplémentaires doivent être de valeur inférieure. Le fabricant apporte les matières premières et en reste propriétaire."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-045",
+    "section": "1. L'innovation",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque contrat de sous-traitance à sa caractéristique.",
+    "colonne_a": [
+      "Contrat de façonnage",
+      "Contrat de fabrication"
+    ],
+    "colonne_b": [
+      "Le sous-traitant est un exécutant qui livre les produits finis selon un cahier des charges",
+      "Le produit reste la propriété du donneur d'ouvrage ; partenariat possiblement très fort"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Les sous-traitants sont des partenaires d'innovation à des degrés différents selon le contrat."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-046",
+    "section": "1. L'innovation",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Comment s'appellent les espaces d'incubation qui structurent parfois la co-innovation en interne ?",
+    "options": [
+      "les showrooms",
+      "les drive",
+      "les Fab Lab",
+      "les pure players"
+    ],
+    "reponse": 2,
+    "explication": "La co-innovation interne suppose un esprit et un management collaboratifs."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-047",
+    "section": "1. L'innovation",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'innovation est à la fois une expérience inventive et une expérience inclusive.",
+    "reponse": true,
+    "explication": "Vrai : concevoir en tenant compte de la diversité des publics."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-048",
+    "section": "1. L'innovation",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Par quelles méthodes les clients deviennent-ils un vecteur d'innovation ?",
+    "options": [
+      "l'UX Design et le CX Design",
+      "le yield management",
+      "le geofencing",
+      "le greenwashing"
+    ],
+    "reponse": 0,
+    "explication": "Les degrés d'implication vont de la simple consultation à la co-création, jusqu'à la gestion structurée du feedback client."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-049",
+    "section": "2. Marque et expérience client",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Le brand désigne :",
+    "options": [
+      "la perception vécue par les clients",
+      "les éléments tangibles du storytelling",
+      "la valeur économique de la marque",
+      "l'identité profonde et stable de la marque, son essence immuable"
+    ],
+    "reponse": 3,
+    "explication": "Mission, vision, personnalité (Aaker et Keller). Il guide les décisions stratégiques."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-050",
+    "section": "2. Marque et expérience client",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La cohérence entre brand, branding et expérience client est essentielle pour créer une relation de confiance durable.",
+    "reponse": true,
+    "explication": "Vrai : c'est la cohérence perçue, faite d'authenticité et de fiabilité, dans un écosystème interdépendant."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-051",
+    "section": "2. Marque et expérience client",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que l'expérience omnicanale par rapport au CX et à l'UX ?",
+    "options": [
+      "un synonyme de l'UX",
+      "la synthèse CX/UX, qui les unifie sur l'ensemble des points de contact",
+      "une partie de l'UX",
+      "l'opposé du CX"
+    ],
+    "reponse": 1,
+    "explication": "CX : ensemble des interactions sur tout le parcours ; UX : expérience sur une interface, un produit ou un service donné."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-052",
+    "section": "2. Marque et expérience client",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que sont les moments de vérité du parcours client ?",
+    "options": [
+      "les promotions",
+      "les avis négatifs",
+      "les interactions critiques qui déterminent la perception globale",
+      "les dates de lancement"
+    ],
+    "reponse": 2,
+    "explication": "On cartographie le parcours, on mesure émotions et performances à chaque étape, puis on priorise selon l'impact perçu."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-053",
+    "section": "2. Marque et expérience client",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les 3 dimensions de l'expérience ? (3 réponses)",
+    "options": [
+      "cognitive",
+      "affective",
+      "comportementale",
+      "financière",
+      "juridique"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "S'y ajoute la stimulation multisensorielle, qui renforce l'attachement. Les micro-interactions ont des impacts business mesurables."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-054",
+    "section": "3. Le mix marketing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'a permis le développement web de France Loisirs ?",
+    "options": [
+      "rajeunir sa clientèle, avec un public plus jeune et plus urbain",
+      "fermer tous ses magasins",
+      "augmenter ses prix",
+      "passer directement à l'omnicanal"
+    ],
+    "reponse": 0,
+    "explication": "Exemple de multicanal : plusieurs canaux gérés de façon indépendante ou complémentaire."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-055",
+    "section": "3. Le mix marketing",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la progression des stratégies de canaux.",
+    "elements": [
+      "Omnicanal",
+      "Multicanal",
+      "Cross-canal"
+    ],
+    "ordre": [
+      1,
+      2,
+      0
+    ],
+    "explication": "Multicanal (canaux indépendants) → cross-canal (canaux synchronisés) → omnicanal (expérience unique et fluide)."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-056",
+    "section": "3. Le mix marketing",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les 3 paramètres de l'omnicanal ? (3 réponses)",
+    "options": [
+      "l'expérience",
+      "le parcours client",
+      "le relationnel",
+      "le prix unique",
+      "le catalogue papier"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Le 5ᵉ P, People : où il veut, quand il veut, comme il veut."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-057",
+    "section": "3. Le mix marketing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi les enseignes physiques adoptent-elles souvent une stratégie prix hybride, avec des exclusivités web ?",
+    "options": [
+      "pour augmenter les prix en magasin",
+      "pour respecter la loi AGEC",
+      "pour supprimer le web",
+      "pour préserver leur compétitivité face aux pure players"
+    ],
+    "reponse": 3,
+    "explication": "Les marques préfèrent en général proposer les mêmes offres au même tarif quel que soit le canal."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-058",
+    "section": "3. Le mix marketing",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles tarifications flexibles la transparence d'Internet a-t-elle favorisées ? (4 réponses)",
+    "options": [
+      "le tarif en temps réel",
+      "les forfaits à l'usage",
+      "les prix groupés",
+      "les ventes aux enchères",
+      "le prix unique national imposé",
+      "la suppression des promotions"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Les comparateurs ont soumis la politique prix à une transparence accrue."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-059",
+    "section": "3. Le mix marketing",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le yield management constitue le business model même de certains acteurs comme Lastminute.",
+    "reponse": true,
+    "explication": "Vrai. Très utilisé dans l'hôtellerie et les transports, il différencie le prix selon le taux d'occupation et le moment de la réservation."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-060",
+    "section": "3. Le mix marketing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Le geofencing est :",
+    "options": [
+      "une barrière à l'entrée",
+      "une technique de marketing mobile ciblant les individus selon leur localisation",
+      "une méthode de clustering",
+      "un label environnemental"
+    ],
+    "reponse": 1,
+    "explication": "Il fait partie des pratiques de distribution omnicanale, avec le click and collect et le drive."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-061",
+    "section": "3. Le mix marketing",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "En politique de distribution omnicanale, on choisit d'abord les canaux, puis on étudie la cible.",
+    "reponse": false,
+    "explication": "Faux : il faut d'abord étudier la cible, ses habitudes de consommation et ses médias de prédilection, pour un parcours cohérent, complémentaire et fluide."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-062",
+    "section": "3. Le mix marketing",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "« Nous considérons nos clients comme des invités, à une fête où nous sommes les hôtes. » Qui l'a dit ?",
+    "options": [
+      "Steve Jobs",
+      "Philip Kotler",
+      "Jeff Bezos",
+      "Jeremy Bentham"
+    ],
+    "reponse": 2,
+    "explication": "« C'est notre job d'améliorer leur expérience un peu plus chaque jour. »"
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-063",
+    "section": "3. Le mix marketing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Comment s'appellent les utilisateurs dont il faut connaître les produits plébiscités dans une stratégie m-commerce ?",
+    "options": [
+      "les mobinautes",
+      "les pure players",
+      "les façonniers",
+      "les early adopters"
+    ],
+    "reponse": 0,
+    "explication": "Le m-commerce croît grâce à la mobilité, l'immédiateté et l'ergonomie. Il faut bien définir sa cible et penser omnicanal."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-064",
+    "section": "3. Le mix marketing",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque approche du marketing international à son principe.",
+    "colonne_a": [
+      "Marketing international global",
+      "Marketing international glocal"
+    ],
+    "colonne_b": [
+      "Standardisation adaptée",
+      "Standardisation"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "La 3e approche est le marketing à l'exportation."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-065",
+    "section": "3. Le mix marketing",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels avantages offre le développement à l'international ? (3 réponses)",
+    "options": [
+      "l'accès à de nouveaux clients",
+      "la diversification des revenus et la réduction des risques",
+      "le renforcement de la notoriété",
+      "la disparition des spécificités culturelles",
+      "la fin de toute concurrence"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Accompagnement : Business France, CCI internationales. L'adaptation culturelle est souvent le facteur décisif."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-066",
+    "section": "4. L'éthique",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quand émerge l'éthique marketing, et en réponse à quoi ?",
+    "options": [
+      "dans les années 1950, en réponse à la publicité télévisée",
+      "dans les années 2020, en réponse à la CSRD",
+      "dans les années 2000, en réponse au digital",
+      "dans les années 1970, en réponse au consumérisme"
+    ],
+    "reponse": 3,
+    "explication": "Deux traditions la structurent : l'utilitarisme (Bentham) et la déontologie."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-067",
+    "section": "4. L'éthique",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Sur quels 3 piliers repose la confiance ? (3 réponses)",
+    "options": [
+      "crédibilité",
+      "bienveillance",
+      "intégrité",
+      "notoriété",
+      "rentabilité"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "La cohérence temporelle entre promesses et actions est déterminante."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-068",
+    "section": "4. L'éthique",
+    "niveau": 3,
+    "format": "appariement",
+    "question": "Associez chaque modèle de l'authenticité à son contenu.",
+    "colonne_a": [
+      "Beverland",
+      "Gilmore et Pine"
+    ],
+    "colonne_b": [
+      "4 formes : naturelle, originale, exceptionnelle, référentielle",
+      "5 dimensions : héritage, sincérité, expertise, résistance, ancrage"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Dans les deux cas, la cohérence temporelle entre promesses et actions compte."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-069",
+    "section": "4. L'éthique",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le Marketing 3.0 de Kotler recentre le marketing sur le produit et ses caractéristiques techniques.",
+    "reponse": false,
+    "explication": "Faux : il déplace le centre de gravité du produit vers le consommateur, puis vers les valeurs, et crée des communautés d'engagement autour de causes partagées."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-070",
+    "section": "4. L'éthique",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Affirmer un bénéfice environnemental inexistant relève du greenwashing par :",
+    "options": [
+      "omission",
+      "commission",
+      "suggestion",
+      "déontologie"
+    ],
+    "reponse": 1,
+    "explication": "Omission : taire les impacts défavorables ; suggestion : laisser croire par l'image ou le vocabulaire."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-071",
+    "section": "4. L'éthique",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Sur quelles 3 exigences repose la communication responsable ? (3 réponses)",
+    "options": [
+      "transparence",
+      "traçabilité",
+      "reconnaissance des limites",
+      "exagération des bénéfices",
+      "formulations vagues"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Il faut communiquer proportionnellement à l'impact réel et éviter les formulations vagues ou non quantifiées."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-072",
+    "section": "4. L'éthique",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Selon l'ADEME, quelle part des consommateurs français est méfiante vis-à-vis des allégations environnementales non vérifiées ?",
+    "options": [
+      "39 %",
+      "59 %",
+      "79 %",
+      "99 %"
+    ],
+    "reponse": 2,
+    "explication": "La directive européenne impose des critères de preuve stricts ; l'ARPP exige une précision lexicale accrue."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-073",
+    "section": "4. L'éthique",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "L'intégration éthique dans le mix marketing consiste à ajouter une couche de communication responsable aux 4P existants.",
+    "reponse": false,
+    "explication": "Faux : elle s'opère sur les 4P et transforme la valeur intrinsèque de l'entreprise, plutôt que de s'ajouter comme une couche de communication."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-074",
+    "section": "5. Marketing responsable",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Comment se définit le marketing responsable ?",
+    "options": [
+      "une approche éthique conciliant objectifs commerciaux et considérations morales et sociales",
+      "un marketing réservé aux ONG",
+      "un marketing sans budget",
+      "une obligation légale"
+    ],
+    "reponse": 0,
+    "explication": "Il implique des critères éthiques dès la conception, une communication transparente et des initiatives sociales et environnementales."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-075",
+    "section": "5. Marketing responsable",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le respect de la transparence et de l'honnêteté conduit à une fidélité accrue et à une meilleure réputation.",
+    "reponse": true,
+    "explication": "Vrai : les consommateurs soutiennent plus volontiers les marques qui partagent leurs valeurs."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-076",
+    "section": "5. Marketing responsable",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que doivent faire les messages responsables, au-delà de refléter l'engagement éthique ?",
+    "options": [
+      "être les plus nombreux possible",
+      "éviter tout chiffre",
+      "rester confidentiels",
+      "sensibiliser et inciter à l'action"
+    ],
+    "reponse": 3,
+    "explication": "Le choix des supports est essentiel ; impliquer les employés renforce la responsabilité sociale de l'entreprise."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-077",
+    "section": "6. Évaluer l'impact RSE",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque dimension RSE à ses indicateurs.",
+    "colonne_a": [
+      "Sociale",
+      "Environnementale",
+      "Économique"
+    ],
+    "colonne_b": [
+      "Fournisseurs locaux, budget médias responsables",
+      "Équité, diversité, bien-être",
+      "Empreinte carbone, déchets, émissions de CO₂"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Ces indicateurs forment le référentiel RSE de la stratégie marketing."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-078",
+    "section": "6. Évaluer l'impact RSE",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Les stéréotypes véhiculés par une campagne relèvent de quel type d'impact ?",
+    "options": [
+      "impact direct",
+      "impact indirect",
+      "impact économique",
+      "impact nul"
+    ],
+    "reponse": 1,
+    "explication": "Impacts directs : énergie, déchets, émissions liées aux activités marketing ; indirects : influence sur les comportements, stéréotypes."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-079",
+    "section": "6. Évaluer l'impact RSE",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque référentiel à sa nature.",
+    "colonne_a": [
+      "ISO 26000",
+      "GRI"
+    ],
+    "colonne_b": [
+      "Standard international de reporting développement durable",
+      "Cadre méthodologique de la responsabilité sociétale des organisations"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "S'y ajoutent le SASB et la taxonomie européenne."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-080",
+    "section": "6. Évaluer l'impact RSE",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "En quels 3 niveaux les tableaux de bord RSE marketing structurent-ils les indicateurs ? (3 réponses)",
+    "options": [
+      "stratégiques",
+      "tactiques",
+      "opérationnels",
+      "fiscaux",
+      "juridiques"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Ils s'appuient sur la collecte automatisée (API, web analytics) et doivent être intégrés aux décisions."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-081",
+    "section": "6. Évaluer l'impact RSE",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle part des consommateurs se déclare prête à changer de marque pour réduire son impact environnemental ?",
+    "options": [
+      "23 %",
+      "53 %",
+      "73 %",
+      "93 %"
+    ],
+    "reponse": 2,
+    "explication": "Patagonia montre qu'une contrainte environnementale peut devenir un avantage concurrentiel durable."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-082",
+    "section": "7. Éco-conception",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les deux forces de contrainte qui poussent vers l'économie circulaire ? (2 réponses)",
+    "options": [
+      "les réglementations environnementales, dont la loi AGEC",
+      "les investisseurs ESG",
+      "les comparateurs de prix",
+      "les pure players"
+    ],
+    "reponse": [
+      0,
+      1
+    ],
+    "explication": "Exemples d'entreprises engagées : Patagonia, IKEA, Renault."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-083",
+    "section": "7. Éco-conception",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "L'approche préventive de l'éco-conception évite les coûts de mise en conformité tardive.",
+    "reponse": true,
+    "explication": "Vrai : elle anticipe les impacts plutôt que de les corriger a posteriori."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-084",
+    "section": "7. Éco-conception",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'a fait le fabricant d'enceintes Lexon ?",
+    "options": [
+      "il a redesigné ses produits pour faciliter le démontage des composants et leur recyclabilité",
+      "il a supprimé ses emballages",
+      "il a délocalisé sa production",
+      "il a lancé une gamme low cost"
+    ],
+    "reponse": 0,
+    "explication": "Résultat : réduction des coûts de fin de vie et argument de vente."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-085",
+    "section": "7. Éco-conception",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Sur quels standards s'appuie l'ACV ?",
+    "options": [
+      "ISO 9001",
+      "ISO 14006",
+      "ISO 26000",
+      "ISO 14040 et 14044"
+    ],
+    "reponse": 3,
+    "explication": "Ils garantissent la reproductibilité et la comparabilité des analyses. ISO 14006 définit l'éco-conception."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-086",
+    "section": "7. Éco-conception",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Pour débuter, le cours conseille de réaliser une ACV complète sur l'ensemble de la gamme.",
+    "reponse": false,
+    "explication": "Faux : il conseille une mini-ACV simplifiée sur un produit phare. Des bases comme Ecoinvent fournissent les facteurs de référence."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-087",
+    "section": "7. Éco-conception",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que le design universel ?",
+    "options": [
+      "un design identique dans tous les pays",
+      "la conception de produits et services accessibles à tous, indépendamment des capacités",
+      "un logo standardisé",
+      "une norme ISO"
+    ],
+    "reponse": 1,
+    "explication": "C'est le pendant social de l'éco-conception : penser l'accessibilité dès l'origine."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-088",
+    "section": "7. Éco-conception",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Que peut combiner une entreprise dans une démarche de numérique responsable ? (2 réponses)",
+    "options": [
+      "une politique d'achat atteignable (durée de vie, reconditionné, réparabilité)",
+      "des pratiques quotidiennes et écogestes",
+      "le renouvellement annuel du parc informatique",
+      "l'abandon de tout outil numérique"
+    ],
+    "reponse": [
+      0,
+      1
+    ],
+    "explication": "Les labels peuvent guider, même si peu s'adressent exclusivement au numérique responsable."
+  },
+  {
+    "resume": "b1-f05",
+    "bloc": 1,
+    "id": "q-f05-089",
+    "section": "7. Éco-conception",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "De nombreux labels s'adressent exclusivement au numérique responsable.",
+    "reponse": false,
+    "explication": "Faux : peu de labels s'y consacrent exclusivement, même s'ils peuvent servir de guide."
+  },
+  {
     "resume": "b1-f06",
     "bloc": 1,
     "id": "q-f06-001",
@@ -3557,11 +7019,11 @@ var QUIZ = [
     "question": "Qu'est-ce qui distingue le brand content de la publicité traditionnelle ?",
     "options": [
       "il est exclusivement diffusé en ligne",
-      "l'absence d'argumentaire commercial et de slogans",
       "il est produit par l'audience et non par la marque",
+      "l'absence d'argumentaire commercial et de slogans",
       "il vise la conversion immédiate plutôt que l'engagement"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Il s'appuie sur le storytelling et s'inscrit dans une stratégie de moyen et long terme visant l'engagement durable. La réponse 2 décrit l'UGC."
   },
   {
@@ -3573,12 +7035,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Les retombées presse et le bouche-à-oreille relèvent de quel type de média ?",
     "options": [
-      "owned",
       "earned",
+      "owned",
       "shared",
       "paid"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Owned = site, blog, newsletter, comptes sociaux de la marque. Shared = reprises et partages par l'audience. Paid = display, SEA, social ads."
   },
   {
@@ -3591,11 +7053,11 @@ var QUIZ = [
     "question": "Quelle est la limite de l'engagement comme indicateur ?",
     "options": [
       "il est difficile à mesurer sur les réseaux sociaux",
-      "il ne se traduit pas nécessairement par des ventes",
+      "il varie selon les algorithmes et n'est donc pas comparable",
       "il n'est disponible que sur les médias payants",
-      "il varie selon les algorithmes et n'est donc pas comparable"
+      "il ne se traduit pas nécessairement par des ventes"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "L'engagement mesure les partages, publications aimées et commentaires. C'est l'indicateur courant de performance des médias sociaux, mais pas un indicateur de conversion."
   },
   {
@@ -3624,12 +7086,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Le mood board intervient à quelle phase du processus de création ?",
     "options": [
-      "la phase d'inspiration",
-      "la phase de croquis",
       "la phase de production",
+      "la phase de croquis",
+      "la phase d'inspiration",
       "la phase de validation client"
     ],
-    "reponse": 0,
+    "reponse": 2,
     "explication": "Il illustre des concepts et crée une ligne directrice dans le style et l'ambiance graphique. La phase de croquis met ensuite les idées en image."
   },
   {
@@ -3641,12 +7103,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "L'orientation artistique se définit comme :",
     "options": [
-      "un audit technique et artistique visant à décortiquer la demande client",
       "le chemin de fer créatif proposé par le spécialiste de la communication",
+      "un audit technique et artistique visant à décortiquer la demande client",
       "l'ensemble des éléments visuels de la marque : typographie, couleurs, logo",
       "la charte visuelle validée en amont de la production"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "La réponse 0 décrit le briefing créatif, la réponse 2 le design de marque. L'orientation artistique prend en compte les tendances actuelles du secteur pour les adapter à la demande."
   },
   {
@@ -3659,11 +7121,11 @@ var QUIZ = [
     "question": "Quel rapport entre inbound marketing et content marketing ?",
     "options": [
       "ce sont deux appellations d'une même démarche",
-      "le content marketing est une facette de l'inbound, qui couvre l'ensemble du parcours client",
+      "l'inbound relève des médias payants, le content marketing des médias possédés",
       "l'inbound est une facette du content marketing",
-      "l'inbound relève des médias payants, le content marketing des médias possédés"
+      "le content marketing est une facette de l'inbound, qui couvre l'ensemble du parcours client"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "Ne pas confondre les deux : le content marketing ne représente qu'une partie de l'équation."
   },
   {
@@ -3693,11 +7155,11 @@ var QUIZ = [
     "question": "Que signifient les 3 principes « Be There, Be Useful, Be Quick » ?",
     "options": [
       "les règles du community management",
-      "les principes du micro-moment marketing",
       "les critères de sélection d'un influenceur",
+      "les principes du micro-moment marketing",
       "les fondements de la stratégie virale"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Sur ces périodes courtes, les consommateurs attendent une réponse immédiate et priorisent les contenus rapidement compréhensibles."
   },
   {
@@ -3709,12 +7171,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Qu'est-ce qui distingue le co-branding du co-marketing ?",
     "options": [
-      "le co-branding implique deux marques, le co-marketing une seule",
       "le co-branding repose sur la création d'un nouveau produit, le co-marketing non",
+      "le co-branding implique deux marques, le co-marketing une seule",
       "le co-branding est réservé au BtoC",
       "le co-marketing suppose une prise de participation croisée"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Les deux reposent sur un partenariat entre marques, mais le co-marketing se focalise sur les efforts marketing sans création de produit."
   },
   {
@@ -3727,11 +7189,11 @@ var QUIZ = [
     "question": "Quel indicateur mesure le mieux l'influence réelle d'un créateur de contenu ?",
     "options": [
       "le nombre de followers",
-      "le taux d'engagement",
+      "le nombre de partenariats signés",
       "le nombre de publications par mois",
-      "le nombre de partenariats signés"
+      "le taux d'engagement"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "Le taux d'engagement rapporte les interactions — likes, commentaires, partages — au nombre de followers. C'est lui, plus que la taille brute de l'audience, qui mesure l'influence."
   },
   {
@@ -4242,6 +7704,854 @@ var QUIZ = [
     "explication": "La communication activiste vise l'intérêt général, non la défense d'intérêts économiques : c'est cette cohérence qui sera vérifiée par les publics."
   },
   {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-037",
+    "section": "1. La stratégie de contenu",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque notion à sa définition.",
+    "colonne_a": [
+      "Content marketing",
+      "Brand content",
+      "UGC"
+    ],
+    "colonne_b": [
+      "Expression directe de l'identité de la marque, sans argumentaire commercial",
+      "Contenu produit par l'audience : avis, photos, vidéos, concours",
+      "Création, publication et diffusion de contenus en ligne pour promouvoir une entreprise"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "explication": "L'UGC apporte authenticité et spontanéité."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-038",
+    "section": "1. La stratégie de contenu",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Sur quel horizon s'inscrit le brand content ?",
+    "options": [
+      "le très court terme, pour la conversion immédiate",
+      "uniquement le temps d'une campagne",
+      "le moyen et long terme, pour un engagement durable",
+      "aucun horizon défini"
+    ],
+    "reponse": 2,
+    "explication": "Il s'appuie sur le storytelling pour créer une narration intéressante."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-039",
+    "section": "1. La stratégie de contenu",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les avantages du contenu de marque ? (4 réponses)",
+    "options": [
+      "il est facilement partageable",
+      "il génère plus d'engagements",
+      "il renforce la confiance",
+      "il renforce la fidélité",
+      "il garantit des ventes immédiates",
+      "il remplace le SEO"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Il aide aussi à comprendre positionnement et valeurs, et met en valeur l'offre sans générer de frustration."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-040",
+    "section": "1. La stratégie de contenu",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les 3 piliers de la stratégie brand content ? (3 réponses)",
+    "options": [
+      "l'identification",
+      "la valorisation",
+      "l'édition",
+      "la promotion",
+      "la tarification"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Ils s'insèrent dans une démarche visant objectifs et cibles avec les moyens humains, financiers et matériels alloués."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-041",
+    "section": "1. La stratégie de contenu",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Un même contenu peut relever simultanément de plusieurs types de médias (owned, earned, shared, paid).",
+    "reponse": true,
+    "explication": "Vrai : le partage sur les réseaux sociaux d'un contenu positif créé par un tiers relève de plusieurs catégories à la fois."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-042",
+    "section": "1. La stratégie de contenu",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelles sont les 3 questions à trancher avant de commencer une stratégie de content marketing ?",
+    "options": [
+      "objectifs, cibles (buyer personas), indicateurs (KPI)",
+      "prix, produit, distribution",
+      "qui, quand, où",
+      "budget, agence, calendrier"
+    ],
+    "reponse": 0,
+    "explication": "Avec la ligne éditoriale et l'identité visuelle, ce sont les 5 facteurs clés du succès."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-043",
+    "section": "1. La stratégie de contenu",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que permet la méthode « Test & Learn » appliquée à la feuille de route ?",
+    "options": [
+      "éviter toute mesure",
+      "remplacer les KPI",
+      "publier sans validation",
+      "tester, regarder les résultats, apprendre et s'améliorer"
+    ],
+    "reponse": 3,
+    "explication": "La réussite n'est pas toujours au rendez-vous du premier coup."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-044",
+    "section": "2. Élaborer et piloter",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les 4 grandes familles d'objectifs d'une stratégie de contenu ? (4 réponses)",
+    "options": [
+      "visibilité",
+      "acquisition de prospects",
+      "fidélisation",
+      "image de marque",
+      "réduction des effectifs",
+      "fixation des prix"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "L'analyse de la compétition permet de démarquer son identité et de maintenir sa position."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-045",
+    "section": "2. Élaborer et piloter",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une fois installés, l'identité de marque et le positionnement doivent rester figés pour ne pas perturber les internautes.",
+    "reponse": false,
+    "explication": "Faux : ils doivent être étudiés, mis en place, maintenus forts et fait évoluer dans le temps."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-046",
+    "section": "2. Élaborer et piloter",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un même message et un même format peuvent être diffusés à l'identique sur réseaux sociaux, site, blog et newsletter.",
+    "reponse": false,
+    "explication": "Faux : chaque support appelle une approche différente ; message et format s'adaptent au canal et à ses codes."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-047",
+    "section": "2. Élaborer et piloter",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'articule le calendrier rédactionnel ?",
+    "options": [
+      "les salaires de l'équipe",
+      "sujets, formats, canaux, fréquences et responsables",
+      "les seuls dates de publication",
+      "les budgets publicitaires"
+    ],
+    "reponse": 1,
+    "explication": "« La prévision est la clé du succès » : prévoir ses contenus et optimiser le calendrier en continu."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-048",
+    "section": "2. Élaborer et piloter",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque famille de KPI à ses indicateurs.",
+    "colonne_a": [
+      "Audience",
+      "Engagement",
+      "Conversion"
+    ],
+    "colonne_b": [
+      "Leads, taux de transformation",
+      "Trafic, portée, impressions",
+      "Likes, commentaires, partages, temps passé"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "La 4e famille porte sur la fidélisation. Les KPI se choisissent selon les objectifs définis."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-049",
+    "section": "2. Élaborer et piloter",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quels sont les deux leviers pour gagner du temps dans la production de contenus ?",
+    "options": [
+      "publier moins et plus tard",
+      "supprimer le SEO",
+      "mieux collaborer en interne ou externaliser",
+      "copier les concurrents"
+    ],
+    "reponse": 2,
+    "explication": "Le choix se pose surtout pour le SEO, vu sa complexité et ses mises à jour."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-050",
+    "section": "3. SEO et écriture web",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "À partir de quoi établit-on un champ sémantique ?",
+    "options": [
+      "de ses mots-clés stratégiques, en recherchant leur popularité",
+      "des noms des concurrents",
+      "des avis clients uniquement",
+      "du logo"
+    ],
+    "reponse": 0,
+    "explication": "Le référencement naturel conditionne la visibilité des contenus."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-051",
+    "section": "3. SEO et écriture web",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Pour bien rédiger pour le web, il faut toujours illustrer ses contenus par des visuels ou des vidéos.",
+    "reponse": true,
+    "explication": "Vrai, en pensant au « Wow effect ». Les contenus doivent être uniques, remarquables, partageables et non copiés-collés."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-052",
+    "section": "4. Produire les contenus",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez la définition du contenu digital.",
+    "texte": "Est considéré comme digital tout contenu {1} ou {2} destiné à être utilisé dans un environnement {3} {4}.",
+    "trous": [
+      "graphique",
+      "sonore",
+      "virtuel",
+      "interactif"
+    ],
+    "propositions": [
+      "graphique",
+      "sonore",
+      "virtuel",
+      "interactif",
+      "imprimé",
+      "statique"
+    ],
+    "explication": "Son mode de consommation est pluriel et démultiplié ; l'utilisateur peut le propager et interagir avec lui."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-053",
+    "section": "4. Produire les contenus",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Au premier contact client, à quoi correspond la question « Quand ? »",
+    "options": [
+      "la cible",
+      "l'ébauche d'idée",
+      "le support",
+      "les délais du besoin"
+    ],
+    "reponse": 3,
+    "explication": "Qui ? la cible ; Comment ? le support ; Pourquoi ? l'ébauche d'idée. Puis reformuler, proposer, ajuster et faire valider."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-054",
+    "section": "4. Produire les contenus",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Le briefing créatif se définit comme :",
+    "options": [
+      "un devis commercial",
+      "un audit technique et artistique visant à décortiquer la demande client",
+      "un planning de tournage",
+      "une charte graphique"
+    ],
+    "reponse": 1,
+    "explication": "L'orientation artistique, elle, est le chemin de fer créatif proposé par le spécialiste de la communication."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-055",
+    "section": "4. Produire les contenus",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Pour se démarquer, une marque doit toujours aller à contre-courant des codes actuels de communication.",
+    "reponse": false,
+    "explication": "Faux : on peut être « dans le courant » ou « à contre-courant » ; tout est question de parti pris, à partir d'une bonne compréhension des codes."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-056",
+    "section": "4. Produire les contenus",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 2 phases du processus de création.",
+    "elements": [
+      "Phase de croquis (dessins préparatoires)",
+      "Phase d'inspiration (mood board)"
+    ],
+    "ordre": [
+      1,
+      0
+    ],
+    "explication": "Le mood board crée une ligne directrice ; les croquis mettent les idées en image avant de développer les axes de création."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-057",
+    "section": "4. Produire les contenus",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels éléments visuels construit le design de marque ? (4 réponses)",
+    "options": [
+      "typographie",
+      "couleurs",
+      "formes",
+      "logo",
+      "prix",
+      "slogan juridique"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Certaines marques se passent même de leur nom, tant formes, couleurs et typographies suffisent à les reconnaître."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-058",
+    "section": "4. Produire les contenus",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La création d'un design de marque est généralement réalisée par les équipes internes de l'entreprise.",
+    "reponse": false,
+    "explication": "Faux : elle est généralement confiée à une agence, même si certains groupes disposent d'équipes internes."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-059",
+    "section": "5. Storytelling et brand content",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels leviers activent le storytelling et le brand content pour structurer l'identité de marque ? (3 réponses)",
+    "options": [
+      "les émotions",
+      "les valeurs",
+      "les codes culturels",
+      "les remises",
+      "les comparateurs"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Effet court terme sur l'image ; effet long terme : une lente conversion des audiences en consommateurs."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-060",
+    "section": "5. Storytelling et brand content",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Au service de quoi se mettent brand content et storytelling ?",
+    "colonne_a": [
+      "Brand content",
+      "Storytelling"
+    ],
+    "colonne_b": [
+      "L'histoire de la marque",
+      "Le capital de marque"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Trois stades de la communication de marque mènent du produit vers l'univers de marque."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-061",
+    "section": "5. Storytelling et brand content",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Comment le cours décrit-il l'évolution d'Internet ?",
+    "options": [
+      "d'un réseau social vers des sites vitrines",
+      "du mobile vers le desktop",
+      "de la vitrine aux interactions conversationnelles",
+      "de l'engagement vers la publicité de masse"
+    ],
+    "reponse": 2,
+    "explication": "Les cibles interagissent davantage lorsqu'elles sont touchées émotionnellement par les valeurs véhiculées."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-062",
+    "section": "5. Storytelling et brand content",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le brand content et le storytelling sont considérés comme les formes les plus matures de communication d'entreprise.",
+    "reponse": true,
+    "explication": "Vrai. Avant de les utiliser, la marque doit identifier ses objectifs, ses cibles et ses moyens."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-063",
+    "section": "6. Inbound et outbound",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "L'outbound marketing consiste à :",
+    "options": [
+      "aller chercher le client par des messages poussés, parfois intrusifs",
+      "attirer les clients par du contenu pertinent",
+      "produire des UGC",
+      "mesurer l'engagement"
+    ],
+    "reponse": 0,
+    "explication": "L'inbound attire en créant de la valeur ; le content marketing n'en est qu'une facette."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-064",
+    "section": "6. Inbound et outbound",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les 3 impératifs d'une stratégie inbound ? (3 réponses)",
+    "options": [
+      "être cohérente avec l'audience cible et ses attentes",
+      "rester à l'écoute des retours et évaluer les performances",
+      "maintenir une veille constante",
+      "multiplier les messages poussés",
+      "ignorer le parcours client"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Une stratégie inbound réussie prend en compte l'ensemble du parcours client."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-065",
+    "section": "7. Les leviers",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Comment appelle-t-on aussi le marketing viral ?",
+    "options": [
+      "le micro-moment marketing",
+      "le geofencing",
+      "le co-marketing",
+      "le buzz marketing"
+    ],
+    "reponse": 3,
+    "explication": "Bouche-à-oreille digital fondé sur la rapidité de circulation de l'information."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-066",
+    "section": "7. Les leviers",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Parmi les conditions de réussite du marketing viral, le cours cite une dose de chance.",
+    "reponse": true,
+    "explication": "Vrai, avec l'originalité, la maîtrise de la cible et des outils, un contenu soigné et le suivi après lancement. Le risque : le bad buzz."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-067",
+    "section": "7. Les leviers",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les 3 objectifs de stratégie digitale servis par les réseaux sociaux ? (3 réponses)",
+    "options": [
+      "la notoriété",
+      "l'accroissement du chiffre d'affaires",
+      "la fidélisation",
+      "la réduction des stocks",
+      "la conformité RGPD"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Google Analytics mesure le trafic issu des réseaux sociaux et suit les transactions."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-068",
+    "section": "7. Les leviers",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les missions du community manager ? (3 réponses)",
+    "options": [
+      "susciter des conversations et animer les échanges",
+      "créer des contenus web pour alimenter la relation",
+      "impliquer l'internaute dans la communication et l'élaboration des produits",
+      "fixer les prix de vente",
+      "négocier avec les fournisseurs"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Ambassadeur de la marque et expert des réseaux sociaux, il veille à l'e-réputation et favorise la génération de leads."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-069",
+    "section": "7. Les leviers",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque forme de géolocalisation à son principe.",
+    "colonne_a": [
+      "Active",
+      "Passive",
+      "Geofencing"
+    ],
+    "colonne_b": [
+      "La position est captée",
+      "Déclenchement d'une action à l'entrée dans une zone",
+      "L'utilisateur déclare sa position"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "explication": "Elle est aussi efficace qu'intrusive : il faut l'accord de l'utilisateur."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-070",
+    "section": "7. Les leviers",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Pourquoi le comportement de l'utilisateur face à la géolocalisation est-il qualifié de paradoxal ?",
+    "options": [
+      "il refuse tout réseau social",
+      "il aime indiquer où il se trouve sur un réseau social mais ne veut pas qu'une application le géolocalise",
+      "il accepte toujours d'être géolocalisé",
+      "il ne possède pas de smartphone"
+    ],
+    "reponse": 1,
+    "explication": "Le convaincre de l'utilité de la géolocalisation relève de l'art du marketeur."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-071",
+    "section": "7. Les leviers",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le micro-moment marketing est une révolution qui rompt avec le content marketing.",
+    "reponse": false,
+    "explication": "Faux : c'est l'évolution logique du content marketing. Les consommateurs attendent une réponse immédiate et des contenus rapidement compréhensibles."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-072",
+    "section": "7. Les leviers",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Proposer une simple carte de fidélité suffit à se différencier et à créer un sentiment d'attachement.",
+    "reponse": false,
+    "explication": "Faux : il faut poser objectifs, contexte et moyens du programme, et mesurer régulièrement les résultats."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-073",
+    "section": "7. Les leviers",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que mesure la pénétration des ventes dans un programme de fidélisation ?",
+    "options": [
+      "le nombre de cartes distribuées",
+      "le taux d'engagement",
+      "le pourcentage des ventes générées par les membres du programme",
+      "la part de marché"
+    ],
+    "reponse": 2,
+    "explication": "Les récompenses peuvent être différées (cumul de points) ou immédiates (réduction en caisse)."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-074",
+    "section": "7. Les leviers",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle citation illustre le co-branding ?",
+    "options": [
+      "« Le tout est plus que la somme de ses parties » (Aristote)",
+      "« Le client est roi »",
+      "« Be There, Be Useful, Be Quick »",
+      "« Votre marque est ce que Google en dit »"
+    ],
+    "reponse": 0,
+    "explication": "Il permet de gagner en notoriété sans investir massivement, dans une relation gagnant-gagnant."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-075",
+    "section": "8. Influence",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "À quoi répond l'influence sociale, en tant que mécanisme de captation d'audience ?",
+    "options": [
+      "à la baisse des prix",
+      "à l'essor du catalogue papier",
+      "à la loi AGEC",
+      "à la crise de confiance vis-à-vis des médias traditionnels"
+    ],
+    "reponse": 3,
+    "explication": "Elle doit répondre aux besoins de la marque, de la cible finale, et au lien que fait l'influenceur entre les deux."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-076",
+    "section": "8. Influence",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une entreprise doit savoir intégrer le marketing d'influence dans son plan d'action, ou décider de ne pas le faire.",
+    "reponse": true,
+    "explication": "Vrai : c'est un levier incontournable, mais qui doit répondre à des besoins identifiés."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-077",
+    "section": "8. Influence",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Classez les influenceurs de la plus petite à la plus grande communauté.",
+    "elements": [
+      "Macro-influenceurs",
+      "Nano-influenceurs",
+      "Méga-influenceurs",
+      "Micro-influenceurs"
+    ],
+    "ordre": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "explication": "Le taux d'engagement mesure mieux l'influence réelle que la taille brute de l'audience."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-078",
+    "section": "8. Influence",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel est le format type du marketing d'influence ?",
+    "options": [
+      "le spot TV",
+      "le placement de produit",
+      "le communiqué de presse",
+      "l'affichage"
+    ],
+    "reponse": 1,
+    "explication": "Mise en scène d'un produit dans un contenu créé par l'influenceur, qui porte la parole de la marque."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-079",
+    "section": "8. Influence",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Quel canevas sert à analyser la situation dans une stratégie d'influence ?",
+    "options": [
+      "SWOT",
+      "AIDA",
+      "but, situation, objectif, action, stratégie, résultat",
+      "5W"
+    ],
+    "reponse": 2,
+    "explication": "On fixe ensuite des objectifs SMART, avec une analyse PESTEL, des personas et un budget."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-080",
+    "section": "8. Influence",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les plateformes d'influence facilitent la mise en relation avec les influenceurs et offrent des outils de supervision de campagne.",
+    "reponse": true,
+    "explication": "Vrai. Il faut ensuite mesurer les retombées et le ROI pour améliorer les campagnes suivantes."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-081",
+    "section": "9. Communication d'activisme",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La communication activiste peut viser la défense d'intérêts économiques de l'entreprise.",
+    "reponse": false,
+    "explication": "Faux : elle vise à changer une situation pour favoriser l'intérêt général, pas à défendre des intérêts économiques ou individuels."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-082",
+    "section": "9. Communication d'activisme",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles erreurs éviter en communication d'activisme ? (3 réponses)",
+    "options": [
+      "prôner des valeurs pour augmenter les ventes d'un produit",
+      "agir de manière indépendante, sans concertation",
+      "sous-estimer la visibilité et les dangers de la récupération",
+      "définir un corpus de valeurs clair",
+      "prévoir plusieurs niveaux de mobilisation"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Greenwashing et purplewashing sont rapidement dénoncés."
+  },
+  {
+    "resume": "b1-f06",
+    "bloc": 1,
+    "id": "q-f06-083",
+    "section": "9. Communication d'activisme",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle distinction faut-il opérer en identifiant les acteurs d'une communication activiste ?",
+    "options": [
+      "lobbying versus plaidoyer",
+      "owned versus paid",
+      "inbound versus outbound",
+      "nano versus méga"
+    ],
+    "reponse": 0,
+    "explication": "Aussi : équipe de campagne interne, niveaux d'activisme, réseau extérieur. Soft power et patience en sont deux ressorts."
+  },
+  {
     "resume": "b1-f07",
     "bloc": 1,
     "id": "q-f07-001",
@@ -4251,11 +8561,11 @@ var QUIZ = [
     "question": "Sur quoi porte l'adhésion à obtenir de la direction lors d'une présentation de projet ?",
     "options": [
       "uniquement sur le budget prévisionnel",
-      "sur la problématique, les actions proposées, le budget et sa répartition",
       "sur les résultats attendus et les indicateurs de suivi",
+      "sur la problématique, les actions proposées, le budget et sa répartition",
       "sur le calendrier de mise en œuvre"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Il faut obtenir une adhésion totale. Le budget doit être pensé de manière réaliste et bien réparti, et la cohérence des préconisations mise en avant."
   },
   {
@@ -4267,12 +8577,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Dans la méthode SCRAP, que désigne la « Complication » ?",
     "options": [
-      "les difficultés de mise en œuvre du projet",
       "le problème ou la tension qui rend l'action nécessaire",
+      "les difficultés de mise en œuvre du projet",
       "les objections attendues de l'auditoire",
       "les contraintes budgétaires"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Situation, Complication, Résolution, Action, Preuve. La complication est le ressort narratif qui justifie tout le reste."
   },
   {
@@ -4319,11 +8629,11 @@ var QUIZ = [
     "question": "Un insight actionnable est :",
     "options": [
       "une donnée interne fiable et à jour",
-      "une observation traduite en opportunité business concrète et chiffrée",
       "un indicateur de performance aligné sur les objectifs",
+      "une observation traduite en opportunité business concrète et chiffrée",
       "une anomalie détectée par l'analyse comparative"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "C'est le passage obligé : une donnée n'est pas un argument. La réponse 2 définit un KPI."
   },
   {
@@ -4335,12 +8645,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "D'où doit découler la sélection des KPI d'une présentation ?",
     "options": [
-      "de la disponibilité des données dans les outils de l'entreprise",
       "des objectifs business",
+      "de la disponibilité des données dans les outils de l'entreprise",
       "des indicateurs suivis par les concurrents",
       "des attentes exprimées par la direction financière"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Un indicateur sans décision associée est un indicateur inutile."
   },
   {
@@ -4353,11 +8663,11 @@ var QUIZ = [
     "question": "L'effet d'ancrage désigne :",
     "options": [
       "la tendance à privilégier les informations qui confirment ses croyances",
-      "le fait que la première information influence la perception des suivantes",
+      "la mémorisation privilégiée du dernier argument entendu",
       "l'adhésion accrue à une proposition défendue par une figure d'autorité",
-      "la mémorisation privilégiée du dernier argument entendu"
+      "le fait que la première information influence la perception des suivantes"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "D'où l'importance du premier chiffre annoncé, du premier slide, de la première phrase. La réponse 0 décrit le biais de confirmation."
   },
   {
@@ -4387,11 +8697,11 @@ var QUIZ = [
     "question": "Dans la rhétorique aristotélicienne, l'éthos désigne :",
     "options": [
       "l'émotion suscitée chez l'auditoire",
-      "la crédibilité de l'orateur : légitimité, expertise, honnêteté perçue",
       "la rigueur du raisonnement et la solidité des preuves",
+      "la crédibilité de l'orateur : légitimité, expertise, honnêteté perçue",
       "l'adaptation du registre au profil décisionnel"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Pathos = émotion, logos = raisonnement. La culture organisationnelle française valorise particulièrement l'expertise technique et la légitimité intellectuelle."
   },
   {
@@ -4403,12 +8713,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Dans le modèle DISC, un profil bleu est :",
     "options": [
-      "direct, déterminé, orienté vers les résultats",
+      "précis, analytique, attaché aux règles et aux données",
       "expressif, social, enthousiaste",
       "calme, fiable, attaché à l'harmonie",
-      "précis, analytique, attaché aux règles et aux données"
+      "direct, déterminé, orienté vers les résultats"
     ],
-    "reponse": 3,
+    "reponse": 0,
     "explication": "Rouge = Dominance, Jaune = Influence, Vert = Stabilité, Bleu = Conformité."
   },
   {
@@ -4422,10 +8732,10 @@ var QUIZ = [
     "options": [
       "les objections rationnelles basées sur les données",
       "les résistances émotionnelles et psychologiques",
-      "les objections stratégiques et politiques internes",
-      "les objections portant sur le budget"
+      "les objections portant sur le budget",
+      "les objections stratégiques et politiques internes"
     ],
-    "reponse": 2,
+    "reponse": 3,
     "explication": "Elles sont les plus délicates parce qu'elles ne portent pas sur le projet lui-même."
   },
   {
@@ -4966,6 +9276,759 @@ var QUIZ = [
     "explication": "La préparation est une étape fondamentale, trop souvent négligée — et la flexibilité temporelle en fait partie."
   },
   {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-038",
+    "section": "1. Le rôle stratégique",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Qu'apportent la communication et le marketing à l'entreprise ? (3 réponses)",
+    "options": [
+      "ils influencent la perception de la marque",
+      "ils renforcent la confiance des parties prenantes",
+      "ils génèrent des avantages financiers",
+      "ils remplacent la direction générale",
+      "ils dispensent de toute stratégie"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Des campagnes réussies génèrent des revenus et renforcent la part de marché."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-039",
+    "section": "1. Le rôle stratégique",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Pour respecter la hiérarchie, la fonction communication-marketing doit attendre les sollicitations de la direction plutôt que communiquer de façon proactive.",
+    "reponse": false,
+    "explication": "Faux : elle doit innover, être flexible et communiquer de manière proactive avec les parties prenantes, tout en respectant les compétences de chacun."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-040",
+    "section": "1. Le rôle stratégique",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle maxime le cours associe-t-il à l'enjeu de la présentation à la direction ?",
+    "options": [
+      "« Le temps, c'est de l'argent »",
+      "« Le client est roi »",
+      "« Seul, on va plus vite. Ensemble, on va plus loin ! »",
+      "« Moins, c'est mieux »"
+    ],
+    "reponse": 2,
+    "explication": "La présentation est un moment décisif pour valider le projet ou régler les derniers détails."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-041",
+    "section": "1. Le rôle stratégique",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que faut-il mettre en avant lors de la présentation, à propos des préconisations ?",
+    "options": [
+      "leur cohérence",
+      "leur nombre",
+      "leur originalité seule",
+      "leur coût minimal"
+    ],
+    "reponse": 0,
+    "explication": "Le budget doit être pensé de manière réaliste et bien réparti."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-042",
+    "section": "2. L'architecture narrative",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Le storytelling marketing consiste à :",
+    "options": [
+      "inventer des faits",
+      "raconter l'histoire du fondateur",
+      "supprimer les chiffres",
+      "transformer des informations factuelles en récit captivant"
+    ],
+    "reponse": 3,
+    "explication": "La méthode SCRAP en structure la progression dramatique."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-043",
+    "section": "2. L'architecture narrative",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que désigne la modularité d'une présentation ?",
+    "options": [
+      "multiplier les intervenants",
+      "la préparer en couches, avec plusieurs versions, pour tenir en 5, 15 ou 45 minutes",
+      "changer de support à chaque slide",
+      "utiliser des modèles PowerPoint"
+    ],
+    "reponse": 1,
+    "explication": "Elle donne une flexibilité temporelle selon ce que le contexte impose."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-044",
+    "section": "2. L'architecture narrative",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'argumentaire progressif attend que les objections soient formulées pour y répondre.",
+    "reponse": false,
+    "explication": "Faux : il intègre proactivement les réponses aux objections prévisibles, en s'appuyant sur une cartographie des motivations."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-045",
+    "section": "3. Le pitch",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Qu'est-ce que l'elevator pitch ?",
+    "options": [
+      "un pitch de 45 minutes",
+      "une présentation écrite",
+      "présenter son projet dans le temps d'un trajet en ascenseur",
+      "un pitch réservé aux investisseurs"
+    ],
+    "reponse": 2,
+    "explication": "C'est l'exercice de condensation, avec ses bonnes pratiques et 7 erreurs classiques à éviter."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-046",
+    "section": "3. Le pitch",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Que faut-il soigner en répétant son pitch ? (3 réponses)",
+    "options": [
+      "l'élocution",
+      "le regard",
+      "la posture",
+      "la longueur maximale",
+      "le nombre de slides"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Répéter devant son miroir et devant un public : c'est ce temps investi qui donne assurance et force de conviction."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-047",
+    "section": "3. Le pitch",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Savoir pitcher relève d'un talent inné qui ne s'apprend pas.",
+    "reponse": false,
+    "explication": "Faux : savoir pitcher ne s'improvise pas, mais cela s'apprend, en retravaillant et surtout en répétant son pitch."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-048",
+    "section": "4. Les supports visuels",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le dossier de présentation doit pouvoir se suffire à lui-même, car il n'est pas toujours défendu à l'oral.",
+    "reponse": true,
+    "explication": "Vrai : il doit être suffisamment clair et dynamique. Un dossier soigné traduit un porteur de projet soigneux et investi."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-049",
+    "section": "4. Les supports visuels",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel est le premier objectif du dossier de présentation ?",
+    "options": [
+      "convaincre de valider le projet",
+      "décrire l'entreprise",
+      "lister les fournisseurs",
+      "remplacer l'oral"
+    ],
+    "reponse": 0,
+    "explication": "Il doit permettre de comprendre les tenants et aboutissants du projet. Deux volets : le structurer et le mettre en forme."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-050",
+    "section": "4. Les supports visuels",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les deux préalables pour valoriser des chiffres dans un tableau ? (2 réponses)",
+    "options": [
+      "la définition du message",
+      "l'exploration des données",
+      "le choix de la police",
+      "l'ajout d'animations"
+    ],
+    "reponse": [
+      0,
+      1
+    ],
+    "explication": "Vient ensuite la présentation des tableaux : hiérarchie visuelle, unités, mise en évidence de l'information clé."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-051",
+    "section": "4. Les supports visuels",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque fondement théorique des supports visuels à son apport.",
+    "colonne_a": [
+      "Théorie de la Gestalt",
+      "Sémiotique visuelle",
+      "Psychologie cognitive"
+    ],
+    "colonne_b": [
+      "Traitement rapide des informations visuelles, influencé par des biais",
+      "Organisation spontanée des éléments visuels pour créer du sens global",
+      "Analyse des codes visuels pour influencer l'interprétation"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "S'y ajoutent les modèles de communication (Shannon et Weaver ; Petty et Cacioppo) et le design thinking."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-052",
+    "section": "4. Les supports visuels",
+    "niveau": 3,
+    "format": "qcm_multiple",
+    "question": "Quels principes relèvent de la théorie de la Gestalt ? (4 réponses)",
+    "options": [
+      "proximité",
+      "similarité",
+      "continuité",
+      "clôture",
+      "rareté",
+      "réciprocité"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Rareté et réciprocité sont des leviers de Cialdini."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-053",
+    "section": "4. Les supports visuels",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle bonne pratique de composition graphique cite le cours ?",
+    "options": [
+      "varier les styles à chaque slide",
+      "utiliser la même palette quel que soit le secteur",
+      "tout mettre en texte",
+      "harmoniser et unifier le contenu, et mettre en avant l'information essentielle"
+    ],
+    "reponse": 3,
+    "explication": "Aussi : techniques de facilitation visuelle, codes couleurs et typographies adaptés au secteur."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-054",
+    "section": "4. Les supports visuels",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les outils de suivi du projet relèvent de la phase d'exécution et n'ont pas leur place dans la présentation.",
+    "reponse": false,
+    "explication": "Faux : la présentation doit inclure tableaux de bord, indicateurs et jalons ; c'est ce qui rend la promesse vérifiable."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-055",
+    "section": "5. Les données en arguments",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque type de données à ses exemples.",
+    "colonne_a": [
+      "Données internes",
+      "Données externes"
+    ],
+    "colonne_b": [
+      "Études, panels, benchmarks",
+      "CRM, ventes, web analytics, service client"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Il faut qualifier la valeur stratégique de chaque source."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-056",
+    "section": "5. Les données en arguments",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un indicateur sans décision associée est un indicateur inutile.",
+    "reponse": true,
+    "explication": "Vrai : la sélection des KPI découle des objectifs, pas de la disponibilité des données."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-057",
+    "section": "5. Les données en arguments",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "À quoi sert l'analyse descriptive et comparative ?",
+    "options": [
+      "à inventer des tendances",
+      "à comprendre tendances et anomalies et situer la performance par rapport à une référence",
+      "à remplacer les KPI",
+      "à collecter des données"
+    ],
+    "reponse": 1,
+    "explication": "Une donnée n'est pas un argument : il faut une argumentation data-driven où chaque chiffre sert une recommandation."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-058",
+    "section": "5. Les données en arguments",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez la définition de l'analyse de données marketing.",
+    "texte": "L'analyse de données marketing consiste à transformer des données {1} en {2} stratégiques. Un KPI est un indicateur de {3} aligné avec les objectifs {4}.",
+    "trous": [
+      "brutes",
+      "insights",
+      "performance",
+      "business"
+    ],
+    "propositions": [
+      "brutes",
+      "insights",
+      "performance",
+      "business",
+      "externes",
+      "notoriété"
+    ],
+    "explication": "L'insight actionnable est une observation traduite en opportunité business concrète et chiffrée."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-059",
+    "section": "6. Persuader",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans une présentation, quel rôle joue le Système 1 ?",
+    "options": [
+      "il valide le raisonnement",
+      "il calcule le budget",
+      "il décide de l'attention et de la première impression",
+      "il formule les objections"
+    ],
+    "reponse": 2,
+    "explication": "Le Système 2, analytique et lent, valide le raisonnement. Une présentation efficace parle aux deux."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-060",
+    "section": "6. Persuader",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Privilégier les informations qui confirment ses croyances préexistantes, c'est :",
+    "options": [
+      "le biais de confirmation",
+      "l'effet d'ancrage",
+      "la preuve sociale",
+      "la réciprocité"
+    ],
+    "reponse": 0,
+    "explication": "L'effet d'ancrage rend décisifs le premier chiffre, le premier slide, la première phrase."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-061",
+    "section": "6. Persuader",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque levier de Cialdini à son principe.",
+    "colonne_a": [
+      "Rareté",
+      "Sympathie",
+      "Autorité",
+      "Preuve sociale"
+    ],
+    "colonne_b": [
+      "Révéler les recommandations d'experts",
+      "Explorer les références et benchmarks",
+      "Souligner l'urgence ou l'exclusivité",
+      "La proximité et la similarité facilitent l'adhésion"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "La réciprocité est l'obligation psychologique de rendre la pareille."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-062",
+    "section": "6. Persuader",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Le questionnement séquentiel selon Cialdini vise une adhésion rapide, même de façade.",
+    "reponse": false,
+    "explication": "Faux : la progression respecte les mécanismes naturels de la persuasion et génère un engagement authentique plutôt qu'une adhésion de façade."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-063",
+    "section": "6. Persuader",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Le pathos désigne :",
+    "options": [
+      "la crédibilité de l'orateur",
+      "la structure du discours",
+      "la rigueur du raisonnement",
+      "l'émotion suscitée chez l'auditoire"
+    ],
+    "reponse": 3,
+    "explication": "Éthos : crédibilité ; logos : raisonnement et preuves. Les trois piliers sont indissociables."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-064",
+    "section": "6. Persuader",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Dans la culture organisationnelle française, l'éthos passe d'abord par la maîtrise du dossier.",
+    "reponse": true,
+    "explication": "Vrai : elle valorise particulièrement l'expertise technique et la légitimité intellectuelle."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-065",
+    "section": "7. Adapter son discours",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Pourquoi notre style de communication diffère-t-il de celui de notre interlocuteur ? (3 réponses)",
+    "options": [
+      "notre personnalité",
+      "notre expérience de vie",
+      "notre contexte culturel",
+      "notre taille",
+      "notre ancienneté obligatoirement"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Et nos enjeux. Il faut connaître son interlocuteur et adapter son style."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-066",
+    "section": "7. Adapter son discours",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels tests de personnalité sont couramment utilisés ? (3 réponses)",
+    "options": [
+      "le Process Communication Model (PCM)",
+      "le test DISC",
+      "le MBTI",
+      "le SONCASE",
+      "le CAP-B"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "SONCASE et CAP-B sont des méthodes de traitement des objections."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-067",
+    "section": "7. Adapter son discours",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Face à un profil vert (Stabilité) du modèle DISC, quelle attitude adopter ?",
+    "options": [
+      "aller à l'essentiel",
+      "le rassurer",
+      "documenter abondamment",
+      "soigner l'enthousiasme"
+    ],
+    "reponse": 1,
+    "explication": "Rouge : aller à l'essentiel ; jaune : soigner la relation ; bleu : documenter."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-068",
+    "section": "8. Écouter et questionner",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Comment se manifeste activement la compréhension dans l'écoute active ? (3 réponses)",
+    "options": [
+      "la reformulation",
+      "la relance",
+      "la validation",
+      "l'interruption",
+      "le jugement"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "L'intelligence émotionnelle permet aussi de décoder hésitations, changements de ton, langage corporel."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-069",
+    "section": "8. Écouter et questionner",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque type de question à sa fonction cognitive.",
+    "colonne_a": [
+      "Question ouverte",
+      "Question fermée",
+      "Question de projection",
+      "Question de reformulation"
+    ],
+    "colonne_b": [
+      "Vérifier la compréhension",
+      "Faire imaginer",
+      "Explorer",
+      "Valider"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "La question de relance sert à approfondir."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-070",
+    "section": "8. Écouter et questionner",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une affirmation bien construite fait davantage progresser l'échange qu'une question bien posée.",
+    "reponse": false,
+    "explication": "Faux : la question engage l'interlocuteur dans la construction de la réponse, d'où son efficacité."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-071",
+    "section": "9. Objections",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que sont les arguments factuels ?",
+    "options": [
+      "des arguments qui mettent en situation",
+      "des arguments réservés aux profils jaunes",
+      "des arguments concrets décrivant les caractéristiques, incontournables mais rarement suffisants seuls",
+      "des objections"
+    ],
+    "reponse": 2,
+    "explication": "Les arguments émotionnels différencient l'offre et démontrent sa pertinence supérieure. On les utilise conjointement."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-072",
+    "section": "9. Objections",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Selon HubSpot, l'objection commerciale est :",
+    "options": [
+      "une réaction formulée par un client potentiel pour s'opposer à la proposition, dans une situation de vente",
+      "un refus définitif",
+      "une question de clarification",
+      "un argument du vendeur"
+    ],
+    "reponse": 0,
+    "explication": "Les objections font vivre l'entretien ; bien préparées, elles deviennent un défi motivant."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-073",
+    "section": "9. Objections",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Pourquoi faut-il distinguer questionnement légitime et opposition systématique ?",
+    "options": [
+      "pour exclure l'interlocuteur",
+      "parce que l'un est interdit",
+      "parce qu'ils sont identiques",
+      "parce qu'ils n'appellent pas la même réponse"
+    ],
+    "reponse": 3,
+    "explication": "On lit aussi les marqueurs linguistiques de l'opposition et le langage corporel défensif."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-074",
+    "section": "9. Objections",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les étapes de la méthode CAP-B.",
+    "elements": [
+      "Preuve",
+      "Bénéfice",
+      "Caractéristique",
+      "Avantage"
+    ],
+    "ordre": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "explication": "CAP-B fournit la structure, SONCASE l'angle motivationnel adapté à l'interlocuteur."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-075",
+    "section": "9. Objections",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Face à une attaque personnelle, il faut dissocier la critique du projet de la critique de la personne.",
+    "reponse": true,
+    "explication": "Vrai, pour maintenir sa crédibilité. La régulation émotionnelle passe par la respiration, le ralentissement du débit, la reformulation."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-076",
+    "section": "9. Objections",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel est, selon le cours, le meilleur moyen de se prémunir contre les oublis et incompréhensions ?",
+    "options": [
+      "improviser",
+      "se mettre dans la peau de son interlocuteur lors de la préparation",
+      "multiplier les slides",
+      "éviter les questions"
+    ],
+    "reponse": 1,
+    "explication": "La préparation est une étape fondamentale, trop souvent négligée. À chaque interlocuteur son argumentation."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-077",
+    "section": "10. Après la présentation",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "S'il reste des éléments à revoir après la présentation, que faut-il faire ?",
+    "options": [
+      "lancer le projet quand même",
+      "abandonner le projet",
+      "optimiser le plan avant d'en rediscuter avec sa hiérarchie",
+      "attendre un an"
+    ],
+    "reponse": 2,
+    "explication": "En cas de validation, le projet peut être mis à exécution."
+  },
+  {
+    "resume": "b1-f07",
+    "bloc": 1,
+    "id": "q-f07-078",
+    "section": "10. Après la présentation",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le plan de communication sera plus efficace s'il obtient l'adhésion et le soutien de la direction.",
+    "reponse": true,
+    "explication": "Vrai : d'où l'importance de savoir écouter les retours et d'optimiser le plan à partir des feedbacks reçus."
+  },
+  {
     "resume": "b2-r01",
     "bloc": 2,
     "id": "b2-r01-qz-001",
@@ -4975,11 +10038,11 @@ var QUIZ = [
     "question": "Une entreprise veut identifier les axes d'amélioration internes de l'organisation de ses services pour accroître ses résultats. Quelle forme d'audit doit-elle mener ?",
     "options": [
       "un audit de marché, qui porte sur les aspects conjoncturels",
-      "un audit de gestion, qui porte sur les aspects structurels",
       "un audit financier, qui porte sur la rentabilité",
+      "un audit de gestion, qui porte sur les aspects structurels",
       "un audit de conformité, qui porte sur la réglementation"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "L'audit de gestion identifie les axes d'amélioration internes (organisation des services, structuration) : aspects structurels. L'audit de marché analyse l'influence de l'environnement sur l'entreprise : aspects conjoncturels."
   },
   {
@@ -5082,12 +10145,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Dans le prisme identitaire de Kapferer, « le reflet » désigne :",
     "options": [
-      "la manière dont le client s'identifie à la marque",
       "l'image de la marque dans l'esprit des clients",
+      "la manière dont le client s'identifie à la marque",
       "les valeurs et l'éthique de la marque",
       "les aspects physiques et le packaging"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Le reflet est l'image de la marque dans l'esprit des clients. Le piège : la mentalisation, c'est la manière dont le client s'identifie à la marque. La culture recouvre valeurs et éthique, le physique les aspects matériels."
   },
   {
@@ -5121,12 +10184,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Dans le mix marketing, quelles politiques définissent l'offre ?",
     "options": [
-      "produit et prix",
+      "prix et distribution",
       "distribution et communication",
       "produit et communication",
-      "prix et distribution"
+      "produit et prix"
     ],
-    "reponse": 0,
+    "reponse": 3,
     "explication": "Produit et prix définissent l'offre ; distribution et communication transfèrent cette offre vers le marché cible. Les 4 variables interagissent : la cohérence est le maître mot du mix."
   },
   {
@@ -5269,11 +10332,11 @@ var QUIZ = [
     "question": "Depuis mai 2022, toute annonce de réduction de prix doit indiquer :",
     "options": [
       "le prix conseillé par le fabricant",
-      "le prix le plus bas pratiqué au cours des 30 jours précédents",
       "le prix moyen constaté sur le marché",
+      "le prix le plus bas pratiqué au cours des 30 jours précédents",
       "le pourcentage maximal de réduction autorisé"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "La règle des 30 jours lutte contre les fausses promotions : impossible de gonfler artificiellement le prix de référence juste avant une réduction."
   },
   {
@@ -5285,12 +10348,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Un producteur vend à une centrale d'achat, qui livre des supermarchés, où achète le consommateur final. De quel canal s'agit-il ?",
     "options": [
-      "un canal direct",
-      "un canal court",
       "un canal long",
+      "un canal court",
+      "un canal direct",
       "un circuit intégré"
     ],
-    "reponse": 2,
+    "reponse": 0,
     "explication": "Deux intermédiaires ou plus (centrale d'achat + supermarché) = canal long. C'est le circuit de la grande distribution : gros volumes mais marge unitaire dégradée, et le producteur perd l'accès au client final."
   },
   {
@@ -5314,11 +10377,11 @@ var QUIZ = [
     "question": "Dans un contrat de franchise, que verse le franchisé au franchiseur ?",
     "options": [
       "uniquement un pourcentage du chiffre d'affaires",
-      "un droit d'entrée (RIF) puis des royalties calculées en % du CA",
+      "un loyer commercial fixe indexé sur la surface de vente",
       "une commission sur les produits vendus, le stock restant propriété du franchiseur",
-      "un loyer commercial fixe indexé sur la surface de vente"
+      "un droit d'entrée (RIF) puis des royalties calculées en % du CA"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "La franchise concède nom, marque et savoir-faire contre un droit d'entrée (RIF) + des royalties (% du CA), sur un contrat de 5 à 15 ans. Le piège : le stock en dépôt avec commission décrit la commission-affiliation, pas la franchise."
   },
   {
@@ -5437,11 +10500,11 @@ var QUIZ = [
     "question": "Dans la ventilation courante d'un budget marketing, à quoi sont consacrés les 30 % ?",
     "options": [
       "aux objectifs moyen/long terme : image de marque, notoriété",
-      "aux objectifs court terme : événementiel, promotions, actions éphémères",
       "au suivi des résultats et aux actions correctrices",
+      "aux objectifs court terme : événementiel, promotions, actions éphémères",
       "à la constitution d'une réserve pour imprévus"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Schéma 50/30/20 : 50 % pour le moyen/long terme (image, notoriété, différenciation), 30 % pour le court terme (événementiel, promotions), 20 % pour le suivi des résultats et les actions correctrices."
   },
   {
@@ -5453,13 +10516,1082 @@ var QUIZ = [
     "format": "qcm",
     "question": "Quelle est la relation entre SIC, SIM et système informatique ?",
     "options": [
-      "le SIC englobe le SIM, qui englobe le système informatique",
       "le SIM, de niveau stratégique, englobe le SIC ; le système informatique n'est qu'un sous-ensemble du SIC",
+      "le SIC englobe le SIM, qui englobe le système informatique",
       "SIC et SIM désignent le même système, vu sous deux angles",
       "le système informatique englobe le SIC et le SIM"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Le SIM (Système d'Information Mercatique) se situe au niveau stratégique et englobe le SIC (commercial). Le système informatique (ordinateurs, logiciels, réseaux) n'est qu'un sous-ensemble du SIC — toutes les entreprises ont un SIC, même sans informatique."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-027",
+    "section": "1. Vue d'ensemble",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 3 temps de la démarche marketing.",
+    "elements": [
+      "Le temps de l'action : plan d'action, exécution, contrôle",
+      "Le temps de l'analyse : diagnostic, audit",
+      "Le temps de la recommandation : stratégie, objectifs, choix du mix"
+    ],
+    "ordre": [
+      1,
+      2,
+      0
+    ],
+    "explication": "Le marketing opérationnel pose la stratégie sur le terrain ; le mix et le plan marketing en sont la colonne vertébrale."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-028",
+    "section": "2. L'audit marketing",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Comment le Mercator définit-il l'audit marketing ?",
+    "options": [
+      "un contrôle comptable des dépenses marketing",
+      "un plan d'action commercial",
+      "une étude de satisfaction client",
+      "un examen critique systématique de tout ou partie de la politique marketing, conduisant à un diagnostic interne"
+    ],
+    "reponse": 3,
+    "explication": "C'est un outil d'aide à la décision : il la soutient sans s'y substituer."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-029",
+    "section": "2. L'audit marketing",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque forme d'audit à son objet.",
+    "colonne_a": [
+      "Audit de marché",
+      "Audit de gestion"
+    ],
+    "colonne_b": [
+      "Aspects structurels : organisation des services",
+      "Aspects conjoncturels : influence de l'environnement"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "L'audit se réalise au début de la planification et en fin de mise en œuvre du plan."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-030",
+    "section": "2. L'audit marketing",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'audit marketing est de préférence réalisé par le service marketing lui-même, qui connaît le mieux ses actions.",
+    "reponse": false,
+    "explication": "Faux : c'est un examen indépendant, idéalement mené par des consultants externes qui apportent un œil neuf et neutre."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-031",
+    "section": "2. L'audit marketing",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque type de données à sa définition.",
+    "colonne_a": [
+      "Données primaires",
+      "Données secondaires"
+    ],
+    "colonne_b": [
+      "Elles existent déjà : documents internes, presse, enquêtes antérieures",
+      "Elles n'existent pas encore : questionnaires, entretiens, observations"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Astuce : primaire = première fois qu'on la produit ; secondaire = de seconde main."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-032",
+    "section": "2. L'audit marketing",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 4 étapes de réalisation de l'audit.",
+    "elements": [
+      "L'analyse de la pression concurrentielle",
+      "L'étude de l'offre et des valeurs véhiculées",
+      "La collecte d'informations",
+      "Le focus sur le comportement des consommateurs ciblés"
+    ],
+    "ordre": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "explication": "Outils : persona et parcours client, 5 forces de Porter, matrice BCG."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-033",
+    "section": "2. L'audit marketing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle 6e force peut s'ajouter aux 5 forces de Porter ?",
+    "options": [
+      "les médias",
+      "les pouvoirs publics",
+      "les salariés",
+      "les actionnaires"
+    ],
+    "reponse": 1,
+    "explication": "Objectif : identifier les menaces, anticiper et valoriser son avantage concurrentiel."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-034",
+    "section": "2. L'audit marketing",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque catégorie de la matrice BCG à sa définition.",
+    "colonne_a": [
+      "Vedettes",
+      "Dilemmes",
+      "Vaches à lait",
+      "Poids morts"
+    ],
+    "colonne_b": [
+      "Maturité et part de marché importante",
+      "Marché en déclin",
+      "Croissance rapide et part de marché importante",
+      "Croissance rapide mais part de marché limitée"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "La rentabilité des vaches à lait sert à transformer les dilemmes en vedettes ; on supprime les poids morts."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-035",
+    "section": "3. La stratégie de marque",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quels éléments composent le prisme identitaire de Kapferer ? (4 réponses)",
+    "options": [
+      "le physique",
+      "la personnalité",
+      "la culture",
+      "la mentalisation",
+      "le prix",
+      "la distribution"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Les 6 : physique, personnalité, culture, relation, reflet, mentalisation (Kapferer, 1992)."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-036",
+    "section": "3. La stratégie de marque",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Yamaha vend des motos et des pianos sous un même nom. Quelle stratégie de marque est-ce ?",
+    "options": [
+      "marque produit",
+      "marque gamme",
+      "marque ombrelle",
+      "marque caution"
+    ],
+    "reponse": 2,
+    "explication": "Ombrelle = une seule marque, des marchés hétérogènes ; caution = plusieurs marques d'un même univers sous une marque mère."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-037",
+    "section": "3. La stratégie de marque",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La stratégie de marque produit isole les crises mais coûte cher, car chaque marque demande sa propre communication.",
+    "reponse": true,
+    "explication": "Vrai (exemple : Accor avec Sofitel, Novotel, Ibis)."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-038",
+    "section": "3. La stratégie de marque",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que la plateforme de marque ?",
+    "options": [
+      "un document synthétique regroupant les fondements de l'identité : vision, mission, promesse, valeurs, style",
+      "un site e-commerce",
+      "un réseau social",
+      "un salon professionnel"
+    ],
+    "reponse": 0,
+    "explication": "Exemple : Évian, « Protégeons la vie à sa source »."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-039",
+    "section": "3. La stratégie de marque",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les étapes de mise en place d'une stratégie de marque.",
+    "elements": [
+      "Définition de l'identité de marque",
+      "Choix des axes de communication",
+      "Étude et analyse du marché (buyer personas)"
+    ],
+    "ordre": [
+      2,
+      0,
+      1
+    ],
+    "explication": "Le storytelling est la technique phare de la troisième étape."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-040",
+    "section": "4. Le mix marketing",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Combien de variables décrivait Neil H. Borden en 1949, avant la simplification en 4P ?",
+    "options": [
+      "4",
+      "7",
+      "20",
+      "12"
+    ],
+    "reponse": 3,
+    "explication": "E. Jerome McCarthy les a simplifiées en 4P ; Kotler les a démocratisées."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-041",
+    "section": "4. Le mix marketing",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les 4P se juxtaposent : chaque politique peut se décider indépendamment des autres.",
+    "reponse": false,
+    "explication": "Faux : elles interagissent et doivent viser le même objectif. Nespresso illustre une cohérence parfaite."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-042",
+    "section": "4. Le mix marketing — produit",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que la servuction ?",
+    "options": [
+      "un service après-vente",
+      "la production d'un service consommé en même temps qu'il est produit",
+      "la sous-traitance de la production",
+      "un service gratuit"
+    ],
+    "reponse": 1,
+    "explication": "Exemple : une nuit en chambre d'hôtes, où le client crée son expérience en la vivant."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-043",
+    "section": "4. Le mix marketing — produit",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque composante du packaging à sa définition.",
+    "colonne_a": [
+      "Conditionnement",
+      "Emballage",
+      "Étiquette"
+    ],
+    "colonne_b": [
+      "Couches de protection supplémentaires",
+      "Mentions obligatoires : dénomination, composition, DLC, prix",
+      "En contact direct avec le produit"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "explication": "Le packaging est le premier média du produit : fonction de communication et fonction technique."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-044",
+    "section": "4. Le mix marketing — produit",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque caractéristique de la gamme à sa définition.",
+    "colonne_a": [
+      "Largeur",
+      "Profondeur",
+      "Longueur",
+      "Hauteur"
+    ],
+    "colonne_b": [
+      "Niveau de prix, du premier prix au haut de gamme",
+      "Nombre total de produits",
+      "Nombre de lignes de produits",
+      "Nombre de modèles dans une ligne"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Longueur = profondeur × largeur."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-045",
+    "section": "4. Le mix marketing — produit",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel produit de la gamme est appelé à remplacer le leader ?",
+    "options": [
+      "le produit d'appel",
+      "le produit tactique",
+      "le produit d'avenir",
+      "le produit régulateur"
+    ],
+    "reponse": 2,
+    "explication": "Le contributeur porte l'image et dégage de fortes marges ; le régulateur absorbe les frais fixes."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-046",
+    "section": "4. Le mix marketing — produit",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les phases du cycle de vie du produit.",
+    "elements": [
+      "Maturité",
+      "Déclin",
+      "Lancement",
+      "Croissance"
+    ],
+    "ordre": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "explication": "En maturité, il faut continuer la promotion et investir les profits dans l'innovation."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-047",
+    "section": "4. Le mix marketing — produit",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Le cycle de vie du produit et l'Analyse du Cycle de Vie (ACV) désignent le même outil.",
+    "reponse": false,
+    "explication": "Faux : l'ACV est un outil environnemental qui mesure les impacts du produit de sa naissance à sa fin de vie, en 5 phases."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-048",
+    "section": "4. Le mix marketing — prix",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi connaître précisément son coût de revient est-il vital en France ?",
+    "options": [
+      "parce que la vente à perte est interdite, sauf pendant les soldes",
+      "parce que la TVA en dépend",
+      "parce que l'INSEE l'exige",
+      "pour fixer les salaires"
+    ],
+    "reponse": 0,
+    "explication": "La fixation par les coûts (coût de revient + marge) est la méthode la plus simple."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-049",
+    "section": "4. Le mix marketing — prix",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque coût à sa catégorie.",
+    "colonne_a": [
+      "Loyer",
+      "Frais d'expédition",
+      "Matière première d'un produit précis",
+      "Électricité de l'entreprise"
+    ],
+    "colonne_b": [
+      "Coût indirect",
+      "Coût fixe",
+      "Coût direct",
+      "Coût variable"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Les coûts indirects nécessitent une clé de répartition."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-050",
+    "section": "4. Le mix marketing — prix",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un produit acheté 50 € HT est revendu 75 € HT. Quel est le taux de marge ?",
+    "options": [
+      "33,3 %",
+      "150 %",
+      "25 %",
+      "50 %"
+    ],
+    "reponse": 3,
+    "explication": "Taux de marge = marge (25 €) / coût d'achat (50 €) × 100 = 50 %. Le taux de marque serait 25 / 75 = 33,3 %."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-051",
+    "section": "4. Le mix marketing — prix",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les biens de première nécessité (alimentation de base, médicaments) ont une demande très élastique au prix.",
+    "reponse": false,
+    "explication": "Faux : leur demande est inélastique, elle reste stable même si le prix monte. Élasticité-prix = variation de la demande / variation du prix."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-052",
+    "section": "4. Le mix marketing — prix",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle est la limite du prix psychologique ?",
+    "options": [
+      "il est toujours trop élevé",
+      "il ne garantit ni la rentabilité ni la cohérence concurrentielle",
+      "il est interdit par la loi",
+      "il ne fonctionne qu'en BtoB"
+    ],
+    "reponse": 1,
+    "explication": "Il repose sur la valeur perçue. Dans le luxe, un prix trop bas détruit l'exclusivité."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-053",
+    "section": "4. Le mix marketing — prix",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque stratégie de lancement à son exemple.",
+    "colonne_a": [
+      "Écrémage",
+      "Pénétration",
+      "Freemium"
+    ],
+    "colonne_b": [
+      "Spotify : gratuit pour recruter, puis offre payante",
+      "Apple et chaque nouvel iPhone",
+      "Free et son forfait mobile à 2 €"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "La pénétration est risquée : elle exige de grosses économies d'échelle."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-054",
+    "section": "4. Le mix marketing — prix",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque réduction à sa définition.",
+    "colonne_a": [
+      "Remise",
+      "Rabais",
+      "Ristourne",
+      "Escompte"
+    ],
+    "colonne_b": [
+      "Pour paiement comptant ou rapide",
+      "Sur le volume d'achat d'une période, souvent en fin d'année",
+      "Exceptionnelle : problème de qualité, retard",
+      "Commerciale : grosse commande, critères spécifiques"
+    ],
+    "paires": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Vocabulaire comptable à ne pas confondre."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-055",
+    "section": "4. Le mix marketing — prix",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Vendre un livre en broché, en poche puis en ebook à des prix différents relève de :",
+    "options": [
+      "la discrimination géographique",
+      "la ristourne",
+      "le versioning",
+      "la pénétration"
+    ],
+    "reponse": 2,
+    "explication": "Changer la version ou la qualité pour un prix différent à utilité égale."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-056",
+    "section": "4. Le mix marketing — prix",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Les discriminations tarifaires (âge, CSP, volume, temps) sont légales si elles sont mentionnées dans les CGV.",
+    "reponse": true,
+    "explication": "Vrai. La discrimination géographique expose toutefois au risque de « marché gris »."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-057",
+    "section": "4. Le mix marketing — distribution",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque notion à sa définition.",
+    "colonne_a": [
+      "Réseau de distribution",
+      "Circuit de distribution",
+      "Canal de distribution"
+    ],
+    "colonne_b": [
+      "Un chemin donné, caractérisé par son nombre d'intermédiaires",
+      "La chaîne d'intermédiaires qui achemine les produits",
+      "Le chemin parcouru par le produit, pouvant combiner plusieurs canaux"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Canal direct : 0 intermédiaire ; court : 1 ; long : 2 ou plus."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-058",
+    "section": "4. Le mix marketing — distribution",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qui distingue la commission-affiliation de la franchise ?",
+    "options": [
+      "l'affilié vend un stock qui ne lui appartient pas (dépôt, invendus repris), le franchisé est propriétaire de son stock",
+      "rien",
+      "l'affilié paie des royalties plus élevées",
+      "la franchise interdit la vente en ligne"
+    ],
+    "reponse": 0,
+    "explication": "La commission-affiliation est répandue dans le prêt-à-porter (Jennyfer)."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-059",
+    "section": "4. Le mix marketing — distribution",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Bic vend en GMS, papeteries, chez les buralistes et sur le web. Quelle stratégie de distribution est-ce ?",
+    "options": [
+      "exclusive",
+      "sélective",
+      "franchise",
+      "intensive"
+    ],
+    "reponse": 3,
+    "explication": "Maximum de points de vente pour des produits courants à forte rotation, au prix d'une perte de maîtrise."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-060",
+    "section": "4. Le mix marketing — distribution",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Classez les niveaux d'intégration des canaux, du moins au plus intégré.",
+    "elements": [
+      "Omnicanal",
+      "Multicanal",
+      "Cross-canal"
+    ],
+    "ordre": [
+      1,
+      2,
+      0
+    ],
+    "explication": "Multicanal = canaux indépendants ; cross-canal = complémentaires ; omnicanal = expérience sans coutures (Starbucks)."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-061",
+    "section": "4. Le mix marketing — communication",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que l'inbound marketing ?",
+    "options": [
+      "la publicité intrusive de masse",
+      "faire venir le prospect en lui offrant un contenu utile à forte valeur ajoutée",
+      "le démarchage téléphonique",
+      "la promotion des ventes"
+    ],
+    "reponse": 1,
+    "explication": "C'est la forme aboutie de la stratégie Pull, en réaction à la perte d'efficacité de l'outbound (exemple : livre blanc)."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-062",
+    "section": "4. Le mix marketing — communication",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les résultats du marketing direct sont lents et difficiles à mesurer.",
+    "reponse": false,
+    "explication": "Faux : son résultat est rapide et mesurable, grâce aux coupons-réponses et codes promo."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-063",
+    "section": "4. Le mix marketing — communication",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Keolis Bordeaux affiche dans ses tramways une campagne RH sur l'égalité professionnelle. Quel type de communication est-ce ?",
+    "options": [
+      "commerciale",
+      "promotion des ventes",
+      "institutionnelle (corporate)",
+      "marketing direct"
+    ],
+    "reponse": 2,
+    "explication": "On ne vend aucun produit : on valorise les engagements de l'entreprise."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-064",
+    "section": "5. Le plan marketing",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Comment le Mercator définit-il le plan marketing ?",
+    "options": [
+      "la feuille de route de la stratégie marketing",
+      "le budget de l'année",
+      "le rapport d'activité",
+      "la charte graphique"
+    ],
+    "reponse": 0,
+    "explication": "Document écrit : objectifs, actions, calendrier, responsables, échéances, moyens."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-065",
+    "section": "5. Le plan marketing",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les 4 parties du contenu d'un plan marketing ? (4 réponses)",
+    "options": [
+      "le résumé managérial",
+      "les objectifs marketing hiérarchisés",
+      "le plan d'action commerciale",
+      "le contrôle et l'évaluation",
+      "l'organigramme",
+      "les CV des responsables"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Le PAC synthétise les actions avec calendrier et récapitulatif budgétaire."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-066",
+    "section": "5. Le plan marketing",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les 4 facteurs de vigilance de l'exécution du plan ? (4 réponses)",
+    "options": [
+      "les moyens",
+      "les délais",
+      "la répartition des tâches",
+      "la motivation des équipes",
+      "le logo",
+      "la météo"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Le contrôle passe par des tableaux de bord simples, avec des indicateurs pertinents, mesurables et faciles à rafraîchir."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-067",
+    "section": "5. Le plan marketing",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le plan marketing est généralement annuel et rédigé au dernier trimestre, au moment des budgets.",
+    "reponse": true,
+    "explication": "Vrai. Il peut être révisé partiellement ou intégralement (réaction d'un concurrent, innovation, nouvelle loi)."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-068",
+    "section": "6. L'animation du plan",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque type d'objectif marketing à son exemple.",
+    "colonne_a": [
+      "Objectif d'activité",
+      "Objectif clients",
+      "Objectif de communication"
+    ],
+    "colonne_b": [
+      "Notoriété, image",
+      "Taux de fidélisation",
+      "Parts de marché, CA"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Ils se déclinent en cascade et doivent être SMART."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-069",
+    "section": "6. L'animation du plan",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel outil positionne les actions opérationnelles période par période ?",
+    "options": [
+      "le SWOT",
+      "le prisme de Kapferer",
+      "la matrice BCG",
+      "le diagramme de Gantt"
+    ],
+    "reponse": 3,
+    "explication": "En phase tactique, on travaille objectif par objectif."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-070",
+    "section": "6. L'animation du plan",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Chaque nouveau plan marketing repart de zéro, sans tenir compte du plan précédent.",
+    "reponse": false,
+    "explication": "Faux : on analyse objectivement réussites et échecs du plan précédent pour reconduire, corriger ou abandonner."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-071",
+    "section": "7. Le budget marketing",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quel principe fondamental gouverne le budget marketing ?",
+    "options": [
+      "le budget précède les objectifs",
+      "sans objectifs marketing parfaitement définis, il ne peut y avoir de budget fiable",
+      "le budget est fixé par le comptable seul",
+      "le budget ne change jamais"
+    ],
+    "reponse": 1,
+    "explication": "Le budget découle des objectifs, sauf dans la méthode de l'enveloppe, moins précise."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-072",
+    "section": "7. Le budget marketing",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque phase du cycle de vie au niveau d'investissement marketing.",
+    "colonne_a": [
+      "Lancement",
+      "Croissance",
+      "Maturité",
+      "Déclin"
+    ],
+    "colonne_b": [
+      "Aucun",
+      "Faibles",
+      "Très importants",
+      "Importants"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Le budget s'accorde aussi avec la position concurrentielle et l'évolution du marché."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-073",
+    "section": "7. Le budget marketing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle part du CA représente en moyenne l'enveloppe marketing des PME ?",
+    "options": [
+      "0,5 à 1 %",
+      "10 à 15 %",
+      "2 à 5 %",
+      "25 à 30 %"
+    ],
+    "reponse": 2,
+    "explication": "Jusqu'à 20 % pour certaines marques BtoC."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-074",
+    "section": "7. Le budget marketing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Objectif : 1 200 000 € de CA, panier moyen 600 €, taux de transformation 25 %, coût par contact 30 €. Quel budget ?",
+    "options": [
+      "240 000 €",
+      "60 000 €",
+      "120 000 €",
+      "30 000 €"
+    ],
+    "reponse": 0,
+    "explication": "2 000 ventes → 8 000 prospects (2 000 / 0,25) → 8 000 × 30 € = 240 000 €."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-075",
+    "section": "8. SIC et SIM",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque moment au rôle du SIM dans la décision.",
+    "colonne_a": [
+      "Avant",
+      "Pendant",
+      "Après"
+    ],
+    "colonne_b": [
+      "Mesurer les résultats, évaluer la performance",
+      "Identifier cibles, besoins, concurrence",
+      "Mesurer l'impact des actions en cours, adapter"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Le SIM, stratégique, englobe le SIC."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-076",
+    "section": "8. SIC et SIM",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Selon le cours, une information erronée est pire qu'un manque d'information.",
+    "reponse": true,
+    "explication": "Vrai. Critères de qualité : récentes, pertinentes, contrôlées et recoupées, fiables, claires et précises. Attention aussi à la surcharge."
+  },
+  {
+    "resume": "b2-r01",
+    "bloc": 2,
+    "id": "b2-r01-qz-077",
+    "section": "8. SIC et SIM",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle double casquette le commercial a-t-il vis-à-vis du SIM ?",
+    "options": [
+      "acheteur et vendeur",
+      "formateur et évaluateur",
+      "juge et partie",
+      "collecteur (rapports d'activité, reporting) et utilisateur (fichiers, tarifs, stocks)"
+    ],
+    "reponse": 3,
+    "explication": "Il est l'interface entre le client et l'entreprise."
   },
   {
     "resume": "b2-r02",
@@ -5471,11 +11603,11 @@ var QUIZ = [
     "question": "Quelle étape du fonctionnement de Google consiste, pour les bots, à parcourir le web de page en page via les liens hypertextes ?",
     "options": [
       "l'indexation",
-      "le crawling",
       "le ranking",
+      "le crawling",
       "le flattening"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Les 3 étapes : crawling (collecte via les liens — un lien cassé empêche le positionnement), indexation (lecture et classement par thématiques), ranking (classement par les algorithmes selon ~200 critères)."
   },
   {
@@ -5580,10 +11712,10 @@ var QUIZ = [
     "options": [
       "le FID, qui doit être inférieur à 100 ms",
       "le CLS, qui doit être inférieur à 0,1",
-      "le LCP, qui doit être inférieur à 2,5 s",
-      "le TTL, qui doit être inférieur à 1 s"
+      "le TTL, qui doit être inférieur à 1 s",
+      "le LCP, qui doit être inférieur à 2,5 s"
     ],
-    "reponse": 2,
+    "reponse": 3,
     "explication": "LCP (Largest Contentful Paint) < 2,5 s. Le FID mesure le délai avant la première interaction possible (< 100 ms), le CLS la stabilité visuelle pendant le chargement (< 0,1). Introduits par Page Experience (2021)."
   },
   {
@@ -5744,11 +11876,11 @@ var QUIZ = [
     "question": "Qu'est-ce qu'une adresse « opt-in » dans une base e-mailing ?",
     "options": [
       "une adresse vérifiée comme active récemment",
-      "une adresse dont le titulaire a donné son consentement explicite",
       "une adresse professionnelle (par opposition aux adresses personnelles)",
+      "une adresse dont le titulaire a donné son consentement explicite",
       "une adresse collectée lors d'un jeu-concours"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Opt-in = consentement explicite du destinataire — pas de cases pré-cochées. À vérifier notamment en cas de location de base. Le double opt-in (confirmation par e-mail) renforce encore la conformité."
   },
   {
@@ -5771,12 +11903,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Un acheteur BtoB utilise LinkedIn pour chercher des fournisseurs et recueillir des avis avant de prendre contact. Comment appelle-t-on cette pratique ?",
     "options": [
-      "le social selling",
-      "le social listening",
       "le social buying",
+      "le social listening",
+      "le social selling",
       "le lead nurturing"
     ],
-    "reponse": 2,
+    "reponse": 0,
     "explication": "Social buying : côté acheteur, c'est lui qui initie le contact. Le social selling est côté vendeur (trouver des prospects et vendre), le social listening est la veille du secteur sur les réseaux."
   },
   {
@@ -5887,11 +12019,11 @@ var QUIZ = [
     "question": "Attribuer à chaque prospect un score de propension à acheter ou à résilier relève de :",
     "options": [
       "l'IA générative",
-      "l'IA prédictive",
       "le prompt engineering",
+      "l'IA prédictive",
       "la co-création"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "L'IA prédictive anticipe les comportements : segmentation prédictive, scoring de propension, personnalisation automatisée, chatbots. L'IA générative crée des contenus (textes, visuels — Jasper, Midjourney), pilotée par le prompt engineering."
   },
   {
@@ -5911,6 +12043,812 @@ var QUIZ = [
     "explication": "C'est le format des Q3 et Q5 : proposer une action, c'est toujours justifier son choix par rapport à la cible et au budget, puis dire comment on la mesure."
   },
   {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-023",
+    "section": "1. Vue d'ensemble",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque levier à sa famille dans le parcours prospect.",
+    "colonne_a": [
+      "SEO, SEA, display",
+      "E-mailing, social selling",
+      "Data-driven, automation, IA"
+    ],
+    "colonne_b": [
+      "Piloter et automatiser",
+      "Attirer du trafic",
+      "Convertir et fidéliser"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Chaque levier a son couple coût/vitesse : SEO lent et durable, SEA immédiat et payant."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-024",
+    "section": "2. Le SEO",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 3 étapes du fonctionnement de Google.",
+    "elements": [
+      "Ranking",
+      "Crawling",
+      "Indexation"
+    ],
+    "ordre": [
+      1,
+      2,
+      0
+    ],
+    "explication": "Le ranking classe les pages selon environ 200 critères : une « boîte noire »."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-025",
+    "section": "2. Le SEO",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "À quoi sert le fichier robots.txt ?",
+    "options": [
+      "à lister les URL que les robots ne doivent pas explorer",
+      "à accélérer le chargement",
+      "à créer des backlinks",
+      "à mesurer l'audience"
+    ],
+    "reponse": 0,
+    "explication": "Protocole d'exclusion des robots, placé à la racine du site."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-026",
+    "section": "2. Le SEO",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que prévoit la règle du « flattening » ?",
+    "options": [
+      "une arborescence unique",
+      "un site sans images",
+      "un seul mot-clé par site",
+      "une page accessible en moins de 3 clics"
+    ],
+    "reponse": 3,
+    "explication": "Aides à la navigation : menu HTML, fil d'Ariane. Structures : onepage, en silos, répartie."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-027",
+    "section": "2. Le SEO",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les pages 404 absorbent du link juice et sont mal vues de Google.",
+    "reponse": true,
+    "explication": "Vrai. Le maillage interne transmet la notoriété entre pages ; le cross linking relie des thématiques complémentaires."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-028",
+    "section": "2. Le SEO",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Deux pages d'un même site peuvent viser le même mot-clé principal pour renforcer son poids.",
+    "reponse": false,
+    "explication": "Faux : une page = un mot-clé principal (RP) ; deux pages ne doivent jamais viser le même."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-029",
+    "section": "2. Le SEO",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Selon quels critères sélectionne-t-on un mot-clé ? (3 réponses)",
+    "options": [
+      "la pertinence",
+      "le potentiel (volume de recherche)",
+      "la concurrence",
+      "la longueur du mot",
+      "la couleur du site"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Outils : Google Keyword Planner, Ubbersuggest, SemRush, Semji."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-030",
+    "section": "2. Le SEO",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Depuis quel algorithme le keyword stuffing (bourrage de mots-clés) est-il inefficace ?",
+    "options": [
+      "Panda",
+      "Colibri (2013)",
+      "BERT",
+      "Pigeon"
+    ],
+    "reponse": 1,
+    "explication": "Colibri introduit la recherche sémantique : la pertinence prime."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-031",
+    "section": "2. Le SEO",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque Core Web Vital à son seuil.",
+    "colonne_a": [
+      "LCP",
+      "FID",
+      "CLS"
+    ],
+    "colonne_b": [
+      "< 0,1",
+      "< 2,5 s",
+      "< 100 ms"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "LCP = affichage du plus grand élément ; FID = délai avant interaction ; CLS = stabilité visuelle."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-032",
+    "section": "2. Le SEO",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "L'UI (interface utilisateur) englobe l'UX (expérience utilisateur).",
+    "reponse": false,
+    "explication": "Faux : l'UX englobe l'UI (menus, CTA). SXO = SEO + UX."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-033",
+    "section": "2. Le SEO",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Depuis la mise à jour de compatibilité mobile (2015), comment Google évalue-t-il les pages ?",
+    "options": [
+      "à partir de leur version desktop",
+      "au hasard",
+      "à partir de leur version mobile, même pour un résultat desktop",
+      "uniquement sur leur vitesse"
+    ],
+    "reponse": 2,
+    "explication": "D'où l'importance du responsive design."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-034",
+    "section": "3. Le SEA",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La majorité des internautes (plus de 60 %) clique sur les annonces payantes plutôt que sur les résultats naturels.",
+    "reponse": false,
+    "explication": "Faux : seuls 10 à 20 % cliquent sur les annonces payantes. Le SEA ne remplace jamais le SEO, ils sont complémentaires."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-035",
+    "section": "3. Le SEA",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qui a inventé le SEA et le paiement au clic ?",
+    "options": [
+      "Bill Gross (GoTo.com, années 1990)",
+      "Google",
+      "Microsoft",
+      "Amazon"
+    ],
+    "reponse": 0,
+    "explication": "Google a lancé Adwords en 2002."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-036",
+    "section": "3. Le SEA",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Au CPC, que coûte une annonce affichée sur laquelle personne ne clique ?",
+    "options": [
+      "le prix d'un clic",
+      "le prix de 1 000 affichages",
+      "un forfait mensuel",
+      "rien : la visibilité est gratuite"
+    ],
+    "reponse": 3,
+    "explication": "Le positionnement dépend des enchères et de critères de qualité (annonce, landing page)."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-037",
+    "section": "3. Le SEA",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les avantages du SEA ? (3 réponses)",
+    "options": [
+      "un trafic immédiat",
+      "une grande flexibilité (activation instantanée)",
+      "des conversions mesurables",
+      "un coût toujours nul",
+      "la préférence des internautes pour les annonces"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Limites : le coût et la préférence des internautes pour les résultats organiques."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-038",
+    "section": "3. Le SEA",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle est l'étape clé d'une campagne SEA ?",
+    "options": [
+      "la rédaction de l'annonce",
+      "le ciblage de l'audience",
+      "le choix du logo",
+      "le suivi"
+    ],
+    "reponse": 1,
+    "explication": "Géolocalisation, langue, support, période, centres d'intérêt, croisés entre eux."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-039",
+    "section": "3. Le SEA",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "En SEA, on peut exclure des mots-clés pour mieux qualifier le trafic.",
+    "reponse": true,
+    "explication": "Vrai : expressions exactes + mots-clés connexes + exclusions."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-040",
+    "section": "4. Display et retargeting",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "À quoi sert d'abord la publicité display ?",
+    "options": [
+      "à la conversion directe",
+      "au référencement naturel",
+      "à la notoriété",
+      "à la fidélisation"
+    ],
+    "reponse": 2,
+    "explication": "Bannières, pop-ups, vidéos sur des sites tiers : ce n'est pas une technique de conversion forte."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-041",
+    "section": "4. Display et retargeting",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque acteur du display à son rôle.",
+    "colonne_a": [
+      "Annonceur",
+      "Éditeur"
+    ],
+    "colonne_b": [
+      "Propriétaire de site qui vend de l'espace",
+      "Marque qui veut de la visibilité"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Inconvénients : perte de contrôle des sites de diffusion, trafic non qualifié, lassitude."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-042",
+    "section": "4. Display et retargeting",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Comment Google appelle-t-il le retargeting ?",
+    "options": [
+      "le remarketing",
+      "le reach",
+      "le re-crawling",
+      "le retracking"
+    ],
+    "reponse": 0,
+    "explication": "Même chose : recibler un internaute selon les pages consultées, via des cookies (avec consentement)."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-043",
+    "section": "4. Display et retargeting",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les intérêts du retargeting ? (3 réponses)",
+    "options": [
+      "réduire les paniers abandonnés",
+      "qualifier les prospects (lead nurturing)",
+      "inciter au réachat",
+      "éviter le RGPD",
+      "remplacer le SEO"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Le taux d'abandon de panier dépasse 75 % en France."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-044",
+    "section": "5. L'e-mailing",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque source de constitution de base e-mailing à son principe.",
+    "colonne_a": [
+      "Location de base",
+      "Affiliation",
+      "Co-registration"
+    ],
+    "colonne_b": [
+      "Collecte via des sites partenaires par affinité",
+      "Louer une base en vérifiant fraîcheur et opt-in",
+      "Diffusion d'un kit mailing HTML par des affiliés"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Les jeux-concours, avec des lots liés à l'activité, qualifient aussi les contacts."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-045",
+    "section": "5. L'e-mailing",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque type d'e-mail à son exemple.",
+    "colonne_a": [
+      "Informatif",
+      "Transactionnel",
+      "Promotionnel"
+    ],
+    "colonne_b": [
+      "Réduction",
+      "Newsletter",
+      "Confirmation de commande"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "L'e-mailing génère du trafic et surtout fidélise."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-046",
+    "section": "5. L'e-mailing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Où placer l'information principale d'un e-mail ?",
+    "options": [
+      "en bas de page",
+      "dans le lien de désinscription",
+      "en pièce jointe",
+      "dans les 50 premiers pixels"
+    ],
+    "reponse": 3,
+    "explication": "Les 50 premiers caractères comptent aussi (prévisualisation mobile). Approche mobile first."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-047",
+    "section": "5. L'e-mailing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que mesure le taux NPAI ?",
+    "options": [
+      "la qualité du message",
+      "la qualité de la base (délivrés / envoyés)",
+      "les plaintes",
+      "les clics"
+    ],
+    "reponse": 1,
+    "explication": "N'habite Pas à l'Adresse Indiquée."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-048",
+    "section": "5. L'e-mailing",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Pour la délivrabilité, il vaut mieux envoyer depuis une adresse générique comme info@ ou postmaster@.",
+    "reponse": false,
+    "explication": "Faux : adresse identifiable sur son nom de domaine, base nettoyée, IP dédiée, vocabulaire non « spammy »."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-049",
+    "section": "5. L'e-mailing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quand envoyer un e-mail pour maximiser l'ouverture selon le cours ?",
+    "options": [
+      "le lundi à 8 h",
+      "le dimanche soir",
+      "le mardi ou le jeudi entre 14 h et 17 h",
+      "le vendredi à minuit"
+    ],
+    "reponse": 2,
+    "explication": "L'ouverture dépend aussi de l'expéditeur, de l'objet et du pre-header."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-050",
+    "section": "6. Le social selling",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque notion à sa définition.",
+    "colonne_a": [
+      "Social selling",
+      "Social listening",
+      "Social buying"
+    ],
+    "colonne_b": [
+      "L'acheteur cherche fournisseurs et avis sur les réseaux",
+      "Veille du secteur pour repérer les leads",
+      "Utiliser les réseaux pour trouver des prospects et vendre"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Le social selling remplace la démarche intrusive par un accompagnement personnalisé."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-051",
+    "section": "6. Le social selling",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel réseau sert la prospection BtoB, avec l'outil Sales Navigator ?",
+    "options": [
+      "LinkedIn",
+      "Facebook",
+      "Instagram",
+      "TikTok"
+    ],
+    "reponse": 0,
+    "explication": "50 % des acheteurs l'utilisent pour décider. Recommandations, profil orienté clients, groupes."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-052",
+    "section": "6. Le social selling",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Sur Facebook, le social selling repose sur l'envoi de demandes d'amis professionnelles depuis son profil personnel.",
+    "reponse": false,
+    "explication": "Faux : Facebook est un réseau personnel ; on passe par une page, en BtoC, avec la technique de la question pour lancer la conversation."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-053",
+    "section": "6. Le social selling",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qu'un lead ?",
+    "options": [
+      "un client fidèle",
+      "une publicité",
+      "un influenceur",
+      "un contact commercial qualifié"
+    ],
+    "reponse": 3,
+    "explication": "Obtenu en salon, par un devis, un livre blanc téléchargé…"
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-054",
+    "section": "7. Le data-driven marketing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qui distingue le data-driven marketing du reporting ?",
+    "options": [
+      "rien",
+      "le reporting constate le passé ; le data-driven prédit et influence l'avenir",
+      "le data-driven ne mesure rien",
+      "le reporting est automatisé"
+    ],
+    "reponse": 1,
+    "explication": "Trois piliers : collecte, analyse, décision éclairée."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-055",
+    "section": "7. Le data-driven marketing",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'hyper-segmentation peut générer des taux de conversion jusqu'à 10 fois supérieurs au marketing de masse.",
+    "reponse": true,
+    "explication": "Vrai. La segmentation dynamique évolue en temps réel."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-056",
+    "section": "7. Le data-driven marketing",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez la méthode COQA pour structurer la stack data.",
+    "texte": "{1}, {2}, {3}, {4}.",
+    "trous": [
+      "Collecte",
+      "Organisation",
+      "Qualification",
+      "Activation"
+    ],
+    "explication": "Infrastructure : une CDP (profils unifiés 360°) + marketing automation."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-057",
+    "section": "7. Le data-driven marketing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que fait une CDP (Customer Data Platform) ?",
+    "options": [
+      "elle envoie des SMS",
+      "elle héberge le site",
+      "elle centralise les données pour des profils clients unifiés 360°",
+      "elle remplace le CRM comptable"
+    ],
+    "reponse": 2,
+    "explication": "Elle sert la personnalisation de masse."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-058",
+    "section": "7. Le data-driven marketing",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Le cours présente le RGPD comme un frein au data-driven marketing.",
+    "reponse": false,
+    "explication": "Faux : il améliore la qualité des données et la confiance (consentement granulaire, privacy by design)."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-059",
+    "section": "7. Le data-driven marketing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Fnac-Darty découvre que 40 % de ses clients consultent en ligne avant d'acheter en magasin. Résultat ?",
+    "options": [
+      "+25 % de conversion en magasin",
+      "fermeture des magasins",
+      "baisse du CA",
+      "arrêt du site"
+    ],
+    "reponse": 0,
+    "explication": "Exemple de décision fondée sur la donnée."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-060",
+    "section": "8. Le marketing automation",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que le scoring comportemental ?",
+    "options": [
+      "une note de satisfaction",
+      "une enquête",
+      "un classement des concurrents",
+      "une valeur numérique attribuée à chaque prospect pour prioriser"
+    ],
+    "reponse": 3,
+    "explication": "Il s'articule avec le lead nurturing et la segmentation dynamique."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-061",
+    "section": "8. Le marketing automation",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre le scénario type d'automation du cours.",
+    "elements": [
+      "SMS de rappel si l'e-mail n'est pas ouvert sous 48 h",
+      "Un visiteur consulte 3 fois une page produit sans acheter",
+      "E-mail de relance avec code promo"
+    ],
+    "ordre": [
+      1,
+      2,
+      0
+    ],
+    "explication": "Orchestration multicanale avec règles de transition. Sézane : +34 % de conversion."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-062",
+    "section": "8. Le marketing automation",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels outils de marketing automation le cours cite-t-il ? (4 réponses)",
+    "options": [
+      "ActiveCampaign",
+      "Mailchimp",
+      "Brevo",
+      "Klaviyo",
+      "Photoshop",
+      "Excel"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Le CRM en est la colonne vertébrale."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-063",
+    "section": "9. L'IA au service du marketing",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que le prompt engineering ?",
+    "options": [
+      "programmer un site",
+      "structurer ses instructions (contexte, rôle, format, ton, contraintes) pour obtenir des contenus adaptés",
+      "acheter des mots-clés",
+      "gérer une base e-mail"
+    ],
+    "reponse": 1,
+    "explication": "L'IA propose, l'humain affine et garde la cohérence de marque."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-064",
+    "section": "9. L'IA au service du marketing",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque outil d'IA générative à son usage.",
+    "colonne_a": [
+      "Jasper, Copy.ai",
+      "Midjourney"
+    ],
+    "colonne_b": [
+      "Visuels",
+      "Texte marketing"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Décathlon génère des descriptions par segment (−70 % de temps de création)."
+  },
+  {
+    "resume": "b2-r02",
+    "bloc": 2,
+    "id": "b2-r02-qz-065",
+    "section": "9. L'IA au service du marketing",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le déploiement de l'IA marketing suppose de surveiller les biais algorithmiques et de former les équipes.",
+    "reponse": true,
+    "explication": "Vrai : vers un marketing IA responsable, sous RGPD."
+  },
+  {
     "resume": "b2-r03",
     "bloc": 2,
     "id": "b2-r03-qz-001",
@@ -5920,11 +12858,11 @@ var QUIZ = [
     "question": "Metro Cash & Carry achète en grande quantité aux fabricants et revend aux professionnels de la restauration. Quelle fonction de la distribution exerce-t-il ?",
     "options": [
       "la fonction de détail",
-      "la fonction de gros",
       "la fonction d'agent commercial",
+      "la fonction de gros",
       "la fonction de centrale d'achat"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "La fonction de gros distribue les produits aux détaillants et professionnels (achat en grande quantité, revente aux professionnels). La fonction de détail vend directement aux consommateurs finaux."
   },
   {
@@ -6001,12 +12939,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Quel est le principal avantage du canal direct (AMAP, vente à la ferme, e-commerce en propre) pour le producteur ?",
     "options": [
-      "des volumes de vente importants et réguliers",
-      "une large couverture géographique",
       "une marge maîtrisée et un contrôle total de la commercialisation",
+      "une large couverture géographique",
+      "des volumes de vente importants et réguliers",
       "la prise en charge de la logistique par un partenaire"
     ],
-    "reponse": 2,
+    "reponse": 0,
     "explication": "Canal direct = 0 intermédiaire : marge plus élevée, réactivité, contrôle total (communication, rythme) — mais tout est à la charge du producteur. Les gros volumes et la large zone sont l'avantage du canal long."
   },
   {
@@ -6059,11 +12997,11 @@ var QUIZ = [
     "question": "Qu'est-ce qui distingue l'agent commercial du revendeur ?",
     "options": [
       "l'agent commercial vend uniquement en ligne",
-      "l'agent commercial prospecte et promeut les produits sans acheter la marchandise",
+      "l'agent commercial est salarié du fabricant",
       "l'agent commercial achète en gros et revend aux détaillants",
-      "l'agent commercial est salarié du fabricant"
+      "l'agent commercial prospecte et promeut les produits sans acheter la marchandise"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "L'agent commercial prospecte et promeut les produits d'un fabricant auprès des points de vente sans jamais devenir propriétaire de la marchandise. Le revendeur, lui, achète pour revendre avec sa propre sélection."
   },
   {
@@ -6128,11 +13066,11 @@ var QUIZ = [
     "question": "Un fabricant supprime ses intermédiaires pour vendre directement au consommateur via son site. Quel est le principal défi de cette désintermédiation ?",
     "options": [
       "la perte de ses marges",
-      "devoir gérer seul la relation client : service client, support, retours",
       "la perte des données clients",
+      "devoir gérer seul la relation client : service client, support, retours",
       "l'obligation de passer par une marketplace"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "La désintermédiation permet de conserver les marges, de maîtriser la relation client et d'obtenir les données en direct — mais il faut tout gérer seul, ce qui exige des compétences et ressources supplémentaires."
   },
   {
@@ -6160,12 +13098,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Un producteur de fromages rachète un réseau de crémeries pour vendre directement ses produits. De quoi s'agit-il ?",
     "options": [
-      "une intégration verticale en amont",
       "une intégration verticale en aval",
+      "une intégration verticale en amont",
       "une diversification horizontale",
       "une désintermédiation numérique"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "L'intégration verticale en aval consiste à acquérir des activités de distribution/vente ; en amont, ce serait la production ou l'approvisionnement. Avantages : contrôle de la chaîne, marges consolidées ; inconvénients : investissements, rigidité."
   },
   {
@@ -6189,11 +13127,11 @@ var QUIZ = [
     "question": "Un consommateur fait toutes ses courses chez Leclerc, quelles que soient les marques qu'il achète, grâce à sa carte de fidélité. De quelle fidélité s'agit-il ?",
     "options": [
       "une fidélité à la marque",
-      "une fidélité à l'enseigne",
+      "une fidélité au canal",
       "une fidélité au produit",
-      "une fidélité au canal"
+      "une fidélité à l'enseigne"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "La fidélité à l'enseigne (fréquenter le même point de vente/distributeur) est l'actif des distributeurs, renforcé par les MDD et les programmes de fidélité. La fidélité à la marque (racheter une marque spécifique) est l'actif des producteurs."
   },
   {
@@ -6213,6 +13151,670 @@ var QUIZ = [
     "explication": "C'est le raisonnement attendu au Dossier 2 : justifier le modèle de distribution (3.2), construire la grille de critères (3.3), et sécuriser par le contrat."
   },
   {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-017",
+    "section": "1. Définition, fonctions et flux",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quel est l'objectif de la gestion des flux de distribution ?",
+    "options": [
+      "vendre le plus cher possible",
+      "le bon produit, au bon endroit, au bon moment, dans la bonne quantité",
+      "supprimer les intermédiaires",
+      "réduire la publicité"
+    ],
+    "reponse": 1,
+    "explication": "Trois flux à maîtriser : physiques, d'informations, financiers."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-018",
+    "section": "1. Définition, fonctions et flux",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel outil clé fait circuler les flux d'informations entre distributeur et producteur ?",
+    "options": [
+      "le CRM",
+      "le SEO",
+      "l'EDI (échange de données informatisé)",
+      "la PLV"
+    ],
+    "reponse": 2,
+    "explication": "Commandes, délais, facturation ; les tickets de caisse alimentent aussi la veille commerciale."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-019",
+    "section": "1. Définition, fonctions et flux",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les flux physiques fonctionnent souvent en « juste-à-temps » pour limiter les stocks, au risque de ruptures en magasin.",
+    "reponse": true,
+    "explication": "Vrai : transport, stockage, livraison."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-020",
+    "section": "1. Définition, fonctions et flux",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que le « concept » de magasin ?",
+    "options": [
+      "l'ensemble des éléments matériels et immatériels propres à une enseigne : design, ambiance, services, technologie",
+      "le logo de l'enseigne",
+      "le prix moyen",
+      "la surface de vente"
+    ],
+    "reponse": 0,
+    "explication": "Le point de vente est conçu comme un produit doté d'attributs (IKEA, Paul)."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-021",
+    "section": "1. Définition, fonctions et flux",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'approche transactionnelle, centrée sur la vente unique à court terme, est aujourd'hui l'approche dominante en distribution.",
+    "reponse": false,
+    "explication": "Faux : elle est de moins en moins utilisée. Le stade actuel est l'approche expérientielle, portée par l'omnicanal."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-022",
+    "section": "2. Circuits et canaux",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque canal à son nombre d'intermédiaires.",
+    "colonne_a": [
+      "Direct",
+      "Court",
+      "Long"
+    ],
+    "colonne_b": [
+      "2 ou plus",
+      "1",
+      "0"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Le circuit long représente plus de 90 % des modes de distribution."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-023",
+    "section": "2. Circuits et canaux",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel est l'inconvénient principal du canal long pour le producteur ?",
+    "options": [
+      "des volumes faibles",
+      "une zone géographique réduite",
+      "l'absence de grossistes",
+      "un faible contrôle du marché, un client éloigné et des marges intermédiaires qui augmentent le prix public"
+    ],
+    "reponse": 3,
+    "explication": "Avantages : large zone géographique, gros volumes réguliers, concentration sur son métier."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-024",
+    "section": "2. Circuits et canaux",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle part des ventes la vente digitale représente-t-elle tous commerces confondus ?",
+    "options": [
+      "environ 2 %",
+      "environ 10 %",
+      "environ 40 %",
+      "environ 75 %"
+    ],
+    "reponse": 1,
+    "explication": "En progression constante."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-025",
+    "section": "2. Circuits et canaux",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que nécessite une stratégie cross canal ?",
+    "options": [
+      "des canaux totalement indépendants",
+      "un seul canal",
+      "l'intégration des données clients entre canaux",
+      "l'abandon du magasin physique"
+    ],
+    "reponse": 2,
+    "explication": "Canaux complémentaires utilisés successivement dans un même parcours."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-026",
+    "section": "2. Circuits et canaux",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels défis l'omnicanal pose-t-il au distributeur ? (3 réponses)",
+    "options": [
+      "la complexité opérationnelle et les coûts",
+      "la fragmentation des données",
+      "les conflits entre canaux",
+      "la disparition des clients",
+      "l'interdiction légale"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Côté client : incohérences de prix, retours complexes, risques sur les données personnelles."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-027",
+    "section": "2. Circuits et canaux",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "L'application « Makeup Genius » de L'Oréal, qui relie essai virtuel, achat en ligne et essai en magasin, illustre une démarche cross / omnicanale.",
+    "reponse": true,
+    "explication": "Vrai : un pont entre canaux digitaux et physiques."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-028",
+    "section": "2. Circuits et canaux",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pour quels produits la distribution sélective est-elle adaptée ?",
+    "options": [
+      "les produits spécialisés ou haut de gamme nécessitant conseil et expertise",
+      "la grande consommation à forte rotation",
+      "les produits sans marque",
+      "les produits en fin de vie"
+    ],
+    "reponse": 0,
+    "explication": "Exemple : parfums de luxe en parfumeries agréées."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-029",
+    "section": "3. Les entreprises de distribution",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque intermédiaire à son rôle.",
+    "colonne_a": [
+      "Grossiste",
+      "Agent commercial",
+      "Détaillant"
+    ],
+    "colonne_b": [
+      "Vend directement aux consommateurs finaux",
+      "Achète en gros et revend aux détaillants",
+      "Prospecte pour un fabricant sans acheter la marchandise"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Le revendeur achète pour revendre aux consommateurs avec une sélection spécifique."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-030",
+    "section": "3. Les entreprises de distribution",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque structure à sa définition.",
+    "colonne_a": [
+      "Distribution intégrée",
+      "Distribution externalisée"
+    ],
+    "colonne_b": [
+      "L'entreprise confie la commercialisation à des partenaires indépendants",
+      "L'entreprise gère elle-même ses canaux"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Apple pratique l'intégrée ; Coca-Cola s'appuie sur des embouteilleurs locaux (externalisée)."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-031",
+    "section": "3. Les entreprises de distribution",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une insatisfaction récurrente liée à la distribution peut entacher durablement la réputation et les ventes d'une marque.",
+    "reponse": true,
+    "explication": "Vrai, à l'heure des réseaux sociaux : la qualité de service et la logistique sont des critères de sélection du distributeur."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-032",
+    "section": "3. Les entreprises de distribution",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qui verrouille la relation avec un distributeur partenaire ?",
+    "options": [
+      "une poignée de main",
+      "une publicité commune",
+      "un échange de mails",
+      "un contrat clair et complet définissant droits, responsabilités, obligations et conditions financières"
+    ],
+    "reponse": 3,
+    "explication": "Contrats de distribution : exclusif, sélectif, franchise."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-033",
+    "section": "4. La grande distribution",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que le succursalisme ?",
+    "options": [
+      "un réseau de franchisés",
+      "un réseau de magasins détenus en propre par un groupe",
+      "la vente en ligne",
+      "un groupement d'indépendants"
+    ],
+    "reponse": 1,
+    "explication": "Les grands groupes opèrent sur plusieurs formats : hyper, super, proximité, drive."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-034",
+    "section": "4. La grande distribution",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels facteurs alimentent la guerre des prix dans la grande distribution ? (3 réponses)",
+    "options": [
+      "la montée des enseignes discount",
+      "les MDD qui montent en gamme",
+      "la compression des marges répercutée sur les fournisseurs",
+      "la disparition des hypermarchés",
+      "l'interdiction des promotions"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Les fournisseurs sont pressurés lors des négociations annuelles."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-035",
+    "section": "5. Le marketing de distribution",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'inclut le marketing de distribution ?",
+    "options": [
+      "uniquement la logistique",
+      "la fixation du prix du fabricant",
+      "la gestion des canaux en créant une expérience client mémorable, et le positionnement de l'enseigne",
+      "la publicité TV"
+    ],
+    "reponse": 2,
+    "explication": "Positionnement : prix, choix, service, proximité."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-036",
+    "section": "5. Le marketing de distribution",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque technique à sa définition.",
+    "colonne_a": [
+      "Upselling",
+      "Cross-selling"
+    ],
+    "colonne_b": [
+      "Proposer des produits complémentaires",
+      "Faire monter le client en gamme"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Ce sont des leviers d'augmentation des marges."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-037",
+    "section": "5. Le marketing de distribution",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les robots de préparation d'Amazon illustrent l'augmentation des marges par l'upselling.",
+    "reponse": false,
+    "explication": "Faux : ils illustrent la rationalisation des opérations (−50 % de temps par commande), premier levier de rentabilité avec l'optimisation des coûts et l'augmentation des marges."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-038",
+    "section": "5. Le marketing de distribution",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles opportunités la désintermédiation offre-t-elle ? (3 réponses)",
+    "options": [
+      "des marges conservées",
+      "la maîtrise de la relation client",
+      "des données clients en direct",
+      "l'absence de service client à gérer",
+      "des coûts logistiques nuls"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Défi : gérer seul service client, support et retours."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-039",
+    "section": "6. Les rapports de force",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque acteur à son « arme » dans le rapport de force.",
+    "colonne_a": [
+      "Producteurs",
+      "Distributeurs"
+    ],
+    "colonne_b": [
+      "Le référencement et les MDD",
+      "Les marques, actifs intangibles qui fondent la fidélité"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Les MDD concurrencent directement les marques nationales dans leurs propres rayons."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-040",
+    "section": "6. Les rapports de force",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Peu de centrales d'achat face à de nombreux producteurs : quel effet ?",
+    "options": [
+      "un rapport de force déséquilibré en faveur des centrales",
+      "un rapport de force équilibré",
+      "l'avantage aux producteurs",
+      "aucun effet"
+    ],
+    "reponse": 0,
+    "explication": "Plus un marché est concentré côté acheteurs, plus il pèse sur les fournisseurs."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-041",
+    "section": "6. Les rapports de force",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'intégration verticale n'a que des avantages pour le producteur.",
+    "reponse": false,
+    "explication": "Faux : contrôle de la chaîne et marges consolidées, mais investissements lourds et rigidité."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-042",
+    "section": "6. Les rapports de force",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Quelle stratégie aide un producteur à peser plus lourd face au distributeur ?",
+    "options": [
+      "baisser systématiquement ses prix",
+      "la différenciation : rendre son offre moins substituable",
+      "renoncer à sa marque",
+      "accepter toutes les conditions"
+    ],
+    "reponse": 1,
+    "explication": "Autres stratégies : collaboration, diversification des débouchés."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-043",
+    "section": "7. Comportements d'achat",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque motivation à la destination de l'achat.",
+    "colonne_a": [
+      "Hédoniste",
+      "Oblative",
+      "D'auto-expression"
+    ],
+    "colonne_b": [
+      "Exprimer qui l'on est",
+      "Se faire plaisir",
+      "Faire plaisir à son entourage"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Trio à connaître."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-044",
+    "section": "7. Comportements d'achat",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un produit est soit banal, soit impliquant : il ne peut pas être les deux.",
+    "reponse": false,
+    "explication": "Faux : un produit peut être banal ET impliquant, comme l'alimentaire."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-045",
+    "section": "7. Comportements d'achat",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle part des enfants a conscience d'influencer les achats de leurs parents ?",
+    "options": [
+      "15 %",
+      "65 %",
+      "35 %",
+      "95 %"
+    ],
+    "reponse": 1,
+    "explication": "C'est la prescription enfantine, un déterminant social."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-046",
+    "section": "7. Comportements d'achat",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 5 phases du processus d'achat.",
+    "elements": [
+      "Évaluation des alternatives",
+      "Sentiment post-achat",
+      "Reconnaissance du besoin",
+      "Prise de décision",
+      "Recherche d'informations"
+    ],
+    "ordre": [
+      2,
+      4,
+      0,
+      3,
+      1
+    ],
+    "explication": "La recherche d'informations dure plus longtemps pour un produit complexe ou cher."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-047",
+    "section": "7. Comportements d'achat",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque comportement à son parcours.",
+    "colonne_a": [
+      "ROPO",
+      "Showrooming",
+      "Full Store",
+      "Full Digital"
+    ],
+    "colonne_b": [
+      "100 % en ligne",
+      "100 % en magasin",
+      "Recherche en ligne, achat en magasin",
+      "Essai en magasin, achat en ligne"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Le showrooming est un défi pour les détaillants physiques qui paient l'expérience sans capter la vente."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-048",
+    "section": "7. Comportements d'achat",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un consommateur garde toujours le même comportement d'achat, quel que soit le produit.",
+    "reponse": false,
+    "explication": "Faux : il varie selon le produit, le besoin, le contexte. D'où la centralisation des données et la coordination des canaux."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-049",
+    "section": "7. Comportements d'achat",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Le « Contrat de Confiance » de Darty répond surtout à quelle motivation de fréquentation du magasin physique ?",
+    "options": [
+      "le prix le plus bas",
+      "le lèche-vitrine",
+      "la réassurance et le conseil",
+      "le gain de temps"
+    ],
+    "reponse": 2,
+    "explication": "SAV performant, conseils d'expert, livraison-installation, satisfait ou remboursé."
+  },
+  {
+    "resume": "b2-r03",
+    "bloc": 2,
+    "id": "b2-r03-qz-050",
+    "section": "7. Comportements d'achat",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles motivations poussent vers le canal en ligne ? (3 réponses)",
+    "options": [
+      "le gain de temps",
+      "la comparaison des prix et les avis",
+      "l'accès 24 h/24",
+      "toucher le produit",
+      "le contact social"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Le magasin offre au contraire de voir, toucher, essayer, le conseil et la disponibilité immédiate."
+  },
+  {
     "resume": "b2-r04",
     "bloc": 2,
     "id": "b2-r04-qz-001",
@@ -6222,11 +13824,11 @@ var QUIZ = [
     "question": "Quel acteur est chargé de la commercialisation des espaces publicitaires d'un support ou d'un groupe média ?",
     "options": [
       "l'agence média",
-      "la régie publicitaire",
       "la centrale d'achat d'espaces",
+      "la régie publicitaire",
       "l'annonceur"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "La régie publicitaire vend les espaces d'un support (TF1/Bouygues, Radio France...). La centrale d'achat, elle, achète en gros pour revendre aux annonceurs, et l'agence média conseille l'annonceur en tant que mandataire."
   },
   {
@@ -6238,12 +13840,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Quel organisme crée et contrôle les règles d'éthique pour une publicité « loyale, véridique, saine et respectueuse » ?",
     "options": [
-      "l'ARCOM, autorité publique de régulation",
       "l'ARPP, organisme de régulation professionnelle de la publicité",
+      "l'ARCOM, autorité publique de régulation",
       "la CNIL",
       "la DGCCRF"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "L'ARPP est l'organisme de régulation professionnelle de la publicité, tous supports confondus. L'ARCOM est l'autorité publique de régulation de l'audiovisuel (liberté d'expression, protection des droits, régulation économique)."
   },
   {
@@ -6278,11 +13880,11 @@ var QUIZ = [
     "question": "Dans les achats d'espaces publicitaires, l'agence média joue le rôle de :",
     "options": [
       "régie, en vendant les espaces du support",
-      "mandataire, en tant qu'intermédiaire pour le compte de l'annonceur",
+      "arbitre, en contrôlant les prix du marché",
       "éditeur, en diffusant les annonces sur ses propres supports",
-      "arbitre, en contrôlant les prix du marché"
+      "mandataire, en tant qu'intermédiaire pour le compte de l'annonceur"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "L'agence média conseille, rédige le plan média et agit comme mandataire (intermédiaire) dans les achats d'espaces. C'est l'une des agences spécialisées, avec les agences RP, graphisme, photo/audiovisuelle et web."
   },
   {
@@ -6294,12 +13896,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Sur quels critères choisit-on un freelance ?",
     "options": [
-      "ses compétences, ses tarifs et ses qualités relationnelles",
       "uniquement son statut juridique",
+      "ses compétences, ses tarifs et ses qualités relationnelles",
       "sa taille et son ancienneté",
       "sa certification par une agence 360°"
     ],
-    "reponse": 0,
+    "reponse": 1,
     "explication": "Le freelance est un indépendant qui fixe librement prestations, conditions et tarifs. On le trouve sur des plateformes spécialisées (Malt, Coworkees, Freelancer). Rappel de fond : l'annonceur met son image de marque entre les mains de son prestataire."
   },
   {
@@ -6345,11 +13947,11 @@ var QUIZ = [
     "question": "Qu'est-ce que la « marge arrière » dans la relation producteur-distributeur ?",
     "options": [
       "la différence entre prix d'achat au producteur et prix de revente au consommateur",
-      "des remises hors facture versées par le producteur au distributeur au titre de la coopération commerciale",
       "la marge réalisée sur les produits en fin de vie",
+      "des remises hors facture versées par le producteur au distributeur au titre de la coopération commerciale",
       "la commission versée par le distributeur au producteur"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "La marge arrière (rétrocommission) rémunère la « coopération commerciale » (prospectus, têtes de gondole), souvent en fin d'année. La marge avant est la différence entre prix d'achat et prix de revente, sur facture."
   },
   {
@@ -6361,12 +13963,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Qu'est-ce que l'ECR (Efficient Consumer Response) ?",
     "options": [
-      "un outil de mesure de la satisfaction client en magasin",
       "une coopération producteur-distributeur pour optimiser la chaîne (flux logistiques, réduction des ruptures)",
+      "un outil de mesure de la satisfaction client en magasin",
       "un indicateur de rentabilité des linéaires",
       "une clause contractuelle de réactivité"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "L'ECR incarne la convergence d'intérêts autour de la satisfaction client : coopérer pour optimiser la chaîne, en s'appuyant sur l'EDI (échange de données informatisé)."
   },
   {
@@ -6379,11 +13981,11 @@ var QUIZ = [
     "question": "Le trade marketing désigne :",
     "options": [
       "les techniques de vente des commerciaux en grande distribution",
-      "les actions qui optimisent la relation et les négociations producteur-distributeur vers un partenariat gagnant-gagnant",
+      "l'achat d'espaces publicitaires en point de vente",
       "le marketing des marques de distributeurs",
-      "l'achat d'espaces publicitaires en point de vente"
+      "les actions qui optimisent la relation et les négociations producteur-distributeur vers un partenariat gagnant-gagnant"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "Le trade marketing transforme une relation dichotomique (conflictuelle et coopérative) en partenariat gagnant-gagnant, notamment par l'échange d'informations réciproques."
   },
   {
@@ -6539,11 +14141,11 @@ var QUIZ = [
     "question": "Qu'est-ce qu'une charte éthique fournisseur ?",
     "options": [
       "un document interne de sensibilisation des salariés",
-      "un outil à la fois contractuel et pédagogique qui formalise les attentes RSE de l'annonceur",
       "un label décerné par un organisme certificateur",
+      "un outil à la fois contractuel et pédagogique qui formalise les attentes RSE de l'annonceur",
       "une déclaration facultative sans portée juridique"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "La charte éthique fournisseur crée des obligations juridiques précises ET fonde la relation sur des valeurs partagées. Elle complète la grille RSE pondérée et les labels — dont il faut connaître les limites (focalisation documentaire, audits ponctuels)."
   },
   {
@@ -6555,12 +14157,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Qu'est-ce qui distingue une « entreprise à impact » d'une entreprise traditionnelle ?",
     "options": [
-      "elle a un statut juridique spécifique d'économie sociale et solidaire",
       "elle vise à la fois le rendement financier et des résultats sociaux/environnementaux, au centre de son modèle",
+      "elle a un statut juridique spécifique d'économie sociale et solidaire",
       "elle renonce au profit au bénéfice de sa mission",
       "elle est obligatoirement certifiée B Corp"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "La notion n'a pas de définition juridique : c'est une entreprise à statut commercial classique qui place un impact social et/ou environnemental positif au centre de son modèle. Trois types d'impact : social, environnemental, gouvernance responsable."
   },
   {
@@ -6578,6 +14180,625 @@ var QUIZ = [
       "Justification par le risque réputationnel : les réseaux sociaux propagent instantanément les scandales et l'annonceur est tenu responsable des pratiques de sa chaîne de valeur"
     ],
     "explication": "Le coût d'une évaluation RSE en amont est dérisoire comparé à celui d'une crise réputationnelle. Privilégier l'accompagnement des partenaires (amélioration continue) plutôt que la rupture sèche."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-021",
+    "section": "1. Les acteurs du marché de la communication",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque acteur à son rôle.",
+    "colonne_a": [
+      "Annonceur",
+      "Agence",
+      "Régie publicitaire",
+      "Centrale d'achat d'espaces"
+    ],
+    "colonne_b": [
+      "Achète des espaces en gros pour les revendre aux annonceurs",
+      "Commande et paie l'opération de communication",
+      "Commercialise les espaces d'un support ou d'un groupe média",
+      "Conseille l'annonceur en externe, de la stratégie à la production"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Quatre familles d'acteurs, avec les organismes de régulation."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-022",
+    "section": "1. Les acteurs du marché de la communication",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque organisme de régulation à sa nature.",
+    "colonne_a": [
+      "ARCOM",
+      "ARPP"
+    ],
+    "colonne_b": [
+      "Régulation professionnelle de la publicité, tous supports",
+      "Autorité publique de régulation de l'audiovisuel"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "L'ARPP veut une publicité loyale, véridique, saine et respectueuse."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-023",
+    "section": "1. Les acteurs du marché de la communication",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles actions relèvent du hors-média ? (4 réponses)",
+    "options": [
+      "le marketing direct",
+      "le street marketing",
+      "la promotion des ventes",
+      "la PLV",
+      "un spot TV",
+      "un encart presse"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Le média vise des audiences de masse sur les 6 grands médias ; l'événementiel est aussi hors-média."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-024",
+    "section": "2. La typologie des prestataires",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la collaboration avec une agence 360°.",
+    "elements": [
+      "Validation",
+      "L'annonceur exprime son besoin",
+      "Production",
+      "L'agence propose une stratégie (plan de communication)"
+    ],
+    "ordre": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "explication": "Si l'agence n'a pas toutes les compétences, elle sous-traite et gère elle-même cette relation."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-025",
+    "section": "2. La typologie des prestataires",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque agence spécialisée à sa spécialité.",
+    "colonne_a": [
+      "Agence de graphisme",
+      "Agence web / digitale",
+      "Agence photo / audiovisuelle"
+    ],
+    "colonne_b": [
+      "Prestations techniques ponctuelles ou au long cours",
+      "Sites, médias sociaux, référencement et veille",
+      "Logos, chartes graphiques, déclinaisons, sans la partie stratégique"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "L'agence média, elle, rédige le plan média et achète l'espace comme mandataire."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-026",
+    "section": "2. La typologie des prestataires",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Sur quelle plateforme trouver un freelance selon le cours ?",
+    "options": [
+      "Trello",
+      "Mailchimp",
+      "Semrush",
+      "Malt"
+    ],
+    "reponse": 3,
+    "explication": "Aussi Coworkees, Freelancer. Le freelance fixe librement prestations, conditions et tarifs."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-027",
+    "section": "2. La typologie des prestataires",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le choix d'un prestataire est déterminant car l'annonceur met son image de marque entre ses mains.",
+    "reponse": true,
+    "explication": "Vrai : d'où la nécessité d'avoir clairement identifié son besoin avant de choisir."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-028",
+    "section": "3. Sélectionner un partenaire",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Que contient un cahier des charges ? (4 réponses)",
+    "options": [
+      "la présentation de l'entreprise et du contexte",
+      "les objectifs de la mission",
+      "les contraintes (budget, délais, exigences)",
+      "les livrables et indicateurs de suivi",
+      "la proposition tarifaire du prestataire",
+      "le contrat signé"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Plus le périmètre des prestations et les modalités de réponse."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-029",
+    "section": "3. Sélectionner un partenaire",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que garantit l'appel d'offres ?",
+    "options": [
+      "le prix le plus bas",
+      "l'objectivité du choix et une base de négociation",
+      "l'exclusivité du prestataire",
+      "la rapidité de la décision"
+    ],
+    "reponse": 1,
+    "explication": "Mise en concurrence : diffusion du cahier des charges, comparaison des propositions, sélection sur critères annoncés."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-030",
+    "section": "3. Sélectionner un partenaire",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une grille de critères ne doit contenir que des indicateurs quantitatifs pour rester objective.",
+    "reponse": false,
+    "explication": "Faux : on combine quantitatif (CA, délais, prix) et qualitatif (relation, compréhension du besoin, créativité) pour éviter une objectivité de façade."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-031",
+    "section": "3. Sélectionner un partenaire",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Trois agences obtiennent 14, 16 et 15/20 sur des critères pondérés. Que faut-il encore faire ?",
+    "options": [
+      "choisir au hasard",
+      "choisir la moins chère",
+      "justifier le choix final au regard des critères",
+      "relancer l'appel d'offres"
+    ],
+    "reponse": 2,
+    "explication": "Noter, calculer les scores pondérés, justifier le choix final."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-032",
+    "section": "4. La relation producteur-distributeur",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La relation producteur-distributeur est purement conflictuelle : leurs intérêts ne convergent jamais.",
+    "reponse": false,
+    "explication": "Faux : elle est à la fois conflictuelle et coopérative. Points de convergence : satisfaction client (ECR), ventes, réputation."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-033",
+    "section": "4. La relation producteur-distributeur",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque type de marge à sa définition.",
+    "colonne_a": [
+      "Marge avant",
+      "Marge arrière (rétrocommission)"
+    ],
+    "colonne_b": [
+      "Remises hors facture au titre de la coopération commerciale",
+      "Différence entre prix d'achat au producteur et prix de revente au consommateur"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Les marges arrière financent prospectus, têtes de gondole…"
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-034",
+    "section": "4. La relation producteur-distributeur",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les points de divergence entre producteur et distributeur ? (3 réponses)",
+    "options": [
+      "le budget et les marges",
+      "la prise en charge de la prospection commerciale",
+      "la concurrence des MDD",
+      "la satisfaction client",
+      "le développement des ventes"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Satisfaction client et développement des ventes sont des intérêts communs."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-035",
+    "section": "4. La relation producteur-distributeur",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que permet la loi Galland (1996) ?",
+    "options": [
+      "le refus de vente pour le producteur et l'encadrement de la vente à perte",
+      "d'interdire les MDD",
+      "de supprimer les marges arrière",
+      "de fixer les prix publics"
+    ],
+    "reponse": 0,
+    "explication": "Les lois suivantes (type LME) ont réintégré les marges arrière dans le seuil de vente à perte et réduit les délais de paiement."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-036",
+    "section": "5. Le droit de la concurrence",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles conséquences un déséquilibre dans la relation entraîne-t-il ? (3 réponses)",
+    "options": [
+      "des conditions défavorables imposées à la partie faible",
+      "une atteinte à la réputation des deux parties",
+      "une perte de compétitivité",
+      "une baisse automatique des prix",
+      "plus d'innovation partagée"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Un équilibre sain favorise au contraire innovation partagée et co-développement."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-037",
+    "section": "5. Le droit de la concurrence",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les lois antitrust contribuent à la stabilité des prix et à la maîtrise de l'inflation.",
+    "reponse": true,
+    "explication": "Vrai : elles protègent aussi les consommateurs et maintiennent le nombre d'acteurs."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-038",
+    "section": "5. Le droit de la concurrence",
+    "niveau": 3,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les trois âges de la concurrence en France.",
+    "elements": [
+      "La concurrence pour la loyauté",
+      "La concurrence pour la modernisation",
+      "La concurrence pour le consommateur"
+    ],
+    "ordre": [
+      1,
+      2,
+      0
+    ],
+    "explication": "1949-1976, 1976-1983, 1983-1986 : la fidélisation est l'aboutissement historique de la concurrence."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-039",
+    "section": "5. Le droit de la concurrence",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un fournisseur unique d'un produit clé négocie avec un distributeur. Qui a l'avantage ?",
+    "options": [
+      "le distributeur",
+      "le consommateur",
+      "personne",
+      "le fournisseur"
+    ],
+    "reponse": 3,
+    "explication": "Facteurs d'influence : taille et force des entreprises, environnement de marché."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-040",
+    "section": "6. Sécuriser le partenariat : le contrat",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque acteur du droit de la distribution à sa définition.",
+    "colonne_a": [
+      "Distributeur regroupé",
+      "Distributeur intermédiaire"
+    ],
+    "colonne_b": [
+      "Entre producteur et détaillant (grossistes, importateurs)",
+      "Des indépendants réunis sous une bannière commune"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Exemple de regroupés : les centrales d'achat de Leclerc, Intermarché."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-041",
+    "section": "6. Sécuriser le partenariat : le contrat",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles clauses figurent dans un contrat de partenariat ? (4 réponses)",
+    "options": [
+      "les conditions tarifaires",
+      "les conditions de livraison",
+      "la conformité RGPD",
+      "les quantités minimales et objectifs",
+      "le CV du dirigeant",
+      "les horaires du personnel"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Plus objet, durée et résiliation, obligations, propriété intellectuelle, résolution des conflits."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-042",
+    "section": "6. Sécuriser le partenariat : le contrat",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi la clause de propriété intellectuelle est-elle un enjeu majeur ?",
+    "options": [
+      "elle fixe les prix",
+      "elle détermine la titularité des créations, marques et droits d'auteur, surtout quand la prestation crée des contenus",
+      "elle fixe la durée du contrat",
+      "elle n'a aucun enjeu"
+    ],
+    "reponse": 1,
+    "explication": "Essentielle avec une agence de création."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-043",
+    "section": "6. Sécuriser le partenariat : le contrat",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque mécanisme de résolution des conflits à son principe.",
+    "colonne_a": [
+      "Négociation amiable",
+      "Médiation",
+      "Arbitrage"
+    ],
+    "colonne_b": [
+      "Un tiers tranche le litige hors des tribunaux",
+      "Les parties règlent seules leur différend",
+      "Un tiers aide les parties à trouver un accord"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Le contrat prévoit aussi la juridiction compétente."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-044",
+    "section": "6. Sécuriser le partenariat : le contrat",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La réforme de 2016 du Code civil a renforcé la bonne foi et la lutte contre le déséquilibre contractuel significatif.",
+    "reponse": true,
+    "explication": "Vrai, elle a modernisé le droit des contrats."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-045",
+    "section": "6. Sécuriser le partenariat : le contrat",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'impose la réglementation française aux collaborations avec des influenceurs ?",
+    "options": [
+      "rien de particulier",
+      "l'interdiction de rémunérer",
+      "la transparence : mention explicite du partenariat commercial",
+      "un contrat oral"
+    ],
+    "reponse": 2,
+    "explication": "Une des réglementations les plus strictes au monde."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-046",
+    "section": "7. Éthique et RSE",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'éthique des affaires se limite à la conformité légale du partenaire.",
+    "reponse": false,
+    "explication": "Faux : elle évalue aussi ses valeurs et comportements ; les critères varient selon le secteur."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-047",
+    "section": "7. Éthique et RSE",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle loi oblige les grandes entreprises françaises à identifier et prévenir les risques (droits humains, environnement) dans toute leur chaîne de valeur ?",
+    "options": [
+      "la loi sur le devoir de vigilance (2017)",
+      "la loi Sapin II",
+      "la loi Galland",
+      "la loi AGEC"
+    ],
+    "reponse": 0,
+    "explication": "Sapin II (2016) porte sur l'anti-corruption ; la taxonomie européenne classe les activités durables."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-048",
+    "section": "7. Éthique et RSE",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les limites des labels et certifications RSE ? (3 réponses)",
+    "options": [
+      "une focalisation documentaire qui peut masquer le terrain",
+      "des audits ponctuels",
+      "un risque de confiance aveugle",
+      "ils sont toujours faux",
+      "ils sont interdits"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "À utiliser en complément d'audits planifiés et du croisement des sources."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-049",
+    "section": "7. Éthique et RSE",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel est le risque majeur d'un mauvais partenaire selon le cours ?",
+    "options": [
+      "un risque fiscal",
+      "un risque climatique",
+      "un risque technique",
+      "un risque réputationnel, amplifié par les réseaux sociaux"
+    ],
+    "reponse": 3,
+    "explication": "L'annonceur est tenu pour responsable des pratiques de sa chaîne de valeur."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-050",
+    "section": "7. Éthique et RSE",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Face à un partenaire défaillant en RSE, le cours privilégie l'accompagnement et l'amélioration continue plutôt que la rupture sèche.",
+    "reponse": true,
+    "explication": "Vrai, avec cartographie des risques, veille, tableaux de bord RSE et reporting transparent."
+  },
+  {
+    "resume": "b2-r04",
+    "bloc": 2,
+    "id": "b2-r04-qz-051",
+    "section": "3. Sélectionner un partenaire",
+    "niveau": 2,
+    "format": "ouverte",
+    "question": "Construisez la démarche de sélection d'un prestataire-distributeur, du besoin au choix final.",
+    "attendus": [
+      "Formaliser le besoin dans un cahier des charges (contexte, objectifs, périmètre, contraintes, livrables)",
+      "Lancer un appel d'offres auprès de plusieurs prestataires",
+      "Définir des critères adaptés : compétences, références, finances, accès à la cible, logistique, valeurs, RSE, prix",
+      "Pondérer selon les priorités stratégiques, mêler quantitatif et qualitatif",
+      "Noter, calculer les scores pondérés, justifier le choix et sécuriser par un contrat"
+    ],
+    "explication": "Le même outil sert à l'évaluation RSE des partenaires."
   },
   {
     "resume": "b2-r05",
@@ -6613,11 +14834,11 @@ var QUIZ = [
     "question": "En négociation, qu'est-ce que le « seuil de résistance » ?",
     "options": [
       "la première offre formulée pour ancrer la discussion",
-      "la limite en dessous de laquelle on n'accepte pas l'accord",
       "le montant maximal que l'autre partie peut payer",
+      "la limite en dessous de laquelle on n'accepte pas l'accord",
       "le délai au-delà duquel on quitte la table"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Avant de négocier, on définit trois repères : l'objectif cible, le seuil de résistance (la limite infranchissable) et les étapes intermédiaires de repli."
   },
   {
@@ -6640,12 +14861,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Pourquoi pratiquer des concessions en décroissance progressive (10 %, puis 5 %, puis 2 %) ?",
     "options": [
-      "pour maximiser la valeur totale concédée",
       "pour signaler à l'autre partie qu'on approche de sa limite (signaling)",
+      "pour maximiser la valeur totale concédée",
       "pour respecter une obligation légale d'échelonnement",
       "pour compenser l'effet d'ancrage de la première offre"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "La décroissance progressive envoie un signal : les marges de manœuvre s'épuisent. Combinée à une ouverture ambitieuse mais crédible (ancrage), elle structure la dynamique des échanges."
   },
   {
@@ -6670,10 +14891,10 @@ var QUIZ = [
     "options": [
       "subir la discussion sans exprimer ses besoins",
       "imposer ses vues sans considération pour l'autre",
-      "exprimer ses positions avec fermeté tout en préservant la relation",
-      "éviter tout sujet de désaccord pour maintenir le climat"
+      "éviter tout sujet de désaccord pour maintenir le climat",
+      "exprimer ses positions avec fermeté tout en préservant la relation"
     ],
-    "reponse": 2,
+    "reponse": 3,
     "explication": "L'assertivité défend ses intérêts légitimes en respectant ceux du partenaire — ni passive, ni agressive. Les émotions ne sont pas absentes, mais reconnues et canalisées (intelligence émotionnelle)."
   },
   {
@@ -6751,6 +14972,657 @@ var QUIZ = [
     "explication": "C'est la structure exacte attendue en Q8. Le mapping dit quoi négocier et avec qui, le DISC comment parler à chacun, l'écoute active fait découvrir les besoins réels, le traitement des objections protège l'accord."
   },
   {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-011",
+    "section": "1. Préparer la négociation",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quelle phase de la négociation le cours juge-t-il la plus déterminante ?",
+    "options": [
+      "la conclusion",
+      "l'argumentation",
+      "la préparation",
+      "la signature"
+    ],
+    "reponse": 2,
+    "explication": "Elle permet d'identifier leviers d'influence et zones de convergence, au-delà des positions de surface."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-012",
+    "section": "1. Préparer la négociation",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une agence travaille déjà pour un concurrent direct de l'annonceur avec qui elle négocie. Comment le cours qualifie-t-il cette situation ?",
+    "options": [
+      "un conflit d'intérêts potentiel, à aborder ouvertement",
+      "un intérêt convergent",
+      "une concession",
+      "un ancrage"
+    ],
+    "reponse": 0,
+    "explication": "Il faut aussi intégrer les contraintes externes : réglementation, concurrence, cycles budgétaires."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-013",
+    "section": "1. Préparer la négociation",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Dans la négociation L'Oréal × Havas, l'accord repose sur une création de valeur mutuelle plutôt que sur un simple marchandage.",
+    "reponse": true,
+    "explication": "Vrai : Havas obtient de la visibilité sur ses créations contre un investissement créatif supplémentaire."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-014",
+    "section": "1. Préparer la négociation",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Que faut-il définir avant d'entrer en négociation ? (3 réponses)",
+    "options": [
+      "l'objectif cible",
+      "le seuil de résistance",
+      "les étapes intermédiaires de repli",
+      "le menu du déjeuner",
+      "la date de la prochaine négociation"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Le seuil de résistance est la limite en dessous de laquelle on n'accepte pas."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-015",
+    "section": "1. Préparer la négociation",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qui a formulé la théorie de l'ancrage ?",
+    "options": [
+      "Carl Rogers",
+      "Kotler et Manceau",
+      "Paul Ekman",
+      "Tversky et Kahneman"
+    ],
+    "reponse": 3,
+    "explication": "Les premières informations échangées créent un point de référence qui influence toute la suite."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-016",
+    "section": "1. Préparer la négociation",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Selon la théorie de l'ancrage, comment formuler sa première offre ?",
+    "options": [
+      "très agressive pour impressionner",
+      "ambitieuse mais crédible, justifiée par des arguments",
+      "minimale pour rassurer",
+      "jamais en premier"
+    ],
+    "reponse": 1,
+    "explication": "Trop agressive, elle rompt le dialogue. L'ancrage porte sur tous les paramètres : prix, délais, périmètre."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-017",
+    "section": "1. Préparer la négociation",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "L'effet d'ancrage disparaît dès que les parties en ont conscience.",
+    "reponse": false,
+    "explication": "Faux : il influence la suite même quand les parties en sont conscientes."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-018",
+    "section": "1. Préparer la négociation",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Laquelle de ces formulations respecte la règle des concessions conditionnées ?",
+    "options": [
+      "« nous baissons le prix de 10 % »",
+      "« nous acceptons toutes vos conditions »",
+      "« si vous acceptez de réduire les délais, alors nous pourrions revoir le budget »",
+      "« le prix n'est pas négociable »"
+    ],
+    "reponse": 2,
+    "explication": "Jamais de concession unilatérale : la réciprocité s'orchestre en explicitant ses attentes."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-019",
+    "section": "1. Préparer la négociation",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque registre de communication à sa définition.",
+    "colonne_a": [
+      "Passive",
+      "Agressive",
+      "Assertive"
+    ],
+    "colonne_b": [
+      "Imposer ses vues sans considération pour l'autre",
+      "Exprimer ses positions avec fermeté en préservant la relation",
+      "Subir sans exprimer ses besoins"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "explication": "Les émotions sont reconnues et canalisées, pas supprimées."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-020",
+    "section": "1. Préparer la négociation",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Selon le cours, une négociation réussie se déroule sans émotions.",
+    "reponse": false,
+    "explication": "Faux : elle se déroule avec des émotions reconnues et canalisées, grâce à l'intelligence émotionnelle."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-021",
+    "section": "1. Préparer la négociation",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qui transforme un prestataire exécutant en véritable partenaire à l'issue de la négociation ?",
+    "options": [
+      "des objectifs partagés assortis d'indicateurs de performance communs",
+      "un prix plus bas",
+      "un contrat plus long",
+      "l'absence de contrôle"
+    ],
+    "reponse": 0,
+    "explication": "On ne « pose pas la toiture avant les fondations » : confiance et intérêts avant le contrat."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-022",
+    "section": "2. Le modèle DISC",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque couleur du DISC à sa dimension.",
+    "colonne_a": [
+      "Rouge",
+      "Jaune",
+      "Vert",
+      "Bleu"
+    ],
+    "colonne_b": [
+      "Stabilité",
+      "Conformité",
+      "Dominance",
+      "Influence"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Outil d'évaluation psychométrique du comportement en 4 dimensions."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-023",
+    "section": "2. Le modèle DISC",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Comment communiquer avec un profil Bleu (Conformité) ?",
+    "options": [
+      "être direct et concis, parler résultats",
+      "créer du lien et valoriser ses idées",
+      "le rassurer en prenant le temps",
+      "apporter des données précises, de la structure et des preuves"
+    ],
+    "reponse": 3,
+    "explication": "Le Bleu est rigoureux, analytique, attaché aux règles et aux faits."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-024",
+    "section": "2. Le modèle DISC",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un interlocuteur calme, coopératif, attaché à l'harmonie : quelle approche adopter ?",
+    "options": [
+      "le brusquer pour accélérer",
+      "le rassurer, prendre le temps et montrer la continuité",
+      "lui donner uniquement des chiffres",
+      "parler uniquement résultats"
+    ],
+    "reponse": 1,
+    "explication": "C'est un profil Vert (Stabilité)."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-025",
+    "section": "2. Le modèle DISC",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque profil DISC à la manière de lui communiquer.",
+    "colonne_a": [
+      "Rouge (Dominance)",
+      "Jaune (Influence)"
+    ],
+    "colonne_b": [
+      "Créer du lien, laisser de la place à l'échange",
+      "Être direct et concis, parler objectifs concrets"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Même message, quatre formes selon la couleur."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-026",
+    "section": "2. Le modèle DISC",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Dire « c'est normal, il est rouge » est exactement le raccourci que le cours conseille d'éviter.",
+    "reponse": true,
+    "explication": "Vrai : personne ne se résume à sa couleur dominante, et les préférences varient selon le contexte."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-027",
+    "section": "2. Le modèle DISC",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "De quoi dépend notre style de communication ? (4 réponses)",
+    "options": [
+      "la personnalité",
+      "l'expérience de vie",
+      "le contexte culturel",
+      "les enjeux (informer, influencer, convaincre)",
+      "la météo",
+      "la marque du téléphone"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Communiquer efficacement, c'est adapter son message aux préférences de l'interlocuteur."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-028",
+    "section": "3. L'écoute active et le questionnement",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Que signifie comprendre le cadre de référence de l'autre en écoute active ?",
+    "options": [
+      "l'adopter",
+      "le corriger",
+      "le comprendre sans nécessairement l'adopter (empathie rogérienne)",
+      "l'ignorer"
+    ],
+    "reponse": 2,
+    "explication": "Avec authenticité et considération positive."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-029",
+    "section": "3. L'écoute active et le questionnement",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle est l'erreur classique en présentation stratégique selon le cours ?",
+    "options": [
+      "se concentrer sur ce qu'on va dire plutôt que sur ce qu'on va entendre",
+      "poser trop de questions",
+      "reformuler",
+      "prendre des notes"
+    ],
+    "reponse": 0,
+    "explication": "L'écoute active est un processus structuré d'attention totale."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-030",
+    "section": "3. L'écoute active et le questionnement",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les obstacles à l'écoute active ? (3 réponses)",
+    "options": [
+      "la dissonance cognitive",
+      "les obstacles organisationnels (hiérarchie, pression du temps)",
+      "les filtres émotionnels (stress, a priori)",
+      "la reformulation",
+      "les questions ouvertes"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "La dissonance cognitive fait filtrer inconsciemment ce qui dérange."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-031",
+    "section": "3. L'écoute active et le questionnement",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un interlocuteur dit « oui » les bras croisés, d'un ton fuyant. Que révèle l'analyse de congruence ?",
+    "options": [
+      "un oui franc",
+      "rien",
+      "de la fatigue",
+      "une incohérence entre verbal, vocal et corporel : ce n'est pas vraiment un oui"
+    ],
+    "reponse": 3,
+    "explication": "Les micro-expressions (Paul Ekman) sont des signaux universels qui échappent au contrôle conscient."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-032",
+    "section": "3. L'écoute active et le questionnement",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque type de question à sa fonction.",
+    "colonne_a": [
+      "Ouverte",
+      "Fermée",
+      "Reformulation"
+    ],
+    "colonne_b": [
+      "Démontrer l'attention, lever les malentendus",
+      "Explorer",
+      "Valider"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "« Si je comprends bien, votre préoccupation est… »"
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-033",
+    "section": "3. L'écoute active et le questionnement",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Selon le cours, le levier d'influence le plus puissant est d'amener l'interlocuteur à formuler lui-même ses besoins.",
+    "reponse": true,
+    "explication": "Vrai, grâce à un questionnement bien mené (SPIN)."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-034",
+    "section": "4. Gérer les objections",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque type d'objection à l'approche recommandée.",
+    "colonne_a": [
+      "Rationnelle",
+      "Émotionnelle",
+      "Stratégique / politique"
+    ],
+    "colonne_b": [
+      "Identifier les enjeux réels, traiter en coulisses si besoin",
+      "Répondre par des données et des preuves",
+      "Rassurer, accompagner, sans contre-argumenter frontalement"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Les objections rationnelles sont les plus faciles à traiter."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-035",
+    "section": "4. Gérer les objections",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "« On a toujours fait comme ça » : de quel type d'objection s'agit-il ?",
+    "options": [
+      "rationnelle",
+      "émotionnelle / psychologique",
+      "stratégique",
+      "technique"
+    ],
+    "reponse": 1,
+    "explication": "Peur du changement, remise en question de l'existant."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-036",
+    "section": "4. Gérer les objections",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "« Il faudrait voir ce qu'en pense le service financier » : quel type d'objection ?",
+    "options": [
+      "rationnelle",
+      "émotionnelle",
+      "stratégique / politique (formulation indirecte)",
+      "aucune objection"
+    ],
+    "reponse": 2,
+    "explication": "Jeux de pouvoir, conflits d'intérêts entre services."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-037",
+    "section": "4. Gérer les objections",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les signaux non-verbaux de résistance n'apparaissent qu'après l'expression verbale de l'objection.",
+    "reponse": false,
+    "explication": "Faux : ils la précèdent (posture fermée, micro-expressions, rythme respiratoire) et forment un système d'alerte précoce."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-038",
+    "section": "4. Gérer les objections",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels marqueurs linguistiques signalent une résistance diplomatique ? (3 réponses)",
+    "options": [
+      "« certes, mais »",
+      "« en théorie c'est intéressant, cependant »",
+      "« j'ai quelques réserves »",
+      "« parfait, on signe »",
+      "« je suis entièrement d'accord »"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "À traiter immédiatement."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-039",
+    "section": "4. Gérer les objections",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque attitude à la réaction adaptée.",
+    "colonne_a": [
+      "Questionnement légitime",
+      "Opposition systématique"
+    ],
+    "colonne_b": [
+      "Changer de stratégie",
+      "Y répondre : cela nourrit l'adhésion"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "L'opposition systématique cherche à déstabiliser ou bloquer."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-040",
+    "section": "4. Gérer les objections",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la technique de traitement d'une objection en trois temps.",
+    "elements": [
+      "Reformulation factuelle",
+      "Recherche de solutions",
+      "Accusé de réception émotionnel"
+    ],
+    "ordre": [
+      2,
+      0,
+      1
+    ],
+    "explication": "« Je comprends que cela vous inquiète » → « votre préoccupation porte sur… » → « comment pourrions-nous… ? »"
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-041",
+    "section": "4. Gérer les objections",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que la négociation intégrée face à une objection ?",
+    "options": [
+      "accueillir l'objection comme un enrichissement et faire de l'objecteur un partenaire de co-construction",
+      "ignorer l'objection",
+      "contre-attaquer",
+      "céder immédiatement"
+    ],
+    "reponse": 0,
+    "explication": "L'argumentation progressive procède par « cercles concentriques » : reconnaître la légitimité, puis élargir."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-042",
+    "section": "4. Gérer les objections",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Face à une attaque personnelle (ad hominem), quel réflexe adopter ?",
+    "options": [
+      "répondre sur le même terrain",
+      "se justifier longuement",
+      "quitter la négociation",
+      "le « bouclier professionnel » : recentrer le débat sur le fond, sans escalade"
+    ],
+    "reponse": 3,
+    "explication": "L'attaque vise à décrédibiliser la personne, pas la proposition."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-043",
+    "section": "4. Gérer les objections",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Temporiser (« c'est un point important, j'y reviens dans deux minutes ») est une technique de régulation émotionnelle sous pression.",
+    "reponse": true,
+    "explication": "Vrai, avec la respiration : canaliser l'émotion au service de l'objectif."
+  },
+  {
+    "resume": "b2-r05",
+    "bloc": 2,
+    "id": "b2-r05-qz-044",
+    "section": "4. Gérer les objections",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Face à une objection émotionnelle, il faut contre-argumenter frontalement avec des chiffres.",
+    "reponse": false,
+    "explication": "Faux : on rassure et on accompagne. Les chiffres conviennent aux objections rationnelles."
+  },
+  {
     "resume": "b2-r06",
     "bloc": 2,
     "id": "b2-r06-qz-001",
@@ -6760,11 +15632,11 @@ var QUIZ = [
     "question": "Sur 200 personnes interrogées, 180 répondent « oui » à la question « Connaissez-vous la marque d'eau Thonon ? ». Que mesure-t-on, et à quel niveau ?",
     "options": [
       "la notoriété spontanée, à 90 %",
-      "la notoriété assistée, à 90 %",
       "le top of mind, à 90 %",
+      "la notoriété assistée, à 90 %",
       "l'image de marque, à 90 %"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "On montre ou cite la marque : c'est la notoriété assistée (180/200 = 90 %). La notoriété spontanée se mesure sans aide (« Citez des marques de... »), et le top of mind est la première marque citée spontanément."
   },
   {
@@ -6776,12 +15648,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Qu'est-ce que le « top of mind » ?",
     "options": [
-      "la marque la plus connue du marché en notoriété assistée",
       "la première marque citée spontanément par les personnes interrogées",
+      "la marque la plus connue du marché en notoriété assistée",
       "la marque préférée des consommateurs",
       "la part de marché en valeur du leader"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Le top of mind est le sommet de la notoriété : la marque qui vient immédiatement à l'esprit, sans aucune aide. C'est le troisième niveau après la notoriété assistée et la notoriété spontanée."
   },
   {
@@ -6794,11 +15666,11 @@ var QUIZ = [
     "question": "Quelle méthode cyclique permet d'évaluer l'efficacité d'un plan de communication et de l'améliorer en continu ?",
     "options": [
       "le diagramme d'Ishikawa",
-      "la roue de Deming (PDCA) : Plan, Do, Check, Act",
+      "le benchmark concurrentiel",
       "la méthode AIDA",
-      "le benchmark concurrentiel"
+      "la roue de Deming (PDCA) : Plan, Do, Check, Act"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "PDCA : Plan (planifier), Do (faire), Check (vérifier), Act (ajuster) — un cycle d'amélioration continue. L'Ishikawa sert, lui, à résoudre un problème en listant ses causes par familles."
   },
   {
@@ -6848,11 +15720,11 @@ var QUIZ = [
     "question": "Quelle est la problématique de communication la mieux formulée ?",
     "options": [
       "« Développer notre communauté Instagram. »",
-      "« Comment développer une communauté active sur Instagram ? »",
       "« Comment développer une communauté de 15 000 abonnés actifs sur Instagram en 6 mois avec un budget de 2 000 € ? »",
+      "« Comment développer une communauté active sur Instagram ? »",
       "« Pourquoi notre communauté Instagram stagne-t-elle depuis un an ? »"
     ],
-    "reponse": 2,
+    "reponse": 1,
     "explication": "Une bonne problématique est une question ouverte exprimant trois éléments : le besoin, la cible visée et les contraintes (délais et budget). La première formulation n'est pas une question, les autres restent incomplètes."
   },
   {
@@ -6882,11 +15754,11 @@ var QUIZ = [
     "question": "Qu'est-ce que la « baseline » d'une marque ?",
     "options": [
       "le budget minimal de communication annuel",
-      "la forme condensée du positionnement, aussi appelée signature de marque",
       "la première ligne d'un communiqué de presse",
+      "la forme condensée du positionnement, aussi appelée signature de marque",
       "l'axe horizontal d'un mapping concurrentiel"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "La baseline (signature de marque) condense le positionnement de communication. Le positionnement est une étape préalable à la ligne éditoriale et aux messages."
   },
   {
@@ -6965,12 +15837,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Quel outil de cadrage décompose le projet en arborescence de tâches et sous-tâches avec leurs livrables ?",
     "options": [
-      "le diagramme de Gantt",
       "l'organigramme des tâches",
+      "le diagramme de Gantt",
       "le rétroplanning",
       "le tableau de bord"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "L'organigramme des tâches donne une vision précise du temps et du budget par travaux. Le Gantt vient ensuite pour planifier (tâches période par période, dépendances) — c'est la forme la plus courante du rétroplanning."
   },
   {
@@ -6983,11 +15855,11 @@ var QUIZ = [
     "question": "Pourquoi évaluer la communication ?",
     "options": [
       "pour satisfaire une obligation réglementaire de reporting",
-      "pour légitimer les actions entreprises et améliorer les décisions",
+      "pour comparer ses résultats à ceux des concurrents",
       "uniquement pour justifier une hausse du budget",
-      "pour comparer ses résultats à ceux des concurrents"
+      "pour légitimer les actions entreprises et améliorer les décisions"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "La communication est un investissement soumis à la rationalisation économique : évaluer légitime les actions (aucun dirigeant n'alloue de budget sans vision des bénéfices) et permet d'identifier les failles pour les corriger."
   },
   {
@@ -7018,6 +15890,619 @@ var QUIZ = [
     "explication": "La chaîne attendue : besoin (sensibilisation, compréhension ou perception) → problématique (question ouverte, 3 éléments) → objectifs de communication (cognitif/affectif/conatif) → puis déclinaison en actions."
   },
   {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-016",
+    "section": "1. Analyser les besoins",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque nature de besoin en communication à sa situation.",
+    "colonne_a": [
+      "Sensibilisation",
+      "Compréhension",
+      "Changement de perception"
+    ],
+    "colonne_b": [
+      "Les clients ne saisissent pas les avantages de l'offre",
+      "Corriger une image négative",
+      "Manque de notoriété ou de reconnaissance"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "explication": "Les besoins se traduisent ensuite en objectifs chiffrés."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-017",
+    "section": "1. Analyser les besoins",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque indicateur de notoriété à la question posée.",
+    "colonne_a": [
+      "Notoriété assistée",
+      "Notoriété spontanée",
+      "Top of mind"
+    ],
+    "colonne_b": [
+      "La première marque citée sans aide",
+      "« Connaissez-vous la marque X ? »",
+      "« Citez des marques de… »"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "La notoriété se mesure par sondage."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-018",
+    "section": "1. Analyser les besoins",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Comment analyser l'image de marque d'un hôtel selon le cours ?",
+    "options": [
+      "par le CA uniquement",
+      "par les avis en ligne (TripAdvisor) et des entretiens qualitatifs ou focus groups",
+      "par le nombre de chambres",
+      "par le cours de bourse"
+    ],
+    "reponse": 1,
+    "explication": "L'e-réputation est une composante à surveiller en permanence."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-019",
+    "section": "1. Analyser les besoins",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels éléments composent l'identité visuelle ? (4 réponses)",
+    "options": [
+      "le logo",
+      "les couleurs",
+      "les formes",
+      "la typographie",
+      "le chiffre d'affaires",
+      "le slogan radio"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Utilisés de manière systématique et cohérente sur tous les supports (exemple : le lion Peugeot)."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-020",
+    "section": "1. Analyser les besoins",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les résultats d'un PESTEL alimentent les opportunités et menaces du SWOT.",
+    "reponse": true,
+    "explication": "Vrai : le PESTEL couvre les facteurs environnementaux externes."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-021",
+    "section": "1. Analyser les besoins",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Lors de l'audit des outils existants, que faire s'il n'existe aucune donnée chiffrée sur les résultats ?",
+    "options": [
+      "s'en passer",
+      "inventer une estimation",
+      "les collecter",
+      "arrêter l'audit"
+    ],
+    "reponse": 2,
+    "explication": "On audite l'usage, mais aussi les coûts, le budget, les résultats par action et le ROI."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-022",
+    "section": "2. Auditer et évaluer",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la roue de Deming.",
+    "elements": [
+      "Check (vérifier)",
+      "Act (ajuster)",
+      "Plan (planifier)",
+      "Do (faire)"
+    ],
+    "ordre": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "explication": "Méthode cyclique d'amélioration continue."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-023",
+    "section": "2. Auditer et évaluer",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le diagramme d'Ishikawa se remplit de préférence seul, par le responsable communication, pour éviter les biais du groupe.",
+    "reponse": false,
+    "explication": "Faux : il se remplit en équipe, de façon collégiale (exemple de la chaîne de restaurants)."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-024",
+    "section": "2. Auditer et évaluer",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la mise en œuvre d'un tableau de bord de communication.",
+    "elements": [
+      "Analyse des écarts",
+      "Conception (publics, objectifs, KPI, échéances)",
+      "Recueil des données"
+    ],
+    "ordre": [
+      1,
+      2,
+      0
+    ],
+    "explication": "Prérequis : cible, objectifs, messages clés, KPI, échéances définis."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-025",
+    "section": "2. Auditer et évaluer",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que le reporting ?",
+    "options": [
+      "rendre périodiquement des comptes sur la performance d'une action",
+      "la conception du tableau de bord",
+      "une enquête de notoriété",
+      "un plan média"
+    ],
+    "reponse": 0,
+    "explication": "Il intervient après l'analyse du tableau de bord."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-026",
+    "section": "3. La problématique",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Sous quelle forme formule-t-on une problématique de communication ?",
+    "options": [
+      "une affirmation",
+      "un slogan",
+      "une question fermée",
+      "une question ouverte"
+    ],
+    "reponse": 3,
+    "explication": "C'est la traduction d'un besoin ou d'un objectif sous forme de question ouverte."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-027",
+    "section": "3. La problématique",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels éléments une bonne problématique exprime-t-elle ? (3 réponses)",
+    "options": [
+      "le besoin",
+      "la cible visée",
+      "les contraintes (délais, budget)",
+      "le nom de l'agence",
+      "le logo"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "« Comment développer une communauté de 15 000 abonnés actifs sur Instagram en 6 mois avec 2 000 € ? »"
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-028",
+    "section": "3. La problématique",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque porte d'entrée de la problématique à son exemple.",
+    "colonne_a": [
+      "Analyse des besoins",
+      "Objectifs sur le marché",
+      "Situation de crise"
+    ],
+    "colonne_b": [
+      "Facebook 2018 : limiter les effets de la fuite de données",
+      "Le SWOT révèle des dissonances",
+      "Carrefour : conserver sa place de leader du bio"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Trois façons d'identifier la problématique."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-029",
+    "section": "3. La problématique",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Laquelle est une problématique récurrente en interne ?",
+    "options": [
+      "le manque de notoriété",
+      "faire adhérer l'équipe à un projet ou à une nouvelle méthode",
+      "une crise éthique",
+      "atteindre une cible de niche"
+    ],
+    "reponse": 1,
+    "explication": "Le management du changement aussi. Les autres sont externes."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-030",
+    "section": "3. La problématique",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Une incohérence entre le positionnement affiché et des supports négligés peut constituer un problème d'image de marque.",
+    "reponse": true,
+    "explication": "Vrai, au même titre qu'une crise éthique (Tesco 2019) ou un produit défectueux."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-031",
+    "section": "4. Le positionnement de communication",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque élément du positionnement d'Axa à son contenu.",
+    "colonne_a": [
+      "Vision",
+      "Valeurs",
+      "Mission",
+      "Preuves"
+    ],
+    "colonne_b": [
+      "Solidité, expertise",
+      "Aider ses clients à être sereins au quotidien",
+      "Être différent pour mériter la confiance",
+      "Intégrité, esprit d'équipe, pragmatisme"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Le positionnement est une étape préalable à la ligne éditoriale et aux messages."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-032",
+    "section": "4. Le positionnement de communication",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que le mapping en positionnement ?",
+    "options": [
+      "une carte de France des magasins",
+      "un tableau de bord",
+      "une cartographie visuelle des marques concurrentes selon deux axes choisis",
+      "un plan média"
+    ],
+    "reponse": 2,
+    "explication": "Outils associés : axes de segmentation et benchmark."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-033",
+    "section": "4. Le positionnement de communication",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles qualités un positionnement pertinent doit-il avoir ? (4 réponses)",
+    "options": [
+      "crédible",
+      "attractif",
+      "distinctif",
+      "durable",
+      "éphémère",
+      "identique aux concurrents"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Crédible : il repose sur des atouts réels."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-034",
+    "section": "5. Objectifs de communication",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "« Venez comme vous êtes » (McDonald's) relève de quelle dimension des objectifs de communication ?",
+    "options": [
+      "conative",
+      "affective",
+      "cognitive",
+      "financière"
+    ],
+    "reponse": 0,
+    "explication": "Conatif = faire agir ; cognitif = faire savoir ; affectif = faire aimer."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-035",
+    "section": "5. Objectifs de communication",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les objectifs marketing doivent être SMART et chiffrés, alors que les objectifs de communication visent à influencer la cible.",
+    "reponse": true,
+    "explication": "Vrai : deux familles d'objectifs à ne pas confondre."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-036",
+    "section": "5. Objectifs de communication",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque niveau de cible à l'exemple du vernis à ongles.",
+    "colonne_a": [
+      "Cible primaire",
+      "Cœur de cible",
+      "Cible secondaire",
+      "Cible tertiaire"
+    ],
+    "colonne_b": [
+      "Salons d'esthétique",
+      "Femmes de 20-25 ans",
+      "Femmes de 18-30 ans",
+      "Influenceuses beauté"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Secondaire = relais et prescripteurs ; tertiaire = distributeurs, partenaires."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-037",
+    "section": "5. Objectifs de communication",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qu'un buyer persona ?",
+    "options": [
+      "un client réel interviewé",
+      "un concurrent",
+      "un influenceur",
+      "un personnage fictif représentant un segment du cœur de cible"
+    ],
+    "reponse": 3,
+    "explication": "Fiche : objectifs, freins, motivations, canaux préférés… Outils : Xtensio, HubSpot."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-038",
+    "section": "5. Objectifs de communication",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la déclinaison du positionnement en plan d'action.",
+    "elements": [
+      "Définir les objectifs SMART",
+      "Rappeler le positionnement",
+      "Identifier les cibles et créer les personas",
+      "Énumérer les objectifs de communication",
+      "Définir les actions, outils, planning et budget"
+    ],
+    "ordre": [
+      1,
+      3,
+      2,
+      0,
+      4
+    ],
+    "explication": "Le triangle « Cible – Objectif – Action »."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-039",
+    "section": "5. Objectifs de communication",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le plan d'action est un document distinct, sans lien avec le plan de communication.",
+    "reponse": false,
+    "explication": "Faux : il en est une composante (rétroplanning : thème, action, objectif, KPI, responsable, échéance, budget)."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-040",
+    "section": "6. Élaborer le projet",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque type d'étude à son usage pour le ciblage.",
+    "colonne_a": [
+      "Qualitative",
+      "Quantitative"
+    ],
+    "colonne_b": [
+      "Grands échantillons, questions fermées : mesurer",
+      "Peu de personnes en profondeur : comprendre freins et motivations"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Le marché est l'espace de rencontre d'une offre et d'une demande (Mercator)."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-041",
+    "section": "6. Élaborer le projet",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que dit la théorie des effets limités ?",
+    "options": [
+      "la publicité n'a aucun effet",
+      "un message est modifié sous le filtre des leaders d'opinion qui le réinterprètent",
+      "plus on répète, plus on convainc",
+      "seul le prix compte"
+    ],
+    "reponse": 1,
+    "explication": "D'où l'importance des relais dans la chaîne émetteur → récepteur."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-042",
+    "section": "6. Élaborer le projet",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que le mix des canaux de communication ?",
+    "options": [
+      "un seul canal pour tous",
+      "supprimer le hors-média",
+      "combiner les canaux selon les habitudes de la cible pour optimiser la visibilité",
+      "mélanger les messages"
+    ],
+    "reponse": 2,
+    "explication": "Une question d'équilibre dans l'affectation des budgets."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-043",
+    "section": "6. Élaborer le projet",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les phases de la gestion de projet de communication.",
+    "elements": [
+      "Phase de suivi",
+      "Feedback et actions correctives",
+      "Phase de cadrage"
+    ],
+    "ordre": [
+      2,
+      0,
+      1
+    ],
+    "explication": "Cadrage : organigramme des tâches, rétroplanning (Gantt), ressources."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-044",
+    "section": "6. Élaborer le projet",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les actions post-campagne (capitalisation, remerciements, entretien de la relation) font partie de la gestion de projet.",
+    "reponse": true,
+    "explication": "Vrai, avec le bilan du projet (résultats vs objectifs, enseignements)."
+  },
+  {
+    "resume": "b2-r06",
+    "bloc": 2,
+    "id": "b2-r06-qz-045",
+    "section": "6. Élaborer le projet",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Le diagramme de Gantt sert à décomposer le projet en arborescence de tâches et de livrables.",
+    "reponse": false,
+    "explication": "Faux : c'est l'organigramme des tâches. Le Gantt positionne les tâches dans le temps, avec leurs dépendances."
+  },
+  {
     "resume": "b2-r07",
     "bloc": 2,
     "id": "b2-r07-qz-001",
@@ -7027,11 +16512,11 @@ var QUIZ = [
     "question": "Dans la définition du plan de communication, que regroupe le « contenant » ?",
     "options": [
       "le message, le concept créatif et la stratégie de moyens",
-      "la cible, les objectifs, le budget et le planning",
       "les supports et le calendrier de diffusion",
+      "la cible, les objectifs, le budget et le planning",
       "les KPI et le tableau de bord budgétaire"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Le contenant = cible, objectifs, budget, planning ; le contenu = message, concept créatif, stratégie de moyens (les canaux sélectionnés). Le plan est la traduction opérationnelle de la stratégie de communication."
   },
   {
@@ -7054,12 +16539,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Comment se construit le tableau de bord des résultats d'un plan de communication ?",
     "options": [
-      "un KPI global pour l'ensemble du plan",
       "un KPI par action, consigné et évalué au fur et à mesure",
+      "un KPI global pour l'ensemble du plan",
       "uniquement des indicateurs financiers (budget prévu vs réel)",
       "un sondage de notoriété annuel"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Un KPI par action : % de nouveaux contacts pour un salon, évolution du taux de notoriété pour une campagne TV... Il complète le tableau de bord budgétaire (prévu vs réel par action). C'est le format attendu en Q10."
   },
   {
@@ -7072,11 +16557,11 @@ var QUIZ = [
     "question": "Qu'est-ce qui distingue la communication marketing intégrée (CMI) de la communication 360° ?",
     "options": [
       "la CMI est réservée au digital, le 360° couvre aussi l'off line",
-      "le 360° vise l'exhaustivité des canaux ; la CMI vise leur intégration autour de la connaissance client",
+      "aucune : ce sont deux noms de la même stratégie",
       "la CMI concerne le BtoB, le 360° le BtoC",
-      "aucune : ce sont deux noms de la même stratégie"
+      "le 360° vise l'exhaustivité des canaux ; la CMI vise leur intégration autour de la connaissance client"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "Le 360° utilise tous les vecteurs off line et on line (omniprésence, message uniforme) ; la CMI intègre les canaux en s'appuyant sur une étude poussée de la cible (Big Data, segmentation fine). C'est la connaissance client qui fait la différence."
   },
   {
@@ -7237,12 +16722,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Une enseigne veut annoncer l'ouverture d'un magasin dans une ville moyenne. Quel support de presse est le plus adapté ?",
     "options": [
-      "la PQN (presse quotidienne nationale)",
       "la PQR (presse quotidienne régionale)",
+      "la PQN (presse quotidienne nationale)",
       "un magazine spécialisé national",
       "un média natif numérique"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "La PQR couvre les actualités locales avec un réseau de correspondants : idéale pour une cible locale. La presse est par ailleurs une bonne option en phase de lancement de produit."
   },
   {
@@ -7271,11 +16756,11 @@ var QUIZ = [
     "question": "Pour une cible de niche, un magazine spécialisé présente typiquement :",
     "options": [
       "une forte couverture et une forte affinité",
-      "une faible couverture mais une forte affinité",
+      "une faible couverture et une faible affinité",
       "une forte couverture mais une faible affinité",
-      "une faible couverture et une faible affinité"
+      "une faible couverture mais une forte affinité"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "Le magazine spécialisé touche peu de monde (couverture limitée) mais son audience correspond largement à la cible (affinité forte). À l'inverse, TF1 offre une énorme couverture mais une faible affinité pour une niche."
   },
   {
@@ -7330,12 +16815,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Que désigne le marché « MICE » ?",
     "options": [
-      "Meetings, Incentives, Conventions, Exhibitions — le marché de l'événementiel d'entreprise",
-      "Marketing, Innovation, Communication, Événementiel",
       "un label d'écoresponsabilité des événements",
+      "Marketing, Innovation, Communication, Événementiel",
+      "Meetings, Incentives, Conventions, Exhibitions — le marché de l'événementiel d'entreprise",
       "la méthode de brief des agences événementielles"
     ],
-    "reponse": 0,
+    "reponse": 2,
     "explication": "Le MICE (Meetings, Incentives, Conventions, Exhibitions) est le marché événementiel le plus important en France (tourisme, hôtellerie haut de gamme, location de salles). Tendances : webinaires (100 % en ligne) et écoresponsabilité."
   },
   {
@@ -7353,6 +16838,670 @@ var QUIZ = [
       "Les KPI sont mesurables et rattachés à l'action, pas génériques"
     ],
     "explication": "C'est le format exact de la Q10 : KPI puis budget détaillé d'une action de communication, en reproduisant les deux tableaux de bord du pilotage du plan."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-018",
+    "section": "1. Le plan de communication",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Que contient le « contenu » du plan de communication ?",
+    "options": [
+      "le message, le concept créatif et la stratégie de moyens",
+      "la cible, les objectifs, le budget, le planning",
+      "les CV de l'équipe",
+      "le bilan comptable"
+    ],
+    "reponse": 0,
+    "explication": "Le contenant regroupe cible, objectifs, budget et planning."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-019",
+    "section": "1. Le plan de communication",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque usage du plan de communication à son public.",
+    "colonne_a": [
+      "En interne",
+      "En externe"
+    ],
+    "colonne_b": [
+      "Cadre pour les prestataires, parfois outil de communication",
+      "Planification, coordination, management des équipes"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Il n'est défini qu'après le travail d'analyse (audit, problématique)."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-020",
+    "section": "1. Le plan de communication",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que le « washing » contre lequel le cours met en garde ?",
+    "options": [
+      "le nettoyage des bases de données",
+      "un format publicitaire",
+      "une technique d'affichage",
+      "des messages verts, féministes ou inclusifs sans changement des pratiques internes"
+    ],
+    "reponse": 3,
+    "explication": "La sanction est violente : la sincérité de la démarche prime."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-021",
+    "section": "1. Le plan de communication",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "À l'heure du web conversationnel, le passif d'une entreprise (archives, historiques, marque employeur) peut devenir un point d'attaque.",
+    "reponse": true,
+    "explication": "Vrai, comme l'a montré le cas Volkswagen."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-022",
+    "section": "1. Le plan de communication",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelles tendances Kantar le cours cite-t-il ?",
+    "options": [
+      "le fax et le minitel",
+      "les podcasts et les « shopable ads »",
+      "l'affichage papier uniquement",
+      "la fin d'Internet"
+    ],
+    "reponse": 1,
+    "explication": "Shopable ads : acheter directement dans la plateforme de diffusion."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-023",
+    "section": "1. Le plan de communication",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque tableau de bord du plan à son contenu.",
+    "colonne_a": [
+      "Tableau de bord budgétaire",
+      "Tableau de bord des résultats"
+    ],
+    "colonne_b": [
+      "Un KPI par action, évalué au fur et à mesure",
+      "Budget prévu vs réel par action"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Exemple de KPI : % de nouveaux contacts sur un salon, évolution de la notoriété après une campagne TV."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-024",
+    "section": "1. Le plan de communication",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la conduite du plan en gestion de projet.",
+    "elements": [
+      "Réalisation",
+      "Clôture",
+      "Conception (objectifs, contraintes)",
+      "Planification (ressources, délais)"
+    ],
+    "ordre": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "explication": "Le chef de projet coordonne équipes internes, agences, imprimeurs, médias."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-025",
+    "section": "2. Les stratégies d'ensemble",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Dans le cas cité par la Harvard Business Review, un jeu vidéo affiché 17 € en ligne et 40 € en magasin illustre une communication non intégrée.",
+    "reponse": true,
+    "explication": "Vrai : un client doit retrouver la même information sur tous les supports."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-026",
+    "section": "2. Les stratégies d'ensemble",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Sur quoi s'appuie la communication marketing intégrée ?",
+    "options": [
+      "sur l'intuition créative",
+      "sur un seul canal",
+      "sur une étude poussée de la cible (Big Data, segmentation fine)",
+      "sur le prix"
+    ],
+    "reponse": 2,
+    "explication": "Synergie des canaux et continuité des messages."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-027",
+    "section": "2. Les stratégies d'ensemble",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quels sont les avantages de la communication 360° ?",
+    "options": [
+      "l'omniprésence dans l'esprit du consommateur et un message cohérent sur tous les points de contact",
+      "un coût minimal",
+      "l'absence de planification",
+      "un seul message par canal"
+    ],
+    "reponse": 0,
+    "explication": "Elle utilise tous les vecteurs off line et on line. Le site web est la première vitrine."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-028",
+    "section": "2. Les stratégies d'ensemble",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles rubriques figurent dans la plateforme de marque du Communicator ? (4 réponses)",
+    "options": [
+      "la vision",
+      "l'ambition",
+      "la promesse",
+      "le ton et le style",
+      "le chiffre d'affaires",
+      "l'organigramme"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Les 10 : définition, vision, mission, ambition, positionnement, personnalité, promesse, preuves, ton et style, contraintes."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-029",
+    "section": "2. Les stratégies d'ensemble",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque rubrique de la plateforme de marque à sa question.",
+    "colonne_a": [
+      "Définition",
+      "Mission",
+      "Ambition",
+      "Preuves"
+    ],
+    "colonne_b": [
+      "Ce que la marque veut devenir",
+      "Les raisons de croire en la promesse",
+      "Qui sommes-nous ?",
+      "Notre rôle, notre raison d'être"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Illustré dans le cours par Serre Chevalier - Briançon."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-030",
+    "section": "2. Les stratégies d'ensemble",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque stratégie de canaux à sa caractéristique.",
+    "colonne_a": [
+      "Multicanal",
+      "Crosscanal",
+      "Omnicanal"
+    ],
+    "colonne_b": [
+      "Canaux intégrés, centrés client, expérience unifiée",
+      "Plusieurs canaux non connectés",
+      "Canaux connectés, le client passe de l'un à l'autre"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Le crosscanal apporte de la synergie mais une complexité technique (CRM, tracking)."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-031",
+    "section": "2. Les stratégies d'ensemble",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi le co-branding Weight Watchers × Andros a-t-il échoué ?",
+    "options": [
+      "un prix trop bas",
+      "un produit défectueux",
+      "un logo raté",
+      "Andros n'a pas investi dans les campagnes prévues : l'alignement des engagements est primordial"
+    ],
+    "reponse": 3,
+    "explication": "Réussites : Red Bull × GoPro, Apple Watch × Hermès, Rihanna × Chopard."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-032",
+    "section": "2. Les stratégies d'ensemble",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels avantages offre le co-branding ? (3 réponses)",
+    "options": [
+      "améliorer image et crédibilité",
+      "toucher de nouvelles cibles",
+      "mutualiser les moyens",
+      "supprimer la concurrence",
+      "éviter toute communication"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Il faut des partenaires aux valeurs alignées et à la marque forte."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-033",
+    "section": "3. Le paysage des médias",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le sponsoring et le mécénat font partie des 6 grands médias publicitaires.",
+    "reponse": false,
+    "explication": "Faux : ils relèvent du hors-média. Les 6 grands médias sont la TV, la presse, l'affichage, Internet, la radio et le cinéma."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-034",
+    "section": "3. Le paysage des médias",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qu'un canal de communication ?",
+    "options": [
+      "une chaîne de télévision",
+      "le vecteur par lequel le message arrive jusqu'à la cible",
+      "un support print",
+      "un slogan"
+    ],
+    "reponse": 1,
+    "explication": "Le support est le moyen de diffusion concret au sein d'un média (TF1, Le Monde, NRJ)."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-035",
+    "section": "3. Le paysage des médias",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel est le principal point de vigilance de la radio ?",
+    "options": [
+      "son coût",
+      "sa faible proximité",
+      "l'absence d'image",
+      "son manque de ciblage horaire"
+    ],
+    "reponse": 2,
+    "explication": "Atouts : proximité, tranches horaires stratégiques, identité sonore."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-036",
+    "section": "3. Le paysage des médias",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les agences de presse comme l'AFP sont des prestataires que les annonceurs paient pour leurs relations presse.",
+    "reponse": false,
+    "explication": "Faux : ce sont les « grossistes de l'information » (environ 80 % des infos étrangères des quotidiens). Les agences de relations presse sont, elles, prestataires des annonceurs."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-037",
+    "section": "3. Le paysage des médias",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que désigne un « pure player » dans la presse web ?",
+    "options": [
+      "un média né en ligne, au ton indépendant",
+      "un titre papier historique",
+      "une radio locale",
+      "une agence de presse"
+    ],
+    "reponse": 0,
+    "explication": "S'y ajoutent influenceurs et KOL (Key Opinion Leaders)."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-038",
+    "section": "3. Le paysage des médias",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Une entreprise a une annonce importante mais sans aucune image à montrer. Quel média de relations presse est le moins adapté ?",
+    "options": [
+      "la presse écrite",
+      "la presse web",
+      "la radio",
+      "la télévision"
+    ],
+    "reponse": 3,
+    "explication": "Le choix du média dépend de l'information : une info très visuelle passe mal en radio, une info sans images n'intéresse pas la TV."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-039",
+    "section": "4. Plan média et média planning",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque notion à sa définition.",
+    "colonne_a": [
+      "Plan média",
+      "Média planning"
+    ],
+    "colonne_b": [
+      "Méthode qui synthétise le choix des médias et supports et la programmation des actions",
+      "Choix des supports et calendrier pour diffuser les messages"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "« Le plan média est au plan de communication ce que le raisin est au vin. »"
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-040",
+    "section": "4. Plan média et média planning",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel est le premier filtre dans le choix des médias ?",
+    "options": [
+      "le goût du créatif",
+      "les restrictions légales (tabac, alcool, médicaments)",
+      "la couleur du logo",
+      "l'avis des concurrents"
+    ],
+    "reponse": 1,
+    "explication": "Puis l'adéquation à la cible, le budget et les délais."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-041",
+    "section": "4. Plan média et média planning",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque indicateur à sa définition.",
+    "colonne_a": [
+      "Audience",
+      "Audience utile",
+      "Contact utile",
+      "Puissance du support"
+    ],
+    "colonne_b": [
+      "Nombre d'individus de la cible dans l'audience totale",
+      "Occasions de rencontre entre support et audience utile",
+      "Ensemble des individus touchés par le support",
+      "Individus de l'audience qui correspondent à la cible"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Couverture = audience utile / population cible ; affinité = audience utile / audience totale du support."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-042",
+    "section": "4. Plan média et média planning",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un support a une audience totale de 400 000 personnes, dont 100 000 dans la cible. Quel est son taux d'affinité ?",
+    "options": [
+      "4 %",
+      "40 %",
+      "25 %",
+      "400 %"
+    ],
+    "reponse": 2,
+    "explication": "Affinité = audience utile / audience totale × 100 = 100 000 / 400 000 = 25 %."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-043",
+    "section": "4. Plan média et média planning",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un support à très forte couverture a forcément une forte affinité avec une cible de niche.",
+    "reponse": false,
+    "explication": "Faux : TF1 peut avoir une énorme couverture mais une faible affinité pour une niche ; un magazine spécialisé, l'inverse."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-044",
+    "section": "4. Plan média et média planning",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Que contient le dossier stratégique du média planning ? (4 réponses)",
+    "options": [
+      "l'analyse de l'entreprise",
+      "l'analyse des consommateurs (segmentation)",
+      "l'analyse de la concurrence (3 forces, 3 faiblesses)",
+      "la stratégie marketing (campagne, actions, planning)",
+      "le règlement intérieur",
+      "les fiches de paie"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Plus une introduction et une conclusion."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-045",
+    "section": "5. La communication événementielle",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que signifie la citation de Frédéric Bedin (Hopscotch) « la publicité est nécessaire mais elle ne suffit plus » ?",
+    "options": [
+      "l'événement est un moyen de communication complémentaire, au service d'un objectif stratégique",
+      "la publicité est inutile",
+      "il faut supprimer les budgets pub",
+      "seul le digital compte"
+    ],
+    "reponse": 0,
+    "explication": "Typologies : séminaires, salons, conventions, lancements, portes ouvertes…"
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-046",
+    "section": "5. La communication événementielle",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque document de l'événementiel à son auteur.",
+    "colonne_a": [
+      "Le brief (cahier des charges)",
+      "La recommandation stratégique"
+    ],
+    "colonne_b": [
+      "L'agence, en réponse au brief",
+      "L'annonceur"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Le brief est le document référent : concis, clair, spécifique, écrit et validé en interne."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-047",
+    "section": "5. La communication événementielle",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels éléments le brief événementiel doit-il contenir ? (4 réponses)",
+    "options": [
+      "le contexte de l'entreprise",
+      "le ton de l'événement",
+      "les contraintes (budget, dates)",
+      "les risques internes et externes",
+      "le choix final du prestataire",
+      "le bilan post-événement"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Plus diagnostic et problématique, objectifs et cibles. Suit une consultation sous appel d'offres."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-048",
+    "section": "5. La communication événementielle",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la démarche événementielle.",
+    "elements": [
+      "Production et promotion jusqu'au jour J",
+      "Brief de l'annonceur",
+      "Post-événement : bilan, remerciements, retombées",
+      "Recommandation de l'agence",
+      "Stratégie (SWOT, problématique, cibles, objectifs)"
+    ],
+    "ordre": [
+      4,
+      1,
+      3,
+      0,
+      2
+    ],
+    "explication": "Le post-événement « boucle la boucle »."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-049",
+    "section": "5. La communication événementielle",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le webinaire est un événement 100 % en ligne, l'une des tendances de digitalisation de l'événementiel.",
+    "reponse": true,
+    "explication": "Vrai (Zoom, GoToWebinar), avec l'écoresponsabilité comme autre tendance majeure."
+  },
+  {
+    "resume": "b2-r07",
+    "bloc": 2,
+    "id": "b2-r07-qz-050",
+    "section": "5. La communication événementielle",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Un plan social ou un rachat en cours n'ont pas à figurer dans le brief d'un événement, car ce sont des sujets internes.",
+    "reponse": false,
+    "explication": "Faux : ce sont des risques internes que le brief doit mentionner, comme les risques externes (lieu, date, météo, participation)."
   },
   {
     "resume": "b2-r08",
@@ -7388,11 +17537,11 @@ var QUIZ = [
     "question": "Dans les dynamiques d'activation du hors-média, que caractérise la dynamique « push » ?",
     "options": [
       "attirer la demande vers la marque",
-      "pousser l'offre vers le distributeur puis le client : l'offre est motrice",
       "faire remonter les avis clients vers l'entreprise",
+      "pousser l'offre vers le distributeur puis le client : l'offre est motrice",
       "diffuser le message par les destinataires eux-mêmes"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Push : l'offre est motrice, on la pousse vers le distributeur puis le client. Pull : on attire la demande vers la marque. La diffusion par les destinataires relève du marketing viral."
   },
   {
@@ -7415,12 +17564,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Quelle est la différence entre communiqué de presse et dossier de presse ?",
     "options": [
-      "le communiqué est payant, le dossier est gratuit",
       "le communiqué annonce une information unique et factuelle ; le dossier est le document complet et durable de référence",
+      "le communiqué est payant, le dossier est gratuit",
       "le communiqué s'adresse aux journalistes, le dossier au grand public",
       "le communiqué est réservé aux crises, le dossier aux lancements"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Communiqué = court, une seule information (lancement, nomination, résultat), factuel avec contact presse. Dossier = complet et durable, la source de référence du journaliste. S'y ajoutent la conférence de presse et la revue de presse."
   },
   {
@@ -7433,11 +17582,11 @@ var QUIZ = [
     "question": "Quel outil sert d'indicateur de résultat des relations presse ?",
     "options": [
       "le communiqué de presse",
-      "la revue de presse, compilation des retombées",
+      "le taux d'ouverture des e-mails aux journalistes",
       "le baromètre Médiamétrie",
-      "le taux d'ouverture des e-mails aux journalistes"
+      "la revue de presse, compilation des retombées"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "La revue de presse compile les retombées obtenues : c'est l'indicateur de résultat des RP, un travail de long terme fondé sur le ciblage des journalistes pertinents et l'entretien de la relation."
   },
   {
@@ -7478,11 +17627,11 @@ var QUIZ = [
     "question": "Qu'est-ce que le Code d'Athènes (1965) ?",
     "options": [
       "le règlement européen de la publicité comparative",
-      "le code d'éthique international des relations publiques, adopté par la CERP et l'IPRA",
       "la charte de déontologie des journalistes",
+      "le code d'éthique international des relations publiques, adopté par la CERP et l'IPRA",
       "le premier code de gestion de crise, rédigé après l'accident de la Pennsylvania Railroad"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Le Code d'Athènes, en référence à la Déclaration des droits de l'Homme, interdit notamment de subordonner la vérité à d'autres impératifs ou de diffuser des informations non contrôlées. Figure fondatrice européenne : Lucien Matrat, président fondateur de la CERP."
   },
   {
@@ -7518,12 +17667,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Red Bull soutient financièrement des événements sportifs en échange d'une visibilité de sa marque. De quoi s'agit-il ?",
     "options": [
-      "de mécénat",
       "de parrainage (sponsoring), avec contrepartie de visibilité",
+      "de mécénat",
       "d'un partenariat d'organismes",
       "d'engagement sociétal"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Le parrainage (sponsoring) est un soutien financier ou matériel AVEC contrepartie de visibilité. Le mécénat est un soutien SANS contrepartie directe. Distinction classique à restituer."
   },
   {
@@ -7571,11 +17720,11 @@ var QUIZ = [
     "question": "Quelle relation le cours établit-il entre communication interne et engagement des employés ?",
     "options": [
       "ce sont deux synonymes",
-      "l'engagement des employés est le résultat de la communication interne",
+      "l'engagement se mesure par le taux d'utilisation de l'intranet",
       "l'engagement précède la communication interne",
-      "l'engagement se mesure par le taux d'utilisation de l'intranet"
+      "l'engagement des employés est le résultat de la communication interne"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "La communication interne (informer, motiver, inspirer, de façon bidirectionnelle — descendante ET ascendante) produit l'engagement, qui en est le résultat. Ses limites : impact difficile à mesurer, réception inégale."
   },
   {
@@ -7638,6 +17787,588 @@ var QUIZ = [
       "Idéalement, un indicateur de résultat associé (ex. revue de presse pour des RP, contacts qualifiés pour un salon)"
     ],
     "explication": "Le format Q9 : proposer une action argumentée. Le hors-média est particulièrement défendable en BtoB, où les audiences de masse des grands médias sont chères et peu ciblées."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-017",
+    "section": "1. La communication hors-média",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Le hors-média tisse des liens de proximité avec les cibles et convient bien aux budgets serrés.",
+    "reponse": true,
+    "explication": "Vrai : approche très marketing de la communication, à fort retour sur investissement."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-018",
+    "section": "1. La communication hors-média",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi une marque d'alcool privilégie-t-elle souvent le hors-média ?",
+    "options": [
+      "parce qu'il coûte toujours moins cher",
+      "pour contourner les canaux où la publicité est interdite ou encadrée",
+      "parce que la TV refuse toute publicité",
+      "pour toucher les enfants"
+    ],
+    "reponse": 1,
+    "explication": "C'est l'un des 7 objectifs du hors-média."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-019",
+    "section": "1. La communication hors-média",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que le marketing viral ?",
+    "options": [
+      "un virus informatique",
+      "une publicité TV",
+      "utiliser les destinataires du message comme diffuseurs et amplificateurs",
+      "un mailing de masse"
+    ],
+    "reponse": 2,
+    "explication": "Leviers : bouche-à-oreille, parrainage, contenus partageables."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-020",
+    "section": "1. La communication hors-média",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque dynamique d'activation à son principe.",
+    "colonne_a": [
+      "Push",
+      "Pull"
+    ],
+    "colonne_b": [
+      "Attirer la demande vers la marque",
+      "Pousser l'offre vers le distributeur puis le client"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Dans le push, l'offre est motrice."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-021",
+    "section": "1. La communication hors-média",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Le sponsoring sportif répond surtout à quel objectif du hors-média ?",
+    "options": [
+      "communiquer au bon endroit, au bon moment, auprès des bonnes cibles",
+      "stimuler les ventes par des offres spéciales",
+      "contourner la réglementation",
+      "remplacer le site web"
+    ],
+    "reponse": 0,
+    "explication": "Autre objectif : soutenir un message publicitaire par des actions concrètes."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-022",
+    "section": "2. Les relations presse",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Comment le cours définit-il les relations presse ?",
+    "options": [
+      "de la publicité dissimulée",
+      "toutes les actions pour capter l'intérêt du journaliste et le convaincre de transmettre son message",
+      "l'achat d'espaces dans la presse",
+      "la rédaction des articles à la place des journalistes"
+    ],
+    "reponse": 1,
+    "explication": "Les journalistes restent libres de la rédaction."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-023",
+    "section": "2. Les relations presse",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qui mesure les audiences des médias en France ?",
+    "options": [
+      "l'ARPP",
+      "Médiamétrie",
+      "l'INPI",
+      "la CNIL"
+    ],
+    "reponse": 1,
+    "explication": "Les médias de masse se sont digitalisés : versions numériques des titres, pure players."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-024",
+    "section": "2. Les relations presse",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La conférence de presse, peu coûteuse, convient à toute information, même mineure.",
+    "reponse": false,
+    "explication": "Faux : elle est coûteuse et se réserve aux informations de première importance."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-025",
+    "section": "2. Les relations presse",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que doit contenir un communiqué de presse ?",
+    "options": [
+      "toute l'histoire de l'entreprise",
+      "une publicité",
+      "une information unique, factuelle et structurée, avec un contact presse",
+      "des tarifs détaillés"
+    ],
+    "reponse": 2,
+    "explication": "Le dossier de presse, lui, est complet et durable : la source de référence du journaliste."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-026",
+    "section": "2. Les relations presse",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Les relations presse sont un travail ponctuel, à activer uniquement lors d'un lancement.",
+    "reponse": false,
+    "explication": "Faux : c'est un travail de long terme, qui consiste à cibler les journalistes pertinents et entretenir la relation."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-027",
+    "section": "3. Les relations publiques",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quels sont les 3 éléments qui définissent les relations publiques ? (3 réponses)",
+    "options": [
+      "prendre en compte l'intérêt général",
+      "apporter une information pertinente à l'actualité",
+      "ne pas être dans une démarche publicitaire",
+      "promouvoir un produit précis",
+      "acheter de l'espace"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Elles visent d'abord l'image corporate."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-028",
+    "section": "3. Les relations publiques",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qui distingue les relations publiques de la publicité ?",
+    "options": [
+      "la publicité a une finalité commerciale affichée, les RP visent l'intérêt général",
+      "rien",
+      "les RP sont payantes",
+      "la publicité est gratuite"
+    ],
+    "reponse": 0,
+    "explication": "D'où la méfiance envers la « publicité déguisée »."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-029",
+    "section": "3. Les relations publiques",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Depuis 2017, le lobbying est encadré par un répertoire numérique des représentants d'intérêts.",
+    "reponse": true,
+    "explication": "Vrai : le lobbying argumente pour des intérêts propres auprès des décideurs publics."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-030",
+    "section": "3. Les relations publiques",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Selon Nathalie Heinich, quelles sont les 3 facettes des relations publiques ?",
+    "options": [
+      "prix, produit, place",
+      "notoriété, image, ventes",
+      "information, persuasion, action",
+      "présentation, représentation, présence"
+    ],
+    "reponse": 3,
+    "explication": "Figure fondatrice européenne : Lucien Matrat, président fondateur de la CERP."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-031",
+    "section": "3. Les relations publiques",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quels ingrédients sont indispensables aux « publications de prestige » ?",
+    "options": [
+      "un prix barré et un code promo",
+      "des images attrayantes et des données chiffrées précises et fiables",
+      "un jeu-concours",
+      "une vidéo virale"
+    ],
+    "reponse": 1,
+    "explication": "Elles valorisent l'activité globale de l'entreprise."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-032",
+    "section": "3. Les relations publiques",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qui est considéré comme le pionnier de la communication de crise ?",
+    "options": [
+      "Lucien Matrat",
+      "Éric Giuily",
+      "Ivy Ledbetter Lee (Pennsylvania Railroad, 1906)",
+      "Nathalie Heinich"
+    ],
+    "reponse": 2,
+    "explication": "Il a choisi la transparence plutôt que la dissimulation lors d'un accident ferroviaire."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-033",
+    "section": "3. Les relations publiques",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la règle commune de gestion de crise (Findus, Boeing).",
+    "elements": [
+      "Prouver les correctifs",
+      "Reconnaître",
+      "Informer"
+    ],
+    "ordre": [
+      1,
+      2,
+      0
+    ],
+    "explication": "Transparence avec médias, autorités et public."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-034",
+    "section": "3. Les relations publiques",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Le community manager est présenté comme le « chargé des relations publiques 2.0 ».",
+    "reponse": true,
+    "explication": "Vrai : il développe l'e-réputation."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-035",
+    "section": "4. La communication corporate",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Decathlon fête ses 40 ans avec un film sur ses innovations et la valeur sentimentale de la marque. Qu'est-ce qui en fait du corporate ?",
+    "options": [
+      "il valorise l'entreprise sans donner l'impression de vendre",
+      "il présente des promotions",
+      "il cible uniquement les salariés",
+      "il est diffusé à la TV"
+    ],
+    "reponse": 0,
+    "explication": "Le corporate promeut l'entreprise, pas ses produits : un levier de différenciation."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-036",
+    "section": "4. La communication corporate",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque levier de proximité à son exemple.",
+    "colonne_a": [
+      "Publi-rédactionnel",
+      "Consumer magazine",
+      "Street marketing",
+      "Engagement sociétal"
+    ],
+    "colonne_b": [
+      "Danone contre l'obésité",
+      "La tournée de coiffeurs Fructis Style",
+      "L'article sur la salade suivi d'une pub Florette",
+      "Les magazines de recettes Carrefour"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Autres leviers : salons, partenariats d'organismes, parrainage, expérience en magasin."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-037",
+    "section": "4. La communication corporate",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque notion à sa définition.",
+    "colonne_a": [
+      "Parrainage (sponsoring)",
+      "Mécénat"
+    ],
+    "colonne_b": [
+      "Soutien sans contrepartie directe",
+      "Soutien avec contrepartie de visibilité"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Red Bull dans le sport : du parrainage."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-038",
+    "section": "4. La communication corporate",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Super U qui axe son discours sur l'éthique et la proximité avec ses producteurs fait de la communication produit.",
+    "reponse": false,
+    "explication": "Faux : c'est de la communication corporate, qui valorise l'identité et les engagements de l'entreprise."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-039",
+    "section": "5. La communication symbolique",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Où vérifier la disponibilité d'un nom de marque ?",
+    "options": [
+      "à la CNIL",
+      "chez Médiamétrie",
+      "à l'ARPP",
+      "à l'INPI"
+    ],
+    "reponse": 3,
+    "explication": "Puis on teste le nom et on le protège par un dépôt de marque à l'INPI."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-040",
+    "section": "5. La communication symbolique",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle agence de naming a créé les noms Vélib et Vinci ?",
+    "options": [
+      "Creads",
+      "Nomen",
+      "Havas",
+      "Publicis"
+    ],
+    "reponse": 1,
+    "explication": "On peut aussi brainstormer en interne."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-041",
+    "section": "5. La communication symbolique",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Nike s'appelait à l'origine « Brad's Drink ».",
+    "reponse": false,
+    "explication": "Faux : c'est Pepsi. Nike s'appelait « Blue Ribbon Sports » et Google « Backrub »."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-042",
+    "section": "5. La communication symbolique",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelles qualités doit avoir un nom de marque ?",
+    "options": [
+      "long et technique",
+      "identique à celui d'un concurrent",
+      "compréhensible et facilement mémorisable",
+      "en anglais obligatoirement"
+    ],
+    "reponse": 2,
+    "explication": "Il transmet le thème clé du produit."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-043",
+    "section": "5. La communication symbolique",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "À quoi sert la charte graphique ?",
+    "options": [
+      "à garantir une présentation cohérente sur tous les supports internes et externes",
+      "à fixer les prix",
+      "à recruter",
+      "à protéger le nom"
+    ],
+    "reponse": 0,
+    "explication": "Coca-Cola : rouge et blanc partout, des bouteilles aux camions."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-044",
+    "section": "6. La communication interne",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Selon IBM, quelle part des employés n'a pas une parfaite compréhension de la stratégie ?",
+    "options": [
+      "13 %",
+      "44 %",
+      "90 %",
+      "72 %"
+    ],
+    "reponse": 3,
+    "explication": "74 % ont le sentiment de manquer les actualités ; 13 % seulement utilisent l'intranet chaque jour."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-045",
+    "section": "6. La communication interne",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La communication interne doit être uniquement descendante, de la direction vers les salariés.",
+    "reponse": false,
+    "explication": "Faux : elle est bidirectionnelle, descendante et ascendante."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-046",
+    "section": "6. La communication interne",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les limites de la communication interne ? (3 réponses)",
+    "options": [
+      "un impact difficile à mesurer",
+      "une réception inégale",
+      "un besoin en temps et en ressources",
+      "elle est interdite",
+      "elle remplace le management"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Recommandation : une approche multicanale, formelle et informelle."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-047",
+    "section": "6. La communication interne",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Dans ce cours, le sigle RSE désigne le Réseau Social d'Entreprise, et non la Responsabilité Sociétale des Entreprises.",
+    "reponse": true,
+    "explication": "Vrai, c'est un piège de sigle : un système de communication interne transversale."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-048",
+    "section": "6. La communication interne",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle « raison d'être » opérationnelle convient au déploiement d'un réseau social d'entreprise ?",
+    "options": [
+      "« être moderne »",
+      "« réduire de 25 % le volume d'e-mails »",
+      "« faire comme les autres »",
+      "« avoir un outil »"
+    ],
+    "reponse": 1,
+    "explication": "Elle doit être chiffrée. Suivi : indicateurs d'usage + indicateurs business."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-049",
+    "section": "6. La communication interne",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle est la principale limite des réseaux sociaux d'entreprise ?",
+    "options": [
+      "leur coût très élevé",
+      "l'interdiction CNIL",
+      "des taux d'utilisation réels faibles (≈ 25 % des managers)",
+      "leur incompatibilité avec les e-mails"
+    ],
+    "reponse": 2,
+    "explication": "L'outil prolonge la culture collaborative, il ne la crée pas."
+  },
+  {
+    "resume": "b2-r08",
+    "bloc": 2,
+    "id": "b2-r08-qz-050",
+    "section": "6. La communication interne",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Que prévoit l'avis de la CNIL du 12 juin 2009 sur les réseaux sociaux d'entreprise ?",
+    "options": [
+      "authentification des membres, cryptage des communications, obligations d'information",
+      "leur interdiction",
+      "leur usage libre sans règle",
+      "l'accès public"
+    ],
+    "reponse": 0,
+    "explication": "58 % des grandes entreprises en sont équipées. Solutions : Workplace, Yammer, Jamespot, Talkspirit."
   },
   {
     "resume": "b2-r09",
@@ -7738,12 +18469,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Quelle est la relation entre UX et UI ?",
     "options": [
-      "l'UI englobe l'UX",
       "l'UX (le ressenti de l'utilisateur) englobe l'UI (la conception de l'interface elle-même)",
+      "l'UI englobe l'UX",
       "UX et UI sont synonymes",
       "l'UX concerne le print, l'UI le digital"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "L'UX (User eXperience) est le ressenti global de l'utilisateur — navigation fluide, agréable, intuitive. L'UI (User Interface) est la conception des boutons, menus et écrans. L'UX englobe l'UI."
   },
   {
@@ -7756,11 +18487,11 @@ var QUIZ = [
     "question": "Quelle est la différence entre la charte graphique et le design system ?",
     "options": [
       "le design system est la version print de la charte graphique",
-      "la charte dit « à quoi ça ressemble » ; le design system fournit « les pièces prêtes à assembler » pour designers et développeurs",
+      "le design system remplace la charte graphique",
       "la charte est numérique, le design system est papier",
-      "le design system remplace la charte graphique"
+      "la charte dit « à quoi ça ressemble » ; le design system fournit « les pièces prêtes à assembler » pour designers et développeurs"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "Le design system est un outil collaboratif (référence : Figma) qui réunit tous les éléments graphiques dans un système accessible — nécessaire dès qu'on produit sites et applications, pour garantir l'homogénéité sur site, mobile et app."
   },
   {
@@ -7841,11 +18572,11 @@ var QUIZ = [
     "question": "Pour utiliser la photo d'une personne sur un support de communication, l'autorisation doit être :",
     "options": [
       "orale, si la personne était consciente d'être photographiée",
-      "expresse, spéciale et déterminée : écrite, pour un usage précis, sur une durée et un périmètre définis",
       "implicite dès lors que la photo a été prise dans un lieu public",
+      "expresse, spéciale et déterminée : écrite, pour un usage précis, sur une durée et un périmètre définis",
       "renouvelée chaque année"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Le droit à l'image (article 9 du Code civil, respect de la vie privée) protège les personnes. Les trois critères sont cumulatifs. Exception principale : le droit à l'information (actualité, intérêt général), d'interprétation stricte."
   },
   {
@@ -7857,12 +18588,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Sur quel fondement repose le droit à l'image en France ?",
     "options": [
-      "le Code de la propriété intellectuelle",
       "l'article 9 du Code civil, relatif au respect de la vie privée",
+      "le Code de la propriété intellectuelle",
       "le RGPD",
       "la loi Sapin II"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Le droit à l'image protège les personnes (pas les créations) contre l'utilisation non autorisée de leur représentation — fondement : article 9 du Code civil."
   },
   {
@@ -7886,11 +18617,11 @@ var QUIZ = [
     "question": "Dans un plan en pyramide inversée, à quoi répond le premier paragraphe ?",
     "options": [
       "à la thèse, avant l'antithèse et la synthèse",
-      "aux 5 questions clés : Qui ? Où ? Quoi ? Quand ? Pourquoi ? (règle des 5W)",
+      "à l'opinion de l'auteur, avant les faits",
       "au contexte historique du sujet",
-      "à l'opinion de l'auteur, avant les faits"
+      "aux 5 questions clés : Qui ? Où ? Quoi ? Quand ? Pourquoi ? (règle des 5W)"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "La pyramide inversée classe les informations par importance décroissante : même si l'internaute ne finit pas l'article, il a reçu l'essentiel. C'est LE plan du web et du journalisme — à l'opposé du plan de dissertation."
   },
   {
@@ -7920,11 +18651,11 @@ var QUIZ = [
     "question": "Qu'est-ce que le chapô d'un article ?",
     "options": [
       "les derniers mots du texte, qui renforcent l'angle",
-      "le petit paragraphe introductif après le titre, qui résume l'essentiel — et le premier contenu scanné par les moteurs",
       "le sous-titre placé au-dessus du titre principal",
+      "le petit paragraphe introductif après le titre, qui résume l'essentiel — et le premier contenu scanné par les moteurs",
       "l'encadré qui liste les sources"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Le chapô résume et met en appétit — y placer les mots-clés. L'attaque = les premiers mots du texte ; la chute = les dernières phrases (ouverture, écho à l'attaque) ; la titraille = l'ensemble titres/surtitres/intertitres/chapô."
   },
   {
@@ -7936,12 +18667,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "« Ce SUV émet 120 g de CO2/km » et « Ce SUV est le meilleur choix pour la planète » : comment qualifier ces deux énoncés ?",
     "options": [
-      "deux faits",
       "un fait (vérifiable) puis une opinion (interprétation subjective)",
+      "deux faits",
       "une opinion puis un fait",
       "deux opinions"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Un fait est objectif et vérifiable (chiffre, étude, texte de loi) ; une opinion est une interprétation. Règle d'argumentation : être factuel, citer ses sources, et à chaque affirmation, une preuve."
   },
   {
@@ -8018,6 +18749,742 @@ var QUIZ = [
     "explication": "C'est la check-list de la Q11 : la conformité juridique (droit d'auteur, droit à l'image) y est un critère d'évaluation explicite, avec l'inclusivité et l'accessibilité des supports."
   },
   {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-021",
+    "section": "1. Les formes de communication",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Que contient le message clé d'une campagne ?",
+    "options": [
+      "le logo",
+      "le planning",
+      "le budget",
+      "la promesse, bénéfice objectif ou subjectif suggéré à la cible"
+    ],
+    "reponse": 3,
+    "explication": "Simple, clair et vrai, il donne le sens de la campagne et s'inscrit dans la ligne éditoriale."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-022",
+    "section": "1. Les formes de communication",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque type de relation à son exemple.",
+    "colonne_a": [
+      "BtoB",
+      "BtoC",
+      "CtoC"
+    ],
+    "colonne_b": [
+      "Leboncoin",
+      "Vendeur de pneus → garagistes",
+      "Intermarché → consommateurs"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "En CtoC, l'entreprise n'est qu'intermédiaire."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-023",
+    "section": "1. Les formes de communication",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que la communication d'influence ?",
+    "options": [
+      "la publicité TV",
+      "agir sur l'opinion et les décideurs, souvent via des leaders d'opinion (lobbying)",
+      "la communication interne",
+      "le marketing direct"
+    ],
+    "reponse": 1,
+    "explication": "Exemple historique : E. Bernays et les médecins pour l'industrie du tabac. Elle impose aujourd'hui sincérité et preuve."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-024",
+    "section": "1. Les formes de communication",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une cible de communication doit être à la fois qualifiée (données de base et psychologiques) et quantifiée.",
+    "reponse": true,
+    "explication": "Vrai ; le persona aide à la comprendre."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-025",
+    "section": "2. La galaxie des contenus",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la démarche de communication multicanale efficace.",
+    "elements": [
+      "Sélection des canaux appropriés",
+      "Analyse des résultats",
+      "Veille concurrentielle",
+      "Objectifs SMART",
+      "Connaissance approfondie de la cible",
+      "Cohérence du message"
+    ],
+    "ordre": [
+      2,
+      4,
+      0,
+      3,
+      5,
+      1
+    ],
+    "explication": "Utiliser simultanément plusieurs canaux pour maximiser la portée."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-026",
+    "section": "2. La galaxie des contenus",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque objectif au contenu cité dans le cours.",
+    "colonne_a": [
+      "Notoriété",
+      "Relation client",
+      "Public jeune"
+    ],
+    "colonne_b": [
+      "Filtres d'essayage Snapchat (Adidas)",
+      "Campagne participative #ShareYourEars (Disney)",
+      "« Meet me at Starbucks »"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Le format s'adapte à l'objectif, à la cible et au canal."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-027",
+    "section": "2. La galaxie des contenus",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque approche à ses méthodes.",
+    "colonne_a": [
+      "Inbound",
+      "Outbound"
+    ],
+    "colonne_b": [
+      "Publicité TV/radio, bannières, pop-ups, e-mailing de masse",
+      "SEO, blog, livres blancs, réseaux sociaux"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Inbound : trafic qualifié mais lent. Outbound : portée rapide mais intrusif et coûteux."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-028",
+    "section": "2. La galaxie des contenus",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Yuka illustre un inbound marketing intégral, sans publicité.",
+    "reponse": true,
+    "explication": "Vrai : attirer (scan), convertir (premium), vendre (abonnement, livre), fidéliser (notifications)."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-029",
+    "section": "2. La galaxie des contenus",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "L'inbound marketing offre une portée large et rapide, idéale pour une notoriété massive immédiate.",
+    "reponse": false,
+    "explication": "Faux : c'est l'atout de l'outbound. L'inbound est plus lent et exigeant en contenu, mais crée une relation durable."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-030",
+    "section": "3. Le cadre graphique",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Quel est le point de départ de la charte graphique ?",
+    "options": [
+      "la typographie",
+      "la papeterie",
+      "le logo, dans toutes ses déclinaisons et avec ses règles d'utilisation",
+      "les couleurs"
+    ],
+    "reponse": 2,
+    "explication": "Emplacements, tailles minimales, interdits : des règles facilement applicables."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-031",
+    "section": "3. Le cadre graphique",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel est l'outil collaboratif de référence pour construire un design system ?",
+    "options": [
+      "Figma",
+      "Excel",
+      "Word",
+      "Mailchimp"
+    ],
+    "reponse": 0,
+    "explication": "Le design system réunit les éléments graphiques dans un système accessible aux designers et développeurs."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-032",
+    "section": "3. Le cadre graphique",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que sont les design patterns ?",
+    "options": [
+      "des motifs décoratifs",
+      "des grilles tarifaires",
+      "des polices de caractères",
+      "des modèles d'interface prêts à l'emploi, éprouvés"
+    ],
+    "reponse": 3,
+    "explication": "Gain de temps et garantie de modèles éprouvés."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-033",
+    "section": "3. Le cadre graphique",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Dans un design system, les couleurs sont codées en HEX pour le web et déclinées en mode jour et mode nuit.",
+    "reponse": true,
+    "explication": "Vrai, avec une gamme de gris, des icônes pleines et filaires, un grid layout."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-034",
+    "section": "4. Chartes éditoriales",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels éléments constituent la charte éditoriale ? (4 réponses)",
+    "options": [
+      "l'identité de la marque",
+      "le public cible et les personas",
+      "le ton et le style",
+      "les valeurs et principes éditoriaux",
+      "le planning des publications de la semaine",
+      "le budget média"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Plus des consignes graphiques. La fréquence relève de la ligne éditoriale."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-035",
+    "section": "4. Chartes éditoriales",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre le processus de rédaction de la ligne éditoriale.",
+    "elements": [
+      "Choix des formats et supports",
+      "Méthodes d'interaction avec le public",
+      "Analyse des objectifs",
+      "Fréquence de publication",
+      "Identification des messages clés"
+    ],
+    "ordre": [
+      2,
+      4,
+      0,
+      3,
+      1
+    ],
+    "explication": "La communication digitale n'est pas unidirectionnelle."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-036",
+    "section": "4. Chartes éditoriales",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque support à sa ligne éditoriale type.",
+    "colonne_a": [
+      "Réseaux sociaux",
+      "Blog",
+      "Newsletter",
+      "Site web"
+    ],
+    "colonne_b": [
+      "Navigation fluide, clarté, appels à l'action",
+      "Pertinence pour le destinataire, régularité sans saturation",
+      "Contenus concis, interactifs, fréquence élevée",
+      "Contenus approfondis, voix authentique, fréquence moindre"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Adaptation cohérente avec la charte."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-037",
+    "section": "4. Chartes éditoriales",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Pour nourrir sa ligne éditoriale, s'inspirer et copier des concurrents revient au même.",
+    "reponse": false,
+    "explication": "Faux : veille créative et curation, sans jamais confondre s'inspirer et copier."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-038",
+    "section": "5. La réglementation",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quand une œuvre est-elle « originale » au sens du droit d'auteur ?",
+    "options": [
+      "quand elle est déposée",
+      "quand elle porte l'empreinte de la personnalité de son auteur",
+      "quand elle est nouvelle sur le marché",
+      "quand elle est vendue"
+    ],
+    "reponse": 1,
+    "explication": "Protection automatique, sans formalité."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-039",
+    "section": "5. La réglementation",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque droit à ce qu'il protège.",
+    "colonne_a": [
+      "Droit d'auteur",
+      "Droit à l'image"
+    ],
+    "colonne_b": [
+      "Les personnes, contre l'utilisation non autorisée de leur représentation",
+      "Les œuvres originales"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Droit à l'image : article 9 du Code civil."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-040",
+    "section": "5. La réglementation",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle est la principale exception au droit à l'image ?",
+    "options": [
+      "l'usage commercial",
+      "la publication sur les réseaux",
+      "le droit à l'information (actualité, intérêt général)",
+      "l'usage interne"
+    ],
+    "reponse": 2,
+    "explication": "D'interprétation stricte et sous réserve du respect de la dignité."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-041",
+    "section": "5. La réglementation",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Le droit moral d'un auteur disparaît lorsqu'il place son œuvre sous licence libre.",
+    "reponse": false,
+    "explication": "Faux : inaliénable et perpétuel, il subsiste même sous licence libre."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-042",
+    "section": "5. La réglementation",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels risques juridiques entraîne l'usage non autorisé d'une image ou d'une police ? (2 réponses)",
+    "options": [
+      "des sanctions civiles (dommages-intérêts)",
+      "des sanctions pénales",
+      "aucun risque si l'image est sur Internet",
+      "une simple amende de stationnement"
+    ],
+    "reponse": [
+      0,
+      1
+    ],
+    "explication": "Prévention : traçabilité des droits acquis. Les polices sont aussi protégées."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-043",
+    "section": "5. La réglementation",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Face aux contenus produits par IA générative, la responsabilité éditoriale de l'entreprise reste pleine et entière.",
+    "reponse": true,
+    "explication": "Vrai, d'où l'intégration de règles d'usage de l'IA dans les chartes éditoriales."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-044",
+    "section": "6. Produire le message",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque registre d'argumentation à sa nature.",
+    "colonne_a": [
+      "Logos",
+      "Éthos",
+      "Pathos"
+    ],
+    "colonne_b": [
+      "L'émotion",
+      "La raison",
+      "La crédibilité"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "On les dose selon l'objectif."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-045",
+    "section": "6. Produire le message",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi la pyramide inversée convient-elle au web ?",
+    "options": [
+      "parce que même si l'internaute ne finit pas, il a reçu l'essentiel",
+      "parce qu'elle est plus longue",
+      "parce qu'elle commence par la conclusion de dissertation",
+      "parce qu'elle cache l'information principale"
+    ],
+    "reponse": 0,
+    "explication": "Informations par ordre d'importance décroissante, à l'opposé du plan de dissertation."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-046",
+    "section": "6. Produire le message",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "« Le jour de gloire est arrivé » pour annoncer une victoire en Coupe du monde : quel type de titre ?",
+    "options": [
+      "informatif",
+      "descriptif",
+      "froid",
+      "incitatif, à compléter d'un surtitre"
+    ],
+    "reponse": 3,
+    "explication": "Le titre informatif, factuel avec mots-clés, est meilleur pour le SEO."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-047",
+    "section": "6. Produire le message",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que la titraille ?",
+    "options": [
+      "le titre seul",
+      "l'ensemble titres, surtitres, sous-titres, intertitres et chapô",
+      "la signature de l'auteur",
+      "la légende des photos"
+    ],
+    "reponse": 1,
+    "explication": "Elle hiérarchise l'information ; sa forme est décrite dans la charte graphique."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-048",
+    "section": "6. Produire le message",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La chute d'un article doit être une conclusion de type dissertation, qui résume tout le texte.",
+    "reponse": false,
+    "explication": "Faux : elle renforce l'angle (ouverture, humour, citation, écho à l'attaque)."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-049",
+    "section": "6. Produire le message",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque connecteur logique à sa fonction.",
+    "colonne_a": [
+      "En revanche",
+      "Néanmoins",
+      "Par conséquent",
+      "Au cas où"
+    ],
+    "colonne_b": [
+      "Condition",
+      "Conséquence",
+      "Nuance",
+      "Opposition"
+    ],
+    "paires": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Ils fluidifient l'enchaînement des idées."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-050",
+    "section": "6. Produire le message",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un même SUV sobre en CO2 s'argumente « écologie » pour certains et « économies de carburant » pour d'autres. Quel principe est appliqué ?",
+    "options": [
+      "mentir selon la cible",
+      "changer de produit",
+      "adapter les arguments au système de valeurs du lectorat",
+      "multiplier les objectifs"
+    ],
+    "reponse": 2,
+    "explication": "L'important n'est pas ce qu'on veut dire mais ce que le lecteur doit retenir."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-051",
+    "section": "6. Produire le message",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un témoignage est d'autant plus convaincant que le témoin ressemble au lectorat.",
+    "reponse": true,
+    "explication": "Vrai : à chaque affirmation, une preuve (chiffres, témoignages, tests)."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-052",
+    "section": "6. Produire le message",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel temps privilégier dans un texte d'information ?",
+    "options": [
+      "le présent",
+      "le passé simple",
+      "le futur antérieur",
+      "le conditionnel"
+    ],
+    "reponse": 0,
+    "explication": "Et toujours situer dans l'espace et le temps, sans présumer des connaissances du lecteur."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-053",
+    "section": "6. Produire le message",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Quelle longueur vise-t-on pour un article de blog riche selon le cours ?",
+    "options": [
+      "≈ 200 mots",
+      "≈ 500 mots",
+      "≈ 10 000 mots",
+      "≈ 2 000 mots"
+    ],
+    "reponse": 3,
+    "explication": "Google aime la profondeur et la régularité. On écrit librement puis on coupe le superflu."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-054",
+    "section": "7. Produire les supports",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une brochure A4 fermée correspond à quel format ouvert ?",
+    "options": [
+      "A5",
+      "A3",
+      "A4",
+      "A2"
+    ],
+    "reponse": 1,
+    "explication": "Distinguer format ouvert et format fermé ; anticiper toutes les déclinaisons avant de créer."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-055",
+    "section": "7. Produire les supports",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque logiciel Adobe à sa spécialité.",
+    "colonne_a": [
+      "Photoshop",
+      "Illustrator",
+      "InDesign"
+    ],
+    "colonne_b": [
+      "Mise en page",
+      "Image",
+      "Vectoriel"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Canva et Figma sont des alternatives collaboratives pour les non-spécialistes."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-056",
+    "section": "7. Produire les supports",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une image en 72 ppp, suffisante pour le web, convient aussi à l'impression d'une affiche.",
+    "reponse": false,
+    "explication": "Faux : l'impression demande 300 dpi. Il faut anticiper toutes les déclinaisons de formats avant de créer."
+  },
+  {
+    "resume": "b2-r09",
+    "bloc": 2,
+    "id": "b2-r09-qz-057",
+    "section": "7. Produire les supports",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la méthodologie de conception d'un support.",
+    "elements": [
+      "Application de la charte graphique",
+      "Mesure de l'efficacité et optimisation itérative",
+      "Analyse des besoins et objectifs",
+      "Hiérarchisation de l'information"
+    ],
+    "ordre": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "explication": "On mesure par exemple le taux de clic ou l'engagement."
+  },
+  {
     "resume": "b2-r10",
     "bloc": 2,
     "id": "b2-r10-qz-001",
@@ -8054,10 +19521,10 @@ var QUIZ = [
     "options": [
       "notoriété",
       "engagement",
-      "conversion",
-      "fidélisation / satisfaction"
+      "fidélisation / satisfaction",
+      "conversion"
     ],
-    "reponse": 3,
+    "reponse": 2,
     "explication": "Les 4 groupes : notoriété (mentions, portée, abonnés), engagement (interactions, commentaires, clics), conversion (trafic, leads, ventes attribuées), fidélisation/satisfaction (temps de réponse, sentiment, avis). C'est la grille attendue en Q13."
   },
   {
@@ -8069,12 +19536,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Une marque publie des articles de fond pour positionner son expertise. De quel type de publication s'agit-il ?",
     "options": [
-      "des publications engageantes",
       "des publications informatives",
+      "des publications engageantes",
       "des publications promotionnelles",
       "des publications sponsorisées"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Trois types à équilibrer : informatives (positionner l'expertise), engageantes (susciter l'interaction), promotionnelles. La ligne éditoriale fixe aussi le ton (formel/informel), les visuels sous charte et les hashtags."
   },
   {
@@ -8098,11 +19565,11 @@ var QUIZ = [
     "question": "Pourquoi sous-titrer les vidéos et stories publiées sur les réseaux sociaux ?",
     "options": [
       "pour améliorer le référencement de la vidéo",
-      "pour l'accessibilité : beaucoup d'utilisateurs regardent sans le son",
+      "pour contourner les limites de durée",
       "parce que les CGU des plateformes l'imposent",
-      "pour contourner les limites de durée"
+      "pour l'accessibilité : beaucoup d'utilisateurs regardent sans le son"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "Le sous-titrage est une fonctionnalité d'accessibilité à intégrer à la ligne éditoriale — avec les émojis (avec discernement), la géolocalisation, les hashtags et la publication légale des contenus (droits)."
   },
   {
@@ -8297,12 +19764,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "En France, que risque un influenceur qui ne signale pas l'intention commerciale d'un partenariat ?",
     "options": [
-      "un simple avertissement de la plateforme",
       "jusqu'à 2 ans d'emprisonnement et 300 000 € d'amende pour pratique commerciale trompeuse",
+      "un simple avertissement de la plateforme",
       "la suppression de son compte",
       "une amende forfaitaire de 1 500 €"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "La transparence est obligatoire : les partenariats commerciaux doivent être clairement divulgués. S'ajoutent les règles sectorielles (alcool, jeux d'argent, actes médicaux). La marque se protège par une charte interne et des lignes directrices de divulgation."
   },
   {
@@ -8354,6 +19821,762 @@ var QUIZ = [
       "Des indicateurs par groupe de KPI : engagement (interactions, commentaires), fidélisation/satisfaction (temps de réponse, sentiment des mentions), notoriété (portée, mentions) — chacun relié à un objectif"
     ],
     "explication": "C'est la structure attendue en Q13 : bonnes pratiques (charte de modération + animation + veille) ET indicateurs de mesure, e-réputation comprise. La rapidité et la transparence font la différence en cas de crise (Nestlé vs Anthropologie)."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-019",
+    "section": "1. Le community manager",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Comment le cours définit-il le community manager ?",
+    "options": [
+      "le directeur marketing qui conçoit la stratégie",
+      "un influenceur rémunéré",
+      "l'ambassadeur de l'entreprise sur les réseaux et l'intermédiaire entre l'entreprise et ses clients",
+      "un développeur web"
+    ],
+    "reponse": 2,
+    "explication": "Rattaché au marketing ou à la communication, il met en œuvre la stratégie social media."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-020",
+    "section": "1. Le community manager",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles missions relèvent du community manager ? (4 réponses)",
+    "options": [
+      "création et planification des contenus",
+      "animation et modération",
+      "veille (marque, concurrence, tendances)",
+      "reporting",
+      "fixation des prix",
+      "recrutement des commerciaux"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Outils : Hootsuite, Buffer, Canva, Photoshop, outils d'analyse."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-021",
+    "section": "1. Le community manager",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Selon le cours, être présent sur les réseaux sociaux sans stratégie ne sert à rien.",
+    "reponse": true,
+    "explication": "Vrai : 87 % des Français ont un smartphone, mais la présence doit suivre une stratégie en 6 étapes."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-022",
+    "section": "1. Le community manager",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque KPI à son groupe.",
+    "colonne_a": [
+      "Croissance du nombre d'abonnés",
+      "Taux d'engagement",
+      "Trafic vers le site",
+      "Sentiment des mentions"
+    ],
+    "colonne_b": [
+      "Fidélisation / satisfaction",
+      "Engagement",
+      "Notoriété",
+      "Conversion"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Taux d'engagement = (likes + commentaires + partages) / portée."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-023",
+    "section": "2. La ligne éditoriale d'un réseau social",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Sur quoi se construit la ligne éditoriale d'un réseau social ? (4 réponses)",
+    "options": [
+      "l'analyse de l'audience cible",
+      "les messages alignés sur les valeurs",
+      "le ton (formel ou informel)",
+      "les types de publications",
+      "le cours de bourse",
+      "le choix du siège social"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Plus les aspects visuels et les fonctionnalités spécifiques (hashtags, sous-titrage)."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-024",
+    "section": "2. La ligne éditoriale d'un réseau social",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque type de publication à son but.",
+    "colonne_a": [
+      "Informative",
+      "Engageante",
+      "Promotionnelle"
+    ],
+    "colonne_b": [
+      "Vendre une offre",
+      "Positionner l'expertise",
+      "Susciter l'interaction"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Les trois sont à équilibrer."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-025",
+    "section": "2. La ligne éditoriale d'un réseau social",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Sur les réseaux sociaux, une marque doit toujours adopter un ton formel.",
+    "reponse": false,
+    "explication": "Faux : le ton peut être informel s'il reste cohérent avec l'image et la cible (Old Spice et son ton décalé)."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-026",
+    "section": "3. Écrire et créer du contenu",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi soigner ses réponses aux commentaires selon le cours ?",
+    "options": [
+      "parce que répondre est une vitrine du service client",
+      "pour gonfler les statistiques",
+      "pour éviter la modération",
+      "parce que c'est obligatoire légalement"
+    ],
+    "reponse": 0,
+    "explication": "Types de contenus écrits : posts, légendes, commentaires, bios, articles longs."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-027",
+    "section": "3. Écrire et créer du contenu",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la démarche de stratégie de contenu.",
+    "elements": [
+      "Personas",
+      "Calendrier de publication",
+      "Organisation (qui publie, quand)",
+      "Événements à venir (marronniers)",
+      "État des lieux de la présence",
+      "Canaux retenus"
+    ],
+    "ordre": [
+      2,
+      4,
+      0,
+      5,
+      3,
+      1
+    ],
+    "explication": "Le calendrier donne la vue d'ensemble : dates, réseaux, formats, responsables."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-028",
+    "section": "3. Écrire et créer du contenu",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que permet le tracking des URL par paramètres UTM ?",
+    "options": [
+      "de raccourcir les liens",
+      "d'augmenter la portée organique",
+      "de bloquer les robots",
+      "d'attribuer le trafic à sa source"
+    ],
+    "reponse": 3,
+    "explication": "Google Analytics mesure ensuite l'impact sur le site."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-029",
+    "section": "3. Écrire et créer du contenu",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque rôle de la vidéo à son exemple.",
+    "colonne_a": [
+      "Didactique",
+      "Publicitaire",
+      "Inspirationnel"
+    ],
+    "colonne_b": [
+      "Nike « Dream Crazier » et ses athlètes féminines",
+      "Tutoriel",
+      "Promotion d'une offre"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Formats : vidéos de fil, réels verticaux (TikTok 15-60 s), lives, stories."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-030",
+    "section": "3. Écrire et créer du contenu",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les stories à la une (highlights) disparaissent elles aussi au bout de 24 heures.",
+    "reponse": false,
+    "explication": "Faux : elles pérennisent les stories sur le profil, contrairement aux stories classiques, éphémères."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-031",
+    "section": "3. Écrire et créer du contenu",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'apporte la narration interactive dans une story ?",
+    "options": [
+      "un format horizontal",
+      "sondages, questions et quiz qui rendent le public participant actif",
+      "une durée illimitée",
+      "un référencement Google"
+    ],
+    "reponse": 1,
+    "explication": "La narration enrichie ajoute texte animé, stickers, musique. Penser rétention : accrocher dès la première séquence."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-032",
+    "section": "4. Les plateformes",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Combien de caractères maximum pour un message sur X (Twitter) ?",
+    "options": [
+      "140",
+      "500",
+      "280",
+      "2 200"
+    ],
+    "reponse": 2,
+    "explication": "Avec 1 à 3 hashtags et des vidéos d'environ 45 s."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-033",
+    "section": "4. Les plateformes",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle plateforme touche le public le plus jeune selon le cours ?",
+    "options": [
+      "Snapchat",
+      "Facebook",
+      "LinkedIn",
+      "X"
+    ],
+    "reponse": 0,
+    "explication": "Snaps et stories éphémères, filtres et lenses."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-034",
+    "section": "4. Les plateformes",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels invariants s'appliquent à la création de contenu, quelle que soit la plateforme ? (4 réponses)",
+    "options": [
+      "respecter les codes du réseau",
+      "adapter la fréquence",
+      "soigner l'accroche",
+      "analyser les statistiques et ajuster",
+      "publier le même contenu partout sans adaptation",
+      "ignorer la charte graphique"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Et utiliser les formats natifs favorisés par les algorithmes."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-035",
+    "section": "4. Les plateformes",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Sur LinkedIn comme sur X, il faut publier plusieurs fois par jour pour rester visible.",
+    "reponse": false,
+    "explication": "Faux : la fréquence s'adapte à chaque réseau. Environ un message par jour sur X, des posts moins fréquents mais soignés sur LinkedIn."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-036",
+    "section": "5. Animer la communauté",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Autour de quoi se construit une communauté ?",
+    "options": [
+      "un prix bas",
+      "un algorithme",
+      "une publicité",
+      "un intérêt commun (marque, thème, produit)"
+    ],
+    "reponse": 3,
+    "explication": "L'engagement est le processus d'interaction entre l'entité et sa communauté."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-037",
+    "section": "5. Animer la communauté",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque levier d'animation à son effet.",
+    "colonne_a": [
+      "Like",
+      "Commentaire",
+      "Partage",
+      "Mention / identification"
+    ],
+    "colonne_b": [
+      "Interaction personnalisée",
+      "Visibilité démultipliée",
+      "Approbation simple",
+      "Interaction essentielle, à laquelle il faut répondre"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "L'enjeu est de faire monter l'engagement."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-038",
+    "section": "5. Animer la communauté",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Acheter des followers est une technique d'animation acceptable pour accélérer la croissance d'une communauté.",
+    "reponse": false,
+    "explication": "Faux : c'est une pratique abusive, comme le spam ou les dark patterns. L'éthique numérique impose transparence et authenticité."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-039",
+    "section": "5. Animer la communauté",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Quel cadre éthique encadre l'animation de communauté ?",
+    "options": [
+      "aucun",
+      "respect de la vie privée, transparence, vigilance sur l'IA et le Big Data dans le ciblage",
+      "seulement la loi sur la presse",
+      "le code de la route"
+    ],
+    "reponse": 1,
+    "explication": "Communication transparente et authentique."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-040",
+    "section": "6. La modération",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Que contient une charte de modération ? (4 réponses)",
+    "options": [
+      "les rappels à la loi",
+      "les règles de courtoisie et de bienséance",
+      "les règles typographiques",
+      "l'échelle des réponses possibles",
+      "le tarif des publicités",
+      "le planning éditorial"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Elle maintient un espace en ligne sain et respectueux."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-041",
+    "section": "6. La modération",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Sur les réseaux sociaux, la liberté d'expression est absolue.",
+    "reponse": false,
+    "explication": "Faux : injure, diffamation, incitation à la haine, harcèlement sont des limites légales."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-042",
+    "section": "6. La modération",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que la charte entend par « langage inapproprié » ?",
+    "options": [
+      "toute critique de la marque",
+      "les fautes d'orthographe",
+      "vulgarité, insultes, propos discriminatoires, y compris des expressions « tendance » aux sous-entendus problématiques",
+      "les émojis"
+    ],
+    "reponse": 2,
+    "explication": "Avec un processus de signalement par la communauté et des filtres automatiques de mots-clés."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-043",
+    "section": "6. La modération",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque situation à la réponse graduée adaptée.",
+    "colonne_a": [
+      "Un commentaire injurieux isolé",
+      "Un utilisateur récidiviste",
+      "Un client mécontent qui s'emporte en public"
+    ],
+    "colonne_b": [
+      "Évacuer en message privé",
+      "Supprimer le contenu avec avertissement",
+      "Bannir"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Supprimer, bannir, évacuer en MP."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-044",
+    "section": "7. Le marketing d'influence",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les risques du marketing d'influence ? (4 réponses)",
+    "options": [
+      "des coûts élevés",
+      "une perte de crédibilité si la promotion paraît dissimulée",
+      "une perte de contrôle sur la représentation de la marque",
+      "un risque de crise de réputation",
+      "l'absence totale de réglementation",
+      "un ROI toujours nul"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Son ROI est pourtant jugé supérieur au SEO, à l'e-mailing et à la publicité sociale."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-045",
+    "section": "7. Le marketing d'influence",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les étapes d'une campagne d'influence.",
+    "elements": [
+      "Le brief",
+      "Négociation et contrat",
+      "Suivi des résultats",
+      "Stratégie et objectifs",
+      "Identification des influenceurs"
+    ],
+    "ordre": [
+      3,
+      4,
+      1,
+      0,
+      2
+    ],
+    "explication": "Suivi par codes promo, liens trackés, KPI d'engagement."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-046",
+    "section": "7. Le marketing d'influence",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que doit prévoir le contrat avec un influenceur ?",
+    "options": [
+      "livrables, calendrier, rémunération, mentions de transparence, droits d'utilisation, exclusivité",
+      "seulement le prix",
+      "rien, un accord oral suffit",
+      "uniquement la date de publication"
+    ],
+    "reponse": 0,
+    "explication": "Le brief précise ensuite contexte, message, éléments imposés ou interdits, liberté créative."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-047",
+    "section": "8. L'e-réputation",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "La gestion de la réputation en ligne est une tâche continue.",
+    "reponse": true,
+    "explication": "Vrai : créer, cultiver et maintenir l'image numérique. C'est le nouveau bouche-à-oreille, permanent et public."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-048",
+    "section": "8. L'e-réputation",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quels outils de veille citer pour suivre les avis et mentions en direct ?",
+    "options": [
+      "Photoshop, InDesign",
+      "Zoom, Teams",
+      "Excel, Word",
+      "Google Alerts, Mention, Owler"
+    ],
+    "reponse": 3,
+    "explication": "Première étape : évaluer la réputation actuelle."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-049",
+    "section": "8. L'e-réputation",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque cas de crise à son issue.",
+    "colonne_a": [
+      "Nestlé / Kit Kat (2010)",
+      "Anthropologie.com"
+    ],
+    "colonne_b": [
+      "Excuses immédiates et geste commercial : crise désamorcée",
+      "Réaction tardive et suppression des critiques : crise amplifiée"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "La rapidité et la transparence font toute la différence."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-050",
+    "section": "8. L'e-réputation",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles bonnes pratiques d'e-réputation le cours recommande-t-il ? (3 réponses)",
+    "options": [
+      "ne pas laisser publier librement sur son mur",
+      "ne jamais publier de données sensibles",
+      "répondre vite et avec transparence aux critiques",
+      "supprimer systématiquement les avis négatifs",
+      "ignorer les critiques"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Transformer le négatif en démonstration de sérieux."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-051",
+    "section": "8. L'e-réputation",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une politique de réseaux sociaux se limite à choisir les plateformes, sans préciser qui répond ni dans quels délais.",
+    "reponse": false,
+    "explication": "Faux : elle précise qui répond, comment et en combien de temps, au service des objectifs d'e-réputation."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-052",
+    "section": "9. Les social ads",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "D'où vient la puissance des social ads ?",
+    "options": [
+      "de leur gratuité",
+      "des données captées sur les utilisateurs, qui permettent un ciblage très fin",
+      "de leur durée",
+      "de l'absence de mention « sponsorisé »"
+    ],
+    "reponse": 1,
+    "explication": "Ciblage démographique, par intérêts ou comportemental."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-053",
+    "section": "9. Les social ads",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque ordre d'objectif à ses indicateurs.",
+    "colonne_a": [
+      "Cognitif",
+      "Affectif",
+      "Conatif"
+    ],
+    "colonne_b": [
+      "Clics, trafic, ventes, installations d'app",
+      "Impressions, portée, couverture",
+      "Likes, commentaires, partages"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Facebook décline : sensibilisation, considération, conversion."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-054",
+    "section": "9. Les social ads",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Les social ads se justifient notamment par la baisse de la portée organique des publications.",
+    "reponse": true,
+    "explication": "Vrai : la visibilité naturelle ne suffit plus."
+  },
+  {
+    "resume": "b2-r10",
+    "bloc": 2,
+    "id": "b2-r10-qz-055",
+    "section": "9. Les social ads",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Lequel de ces éléments n'est PAS une bonne pratique des social ads ?",
+    "options": [
+      "une créativité accrocheuse",
+      "la cohérence avec l'identité de marque",
+      "masquer la mention « sponsorisé »",
+      "l'alignement avec la stratégie globale"
+    ],
+    "reponse": 2,
+    "explication": "La mention « sponsorisé » est obligatoire et signale la publicité."
   },
   {
     "resume": "b3-r01",
@@ -16334,11 +28557,11 @@ var QUIZ = [
     "question": "Une entreprise fonctionne avec un pouvoir de décision diffus, réparti et décentralisé, très spécialisé, dans un modèle horizontal et fluide. À quel modèle de management correspond-elle ?",
     "options": [
       "au management mécaniste de l'entreprise classique",
-      "au management organique, qui voit l'entreprise comme un organisme vivant",
       "au management vertical fondé sur l'autorité hiérarchique",
+      "au management organique, qui voit l'entreprise comme un organisme vivant",
       "au management par la prévision et la planification"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "C'est le management organique : pouvoir diffus, réparti, décentralisé et spécialisé, modèle horizontal qui libère les énergies et l'innovation. À l'inverse, l'entreprise classique (mécaniste) concentre et centralise un pouvoir très généraliste dans un modèle vertical et rigide."
   },
   {
@@ -16350,12 +28573,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Quelles sont les 3 grandes missions recentrées du manager d'aujourd'hui ?",
     "options": [
-      "prévoir, contrôler, sanctionner",
       "donner du sens, accompagner et soutenir, développer l'autonomie",
+      "prévoir, contrôler, sanctionner",
       "recruter, former, évaluer",
       "planifier, budgéter, reporter à la direction"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "De « contrôleur », le manager est devenu « stratège, développeur, animateur et soutien », recentré sur 3 missions : donner du sens (des repères dans un environnement mouvant), accompagner et soutenir, développer l'autonomie (prise de risque, initiative individuelle)."
   },
   {
@@ -16425,11 +28648,11 @@ var QUIZ = [
     "question": "Un collaborateur vient voir son manager avec un problème. En posture de coach, que fait le manager ?",
     "options": [
       "il donne immédiatement la solution, car son expertise légitime ses décisions",
-      "il questionne plutôt que répondre, soutient plutôt que juger, facilite plutôt que diriger",
+      "il renvoie le problème vers la direction, dont il est la passerelle",
       "il tranche seul puis contrôle l'exécution de sa décision",
-      "il renvoie le problème vers la direction, dont il est la passerelle"
+      "il questionne plutôt que répondre, soutient plutôt que juger, facilite plutôt que diriger"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "La posture de coach (accompagnateur et pédagogue) : questionner plutôt que répondre, soutenir plutôt que juger, faciliter plutôt que diriger. L'objectif est de faire émerger les meilleures idées et de faire « grandir » les collaborateurs, l'écoute étant le préalable à la confiance."
   },
   {
@@ -16459,11 +28682,11 @@ var QUIZ = [
     "question": "Un chef d'équipe nommé par la direction peine à entraîner son groupe, tandis qu'un de ses collaborateurs exerce un fort ascendant sur les autres. Comment analyser la situation avec les notions du cours ?",
     "options": [
       "le chef est un leader sans autorité, le collaborateur un manager naturel",
-      "le chef a l'autorité formelle du manager, le collaborateur l'autorité naturelle du leader : un chef statutaire peut ne pas être un leader",
       "le chef manque de hard skills, le collaborateur en a davantage",
+      "le chef a l'autorité formelle du manager, le collaborateur l'autorité naturelle du leader : un chef statutaire peut ne pas être un leader",
       "la situation est impossible : le statut de manager confère le leadership"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Le manager est investi d'une autorité formelle qui lui donne un statut (et l'accès à une information privilégiée) ; le leader a une autorité naturelle, un ascendant qui donne envie de le suivre. Un chef statutaire peut ou non être un leader : les deux notions sont complémentaires."
   },
   {
@@ -16486,12 +28709,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "D'après le cours, dans quel cas une entreprise a-t-elle réellement besoin d'une stratégie ?",
     "options": [
-      "dès qu'elle dépasse une certaine taille",
       "quand il existe un impératif de choix entre des intérêts légitimes en opposition — « on fait de la stratégie parce qu'on est coincé »",
+      "dès qu'elle dépasse une certaine taille",
       "uniquement en période de crise ou de transformation",
       "quand ses ressources sont illimitées et qu'elle veut les allouer"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Une stratégie — processus d'allocation de ressources qui engage durablement l'entreprise, rythmé par le double mouvement analyse/engagement — n'existe que s'il y a un impératif de choix. Sans limite de ressources ni concurrence, pas besoin de stratégie."
   },
   {
@@ -16545,10 +28768,10 @@ var QUIZ = [
     "options": [
       "la passivité",
       "les objections",
-      "les jeux politiques",
-      "les conflits ouverts"
+      "les conflits ouverts",
+      "les jeux politiques"
     ],
-    "reponse": 2,
+    "reponse": 3,
     "explication": "Les résistances au changement — normales, attendues et même utiles (« impossible de sculpter une statue sans la résistance de la pierre ») — prennent 4 formes : passivité, objections, jeux politiques et conflits ouverts. Les manœuvres d'alliances relèvent des jeux politiques."
   },
   {
@@ -16578,11 +28801,11 @@ var QUIZ = [
     "question": "Quelles sont les opportunités que l'IA offre au manager d'aujourd'hui ?",
     "options": [
       "remplacer la relation managériale par des processus automatisés",
-      "l'analyse et la prise de décision, la gestion des talents, la veille, la gestion des risques et la personnalisation des services",
       "supprimer le besoin de contrôle grâce à la digitalisation",
+      "l'analyse et la prise de décision, la gestion des talents, la veille, la gestion des risques et la personnalisation des services",
       "réduire les effectifs des équipes créatives"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "L'IA aide à l'analyse et à la prise de décision, à la gestion des talents (recrutement, évaluation, développement des compétences), à la veille, à la gestion des risques et à la personnalisation des services. L'automatisation des tâches répétitives libère du temps pour les activités à haute valeur ajoutée."
   },
   {
@@ -16605,12 +28828,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Pour suivre ses enjeux stratégiques, combien de KPI une entreprise doit-elle retenir selon le cours ?",
     "options": [
-      "le plus possible, pour ne rien laisser passer",
-      "un seul indicateur synthétique",
       "entre 5 et 8, limités aux plus significatifs, avec tableaux de bord et réunions de pilotage",
+      "un seul indicateur synthétique",
+      "le plus possible, pour ne rien laisser passer",
       "entre 15 et 20, répartis par service"
     ],
-    "reponse": 2,
+    "reponse": 0,
     "explication": "Les KPI doivent être limités aux plus significatifs (5 à 8), suivis via tableaux de bord et réunions de pilotage. Autres outils des 7 enjeux universels : SWOT et scénarios prospectifs, veille stratégique, cartographie des parties prenantes, projets pilotes avant déploiement massif."
   },
   {
@@ -16654,6 +28877,637 @@ var QUIZ = [
     "explication": "Le leader mise sur l'innovation continue ; le challenger, plus petit mais inventif, cherche à se différencier ; le suiveur imite le leader à prix plus bas, sans prise de risque. En consolidation (maturité), il faut stabiliser, optimiser et préserver les marges — tout en provoquant le changement pour remettre les équipes en tension."
   },
   {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-017",
+    "section": "1. L'évolution du management",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Selon le cours, ce sont les entreprises qui tirent les marchés.",
+    "reponse": false,
+    "explication": "Faux : les marchés tirent les entreprises. Comme le skipper qui scrute météo et mer, le manager scrute le marché pour anticiper."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-018",
+    "section": "1. L'évolution du management",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans un monde complexe et imprévisible, quelle est désormais la clé du management selon le cours ?",
+    "options": [
+      "la prévision",
+      "le contrôle",
+      "la planification budgétaire",
+      "l'intention"
+    ],
+    "reponse": 3,
+    "explication": "« La clé du management n'est plus la prévision mais l'intention. » D'exécutants opérationnels, les managers deviennent entrepreneurs innovants."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-019",
+    "section": "1. L'évolution du management",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Sur quelles 3 directions les managers devenus « entrepreneurs innovants » s'engagent-ils ? (3 réponses)",
+    "options": [
+      "la maîtrise des outils (animation, coaching, pilotage)",
+      "la maturité relationnelle (recul, analyse, synthèse)",
+      "l'expertise technique supérieure à celle de l'équipe",
+      "l'esprit critique",
+      "le contrôle systématique des tâches"
+    ],
+    "reponse": [
+      0,
+      1,
+      3
+    ],
+    "explication": "Outils, maturité relationnelle, esprit critique. Être le meilleur expert n'est pas exigé."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-020",
+    "section": "1. L'évolution du management",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez ce qui assure la cohérence de l'équipe.",
+    "texte": "La cohérence repose sur des {1} communes, des {2} du jeu (coopérations, procédures) et une {3} managériale de réciprocité. « Pas d'implication si {4} ! »",
+    "trous": [
+      "valeurs",
+      "règles",
+      "relation",
+      "confusion"
+    ],
+    "explication": "Chacun doit sentir son utilité : la confusion tue l'implication."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-021",
+    "section": "2. Missions, rôles et postures du manager",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Que signifie l'image du manager « chef d'orchestre » ?",
+    "options": [
+      "il joue lui-même chaque partition à la place des musiciens",
+      "il organise, planifie et répartit les rôles dans une même temporalité, sans sous-métiers, pour l'harmonie de l'ensemble",
+      "il impose un tempo unique sans tenir compte des individualités",
+      "il se limite à sanctionner les fausses notes"
+    ],
+    "reponse": 1,
+    "explication": "Chacun apporte sa note ; individuel et collectif s'enrichissent, l'harmonie compte. Pas de sous-métiers."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-022",
+    "section": "2. Missions, rôles et postures du manager",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Le cours place le savoir-faire technique au-dessus du « savoir faire faire » dans les compétences attendues du manager.",
+    "reponse": false,
+    "explication": "Faux. C'est l'inverse : cap sur le « savoir faire faire ». La confiance permet autonomie, prise de risque et coopérations ; le manager devient guide, coach et facilitateur."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-023",
+    "section": "2. Missions, rôles et postures du manager",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle est, selon le cours, la première attente du collaborateur vis-à-vis de son manager ?",
+    "options": [
+      "être bien rémunéré",
+      "être contrôlé régulièrement",
+      "être reconnu et valorisé",
+      "avoir un manager plus expert que lui"
+    ],
+    "reponse": 2,
+    "explication": "Être reconnu et valorisé. L'écoute, compétence sociale indispensable, précède la confiance."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-024",
+    "section": "2. Missions, rôles et postures du manager",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le manager n'a pas besoin d'être le meilleur expert de son équipe, mais des compétences techniques solides légitiment ses décisions.",
+    "reponse": true,
+    "explication": "Vrai. Inutile d'être le meilleur expert, mais la connaissance du métier crédibilise les décisions."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-025",
+    "section": "2. Missions, rôles et postures du manager",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel est le dilemme principal du manager selon le cours ?",
+    "options": [
+      "concilier souplesse et autorité",
+      "choisir entre clients et actionnaires",
+      "arbitrer entre formation et recrutement",
+      "choisir entre présentiel et distanciel"
+    ],
+    "reponse": 0,
+    "explication": "Accepter les demandes d'organisation du travail tout en recadrant les comportements par respect des objectifs et de l'équité."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-026",
+    "section": "2. Missions, rôles et postures du manager",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que se passe-t-il quand la communication interne fait défaut ?",
+    "options": [
+      "les équipes deviennent plus autonomes",
+      "rien, car l'information n'est pas un besoin fondamental",
+      "la productivité augmente faute de réunions",
+      "des compensations s'installent : salle de pause, rumeurs, défiance"
+    ],
+    "reponse": 3,
+    "explication": "Le partage d'informations est un besoin fondamental de chaque employé. Le manager est la passerelle entre direction et équipe."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-027",
+    "section": "2. Missions, rôles et postures du manager",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quels sont les 5 flux de communication que le manager fait vivre ? (5 réponses)",
+    "options": [
+      "descendant",
+      "ascendant",
+      "latéral",
+      "« social »",
+      "externe",
+      "confidentiel"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explication": "« La communication n'est pas un outil de management, c'est de la culture partagée. »"
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-028",
+    "section": "3. Compétences et leadership",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque soft skill à sa famille.",
+    "colonne_a": [
+      "Créativité",
+      "Empathie",
+      "Gestion du stress"
+    ],
+    "colonne_b": [
+      "Professionnelles",
+      "Personnelles",
+      "Interpersonnelles"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Personnelles : confiance, créativité, curiosité, adaptation. Interpersonnelles : bienveillance, communication, assertivité, empathie. Professionnelles : autonomie, esprit critique, éthique, gestion du stress."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-029",
+    "section": "3. Compétences et leadership",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les soft skills s'acquièrent surtout par les diplômes et le circuit scolaire.",
+    "reponse": false,
+    "explication": "Faux : transversales, elles s'acquièrent surtout hors du circuit scolaire."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-030",
+    "section": "3. Compétences et leadership",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Parmi les hard skills du manager, quelle dimension s'est le plus accentuée récemment ?",
+    "options": [
+      "planifier",
+      "responsabiliser",
+      "contrôler",
+      "budgéter"
+    ],
+    "reponse": 1,
+    "explication": "Hard skills d'importance constante : organiser, planifier, prioriser, responsabiliser (la plus accentuée), s'adapter, prendre du recul."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-031",
+    "section": "3. Compétences et leadership",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelles sont les 2 qualités du talent selon le cours ?",
+    "options": [
+      "charisme et autorité",
+      "expertise et ancienneté",
+      "connaissance de soi et humilité intellectuelle",
+      "ambition et compétitivité"
+    ],
+    "reponse": 2,
+    "explication": "Connaître ses forces, talents et limites. Il n'y a pas de bonne ou mauvaise personnalité, seulement des personnalités adaptées ou non à la situation."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-032",
+    "section": "3. Compétences et leadership",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez la définition du leadership.",
+    "texte": "Le leadership est la capacité d'un individu à exercer une {1} sur les autres au point de leur donner {2} de le suivre. Le manager qui en a fait des arbitrages {3} par le groupe.",
+    "trous": [
+      "influence",
+      "envie",
+      "acceptés"
+    ],
+    "explication": "Il donne aussi du sens, motive par son attitude et représente le groupe auprès des parties prenantes."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-033",
+    "section": "3. Compétences et leadership",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Selon le cours, le style de leader « autoritaire », qui mobilise autour d'une vision et laisse la liberté des moyens, est le plus efficace.",
+    "reponse": true,
+    "explication": "Vrai, contre-intuitif : il précise la finalité et laisse la liberté des moyens. Sa vision et sa clarté font son efficacité."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-034",
+    "section": "3. Compétences et leadership",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Qu'est-ce que l'« autorité » selon le cours ?",
+    "options": [
+      "la capacité reconnue par l'institution d'exercer un pouvoir",
+      "l'ascendant naturel d'un individu sur un groupe",
+      "l'ancienneté dans l'entreprise",
+      "la capacité à sanctionner"
+    ],
+    "reponse": 0,
+    "explication": "Manager = autorité formelle et statut ; leader = autorité naturelle ; autorité = pouvoir reconnu par l'institution."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-035",
+    "section": "4. Anticiper : vision stratégique et changement",
+    "niveau": 1,
+    "format": "texte_a_trous",
+    "question": "Complétez la définition de la stratégie.",
+    "texte": "Une stratégie consiste en un processus d'{1} de ressources qui engage de façon {2} l'entreprise. Elle est rythmée par un double mouvement : {3} et {4}.",
+    "trous": [
+      "allocation",
+      "durable",
+      "analyse",
+      "engagement"
+    ],
+    "explication": "« On fait de la stratégie parce qu'on est coincé » : sans limite de ressources ni concurrence, pas besoin de stratégie."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-036",
+    "section": "4. Anticiper : vision stratégique et changement",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque approche stratégique à sa logique.",
+    "colonne_a": [
+      "Anticipation",
+      "Réactivité",
+      "Équilibre des intérêts",
+      "Logiques d'émergence"
+    ],
+    "colonne_b": [
+      "Jeux d'acteurs et de pouvoirs",
+      "Innovation, « on apprend en marchant »",
+      "Vision, planification",
+      "Client au cœur, concurrence, marché"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Quatre approches complémentaires de la stratégie."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-037",
+    "section": "4. Anticiper : vision stratégique et changement",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle question pose l'exploration, par opposition à l'exploitation ?",
+    "options": [
+      "fait-on comme il faut ?",
+      "qui est responsable ?",
+      "combien cela coûte-t-il ?",
+      "fait-on ce qu'il faut ?"
+    ],
+    "reponse": 3,
+    "explication": "Exploitation = utiliser le potentiel existant (fait-on comme il faut ?) ; exploration = le renouveler (fait-on ce qu'il faut ?). L'art est leur coexistence harmonieuse."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-038",
+    "section": "4. Anticiper : vision stratégique et changement",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que le PMO cité parmi les outils stratégiques ?",
+    "options": [
+      "un logiciel de gestion de projet",
+      "le Plan Marketing Opérationnel : l'ambition traduite en plan économique et commercial à 3 ans",
+      "le Plan de Mobilité Obligatoire",
+      "un tableau de bord mensuel"
+    ],
+    "reponse": 1,
+    "explication": "Outils : business plan, PMO à 3 ans, budget. Le marketing stratégique est la clé d'entrée pour comprendre le marché."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-039",
+    "section": "4. Anticiper : vision stratégique et changement",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque dimension du changement à sa définition.",
+    "colonne_a": [
+      "Instabilité",
+      "Incertitude"
+    ],
+    "colonne_b": [
+      "On ignore comment le changement évoluera",
+      "La vitesse du changement"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Le changement est permanent ; la réponse est l'adaptabilité et l'agilité."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-040",
+    "section": "4. Anticiper : vision stratégique et changement",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Le cours considère les résistances au changement comme normales, attendues et utiles.",
+    "reponse": true,
+    "explication": "Vrai : « impossible de sculpter une statue sans la résistance de la pierre ». 4 formes : passivité, objections, jeux politiques, conflits ouverts."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-041",
+    "section": "4. Anticiper : vision stratégique et changement",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Selon le cours, quelle proportion de salariés dans le monde devrait avoir besoin de reskilling dans les cinq prochaines années ?",
+    "options": [
+      "1 sur 10",
+      "1 sur 4",
+      "1 sur 2",
+      "3 sur 4"
+    ],
+    "reponse": 2,
+    "explication": "Un salarié sur deux. Le besoin de formation se mesure par l'écart entre compétences actuelles et nécessaires."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-042",
+    "section": "4. Anticiper : vision stratégique et changement",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Pour gérer succession et mobilité, le cours recommande de privilégier systématiquement les profils « nés avec le digital ».",
+    "reponse": false,
+    "explication": "Faux. Il faut éviter de les survaloriser : les seniors apportent recul et équilibre."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-043",
+    "section": "5. Défis et opportunités du manager d'aujourd'hui",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les deux grands défis post-Covid du manager ? (2 réponses)",
+    "options": [
+      "la gestion à distance des équipes",
+      "la crise elle-même : garder une vision malgré l'incertitude",
+      "la baisse du recours au numérique",
+      "la disparition des équipes pluridisciplinaires"
+    ],
+    "reponse": [
+      0,
+      1
+    ],
+    "explication": "Le distanciel est devenu la norme et la frontière vie pro / vie perso s'est estompée."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-044",
+    "section": "5. Défis et opportunités du manager d'aujourd'hui",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Selon Deloitte, combien une politique inclusive génère-t-elle de chiffre d'affaires en plus par salarié ?",
+    "options": [
+      "jusqu'à 30 %",
+      "jusqu'à 10 %",
+      "jusqu'à 5 %",
+      "jusqu'à 60 %"
+    ],
+    "reponse": 0,
+    "explication": "Jusqu'à 30 %. L'Institut Montaigne montre aussi que l'égalité de genre améliore les performances économiques."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-045",
+    "section": "5. Défis et opportunités du manager d'aujourd'hui",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Diversité et inclusivité sont des notions opposées entre lesquelles le manager doit choisir.",
+    "reponse": false,
+    "explication": "Faux, elles sont complémentaires. Diversité = favoriser la différence ; inclusivité = assembler tous les salariés dans une mutualité et traiter à égalité."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-046",
+    "section": "6. Les enjeux stratégiques du management",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Lesquels font partie des 7 enjeux universels du management ? (4 réponses)",
+    "options": [
+      "la vision à moyen et long terme",
+      "la gestion du changement",
+      "la mobilisation des ressources humaines",
+      "la durabilité et la RSE",
+      "la réduction systématique des effectifs",
+      "la centralisation des décisions"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Les 7 : vision, changement, analyse de l'environnement, mobilisation des RH, suivi de la performance, ressources et risques, durabilité/RSE."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-047",
+    "section": "6. Les enjeux stratégiques du management",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une entreprise sortie de sa phase de croissance, en maturité, doit surtout :",
+    "options": [
+      "se diversifier à tout prix",
+      "recruter massivement",
+      "redéfinir entièrement sa stratégie",
+      "stabiliser, optimiser ses processus, fidéliser et éviter la routine"
+    ],
+    "reponse": 3,
+    "explication": "Consolidation : préserver les marges, automatiser, fidéliser la base client, provoquer le changement pour remettre les équipes en tension."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-048",
+    "section": "6. Les enjeux stratégiques du management",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez la définition INSEE (2019) des PME.",
+    "texte": "Une PME compte moins de {1} personnes, avec un CA ≤ {2} M€ ou un bilan ≤ 43 M€. Une microentreprise compte moins de {3} personnes. Les PME/TPE représentent plus de {4} % des entreprises françaises.",
+    "trous": [
+      "250",
+      "50",
+      "10",
+      "99"
+    ],
+    "explication": "Enjeu majeur : une stratégie de croissance avec des ressources limitées. Atouts : agilité, flexibilité, créativité."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-049",
+    "section": "6. Les enjeux stratégiques du management",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel enjeu est propre aux grandes multinationales ?",
+    "options": [
+      "la proximité client",
+      "l'adaptation aux spécificités culturelles et économiques de chaque pays",
+      "le manque de ressources",
+      "la stratégie de suiveur"
+    ],
+    "reponse": 1,
+    "explication": "S'y ajoutent risques géopolitiques, équipes multiculturelles, chaîne d'approvisionnement mondiale et cybersécurité."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-050",
+    "section": "6. Les enjeux stratégiques du management",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Le suiveur, qui imite le leader sans prendre de risque, est généralement rentable.",
+    "reponse": true,
+    "explication": "Vrai. Son enjeu : s'adapter vite, surveiller la concurrence, maîtriser les coûts."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-051",
+    "section": "6. Les enjeux stratégiques du management",
+    "niveau": 2,
+    "format": "ouverte",
+    "question": "Un manager doit présenter les enjeux stratégiques d'un projet de partenariat entre deux entreprises. Quelle grille d'analyse le cours propose-t-il ?",
+    "attendus": [
+      "Analyser l'environnement et les tendances (SWOT, veille, scénarios)",
+      "Préciser la vision et les objectifs du projet",
+      "Évaluer ressources et risques (cartographie des parties prenantes, projet pilote)",
+      "Mesurer l'enjeu de réputation et d'image de marque",
+      "Suivre la performance avec 5 à 8 KPI significatifs"
+    ],
+    "explication": "Les 7 enjeux universels sont interdépendants ; on les module selon le contexte, le positionnement et la taille."
+  },
+  {
+    "resume": "b4-r01",
+    "bloc": 4,
+    "id": "b4-r01-qz-052",
+    "section": "1. L'évolution du management",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Que résume la formule « l'art du management est l'art de la transformation » ?",
+    "options": [
+      "changer d'organisation chaque année",
+      "transformer les managers en experts techniques",
+      "obtenir un maximum de résultats, en quantité et en qualité, avec un minimum de ressources",
+      "remplacer l'intention par la prévision"
+    ],
+    "reponse": 2,
+    "explication": "Optimiser le dialogue intention / situation par principe d'économie."
+  },
+  {
     "resume": "b4-r02",
     "bloc": 4,
     "id": "b4-r02-qz-001",
@@ -16663,11 +29517,11 @@ var QUIZ = [
     "question": "Un manager doit caler les horizons temporels de son pilotage. Quelle association est correcte ?",
     "options": [
       "stratégie sur un trimestre, objectifs pluriannuels, plan d'action sur un an",
-      "stratégie pluriannuelle, objectifs sur quelques mois à un an, plan d'action sur quelques semaines à un trimestre",
       "stratégie sur un an, objectifs sur quelques semaines, plan d'action pluriannuel",
+      "stratégie pluriannuelle, objectifs sur quelques mois à un an, plan d'action sur quelques semaines à un trimestre",
       "stratégie, objectifs et plan d'action partagent le même horizon annuel"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "La chaîne descend du plus long au plus court : stratégie pluriannuelle, objectifs sur quelques mois à un an, plans d'action sur quelques semaines à un trimestre. Les objectifs se définissent après la stratégie et avant le lancement du plan d'action."
   },
   {
@@ -16747,12 +29601,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Un manager impose un objectif sans fournir ni budget ni formation à son équipe, qui échoue. À quoi s'expose-t-il ?",
     "options": [
-      "à un défaut de moyens, que les collaborateurs pourraient faire valoir pour ne pas porter l'échec",
+      "à rien : l'échec reste porté par les collaborateurs",
       "à un défaut de pertinence, car l'objectif n'était pas aligné sur la stratégie",
       "à un défaut de flexibilité, car l'objectif n'était pas ré-ajustable",
-      "à rien : l'échec reste porté par les collaborateurs"
+      "à un défaut de moyens, que les collaborateurs pourraient faire valoir pour ne pas porter l'échec"
     ],
-    "reponse": 0,
+    "reponse": 3,
     "explication": "Un objectif non atteignable expose le management à un défaut de moyens : fixer un objectif engage à fournir les ressources nécessaires (compétences, formations, budget, RH, matériel). Sans elles, les collaborateurs peuvent refuser de porter l'échec."
   },
   {
@@ -16765,11 +29619,11 @@ var QUIZ = [
     "question": "Une équipe démarre la formulation de ses objectifs. Par quelle étape le processus commence-t-il ?",
     "options": [
       "définir une échéance et des jalons intermédiaires",
-      "construire les indicateurs quantitatifs et qualitatifs",
       "déterminer le contexte et les freins, au besoin avec une matrice SWOT",
+      "construire les indicateurs quantitatifs et qualitatifs",
       "examiner les implications éthiques de l'objectif"
     ],
-    "reponse": 2,
+    "reponse": 1,
     "explication": "La première étape est de déterminer le contexte et les freins, au besoin avec une matrice SWOT. Vient ensuite la définition du but en détail, guidée par l'hexamètre de Quintilien (QQOQCCP), puis les indicateurs, l'équilibre ambitieux/atteignable, la pertinence, l'échéance et l'éthique."
   },
   {
@@ -16781,12 +29635,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Une entreprise veut décliner sa stratégie pour ses forces de vente réparties sur plusieurs régions. Quelle méthode de déclinaison des objectifs est la plus pertinente ?",
     "options": [
-      "la déclinaison par zones géographiques : la stratégie se « traduit » zone par zone",
-      "la déclinaison par champ thématique : finance, marketing, commercial",
       "la pondération de chaque critère par un coefficient",
+      "la déclinaison par champ thématique : finance, marketing, commercial",
+      "la déclinaison par zones géographiques : la stratégie se « traduit » zone par zone",
       "l'estimation paramétrique des objectifs par algorithmes"
     ],
-    "reponse": 0,
+    "reponse": 2,
     "explication": "La déclinaison par zones géographiques est indiquée comme pertinente pour les forces de vente. Les autres voies : l'entonnoir (principaux → secondaires) et la déclinaison par champ thématique. Règle d'or : les objectifs opérationnels sont au service des stratégiques."
   },
   {
@@ -16827,11 +29681,11 @@ var QUIZ = [
     "question": "Un responsable s'engage à « déployer ses meilleurs efforts pour atteindre l'objectif visé, en ayant agi selon les règles de l'art ». De quoi s'agit-il, et où ce niveau se définit-il ?",
     "options": [
       "une obligation de résultat, définie dans le tableau de bord",
-      "une obligation de moyens, définie dans le contrat de travail ou la lettre de mission",
+      "une obligation de moyens, définie oralement au lancement du projet",
       "une obligation de résultat, définie dans le plan de ressources",
-      "une obligation de moyens, définie oralement au lancement du projet"
+      "une obligation de moyens, définie dans le contrat de travail ou la lettre de mission"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "C'est l'obligation de moyens : les meilleurs efforts, selon les règles de l'art. L'obligation de résultat impose d'« effectuer sa mission jusqu'au bout », sans réalisation partielle possible. Le niveau se définit en amont, dans le contrat de travail ou la lettre de mission rédigée avant le lancement."
   },
   {
@@ -16951,12 +29805,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Une enseigne change son système de caisse et veut suivre la progression globale du projet à travers un planning de réunions prédéfini. Quelle instance mettre en place ?",
     "options": [
-      "un comité de pilotage (CoPil) composé des référents des pôles concernés",
-      "un chef de projet unique, qui remplace toute instance collective",
       "une réunion de lancement, suffisante pour cadrer le projet",
+      "un chef de projet unique, qui remplace toute instance collective",
+      "un comité de pilotage (CoPil) composé des référents des pôles concernés",
       "un rapport d'étape mensuel archivé dans un cloud"
     ],
-    "reponse": 0,
+    "reponse": 2,
     "explication": "Le CoPil se réunit selon un planning prédéfini pour suivre la progression globale ; il est composé des référents des pôles concernés (dans l'exemple du cours : responsable de caisses, DSI, responsable de magasin, DRH pour la formation). Le chef de projet, lui, coordonne actions, budget et délais."
   },
   {
@@ -16968,13 +29822,670 @@ var QUIZ = [
     "format": "qcm",
     "question": "Un livrable prend du retard et menace le calendrier du projet. Quelle est la bonne posture du chef de projet face à cet obstacle ?",
     "options": [
-      "attendre la prochaine réunion planifiée du CoPil pour statuer",
       "être réactif : ajuster le plan, allouer des ressources supplémentaires (renfort humain), décider rapidement",
+      "attendre la prochaine réunion planifiée du CoPil pour statuer",
       "annuler le projet pour ne pas cumuler les retards",
       "figer le plan initial : toute modification créerait des blocages"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Face aux imprévus, il faut être réactif : ajuster le plan (différer une livraison pour ne pas mettre en péril le projet entier, changer de processus ou d'outils), allouer des ressources supplémentaires — un retard se compense en renfort humain — et décider rapidement. Le plan doit rester flexible : sans agilité, il enferme dans des blocages."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-017",
+    "section": "1. De la stratégie au plan d'action",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la chaîne de pilotage.",
+    "elements": [
+      "Le plan d'action réalise les objectifs",
+      "La stratégie fixe les axes",
+      "Les objectifs déclinent la stratégie"
+    ],
+    "ordre": [
+      1,
+      2,
+      0
+    ],
+    "explication": "Les objectifs se définissent après la stratégie, avant le plan d'action."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-018",
+    "section": "1. De la stratégie au plan d'action",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les 4 fonctions des objectifs ? (4 réponses)",
+    "options": [
+      "donner du sens",
+      "motiver",
+      "responsabiliser",
+      "piloter",
+      "sanctionner",
+      "contrôler les horaires"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Sens, motivation, responsabilisation (co-responsabilité des résultats), pilotage (cap et tableau de bord partagé)."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-019",
+    "section": "1. De la stratégie au plan d'action",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'atteinte des objectifs nourrit objectivement les entretiens annuels d'évaluation, et les difficultés rencontrées orientent les formations.",
+    "reponse": true,
+    "explication": "Vrai : les objectifs servent aussi l'évaluation et le développement des compétences."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-020",
+    "section": "2. La méthode SMARTEF, critère par critère",
+    "niveau": 1,
+    "format": "texte_a_trous",
+    "question": "Complétez l'acronyme SMARTEF.",
+    "texte": "Spécifique, {1}, Atteignable, {2}, Temporellement défini, {3} et {4}.",
+    "trous": [
+      "Mesurable",
+      "Réaliste",
+      "Ecologique",
+      "Fun"
+    ],
+    "explication": "La variante SMARTER ajoute un R : Ré-ajustable."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-021",
+    "section": "2. La méthode SMARTEF, critère par critère",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que signifie le dernier R de la variante SMARTER ?",
+    "options": [
+      "Rentable",
+      "Reproductible",
+      "Responsable",
+      "Ré-ajustable"
+    ],
+    "reponse": 3,
+    "explication": "L'objectif doit pouvoir être revu si des changements majeurs surviennent : l'agilité reste essentielle en gestion de projet."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-022",
+    "section": "2. La méthode SMARTEF, critère par critère",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel critère SMARTEF est le moins consensuel, porté par les nouvelles générations ?",
+    "options": [
+      "Ecologique",
+      "Fun",
+      "Temporel",
+      "Réaliste"
+    ],
+    "reponse": 1,
+    "explication": "Le Fun : plaisir, épanouissement (jeux collaboratifs, convivialité), porté par les générations du full remote et du freelance."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-023",
+    "section": "2. La méthode SMARTEF, critère par critère",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque formulation au critère SMARTEF qu'elle illustre.",
+    "colonne_a": [
+      "« de 30 % »",
+      "« d'ici au 31/12 »",
+      "« pas de ventes avec la Russie »",
+      "« le marché est-il prêt ou saturé ? »"
+    ],
+    "colonne_b": [
+      "Ecologique",
+      "Réaliste",
+      "Spécifique",
+      "Temporellement défini"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Fil rouge du cours : « augmenter le CA »."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-024",
+    "section": "2. La méthode SMARTEF, critère par critère",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un objectif Mesurable peut reposer sur un indicateur qualitatif comme la notoriété ou la satisfaction.",
+    "reponse": true,
+    "explication": "Vrai : indicateurs quantitatifs (chiffres) ou qualitatifs, mesurés par sondage, enquête, baromètre."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-025",
+    "section": "2. La méthode SMARTEF, critère par critère",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Qu'est-ce qui distingue le critère Atteignable du critère Réaliste ?",
+    "options": [
+      "rien, ce sont des synonymes",
+      "Atteignable porte sur la date, Réaliste sur le budget",
+      "Atteignable porte sur les ressources (compétences, budget, matériel) ; Réaliste sur le contexte et les contraintes (circonstances, marché)",
+      "Atteignable concerne l'éthique, Réaliste le plaisir"
+    ],
+    "reponse": 2,
+    "explication": "Atteignable : le management s'engage sur les moyens. Réaliste : contextualiser (départ d'un collègue, Covid-19, alignement macro)."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-026",
+    "section": "2. La méthode SMARTEF, critère par critère",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que le greenwashing, piège du critère Ecologique ?",
+    "options": [
+      "communiquer avec l'argument écologique de manière trompeuse pour améliorer son image",
+      "un label écologique officiel",
+      "réduire l'empreinte carbone d'un projet",
+      "une norme ISO environnementale"
+    ],
+    "reponse": 0,
+    "explication": "Un objectif écologique suppose un engagement réel et authentique."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-027",
+    "section": "3. Formuler les objectifs : processus et avantages",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les premières étapes de formulation d'un objectif.",
+    "elements": [
+      "Choisir les indicateurs quantitatifs ou qualitatifs",
+      "Déterminer le contexte et les freins (SWOT)",
+      "Trouver l'équilibre ambitieux mais atteignable",
+      "Détailler le but (QQOQCCP)"
+    ],
+    "ordre": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "explication": "Puis pertinence, échéance, implications éthiques et flexibilité."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-028",
+    "section": "3. Formuler les objectifs : processus et avantages",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que désigne « l'hexamètre de Quintilien » dans le processus de formulation ?",
+    "options": [
+      "une matrice de risques",
+      "un diagramme de Gantt",
+      "une échelle de satisfaction",
+      "le QQOQCCP, pour détailler le but"
+    ],
+    "reponse": 3,
+    "explication": "Le but détaillé est la deuxième étape, après le contexte (SWOT)."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-029",
+    "section": "3. Formuler les objectifs : processus et avantages",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont des avantages de la formulation d'objectifs selon le cours ? (4 réponses)",
+    "options": [
+      "la motivation",
+      "un cadre commun",
+      "la formalisation de l'engagement",
+      "la confirmation de la nécessité du projet",
+      "la suppression des réunions",
+      "l'absence de contrôle"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "6 avantages : motivation, rigueur et pilotage, cadre commun, formalisation de l'engagement, confirmation de la nécessité du projet, évaluation et auto-évaluation."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-030",
+    "section": "3. Formuler les objectifs : processus et avantages",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Après le suivi et le pilotage viennent la livraison, le bilan individuel et collectif, puis le retour d'expérience (Rex) des parties prenantes.",
+    "reponse": true,
+    "explication": "Vrai : le processus se clôt par la capitalisation."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-031",
+    "section": "4. Hiérarchiser et décliner les objectifs",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Par quelle méthode déduit-on les objectifs secondaires des objectifs principaux ?",
+    "options": [
+      "le tirage au sort",
+      "l'entonnoir (pyramide inversée)",
+      "la matrice BCG",
+      "la courbe d'adoption"
+    ],
+    "reponse": 1,
+    "explication": "Autres méthodes : par champ thématique (finance, marketing…) ou par zones géographiques."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-032",
+    "section": "4. Hiérarchiser et décliner les objectifs",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les 3 questions-guides de la hiérarchisation ? (3 réponses)",
+    "options": [
+      "Quelles conséquences ou quels risques à ne pas agir ?",
+      "Quel degré de faisabilité ?",
+      "Quel gain à traiter en priorité ?",
+      "Quel est l'âge moyen de l'équipe ?",
+      "Quel logiciel utiliser ?"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "On termine par une pondération (poids, coefficient)."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-033",
+    "section": "4. Hiérarchiser et décliner les objectifs",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "La hiérarchisation devient précieuse lorsque les moyens sont restreints (effectifs, budget, compétences).",
+    "reponse": true,
+    "explication": "Vrai. Elle est optionnelle pour un projet modeste, sauf projet « à tiroirs » où chaque phase conditionne la suivante."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-034",
+    "section": "5. Décomposer en tâches : le plan d'action",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque question du QQOQCCP à son contenu dans le plan d'action.",
+    "colonne_a": [
+      "Quoi",
+      "Où",
+      "Comment",
+      "Combien",
+      "Pourquoi"
+    ],
+    "colonne_b": [
+      "Moyens alloués",
+      "L'enjeu, le lien avec l'objectif",
+      "Mission, tâche, activité",
+      "Personnes mobilisées, résultat chiffré",
+      "Territoire géographique"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "explication": "Qui = personnes-ressources et destinataire du reporting ; Quand = démarrage, deadline, jalons."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-035",
+    "section": "5. Décomposer en tâches : le plan d'action",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une obligation de résultat permet une réalisation partielle de la mission.",
+    "reponse": false,
+    "explication": "Faux : l'obligation de résultat impose d'effectuer la mission jusqu'au bout. C'est l'obligation de moyens qui exige seulement les meilleurs efforts selon les règles de l'art."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-036",
+    "section": "5. Décomposer en tâches : le plan d'action",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Où se définit le niveau de responsabilité (moyens ou résultat) d'un responsable de tâche ?",
+    "options": [
+      "dans le règlement intérieur",
+      "dans le compte rendu de fin de projet",
+      "dans le contrat de travail ou la lettre de mission rédigée avant le lancement",
+      "oralement, en réunion"
+    ],
+    "reponse": 2,
+    "explication": "La responsabilité : l'obligation de répondre de ses actes et d'en supporter les conséquences du fait de sa charge."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-037",
+    "section": "5. Décomposer en tâches : le plan d'action",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans la mise en situation du cours (+10 % de satisfaction client), quel KPI mesure la propension à recommander l'entreprise ?",
+    "options": [
+      "le NPS",
+      "le CSAT",
+      "le taux de churn",
+      "le CES"
+    ],
+    "reponse": 0,
+    "explication": "Le plan comporte 4 colonnes : tâches, responsables, délais (participatifs), KPI."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-038",
+    "section": "6. Ressources, séquençage et planification",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quelles familles de ressources le cours distingue-t-il ? (4 réponses)",
+    "options": [
+      "humaines",
+      "matérielles",
+      "financières",
+      "technologiques",
+      "émotionnelles",
+      "politiques"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Trois grandes familles, plus les technologiques (logiciels, outils, compatibilité du parc) dans le troisième support."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-039",
+    "section": "6. Ressources, séquençage et planification",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi le séquençage est-il indispensable ?",
+    "options": [
+      "pour réduire le budget",
+      "pour évaluer les salariés",
+      "pour choisir les prestataires",
+      "pour fixer l'ordre logique des tâches et éviter les latences improductives (« à qui de jouer ? »)"
+    ],
+    "reponse": 3,
+    "explication": "Le séquençage « raconte l'histoire » du projet : début, fin, étapes."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-040",
+    "section": "6. Ressources, séquençage et planification",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque outil de gestion du temps à son usage.",
+    "colonne_a": [
+      "Diagramme de Gantt",
+      "Tableau Kanban"
+    ],
+    "colonne_b": [
+      "Planifier et suivre les échéances par objectif",
+      "Visualiser le temps qui passe et l'avancée de chaque tâche"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "La planification se conclut par les KPI associés (performance des délais, des coûts)."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-041",
+    "section": "6. Ressources, séquençage et planification",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le plan de ressources peut être négocié avec la direction (N+1) ou avec les opérationnels (N-1).",
+    "reponse": true,
+    "explication": "Vrai : il alloue les ressources par tâche après arbitrage des conflits d'affectation."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-042",
+    "section": "6. Ressources, séquençage et planification",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "La diffusion d'une vidéo ne peut commencer qu'une fois la captation terminée. Quelle dépendance est-ce ?",
+    "options": [
+      "début à début",
+      "fin à début (en cascade)",
+      "fin à fin",
+      "début à fin"
+    ],
+    "reponse": 1,
+    "explication": "A démarre lorsque B se termine : c'est la dépendance en cascade."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-043",
+    "section": "7. Choisir les méthodes selon la situation",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les 3 paramètres de choix d'une méthode de mise en œuvre ? (3 réponses)",
+    "options": [
+      "les caractéristiques uniques des objectifs",
+      "l'inventaire des ressources disponibles",
+      "les contraintes internes ou externes",
+      "l'avis du dernier recruté",
+      "la météo"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Avec un budget serré, on évalue aussi le ROI potentiel."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-044",
+    "section": "7. Choisir les méthodes selon la situation",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Selon le cours, la communication est un facteur clé de succès de la mise en œuvre : bien communiquer, c'est mieux collaborer.",
+    "reponse": true,
+    "explication": "Vrai, avec la planification stratégique, la décomposition des objectifs, la gestion du temps et le développement des compétences."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-045",
+    "section": "7. Choisir les méthodes selon la situation",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel réflexe transversal le cours retient-il à propos du SWOT ?",
+    "options": [
+      "le SWOT remplace le plan d'action",
+      "le SWOT ne sert qu'en restructuration",
+      "du SWOT découlent les objectifs, des objectifs découle le plan d'action",
+      "le SWOT se fait après le plan d'action"
+    ],
+    "reponse": 2,
+    "explication": "Cas Logi'Plus : chaque objectif commercial répond à une case du SWOT (réduire la dépendance aux clients clés = traiter une faiblesse)."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-046",
+    "section": "7. Choisir les méthodes selon la situation",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Une entreprise d'innovation (R&D) veut fixer ses objectifs. Quelle approche le cours propose-t-il ?",
+    "options": [
+      "un portefeuille d'innovation court, moyen, long terme, hiérarchisé par importance stratégique",
+      "refaire une matrice SWOT",
+      "consulter uniquement les actionnaires",
+      "un objectif par processus clé"
+    ],
+    "reponse": 0,
+    "explication": "Résultats mesurables, impact, ambition. Le découpage par processus correspond à la restructuration."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-047",
+    "section": "8. Mettre en œuvre et piloter le plan d'action",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 3 moments de communication du plan d'action.",
+    "elements": [
+      "En continu : avancée, budget, retards, livrables",
+      "En amont : réflexion et co-construction",
+      "Lancement officiel"
+    ],
+    "ordre": [
+      1,
+      2,
+      0
+    ],
+    "explication": "Communiquer = engager et témoigner de la considération."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-048",
+    "section": "8. Mettre en œuvre et piloter le plan d'action",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les responsabilités du plan d'action s'assignent uniquement selon la disponibilité des collaborateurs.",
+    "reponse": false,
+    "explication": "Faux : selon la disponibilité, mais aussi le talent et la valeur ajoutée."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-049",
+    "section": "8. Mettre en œuvre et piloter le plan d'action",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Par quels canaux suit-on l'avancement du plan d'action ? (3 réponses)",
+    "options": [
+      "les réunions de suivi",
+      "les rapports d'étape écrits et datés",
+      "les outils de suivi de projet (Jira, Slack)",
+      "les entretiens annuels uniquement",
+      "les rumeurs"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Le suivi vérifie la réalisation, mesure les progrès face aux délais, identifie les écarts."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-050",
+    "section": "8. Mettre en œuvre et piloter le plan d'action",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Un collaborateur clé renonce à s'expatrier, ce qui remet en cause un projet international. Que préconise le cours ?",
+    "options": [
+      "imposer l'expatriation",
+      "sanctionner le collaborateur",
+      "annuler le projet",
+      "garder un plan flexible et concilier priorités de l'entreprise et objectifs personnels"
+    ],
+    "reponse": 3,
+    "explication": "Sans agilité, blocages. On souligne aussi les succès et on capitalise sur les bonnes pratiques."
+  },
+  {
+    "resume": "b4-r02",
+    "bloc": 4,
+    "id": "b4-r02-qz-051",
+    "section": "8. Mettre en œuvre et piloter le plan d'action",
+    "niveau": 2,
+    "format": "ouverte",
+    "question": "Construisez le rétroplanning d'un événement : quelles étapes et quels outils mobiliser selon le cours ?",
+    "attendus": [
+      "Décomposer l'objectif en tâches (QQOQCCP : quoi, qui, quand, comment…)",
+      "Identifier les dépendances (fin à début, début à début…)",
+      "Estimer les délais par analogie ou de façon paramétrique",
+      "Poser des jalons validables et visualiser en Gantt",
+      "Affecter responsables et ressources, suivre par CoPil, réunions et rapports d'étape"
+    ],
+    "explication": "Le plan d'action devient le tableau de bord de l'activité."
   },
   {
     "resume": "b4-r03",
@@ -16986,11 +30497,11 @@ var QUIZ = [
     "question": "Un manager connaît bien les compétences requises par ses projets, mais découvre régulièrement en cours de mission que les compétences réelles de son équipe ne correspondent pas à ce qu'il croyait. Quel fondement de l'attribution des responsabilités lui manque-t-il ?",
     "options": [
       "la capacité à faire concorder l'offre et la demande",
-      "la connaissance en temps réel des compétences de ses équipes",
       "l'identification des compétences requises par les projets",
+      "la connaissance en temps réel des compétences de ses équipes",
       "la décomposition des missions en tâches spécifiques"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "L'attribution pertinente repose sur 3 fondements : connaissance en temps réel des compétences, identification des compétences requises, et capacité à faire concorder l'offre et la demande. Ici, c'est la vision actualisée des compétences effectives qui fait défaut."
   },
   {
@@ -17002,12 +30513,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Une équipe veut travailler en cycles itératifs courts, avec des livraisons fréquentes de versions partielles et une auto-organisation. Parmi ces outils et méthodes, lequel n'appartient PAS aux méthodes agiles ?",
     "options": [
-      "Scrum",
-      "Kanban",
       "le diagramme de Gantt",
+      "Kanban",
+      "Scrum",
       "Extreme Programming (XP)"
     ],
-    "reponse": 2,
+    "reponse": 0,
     "explication": "Les méthodes agiles les plus connues sont Scrum, Kanban, Extreme Programming (XP) et Lean. Le diagramme de Gantt est un outil de planification détaillée avec interdépendances, utilisé pour évaluer les contraintes de temps — pas une méthode agile."
   },
   {
@@ -17031,11 +30542,11 @@ var QUIZ = [
     "question": "Pour être irréprochable, un manager répartit exactement la même charge de travail à chaque membre de l'équipe, sans tenir compte des besoins individuels. Que peut-on en dire ?",
     "options": [
       "c'est une répartition équitable, car identique pour tous",
-      "c'est une répartition égalitaire, mais l'égalité absolue ne conduit pas toujours à des résultats équitables",
+      "c'est une répartition équitable à condition d'être transparente",
       "c'est la seule répartition qui évite les conflits d'équipe",
-      "c'est une répartition équitable à condition d'être transparente"
+      "c'est une répartition égalitaire, mais l'égalité absolue ne conduit pas toujours à des résultats équitables"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "L'égalité = répartition uniforme des charges. L'équité = attribution réfléchie selon les compétences, les aspirations et les contributions passées de chacun. L'égalité absolue ne conduit pas toujours à des résultats équitables."
   },
   {
@@ -17047,12 +30558,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Un manager implique ses collaborateurs dans le choix de leurs missions. Quels avantages ce leadership participatif apporte-t-il ?",
     "options": [
-      "appropriation, motivation, culture de l'initiative et de la responsabilisation",
       "polyvalence, spécialisation, rotation des responsabilités",
+      "appropriation, motivation, culture de l'initiative et de la responsabilisation",
       "reconnaissance, mentorat, coaching individuel",
       "équilibre de la charge, transparence, critères équitables"
     ],
-    "reponse": 0,
+    "reponse": 1,
     "explication": "Le leadership participatif — impliquer les membres dans le choix de leurs missions — apporte trois avantages : appropriation, motivation, et une culture de l'initiative et de la responsabilisation."
   },
   {
@@ -17105,11 +30616,11 @@ var QUIZ = [
     "question": "Les indicateurs montrent une baisse de satisfaction client et des retards répétés. Comment le manager doit-il aborder la réaffectation des tâches ?",
     "options": [
       "comme une opération ponctuelle, à ne déclencher qu'en cas de crise",
-      "comme un processus continu, anticipé par la veille stratégique et croisant compétences requises et compétences effectives",
       "comme une sanction pour les collaborateurs en difficulté",
+      "comme un processus continu, anticipé par la veille stratégique et croisant compétences requises et compétences effectives",
       "comme une décision unilatérale de la direction, sans lien avec les indicateurs"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "La réaffectation s'anticipe par la veille stratégique (marché, technologies, réglementation), se déclenche sur signaux des indicateurs, et croise les compétences nouvellement requises avec la connaissance en temps réel des compétences effectives. La révision de la distribution est un processus continu, jamais ponctuel."
   },
   {
@@ -17166,12 +30677,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Quelle est la bonne séquence du processus d'analyse des compétences en 5 étapes ?",
     "options": [
-      "cartographie → identification → plan de développement → alignement stratégique → évaluation continue",
       "identification → cartographie → alignement stratégique → plan de développement → évaluation continue",
+      "cartographie → identification → plan de développement → alignement stratégique → évaluation continue",
       "alignement stratégique → identification → cartographie → évaluation continue → plan de développement",
       "identification → alignement stratégique → cartographie → évaluation continue → plan de développement"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "On identifie d'abord (collecte d'informations, compétences tacites), puis on cartographie les profils, on aligne sur les objectifs organisationnels, on élabore les plans de développement (individuels et collectifs), et on évalue en continu."
   },
   {
@@ -17185,10 +30696,10 @@ var QUIZ = [
     "options": [
       "un examen écrit sur la théorie",
       "un exercice de codage en situation réelle",
-      "une étude de cas comportementale, complétée par une auto-évaluation",
-      "un QCM de connaissances spécifiques"
+      "un QCM de connaissances spécifiques",
+      "une étude de cas comportementale, complétée par une auto-évaluation"
     ],
-    "reponse": 2,
+    "reponse": 3,
     "explication": "Les compétences comportementales s'évaluent par études de cas comportementales, évaluation par des tiers, auto-évaluation (prise de conscience, responsabilisation), questionnaires de personnalité et évaluations en situation. Examens écrits et tests pratiques ciblent les compétences techniques, les QCM les connaissances."
   },
   {
@@ -17218,11 +30729,11 @@ var QUIZ = [
     "question": "Une entreprise met en place une rétroaction à 360° pour un collaborateur. Qui participe à l'évaluation ?",
     "options": [
       "uniquement son superviseur, pour garantir la cohérence",
-      "son superviseur, quatre à huit pairs, subordonnés ou collègues (voire parties prenantes externes), plus une auto-évaluation",
       "uniquement ses pairs, pour éviter le lien hiérarchique",
+      "son superviseur, quatre à huit pairs, subordonnés ou collègues (voire parties prenantes externes), plus une auto-évaluation",
       "l'ensemble de l'entreprise, par vote anonyme"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "La rétroaction à 360° combine le superviseur, quatre à huit pairs, subordonnés, collègues, voire parties prenantes externes (clients, partenaires), complétés par une auto-évaluation. Les évaluateurs sont choisis conjointement par l'organisation et l'employé."
   },
   {
@@ -17245,12 +30756,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Un manager annonce une mauvaise nouvelle à son équipe avec un grand sourire, et le message passe mal. Comment l'analyser avec Watzlawick ?",
     "options": [
-      "le contenu du message était trop complexe pour l'équipe",
-      "le canal choisi était mauvais : il aurait fallu un écrit",
       "il manque de congruence : la relation (forme non verbale) contredit le contenu, or la forme conditionne l'acceptation du fond",
+      "le canal choisi était mauvais : il aurait fallu un écrit",
+      "le contenu du message était trop complexe pour l'équipe",
       "l'équipe manque d'écoute active"
     ],
-    "reponse": 2,
+    "reponse": 0,
     "explication": "Selon Watzlawick, la communication se joue à deux niveaux : le contenu (le fond) et la relation (la forme : gestes, voix, posture). La forme en dit plus que le fond et conditionne son acceptation — d'où l'exigence de congruence entre le « comment » non verbal et le « quoi » verbal."
   },
   {
@@ -17263,11 +30774,11 @@ var QUIZ = [
     "question": "Un manager doit transmettre un feedback formel d'évaluation et un changement de procédure. Quel canal privilégier ?",
     "options": [
       "l'oral, pour l'impact immédiat",
-      "l'écrit, comme pour les décisions importantes et les annonces officielles",
+      "une simple mention en réunion de routine",
       "un message vocal asynchrone",
-      "une simple mention en réunion de routine"
+      "l'écrit, comme pour les décisions importantes et les annonces officielles"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "L'écrit se privilégie pour les décisions importantes, les objectifs et résultats attendus, les changements de procédure, les feedbacks formels d'évaluation, les instructions techniques détaillées et les annonces officielles. L'oral convient aux instructions courtes, feedbacks rapides et encouragements."
   },
   {
@@ -17322,6 +30833,835 @@ var QUIZ = [
     "explication": "Faux. Les objectifs fixés unilatéralement sont à terme contre-productifs : ni partagés ni acceptés. Le choix en commun des objectifs est le préalable à une vraie délégation et responsabilisation — auto-évaluation, autonomie, initiative, appropriation de la stratégie (du sens)."
   },
   {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-019",
+    "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quels sont les 3 fondements d'une attribution pertinente des responsabilités ? (3 réponses)",
+    "options": [
+      "la connaissance en temps réel des compétences des équipes",
+      "l'identification des compétences requises par les projets",
+      "la capacité à faire concorder l'offre et la demande de compétences",
+      "l'ancienneté de chaque collaborateur",
+      "la préférence du manager"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Faire concorder suppose flexibilité, suivi continu et formation."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-020",
+    "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Dans un SWOT appliqué tâche par tâche, associez chaque case à son contenu.",
+    "colonne_a": [
+      "Forces",
+      "Faiblesses",
+      "Opportunités",
+      "Menaces"
+    ],
+    "colonne_b": [
+      "Collaborations externes possibles",
+      "Contraintes budgétaires et de ressources",
+      "Compétences disponibles",
+      "Compétences manquantes"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Le SWOT sert à analyser les parties prenantes et les besoins de mission."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-021",
+    "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Que représente la vision du projet dans l'identification des besoins de mission ?",
+    "options": [
+      "un document comptable",
+      "la « boussole » des décisions, qui traduit les attentes des parties prenantes en objectifs clairs",
+      "la liste des tâches",
+      "le planning Gantt"
+    ],
+    "reponse": 1,
+    "explication": "Ensuite : analyse des parties prenantes, résultats attendus (KPI), contraintes de temps et de ressources."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-022",
+    "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les principales méthodes agiles citées ? (4 réponses)",
+    "options": [
+      "Scrum",
+      "Kanban",
+      "Extreme Programming (XP)",
+      "Lean",
+      "Cycle en V",
+      "PERT"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Cycles itératifs courts, livraisons fréquentes de versions partielles, équipes auto-organisées."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-023",
+    "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Pour chaque tâche, les soft skills (communication, résolution de conflits, leadership) sont aussi indispensables que les hard skills.",
+    "reponse": true,
+    "explication": "Vrai. La cartographie des compétences croise les forces individuelles et les exigences des tâches."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-024",
+    "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque niveau de la cartographie des compétences à son principe.",
+    "colonne_a": [
+      "Individuel",
+      "Collectif"
+    ],
+    "colonne_b": [
+      "L'équipe dépasse la somme des compétences : la complémentarité crée la synergie",
+      "Compétences de chacun ↔ exigences de chaque tâche"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Le collectif se nourrit de brainstormings, réunions interdisciplinaires, formations croisées, mentorat."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-025",
+    "section": "1. Attribuer les tâches : de la mission à la feuille de route",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Les équipes virtuelles en télétravail demandent des compétences propres, comme la gestion des fuseaux horaires et de la communication à distance.",
+    "reponse": true,
+    "explication": "Vrai, le cours le souligne dans l'identification des besoins de mission."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-026",
+    "section": "2. Distribuer équitablement et efficacement",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque notion à sa définition.",
+    "colonne_a": [
+      "Égalité",
+      "Équité"
+    ],
+    "colonne_b": [
+      "Attribution réfléchie selon compétences, aspirations et contributions passées",
+      "Répartition uniforme des charges, sans tenir compte des besoins individuels"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "L'égalité absolue ne produit pas toujours des résultats équitables."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-027",
+    "section": "2. Distribuer équitablement et efficacement",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les 3 volets de l'équité dans la distribution des tâches ? (3 réponses)",
+    "options": [
+      "l'équilibre de la charge",
+      "l'équité des opportunités",
+      "les préférences et aspirations",
+      "l'égalité stricte des heures",
+      "la rotation obligatoire chaque semaine"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Accès transparent aux projets stimulants ; aspirations prises en compte via un PDI dynamique et co-construit."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-028",
+    "section": "2. Distribuer équitablement et efficacement",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que désigne le PDI dans la distribution des tâches ?",
+    "options": [
+      "le Planning Des Interventions",
+      "le Programme de Diversité Interne",
+      "le Plan de Développement Individuel, dynamique, co-construit et aligné sur les ambitions long terme",
+      "le Projet de Délégation Intégrale"
+    ],
+    "reponse": 2,
+    "explication": "Il s'appuie sur des discussions ouvertes et régulières sur les objectifs professionnels."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-029",
+    "section": "2. Distribuer équitablement et efficacement",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez la définition du feedback constructif.",
+    "texte": "Un feedback constructif associe des exemples {1}, des suggestions d'{2} et la reconnaissance des {3}. Il est continu et {4}.",
+    "trous": [
+      "concrets",
+      "amélioration",
+      "efforts",
+      "bidirectionnel"
+    ],
+    "explication": "Il s'accompagne de reconnaissance : cérémonies régulières, plateformes internes célébrant les succès."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-030",
+    "section": "2. Distribuer équitablement et efficacement",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La rotation des responsabilités est d'autant plus bénéfique qu'elle est régulière.",
+    "reponse": true,
+    "explication": "Vrai : elle apporte de nouvelles compétences, une compréhension des processus et une perspective élargie."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-031",
+    "section": "2. Distribuer équitablement et efficacement",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Le cours recommande de développer la polyvalence sans limite, car elle sécurise toujours l'organisation.",
+    "reponse": false,
+    "explication": "Faux. Planifiée et encouragée, elle a des limites : l'excès surcharge et nuit aux spécialisations, de grande valeur."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-032",
+    "section": "2. Distribuer équitablement et efficacement",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi priorités et délais sont-ils dits « interconnectés » ?",
+    "options": [
+      "parce qu'ensemble ils donnent l'ordre des tâches et leur visibilité (calendrier clair, suivi partagé)",
+      "parce qu'ils sont fixés par le même logiciel",
+      "parce qu'ils dépendent du budget",
+      "parce qu'ils sont décidés par le client"
+    ],
+    "reponse": 0,
+    "explication": "Priorités = contribution aux objectifs stratégiques ; délais = calendrier accessible et réunions régulières."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-033",
+    "section": "3. Suivre, réaffecter, améliorer en continu",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Sur quoi s'appuie le suivi des performances ? (3 réponses)",
+    "options": [
+      "la surveillance constante des KPI et de leurs tendances",
+      "les retours de l'équipe et des parties prenantes externes",
+      "les entretiens individualisés",
+      "la seule intuition du manager",
+      "les rumeurs"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Clients et fournisseurs apportent une vision holistique."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-034",
+    "section": "3. Suivre, réaffecter, améliorer en continu",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qui permet d'anticiper une réaffectation des tâches ?",
+    "options": [
+      "le tirage au sort",
+      "l'entretien annuel uniquement",
+      "la demande du client",
+      "la veille stratégique (marché, technologies, réglementation)"
+    ],
+    "reponse": 3,
+    "explication": "La réaffectation croise compétences nouvellement requises et compétences effectives en temps réel."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-035",
+    "section": "3. Suivre, réaffecter, améliorer en continu",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les étapes de la démarche DMAIC (Lean Six Sigma).",
+    "elements": [
+      "Améliorer",
+      "Mesurer",
+      "Contrôler",
+      "Définir",
+      "Analyser"
+    ],
+    "ordre": [
+      3,
+      1,
+      4,
+      0,
+      2
+    ],
+    "explication": "Définir → Mesurer → Analyser → Améliorer → Contrôler : réduire les variations, éliminer les gaspillages."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-036",
+    "section": "3. Suivre, réaffecter, améliorer en continu",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 5 phases du Design Thinking.",
+    "elements": [
+      "Prototype",
+      "Empathie",
+      "Test",
+      "Idéation",
+      "Définition"
+    ],
+    "ordre": [
+      1,
+      4,
+      3,
+      0,
+      2
+    ],
+    "explication": "Méthode axée sur les besoins humains, la créativité et l'innovation."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-037",
+    "section": "3. Suivre, réaffecter, améliorer en continu",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une équipe veut réduire le temps d'attente en production en chassant les gaspillages grâce aux données. Quelle méthode convient ?",
+    "options": [
+      "le Kaizen",
+      "le Lean Six Sigma",
+      "le Design Thinking",
+      "le MBTI"
+    ],
+    "reponse": 1,
+    "explication": "Kaizen = petits pas permanents ; Design Thinking = partir de l'utilisateur."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-038",
+    "section": "4. Évaluer les compétences individuelles et collectives",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'étape d'identification des compétences doit aussi repérer les compétences tacites, comme l'expérience ou l'intelligence émotionnelle.",
+    "reponse": true,
+    "explication": "Vrai : entretiens, évaluations, auto-évaluations, retours d'expérience, plus les compétences tacites."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-039",
+    "section": "4. Évaluer les compétences individuelles et collectives",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque volet d'évaluation à une méthode adaptée.",
+    "colonne_a": [
+      "Compétences techniques",
+      "Connaissances spécifiques",
+      "Compétences comportementales"
+    ],
+    "colonne_b": [
+      "QCM, études de cas, entretiens structurés",
+      "Questionnaires de personnalité, évaluation par tiers, mises en situation",
+      "Tests pratiques, évaluation par pairs ou experts, examens écrits"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "explication": "Chaque volet a ses outils propres."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-040",
+    "section": "4. Évaluer les compétences individuelles et collectives",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Combien de dimensions mesure le MBTI (Myers-Briggs) ?",
+    "options": [
+      "2",
+      "5",
+      "4",
+      "8"
+    ],
+    "reponse": 2,
+    "explication": "Extraversion/introversion, sensation/intuition, pensée/sentiment, jugement/perception. Le NEO-PI-R mesure les cinq grands facteurs."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-041",
+    "section": "4. Évaluer les compétences individuelles et collectives",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les 3 compétences collectives interconnectées ? (3 réponses)",
+    "options": [
+      "la collaboration",
+      "la communication",
+      "le leadership",
+      "la polyvalence",
+      "l'ancienneté"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "La communication virtuelle s'évalue spécifiquement ; le leadership via subordonnés, simulations, feedbacks à 360°."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-042",
+    "section": "4. Évaluer les compétences individuelles et collectives",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Dans une rétroaction à 360°, les évaluateurs sont choisis par l'employé seul.",
+    "reponse": false,
+    "explication": "Faux : ils sont choisis conjointement par l'organisation et l'employé ; le destinataire reçoit des données anonymisées."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-043",
+    "section": "4. Évaluer les compétences individuelles et collectives",
+    "niveau": 3,
+    "format": "qcm_multiple",
+    "question": "Quels garde-fous limitent les biais d'une rétroaction à 360° ? (4 réponses)",
+    "options": [
+      "former les évaluateurs aux biais (confirmation, halo, récence)",
+      "utiliser des grilles standardisées à critères objectifs",
+      "diversifier les évaluateurs (5-6 personnes minimum)",
+      "tenir des réunions de calibration",
+      "limiter l'évaluation au seul manager",
+      "révéler l'identité des évaluateurs"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "S'y ajoutent validation RH avant transmission et anonymisation renforcée avec agrégation."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-044",
+    "section": "4. Évaluer les compétences individuelles et collectives",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Lequel est un inconvénient de la rétroaction à 360° ?",
+    "options": [
+      "elle peut se focaliser sur les faiblesses et l'anonymat limite l'approfondissement",
+      "elle révèle les besoins de formation",
+      "elle réduit les biais",
+      "elle renforce la responsabilité"
+    ],
+    "reponse": 0,
+    "explication": "Autres limites : mise en œuvre hâtive, évaluateurs inexpérimentés, manipulation de groupe, traitement de données lourd."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-045",
+    "section": "4. Évaluer les compétences individuelles et collectives",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 3 temps du débriefing d'une évaluation.",
+    "elements": [
+      "Clarifier les commentaires avec des exemples concrets",
+      "Reformuler positivement les critiques en opportunités",
+      "Écouter le ressenti"
+    ],
+    "ordre": [
+      2,
+      0,
+      1
+    ],
+    "explication": "Cadre sécurisant, 1 h minimum, posture de coach et non de juge."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-046",
+    "section": "4. Évaluer les compétences individuelles et collectives",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "En quoi consiste la technique du sandwich ?",
+    "options": [
+      "axe d'amélioration → force → axe d'amélioration",
+      "question → réponse → question",
+      "critique → critique → félicitation",
+      "force → axe d'amélioration → force"
+    ],
+    "reponse": 3,
+    "explication": "Elle encadre l'axe d'amélioration par deux points forts."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-047",
+    "section": "4. Évaluer les compétences individuelles et collectives",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez les règles du plan de développement personnel (PDP).",
+    "texte": "Le PDP est co-construit, avec {1} objectifs prioritaires maximum en SMART, des jalons à 1, 3 et {2} mois. Le suivi passe par des one-to-one {3} de 30 minutes.",
+    "trous": [
+      "2-3",
+      "6",
+      "mensuels"
+    ],
+    "explication": "Ressources (formations, mentorat), indicateurs mesurables, victoires célébrées, évaluation à 6 mois."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-048",
+    "section": "5. La communication managériale",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les 3 fonctions de la communication ? (3 réponses)",
+    "options": [
+      "l'expression",
+      "la représentation",
+      "l'action sur autrui",
+      "la sanction",
+      "l'archivage"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Mission première du manager : « fabriquer du sens »."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-049",
+    "section": "5. La communication managériale",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Selon Watzlawick, la forme conditionne l'acceptation du fond.",
+    "reponse": true,
+    "explication": "Vrai : la forme (gestes, voix, posture) en dit plus que le fond (mots, phrases)."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-050",
+    "section": "5. La communication managériale",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque mode de communication à distance à son usage.",
+    "colonne_a": [
+      "Appel ou facecam (synchrone)",
+      "Visio (synchrone)",
+      "Mail (asynchrone)",
+      "Outils collaboratifs (asynchrone)"
+    ],
+    "colonne_b": [
+      "Réagir à plusieurs",
+      "Réunions et entretiens",
+      "L'urgent-important",
+      "Le complexe"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Synchrone = immédiat ; asynchrone = différé."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-051",
+    "section": "5. La communication managériale",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles 4 questions se poser avant de communiquer ? (4 réponses)",
+    "options": [
+      "quelles informations ?",
+      "pour quoi faire ?",
+      "quels circuits ?",
+      "quels supports et canaux ?",
+      "qui a raison ?",
+      "combien de temps parler ?"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Remonter, descendre, faire circuler l'information."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-052",
+    "section": "5. La communication managériale",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi aucune information ne passe-t-elle sans déformation ?",
+    "options": [
+      "parce que les outils numériques sont défaillants",
+      "parce que chacun a son cadre de référence et ses filtres (a priori, préjugés, idées préconçues)",
+      "parce que les managers mentent",
+      "parce que l'écrit est toujours ambigu"
+    ],
+    "reponse": 1,
+    "explication": "Ni même vécu ni même vocabulaire. Parade : un langage le plus précis possible."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-053",
+    "section": "5. La communication managériale",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel critère prime sur la performance d'une équipe selon le cours ?",
+    "options": [
+      "la rémunération",
+      "le nombre de réunions",
+      "la sécurité psychologique",
+      "l'ancienneté moyenne"
+    ],
+    "reponse": 2,
+    "explication": "En confiance, on ose prendre des risques, on a droit à l'erreur, on demande de l'aide. Elle s'installe par écoute active et empathie."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-054",
+    "section": "5. La communication managériale",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque niveau d'écoute active à ce qu'il capte.",
+    "colonne_a": [
+      "Les mots",
+      "Le non-verbal",
+      "Le changement de rythme"
+    ],
+    "colonne_b": [
+      "Lent = doute ; rapide = impatience",
+      "Le contenu",
+      "Les signes parallèles"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Entendre est naturel, écouter relève d'une volonté."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-055",
+    "section": "5. La communication managériale",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "L'empathie consiste à se mettre à la place de l'autre au point d'abandonner son propre point de vue.",
+    "reponse": false,
+    "explication": "Faux : on comprend ce que l'autre ressent tout en conservant sa propre intégrité."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-056",
+    "section": "5. La communication managériale",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les 3 conséquences du micromanagement ? (3 réponses)",
+    "options": [
+      "absence d'autonomie",
+      "absence de créativité",
+      "excès de stress",
+      "hausse de la productivité",
+      "meilleure délégation"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Sous-jacent : le manque de délégation (peur de perdre le pouvoir, manque de confiance ou de méthode)."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-057",
+    "section": "5. La communication managériale",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'assertivité permet de dire non ou d'exprimer un désaccord sans rompre la relation.",
+    "reponse": true,
+    "explication": "Vrai : affirmation de soi respectueuse d'autrui, qui accepte contradiction et compromis."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-058",
+    "section": "5. La communication managériale",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que dit la « loi de réciprocité » en communication managériale ?",
+    "options": [
+      "plus je suis positif, plus les autres le sont",
+      "plus je contrôle, plus les autres obéissent",
+      "chacun doit rendre ce qu'il reçoit en salaire",
+      "toute critique appelle une contre-critique"
+    ],
+    "reponse": 0,
+    "explication": "Reconnaître performances et initiatives développe implication et engagement."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-059",
+    "section": "5. La communication managériale",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Qu'apportent respectivement seniors et jeunes dans une équipe intergénérationnelle ?",
+    "options": [
+      "seniors : créativité ; jeunes : recul",
+      "rien de spécifique",
+      "seniors : numérique ; jeunes : cadrage",
+      "seniors : expérience, recul, cadrage ; jeunes : créativité, maîtrise du numérique"
+    ],
+    "reponse": 3,
+    "explication": "Ignorer les différences générationnelles crée conflits et résistance au changement."
+  },
+  {
+    "resume": "b4-r03",
+    "bloc": 4,
+    "id": "b4-r03-qz-060",
+    "section": "5. La communication managériale",
+    "niveau": 2,
+    "format": "ouverte",
+    "question": "Une équipe projet connaît des tensions dues à une mauvaise communication. Identifiez les causes probables et les remèdes selon le cours.",
+    "attendus": [
+      "Causes : directives vagues, attentes non clarifiées, information retenue",
+      "Micromanagement d'un acteur sur l'autre : frustration, démotivation",
+      "Registre agressif ou passif au lieu d'assertif",
+      "Différences culturelles ou générationnelles ignorées",
+      "Remèdes : cadre clair, feedbacks réguliers, écoute active, assertivité, outils partagés"
+    ],
+    "explication": "La communication est un échange social : la forme conditionne l'acceptation du fond."
+  },
+  {
     "resume": "b4-r04",
     "bloc": 4,
     "id": "b4-r04-qz-001",
@@ -17331,11 +31671,11 @@ var QUIZ = [
     "question": "Un manager apprend qu'un collaborateur, sans que rien ne le laisse paraître, est dyslexique et traverse une situation familiale difficile. De quel niveau de diversité relèvent ces caractéristiques ?",
     "options": [
       "de la diversité visible, car elles finissent toujours par se voir",
-      "de la diversité invisible, qui exige une vigilance particulière du manager",
       "de l'intersectionnalité, car elles concernent deux dimensions",
+      "de la diversité invisible, qui exige une vigilance particulière du manager",
       "de la diversité culturelle, car elles touchent au rapport au travail"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "La diversité invisible regroupe les aspects non apparents mais déterminants (neurodiversité, croyances, situations familiales, handicaps non visibles) : plus difficile à identifier, elle exige une vigilance particulière. L'intersectionnalité désigne la combinaison unique de dimensions que porte chaque collaborateur."
   },
   {
@@ -17398,12 +31738,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Un manager continue de surévaluer une recrue des mois après son arrivée, simplement parce qu'elle vient d'une entreprise prestigieuse. Quel biais est à l'œuvre ?",
     "options": [
-      "le biais de confirmation",
-      "l'effet de halo",
       "le biais d'ancrage",
+      "l'effet de halo",
+      "le biais de confirmation",
       "un stéréotype générationnel"
     ],
-    "reponse": 2,
+    "reponse": 0,
     "explication": "Le biais d'ancrage donne un poids disproportionné à la première information reçue (ici l'entreprise d'origine). L'effet de halo est proche mais désigne une caractéristique qui influence la perception globale ; le biais de confirmation ne retient que ce qui confirme l'opinion préexistante."
   },
   {
@@ -17427,11 +31767,11 @@ var QUIZ = [
     "question": "Comment Amy Edmondson définit-elle la sécurité psychologique ?",
     "options": [
       "la garantie contractuelle d'un environnement de travail sans risque physique",
-      "la conviction partagée que l'équipe est un environnement sûr pour prendre des risques interpersonnels",
+      "l'absence totale de désaccords et de tensions au sein de l'équipe",
       "le sentiment individuel d'être protégé par son manager en cas d'erreur",
-      "l'absence totale de désaccords et de tensions au sein de l'équipe"
+      "la conviction partagée que l'équipe est un environnement sûr pour prendre des risques interpersonnels"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "La sécurité psychologique est la conviction partagée que l'équipe est un environnement sûr pour prendre des risques interpersonnels : exprimer idées, préoccupations et besoins sans craindre le jugement. Elle libère les questions naïves et les désaccords constructifs — elle ne les supprime pas."
   },
   {
@@ -17444,11 +31784,11 @@ var QUIZ = [
     "question": "Tu dois faire un feedback correctif à un collaborateur issu d'une culture d'harmonie relationnelle, pour qui le feedback direct « à la française » serait vécu comme une attaque. Quelle approche le cours recommande-t-il ?",
     "options": [
       "reporter le feedback jusqu'à la prochaine évaluation annuelle",
-      "passer par un collègue de la même culture pour transmettre le message",
       "le « sandwich positif » : encadrer les points d'amélioration par des reconnaissances de réussites",
+      "passer par un collègue de la même culture pour transmettre le message",
       "envoyer le feedback par écrit pour éviter la confrontation"
     ],
-    "reponse": 2,
+    "reponse": 1,
     "explication": "Avec les cultures d'harmonie relationnelle, le cours recommande le « sandwich positif » : encadrer les points d'amélioration par des reconnaissances de réussites, avec un temps d'échange et un accompagnement concret."
   },
   {
@@ -17461,11 +31801,11 @@ var QUIZ = [
     "question": "Tu confies une mission à un collaborateur autiste (TSA). Quelle adaptation de communication est la plus appropriée ?",
     "options": [
       "des objectifs segmentés en étapes courtes avec des points d'étape fréquents",
-      "une communication factuelle, explicite, structurée par écrit, sans métaphores, avec un temps de traitement",
       "commencer par expliquer les enjeux stratégiques et le « pourquoi » de la mission",
+      "une communication factuelle, explicite, structurée par écrit, sans métaphores, avec un temps de traitement",
       "privilégier la synthèse vocale et les supports visuels"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Pour un profil autiste : factuel, explicite, structuré par écrit, critères précis, pas de métaphores, temps de traitement. Les étapes courtes visent le TDAH, le « pourquoi » le HPI, la synthèse vocale et les supports visuels le profil dyslexique."
   },
   {
@@ -17477,12 +31817,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Un outil d'IA de tri de candidatures n'utilise aucune donnée sur l'origine des candidats, mais intègre leur code postal. Pourquoi le cours y voit-il un risque ?",
     "options": [
-      "le code postal est une donnée dont la collecte est interdite en recrutement",
       "le code postal est corrélé au statut socio-économique donc à l'origine ethnique : c'est un biais indirect par variable corrélée",
+      "le code postal est une donnée dont la collecte est interdite en recrutement",
       "l'IA ne sait pas traiter les données géographiques de manière fiable",
       "le code postal ne dit rien des compétences, ce qui rend l'outil simplement inutile"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Entraînée sur des données historiques, l'IA peut reproduire et amplifier les biais passés et sélectionner des variables corrélées à des caractéristiques protégées : le code postal, corrélé au statut socio-économique donc à l'origine ethnique, produit un biais indirect."
   },
   {
@@ -17495,11 +31835,11 @@ var QUIZ = [
     "question": "Une salle de spectacle est conçue dès l'origine avec accès PMR, boucles magnétiques et zones calmes utilisables par tous les publics. De quoi s'agit-il ?",
     "options": [
       "d'aménagements raisonnables, car ils ciblent des publics spécifiques",
-      "d'accessibilité universelle : des environnements utilisables par le plus grand nombre sans adaptation ultérieure",
+      "de flexibilité managériale appliquée aux locaux",
       "d'une simple conformité réglementaire sans portée managériale",
-      "de flexibilité managériale appliquée aux locaux"
+      "d'accessibilité universelle : des environnements utilisables par le plus grand nombre sans adaptation ultérieure"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "L'accessibilité universelle consiste à concevoir environnements, processus et outils utilisables par le plus grand nombre sans adaptation ultérieure — une stratégie d'optimisation des talents. Les aménagements raisonnables sont au contraire des ajustements spécifiques à un collaborateur donné."
   },
   {
@@ -17529,11 +31869,11 @@ var QUIZ = [
     "question": "Une équipe projet mêle salariés internes, un freelance et une agence partenaire. À quelle dimension d'hétérogénéité de l'équipe hybride cela correspond-il ?",
     "options": [
       "la dimension spatiale",
-      "la dimension statutaire",
       "la dimension temporelle",
+      "la dimension statutaire",
       "la dimension culturelle"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "La dimension statutaire oppose salariés internes et externes (freelances, consultants, agences, partenaires). La spatiale oppose co-localisés et distribués, la temporelle synchrone et asynchrone, la culturelle cultures d'entreprise, nationalités et générations."
   },
   {
@@ -17585,12 +31925,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "En équipe hybride, la supervision directe ne fonctionne plus. Vers quel mécanisme de coordination de Mintzberg le manager doit-il prioritairement rééquilibrer ?",
     "options": [
-      "l'ajustement mutuel spontané, à la machine à café",
       "la standardisation des résultats : livrables, critères de qualité et échéances définis, liberté des méthodes",
+      "l'ajustement mutuel spontané, à la machine à café",
       "la standardisation des procédés, en imposant les processus internes à tous les externes",
       "la supervision directe renforcée par des reportings quotidiens"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "La priorité va à la standardisation des résultats : définir précisément livrables, critères de qualité et échéances, puis laisser chacun libre de ses méthodes — un pilotage par objectifs qui respecte l'autonomie des externes. L'ajustement mutuel doit être réinventé (rituels, canaux dédiés), pas espéré spontané."
   },
   {
@@ -17614,11 +31954,11 @@ var QUIZ = [
     "question": "Un freelance se plaint du flou de son contrat et d'outils collaboratifs peu fiables. Au sens de Herzberg, sur quoi le manager agit-il en corrigeant ces points ?",
     "options": [
       "sur des facteurs de motivation, qui créeront son engagement",
-      "sur des facteurs d'hygiène, dont l'absence crée l'insatisfaction sans que leur présence suffise à motiver",
+      "sur le sommet de la pyramide de Maslow",
       "sur son besoin d'autonomie au sens de la théorie de l'autodétermination",
-      "sur le sommet de la pyramide de Maslow"
+      "sur des facteurs d'hygiène, dont l'absence crée l'insatisfaction sans que leur présence suffise à motiver"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "Clarté contractuelle, fiabilité des outils, équité interne/externe et process clairs sont des facteurs d'hygiène : leur absence crée l'insatisfaction. L'engagement vient des facteurs de motivation — reconnaissance, développement, participation aux décisions, sens."
   },
   {
@@ -17673,6 +32013,935 @@ var QUIZ = [
     "explication": "L'efficacité dépend de l'adéquation entre la richesse du canal (feedback immédiat, indices multiples, personnalisation) et la complexité du message : visio pour le complexe, chat pour le rapide et l'informel, e-mail pour le formel, outils collaboratifs pour le suivi asynchrone."
   },
   {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-019",
+    "section": "1. Cartographier la diversité de l'équipe",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Selon le cours, la diversité des talents est un impératif stratégique et non une démarche cosmétique.",
+    "reponse": true,
+    "explication": "Vrai : créativité et performance accrues (HBR, 2019), compréhension des marchés mondiaux, agilité, résilience."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-020",
+    "section": "1. Cartographier la diversité de l'équipe",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque caractéristique au niveau de diversité correspondant.",
+    "colonne_a": [
+      "Genre, âge, certains handicaps physiques",
+      "Neurodiversité, croyances, situation familiale",
+      "Combinaison unique de dimensions chez chaque collaborateur"
+    ],
+    "colonne_b": [
+      "Intersectionnalité",
+      "Diversité visible",
+      "Diversité invisible"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "La diversité visible déclenche premières impressions et biais inconscients ; l'invisible exige une vigilance particulière."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-021",
+    "section": "1. Cartographier la diversité de l'équipe",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque dimension culturelle à ses variations.",
+    "colonne_a": [
+      "Communication",
+      "Décision",
+      "Temporalité"
+    ],
+    "colonne_b": [
+      "Monochronique (une tâche à la fois) vs polychronique",
+      "Indirecte (Japon) vs directe (Allemagne)",
+      "Consensus collectif vs efficacité et rapidité"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Les codes culturels façonnent le rapport au travail, à l'autorité et à la collaboration."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-022",
+    "section": "1. Cartographier la diversité de l'équipe",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels profils relèvent de la neurodiversité selon le cours ? (4 réponses)",
+    "options": [
+      "l'autisme (TSA)",
+      "le TDAH",
+      "la dyslexie",
+      "le haut potentiel intellectuel (HPI)",
+      "la myopie",
+      "la timidité"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Variations naturelles du fonctionnement neurologique."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-023",
+    "section": "1. Cartographier la diversité de l'équipe",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle approche du handicap le cours recommande-t-il ?",
+    "options": [
+      "une approche compensatoire",
+      "une approche par compétences : résilience, adaptation, résolution de problèmes",
+      "une approche par quotas uniquement",
+      "une approche médicale"
+    ],
+    "reponse": 1,
+    "explication": "Dépasser l'approche compensatoire pour voir les compétences."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-024",
+    "section": "2. Biais, stéréotypes, appartenance",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque biais cognitif à son mécanisme.",
+    "colonne_a": [
+      "Confirmation",
+      "Halo",
+      "Ancrage",
+      "Stéréotypes générationnels"
+    ],
+    "colonne_b": [
+      "Une caractéristique teinte la perception globale",
+      "Traits attribués selon l'âge",
+      "Ne retenir que ce qui confirme son opinion",
+      "Poids excessif de la première information"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Raccourcis mentaux inconscients qui distordent les jugements, surtout sous pression."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-025",
+    "section": "2. Biais, stéréotypes, appartenance",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un manager surévalue un collaborateur charismatique et sous-estime un introverti excellent. Quel biais est à l'œuvre ?",
+    "options": [
+      "l'ancrage",
+      "la confirmation",
+      "le halo",
+      "la récence"
+    ],
+    "reponse": 2,
+    "explication": "Une caractéristique (le charisme) teinte toute la perception."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-026",
+    "section": "2. Biais, stéréotypes, appartenance",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qu'une prophétie autoréalisatrice ?",
+    "options": [
+      "le fait que les performances finissent par suivre les attentes réductrices créées par un stéréotype",
+      "une prévision de chiffre d'affaires",
+      "un objectif SMART",
+      "un biais de récence"
+    ],
+    "reponse": 0,
+    "explication": "Même « positifs », les stéréotypes enferment les personnes dans des rôles."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-027",
+    "section": "2. Biais, stéréotypes, appartenance",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels outils d'auto-diagnostic aident le manager à réduire ses biais ? (3 réponses)",
+    "options": [
+      "le journal de réflexion managériale tenu plusieurs semaines",
+      "le Test d'Association Implicite (IAT)",
+      "le co-développement",
+      "l'intuition rapide",
+      "le tirage au sort des évaluations"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Débiaisage : informations contradictoires, sources multiples, critères objectifs et mesurables, retours confidentiels."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-028",
+    "section": "2. Biais, stéréotypes, appartenance",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les neurosciences montrent que le cerveau perçoit l'exclusion comme une menace, ce qui dégrade cognition et créativité.",
+    "reponse": true,
+    "explication": "Vrai : le sentiment d'appartenance conditionne engagement, motivation et performance."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-029",
+    "section": "2. Biais, stéréotypes, appartenance",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Les biais cognitifs ressortent surtout quand le manager décide vite et sous pression.",
+    "reponse": true,
+    "explication": "Vrai, d'où l'intérêt de critères objectifs et d'auto-diagnostic."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-030",
+    "section": "3. Les leviers du management inclusif",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quels gestes relèvent de l'écoute active inclusive ? (4 réponses)",
+    "options": [
+      "un contact visuel adapté aux codes culturels",
+      "la reformulation par questions ouvertes",
+      "des temps de silence pour qui ne parle pas sa langue maternelle",
+      "la validation explicite",
+      "couper la parole pour gagner du temps",
+      "imposer un contact visuel soutenu à tous"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "L'équipe imite le manager : effet d'entraînement."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-031",
+    "section": "3. Les leviers du management inclusif",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'étudie la proxémique ?",
+    "options": [
+      "le vocabulaire",
+      "la hiérarchie",
+      "les horaires de travail",
+      "l'espace interpersonnel, qui varie selon les cultures"
+    ],
+    "reponse": 3,
+    "explication": "Distance réduite chez les méditerranéens et latino-américains, grande chez les nordiques et asiatiques."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-032",
+    "section": "3. Les leviers du management inclusif",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un collaborateur neuroatypique qui évite le regard manifeste forcément un désintérêt.",
+    "reponse": false,
+    "explication": "Faux : cela peut traduire une hypersensibilité sensorielle."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-033",
+    "section": "3. Les leviers du management inclusif",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque profil neuroatypique à l'adaptation managériale proposée.",
+    "colonne_a": [
+      "TDAH",
+      "HPI",
+      "Dyslexique"
+    ],
+    "colonne_b": [
+      "Outils d'assistance (synthèse vocale), supports visuels",
+      "Objectifs en étapes courtes, points fréquents",
+      "Expliquer les enjeux stratégiques, le « pourquoi »"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Ces adaptations bénéficient à toute l'équipe."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-034",
+    "section": "3. Les leviers du management inclusif",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'évalue en priorité le recrutement inclusif ?",
+    "options": [
+      "le diplôme et l'école d'origine",
+      "les compétences et réalisations, par des critères mesurables liés au poste",
+      "la ressemblance avec l'équipe actuelle",
+      "l'ancienneté"
+    ],
+    "reponse": 1,
+    "explication": "Cas concrets, tests de compétences, entretiens structurés, offres en écriture inclusive, étapes transparentes."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-035",
+    "section": "3. Les leviers du management inclusif",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une IA de recrutement nourrie de données historiques peut reproduire et amplifier les biais passés.",
+    "reponse": true,
+    "explication": "Vrai : intitulés genrés, variables corrélées aux caractéristiques protégées (biais indirect)."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-036",
+    "section": "3. Les leviers du management inclusif",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque notion à sa définition.",
+    "colonne_a": [
+      "Accessibilité universelle",
+      "Aménagement raisonnable"
+    ],
+    "colonne_b": [
+      "Ajustement spécifique à un collaborateur (physique, organisationnel, technologique)",
+      "Concevoir environnements et outils utilisables par le plus grand nombre sans adaptation ultérieure"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Les aménagements ont un ROI généralement positif et profitent souvent à tous (effet d'entraînement)."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-037",
+    "section": "3. Les leviers du management inclusif",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Que recommande le principe de flexibilité managériale ?",
+    "options": [
+      "réduire les objectifs des profils en difficulté",
+      "des objectifs différents pour chaque collaborateur",
+      "mêmes objectifs et exigences pour tous, moyens personnalisés",
+      "supprimer les objectifs"
+    ],
+    "reponse": 2,
+    "explication": "On explique la logique pour garantir l'équité perçue. Jamais de réduction d'objectifs."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-038",
+    "section": "3. Les leviers du management inclusif",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "L'Oréal installe panneaux acoustiques et espaces silencieux pour un collaborateur hypersensible, puis les généralise. Qu'illustre ce cas ?",
+    "options": [
+      "l'effet d'entraînement : les aménagements profitent à tous",
+      "un coût inutile",
+      "un biais de halo",
+      "une obligation légale"
+    ],
+    "reponse": 0,
+    "explication": "Même logique pour l'affichage visuel (malentendants) ou les consignes écrites (autistes)."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-039",
+    "section": "3. Les leviers du management inclusif",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque auteur à sa contribution.",
+    "colonne_a": [
+      "Bohnet",
+      "Page",
+      "Hofstede",
+      "Meyer"
+    ],
+    "colonne_b": [
+      "The Culture Map",
+      "Dimensions culturelles (1971)",
+      "What Works : égalité des genres",
+      "The Diversity Bonus : diversité cognitive"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Le cours cite aussi Phillips (diversité sociale), Thomas (mentorat) et Buckingham (gestion personnalisée)."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-040",
+    "section": "3. Les leviers du management inclusif",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Selon le cours, le management inclusif suit des modèles atemporels à appliquer tels quels.",
+    "reponse": false,
+    "explication": "Faux : c'est un management par inférence, fondé sur l'observation et l'adaptation permanente."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-041",
+    "section": "4. Mesurer et développer l'inclusion",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque notion à ce qu'elle mesure.",
+    "colonne_a": [
+      "Diversité",
+      "Inclusion"
+    ],
+    "colonne_b": [
+      "La qualité d'intégration et la contribution effective",
+      "La représentation (présence)"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Présence ≠ participation effective."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-042",
+    "section": "4. Mesurer et développer l'inclusion",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 5 étapes du développement de l'inclusion.",
+    "elements": [
+      "Aménagements organisationnels",
+      "Auto-diagnostic de ses biais",
+      "Mesure et amélioration continue",
+      "Identification des dimensions de diversité",
+      "Adaptation de la communication et du feedback"
+    ],
+    "ordre": [
+      1,
+      3,
+      4,
+      0,
+      2
+    ],
+    "explication": "Plus intelligence émotionnelle interculturelle, formation continue, capitalisation entre pairs."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-043",
+    "section": "4. Mesurer et développer l'inclusion",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Lequel est un indicateur qualitatif d'inclusion ?",
+    "options": [
+      "la répartition des formations par segment",
+      "le taux d'adoption des idées de chaque profil",
+      "la rotation par segment",
+      "la sécurité psychologique mesurée par enquête anonyme"
+    ],
+    "reponse": 3,
+    "explication": "Qualitatifs : appartenance, équité perçue, sécurité psychologique (entretiens, focus groups, enquêtes courtes)."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-044",
+    "section": "5. Équipes hybrides : définition et cadres théoriques",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les 4 dimensions structurantes d'une équipe hybride ? (4 réponses)",
+    "options": [
+      "spatiale",
+      "statutaire",
+      "temporelle",
+      "culturelle",
+      "budgétaire",
+      "hiérarchique"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Coexistence simultanée d'hétérogénéités multiples."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-045",
+    "section": "5. Équipes hybrides : définition et cadres théoriques",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les 3 facteurs d'émergence des équipes hybrides ? (3 réponses)",
+    "options": [
+      "la digitalisation",
+      "la flexibilisation du travail",
+      "la spécialisation croissante des compétences",
+      "la baisse du chômage",
+      "la centralisation des décisions"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "La digitalisation pousse à piloter par objectifs et résultats, non par présence."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-046",
+    "section": "5. Équipes hybrides : définition et cadres théoriques",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une agence hésite entre recruter un directeur artistique en CDI, faire appel à un freelance ou à une agence. Quel cadre théorique éclaire ce choix ?",
+    "options": [
+      "la contingence structurelle",
+      "les coûts de transaction (Williamson)",
+      "la pyramide de Maslow",
+      "la richesse des médias"
+    ],
+    "reponse": 1,
+    "explication": "Coût direct + coûts de recherche, négociation, contractualisation, suivi."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-047",
+    "section": "5. Équipes hybrides : définition et cadres théoriques",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Selon l'approche systémique, les tensions d'une équipe hybride sont intrinsèques : il faut les réguler plutôt que chercher à les supprimer.",
+    "reponse": true,
+    "explication": "Vrai : le manager devient régulateur systémique, par l'influence plutôt que l'autorité."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-048",
+    "section": "5. Équipes hybrides : définition et cadres théoriques",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qu'un contrat psychologique dans un écosystème hybride ?",
+    "options": [
+      "une clause de confidentialité",
+      "un test de personnalité",
+      "un ensemble d'attentes mutuelles informelles (disponibilité, qualité, réactivité, délais)",
+      "un contrat de travail en CDI"
+    ],
+    "reponse": 2,
+    "explication": "Il complète le contrat formel, dans une gouvernance fondée sur la facilitation et la valeur partagée."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-049",
+    "section": "6. Coordonner et piloter une équipe hybride",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque mécanisme de coordination de Mintzberg à sa définition.",
+    "colonne_a": [
+      "Ajustement mutuel",
+      "Supervision directe",
+      "Standardisation des procédés",
+      "Standardisation des qualifications"
+    ],
+    "colonne_b": [
+      "Compétences acquises par la formation",
+      "Formalisation des processus",
+      "Communication informelle directe",
+      "Ordres et contrôle"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Le 5e : la standardisation des résultats (objectifs définis en amont), prioritaire en hybride."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-050",
+    "section": "6. Coordonner et piloter une équipe hybride",
+    "niveau": 1,
+    "format": "texte_a_trous",
+    "question": "Complétez la matrice RACI.",
+    "texte": "R = {1}, celui qui exécute ; A = {2}, le garant ; C = {3}, avant décision ; I = {4}, après.",
+    "trous": [
+      "Responsible",
+      "Accountable",
+      "Consulted",
+      "Informed"
+    ],
+    "explication": "Elle se co-construit en « ateliers de rôles » au démarrage du projet."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-051",
+    "section": "6. Coordonner et piloter une équipe hybride",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque type de contrat (Macneil) à son usage en équipe hybride.",
+    "colonne_a": [
+      "Contrat transactionnel",
+      "Contrat relationnel"
+    ],
+    "colonne_b": [
+      "Relation durable avec un partenaire éprouvé, fondée sur la confiance",
+      "Échange ponctuel précisément défini, avec un nouveau prestataire"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "La confiance réduit les coûts de transaction."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-052",
+    "section": "6. Coordonner et piloter une équipe hybride",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les 4 exigences architecturales du système d'information d'une équipe hybride ? (4 réponses)",
+    "options": [
+      "sécurité",
+      "interopérabilité",
+      "accessibilité",
+      "scalabilité",
+      "exclusivité des outils internes",
+      "gratuité"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "VPN, authentification multi-facteurs, passerelles entre suites logicielles, outils intuitifs. Approche fédératrice."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-053",
+    "section": "6. Coordonner et piloter une équipe hybride",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un reporting trop fréquent peut être perçu comme de la défiance par les membres d'une équipe hybride.",
+    "reponse": true,
+    "explication": "Vrai. Le tableau de bord doit être équilibré entre quantitatif et qualitatif."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-054",
+    "section": "6. Coordonner et piloter une équipe hybride",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi la gestion des versions est-elle cruciale dans les outils d'une équipe hybride ?",
+    "options": [
+      "parce que le « conflit de versions » est démultiplié à distance",
+      "pour réduire les coûts de licence",
+      "parce que la loi l'impose",
+      "pour supprimer les réunions"
+    ],
+    "reponse": 0,
+    "explication": "Outils attendus : visualisation en temps réel, traçabilité, gestion des versions, collaboration asynchrone."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-055",
+    "section": "7. Motiver, fédérer et intégrer à distance",
+    "niveau": 1,
+    "format": "texte_a_trous",
+    "question": "Complétez la théorie de l'autodétermination (Deci et Ryan).",
+    "texte": "Elle repose sur 3 besoins : l'{1}, la {2} et l'{3} sociale. En hybride, ce dernier besoin est le défi le plus complexe.",
+    "trous": [
+      "autonomie",
+      "compétence",
+      "appartenance"
+    ],
+    "explication": "L'autonomie est le moteur des externes ; la compétence se nourrit d'apprentissages croisés."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-056",
+    "section": "7. Motiver, fédérer et intégrer à distance",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Selon la lecture hybride de Maslow, qu'est-ce qui distingue le besoin de sécurité d'un freelance ?",
+    "options": [
+      "il est identique à celui du salarié",
+      "il est couvert par son client",
+      "il n'a pas de besoin de sécurité",
+      "revenus variables, missions discontinues, pas de protection sociale d'entreprise"
+    ],
+    "reponse": 3,
+    "explication": "Le salarié trouve sa sécurité dans l'emploi et les avantages sociaux."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-057",
+    "section": "7. Motiver, fédérer et intégrer à distance",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque type de confiance à son fondement.",
+    "colonne_a": [
+      "Cognitive",
+      "Affective",
+      "Institutionnelle"
+    ],
+    "colonne_b": [
+      "Contrats, procédures, contrôles",
+      "Relations interpersonnelles, empathie, valeurs communes",
+      "Évaluation rationnelle de la compétence et de la fiabilité"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "La cognitive fonde le démarrage ; l'affective est plus lente mais plus stable. L'art : orchestrer les trois."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-058",
+    "section": "7. Motiver, fédérer et intégrer à distance",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Classez les canaux du plus riche au moins riche selon Daft et Lengel.",
+    "elements": [
+      "Téléphone",
+      "E-mail",
+      "Visioconférence",
+      "Chat"
+    ],
+    "ordre": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "explication": "Face-à-face > visio > téléphone > chat > e-mail. La richesse doit correspondre à la complexité du message."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-059",
+    "section": "7. Motiver, fédérer et intégrer à distance",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'identité collective d'une équipe distribuée se décrète par une note de la direction.",
+    "reponse": false,
+    "explication": "Faux : elle s'orchestre par des références communes, un manifeste co-construit, des rituels partagés avec les distants."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-060",
+    "section": "7. Motiver, fédérer et intégrer à distance",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que la « Zoom fatigue » ?",
+    "options": [
+      "une panne réseau",
+      "l'épuisement lié au décodage médiatisé des visioconférences",
+      "un manque de licences",
+      "une lassitude du chat"
+    ],
+    "reponse": 1,
+    "explication": "Parade : alterner les modalités et les pauses. La présence sociale (Short, Williams et Christie) diminue avec la médiatisation."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-061",
+    "section": "7. Motiver, fédérer et intégrer à distance",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels déséquilibres de pouvoir alimentent les conflits hybrides ? (3 réponses)",
+    "options": [
+      "statutaires (salarié vs consultant)",
+      "informationnels (accès inégal à l'information)",
+      "relationnels (proximité des décideurs)",
+      "climatiques",
+      "alimentaires"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Prévention : protocoles explicites, feedback régulier, intervention rapide, médiation proactive."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-062",
+    "section": "7. Motiver, fédérer et intégrer à distance",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'onboarding d'un collaborateur distant se boucle en quelques jours, plus vite qu'en présentiel.",
+    "reponse": false,
+    "explication": "Faux : il prend plusieurs mois, car sans socialisation naturelle l'intégration doit être consciemment orchestrée."
+  },
+  {
+    "resume": "b4-r04",
+    "bloc": 4,
+    "id": "b4-r04-qz-063",
+    "section": "7. Motiver, fédérer et intégrer à distance",
+    "niveau": 2,
+    "format": "ouverte",
+    "question": "Proposez l'organisation d'une équipe projet hybride (internes, agence, freelances) en vous appuyant sur le cours.",
+    "attendus": [
+      "Analyser les 4 dimensions : spatiale, statutaire, temporelle, culturelle",
+      "Prioriser la standardisation des résultats (livrables, critères, échéances) et clarifier les rôles par une matrice RACI",
+      "Choisir les canaux selon la richesse des médias (visio pour décider, chat pour l'ajustement mutuel, e-mail pour valider)",
+      "Installer des outils traçables et des rituels partagés avec les distants",
+      "Orchestrer les 3 confiances et un onboarding de plusieurs mois"
+    ],
+    "explication": "Le manager hybride est un régulateur systémique et un architecte culturel."
+  },
+  {
     "resume": "b4-r05",
     "bloc": 4,
     "id": "b4-r05-qz-001",
@@ -17682,11 +32951,11 @@ var QUIZ = [
     "question": "Un manager ne fait aucun point entre le lancement et la clôture d'un projet. Quel est le principal risque identifié par le cours ?",
     "options": [
       "les collaborateurs deviennent trop autonomes",
-      "les problèmes s'accumulent et les solutions coûtent plus cher",
       "la Direction multiplie les contrôles intermédiaires",
+      "les problèmes s'accumulent et les solutions coûtent plus cher",
       "les indicateurs quantitatifs perdent leur fiabilité"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Sans suivi entre lancement et clôture, les problèmes s'accumulent et les solutions coûtent plus cher. Le suivi sert justement à anticiper les difficultés et à proposer des actions correctives en amont."
   },
   {
@@ -17709,12 +32978,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Un manager veut mesurer la satisfaction client mais découvre que les données ne sont pas accessibles auprès du service concerné. Quel critère d'un bon indicateur est en défaut, et que doit-il faire ?",
     "options": [
-      "la pertinence : il doit reformuler l'objectif",
-      "la spécificité : il doit adapter l'indicateur à son métier",
       "la faisabilité : il doit changer d'indicateur",
+      "la spécificité : il doit adapter l'indicateur à son métier",
+      "la pertinence : il doit reformuler l'objectif",
       "la mesurabilité : il doit passer à un indicateur comportemental"
     ],
-    "reponse": 2,
+    "reponse": 0,
     "explication": "La faisabilité vérifie que les données sont disponibles (souvent auprès d'autres services) : si elles ne le sont pas, il faut changer d'indicateur. Les autres critères sont la spécificité, la mesurabilité et la pertinence (lien direct et sans ambiguïté)."
   },
   {
@@ -17767,11 +33036,11 @@ var QUIZ = [
     "question": "Dans l'exemple du cours, un commercial réalise un CA de 8 k€ alors que les zones sont fixées à 0-10 k€, 10-20 k€ et 20 k€ et plus. Que conclut le manager ?",
     "options": [
       "il est « challenger » : le mettre en binôme avec un performant",
-      "il a mal compris son marché : lui proposer une formation",
+      "l'indicateur est mal choisi : le remplacer par un KBI",
       "il est « performant » : en faire une personne-ressource",
-      "l'indicateur est mal choisi : le remplacer par un KBI"
+      "il a mal compris son marché : lui proposer une formation"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "La zone 0-10 k€ signale un marché mal compris, qui appelle une formation ; 10-20 k€ = les « challengers » ; 20 k€ et plus = les « performants », futurs personnes-ressources des challengers. Les seuils servent à situer chacun et à bâtir l'accompagnement."
   },
   {
@@ -17794,12 +33063,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Un collaborateur affiche des résultats durablement insuffisants sur son poste. Que prévoit l'article L6321-1 du Code du travail ?",
     "options": [
-      "l'employeur doit assurer l'adaptation des salariés à leur poste, par exemple via un plan de formation",
       "l'employeur doit proposer un avenant au contrat de travail",
+      "l'employeur doit assurer l'adaptation des salariés à leur poste, par exemple via un plan de formation",
       "l'employeur doit organiser une évaluation 360° avec l'accord de l'employé",
       "l'employeur doit employer 6 % de travailleurs en situation de handicap"
     ],
-    "reponse": 0,
+    "reponse": 1,
     "explication": "L'article L6321-1 impose d'assurer l'adaptation des salariés à leur poste : des résultats insuffisants peuvent déclencher un plan de formation. Le taux de 6 % de travailleurs handicapés est une autre obligation légale, mesurée par un KPI RH."
   },
   {
@@ -17868,12 +33137,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Dans une entreprise, les dirigeants définissent les objectifs et les collaborateurs définissent les résultats clés. Quelle logique OKR est appliquée, et pourquoi est-elle recommandée ?",
     "options": [
-      "top-down : elle garantit l'alignement stratégique",
-      "bottom-up : elle maximise l'autonomie des équipes",
       "hybride : c'est la plus engageante",
+      "bottom-up : elle maximise l'autonomie des équipes",
+      "top-down : elle garantit l'alignement stratégique",
       "participative : elle supprime le calendrier de suivi"
     ],
-    "reponse": 2,
+    "reponse": 0,
     "explication": "C'est la logique hybride — objectifs par les dirigeants, résultats clés par les collaborateurs — la plus engageante. En top-down les dirigeants définissent les deux ; en bottom-up les collaborateurs définissent les deux. L'OKR aligne les activités de chacun sur les objectifs globaux."
   },
   {
@@ -17897,11 +33166,11 @@ var QUIZ = [
     "question": "Une agence veut présenter à son client et aux parties prenantes externes les réalisations du trimestre. Quel support est adapté ?",
     "options": [
       "le tableau de bord, navette visuelle entre l'équipe et le manager",
-      "le rapport de performance, conçu pour être publié et diffusé",
+      "l'auto-évaluation, comparée à des normes de référence",
       "le SIRH, qui centralise les données collaborateurs",
-      "l'auto-évaluation, comparée à des normes de référence"
+      "le rapport de performance, conçu pour être publié et diffusé"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "Le rapport de performance présente les réalisations d'une période et se publie/diffuse (intranet, parties prenantes externes). Le tableau de bord, lui, est à usage interne : il regroupe les KPI et montre tendances, écarts et progrès en un coup d'œil."
   },
   {
@@ -17914,11 +33183,11 @@ var QUIZ = [
     "question": "Une équipe veut remonter à la cause racine d'un problème en classant les causes possibles en Machines, Méthodes, Matériaux, Mère Nature, Main-d'œuvre et Mesures. Quel outil utilise-t-elle ?",
     "options": [
       "l'analyse de variance (ANOVA)",
-      "le McKinsey 7S",
       "le diagramme d'Ishikawa (Fishbone)",
+      "le McKinsey 7S",
       "l'analyse comparative (benchmark)"
     ],
-    "reponse": 2,
+    "reponse": 1,
     "explication": "Le diagramme d'Ishikawa organise causes et effets « en arêtes de poisson » pour remonter à la cause racine via les 6M : Machines, Méthodes, Matériaux, Mère Nature (environnement), Main-d'œuvre, Mesures."
   },
   {
@@ -17982,11 +33251,11 @@ var QUIZ = [
     "question": "Une vidéo livrée est défectueuse : l'équipe la refait en urgence, sans chercher pourquoi le défaut est apparu. Au sens de « Mots de la Qualité », de quoi s'agit-il ?",
     "options": [
       "une action corrective au sens de la norme ISO, qui élimine la cause du défaut",
-      "une action corrective au sens courant, qui supprime simplement le défaut",
       "une mesure préventive, qui anticipe les problèmes",
+      "une action corrective au sens courant, qui supprime simplement le défaut",
       "un ajustement stratégique des objectifs"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Au sens courant (gestion de projet), l'action corrective supprime simplement le défaut : rattrapage, réparation, reprise. Au sens de la norme (certification ISO), elle élimine la cause du défaut — résolution de problème et amélioration continue, à visée curative durable."
   },
   {
@@ -18016,12 +33285,807 @@ var QUIZ = [
     "question": "Après un projet éprouvant, un manager organise une journée courte d'activités ludiques pour resserrer les liens de l'équipe. Quel levier d'engagement active-t-il ?",
     "options": [
       "le challenge commercial, qui stimule la compétition",
-      "le team-building, apparu aux États-Unis au début des années 1980",
+      "la revue de portefeuille, qui optimise l'allocation des ressources",
       "l'organisation apprenante, qui reconnaît le droit à l'erreur",
-      "la revue de portefeuille, qui optimise l'allocation des ressources"
+      "le team-building, apparu aux États-Unis au début des années 1980"
+    ],
+    "reponse": 3,
+    "explication": "Le team-building (« renforcement d'équipe »), apparu aux États-Unis au début des années 1980, resserre les liens sociaux par le jeu sur un temps court. Il nourrit le besoin d'appartenance à un collectif, l'un des trois besoins de Maslow que le suivi entretient avec la reconnaissance et l'accomplissement."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-019",
+    "section": "1. Pourquoi suivre la performance",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les 3 raisons de suivre la performance ? (3 réponses)",
+    "options": [
+      "décider objectivement",
+      "motiver et faire progresser",
+      "légitimer le manager",
+      "surveiller les horaires",
+      "réduire la masse salariale"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Les résultats crédibilisent les choix managériaux face à la Direction (le manager rend compte à son N+2) et fondent primes et reconnaissance."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-020",
+    "section": "1. Pourquoi suivre la performance",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un commercial garde pour lui un partenariat sans en informer l'équipe. Quel obstacle au suivi de performance cela illustre-t-il ?",
+    "options": [
+      "le biais de halo",
+      "le biais de rétention d'information",
+      "l'effet d'ancrage",
+      "la loi de Pareto"
     ],
     "reponse": 1,
-    "explication": "Le team-building (« renforcement d'équipe »), apparu aux États-Unis au début des années 1980, resserre les liens sociaux par le jeu sur un temps court. Il nourrit le besoin d'appartenance à un collectif, l'un des trois besoins de Maslow que le suivi entretient avec la reconnaissance et l'accomplissement."
+    "explication": "Le suivi est une responsabilité collective qui exige la transparence."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-021",
+    "section": "1. Pourquoi suivre la performance",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le suivi de performance porte à la fois sur les résultats et sur la montée en compétences (savoirs, savoir-faire, savoir-être).",
+    "reponse": true,
+    "explication": "Vrai, au niveau collectif comme individuel."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-022",
+    "section": "2. Des objectifs aux indicateurs",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la cascade des objectifs.",
+    "elements": [
+      "Objectifs de chaque membre",
+      "Objectifs stratégiques",
+      "Objectifs opérationnels par service"
+    ],
+    "ordre": [
+      1,
+      2,
+      0
+    ],
+    "explication": "À chaque objectif son indicateur, en lien direct avec lui."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-023",
+    "section": "2. Des objectifs aux indicateurs",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Selon le cours, un indicateur significatif vaut mieux que trois indicateurs non significatifs.",
+    "reponse": true,
+    "explication": "Vrai : peu d'indicateurs mais ciblés, choisis selon les Facteurs Clés de Succès."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-024",
+    "section": "2. Des objectifs aux indicateurs",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que désigne un Facteur Clé de Succès (FCS) ?",
+    "options": [
+      "un indicateur financier",
+      "une prime de fin d'année",
+      "une condition essentielle pour qu'un projet aboutisse",
+      "un outil de reporting"
+    ],
+    "reponse": 2,
+    "explication": "Les KPI se choisissent selon le domaine et les FCS."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-025",
+    "section": "2. Des objectifs aux indicateurs",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que mesurent les KBI (Key Behavioral Indicators) ?",
+    "options": [
+      "les comportements et l'intelligence émotionnelle (gérer un conflit, écoute active, esprit d'initiative)",
+      "le chiffre d'affaires",
+      "le taux de conversion",
+      "les délais de livraison"
+    ],
+    "reponse": 0,
+    "explication": "Troisième type, à côté des indicateurs quantitatifs et qualitatifs."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-026",
+    "section": "2. Des objectifs aux indicateurs",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Un critère qualitatif comme la satisfaction client peut se mesurer quantitativement, par exemple par le nombre d'avis positifs.",
+    "reponse": true,
+    "explication": "Vrai. Les qualitatifs se jugent aussi par rapport à un socle de standards connu de tous."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-027",
+    "section": "2. Des objectifs aux indicateurs",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque critère d'un bon indicateur à la question à se poser.",
+    "colonne_a": [
+      "Spécificité",
+      "Mesurabilité",
+      "Faisabilité",
+      "Pertinence"
+    ],
+    "colonne_b": [
+      "Les données sont-elles disponibles ?",
+      "Est-il propre au métier, à l'équipe, à la culture ?",
+      "Le lien entre mesure et données est-il direct et sans ambiguïté ?",
+      "Est-il chiffrable, ou sur quelles données fiables s'appuyer ?"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "explication": "Puis on fixe des seuils : zones verte, orange, rouge."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-028",
+    "section": "2. Des objectifs aux indicateurs",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "À quoi servent les zones verte, orange et rouge ?",
+    "options": [
+      "à décorer le tableau de bord",
+      "à classer les clients",
+      "à sanctionner automatiquement",
+      "à délimiter la performance satisfaisante ou non, pour situer chacun et bâtir l'accompagnement"
+    ],
+    "reponse": 3,
+    "explication": "Exemple : les « performants » (20 k€ et +) deviennent personnes-ressources des « challengers »."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-029",
+    "section": "2. Des objectifs aux indicateurs",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque KPI à son domaine.",
+    "colonne_a": [
+      "Panier moyen",
+      "Turn-over",
+      "Tâches finies dans les délais",
+      "Nombre de défauts ou retours"
+    ],
+    "colonne_b": [
+      "Qualité",
+      "RH",
+      "Commercial",
+      "Projet"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "Le climat se mesure aussi : sondages, idées nouvelles, brevets, accidents du travail."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-030",
+    "section": "2. Des objectifs aux indicateurs",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez l'obligation légale citée parmi les KPI RH.",
+    "texte": "Le taux de {1} est une obligation légale : il doit atteindre {2} % des effectifs.",
+    "trous": [
+      "handicap",
+      "6"
+    ],
+    "explication": "Autres KPI RH : turn-over, égalité femmes/hommes, absentéisme."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-031",
+    "section": "2. Des objectifs aux indicateurs",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Par quels documents formalise-t-on les objectifs individuels ? (3 réponses)",
+    "options": [
+      "la fiche de poste",
+      "un avenant au contrat de travail",
+      "une lettre de mission",
+      "le règlement intérieur",
+      "une note de service anonyme"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "L'avenant est courant chez les commerciaux ; la lettre de mission sert pour une mission temporaire (expatriation, intérim)."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-032",
+    "section": "2. Des objectifs aux indicateurs",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Le CA collectif est insuffisant. Que permet l'indicateur individuel ?",
+    "options": [
+      "de sanctionner toute l'équipe",
+      "de cibler le problème (région, produit, clientèle)",
+      "de supprimer l'objectif collectif",
+      "rien de plus"
+    ],
+    "reponse": 1,
+    "explication": "Les indicateurs individuels valorisent la contribution mais peuvent créer un climat compétitif ; les collectifs renforcent la cohésion."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-033",
+    "section": "3. Collecter et suivre : outils et temps forts",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque outil de collecte à son contenu.",
+    "colonne_a": [
+      "CRM",
+      "SIRH",
+      "Business Intelligence"
+    ],
+    "colonne_b": [
+      "Données collaborateurs, turn-over, absentéisme",
+      "Décider sur des données factuelles",
+      "Gestion de la relation client"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "explication": "Les quantitatifs se centralisent dans un outil unique partagé."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-034",
+    "section": "3. Collecter et suivre : outils et temps forts",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque support à sa fonction.",
+    "colonne_a": [
+      "Tableau de bord",
+      "Rapport de performance"
+    ],
+    "colonne_b": [
+      "Réalisations d'une période, publiées et diffusées",
+      "Outil interne, « navette » visuelle entre équipe et manager"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Le bilan social, obligatoire au-delà de 300 salariés, est un exemple de rapport."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-035",
+    "section": "3. Collecter et suivre : outils et temps forts",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'entretien annuel d'évaluation suffit à lui seul pour suivre la performance d'un collaborateur.",
+    "reponse": false,
+    "explication": "Faux : il faut le compléter par des feedbacks réguliers sur les jalons."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-036",
+    "section": "3. Collecter et suivre : outils et temps forts",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Comment se déroule un feedback (rétroaction) selon le cours ?",
+    "options": [
+      "on commence par le ressenti, puis les faits",
+      "on donne directement la solution",
+      "on relate les faits (« 30 % de l'objectif »), puis le ressenti ou la réaction",
+      "on se limite aux points positifs"
+    ],
+    "reponse": 2,
+    "explication": "« Créer une action en retour »."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-037",
+    "section": "3. Collecter et suivre : outils et temps forts",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Une évaluation à 360° peut être lancée sans l'accord de l'employé concerné.",
+    "reponse": false,
+    "explication": "Faux : elle nécessite son accord préalable."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-038",
+    "section": "3. Collecter et suivre : outils et temps forts",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "D'où vient la méthode OKR et que vise-t-elle ?",
+    "options": [
+      "de la Silicon Valley (Netflix, Google), pour aligner les activités de chacun sur les objectifs globaux",
+      "du Japon, pour réduire les gaspillages",
+      "de l'armée, pour contrôler les équipes",
+      "de l'ISO, pour certifier la qualité"
+    ],
+    "reponse": 0,
+    "explication": "Chacun comprend l'intérêt de son travail : motivation et sens renforcés."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-039",
+    "section": "3. Collecter et suivre : outils et temps forts",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque logique OKR à qui fixe quoi.",
+    "colonne_a": [
+      "Top-down",
+      "Bottom-up",
+      "Hybride"
+    ],
+    "colonne_b": [
+      "Objectifs et résultats clés fixés par les collaborateurs",
+      "Objectifs par les dirigeants, résultats clés par les collaborateurs",
+      "Objectifs et résultats clés fixés par les dirigeants"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "explication": "L'hybride est la plus engageante."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-040",
+    "section": "3. Collecter et suivre : outils et temps forts",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Pour un critère qualité de captation vidéo, quelle formulation respecte les critères d'un bon indicateur ?",
+    "options": [
+      "« une bonne captation »",
+      "« faire de son mieux »",
+      "« une captation satisfaisante »",
+      "« zéro interruption de flux »"
+    ],
+    "reponse": 3,
+    "explication": "Le critère doit être précis et mesurable."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-041",
+    "section": "4. Analyser les résultats, identifier les écarts",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre l'analyse de la performance.",
+    "elements": [
+      "Comparer aux objectifs, prévisions ou normes (analyse des écarts)",
+      "Prendre connaissance objective des données (analyse des résultats)",
+      "Comprendre les causes, endogènes ou exogènes"
+    ],
+    "ordre": [
+      1,
+      0,
+      2
+    ],
+    "explication": "Les KPI servent de base d'étalonnage."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-042",
+    "section": "4. Analyser les résultats, identifier les écarts",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque facteur à son origine.",
+    "colonne_a": [
+      "Facteurs endogènes",
+      "Facteurs exogènes"
+    ],
+    "colonne_b": [
+      "Le marché, les lois, la société",
+      "L'équipe : efforts, compétences, investissement"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "On cherche aussi des corrélations (satisfaction client médiocre ↔ turn-over)."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-043",
+    "section": "4. Analyser les résultats, identifier les écarts",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez les 6M du diagramme d'Ishikawa.",
+    "texte": "Machines, {1}, Matériaux, {2} (environnement), {3}, Mesures.",
+    "trous": [
+      "Méthodes",
+      "Mère Nature",
+      "Main-d'œuvre"
+    ],
+    "explication": "Le diagramme en arêtes de poisson remonte à la cause racine."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-044",
+    "section": "4. Analyser les résultats, identifier les écarts",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les éléments « solides » du modèle McKinsey 7S ? (3 réponses)",
+    "options": [
+      "Stratégie",
+      "Structure",
+      "Systèmes",
+      "Valeurs partagées",
+      "Style",
+      "Personnel"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Solides : Stratégie, Structure, Systèmes. Souples : Valeurs partagées, Style, Personnel, Compétences. Le modèle montre leur interdépendance."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-045",
+    "section": "4. Analyser les résultats, identifier les écarts",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Un problème a de nombreuses causes ; agir sur toutes épuiserait les ressources. Quel outil isole la cause racine ?",
+    "options": [
+      "le benchmark",
+      "l'arbre des causes (diagramme des relations)",
+      "l'ANOVA",
+      "le SWOT"
+    ],
+    "reponse": 1,
+    "explication": "Construit collectivement, il est adapté aux problèmes multifactoriels."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-046",
+    "section": "4. Analyser les résultats, identifier les écarts",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le SWOT ne s'utilise qu'en amont d'un projet.",
+    "reponse": false,
+    "explication": "Faux : en amont et en cours de projet."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-047",
+    "section": "4. Analyser les résultats, identifier les écarts",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que permet l'analyse des tendances ?",
+    "options": [
+      "comparer aux concurrents",
+      "décomposer statistiquement les écarts",
+      "repérer schémas et saisonnalités dans les données historiques",
+      "cartographier les processus"
+    ],
+    "reponse": 2,
+    "explication": "Le benchmark compare ; l'ANOVA décompose les écarts en facteurs."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-048",
+    "section": "5. Corriger et ajuster",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque acception de l'action corrective à son effet.",
+    "colonne_a": [
+      "Sens de la norme (ISO)",
+      "Sens courant (gestion de projet)"
+    ],
+    "colonne_b": [
+      "Supprimer le défaut : rattrapage, reprise",
+      "Éliminer la cause du défaut, visée curative durable"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Source : « Mots de la Qualité » (France Qualité)."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-049",
+    "section": "5. Corriger et ajuster",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Face à un problème, il faut toujours se demander s'il aurait pu être anticipé.",
+    "reponse": true,
+    "explication": "Vrai : c'est le passage du curatif (réactif) au préventif."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-050",
+    "section": "5. Corriger et ajuster",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les KPI d'un plan d'action correctif ? (3 réponses)",
+    "options": [
+      "délais",
+      "coûts",
+      "qualité",
+      "nombre de réunions",
+      "nombre de mails"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "S'il couvre tout le projet, il remplace le plan initial ; sinon pilotage conjoint."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-051",
+    "section": "5. Corriger et ajuster",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que le learning by doing comme action corrective individuelle ?",
+    "options": [
+      "confier une mission à quelqu'un qui n'a pas encore les compétences, pour qu'il grandisse en situation réelle",
+      "une formation théorique en salle",
+      "un tutorat à distance",
+      "une sanction disciplinaire"
+    ],
+    "reponse": 0,
+    "explication": "Les tâches doivent rester proportionnées à l'enjeu."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-052",
+    "section": "5. Corriger et ajuster",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Quelle cause fréquente d'échec collectif le cours pointe-t-il ?",
+    "options": [
+      "la météo",
+      "un excès de réunions",
+      "un trop grand nombre de KPI",
+      "une allocation déficiente des tâches au regard des compétences"
+    ],
+    "reponse": 3,
+    "explication": "Actions collectives : causes analysées avec le groupe, nouveaux process, communication repensée, répartition revue."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-053",
+    "section": "5. Corriger et ajuster",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque notion à sa définition.",
+    "colonne_a": [
+      "Efficacité",
+      "Efficience"
+    ],
+    "colonne_b": [
+      "Rapport entre résultats et ressources consommées",
+      "Atteinte du résultat"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Le reporting sert les deux."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-054",
+    "section": "5. Corriger et ajuster",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Ajuster un objectif après un changement majeur (réglementation, crise) est légitime : « à l'impossible nul n'est tenu ».",
+    "reponse": true,
+    "explication": "Vrai : changer de direction, décaler dans le temps ou revoir la cible."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-055",
+    "section": "6. Maintenir l'engagement",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quels besoins de la pyramide de Maslow le suivi de performance nourrit-il ? (3 réponses)",
+    "options": [
+      "la reconnaissance",
+      "la réalisation / l'accomplissement",
+      "l'appartenance à un collectif",
+      "les besoins physiologiques",
+      "le besoin de sécurité financière"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Récompenses : primes, mobilité interne, promotion, projets ambitieux."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-056",
+    "section": "6. Maintenir l'engagement",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez la définition de la motivation au travail.",
+    "texte": "La motivation est un processus qui {1}, oriente, {2} et {3} le comportement des individus vers la réalisation d'objectifs attendus.",
+    "trous": [
+      "active",
+      "dynamise",
+      "maintient"
+    ],
+    "explication": "Un management qui donne du sens engage."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-057",
+    "section": "6. Maintenir l'engagement",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les organisations apprenantes considèrent l'échec comme une faute à sanctionner.",
+    "reponse": false,
+    "explication": "Faux : elles valorisent le droit à l'erreur ; l'échec devient une occasion d'apprendre."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-058",
+    "section": "6. Maintenir l'engagement",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Selon l'Observatoire du Management 2021, quelle part des collaborateurs jugent leur manager « bon manager » ?",
+    "options": [
+      "38 %",
+      "68 %",
+      "52 %",
+      "85 %"
+    ],
+    "reponse": 1,
+    "explication": "68 %, soit 5 points de plus qu'en 2019."
+  },
+  {
+    "resume": "b4-r05",
+    "bloc": 4,
+    "id": "b4-r05-qz-059",
+    "section": "6. Maintenir l'engagement",
+    "niveau": 2,
+    "format": "ouverte",
+    "question": "Après une analyse d'écarts entre un livrable et le brief client, décrivez la démarche corrective à suivre selon le cours.",
+    "attendus": [
+      "Constat objectif : écarts entre réel (livrable) et prévisionnel (brief), positifs ou négatifs",
+      "Analyse des causes endogènes et exogènes (Ishikawa, 5 pourquoi)",
+      "Réévaluer si besoin l'objectif (réaliste, SMARTEF)",
+      "Plan d'action correctif complet (CQQCOQP) avec responsabilités, ressources, délais et KPI délais/coûts/qualité",
+      "Actions individuelles (formation, tutorat) ou collectives (process, répartition), feedback et maintien de l'engagement"
+    ],
+    "explication": "Toujours se demander si le problème aurait pu être anticipé."
   },
   {
     "resume": "b4-r06",
@@ -18033,11 +34097,11 @@ var QUIZ = [
     "question": "Une entreprise veut adapter, à court et moyen termes, ses emplois, ses effectifs et ses compétences à sa stratégie et aux évolutions de son environnement. Quelle démarche engage-t-elle ?",
     "options": [
       "un audit social, qui dresse un état des lieux ponctuel des RH",
-      "une GEPP, démarche prospective des ressources humaines qui accompagne le changement",
       "un plan de sauvegarde de l'emploi, qui organise les départs",
+      "une GEPP, démarche prospective des ressources humaines qui accompagne le changement",
       "un bilan de compétences, qui évalue chaque salarié individuellement"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "C'est la définition de la GEPP (ex-GPEC) donnée par le Ministère du Travail : une démarche prospective qui adapte emplois, effectifs et compétences à la stratégie, avec trois finalités — besoin en nombre, adéquation des compétences, motivation et fidélisation."
   },
   {
@@ -18067,11 +34131,11 @@ var QUIZ = [
     "question": "Un DRH veut objectiver un turn-over élevé et une pyramide des âges déséquilibrée annonçant des départs massifs. Sur quoi appuie-t-il son analyse ?",
     "options": [
       "l'analyse qualitative : entretiens et observation en situation de travail",
-      "l'analyse quantitative : les indicateurs de la BDESE et du SIRH",
+      "les référentiels d'emplois, d'activités et de compétences",
       "la veille métiers menée auprès des OPMQC",
-      "les référentiels d'emplois, d'activités et de compétences"
+      "l'analyse quantitative : les indicateurs de la BDESE et du SIRH"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "Turn-over, effectifs (ETP), contrats, pyramides des âges et d'ancienneté, absentéisme relèvent de l'analyse quantitative, appuyée sur la BDESE et le SIRH. L'analyse qualitative couvre ce qui ne se chiffre pas : satisfaction, engagement, climat social, référentiels."
   },
   {
@@ -18124,11 +34188,11 @@ var QUIZ = [
     "question": "L'évaluation annuelle révèle que les compétences constatées chez les collaborateurs sont en deçà des compétences attendues dans le référentiel. De quel horizon d'écart s'agit-il, et quelle action engager ?",
     "options": [
       "un écart de moyen/long terme : anticiper les emplois émergents",
-      "un écart de court terme : reclasser les métiers sensibles et planifier les retraites",
       "un écart immédiat : développer et valoriser les compétences stratégiques",
+      "un écart de court terme : reclasser les métiers sensibles et planifier les retraites",
       "un écart conjoncturel : attendre la prochaine campagne d'évaluation"
     ],
-    "reponse": 2,
+    "reponse": 1,
     "explication": "L'écart entre compétences attendues (référentiel) et constatées (évaluation) est l'écart immédiat, traité par le développement des compétences. Le court terme oppose besoins planifiés et compétences amenées à disparaître ; le moyen/long terme, orientations stratégiques et emplois actuels."
   },
   {
@@ -18141,11 +34205,11 @@ var QUIZ = [
     "question": "Lequel de ces plans ne fait PAS partie des cinq plans d'ajustement types de la GEPP ?",
     "options": [
       "le plan de développement des compétences",
-      "le plan de communication externe",
       "le plan de rémunération",
+      "le plan de communication externe",
       "le plan de reconversion professionnelle"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Les cinq plans d'ajustement types sont : développement des compétences, mobilité interne, rémunération, recrutement et reconversion professionnelle (la VAE pouvant être un plan à part entière). La formation n'est d'ailleurs qu'un levier parmi d'autres : recrutement, organisation du travail, délégation, externalisation."
   },
   {
@@ -18157,12 +34221,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Un salarié met en avant son diplôme reconnu par la branche pour prouver qu'il est compétent sur un poste. Que peut-on lui répondre au sens de Le Boterf ?",
     "options": [
-      "il a raison : le diplôme atteste la compétence",
       "le diplôme relève de la qualification, valeur d'échange reconnue par un titre — la compétence, elle, ne s'observe que par ses résultats en situation",
+      "il a raison : le diplôme atteste la compétence",
       "le diplôme mesure la performance, pas la compétence",
       "le diplôme est un potentiel, c'est-à-dire une compétence déjà démontrée"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "La compétence n'est ni la qualification (titre), ni la performance (elle est le processus qui la produit), ni la connaissance, ni le potentiel (compétence virtuelle), ni l'expérience (mode d'acquisition). C'est une combinatoire de ressources mobilisée en situation, observable seulement par ses résultats."
   },
   {
@@ -18232,11 +34296,11 @@ var QUIZ = [
     "question": "Lors de l'élaboration d'un référentiel de compétences, pourquoi observer l'activité sur le terrain plutôt que se contenter des fiches de poste ?",
     "options": [
       "parce que les fiches de poste sont des documents confidentiels",
-      "parce que le travail réel révèle des compétences insoupçonnées que le travail prescrit ne décrit pas",
+      "parce que la loi impose une observation en situation avant toute cartographie",
       "parce que l'observation permet d'évaluer la performance individuelle des salariés",
-      "parce que la loi impose une observation en situation avant toute cartographie"
+      "parce que le travail réel révèle des compétences insoupçonnées que le travail prescrit ne décrit pas"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "La phase de préparation distingue travail prescrit et travail réel : c'est le réel, saisi par observation et entretiens, qui révèle des compétences insoupçonnées. Suivent la réalisation (dédoublonnage, regroupement, validation, communication) puis le suivi (mise à jour tous les 2-3 ans)."
   },
   {
@@ -18249,11 +34313,11 @@ var QUIZ = [
     "question": "Une RH veut regrouper trois postes en un même emploi-type. Quelle condition doit-elle vérifier ?",
     "options": [
       "que les postes ont au moins 50 % de missions communes",
-      "que les postes relèvent du même niveau hiérarchique",
       "que les postes ont 80 % de missions et activités communes, des compétences de même nature et niveau, et qu'un titulaire peut tenir l'ensemble en moins de 3 mois",
+      "que les postes relèvent du même niveau hiérarchique",
       "que les titulaires des postes sont volontaires pour le regroupement"
     ],
-    "reponse": 2,
+    "reponse": 1,
     "explication": "Les trois vérifications avant regroupement : 80 % des missions et activités communes, compétences de même nature et de même niveau, un titulaire capable de tenir l'ensemble des postes en moins de 3 mois. L'emploi-type ignore la catégorisation hiérarchique."
   },
   {
@@ -18277,11 +34341,11 @@ var QUIZ = [
     "question": "Dans une agence audiovisuelle, un seul monteur maîtrise la captation en direct : son absence mettrait la prestation en péril. Quel outil permet de repérer ce risque et d'en faire une priorité de formation ?",
     "options": [
       "la pyramide des âges",
-      "la matrice de polyvalence, qui croise activités et personnes avec leur niveau de compétence",
       "l'organigramme du service",
+      "la matrice de polyvalence, qui croise activités et personnes avec leur niveau de compétence",
       "l'aire de mobilité du poste de monteur"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "La matrice de polyvalence croise, pour un service, activités et personnes avec le niveau de compétence de chacun. Elle révèle les zones à risque — compétences détenues par un nombre réduit de collaborateurs — et donc les priorités de formation, individuelles et collectives."
   },
   {
@@ -18293,12 +34357,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Une entreprise qui peine à recruter veut anticiper les évolutions d'un métier à 3/5 ans pour former ou faire valider les acquis en interne. Quelle approche du diagnostic des besoins adopte-t-elle ?",
     "options": [
-      "l'approche par le projet d'entreprise",
-      "l'approche par le projet de service",
       "l'approche métier",
+      "l'approche par le projet de service",
+      "l'approche par le projet d'entreprise",
       "l'approche individuelle"
     ],
-    "reponse": 2,
+    "reponse": 0,
     "explication": "L'approche métier anticipe les évolutions d'un métier à 3/5 ans ; elle est utile quand le recrutement est difficile (formation, VAE) mais exige des fiches métiers/poste. Les quatre approches (projet d'entreprise, projet de service, métier, individuelle) se combinent."
   },
   {
@@ -18352,10 +34416,10 @@ var QUIZ = [
     "options": [
       "tous les 2 ans, avec un bilan récapitulatif tous les 6 ans",
       "tous les ans, pour tous les salariés",
-      "tous les 4 ans, avec un état des lieux récapitulatif tous les 8 ans, plus un EPP de mi-carrière et de fin de carrière",
-      "tous les 5 ans, uniquement pour les salariés de plus de 45 ans"
+      "tous les 5 ans, uniquement pour les salariés de plus de 45 ans",
+      "tous les 4 ans, avec un état des lieux récapitulatif tous les 8 ans, plus un EPP de mi-carrière et de fin de carrière"
     ],
-    "reponse": 2,
+    "reponse": 3,
     "explication": "La loi du 24 octobre 2025 (art. L. 6315-1) fait de l'entretien professionnel l'EPP : premier EPP dans l'année suivant l'embauche, puis tous les 4 ans (contre 2 auparavant), état des lieux tous les 8 ans (contre 6), plus un EPP de mi-carrière et un EPP de fin de carrière. Le rythme 2 ans / 6 ans est l'ancien régime (loi du 5 mars 2014)."
   },
   {
@@ -18381,6 +34445,980 @@ var QUIZ = [
     "explication": "Faux. Le mentorat repose sur le volontariat — du mentor comme du mentoré. Le transfert des compétences (knowledge management) exige aussi une méthodologie précise, une planification et un suivi, la formation des détenteurs à la transmission et l'adaptation du temps de travail. Le tutorat en est le versant opérationnel."
   },
   {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-019",
+    "section": "1. La GEPP (ex-GPEC)",
+    "niveau": 1,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les 3 finalités de la GEPP ? (3 réponses)",
+    "options": [
+      "le besoin en nombre de collaborateurs",
+      "l'adéquation des compétences",
+      "la motivation et l'engagement (fidélisation)",
+      "la réduction des salaires",
+      "la suppression des entretiens"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Négociation obligatoire au-delà de 300 salariés, mais toute entreprise doit anticiper."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-020",
+    "section": "1. La GEPP (ex-GPEC)",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 4 phases de la GEPP.",
+    "elements": [
+      "Définition du plan d'action",
+      "Mise en œuvre et suivi",
+      "Phase préparatoire / faisabilité",
+      "Analyse et diagnostic RH"
+    ],
+    "ordre": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "explication": "Le suivi est un processus continu ; on conduit la GEPP en mode projet."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-021",
+    "section": "1. La GEPP (ex-GPEC)",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle instance faut-il informer lors de la définition du plan d'action GEPP ?",
+    "options": [
+      "la CNIL",
+      "le CSE",
+      "l'URSSAF",
+      "France Travail"
+    ],
+    "reponse": 1,
+    "explication": "Le plan fixe objectifs, priorités, délais et indicateurs."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-022",
+    "section": "1. La GEPP (ex-GPEC)",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le workforce planning, version anglo-saxonne de la GEPP, est moins formaliste et donne la priorité aux besoins de l'entreprise.",
+    "reponse": true,
+    "explication": "Vrai : analyse régulière des ressources nécessaires au plan stratégique, moins individualiste. La négociation collective manque d'agilité."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-023",
+    "section": "1. La GEPP (ex-GPEC)",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Dans la phase préparatoire, par quoi relie-t-on la GEPP à la stratégie ? (3 réponses)",
+    "options": [
+      "l'environnement",
+      "le secteur (observatoire des métiers)",
+      "la culture d'entreprise",
+      "le cours de bourse",
+      "l'avis des clients uniquement"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "On constitue aussi un groupe de travail, une structure de pilotage et on mobilise les acteurs."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-024",
+    "section": "2. Le diagnostic RH",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Qu'est-ce que le diagnostic RH ?",
+    "options": [
+      "un audit comptable",
+      "un entretien annuel",
+      "un état des lieux des RH plus une prospection sur les transformations futures des emplois et compétences",
+      "une enquête de satisfaction client"
+    ],
+    "reponse": 2,
+    "explication": "Il révèle les écarts avec la stratégie et permet une gestion proactive des risques, notamment la pénurie de compétences."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-025",
+    "section": "2. Le diagnostic RH",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles étapes font partie de la méthode du diagnostic RH ? (4 réponses)",
+    "options": [
+      "la structure des RH (contrats, effectifs, pyramides)",
+      "les compétences clés présentes",
+      "les recrutements passés et futurs",
+      "le transfert des connaissances",
+      "le calcul du chiffre d'affaires",
+      "le choix du logo"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Les 7 : structure, compétences clés, recrutements, besoins en formation, transfert des connaissances, processus et outils RH, anticipation des besoins futurs."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-026",
+    "section": "2. Le diagnostic RH",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque signal du diagnostic à ce qu'il révèle.",
+    "colonne_a": [
+      "Pyramide des âges déséquilibrée",
+      "Turn-over élevé"
+    ],
+    "colonne_b": [
+      "Mauvais climat social",
+      "Départs massifs à venir"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Analyse quantitative sur BDESE et SIRH."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-027",
+    "section": "2. Le diagnostic RH",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que couvre surtout l'analyse qualitative du diagnostic RH ?",
+    "options": [
+      "la satisfaction, l'engagement, le climat social et les référentiels d'emplois et de compétences",
+      "les effectifs en ETP",
+      "la masse salariale",
+      "le nombre d'accidents"
+    ],
+    "reponse": 0,
+    "explication": "Les référentiels s'élaborent avec personnel et encadrement : fiches de poste, entretiens, observation en situation de travail."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-028",
+    "section": "2. Le diagnostic RH",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Pour la veille métiers via les OPMQC, le cours conseille de multiplier les sources, même peu analysées.",
+    "reponse": false,
+    "explication": "Faux : cibler son secteur, moins de sources mais mieux analysées."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-029",
+    "section": "2. Le diagnostic RH",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Les HR Analytics, qui prédisent par exemple les risques de départ, doivent rester une aide à la décision combinée à l'expertise humaine.",
+    "reponse": true,
+    "explication": "Vrai, sous RGPD et recommandations CNIL."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-030",
+    "section": "3. Des écarts au plan d'action",
+    "niveau": 1,
+    "format": "texte_a_trous",
+    "question": "Complétez la définition de l'écart en GEPP.",
+    "texte": "L'écart est l'{1} entre les besoins {2} et les ressources {3}.",
+    "trous": [
+      "inadéquation",
+      "futurs",
+      "disponibles"
+    ],
+    "explication": "Analyse en 4 temps : comparaison, classement par nature, évaluation, causes racines."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-031",
+    "section": "3. Des écarts au plan d'action",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque horizon d'écart à l'action type.",
+    "colonne_a": [
+      "Immédiat",
+      "Court terme",
+      "Moyen / long terme"
+    ],
+    "colonne_b": [
+      "Emplois émergents, adaptation des emplois",
+      "Développer et valoriser les compétences stratégiques",
+      "Reclassement des métiers sensibles, planification des retraites"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Immédiat : compétences attendues vs constatées ; court terme : compétences amenées à disparaître ; moyen/long terme : orientations stratégiques."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-032",
+    "section": "3. Des écarts au plan d'action",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels facteurs d'évolution font naître les besoins futurs ? (3 réponses)",
+    "options": [
+      "normatifs (lois, certifications)",
+      "numériques",
+      "de marché (clients, concurrence, RSE)",
+      "astrologiques",
+      "personnels du dirigeant"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Ils se repèrent par la veille."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-033",
+    "section": "3. Des écarts au plan d'action",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La formation n'est qu'un levier parmi d'autres pour combler un écart de compétences.",
+    "reponse": true,
+    "explication": "Vrai : recrutement, mobilité, organisation du travail, délégation, externalisation."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-034",
+    "section": "3. Des écarts au plan d'action",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Quel dispositif le cours cite-t-il comme pouvant constituer un plan d'ajustement à part entière ?",
+    "options": [
+      "la BDESE",
+      "le bilan social",
+      "le CSE",
+      "la VAE"
+    ],
+    "reponse": 3,
+    "explication": "5 plans : développement des compétences, mobilité interne, rémunération, recrutement, reconversion."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-035",
+    "section": "4. La compétence",
+    "niveau": 1,
+    "format": "texte_a_trous",
+    "question": "Complétez la définition de Le Boterf.",
+    "texte": "La compétence est l'{1} de ressources internes ou externes pour traiter efficacement une {2} particulière afin de produire des résultats satisfaisants pour un {3}.",
+    "trous": [
+      "articulation",
+      "situation",
+      "destinataire"
+    ],
+    "explication": "Une combinatoire mobilisée en situation : seul son résultat est observable."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-036",
+    "section": "4. La compétence",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Que suppose une compétence selon le cours ? (3 réponses)",
+    "options": [
+      "une personne",
+      "un champ d'application",
+      "un tiers qui évalue et reconnaît",
+      "un diplôme obligatoire",
+      "une ancienneté minimale"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Le tiers peut être une certification, un manager, la RH."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-037",
+    "section": "4. La compétence",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque niveau de transférabilité à sa situation.",
+    "colonne_a": [
+      "Forte",
+      "Moyenne",
+      "Faible / reconversion"
+    ],
+    "colonne_b": [
+      "Métier différent, activités similaires",
+      "Champ différent, savoirs à acquérir",
+      "Même métier, autre structure"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "explication": "La compétence s'acquiert, s'entretient, peut se perdre ou devenir obsolète."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-038",
+    "section": "4. La compétence",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "La compétence n'est pas… Associez chaque notion voisine à ce qu'elle est vraiment.",
+    "colonne_a": [
+      "Performance",
+      "Potentiel",
+      "Expérience",
+      "Connaissance"
+    ],
+    "colonne_b": [
+      "Mode d'acquisition",
+      "Compétence virtuelle",
+      "Ressource dans laquelle la compétence puise",
+      "Ce que la compétence produit"
+    ],
+    "paires": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "explication": "Elle n'est pas non plus la qualification, valeur d'échange reconnue par un titre."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-039",
+    "section": "4. La compétence",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Une entreprise détient des brevets rares qui la démarquent. De quel type de compétence s'agit-il ?",
+    "options": [
+      "transverse",
+      "distinctive",
+      "individuelle",
+      "générique"
+    ],
+    "reponse": 1,
+    "explication": "La compétence distinctive est un avantage concurrentiel. La transverse passe d'un métier à l'autre : clé de la mobilité."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-040",
+    "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Le référentiel de compétences regroupe les métiers par fonctions.",
+    "reponse": false,
+    "explication": "Faux : il les regroupe par compétences, et non par fonctions."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-041",
+    "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "À quelle fréquence met-on à jour un référentiel de compétences ?",
+    "options": [
+      "tous les mois",
+      "tous les 10 ans",
+      "tous les 2-3 ans, chaque année en cas de mutation",
+      "jamais"
+    ],
+    "reponse": 2,
+    "explication": "Phases : préparation, réalisation (dédoublonnage, validation, communication), suivi."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-042",
+    "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les limites du référentiel de compétences ? (3 réponses)",
+    "options": [
+      "il exige une culture de la compétence",
+      "il demande un investissement considérable en temps et en argent",
+      "son actualisation permanente peut démobiliser",
+      "il est interdit par la loi",
+      "il remplace le contrat de travail"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "D'où son caractère facultatif."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-043",
+    "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Classez les niveaux de la cartographie, du plus large au plus fin.",
+    "elements": [
+      "Poste",
+      "Emploi-type",
+      "Tâche",
+      "Famille professionnelle",
+      "Sous-famille"
+    ],
+    "ordre": [
+      3,
+      4,
+      1,
+      0,
+      2
+    ],
+    "explication": "Autant de postes que de salariés ; la tâche est l'unité élémentaire."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-044",
+    "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qui a remplacé Pôle emploi et porte le référentiel ROME 4.0 ?",
+    "options": [
+      "France Travail",
+      "France Compétences",
+      "l'APEC",
+      "le CEREQ"
+    ],
+    "reponse": 0,
+    "explication": "Depuis le 1er janvier 2024. Autres appuis : référentiels de branche, RNCP de France Compétences, fiches APEC."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-045",
+    "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Où et par quelle méthode est né l'emploi-type ?",
+    "options": [
+      "à l'INSEE, méthode RFM",
+      "chez France Travail, méthode ROME",
+      "à l'APEC, méthode SMART",
+      "au CEREQ, méthode ETED (Nicole Mandon, 1990)"
+    ],
+    "reponse": 3,
+    "explication": "Il a inspiré le ROME."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-046",
+    "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La fiche emploi-type liste les savoir-être requis.",
+    "reponse": false,
+    "explication": "Faux : elle liste les savoir-faire généraux, relationnels et techniques, pas les savoir-être."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-047",
+    "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez les chiffres de l'étude « Quels métiers en 2030 ? ».",
+    "texte": "Plus de {1} % des métiers seront impactés par une mutation d'ici 10 ans, et {2} % n'existent pas encore.",
+    "trous": [
+      "50",
+      "20"
+    ],
+    "explication": "D'où l'enjeu de cartographier pour anticiper."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-048",
+    "section": "5. Cartographier : référentiels, emplois-types, mobilité",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque notion de mobilité à sa définition.",
+    "colonne_a": [
+      "Aire de mobilité",
+      "Passerelle de mobilité",
+      "Mobilité horizontale",
+      "Mobilité verticale"
+    ],
+    "colonne_b": [
+      "Poste de niveau supérieur",
+      "Poste de niveau équivalent, autre service",
+      "Compétences nécessaires pour passer d'un poste à un autre",
+      "Précise en plus comment on accompagne ce développement"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "explication": "La fiche emploi-type indique les emplois sources et cibles."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-049",
+    "section": "6. Diagnostiquer les besoins",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les 4 enjeux du diagnostic des besoins de formation ? (4 réponses)",
+    "options": [
+      "financier",
+      "social",
+      "managérial",
+      "RH",
+      "esthétique",
+      "juridique pénal"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "C'est la première étape du PDC."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-050",
+    "section": "6. Diagnostiquer les besoins",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque approche du diagnostic à sa vigilance.",
+    "colonne_a": [
+      "Projet d'entreprise",
+      "Projet de service",
+      "Métier",
+      "Individuelle"
+    ],
+    "colonne_b": [
+      "Exige des fiches métiers et de poste",
+      "À intégrer aux exigences du métier et du service",
+      "Implication forte, chronophage",
+      "À intégrer au projet global"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Les approches sont combinables."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-051",
+    "section": "6. Diagnostiquer les besoins",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que la note d'orientation ?",
+    "options": [
+      "le plan de formation détaillé",
+      "un document concis présentant contexte, objectifs stratégiques, politique RH et grandes orientations de formation",
+      "un compte rendu d'entretien",
+      "une note de service disciplinaire"
+    ],
+    "reponse": 1,
+    "explication": "La consultation annuelle du CSE sur les orientations de la formation est une obligation légale distincte de celle sur le plan."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-052",
+    "section": "6. Diagnostiquer les besoins",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qu'une compétence clé d'un poste ?",
+    "options": [
+      "une compétence rare sur le marché",
+      "une compétence certifiée",
+      "une compétence dont la non-maîtrise empêche la tenue du poste",
+      "une soft skill"
+    ],
+    "reponse": 2,
+    "explication": "Identifier les compétences d'un poste, c'est l'analyser : activités, puis compétences clés."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-053",
+    "section": "6. Diagnostiquer les besoins",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la traduction des écarts en formation.",
+    "elements": [
+      "Objectifs pédagogiques",
+      "Besoins de formation",
+      "Compétences manquantes",
+      "Objectifs opérationnels"
+    ],
+    "ordre": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "explication": "Mais toute compétence manquante n'est pas un besoin de formation."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-054",
+    "section": "6. Diagnostiquer les besoins",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le Responsable Formation doit trier les problèmes remontés, car certains relèvent de l'organisation et non de la formation.",
+    "reponse": true,
+    "explication": "Vrai."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-055",
+    "section": "7. Évaluer et recueillir les besoins",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque méthode d'évaluation à son principe.",
+    "colonne_a": [
+      "Assessment center",
+      "360°",
+      "Entretien de groupe",
+      "Auto-évaluation"
+    ],
+    "colonne_b": [
+      "Projets collectifs, à compléter d'évaluations individuelles",
+      "Questionnaires remplis chacun de son côté",
+      "Mises en situation concrètes avec grille de critères",
+      "Regards croisés, généralement réservés aux managers"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Le collaborateur est informé au préalable de la date et des méthodes."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-056",
+    "section": "7. Évaluer et recueillir les besoins",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quand a lieu le premier EPP depuis la loi du 24 octobre 2025 ?",
+    "options": [
+      "dans l'année suivant l'embauche",
+      "dès le premier jour",
+      "après 2 ans d'ancienneté",
+      "après 4 ans d'ancienneté"
+    ],
+    "reponse": 0,
+    "explication": "Puis tous les 4 ans, état des lieux à 8 ans, plus un EPP de mi-carrière et un de fin de carrière."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-057",
+    "section": "7. Évaluer et recueillir les besoins",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque stratégie de recueil des besoins à son principal inconvénient.",
+    "colonne_a": [
+      "Équipe RH",
+      "Managers",
+      "Intervenant externe"
+    ],
+    "colonne_b": [
+      "Acceptation difficile, climat social mal appréhendé",
+      "Très chronophage, managers court-circuités",
+      "Résultats hétérogènes, salariés qui n'osent pas s'exprimer"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Choix selon taille, temps, budget et climat social."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-058",
+    "section": "7. Évaluer et recueillir les besoins",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "La formation peut servir de récompense ou de sanction à l'issue d'une évaluation.",
+    "reponse": false,
+    "explication": "Faux : c'est une obligation de l'employeur, jamais une récompense ni une sanction."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-059",
+    "section": "7. Évaluer et recueillir les besoins",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quand recueillir idéalement les besoins de formation ?",
+    "options": [
+      "en janvier",
+      "au fil de l'eau sans calendrier",
+      "en juillet",
+      "en septembre/octobre, pour une consultation du CSE en novembre"
+    ],
+    "reponse": 3,
+    "explication": "Grilles d'évaluation et questionnaires complètent le recueil."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-060",
+    "section": "7. Évaluer et recueillir les besoins",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles familles de données l'entretien d'évaluation collecte-t-il ? (3 réponses)",
+    "options": [
+      "les compétences (hard et soft skills)",
+      "l'engagement (charge, reconnaissance, équilibre)",
+      "les objectifs SMART de l'année",
+      "les données de santé",
+      "les opinions politiques"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "La DRH en tire talents, PDC personnalisés, cartographies et plans de succession."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-061",
+    "section": "8. Maintenir et transférer les compétences",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque dispositif de transfert à sa définition.",
+    "colonne_a": [
+      "Mentorat",
+      "Tutorat"
+    ],
+    "colonne_b": [
+      "Un senior transmet le savoir au quotidien à un nouvel arrivant",
+      "Relation de soutien et d'apprentissage fondée sur l'échange et la confiance, sur la base du volontariat"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Le tutorat est le versant opérationnel, levier classique d'anticipation des départs en retraite."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-062",
+    "section": "8. Maintenir et transférer les compétences",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles conditions le transfert de compétences exige-t-il ? (4 réponses)",
+    "options": [
+      "le volontariat des détenteurs et des apprenants",
+      "une méthodologie précise",
+      "la formation des détenteurs à la transmission",
+      "l'adaptation du temps de travail",
+      "l'obligation imposée par l'employeur",
+      "l'absence de suivi"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Il assure la continuité de l'activité et limite la déperdition de savoirs."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-063",
+    "section": "8. Maintenir et transférer les compétences",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que l'inbound recruiting ?",
+    "options": [
+      "recruter uniquement en interne",
+      "attirer les candidats qualifiés en faisant connaître l'entreprise et ses valeurs",
+      "externaliser le recrutement",
+      "recruter par cooptation"
+    ],
+    "reponse": 1,
+    "explication": "Il s'appuie sur la marque employeur : sites carrière, jobboards, LinkedIn."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-064",
+    "section": "8. Maintenir et transférer les compétences",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Selon le cours, il est souvent plus rentable de faire monter en compétences que de recruter.",
+    "reponse": true,
+    "explication": "Vrai. 66 % des cadres bénéficient de formation professionnelle en France."
+  },
+  {
+    "resume": "b4-r06",
+    "bloc": 4,
+    "id": "b4-r06-qz-065",
+    "section": "8. Maintenir et transférer les compétences",
+    "niveau": 2,
+    "format": "ouverte",
+    "question": "Justifiez, selon la logique GEPP, une formation destinée à combler une compétence nouvelle requise par un projet.",
+    "attendus": [
+      "Diagnostic : compétence clé non maîtrisée pour le projet",
+      "Écart immédiat entre compétences requises et détenues",
+      "Besoin collectif et qualifié (l'action existe)",
+      "Matrice de polyvalence : zone à risque si une seule personne maîtrise la compétence",
+      "Double bénéfice : besoin ponctuel comblé et compétence distinctive durable, fidélisation"
+    ],
+    "explication": "Un besoin ponctuel traité en investissement stratégique."
+  },
+  {
     "resume": "b4-r07",
     "bloc": 4,
     "id": "b4-r07-qz-001",
@@ -18389,12 +35427,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Un responsable formation constate que ses équipes progressent surtout en travaillant sur de vrais projets, bien plus qu'en salle de cours. Quel modèle théorique décrit ce phénomène ?",
     "options": [
-      "le modèle 70/20/10 : 70 % des apprentissages viennent de la pratique et de l'expérience",
-      "la taxonomie de Bloom : la pratique est le premier niveau cognitif",
       "l'andragogie : les adultes n'apprennent qu'en autonomie complète",
+      "la taxonomie de Bloom : la pratique est le premier niveau cognitif",
+      "le modèle 70/20/10 : 70 % des apprentissages viennent de la pratique et de l'expérience",
       "le modèle 50/30/20 : la moitié des apprentissages vient des échanges entre collègues"
     ],
-    "reponse": 0,
+    "reponse": 2,
     "explication": "Le modèle 70/20/10 (Centre de Leadership Créatif) : 70 % pratique et expérience, 20 % échanges au travail, 10 % formation formelle — qui capte pourtant 80 % des budgets. Selon Spitzer, plus de 80 % d'une formation traditionnelle est oublié en un mois."
   },
   {
@@ -18406,12 +35444,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Quelle loi a créé le CPF, le CEP et l'entretien professionnel ?",
     "options": [
-      "la loi Delors du 16 juillet 1971",
       "la loi du 5 mars 2014",
+      "la loi Delors du 16 juillet 1971",
       "la loi Travail (El Khomri) de 2016",
       "la loi Avenir professionnel du 5 septembre 2018"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "La loi du 5 mars 2014 crée le CPF, le CEP et l'entretien professionnel (plus la contribution unique et le cadre de la FOAD). La loi de 1971 est le texte fondateur ; la loi Avenir 2018 réforme en profondeur gouvernance, fonctionnement et financement."
   },
   {
@@ -18481,11 +35519,11 @@ var QUIZ = [
     "question": "Une agence de 35 salariés veut faire financer une formation par son OPCO. Quelle condition l'organisme de formation choisi doit-il remplir ?",
     "options": [
       "être certifié ISO 9001",
-      "détenir la certification Qualiopi",
+      "être accrédité directement par France Compétences",
       "être enregistré au RNCP",
-      "être accrédité directement par France Compétences"
+      "détenir la certification Qualiopi"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "Depuis le 1er janvier 2022, Qualiopi conditionne l'accès aux fonds mutualisés ou publics ; les entreprises de 50 salariés au plus doivent recourir à un organisme Qualiopi pour être financées par leur OPCO. Elle est délivrée par des certificateurs accrédités Cofrac sur la base du RNCQ."
   },
   {
@@ -18526,11 +35564,11 @@ var QUIZ = [
     "question": "Dans une entreprise de 120 salariés, l'état des lieux à 6 ans révèle qu'un salarié n'a suivi aucune formation non obligatoire. Que risque l'employeur ?",
     "options": [
       "une amende administrative versée à l'URSSAF",
-      "un abondement forfaitaire de 3 000 € sur le CPF du salarié",
       "l'obligation de financer une VAE au salarié",
+      "un abondement forfaitaire de 3 000 € sur le CPF du salarié",
       "rien, l'état des lieux n'a pas de valeur contraignante"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "Dans les entreprises de plus de 50 salariés, si l'état des lieux récapitulatif des 6 ans révèle que les entretiens n'ont pas été tenus ou qu'aucune formation non obligatoire n'a été suivie, l'employeur doit abonder le CPF du salarié de 3 000 €."
   },
   {
@@ -18542,12 +35580,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Une assistante administrative est formée à l'anglais professionnel, un savoir-faire transférable utile dans son emploi. Dans quelle sous-catégorie du PDC classer cette action ?",
     "options": [
-      "adaptation au poste de travail",
       "maintien dans l'emploi",
+      "adaptation au poste de travail",
       "développement des compétences",
       "formation obligatoire au sens de l'article L.6321-2"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "C'est l'exemple type du cours : savoir-faire transférable requis dans l'emploi = maintien dans l'emploi. L'adaptation au poste vise un savoir-faire spécifique au poste (logiciel de DAO) ; le développement des compétences prépare une évolution ultérieure."
   },
   {
@@ -18571,11 +35609,11 @@ var QUIZ = [
     "question": "Une compétence est jugée stratégique pour l'entreprise, mais aucune échéance réglementaire ni changement brutal ne presse. Que faire de ce besoin de formation ?",
     "options": [
       "le traiter sans délai, comme toute formation importante",
-      "le planifier dans le PDC, car « on verra plus tard » finit en « c'est trop tard »",
+      "le basculer sur le CPF du salarié pour ne pas peser sur le budget",
       "l'éliminer : sans urgence, une formation ne se justifie pas",
-      "le basculer sur le CPF du salarié pour ne pas peser sur le budget"
+      "le planifier dans le PDC, car « on verra plus tard » finit en « c'est trop tard »"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "Grille urgence × importance : important mais pas urgent = planifier dans le PDC. Urgent + important = sans délai ; ni urgent ni important = éliminer ; et « urgent pas important » n'existe pas — une formation urgente est toujours importante."
   },
   {
@@ -18651,11 +35689,11 @@ var QUIZ = [
     "question": "Un formateur fait analyser aux stagiaires des cas concrets de captation live, puis leur fait découvrir eux-mêmes les principes généraux. Quelle méthode pédagogique applique-t-il ?",
     "options": [
       "la méthode déductive : de la théorie vers l'application",
-      "la méthode inductive : du cas concret vers la théorie",
       "le chunking : découper le contenu en micro-séquences",
+      "la méthode inductive : du cas concret vers la théorie",
       "la différenciation pédagogique : adapter aux niveaux de chacun"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "La méthode inductive part du concret pour faire découvrir les principes — l'inverse de la déductive — et c'est la plus efficace en formation professionnelle. Le chunking, lui, répond au déclin de l'attention d'un adulte après 15-20 minutes."
   },
   {
@@ -18667,12 +35705,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Dans la taxonomie de Bloom, l'objectif « concevoir un plan de captation original » se situe à quel niveau ?",
     "options": [
-      "Mémoriser, le premier niveau",
+      "Créer, le niveau le plus élevé",
       "Appliquer, le niveau intermédiaire",
       "Évaluer, le cinquième niveau",
-      "Créer, le niveau le plus élevé"
+      "Mémoriser, le premier niveau"
     ],
-    "reponse": 3,
+    "reponse": 0,
     "explication": "La taxonomie de Bloom hiérarchise 6 niveaux cognitifs : Mémoriser → Comprendre → Appliquer → Analyser → Évaluer → Créer. Concevoir une production originale relève du sommet, « Créer ». Les objectifs se formulent SMART, avec des verbes d'action observables."
   },
   {
@@ -18743,11 +35781,970 @@ var QUIZ = [
     "options": [
       "environ 19 %",
       "environ 185 %",
-      "environ 538 %",
-      "environ 640 %"
+      "environ 640 %",
+      "environ 538 %"
+    ],
+    "reponse": 3,
+    "explication": "ROI = (bénéfices / coûts) × 100 = (11 840 / 2 200) × 100 = 538 % — c'est le cas CP Livraison du cours. Un ROI inférieur à 100 % signifie que l'investissement n'est pas couvert ; le ROE (Return On Expectation) et les bénéfices qualitatifs complètent l'analyse."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-019",
+    "section": "1. La formation professionnelle : notions de base",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque type de formation à sa définition.",
+    "colonne_a": [
+      "Formation initiale",
+      "Formation professionnelle continue (FPC)"
+    ],
+    "colonne_b": [
+      "Pour les actifs : développer ses compétences ou se reconvertir",
+      "Cursus donnant les bases d'une profession, sanctionné par un diplôme"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Trois différences : public, coût (la continue est payante mais finançable), organisation."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-020",
+    "section": "1. La formation professionnelle : notions de base",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Comment appelle-t-on la pédagogie propre aux adultes ?",
+    "options": [
+      "la pédagogie",
+      "l'andragogie",
+      "la didactique",
+      "la maïeutique"
+    ],
+    "reponse": 1,
+    "explication": "Elle s'appuie sur l'expérience, l'autonomie et des méthodes actives."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-021",
+    "section": "1. La formation professionnelle : notions de base",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Dans le modèle 70/20/10, la formation formelle, qui pèse 10 % des apprentissages, capte pourtant 80 % des budgets.",
+    "reponse": true,
+    "explication": "Vrai : 70 % par la pratique, 20 % par les échanges (social learning), 10 % par la formation formelle."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-022",
+    "section": "1. La formation professionnelle : notions de base",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Selon Spitzer, quelle part d'une formation est oubliée en un mois ?",
+    "options": [
+      "20 %",
+      "50 %",
+      "80 %",
+      "95 %"
     ],
     "reponse": 2,
-    "explication": "ROI = (bénéfices / coûts) × 100 = (11 840 / 2 200) × 100 = 538 % — c'est le cas CP Livraison du cours. Un ROI inférieur à 100 % signifie que l'investissement n'est pas couvert ; le ROE (Return On Expectation) et les bénéfices qualitatifs complètent l'analyse."
+    "explication": "La pratique (essai-erreur) ancre les apprentissages."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-023",
+    "section": "1. La formation professionnelle : notions de base",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque type d'éducation à son cadre.",
+    "colonne_a": [
+      "Formelle",
+      "Non formelle",
+      "Informelle"
+    ],
+    "colonne_b": [
+      "Expérience, échanges",
+      "Hors institution (en entreprise par exemple)",
+      "Institution nationale"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Distinction utile pour situer une action de formation."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-024",
+    "section": "1. La formation professionnelle : notions de base",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qu'une formation certifiante ?",
+    "options": [
+      "une formation menant à un diplôme, Titre Professionnel ou CQP inscrit au RNCP",
+      "une formation sans évaluation",
+      "une formation interne non reconnue",
+      "une formation obligatoire de sécurité"
+    ],
+    "reponse": 0,
+    "explication": "À distinguer de la qualifiante et de la diplômante (diplôme d'État)."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-025",
+    "section": "2. Le cadre légal : 50 ans de réformes",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle est l'originalité française de la construction du droit de la formation ?",
+    "options": [
+      "la loi précède toujours la négociation",
+      "un référendum",
+      "un décret européen",
+      "un Accord National Interprofessionnel (ANI) négocié, puis repris par la loi"
+    ],
+    "reponse": 3,
+    "explication": "ANI 1970 + loi Delors de 1971, textes fondateurs de la FPC."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-026",
+    "section": "2. Le cadre légal : 50 ans de réformes",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle loi a inscrit la « formation tout au long de la vie » au Code du travail ?",
+    "options": [
+      "la loi de 1971",
+      "la loi du 4 mai 2004",
+      "la loi Travail de 2016",
+      "la loi Avenir professionnel de 2018"
+    ],
+    "reponse": 1,
+    "explication": "La loi de 2009 a ensuite fait de la formation un levier RH de la GPEC."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-027",
+    "section": "2. Le cadre légal : 50 ans de réformes",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez la monétisation du CPF depuis 2019.",
+    "texte": "Le CPF est crédité de {1} € par an (plafond 5 000 €), et de {2} € par an (plafond 8 000 €) pour les salariés peu qualifiés.",
+    "trous": [
+      "500",
+      "800"
+    ],
+    "explication": "La réforme crée aussi le CPF de transition et renforce le CEP."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-028",
+    "section": "2. Le cadre légal : 50 ans de réformes",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Côté entreprises, qu'a apporté la réforme entrée en vigueur en 2019 ? (3 réponses)",
+    "options": [
+      "une contribution unique collectée par l'URSSAF",
+      "une action de formation redéfinie, incluant l'AFEST",
+      "le plan de formation renommé PDC",
+      "la suppression du CPF",
+      "la fin de Qualiopi"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "S'y ajoutent la cotisation CPF-CDD (1 %) et la mutualisation pour les TPE/PME."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-029",
+    "section": "2. Le cadre légal : 50 ans de réformes",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quel est le montant du ticket modérateur CPF depuis le 2 mai 2024 ?",
+    "options": [
+      "50 €",
+      "150 €",
+      "100 €",
+      "10 % du coût"
+    ],
+    "reponse": 2,
+    "explication": "Exonérés : demandeurs d'emploi, formations abondées par l'employeur, points C2P, incapacité AT/MP ≥ 10 %."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-030",
+    "section": "2. Le cadre légal : 50 ans de réformes",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "La VAE inversée, expérimentée depuis 2023, combine situation de travail et contrat de professionnalisation.",
+    "reponse": true,
+    "explication": "Vrai : 2023 voit aussi les lois anti-fraude CPF et une VAE modernisée."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-031",
+    "section": "3. Financement et qualité",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez les taux de la CUFPA.",
+    "texte": "La CUFPA s'élève à {1} % de la masse salariale sous 11 salariés et à {2} % au-delà.",
+    "trous": [
+      "1,23",
+      "1,68"
+    ],
+    "explication": "Elle comprend un volet formation et la taxe d'apprentissage. S'y ajoutent la CSA (≥ 250 salariés, alternants < 5 %) et le CPF-CDD."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-032",
+    "section": "3. Financement et qualité",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qui redistribue les fonds de la formation professionnelle ?",
+    "options": [
+      "France Compétences",
+      "l'URSSAF",
+      "la CNIL",
+      "le CSE"
+    ],
+    "reponse": 0,
+    "explication": "Budget 2023 : 14,9 Md€, dont 73,26 % pour l'alternance et 15,47 % pour le CPF via la Caisse des Dépôts."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-033",
+    "section": "3. Financement et qualité",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'essentiel du budget de France Compétences finance le CPF.",
+    "reponse": false,
+    "explication": "Faux : 73,26 % vont à l'alternance, 15,47 % au CPF via la Caisse des Dépôts."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-034",
+    "section": "3. Financement et qualité",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Sur quel référentiel repose la certification Qualiopi ?",
+    "options": [
+      "l'ISO 9001",
+      "le ROME",
+      "le RNCP",
+      "le RNCQ (Référentiel National de Certification Qualité)"
+    ],
+    "reponse": 3,
+    "explication": "Délivrée par des certificateurs accrédités Cofrac, obligatoire depuis le 1er janvier 2022 pour accéder aux fonds publics ou mutualisés."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-035",
+    "section": "3. Financement et qualité",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Pour une entreprise de plus de 50 salariés, Qualiopi reste une condition obligatoire de financement OPCO.",
+    "reponse": false,
+    "explication": "Faux : obligatoire pour le financement OPCO des entreprises ≤ 50 salariés ; au-delà, c'est un critère de choix."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-036",
+    "section": "4. Les obligations de l'employeur",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que retient l'arrêt de la Cour de cassation du 5 juillet 2018 cité par le cours ?",
+    "options": [
+      "l'employeur peut refuser toute formation",
+      "17 formations courtes liées au seul métier ne suffisent pas : 10 000 € pour « perte de chance »",
+      "la formation est à l'initiative du salarié",
+      "le CPF est obligatoire"
+    ],
+    "reponse": 1,
+    "explication": "Les formations doivent développer réellement les compétences et l'employabilité."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-037",
+    "section": "4. Les obligations de l'employeur",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 3 temps de l'entretien professionnel.",
+    "elements": [
+      "Analyse",
+      "Évolutions",
+      "Bilan"
+    ],
+    "ordre": [
+      2,
+      0,
+      1
+    ],
+    "explication": "Il traite du projet professionnel et des besoins de formation, distinct de l'entretien annuel d'évaluation."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-038",
+    "section": "5. Le plan de développement des compétences",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Le PDC est obligatoire pour toutes les entreprises.",
+    "reponse": false,
+    "explication": "Faux : non obligatoire mais fortement recommandé. Il recense l'ensemble des actions de formation de l'employeur."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-039",
+    "section": "5. Le plan de développement des compétences",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Que peut contenir un PDC ? (4 réponses)",
+    "options": [
+      "des bilans de compétences",
+      "des VAE",
+      "des AFEST",
+      "des actions co-construites (CPF abondé)",
+      "des activités de loisirs",
+      "une sensibilisation au bien-être pour un public indifférencié"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Sensibilisation, bien-être, gestion du stress pour un public indifférencié et loisirs sont exclus et non finançables OPCO."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-040",
+    "section": "5. Le plan de développement des compétences",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce qu'une formation obligatoire (art. L.6321-2) ?",
+    "options": [
+      "toute formation demandée par le salarié",
+      "toute formation de plus de 30 heures",
+      "toute action qui conditionne l'exercice d'une activité ou d'une fonction",
+      "toute formation certifiante"
+    ],
+    "reponse": 2,
+    "explication": "Hygiène et sécurité, permis et habilitations : CACES, FIMO, habilitations électriques, AMF, secourisme."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-041",
+    "section": "5. Le plan de développement des compétences",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque cas à sa sous-catégorie de formation.",
+    "colonne_a": [
+      "Architecte formé à un logiciel de DAO",
+      "Assistante formée à l'anglais professionnel",
+      "Chargé d'affaires formé au management pour devenir responsable commercial"
+    ],
+    "colonne_b": [
+      "Développement des compétences",
+      "Adaptation au poste",
+      "Maintien dans l'emploi"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Savoir-faire spécifique au poste / transférable / évolution ultérieure."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-042",
+    "section": "5. Le plan de développement des compétences",
+    "niveau": 3,
+    "format": "texte_a_trous",
+    "question": "Complétez la règle des formations non obligatoires hors temps de travail sans accord collectif.",
+    "texte": "Il faut l'accord écrit du salarié, dans la limite de {1} heures par an ou de {2} % du forfait jours.",
+    "trous": [
+      "30",
+      "2"
+    ],
+    "explication": "218 j × 2 % = 4,4 jours. Le refus n'est ni fautif ni un motif de licenciement."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-043",
+    "section": "5. Le plan de développement des compétences",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 6 étapes d'élaboration du PDC.",
+    "elements": [
+      "Consulter le CSE",
+      "Recueillir les besoins",
+      "Chiffrer",
+      "Évaluer",
+      "Préparer le plan",
+      "Déployer et suivre"
+    ],
+    "ordre": [
+      1,
+      4,
+      2,
+      0,
+      5,
+      3
+    ],
+    "explication": "Besoins idéalement en septembre-octobre, CSE en novembre."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-044",
+    "section": "5. Le plan de développement des compétences",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "À partir de quel effectif le CSE doit-il être consulté chaque année sur le PDC ?",
+    "options": [
+      "50 salariés",
+      "11 salariés",
+      "250 salariés",
+      "300 salariés"
+    ],
+    "reponse": 0,
+    "explication": "Avis tous les ans, ou tous les 3 ans maximum par accord."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-045",
+    "section": "5. Le plan de développement des compétences",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque coût de formation à sa catégorie.",
+    "colonne_a": [
+      "Rémunération du formateur",
+      "Perte de production pendant la formation"
+    ],
+    "colonne_b": [
+      "Coût indirect",
+      "Coût direct"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Directs : formateur, inscription, matériel, déplacements, salaire du formé. Indirects : perte de production, remplaçant."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-046",
+    "section": "5. Le plan de développement des compétences",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Dans la matrice urgence × importance, la case « urgent mais pas important » n'existe pas.",
+    "reponse": true,
+    "explication": "Vrai : une formation urgente est forcément importante. Urgent + important = sans délai ; important seul = planifier ; ni l'un ni l'autre = éliminer."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-047",
+    "section": "6. Certifications et validation des acquis",
+    "niveau": 1,
+    "format": "qcm",
+    "question": "Combien de niveaux compte le RNCP depuis le décret du 8 janvier 2019 ?",
+    "options": [
+      "5",
+      "6",
+      "10",
+      "8"
+    ],
+    "reponse": 3,
+    "explication": "Du niveau 1 (savoirs de base) au niveau 8 (Doctorat) ; niveau 6 = Bachelor/Licence, niveau 7 = Master."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-048",
+    "section": "6. Certifications et validation des acquis",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels référentiels structurent une certification RNCP ? (3 réponses)",
+    "options": [
+      "activités",
+      "compétences",
+      "évaluation",
+      "rémunération",
+      "recrutement"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Organisés en blocs de compétences."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-049",
+    "section": "6. Certifications et validation des acquis",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que CléA ?",
+    "options": [
+      "un CQP de branche",
+      "la 1re certification interprofessionnelle sur le socle de connaissances et de compétences professionnelles (7 domaines)",
+      "un titre professionnel d'État",
+      "une habilitation électrique"
+    ],
+    "reponse": 1,
+    "explication": "Français, calcul, numérique, travail en équipe, autonomie, apprendre à apprendre, gestes et sécurité."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-050",
+    "section": "6. Certifications et validation des acquis",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "La VAE peut valoriser une expérience extra-professionnelle comme le bénévolat.",
+    "reponse": true,
+    "explication": "Vrai, si elle est en rapport direct avec la certification visée. La VAPP vise la reprise d'études."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-051",
+    "section": "6. Certifications et validation des acquis",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la démarche de VAE.",
+    "elements": [
+      "Accompagnement face au référentiel",
+      "Jury de professionnels",
+      "Dossier de recevabilité"
+    ],
+    "ordre": [
+      2,
+      0,
+      1
+    ],
+    "explication": "Le jury décide une validation totale, partielle (contrôle complémentaire) ou un refus."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-052",
+    "section": "6. Certifications et validation des acquis",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle est la durée maximale du congé VAE rémunéré ?",
+    "options": [
+      "7 heures",
+      "35 heures",
+      "24 heures",
+      "5 jours"
+    ],
+    "reponse": 2,
+    "explication": "Demande 30 jours avant ; réponse sous 15 jours (silence = accord)."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-053",
+    "section": "7. Concevoir la formation : l'ingénierie pédagogique",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Classez les 6 niveaux de la taxonomie de Bloom, du plus simple au plus complexe.",
+    "elements": [
+      "Analyser",
+      "Mémoriser",
+      "Créer",
+      "Comprendre",
+      "Évaluer",
+      "Appliquer"
+    ],
+    "ordre": [
+      1,
+      3,
+      5,
+      0,
+      4,
+      2
+    ],
+    "explication": "Elle sert la progression et le diagnostic."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-054",
+    "section": "7. Concevoir la formation : l'ingénierie pédagogique",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que vise la « zone proximale de développement » ?",
+    "options": [
+      "une difficulté ni trop facile ni trop difficile, via la différenciation pédagogique",
+      "un contenu très facile pour rassurer",
+      "un contenu très difficile pour stimuler",
+      "un niveau identique pour tous"
+    ],
+    "reponse": 0,
+    "explication": "Modules optionnels, rappels, challenges adaptés à l'expertise préalable."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-055",
+    "section": "7. Concevoir la formation : l'ingénierie pédagogique",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Lequel de ces verbes convient à un objectif pédagogique observable ?",
+    "options": [
+      "connaître",
+      "comprendre",
+      "savoir",
+      "identifier"
+    ],
+    "reponse": 3,
+    "explication": "On utilise des verbes d'action observables (identifier, créer), pas « connaître »."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-056",
+    "section": "7. Concevoir la formation : l'ingénierie pédagogique",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez la règle d'attention en formation d'adultes.",
+    "texte": "L'attention décline après {1} minutes : on découpe en micro-séquences, c'est le {2}.",
+    "trous": [
+      "15-20",
+      "chunking"
+    ],
+    "explication": "Avec des marqueurs de progression et des points de contrôle."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-057",
+    "section": "7. Concevoir la formation : l'ingénierie pédagogique",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "L'accessibilité d'un support de formation se traite après sa conception.",
+    "reponse": false,
+    "explication": "Faux : dès la conception (contraste ≥ 4,5:1 WCAG, jamais la couleur seule, polices lisibles)."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-058",
+    "section": "7. Concevoir la formation : l'ingénierie pédagogique",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Que désigne le cycle qualité « 3-2-1 » ?",
+    "options": [
+      "3 jours, 2 formateurs, 1 salle",
+      "3 niveaux de validation, 2 phases de test, 1 processus d'amélioration continue",
+      "3 objectifs, 2 évaluations, 1 certification",
+      "3 modules, 2 quiz, 1 examen"
+    ],
+    "reponse": 1,
+    "explication": "Validation technique, pédagogique, utilisateur ; tests interne et sur échantillon d'apprenants."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-059",
+    "section": "8. Animer : la posture de facilitateur",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque approche de facilitation à sa visée.",
+    "colonne_a": [
+      "Dialogue (World Café)",
+      "Atelier (speed boat)",
+      "Agile"
+    ],
+    "colonne_b": [
+      "Garant des valeurs agiles et de l'amélioration continue",
+      "Parole libérée, divergence, créativité",
+      "Structurée, convergence vers une décision"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "La facilitation est d'abord un processus (Roger Schwarte)."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-060",
+    "section": "8. Animer : la posture de facilitateur",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Quelle position le facilitateur adopte-t-il le plus souvent ?",
+    "options": [
+      "la position haute en permanence",
+      "aucune position",
+      "la position basse, avec une position haute ponctuelle pour (re)poser le cadre",
+      "la position d'expert du contenu"
+    ],
+    "reponse": 2,
+    "explication": "Neutralité, écoute du dit et du non-dit, bienveillance, présence active."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-061",
+    "section": "8. Animer : la posture de facilitateur",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les 3 rôles du facilitateur ? (3 réponses)",
+    "options": [
+      "architecte",
+      "pilote",
+      "guide",
+      "juge",
+      "expert du contenu"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Architecte du déroulé, pilote du fil conducteur, guide qui dénoue les conflits."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-062",
+    "section": "8. Animer : la posture de facilitateur",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 5 étapes de la facilitation.",
+    "elements": [
+      "Lancement",
+      "Synthèse",
+      "Cadre et objectif",
+      "Canalisation",
+      "Consignes"
+    ],
+    "ordre": [
+      2,
+      4,
+      0,
+      3,
+      1
+    ],
+    "explication": "Disposition de salle adaptée : cercle pour le co-développement, cabaret pour le World Café."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-063",
+    "section": "9. Modalités et digital learning",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "En quoi consiste l'AFEST ?",
+    "options": [
+      "l'alternance d'une mise en situation de travail aménagée et d'une séquence réflexive animée par un tiers",
+      "une formation 100 % en ligne",
+      "un MOOC d'entreprise",
+      "un séminaire en présentiel"
+    ],
+    "reponse": 0,
+    "explication": "Elle confronte les traces de l'activité au prescrit ; expérimentée depuis 2016."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-064",
+    "section": "9. Modalités et digital learning",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le digital learning ne désigne que les formations suivies à distance.",
+    "reponse": false,
+    "explication": "Faux : il couvre tout le processus de formation, en présentiel comme à distance ; l'e-learning n'en est qu'une composante."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-065",
+    "section": "9. Modalités et digital learning",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque format à sa définition.",
+    "colonne_a": [
+      "MOOC",
+      "COOC",
+      "Serious game",
+      "Crowd learning"
+    ],
+    "colonne_b": [
+      "Jeu pédagogique avec scoring",
+      "Apprentissage « par la foule »",
+      "Cours en ligne massif, ouvert et interactif",
+      "MOOC interne à une entreprise"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "explication": "Le SPOC réunit 15 à 50 participants sélectionnés avec un accompagnement personnalisé."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-066",
+    "section": "9. Modalités et digital learning",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque outil à sa fonction.",
+    "colonne_a": [
+      "LMS",
+      "TMS"
+    ],
+    "colonne_b": [
+      "Logistique : sessions, salles, budgets",
+      "Gestion, diffusion et suivi des formations (reporting, complétion, gamification)"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Leader LMS cité : 360Learning."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-067",
+    "section": "9. Modalités et digital learning",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Selon l'ISTF 2023, quelle modalité est majoritaire ?",
+    "options": [
+      "le 100 % digital",
+      "le présentiel",
+      "l'AFEST",
+      "le blended learning (37 %)"
+    ],
+    "reponse": 3,
+    "explication": "Présentiel 36 %, 100 % digital 27 % ; 56 % des entreprises veulent plus de multimodal."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-068",
+    "section": "9. Modalités et digital learning",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Un ROI de formation inférieur à 100 % signifie que l'investissement n'est pas couvert.",
+    "reponse": true,
+    "explication": "Vrai avec la formule du cours ROI = bénéfices / coûts × 100. Le ROE (Return On Expectation) complète le ROI."
+  },
+  {
+    "resume": "b4-r07",
+    "bloc": 4,
+    "id": "b4-r07-qz-069",
+    "section": "9. Modalités et digital learning",
+    "niveau": 2,
+    "format": "ouverte",
+    "question": "Organisez une session de formation pour une équipe qui doit maîtriser une nouvelle compétence technique avant un événement.",
+    "attendus": [
+      "Analyser le public en 5W + 2H",
+      "Fixer des objectifs SMART adossés à Bloom, avec des verbes observables",
+      "Structurer en séquences de 15-20 min, méthode inductive sur cas réels",
+      "Varier des supports accessibles (vidéo, infographies, simulations, quiz)",
+      "Justifier la modalité (blended ou AFEST), les outils (LMS), l'animation facilitante et l'évaluation (complétion, satisfaction, ROI)"
+    ],
+    "explication": "Chaque choix se justifie par un besoin ou une contrainte."
   },
   {
     "resume": "b4-r08",
@@ -18821,12 +36818,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Un chef de projet doit rendre contrôlable la valeur « authenticité » de la marque de son client. Quelle formulation de critère est la bonne, selon la méthode du cours ?",
     "options": [
-      "« Les visuels doivent valoriser l'authenticité de la marque »",
       "« Décors extérieurs réels, matières naturelles, lumière dorée, tonalité chaleureuse — vérifiés par questions oui/non »",
+      "« Les visuels doivent valoriser l'authenticité de la marque »",
       "« Les créatifs doivent s'imprégner de l'esprit de la marque avant de produire »",
       "« L'authenticité sera appréciée par le directeur artistique au cas par cas »"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Superviser, c'est traduire chaque valeur abstraite en éléments observables et mesurables, puis en questions de contrôle binaires (oui/non). C'est l'exemple Le Petit Marseillais : « art de vivre méditerranéen » devient lumière dorée, matières naturelles, décors authentiques, palette provençale."
   },
   {
@@ -18840,10 +36837,10 @@ var QUIZ = [
     "options": [
       "dans les critères adaptatifs, car il varie selon le canal",
       "dans les critères d'excellence, réservés aux campagnes stratégiques",
-      "dans les critères universels, non négociables quels que soient support et marché",
-      "dans les critères contextuels, liés à la réglementation locale"
+      "dans les critères contextuels, liés à la réglementation locale",
+      "dans les critères universels, non négociables quels que soient support et marché"
     ],
-    "reponse": 2,
+    "reponse": 3,
     "explication": "L'architecture pyramidale compte 3 niveaux : critères universels (reconnaissance de marque, non négociables), critères adaptatifs (contextualisation locale ou par canal), critères d'excellence (productions premium)."
   },
   {
@@ -18884,11 +36881,11 @@ var QUIZ = [
     "question": "Pour une marque dont l'univers repose sur la nature, un prestataire livre un visuel tourné en décor urbain. Le caractère distinctif est dilué mais pas contredit. Comment qualifier cet écart ?",
     "options": [
       "écart mineur : détail d'exécution sans impact perçu",
-      "écart modéré : déviation notable qui dilue le caractère distinctif",
       "écart critique : contradiction directe avec la promesse, retrait immédiat",
+      "écart modéré : déviation notable qui dilue le caractère distinctif",
       "écart positif : une innovation à valoriser"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "C'est l'exemple type de l'écart modéré (décor urbain au lieu du naturel) : il dilue sans contredire, et son accumulation affaiblit la différenciation. Le mineur est un détail (nuance de bleu hors charte), le critique contredit valeurs ou promesse et exige un recadrage immédiat."
   },
   {
@@ -18900,12 +36897,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Votre agence confie un motion design à un free-lance qui n'a jamais travaillé pour le client. Quelle est la bonne pratique de démarrage ?",
     "options": [
-      "le laisser proposer librement pour préserver sa créativité, puis corriger à la livraison",
       "lui transmettre un kit de démarrage : brief détaillé, charte graphique, exemples de livrables conformes",
+      "le laisser proposer librement pour préserver sa créativité, puis corriger à la livraison",
       "lui demander de signer la charte qualité de l'agence avant tout échange",
       "programmer uniquement un feed-back de fin de mission pour ne pas le surcharger"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "Les free-lances, étrangers à la culture de l'agence, se trouvent dans les zones de dilution du contrôle qualité. Le kit de démarrage (brief, charte, exemples conformes) se complète d'un cadrage initial, de jalons intermédiaires et d'un feed-back de fin de mission."
   },
   {
@@ -18957,12 +36954,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Dans une agence, chaque maquette repasse sans fin entre le DA, le client et la direction : chacun rouvre les points validés par les autres, personne ne tranche, les versions s'accumulent. Quelle pathologie du circuit de validation est à l'œuvre ?",
     "options": [
-      "la boucle de validation infinie, faute d'autorité finale qui tranche",
+      "le circuit express, déclenché de façon abusive",
       "la validation parallèle, mal synchronisée",
       "la subsidiarité créative, poussée trop loin",
-      "le circuit express, déclenché de façon abusive"
+      "la boucle de validation infinie, faute d'autorité finale qui tranche"
     ],
-    "reponse": 0,
+    "reponse": 3,
     "explication": "La boucle de validation infinie est la reprise cyclique des mêmes points par différents acteurs sans autorité finale : versions multiples, démotivation, explosion des délais. Elle se combine souvent aux critères subjectifs et à l'absence d'arbitre final."
   },
   {
@@ -19026,11 +37023,11 @@ var QUIZ = [
     "question": "Chez YSA, un livrable vidéo attend successivement la validation technique, puis créative, puis juridique — chacune bloquant la suivante. Ces trois contrôles portent sur des périmètres indépendants. Que proposer ?",
     "options": [
       "un comité d'arbitrage créatif pour trancher les désaccords",
-      "la validation parallèle : évaluations simultanées sur périmètres indépendants, avec point de convergence",
       "un parcours innovation avec jury d'experts",
+      "la validation parallèle : évaluations simultanées sur périmètres indépendants, avec point de convergence",
       "une escalade systématique au niveau décisionnel"
     ],
-    "reponse": 1,
+    "reponse": 2,
     "explication": "La validation parallèle fait évaluer simultanément un même livrable par plusieurs parties prenantes sur des périmètres indépendants : délais réduits jusqu'à 60 %, goulets supprimés. Conditions : rôles clairs, critères précis, outils adaptés — et un comité de synthèse au point de convergence."
   },
   {
@@ -19053,12 +37050,12 @@ var QUIZ = [
     "format": "qcm",
     "question": "Dans une matrice RACI appliquée à la validation d'un livrable, qui tranche en dernier ressort ?",
     "options": [
-      "le R, responsable de l'exécution",
       "le A, autorité décisionnaire",
+      "le R, responsable de l'exécution",
       "le C, consulté pour avis",
       "le I, informé du résultat"
     ],
-    "reponse": 1,
+    "reponse": 0,
     "explication": "RACI : Responsable de l'exécution, Autorité décisionnaire, Consulté, Informé. Le A détient la décision — c'est ce qui tranche les conflits de légitimité et réduit de 40 % les temps de réponse dans le cas du cours."
   },
   {
@@ -19122,11 +37119,11 @@ var QUIZ = [
     "question": "Chez YSA, les validations passent par mail, l'informel par Slack, les fichiers sont dispersés sur plusieurs drives : pertes d'information et erreurs de version se multiplient. Quelle architecture cible viser ?",
     "options": [
       "remplacer tous les outils par un logiciel unique qui fait tout",
-      "la centralisation intelligente : un outil pivot orchestre les workflows, les outils spécialisés gardent leur excellence, source de vérité unique",
+      "laisser chaque équipe choisir ses outils et synchroniser en fin de projet",
       "interdire Slack et revenir au mail pour tout tracer",
-      "laisser chaque équipe choisir ses outils et synchroniser en fin de projet"
+      "la centralisation intelligente : un outil pivot orchestre les workflows, les outils spécialisés gardent leur excellence, source de vérité unique"
     ],
-    "reponse": 1,
+    "reponse": 3,
     "explication": "Face à la fragmentation technologique, la cible n'est pas l'outil unique mais la centralisation intelligente : un outil pivot de gestion de projet orchestre, chaque information n'a qu'un seul « propriétaire » (source de vérité unique), et le déploiement est progressif. Les DAM (Frame.io, Frontify, Bynder) centralisent les assets de marque."
   },
   {
@@ -19213,5 +37210,1170 @@ var QUIZ = [
       ]
     ],
     "explication": "Impact élevé/complexité faible = quick wins (d'abord) ; impact et complexité élevés = projets structurants ; effet cumulé = optimisations continues ; IA = innovations disruptives. Les actions vivent dans un backlog priorisé, traité en sprints qualité de 4 semaines, dans une logique Kaizen."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-023",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque dimension de la qualité à son mode d'évaluation.",
+    "colonne_a": [
+      "Technique",
+      "Créative",
+      "Stratégique"
+    ],
+    "colonne_b": [
+      "Grille intégrée dès la conception",
+      "Objective, mesurable par checklist",
+      "Plus subjective, expertise fine requise"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Une production peut être techniquement irréprochable mais stratégiquement hors sujet."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-024",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Dans la grille à double entrée technique × créatif, quel profil relève de l'urgence ?",
+    "options": [
+      "parfait",
+      "technique fort / créatif faible",
+      "créatif fort / technique fragile",
+      "défaillant sur les deux"
+    ],
+    "reponse": 1,
+    "explication": "Créatif fort / technique fragile : à renforcer ; défaillant sur les deux : à retravailler."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-025",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Appliquer les mêmes critères de qualité à tous les formats peut provoquer des sur-qualités coûteuses ou des sous-qualités préjudiciables.",
+    "reponse": true,
+    "explication": "Vrai : la supervision doit être différenciée par canal."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-026",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 1,
+    "format": "appariement",
+    "question": "Associez chaque niveau de cohérence à son périmètre.",
+    "colonne_a": [
+      "Intra-projet",
+      "Intra-marque",
+      "Inter-temporelle"
+    ],
+    "colonne_b": [
+      "Complémentarité avec les communications précédentes",
+      "Harmonie entre les éléments du livrable",
+      "Codes visuels, ton, territoires d'expression"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Une marque incohérente fragilise sa crédibilité même si chaque livrable réussit."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-027",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que distinguent les « éléments invariants » des « zones de flexibilité » ?",
+    "options": [
+      "les coûts fixes et variables",
+      "les créatifs internes et externes",
+      "les livrables print et digitaux",
+      "ce qui reste identique sur tous les supports et ce qui peut s'adapter"
+    ],
+    "reponse": 3,
+    "explication": "Ils s'appuient sur des tableaux de bord créatifs (codes, territoires narratifs, tonalités)."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-028",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre les 3 étapes pour décoder la stratégie de marque.",
+    "elements": [
+      "Recueillir la perception spontanée des équipes",
+      "Traduire chaque valeur en éléments observables puis en questions de contrôle binaires",
+      "Analyser l'historique des communications"
+    ],
+    "ordre": [
+      2,
+      0,
+      1
+    ],
+    "explication": "Superviser = traduire une stratégie abstraite en critères observables."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-029",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Une marque porte deux valeurs en tension, tradition et innovation. Que préconise le cours ?",
+    "options": [
+      "supprimer l'une des deux",
+      "les hiérarchiser : l'une devient le socle, l'autre s'exprime dans son respect",
+      "les traiter à égalité dans chaque livrable",
+      "laisser chaque créatif choisir"
+    ],
+    "reponse": 1,
+    "explication": "Cette hiérarchie permet d'arbitrer les dilemmes créatifs."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-030",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Comment doit être formulée la promesse de marque, fil conducteur de la qualité ?",
+    "options": [
+      "très détaillée, pour éviter toute interprétation",
+      "limitée au slogan",
+      "assez précise pour orienter, assez large pour laisser créer",
+      "rédigée par le client seul"
+    ],
+    "reponse": 2,
+    "explication": "Cascade : promesse → valeurs → codes visuels et éditoriaux → checklists, cohérence émotionnelle incluse."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-031",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Pour Le Petit Marseillais, un visuel aux codes « laboratoire, blouse blanche » serait un écart, même si le produit est « naturel ».",
+    "reponse": true,
+    "explication": "Vrai : ces codes appartiennent à la naturalité scientifique (Yves Rocher), pas à l'« art de vivre méditerranéen »."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-032",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Classez les 3 niveaux de la pyramide du référentiel qualité, de la base au sommet.",
+    "elements": [
+      "Critères d'excellence",
+      "Critères universels",
+      "Critères adaptatifs"
+    ],
+    "ordre": [
+      1,
+      2,
+      0
+    ],
+    "explication": "Universels non négociables ; adaptatifs par canal ou marché ; excellence pour les productions premium."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-033",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels sont les 4 types de critères d'un référentiel qualité ? (4 réponses)",
+    "options": [
+      "techniques",
+      "créatifs",
+      "stratégiques",
+      "contextuels",
+      "financiers",
+      "hiérarchiques"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Les stratégiques (messages clés, positionnement) sont les plus négligés."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-034",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 1,
+    "format": "texte_a_trous",
+    "question": "Complétez les critères techniques de base.",
+    "texte": "Pour le print : une résolution de {1} DPI et le profil {2} ; pour le digital : le profil {3}.",
+    "trous": [
+      "300",
+      "CMJN",
+      "RVB"
+    ],
+    "explication": "Critères objectifs, sans approximation."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-035",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "« Si le support est inférieur à A4, la taille minimale du logo est de X mm. » De quel type de critère s'agit-il ?",
+    "options": [
+      "un critère conditionnel",
+      "une fourchette de tolérance",
+      "un critère de préférence",
+      "un critère d'excellence"
+    ],
+    "reponse": 0,
+    "explication": "Les critères « si… alors… » équilibrent précision et flexibilité."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-036",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque niveau de hiérarchie des critères à sa nature.",
+    "colonne_a": [
+      "Bloquants",
+      "Importants",
+      "De préférence"
+    ],
+    "colonne_b": [
+      "Optimisations",
+      "Liés aux valeurs",
+      "Liés à la promesse, non négociables"
+    ],
+    "paires": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Ne pas bloquer la production sur un détail."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-037",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez la règle de la grille stratégique minimum.",
+    "texte": "Elle compte {1} à {2} critères et s'évalue en moins de {3} minutes.",
+    "trous": [
+      "5",
+      "7",
+      "10"
+    ],
+    "explication": "Elle sert aux validations courantes."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-038",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Comment rendre utilisable le critère « valoriser l'appétence alimentaire » ?",
+    "options": [
+      "le laisser tel quel",
+      "le supprimer",
+      "« faire appétissant »",
+      "« aliments en contexte de consommation, éclairage chaud 3 000-3 500 K, textures naturelles valorisées »"
+    ],
+    "reponse": 3,
+    "explication": "Un critère se teste sur des productions réelles."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-039",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "En print, les corrections restent possibles après impression, comme en digital.",
+    "reponse": false,
+    "explication": "Faux : les corrections post-impression sont impossibles, d'où l'anticipation obligatoire (CMJN, fond perdu, zones de sécurité)."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-040",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "À quoi sert le journal des ajustements du référentiel ?",
+    "options": [
+      "à facturer le client",
+      "à constituer une mémoire organisationnelle (version initiale, frictions, version révisée), réutilisable en formation",
+      "à sanctionner les créatifs",
+      "à remplacer la charte"
+    ],
+    "reponse": 1,
+    "explication": "La construction du référentiel est collaborative : ateliers multi-métiers, priorisation par points, phases pilotes."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-041",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque écart à son niveau de gravité.",
+    "colonne_a": [
+      "Une nuance de bleu hors charte",
+      "Un décor urbain pour une marque nature",
+      "Un message « performance scientifique » pour une marque d'authenticité"
+    ],
+    "colonne_b": [
+      "Critique",
+      "Mineur",
+      "Modéré"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "L'écart critique impose un recadrage immédiat, voire un retrait."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-042",
+    "section": "1. Définir la qualité d'un livrable créatif",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Des écarts mineurs répétés restent sans conséquence pour la marque.",
+    "reponse": false,
+    "explication": "Faux : leur accumulation érode la cohérence. Chaque écart appelle une analyse causale."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-043",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi les savoirs tacites d'une équipe créative sont-ils un risque ?",
+    "options": [
+      "ils coûtent cher",
+      "ils sont illégaux",
+      "non formalisés, ils créent une dépendance aux individus",
+      "ils ralentissent la production"
+    ],
+    "reponse": 2,
+    "explication": "D'où des protocoles de transmission créative."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-044",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque outil d'alignement des prestataires à son contenu.",
+    "colonne_a": [
+      "Creative toolkit",
+      "Livrables d'ancrage"
+    ],
+    "colonne_b": [
+      "Moodboards, références, briefs, critères, processus de validation",
+      "Codes visuels, territoires narratifs, standards techniques"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "Le prestataire devient un partenaire créatif, pas un exécutant."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-045",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Pourquoi définir des niveaux d'intervention du client (droit de regard, avis consultatif, information) ?",
+    "options": [
+      "pour éviter que ses demandes accumulées dénaturent l'intention créative",
+      "pour l'exclure du projet",
+      "pour réduire la facture",
+      "pour respecter le RGPD"
+    ],
+    "reponse": 0,
+    "explication": "Le client est un acteur de la qualité, mais son rôle doit être codéfini."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-046",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque point de friction à sa parade.",
+    "colonne_a": [
+      "Transitions entre étapes",
+      "Changement d'intervenant",
+      "Modifications tardives"
+    ],
+    "colonne_b": [
+      "Seuils d'alerte, validation renforcée",
+      "Documents de transmission, points de passage obligatoires",
+      "Journal de production traçant intentions et arbitrages"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Les modifications tardives provoquent un effet domino."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-047",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Face à une contrainte de temps, que recommande le cours ?",
+    "options": [
+      "accélérer toutes les tâches",
+      "paralléliser et prévoir des buffers qualitatifs dans le rétroplanning",
+      "supprimer les validations",
+      "réduire uniformément la qualité"
+    ],
+    "reponse": 1,
+    "explication": "L'impact du temps sur la qualité n'est pas linéaire : il existe des seuils de dégradation brutale."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-048",
+    "section": "2. Organiser la supervision",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "Face à une contrainte budgétaire, il vaut mieux réduire uniformément la qualité de tous les éléments.",
+    "reponse": false,
+    "explication": "Faux : on pratique une qualité focale, en investissant sur les éléments porteurs d'impact (logo, typographie, palette) et en standardisant le secondaire."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-049",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles sont les pathologies classiques des circuits de validation ? (4 réponses)",
+    "options": [
+      "la boucle de validation infinie",
+      "les critères subjectifs",
+      "l'absence d'arbitre final",
+      "les validations redondantes",
+      "la validation parallèle",
+      "la pré-validation automatisée"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Un circuit trop lourd finit contourné."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-050",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Sur quelles 4 dimensions mesure-t-on la performance d'un circuit de validation ? (4 réponses)",
+    "options": [
+      "le temps moyen de validation",
+      "le nombre d'itérations avant validation finale",
+      "la satisfaction des parties prenantes",
+      "l'impact qualité (reprises, retours clients)",
+      "le nombre de validateurs",
+      "le coût des licences"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Cas du cours : 18 jours et 4,2 itérations par livrable, plus de 150 000 € de surcoût annuel."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-051",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que la subsidiarité créative ?",
+    "options": [
+      "déléguer toute la validation au client",
+      "chaque niveau traite en autonomie les critères qu'il maîtrise le mieux, sans remontée systématique",
+      "faire tout valider par la direction",
+      "sous-traiter la création"
+    ],
+    "reponse": 1,
+    "explication": "La direction ne tranche que les arbitrages complexes."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-052",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez les résultats du cas de refonte du circuit de validation.",
+    "texte": "Le délai passe de {1} à {2} jours et les itérations de 4,2 à {3}. La validation parallèle réduit les délais jusqu'à {4} %.",
+    "trous": [
+      "18",
+      "8",
+      "2,1",
+      "60"
+    ],
+    "explication": "Les pré-validations techniques automatisées éliminent 60 % des allers-retours techniques."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-053",
+    "section": "2. Organiser la supervision",
+    "niveau": 3,
+    "format": "vrai_faux",
+    "question": "La validation parallèle convient à toutes les décisions, y compris celles qui exigent un débat collectif.",
+    "reponse": false,
+    "explication": "Faux : elle s'applique à des périmètres indépendants, avec des points de convergence ; on ne la force pas sur les décisions à débattre."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-054",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque soupape de gestion des exceptions à son usage.",
+    "colonne_a": [
+      "Circuit express",
+      "Comité d'arbitrage créatif",
+      "Parcours innovation"
+    ],
+    "colonne_b": [
+      "Jury d'experts pour créations atypiques hors standards",
+      "Urgences : validateurs mobilisés simultanément",
+      "Désaccord persistant tranché par des experts légitimes"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Le circuit express a un responsable désigné pour éviter les abus."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-055",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "À quoi sert la matrice pouvoir / intérêt dans la supervision ?",
+    "options": [
+      "à calculer le budget",
+      "à noter les créatifs",
+      "à classer chaque acteur pour identifier ses préoccupations, les leviers d'adhésion et les canaux adaptés",
+      "à planifier le Gantt"
+    ],
+    "reponse": 2,
+    "explication": "On repère aussi coalitions informelles, pouvoir informel et zones d'ombre relationnelles."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-056",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque type de résistance à son traitement.",
+    "colonne_a": [
+      "Freins rationnels",
+      "Résistances émotionnelles"
+    ],
+    "colonne_b": [
+      "Relation : rassurer, valoriser, impliquer",
+      "Information et formation"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "explication": "On distingue aussi tensions productives (à préserver) et conflits destructeurs."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-057",
+    "section": "2. Organiser la supervision",
+    "niveau": 1,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre la boucle de feedback en 4 étapes.",
+    "elements": [
+      "Décider et agir (test pilote)",
+      "Informer les contributeurs",
+      "Collecter",
+      "Analyser collectivement"
+    ],
+    "ordre": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "explication": "Une boucle sans ajustements visibles tue la participation."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-058",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels critères de sélection d'un outil collaboratif sont propres au créatif ? (4 réponses)",
+    "options": [
+      "la gestion des gros fichiers sans compression",
+      "le support natif des formats spécialisés (PSD, AI, INDD)",
+      "les commentaires ancrés sur des zones précises",
+      "le versioning créatif",
+      "le nombre d'émojis",
+      "la couleur de l'interface"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "S'y ajoutent preview intégrée, intégration aux logiciels de création et sécurité, ainsi que le coût total de possession (TCO)."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-059",
+    "section": "2. Organiser la supervision",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que permet un DAM (Frame.io, Frontify, Bynder) ?",
+    "options": [
+      "centraliser, versionner et contrôler l'accès aux assets de marque",
+      "gérer la paie",
+      "envoyer des newsletters",
+      "planifier les réunions"
+    ],
+    "reponse": 0,
+    "explication": "Il incarne la source de vérité unique de la centralisation intelligente."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-060",
+    "section": "3. Contrôler et corriger",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Sur quel corpus mène-t-on un audit d'alignement créatif ?",
+    "options": [
+      "le dernier livrable seul",
+      "les productions des concurrents",
+      "les seuls projets primés",
+      "un corpus représentatif des 6 à 12 derniers mois, tous canaux"
+    ],
+    "reponse": 3,
+    "explication": "Classement : fortement alignées, partiellement alignées, hors stratégie ; puis analyse des patterns d'écarts."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-061",
+    "section": "3. Contrôler et corriger",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Un audit d'alignement peut révéler des écarts systémiques appelant des mesures organisationnelles, pas seulement créatives.",
+    "reponse": true,
+    "explication": "Vrai : par exemple une corrélation entre urgence ou budget serré et écarts."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-062",
+    "section": "3. Contrôler et corriger",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque catégorie de retour créatif à son traitement.",
+    "colonne_a": [
+      "Conforme à valoriser",
+      "Écart mineur",
+      "Écart majeur"
+    ],
+    "colonne_b": [
+      "Refonte, nouvelle approche créative",
+      "À nommer explicitement",
+      "Correction simple et bienveillante"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "La reconnaissance précède l'amélioration."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-063",
+    "section": "3. Contrôler et corriger",
+    "niveau": 1,
+    "format": "texte_a_trous",
+    "question": "Complétez la structure SBI-I du feedback.",
+    "texte": "{1} : sur quoi porte le retour ; {2} : ce qui est observé ; {3} : la conséquence ; {4} : la piste proposée.",
+    "trous": [
+      "Situation",
+      "Comportement",
+      "Impact",
+      "Intention"
+    ],
+    "explication": "Valoriser avant de corriger, questions ouvertes, reformulation positive."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-064",
+    "section": "3. Contrôler et corriger",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque moment de prévention à son outil.",
+    "colonne_a": [
+      "Avant",
+      "Pendant",
+      "Après"
+    ],
+    "colonne_b": [
+      "Capitalisation, bibliothèque de cas modèles",
+      "Brief renforcé avec exemples « à faire / à ne pas faire »",
+      "Points de contrôle intermédiaires"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Un système préventif efficace se fait oublier : attention au sur-contrôle."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-065",
+    "section": "3. Contrôler et corriger",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Qu'est-ce que le « jeu des écarts » ?",
+    "options": [
+      "un test de personnalité",
+      "un exercice de 30 min où l'on trie des livrables selon leur alignement pour unifier les critères",
+      "un jeu de team-building",
+      "une sanction"
+    ],
+    "reponse": 1,
+    "explication": "Avec le débrief collectif mensuel (45 min) et le mini-test d'alignement avant chaque projet."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-066",
+    "section": "4. Piloter dans la durée et à l'international",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque niveau d'indicateur qualité à son exemple.",
+    "colonne_a": [
+      "Opérationnel (quotidien)",
+      "Tactique (mensuel)",
+      "Stratégique (trimestriel)"
+    ],
+    "colonne_b": [
+      "Reconnaissance créative, ROI",
+      "Temps de traitement, allers-retours",
+      "Coût par livrable, délai moyen de validation"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Présentés en duos quantitatif + qualitatif."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-067",
+    "section": "4. Piloter dans la durée et à l'international",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quelles 4 sources de données croiser pour mesurer la qualité ? (4 réponses)",
+    "options": [
+      "automatiques (outils collaboratifs)",
+      "déclaratives (enquêtes équipes)",
+      "observationnelles (audits de processus)",
+      "externes (retours clients)",
+      "rumeurs",
+      "intuition"
+    ],
+    "reponse": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explication": "Interprétation avec pondération contextuelle et selon le cycle de vie du projet."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-068",
+    "section": "4. Piloter dans la durée et à l'international",
+    "niveau": 2,
+    "format": "ordonnancement",
+    "question": "Remettez dans l'ordre le cycle de vie d'un projet créatif.",
+    "elements": [
+      "Réalisation",
+      "Exploration",
+      "Finalisation",
+      "Conception"
+    ],
+    "ordre": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "explication": "Les projets innovants passent environ 30 % de temps en plus en Exploration, avec un meilleur ROI."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-069",
+    "section": "4. Piloter dans la durée et à l'international",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Quelle différence fait le cours entre « écart positif » et « anomalie » ?",
+    "options": [
+      "aucune",
+      "l'écart positif est toujours financier",
+      "l'écart positif est une innovation (dépassement produisant des ajustements appréciés), l'anomalie une dérive masquant une baisse de qualité",
+      "l'anomalie est toujours technique"
+    ],
+    "reponse": 2,
+    "explication": "Le pilotage qualité est un levier d'apprentissage, pas de sanction."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-070",
+    "section": "4. Piloter dans la durée et à l'international",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Comment sont traitées les actions d'amélioration selon le cours ?",
+    "options": [
+      "dans un backlog priorisé, en sprints qualité de 4 semaines",
+      "au hasard",
+      "une fois par an",
+      "uniquement par la direction"
+    ],
+    "reponse": 0,
+    "explication": "Test pilote, retour terrain, micro-questionnaire. Philosophie Kaizen et cercles qualité."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-071",
+    "section": "4. Piloter dans la durée et à l'international",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Comment gérer la fatigue du changement ? (3 réponses)",
+    "options": [
+      "montrer les bénéfices concrets par profil",
+      "préserver des zones de stabilité",
+      "s'appuyer sur des ambassadeurs formés en premier",
+      "multiplier les transformations simultanées",
+      "supprimer tous les rituels"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Et prévoir un plan de retour en arrière avant toute intégration technologique."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-072",
+    "section": "4. Piloter dans la durée et à l'international",
+    "niveau": 2,
+    "format": "qcm",
+    "question": "Que désigne le « ma » japonais dans la supervision internationale ?",
+    "options": [
+      "une couleur porte-bonheur",
+      "une norme réglementaire",
+      "une police typographique",
+      "l'espace vide, considéré comme un élément créatif"
+    ],
+    "reponse": 3,
+    "explication": "L'Occident tend à remplir l'espace. La symbolique des couleurs et l'humour varient aussi."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-073",
+    "section": "4. Piloter dans la durée et à l'international",
+    "niveau": 2,
+    "format": "appariement",
+    "question": "Associez chaque marché à sa contrainte réglementaire.",
+    "colonne_a": [
+      "Japon",
+      "États-Unis",
+      "Corée du Sud"
+    ],
+    "colonne_b": [
+      "Proportions imposées entre texte étranger et local",
+      "Allégations nutritionnelles étayées, visuels alimentaires non trompeurs",
+      "Disclaimers FDA obligatoires"
+    ],
+    "paires": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "explication": "Validation double : qualité créative + conformité réglementaire."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-074",
+    "section": "4. Piloter dans la durée et à l'international",
+    "niveau": 2,
+    "format": "texte_a_trous",
+    "question": "Complétez l'architecture « glocale » de référence.",
+    "texte": "{1} % de standards globaux, {2} % régionaux, {3} % locaux.",
+    "trous": [
+      "60",
+      "25",
+      "15"
+    ],
+    "explication": "Équilibre dynamique, révisé périodiquement, avec des « corridors d'adaptation »."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-075",
+    "section": "4. Piloter dans la durée et à l'international",
+    "niveau": 3,
+    "format": "qcm",
+    "question": "Par quel marché commencer un déploiement international selon le cours ?",
+    "options": [
+      "le plus facile",
+      "le plus exigeant (« baptême du feu »)",
+      "le plus petit",
+      "le plus proche"
+    ],
+    "reponse": 1,
+    "explication": "Les solutions se simplifient ensuite pour les autres marchés ; retour d'expérience à chaque phase."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-076",
+    "section": "4. Piloter dans la durée et à l'international",
+    "niveau": 2,
+    "format": "vrai_faux",
+    "question": "Le squatting de marque consiste pour un tiers à déposer votre marque avant vous, notamment en Chine.",
+    "reponse": true,
+    "explication": "Vrai : il faut déposer en priorité dans les zones stratégiques et cartographier les droits par territoire."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-077",
+    "section": "4. Piloter dans la durée et à l'international",
+    "niveau": 2,
+    "format": "qcm_multiple",
+    "question": "Quels risques l'IA générative fait-elle peser sur la qualité des livrables ? (3 réponses)",
+    "options": [
+      "l'homogénéisation des créations",
+      "les biais algorithmiques",
+      "les droits d'usage des images générées",
+      "la hausse du coût du papier",
+      "la disparition des formats courts"
+    ],
+    "reponse": [
+      0,
+      1,
+      2
+    ],
+    "explication": "Elle peut aussi saturer les circuits de validation par l'accélération des volumes."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-078",
+    "section": "4. Piloter dans la durée et à l'international",
+    "niveau": 1,
+    "format": "vrai_faux",
+    "question": "Les formats courts (TikTok, Reels, Shorts) exigent d'étendre les référentiels : ratio vertical, accroche dans les 3 premières secondes, lecture sans son.",
+    "reponse": true,
+    "explication": "Vrai, de même que les exigences RSE et d'accessibilité imposent des critères mesurables."
+  },
+  {
+    "resume": "b4-r08",
+    "bloc": 4,
+    "id": "b4-r08-qz-079",
+    "section": "4. Piloter dans la durée et à l'international",
+    "niveau": 2,
+    "format": "ouverte",
+    "question": "Construisez le tableau de critères qualité d'un événement capté puis diffusé en ligne, selon la logique du référentiel.",
+    "attendus": [
+      "Une ligne par étape : communication pré-événement, captation, diffusion",
+      "Pour chaque étape, croiser critères techniques, créatifs, stratégiques et contextuels",
+      "Rendre chaque critère vérifiable (chiffre, seuil, oui/non)",
+      "Indiquer le contrôleur et la gravité (bloquant / important / de préférence)",
+      "Prévoir le traitement des écarts (mineur, modéré, critique) et le feedback SBI-I"
+    ],
+    "explication": "Le référentiel est un système de pilotage créatif, pas un catalogue de règles."
   }
 ];

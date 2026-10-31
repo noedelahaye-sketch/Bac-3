@@ -11,11 +11,11 @@
       "question": "Un manager ne fait aucun point entre le lancement et la clôture d'un projet. Quel est le principal risque identifié par le cours ?",
       "options": [
         "les collaborateurs deviennent trop autonomes",
-        "les problèmes s'accumulent et les solutions coûtent plus cher",
         "la Direction multiplie les contrôles intermédiaires",
+        "les problèmes s'accumulent et les solutions coûtent plus cher",
         "les indicateurs quantitatifs perdent leur fiabilité"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "Sans suivi entre lancement et clôture, les problèmes s'accumulent et les solutions coûtent plus cher. Le suivi sert justement à anticiper les difficultés et à proposer des actions correctives en amont."
     },
     {
@@ -34,12 +34,12 @@
       "format": "qcm",
       "question": "Un manager veut mesurer la satisfaction client mais découvre que les données ne sont pas accessibles auprès du service concerné. Quel critère d'un bon indicateur est en défaut, et que doit-il faire ?",
       "options": [
-        "la pertinence : il doit reformuler l'objectif",
-        "la spécificité : il doit adapter l'indicateur à son métier",
         "la faisabilité : il doit changer d'indicateur",
+        "la spécificité : il doit adapter l'indicateur à son métier",
+        "la pertinence : il doit reformuler l'objectif",
         "la mesurabilité : il doit passer à un indicateur comportemental"
       ],
-      "reponse": 2,
+      "reponse": 0,
       "explication": "La faisabilité vérifie que les données sont disponibles (souvent auprès d'autres services) : si elles ne le sont pas, il faut changer d'indicateur. Les autres critères sont la spécificité, la mesurabilité et la pertinence (lien direct et sans ambiguïté)."
     },
     {
@@ -61,10 +61,22 @@
         "Satisfaction client comparée à un socle de standards"
       ],
       "paires": [
-        [0, 2],
-        [1, 3],
-        [2, 0],
-        [3, 1]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
       ],
       "explication": "Quantitatif = directement compté (CA, taux de transformation) ; qualitatif = perceptions et avis comparés à un socle de standards connu de tous ; KBI (Key Behavioral Indicators) = comportements et intelligence émotionnelle ; collectif = résultat du groupe, qui renforce la cohésion."
     },
@@ -76,11 +88,11 @@
       "question": "Dans l'exemple du cours, un commercial réalise un CA de 8 k€ alors que les zones sont fixées à 0-10 k€, 10-20 k€ et 20 k€ et plus. Que conclut le manager ?",
       "options": [
         "il est « challenger » : le mettre en binôme avec un performant",
-        "il a mal compris son marché : lui proposer une formation",
+        "l'indicateur est mal choisi : le remplacer par un KBI",
         "il est « performant » : en faire une personne-ressource",
-        "l'indicateur est mal choisi : le remplacer par un KBI"
+        "il a mal compris son marché : lui proposer une formation"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "La zone 0-10 k€ signale un marché mal compris, qui appelle une formation ; 10-20 k€ = les « challengers » ; 20 k€ et plus = les « performants », futurs personnes-ressources des challengers. Les seuils servent à situer chacun et à bâtir l'accompagnement."
     },
     {
@@ -99,12 +111,12 @@
       "format": "qcm",
       "question": "Un collaborateur affiche des résultats durablement insuffisants sur son poste. Que prévoit l'article L6321-1 du Code du travail ?",
       "options": [
-        "l'employeur doit assurer l'adaptation des salariés à leur poste, par exemple via un plan de formation",
         "l'employeur doit proposer un avenant au contrat de travail",
+        "l'employeur doit assurer l'adaptation des salariés à leur poste, par exemple via un plan de formation",
         "l'employeur doit organiser une évaluation 360° avec l'accord de l'employé",
         "l'employeur doit employer 6 % de travailleurs en situation de handicap"
       ],
-      "reponse": 0,
+      "reponse": 1,
       "explication": "L'article L6321-1 impose d'assurer l'adaptation des salariés à leur poste : des résultats insuffisants peuvent déclencher un plan de formation. Le taux de 6 % de travailleurs handicapés est une autre obligation légale, mesurée par un KPI RH."
     },
     {
@@ -141,10 +153,22 @@
         "Retour d'expérience de fin de mission pour capitaliser sur les bonnes pratiques"
       ],
       "paires": [
-        [0, 2],
-        [1, 0],
-        [2, 3],
-        [3, 1]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ]
       ],
       "explication": "Le feedback « crée une action en retour » à partir des faits ; le 360° interroge collègues, subordonnés, clients et fournisseurs avec l'accord de l'employé ; le REX clôt une mission en capitalisant ; la revue de portefeuille concerne les équipes commerciales."
     },
@@ -155,12 +179,12 @@
       "format": "qcm",
       "question": "Dans une entreprise, les dirigeants définissent les objectifs et les collaborateurs définissent les résultats clés. Quelle logique OKR est appliquée, et pourquoi est-elle recommandée ?",
       "options": [
-        "top-down : elle garantit l'alignement stratégique",
-        "bottom-up : elle maximise l'autonomie des équipes",
         "hybride : c'est la plus engageante",
+        "bottom-up : elle maximise l'autonomie des équipes",
+        "top-down : elle garantit l'alignement stratégique",
         "participative : elle supprime le calendrier de suivi"
       ],
-      "reponse": 2,
+      "reponse": 0,
       "explication": "C'est la logique hybride — objectifs par les dirigeants, résultats clés par les collaborateurs — la plus engageante. En top-down les dirigeants définissent les deux ; en bottom-up les collaborateurs définissent les deux. L'OKR aligne les activités de chacun sur les objectifs globaux."
     },
     {
@@ -180,11 +204,11 @@
       "question": "Une agence veut présenter à son client et aux parties prenantes externes les réalisations du trimestre. Quel support est adapté ?",
       "options": [
         "le tableau de bord, navette visuelle entre l'équipe et le manager",
-        "le rapport de performance, conçu pour être publié et diffusé",
+        "l'auto-évaluation, comparée à des normes de référence",
         "le SIRH, qui centralise les données collaborateurs",
-        "l'auto-évaluation, comparée à des normes de référence"
+        "le rapport de performance, conçu pour être publié et diffusé"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "Le rapport de performance présente les réalisations d'une période et se publie/diffuse (intranet, parties prenantes externes). Le tableau de bord, lui, est à usage interne : il regroupe les KPI et montre tendances, écarts et progrès en un coup d'œil."
     },
     {
@@ -195,11 +219,11 @@
       "question": "Une équipe veut remonter à la cause racine d'un problème en classant les causes possibles en Machines, Méthodes, Matériaux, Mère Nature, Main-d'œuvre et Mesures. Quel outil utilise-t-elle ?",
       "options": [
         "l'analyse de variance (ANOVA)",
-        "le McKinsey 7S",
         "le diagramme d'Ishikawa (Fishbone)",
+        "le McKinsey 7S",
         "l'analyse comparative (benchmark)"
       ],
-      "reponse": 2,
+      "reponse": 1,
       "explication": "Le diagramme d'Ishikawa organise causes et effets « en arêtes de poisson » pour remonter à la cause racine via les 6M : Machines, Méthodes, Matériaux, Mère Nature (environnement), Main-d'œuvre, Mesures."
     },
     {
@@ -221,10 +245,22 @@
         "Décomposer statistiquement les écarts en facteurs"
       ],
       "paires": [
-        [0, 2],
-        [1, 3],
-        [2, 0],
-        [3, 1]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
       ],
       "explication": "Le benchmark compare à d'autres organisations, marchés ou concurrents ; l'ANOVA mesure l'influence de chaque variable dans les écarts ; les 5 Pourquoi creusent jusqu'à la cause commune ; le 7S articule 3 éléments solides (Stratégie, Structure, Systèmes) et 4 souples (Valeurs partagées, Style, Personnel, Compétences)."
     },
@@ -245,11 +281,11 @@
       "question": "Une vidéo livrée est défectueuse : l'équipe la refait en urgence, sans chercher pourquoi le défaut est apparu. Au sens de « Mots de la Qualité », de quoi s'agit-il ?",
       "options": [
         "une action corrective au sens de la norme ISO, qui élimine la cause du défaut",
-        "une action corrective au sens courant, qui supprime simplement le défaut",
         "une mesure préventive, qui anticipe les problèmes",
+        "une action corrective au sens courant, qui supprime simplement le défaut",
         "un ajustement stratégique des objectifs"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "Au sens courant (gestion de projet), l'action corrective supprime simplement le défaut : rattrapage, réparation, reprise. Au sens de la norme (certification ISO), elle élimine la cause du défaut — résolution de problème et amélioration continue, à visée curative durable."
     },
     {
@@ -275,12 +311,725 @@
       "question": "Après un projet éprouvant, un manager organise une journée courte d'activités ludiques pour resserrer les liens de l'équipe. Quel levier d'engagement active-t-il ?",
       "options": [
         "le challenge commercial, qui stimule la compétition",
-        "le team-building, apparu aux États-Unis au début des années 1980",
+        "la revue de portefeuille, qui optimise l'allocation des ressources",
         "l'organisation apprenante, qui reconnaît le droit à l'erreur",
-        "la revue de portefeuille, qui optimise l'allocation des ressources"
+        "le team-building, apparu aux États-Unis au début des années 1980"
+      ],
+      "reponse": 3,
+      "explication": "Le team-building (« renforcement d'équipe »), apparu aux États-Unis au début des années 1980, resserre les liens sociaux par le jeu sur un temps court. Il nourrit le besoin d'appartenance à un collectif, l'un des trois besoins de Maslow que le suivi entretient avec la reconnaissance et l'accomplissement."
+    },
+    {
+      "id": "b4-r05-qz-019",
+      "section": "1. Pourquoi suivre la performance",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les 3 raisons de suivre la performance ? (3 réponses)",
+      "options": [
+        "décider objectivement",
+        "motiver et faire progresser",
+        "légitimer le manager",
+        "surveiller les horaires",
+        "réduire la masse salariale"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Les résultats crédibilisent les choix managériaux face à la Direction (le manager rend compte à son N+2) et fondent primes et reconnaissance."
+    },
+    {
+      "id": "b4-r05-qz-020",
+      "section": "1. Pourquoi suivre la performance",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un commercial garde pour lui un partenariat sans en informer l'équipe. Quel obstacle au suivi de performance cela illustre-t-il ?",
+      "options": [
+        "le biais de halo",
+        "le biais de rétention d'information",
+        "l'effet d'ancrage",
+        "la loi de Pareto"
       ],
       "reponse": 1,
-      "explication": "Le team-building (« renforcement d'équipe »), apparu aux États-Unis au début des années 1980, resserre les liens sociaux par le jeu sur un temps court. Il nourrit le besoin d'appartenance à un collectif, l'un des trois besoins de Maslow que le suivi entretient avec la reconnaissance et l'accomplissement."
+      "explication": "Le suivi est une responsabilité collective qui exige la transparence."
+    },
+    {
+      "id": "b4-r05-qz-021",
+      "section": "1. Pourquoi suivre la performance",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le suivi de performance porte à la fois sur les résultats et sur la montée en compétences (savoirs, savoir-faire, savoir-être).",
+      "reponse": true,
+      "explication": "Vrai, au niveau collectif comme individuel."
+    },
+    {
+      "id": "b4-r05-qz-022",
+      "section": "2. Des objectifs aux indicateurs",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la cascade des objectifs.",
+      "elements": [
+        "Objectifs de chaque membre",
+        "Objectifs stratégiques",
+        "Objectifs opérationnels par service"
+      ],
+      "ordre": [
+        1,
+        2,
+        0
+      ],
+      "explication": "À chaque objectif son indicateur, en lien direct avec lui."
+    },
+    {
+      "id": "b4-r05-qz-023",
+      "section": "2. Des objectifs aux indicateurs",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Selon le cours, un indicateur significatif vaut mieux que trois indicateurs non significatifs.",
+      "reponse": true,
+      "explication": "Vrai : peu d'indicateurs mais ciblés, choisis selon les Facteurs Clés de Succès."
+    },
+    {
+      "id": "b4-r05-qz-024",
+      "section": "2. Des objectifs aux indicateurs",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que désigne un Facteur Clé de Succès (FCS) ?",
+      "options": [
+        "un indicateur financier",
+        "une prime de fin d'année",
+        "une condition essentielle pour qu'un projet aboutisse",
+        "un outil de reporting"
+      ],
+      "reponse": 2,
+      "explication": "Les KPI se choisissent selon le domaine et les FCS."
+    },
+    {
+      "id": "b4-r05-qz-025",
+      "section": "2. Des objectifs aux indicateurs",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que mesurent les KBI (Key Behavioral Indicators) ?",
+      "options": [
+        "les comportements et l'intelligence émotionnelle (gérer un conflit, écoute active, esprit d'initiative)",
+        "le chiffre d'affaires",
+        "le taux de conversion",
+        "les délais de livraison"
+      ],
+      "reponse": 0,
+      "explication": "Troisième type, à côté des indicateurs quantitatifs et qualitatifs."
+    },
+    {
+      "id": "b4-r05-qz-026",
+      "section": "2. Des objectifs aux indicateurs",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Un critère qualitatif comme la satisfaction client peut se mesurer quantitativement, par exemple par le nombre d'avis positifs.",
+      "reponse": true,
+      "explication": "Vrai. Les qualitatifs se jugent aussi par rapport à un socle de standards connu de tous."
+    },
+    {
+      "id": "b4-r05-qz-027",
+      "section": "2. Des objectifs aux indicateurs",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque critère d'un bon indicateur à la question à se poser.",
+      "colonne_a": [
+        "Spécificité",
+        "Mesurabilité",
+        "Faisabilité",
+        "Pertinence"
+      ],
+      "colonne_b": [
+        "Les données sont-elles disponibles ?",
+        "Est-il propre au métier, à l'équipe, à la culture ?",
+        "Le lien entre mesure et données est-il direct et sans ambiguïté ?",
+        "Est-il chiffrable, ou sur quelles données fiables s'appuyer ?"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "explication": "Puis on fixe des seuils : zones verte, orange, rouge."
+    },
+    {
+      "id": "b4-r05-qz-028",
+      "section": "2. Des objectifs aux indicateurs",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "À quoi servent les zones verte, orange et rouge ?",
+      "options": [
+        "à décorer le tableau de bord",
+        "à classer les clients",
+        "à sanctionner automatiquement",
+        "à délimiter la performance satisfaisante ou non, pour situer chacun et bâtir l'accompagnement"
+      ],
+      "reponse": 3,
+      "explication": "Exemple : les « performants » (20 k€ et +) deviennent personnes-ressources des « challengers »."
+    },
+    {
+      "id": "b4-r05-qz-029",
+      "section": "2. Des objectifs aux indicateurs",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque KPI à son domaine.",
+      "colonne_a": [
+        "Panier moyen",
+        "Turn-over",
+        "Tâches finies dans les délais",
+        "Nombre de défauts ou retours"
+      ],
+      "colonne_b": [
+        "Qualité",
+        "RH",
+        "Commercial",
+        "Projet"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "Le climat se mesure aussi : sondages, idées nouvelles, brevets, accidents du travail."
+    },
+    {
+      "id": "b4-r05-qz-030",
+      "section": "2. Des objectifs aux indicateurs",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez l'obligation légale citée parmi les KPI RH.",
+      "texte": "Le taux de {1} est une obligation légale : il doit atteindre {2} % des effectifs.",
+      "trous": [
+        "handicap",
+        "6"
+      ],
+      "explication": "Autres KPI RH : turn-over, égalité femmes/hommes, absentéisme."
+    },
+    {
+      "id": "b4-r05-qz-031",
+      "section": "2. Des objectifs aux indicateurs",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Par quels documents formalise-t-on les objectifs individuels ? (3 réponses)",
+      "options": [
+        "la fiche de poste",
+        "un avenant au contrat de travail",
+        "une lettre de mission",
+        "le règlement intérieur",
+        "une note de service anonyme"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "L'avenant est courant chez les commerciaux ; la lettre de mission sert pour une mission temporaire (expatriation, intérim)."
+    },
+    {
+      "id": "b4-r05-qz-032",
+      "section": "2. Des objectifs aux indicateurs",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Le CA collectif est insuffisant. Que permet l'indicateur individuel ?",
+      "options": [
+        "de sanctionner toute l'équipe",
+        "de cibler le problème (région, produit, clientèle)",
+        "de supprimer l'objectif collectif",
+        "rien de plus"
+      ],
+      "reponse": 1,
+      "explication": "Les indicateurs individuels valorisent la contribution mais peuvent créer un climat compétitif ; les collectifs renforcent la cohésion."
+    },
+    {
+      "id": "b4-r05-qz-033",
+      "section": "3. Collecter et suivre : outils et temps forts",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque outil de collecte à son contenu.",
+      "colonne_a": [
+        "CRM",
+        "SIRH",
+        "Business Intelligence"
+      ],
+      "colonne_b": [
+        "Données collaborateurs, turn-over, absentéisme",
+        "Décider sur des données factuelles",
+        "Gestion de la relation client"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "explication": "Les quantitatifs se centralisent dans un outil unique partagé."
+    },
+    {
+      "id": "b4-r05-qz-034",
+      "section": "3. Collecter et suivre : outils et temps forts",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque support à sa fonction.",
+      "colonne_a": [
+        "Tableau de bord",
+        "Rapport de performance"
+      ],
+      "colonne_b": [
+        "Réalisations d'une période, publiées et diffusées",
+        "Outil interne, « navette » visuelle entre équipe et manager"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Le bilan social, obligatoire au-delà de 300 salariés, est un exemple de rapport."
+    },
+    {
+      "id": "b4-r05-qz-035",
+      "section": "3. Collecter et suivre : outils et temps forts",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "L'entretien annuel d'évaluation suffit à lui seul pour suivre la performance d'un collaborateur.",
+      "reponse": false,
+      "explication": "Faux : il faut le compléter par des feedbacks réguliers sur les jalons."
+    },
+    {
+      "id": "b4-r05-qz-036",
+      "section": "3. Collecter et suivre : outils et temps forts",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Comment se déroule un feedback (rétroaction) selon le cours ?",
+      "options": [
+        "on commence par le ressenti, puis les faits",
+        "on donne directement la solution",
+        "on relate les faits (« 30 % de l'objectif »), puis le ressenti ou la réaction",
+        "on se limite aux points positifs"
+      ],
+      "reponse": 2,
+      "explication": "« Créer une action en retour »."
+    },
+    {
+      "id": "b4-r05-qz-037",
+      "section": "3. Collecter et suivre : outils et temps forts",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Une évaluation à 360° peut être lancée sans l'accord de l'employé concerné.",
+      "reponse": false,
+      "explication": "Faux : elle nécessite son accord préalable."
+    },
+    {
+      "id": "b4-r05-qz-038",
+      "section": "3. Collecter et suivre : outils et temps forts",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "D'où vient la méthode OKR et que vise-t-elle ?",
+      "options": [
+        "de la Silicon Valley (Netflix, Google), pour aligner les activités de chacun sur les objectifs globaux",
+        "du Japon, pour réduire les gaspillages",
+        "de l'armée, pour contrôler les équipes",
+        "de l'ISO, pour certifier la qualité"
+      ],
+      "reponse": 0,
+      "explication": "Chacun comprend l'intérêt de son travail : motivation et sens renforcés."
+    },
+    {
+      "id": "b4-r05-qz-039",
+      "section": "3. Collecter et suivre : outils et temps forts",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque logique OKR à qui fixe quoi.",
+      "colonne_a": [
+        "Top-down",
+        "Bottom-up",
+        "Hybride"
+      ],
+      "colonne_b": [
+        "Objectifs et résultats clés fixés par les collaborateurs",
+        "Objectifs par les dirigeants, résultats clés par les collaborateurs",
+        "Objectifs et résultats clés fixés par les dirigeants"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "explication": "L'hybride est la plus engageante."
+    },
+    {
+      "id": "b4-r05-qz-040",
+      "section": "3. Collecter et suivre : outils et temps forts",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Pour un critère qualité de captation vidéo, quelle formulation respecte les critères d'un bon indicateur ?",
+      "options": [
+        "« une bonne captation »",
+        "« faire de son mieux »",
+        "« une captation satisfaisante »",
+        "« zéro interruption de flux »"
+      ],
+      "reponse": 3,
+      "explication": "Le critère doit être précis et mesurable."
+    },
+    {
+      "id": "b4-r05-qz-041",
+      "section": "4. Analyser les résultats, identifier les écarts",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre l'analyse de la performance.",
+      "elements": [
+        "Comparer aux objectifs, prévisions ou normes (analyse des écarts)",
+        "Prendre connaissance objective des données (analyse des résultats)",
+        "Comprendre les causes, endogènes ou exogènes"
+      ],
+      "ordre": [
+        1,
+        0,
+        2
+      ],
+      "explication": "Les KPI servent de base d'étalonnage."
+    },
+    {
+      "id": "b4-r05-qz-042",
+      "section": "4. Analyser les résultats, identifier les écarts",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque facteur à son origine.",
+      "colonne_a": [
+        "Facteurs endogènes",
+        "Facteurs exogènes"
+      ],
+      "colonne_b": [
+        "Le marché, les lois, la société",
+        "L'équipe : efforts, compétences, investissement"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "On cherche aussi des corrélations (satisfaction client médiocre ↔ turn-over)."
+    },
+    {
+      "id": "b4-r05-qz-043",
+      "section": "4. Analyser les résultats, identifier les écarts",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez les 6M du diagramme d'Ishikawa.",
+      "texte": "Machines, {1}, Matériaux, {2} (environnement), {3}, Mesures.",
+      "trous": [
+        "Méthodes",
+        "Mère Nature",
+        "Main-d'œuvre"
+      ],
+      "explication": "Le diagramme en arêtes de poisson remonte à la cause racine."
+    },
+    {
+      "id": "b4-r05-qz-044",
+      "section": "4. Analyser les résultats, identifier les écarts",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels sont les éléments « solides » du modèle McKinsey 7S ? (3 réponses)",
+      "options": [
+        "Stratégie",
+        "Structure",
+        "Systèmes",
+        "Valeurs partagées",
+        "Style",
+        "Personnel"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Solides : Stratégie, Structure, Systèmes. Souples : Valeurs partagées, Style, Personnel, Compétences. Le modèle montre leur interdépendance."
+    },
+    {
+      "id": "b4-r05-qz-045",
+      "section": "4. Analyser les résultats, identifier les écarts",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un problème a de nombreuses causes ; agir sur toutes épuiserait les ressources. Quel outil isole la cause racine ?",
+      "options": [
+        "le benchmark",
+        "l'arbre des causes (diagramme des relations)",
+        "l'ANOVA",
+        "le SWOT"
+      ],
+      "reponse": 1,
+      "explication": "Construit collectivement, il est adapté aux problèmes multifactoriels."
+    },
+    {
+      "id": "b4-r05-qz-046",
+      "section": "4. Analyser les résultats, identifier les écarts",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le SWOT ne s'utilise qu'en amont d'un projet.",
+      "reponse": false,
+      "explication": "Faux : en amont et en cours de projet."
+    },
+    {
+      "id": "b4-r05-qz-047",
+      "section": "4. Analyser les résultats, identifier les écarts",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que permet l'analyse des tendances ?",
+      "options": [
+        "comparer aux concurrents",
+        "décomposer statistiquement les écarts",
+        "repérer schémas et saisonnalités dans les données historiques",
+        "cartographier les processus"
+      ],
+      "reponse": 2,
+      "explication": "Le benchmark compare ; l'ANOVA décompose les écarts en facteurs."
+    },
+    {
+      "id": "b4-r05-qz-048",
+      "section": "5. Corriger et ajuster",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque acception de l'action corrective à son effet.",
+      "colonne_a": [
+        "Sens de la norme (ISO)",
+        "Sens courant (gestion de projet)"
+      ],
+      "colonne_b": [
+        "Supprimer le défaut : rattrapage, reprise",
+        "Éliminer la cause du défaut, visée curative durable"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Source : « Mots de la Qualité » (France Qualité)."
+    },
+    {
+      "id": "b4-r05-qz-049",
+      "section": "5. Corriger et ajuster",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Face à un problème, il faut toujours se demander s'il aurait pu être anticipé.",
+      "reponse": true,
+      "explication": "Vrai : c'est le passage du curatif (réactif) au préventif."
+    },
+    {
+      "id": "b4-r05-qz-050",
+      "section": "5. Corriger et ajuster",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels sont les KPI d'un plan d'action correctif ? (3 réponses)",
+      "options": [
+        "délais",
+        "coûts",
+        "qualité",
+        "nombre de réunions",
+        "nombre de mails"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "S'il couvre tout le projet, il remplace le plan initial ; sinon pilotage conjoint."
+    },
+    {
+      "id": "b4-r05-qz-051",
+      "section": "5. Corriger et ajuster",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que le learning by doing comme action corrective individuelle ?",
+      "options": [
+        "confier une mission à quelqu'un qui n'a pas encore les compétences, pour qu'il grandisse en situation réelle",
+        "une formation théorique en salle",
+        "un tutorat à distance",
+        "une sanction disciplinaire"
+      ],
+      "reponse": 0,
+      "explication": "Les tâches doivent rester proportionnées à l'enjeu."
+    },
+    {
+      "id": "b4-r05-qz-052",
+      "section": "5. Corriger et ajuster",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Quelle cause fréquente d'échec collectif le cours pointe-t-il ?",
+      "options": [
+        "la météo",
+        "un excès de réunions",
+        "un trop grand nombre de KPI",
+        "une allocation déficiente des tâches au regard des compétences"
+      ],
+      "reponse": 3,
+      "explication": "Actions collectives : causes analysées avec le groupe, nouveaux process, communication repensée, répartition revue."
+    },
+    {
+      "id": "b4-r05-qz-053",
+      "section": "5. Corriger et ajuster",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque notion à sa définition.",
+      "colonne_a": [
+        "Efficacité",
+        "Efficience"
+      ],
+      "colonne_b": [
+        "Rapport entre résultats et ressources consommées",
+        "Atteinte du résultat"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Le reporting sert les deux."
+    },
+    {
+      "id": "b4-r05-qz-054",
+      "section": "5. Corriger et ajuster",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Ajuster un objectif après un changement majeur (réglementation, crise) est légitime : « à l'impossible nul n'est tenu ».",
+      "reponse": true,
+      "explication": "Vrai : changer de direction, décaler dans le temps ou revoir la cible."
+    },
+    {
+      "id": "b4-r05-qz-055",
+      "section": "6. Maintenir l'engagement",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quels besoins de la pyramide de Maslow le suivi de performance nourrit-il ? (3 réponses)",
+      "options": [
+        "la reconnaissance",
+        "la réalisation / l'accomplissement",
+        "l'appartenance à un collectif",
+        "les besoins physiologiques",
+        "le besoin de sécurité financière"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Récompenses : primes, mobilité interne, promotion, projets ambitieux."
+    },
+    {
+      "id": "b4-r05-qz-056",
+      "section": "6. Maintenir l'engagement",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition de la motivation au travail.",
+      "texte": "La motivation est un processus qui {1}, oriente, {2} et {3} le comportement des individus vers la réalisation d'objectifs attendus.",
+      "trous": [
+        "active",
+        "dynamise",
+        "maintient"
+      ],
+      "explication": "Un management qui donne du sens engage."
+    },
+    {
+      "id": "b4-r05-qz-057",
+      "section": "6. Maintenir l'engagement",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les organisations apprenantes considèrent l'échec comme une faute à sanctionner.",
+      "reponse": false,
+      "explication": "Faux : elles valorisent le droit à l'erreur ; l'échec devient une occasion d'apprendre."
+    },
+    {
+      "id": "b4-r05-qz-058",
+      "section": "6. Maintenir l'engagement",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Selon l'Observatoire du Management 2021, quelle part des collaborateurs jugent leur manager « bon manager » ?",
+      "options": [
+        "38 %",
+        "68 %",
+        "52 %",
+        "85 %"
+      ],
+      "reponse": 1,
+      "explication": "68 %, soit 5 points de plus qu'en 2019."
+    },
+    {
+      "id": "b4-r05-qz-059",
+      "section": "6. Maintenir l'engagement",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Après une analyse d'écarts entre un livrable et le brief client, décrivez la démarche corrective à suivre selon le cours.",
+      "attendus": [
+        "Constat objectif : écarts entre réel (livrable) et prévisionnel (brief), positifs ou négatifs",
+        "Analyse des causes endogènes et exogènes (Ishikawa, 5 pourquoi)",
+        "Réévaluer si besoin l'objectif (réaliste, SMARTEF)",
+        "Plan d'action correctif complet (CQQCOQP) avec responsabilités, ressources, délais et KPI délais/coûts/qualité",
+        "Actions individuelles (formation, tutorat) ou collectives (process, répartition), feedback et maintien de l'engagement"
+      ],
+      "explication": "Toujours se demander si le problème aurait pu être anticipé."
     }
   ]
 }

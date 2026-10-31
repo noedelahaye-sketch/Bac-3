@@ -1,6 +1,4 @@
 (function(){
-  var START = new Date(2026,6,30);
-  var DEFAULT_DEADLINE = "2026-12-01";
   var KEY = "studi-suivi-v1";
 
   var ALL = [];
@@ -8,7 +6,7 @@
 
   var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, cardState:{}, cardEdits:{}, quiz:[], quizSeen:{}, cardRuns:[], coursLu:{}, statusAt:{}, coursLuAt:{}, coursLuSection:{}, coursNotes:{},
             newToday:{d:0,n:0}, doneToday:{d:0,n:0}, streak:{current:0,max:0,lastDate:0}, cartes:{},
-            deadline:DEFAULT_DEADLINE, open:{b1:true}, view:"accueil", _ts:0 };
+            open:{b1:true}, view:"accueil", _ts:0 };
   var SES=null, QZ=null, saveTimer=null;
   var main = document.getElementById("main");
   var nav  = document.getElementById("nav");
@@ -46,6 +44,9 @@
       var e=new Error("gh "+res.status); e.status=res.status;
       /* ce que GitHub répond vraiment : sans ça, un 403 ne dit pas pourquoi */
       e.scopes=res.headers.get("x-oauth-scopes");
+      var rz=parseInt(res.headers.get("x-ratelimit-reset"),10);
+      var ra=parseInt(res.headers.get("retry-after"),10);
+      e.reprise=ra?Date.now()+ra*1000:(rz?rz*1000:0);
       try{ e.detail=(await res.json()).message||""; }catch(x){ e.detail=""; }
       throw e;
     }
@@ -105,6 +106,10 @@
   function causeSync(e){
     var s=e&&e.status;
     if(s===401) return "jeton refusé — il a expiré ou a été révoqué, il faut en recréer un";
+    if(s===403 && /rate limit|abuse/i.test(e.detail||"")){
+      var h=e.reprise?new Date(e.reprise).toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"}):"";
+      return "limite d'appels GitHub atteinte — rien n'est perdu, la synchro reprendra "+(h?"vers "+h:"dans moins d'une heure");
+    }
     if(s===403){
       var d=e.detail?" · GitHub répond : « "+e.detail+" »":"";
       var sc=(e.scopes===null||e.scopes===undefined)?" · jeton sans portées (fine-grained ?)":(" · portées du jeton : "+(e.scopes||"aucune"));
@@ -137,6 +142,11 @@
      que ce qui peut passer plus tard (réseau, panne côté GitHub). */
   var syncBloque=false;
   var syncEssais=0;
+  var syncReprise=0; /* heure à laquelle GitHub lève une limite d'appels */
+  function noterReprise(e){ syncReprise=(e&&e.reprise)||0; }
+  function leverSiRepris(){
+    if(syncBloque && syncReprise && Date.now()>syncReprise){ syncBloque=false; syncReprise=0; syncEssais=0; }
+  }
   function faultRecuperable(e){
     var s=e&&e.status;
     if(s===401 || s===403 || s===404) return false;
@@ -162,7 +172,7 @@
     }).catch(function(e){
       syncStatus={state:"error", at:syncStatus.at, cause:causeSync(e)};
       renderSyncStatus();
-      if(!faultRecuperable(e)){ syncBloque=true; return; }
+      if(!faultRecuperable(e)){ syncBloque=true; noterReprise(e); return; }
       /* la modification reste en attente : nouvelle tentative espacée */
       syncEssais++;
       clearTimeout(syncPushTimer);
@@ -199,7 +209,7 @@
         syncEssais++;
         reconcileTimer=setTimeout(tenterReconcile, delaiReessai());
       } else {
-        syncBloque=true;
+        syncBloque=true; noterReprise(e);
       }
     }
     renderSyncStatus();
@@ -213,6 +223,7 @@
      On relit donc à chaque retour au premier plan. */
   var dernierEchange=0;
   async function rafraichirDepuisDistant(){
+    leverSiRepris();
     if(!getSyncToken() || syncBloque) return;
     if(!syncPret){ await tenterReconcile(); return; }
     /* nos propres modifications d'abord : sinon la relecture les écraserait */
@@ -228,7 +239,7 @@
       syncStatus={state:"ok", at:new Date()};
     }catch(e){
       syncStatus={state:"error", at:syncStatus.at, cause:causeSync(e)};
-      if(!faultRecuperable(e)) syncBloque=true;
+      if(!faultRecuperable(e)){ syncBloque=true; noterReprise(e); }
     }
     renderSyncStatus();
   }
@@ -281,7 +292,7 @@
     S.doneToday=sv.doneToday||{d:0,n:0};
     S.cartes=sv.cartes||{};
     S.streak=sv.streak||{current:0,max:0,lastDate:0};
-    S.deadline=sv.deadline||DEFAULT_DEADLINE; S.open=sv.open||{b1:true}; S._ts=sv._ts||0;
+    S.open=sv.open||{b1:true}; S._ts=sv._ts||0;
   }
   /* save() = vraie modification de données : avance _ts et déclenche la synchro.
      save({silent:true}) = simple navigation : enregistre en local sans toucher à
@@ -355,13 +366,6 @@
       '<span class="tile-title">À venir</span>'+
       '<span class="tile-cas">Pas encore de contenu de cours pour cette question.</span>'+
       '</div>';
-  }
-  function weeksLeft(){ return Math.max(0,(new Date(S.deadline+"T00:00:00") - new Date())/(1000*60*60*24*7)); }
-  function expectedDone(){
-    var d=new Date(S.deadline+"T00:00:00");
-    var total=(d-START)/86400000, gone=(new Date()-START)/86400000;
-    if(total<=0) return ALL.length;
-    return Math.round(ALL.length*Math.min(1,Math.max(0,gone/total)));
   }
   function isDone(id){ var s=S.status[id]; return s==="draft"||s==="done"; }
   function doneCount(){ return ALL.filter(function(q){return isDone(q.id);}).length; }
@@ -556,8 +560,8 @@
   }
   function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=a[i];a[i]=a[j];a[j]=x;} return a; }
 
-  var VIEWS=[["accueil","Accueil"],["dossiers","Dossiers"],["cours","Cours"],["apprendre","Apprendre"]];
-  var KNOWN_VIEWS=["accueil","dossiers","cours","apprendre","flashcards","flashcardsBloc","flashcardsSort","quiz","quizBloc","cartes","cartesListe","cartesBloc","cartesModeles","carteModele","carte","carteEdit","recherche"];
+  var VIEWS=[["accueil","Accueil"],["plan","Plan"],["dossiers","Dossiers"],["cours","Cours"],["apprendre","Apprendre"]];
+  var KNOWN_VIEWS=["accueil","plan","dossiers","cours","apprendre","flashcards","flashcardsBloc","flashcardsSort","quiz","quizBloc","cartes","cartesListe","cartesBloc","cartesModeles","carteModele","carte","carteEdit","recherche"];
   function parseHash(hash){
     var h=(hash||"").replace(/^#/,"");
     if(h.charAt(0)==="/") h=h.slice(1);
@@ -607,6 +611,7 @@
     var v=ROUTE.view, id=ROUTE.id;
     var cb=(typeof COURS_BLOCS!=="undefined")?COURS_BLOCS:[];
     if(v==="dossiers") return "Dossiers";
+    if(v==="plan") return "Plan d'action";
     if(v==="cours") return "Cours";
     if(v==="apprendre") return "Apprendre";
     if(v==="bloc"){ var b=blocById(id); return b ? b.code+" · "+b.titre : "Bloc"; }
@@ -761,17 +766,15 @@
     }
   });
 
-  function tickClass(q,i,exp,left){
+  function tickClass(q){
     var st=S.status[q.id];
     var c = st==="done"?"relu":st==="draft"?"done":st==="wip"?"wip":"";
-    if(i===exp && left>0) c+=" mark";
     return c;
   }
   function renderCadenceCompact(){
     var cc=document.getElementById("cadenceCompact"); if(!cc) return;
-    var done=doneCount(), left=ALL.length-done, exp=expectedDone();
     var h="";
-    ALL.forEach(function(q,i){ h+='<div class="seg '+tickClass(q,i,exp,left)+'"></div>'; });
+    ALL.forEach(function(q,i){ h+='<div class="seg '+tickClass(q)+'"></div>'; });
     cc.innerHTML=h;
   }
 
@@ -780,6 +783,7 @@
     var activeView = (ROUTE.view==="question"||ROUTE.view==="bloc"||ROUTE.view==="coursQuestion") ? "dossiers" : (ROUTE.view==="coursBloc"||ROUTE.view==="coursResume") ? "cours" : (ROUTE.view==="flashcards"||ROUTE.view==="flashcardsBloc"||ROUTE.view==="flashcardsSort"||ROUTE.view==="quiz"||ROUTE.view==="quizBloc"||ROUTE.view==="cartes"||ROUTE.view==="cartesListe"||ROUTE.view==="cartesBloc"||ROUTE.view==="cartesModeles"||ROUTE.view==="carteModele"||ROUTE.view==="carte"||ROUTE.view==="carteEdit") ? "apprendre" : ROUTE.view;
     VIEWS.forEach(function(v){
       var badge="";
+      if(v[0]==="plan"){ var pj=planCalc().parDate[planNow()]; var pr=pj?pj.items.filter(function(i){return !i.fait;}).length:0; if(pr) badge='<i>'+pr+'</i>'; }
       if(v[0]==="dossiers"){ var r=ALL.length-doneCount(); if(r) badge='<i>'+r+'</i>'; }
       if(v[0]==="apprendre"){ var d=dueCount(); if(d) badge='<i>'+d+'</i>'; }
       h+='<button class="navb'+(activeView===v[0]?" on":"")+'" data-go="'+v[0]+'">'+v[1]+badge+'</button>';
@@ -806,6 +810,281 @@
       if(e.key==="Enter"){ e.preventDefault(); submitSearch(); }
     });
     renderCadenceCompact();
+  }
+
+  /* ---------- PLAN ---------- */
+  var JOURS_C=["dim.","lun.","mar.","mer.","jeu.","ven.","sam."];
+  var JOURS_L=["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
+  var MOIS_C=["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."];
+  var MOIS_L=["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+  var QBYID=null, planScrolled=false;
+  function planQ(id){
+    if(!QBYID){ QBYID={}; ALL.forEach(function(q){ QBYID[q.id]=q; }); }
+    return QBYID[id]||null;
+  }
+  /* ?plandate=2026-11-05 : simule un autre jour (essais), sans rien enregistrer */
+  function planNow(){
+    var m=/[?&]plandate=(\d{4}-\d{2}-\d{2})/.exec(location.search||"");
+    return m ? m[1] : PLAN.ymd(new Date());
+  }
+  function planCalc(){ return PLAN.calculer(isDone, planNow()); }
+  function dateCourte(s){ var d=PLAN.parse(s); return JOURS_C[d.getDay()]+" "+d.getDate()+" "+MOIS_C[d.getMonth()]; }
+  function dateLongue(s){ var d=PLAN.parse(s); return JOURS_L[d.getDay()]+" "+d.getDate()+" "+MOIS_L[d.getMonth()]; }
+  function plur(n,s,p){ return n+" "+(n>1?(p||s+"s"):s); }
+
+  function planChip(it, auj, wbloc){
+    var q=planQ(it.id); if(!q) return "";
+    var cls="pc"+(it.fait?" pc-done":"")+(it.deplace&&!it.fait?" pc-moved":"");
+    var h='<div class="'+cls+'" data-b="'+it.bloc+'">';
+    h+='<button class="pc-box" data-plan-toggle="'+it.id+'" aria-label="'+(it.fait?"Marquer non fait":"Marquer fait")+'" aria-pressed="'+(it.fait?"true":"false")+'">';
+    h+='<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 6.8"/></svg></button>';
+    h+='<button class="pc-body" data-goq="'+it.id+'">';
+    h+='<span class="pc-t"><span class="pc-code">'+(wbloc&&wbloc!==it.bloc?esc(q.bloc.code)+" · ":"")+esc(q.n)+'</span> '+esc(q.t)+'</span>';
+    if(it.deplace&&!it.fait){
+      h+='<span class="pc-tag">'+(it.date?'prévu '+dateCourte(it.origDate):'ne tient plus avant le dépôt')+'</span>';
+    }
+    h+='</button></div>';
+    return h;
+  }
+
+  function planJoursTenus(r, auj){
+    var n=0;
+    var pj=r.jours.filter(function(j){ return j.type==="plan" && j.date<=auj; });
+    for(var i=pj.length-1;i>=0;i--){
+      var ok=r.items.filter(function(it){ return it.origDate===pj[i].date; }).every(function(it){ return it.fait; });
+      if(ok) n++; else if(pj[i].date!==auj) break;
+    }
+    return n;
+  }
+
+  function planBadges(r, tenus){
+    var out=[];
+    out.push({lbl:"Lancé", ok:r.faits>=1, hint:"1re question faite"});
+    PLAN.SEMAINES.filter(function(w){return !w.tampon;}).forEach(function(w){
+      var its=ALL.filter(function(q){ return q.bloc.id===w.bloc; });
+      var ok=its.length>0 && its.every(function(q){ return isDone(q.id); });
+      out.push({lbl:"Bloc "+w.bloc.slice(1)+" bouclé", ok:ok, hint:its.length+" questions"});
+    });
+    out.push({lbl:"3 jours tenus", ok:tenus>=3, hint:"d'affilée"});
+    out.push({lbl:"Mi-parcours", ok:r.faits>=Math.ceil(r.total/2), hint:Math.ceil(r.total/2)+" livrables"});
+    out.push({lbl:"Tout est fait", ok:r.faits>=r.total, hint:r.total+" livrables"});
+    return out;
+  }
+
+  function planAujourdhui(r, auj){
+    var jr=r.parDate[auj];
+    var h='<div class="pl-today">';
+    var debut=PLAN.SEMAINES[0].debut;
+    if(auj<debut){
+      var d=PLAN.diffDays(auj,debut);
+      h+='<div class="pl-lab">Le plan démarre '+dateLongue(debut)+'</div>';
+      h+='<div class="pl-calm">'+(d===1?'Demain':'Dans '+d+' jours')+', première semaine : Bloc 1, questions 1 et 2. Prépare-toi, relis les critères.</div>';
+      return h+'</div>';
+    }
+    if(!jr){
+      h+='<div class="pl-lab">Le plan est terminé</div><div class="pl-calm">Il ne reste que ce qui n\'est pas fait : le dernier jour de secours était le '+dateLongue(PLAN.DEPOT)+'.</div>';
+      return h+'</div>';
+    }
+    var its=jr.items, faits=its.filter(function(i){return i.fait;}).length;
+    h+='<div class="pl-lab">Aujourd\'hui · '+dateLongue(auj)+'</div>';
+    if(!its.length){
+      var nxt=r.items.filter(function(i){ return !i.fait && i.date && i.date>auj; })[0];
+      h+='<div class="pl-calm">'+(jr.type==="off"?'Jour barré dans ton plan : repos, rien à rattraper.':'Rien de prévu aujourd\'hui.')+
+         (nxt?' Prochaine question : <strong>'+dateCourte(nxt.date)+'</strong>.':'')+'</div>';
+      var avance=r.items.filter(function(i){ return !i.fait; })[0];
+      if(avance && jr.type!=="off") h+='<button class="pl-ahead" data-goq="'+avance.id+'">Prendre de l\'avance : '+esc((planQ(avance.id)||{}).n||"")+' &rarr;</button>';
+      return h+'</div>';
+    }
+    var tout=faits===its.length;
+    h+='<div class="pl-daybar"><span class="pl-daybar-fill'+(tout?' full':'')+'" style="width:'+Math.round(faits/its.length*100)+'%"></span></div>';
+    h+='<div class="pl-daycount">'+(tout?'Journée tenue':faits+' / '+its.length+' faite'+(faits>1?'s':''))+'</div>';
+    h+='<div class="pl-chips">';
+    its.forEach(function(it){ h+=planChip(it, auj, null); });
+    h+='</div>';
+    if(tout){
+      var suite=r.items.filter(function(i){ return !i.fait; })[0];
+      h+='<div class="pl-calm ok">Les '+plur(its.length,'question')+' du jour sont faites. '+(suite?'Si tu as encore de l\'élan, la suite est <button class="pl-inline" data-goq="'+suite.id+'">'+esc((planQ(suite.id)||{}).n||"")+'</button>.':'Tout est terminé.')+'</div>';
+    }
+    return h+'</div>';
+  }
+
+  function planSemaine(r, w, auj){
+    var fin=PLAN.addDays(w.debut,6);
+    var origs=r.items.filter(function(i){ return i.origDate>=w.debut && i.origDate<=fin; });
+    var faits=origs.filter(function(i){return i.fait;}).length, tot=origs.length;
+    var bouclee=tot>0 && faits===tot;
+    var etat, ec;
+    if(bouclee){ etat="Bouclée"; ec="ok"; }
+    else if(fin<auj && tot){ etat="En retard"; ec="late"; }
+    else if(w.debut<=auj && auj<=fin){ etat="En cours"; ec="now"; }
+    else { etat="À venir"; ec=""; }
+    var pct=tot?Math.round(faits/tot*100):0;
+    var dFin=PLAN.parse(fin), dDeb=PLAN.parse(w.debut);
+    var h='<section class="pw'+(ec==="now"?' now':'')+'" data-b="'+w.bloc+'"><header class="pw-head">';
+    h+='<span class="pw-n">S'+w.n+'</span>';
+    h+='<span class="pw-main"><span class="pw-t">'+esc(w.titre)+'</span>';
+    h+='<span class="pw-d">'+dDeb.getDate()+' '+MOIS_C[dDeb.getMonth()]+' → '+dFin.getDate()+' '+MOIS_C[dFin.getMonth()]+'</span></span>';
+    h+='<span class="pw-state '+ec+'">'+etat+'</span>';
+    h+='<span class="pw-bar"><span class="pw-fill" style="width:'+pct+'%"></span></span>';
+    h+='<span class="pw-cnt">'+faits+'/'+tot+'</span></header>';
+    /* un jour par colonne ; le dimanche seulement s'il reçoit du travail reporté */
+    var cols=[], tracks=[];
+    for(var i=0;i<7;i++){
+      var date=PLAN.addDays(w.debut,i), j=r.parDate[date];
+      if(!j) continue;
+      cols.push(j); tracks.push(date===auj?"minmax(230px,2fr)":"minmax(138px,1fr)");
+    }
+    h+='<div class="pw-cal" style="grid-template-columns:'+tracks.join(" ")+'">';
+    cols.forEach(function(j){
+      var date=j.date, isT=date===auj;
+      var cls="pd"+(isT?" pd-today":"")+(date<auj?" pd-past":"")+(j.type==="off"||j.type==="repos"?" pd-off":"");
+      var dd=PLAN.parse(date);
+      var tout=j.items.length>0 && j.items.every(function(i){return i.fait;});
+      h+='<div class="'+cls+(tout?' pd-ok':'')+'"'+(isT?' data-auj="1"':'')+'><div class="pd-h"><span class="pd-dow">'+JOURS_C[dd.getDay()]+'</span><span class="pd-num">'+dd.getDate()+'</span>';
+      if(isT) h+='<em>aujourd\'hui</em>';
+      else if(tout) h+='<em class="ok">tenu</em>';
+      h+='</div><div class="pd-chips">';
+      if(j.type==="off") h+='<span class="pd-note">Jour barré</span>';
+      else if(j.type==="repos") h+='<span class="pd-note">Repos</span>';
+      else if(!j.items.length) h+='<span class="pd-note">'+(w.tampon?'Marge':'—')+'</span>';
+      else j.items.forEach(function(it){ h+=planChip(it, auj, w.bloc); });
+      h+='</div></div>';
+    });
+    h+='</div></section>';
+    return h;
+  }
+
+  function planMois(r, auj){
+    var h='<div class="pm"><div class="pm-dow">';
+    ["lun.","mar.","mer.","jeu.","ven.","sam.","dim."].forEach(function(d){ h+='<span>'+d+'</span>'; });
+    h+='</div>';
+    var debut=PLAN.SEMAINES[0].debut, k=0;
+    while(PLAN.addDays(debut,k*7)<=PLAN.DEPOT){
+      var d0=PLAN.addDays(debut,k*7);
+      var w=PLAN.SEMAINES.filter(function(x){return x.debut===d0;})[0];
+      h+='<div class="pm-row"'+(w?' data-b="'+w.bloc+'"':'')+'>';
+      for(var i=0;i<7;i++){
+        var date=PLAN.addDays(d0,i), j=r.parDate[date];
+        if(!j){ h+='<div class="pm-day pm-void"></div>'; continue; }
+        var dd=PLAN.parse(date), isT=date===auj;
+        var tout=j.items.length>0 && j.items.every(function(x){return x.fait;});
+        h+='<div class="pm-day'+(isT?' pm-today':'')+(tout?' pm-ok':'')+(j.type==="off"||j.type==="repos"?' pm-off':'')+(date<auj&&!tout?' pm-past':'')+'">';
+        h+='<span class="pm-n">'+dd.getDate()+((dd.getDate()===1||date===debut)?'<em>'+MOIS_C[dd.getMonth()]+'</em>':'')+'</span>';
+        j.items.forEach(function(it){
+          var q=planQ(it.id); if(!q) return;
+          var lib=w&&w.bloc!==it.bloc?it.bloc.slice(1)+'·':'';
+          h+='<button class="mp'+(it.fait?' mp-done':'')+(it.deplace&&!it.fait?' mp-moved':'')+'" data-b="'+it.bloc+'" data-plan-toggle="'+it.id+'" title="'+esc(q.bloc.code+' '+q.n+' — '+q.t+(it.deplace&&!it.fait&&it.date?' (prévu '+dateCourte(it.origDate)+')':''))+'">';
+          h+='<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 6.8"/></svg>'+lib+esc(q.n)+'</button>';
+        });
+        if(j.type==='repos') h+='<span class="pm-rest">repos</span>';
+        h+='</div>';
+      }
+      h+='</div>'; k++;
+    }
+    h+='</div><div class="pm-leg">';
+    [["b1","Bloc 1"],["b2","Bloc 2"],["b4","Bloc 4"],["b3","Bloc 3"]].forEach(function(b){ h+='<span class="pm-leg-i" data-b="'+b[0]+'"><i></i>'+b[1]+'</span>'; });
+    h+='<span class="pm-leg-i pm-leg-late"><i></i>reporté</span></div>';
+    return h;
+  }
+
+  function vPlan(){
+    var auj=planNow(), r=planCalc();
+    var pct=Math.round(r.faits/r.total*100);
+    var C=2*Math.PI*46, off=C*(1-r.faits/r.total);
+    var restants=PLAN.diffDays(auj,PLAN.DEPOT);
+    var tenus=planJoursTenus(r,auj);
+    var verdict, vc;
+    if(r.faits===r.total){ verdict="Tout est fait. Bravo."; vc="ok"; }
+    else if(r.horsPlan.length){ verdict=plur(r.horsPlan.length,'question')+' ne tient'+(r.horsPlan.length>1?'nent':'')+' plus avant le dépôt.'; vc="late"; }
+    else if(r.enRetard>0){ verdict=plur(r.enRetard,'question')+' de retard : le plan a glissé, tout ce qui suit est décalé.'; vc="late"; }
+    else if(r.enAvance>0){ verdict=plur(r.enAvance,'question')+' d\'avance sur le plan.'; vc="ok"; }
+    else { verdict="Dans les temps."; vc="ok"; }
+    var h='<div class="pl-hero">';
+    h+='<div class="pl-ring"><svg viewBox="0 0 110 110" aria-hidden="true"><circle class="pl-ring-bg" cx="55" cy="55" r="46"/><circle class="pl-ring-fg" cx="55" cy="55" r="46" stroke-dasharray="'+C.toFixed(1)+'" stroke-dashoffset="'+off.toFixed(1)+'"/></svg>';
+    h+='<div class="pl-ring-t"><span class="num">'+r.faits+'</span><span class="pl-ring-s">sur '+r.total+'</span></div></div>';
+    h+='<div class="pl-hero-txt"><div class="pl-verdict '+vc+'">'+verdict+'</div>';
+    var l=[];
+    if(restants>0) l.push('<strong>J-'+restants+'</strong> avant le '+dateLongue(PLAN.DEPOT));
+    else if(restants===0) l.push('<strong>Dernier jour de secours</strong> aujourd\'hui');
+    else l.push('Le '+dateLongue(PLAN.DEPOT)+' est passé');
+    if(r.faits<r.total && r.fin){
+      var marge=PLAN.diffDays(r.fin,PLAN.DEPOT);
+      l.push('Fin prévue <strong>'+dateCourte(r.fin)+'</strong> · '+plur(marge,'jour')+' de marge');
+    }
+    l.push(pct+' % des livrables faits'+(tenus?' · <strong>'+plur(tenus,'jour')+' tenu'+(tenus>1?'s':'')+' d\'affilée</strong>':''));
+    h+='<ul class="pl-facts"><li>'+l.join('</li><li>')+'</li></ul></div></div>';
+
+    var jrAuj=r.parDate[auj];
+    if(!jrAuj || !jrAuj.items.length) h+=planAujourdhui(r,auj);
+
+    h+='<div class="pl-vues"><div class="lab">Calendrier</div><div class="pl-seg" role="group" aria-label="Vue du calendrier">';
+    [["sem","Semaines"],["mois","Mois"]].forEach(function(v){ h+='<button data-plan-vue="'+v[0]+'" class="'+((S.planVue||"sem")===v[0]?'on':'')+'">'+v[1]+'</button>'; });
+    h+='</div></div><div class="pw-list">';
+    if(S.planVue==="mois") h+=planMois(r,auj);
+    else PLAN.SEMAINES.forEach(function(w){ h+=planSemaine(r,w,auj); });
+    h+='</div>';
+
+    h+='<div class="lab">Jalons</div><div class="pl-badges">';
+    planBadges(r,tenus).forEach(function(b){
+      h+='<span class="pl-badge'+(b.ok?' on':'')+'" title="'+esc(b.hint)+'">'+(b.ok?'<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 6.8"/></svg>':'')+esc(b.lbl)+'</span>';
+    });
+    h+='</div>';
+    h+='<p class="rappel pl-note">Le plan se recalcule seul : une question non faite à sa date passe au jour suivant et décale tout le reste, jamais plus que prévu par jour. Le dimanche est toujours un jour de repos. Cocher une question la passe en « Rédigé » dans Dossiers, et inversement.</p>';
+    return h;
+  }
+
+  function planBandeau(){
+    var auj=planNow(), r=planCalc(), jr=r.parDate[auj];
+    var its=jr?jr.items:[], faits=its.filter(function(i){return i.fait;}).length;
+    var t, s;
+    if(auj<PLAN.SEMAINES[0].debut){ t="Le plan démarre "+dateLongue(PLAN.SEMAINES[0].debut); s="J-"+PLAN.diffDays(auj,PLAN.SEMAINES[0].debut)+" · Bloc 1 d'abord"; }
+    else if(!its.length){ t="Rien de prévu aujourd'hui"; s=r.faits+"/"+r.total+" livrables faits"; }
+    else if(faits===its.length){ t="Journée tenue"; s=plur(its.length,'question')+" faite"+(its.length>1?"s":"")+" · "+r.faits+"/"+r.total+" au total"; }
+    else { t=plur(its.length-faits,'question')+" à faire aujourd'hui"; s=its.filter(function(i){return !i.fait;}).map(function(i){ return (planQ(i.id)||{}).n; }).join(" · ")+(r.enRetard?" · "+r.enRetard+" en retard":""); }
+    var pct=its.length?Math.round(faits/its.length*100):(r.faits/r.total*100);
+    return '<button class="pl-band" data-go="plan"><span class="pl-band-lab">Plan du jour</span><span class="pl-band-t">'+esc(t)+'</span><span class="pl-band-s">'+esc(s)+'</span><span class="pl-band-bar"><span style="width:'+Math.round(pct)+'%"></span></span></button>';
+  }
+
+  function planConfetti(x,y){
+    if(window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var cols=["#5C7CFA","#3FBE72","#F0A93B","#A177E8","#E2733F","#DE5A9D"];
+    var box=document.createElement("div"); box.className="confetti";
+    for(var i=0;i<26;i++){
+      var p=document.createElement("i"), a=Math.random()*Math.PI*2, v=60+Math.random()*130;
+      p.style.left=x+"px"; p.style.top=y+"px"; p.style.background=cols[i%cols.length];
+      p.style.setProperty("--dx",(Math.cos(a)*v).toFixed(0)+"px");
+      p.style.setProperty("--dy",(Math.sin(a)*v-70).toFixed(0)+"px");
+      p.style.setProperty("--r",(Math.random()*540-270).toFixed(0)+"deg");
+      box.appendChild(p);
+    }
+    document.body.appendChild(box);
+    setTimeout(function(){ if(box.parentNode) box.parentNode.removeChild(box); },1400);
+  }
+  function planToast(msg){
+    var old=document.querySelector(".plan-toast"); if(old) old.parentNode.removeChild(old);
+    var t=document.createElement("div"); t.className="plan-toast"; t.textContent=msg;
+    document.body.appendChild(t);
+    setTimeout(function(){ t.classList.add("out"); },2600);
+    setTimeout(function(){ if(t.parentNode) t.parentNode.removeChild(t); },3100);
+  }
+  function planToggle(id, el){
+    var rect=el.getBoundingClientRect();
+    var avant=isDone(id);
+    S.status[id]= avant ? "wip" : "draft";
+    S.statusAt[id]=Date.now();
+    save();
+    if(!avant){
+      planConfetti(rect.left+rect.width/2, rect.top+rect.height/2);
+      var q=planQ(id), auj=planNow(), r=planCalc();
+      var blocFait=ALL.filter(function(x){return x.bloc.id===q.bloc.id;}).every(function(x){return isDone(x.id);});
+      var jr=r.parDate[auj];
+      var jourFait=jr && jr.items.length && jr.items.every(function(i){return i.fait;});
+      if(r.faits>=r.total) planToast("Les "+r.total+" livrables sont faits. Dernière relecture, puis dépôt.");
+      else if(blocFait) planToast(q.bloc.code+" bouclé. Une semaine de travail derrière toi.");
+      else if(jourFait) planToast("Journée tenue. Tu peux t'arrêter là.");
+      else planToast(q.n+" faite. "+(r.total-r.faits)+" restantes.");
+    }
+    render();
   }
 
   /* ---------- ACCUEIL ---------- */
@@ -936,34 +1215,13 @@
   }
 
   function vAccueil(){
-    var done=doneCount(), left=ALL.length-done, wl=weeksLeft();
-    var pace= wl>0.15 ? left/wl : left;
-    var exp=expectedDone(), delta=done-exp;
-    var verdict,cls;
-    if(left===0){verdict="Tout est déposé.";cls="ok";}
-    else if(delta>=0){verdict="Tu es dans les temps.";cls="ok";}
-    else {verdict=Math.abs(delta)+" livrable"+(Math.abs(delta)>1?"s":"")+" de retard.";cls="late";}
-
-    var h=renderAujourdhui();
+    var h=planBandeau()+renderAujourdhui();
     h+=renderSemaine();
-    h+='<div class="cadence"><div class="verdict '+cls+'">'+verdict+'</div>';
-    h+='<div class="sub">Rythme nécessaire pour tenir la date : <strong>'+pace.toFixed(1)+' livrable'+(pace>=2?'s':'')+' par semaine</strong>.</div>';
-    h+='<div class="ticks">';
-    ALL.forEach(function(q,i){
-      var qst=S.status[q.id]||"todo";
-      var qlbl=qst==="done"?"relu":qst==="draft"?"rédigé":qst==="wip"?"en cours":"à faire";
-      h+='<div class="tick '+tickClass(q,i,exp,left)+'" title="'+q.bloc.code+' '+q.n+' — '+qlbl+'"></div>';
-    });
-    h+='</div>';
-    h+='<div class="stats"><div class="stat"><div class="num">'+done+'<span class="on">/'+ALL.length+'</span></div><div class="lbl">Terminés</div></div>';
-    h+='<div class="stat"><div class="num">'+Math.floor(wl)+'</div><div class="lbl">Semaines restantes</div></div>';
-    h+='<div class="stat"><div class="num">'+left+'</div><div class="lbl">Restants</div></div></div></div>';
-
     h+=renderBilan();
 
     h+='<details class="notions reglages"><summary>Réglages</summary>';
 
-    h+='<div class="foot">Date limite de dépôt : <input type="date" id="dl" value="'+S.deadline+'"><br>';
+    h+='<div class="foot">';
     h+='<button id="exp">Exporter tout en texte</button>';
     h+='<textarea class="f" id="expbox" style="display:none;margin-top:8px;min-height:220px;font-size:12px"></textarea></div>';
 
@@ -1050,10 +1308,9 @@
   }
 
   function renderLocalCadence(currentIdx){
-    var done=doneCount(), left=ALL.length-done, exp=expectedDone();
     var h='<div class="ticks local">';
     ALL.forEach(function(q,i){
-      var c=tickClass(q,i,exp,left).replace(" mark","");
+      var c=tickClass(q);
       if(i===currentIdx) c+=" current";
       h+='<div class="tick '+c+'" title="'+q.bloc.code+' '+q.n+'"></div>';
     });
@@ -1327,7 +1584,7 @@
     h+='<button class="tile tile-hub" data-go="quiz">';
     h+='<span class="tile-code code">Questions et exercices</span>';
     h+='<span class="tile-title">Quiz</span>';
-    h+='<span class="tile-cas">'+QUIZ.length+' questions &middot; 7 formats</span>';
+    h+='<span class="tile-cas">7 formats</span>';
     h+='<span class="tile-quiz-btn btn-quiz" data-quiz-random-all="10">10 questions au hasard</span>';
     h+='</button>';
     var nbC=Object.keys(S.cartes||{}).length;
@@ -4005,6 +4262,10 @@
       main.classList.remove("with-qbottom");
       main.innerHTML=vQuizBloc(ROUTE.id);
       positionQbar();
+    } else if(v==="plan"){
+      main.classList.remove("with-qbottom");
+      main.innerHTML='<div class="eyebrow">2 nov → 8 déc · une semaine par bloc</div><h1>Plan d\'action</h1>'+vPlan();
+      if(!planScrolled){ planScrolled=true; setTimeout(function(){ var w=main.querySelector(".pw.now"); if(w && ROUTE.view==="plan") scrollToEl(w); var c=main.querySelector(".pw.now .pw-cal"), t=main.querySelector(".pw.now .pd-today"); if(c&&t) c.scrollLeft=Math.max(0,t.offsetLeft-12); },60); }
     } else {
       main.classList.remove("with-qbottom");
       var h = v==="dossiers"?vDossiers() : v==="apprendre"?vApprendre() : v==="cours"?vCours() : vAccueil();
@@ -4077,6 +4338,12 @@
         var box=document.getElementById("cs-copybox-"+el.getAttribute("data-cs-copy"));
         if(box){ box.style.display="block"; box.focus(); box.select(); }
       });
+    });
+    main.querySelectorAll("[data-plan-vue]").forEach(function(el){
+      el.addEventListener("click",function(){ S.planVue=el.getAttribute("data-plan-vue"); save({silent:true}); render(); });
+    });
+    main.querySelectorAll("[data-plan-toggle]").forEach(function(el){
+      el.addEventListener("click",function(e){ e.stopPropagation(); planToggle(el.getAttribute("data-plan-toggle"), el); });
     });
     main.querySelectorAll("[data-set]").forEach(function(el){
       el.addEventListener("click",function(){
@@ -4382,8 +4649,6 @@
       S.journal.push({id:Date.now(),date:new Date().toLocaleDateString("fr-FR"),q:q,in:i,out:o,why:w});
       S.open.journal=true; save(); render();
     });
-    var dl=document.getElementById("dl");
-    if(dl) dl.addEventListener("change",function(){ S.deadline=dl.value||DEFAULT_DEADLINE; save(); render(); });
     var exp=document.getElementById("exp");
     if(exp) exp.addEventListener("click",function(){
       var box=document.getElementById("expbox"); box.value=exportText(); box.style.display="block"; box.focus(); box.select();

@@ -11,11 +11,11 @@
       "question": "Sur 200 personnes interrogées, 180 répondent « oui » à la question « Connaissez-vous la marque d'eau Thonon ? ». Que mesure-t-on, et à quel niveau ?",
       "options": [
         "la notoriété spontanée, à 90 %",
-        "la notoriété assistée, à 90 %",
         "le top of mind, à 90 %",
+        "la notoriété assistée, à 90 %",
         "l'image de marque, à 90 %"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "On montre ou cite la marque : c'est la notoriété assistée (180/200 = 90 %). La notoriété spontanée se mesure sans aide (« Citez des marques de... »), et le top of mind est la première marque citée spontanément."
     },
     {
@@ -25,12 +25,12 @@
       "format": "qcm",
       "question": "Qu'est-ce que le « top of mind » ?",
       "options": [
-        "la marque la plus connue du marché en notoriété assistée",
         "la première marque citée spontanément par les personnes interrogées",
+        "la marque la plus connue du marché en notoriété assistée",
         "la marque préférée des consommateurs",
         "la part de marché en valeur du leader"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "Le top of mind est le sommet de la notoriété : la marque qui vient immédiatement à l'esprit, sans aucune aide. C'est le troisième niveau après la notoriété assistée et la notoriété spontanée."
     },
     {
@@ -41,11 +41,11 @@
       "question": "Quelle méthode cyclique permet d'évaluer l'efficacité d'un plan de communication et de l'améliorer en continu ?",
       "options": [
         "le diagramme d'Ishikawa",
-        "la roue de Deming (PDCA) : Plan, Do, Check, Act",
+        "le benchmark concurrentiel",
         "la méthode AIDA",
-        "le benchmark concurrentiel"
+        "la roue de Deming (PDCA) : Plan, Do, Check, Act"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "PDCA : Plan (planifier), Do (faire), Check (vérifier), Act (ajuster) — un cycle d'amélioration continue. L'Ishikawa sert, lui, à résoudre un problème en listant ses causes par familles."
     },
     {
@@ -63,7 +63,13 @@
         "Marché",
         "Moyens"
       ],
-      "reponse": [0, 2, 3, 4, 6],
+      "reponse": [
+        0,
+        2,
+        3,
+        4,
+        6
+      ],
       "explication": "Les 5 M : Méthodes, Matières, Milieu, Main-d'œuvre, Moyens (parfois complétés d'un 6ᵉ M, Management). Le diagramme « arête de poisson » se remplit en équipe, de façon collégiale."
     },
     {
@@ -83,11 +89,11 @@
       "question": "Quelle est la problématique de communication la mieux formulée ?",
       "options": [
         "« Développer notre communauté Instagram. »",
-        "« Comment développer une communauté active sur Instagram ? »",
         "« Comment développer une communauté de 15 000 abonnés actifs sur Instagram en 6 mois avec un budget de 2 000 € ? »",
+        "« Comment développer une communauté active sur Instagram ? »",
         "« Pourquoi notre communauté Instagram stagne-t-elle depuis un an ? »"
       ],
-      "reponse": 2,
+      "reponse": 1,
       "explication": "Une bonne problématique est une question ouverte exprimant trois éléments : le besoin, la cible visée et les contraintes (délais et budget). La première formulation n'est pas une question, les autres restent incomplètes."
     },
     {
@@ -113,11 +119,11 @@
       "question": "Qu'est-ce que la « baseline » d'une marque ?",
       "options": [
         "le budget minimal de communication annuel",
-        "la forme condensée du positionnement, aussi appelée signature de marque",
         "la première ligne d'un communiqué de presse",
+        "la forme condensée du positionnement, aussi appelée signature de marque",
         "l'axe horizontal d'un mapping concurrentiel"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "La baseline (signature de marque) condense le positionnement de communication. Le positionnement est une étape préalable à la ligne éditoriale et aux messages."
     },
     {
@@ -137,9 +143,18 @@
         "Les publicités émotionnelles d'Apple : renforcer l'image et l'appréciation"
       ],
       "paires": [
-        [0, 1],
-        [1, 2],
-        [2, 0]
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
       ],
       "explication": "Cognitif = connaissance/notoriété/attention ; affectif = image/émotion ; conatif = changement de comportement. Trois dimensions à connaître par cœur pour formuler des objectifs de communication."
     },
@@ -155,7 +170,12 @@
         "Déclencher l'action : CTA, offre limitée",
         "Nourrir l'intérêt : informations qui concernent la cible"
       ],
-      "ordre": [1, 3, 0, 2],
+      "ordre": [
+        1,
+        3,
+        0,
+        2
+      ],
       "explication": "Attention → Intérêt → Désir → Action. AIDA structure les messages sur tous supports : posts, newsletters, landing pages, affichage, spots."
     },
     {
@@ -174,12 +194,12 @@
       "format": "qcm",
       "question": "Quel outil de cadrage décompose le projet en arborescence de tâches et sous-tâches avec leurs livrables ?",
       "options": [
-        "le diagramme de Gantt",
         "l'organigramme des tâches",
+        "le diagramme de Gantt",
         "le rétroplanning",
         "le tableau de bord"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "L'organigramme des tâches donne une vision précise du temps et du budget par travaux. Le Gantt vient ensuite pour planifier (tâches période par période, dépendances) — c'est la forme la plus courante du rétroplanning."
     },
     {
@@ -190,11 +210,11 @@
       "question": "Pourquoi évaluer la communication ?",
       "options": [
         "pour satisfaire une obligation réglementaire de reporting",
-        "pour légitimer les actions entreprises et améliorer les décisions",
+        "pour comparer ses résultats à ceux des concurrents",
         "uniquement pour justifier une hausse du budget",
-        "pour comparer ses résultats à ceux des concurrents"
+        "pour légitimer les actions entreprises et améliorer les décisions"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "La communication est un investissement soumis à la rationalisation économique : évaluer légitime les actions (aucun dirigeant n'alloue de budget sans vision des bénéfices) et permet d'identifier les failles pour les corriger."
     },
     {
@@ -219,6 +239,559 @@
         "Cohérence entre le besoin identifié, la problématique et la dimension de l'objectif"
       ],
       "explication": "La chaîne attendue : besoin (sensibilisation, compréhension ou perception) → problématique (question ouverte, 3 éléments) → objectifs de communication (cognitif/affectif/conatif) → puis déclinaison en actions."
+    },
+    {
+      "id": "b2-r06-qz-016",
+      "section": "1. Analyser les besoins",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque nature de besoin en communication à sa situation.",
+      "colonne_a": [
+        "Sensibilisation",
+        "Compréhension",
+        "Changement de perception"
+      ],
+      "colonne_b": [
+        "Les clients ne saisissent pas les avantages de l'offre",
+        "Corriger une image négative",
+        "Manque de notoriété ou de reconnaissance"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "explication": "Les besoins se traduisent ensuite en objectifs chiffrés."
+    },
+    {
+      "id": "b2-r06-qz-017",
+      "section": "1. Analyser les besoins",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque indicateur de notoriété à la question posée.",
+      "colonne_a": [
+        "Notoriété assistée",
+        "Notoriété spontanée",
+        "Top of mind"
+      ],
+      "colonne_b": [
+        "La première marque citée sans aide",
+        "« Connaissez-vous la marque X ? »",
+        "« Citez des marques de… »"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "La notoriété se mesure par sondage."
+    },
+    {
+      "id": "b2-r06-qz-018",
+      "section": "1. Analyser les besoins",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Comment analyser l'image de marque d'un hôtel selon le cours ?",
+      "options": [
+        "par le CA uniquement",
+        "par les avis en ligne (TripAdvisor) et des entretiens qualitatifs ou focus groups",
+        "par le nombre de chambres",
+        "par le cours de bourse"
+      ],
+      "reponse": 1,
+      "explication": "L'e-réputation est une composante à surveiller en permanence."
+    },
+    {
+      "id": "b2-r06-qz-019",
+      "section": "1. Analyser les besoins",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels éléments composent l'identité visuelle ? (4 réponses)",
+      "options": [
+        "le logo",
+        "les couleurs",
+        "les formes",
+        "la typographie",
+        "le chiffre d'affaires",
+        "le slogan radio"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Utilisés de manière systématique et cohérente sur tous les supports (exemple : le lion Peugeot)."
+    },
+    {
+      "id": "b2-r06-qz-020",
+      "section": "1. Analyser les besoins",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les résultats d'un PESTEL alimentent les opportunités et menaces du SWOT.",
+      "reponse": true,
+      "explication": "Vrai : le PESTEL couvre les facteurs environnementaux externes."
+    },
+    {
+      "id": "b2-r06-qz-021",
+      "section": "1. Analyser les besoins",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Lors de l'audit des outils existants, que faire s'il n'existe aucune donnée chiffrée sur les résultats ?",
+      "options": [
+        "s'en passer",
+        "inventer une estimation",
+        "les collecter",
+        "arrêter l'audit"
+      ],
+      "reponse": 2,
+      "explication": "On audite l'usage, mais aussi les coûts, le budget, les résultats par action et le ROI."
+    },
+    {
+      "id": "b2-r06-qz-022",
+      "section": "2. Auditer et évaluer",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la roue de Deming.",
+      "elements": [
+        "Check (vérifier)",
+        "Act (ajuster)",
+        "Plan (planifier)",
+        "Do (faire)"
+      ],
+      "ordre": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "explication": "Méthode cyclique d'amélioration continue."
+    },
+    {
+      "id": "b2-r06-qz-023",
+      "section": "2. Auditer et évaluer",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le diagramme d'Ishikawa se remplit de préférence seul, par le responsable communication, pour éviter les biais du groupe.",
+      "reponse": false,
+      "explication": "Faux : il se remplit en équipe, de façon collégiale (exemple de la chaîne de restaurants)."
+    },
+    {
+      "id": "b2-r06-qz-024",
+      "section": "2. Auditer et évaluer",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la mise en œuvre d'un tableau de bord de communication.",
+      "elements": [
+        "Analyse des écarts",
+        "Conception (publics, objectifs, KPI, échéances)",
+        "Recueil des données"
+      ],
+      "ordre": [
+        1,
+        2,
+        0
+      ],
+      "explication": "Prérequis : cible, objectifs, messages clés, KPI, échéances définis."
+    },
+    {
+      "id": "b2-r06-qz-025",
+      "section": "2. Auditer et évaluer",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que le reporting ?",
+      "options": [
+        "rendre périodiquement des comptes sur la performance d'une action",
+        "la conception du tableau de bord",
+        "une enquête de notoriété",
+        "un plan média"
+      ],
+      "reponse": 0,
+      "explication": "Il intervient après l'analyse du tableau de bord."
+    },
+    {
+      "id": "b2-r06-qz-026",
+      "section": "3. La problématique",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Sous quelle forme formule-t-on une problématique de communication ?",
+      "options": [
+        "une affirmation",
+        "un slogan",
+        "une question fermée",
+        "une question ouverte"
+      ],
+      "reponse": 3,
+      "explication": "C'est la traduction d'un besoin ou d'un objectif sous forme de question ouverte."
+    },
+    {
+      "id": "b2-r06-qz-027",
+      "section": "3. La problématique",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels éléments une bonne problématique exprime-t-elle ? (3 réponses)",
+      "options": [
+        "le besoin",
+        "la cible visée",
+        "les contraintes (délais, budget)",
+        "le nom de l'agence",
+        "le logo"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "« Comment développer une communauté de 15 000 abonnés actifs sur Instagram en 6 mois avec 2 000 € ? »"
+    },
+    {
+      "id": "b2-r06-qz-028",
+      "section": "3. La problématique",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque porte d'entrée de la problématique à son exemple.",
+      "colonne_a": [
+        "Analyse des besoins",
+        "Objectifs sur le marché",
+        "Situation de crise"
+      ],
+      "colonne_b": [
+        "Facebook 2018 : limiter les effets de la fuite de données",
+        "Le SWOT révèle des dissonances",
+        "Carrefour : conserver sa place de leader du bio"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Trois façons d'identifier la problématique."
+    },
+    {
+      "id": "b2-r06-qz-029",
+      "section": "3. La problématique",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Laquelle est une problématique récurrente en interne ?",
+      "options": [
+        "le manque de notoriété",
+        "faire adhérer l'équipe à un projet ou à une nouvelle méthode",
+        "une crise éthique",
+        "atteindre une cible de niche"
+      ],
+      "reponse": 1,
+      "explication": "Le management du changement aussi. Les autres sont externes."
+    },
+    {
+      "id": "b2-r06-qz-030",
+      "section": "3. La problématique",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Une incohérence entre le positionnement affiché et des supports négligés peut constituer un problème d'image de marque.",
+      "reponse": true,
+      "explication": "Vrai, au même titre qu'une crise éthique (Tesco 2019) ou un produit défectueux."
+    },
+    {
+      "id": "b2-r06-qz-031",
+      "section": "4. Le positionnement de communication",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque élément du positionnement d'Axa à son contenu.",
+      "colonne_a": [
+        "Vision",
+        "Valeurs",
+        "Mission",
+        "Preuves"
+      ],
+      "colonne_b": [
+        "Solidité, expertise",
+        "Aider ses clients à être sereins au quotidien",
+        "Être différent pour mériter la confiance",
+        "Intégrité, esprit d'équipe, pragmatisme"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "Le positionnement est une étape préalable à la ligne éditoriale et aux messages."
+    },
+    {
+      "id": "b2-r06-qz-032",
+      "section": "4. Le positionnement de communication",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que le mapping en positionnement ?",
+      "options": [
+        "une carte de France des magasins",
+        "un tableau de bord",
+        "une cartographie visuelle des marques concurrentes selon deux axes choisis",
+        "un plan média"
+      ],
+      "reponse": 2,
+      "explication": "Outils associés : axes de segmentation et benchmark."
+    },
+    {
+      "id": "b2-r06-qz-033",
+      "section": "4. Le positionnement de communication",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles qualités un positionnement pertinent doit-il avoir ? (4 réponses)",
+      "options": [
+        "crédible",
+        "attractif",
+        "distinctif",
+        "durable",
+        "éphémère",
+        "identique aux concurrents"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Crédible : il repose sur des atouts réels."
+    },
+    {
+      "id": "b2-r06-qz-034",
+      "section": "5. Objectifs de communication",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "« Venez comme vous êtes » (McDonald's) relève de quelle dimension des objectifs de communication ?",
+      "options": [
+        "conative",
+        "affective",
+        "cognitive",
+        "financière"
+      ],
+      "reponse": 0,
+      "explication": "Conatif = faire agir ; cognitif = faire savoir ; affectif = faire aimer."
+    },
+    {
+      "id": "b2-r06-qz-035",
+      "section": "5. Objectifs de communication",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les objectifs marketing doivent être SMART et chiffrés, alors que les objectifs de communication visent à influencer la cible.",
+      "reponse": true,
+      "explication": "Vrai : deux familles d'objectifs à ne pas confondre."
+    },
+    {
+      "id": "b2-r06-qz-036",
+      "section": "5. Objectifs de communication",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque niveau de cible à l'exemple du vernis à ongles.",
+      "colonne_a": [
+        "Cible primaire",
+        "Cœur de cible",
+        "Cible secondaire",
+        "Cible tertiaire"
+      ],
+      "colonne_b": [
+        "Salons d'esthétique",
+        "Femmes de 20-25 ans",
+        "Femmes de 18-30 ans",
+        "Influenceuses beauté"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "Secondaire = relais et prescripteurs ; tertiaire = distributeurs, partenaires."
+    },
+    {
+      "id": "b2-r06-qz-037",
+      "section": "5. Objectifs de communication",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce qu'un buyer persona ?",
+      "options": [
+        "un client réel interviewé",
+        "un concurrent",
+        "un influenceur",
+        "un personnage fictif représentant un segment du cœur de cible"
+      ],
+      "reponse": 3,
+      "explication": "Fiche : objectifs, freins, motivations, canaux préférés… Outils : Xtensio, HubSpot."
+    },
+    {
+      "id": "b2-r06-qz-038",
+      "section": "5. Objectifs de communication",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la déclinaison du positionnement en plan d'action.",
+      "elements": [
+        "Définir les objectifs SMART",
+        "Rappeler le positionnement",
+        "Identifier les cibles et créer les personas",
+        "Énumérer les objectifs de communication",
+        "Définir les actions, outils, planning et budget"
+      ],
+      "ordre": [
+        1,
+        3,
+        2,
+        0,
+        4
+      ],
+      "explication": "Le triangle « Cible – Objectif – Action »."
+    },
+    {
+      "id": "b2-r06-qz-039",
+      "section": "5. Objectifs de communication",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le plan d'action est un document distinct, sans lien avec le plan de communication.",
+      "reponse": false,
+      "explication": "Faux : il en est une composante (rétroplanning : thème, action, objectif, KPI, responsable, échéance, budget)."
+    },
+    {
+      "id": "b2-r06-qz-040",
+      "section": "6. Élaborer le projet",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque type d'étude à son usage pour le ciblage.",
+      "colonne_a": [
+        "Qualitative",
+        "Quantitative"
+      ],
+      "colonne_b": [
+        "Grands échantillons, questions fermées : mesurer",
+        "Peu de personnes en profondeur : comprendre freins et motivations"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Le marché est l'espace de rencontre d'une offre et d'une demande (Mercator)."
+    },
+    {
+      "id": "b2-r06-qz-041",
+      "section": "6. Élaborer le projet",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que dit la théorie des effets limités ?",
+      "options": [
+        "la publicité n'a aucun effet",
+        "un message est modifié sous le filtre des leaders d'opinion qui le réinterprètent",
+        "plus on répète, plus on convainc",
+        "seul le prix compte"
+      ],
+      "reponse": 1,
+      "explication": "D'où l'importance des relais dans la chaîne émetteur → récepteur."
+    },
+    {
+      "id": "b2-r06-qz-042",
+      "section": "6. Élaborer le projet",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que le mix des canaux de communication ?",
+      "options": [
+        "un seul canal pour tous",
+        "supprimer le hors-média",
+        "combiner les canaux selon les habitudes de la cible pour optimiser la visibilité",
+        "mélanger les messages"
+      ],
+      "reponse": 2,
+      "explication": "Une question d'équilibre dans l'affectation des budgets."
+    },
+    {
+      "id": "b2-r06-qz-043",
+      "section": "6. Élaborer le projet",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les phases de la gestion de projet de communication.",
+      "elements": [
+        "Phase de suivi",
+        "Feedback et actions correctives",
+        "Phase de cadrage"
+      ],
+      "ordre": [
+        2,
+        0,
+        1
+      ],
+      "explication": "Cadrage : organigramme des tâches, rétroplanning (Gantt), ressources."
+    },
+    {
+      "id": "b2-r06-qz-044",
+      "section": "6. Élaborer le projet",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les actions post-campagne (capitalisation, remerciements, entretien de la relation) font partie de la gestion de projet.",
+      "reponse": true,
+      "explication": "Vrai, avec le bilan du projet (résultats vs objectifs, enseignements)."
+    },
+    {
+      "id": "b2-r06-qz-045",
+      "section": "6. Élaborer le projet",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Le diagramme de Gantt sert à décomposer le projet en arborescence de tâches et de livrables.",
+      "reponse": false,
+      "explication": "Faux : c'est l'organigramme des tâches. Le Gantt positionne les tâches dans le temps, avec leurs dépendances."
     }
   ]
 }

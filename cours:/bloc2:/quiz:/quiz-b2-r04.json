@@ -11,11 +11,11 @@
       "question": "Quel acteur est chargé de la commercialisation des espaces publicitaires d'un support ou d'un groupe média ?",
       "options": [
         "l'agence média",
-        "la régie publicitaire",
         "la centrale d'achat d'espaces",
+        "la régie publicitaire",
         "l'annonceur"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "La régie publicitaire vend les espaces d'un support (TF1/Bouygues, Radio France...). La centrale d'achat, elle, achète en gros pour revendre aux annonceurs, et l'agence média conseille l'annonceur en tant que mandataire."
     },
     {
@@ -25,12 +25,12 @@
       "format": "qcm",
       "question": "Quel organisme crée et contrôle les règles d'éthique pour une publicité « loyale, véridique, saine et respectueuse » ?",
       "options": [
-        "l'ARCOM, autorité publique de régulation",
         "l'ARPP, organisme de régulation professionnelle de la publicité",
+        "l'ARCOM, autorité publique de régulation",
         "la CNIL",
         "la DGCCRF"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "L'ARPP est l'organisme de régulation professionnelle de la publicité, tous supports confondus. L'ARCOM est l'autorité publique de régulation de l'audiovisuel (liberté d'expression, protection des droits, régulation économique)."
     },
     {
@@ -59,11 +59,11 @@
       "question": "Dans les achats d'espaces publicitaires, l'agence média joue le rôle de :",
       "options": [
         "régie, en vendant les espaces du support",
-        "mandataire, en tant qu'intermédiaire pour le compte de l'annonceur",
+        "arbitre, en contrôlant les prix du marché",
         "éditeur, en diffusant les annonces sur ses propres supports",
-        "arbitre, en contrôlant les prix du marché"
+        "mandataire, en tant qu'intermédiaire pour le compte de l'annonceur"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "L'agence média conseille, rédige le plan média et agit comme mandataire (intermédiaire) dans les achats d'espaces. C'est l'une des agences spécialisées, avec les agences RP, graphisme, photo/audiovisuelle et web."
     },
     {
@@ -73,12 +73,12 @@
       "format": "qcm",
       "question": "Sur quels critères choisit-on un freelance ?",
       "options": [
-        "ses compétences, ses tarifs et ses qualités relationnelles",
         "uniquement son statut juridique",
+        "ses compétences, ses tarifs et ses qualités relationnelles",
         "sa taille et son ancienneté",
         "sa certification par une agence 360°"
       ],
-      "reponse": 0,
+      "reponse": 1,
       "explication": "Le freelance est un indépendant qui fixe librement prestations, conditions et tarifs. On le trouve sur des plateformes spécialisées (Malt, Coworkees, Freelancer). Rappel de fond : l'annonceur met son image de marque entre les mains de son prestataire."
     },
     {
@@ -93,7 +93,12 @@
         "Définir et pondérer les critères d'évaluation (quantitatifs et qualitatifs)",
         "Lancer l'appel d'offres : diffuser le cahier des charges à plusieurs prestataires"
       ],
-      "ordre": [1, 3, 2, 0],
+      "ordre": [
+        1,
+        3,
+        2,
+        0
+      ],
       "explication": "Cahier des charges (formaliser le besoin) → appel d'offres (mise en concurrence, objectivité) → grille de critères pondérée → notation et choix justifié. C'est la structure exacte des Q6 et Q7."
     },
     {
@@ -113,11 +118,11 @@
       "question": "Qu'est-ce que la « marge arrière » dans la relation producteur-distributeur ?",
       "options": [
         "la différence entre prix d'achat au producteur et prix de revente au consommateur",
-        "des remises hors facture versées par le producteur au distributeur au titre de la coopération commerciale",
         "la marge réalisée sur les produits en fin de vie",
+        "des remises hors facture versées par le producteur au distributeur au titre de la coopération commerciale",
         "la commission versée par le distributeur au producteur"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "La marge arrière (rétrocommission) rémunère la « coopération commerciale » (prospectus, têtes de gondole), souvent en fin d'année. La marge avant est la différence entre prix d'achat et prix de revente, sur facture."
     },
     {
@@ -127,12 +132,12 @@
       "format": "qcm",
       "question": "Qu'est-ce que l'ECR (Efficient Consumer Response) ?",
       "options": [
-        "un outil de mesure de la satisfaction client en magasin",
         "une coopération producteur-distributeur pour optimiser la chaîne (flux logistiques, réduction des ruptures)",
+        "un outil de mesure de la satisfaction client en magasin",
         "un indicateur de rentabilité des linéaires",
         "une clause contractuelle de réactivité"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "L'ECR incarne la convergence d'intérêts autour de la satisfaction client : coopérer pour optimiser la chaîne, en s'appuyant sur l'EDI (échange de données informatisé)."
     },
     {
@@ -143,11 +148,11 @@
       "question": "Le trade marketing désigne :",
       "options": [
         "les techniques de vente des commerciaux en grande distribution",
-        "les actions qui optimisent la relation et les négociations producteur-distributeur vers un partenariat gagnant-gagnant",
+        "l'achat d'espaces publicitaires en point de vente",
         "le marketing des marques de distributeurs",
-        "l'achat d'espaces publicitaires en point de vente"
+        "les actions qui optimisent la relation et les négociations producteur-distributeur vers un partenariat gagnant-gagnant"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "Le trade marketing transforme une relation dichotomique (conflictuelle et coopérative) en partenariat gagnant-gagnant, notamment par l'échange d'informations réciproques."
     },
     {
@@ -179,7 +184,12 @@
         "la publicité comparative",
         "les remises discriminatoires"
       ],
-      "reponse": [0, 2, 3, 5],
+      "reponse": [
+        0,
+        2,
+        3,
+        5
+      ],
       "explication": "Les lois antitrust garantissent la libre concurrence en interdisant ententes, abus de position dominante, prix imposés et remises discriminatoires. Effets : protection des consommateurs, stabilité des prix, maîtrise de l'inflation."
     },
     {
@@ -216,10 +226,22 @@
         "Durée du contrat, motifs légitimes de rupture, préavis, conséquences"
       ],
       "paires": [
-        [0, 2],
-        [1, 3],
-        [2, 1],
-        [3, 0]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
       ],
       "explication": "S'ajoutent les conditions tarifaires, les conditions de livraison, les quantités minimales, les obligations de chaque partie et la conformité RGPD. Un contrat clair et complet prévient les litiges."
     },
@@ -240,9 +262,18 @@
         "Dispositifs anti-corruption : évaluer l'intégrité des partenaires, documenter la diligence raisonnable"
       ],
       "paires": [
-        [0, 2],
-        [1, 0],
-        [2, 1]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
       ],
       "explication": "Trois textes majeurs de l'éthique des partenariats : Sapin II (anti-corruption), devoir de vigilance (grandes entreprises françaises, y compris chez leurs partenaires), taxonomie européenne (grilles d'évaluation environnementale)."
     },
@@ -263,11 +294,11 @@
       "question": "Qu'est-ce qu'une charte éthique fournisseur ?",
       "options": [
         "un document interne de sensibilisation des salariés",
-        "un outil à la fois contractuel et pédagogique qui formalise les attentes RSE de l'annonceur",
         "un label décerné par un organisme certificateur",
+        "un outil à la fois contractuel et pédagogique qui formalise les attentes RSE de l'annonceur",
         "une déclaration facultative sans portée juridique"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "La charte éthique fournisseur crée des obligations juridiques précises ET fonde la relation sur des valeurs partagées. Elle complète la grille RSE pondérée et les labels — dont il faut connaître les limites (focalisation documentaire, audits ponctuels)."
     },
     {
@@ -277,12 +308,12 @@
       "format": "qcm",
       "question": "Qu'est-ce qui distingue une « entreprise à impact » d'une entreprise traditionnelle ?",
       "options": [
-        "elle a un statut juridique spécifique d'économie sociale et solidaire",
         "elle vise à la fois le rendement financier et des résultats sociaux/environnementaux, au centre de son modèle",
+        "elle a un statut juridique spécifique d'économie sociale et solidaire",
         "elle renonce au profit au bénéfice de sa mission",
         "elle est obligatoirement certifiée B Corp"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "La notion n'a pas de définition juridique : c'est une entreprise à statut commercial classique qui place un impact social et/ou environnemental positif au centre de son modèle. Trois types d'impact : social, environnemental, gouvernance responsable."
     },
     {
@@ -298,6 +329,563 @@
         "Justification par le risque réputationnel : les réseaux sociaux propagent instantanément les scandales et l'annonceur est tenu responsable des pratiques de sa chaîne de valeur"
       ],
       "explication": "Le coût d'une évaluation RSE en amont est dérisoire comparé à celui d'une crise réputationnelle. Privilégier l'accompagnement des partenaires (amélioration continue) plutôt que la rupture sèche."
+    },
+    {
+      "id": "b2-r04-qz-021",
+      "section": "1. Les acteurs du marché de la communication",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque acteur à son rôle.",
+      "colonne_a": [
+        "Annonceur",
+        "Agence",
+        "Régie publicitaire",
+        "Centrale d'achat d'espaces"
+      ],
+      "colonne_b": [
+        "Achète des espaces en gros pour les revendre aux annonceurs",
+        "Commande et paie l'opération de communication",
+        "Commercialise les espaces d'un support ou d'un groupe média",
+        "Conseille l'annonceur en externe, de la stratégie à la production"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "Quatre familles d'acteurs, avec les organismes de régulation."
+    },
+    {
+      "id": "b2-r04-qz-022",
+      "section": "1. Les acteurs du marché de la communication",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque organisme de régulation à sa nature.",
+      "colonne_a": [
+        "ARCOM",
+        "ARPP"
+      ],
+      "colonne_b": [
+        "Régulation professionnelle de la publicité, tous supports",
+        "Autorité publique de régulation de l'audiovisuel"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "L'ARPP veut une publicité loyale, véridique, saine et respectueuse."
+    },
+    {
+      "id": "b2-r04-qz-023",
+      "section": "1. Les acteurs du marché de la communication",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles actions relèvent du hors-média ? (4 réponses)",
+      "options": [
+        "le marketing direct",
+        "le street marketing",
+        "la promotion des ventes",
+        "la PLV",
+        "un spot TV",
+        "un encart presse"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Le média vise des audiences de masse sur les 6 grands médias ; l'événementiel est aussi hors-média."
+    },
+    {
+      "id": "b2-r04-qz-024",
+      "section": "2. La typologie des prestataires",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la collaboration avec une agence 360°.",
+      "elements": [
+        "Validation",
+        "L'annonceur exprime son besoin",
+        "Production",
+        "L'agence propose une stratégie (plan de communication)"
+      ],
+      "ordre": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "explication": "Si l'agence n'a pas toutes les compétences, elle sous-traite et gère elle-même cette relation."
+    },
+    {
+      "id": "b2-r04-qz-025",
+      "section": "2. La typologie des prestataires",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque agence spécialisée à sa spécialité.",
+      "colonne_a": [
+        "Agence de graphisme",
+        "Agence web / digitale",
+        "Agence photo / audiovisuelle"
+      ],
+      "colonne_b": [
+        "Prestations techniques ponctuelles ou au long cours",
+        "Sites, médias sociaux, référencement et veille",
+        "Logos, chartes graphiques, déclinaisons, sans la partie stratégique"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "L'agence média, elle, rédige le plan média et achète l'espace comme mandataire."
+    },
+    {
+      "id": "b2-r04-qz-026",
+      "section": "2. La typologie des prestataires",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Sur quelle plateforme trouver un freelance selon le cours ?",
+      "options": [
+        "Trello",
+        "Mailchimp",
+        "Semrush",
+        "Malt"
+      ],
+      "reponse": 3,
+      "explication": "Aussi Coworkees, Freelancer. Le freelance fixe librement prestations, conditions et tarifs."
+    },
+    {
+      "id": "b2-r04-qz-027",
+      "section": "2. La typologie des prestataires",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le choix d'un prestataire est déterminant car l'annonceur met son image de marque entre ses mains.",
+      "reponse": true,
+      "explication": "Vrai : d'où la nécessité d'avoir clairement identifié son besoin avant de choisir."
+    },
+    {
+      "id": "b2-r04-qz-028",
+      "section": "3. Sélectionner un partenaire",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Que contient un cahier des charges ? (4 réponses)",
+      "options": [
+        "la présentation de l'entreprise et du contexte",
+        "les objectifs de la mission",
+        "les contraintes (budget, délais, exigences)",
+        "les livrables et indicateurs de suivi",
+        "la proposition tarifaire du prestataire",
+        "le contrat signé"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Plus le périmètre des prestations et les modalités de réponse."
+    },
+    {
+      "id": "b2-r04-qz-029",
+      "section": "3. Sélectionner un partenaire",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que garantit l'appel d'offres ?",
+      "options": [
+        "le prix le plus bas",
+        "l'objectivité du choix et une base de négociation",
+        "l'exclusivité du prestataire",
+        "la rapidité de la décision"
+      ],
+      "reponse": 1,
+      "explication": "Mise en concurrence : diffusion du cahier des charges, comparaison des propositions, sélection sur critères annoncés."
+    },
+    {
+      "id": "b2-r04-qz-030",
+      "section": "3. Sélectionner un partenaire",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Une grille de critères ne doit contenir que des indicateurs quantitatifs pour rester objective.",
+      "reponse": false,
+      "explication": "Faux : on combine quantitatif (CA, délais, prix) et qualitatif (relation, compréhension du besoin, créativité) pour éviter une objectivité de façade."
+    },
+    {
+      "id": "b2-r04-qz-031",
+      "section": "3. Sélectionner un partenaire",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Trois agences obtiennent 14, 16 et 15/20 sur des critères pondérés. Que faut-il encore faire ?",
+      "options": [
+        "choisir au hasard",
+        "choisir la moins chère",
+        "justifier le choix final au regard des critères",
+        "relancer l'appel d'offres"
+      ],
+      "reponse": 2,
+      "explication": "Noter, calculer les scores pondérés, justifier le choix final."
+    },
+    {
+      "id": "b2-r04-qz-032",
+      "section": "4. La relation producteur-distributeur",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La relation producteur-distributeur est purement conflictuelle : leurs intérêts ne convergent jamais.",
+      "reponse": false,
+      "explication": "Faux : elle est à la fois conflictuelle et coopérative. Points de convergence : satisfaction client (ECR), ventes, réputation."
+    },
+    {
+      "id": "b2-r04-qz-033",
+      "section": "4. La relation producteur-distributeur",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque type de marge à sa définition.",
+      "colonne_a": [
+        "Marge avant",
+        "Marge arrière (rétrocommission)"
+      ],
+      "colonne_b": [
+        "Remises hors facture au titre de la coopération commerciale",
+        "Différence entre prix d'achat au producteur et prix de revente au consommateur"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Les marges arrière financent prospectus, têtes de gondole…"
+    },
+    {
+      "id": "b2-r04-qz-034",
+      "section": "4. La relation producteur-distributeur",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels sont les points de divergence entre producteur et distributeur ? (3 réponses)",
+      "options": [
+        "le budget et les marges",
+        "la prise en charge de la prospection commerciale",
+        "la concurrence des MDD",
+        "la satisfaction client",
+        "le développement des ventes"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Satisfaction client et développement des ventes sont des intérêts communs."
+    },
+    {
+      "id": "b2-r04-qz-035",
+      "section": "4. La relation producteur-distributeur",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que permet la loi Galland (1996) ?",
+      "options": [
+        "le refus de vente pour le producteur et l'encadrement de la vente à perte",
+        "d'interdire les MDD",
+        "de supprimer les marges arrière",
+        "de fixer les prix publics"
+      ],
+      "reponse": 0,
+      "explication": "Les lois suivantes (type LME) ont réintégré les marges arrière dans le seuil de vente à perte et réduit les délais de paiement."
+    },
+    {
+      "id": "b2-r04-qz-036",
+      "section": "5. Le droit de la concurrence",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles conséquences un déséquilibre dans la relation entraîne-t-il ? (3 réponses)",
+      "options": [
+        "des conditions défavorables imposées à la partie faible",
+        "une atteinte à la réputation des deux parties",
+        "une perte de compétitivité",
+        "une baisse automatique des prix",
+        "plus d'innovation partagée"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Un équilibre sain favorise au contraire innovation partagée et co-développement."
+    },
+    {
+      "id": "b2-r04-qz-037",
+      "section": "5. Le droit de la concurrence",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les lois antitrust contribuent à la stabilité des prix et à la maîtrise de l'inflation.",
+      "reponse": true,
+      "explication": "Vrai : elles protègent aussi les consommateurs et maintiennent le nombre d'acteurs."
+    },
+    {
+      "id": "b2-r04-qz-038",
+      "section": "5. Le droit de la concurrence",
+      "niveau": 3,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les trois âges de la concurrence en France.",
+      "elements": [
+        "La concurrence pour la loyauté",
+        "La concurrence pour la modernisation",
+        "La concurrence pour le consommateur"
+      ],
+      "ordre": [
+        1,
+        2,
+        0
+      ],
+      "explication": "1949-1976, 1976-1983, 1983-1986 : la fidélisation est l'aboutissement historique de la concurrence."
+    },
+    {
+      "id": "b2-r04-qz-039",
+      "section": "5. Le droit de la concurrence",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un fournisseur unique d'un produit clé négocie avec un distributeur. Qui a l'avantage ?",
+      "options": [
+        "le distributeur",
+        "le consommateur",
+        "personne",
+        "le fournisseur"
+      ],
+      "reponse": 3,
+      "explication": "Facteurs d'influence : taille et force des entreprises, environnement de marché."
+    },
+    {
+      "id": "b2-r04-qz-040",
+      "section": "6. Sécuriser le partenariat : le contrat",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque acteur du droit de la distribution à sa définition.",
+      "colonne_a": [
+        "Distributeur regroupé",
+        "Distributeur intermédiaire"
+      ],
+      "colonne_b": [
+        "Entre producteur et détaillant (grossistes, importateurs)",
+        "Des indépendants réunis sous une bannière commune"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Exemple de regroupés : les centrales d'achat de Leclerc, Intermarché."
+    },
+    {
+      "id": "b2-r04-qz-041",
+      "section": "6. Sécuriser le partenariat : le contrat",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles clauses figurent dans un contrat de partenariat ? (4 réponses)",
+      "options": [
+        "les conditions tarifaires",
+        "les conditions de livraison",
+        "la conformité RGPD",
+        "les quantités minimales et objectifs",
+        "le CV du dirigeant",
+        "les horaires du personnel"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Plus objet, durée et résiliation, obligations, propriété intellectuelle, résolution des conflits."
+    },
+    {
+      "id": "b2-r04-qz-042",
+      "section": "6. Sécuriser le partenariat : le contrat",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi la clause de propriété intellectuelle est-elle un enjeu majeur ?",
+      "options": [
+        "elle fixe les prix",
+        "elle détermine la titularité des créations, marques et droits d'auteur, surtout quand la prestation crée des contenus",
+        "elle fixe la durée du contrat",
+        "elle n'a aucun enjeu"
+      ],
+      "reponse": 1,
+      "explication": "Essentielle avec une agence de création."
+    },
+    {
+      "id": "b2-r04-qz-043",
+      "section": "6. Sécuriser le partenariat : le contrat",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque mécanisme de résolution des conflits à son principe.",
+      "colonne_a": [
+        "Négociation amiable",
+        "Médiation",
+        "Arbitrage"
+      ],
+      "colonne_b": [
+        "Un tiers tranche le litige hors des tribunaux",
+        "Les parties règlent seules leur différend",
+        "Un tiers aide les parties à trouver un accord"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Le contrat prévoit aussi la juridiction compétente."
+    },
+    {
+      "id": "b2-r04-qz-044",
+      "section": "6. Sécuriser le partenariat : le contrat",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La réforme de 2016 du Code civil a renforcé la bonne foi et la lutte contre le déséquilibre contractuel significatif.",
+      "reponse": true,
+      "explication": "Vrai, elle a modernisé le droit des contrats."
+    },
+    {
+      "id": "b2-r04-qz-045",
+      "section": "6. Sécuriser le partenariat : le contrat",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'impose la réglementation française aux collaborations avec des influenceurs ?",
+      "options": [
+        "rien de particulier",
+        "l'interdiction de rémunérer",
+        "la transparence : mention explicite du partenariat commercial",
+        "un contrat oral"
+      ],
+      "reponse": 2,
+      "explication": "Une des réglementations les plus strictes au monde."
+    },
+    {
+      "id": "b2-r04-qz-046",
+      "section": "7. Éthique et RSE",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "L'éthique des affaires se limite à la conformité légale du partenaire.",
+      "reponse": false,
+      "explication": "Faux : elle évalue aussi ses valeurs et comportements ; les critères varient selon le secteur."
+    },
+    {
+      "id": "b2-r04-qz-047",
+      "section": "7. Éthique et RSE",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle loi oblige les grandes entreprises françaises à identifier et prévenir les risques (droits humains, environnement) dans toute leur chaîne de valeur ?",
+      "options": [
+        "la loi sur le devoir de vigilance (2017)",
+        "la loi Sapin II",
+        "la loi Galland",
+        "la loi AGEC"
+      ],
+      "reponse": 0,
+      "explication": "Sapin II (2016) porte sur l'anti-corruption ; la taxonomie européenne classe les activités durables."
+    },
+    {
+      "id": "b2-r04-qz-048",
+      "section": "7. Éthique et RSE",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les limites des labels et certifications RSE ? (3 réponses)",
+      "options": [
+        "une focalisation documentaire qui peut masquer le terrain",
+        "des audits ponctuels",
+        "un risque de confiance aveugle",
+        "ils sont toujours faux",
+        "ils sont interdits"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "À utiliser en complément d'audits planifiés et du croisement des sources."
+    },
+    {
+      "id": "b2-r04-qz-049",
+      "section": "7. Éthique et RSE",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel est le risque majeur d'un mauvais partenaire selon le cours ?",
+      "options": [
+        "un risque fiscal",
+        "un risque climatique",
+        "un risque technique",
+        "un risque réputationnel, amplifié par les réseaux sociaux"
+      ],
+      "reponse": 3,
+      "explication": "L'annonceur est tenu pour responsable des pratiques de sa chaîne de valeur."
+    },
+    {
+      "id": "b2-r04-qz-050",
+      "section": "7. Éthique et RSE",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Face à un partenaire défaillant en RSE, le cours privilégie l'accompagnement et l'amélioration continue plutôt que la rupture sèche.",
+      "reponse": true,
+      "explication": "Vrai, avec cartographie des risques, veille, tableaux de bord RSE et reporting transparent."
+    },
+    {
+      "id": "b2-r04-qz-051",
+      "section": "3. Sélectionner un partenaire",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Construisez la démarche de sélection d'un prestataire-distributeur, du besoin au choix final.",
+      "attendus": [
+        "Formaliser le besoin dans un cahier des charges (contexte, objectifs, périmètre, contraintes, livrables)",
+        "Lancer un appel d'offres auprès de plusieurs prestataires",
+        "Définir des critères adaptés : compétences, références, finances, accès à la cible, logistique, valeurs, RSE, prix",
+        "Pondérer selon les priorités stratégiques, mêler quantitatif et qualitatif",
+        "Noter, calculer les scores pondérés, justifier le choix et sécuriser par un contrat"
+      ],
+      "explication": "Le même outil sert à l'évaluation RSE des partenaires."
     }
   ]
 }

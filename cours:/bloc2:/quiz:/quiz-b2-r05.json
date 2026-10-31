@@ -17,7 +17,12 @@
         "l'estimation de leur budget de communication",
         "l'analyse de leurs alternatives en cas d'échec de la négociation"
       ],
-      "reponse": [0, 2, 3, 5],
+      "reponse": [
+        0,
+        2,
+        3,
+        5
+      ],
       "explication": "Le mapping permet d'identifier les intérêts convergents (base de la collaboration) et les conflits d'intérêts potentiels, à aborder ouvertement. Il faut aussi intégrer les contraintes externes : réglementation, concurrence, cycles budgétaires."
     },
     {
@@ -28,11 +33,11 @@
       "question": "En négociation, qu'est-ce que le « seuil de résistance » ?",
       "options": [
         "la première offre formulée pour ancrer la discussion",
-        "la limite en dessous de laquelle on n'accepte pas l'accord",
         "le montant maximal que l'autre partie peut payer",
+        "la limite en dessous de laquelle on n'accepte pas l'accord",
         "le délai au-delà duquel on quitte la table"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "Avant de négocier, on définit trois repères : l'objectif cible, le seuil de résistance (la limite infranchissable) et les étapes intermédiaires de repli."
     },
     {
@@ -51,12 +56,12 @@
       "format": "qcm",
       "question": "Pourquoi pratiquer des concessions en décroissance progressive (10 %, puis 5 %, puis 2 %) ?",
       "options": [
-        "pour maximiser la valeur totale concédée",
         "pour signaler à l'autre partie qu'on approche de sa limite (signaling)",
+        "pour maximiser la valeur totale concédée",
         "pour respecter une obligation légale d'échelonnement",
         "pour compenser l'effet d'ancrage de la première offre"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "La décroissance progressive envoie un signal : les marges de manœuvre s'épuisent. Combinée à une ouverture ambitieuse mais crédible (ancrage), elle structure la dynamique des échanges."
     },
     {
@@ -77,10 +82,10 @@
       "options": [
         "subir la discussion sans exprimer ses besoins",
         "imposer ses vues sans considération pour l'autre",
-        "exprimer ses positions avec fermeté tout en préservant la relation",
-        "éviter tout sujet de désaccord pour maintenir le climat"
+        "éviter tout sujet de désaccord pour maintenir le climat",
+        "exprimer ses positions avec fermeté tout en préservant la relation"
       ],
-      "reponse": 2,
+      "reponse": 3,
       "explication": "L'assertivité défend ses intérêts légitimes en respectant ceux du partenaire — ni passive, ni agressive. Les émotions ne sont pas absentes, mais reconnues et canalisées (intelligence émotionnelle)."
     },
     {
@@ -96,7 +101,13 @@
         "Explorer les besoins et intérêts",
         "Construire l'accord"
       ],
-      "ordre": [1, 3, 0, 4, 2],
+      "ordre": [
+        1,
+        3,
+        0,
+        4,
+        2
+      ],
       "explication": "Confiance → exploration → argumentation/concessions → accord → finalisation. On ne « pose pas la toiture avant les fondations » : pas de discussion contractuelle avant d'avoir compris les intérêts."
     },
     {
@@ -142,6 +153,589 @@
         "Réponses aux objections potentielles : selon leur type (rationnelles → données ; émotionnelles → rassurer ; stratégiques → décoder les enjeux), avec le traitement en 3 temps (accusé de réception émotionnel, reformulation factuelle, recherche de solutions)"
       ],
       "explication": "C'est la structure exacte attendue en Q8. Le mapping dit quoi négocier et avec qui, le DISC comment parler à chacun, l'écoute active fait découvrir les besoins réels, le traitement des objections protège l'accord."
+    },
+    {
+      "id": "b2-r05-qz-011",
+      "section": "1. Préparer la négociation",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quelle phase de la négociation le cours juge-t-il la plus déterminante ?",
+      "options": [
+        "la conclusion",
+        "l'argumentation",
+        "la préparation",
+        "la signature"
+      ],
+      "reponse": 2,
+      "explication": "Elle permet d'identifier leviers d'influence et zones de convergence, au-delà des positions de surface."
+    },
+    {
+      "id": "b2-r05-qz-012",
+      "section": "1. Préparer la négociation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une agence travaille déjà pour un concurrent direct de l'annonceur avec qui elle négocie. Comment le cours qualifie-t-il cette situation ?",
+      "options": [
+        "un conflit d'intérêts potentiel, à aborder ouvertement",
+        "un intérêt convergent",
+        "une concession",
+        "un ancrage"
+      ],
+      "reponse": 0,
+      "explication": "Il faut aussi intégrer les contraintes externes : réglementation, concurrence, cycles budgétaires."
+    },
+    {
+      "id": "b2-r05-qz-013",
+      "section": "1. Préparer la négociation",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Dans la négociation L'Oréal × Havas, l'accord repose sur une création de valeur mutuelle plutôt que sur un simple marchandage.",
+      "reponse": true,
+      "explication": "Vrai : Havas obtient de la visibilité sur ses créations contre un investissement créatif supplémentaire."
+    },
+    {
+      "id": "b2-r05-qz-014",
+      "section": "1. Préparer la négociation",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Que faut-il définir avant d'entrer en négociation ? (3 réponses)",
+      "options": [
+        "l'objectif cible",
+        "le seuil de résistance",
+        "les étapes intermédiaires de repli",
+        "le menu du déjeuner",
+        "la date de la prochaine négociation"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Le seuil de résistance est la limite en dessous de laquelle on n'accepte pas."
+    },
+    {
+      "id": "b2-r05-qz-015",
+      "section": "1. Préparer la négociation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qui a formulé la théorie de l'ancrage ?",
+      "options": [
+        "Carl Rogers",
+        "Kotler et Manceau",
+        "Paul Ekman",
+        "Tversky et Kahneman"
+      ],
+      "reponse": 3,
+      "explication": "Les premières informations échangées créent un point de référence qui influence toute la suite."
+    },
+    {
+      "id": "b2-r05-qz-016",
+      "section": "1. Préparer la négociation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Selon la théorie de l'ancrage, comment formuler sa première offre ?",
+      "options": [
+        "très agressive pour impressionner",
+        "ambitieuse mais crédible, justifiée par des arguments",
+        "minimale pour rassurer",
+        "jamais en premier"
+      ],
+      "reponse": 1,
+      "explication": "Trop agressive, elle rompt le dialogue. L'ancrage porte sur tous les paramètres : prix, délais, périmètre."
+    },
+    {
+      "id": "b2-r05-qz-017",
+      "section": "1. Préparer la négociation",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "L'effet d'ancrage disparaît dès que les parties en ont conscience.",
+      "reponse": false,
+      "explication": "Faux : il influence la suite même quand les parties en sont conscientes."
+    },
+    {
+      "id": "b2-r05-qz-018",
+      "section": "1. Préparer la négociation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Laquelle de ces formulations respecte la règle des concessions conditionnées ?",
+      "options": [
+        "« nous baissons le prix de 10 % »",
+        "« nous acceptons toutes vos conditions »",
+        "« si vous acceptez de réduire les délais, alors nous pourrions revoir le budget »",
+        "« le prix n'est pas négociable »"
+      ],
+      "reponse": 2,
+      "explication": "Jamais de concession unilatérale : la réciprocité s'orchestre en explicitant ses attentes."
+    },
+    {
+      "id": "b2-r05-qz-019",
+      "section": "1. Préparer la négociation",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque registre de communication à sa définition.",
+      "colonne_a": [
+        "Passive",
+        "Agressive",
+        "Assertive"
+      ],
+      "colonne_b": [
+        "Imposer ses vues sans considération pour l'autre",
+        "Exprimer ses positions avec fermeté en préservant la relation",
+        "Subir sans exprimer ses besoins"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "explication": "Les émotions sont reconnues et canalisées, pas supprimées."
+    },
+    {
+      "id": "b2-r05-qz-020",
+      "section": "1. Préparer la négociation",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Selon le cours, une négociation réussie se déroule sans émotions.",
+      "reponse": false,
+      "explication": "Faux : elle se déroule avec des émotions reconnues et canalisées, grâce à l'intelligence émotionnelle."
+    },
+    {
+      "id": "b2-r05-qz-021",
+      "section": "1. Préparer la négociation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce qui transforme un prestataire exécutant en véritable partenaire à l'issue de la négociation ?",
+      "options": [
+        "des objectifs partagés assortis d'indicateurs de performance communs",
+        "un prix plus bas",
+        "un contrat plus long",
+        "l'absence de contrôle"
+      ],
+      "reponse": 0,
+      "explication": "On ne « pose pas la toiture avant les fondations » : confiance et intérêts avant le contrat."
+    },
+    {
+      "id": "b2-r05-qz-022",
+      "section": "2. Le modèle DISC",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque couleur du DISC à sa dimension.",
+      "colonne_a": [
+        "Rouge",
+        "Jaune",
+        "Vert",
+        "Bleu"
+      ],
+      "colonne_b": [
+        "Stabilité",
+        "Conformité",
+        "Dominance",
+        "Influence"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Outil d'évaluation psychométrique du comportement en 4 dimensions."
+    },
+    {
+      "id": "b2-r05-qz-023",
+      "section": "2. Le modèle DISC",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Comment communiquer avec un profil Bleu (Conformité) ?",
+      "options": [
+        "être direct et concis, parler résultats",
+        "créer du lien et valoriser ses idées",
+        "le rassurer en prenant le temps",
+        "apporter des données précises, de la structure et des preuves"
+      ],
+      "reponse": 3,
+      "explication": "Le Bleu est rigoureux, analytique, attaché aux règles et aux faits."
+    },
+    {
+      "id": "b2-r05-qz-024",
+      "section": "2. Le modèle DISC",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un interlocuteur calme, coopératif, attaché à l'harmonie : quelle approche adopter ?",
+      "options": [
+        "le brusquer pour accélérer",
+        "le rassurer, prendre le temps et montrer la continuité",
+        "lui donner uniquement des chiffres",
+        "parler uniquement résultats"
+      ],
+      "reponse": 1,
+      "explication": "C'est un profil Vert (Stabilité)."
+    },
+    {
+      "id": "b2-r05-qz-025",
+      "section": "2. Le modèle DISC",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque profil DISC à la manière de lui communiquer.",
+      "colonne_a": [
+        "Rouge (Dominance)",
+        "Jaune (Influence)"
+      ],
+      "colonne_b": [
+        "Créer du lien, laisser de la place à l'échange",
+        "Être direct et concis, parler objectifs concrets"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Même message, quatre formes selon la couleur."
+    },
+    {
+      "id": "b2-r05-qz-026",
+      "section": "2. Le modèle DISC",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Dire « c'est normal, il est rouge » est exactement le raccourci que le cours conseille d'éviter.",
+      "reponse": true,
+      "explication": "Vrai : personne ne se résume à sa couleur dominante, et les préférences varient selon le contexte."
+    },
+    {
+      "id": "b2-r05-qz-027",
+      "section": "2. Le modèle DISC",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "De quoi dépend notre style de communication ? (4 réponses)",
+      "options": [
+        "la personnalité",
+        "l'expérience de vie",
+        "le contexte culturel",
+        "les enjeux (informer, influencer, convaincre)",
+        "la météo",
+        "la marque du téléphone"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Communiquer efficacement, c'est adapter son message aux préférences de l'interlocuteur."
+    },
+    {
+      "id": "b2-r05-qz-028",
+      "section": "3. L'écoute active et le questionnement",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Que signifie comprendre le cadre de référence de l'autre en écoute active ?",
+      "options": [
+        "l'adopter",
+        "le corriger",
+        "le comprendre sans nécessairement l'adopter (empathie rogérienne)",
+        "l'ignorer"
+      ],
+      "reponse": 2,
+      "explication": "Avec authenticité et considération positive."
+    },
+    {
+      "id": "b2-r05-qz-029",
+      "section": "3. L'écoute active et le questionnement",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle est l'erreur classique en présentation stratégique selon le cours ?",
+      "options": [
+        "se concentrer sur ce qu'on va dire plutôt que sur ce qu'on va entendre",
+        "poser trop de questions",
+        "reformuler",
+        "prendre des notes"
+      ],
+      "reponse": 0,
+      "explication": "L'écoute active est un processus structuré d'attention totale."
+    },
+    {
+      "id": "b2-r05-qz-030",
+      "section": "3. L'écoute active et le questionnement",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels sont les obstacles à l'écoute active ? (3 réponses)",
+      "options": [
+        "la dissonance cognitive",
+        "les obstacles organisationnels (hiérarchie, pression du temps)",
+        "les filtres émotionnels (stress, a priori)",
+        "la reformulation",
+        "les questions ouvertes"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "La dissonance cognitive fait filtrer inconsciemment ce qui dérange."
+    },
+    {
+      "id": "b2-r05-qz-031",
+      "section": "3. L'écoute active et le questionnement",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un interlocuteur dit « oui » les bras croisés, d'un ton fuyant. Que révèle l'analyse de congruence ?",
+      "options": [
+        "un oui franc",
+        "rien",
+        "de la fatigue",
+        "une incohérence entre verbal, vocal et corporel : ce n'est pas vraiment un oui"
+      ],
+      "reponse": 3,
+      "explication": "Les micro-expressions (Paul Ekman) sont des signaux universels qui échappent au contrôle conscient."
+    },
+    {
+      "id": "b2-r05-qz-032",
+      "section": "3. L'écoute active et le questionnement",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque type de question à sa fonction.",
+      "colonne_a": [
+        "Ouverte",
+        "Fermée",
+        "Reformulation"
+      ],
+      "colonne_b": [
+        "Démontrer l'attention, lever les malentendus",
+        "Explorer",
+        "Valider"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "« Si je comprends bien, votre préoccupation est… »"
+    },
+    {
+      "id": "b2-r05-qz-033",
+      "section": "3. L'écoute active et le questionnement",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Selon le cours, le levier d'influence le plus puissant est d'amener l'interlocuteur à formuler lui-même ses besoins.",
+      "reponse": true,
+      "explication": "Vrai, grâce à un questionnement bien mené (SPIN)."
+    },
+    {
+      "id": "b2-r05-qz-034",
+      "section": "4. Gérer les objections",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque type d'objection à l'approche recommandée.",
+      "colonne_a": [
+        "Rationnelle",
+        "Émotionnelle",
+        "Stratégique / politique"
+      ],
+      "colonne_b": [
+        "Identifier les enjeux réels, traiter en coulisses si besoin",
+        "Répondre par des données et des preuves",
+        "Rassurer, accompagner, sans contre-argumenter frontalement"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Les objections rationnelles sont les plus faciles à traiter."
+    },
+    {
+      "id": "b2-r05-qz-035",
+      "section": "4. Gérer les objections",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "« On a toujours fait comme ça » : de quel type d'objection s'agit-il ?",
+      "options": [
+        "rationnelle",
+        "émotionnelle / psychologique",
+        "stratégique",
+        "technique"
+      ],
+      "reponse": 1,
+      "explication": "Peur du changement, remise en question de l'existant."
+    },
+    {
+      "id": "b2-r05-qz-036",
+      "section": "4. Gérer les objections",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "« Il faudrait voir ce qu'en pense le service financier » : quel type d'objection ?",
+      "options": [
+        "rationnelle",
+        "émotionnelle",
+        "stratégique / politique (formulation indirecte)",
+        "aucune objection"
+      ],
+      "reponse": 2,
+      "explication": "Jeux de pouvoir, conflits d'intérêts entre services."
+    },
+    {
+      "id": "b2-r05-qz-037",
+      "section": "4. Gérer les objections",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les signaux non-verbaux de résistance n'apparaissent qu'après l'expression verbale de l'objection.",
+      "reponse": false,
+      "explication": "Faux : ils la précèdent (posture fermée, micro-expressions, rythme respiratoire) et forment un système d'alerte précoce."
+    },
+    {
+      "id": "b2-r05-qz-038",
+      "section": "4. Gérer les objections",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels marqueurs linguistiques signalent une résistance diplomatique ? (3 réponses)",
+      "options": [
+        "« certes, mais »",
+        "« en théorie c'est intéressant, cependant »",
+        "« j'ai quelques réserves »",
+        "« parfait, on signe »",
+        "« je suis entièrement d'accord »"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "À traiter immédiatement."
+    },
+    {
+      "id": "b2-r05-qz-039",
+      "section": "4. Gérer les objections",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque attitude à la réaction adaptée.",
+      "colonne_a": [
+        "Questionnement légitime",
+        "Opposition systématique"
+      ],
+      "colonne_b": [
+        "Changer de stratégie",
+        "Y répondre : cela nourrit l'adhésion"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "L'opposition systématique cherche à déstabiliser ou bloquer."
+    },
+    {
+      "id": "b2-r05-qz-040",
+      "section": "4. Gérer les objections",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la technique de traitement d'une objection en trois temps.",
+      "elements": [
+        "Reformulation factuelle",
+        "Recherche de solutions",
+        "Accusé de réception émotionnel"
+      ],
+      "ordre": [
+        2,
+        0,
+        1
+      ],
+      "explication": "« Je comprends que cela vous inquiète » → « votre préoccupation porte sur… » → « comment pourrions-nous… ? »"
+    },
+    {
+      "id": "b2-r05-qz-041",
+      "section": "4. Gérer les objections",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que la négociation intégrée face à une objection ?",
+      "options": [
+        "accueillir l'objection comme un enrichissement et faire de l'objecteur un partenaire de co-construction",
+        "ignorer l'objection",
+        "contre-attaquer",
+        "céder immédiatement"
+      ],
+      "reponse": 0,
+      "explication": "L'argumentation progressive procède par « cercles concentriques » : reconnaître la légitimité, puis élargir."
+    },
+    {
+      "id": "b2-r05-qz-042",
+      "section": "4. Gérer les objections",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Face à une attaque personnelle (ad hominem), quel réflexe adopter ?",
+      "options": [
+        "répondre sur le même terrain",
+        "se justifier longuement",
+        "quitter la négociation",
+        "le « bouclier professionnel » : recentrer le débat sur le fond, sans escalade"
+      ],
+      "reponse": 3,
+      "explication": "L'attaque vise à décrédibiliser la personne, pas la proposition."
+    },
+    {
+      "id": "b2-r05-qz-043",
+      "section": "4. Gérer les objections",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Temporiser (« c'est un point important, j'y reviens dans deux minutes ») est une technique de régulation émotionnelle sous pression.",
+      "reponse": true,
+      "explication": "Vrai, avec la respiration : canaliser l'émotion au service de l'objectif."
+    },
+    {
+      "id": "b2-r05-qz-044",
+      "section": "4. Gérer les objections",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Face à une objection émotionnelle, il faut contre-argumenter frontalement avec des chiffres.",
+      "reponse": false,
+      "explication": "Faux : on rassure et on accompagne. Les chiffres conviennent aux objections rationnelles."
     }
   ]
 }

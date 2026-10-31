@@ -11,11 +11,11 @@
       "question": "Un manager doit caler les horizons temporels de son pilotage. Quelle association est correcte ?",
       "options": [
         "stratégie sur un trimestre, objectifs pluriannuels, plan d'action sur un an",
-        "stratégie pluriannuelle, objectifs sur quelques mois à un an, plan d'action sur quelques semaines à un trimestre",
         "stratégie sur un an, objectifs sur quelques semaines, plan d'action pluriannuel",
+        "stratégie pluriannuelle, objectifs sur quelques mois à un an, plan d'action sur quelques semaines à un trimestre",
         "stratégie, objectifs et plan d'action partagent le même horizon annuel"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "La chaîne descend du plus long au plus court : stratégie pluriannuelle, objectifs sur quelques mois à un an, plans d'action sur quelques semaines à un trimestre. Les objectifs se définissent après la stratégie et avant le lancement du plan d'action."
     },
     {
@@ -52,10 +52,22 @@
         "Réalisable vu les ressources : le management s'engage à fournir les moyens"
       ],
       "paires": [
-        [0, 2],
-        [1, 3],
-        [2, 0],
-        [3, 1]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
       ],
       "explication": "Mesurable = indicateurs (quantitatifs ou qualitatifs) ; Atteignable = ressources fournies (compétences, formations, budget, RH, matériel) ; Réaliste = contexte et contraintes (départ d'un collègue, Covid-19, marché saturé) ; Ecologique = environnement + écosystème (partenaires, clients, fournisseurs) + éthique."
     },
@@ -75,12 +87,12 @@
       "format": "qcm",
       "question": "Un manager impose un objectif sans fournir ni budget ni formation à son équipe, qui échoue. À quoi s'expose-t-il ?",
       "options": [
-        "à un défaut de moyens, que les collaborateurs pourraient faire valoir pour ne pas porter l'échec",
+        "à rien : l'échec reste porté par les collaborateurs",
         "à un défaut de pertinence, car l'objectif n'était pas aligné sur la stratégie",
         "à un défaut de flexibilité, car l'objectif n'était pas ré-ajustable",
-        "à rien : l'échec reste porté par les collaborateurs"
+        "à un défaut de moyens, que les collaborateurs pourraient faire valoir pour ne pas porter l'échec"
       ],
-      "reponse": 0,
+      "reponse": 3,
       "explication": "Un objectif non atteignable expose le management à un défaut de moyens : fixer un objectif engage à fournir les ressources nécessaires (compétences, formations, budget, RH, matériel). Sans elles, les collaborateurs peuvent refuser de porter l'échec."
     },
     {
@@ -91,11 +103,11 @@
       "question": "Une équipe démarre la formulation de ses objectifs. Par quelle étape le processus commence-t-il ?",
       "options": [
         "définir une échéance et des jalons intermédiaires",
-        "construire les indicateurs quantitatifs et qualitatifs",
         "déterminer le contexte et les freins, au besoin avec une matrice SWOT",
+        "construire les indicateurs quantitatifs et qualitatifs",
         "examiner les implications éthiques de l'objectif"
       ],
-      "reponse": 2,
+      "reponse": 1,
       "explication": "La première étape est de déterminer le contexte et les freins, au besoin avec une matrice SWOT. Vient ensuite la définition du but en détail, guidée par l'hexamètre de Quintilien (QQOQCCP), puis les indicateurs, l'équilibre ambitieux/atteignable, la pertinence, l'échéance et l'éthique."
     },
     {
@@ -105,12 +117,12 @@
       "format": "qcm",
       "question": "Une entreprise veut décliner sa stratégie pour ses forces de vente réparties sur plusieurs régions. Quelle méthode de déclinaison des objectifs est la plus pertinente ?",
       "options": [
-        "la déclinaison par zones géographiques : la stratégie se « traduit » zone par zone",
-        "la déclinaison par champ thématique : finance, marketing, commercial",
         "la pondération de chaque critère par un coefficient",
+        "la déclinaison par champ thématique : finance, marketing, commercial",
+        "la déclinaison par zones géographiques : la stratégie se « traduit » zone par zone",
         "l'estimation paramétrique des objectifs par algorithmes"
       ],
-      "reponse": 0,
+      "reponse": 2,
       "explication": "La déclinaison par zones géographiques est indiquée comme pertinente pour les forces de vente. Les autres voies : l'entonnoir (principaux → secondaires) et la déclinaison par champ thématique. Règle d'or : les objectifs opérationnels sont au service des stratégiques."
     },
     {
@@ -145,11 +157,11 @@
       "question": "Un responsable s'engage à « déployer ses meilleurs efforts pour atteindre l'objectif visé, en ayant agi selon les règles de l'art ». De quoi s'agit-il, et où ce niveau se définit-il ?",
       "options": [
         "une obligation de résultat, définie dans le tableau de bord",
-        "une obligation de moyens, définie dans le contrat de travail ou la lettre de mission",
+        "une obligation de moyens, définie oralement au lancement du projet",
         "une obligation de résultat, définie dans le plan de ressources",
-        "une obligation de moyens, définie oralement au lancement du projet"
+        "une obligation de moyens, définie dans le contrat de travail ou la lettre de mission"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "C'est l'obligation de moyens : les meilleurs efforts, selon les règles de l'art. L'obligation de résultat impose d'« effectuer sa mission jusqu'au bout », sans réalisation partielle possible. Le niveau se définit en amont, dans le contrat de travail ou la lettre de mission rédigée avant le lancement."
     },
     {
@@ -171,10 +183,22 @@
         "A ne peut pas se terminer avant que B ne soit terminée"
       ],
       "paires": [
-        [0, 1],
-        [1, 2],
-        [2, 3],
-        [3, 0]
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
       ],
       "explication": "Repérer ces dépendances fait partie du séquençage : « raconter l'histoire » du projet pour fixer l'ordre logique des tâches. Sans chronologie claire, des périodes de latence improductives apparaissent, faute de savoir « à qui de jouer »."
     },
@@ -221,10 +245,22 @@
         "Refaire une matrice SWOT, ou un objectif par processus clé"
       ],
       "paires": [
-        [0, 2],
-        [1, 3],
-        [2, 0],
-        [3, 1]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
       ],
       "explication": "En démarrage, l'agilité suit la vision long terme des fondateurs ; en restructuration, le SWOT rétablit des bases réalistes (ou découpage par processus) ; en R&D, le portefeuille d'innovation hiérarchise par importance stratégique ; en RSE, normes/certifications ou intégration des attentes des parties prenantes."
     },
@@ -235,12 +271,12 @@
       "format": "qcm",
       "question": "Une enseigne change son système de caisse et veut suivre la progression globale du projet à travers un planning de réunions prédéfini. Quelle instance mettre en place ?",
       "options": [
-        "un comité de pilotage (CoPil) composé des référents des pôles concernés",
-        "un chef de projet unique, qui remplace toute instance collective",
         "une réunion de lancement, suffisante pour cadrer le projet",
+        "un chef de projet unique, qui remplace toute instance collective",
+        "un comité de pilotage (CoPil) composé des référents des pôles concernés",
         "un rapport d'étape mensuel archivé dans un cloud"
       ],
-      "reponse": 0,
+      "reponse": 2,
       "explication": "Le CoPil se réunit selon un planning prédéfini pour suivre la progression globale ; il est composé des référents des pôles concernés (dans l'exemple du cours : responsable de caisses, DSI, responsable de magasin, DRH pour la formation). Le chef de projet, lui, coordonne actions, budget et délais."
     },
     {
@@ -250,13 +286,600 @@
       "format": "qcm",
       "question": "Un livrable prend du retard et menace le calendrier du projet. Quelle est la bonne posture du chef de projet face à cet obstacle ?",
       "options": [
-        "attendre la prochaine réunion planifiée du CoPil pour statuer",
         "être réactif : ajuster le plan, allouer des ressources supplémentaires (renfort humain), décider rapidement",
+        "attendre la prochaine réunion planifiée du CoPil pour statuer",
         "annuler le projet pour ne pas cumuler les retards",
         "figer le plan initial : toute modification créerait des blocages"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "Face aux imprévus, il faut être réactif : ajuster le plan (différer une livraison pour ne pas mettre en péril le projet entier, changer de processus ou d'outils), allouer des ressources supplémentaires — un retard se compense en renfort humain — et décider rapidement. Le plan doit rester flexible : sans agilité, il enferme dans des blocages."
+    },
+    {
+      "id": "b4-r02-qz-017",
+      "section": "1. De la stratégie au plan d'action",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la chaîne de pilotage.",
+      "elements": [
+        "Le plan d'action réalise les objectifs",
+        "La stratégie fixe les axes",
+        "Les objectifs déclinent la stratégie"
+      ],
+      "ordre": [
+        1,
+        2,
+        0
+      ],
+      "explication": "Les objectifs se définissent après la stratégie, avant le plan d'action."
+    },
+    {
+      "id": "b4-r02-qz-018",
+      "section": "1. De la stratégie au plan d'action",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les 4 fonctions des objectifs ? (4 réponses)",
+      "options": [
+        "donner du sens",
+        "motiver",
+        "responsabiliser",
+        "piloter",
+        "sanctionner",
+        "contrôler les horaires"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Sens, motivation, responsabilisation (co-responsabilité des résultats), pilotage (cap et tableau de bord partagé)."
+    },
+    {
+      "id": "b4-r02-qz-019",
+      "section": "1. De la stratégie au plan d'action",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "L'atteinte des objectifs nourrit objectivement les entretiens annuels d'évaluation, et les difficultés rencontrées orientent les formations.",
+      "reponse": true,
+      "explication": "Vrai : les objectifs servent aussi l'évaluation et le développement des compétences."
+    },
+    {
+      "id": "b4-r02-qz-020",
+      "section": "2. La méthode SMARTEF, critère par critère",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez l'acronyme SMARTEF.",
+      "texte": "Spécifique, {1}, Atteignable, {2}, Temporellement défini, {3} et {4}.",
+      "trous": [
+        "Mesurable",
+        "Réaliste",
+        "Ecologique",
+        "Fun"
+      ],
+      "explication": "La variante SMARTER ajoute un R : Ré-ajustable."
+    },
+    {
+      "id": "b4-r02-qz-021",
+      "section": "2. La méthode SMARTEF, critère par critère",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que signifie le dernier R de la variante SMARTER ?",
+      "options": [
+        "Rentable",
+        "Reproductible",
+        "Responsable",
+        "Ré-ajustable"
+      ],
+      "reponse": 3,
+      "explication": "L'objectif doit pouvoir être revu si des changements majeurs surviennent : l'agilité reste essentielle en gestion de projet."
+    },
+    {
+      "id": "b4-r02-qz-022",
+      "section": "2. La méthode SMARTEF, critère par critère",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel critère SMARTEF est le moins consensuel, porté par les nouvelles générations ?",
+      "options": [
+        "Ecologique",
+        "Fun",
+        "Temporel",
+        "Réaliste"
+      ],
+      "reponse": 1,
+      "explication": "Le Fun : plaisir, épanouissement (jeux collaboratifs, convivialité), porté par les générations du full remote et du freelance."
+    },
+    {
+      "id": "b4-r02-qz-023",
+      "section": "2. La méthode SMARTEF, critère par critère",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque formulation au critère SMARTEF qu'elle illustre.",
+      "colonne_a": [
+        "« de 30 % »",
+        "« d'ici au 31/12 »",
+        "« pas de ventes avec la Russie »",
+        "« le marché est-il prêt ou saturé ? »"
+      ],
+      "colonne_b": [
+        "Ecologique",
+        "Réaliste",
+        "Spécifique",
+        "Temporellement défini"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Fil rouge du cours : « augmenter le CA »."
+    },
+    {
+      "id": "b4-r02-qz-024",
+      "section": "2. La méthode SMARTEF, critère par critère",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un objectif Mesurable peut reposer sur un indicateur qualitatif comme la notoriété ou la satisfaction.",
+      "reponse": true,
+      "explication": "Vrai : indicateurs quantitatifs (chiffres) ou qualitatifs, mesurés par sondage, enquête, baromètre."
+    },
+    {
+      "id": "b4-r02-qz-025",
+      "section": "2. La méthode SMARTEF, critère par critère",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Qu'est-ce qui distingue le critère Atteignable du critère Réaliste ?",
+      "options": [
+        "rien, ce sont des synonymes",
+        "Atteignable porte sur la date, Réaliste sur le budget",
+        "Atteignable porte sur les ressources (compétences, budget, matériel) ; Réaliste sur le contexte et les contraintes (circonstances, marché)",
+        "Atteignable concerne l'éthique, Réaliste le plaisir"
+      ],
+      "reponse": 2,
+      "explication": "Atteignable : le management s'engage sur les moyens. Réaliste : contextualiser (départ d'un collègue, Covid-19, alignement macro)."
+    },
+    {
+      "id": "b4-r02-qz-026",
+      "section": "2. La méthode SMARTEF, critère par critère",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que le greenwashing, piège du critère Ecologique ?",
+      "options": [
+        "communiquer avec l'argument écologique de manière trompeuse pour améliorer son image",
+        "un label écologique officiel",
+        "réduire l'empreinte carbone d'un projet",
+        "une norme ISO environnementale"
+      ],
+      "reponse": 0,
+      "explication": "Un objectif écologique suppose un engagement réel et authentique."
+    },
+    {
+      "id": "b4-r02-qz-027",
+      "section": "3. Formuler les objectifs : processus et avantages",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les premières étapes de formulation d'un objectif.",
+      "elements": [
+        "Choisir les indicateurs quantitatifs ou qualitatifs",
+        "Déterminer le contexte et les freins (SWOT)",
+        "Trouver l'équilibre ambitieux mais atteignable",
+        "Détailler le but (QQOQCCP)"
+      ],
+      "ordre": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "explication": "Puis pertinence, échéance, implications éthiques et flexibilité."
+    },
+    {
+      "id": "b4-r02-qz-028",
+      "section": "3. Formuler les objectifs : processus et avantages",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que désigne « l'hexamètre de Quintilien » dans le processus de formulation ?",
+      "options": [
+        "une matrice de risques",
+        "un diagramme de Gantt",
+        "une échelle de satisfaction",
+        "le QQOQCCP, pour détailler le but"
+      ],
+      "reponse": 3,
+      "explication": "Le but détaillé est la deuxième étape, après le contexte (SWOT)."
+    },
+    {
+      "id": "b4-r02-qz-029",
+      "section": "3. Formuler les objectifs : processus et avantages",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels sont des avantages de la formulation d'objectifs selon le cours ? (4 réponses)",
+      "options": [
+        "la motivation",
+        "un cadre commun",
+        "la formalisation de l'engagement",
+        "la confirmation de la nécessité du projet",
+        "la suppression des réunions",
+        "l'absence de contrôle"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "6 avantages : motivation, rigueur et pilotage, cadre commun, formalisation de l'engagement, confirmation de la nécessité du projet, évaluation et auto-évaluation."
+    },
+    {
+      "id": "b4-r02-qz-030",
+      "section": "3. Formuler les objectifs : processus et avantages",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Après le suivi et le pilotage viennent la livraison, le bilan individuel et collectif, puis le retour d'expérience (Rex) des parties prenantes.",
+      "reponse": true,
+      "explication": "Vrai : le processus se clôt par la capitalisation."
+    },
+    {
+      "id": "b4-r02-qz-031",
+      "section": "4. Hiérarchiser et décliner les objectifs",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Par quelle méthode déduit-on les objectifs secondaires des objectifs principaux ?",
+      "options": [
+        "le tirage au sort",
+        "l'entonnoir (pyramide inversée)",
+        "la matrice BCG",
+        "la courbe d'adoption"
+      ],
+      "reponse": 1,
+      "explication": "Autres méthodes : par champ thématique (finance, marketing…) ou par zones géographiques."
+    },
+    {
+      "id": "b4-r02-qz-032",
+      "section": "4. Hiérarchiser et décliner les objectifs",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles sont les 3 questions-guides de la hiérarchisation ? (3 réponses)",
+      "options": [
+        "Quelles conséquences ou quels risques à ne pas agir ?",
+        "Quel degré de faisabilité ?",
+        "Quel gain à traiter en priorité ?",
+        "Quel est l'âge moyen de l'équipe ?",
+        "Quel logiciel utiliser ?"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "On termine par une pondération (poids, coefficient)."
+    },
+    {
+      "id": "b4-r02-qz-033",
+      "section": "4. Hiérarchiser et décliner les objectifs",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "La hiérarchisation devient précieuse lorsque les moyens sont restreints (effectifs, budget, compétences).",
+      "reponse": true,
+      "explication": "Vrai. Elle est optionnelle pour un projet modeste, sauf projet « à tiroirs » où chaque phase conditionne la suivante."
+    },
+    {
+      "id": "b4-r02-qz-034",
+      "section": "5. Décomposer en tâches : le plan d'action",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque question du QQOQCCP à son contenu dans le plan d'action.",
+      "colonne_a": [
+        "Quoi",
+        "Où",
+        "Comment",
+        "Combien",
+        "Pourquoi"
+      ],
+      "colonne_b": [
+        "Moyens alloués",
+        "L'enjeu, le lien avec l'objectif",
+        "Mission, tâche, activité",
+        "Personnes mobilisées, résultat chiffré",
+        "Territoire géographique"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "explication": "Qui = personnes-ressources et destinataire du reporting ; Quand = démarrage, deadline, jalons."
+    },
+    {
+      "id": "b4-r02-qz-035",
+      "section": "5. Décomposer en tâches : le plan d'action",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Une obligation de résultat permet une réalisation partielle de la mission.",
+      "reponse": false,
+      "explication": "Faux : l'obligation de résultat impose d'effectuer la mission jusqu'au bout. C'est l'obligation de moyens qui exige seulement les meilleurs efforts selon les règles de l'art."
+    },
+    {
+      "id": "b4-r02-qz-036",
+      "section": "5. Décomposer en tâches : le plan d'action",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Où se définit le niveau de responsabilité (moyens ou résultat) d'un responsable de tâche ?",
+      "options": [
+        "dans le règlement intérieur",
+        "dans le compte rendu de fin de projet",
+        "dans le contrat de travail ou la lettre de mission rédigée avant le lancement",
+        "oralement, en réunion"
+      ],
+      "reponse": 2,
+      "explication": "La responsabilité : l'obligation de répondre de ses actes et d'en supporter les conséquences du fait de sa charge."
+    },
+    {
+      "id": "b4-r02-qz-037",
+      "section": "5. Décomposer en tâches : le plan d'action",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans la mise en situation du cours (+10 % de satisfaction client), quel KPI mesure la propension à recommander l'entreprise ?",
+      "options": [
+        "le NPS",
+        "le CSAT",
+        "le taux de churn",
+        "le CES"
+      ],
+      "reponse": 0,
+      "explication": "Le plan comporte 4 colonnes : tâches, responsables, délais (participatifs), KPI."
+    },
+    {
+      "id": "b4-r02-qz-038",
+      "section": "6. Ressources, séquençage et planification",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quelles familles de ressources le cours distingue-t-il ? (4 réponses)",
+      "options": [
+        "humaines",
+        "matérielles",
+        "financières",
+        "technologiques",
+        "émotionnelles",
+        "politiques"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Trois grandes familles, plus les technologiques (logiciels, outils, compatibilité du parc) dans le troisième support."
+    },
+    {
+      "id": "b4-r02-qz-039",
+      "section": "6. Ressources, séquençage et planification",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi le séquençage est-il indispensable ?",
+      "options": [
+        "pour réduire le budget",
+        "pour évaluer les salariés",
+        "pour choisir les prestataires",
+        "pour fixer l'ordre logique des tâches et éviter les latences improductives (« à qui de jouer ? »)"
+      ],
+      "reponse": 3,
+      "explication": "Le séquençage « raconte l'histoire » du projet : début, fin, étapes."
+    },
+    {
+      "id": "b4-r02-qz-040",
+      "section": "6. Ressources, séquençage et planification",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque outil de gestion du temps à son usage.",
+      "colonne_a": [
+        "Diagramme de Gantt",
+        "Tableau Kanban"
+      ],
+      "colonne_b": [
+        "Planifier et suivre les échéances par objectif",
+        "Visualiser le temps qui passe et l'avancée de chaque tâche"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "La planification se conclut par les KPI associés (performance des délais, des coûts)."
+    },
+    {
+      "id": "b4-r02-qz-041",
+      "section": "6. Ressources, séquençage et planification",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le plan de ressources peut être négocié avec la direction (N+1) ou avec les opérationnels (N-1).",
+      "reponse": true,
+      "explication": "Vrai : il alloue les ressources par tâche après arbitrage des conflits d'affectation."
+    },
+    {
+      "id": "b4-r02-qz-042",
+      "section": "6. Ressources, séquençage et planification",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "La diffusion d'une vidéo ne peut commencer qu'une fois la captation terminée. Quelle dépendance est-ce ?",
+      "options": [
+        "début à début",
+        "fin à début (en cascade)",
+        "fin à fin",
+        "début à fin"
+      ],
+      "reponse": 1,
+      "explication": "A démarre lorsque B se termine : c'est la dépendance en cascade."
+    },
+    {
+      "id": "b4-r02-qz-043",
+      "section": "7. Choisir les méthodes selon la situation",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels sont les 3 paramètres de choix d'une méthode de mise en œuvre ? (3 réponses)",
+      "options": [
+        "les caractéristiques uniques des objectifs",
+        "l'inventaire des ressources disponibles",
+        "les contraintes internes ou externes",
+        "l'avis du dernier recruté",
+        "la météo"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Avec un budget serré, on évalue aussi le ROI potentiel."
+    },
+    {
+      "id": "b4-r02-qz-044",
+      "section": "7. Choisir les méthodes selon la situation",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Selon le cours, la communication est un facteur clé de succès de la mise en œuvre : bien communiquer, c'est mieux collaborer.",
+      "reponse": true,
+      "explication": "Vrai, avec la planification stratégique, la décomposition des objectifs, la gestion du temps et le développement des compétences."
+    },
+    {
+      "id": "b4-r02-qz-045",
+      "section": "7. Choisir les méthodes selon la situation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel réflexe transversal le cours retient-il à propos du SWOT ?",
+      "options": [
+        "le SWOT remplace le plan d'action",
+        "le SWOT ne sert qu'en restructuration",
+        "du SWOT découlent les objectifs, des objectifs découle le plan d'action",
+        "le SWOT se fait après le plan d'action"
+      ],
+      "reponse": 2,
+      "explication": "Cas Logi'Plus : chaque objectif commercial répond à une case du SWOT (réduire la dépendance aux clients clés = traiter une faiblesse)."
+    },
+    {
+      "id": "b4-r02-qz-046",
+      "section": "7. Choisir les méthodes selon la situation",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Une entreprise d'innovation (R&D) veut fixer ses objectifs. Quelle approche le cours propose-t-il ?",
+      "options": [
+        "un portefeuille d'innovation court, moyen, long terme, hiérarchisé par importance stratégique",
+        "refaire une matrice SWOT",
+        "consulter uniquement les actionnaires",
+        "un objectif par processus clé"
+      ],
+      "reponse": 0,
+      "explication": "Résultats mesurables, impact, ambition. Le découpage par processus correspond à la restructuration."
+    },
+    {
+      "id": "b4-r02-qz-047",
+      "section": "8. Mettre en œuvre et piloter le plan d'action",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 3 moments de communication du plan d'action.",
+      "elements": [
+        "En continu : avancée, budget, retards, livrables",
+        "En amont : réflexion et co-construction",
+        "Lancement officiel"
+      ],
+      "ordre": [
+        1,
+        2,
+        0
+      ],
+      "explication": "Communiquer = engager et témoigner de la considération."
+    },
+    {
+      "id": "b4-r02-qz-048",
+      "section": "8. Mettre en œuvre et piloter le plan d'action",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les responsabilités du plan d'action s'assignent uniquement selon la disponibilité des collaborateurs.",
+      "reponse": false,
+      "explication": "Faux : selon la disponibilité, mais aussi le talent et la valeur ajoutée."
+    },
+    {
+      "id": "b4-r02-qz-049",
+      "section": "8. Mettre en œuvre et piloter le plan d'action",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Par quels canaux suit-on l'avancement du plan d'action ? (3 réponses)",
+      "options": [
+        "les réunions de suivi",
+        "les rapports d'étape écrits et datés",
+        "les outils de suivi de projet (Jira, Slack)",
+        "les entretiens annuels uniquement",
+        "les rumeurs"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Le suivi vérifie la réalisation, mesure les progrès face aux délais, identifie les écarts."
+    },
+    {
+      "id": "b4-r02-qz-050",
+      "section": "8. Mettre en œuvre et piloter le plan d'action",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Un collaborateur clé renonce à s'expatrier, ce qui remet en cause un projet international. Que préconise le cours ?",
+      "options": [
+        "imposer l'expatriation",
+        "sanctionner le collaborateur",
+        "annuler le projet",
+        "garder un plan flexible et concilier priorités de l'entreprise et objectifs personnels"
+      ],
+      "reponse": 3,
+      "explication": "Sans agilité, blocages. On souligne aussi les succès et on capitalise sur les bonnes pratiques."
+    },
+    {
+      "id": "b4-r02-qz-051",
+      "section": "8. Mettre en œuvre et piloter le plan d'action",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Construisez le rétroplanning d'un événement : quelles étapes et quels outils mobiliser selon le cours ?",
+      "attendus": [
+        "Décomposer l'objectif en tâches (QQOQCCP : quoi, qui, quand, comment…)",
+        "Identifier les dépendances (fin à début, début à début…)",
+        "Estimer les délais par analogie ou de façon paramétrique",
+        "Poser des jalons validables et visualiser en Gantt",
+        "Affecter responsables et ressources, suivre par CoPil, réunions et rapports d'étape"
+      ],
+      "explication": "Le plan d'action devient le tableau de bord de l'activité."
     }
   ]
 }

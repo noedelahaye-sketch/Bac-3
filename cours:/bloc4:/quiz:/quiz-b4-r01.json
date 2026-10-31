@@ -11,11 +11,11 @@
       "question": "Une entreprise fonctionne avec un pouvoir de décision diffus, réparti et décentralisé, très spécialisé, dans un modèle horizontal et fluide. À quel modèle de management correspond-elle ?",
       "options": [
         "au management mécaniste de l'entreprise classique",
-        "au management organique, qui voit l'entreprise comme un organisme vivant",
         "au management vertical fondé sur l'autorité hiérarchique",
+        "au management organique, qui voit l'entreprise comme un organisme vivant",
         "au management par la prévision et la planification"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "C'est le management organique : pouvoir diffus, réparti, décentralisé et spécialisé, modèle horizontal qui libère les énergies et l'innovation. À l'inverse, l'entreprise classique (mécaniste) concentre et centralise un pouvoir très généraliste dans un modèle vertical et rigide."
     },
     {
@@ -25,12 +25,12 @@
       "format": "qcm",
       "question": "Quelles sont les 3 grandes missions recentrées du manager d'aujourd'hui ?",
       "options": [
-        "prévoir, contrôler, sanctionner",
         "donner du sens, accompagner et soutenir, développer l'autonomie",
+        "prévoir, contrôler, sanctionner",
         "recruter, former, évaluer",
         "planifier, budgéter, reporter à la direction"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "De « contrôleur », le manager est devenu « stratège, développeur, animateur et soutien », recentré sur 3 missions : donner du sens (des repères dans un environnement mouvant), accompagner et soutenir, développer l'autonomie (prise de risque, initiative individuelle)."
     },
     {
@@ -63,11 +63,26 @@
         "Se situer au sein du service"
       ],
       "paires": [
-        [0, 2],
-        [1, 3],
-        [2, 0],
-        [3, 4],
-        [4, 1]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          1
+        ]
       ],
       "explication": "Les 5 types d'informations répondent à : quoi (opérationnelle), comment (organisationnelle), pourquoi (relationnelle), où se situer (connexe), dans quelle stratégie (générale). Le but de la communication du manager : informer pour donner du sens à l'action."
     },
@@ -79,11 +94,11 @@
       "question": "Un collaborateur vient voir son manager avec un problème. En posture de coach, que fait le manager ?",
       "options": [
         "il donne immédiatement la solution, car son expertise légitime ses décisions",
-        "il questionne plutôt que répondre, soutient plutôt que juger, facilite plutôt que diriger",
+        "il renvoie le problème vers la direction, dont il est la passerelle",
         "il tranche seul puis contrôle l'exécution de sa décision",
-        "il renvoie le problème vers la direction, dont il est la passerelle"
+        "il questionne plutôt que répondre, soutient plutôt que juger, facilite plutôt que diriger"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "La posture de coach (accompagnateur et pédagogue) : questionner plutôt que répondre, soutenir plutôt que juger, faciliter plutôt que diriger. L'objectif est de faire émerger les meilleures idées et de faire « grandir » les collaborateurs, l'écoute étant le préalable à la confiance."
     },
     {
@@ -109,11 +124,11 @@
       "question": "Un chef d'équipe nommé par la direction peine à entraîner son groupe, tandis qu'un de ses collaborateurs exerce un fort ascendant sur les autres. Comment analyser la situation avec les notions du cours ?",
       "options": [
         "le chef est un leader sans autorité, le collaborateur un manager naturel",
-        "le chef a l'autorité formelle du manager, le collaborateur l'autorité naturelle du leader : un chef statutaire peut ne pas être un leader",
         "le chef manque de hard skills, le collaborateur en a davantage",
+        "le chef a l'autorité formelle du manager, le collaborateur l'autorité naturelle du leader : un chef statutaire peut ne pas être un leader",
         "la situation est impossible : le statut de manager confère le leadership"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "Le manager est investi d'une autorité formelle qui lui donne un statut (et l'accès à une information privilégiée) ; le leader a une autorité naturelle, un ascendant qui donne envie de le suivre. Un chef statutaire peut ou non être un leader : les deux notions sont complémentaires."
     },
     {
@@ -132,12 +147,12 @@
       "format": "qcm",
       "question": "D'après le cours, dans quel cas une entreprise a-t-elle réellement besoin d'une stratégie ?",
       "options": [
-        "dès qu'elle dépasse une certaine taille",
         "quand il existe un impératif de choix entre des intérêts légitimes en opposition — « on fait de la stratégie parce qu'on est coincé »",
+        "dès qu'elle dépasse une certaine taille",
         "uniquement en période de crise ou de transformation",
         "quand ses ressources sont illimitées et qu'elle veut les allouer"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "Une stratégie — processus d'allocation de ressources qui engage durablement l'entreprise, rythmé par le double mouvement analyse/engagement — n'existe que s'il y a un impératif de choix. Sans limite de ressources ni concurrence, pas besoin de stratégie."
     },
     {
@@ -159,10 +174,22 @@
         "Qu'est-ce que je comprends des signaux ? Quel service vendre, à qui ?"
       ],
       "paires": [
-        [0, 2],
-        [1, 3],
-        [2, 0],
-        [3, 1]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
       ],
       "explication": "L'élaboration stratégique interroge 4 champs : écologie (le monde, le marché, les tendances lourdes), marché (les signaux, le service à vendre et à qui), ressources (peut-on jouer ?) et prospective (demain). Le marketing stratégique est la clé d'entrée pour comprendre le marché."
     },
@@ -175,10 +202,10 @@
       "options": [
         "la passivité",
         "les objections",
-        "les jeux politiques",
-        "les conflits ouverts"
+        "les conflits ouverts",
+        "les jeux politiques"
       ],
-      "reponse": 2,
+      "reponse": 3,
       "explication": "Les résistances au changement — normales, attendues et même utiles (« impossible de sculpter une statue sans la résistance de la pierre ») — prennent 4 formes : passivité, objections, jeux politiques et conflits ouverts. Les manœuvres d'alliances relèvent des jeux politiques."
     },
     {
@@ -204,11 +231,11 @@
       "question": "Quelles sont les opportunités que l'IA offre au manager d'aujourd'hui ?",
       "options": [
         "remplacer la relation managériale par des processus automatisés",
-        "l'analyse et la prise de décision, la gestion des talents, la veille, la gestion des risques et la personnalisation des services",
         "supprimer le besoin de contrôle grâce à la digitalisation",
+        "l'analyse et la prise de décision, la gestion des talents, la veille, la gestion des risques et la personnalisation des services",
         "réduire les effectifs des équipes créatives"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "L'IA aide à l'analyse et à la prise de décision, à la gestion des talents (recrutement, évaluation, développement des compétences), à la veille, à la gestion des risques et à la personnalisation des services. L'automatisation des tâches répétitives libère du temps pour les activités à haute valeur ajoutée."
     },
     {
@@ -227,12 +254,12 @@
       "format": "qcm",
       "question": "Pour suivre ses enjeux stratégiques, combien de KPI une entreprise doit-elle retenir selon le cours ?",
       "options": [
-        "le plus possible, pour ne rien laisser passer",
-        "un seul indicateur synthétique",
         "entre 5 et 8, limités aux plus significatifs, avec tableaux de bord et réunions de pilotage",
+        "un seul indicateur synthétique",
+        "le plus possible, pour ne rien laisser passer",
         "entre 15 et 20, répartis par service"
       ],
-      "reponse": 2,
+      "reponse": 0,
       "explication": "Les KPI doivent être limités aux plus significatifs (5 à 8), suivis via tableaux de bord et réunions de pilotage. Autres outils des 7 enjeux universels : SWOT et scénarios prospectifs, veille stratégique, cartographie des parties prenantes, projets pilotes avant déploiement massif."
     },
     {
@@ -254,12 +281,583 @@
         "S'adapter rapidement, imiter à moindre coût, maîtriser les coûts"
       ],
       "paires": [
-        [0, 1],
-        [1, 2],
-        [2, 3],
-        [3, 0]
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
       ],
       "explication": "Le leader mise sur l'innovation continue ; le challenger, plus petit mais inventif, cherche à se différencier ; le suiveur imite le leader à prix plus bas, sans prise de risque. En consolidation (maturité), il faut stabiliser, optimiser et préserver les marges — tout en provoquant le changement pour remettre les équipes en tension."
+    },
+    {
+      "id": "b4-r01-qz-017",
+      "section": "1. L'évolution du management",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Selon le cours, ce sont les entreprises qui tirent les marchés.",
+      "reponse": false,
+      "explication": "Faux : les marchés tirent les entreprises. Comme le skipper qui scrute météo et mer, le manager scrute le marché pour anticiper."
+    },
+    {
+      "id": "b4-r01-qz-018",
+      "section": "1. L'évolution du management",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans un monde complexe et imprévisible, quelle est désormais la clé du management selon le cours ?",
+      "options": [
+        "la prévision",
+        "le contrôle",
+        "la planification budgétaire",
+        "l'intention"
+      ],
+      "reponse": 3,
+      "explication": "« La clé du management n'est plus la prévision mais l'intention. » D'exécutants opérationnels, les managers deviennent entrepreneurs innovants."
+    },
+    {
+      "id": "b4-r01-qz-019",
+      "section": "1. L'évolution du management",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Sur quelles 3 directions les managers devenus « entrepreneurs innovants » s'engagent-ils ? (3 réponses)",
+      "options": [
+        "la maîtrise des outils (animation, coaching, pilotage)",
+        "la maturité relationnelle (recul, analyse, synthèse)",
+        "l'expertise technique supérieure à celle de l'équipe",
+        "l'esprit critique",
+        "le contrôle systématique des tâches"
+      ],
+      "reponse": [
+        0,
+        1,
+        3
+      ],
+      "explication": "Outils, maturité relationnelle, esprit critique. Être le meilleur expert n'est pas exigé."
+    },
+    {
+      "id": "b4-r01-qz-020",
+      "section": "1. L'évolution du management",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez ce qui assure la cohérence de l'équipe.",
+      "texte": "La cohérence repose sur des {1} communes, des {2} du jeu (coopérations, procédures) et une {3} managériale de réciprocité. « Pas d'implication si {4} ! »",
+      "trous": [
+        "valeurs",
+        "règles",
+        "relation",
+        "confusion"
+      ],
+      "explication": "Chacun doit sentir son utilité : la confusion tue l'implication."
+    },
+    {
+      "id": "b4-r01-qz-021",
+      "section": "2. Missions, rôles et postures du manager",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Que signifie l'image du manager « chef d'orchestre » ?",
+      "options": [
+        "il joue lui-même chaque partition à la place des musiciens",
+        "il organise, planifie et répartit les rôles dans une même temporalité, sans sous-métiers, pour l'harmonie de l'ensemble",
+        "il impose un tempo unique sans tenir compte des individualités",
+        "il se limite à sanctionner les fausses notes"
+      ],
+      "reponse": 1,
+      "explication": "Chacun apporte sa note ; individuel et collectif s'enrichissent, l'harmonie compte. Pas de sous-métiers."
+    },
+    {
+      "id": "b4-r01-qz-022",
+      "section": "2. Missions, rôles et postures du manager",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Le cours place le savoir-faire technique au-dessus du « savoir faire faire » dans les compétences attendues du manager.",
+      "reponse": false,
+      "explication": "Faux. C'est l'inverse : cap sur le « savoir faire faire ». La confiance permet autonomie, prise de risque et coopérations ; le manager devient guide, coach et facilitateur."
+    },
+    {
+      "id": "b4-r01-qz-023",
+      "section": "2. Missions, rôles et postures du manager",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle est, selon le cours, la première attente du collaborateur vis-à-vis de son manager ?",
+      "options": [
+        "être bien rémunéré",
+        "être contrôlé régulièrement",
+        "être reconnu et valorisé",
+        "avoir un manager plus expert que lui"
+      ],
+      "reponse": 2,
+      "explication": "Être reconnu et valorisé. L'écoute, compétence sociale indispensable, précède la confiance."
+    },
+    {
+      "id": "b4-r01-qz-024",
+      "section": "2. Missions, rôles et postures du manager",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le manager n'a pas besoin d'être le meilleur expert de son équipe, mais des compétences techniques solides légitiment ses décisions.",
+      "reponse": true,
+      "explication": "Vrai. Inutile d'être le meilleur expert, mais la connaissance du métier crédibilise les décisions."
+    },
+    {
+      "id": "b4-r01-qz-025",
+      "section": "2. Missions, rôles et postures du manager",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel est le dilemme principal du manager selon le cours ?",
+      "options": [
+        "concilier souplesse et autorité",
+        "choisir entre clients et actionnaires",
+        "arbitrer entre formation et recrutement",
+        "choisir entre présentiel et distanciel"
+      ],
+      "reponse": 0,
+      "explication": "Accepter les demandes d'organisation du travail tout en recadrant les comportements par respect des objectifs et de l'équité."
+    },
+    {
+      "id": "b4-r01-qz-026",
+      "section": "2. Missions, rôles et postures du manager",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que se passe-t-il quand la communication interne fait défaut ?",
+      "options": [
+        "les équipes deviennent plus autonomes",
+        "rien, car l'information n'est pas un besoin fondamental",
+        "la productivité augmente faute de réunions",
+        "des compensations s'installent : salle de pause, rumeurs, défiance"
+      ],
+      "reponse": 3,
+      "explication": "Le partage d'informations est un besoin fondamental de chaque employé. Le manager est la passerelle entre direction et équipe."
+    },
+    {
+      "id": "b4-r01-qz-027",
+      "section": "2. Missions, rôles et postures du manager",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Quels sont les 5 flux de communication que le manager fait vivre ? (5 réponses)",
+      "options": [
+        "descendant",
+        "ascendant",
+        "latéral",
+        "« social »",
+        "externe",
+        "confidentiel"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "explication": "« La communication n'est pas un outil de management, c'est de la culture partagée. »"
+    },
+    {
+      "id": "b4-r01-qz-028",
+      "section": "3. Compétences et leadership",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque soft skill à sa famille.",
+      "colonne_a": [
+        "Créativité",
+        "Empathie",
+        "Gestion du stress"
+      ],
+      "colonne_b": [
+        "Professionnelles",
+        "Personnelles",
+        "Interpersonnelles"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Personnelles : confiance, créativité, curiosité, adaptation. Interpersonnelles : bienveillance, communication, assertivité, empathie. Professionnelles : autonomie, esprit critique, éthique, gestion du stress."
+    },
+    {
+      "id": "b4-r01-qz-029",
+      "section": "3. Compétences et leadership",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les soft skills s'acquièrent surtout par les diplômes et le circuit scolaire.",
+      "reponse": false,
+      "explication": "Faux : transversales, elles s'acquièrent surtout hors du circuit scolaire."
+    },
+    {
+      "id": "b4-r01-qz-030",
+      "section": "3. Compétences et leadership",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Parmi les hard skills du manager, quelle dimension s'est le plus accentuée récemment ?",
+      "options": [
+        "planifier",
+        "responsabiliser",
+        "contrôler",
+        "budgéter"
+      ],
+      "reponse": 1,
+      "explication": "Hard skills d'importance constante : organiser, planifier, prioriser, responsabiliser (la plus accentuée), s'adapter, prendre du recul."
+    },
+    {
+      "id": "b4-r01-qz-031",
+      "section": "3. Compétences et leadership",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelles sont les 2 qualités du talent selon le cours ?",
+      "options": [
+        "charisme et autorité",
+        "expertise et ancienneté",
+        "connaissance de soi et humilité intellectuelle",
+        "ambition et compétitivité"
+      ],
+      "reponse": 2,
+      "explication": "Connaître ses forces, talents et limites. Il n'y a pas de bonne ou mauvaise personnalité, seulement des personnalités adaptées ou non à la situation."
+    },
+    {
+      "id": "b4-r01-qz-032",
+      "section": "3. Compétences et leadership",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition du leadership.",
+      "texte": "Le leadership est la capacité d'un individu à exercer une {1} sur les autres au point de leur donner {2} de le suivre. Le manager qui en a fait des arbitrages {3} par le groupe.",
+      "trous": [
+        "influence",
+        "envie",
+        "acceptés"
+      ],
+      "explication": "Il donne aussi du sens, motive par son attitude et représente le groupe auprès des parties prenantes."
+    },
+    {
+      "id": "b4-r01-qz-033",
+      "section": "3. Compétences et leadership",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Selon le cours, le style de leader « autoritaire », qui mobilise autour d'une vision et laisse la liberté des moyens, est le plus efficace.",
+      "reponse": true,
+      "explication": "Vrai, contre-intuitif : il précise la finalité et laisse la liberté des moyens. Sa vision et sa clarté font son efficacité."
+    },
+    {
+      "id": "b4-r01-qz-034",
+      "section": "3. Compétences et leadership",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Qu'est-ce que l'« autorité » selon le cours ?",
+      "options": [
+        "la capacité reconnue par l'institution d'exercer un pouvoir",
+        "l'ascendant naturel d'un individu sur un groupe",
+        "l'ancienneté dans l'entreprise",
+        "la capacité à sanctionner"
+      ],
+      "reponse": 0,
+      "explication": "Manager = autorité formelle et statut ; leader = autorité naturelle ; autorité = pouvoir reconnu par l'institution."
+    },
+    {
+      "id": "b4-r01-qz-035",
+      "section": "4. Anticiper : vision stratégique et changement",
+      "niveau": 1,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition de la stratégie.",
+      "texte": "Une stratégie consiste en un processus d'{1} de ressources qui engage de façon {2} l'entreprise. Elle est rythmée par un double mouvement : {3} et {4}.",
+      "trous": [
+        "allocation",
+        "durable",
+        "analyse",
+        "engagement"
+      ],
+      "explication": "« On fait de la stratégie parce qu'on est coincé » : sans limite de ressources ni concurrence, pas besoin de stratégie."
+    },
+    {
+      "id": "b4-r01-qz-036",
+      "section": "4. Anticiper : vision stratégique et changement",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque approche stratégique à sa logique.",
+      "colonne_a": [
+        "Anticipation",
+        "Réactivité",
+        "Équilibre des intérêts",
+        "Logiques d'émergence"
+      ],
+      "colonne_b": [
+        "Jeux d'acteurs et de pouvoirs",
+        "Innovation, « on apprend en marchant »",
+        "Vision, planification",
+        "Client au cœur, concurrence, marché"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Quatre approches complémentaires de la stratégie."
+    },
+    {
+      "id": "b4-r01-qz-037",
+      "section": "4. Anticiper : vision stratégique et changement",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle question pose l'exploration, par opposition à l'exploitation ?",
+      "options": [
+        "fait-on comme il faut ?",
+        "qui est responsable ?",
+        "combien cela coûte-t-il ?",
+        "fait-on ce qu'il faut ?"
+      ],
+      "reponse": 3,
+      "explication": "Exploitation = utiliser le potentiel existant (fait-on comme il faut ?) ; exploration = le renouveler (fait-on ce qu'il faut ?). L'art est leur coexistence harmonieuse."
+    },
+    {
+      "id": "b4-r01-qz-038",
+      "section": "4. Anticiper : vision stratégique et changement",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que le PMO cité parmi les outils stratégiques ?",
+      "options": [
+        "un logiciel de gestion de projet",
+        "le Plan Marketing Opérationnel : l'ambition traduite en plan économique et commercial à 3 ans",
+        "le Plan de Mobilité Obligatoire",
+        "un tableau de bord mensuel"
+      ],
+      "reponse": 1,
+      "explication": "Outils : business plan, PMO à 3 ans, budget. Le marketing stratégique est la clé d'entrée pour comprendre le marché."
+    },
+    {
+      "id": "b4-r01-qz-039",
+      "section": "4. Anticiper : vision stratégique et changement",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque dimension du changement à sa définition.",
+      "colonne_a": [
+        "Instabilité",
+        "Incertitude"
+      ],
+      "colonne_b": [
+        "On ignore comment le changement évoluera",
+        "La vitesse du changement"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Le changement est permanent ; la réponse est l'adaptabilité et l'agilité."
+    },
+    {
+      "id": "b4-r01-qz-040",
+      "section": "4. Anticiper : vision stratégique et changement",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Le cours considère les résistances au changement comme normales, attendues et utiles.",
+      "reponse": true,
+      "explication": "Vrai : « impossible de sculpter une statue sans la résistance de la pierre ». 4 formes : passivité, objections, jeux politiques, conflits ouverts."
+    },
+    {
+      "id": "b4-r01-qz-041",
+      "section": "4. Anticiper : vision stratégique et changement",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Selon le cours, quelle proportion de salariés dans le monde devrait avoir besoin de reskilling dans les cinq prochaines années ?",
+      "options": [
+        "1 sur 10",
+        "1 sur 4",
+        "1 sur 2",
+        "3 sur 4"
+      ],
+      "reponse": 2,
+      "explication": "Un salarié sur deux. Le besoin de formation se mesure par l'écart entre compétences actuelles et nécessaires."
+    },
+    {
+      "id": "b4-r01-qz-042",
+      "section": "4. Anticiper : vision stratégique et changement",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Pour gérer succession et mobilité, le cours recommande de privilégier systématiquement les profils « nés avec le digital ».",
+      "reponse": false,
+      "explication": "Faux. Il faut éviter de les survaloriser : les seniors apportent recul et équilibre."
+    },
+    {
+      "id": "b4-r01-qz-043",
+      "section": "5. Défis et opportunités du manager d'aujourd'hui",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels sont les deux grands défis post-Covid du manager ? (2 réponses)",
+      "options": [
+        "la gestion à distance des équipes",
+        "la crise elle-même : garder une vision malgré l'incertitude",
+        "la baisse du recours au numérique",
+        "la disparition des équipes pluridisciplinaires"
+      ],
+      "reponse": [
+        0,
+        1
+      ],
+      "explication": "Le distanciel est devenu la norme et la frontière vie pro / vie perso s'est estompée."
+    },
+    {
+      "id": "b4-r01-qz-044",
+      "section": "5. Défis et opportunités du manager d'aujourd'hui",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Selon Deloitte, combien une politique inclusive génère-t-elle de chiffre d'affaires en plus par salarié ?",
+      "options": [
+        "jusqu'à 30 %",
+        "jusqu'à 10 %",
+        "jusqu'à 5 %",
+        "jusqu'à 60 %"
+      ],
+      "reponse": 0,
+      "explication": "Jusqu'à 30 %. L'Institut Montaigne montre aussi que l'égalité de genre améliore les performances économiques."
+    },
+    {
+      "id": "b4-r01-qz-045",
+      "section": "5. Défis et opportunités du manager d'aujourd'hui",
+      "niveau": 1,
+      "format": "vrai_faux",
+      "question": "Diversité et inclusivité sont des notions opposées entre lesquelles le manager doit choisir.",
+      "reponse": false,
+      "explication": "Faux, elles sont complémentaires. Diversité = favoriser la différence ; inclusivité = assembler tous les salariés dans une mutualité et traiter à égalité."
+    },
+    {
+      "id": "b4-r01-qz-046",
+      "section": "6. Les enjeux stratégiques du management",
+      "niveau": 1,
+      "format": "qcm_multiple",
+      "question": "Lesquels font partie des 7 enjeux universels du management ? (4 réponses)",
+      "options": [
+        "la vision à moyen et long terme",
+        "la gestion du changement",
+        "la mobilisation des ressources humaines",
+        "la durabilité et la RSE",
+        "la réduction systématique des effectifs",
+        "la centralisation des décisions"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Les 7 : vision, changement, analyse de l'environnement, mobilisation des RH, suivi de la performance, ressources et risques, durabilité/RSE."
+    },
+    {
+      "id": "b4-r01-qz-047",
+      "section": "6. Les enjeux stratégiques du management",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une entreprise sortie de sa phase de croissance, en maturité, doit surtout :",
+      "options": [
+        "se diversifier à tout prix",
+        "recruter massivement",
+        "redéfinir entièrement sa stratégie",
+        "stabiliser, optimiser ses processus, fidéliser et éviter la routine"
+      ],
+      "reponse": 3,
+      "explication": "Consolidation : préserver les marges, automatiser, fidéliser la base client, provoquer le changement pour remettre les équipes en tension."
+    },
+    {
+      "id": "b4-r01-qz-048",
+      "section": "6. Les enjeux stratégiques du management",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez la définition INSEE (2019) des PME.",
+      "texte": "Une PME compte moins de {1} personnes, avec un CA ≤ {2} M€ ou un bilan ≤ 43 M€. Une microentreprise compte moins de {3} personnes. Les PME/TPE représentent plus de {4} % des entreprises françaises.",
+      "trous": [
+        "250",
+        "50",
+        "10",
+        "99"
+      ],
+      "explication": "Enjeu majeur : une stratégie de croissance avec des ressources limitées. Atouts : agilité, flexibilité, créativité."
+    },
+    {
+      "id": "b4-r01-qz-049",
+      "section": "6. Les enjeux stratégiques du management",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel enjeu est propre aux grandes multinationales ?",
+      "options": [
+        "la proximité client",
+        "l'adaptation aux spécificités culturelles et économiques de chaque pays",
+        "le manque de ressources",
+        "la stratégie de suiveur"
+      ],
+      "reponse": 1,
+      "explication": "S'y ajoutent risques géopolitiques, équipes multiculturelles, chaîne d'approvisionnement mondiale et cybersécurité."
+    },
+    {
+      "id": "b4-r01-qz-050",
+      "section": "6. Les enjeux stratégiques du management",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Le suiveur, qui imite le leader sans prendre de risque, est généralement rentable.",
+      "reponse": true,
+      "explication": "Vrai. Son enjeu : s'adapter vite, surveiller la concurrence, maîtriser les coûts."
+    },
+    {
+      "id": "b4-r01-qz-051",
+      "section": "6. Les enjeux stratégiques du management",
+      "niveau": 2,
+      "format": "ouverte",
+      "question": "Un manager doit présenter les enjeux stratégiques d'un projet de partenariat entre deux entreprises. Quelle grille d'analyse le cours propose-t-il ?",
+      "attendus": [
+        "Analyser l'environnement et les tendances (SWOT, veille, scénarios)",
+        "Préciser la vision et les objectifs du projet",
+        "Évaluer ressources et risques (cartographie des parties prenantes, projet pilote)",
+        "Mesurer l'enjeu de réputation et d'image de marque",
+        "Suivre la performance avec 5 à 8 KPI significatifs"
+      ],
+      "explication": "Les 7 enjeux universels sont interdépendants ; on les module selon le contexte, le positionnement et la taille."
+    },
+    {
+      "id": "b4-r01-qz-052",
+      "section": "1. L'évolution du management",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Que résume la formule « l'art du management est l'art de la transformation » ?",
+      "options": [
+        "changer d'organisation chaque année",
+        "transformer les managers en experts techniques",
+        "obtenir un maximum de résultats, en quantité et en qualité, avec un minimum de ressources",
+        "remplacer l'intention par la prévision"
+      ],
+      "reponse": 2,
+      "explication": "Optimiser le dialogue intention / situation par principe d'économie."
     }
   ]
 }

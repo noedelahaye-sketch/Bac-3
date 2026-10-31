@@ -11,11 +11,11 @@
       "question": "Dans la définition du plan de communication, que regroupe le « contenant » ?",
       "options": [
         "le message, le concept créatif et la stratégie de moyens",
-        "la cible, les objectifs, le budget et le planning",
         "les supports et le calendrier de diffusion",
+        "la cible, les objectifs, le budget et le planning",
         "les KPI et le tableau de bord budgétaire"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "Le contenant = cible, objectifs, budget, planning ; le contenu = message, concept créatif, stratégie de moyens (les canaux sélectionnés). Le plan est la traduction opérationnelle de la stratégie de communication."
     },
     {
@@ -34,12 +34,12 @@
       "format": "qcm",
       "question": "Comment se construit le tableau de bord des résultats d'un plan de communication ?",
       "options": [
-        "un KPI global pour l'ensemble du plan",
         "un KPI par action, consigné et évalué au fur et à mesure",
+        "un KPI global pour l'ensemble du plan",
         "uniquement des indicateurs financiers (budget prévu vs réel)",
         "un sondage de notoriété annuel"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "Un KPI par action : % de nouveaux contacts pour un salon, évolution du taux de notoriété pour une campagne TV... Il complète le tableau de bord budgétaire (prévu vs réel par action). C'est le format attendu en Q10."
     },
     {
@@ -50,11 +50,11 @@
       "question": "Qu'est-ce qui distingue la communication marketing intégrée (CMI) de la communication 360° ?",
       "options": [
         "la CMI est réservée au digital, le 360° couvre aussi l'off line",
-        "le 360° vise l'exhaustivité des canaux ; la CMI vise leur intégration autour de la connaissance client",
+        "aucune : ce sont deux noms de la même stratégie",
         "la CMI concerne le BtoB, le 360° le BtoC",
-        "aucune : ce sont deux noms de la même stratégie"
+        "le 360° vise l'exhaustivité des canaux ; la CMI vise leur intégration autour de la connaissance client"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "Le 360° utilise tous les vecteurs off line et on line (omniprésence, message uniforme) ; la CMI intègre les canaux en s'appuyant sur une étude poussée de la cible (Big Data, segmentation fine). C'est la connaissance client qui fait la différence."
     },
     {
@@ -71,7 +71,12 @@
         "une présence sur tous les réseaux sociaux",
         "des équipes compétentes et impliquées"
       ],
-      "reponse": [0, 2, 3, 5],
+      "reponse": [
+        0,
+        2,
+        3,
+        5
+      ],
       "explication": "Les 4 clés HBR : stratégie soutenue par la direction, bons outils, plan d'action éprouvé, équipes compétentes et impliquées. Ni le budget ni l'exhaustivité des réseaux n'en font partie."
     },
     {
@@ -114,7 +119,14 @@
         "la radio",
         "le cinéma"
       ],
-      "reponse": [0, 1, 3, 4, 6, 7],
+      "reponse": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7
+      ],
       "explication": "TV, presse, affichage, Internet, radio, cinéma. L'événementiel et le marketing direct relèvent du hors-média. Les réseaux sociaux sont hybrides : média pour la publicité, hors-média pour l'éditorial."
     },
     {
@@ -155,12 +167,30 @@
         "Visibilité géographique, mais message court obligatoire"
       ],
       "paires": [
-        [0, 2],
-        [1, 4],
-        [2, 3],
-        [3, 5],
-        [4, 0],
-        [5, 1]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          1
+        ]
       ],
       "explication": "Chaque média a son couple forces/vigilances : le choix dépend de la cible, du budget, des délais — et des restrictions légales (tabac, alcool, médicaments) qui font le premier tri."
     },
@@ -171,12 +201,12 @@
       "format": "qcm",
       "question": "Une enseigne veut annoncer l'ouverture d'un magasin dans une ville moyenne. Quel support de presse est le plus adapté ?",
       "options": [
-        "la PQN (presse quotidienne nationale)",
         "la PQR (presse quotidienne régionale)",
+        "la PQN (presse quotidienne nationale)",
         "un magazine spécialisé national",
         "un média natif numérique"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "La PQR couvre les actualités locales avec un réseau de correspondants : idéale pour une cible locale. La presse est par ailleurs une bonne option en phase de lancement de produit."
     },
     {
@@ -201,11 +231,11 @@
       "question": "Pour une cible de niche, un magazine spécialisé présente typiquement :",
       "options": [
         "une forte couverture et une forte affinité",
-        "une faible couverture mais une forte affinité",
+        "une faible couverture et une faible affinité",
         "une forte couverture mais une faible affinité",
-        "une faible couverture et une faible affinité"
+        "une faible couverture mais une forte affinité"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "Le magazine spécialisé touche peu de monde (couverture limitée) mais son audience correspond largement à la cible (affinité forte). À l'inverse, TF1 offre une énorme couverture mais une faible affinité pour une niche."
     },
     {
@@ -237,7 +267,14 @@
         "Choisir les médias (restrictions légales, adéquation cible, budget, délais)",
         "Structurer le dossier stratégique"
       ],
-      "ordre": [1, 3, 5, 4, 0, 2],
+      "ordre": [
+        1,
+        3,
+        5,
+        4,
+        0,
+        2
+      ],
       "explication": "Objectifs → ressources → dossier stratégique → choix des médias (premier tri par les restrictions légales) → hiérarchisation des supports par les indicateurs → planification. Livrables : dossier stratégique + plan de travail chiffré."
     },
     {
@@ -247,12 +284,12 @@
       "format": "qcm",
       "question": "Que désigne le marché « MICE » ?",
       "options": [
-        "Meetings, Incentives, Conventions, Exhibitions — le marché de l'événementiel d'entreprise",
-        "Marketing, Innovation, Communication, Événementiel",
         "un label d'écoresponsabilité des événements",
+        "Marketing, Innovation, Communication, Événementiel",
+        "Meetings, Incentives, Conventions, Exhibitions — le marché de l'événementiel d'entreprise",
         "la méthode de brief des agences événementielles"
       ],
-      "reponse": 0,
+      "reponse": 2,
       "explication": "Le MICE (Meetings, Incentives, Conventions, Exhibitions) est le marché événementiel le plus important en France (tourisme, hôtellerie haut de gamme, location de salles). Tendances : webinaires (100 % en ligne) et écoresponsabilité."
     },
     {
@@ -268,6 +305,604 @@
         "Les KPI sont mesurables et rattachés à l'action, pas génériques"
       ],
       "explication": "C'est le format exact de la Q10 : KPI puis budget détaillé d'une action de communication, en reproduisant les deux tableaux de bord du pilotage du plan."
+    },
+    {
+      "id": "b2-r07-qz-018",
+      "section": "1. Le plan de communication",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Que contient le « contenu » du plan de communication ?",
+      "options": [
+        "le message, le concept créatif et la stratégie de moyens",
+        "la cible, les objectifs, le budget, le planning",
+        "les CV de l'équipe",
+        "le bilan comptable"
+      ],
+      "reponse": 0,
+      "explication": "Le contenant regroupe cible, objectifs, budget et planning."
+    },
+    {
+      "id": "b2-r07-qz-019",
+      "section": "1. Le plan de communication",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque usage du plan de communication à son public.",
+      "colonne_a": [
+        "En interne",
+        "En externe"
+      ],
+      "colonne_b": [
+        "Cadre pour les prestataires, parfois outil de communication",
+        "Planification, coordination, management des équipes"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Il n'est défini qu'après le travail d'analyse (audit, problématique)."
+    },
+    {
+      "id": "b2-r07-qz-020",
+      "section": "1. Le plan de communication",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que le « washing » contre lequel le cours met en garde ?",
+      "options": [
+        "le nettoyage des bases de données",
+        "un format publicitaire",
+        "une technique d'affichage",
+        "des messages verts, féministes ou inclusifs sans changement des pratiques internes"
+      ],
+      "reponse": 3,
+      "explication": "La sanction est violente : la sincérité de la démarche prime."
+    },
+    {
+      "id": "b2-r07-qz-021",
+      "section": "1. Le plan de communication",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "À l'heure du web conversationnel, le passif d'une entreprise (archives, historiques, marque employeur) peut devenir un point d'attaque.",
+      "reponse": true,
+      "explication": "Vrai, comme l'a montré le cas Volkswagen."
+    },
+    {
+      "id": "b2-r07-qz-022",
+      "section": "1. Le plan de communication",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelles tendances Kantar le cours cite-t-il ?",
+      "options": [
+        "le fax et le minitel",
+        "les podcasts et les « shopable ads »",
+        "l'affichage papier uniquement",
+        "la fin d'Internet"
+      ],
+      "reponse": 1,
+      "explication": "Shopable ads : acheter directement dans la plateforme de diffusion."
+    },
+    {
+      "id": "b2-r07-qz-023",
+      "section": "1. Le plan de communication",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque tableau de bord du plan à son contenu.",
+      "colonne_a": [
+        "Tableau de bord budgétaire",
+        "Tableau de bord des résultats"
+      ],
+      "colonne_b": [
+        "Un KPI par action, évalué au fur et à mesure",
+        "Budget prévu vs réel par action"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Exemple de KPI : % de nouveaux contacts sur un salon, évolution de la notoriété après une campagne TV."
+    },
+    {
+      "id": "b2-r07-qz-024",
+      "section": "1. Le plan de communication",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la conduite du plan en gestion de projet.",
+      "elements": [
+        "Réalisation",
+        "Clôture",
+        "Conception (objectifs, contraintes)",
+        "Planification (ressources, délais)"
+      ],
+      "ordre": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "explication": "Le chef de projet coordonne équipes internes, agences, imprimeurs, médias."
+    },
+    {
+      "id": "b2-r07-qz-025",
+      "section": "2. Les stratégies d'ensemble",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Dans le cas cité par la Harvard Business Review, un jeu vidéo affiché 17 € en ligne et 40 € en magasin illustre une communication non intégrée.",
+      "reponse": true,
+      "explication": "Vrai : un client doit retrouver la même information sur tous les supports."
+    },
+    {
+      "id": "b2-r07-qz-026",
+      "section": "2. Les stratégies d'ensemble",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Sur quoi s'appuie la communication marketing intégrée ?",
+      "options": [
+        "sur l'intuition créative",
+        "sur un seul canal",
+        "sur une étude poussée de la cible (Big Data, segmentation fine)",
+        "sur le prix"
+      ],
+      "reponse": 2,
+      "explication": "Synergie des canaux et continuité des messages."
+    },
+    {
+      "id": "b2-r07-qz-027",
+      "section": "2. Les stratégies d'ensemble",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quels sont les avantages de la communication 360° ?",
+      "options": [
+        "l'omniprésence dans l'esprit du consommateur et un message cohérent sur tous les points de contact",
+        "un coût minimal",
+        "l'absence de planification",
+        "un seul message par canal"
+      ],
+      "reponse": 0,
+      "explication": "Elle utilise tous les vecteurs off line et on line. Le site web est la première vitrine."
+    },
+    {
+      "id": "b2-r07-qz-028",
+      "section": "2. Les stratégies d'ensemble",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles rubriques figurent dans la plateforme de marque du Communicator ? (4 réponses)",
+      "options": [
+        "la vision",
+        "l'ambition",
+        "la promesse",
+        "le ton et le style",
+        "le chiffre d'affaires",
+        "l'organigramme"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Les 10 : définition, vision, mission, ambition, positionnement, personnalité, promesse, preuves, ton et style, contraintes."
+    },
+    {
+      "id": "b2-r07-qz-029",
+      "section": "2. Les stratégies d'ensemble",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque rubrique de la plateforme de marque à sa question.",
+      "colonne_a": [
+        "Définition",
+        "Mission",
+        "Ambition",
+        "Preuves"
+      ],
+      "colonne_b": [
+        "Ce que la marque veut devenir",
+        "Les raisons de croire en la promesse",
+        "Qui sommes-nous ?",
+        "Notre rôle, notre raison d'être"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explication": "Illustré dans le cours par Serre Chevalier - Briançon."
+    },
+    {
+      "id": "b2-r07-qz-030",
+      "section": "2. Les stratégies d'ensemble",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque stratégie de canaux à sa caractéristique.",
+      "colonne_a": [
+        "Multicanal",
+        "Crosscanal",
+        "Omnicanal"
+      ],
+      "colonne_b": [
+        "Canaux intégrés, centrés client, expérience unifiée",
+        "Plusieurs canaux non connectés",
+        "Canaux connectés, le client passe de l'un à l'autre"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Le crosscanal apporte de la synergie mais une complexité technique (CRM, tracking)."
+    },
+    {
+      "id": "b2-r07-qz-031",
+      "section": "2. Les stratégies d'ensemble",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi le co-branding Weight Watchers × Andros a-t-il échoué ?",
+      "options": [
+        "un prix trop bas",
+        "un produit défectueux",
+        "un logo raté",
+        "Andros n'a pas investi dans les campagnes prévues : l'alignement des engagements est primordial"
+      ],
+      "reponse": 3,
+      "explication": "Réussites : Red Bull × GoPro, Apple Watch × Hermès, Rihanna × Chopard."
+    },
+    {
+      "id": "b2-r07-qz-032",
+      "section": "2. Les stratégies d'ensemble",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels avantages offre le co-branding ? (3 réponses)",
+      "options": [
+        "améliorer image et crédibilité",
+        "toucher de nouvelles cibles",
+        "mutualiser les moyens",
+        "supprimer la concurrence",
+        "éviter toute communication"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Il faut des partenaires aux valeurs alignées et à la marque forte."
+    },
+    {
+      "id": "b2-r07-qz-033",
+      "section": "3. Le paysage des médias",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le sponsoring et le mécénat font partie des 6 grands médias publicitaires.",
+      "reponse": false,
+      "explication": "Faux : ils relèvent du hors-média. Les 6 grands médias sont la TV, la presse, l'affichage, Internet, la radio et le cinéma."
+    },
+    {
+      "id": "b2-r07-qz-034",
+      "section": "3. Le paysage des médias",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce qu'un canal de communication ?",
+      "options": [
+        "une chaîne de télévision",
+        "le vecteur par lequel le message arrive jusqu'à la cible",
+        "un support print",
+        "un slogan"
+      ],
+      "reponse": 1,
+      "explication": "Le support est le moyen de diffusion concret au sein d'un média (TF1, Le Monde, NRJ)."
+    },
+    {
+      "id": "b2-r07-qz-035",
+      "section": "3. Le paysage des médias",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel est le principal point de vigilance de la radio ?",
+      "options": [
+        "son coût",
+        "sa faible proximité",
+        "l'absence d'image",
+        "son manque de ciblage horaire"
+      ],
+      "reponse": 2,
+      "explication": "Atouts : proximité, tranches horaires stratégiques, identité sonore."
+    },
+    {
+      "id": "b2-r07-qz-036",
+      "section": "3. Le paysage des médias",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les agences de presse comme l'AFP sont des prestataires que les annonceurs paient pour leurs relations presse.",
+      "reponse": false,
+      "explication": "Faux : ce sont les « grossistes de l'information » (environ 80 % des infos étrangères des quotidiens). Les agences de relations presse sont, elles, prestataires des annonceurs."
+    },
+    {
+      "id": "b2-r07-qz-037",
+      "section": "3. Le paysage des médias",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que désigne un « pure player » dans la presse web ?",
+      "options": [
+        "un média né en ligne, au ton indépendant",
+        "un titre papier historique",
+        "une radio locale",
+        "une agence de presse"
+      ],
+      "reponse": 0,
+      "explication": "S'y ajoutent influenceurs et KOL (Key Opinion Leaders)."
+    },
+    {
+      "id": "b2-r07-qz-038",
+      "section": "3. Le paysage des médias",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Une entreprise a une annonce importante mais sans aucune image à montrer. Quel média de relations presse est le moins adapté ?",
+      "options": [
+        "la presse écrite",
+        "la presse web",
+        "la radio",
+        "la télévision"
+      ],
+      "reponse": 3,
+      "explication": "Le choix du média dépend de l'information : une info très visuelle passe mal en radio, une info sans images n'intéresse pas la TV."
+    },
+    {
+      "id": "b2-r07-qz-039",
+      "section": "4. Plan média et média planning",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque notion à sa définition.",
+      "colonne_a": [
+        "Plan média",
+        "Média planning"
+      ],
+      "colonne_b": [
+        "Méthode qui synthétise le choix des médias et supports et la programmation des actions",
+        "Choix des supports et calendrier pour diffuser les messages"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "« Le plan média est au plan de communication ce que le raisin est au vin. »"
+    },
+    {
+      "id": "b2-r07-qz-040",
+      "section": "4. Plan média et média planning",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel est le premier filtre dans le choix des médias ?",
+      "options": [
+        "le goût du créatif",
+        "les restrictions légales (tabac, alcool, médicaments)",
+        "la couleur du logo",
+        "l'avis des concurrents"
+      ],
+      "reponse": 1,
+      "explication": "Puis l'adéquation à la cible, le budget et les délais."
+    },
+    {
+      "id": "b2-r07-qz-041",
+      "section": "4. Plan média et média planning",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque indicateur à sa définition.",
+      "colonne_a": [
+        "Audience",
+        "Audience utile",
+        "Contact utile",
+        "Puissance du support"
+      ],
+      "colonne_b": [
+        "Nombre d'individus de la cible dans l'audience totale",
+        "Occasions de rencontre entre support et audience utile",
+        "Ensemble des individus touchés par le support",
+        "Individus de l'audience qui correspondent à la cible"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "Couverture = audience utile / population cible ; affinité = audience utile / audience totale du support."
+    },
+    {
+      "id": "b2-r07-qz-042",
+      "section": "4. Plan média et média planning",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un support a une audience totale de 400 000 personnes, dont 100 000 dans la cible. Quel est son taux d'affinité ?",
+      "options": [
+        "4 %",
+        "40 %",
+        "25 %",
+        "400 %"
+      ],
+      "reponse": 2,
+      "explication": "Affinité = audience utile / audience totale × 100 = 100 000 / 400 000 = 25 %."
+    },
+    {
+      "id": "b2-r07-qz-043",
+      "section": "4. Plan média et média planning",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un support à très forte couverture a forcément une forte affinité avec une cible de niche.",
+      "reponse": false,
+      "explication": "Faux : TF1 peut avoir une énorme couverture mais une faible affinité pour une niche ; un magazine spécialisé, l'inverse."
+    },
+    {
+      "id": "b2-r07-qz-044",
+      "section": "4. Plan média et média planning",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Que contient le dossier stratégique du média planning ? (4 réponses)",
+      "options": [
+        "l'analyse de l'entreprise",
+        "l'analyse des consommateurs (segmentation)",
+        "l'analyse de la concurrence (3 forces, 3 faiblesses)",
+        "la stratégie marketing (campagne, actions, planning)",
+        "le règlement intérieur",
+        "les fiches de paie"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Plus une introduction et une conclusion."
+    },
+    {
+      "id": "b2-r07-qz-045",
+      "section": "5. La communication événementielle",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que signifie la citation de Frédéric Bedin (Hopscotch) « la publicité est nécessaire mais elle ne suffit plus » ?",
+      "options": [
+        "l'événement est un moyen de communication complémentaire, au service d'un objectif stratégique",
+        "la publicité est inutile",
+        "il faut supprimer les budgets pub",
+        "seul le digital compte"
+      ],
+      "reponse": 0,
+      "explication": "Typologies : séminaires, salons, conventions, lancements, portes ouvertes…"
+    },
+    {
+      "id": "b2-r07-qz-046",
+      "section": "5. La communication événementielle",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque document de l'événementiel à son auteur.",
+      "colonne_a": [
+        "Le brief (cahier des charges)",
+        "La recommandation stratégique"
+      ],
+      "colonne_b": [
+        "L'agence, en réponse au brief",
+        "L'annonceur"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Le brief est le document référent : concis, clair, spécifique, écrit et validé en interne."
+    },
+    {
+      "id": "b2-r07-qz-047",
+      "section": "5. La communication événementielle",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels éléments le brief événementiel doit-il contenir ? (4 réponses)",
+      "options": [
+        "le contexte de l'entreprise",
+        "le ton de l'événement",
+        "les contraintes (budget, dates)",
+        "les risques internes et externes",
+        "le choix final du prestataire",
+        "le bilan post-événement"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Plus diagnostic et problématique, objectifs et cibles. Suit une consultation sous appel d'offres."
+    },
+    {
+      "id": "b2-r07-qz-048",
+      "section": "5. La communication événementielle",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la démarche événementielle.",
+      "elements": [
+        "Production et promotion jusqu'au jour J",
+        "Brief de l'annonceur",
+        "Post-événement : bilan, remerciements, retombées",
+        "Recommandation de l'agence",
+        "Stratégie (SWOT, problématique, cibles, objectifs)"
+      ],
+      "ordre": [
+        4,
+        1,
+        3,
+        0,
+        2
+      ],
+      "explication": "Le post-événement « boucle la boucle »."
+    },
+    {
+      "id": "b2-r07-qz-049",
+      "section": "5. La communication événementielle",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le webinaire est un événement 100 % en ligne, l'une des tendances de digitalisation de l'événementiel.",
+      "reponse": true,
+      "explication": "Vrai (Zoom, GoToWebinar), avec l'écoresponsabilité comme autre tendance majeure."
+    },
+    {
+      "id": "b2-r07-qz-050",
+      "section": "5. La communication événementielle",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Un plan social ou un rachat en cours n'ont pas à figurer dans le brief d'un événement, car ce sont des sujets internes.",
+      "reponse": false,
+      "explication": "Faux : ce sont des risques internes que le brief doit mentionner, comme les risques externes (lieu, date, météo, participation)."
     }
   ]
 }

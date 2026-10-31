@@ -11,11 +11,11 @@
       "question": "Qu'est-ce qui distingue le diagnostic de l'analyse ?",
       "options": [
         "le diagnostic est réalisé par la direction, l'analyse par les opérationnels",
-        "le diagnostic ne retient que les points différenciants, ayant un impact majeur et mesurables",
         "le diagnostic porte sur l'interne, l'analyse sur l'externe",
+        "le diagnostic ne retient que les points différenciants, ayant un impact majeur et mesurables",
         "le diagnostic est chiffré, l'analyse est qualitative"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "Tous les paramètres relevés dans l'analyse ne sont pas retenus dans le diagnostic. Il ne faut pas surcharger : seuls les facteurs à impact actuel et prévisionnel majeur, et mesurables."
     },
     {
@@ -25,12 +25,12 @@
       "format": "qcm",
       "question": "Le marché substitut regroupe :",
       "options": [
-        "les produits complémentaires du marché principal",
-        "les produits différents mais de nature proche",
         "les produits aux fonctions identiques utilisant un moyen ou une technologie différente",
+        "les produits différents mais de nature proche",
+        "les produits complémentaires du marché principal",
         "plusieurs marchés principaux réunis"
       ],
-      "reponse": 2,
+      "reponse": 0,
       "explication": "C'est toute la concurrence indirecte. La réponse 1 décrit le marché support, la réponse 3 le marché générique."
     },
     {
@@ -41,11 +41,11 @@
       "question": "Un produit s'est vendu à 300 000 exemplaires pour 150 000 € de CA. Le marché a réalisé 650 000 € de CA avec 550 000 produits vendus. Que peut-on en conclure ?",
       "options": [
         "l'entreprise est positionnée haut de gamme",
-        "l'entreprise privilégie le volume sur la marge, dans une stratégie de pénétration",
+        "les données sont insuffisantes pour conclure",
         "l'entreprise est leader en valeur sur son marché",
-        "les données sont insuffisantes pour conclure"
+        "l'entreprise privilégie le volume sur la marge, dans une stratégie de pénétration"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "Part de marché en valeur = 23 %, en volume = 55 %. Un gros volume pour un CA proportionnellement faible : il s'agit probablement d'un produit à bas prix."
     },
     {
@@ -54,7 +54,12 @@
       "niveau": 2,
       "format": "qcm",
       "question": "« Prendre des photos peut se faire avec un appareil photo, une tablette ou un smartphone. » Quel niveau de concurrence cet exemple illustre-t-il ?",
-      "options": ["concurrence marque", "concurrence produit", "concurrence générique", "concurrence potentielle"],
+      "options": [
+        "concurrence marque",
+        "concurrence produit",
+        "concurrence générique",
+        "concurrence potentielle"
+      ],
       "reponse": 1,
       "explication": "La concurrence produit oppose des produits semblables pour un même besoin. La concurrence générique désigne d'autres réponses possibles pour un même type de besoin (faire du sport : foot, boxe, gymnastique)."
     },
@@ -80,12 +85,12 @@
       "format": "qcm",
       "question": "Quelle est la finalité principale de la matrice PESTEL ?",
       "options": [
-        "hiérarchiser les concurrents selon leur part de marché",
         "préparer l'analyse SWOT en classant les informations en opportunités ou menaces",
+        "hiérarchiser les concurrents selon leur part de marché",
         "évaluer le portefeuille de produits de l'entreprise",
         "mesurer l'intensité concurrentielle d'un secteur"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "Elle analyse le macro-environnement en six composantes, qu'il faut ensuite hiérarchiser puis classer en opportunités ou menaces."
     },
     {
@@ -97,10 +102,10 @@
       "options": [
         "les partenaires financiers",
         "les distributeurs",
-        "l'influence de l'État",
-        "les associations de consommateurs"
+        "les associations de consommateurs",
+        "l'influence de l'État"
       ],
-      "reponse": 2,
+      "reponse": 3,
       "explication": "Ses décisions peuvent favoriser ou freiner l'entrée de nouveaux acteurs, influencer les coûts, créer des opportunités ou des contraintes."
     },
     {
@@ -139,8 +144,13 @@
       "niveau": 1,
       "format": "qcm",
       "question": "Une entreprise réactualise un produit existant et étend sa gamme sur son marché actuel. Dans quelle case de la matrice Ansoff se situe-t-elle ?",
-      "options": ["pénétration de marché", "extension de marché", "développement de produit", "diversification"],
-      "reponse": 2,
+      "options": [
+        "développement de produit",
+        "extension de marché",
+        "pénétration de marché",
+        "diversification"
+      ],
+      "reponse": 0,
       "explication": "Produits nouveaux × marchés actuels = développement de produit. La pénétration porte sur produits actuels × marchés actuels."
     },
     {
@@ -149,8 +159,13 @@
       "niveau": 1,
       "format": "qcm",
       "question": "Une entreprise de niche qui développe un avantage concurrentiel sur un segment étroit applique une stratégie de :",
-      "options": ["domination par les coûts", "différenciation", "concentration ou focalisation", "diversification"],
-      "reponse": 2,
+      "options": [
+        "domination par les coûts",
+        "différenciation",
+        "diversification",
+        "concentration ou focalisation"
+      ],
+      "reponse": 3,
       "explication": "L'avantage recherché dans la focalisation peut être lié au coût ou à la différenciation. La diversification est un axe de stratégie globale, pas une stratégie générique de Porter."
     },
     {
@@ -183,7 +198,13 @@
         "le pouvoir de négociation des fournisseurs",
         "l'intensité concurrentielle"
       ],
-      "reponse": [0, 2, 3, 5, 6],
+      "reponse": [
+        0,
+        2,
+        3,
+        5,
+        6
+      ],
       "explication": "La pression réglementaire relève du PESTEL ; l'influence de l'État constitue la 6ᵉ force, ajoutée au modèle initial."
     },
     {
@@ -192,8 +213,20 @@
       "niveau": 1,
       "format": "qcm_multiple",
       "question": "Quelles sont les 4 catégories de la matrice BCG ? (4 réponses)",
-      "options": ["produits stars", "produits dilemmes", "produits pionniers", "poids morts", "vaches à lait", "produits satellites"],
-      "reponse": [0, 1, 3, 4],
+      "options": [
+        "produits stars",
+        "produits dilemmes",
+        "produits pionniers",
+        "poids morts",
+        "vaches à lait",
+        "produits satellites"
+      ],
+      "reponse": [
+        0,
+        1,
+        3,
+        4
+      ],
       "explication": "Elle croise la part de marché de l'activité et la croissance du secteur, pour analyser le portefeuille de produits."
     },
     {
@@ -202,8 +235,20 @@
       "niveau": 1,
       "format": "qcm_multiple",
       "question": "Quels sont les 4 axes de stratégie globale ? (4 réponses)",
-      "options": ["spécialisation", "domination par les coûts", "diversification", "externalisation", "focalisation", "intégration"],
-      "reponse": [0, 2, 3, 5],
+      "options": [
+        "spécialisation",
+        "domination par les coûts",
+        "diversification",
+        "externalisation",
+        "focalisation",
+        "intégration"
+      ],
+      "reponse": [
+        0,
+        2,
+        3,
+        5
+      ],
       "explication": "Domination par les coûts et focalisation sont des stratégies génériques de Porter, appliquées au niveau des domaines d'activité."
     },
     {
@@ -221,7 +266,12 @@
         "approvisionnements",
         "services"
       ],
-      "reponse": [1, 2, 4, 5],
+      "reponse": [
+        1,
+        2,
+        4,
+        5
+      ],
       "explication": "Logistique interne, commercialisation et vente, et services sont des activités principales, aux côtés de la production et de la logistique externe."
     },
     {
@@ -231,7 +281,13 @@
       "format": "texte_a_trous",
       "question": "Complétez les 5 niveaux de marché.",
       "texte": "Le marché {1} regroupe les produits identiques, comparables et directement concurrents. Le marché {2} regroupe les produits complémentaires. Le marché {3} regroupe la concurrence indirecte : produits aux fonctions identiques utilisant une technologie différente. Le marché {4} regroupe des produits différents mais de nature proche. Le marché {5} regroupe plusieurs marchés principaux.",
-      "trous": ["principal", "complémentaire", "substitut", "support", "générique"],
+      "trous": [
+        "principal",
+        "complémentaire",
+        "substitut",
+        "support",
+        "générique"
+      ],
       "explication": "Une entreprise doit être focalisée sur son marché principal, mais surveiller le générique, le complémentaire et le substitut."
     },
     {
@@ -241,7 +297,14 @@
       "format": "texte_a_trous",
       "question": "Complétez les six composantes de la matrice PESTEL.",
       "texte": "{1} : interventionnisme de l'État, politique de soutien, relations diplomatiques. {2} : cycles économiques, politique monétaire, poids du chômage. {3} : démographie, habitudes de consommation, pratiques culturelles. {4} : nouvelles découvertes, taux d'obsolescence, dépenses en R&D. {5} : protection de l'environnement, recyclage, consommation d'énergie. {6} : droit national, communautaire et fiscal, réglementations et normes.",
-      "trous": ["Politique", "Économique", "Socioculturel", "Technologique", "Écologique", "Légal"],
+      "trous": [
+        "Politique",
+        "Économique",
+        "Socioculturel",
+        "Technologique",
+        "Écologique",
+        "Légal"
+      ],
       "explication": "Cette analyse sert habituellement à préparer l'analyse SWOT."
     },
     {
@@ -251,7 +314,14 @@
       "format": "texte_a_trous",
       "question": "Complétez la logique de l'analyse SWOT.",
       "texte": "SWOT signifie Strengths, {1}, Opportunities, {2}. En français, on parle de matrice {3}. Le diagnostic {4} produit les forces et faiblesses ; le diagnostic {5} produit les opportunités et menaces. Les deux sont réalisés distinctement mais {6} dans la synthèse finale.",
-      "trous": ["Weaknesses", "Threats", "Moff", "interne", "externe", "liés"],
+      "trous": [
+        "Weaknesses",
+        "Threats",
+        "Moff",
+        "interne",
+        "externe",
+        "liés"
+      ],
       "explication": "Moff = Menaces, Opportunités, Forces, Faiblesses."
     },
     {
@@ -261,8 +331,20 @@
       "format": "texte_a_trous",
       "question": "Complétez les quatre lectures stratégiques de la matrice ADL.",
       "texte": "Le développement {1} concerne une entreprise leader sur un marché en croissance. Le développement {2} impose de se focaliser sur la gamme ou le produit qui rapporte le plus. La {3} concerne une position défavorable, à réorienter vers un marché mieux maîtrisé. L'{4} concerne une entreprise en difficulté sur un marché en perte de croissance.",
-      "trous": ["naturel", "sélectif", "réorientation", "abandon"],
-      "propositions": ["naturel", "sélectif", "offensif", "réorientation", "consolidation", "abandon"],
+      "trous": [
+        "naturel",
+        "sélectif",
+        "réorientation",
+        "abandon"
+      ],
+      "propositions": [
+        "naturel",
+        "sélectif",
+        "offensif",
+        "réorientation",
+        "consolidation",
+        "abandon"
+      ],
       "explication": "La matrice ADL se basant sur des données objectives et subjectives, il est essentiel de croiser les résultats avec un autre outil."
     },
     {
@@ -272,7 +354,13 @@
       "format": "texte_a_trous",
       "question": "Complétez les trois stratégies génériques de Porter.",
       "texte": "La {1} par les coûts fait du prix de vente l'avantage concurrentiel, sur une cible large. La {2} consiste à proposer un produit qui paraît {3} aux yeux des consommateurs. La {4}, ou focalisation, développe un avantage sur un segment étroit, une {5}.",
-      "trous": ["domination", "différenciation", "unique", "concentration", "niche"],
+      "trous": [
+        "domination",
+        "différenciation",
+        "unique",
+        "concentration",
+        "niche"
+      ],
       "explication": "Ces trois stratégies s'appliquent au niveau des domaines d'activité, alors que spécialisation, diversification, externalisation et intégration relèvent de la stratégie globale."
     },
     {
@@ -335,7 +423,13 @@
       "niveau": 1,
       "format": "appariement",
       "question": "Associez chaque outil à ce qu'il permet d'établir.",
-      "colonne_a": ["PESTEL", "5 forces de Porter", "Matrice BCG", "Matrice Ansoff", "Mapping concurrentiel"],
+      "colonne_a": [
+        "PESTEL",
+        "5 forces de Porter",
+        "Matrice BCG",
+        "Matrice Ansoff",
+        "Mapping concurrentiel"
+      ],
       "colonne_b": [
         "Le couple produit/marché à privilégier pour se développer",
         "Le diagnostic du macro-environnement",
@@ -343,7 +437,28 @@
         "L'intensité concurrentielle du micro-environnement",
         "L'équilibre du portefeuille de produits"
       ],
-      "paires": [[0, 1], [1, 3], [2, 4], [3, 0], [4, 2]],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          2
+        ]
+      ],
       "explication": "PESTEL et 5 forces alimentent ensemble le diagnostic externe, donc les opportunités et menaces du SWOT."
     },
     {
@@ -352,14 +467,36 @@
       "niveau": 2,
       "format": "appariement",
       "question": "Associez chaque axe de stratégie globale à sa définition.",
-      "colonne_a": ["Spécialisation", "Diversification", "Externalisation", "Intégration"],
+      "colonne_a": [
+        "Spécialisation",
+        "Diversification",
+        "Externalisation",
+        "Intégration"
+      ],
       "colonne_b": [
         "Recourir à une entreprise extérieure : sous-traitance, concession, franchise",
         "Maîtriser un métier pour en être la référence, souvent sur un créneau ou une niche",
         "Réaliser soi-même une activité jusqu'alors sous-traitée, souvent par rachat",
         "S'ouvrir à d'autres marchés en investissant dans un autre DAS"
       ],
-      "paires": [[0, 1], [1, 3], [2, 0], [3, 2]],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
       "explication": "La diversification nécessite d'acquérir de nouvelles compétences : production, communication et distribution peuvent être revues."
     },
     {
@@ -368,14 +505,36 @@
       "niveau": 2,
       "format": "appariement",
       "question": "Associez chaque matrice de veille à sa finalité.",
-      "colonne_a": ["Matrice des acteurs clés", "Matrice de veille client", "Matrice benchmark produits", "Rapport d'étonnement"],
+      "colonne_a": [
+        "Matrice des acteurs clés",
+        "Matrice de veille client",
+        "Matrice benchmark produits",
+        "Rapport d'étonnement"
+      ],
       "colonne_b": [
         "Identifier les schémas récurrents de comportement et hiérarchiser les besoins",
         "Analyser les écarts entre résultats attendus et résultats réels",
         "Évaluer l'impact potentiel de chaque partie prenante sur les objectifs stratégiques",
         "Évaluer la position concurrentielle par étude comparative des offres du marché"
       ],
-      "paires": [[0, 2], [1, 0], [2, 3], [3, 1]],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ]
+      ],
       "explication": "La matrice des acteurs clés sert de base à l'établissement de partenariats stratégiques durables."
     },
     {
@@ -391,7 +550,13 @@
         "Analyse SWOT",
         "Définition des objectifs et de la stratégie"
       ],
-      "ordre": [1, 3, 4, 0, 2],
+      "ordre": [
+        1,
+        3,
+        4,
+        0,
+        2
+      ],
       "explication": "C'est à partir du diagnostic que sont déduits la segmentation, le ciblage et le positionnement."
     },
     {
@@ -407,7 +572,13 @@
         "Choix du ou des partenaires et collecte des données",
         "Test et implémentation finale"
       ],
-      "ordre": [1, 3, 0, 4, 2],
+      "ordre": [
+        1,
+        3,
+        0,
+        4,
+        2
+      ],
       "explication": "Le retour d'expérience est capitalisé sous forme de knowledge management."
     },
     {
@@ -455,6 +626,416 @@
         "La veille intervient en amont pour identifier les bons partenaires"
       ],
       "explication": "Une organisation qui reste dans le statu quo signe son déclin : elle doit organiser la flexibilité mentale et collective."
+    },
+    {
+      "id": "q-f02-036",
+      "section": "1. À quoi sert le diagnostic",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Autour de quels 3 verbes tourne le raisonnement marketing ?",
+      "options": [
+        "vendre, acheter, livrer",
+        "observer, copier, adapter",
+        "analyser, décider, agir",
+        "planifier, contrôler, sanctionner"
+      ],
+      "reponse": 2,
+      "explication": "Le diagnostic donne lieu aux objectifs, puis à la segmentation, au ciblage et au positionnement."
+    },
+    {
+      "id": "q-f02-037",
+      "section": "1. À quoi sert le diagnostic",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Pour être exhaustif, le diagnostic doit retenir tous les facteurs identifiés, même mineurs.",
+      "reponse": false,
+      "explication": "Faux : il ne retient que les facteurs ayant un impact actuel et prévisionnel majeur, et mesurables ; il ne faut pas surcharger l'analyse."
+    },
+    {
+      "id": "q-f02-038",
+      "section": "2. L'analyse externe",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque niveau d'environnement à son outil d'analyse.",
+      "colonne_a": [
+        "Macro-environnement",
+        "Micro-environnement"
+      ],
+      "colonne_b": [
+        "5 forces de Porter",
+        "PESTEL"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Les deux alimentent les opportunités et menaces du SWOT."
+    },
+    {
+      "id": "q-f02-039",
+      "section": "2. L'analyse externe",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels acteurs composent le micro-environnement ? (4 réponses)",
+      "options": [
+        "la clientèle",
+        "les partenaires financiers",
+        "les partenaires commerciaux",
+        "le marché et ses acteurs",
+        "les cycles économiques",
+        "la politique monétaire"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Les cycles économiques et la politique monétaire relèvent du macro-environnement (PESTEL)."
+    },
+    {
+      "id": "q-f02-040",
+      "section": "2. L'analyse externe",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel marché une entreprise doit-elle surveiller pour se développer ou saisir une opportunité, au-delà de son marché principal ?",
+      "options": [
+        "le marché générique, ainsi que les marchés complémentaires et substituts",
+        "uniquement son marché principal",
+        "aucun autre",
+        "le seul marché support"
+      ],
+      "reponse": 0,
+      "explication": "Elle doit rester focalisée sur son marché principal pour réussir."
+    },
+    {
+      "id": "q-f02-041",
+      "section": "2. L'analyse externe",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un produit réalise 200 000 € de CA sur un marché de 800 000 €. Quelle est sa part de marché en valeur ?",
+      "options": [
+        "4 %",
+        "80 %",
+        "40 %",
+        "25 %"
+      ],
+      "reponse": 3,
+      "explication": "Part de marché = ventes du produit / ventes totales du marché × 100 = 25 %."
+    },
+    {
+      "id": "q-f02-042",
+      "section": "2. L'analyse externe",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels critères marketing permettent de comparer la position concurrentielle ? (4 réponses)",
+      "options": [
+        "la part de marché",
+        "le taux de fidélité",
+        "le taux de préférence",
+        "le taux de notoriété",
+        "le nombre de salariés",
+        "l'âge du dirigeant"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "L'analyse concurrentielle doit être continue, avec un double objectif défensif et offensif."
+    },
+    {
+      "id": "q-f02-043",
+      "section": "2. L'analyse externe",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque niveau de concurrence à son exemple.",
+      "colonne_a": [
+        "Concurrence marque",
+        "Concurrence produit",
+        "Concurrence générique"
+      ],
+      "colonne_b": [
+        "Faire du sport : foot, boxe, gymnastique",
+        "Plusieurs marques pour un même produit",
+        "Appareil photo, tablette ou smartphone pour prendre des photos"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "La concurrence s'entend au sens large."
+    },
+    {
+      "id": "q-f02-044",
+      "section": "3. L'analyse interne",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi comparer ses ressources à celles des concurrents ?",
+      "options": [
+        "pour les copier",
+        "pour identifier celles qui sont exclusives et en tirer un avantage compétitif",
+        "pour réduire les salaires",
+        "pour sous-traiter"
+      ],
+      "reponse": 1,
+      "explication": "Ressources humaines, technologiques, financières ; internalisées ou sous-traitées. On en déduit la culture d'entreprise."
+    },
+    {
+      "id": "q-f02-045",
+      "section": "3. L'analyse interne",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles activités sont principales dans la chaîne de valeur ? (4 réponses)",
+      "options": [
+        "logistique interne",
+        "production",
+        "logistique externe",
+        "commercialisation et vente",
+        "gestion des ressources humaines",
+        "infrastructure de l'entreprise"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Le 5e : les services. RH et infrastructure sont des activités de soutien."
+    },
+    {
+      "id": "q-f02-046",
+      "section": "3. L'analyse interne",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Après évaluation, on attribue une note à chaque service de l'entreprise pour les hiérarchiser, du plus créateur de valeur au plus pénalisant.",
+      "reponse": true,
+      "explication": "Vrai. On construit aussi un historique marketing, à comparer à l'histoire de l'entreprise."
+    },
+    {
+      "id": "q-f02-047",
+      "section": "4. Les matrices",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quand la menace des produits de substitution est-elle importante ?",
+      "options": [
+        "quand le substitut est cher et peu performant",
+        "jamais",
+        "quand le consommateur ne consent pas beaucoup d'effort à changer ou que le substitut a un bon rapport prix/performance",
+        "uniquement sur les marchés de luxe"
+      ],
+      "reponse": 2,
+      "explication": "Les barrières à l'entrée (financière, technologique, commerciale, légale) conditionnent, elles, la menace des nouveaux entrants."
+    },
+    {
+      "id": "q-f02-048",
+      "section": "4. Les matrices",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Dans l'exemple de l'automobile électrique, l'État crée à la fois une opportunité (subventions) et une barrière à l'entrée (normes CO₂).",
+      "reponse": true,
+      "explication": "Vrai : c'est la 6e force de Porter, l'influence de l'État."
+    },
+    {
+      "id": "q-f02-049",
+      "section": "4. Les matrices",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Dans l'exemple Magnum, que représentent les bâtonnets classiques dans la matrice BCG ?",
+      "options": [
+        "des vaches à lait",
+        "des dilemmes",
+        "des stars",
+        "des poids morts"
+      ],
+      "reponse": 0,
+      "explication": "Stars : éditions limitées saisonnières ; dilemmes : pots de glace et formats vegan."
+    },
+    {
+      "id": "q-f02-050",
+      "section": "4. Les matrices",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque case de la matrice Ansoff à sa stratégie.",
+      "colonne_a": [
+        "Produits actuels / marchés actuels",
+        "Produits actuels / marchés nouveaux",
+        "Produits nouveaux / marchés nouveaux"
+      ],
+      "colonne_b": [
+        "Diversification",
+        "Pénétration de marché",
+        "Extension de marché"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Produits nouveaux / marchés actuels : développement de produit."
+    },
+    {
+      "id": "q-f02-051",
+      "section": "4. Les matrices",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Par qui la matrice ADL a-t-elle été mise en place ?",
+      "options": [
+        "le Boston Consulting Group",
+        "Igor Ansoff",
+        "Michael Porter",
+        "Arthur D. Little, cabinet fondé en 1886"
+      ],
+      "reponse": 3,
+      "explication": "Elle offre une vision plus fine que la BCG, mais mêle données objectives et subjectives : à croiser avec un autre outil."
+    },
+    {
+      "id": "q-f02-052",
+      "section": "4. Les matrices",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quels critères utilise typiquement un mapping concurrentiel ?",
+      "options": [
+        "l'âge et le sexe",
+        "la qualité et le prix",
+        "le CA et les effectifs",
+        "la date de création"
+      ],
+      "reponse": 1,
+      "explication": "C'est une carte perceptuelle. La grille d'analyse de la concurrence présente, elle, forces et faiblesses de chaque concurrent."
+    },
+    {
+      "id": "q-f02-053",
+      "section": "5. Stratégies",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quels sont les deux leviers de la domination par les coûts ?",
+      "options": [
+        "publicité et packaging",
+        "augmenter les prix et réduire la gamme",
+        "jouer sur les volumes pour diminuer les coûts d'achat, ou rationaliser ses process",
+        "diversifier et intégrer"
+      ],
+      "reponse": 2,
+      "explication": "Pour une cible large, sur un marché aux produits peu différenciés (grande distribution)."
+    },
+    {
+      "id": "q-f02-054",
+      "section": "5. Stratégies",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La différenciation se fait uniquement vers le haut, en améliorant la valeur perçue.",
+      "reponse": false,
+      "explication": "Faux : elle peut aussi se faire vers le bas, en épurant le produit pour le rendre plus accessible."
+    },
+    {
+      "id": "q-f02-055",
+      "section": "5. Stratégies",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel outil organise une déclinaison top-down de la corporate strategy ?",
+      "options": [
+        "le balanced scorecard",
+        "le mapping",
+        "le PESTEL",
+        "la matrice BCG"
+      ],
+      "reponse": 0,
+      "explication": "Le plan marketing comporte ensuite objectifs, cible, budget et actions concrètes."
+    },
+    {
+      "id": "q-f02-056",
+      "section": "6. Les matrices de veille",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la démarche de la matrice des acteurs clés.",
+      "elements": [
+        "Mise en évidence des relations de cause à effet",
+        "Évaluation de l'impact potentiel de chaque partie prenante",
+        "Identification et classification des acteurs",
+        "Structuration des données collectées"
+      ],
+      "ordre": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "explication": "Elle sert de base à des partenariats stratégiques durables."
+    },
+    {
+      "id": "q-f02-057",
+      "section": "6. Les matrices de veille",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'analyse le rapport d'étonnement ?",
+      "options": [
+        "la satisfaction des salariés",
+        "la notoriété",
+        "les prix des concurrents",
+        "les écarts entre résultats attendus et résultats réels"
+      ],
+      "reponse": 3,
+      "explication": "Identifier les facteurs sous-jacents des divergences permet d'ajuster stratégies et plans d'action."
+    },
+    {
+      "id": "q-f02-058",
+      "section": "7. Le benchmarking",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le benchmarking externe peut s'appuyer sur des entreprises d'autres secteurs, reconnues leaders dans le domaine étudié.",
+      "reponse": true,
+      "explication": "Vrai : il ouvre sur des pratiques réellement nouvelles, mais l'accès à l'information est plus difficile."
+    },
+    {
+      "id": "q-f02-059",
+      "section": "7. Le benchmarking",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel est le rôle de la veille par rapport au benchmarking ?",
+      "options": [
+        "elle le remplace",
+        "elle intervient en amont pour faciliter le processus, notamment choisir les bons partenaires",
+        "elle intervient après pour sanctionner",
+        "aucun lien"
+      ],
+      "reponse": 1,
+      "explication": "Le benchmarking va plus loin que la veille concurrentielle : il ne se limite ni aux concurrents ni à un secteur."
+    },
+    {
+      "id": "q-f02-060",
+      "section": "7. Le benchmarking",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Le benchmarking interne est exempt de risques, car les données sont facilement accessibles.",
+      "reponse": false,
+      "explication": "Faux : les conflits internes peuvent fausser l'exercice et le degré d'apprentissage reste limité."
     }
   ]
 }

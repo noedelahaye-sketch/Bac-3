@@ -11,11 +11,11 @@
       "question": "Quelle étape du fonctionnement de Google consiste, pour les bots, à parcourir le web de page en page via les liens hypertextes ?",
       "options": [
         "l'indexation",
-        "le crawling",
         "le ranking",
+        "le crawling",
         "le flattening"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "Les 3 étapes : crawling (collecte via les liens — un lien cassé empêche le positionnement), indexation (lecture et classement par thématiques), ranking (classement par les algorithmes selon ~200 critères)."
     },
     {
@@ -39,11 +39,26 @@
         "Pénalise les liens artificiels ou achetés (spamming)"
       ],
       "paires": [
-        [0, 1],
-        [1, 4],
-        [2, 3],
-        [3, 2],
-        [4, 0]
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          0
+        ]
       ],
       "explication": "S'ajoutent Pigeon/Opossum (2014-2016, recherche locale) et Compatibilité mobile (2015 : les pages sont évaluées à partir de leur version mobile)."
     },
@@ -95,10 +110,10 @@
       "options": [
         "le FID, qui doit être inférieur à 100 ms",
         "le CLS, qui doit être inférieur à 0,1",
-        "le LCP, qui doit être inférieur à 2,5 s",
-        "le TTL, qui doit être inférieur à 1 s"
+        "le TTL, qui doit être inférieur à 1 s",
+        "le LCP, qui doit être inférieur à 2,5 s"
       ],
-      "reponse": 2,
+      "reponse": 3,
       "explication": "LCP (Largest Contentful Paint) < 2,5 s. Le FID mesure le délai avant la première interaction possible (< 100 ms), le CLS la stabilité visuelle pendant le chargement (< 0,1). Introduits par Page Experience (2021)."
     },
     {
@@ -115,7 +130,12 @@
         "l'exhaustivité (Exhaustiveness)",
         "la fiabilité (Trustworthiness)"
       ],
-      "reponse": [0, 2, 3, 5],
+      "reponse": [
+        0,
+        2,
+        3,
+        5
+      ],
       "explication": "E-E-A-T (mise à jour 2022) : Experience, Expertise, Autorité, fiabilité (Trustworthiness). Ni l'engagement ni l'exhaustivité n'en font partie."
     },
     {
@@ -157,7 +177,15 @@
         "Ciblage de l'audience",
         "Construction du budget (total + quotidien)"
       ],
-      "ordre": [1, 3, 5, 6, 2, 0, 4],
+      "ordre": [
+        1,
+        3,
+        5,
+        6,
+        2,
+        0,
+        4
+      ],
       "explication": "Objectif → landing page → ciblage (l'étape clé) → budget → mots-clés → annonce → suivi. La landing page vient tôt car Google évalue sa qualité et sa corrélation avec l'annonce."
     },
     {
@@ -179,10 +207,22 @@
         "Acquisition de données : on paie à chaque inscription"
       ],
       "paires": [
-        [0, 1],
-        [1, 2],
-        [2, 3],
-        [3, 0]
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
       ],
       "explication": "Le display (messages au format bannière selon le Mercator) sert d'abord la notoriété — ce n'est pas une technique de conversion forte, d'où l'usage fréquent du CPM."
     },
@@ -218,11 +258,11 @@
       "question": "Qu'est-ce qu'une adresse « opt-in » dans une base e-mailing ?",
       "options": [
         "une adresse vérifiée comme active récemment",
-        "une adresse dont le titulaire a donné son consentement explicite",
         "une adresse professionnelle (par opposition aux adresses personnelles)",
+        "une adresse dont le titulaire a donné son consentement explicite",
         "une adresse collectée lors d'un jeu-concours"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "Opt-in = consentement explicite du destinataire — pas de cases pré-cochées. À vérifier notamment en cas de location de base. Le double opt-in (confirmation par e-mail) renforce encore la conformité."
     },
     {
@@ -241,12 +281,12 @@
       "format": "qcm",
       "question": "Un acheteur BtoB utilise LinkedIn pour chercher des fournisseurs et recueillir des avis avant de prendre contact. Comment appelle-t-on cette pratique ?",
       "options": [
-        "le social selling",
-        "le social listening",
         "le social buying",
+        "le social listening",
+        "le social selling",
         "le lead nurturing"
       ],
-      "reponse": 2,
+      "reponse": 0,
       "explication": "Social buying : côté acheteur, c'est lui qui initie le contact. Le social selling est côté vendeur (trouver des prospects et vendre), le social listening est la veille du secteur sur les réseaux."
     },
     {
@@ -293,7 +333,12 @@
         "la confidentialité",
         "la correctitude"
       ],
-      "reponse": [0, 2, 3, 5],
+      "reponse": [
+        0,
+        2,
+        3,
+        5
+      ],
       "explication": "Les 4C : Complétude, Cohérence, Conformité, Correctitude. La centralisation relève plutôt de la CDP (Customer Data Platform), la confidentialité du cadre RGPD."
     },
     {
@@ -315,10 +360,22 @@
         "L'ouverture d'un e-mail, un clic, la visite d'une page"
       ],
       "paires": [
-        [0, 2],
-        [1, 3],
-        [2, 0],
-        [3, 1]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
       ],
       "explication": "Les 4 triggers déclenchent des parcours individualisés (workflows) : temporel (intervalle prédéfini), événementiel (action en temps réel), transactionnel (comportement d'achat), contextuel (données externes)."
     },
@@ -330,11 +387,11 @@
       "question": "Attribuer à chaque prospect un score de propension à acheter ou à résilier relève de :",
       "options": [
         "l'IA générative",
-        "l'IA prédictive",
         "le prompt engineering",
+        "l'IA prédictive",
         "la co-création"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "L'IA prédictive anticipe les comportements : segmentation prédictive, scoring de propension, personnalisation automatisée, chatbots. L'IA générative crée des contenus (textes, visuels — Jasper, Midjourney), pilotée par le prompt engineering."
     },
     {
@@ -350,6 +407,726 @@
         "Le KPI est bien relié à l'objectif de l'action, pas choisi au hasard"
       ],
       "explication": "C'est le format des Q3 et Q5 : proposer une action, c'est toujours justifier son choix par rapport à la cible et au budget, puis dire comment on la mesure."
+    },
+    {
+      "id": "b2-r02-qz-023",
+      "section": "1. Vue d'ensemble",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque levier à sa famille dans le parcours prospect.",
+      "colonne_a": [
+        "SEO, SEA, display",
+        "E-mailing, social selling",
+        "Data-driven, automation, IA"
+      ],
+      "colonne_b": [
+        "Piloter et automatiser",
+        "Attirer du trafic",
+        "Convertir et fidéliser"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Chaque levier a son couple coût/vitesse : SEO lent et durable, SEA immédiat et payant."
+    },
+    {
+      "id": "b2-r02-qz-024",
+      "section": "2. Le SEO",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 3 étapes du fonctionnement de Google.",
+      "elements": [
+        "Ranking",
+        "Crawling",
+        "Indexation"
+      ],
+      "ordre": [
+        1,
+        2,
+        0
+      ],
+      "explication": "Le ranking classe les pages selon environ 200 critères : une « boîte noire »."
+    },
+    {
+      "id": "b2-r02-qz-025",
+      "section": "2. Le SEO",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "À quoi sert le fichier robots.txt ?",
+      "options": [
+        "à lister les URL que les robots ne doivent pas explorer",
+        "à accélérer le chargement",
+        "à créer des backlinks",
+        "à mesurer l'audience"
+      ],
+      "reponse": 0,
+      "explication": "Protocole d'exclusion des robots, placé à la racine du site."
+    },
+    {
+      "id": "b2-r02-qz-026",
+      "section": "2. Le SEO",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que prévoit la règle du « flattening » ?",
+      "options": [
+        "une arborescence unique",
+        "un site sans images",
+        "un seul mot-clé par site",
+        "une page accessible en moins de 3 clics"
+      ],
+      "reponse": 3,
+      "explication": "Aides à la navigation : menu HTML, fil d'Ariane. Structures : onepage, en silos, répartie."
+    },
+    {
+      "id": "b2-r02-qz-027",
+      "section": "2. Le SEO",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les pages 404 absorbent du link juice et sont mal vues de Google.",
+      "reponse": true,
+      "explication": "Vrai. Le maillage interne transmet la notoriété entre pages ; le cross linking relie des thématiques complémentaires."
+    },
+    {
+      "id": "b2-r02-qz-028",
+      "section": "2. Le SEO",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Deux pages d'un même site peuvent viser le même mot-clé principal pour renforcer son poids.",
+      "reponse": false,
+      "explication": "Faux : une page = un mot-clé principal (RP) ; deux pages ne doivent jamais viser le même."
+    },
+    {
+      "id": "b2-r02-qz-029",
+      "section": "2. Le SEO",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Selon quels critères sélectionne-t-on un mot-clé ? (3 réponses)",
+      "options": [
+        "la pertinence",
+        "le potentiel (volume de recherche)",
+        "la concurrence",
+        "la longueur du mot",
+        "la couleur du site"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Outils : Google Keyword Planner, Ubbersuggest, SemRush, Semji."
+    },
+    {
+      "id": "b2-r02-qz-030",
+      "section": "2. Le SEO",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Depuis quel algorithme le keyword stuffing (bourrage de mots-clés) est-il inefficace ?",
+      "options": [
+        "Panda",
+        "Colibri (2013)",
+        "BERT",
+        "Pigeon"
+      ],
+      "reponse": 1,
+      "explication": "Colibri introduit la recherche sémantique : la pertinence prime."
+    },
+    {
+      "id": "b2-r02-qz-031",
+      "section": "2. Le SEO",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque Core Web Vital à son seuil.",
+      "colonne_a": [
+        "LCP",
+        "FID",
+        "CLS"
+      ],
+      "colonne_b": [
+        "< 0,1",
+        "< 2,5 s",
+        "< 100 ms"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "LCP = affichage du plus grand élément ; FID = délai avant interaction ; CLS = stabilité visuelle."
+    },
+    {
+      "id": "b2-r02-qz-032",
+      "section": "2. Le SEO",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "L'UI (interface utilisateur) englobe l'UX (expérience utilisateur).",
+      "reponse": false,
+      "explication": "Faux : l'UX englobe l'UI (menus, CTA). SXO = SEO + UX."
+    },
+    {
+      "id": "b2-r02-qz-033",
+      "section": "2. Le SEO",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Depuis la mise à jour de compatibilité mobile (2015), comment Google évalue-t-il les pages ?",
+      "options": [
+        "à partir de leur version desktop",
+        "au hasard",
+        "à partir de leur version mobile, même pour un résultat desktop",
+        "uniquement sur leur vitesse"
+      ],
+      "reponse": 2,
+      "explication": "D'où l'importance du responsive design."
+    },
+    {
+      "id": "b2-r02-qz-034",
+      "section": "3. Le SEA",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La majorité des internautes (plus de 60 %) clique sur les annonces payantes plutôt que sur les résultats naturels.",
+      "reponse": false,
+      "explication": "Faux : seuls 10 à 20 % cliquent sur les annonces payantes. Le SEA ne remplace jamais le SEO, ils sont complémentaires."
+    },
+    {
+      "id": "b2-r02-qz-035",
+      "section": "3. Le SEA",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qui a inventé le SEA et le paiement au clic ?",
+      "options": [
+        "Bill Gross (GoTo.com, années 1990)",
+        "Google",
+        "Microsoft",
+        "Amazon"
+      ],
+      "reponse": 0,
+      "explication": "Google a lancé Adwords en 2002."
+    },
+    {
+      "id": "b2-r02-qz-036",
+      "section": "3. Le SEA",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Au CPC, que coûte une annonce affichée sur laquelle personne ne clique ?",
+      "options": [
+        "le prix d'un clic",
+        "le prix de 1 000 affichages",
+        "un forfait mensuel",
+        "rien : la visibilité est gratuite"
+      ],
+      "reponse": 3,
+      "explication": "Le positionnement dépend des enchères et de critères de qualité (annonce, landing page)."
+    },
+    {
+      "id": "b2-r02-qz-037",
+      "section": "3. Le SEA",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels sont les avantages du SEA ? (3 réponses)",
+      "options": [
+        "un trafic immédiat",
+        "une grande flexibilité (activation instantanée)",
+        "des conversions mesurables",
+        "un coût toujours nul",
+        "la préférence des internautes pour les annonces"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Limites : le coût et la préférence des internautes pour les résultats organiques."
+    },
+    {
+      "id": "b2-r02-qz-038",
+      "section": "3. Le SEA",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle est l'étape clé d'une campagne SEA ?",
+      "options": [
+        "la rédaction de l'annonce",
+        "le ciblage de l'audience",
+        "le choix du logo",
+        "le suivi"
+      ],
+      "reponse": 1,
+      "explication": "Géolocalisation, langue, support, période, centres d'intérêt, croisés entre eux."
+    },
+    {
+      "id": "b2-r02-qz-039",
+      "section": "3. Le SEA",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "En SEA, on peut exclure des mots-clés pour mieux qualifier le trafic.",
+      "reponse": true,
+      "explication": "Vrai : expressions exactes + mots-clés connexes + exclusions."
+    },
+    {
+      "id": "b2-r02-qz-040",
+      "section": "4. Display et retargeting",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "À quoi sert d'abord la publicité display ?",
+      "options": [
+        "à la conversion directe",
+        "au référencement naturel",
+        "à la notoriété",
+        "à la fidélisation"
+      ],
+      "reponse": 2,
+      "explication": "Bannières, pop-ups, vidéos sur des sites tiers : ce n'est pas une technique de conversion forte."
+    },
+    {
+      "id": "b2-r02-qz-041",
+      "section": "4. Display et retargeting",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque acteur du display à son rôle.",
+      "colonne_a": [
+        "Annonceur",
+        "Éditeur"
+      ],
+      "colonne_b": [
+        "Propriétaire de site qui vend de l'espace",
+        "Marque qui veut de la visibilité"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Inconvénients : perte de contrôle des sites de diffusion, trafic non qualifié, lassitude."
+    },
+    {
+      "id": "b2-r02-qz-042",
+      "section": "4. Display et retargeting",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Comment Google appelle-t-il le retargeting ?",
+      "options": [
+        "le remarketing",
+        "le reach",
+        "le re-crawling",
+        "le retracking"
+      ],
+      "reponse": 0,
+      "explication": "Même chose : recibler un internaute selon les pages consultées, via des cookies (avec consentement)."
+    },
+    {
+      "id": "b2-r02-qz-043",
+      "section": "4. Display et retargeting",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels sont les intérêts du retargeting ? (3 réponses)",
+      "options": [
+        "réduire les paniers abandonnés",
+        "qualifier les prospects (lead nurturing)",
+        "inciter au réachat",
+        "éviter le RGPD",
+        "remplacer le SEO"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Le taux d'abandon de panier dépasse 75 % en France."
+    },
+    {
+      "id": "b2-r02-qz-044",
+      "section": "5. L'e-mailing",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque source de constitution de base e-mailing à son principe.",
+      "colonne_a": [
+        "Location de base",
+        "Affiliation",
+        "Co-registration"
+      ],
+      "colonne_b": [
+        "Collecte via des sites partenaires par affinité",
+        "Louer une base en vérifiant fraîcheur et opt-in",
+        "Diffusion d'un kit mailing HTML par des affiliés"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Les jeux-concours, avec des lots liés à l'activité, qualifient aussi les contacts."
+    },
+    {
+      "id": "b2-r02-qz-045",
+      "section": "5. L'e-mailing",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque type d'e-mail à son exemple.",
+      "colonne_a": [
+        "Informatif",
+        "Transactionnel",
+        "Promotionnel"
+      ],
+      "colonne_b": [
+        "Réduction",
+        "Newsletter",
+        "Confirmation de commande"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "L'e-mailing génère du trafic et surtout fidélise."
+    },
+    {
+      "id": "b2-r02-qz-046",
+      "section": "5. L'e-mailing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Où placer l'information principale d'un e-mail ?",
+      "options": [
+        "en bas de page",
+        "dans le lien de désinscription",
+        "en pièce jointe",
+        "dans les 50 premiers pixels"
+      ],
+      "reponse": 3,
+      "explication": "Les 50 premiers caractères comptent aussi (prévisualisation mobile). Approche mobile first."
+    },
+    {
+      "id": "b2-r02-qz-047",
+      "section": "5. L'e-mailing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que mesure le taux NPAI ?",
+      "options": [
+        "la qualité du message",
+        "la qualité de la base (délivrés / envoyés)",
+        "les plaintes",
+        "les clics"
+      ],
+      "reponse": 1,
+      "explication": "N'habite Pas à l'Adresse Indiquée."
+    },
+    {
+      "id": "b2-r02-qz-048",
+      "section": "5. L'e-mailing",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Pour la délivrabilité, il vaut mieux envoyer depuis une adresse générique comme info@ ou postmaster@.",
+      "reponse": false,
+      "explication": "Faux : adresse identifiable sur son nom de domaine, base nettoyée, IP dédiée, vocabulaire non « spammy »."
+    },
+    {
+      "id": "b2-r02-qz-049",
+      "section": "5. L'e-mailing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quand envoyer un e-mail pour maximiser l'ouverture selon le cours ?",
+      "options": [
+        "le lundi à 8 h",
+        "le dimanche soir",
+        "le mardi ou le jeudi entre 14 h et 17 h",
+        "le vendredi à minuit"
+      ],
+      "reponse": 2,
+      "explication": "L'ouverture dépend aussi de l'expéditeur, de l'objet et du pre-header."
+    },
+    {
+      "id": "b2-r02-qz-050",
+      "section": "6. Le social selling",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque notion à sa définition.",
+      "colonne_a": [
+        "Social selling",
+        "Social listening",
+        "Social buying"
+      ],
+      "colonne_b": [
+        "L'acheteur cherche fournisseurs et avis sur les réseaux",
+        "Veille du secteur pour repérer les leads",
+        "Utiliser les réseaux pour trouver des prospects et vendre"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Le social selling remplace la démarche intrusive par un accompagnement personnalisé."
+    },
+    {
+      "id": "b2-r02-qz-051",
+      "section": "6. Le social selling",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel réseau sert la prospection BtoB, avec l'outil Sales Navigator ?",
+      "options": [
+        "LinkedIn",
+        "Facebook",
+        "Instagram",
+        "TikTok"
+      ],
+      "reponse": 0,
+      "explication": "50 % des acheteurs l'utilisent pour décider. Recommandations, profil orienté clients, groupes."
+    },
+    {
+      "id": "b2-r02-qz-052",
+      "section": "6. Le social selling",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Sur Facebook, le social selling repose sur l'envoi de demandes d'amis professionnelles depuis son profil personnel.",
+      "reponse": false,
+      "explication": "Faux : Facebook est un réseau personnel ; on passe par une page, en BtoC, avec la technique de la question pour lancer la conversation."
+    },
+    {
+      "id": "b2-r02-qz-053",
+      "section": "6. Le social selling",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce qu'un lead ?",
+      "options": [
+        "un client fidèle",
+        "une publicité",
+        "un influenceur",
+        "un contact commercial qualifié"
+      ],
+      "reponse": 3,
+      "explication": "Obtenu en salon, par un devis, un livre blanc téléchargé…"
+    },
+    {
+      "id": "b2-r02-qz-054",
+      "section": "7. Le data-driven marketing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce qui distingue le data-driven marketing du reporting ?",
+      "options": [
+        "rien",
+        "le reporting constate le passé ; le data-driven prédit et influence l'avenir",
+        "le data-driven ne mesure rien",
+        "le reporting est automatisé"
+      ],
+      "reponse": 1,
+      "explication": "Trois piliers : collecte, analyse, décision éclairée."
+    },
+    {
+      "id": "b2-r02-qz-055",
+      "section": "7. Le data-driven marketing",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "L'hyper-segmentation peut générer des taux de conversion jusqu'à 10 fois supérieurs au marketing de masse.",
+      "reponse": true,
+      "explication": "Vrai. La segmentation dynamique évolue en temps réel."
+    },
+    {
+      "id": "b2-r02-qz-056",
+      "section": "7. Le data-driven marketing",
+      "niveau": 2,
+      "format": "texte_a_trous",
+      "question": "Complétez la méthode COQA pour structurer la stack data.",
+      "texte": "{1}, {2}, {3}, {4}.",
+      "trous": [
+        "Collecte",
+        "Organisation",
+        "Qualification",
+        "Activation"
+      ],
+      "explication": "Infrastructure : une CDP (profils unifiés 360°) + marketing automation."
+    },
+    {
+      "id": "b2-r02-qz-057",
+      "section": "7. Le data-driven marketing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que fait une CDP (Customer Data Platform) ?",
+      "options": [
+        "elle envoie des SMS",
+        "elle héberge le site",
+        "elle centralise les données pour des profils clients unifiés 360°",
+        "elle remplace le CRM comptable"
+      ],
+      "reponse": 2,
+      "explication": "Elle sert la personnalisation de masse."
+    },
+    {
+      "id": "b2-r02-qz-058",
+      "section": "7. Le data-driven marketing",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Le cours présente le RGPD comme un frein au data-driven marketing.",
+      "reponse": false,
+      "explication": "Faux : il améliore la qualité des données et la confiance (consentement granulaire, privacy by design)."
+    },
+    {
+      "id": "b2-r02-qz-059",
+      "section": "7. Le data-driven marketing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Fnac-Darty découvre que 40 % de ses clients consultent en ligne avant d'acheter en magasin. Résultat ?",
+      "options": [
+        "+25 % de conversion en magasin",
+        "fermeture des magasins",
+        "baisse du CA",
+        "arrêt du site"
+      ],
+      "reponse": 0,
+      "explication": "Exemple de décision fondée sur la donnée."
+    },
+    {
+      "id": "b2-r02-qz-060",
+      "section": "8. Le marketing automation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que le scoring comportemental ?",
+      "options": [
+        "une note de satisfaction",
+        "une enquête",
+        "un classement des concurrents",
+        "une valeur numérique attribuée à chaque prospect pour prioriser"
+      ],
+      "reponse": 3,
+      "explication": "Il s'articule avec le lead nurturing et la segmentation dynamique."
+    },
+    {
+      "id": "b2-r02-qz-061",
+      "section": "8. Le marketing automation",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre le scénario type d'automation du cours.",
+      "elements": [
+        "SMS de rappel si l'e-mail n'est pas ouvert sous 48 h",
+        "Un visiteur consulte 3 fois une page produit sans acheter",
+        "E-mail de relance avec code promo"
+      ],
+      "ordre": [
+        1,
+        2,
+        0
+      ],
+      "explication": "Orchestration multicanale avec règles de transition. Sézane : +34 % de conversion."
+    },
+    {
+      "id": "b2-r02-qz-062",
+      "section": "8. Le marketing automation",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels outils de marketing automation le cours cite-t-il ? (4 réponses)",
+      "options": [
+        "ActiveCampaign",
+        "Mailchimp",
+        "Brevo",
+        "Klaviyo",
+        "Photoshop",
+        "Excel"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Le CRM en est la colonne vertébrale."
+    },
+    {
+      "id": "b2-r02-qz-063",
+      "section": "9. L'IA au service du marketing",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que le prompt engineering ?",
+      "options": [
+        "programmer un site",
+        "structurer ses instructions (contexte, rôle, format, ton, contraintes) pour obtenir des contenus adaptés",
+        "acheter des mots-clés",
+        "gérer une base e-mail"
+      ],
+      "reponse": 1,
+      "explication": "L'IA propose, l'humain affine et garde la cohérence de marque."
+    },
+    {
+      "id": "b2-r02-qz-064",
+      "section": "9. L'IA au service du marketing",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque outil d'IA générative à son usage.",
+      "colonne_a": [
+        "Jasper, Copy.ai",
+        "Midjourney"
+      ],
+      "colonne_b": [
+        "Visuels",
+        "Texte marketing"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Décathlon génère des descriptions par segment (−70 % de temps de création)."
+    },
+    {
+      "id": "b2-r02-qz-065",
+      "section": "9. L'IA au service du marketing",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Le déploiement de l'IA marketing suppose de surveiller les biais algorithmiques et de former les équipes.",
+      "reponse": true,
+      "explication": "Vrai : vers un marketing IA responsable, sous RGPD."
     }
   ]
 }

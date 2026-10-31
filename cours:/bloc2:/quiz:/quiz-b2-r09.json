@@ -22,10 +22,22 @@
         "Les publics dirigeants et citoyens : l'image de l'entreprise"
       ],
       "paires": [
-        [0, 2],
-        [1, 3],
-        [2, 0],
-        [3, 1]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
       ],
       "explication": "Cette classification reste d'actualité. S'y ajoute la communication d'influence (lobbying), qui agit sur l'opinion et les décideurs — avec la vigilance contemporaine sur la suspicion de manipulation."
     },
@@ -65,7 +77,12 @@
         "Fidéliser (contenu continu, transformer les clients en ambassadeurs)",
         "Convertir (contenus ciblés à plus-value)"
       ],
-      "ordre": [1, 3, 0, 2],
+      "ordre": [
+        1,
+        3,
+        0,
+        2
+      ],
       "explication": "Attirer → Convertir → Vendre → Fidéliser. L'exemple du cours : Yuka, un inbound intégral sans publicité (scan nutritionnel → analyse premium → abonnement/livre → notifications personnalisées)."
     },
     {
@@ -75,12 +92,12 @@
       "format": "qcm",
       "question": "Quelle est la relation entre UX et UI ?",
       "options": [
-        "l'UI englobe l'UX",
         "l'UX (le ressenti de l'utilisateur) englobe l'UI (la conception de l'interface elle-même)",
+        "l'UI englobe l'UX",
         "UX et UI sont synonymes",
         "l'UX concerne le print, l'UI le digital"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "L'UX (User eXperience) est le ressenti global de l'utilisateur — navigation fluide, agréable, intuitive. L'UI (User Interface) est la conception des boutons, menus et écrans. L'UX englobe l'UI."
     },
     {
@@ -91,11 +108,11 @@
       "question": "Quelle est la différence entre la charte graphique et le design system ?",
       "options": [
         "le design system est la version print de la charte graphique",
-        "la charte dit « à quoi ça ressemble » ; le design system fournit « les pièces prêtes à assembler » pour designers et développeurs",
+        "le design system remplace la charte graphique",
         "la charte est numérique, le design system est papier",
-        "le design system remplace la charte graphique"
+        "la charte dit « à quoi ça ressemble » ; le design system fournit « les pièces prêtes à assembler » pour designers et développeurs"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "Le design system est un outil collaboratif (référence : Figma) qui réunit tous les éléments graphiques dans un système accessible — nécessaire dès qu'on produit sites et applications, pour garantir l'homogénéité sur site, mobile et app."
     },
     {
@@ -112,7 +129,12 @@
         "le calendrier éditorial des publications",
         "le grid layout (grilles de mise en page)"
       ],
-      "reponse": [0, 2, 3, 5],
+      "reponse": [
+        0,
+        2,
+        3,
+        5
+      ],
       "explication": "S'y ajoutent les icônes (pleine/filaire), les banques d'images organisées, les boutons et composants réutilisables. Les personas et le calendrier éditorial relèvent des chartes et lignes éditoriales."
     },
     {
@@ -161,11 +183,11 @@
       "question": "Pour utiliser la photo d'une personne sur un support de communication, l'autorisation doit être :",
       "options": [
         "orale, si la personne était consciente d'être photographiée",
-        "expresse, spéciale et déterminée : écrite, pour un usage précis, sur une durée et un périmètre définis",
         "implicite dès lors que la photo a été prise dans un lieu public",
+        "expresse, spéciale et déterminée : écrite, pour un usage précis, sur une durée et un périmètre définis",
         "renouvelée chaque année"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "Le droit à l'image (article 9 du Code civil, respect de la vie privée) protège les personnes. Les trois critères sont cumulatifs. Exception principale : le droit à l'information (actualité, intérêt général), d'interprétation stricte."
     },
     {
@@ -175,12 +197,12 @@
       "format": "qcm",
       "question": "Sur quel fondement repose le droit à l'image en France ?",
       "options": [
-        "le Code de la propriété intellectuelle",
         "l'article 9 du Code civil, relatif au respect de la vie privée",
+        "le Code de la propriété intellectuelle",
         "le RGPD",
         "la loi Sapin II"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "Le droit à l'image protège les personnes (pas les créations) contre l'utilisation non autorisée de leur représentation — fondement : article 9 du Code civil."
     },
     {
@@ -200,11 +222,11 @@
       "question": "Dans un plan en pyramide inversée, à quoi répond le premier paragraphe ?",
       "options": [
         "à la thèse, avant l'antithèse et la synthèse",
-        "aux 5 questions clés : Qui ? Où ? Quoi ? Quand ? Pourquoi ? (règle des 5W)",
+        "à l'opinion de l'auteur, avant les faits",
         "au contexte historique du sujet",
-        "à l'opinion de l'auteur, avant les faits"
+        "aux 5 questions clés : Qui ? Où ? Quoi ? Quand ? Pourquoi ? (règle des 5W)"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "La pyramide inversée classe les informations par importance décroissante : même si l'internaute ne finit pas l'article, il a reçu l'essentiel. C'est LE plan du web et du journalisme — à l'opposé du plan de dissertation."
     },
     {
@@ -230,11 +252,11 @@
       "question": "Qu'est-ce que le chapô d'un article ?",
       "options": [
         "les derniers mots du texte, qui renforcent l'angle",
-        "le petit paragraphe introductif après le titre, qui résume l'essentiel — et le premier contenu scanné par les moteurs",
         "le sous-titre placé au-dessus du titre principal",
+        "le petit paragraphe introductif après le titre, qui résume l'essentiel — et le premier contenu scanné par les moteurs",
         "l'encadré qui liste les sources"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "Le chapô résume et met en appétit — y placer les mots-clés. L'attaque = les premiers mots du texte ; la chute = les dernières phrases (ouverture, écho à l'attaque) ; la titraille = l'ensemble titres/surtitres/intertitres/chapô."
     },
     {
@@ -244,12 +266,12 @@
       "format": "qcm",
       "question": "« Ce SUV émet 120 g de CO2/km » et « Ce SUV est le meilleur choix pour la planète » : comment qualifier ces deux énoncés ?",
       "options": [
-        "deux faits",
         "un fait (vérifiable) puis une opinion (interprétation subjective)",
+        "deux faits",
         "une opinion puis un fait",
         "deux opinions"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "Un fait est objectif et vérifiable (chiffre, étude, texte de loi) ; une opinion est une interprétation. Règle d'argumentation : être factuel, citer ses sources, et à chaque affirmation, une preuve."
     },
     {
@@ -286,10 +308,22 @@
         "La densité de pixels (ppp/dpi)"
       ],
       "paires": [
-        [0, 2],
-        [1, 3],
-        [2, 0],
-        [3, 1]
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
       ],
       "explication": "Quatre notions à ne pas confondre : définition (pixels totaux), résolution (densité), dimension (taille physique), poids (fichier)."
     },
@@ -306,6 +340,668 @@
         "Technique : 300 dpi et CMJN pour le print, 72 ppp et RVB/HEX pour le web, formats adaptés ; inclusion et accessibilité (lisibilité, contrastes)"
       ],
       "explication": "C'est la check-list de la Q11 : la conformité juridique (droit d'auteur, droit à l'image) y est un critère d'évaluation explicite, avec l'inclusivité et l'accessibilité des supports."
+    },
+    {
+      "id": "b2-r09-qz-021",
+      "section": "1. Les formes de communication",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Que contient le message clé d'une campagne ?",
+      "options": [
+        "le logo",
+        "le planning",
+        "le budget",
+        "la promesse, bénéfice objectif ou subjectif suggéré à la cible"
+      ],
+      "reponse": 3,
+      "explication": "Simple, clair et vrai, il donne le sens de la campagne et s'inscrit dans la ligne éditoriale."
+    },
+    {
+      "id": "b2-r09-qz-022",
+      "section": "1. Les formes de communication",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque type de relation à son exemple.",
+      "colonne_a": [
+        "BtoB",
+        "BtoC",
+        "CtoC"
+      ],
+      "colonne_b": [
+        "Leboncoin",
+        "Vendeur de pneus → garagistes",
+        "Intermarché → consommateurs"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "En CtoC, l'entreprise n'est qu'intermédiaire."
+    },
+    {
+      "id": "b2-r09-qz-023",
+      "section": "1. Les formes de communication",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que la communication d'influence ?",
+      "options": [
+        "la publicité TV",
+        "agir sur l'opinion et les décideurs, souvent via des leaders d'opinion (lobbying)",
+        "la communication interne",
+        "le marketing direct"
+      ],
+      "reponse": 1,
+      "explication": "Exemple historique : E. Bernays et les médecins pour l'industrie du tabac. Elle impose aujourd'hui sincérité et preuve."
+    },
+    {
+      "id": "b2-r09-qz-024",
+      "section": "1. Les formes de communication",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Une cible de communication doit être à la fois qualifiée (données de base et psychologiques) et quantifiée.",
+      "reponse": true,
+      "explication": "Vrai ; le persona aide à la comprendre."
+    },
+    {
+      "id": "b2-r09-qz-025",
+      "section": "2. La galaxie des contenus",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la démarche de communication multicanale efficace.",
+      "elements": [
+        "Sélection des canaux appropriés",
+        "Analyse des résultats",
+        "Veille concurrentielle",
+        "Objectifs SMART",
+        "Connaissance approfondie de la cible",
+        "Cohérence du message"
+      ],
+      "ordre": [
+        2,
+        4,
+        0,
+        3,
+        5,
+        1
+      ],
+      "explication": "Utiliser simultanément plusieurs canaux pour maximiser la portée."
+    },
+    {
+      "id": "b2-r09-qz-026",
+      "section": "2. La galaxie des contenus",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque objectif au contenu cité dans le cours.",
+      "colonne_a": [
+        "Notoriété",
+        "Relation client",
+        "Public jeune"
+      ],
+      "colonne_b": [
+        "Filtres d'essayage Snapchat (Adidas)",
+        "Campagne participative #ShareYourEars (Disney)",
+        "« Meet me at Starbucks »"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Le format s'adapte à l'objectif, à la cible et au canal."
+    },
+    {
+      "id": "b2-r09-qz-027",
+      "section": "2. La galaxie des contenus",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque approche à ses méthodes.",
+      "colonne_a": [
+        "Inbound",
+        "Outbound"
+      ],
+      "colonne_b": [
+        "Publicité TV/radio, bannières, pop-ups, e-mailing de masse",
+        "SEO, blog, livres blancs, réseaux sociaux"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Inbound : trafic qualifié mais lent. Outbound : portée rapide mais intrusif et coûteux."
+    },
+    {
+      "id": "b2-r09-qz-028",
+      "section": "2. La galaxie des contenus",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Yuka illustre un inbound marketing intégral, sans publicité.",
+      "reponse": true,
+      "explication": "Vrai : attirer (scan), convertir (premium), vendre (abonnement, livre), fidéliser (notifications)."
+    },
+    {
+      "id": "b2-r09-qz-029",
+      "section": "2. La galaxie des contenus",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "L'inbound marketing offre une portée large et rapide, idéale pour une notoriété massive immédiate.",
+      "reponse": false,
+      "explication": "Faux : c'est l'atout de l'outbound. L'inbound est plus lent et exigeant en contenu, mais crée une relation durable."
+    },
+    {
+      "id": "b2-r09-qz-030",
+      "section": "3. Le cadre graphique",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quel est le point de départ de la charte graphique ?",
+      "options": [
+        "la typographie",
+        "la papeterie",
+        "le logo, dans toutes ses déclinaisons et avec ses règles d'utilisation",
+        "les couleurs"
+      ],
+      "reponse": 2,
+      "explication": "Emplacements, tailles minimales, interdits : des règles facilement applicables."
+    },
+    {
+      "id": "b2-r09-qz-031",
+      "section": "3. Le cadre graphique",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel est l'outil collaboratif de référence pour construire un design system ?",
+      "options": [
+        "Figma",
+        "Excel",
+        "Word",
+        "Mailchimp"
+      ],
+      "reponse": 0,
+      "explication": "Le design system réunit les éléments graphiques dans un système accessible aux designers et développeurs."
+    },
+    {
+      "id": "b2-r09-qz-032",
+      "section": "3. Le cadre graphique",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que sont les design patterns ?",
+      "options": [
+        "des motifs décoratifs",
+        "des grilles tarifaires",
+        "des polices de caractères",
+        "des modèles d'interface prêts à l'emploi, éprouvés"
+      ],
+      "reponse": 3,
+      "explication": "Gain de temps et garantie de modèles éprouvés."
+    },
+    {
+      "id": "b2-r09-qz-033",
+      "section": "3. Le cadre graphique",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Dans un design system, les couleurs sont codées en HEX pour le web et déclinées en mode jour et mode nuit.",
+      "reponse": true,
+      "explication": "Vrai, avec une gamme de gris, des icônes pleines et filaires, un grid layout."
+    },
+    {
+      "id": "b2-r09-qz-034",
+      "section": "4. Chartes éditoriales",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels éléments constituent la charte éditoriale ? (4 réponses)",
+      "options": [
+        "l'identité de la marque",
+        "le public cible et les personas",
+        "le ton et le style",
+        "les valeurs et principes éditoriaux",
+        "le planning des publications de la semaine",
+        "le budget média"
+      ],
+      "reponse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explication": "Plus des consignes graphiques. La fréquence relève de la ligne éditoriale."
+    },
+    {
+      "id": "b2-r09-qz-035",
+      "section": "4. Chartes éditoriales",
+      "niveau": 2,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre le processus de rédaction de la ligne éditoriale.",
+      "elements": [
+        "Choix des formats et supports",
+        "Méthodes d'interaction avec le public",
+        "Analyse des objectifs",
+        "Fréquence de publication",
+        "Identification des messages clés"
+      ],
+      "ordre": [
+        2,
+        4,
+        0,
+        3,
+        1
+      ],
+      "explication": "La communication digitale n'est pas unidirectionnelle."
+    },
+    {
+      "id": "b2-r09-qz-036",
+      "section": "4. Chartes éditoriales",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque support à sa ligne éditoriale type.",
+      "colonne_a": [
+        "Réseaux sociaux",
+        "Blog",
+        "Newsletter",
+        "Site web"
+      ],
+      "colonne_b": [
+        "Navigation fluide, clarté, appels à l'action",
+        "Pertinence pour le destinataire, régularité sans saturation",
+        "Contenus concis, interactifs, fréquence élevée",
+        "Contenus approfondis, voix authentique, fréquence moindre"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "Adaptation cohérente avec la charte."
+    },
+    {
+      "id": "b2-r09-qz-037",
+      "section": "4. Chartes éditoriales",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Pour nourrir sa ligne éditoriale, s'inspirer et copier des concurrents revient au même.",
+      "reponse": false,
+      "explication": "Faux : veille créative et curation, sans jamais confondre s'inspirer et copier."
+    },
+    {
+      "id": "b2-r09-qz-038",
+      "section": "5. La réglementation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quand une œuvre est-elle « originale » au sens du droit d'auteur ?",
+      "options": [
+        "quand elle est déposée",
+        "quand elle porte l'empreinte de la personnalité de son auteur",
+        "quand elle est nouvelle sur le marché",
+        "quand elle est vendue"
+      ],
+      "reponse": 1,
+      "explication": "Protection automatique, sans formalité."
+    },
+    {
+      "id": "b2-r09-qz-039",
+      "section": "5. La réglementation",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque droit à ce qu'il protège.",
+      "colonne_a": [
+        "Droit d'auteur",
+        "Droit à l'image"
+      ],
+      "colonne_b": [
+        "Les personnes, contre l'utilisation non autorisée de leur représentation",
+        "Les œuvres originales"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Droit à l'image : article 9 du Code civil."
+    },
+    {
+      "id": "b2-r09-qz-040",
+      "section": "5. La réglementation",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle est la principale exception au droit à l'image ?",
+      "options": [
+        "l'usage commercial",
+        "la publication sur les réseaux",
+        "le droit à l'information (actualité, intérêt général)",
+        "l'usage interne"
+      ],
+      "reponse": 2,
+      "explication": "D'interprétation stricte et sous réserve du respect de la dignité."
+    },
+    {
+      "id": "b2-r09-qz-041",
+      "section": "5. La réglementation",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "Le droit moral d'un auteur disparaît lorsqu'il place son œuvre sous licence libre.",
+      "reponse": false,
+      "explication": "Faux : inaliénable et perpétuel, il subsiste même sous licence libre."
+    },
+    {
+      "id": "b2-r09-qz-042",
+      "section": "5. La réglementation",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels risques juridiques entraîne l'usage non autorisé d'une image ou d'une police ? (2 réponses)",
+      "options": [
+        "des sanctions civiles (dommages-intérêts)",
+        "des sanctions pénales",
+        "aucun risque si l'image est sur Internet",
+        "une simple amende de stationnement"
+      ],
+      "reponse": [
+        0,
+        1
+      ],
+      "explication": "Prévention : traçabilité des droits acquis. Les polices sont aussi protégées."
+    },
+    {
+      "id": "b2-r09-qz-043",
+      "section": "5. La réglementation",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Face aux contenus produits par IA générative, la responsabilité éditoriale de l'entreprise reste pleine et entière.",
+      "reponse": true,
+      "explication": "Vrai, d'où l'intégration de règles d'usage de l'IA dans les chartes éditoriales."
+    },
+    {
+      "id": "b2-r09-qz-044",
+      "section": "6. Produire le message",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque registre d'argumentation à sa nature.",
+      "colonne_a": [
+        "Logos",
+        "Éthos",
+        "Pathos"
+      ],
+      "colonne_b": [
+        "L'émotion",
+        "La raison",
+        "La crédibilité"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "On les dose selon l'objectif."
+    },
+    {
+      "id": "b2-r09-qz-045",
+      "section": "6. Produire le message",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pourquoi la pyramide inversée convient-elle au web ?",
+      "options": [
+        "parce que même si l'internaute ne finit pas, il a reçu l'essentiel",
+        "parce qu'elle est plus longue",
+        "parce qu'elle commence par la conclusion de dissertation",
+        "parce qu'elle cache l'information principale"
+      ],
+      "reponse": 0,
+      "explication": "Informations par ordre d'importance décroissante, à l'opposé du plan de dissertation."
+    },
+    {
+      "id": "b2-r09-qz-046",
+      "section": "6. Produire le message",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "« Le jour de gloire est arrivé » pour annoncer une victoire en Coupe du monde : quel type de titre ?",
+      "options": [
+        "informatif",
+        "descriptif",
+        "froid",
+        "incitatif, à compléter d'un surtitre"
+      ],
+      "reponse": 3,
+      "explication": "Le titre informatif, factuel avec mots-clés, est meilleur pour le SEO."
+    },
+    {
+      "id": "b2-r09-qz-047",
+      "section": "6. Produire le message",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que la titraille ?",
+      "options": [
+        "le titre seul",
+        "l'ensemble titres, surtitres, sous-titres, intertitres et chapô",
+        "la signature de l'auteur",
+        "la légende des photos"
+      ],
+      "reponse": 1,
+      "explication": "Elle hiérarchise l'information ; sa forme est décrite dans la charte graphique."
+    },
+    {
+      "id": "b2-r09-qz-048",
+      "section": "6. Produire le message",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "La chute d'un article doit être une conclusion de type dissertation, qui résume tout le texte.",
+      "reponse": false,
+      "explication": "Faux : elle renforce l'angle (ouverture, humour, citation, écho à l'attaque)."
+    },
+    {
+      "id": "b2-r09-qz-049",
+      "section": "6. Produire le message",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque connecteur logique à sa fonction.",
+      "colonne_a": [
+        "En revanche",
+        "Néanmoins",
+        "Par conséquent",
+        "Au cas où"
+      ],
+      "colonne_b": [
+        "Condition",
+        "Conséquence",
+        "Nuance",
+        "Opposition"
+      ],
+      "paires": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "Ils fluidifient l'enchaînement des idées."
+    },
+    {
+      "id": "b2-r09-qz-050",
+      "section": "6. Produire le message",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Un même SUV sobre en CO2 s'argumente « écologie » pour certains et « économies de carburant » pour d'autres. Quel principe est appliqué ?",
+      "options": [
+        "mentir selon la cible",
+        "changer de produit",
+        "adapter les arguments au système de valeurs du lectorat",
+        "multiplier les objectifs"
+      ],
+      "reponse": 2,
+      "explication": "L'important n'est pas ce qu'on veut dire mais ce que le lecteur doit retenir."
+    },
+    {
+      "id": "b2-r09-qz-051",
+      "section": "6. Produire le message",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un témoignage est d'autant plus convaincant que le témoin ressemble au lectorat.",
+      "reponse": true,
+      "explication": "Vrai : à chaque affirmation, une preuve (chiffres, témoignages, tests)."
+    },
+    {
+      "id": "b2-r09-qz-052",
+      "section": "6. Produire le message",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel temps privilégier dans un texte d'information ?",
+      "options": [
+        "le présent",
+        "le passé simple",
+        "le futur antérieur",
+        "le conditionnel"
+      ],
+      "reponse": 0,
+      "explication": "Et toujours situer dans l'espace et le temps, sans présumer des connaissances du lecteur."
+    },
+    {
+      "id": "b2-r09-qz-053",
+      "section": "6. Produire le message",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Quelle longueur vise-t-on pour un article de blog riche selon le cours ?",
+      "options": [
+        "≈ 200 mots",
+        "≈ 500 mots",
+        "≈ 10 000 mots",
+        "≈ 2 000 mots"
+      ],
+      "reponse": 3,
+      "explication": "Google aime la profondeur et la régularité. On écrit librement puis on coupe le superflu."
+    },
+    {
+      "id": "b2-r09-qz-054",
+      "section": "7. Produire les supports",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Une brochure A4 fermée correspond à quel format ouvert ?",
+      "options": [
+        "A5",
+        "A3",
+        "A4",
+        "A2"
+      ],
+      "reponse": 1,
+      "explication": "Distinguer format ouvert et format fermé ; anticiper toutes les déclinaisons avant de créer."
+    },
+    {
+      "id": "b2-r09-qz-055",
+      "section": "7. Produire les supports",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque logiciel Adobe à sa spécialité.",
+      "colonne_a": [
+        "Photoshop",
+        "Illustrator",
+        "InDesign"
+      ],
+      "colonne_b": [
+        "Mise en page",
+        "Image",
+        "Vectoriel"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Canva et Figma sont des alternatives collaboratives pour les non-spécialistes."
+    },
+    {
+      "id": "b2-r09-qz-056",
+      "section": "7. Produire les supports",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Une image en 72 ppp, suffisante pour le web, convient aussi à l'impression d'une affiche.",
+      "reponse": false,
+      "explication": "Faux : l'impression demande 300 dpi. Il faut anticiper toutes les déclinaisons de formats avant de créer."
+    },
+    {
+      "id": "b2-r09-qz-057",
+      "section": "7. Produire les supports",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre la méthodologie de conception d'un support.",
+      "elements": [
+        "Application de la charte graphique",
+        "Mesure de l'efficacité et optimisation itérative",
+        "Analyse des besoins et objectifs",
+        "Hiérarchisation de l'information"
+      ],
+      "ordre": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "explication": "On mesure par exemple le taux de clic ou l'engagement."
     }
   ]
 }

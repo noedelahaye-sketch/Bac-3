@@ -11,11 +11,11 @@
       "question": "Metro Cash & Carry achète en grande quantité aux fabricants et revend aux professionnels de la restauration. Quelle fonction de la distribution exerce-t-il ?",
       "options": [
         "la fonction de détail",
-        "la fonction de gros",
         "la fonction d'agent commercial",
+        "la fonction de gros",
         "la fonction de centrale d'achat"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "La fonction de gros distribue les produits aux détaillants et professionnels (achat en grande quantité, revente aux professionnels). La fonction de détail vend directement aux consommateurs finaux."
     },
     {
@@ -84,12 +84,12 @@
       "format": "qcm",
       "question": "Quel est le principal avantage du canal direct (AMAP, vente à la ferme, e-commerce en propre) pour le producteur ?",
       "options": [
-        "des volumes de vente importants et réguliers",
-        "une large couverture géographique",
         "une marge maîtrisée et un contrôle total de la commercialisation",
+        "une large couverture géographique",
+        "des volumes de vente importants et réguliers",
         "la prise en charge de la logistique par un partenaire"
       ],
-      "reponse": 2,
+      "reponse": 0,
       "explication": "Canal direct = 0 intermédiaire : marge plus élevée, réactivité, contrôle total (communication, rythme) — mais tout est à la charge du producteur. Les gros volumes et la large zone sont l'avantage du canal long."
     },
     {
@@ -138,11 +138,11 @@
       "question": "Qu'est-ce qui distingue l'agent commercial du revendeur ?",
       "options": [
         "l'agent commercial vend uniquement en ligne",
-        "l'agent commercial prospecte et promeut les produits sans acheter la marchandise",
+        "l'agent commercial est salarié du fabricant",
         "l'agent commercial achète en gros et revend aux détaillants",
-        "l'agent commercial est salarié du fabricant"
+        "l'agent commercial prospecte et promeut les produits sans acheter la marchandise"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "L'agent commercial prospecte et promeut les produits d'un fabricant auprès des points de vente sans jamais devenir propriétaire de la marchandise. Le revendeur, lui, achète pour revendre avec sa propre sélection."
     },
     {
@@ -199,11 +199,11 @@
       "question": "Un fabricant supprime ses intermédiaires pour vendre directement au consommateur via son site. Quel est le principal défi de cette désintermédiation ?",
       "options": [
         "la perte de ses marges",
-        "devoir gérer seul la relation client : service client, support, retours",
         "la perte des données clients",
+        "devoir gérer seul la relation client : service client, support, retours",
         "l'obligation de passer par une marketplace"
       ],
-      "reponse": 1,
+      "reponse": 2,
       "explication": "La désintermédiation permet de conserver les marges, de maîtriser la relation client et d'obtenir les données en direct — mais il faut tout gérer seul, ce qui exige des compétences et ressources supplémentaires."
     },
     {
@@ -227,12 +227,12 @@
       "format": "qcm",
       "question": "Un producteur de fromages rachète un réseau de crémeries pour vendre directement ses produits. De quoi s'agit-il ?",
       "options": [
-        "une intégration verticale en amont",
         "une intégration verticale en aval",
+        "une intégration verticale en amont",
         "une diversification horizontale",
         "une désintermédiation numérique"
       ],
-      "reponse": 1,
+      "reponse": 0,
       "explication": "L'intégration verticale en aval consiste à acquérir des activités de distribution/vente ; en amont, ce serait la production ou l'approvisionnement. Avantages : contrôle de la chaîne, marges consolidées ; inconvénients : investissements, rigidité."
     },
     {
@@ -252,11 +252,11 @@
       "question": "Un consommateur fait toutes ses courses chez Leclerc, quelles que soient les marques qu'il achète, grâce à sa carte de fidélité. De quelle fidélité s'agit-il ?",
       "options": [
         "une fidélité à la marque",
-        "une fidélité à l'enseigne",
+        "une fidélité au canal",
         "une fidélité au produit",
-        "une fidélité au canal"
+        "une fidélité à l'enseigne"
       ],
-      "reponse": 1,
+      "reponse": 3,
       "explication": "La fidélité à l'enseigne (fréquenter le même point de vente/distributeur) est l'actif des distributeurs, renforcé par les MDD et les programmes de fidélité. La fidélité à la marque (racheter une marque spécifique) est l'actif des producteurs."
     },
     {
@@ -272,6 +272,602 @@
         "La contractualisation comme verrou : un contrat clair et complet définissant droits, obligations et conditions financières"
       ],
       "explication": "C'est le raisonnement attendu au Dossier 2 : justifier le modèle de distribution (3.2), construire la grille de critères (3.3), et sécuriser par le contrat."
+    },
+    {
+      "id": "b2-r03-qz-017",
+      "section": "1. Définition, fonctions et flux",
+      "niveau": 1,
+      "format": "qcm",
+      "question": "Quel est l'objectif de la gestion des flux de distribution ?",
+      "options": [
+        "vendre le plus cher possible",
+        "le bon produit, au bon endroit, au bon moment, dans la bonne quantité",
+        "supprimer les intermédiaires",
+        "réduire la publicité"
+      ],
+      "reponse": 1,
+      "explication": "Trois flux à maîtriser : physiques, d'informations, financiers."
+    },
+    {
+      "id": "b2-r03-qz-018",
+      "section": "1. Définition, fonctions et flux",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel outil clé fait circuler les flux d'informations entre distributeur et producteur ?",
+      "options": [
+        "le CRM",
+        "le SEO",
+        "l'EDI (échange de données informatisé)",
+        "la PLV"
+      ],
+      "reponse": 2,
+      "explication": "Commandes, délais, facturation ; les tickets de caisse alimentent aussi la veille commerciale."
+    },
+    {
+      "id": "b2-r03-qz-019",
+      "section": "1. Définition, fonctions et flux",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les flux physiques fonctionnent souvent en « juste-à-temps » pour limiter les stocks, au risque de ruptures en magasin.",
+      "reponse": true,
+      "explication": "Vrai : transport, stockage, livraison."
+    },
+    {
+      "id": "b2-r03-qz-020",
+      "section": "1. Définition, fonctions et flux",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que le « concept » de magasin ?",
+      "options": [
+        "l'ensemble des éléments matériels et immatériels propres à une enseigne : design, ambiance, services, technologie",
+        "le logo de l'enseigne",
+        "le prix moyen",
+        "la surface de vente"
+      ],
+      "reponse": 0,
+      "explication": "Le point de vente est conçu comme un produit doté d'attributs (IKEA, Paul)."
+    },
+    {
+      "id": "b2-r03-qz-021",
+      "section": "1. Définition, fonctions et flux",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "L'approche transactionnelle, centrée sur la vente unique à court terme, est aujourd'hui l'approche dominante en distribution.",
+      "reponse": false,
+      "explication": "Faux : elle est de moins en moins utilisée. Le stade actuel est l'approche expérientielle, portée par l'omnicanal."
+    },
+    {
+      "id": "b2-r03-qz-022",
+      "section": "2. Circuits et canaux",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque canal à son nombre d'intermédiaires.",
+      "colonne_a": [
+        "Direct",
+        "Court",
+        "Long"
+      ],
+      "colonne_b": [
+        "2 ou plus",
+        "1",
+        "0"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Le circuit long représente plus de 90 % des modes de distribution."
+    },
+    {
+      "id": "b2-r03-qz-023",
+      "section": "2. Circuits et canaux",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quel est l'inconvénient principal du canal long pour le producteur ?",
+      "options": [
+        "des volumes faibles",
+        "une zone géographique réduite",
+        "l'absence de grossistes",
+        "un faible contrôle du marché, un client éloigné et des marges intermédiaires qui augmentent le prix public"
+      ],
+      "reponse": 3,
+      "explication": "Avantages : large zone géographique, gros volumes réguliers, concentration sur son métier."
+    },
+    {
+      "id": "b2-r03-qz-024",
+      "section": "2. Circuits et canaux",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle part des ventes la vente digitale représente-t-elle tous commerces confondus ?",
+      "options": [
+        "environ 2 %",
+        "environ 10 %",
+        "environ 40 %",
+        "environ 75 %"
+      ],
+      "reponse": 1,
+      "explication": "En progression constante."
+    },
+    {
+      "id": "b2-r03-qz-025",
+      "section": "2. Circuits et canaux",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Que nécessite une stratégie cross canal ?",
+      "options": [
+        "des canaux totalement indépendants",
+        "un seul canal",
+        "l'intégration des données clients entre canaux",
+        "l'abandon du magasin physique"
+      ],
+      "reponse": 2,
+      "explication": "Canaux complémentaires utilisés successivement dans un même parcours."
+    },
+    {
+      "id": "b2-r03-qz-026",
+      "section": "2. Circuits et canaux",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels défis l'omnicanal pose-t-il au distributeur ? (3 réponses)",
+      "options": [
+        "la complexité opérationnelle et les coûts",
+        "la fragmentation des données",
+        "les conflits entre canaux",
+        "la disparition des clients",
+        "l'interdiction légale"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Côté client : incohérences de prix, retours complexes, risques sur les données personnelles."
+    },
+    {
+      "id": "b2-r03-qz-027",
+      "section": "2. Circuits et canaux",
+      "niveau": 3,
+      "format": "vrai_faux",
+      "question": "L'application « Makeup Genius » de L'Oréal, qui relie essai virtuel, achat en ligne et essai en magasin, illustre une démarche cross / omnicanale.",
+      "reponse": true,
+      "explication": "Vrai : un pont entre canaux digitaux et physiques."
+    },
+    {
+      "id": "b2-r03-qz-028",
+      "section": "2. Circuits et canaux",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Pour quels produits la distribution sélective est-elle adaptée ?",
+      "options": [
+        "les produits spécialisés ou haut de gamme nécessitant conseil et expertise",
+        "la grande consommation à forte rotation",
+        "les produits sans marque",
+        "les produits en fin de vie"
+      ],
+      "reponse": 0,
+      "explication": "Exemple : parfums de luxe en parfumeries agréées."
+    },
+    {
+      "id": "b2-r03-qz-029",
+      "section": "3. Les entreprises de distribution",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque intermédiaire à son rôle.",
+      "colonne_a": [
+        "Grossiste",
+        "Agent commercial",
+        "Détaillant"
+      ],
+      "colonne_b": [
+        "Vend directement aux consommateurs finaux",
+        "Achète en gros et revend aux détaillants",
+        "Prospecte pour un fabricant sans acheter la marchandise"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Le revendeur achète pour revendre aux consommateurs avec une sélection spécifique."
+    },
+    {
+      "id": "b2-r03-qz-030",
+      "section": "3. Les entreprises de distribution",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque structure à sa définition.",
+      "colonne_a": [
+        "Distribution intégrée",
+        "Distribution externalisée"
+      ],
+      "colonne_b": [
+        "L'entreprise confie la commercialisation à des partenaires indépendants",
+        "L'entreprise gère elle-même ses canaux"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Apple pratique l'intégrée ; Coca-Cola s'appuie sur des embouteilleurs locaux (externalisée)."
+    },
+    {
+      "id": "b2-r03-qz-031",
+      "section": "3. Les entreprises de distribution",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Une insatisfaction récurrente liée à la distribution peut entacher durablement la réputation et les ventes d'une marque.",
+      "reponse": true,
+      "explication": "Vrai, à l'heure des réseaux sociaux : la qualité de service et la logistique sont des critères de sélection du distributeur."
+    },
+    {
+      "id": "b2-r03-qz-032",
+      "section": "3. Les entreprises de distribution",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce qui verrouille la relation avec un distributeur partenaire ?",
+      "options": [
+        "une poignée de main",
+        "une publicité commune",
+        "un échange de mails",
+        "un contrat clair et complet définissant droits, responsabilités, obligations et conditions financières"
+      ],
+      "reponse": 3,
+      "explication": "Contrats de distribution : exclusif, sélectif, franchise."
+    },
+    {
+      "id": "b2-r03-qz-033",
+      "section": "4. La grande distribution",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'est-ce que le succursalisme ?",
+      "options": [
+        "un réseau de franchisés",
+        "un réseau de magasins détenus en propre par un groupe",
+        "la vente en ligne",
+        "un groupement d'indépendants"
+      ],
+      "reponse": 1,
+      "explication": "Les grands groupes opèrent sur plusieurs formats : hyper, super, proximité, drive."
+    },
+    {
+      "id": "b2-r03-qz-034",
+      "section": "4. La grande distribution",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quels facteurs alimentent la guerre des prix dans la grande distribution ? (3 réponses)",
+      "options": [
+        "la montée des enseignes discount",
+        "les MDD qui montent en gamme",
+        "la compression des marges répercutée sur les fournisseurs",
+        "la disparition des hypermarchés",
+        "l'interdiction des promotions"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Les fournisseurs sont pressurés lors des négociations annuelles."
+    },
+    {
+      "id": "b2-r03-qz-035",
+      "section": "5. Le marketing de distribution",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Qu'inclut le marketing de distribution ?",
+      "options": [
+        "uniquement la logistique",
+        "la fixation du prix du fabricant",
+        "la gestion des canaux en créant une expérience client mémorable, et le positionnement de l'enseigne",
+        "la publicité TV"
+      ],
+      "reponse": 2,
+      "explication": "Positionnement : prix, choix, service, proximité."
+    },
+    {
+      "id": "b2-r03-qz-036",
+      "section": "5. Le marketing de distribution",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque technique à sa définition.",
+      "colonne_a": [
+        "Upselling",
+        "Cross-selling"
+      ],
+      "colonne_b": [
+        "Proposer des produits complémentaires",
+        "Faire monter le client en gamme"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Ce sont des leviers d'augmentation des marges."
+    },
+    {
+      "id": "b2-r03-qz-037",
+      "section": "5. Le marketing de distribution",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Les robots de préparation d'Amazon illustrent l'augmentation des marges par l'upselling.",
+      "reponse": false,
+      "explication": "Faux : ils illustrent la rationalisation des opérations (−50 % de temps par commande), premier levier de rentabilité avec l'optimisation des coûts et l'augmentation des marges."
+    },
+    {
+      "id": "b2-r03-qz-038",
+      "section": "5. Le marketing de distribution",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles opportunités la désintermédiation offre-t-elle ? (3 réponses)",
+      "options": [
+        "des marges conservées",
+        "la maîtrise de la relation client",
+        "des données clients en direct",
+        "l'absence de service client à gérer",
+        "des coûts logistiques nuls"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Défi : gérer seul service client, support et retours."
+    },
+    {
+      "id": "b2-r03-qz-039",
+      "section": "6. Les rapports de force",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque acteur à son « arme » dans le rapport de force.",
+      "colonne_a": [
+        "Producteurs",
+        "Distributeurs"
+      ],
+      "colonne_b": [
+        "Le référencement et les MDD",
+        "Les marques, actifs intangibles qui fondent la fidélité"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "explication": "Les MDD concurrencent directement les marques nationales dans leurs propres rayons."
+    },
+    {
+      "id": "b2-r03-qz-040",
+      "section": "6. Les rapports de force",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Peu de centrales d'achat face à de nombreux producteurs : quel effet ?",
+      "options": [
+        "un rapport de force déséquilibré en faveur des centrales",
+        "un rapport de force équilibré",
+        "l'avantage aux producteurs",
+        "aucun effet"
+      ],
+      "reponse": 0,
+      "explication": "Plus un marché est concentré côté acheteurs, plus il pèse sur les fournisseurs."
+    },
+    {
+      "id": "b2-r03-qz-041",
+      "section": "6. Les rapports de force",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "L'intégration verticale n'a que des avantages pour le producteur.",
+      "reponse": false,
+      "explication": "Faux : contrôle de la chaîne et marges consolidées, mais investissements lourds et rigidité."
+    },
+    {
+      "id": "b2-r03-qz-042",
+      "section": "6. Les rapports de force",
+      "niveau": 3,
+      "format": "qcm",
+      "question": "Quelle stratégie aide un producteur à peser plus lourd face au distributeur ?",
+      "options": [
+        "baisser systématiquement ses prix",
+        "la différenciation : rendre son offre moins substituable",
+        "renoncer à sa marque",
+        "accepter toutes les conditions"
+      ],
+      "reponse": 1,
+      "explication": "Autres stratégies : collaboration, diversification des débouchés."
+    },
+    {
+      "id": "b2-r03-qz-043",
+      "section": "7. Comportements d'achat",
+      "niveau": 1,
+      "format": "appariement",
+      "question": "Associez chaque motivation à la destination de l'achat.",
+      "colonne_a": [
+        "Hédoniste",
+        "Oblative",
+        "D'auto-expression"
+      ],
+      "colonne_b": [
+        "Exprimer qui l'on est",
+        "Se faire plaisir",
+        "Faire plaisir à son entourage"
+      ],
+      "paires": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "explication": "Trio à connaître."
+    },
+    {
+      "id": "b2-r03-qz-044",
+      "section": "7. Comportements d'achat",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un produit est soit banal, soit impliquant : il ne peut pas être les deux.",
+      "reponse": false,
+      "explication": "Faux : un produit peut être banal ET impliquant, comme l'alimentaire."
+    },
+    {
+      "id": "b2-r03-qz-045",
+      "section": "7. Comportements d'achat",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Quelle part des enfants a conscience d'influencer les achats de leurs parents ?",
+      "options": [
+        "15 %",
+        "65 %",
+        "35 %",
+        "95 %"
+      ],
+      "reponse": 1,
+      "explication": "C'est la prescription enfantine, un déterminant social."
+    },
+    {
+      "id": "b2-r03-qz-046",
+      "section": "7. Comportements d'achat",
+      "niveau": 1,
+      "format": "ordonnancement",
+      "question": "Remettez dans l'ordre les 5 phases du processus d'achat.",
+      "elements": [
+        "Évaluation des alternatives",
+        "Sentiment post-achat",
+        "Reconnaissance du besoin",
+        "Prise de décision",
+        "Recherche d'informations"
+      ],
+      "ordre": [
+        2,
+        4,
+        0,
+        3,
+        1
+      ],
+      "explication": "La recherche d'informations dure plus longtemps pour un produit complexe ou cher."
+    },
+    {
+      "id": "b2-r03-qz-047",
+      "section": "7. Comportements d'achat",
+      "niveau": 2,
+      "format": "appariement",
+      "question": "Associez chaque comportement à son parcours.",
+      "colonne_a": [
+        "ROPO",
+        "Showrooming",
+        "Full Store",
+        "Full Digital"
+      ],
+      "colonne_b": [
+        "100 % en ligne",
+        "100 % en magasin",
+        "Recherche en ligne, achat en magasin",
+        "Essai en magasin, achat en ligne"
+      ],
+      "paires": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "explication": "Le showrooming est un défi pour les détaillants physiques qui paient l'expérience sans capter la vente."
+    },
+    {
+      "id": "b2-r03-qz-048",
+      "section": "7. Comportements d'achat",
+      "niveau": 2,
+      "format": "vrai_faux",
+      "question": "Un consommateur garde toujours le même comportement d'achat, quel que soit le produit.",
+      "reponse": false,
+      "explication": "Faux : il varie selon le produit, le besoin, le contexte. D'où la centralisation des données et la coordination des canaux."
+    },
+    {
+      "id": "b2-r03-qz-049",
+      "section": "7. Comportements d'achat",
+      "niveau": 2,
+      "format": "qcm",
+      "question": "Le « Contrat de Confiance » de Darty répond surtout à quelle motivation de fréquentation du magasin physique ?",
+      "options": [
+        "le prix le plus bas",
+        "le lèche-vitrine",
+        "la réassurance et le conseil",
+        "le gain de temps"
+      ],
+      "reponse": 2,
+      "explication": "SAV performant, conseils d'expert, livraison-installation, satisfait ou remboursé."
+    },
+    {
+      "id": "b2-r03-qz-050",
+      "section": "7. Comportements d'achat",
+      "niveau": 2,
+      "format": "qcm_multiple",
+      "question": "Quelles motivations poussent vers le canal en ligne ? (3 réponses)",
+      "options": [
+        "le gain de temps",
+        "la comparaison des prix et les avis",
+        "l'accès 24 h/24",
+        "toucher le produit",
+        "le contact social"
+      ],
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Le magasin offre au contraire de voir, toucher, essayer, le conseil et la disponibilité immédiate."
     }
   ]
 }
