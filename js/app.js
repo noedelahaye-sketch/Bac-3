@@ -6,7 +6,7 @@
 
   var S = { status:{}, checks:{}, notes:{}, fiche:{}, journal:[], box:{}, due:{}, fail:{}, cardState:{}, cardEdits:{}, quiz:[], quizSeen:{}, cardRuns:[], coursLu:{}, statusAt:{}, coursLuAt:{}, coursLuSection:{}, coursNotes:{},
             newToday:{d:0,n:0}, doneToday:{d:0,n:0}, streak:{current:0,max:0,lastDate:0}, cartes:{},
-            open:{b1:true}, view:"accueil", _ts:0 };
+            open:{b1:true}, planDates:{}, view:"accueil", _ts:0 };
   var SES=null, QZ=null, saveTimer=null;
   var main = document.getElementById("main");
   var nav  = document.getElementById("nav");
@@ -292,7 +292,7 @@
     S.doneToday=sv.doneToday||{d:0,n:0};
     S.cartes=sv.cartes||{};
     S.streak=sv.streak||{current:0,max:0,lastDate:0};
-    S.open=sv.open||{b1:true}; S._ts=sv._ts||0;
+    S.open=sv.open||{b1:true}; S.planDates=sv.planDates||{}; S._ts=sv._ts||0;
   }
   /* save() = vraie modification de données : avance _ts et déclenche la synchro.
      save({silent:true}) = simple navigation : enregistre en local sans toucher à
@@ -827,24 +827,63 @@
     var m=/[?&]plandate=(\d{4}-\d{2}-\d{2})/.exec(location.search||"");
     return m ? m[1] : PLAN.ymd(new Date());
   }
-  function planCalc(){ return PLAN.calculer(isDone, planNow()); }
+  function planCalc(){ return PLAN.calculer(isDone, planNow(), S.planDates||{}); }
+  var planEdit=null; /* question dont on est en train de choisir la date */
   function dateCourte(s){ var d=PLAN.parse(s); return JOURS_C[d.getDay()]+" "+d.getDate()+" "+MOIS_C[d.getMonth()]; }
   function dateLongue(s){ var d=PLAN.parse(s); return JOURS_L[d.getDay()]+" "+d.getDate()+" "+MOIS_L[d.getMonth()]; }
   function plur(n,s,p){ return n+" "+(n>1?(p||s+"s"):s); }
 
+  var ICON_CAL='<svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3.5" y="4.5" width="13" height="12" rx="2"/><path d="M3.5 8.5h13M7 3v3M13 3v3"/></svg>';
   function planChip(it, auj, wbloc){
     var q=planQ(it.id); if(!q) return "";
-    var cls="pc"+(it.fait?" pc-done":"")+(it.deplace&&!it.fait?" pc-moved":"");
-    var h='<div class="'+cls+'" data-b="'+it.bloc+'">';
+    var cls="pc"+(it.fait?" pc-done":"")+(it.deplace&&!it.fait?" pc-moved":"")+(it.epingle&&!it.fait?" pc-pin":"");
+    var h='<div class="pcw" data-b="'+it.bloc+'"><div class="'+cls+'">';
     h+='<button class="pc-box" data-plan-toggle="'+it.id+'" aria-label="'+(it.fait?"Marquer non fait":"Marquer fait")+'" aria-pressed="'+(it.fait?"true":"false")+'">';
     h+='<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 6.8"/></svg></button>';
     h+='<button class="pc-body" data-goq="'+it.id+'">';
     h+='<span class="pc-t"><span class="pc-code">'+(wbloc&&wbloc!==it.bloc?esc(q.bloc.code)+" · ":"")+esc(q.n)+'</span> '+esc(q.t)+'</span>';
-    if(it.deplace&&!it.fait){
-      h+='<span class="pc-tag">'+(it.date?'prévu '+dateCourte(it.origDate):'ne tient plus avant le dépôt')+'</span>';
+    if(!it.fait){
+      if(it.deplace) h+='<span class="pc-tag">'+(it.date?'visé '+dateCourte(it.ref):'ne tient plus avant le dépôt')+'</span>';
+      else if(it.epingle) h+='<span class="pc-tag pc-tag-pin">date choisie</span>';
     }
-    h+='</button></div>';
+    h+='</button>';
+    if(!it.fait) h+='<button class="pc-edit'+(planEdit===it.id?' on':'')+'" data-plan-edit="'+it.id+'" aria-label="Changer la date" title="Changer la date">'+ICON_CAL+'</button>';
+    h+='</div>';
+    if(planEdit===it.id && !it.fait) h+=planEditeur(it);
+    return h+'</div>';
+  }
+  function planEditeur(it){
+    var opts=PLAN.options(planCalc(), it.id, planNow());
+    var h='<div class="pc-panel"><label class="pc-panel-l" for="pd-'+it.id+'">Nouvelle date</label>';
+    h+='<select id="pd-'+it.id+'" data-plan-date="'+it.id+'">';
+    if(!opts.some(function(o){return o.courant;}) && it.date) h+='<option value="'+it.date+'" selected>'+dateCourte(it.date)+'</option>';
+    opts.forEach(function(o){
+      h+='<option value="'+o.date+'"'+(o.courant?' selected':'')+'>'+dateCourte(o.date)+(o.charge?' · '+plur(o.charge,'autre'):'')+'</option>';
+    });
+    h+='</select>';
+    h+='<p class="pc-panel-n">Pas avant la question d\'avant, jamais plus de 3 par jour, jamais le dimanche. Ce qui suit se décale si besoin.</p>';
+    h+='<div class="pc-panel-b">';
+    if(S.planDates && S.planDates[it.id]) h+='<button class="pl-inline" data-plan-reset="'+it.id+'">Revenir à la date du plan</button>';
+    h+='<button class="pl-inline" data-plan-edit="'+it.id+'">Fermer</button></div></div>';
     return h;
+  }
+  function planSetDate(id, date){
+    var r=planCalc(), k=-1;
+    r.items.forEach(function(x,i){ if(x.id===id) k=i; });
+    if(k<0) return;
+    if(!S.planDates) S.planDates={};
+    /* ordre conservé : les dates choisies pour les questions suivantes qui tombent avant celle-ci sont annulées */
+    for(var i=k+1;i<r.items.length;i++){
+      var d=S.planDates[r.items[i].id];
+      if(d && d<date) delete S.planDates[r.items[i].id];
+    }
+    S.planDates[id]=date;
+    save();
+    planEdit=null;
+    var apres=planCalc().items.filter(function(x){return x.id===id;})[0];
+    render();
+    if(apres && apres.date!==date) planToast("Ce jour est plein : placée au "+(apres.date?dateCourte(apres.date):"— plus de place avant le dépôt"));
+    else planToast((planQ(id)||{}).n+" déplacée au "+dateCourte(date));
   }
 
   function planJoursTenus(r, auj){
@@ -909,7 +948,7 @@
   }
 
   function planSemaine(r, w, auj){
-    var fin=PLAN.addDays(w.debut,6);
+    var fin=PLAN.addDays(w.debut,6); if(fin>PLAN.DEPOT) fin=PLAN.DEPOT;
     var origs=r.items.filter(function(i){ return i.origDate>=w.debut && i.origDate<=fin; });
     var faits=origs.filter(function(i){return i.fait;}).length, tot=origs.length;
     var bouclee=tot>0 && faits===tot;
@@ -4264,7 +4303,7 @@
       positionQbar();
     } else if(v==="plan"){
       main.classList.remove("with-qbottom");
-      main.innerHTML='<div class="eyebrow">2 nov → 8 déc · une semaine par bloc</div><h1>Plan d\'action</h1>'+vPlan();
+      main.innerHTML='<div class="eyebrow">9 nov → 8 déc · une semaine par bloc</div><h1>Plan d\'action</h1>'+vPlan();
       if(!planScrolled){ planScrolled=true; setTimeout(function(){ var w=main.querySelector(".pw.now"); if(w && ROUTE.view==="plan") scrollToEl(w); var c=main.querySelector(".pw.now .pw-cal"), t=main.querySelector(".pw.now .pd-today"); if(c&&t) c.scrollLeft=Math.max(0,t.offsetLeft-12); },60); }
     } else {
       main.classList.remove("with-qbottom");
@@ -4341,6 +4380,15 @@
     });
     main.querySelectorAll("[data-plan-vue]").forEach(function(el){
       el.addEventListener("click",function(){ S.planVue=el.getAttribute("data-plan-vue"); save({silent:true}); render(); });
+    });
+    main.querySelectorAll("[data-plan-edit]").forEach(function(el){
+      el.addEventListener("click",function(e){ e.stopPropagation(); var id=el.getAttribute("data-plan-edit"); planEdit=(planEdit===id)?null:id; render(); });
+    });
+    main.querySelectorAll("[data-plan-date]").forEach(function(el){
+      el.addEventListener("change",function(){ planSetDate(el.getAttribute("data-plan-date"), el.value); });
+    });
+    main.querySelectorAll("[data-plan-reset]").forEach(function(el){
+      el.addEventListener("click",function(){ var id=el.getAttribute("data-plan-reset"); delete S.planDates[id]; planEdit=null; save(); render(); });
     });
     main.querySelectorAll("[data-plan-toggle]").forEach(function(el){
       el.addEventListener("click",function(e){ e.stopPropagation(); planToggle(el.getAttribute("data-plan-toggle"), el); });
